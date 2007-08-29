@@ -69,12 +69,15 @@
 #include "myaction.h"
 #include "myactiongroup.h"
 
+#include "constants.h"
+
 
 BaseGui::BaseGui( QWidget* parent, Qt::WindowFlags flags ) 
 	: QMainWindow( parent, flags ),
 		last_second(0),
 		near_top(false),
-		near_bottom(false)
+		near_bottom(false),
+		exit_on_finish(false)
 {
 	setWindowTitle( "SMPlayer" );
 
@@ -1081,8 +1084,12 @@ void BaseGui::createPlaylist() {
 	playlist = new Playlist(core, 0);
 #endif
 
+	/*
 	connect( playlist, SIGNAL(playlistEnded()),
              this, SLOT(exitFullscreenOnStop()) );
+	*/
+	connect( playlist, SIGNAL(playlistEnded()),
+             this, SLOT(playlistHasFinished()) );
 	/*
 	connect( playlist, SIGNAL(visibilityChanged()),
              this, SLOT(playlistVisibilityChanged()) );
@@ -2025,8 +2032,8 @@ void BaseGui::openURL() {
 	InputURL d(this);
 
 	QString url = pref->last_url;
-	if (url.endsWith("|smplayer:isplaylist")) {
-		url = url.remove( QRegExp("\\|smplayer\\:isplaylist$") );
+	if (url.endsWith(IS_PLAYLIST_TAG)) {
+		url = url.remove( QRegExp(IS_PLAYLIST_TAG_RX) );
 		d.setPlaylist(true);
 	}
 
@@ -2034,7 +2041,7 @@ void BaseGui::openURL() {
 	if (d.exec() == QDialog::Accepted ) {
 		QString url = d.url();
 		if (!url.isEmpty()) {
-			if (d.isPlaylist()) url = url + "|smplayer:isplaylist";
+			if (d.isPlaylist()) url = url + IS_PLAYLIST_TAG;
 			openURL(url);
 		}
 	}
@@ -2465,6 +2472,13 @@ void BaseGui::exitFullscreenOnStop() {
     if (pref->fullscreen) {
 		toggleFullscreen(FALSE);
 	}
+}
+
+void BaseGui::playlistHasFinished() {
+	qDebug("BaseGui::playlistHasFinished");
+	exitFullscreenOnStop();
+
+	if (exitOnFinish()) exitAct->trigger();
 }
 
 void BaseGui::displayState(Core::State state) {

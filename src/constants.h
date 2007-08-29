@@ -22,16 +22,8 @@
 #define COMPANY "RVM"
 #define PROGRAM "smplayer"
 
-#include <qglobal.h>
-#if QT_VERSION >= 0x040000
-#define NOFOCUS Qt::NoFocus
-#define TABFOCUS Qt::TabFocus
-#define STRONGFOCUS Qt::StrongFocus
-#else
-#define NOFOCUS Qt::NoFocus
-#define TABFOCUS Qt::TabFocus
-#define STRONGFOCUS Qt::StrongFocus
-#endif
+#define IS_PLAYLIST_TAG "|smplayer:isplaylist"
+#define IS_PLAYLIST_TAG_RX "\\|smplayer\\:isplaylist$"
 
 #endif
 

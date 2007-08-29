@@ -55,6 +55,9 @@ public:
 	/* Return true if the window shouldn't show on startup */
 	virtual bool startHidden() { return false; };
 
+	void setExitOnFinish(bool b) { exit_on_finish = b; };
+	bool exitOnFinish() { return exit_on_finish; };
+
 public slots:
 	virtual void open(QString file); // Generic open, autodetect type.
     virtual void openFile();
@@ -111,6 +114,7 @@ protected slots:
 	virtual void enterFullscreenOnPlay();
 	virtual void exitFullscreenOnStop();
 	virtual void exitFullscreenIfNeeded();
+	virtual void playlistHasFinished();
 
     virtual void displayState(Core::State state);
 	virtual void displayMessage(QString message);
@@ -447,6 +451,8 @@ private:
 	// when exiting from fullscreen mode.
 	QPoint win_pos;
 	QSize win_size;
+
+	bool exit_on_finish;
 };
     
 #endif

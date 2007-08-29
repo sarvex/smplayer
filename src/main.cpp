@@ -23,8 +23,9 @@
 #include "preferences.h"
 #include "translator.h"
 #include "version.h"
-
 #include "config.h"
+#include "myclient.h"
+#include "constants.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -36,9 +37,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-#include "myclient.h"
-
 
 static QRegExp rx_log;
 
@@ -79,17 +77,19 @@ void myMessageOutput( QtMsgType type, const char *msg ) {
 }
 
 void showInfo() {
-	qDebug("This is smplayer v. " VERSION " running on "
+	printf( QObject::tr("This is SMPlayer v. %1 running on %2\n")
+            .arg(VERSION)
 #ifdef Q_OS_LINUX
-           "Linux"
+           .arg("Linux")
 #else
 #ifdef Q_OS_WIN
-           "Windows"
+           .arg("Windows")
 #else
-		   "Other OS"
+		   .arg("Other OS")
 #endif
 #endif
-		);
+           .toLocal8Bit() );
+
 	qDebug("Qt v. " QT_VERSION_STR);
 
 	qDebug(" * application path: '%s'", Helper::appPath().toUtf8().data());
@@ -101,6 +101,33 @@ void showInfo() {
 	qDebug(" * smplayer home path: '%s'", Helper::appHomePath().toUtf8().data());
 }
 
+void showHelp(QString app_name) {
+	printf( QObject::tr("Usage: %1 [-ini-path [directory]] "
+                        "[-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] "
+                        "[[-playlist] media]...\n").arg(app_name).toLocal8Bit() );
+
+	printf( QObject::tr(
+		"         -ini-path: specifies the directory for the configuration file\n"
+        "                    (smplayer.ini). If directory is omitted, the application\n"
+        "                    directory will be used.\n").toLocal8Bit() );
+	printf( QObject::tr(
+		"           -action: tries to make a connection to another running instance\n"
+        "                    and send to it the specified action. Example: -action pause\n"
+        "                    The rest of options (if any) will be ignored and the\n"
+        "                    application will exit. It will return 0 on success or -1\n"
+        "                    on failure.\n").toLocal8Bit() );
+	printf( QObject::tr(
+		"     -close-at-end: the main window will be closed when the file/playlist finish\n").toLocal8Bit() );
+	printf( QObject::tr(
+		"             -help: will show this message and then will exit.\n").toLocal8Bit() );
+	printf( QObject::tr(
+		"             media: 'media' is any kind of file that SMPlayer can open. It can\n"
+        "                    be a local file, a DVD (e.g. dvd://1), an Internet stream\n"
+        "                    (e.g. mms://....) or a local playlist in format m3u.\n"
+        "                    If the -playlist option is used, that means that SMPlayer\n"
+        "                    will pass the -playlist option to MPlayer, so MPlayer will\n"
+        "                    will handle the playlist, not SMPlayer.\n").toLocal8Bit() );
+}
 
 int main( int argc, char ** argv ) 
 {
@@ -133,12 +160,17 @@ int main( int argc, char ** argv )
 		ini_path = Helper::appPath();
 	}
 
+	bool close_at_end = false;
+	bool show_help = false;
+
 	// Deleted KDE code
 	// ...
 
 	// Qt code
 	int arg_init = 1;
 	int arg_count = a.arguments().count();
+
+	bool is_playlist = false;
 
 	if ( arg_count > arg_init ) {
 		for (int n=arg_init; n < arg_count; n++) {
@@ -162,9 +194,27 @@ int main( int argc, char ** argv )
 					return -1;
 				}
 			}
+			else
+			if (argument == "-playlist") {
+				is_playlist = true;
+			}
+			else
+			if ((argument == "--help") || (argument == "-help") ||
+                (argument == "-h") || (argument == "-?") ) {
+				show_help = true;
+			}
+			else
+			if (argument == "-close-at-end") {
+				close_at_end = true;
+			}
 			else {
+				// File
 				if (QFile::exists( argument )) {
 					argument = QFileInfo(argument).absoluteFilePath();
+				}
+				if (is_playlist) {
+					argument = argument + IS_PLAYLIST_TAG;
+					is_playlist = false;
 				}
 				files_to_play.append( argument );
 			}
@@ -176,12 +226,17 @@ int main( int argc, char ** argv )
 
 	qInstallMsgHandler( myMessageOutput );
 
+	// Application translations
+	translator->load( pref->language );
+
 	showInfo();
 	// FIXME: this should be in showInfo() ?
 	qDebug(" * ini path: '%s'", ini_path.toUtf8().data());
 
-	// Application translations
-	translator->load( pref->language );
+	if (show_help) {
+		showHelp(app_name);
+		return 0;
+	}
 
 	qDebug("main: files_to_play: count: %d", files_to_play.count() );
 	for (int n=0; n < files_to_play.count(); n++) {
@@ -222,7 +277,7 @@ int main( int argc, char ** argv )
 	}
 
 	DefaultGui * w = new DefaultGui(0);
-	//w->loadActions();
+	w->setExitOnFinish( close_at_end );
 
 	if (!w->startHidden() || !files_to_play.isEmpty() ) w->show();
 	if (!files_to_play.isEmpty()) w->openFiles(files_to_play);

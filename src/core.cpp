@@ -981,8 +981,8 @@ void Core::startMplayer( QString file, double seek )
 	}
 
 	// URL
-	bool url_is_playlist = file.endsWith("|smplayer:isplaylist");
-	if (url_is_playlist) file = file.remove( QRegExp("\\|smplayer\\:isplaylist$") );
+	bool url_is_playlist = file.endsWith(IS_PLAYLIST_TAG);
+	if (url_is_playlist) file = file.remove( QRegExp(IS_PLAYLIST_TAG_RX) );
 
 	proc->clearArguments();
 
@@ -1502,12 +1502,6 @@ void Core::startMplayer( QString file, double seek )
 		proc->addArgument("0");
 	}
 
-	if (url_is_playlist) {
-		proc->addArgument("-playlist");
-	}
-
-	proc->addArgument( file );
-
 	// Additional options supplied by the user
 	// File
 	if (!mset.mplayer_additional_options.isEmpty()) {
@@ -1528,8 +1522,16 @@ void Core::startMplayer( QString file, double seek )
 		}
 	}
 
+	// File to play
+	if (url_is_playlist) {
+		proc->addArgument("-playlist");
+	}
+
+	proc->addArgument( file );
+
 	//Log command
 	//mplayer_log = "Command: \n";
+	/*
 	QString commandline;
     QStringList list = proc->arguments();
     QStringList::Iterator it = list.begin();
@@ -1538,6 +1540,8 @@ void Core::startMplayer( QString file, double seek )
 		commandline += " ";
         ++it;
     }
+	*/
+	QString commandline = proc->arguments().join(" ");
 	mplayer_log += commandline + "\n\n";
 	qDebug("Core::startMplayer: command: '%s'", commandline.toUtf8().data());
 

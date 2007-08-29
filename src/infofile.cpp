@@ -20,6 +20,7 @@
 #include <QFileInfo>
 #include "helper.h"
 #include "config.h"
+#include "constants.h"
 
 InfoFile::InfoFile( QObject * parent ) : QObject(parent) 
 {
@@ -64,8 +65,8 @@ QString InfoFile::getInfo(MediaData md) {
                                   .arg(fi.size()/1048576) );
 	} else {
 		QString url = md.filename;
-		if (url.endsWith("|smplayer:isplaylist")) {
-			url = url.remove( QRegExp("\\|smplayer\\:isplaylist$") );
+		if (url.endsWith(IS_PLAYLIST_TAG)) {
+			url = url.remove( QRegExp(IS_PLAYLIST_TAG_RX) );
 		}
 		s += addItem( tr("URL"), url );
 	}
