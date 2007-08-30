@@ -360,7 +360,7 @@ Voulez-vous l&apos;écraser ?</translation>
     <message>
         <location filename="../basegui.cpp" line="759"/>
         <source>&amp;Postprocessing</source>
-        <translation>&amp;Postprocessing</translation>
+        <translation>&amp;Post-traitement</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="760"/>
@@ -370,12 +370,12 @@ Voulez-vous l&apos;écraser ?</translation>
     <message>
         <location filename="../basegui.cpp" line="761"/>
         <source>&amp;Deblock</source>
-        <translation>&amp;Débloquer</translation>
+        <translation>&amp;De-blocking</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="762"/>
         <source>De&amp;ring</source>
-        <translation>De&amp;ring</translation>
+        <translation>De-&amp;ringing</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="763"/>
@@ -525,7 +525,7 @@ Voulez-vous l&apos;écraser ?</translation>
     <message>
         <location filename="../basegui.cpp" line="869"/>
         <source>&amp;Recent files</source>
-        <translation>&amp;Fichier récents</translation>
+        <translation>&amp;Fichiers récents</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="871"/>
@@ -1473,7 +1473,7 @@ Exemple : resample=44100:0:0,volnorm</translation>
     <message>
         <location filename="../infofile.cpp" line="86"/>
         <source>Copyright</source>
-        <translation>Copyright</translation>
+        <translation>Copyrights</translation>
     </message>
     <message>
         <location filename="../infofile.cpp" line="87"/>
@@ -1631,17 +1631,17 @@ Exemple : resample=44100:0:0,volnorm</translation>
     <message>
         <location filename="../inputurl.ui" line="13"/>
         <source>SMPlayer - Enter URL</source>
-        <translation type="unfinished">SMPlayer - Entrez une URL</translation>
+        <translation>SMPlayer - Entrez une URL</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="83"/>
         <source>&amp;URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;URL :</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="49"/>
         <source>It&apos;s a &amp;playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Liste de lecture</translation>
     </message>
 </context>
 <context>
@@ -1869,7 +1869,7 @@ Voulez vous l&apos;écraser?</translation>
     <message>
         <location filename="../playlist.cpp" line="582"/>
         <source>There are unsaved changes, do you want to save the playlist?</source>
-        <translation>Des changements ont été faits dans cette playlist, voulez-vous enregistrer ?</translation>
+        <translation>Des changements ont été faits dans cette liste de lecture, voulez-vous enregistrer ?</translation>
     </message>
 </context>
 <context>
@@ -2385,12 +2385,12 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
     <message>
         <location filename="../prefgeneral.cpp" line="393"/>
         <source>Postprocessing quality</source>
-        <translation>Qualité postprocessing</translation>
+        <translation>Qualité post-traitement</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="396"/>
         <source>Dynamically changes the level of postprocessing depending on the available spare CPU time. The number you specify will be the maximum level used. Usually you can use some big number.</source>
-        <translation>Changer dynamiquement le niveau de postprocessing selon la charge CPU disponible. Le nombre spécifié sera le niveau maximum. Généralement, vous pouvez choisir de grands nombres.</translation>
+        <translation>Changer dynamiquement le niveau de post-traitement selon la charge CPU disponible. Le nombre spécifié sera le niveau maximum. Généralement, vous pouvez choisir de grands nombres.</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="421"/>
@@ -2550,7 +2550,7 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
     <message>
         <location filename="../prefgeneral.ui" line="380"/>
         <source>&amp;Enable postprocessing by default</source>
-        <translation>&amp;Utiliser le postprocessing par défaut</translation>
+        <translation>&amp;Utiliser le post-traitement par défaut</translation>
     </message>
     <message>
         <location filename="../prefgeneral.ui" line="602"/>
@@ -2623,7 +2623,7 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
     <message>
         <location filename="../prefinput.ui" line="238"/>
         <source>&amp;Double click</source>
-        <translation>&amp;Double clic</translation>
+        <translation>&amp;Double-clic</translation>
     </message>
     <message>
         <location filename="../prefinput.ui" line="300"/>
@@ -2929,7 +2929,7 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
     <message>
         <location filename="../prefperformance.ui" line="53"/>
         <source>Select the priority for the MPlayer process.</source>
-        <translation>Sélectionner la priorité du processus MPlayer.</translation>
+        <translation>Sélectionnez la priorité du processus MPlayer.</translation>
     </message>
     <message>
         <location filename="../prefperformance.ui" line="74"/>
@@ -3399,7 +3399,8 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
         <location filename="../main.cpp" line="107"/>
         <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Usage : %1 [-ini-path [dossier]] [-action nom_action] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="112"/>
@@ -3407,7 +3408,7 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
                     (smplayer.ini). If directory is omitted, the application
                     directory will be used.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-ini-path: spécifie le dossier pour le fichier de configuration (smplayer.ini).</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="118"/>
@@ -3417,19 +3418,20 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
                     application will exit. It will return 0 on success or -1
                     on failure.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-action: essaye de faire une connexion avec une autre instance et lui envoie l&apos;action spécifiée.
+Exemple : -action pause Le reste des options (s&apos;il y en a) seront ignorés et l&apos;application quittera. Cela retournera 0 si succès, et -1 si erreur.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="120"/>
         <source>     -close-at-end: the main window will be closed when the file/playlist finish
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-close-at-end : la fenêtre principale sera fermée lorsque le fichier ou la liste de lecture sera fini(e)</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="122"/>
         <source>             -help: will show this message and then will exit.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-help : montrera un message et quittera.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="129"/>
@@ -3440,13 +3442,50 @@ Les listes déroulantes peuvent fournir des expressions régulières déjà fait
                     will pass the -playlist option to MPlayer, so MPlayer will
                     will handle the playlist, not SMPlayer.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">- media: &apos;media&apos; est le format de fichier que peut ouvrir SMPlayer. Il peut être local (dvd://1), externe comme un Stream internet (mms://...) ou une liste de lecture (format m3u).
+Si -playlist est utilisée, cela veut dire que SMPlayer passera l&apos;information à MPlayer. Alors c&apos;est MPlayer qui tiendra la liste de lectue, pas SMPlayer.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="81"/>
         <source>This is SMPlayer v. %1 running on %2
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">SMPlayer v. %1 fonctionnant sur %2
+</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="81"/>
+        <source>This is SMPlayer v. %1 running on %2</source>
+        <translation>SMPlayer v. %1 fonctionnant sur %2</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
+        <translation>Usage : %1 [-ini-path [dossier]] [-action nom_action] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
+        <translation>spécifie le dossier pour le fichier de configuration (smplayer.ini).</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
+        <translation>essaye de faire une connexion avec une autre instance et lui envoie l&apos;action spécifiée. Exemple : -action pause Le reste des options (s&apos;il y en a) seront ignorés et l&apos;application quittera. Cela retournera 0 si succès, et -1 si erreur.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
+        <translation>la fenêtre principale sera fermée lorsque le fichier ou la liste de lecture sera fini(e).</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
+        <translation>montrera un message et quittera.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
+        <translation>&apos;media&apos; est le format de fichier que peut ouvrir SMPlayer. Il peut être local (dvd://1), externe comme un Stream internet (mms://...) ou une liste de lecture (format m3u). Si -playlist est utilisée, cela veut dire que SMPlayer passera l&apos;information à MPlayer. Alors c&apos;est MPlayer qui tiendra la liste de lectue, pas SMPlayer.</translation>
     </message>
 </context>
 <context>

@@ -3143,48 +3143,49 @@ The drop-down lists may provide already made regular expression for several lang
     <message>
         <location filename="../helper.cpp" line="198"/>
         <source>1 second</source>
-        <translation type="unfinished">1 секунда</translation>
+        <translation>1 секунда</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="200"/>
         <source>%1 seconds</source>
-        <translation type="unfinished">секунд: %1</translation>
+        <translation>секунд: %1</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="213"/>
         <source>%1 minutes</source>
-        <translation type="unfinished">хвилин: %1</translation>
+        <translation>хвилин: %1</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="218"/>
         <source>%1 minutes and %2 seconds</source>
-        <translation type="unfinished">хвилин: %1, секунд: %2</translation>
+        <translation>хвилин: %1, секунд: %2</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="205"/>
         <source>1 minute</source>
-        <translation type="unfinished">1 хвилина</translation>
+        <translation>1 хвилина</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="208"/>
         <source>1 minute and 1 second</source>
-        <translation type="unfinished">1 хвилина та 1 секунда</translation>
+        <translation>1 хвилина та 1 секунда</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="210"/>
         <source>1 minute and %1 seconds</source>
-        <translation type="unfinished">1 хвилина, секунд: %1</translation>
+        <translation>1 хвилина, секунд: %1</translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="216"/>
         <source>%1 minutes and 1 second</source>
-        <translation type="unfinished">хвилин: %1, 1 секунда</translation>
+        <translation>хвилин: %1, 1 секунда</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Використання: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="112"/>
@@ -3192,7 +3193,7 @@ The drop-down lists may provide already made regular expression for several lang
                     (smplayer.ini). If directory is omitted, the application
                     directory will be used.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-ini-path: вказати теку з конфігураційним файлом (smplayer.ini). Якщо тека вказана - програма її буде використовувати.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="118"/>
@@ -3202,19 +3203,25 @@ The drop-down lists may provide already made regular expression for several lang
                     application will exit. It will return 0 on success or -1
                     on failure.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-action: спробувати встановити з&apos;єднання з іншим працюючим програвачем та надіслати йому вказану дію.
+Приклад: -action pause
+Інша частина варіантів (або будь-які) будуть проігноровані та програма закріється. Повертається 0 при вдалому
+виконанні та 1 при помилці.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="120"/>
         <source>     -close-at-end: the main window will be closed when the file/playlist finish
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-close-at-end: головне вікно закриється, коли скінчиться відтворення файлу чи списку
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="122"/>
         <source>             -help: will show this message and then will exit.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">-help: відобразити це повідомлення та вийти.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="129"/>
@@ -3225,13 +3232,50 @@ The drop-down lists may provide already made regular expression for several lang
                     will pass the -playlist option to MPlayer, so MPlayer will
                     will handle the playlist, not SMPlayer.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">media: &apos;media&apos; будь-який файл, який SMPlayer може відкрити. Це може бути локальний файл, DVD (наприклад dvd://1), інтернет-потік (наприклад mms://....) чи локальний список у форматі m3u.
+Якщо буде використано опцю -playlist, то SMPlayer передать опцію -playlist на MPlayer, таким чином список буде оброблюватися не SMPlayer, а MPlayer.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="81"/>
         <source>This is SMPlayer v. %1 running on %2
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Це SMPlayer v. %1 запущений на %2</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="81"/>
+        <source>This is SMPlayer v. %1 running on %2</source>
+        <translation>Це SMPlayer v. %1 запущений на %2</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
+        <translation>Використання: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
+        <translation>вказати теку з конфігураційним файлом (smplayer.ini). Якщо тека вказана - програма її буде використовувати.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
+        <translation>спробувати встановити з&apos;єднання з іншим працюючим програвачем та надіслати йому вказану дію. Приклад: -action pause Інша частина варіантів (або будь-які) будуть проігноровані та програма закріється. Повертається 0 при вдалому виконанні та 1 при помилці.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
+        <translation>головне вікно закриється, коли скінчиться відтворення файлу чи списку.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
+        <translation>відобразити це повідомлення та вийти.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
+        <translation>&apos;media&apos; будь-який файл, який SMPlayer може відкрити. Це може бути локальний файл, DVD (наприклад dvd://1), інтернет-потік (наприклад mms://....) чи локальний список у форматі m3u. Якщо буде використано опцю -playlist, то SMPlayer передать опцію -playlist на MPlayer, таким чином список буде оброблюватися не SMPlayer, а MPlayer.</translation>
     </message>
 </context>
 <context>

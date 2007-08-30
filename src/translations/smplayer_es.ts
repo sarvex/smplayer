@@ -3399,7 +3399,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
         <location filename="../main.cpp" line="107"/>
         <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
 </source>
-        <translation>Mode de uso: %1 [-ini-path [directorio]] [-action nombre_de_acción] [-close-at-end] [-help|--help|-h|-?] [[-playlist] medio] [[-playlist] medio]...
+        <translation type="obsolete">Mode de uso: %1 [-ini-path [directorio]] [-action nombre_de_acción] [-close-at-end] [-help|--help|-h|-?] [[-playlist] medio] [[-playlist] medio]...
 </translation>
     </message>
     <message>
@@ -3408,7 +3408,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
                     (smplayer.ini). If directory is omitted, the application
                     directory will be used.
 </source>
-        <translation>         -ini-path: especifica el directorio del fichero de configuración 
+        <translation type="obsolete">         -ini-path: especifica el directorio del fichero de configuración 
                     (smplayer.ini). Si se omite el directorio, se usará el 
                     directorio del programa.
 </translation>
@@ -3421,7 +3421,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
                     application will exit. It will return 0 on success or -1
                     on failure.
 </source>
-        <translation>           -action: intenta realizar una conexión con otra instancia del 
+        <translation type="obsolete">           -action: intenta realizar una conexión con otra instancia del 
                     programa, y le enviará la acción especificada. 
                     Ejemplo: -action pause. El resto de opciones (si hay) se 
                     ignorarán y el programa finalizará. Retornará 0 si todo va 
@@ -3432,7 +3432,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
         <location filename="../main.cpp" line="120"/>
         <source>     -close-at-end: the main window will be closed when the file/playlist finish
 </source>
-        <translation>     -close-at-end: la ventana principal se cerrará cuando el fichero/lista de
+        <translation type="obsolete">     -close-at-end: la ventana principal se cerrará cuando el fichero/lista de
                     reproducción llege al final
 </translation>
     </message>
@@ -3440,7 +3440,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
         <location filename="../main.cpp" line="122"/>
         <source>             -help: will show this message and then will exit.
 </source>
-        <translation>             -help: mostrará este mensaje.
+        <translation type="obsolete">             -help: mostrará este mensaje.
 </translation>
     </message>
     <message>
@@ -3452,7 +3452,7 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
                     will pass the -playlist option to MPlayer, so MPlayer will
                     will handle the playlist, not SMPlayer.
 </source>
-        <translation>             medio: &apos;medio&apos; es cualquier tipo de archivo que SMPlayer pueda 
+        <translation type="obsolete">             medio: &apos;medio&apos; es cualquier tipo de archivo que SMPlayer pueda 
                     abrir. Puede ser un fichero local, un DVD (p.e. dvd://1), 
                     un stream de internet (p.e mms://....) o una lista de
                     reproducción local en formato m3u. Si se usa la opción 
@@ -3465,8 +3465,48 @@ Los combos proporcionan algunas expresiones regulares ya hechas para varios idio
         <location filename="../main.cpp" line="81"/>
         <source>This is SMPlayer v. %1 running on %2
 </source>
-        <translation>Esto es SMPlayer v. %1 ejecutándose en %2
+        <translation type="obsolete">Esto es SMPlayer v. %1 ejecutándose en %2
 </translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
+        <translation>Mode de uso: %1 [-ini-path [directorio]] [-action nombre_de_acción] [-close-at-end] [-help|--help|-h|-?] [[-playlist] medio] [[-playlist] medio]...</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
+        <translation>especifica el directorio del fichero de configuración (smplayer.ini). Si se omite el directorio, se usará el directorio del programa.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
+        <translation>intenta realizar una conexión con otra instancia del programa, y le enviará la acción especificada. Ejemplo: -action pause. El resto de opciones (si hay) se ignorarán y el programa finalizará. Retornará 0 si todo va bien o -1 si se produce algún fallo.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes</source>
+        <translation type="obsolete">la ventana principal se cerrará cuando el fichero/lista de reproducción llege al final</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
+        <translation>mostrará este mensaje.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
+        <translation>&apos;medio&apos; es cualquier tipo de archivo que SMPlayer pueda abrir. Puede ser un fichero local, un DVD (p.e. dvd://1), un stream de internet (p.e mms://....) o una lista de reproducción local en formato m3u. Si se usa la opción -playlist, SMPlayer pasará la opción -playlist a MPlayer, por tanto será MPlayer quien controle la lista de reproducción, y no SMPlayer.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
+        <translation>la ventana principal se cerrará cuando el fichero/lista de reproducción llege al final.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="81"/>
+        <source>This is SMPlayer v. %1 running on %2</source>
+        <translation>SMPlayer v. %1 ejecutándose en %2</translation>
     </message>
 </context>
 <context>

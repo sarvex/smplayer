@@ -1079,7 +1079,7 @@ O fereastră de dialog va fi afişată pentru a putea face configurarea.</transl
     <message>
         <location filename="../baseguiplus.cpp" line="154"/>
         <source>Playlist</source>
-        <translation type="unfinished">Listă_Titluri</translation>
+        <translation>Listă_Titluri</translation>
     </message>
 </context>
 <context>
@@ -1615,17 +1615,17 @@ Example: resample=44100:0:0,volnorm</source>
     <message>
         <location filename="../inputurl.ui" line="13"/>
         <source>SMPlayer - Enter URL</source>
-        <translation type="unfinished"></translation>
+        <translation>SMPlayer - Introduceţi URL</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="83"/>
         <source>&amp;URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;UR:</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="49"/>
         <source>It&apos;s a &amp;playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Este o &amp;listă de titluri</translation>
     </message>
 </context>
 <context>
@@ -1871,7 +1871,7 @@ Doriţi suprascrierea?</translation>
     <message>
         <location filename="../prefadvanced.ui" line="13"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../prefadvanced.ui" line="32"/>
@@ -2524,7 +2524,7 @@ The drop-down lists may provide already made regular expression for several lang
     <message>
         <location filename="../prefgeneral.ui" line="435"/>
         <source>Dou&amp;ble buffering</source>
-        <translation type="unfinished"></translation>
+        <translation>Mărime du&amp;blă buffer</translation>
     </message>
     <message>
         <location filename="../prefgeneral.cpp" line="406"/>
@@ -3378,7 +3378,8 @@ The drop-down lists may provide already made regular expression for several lang
         <location filename="../main.cpp" line="107"/>
         <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Utilizare: %1 [-ini-path [director]] [-action numele_acţiunii] [-close-at-end] [-help|--help|-h|-?] [[-playlist] tip_media] [[-playlist] tip_media]...
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="112"/>
@@ -3386,7 +3387,10 @@ The drop-down lists may provide already made regular expression for several lang
                     (smplayer.ini). If directory is omitted, the application
                     directory will be used.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)-ini-path: indică directorul pentru fişierul de configurare
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(smplayer.ini). Dacă directorul este omis, atunci va fi folosit
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)directorul programului.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="118"/>
@@ -3396,19 +3400,26 @@ The drop-down lists may provide already made regular expression for several lang
                     application will exit. It will return 0 on success or -1
                     on failure.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)-action: încearcă să stabilească legătura cu altă sesiune care 
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)şi să trimită către aceasta comanda specificată. Exemplu: -action pause
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)Restul opţiunilor (dacă există) vor fi ignorate şi
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)aplicaţia se va închide. Se va returna 0 în caz de reuşită
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)şi -1 în caz de eşec.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="120"/>
         <source>     -close-at-end: the main window will be closed when the file/playlist finish
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">(sp)(sp)(sp)(sp)(sp)-close-at-end: fereastra principală se va închide când lista de titluri a ost epuizată
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="122"/>
         <source>             -help: will show this message and then will exit.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)-help: va afişa conţinutul acestui mesaj.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="129"/>
@@ -3419,13 +3430,55 @@ The drop-down lists may provide already made regular expression for several lang
                     will pass the -playlist option to MPlayer, so MPlayer will
                     will handle the playlist, not SMPlayer.
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)media: &apos;media&apos; reprezintă orice tip de fişier pe SMPlayer îl poate reda. Acesta poate
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)fi un fişier aflat pe hard disc, un DVD (ex.: dvd://1), un flux de date de pe internet
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(ex.: mms://....) sau o listă de titluri în format m3u.
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)Dacă este folosită opţiunea -playlist, înseamnă că SMPlayer
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)va transmite opţiunea -playlist către MPlayer, astfel MPlayer va fi
+(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)(sp)cel care manipulează lista de titluri şi nu SMPlayer.
+</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="81"/>
         <source>This is SMPlayer v. %1 running on %2
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Acesta este SMPlayer v. %1 rulând pe %2
+</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="81"/>
+        <source>This is SMPlayer v. %1 running on %2</source>
+        <translation>Acesta este SMPlayer v. %1 rulând pe %2</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
+        <translation>Utilizare: %1 [-ini-path [director]] [-action numele_acţiunii] [-close-at-end] [-help|--help|-h|-?] [[-playlist] tip_media] [[-playlist] tip_media]...</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
+        <translation>indică directorul pentru fişierul de configurare (smplayer.ini). Dacă directorul este omis, atunci va fi folosit directorul programului.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
+        <translation>încearcă să stabilească legătura cu altă sesiune care şi să trimită către aceasta comanda specificată. Exemplu: -action pause Restul opţiunilor (dacă există) vor fi ignorate şi aplicaţia se va închide. Se va returna 0 în caz de reuşită şi -1 în caz de eşec.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
+        <translation>fereastra principală se va închide când lista de titluri a ost epuizată.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
+        <translation>va afişa conţinutul acestui mesaj.</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
+        <translation>&apos;media&apos; reprezintă orice tip de fişier pe SMPlayer îl poate reda. Acesta poate fi un fişier aflat pe hard disc, un DVD (ex.: dvd://1), un flux de date de pe internet (ex.: mms://....) sau o listă de titluri în format m3u. Dacă este folosită opţiunea -playlist, înseamnă că SMPlayer va transmite opţiunea -playlist către MPlayer, astfel MPlayer va fi cel care manipulează lista de titluri şi nu SMPlayer.</translation>
     </message>
 </context>
 <context>

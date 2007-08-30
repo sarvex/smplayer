@@ -999,16 +999,6 @@ The configuration dialog will be shown now, so you can do it.</source>
         <source>Denoise o&amp;ff</source>
         <translation>Убрать голос - &amp;выключено</translation>
     </message>
-    <message>
-        <location filename="../basegui.cpp" line="2011"/>
-        <source>SMPlayer - Enter URL</source>
-        <translation type="obsolete">SMPlayer - укажите URL</translation>
-    </message>
-    <message>
-        <location filename="../basegui.cpp" line="2011"/>
-        <source>URL:</source>
-        <translation type="obsolete">URL:</translation>
-    </message>
 </context>
 <context>
     <name>BaseGuiPlus</name>
@@ -1040,7 +1030,7 @@ The configuration dialog will be shown now, so you can do it.</source>
     <message>
         <location filename="../baseguiplus.cpp" line="154"/>
         <source>Playlist</source>
-        <translation type="unfinished">Список</translation>
+        <translation>Список</translation>
     </message>
 </context>
 <context>
@@ -1102,11 +1092,6 @@ The configuration dialog will be shown now, so you can do it.</source>
         <location filename="../defaultgui.cpp" line="351"/>
         <source>Subtitle</source>
         <translation>Субтитры</translation>
-    </message>
-    <message>
-        <location filename="" line="6357106"/>
-        <source>Playlist</source>
-        <translation type="obsolete">Список</translation>
     </message>
     <message>
         <location filename="../defaultgui.cpp" line="341"/>
@@ -1581,17 +1566,17 @@ Example: resample=44100:0:0,volnorm</source>
     <message>
         <location filename="../inputurl.ui" line="13"/>
         <source>SMPlayer - Enter URL</source>
-        <translation type="unfinished">SMPlayer - укажите URL</translation>
+        <translation>SMPlayer - укажите URL</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="83"/>
         <source>&amp;URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;URL:</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="49"/>
         <source>It&apos;s a &amp;playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cписок воспроизведения</translation>
     </message>
 </context>
 <context>
@@ -2894,7 +2879,7 @@ The drop-down lists may provide already made regular expression for several lang
     <message>
         <location filename="../prefperformance.ui" line="312"/>
         <source>Fact&amp;or:</source>
-        <translation type="unfinished"></translation>
+        <translation>По&amp;казатель:</translation>
     </message>
     <message>
         <location filename="../prefperformance.ui" line="359"/>
@@ -3196,56 +3181,38 @@ The drop-down lists may provide already made regular expression for several lang
         <translation>%1 минут и 1 секунда</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="107"/>
-        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
-</source>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="112"/>
-        <source>         -ini-path: specifies the directory for the configuration file
-                    (smplayer.ini). If directory is omitted, the application
-                    directory will be used.
-</source>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="118"/>
-        <source>           -action: tries to make a connection to another running instance
-                    and send to it the specified action. Example: -action pause
-                    The rest of options (if any) will be ignored and the
-                    application will exit. It will return 0 on success or -1
-                    on failure.
-</source>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="120"/>
-        <source>     -close-at-end: the main window will be closed when the file/playlist finish
-</source>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="122"/>
-        <source>             -help: will show this message and then will exit.
-</source>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="129"/>
-        <source>             media: &apos;media&apos; is any kind of file that SMPlayer can open. It can
-                    be a local file, a DVD (e.g. dvd://1), an Internet stream
-                    (e.g. mms://....) or a local playlist in format m3u.
-                    If the -playlist option is used, that means that SMPlayer
-                    will pass the -playlist option to MPlayer, so MPlayer will
-                    will handle the playlist, not SMPlayer.
-</source>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="81"/>
-        <source>This is SMPlayer v. %1 running on %2
-</source>
+        <source>This is SMPlayer v. %1 running on %2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

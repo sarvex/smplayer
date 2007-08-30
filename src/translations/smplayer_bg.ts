@@ -3331,56 +3331,38 @@ The drop-down lists may provide already made regular expression for several lang
         <translation>%1 минути и 1 секунда</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="107"/>
-        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...
-</source>
+        <location filename="../main.cpp" line="166"/>
+        <source>Usage: %1 [-ini-path [directory]] [-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] [[-playlist] media]...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="112"/>
-        <source>         -ini-path: specifies the directory for the configuration file
-                    (smplayer.ini). If directory is omitted, the application
-                    directory will be used.
-</source>
+        <location filename="../main.cpp" line="171"/>
+        <source>specifies the directory for the configuration file (smplayer.ini). If directory is omitted, the application directory will be used.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="118"/>
-        <source>           -action: tries to make a connection to another running instance
-                    and send to it the specified action. Example: -action pause
-                    The rest of options (if any) will be ignored and the
-                    application will exit. It will return 0 on success or -1
-                    on failure.
-</source>
+        <location filename="../main.cpp" line="178"/>
+        <source>tries to make a connection to another running instance and send to it the specified action. Example: -action pause The rest of options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on failure.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="120"/>
-        <source>     -close-at-end: the main window will be closed when the file/playlist finish
-</source>
+        <location filename="../main.cpp" line="184"/>
+        <source>will show this message and then will exit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="122"/>
-        <source>             -help: will show this message and then will exit.
-</source>
+        <location filename="../main.cpp" line="192"/>
+        <source>&apos;media&apos; is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream (e.g. mms://....) or a local playlist in format m3u. If the -playlist option is used, that means that SMPlayer will pass the -playlist option to MPlayer, so MPlayer will handle the playlist, not SMPlayer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="129"/>
-        <source>             media: &apos;media&apos; is any kind of file that SMPlayer can open. It can
-                    be a local file, a DVD (e.g. dvd://1), an Internet stream
-                    (e.g. mms://....) or a local playlist in format m3u.
-                    If the -playlist option is used, that means that SMPlayer
-                    will pass the -playlist option to MPlayer, so MPlayer will
-                    will handle the playlist, not SMPlayer.
-</source>
+        <location filename="../main.cpp" line="181"/>
+        <source>the main window will be closed when the file/playlist finishes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="81"/>
-        <source>This is SMPlayer v. %1 running on %2
-</source>
+        <source>This is SMPlayer v. %1 running on %2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

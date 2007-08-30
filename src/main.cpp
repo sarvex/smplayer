@@ -77,7 +77,7 @@ void myMessageOutput( QtMsgType type, const char *msg ) {
 }
 
 void showInfo() {
-	printf( QObject::tr("This is SMPlayer v. %1 running on %2\n")
+	printf( "%s\n", QObject::tr("This is SMPlayer v. %1 running on %2")
             .arg(VERSION)
 #ifdef Q_OS_LINUX
            .arg("Linux")
@@ -88,7 +88,7 @@ void showInfo() {
 		   .arg("Other OS")
 #endif
 #endif
-           .toLocal8Bit() );
+           .toLocal8Bit().data() );
 
 	qDebug("Qt v. " QT_VERSION_STR);
 
@@ -101,36 +101,122 @@ void showInfo() {
 	qDebug(" * smplayer home path: '%s'", Helper::appHomePath().toUtf8().data());
 }
 
-void showHelp(QString app_name) {
-	printf( QObject::tr("Usage: %1 [-ini-path [directory]] "
-                        "[-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] "
-                        "[[-playlist] media]...\n").arg(app_name).toLocal8Bit() );
+QString formatText(QString s, int col) {
+	QString res = "";
 
-	printf( QObject::tr(
-		"         -ini-path: specifies the directory for the configuration file\n"
-        "                    (smplayer.ini). If directory is omitted, the application\n"
-        "                    directory will be used.\n").toLocal8Bit() );
-	printf( QObject::tr(
-		"           -action: tries to make a connection to another running instance\n"
-        "                    and send to it the specified action. Example: -action pause\n"
-        "                    The rest of options (if any) will be ignored and the\n"
-        "                    application will exit. It will return 0 on success or -1\n"
-        "                    on failure.\n").toLocal8Bit() );
-	printf( QObject::tr(
-		"     -close-at-end: the main window will be closed when the file/playlist finish\n").toLocal8Bit() );
-	printf( QObject::tr(
-		"             -help: will show this message and then will exit.\n").toLocal8Bit() );
-	printf( QObject::tr(
-		"             media: 'media' is any kind of file that SMPlayer can open. It can\n"
-        "                    be a local file, a DVD (e.g. dvd://1), an Internet stream\n"
-        "                    (e.g. mms://....) or a local playlist in format m3u.\n"
-        "                    If the -playlist option is used, that means that SMPlayer\n"
-        "                    will pass the -playlist option to MPlayer, so MPlayer will\n"
-        "                    will handle the playlist, not SMPlayer.\n").toLocal8Bit() );
+	int last = 0;
+	int pos;
+
+	pos = s.indexOf(" ");
+	while (pos != -1) {
+
+		if (s.count() < col) {
+			res = res + s;
+			s = "";
+			break;
+		}
+
+		while ((pos < col) && (pos != -1)) {
+		last = pos;
+		pos = s.indexOf(" ", pos+1);
+		}
+
+		res = res + s.left(last) + "\n";
+		s = s.mid(last+1);
+
+		last = 0;
+		pos = s.indexOf(" ");
+
+	}
+
+	if (!s.isEmpty()) res = res + s;
+
+	return res;
+}
+
+QString formatHelp(QString parameter, QString help) {
+	int par_width = 20;
+	int help_width = 80 - par_width;
+
+	QString s;
+	s = s.fill( ' ', par_width - (parameter.count()+2) );
+	s = s + parameter + ": ";
+
+	QString f;
+	f = f.fill(' ', par_width);
+
+	QString s2 = formatText(help, help_width);
+	int pos = s2.indexOf('\n');
+	while (pos != -1) {
+		s2 = s2.insert(pos+1, f);
+		pos = s2.indexOf('\n', pos+1);
+	}
+
+	return s + s2;
+}
+
+void printHelp(QString parameter, QString help) {
+	QString s = formatHelp(parameter, help);
+	printf( "%s\n", s.toLocal8Bit().data() );
+}
+
+void showHelp(QString app_name) {
+	printf( "%s\n", formatText(QObject::tr("Usage: %1 [-ini-path [directory]] "
+                        "[-action action_name] [-close-at-end] [-help|--help|-h|-?] [[-playlist] media] "
+                        "[[-playlist] media]...").arg(app_name), 80).toLocal8Bit().data() );
+
+	printHelp( "-ini-path", QObject::tr(
+		"specifies the directory for the configuration file "
+        "(smplayer.ini). If directory is omitted, the application "
+        "directory will be used.") );
+
+	printHelp( "-action", QObject::tr(
+		"tries to make a connection to another running instance "
+        "and send to it the specified action. Example: -action pause "
+        "The rest of options (if any) will be ignored and the "
+        "application will exit. It will return 0 on success or -1 "
+        "on failure.") );
+
+	printHelp( "-close-at-end", QObject::tr(
+		"the main window will be closed when the file/playlist finishes.") );
+
+	printHelp( "-help", QObject::tr(
+		"will show this message and then will exit.") );
+
+	printHelp( "media", QObject::tr(
+		"'media' is any kind of file that SMPlayer can open. It can "
+        "be a local file, a DVD (e.g. dvd://1), an Internet stream "
+        "(e.g. mms://....) or a local playlist in format m3u. "
+        "If the -playlist option is used, that means that SMPlayer "
+        "will pass the -playlist option to MPlayer, so MPlayer will "
+        "handle the playlist, not SMPlayer.") );
 }
 
 int main( int argc, char ** argv ) 
 {
+
+	/*
+	QString s = formatText(
+		"-action: tries to make a connection to another running instance "
+        "and send to it the specified action. Example: -action pause. "
+        "The rest of options (if any) will be ignored and the "
+        "application will exit. It will return 0 on success or -1 "
+        "on failure.", 60);
+	printf("%s\n", s.toLocal8Bit().data() );
+
+	printf("%s\n", formatText("Hola, qué tal estás", 40).toLocal8Bit().data());
+	
+
+	s = formatHelp("-action",
+		"tries to make a connection to another running instance "
+        "and send to it the specified action. Example: -action pause. "
+        "The rest of options (if any) will be ignored and the "
+        "application will exit. It will return 0 on success or -1 "
+        "on failure.");
+	printf("%s\n", s.toLocal8Bit().data() );
+	return 0;
+	*/
+
 	QApplication a( argc, argv );
 
 	QString app_path = a.applicationDirPath();
