@@ -9,9 +9,9 @@
 $lang_polls = array(
 'Poll'	=>	'Encuesta',
 'New poll'	=>	'Crear nueva encuesta',
-'New poll legend multiselect'	=>	'Set Info (Mutliselect Poll)',
-'New poll legend yesno'	=>	'Set Info (Multiselect Yes/No Poll)',
-'New poll legend'	=>	'Set Poll Info',
+'New poll legend multiselect'	=>	'Información (Encuesta Multiselección)',
+'New poll legend yesno'	=>	'Información (Encuesta Multiselección Sí/No)',
+'New poll legend'	=>	'Información sobre la encuesta',
 'Multiselect'	=>	'Encuesta Multiselección',
 'Yesno'	=>	'Encuesta Multiselección Sí/No',
 'Regular'	=>	'Encuesta normal',
