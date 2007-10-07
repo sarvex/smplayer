@@ -70,6 +70,11 @@ function check_cookie(&$pun_user)
 		if ($pun_user['save_pass'] == '0')
 			$expire = 0;
 
+		// MOD: MARK TOPICS AS READ - 4 LINES NEW CODE FOLLOW
+        if ($pun_user['read_topics'])
+			$pun_user['read_topics'] = unserialize($pun_user['read_topics']);
+		else
+			$pun_user['read_topics'] = array();
 		// Define this if you want this visit to affect the online list and the users last visit data
 		if (!defined('PUN_QUIET_VISIT'))
 		{
@@ -96,7 +101,8 @@ function check_cookie(&$pun_user)
 				// Special case: We've timed out, but no other user has browsed the forums since we timed out
 				if ($pun_user['logged'] < ($now-$pun_config['o_timeout_visit']))
 				{
-					$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$pun_user['logged'].' WHERE id='.$pun_user['id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
+					// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+					$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$pun_user['logged'].', read_topics=NULL WHERE id='.$pun_user['id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
 					$pun_user['last_visit'] = $pun_user['logged'];
 				}
 
@@ -253,7 +259,8 @@ function update_users_online()
 			// If the entry is older than "o_timeout_visit", update last_visit for the user in question, then delete him/her from the online list
 			if ($cur_user['logged'] < ($now-$pun_config['o_timeout_visit']))
 			{
-				$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$cur_user['logged'].' WHERE id='.$cur_user['user_id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
+				// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+				$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$cur_user['logged'].', read_topics=NULL WHERE id='.$cur_user['user_id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
 				$db->query('DELETE FROM '.$db->prefix.'online WHERE user_id='.$cur_user['user_id']) or error('Unable to delete from online list', __FILE__, __LINE__, $db->error());
 			}
 			else if ($cur_user['idle'] == '0')
@@ -1112,4 +1119,69 @@ function dump()
 
 	echo '</pre>';
 	exit;
+}
+
+// MOD: MARK TOPICS AS READ - NEW CODE TO END OF FILE
+
+function get_all_new_topics() {
+
+	global $db, $pun_user;
+	$result = $db->query('SELECT forum_id, id, last_post FROM '.$db->prefix.'topics WHERE last_post>'. $pun_user['last_visit'] .' AND moved_to IS NULL ORDER BY last_post DESC') or error('Unable to fetch new topics from forum', __FILE__, __LINE__, $db->error());
+	$new_topics = array();
+	while($new_topics_row = $db->fetch_assoc($result))
+		$new_topics[$new_topics_row['forum_id']][$new_topics_row['id']] = $new_topics_row['last_post'];
+    return $new_topics;
+}
+
+function forum_is_new($forum_id, $last_post_time) { // this function scares me but I believe all the logic is good.  Have fun :)
+	
+	global $pun_user, $new_topics;
+	
+	// first we try to do this the easy way.  
+	if ($pun_user['last_visit'] >= $last_post_time) { // were there no posts since the user's last visit?
+		return false;
+	} else if (!empty($pun_user['read_topics']['f'][$forum_id]) &&    // has the user marked all topics in 
+		$pun_user['read_topics']['f'][$forum_id] >= $last_post_time) { // the forum read since the last post?
+		return false;
+	} else if (empty($pun_user['read_topics']['t']) && empty($pun_user['read_topics']['f'])) { // is it even possible that any of the new posts could be read?
+		return true;
+	} else {
+		// now we must loop through all the "unread" topics in the forum and see if the user has read them.
+		foreach($new_topics[$forum_id] as $topic_id => $last_post) {
+			if ( // i'll be nice and explain this one for you. if:
+				(empty($pun_user['read_topics']['f'][$forum_id]) || // the user hasn't marked the forum read, or
+				$pun_user['read_topics']['f'][$forum_id] < $last_post) && // they have but the topic has been posted in since, AND
+				(empty($pun_user['read_topics']['t'][$topic_id]) || // the user hasn't marked the topic read, or
+				$pun_user['read_topics']['t'][$topic_id] < $last_post) // they have but the topic has been posted in since, then
+			)
+				return true; // the topic must be new
+		}
+		return false; // well, since every topic was marked read, then the forum must not have any new posts.
+	}
+}
+
+function topic_is_new($topic_id, $forum_id, $last_post_time) {
+
+	global $pun_user;
+	
+	if ($pun_user['last_visit'] >= $last_post_time) {
+		return false;
+	} else if (!empty($pun_user['read_topics']['f'][$forum_id]) && 
+		$pun_user['read_topics']['f'][$forum_id] >= $last_post_time) {
+		return false;
+	} else if (!empty($pun_user['read_topics']['t'][$topic_id]) && 
+		$pun_user['read_topics']['t'][$topic_id] >= $last_post_time) {
+		return false;
+	} 
+	return true;
+}
+
+function mark_topic_read($topic_id, $forum_id, $last_post) {
+
+    global $db, $pun_user;
+    
+    if (topic_is_new($topic_id, $forum_id, $last_post)) {
+        $pun_user['read_topics']['t'][$topic_id] = time();
+        $db->query('UPDATE '.$db->prefix.'users SET read_topics=\''.$db->escape(serialize($pun_user['read_topics'])).'\' WHERE id='.$pun_user['id']) or error('Unable to update read-topic data', __FILE__, __LINE__, $db->error());
+    }
 }

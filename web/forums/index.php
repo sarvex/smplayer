@@ -40,6 +40,9 @@ require PUN_ROOT.'header.php';
 
 $extra_sql = (isset($_GET['cat']))? 'c.id='.intval($_GET['cat']): 'c.visible="1"';
 
+// MOD: MARK TOPICS AS READ - 1 LINE NEW CODE FOLLOWS
+$new_topics = get_all_new_topics();
+
 // Print the categories and forums
 $result = $db->query('SELECT c.id AS cid, c.cat_name, f.id AS fid, f.forum_name, f.forum_desc, f.redirect_url, f.moderators, f.num_topics, f.num_posts, f.last_post, f.last_post_id, f.last_poster FROM '.$db->prefix.'categories AS c INNER JOIN '.$db->prefix.'forums AS f ON c.id=f.cat_id LEFT JOIN '.$db->prefix.'forum_perms AS fp ON (fp.forum_id=f.id AND fp.group_id='.$pun_user['g_id'].') WHERE '.$extra_sql.' AND (fp.read_forum IS NULL OR fp.read_forum=1) ORDER BY c.disp_position, c.id, f.disp_position', true) or error('Unable to fetch category/forum list', __FILE__, __LINE__, $db->error());
 
@@ -81,7 +84,8 @@ while ($cur_forum = $db->fetch_assoc($result))
 	$icon_type = 'icon';
 
 	// Are there new posts?
-	if (!$pun_user['is_guest'] && $cur_forum['last_post'] > $pun_user['last_visit'])
+	// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+	if (!$pun_user['is_guest'] && forum_is_new($cur_forum['fid'], $cur_forum['last_post']))
 	{
 		$item_status = 'inew';
 		$icon_text = $lang_common['New icon'];

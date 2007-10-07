@@ -174,13 +174,12 @@ if ($db->num_rows($result))
 				$item_status = 'iclosed';
 			}
 	
-			if (!$pun_user['is_guest'] && $cur_topic['last_post'] > $pun_user['last_visit'] && $cur_topic['moved_to'] == null)
+    	// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+		if (!$pun_user['is_guest'] && topic_is_new($cur_topic['id'], $id,  $cur_topic['last_post']) && $cur_topic['moved_to'] == null)
 			{
 				$icon_text .= ' '.$lang_common['New icon'];
 				$item_status .= ' inew';
 				$icon_type = 'icon inew';
-
-	
 				$subject = '<strong>'.$subject.'</strong>';
 				$subject_new_posts = '<span class="newtext">[&nbsp;<a href="viewtopic.php?id='.$cur_topic['id'].'&amp;action=new" title="'.$lang_common['New posts info'].'">'.$lang_common['New posts'].'</a>&nbsp;]</span>';
 			}
@@ -209,7 +208,8 @@ if ($db->num_rows($result))
 				$item_status = 'iclosed';
 			}
 
-			if (!$pun_user['is_guest'] && $cur_topic['last_post'] > $pun_user['last_visit'] && $cur_topic['moved_to'] == null)
+    	// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+		if (!$pun_user['is_guest'] && topic_is_new($cur_topic['id'], $id,  $cur_topic['last_post']) && $cur_topic['moved_to'] == null)
 			{
 				$icon_text .= ' '.$lang_common['New icon'];
 				$item_status .= ' inew';

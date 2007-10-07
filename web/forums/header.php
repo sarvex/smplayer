@@ -181,6 +181,7 @@ $tpl_main = str_replace('<pun_navlinks>','<div id="brdmenu" class="inbox">'."\n\
 // START SUBST - <pun_status>
 if ($pun_user['is_guest'])
 	$tpl_temp = '<div id="brdwelcome" class="inbox">'."\n\t\t\t".'<p>'.$lang_common['Not logged in'].'</p>'."\n\t\t".'</div>';
+
 else
 {
 	$tpl_temp = '<div id="brdwelcome" class="inbox">'."\n\t\t\t".'<ul class="conl">'."\n\t\t\t\t".'<li>'.$lang_common['Logged in as'].' <strong>'.pun_htmlspecialchars($pun_user['username']).'</strong></li>'."\n\t\t\t\t".'<li>'.$lang_common['Last visit'].': '.format_time($pun_user['last_visit']).'</li>';
@@ -199,6 +200,9 @@ else
 	require(PUN_ROOT.'include/pms/header_new_messages.php');
 	if (in_array(basename($_SERVER['PHP_SELF']), array('index.php', 'search.php')))
 		$tpl_temp .= "\n\t\t\t".'</ul>'."\n\t\t\t".'<ul class="conr">'."\n\t\t\t\t".'<li><a href="search.php?action=show_new">'.$lang_common['Show new posts'].'</a></li>'."\n\t\t\t\t".'<li><a href="misc.php?action=markread">'.$lang_common['Mark all as read'].'</a></li>'."\n\t\t\t".'</ul>'."\n\t\t\t".'<div class="clearer"></div>'."\n\t\t".'</div>';
+    // MOD: MARK TOPICS AS READ - 2 LINES NEW CODE FOLLOW
+else if (basename($_SERVER['PHP_SELF']) == 'viewforum.php')
+	$tpl_temp .= '</ul>'."\n\t\t\t".'<p class="conr"><a href="misc.php?action=markforumread&id='.$id.'">'.$lang_common['Mark forum as read'].'</a></p>'."\n\t\t\t".'<div class="clearer"></div>'."\n\t\t".'</div>';
 	else
 		$tpl_temp .= "\n\t\t\t".'</ul>'."\n\t\t\t".'<div class="clearer"></div>'."\n\t\t".'</div>';
 }

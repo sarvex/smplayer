@@ -95,7 +95,8 @@ else if ($action == 'out')
 
 	// Update last_visit (make sure there's something to update it with)
 	if (isset($pun_user['logged']))
-		$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$pun_user['logged'].' WHERE id='.$pun_user['id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
+		// MOD: MARK TOPICS AS READ - 1 LINE MODIFIED CODE FOLLOWS
+		$db->query('UPDATE '.$db->prefix.'users SET last_visit='.$pun_user['logged'].', read_topics=NULL WHERE id='.$pun_user['id']) or error('Unable to update user visit data', __FILE__, __LINE__, $db->error());
 
 	pun_setcookie(1, random_pass(8), time() + 31536000);
 
