@@ -4,6 +4,7 @@
 $lang_misc = array(
 
 'Mark read redirect'		=>	'Todos los temas y foros han sido marcados como leídos. Redirigiendo &hellip;',
+'Mark forum read redirect'  =>     'Todos los temas de este foro han sido marcados como leídos. Redirigiendo &hellip;', // MOD: MARK TOPICS AS READ
 
 // Send e-mail
 'Form e-mail disabled'		=>	'El usuario al que intentas enviar un correo ha deshabilitado el formulario de correo.',

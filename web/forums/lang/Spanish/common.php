@@ -125,6 +125,7 @@ $lang_common = array(
 'Last visit'			=>	'Última visita',
 'Show new posts'		=>	'Mostrar mensajes nuevos desde la última visita',
 'Mark all as read'		=>	'Marcar todos los temas como leidos',
+'Mark forum as read'    =>      'Marcar este foro como leido', // MOD: MARK TOPICS AS READ
 'Link separator'		=>	'',	// The text that separates links in the navigator
 
 // Stuff for the page footer
