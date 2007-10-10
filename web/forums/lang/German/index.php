@@ -12,6 +12,7 @@ $lang_index = array(
 'Guests online'			=>	'G&auml;ste online',
 'No of users'			=>	'Anzahl registrierter Mitglieder',
 'No of topics'			=>	'Anzahl der Themen',
+'No of polls'           =>  'Total number of polls',
 'No of posts'			=>	'Anzahl der Beitr&auml;ge',
 'Online'				=>	'Online',	// As in "Online: User A, User B etc."
 'Board info'			=>	'Brett-Informationen',
