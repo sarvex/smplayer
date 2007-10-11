@@ -47,10 +47,10 @@ $lang_pms = array(
 	// Errors and messages
 	'No messages'		=>		'No messages',
 	'New messages'		=>		'There are new messages',
-	'No user'			=>		'There\'s no user with that username.',
+	'No user'			=>		'There\\\'s no user with that username.',
 	'Full inbox'		=>		'Your inbox is full!',
 	'Inbox full'		=>		'Users inbox is full, you can not send you message to the user.',
-	'Sent full'			=>		'Can\'t save message to Sent, your box is full.',
+	'Sent full'			=>		'Can\\\'t save message to Sent, your box is full.',
 	'Flood start'		=>		'At least',
 	'Flood end'			=>		'seconds have to pass between sends. Please wait a little while and try send the message again.'
 );

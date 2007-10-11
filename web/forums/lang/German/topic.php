@@ -9,9 +9,11 @@ $lang_topic = array(
 'Note'				=>	'Notiz',				// Admin note
 'Website'			=>	'Web-Seite',
 'Guest'				=>	'Gast',
-'Last edit'			=>	'Beitrag ge&auml;ndert von',
+'Online'			=>	'Online',
+'Offline'			=>	'Offline',
+'Last edit'			=>	'Beitrag geändert von',
 'Report'			=>	'Melden',
-'Delete'			=>	'L&ouml;schen',
+'Delete'			=>	'Löschen',
 'Edit'				=>	'Bearbeiten',
 'Quote'				=>	'Zitieren',
 'Is subscribed'		=>	'Sie haben dieses Thema abonniert',
@@ -20,8 +22,6 @@ $lang_topic = array(
 'Quick post'		=>	'Schnelle Antwort',
 
 'Link separator'	=>	' | ',	// The text that separates links in posts (website, e-mail, report, edit etc.)
-'Mod controls'		=>	'Moderatorkontrollen',
-'Online'		    =>	'Online',
-'Offline'		    =>	'Offline'
+'Mod controls'		=>	'Moderatorkontrollen'
 
 );

@@ -1,6 +1,6 @@
 <?php
 
-// SPRACHDEFINITIONEN DIE IN "viewforum.php" GEBRAUCHT WERDEN
+// Language definitions used in viewforum.php
 $lang_forum = array(
 
 'Post topic'	=>	'Neues Thema',

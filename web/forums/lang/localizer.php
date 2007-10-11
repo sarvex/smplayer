@@ -94,7 +94,7 @@ Please read these instructions carefully before using this utility.
 */
 
 $translate_from = 'English';
-$translate_to = 'Spanish';
+$translate_to = 'German';
 // $translate_import = 'dk';
 
 require('_localizer.php');
@@ -236,7 +236,9 @@ if ($action == 'save') {
 				if (!$localized[$file][$array][$name] || ($localized[$file][$array][$name] == $template[$file][$array][$name]))
 					$color = '#FFD0D0';
 				hidden($name);
-				echo '<TR'.($color ? ' BGCOLOR='.$color : '').'><TD>'.$name.'</TD><TD>'.htmlspecialchars($template[$file][$array][$name]).'</TD><TD>'.'<TEXTAREA DIR='.$direction.' ROWS=4 NAME="t'.$count.'" CLASS="pt_input">'.$localized[$file][$array][$name].'</TEXTAREA></TD></TR>'."\n";
+				$localized_text = $localized[$file][$array][$name];
+				if ($localized_text == "") $localized_text = $template[$file][$array][$name];
+				echo '<TR'.($color ? ' BGCOLOR='.$color : '').'><TD>'.$name.'</TD><TD>'.htmlspecialchars($template[$file][$array][$name]).'</TD><TD>'.'<TEXTAREA DIR='.$direction.' ROWS=4 NAME="t'.$count.'" CLASS="pt_input">'.$localized_text.'</TEXTAREA></TD></TR>'."\n";
 			}
 			foreach ($localized[$file][$array] as $name => $value) {
 				if (!$template[$file][$array][$name] && ($template[$file][$array][$name] != $localized[$file][$array][$name])) {
