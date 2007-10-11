@@ -29,14 +29,14 @@ $lang_common = array(
 
 // Text orientation and encoding
 'lang_direction'		=>	'ltr',	// ltr (Left-To-Right) or rtl (Right-To-Left)
-'lang_encoding'			=>	'iso-8859-1',
+'lang_encoding'			=>	'UTF-8',
 'lang_multibyte'		=>	false,
 
 // Notices
 'Bad request'			=>	'Solicitud errónea. El enlace es incorrecto o ha caducado.',
 'No view'				=>	'Careces de permisos para ver estos foros.',
 'No permission'			=>	'Careces de permisos para acceder a esta página',
-'Bad referrer'			=>	'HTTP_REFERER erróneo. Has sido dirigido a esta página desde una fuente no autorizada. Si el problema continua por favor asegúrate de que la \'URL base\' está correctamente configurada en Admin/Options y que estás visitando el foro desde esta URL. Puedes encontrar más información sobre este tema en la documentación de PunB.',
+'Bad referrer'			=>	'HTTP_REFERER erróneo. Has sido dirigido a esta página desde una fuente no autorizada. Si el problema continua por favor asegúrate de que la \\\'URL base\\\' está correctamente configurada en Admin/Options y que estás visitando el foro desde esta URL. Puedes encontrar más información sobre este tema en la documentación de PunB.',
 
 // Topic/forum indicators
 'New icon'				=>	'Hay mensajes nuevos',
@@ -67,7 +67,7 @@ $lang_common = array(
 'required field'		=>	'es un campo requerido en este formulario.',	// for javascript form validation
 'Last post'				=>	'Último mensaje',
 'by'					=>	'por',	// as in last post by someuser
-'New posts'				=>	'Mensajes&nbsp;nuevos',	// the link that leads to the first new post (use &nbsp; for spaces)
+'New posts'				=>	'Mensajes nuevos',	// the link that leads to the first new post (use &nbsp; for spaces)
 'New posts info'		=>	'Ir al primer mensaje nuevo de este tema.',	// the popup text for new posts links
 'Username'				=>	'Nombre de usuario',
 'Password'				=>	'Contraseña',
@@ -125,7 +125,7 @@ $lang_common = array(
 'Last visit'			=>	'Última visita',
 'Show new posts'		=>	'Mostrar mensajes nuevos desde la última visita',
 'Mark all as read'		=>	'Marcar todos los temas como leidos',
-'Mark forum as read'    =>      'Marcar este foro como leido', // MOD: MARK TOPICS AS READ
+'Mark forum as read'	=>	'Marcar este foro como leido', // MOD: MARK TOPICS AS READ
 'Link separator'		=>	'',	// The text that separates links in the navigator
 
 // Stuff for the page footer

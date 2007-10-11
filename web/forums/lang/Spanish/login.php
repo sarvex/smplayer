@@ -6,8 +6,8 @@ $lang_login = array(
 // Miscellaneous
 'Wrong user/pass'		=>	'Nombre de usuario y/o contraseña incorrectos.',
 'Forgotten pass'		=>	'¿Has olvidado la contraseña?',
-'Login redirect'		=>	'Te has conectado con éxito. Redirigiendo &hellip;',
-'Logout redirect'		=>	'Desconectado. Redirigiendo &hellip;',
+'Login redirect'		=>	'Te has conectado con éxito. Redirigiendo …',
+'Logout redirect'		=>	'Desconectado. Redirigiendo …',
 'No e-mail match'		=>	'No hay ningún usuario registrado con este correo electrónico',
 'Request pass'			=>	'Solicitar contraseña',
 'Request pass legend'	=>	'Introduce el correo electrónico con el quieres registrate',

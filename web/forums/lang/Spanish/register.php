@@ -5,7 +5,7 @@ $lang_register = array(
 
 // Miscellaneous
 'No new regs'				=>	'Este foro no acepta nuevos registros.',
-'Reg cancel redirect'		=>	'Registro cancelado. Redirigiendo &hellip;',
+'Reg cancel redirect'		=>	'Registro cancelado. Redirigiendo …',
 'Forum rules'				=>	'Reglas del foro',
 'Rules legend'				=>	'Debes aceptar lo siguiente para poder registrarte',
 'Agree'						=>	'De acuerdo',
@@ -20,7 +20,7 @@ $lang_register = array(
 
 // Registration e-mail stuff
 'Reg e-mail'				=>	'Gracias por registrarte. Tu contraseña ha sido enviada a la dirección de correo especificada. Si no la recibes puedes contactar con el administrador en',
-'Reg complete'				=>	'Registro completo. Conectando y redirigiendo &hellip;',
+'Reg complete'				=>	'Registro completo. Conectando y redirigiendo …',
 
 // Register info
 'Desc 1'					=>	'El registro te garantiza el acceso a un número de opciones y capacidades que de otra manera no están disponibles. Estas funciones icluyen poder editar y borrar imágenes, diseñar tu propia firma que acompaña los mensajes y mucho más. Si tienes cualquier pregunta respecto a este foro puedes dirigirte a algún administrador.',

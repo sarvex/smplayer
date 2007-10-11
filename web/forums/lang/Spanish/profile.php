@@ -25,7 +25,7 @@ $lang_profile = array(
 // Password stuff
 'Pass key bad'				=>	'La clave de activación de tu contraseña es incorrecta o ha expirado. Por favor, solicita una contraseña nueva. Si falla, contacta con el administrador del foro en',
 'Pass updated'				=>	'Tu contraseña ha sido actualizada. Ahora puedes entrar con tu contraseña nueva.',
-'Pass updated redirect'		=>	'Contraseña actualitzada. Redirigiendo &hellip;',
+'Pass updated redirect'		=>	'Contraseña actualitzada. Redirigiendo …',
 'Wrong pass'				=>	'Contraseña antigua errónea.',
 'Change pass'				=>	'Cambiar contraseña',
 'Change pass legend'		=>	'Introduce y confirma la nueva contraseña',
@@ -55,8 +55,8 @@ $lang_profile = array(
 'bytes'						=>	'bytes',
 'Move failed'				=>	'El servidor no ha podido guardar el fichero subido. Por favor contacta con el administrador del foro en',
 'Unknown failure'			=>	'Ha ocurrido un error desconocido. Por favor vuelve a intentarlo.',
-'Avatar upload redirect'	=>	'Avatar subido. Redirigiendo &hellip;',
-'Avatar deleted redirect'	=>	'Avatar borrado. Redirigiendo &hellip;',
+'Avatar upload redirect'	=>	'Avatar subido. Redirigiendo …',
+'Avatar deleted redirect'	=>	'Avatar borrado. Redirigiendo …',
 'Avatar desc'				=>	'Un avatar es una imagen pequeña que se visualiza con tu nombre de usuario en tus mensajes. No tiene que ser mayor que',
 'Upload avatar'				=>	'Subir avatar',
 'Upload avatar legend'		=>	'Introduce un fichero para subir',
@@ -67,7 +67,7 @@ $lang_profile = array(
 // Form validation stuff
 'Dupe username'				=>	'Ya hay alguien registrado con este nombre. Por favor vuelve atrás y prueba con un nombre de usuario diferente.',
 'Forbidden title'			=>	'El título que has introducido contiene una palabra no permitida. Tienes que escoger un título diferente.',
-'Profile redirect'			=>	'Perfil actualizado. Redirigiendo &hellip;',
+'Profile redirect'			=>	'Perfil actualizado. Redirigiendo …',
 
 // Profile display stuff
 'Not activated'				=>	'Este usuario todavía no ha activado su cuenta. La cuenta se activa cuando el/ella se identifica por primera vez.',
@@ -88,7 +88,7 @@ $lang_profile = array(
 'Sig max length'			=>	'Max longitud',
 'Sig max lines'				=>	'Max líneas',
 'Avatar legend'				=>	'Especifica las opciones de visualización de la avatar',
-'Avatar info'				=>	'Una avatar es una imagen pequeña que se visualizará en todos tus mensajes. Puedes subir una avatar haciendo un click sobre el enlace que hay abajo. La ventana de verificación \'Usar avatar\' de abajo tiene que estar marcada para que la avatar siga visible en tus mensajes.',
+'Avatar info'				=>	'Una avatar es una imagen pequeña que se visualizará en todos tus mensajes. Puedes subir una avatar haciendo un click sobre el enlace que hay abajo. La ventana de verificación \\\'Usar avatar\\\' de abajo tiene que estar marcada para que la avatar siga visible en tus mensajes.',
 'Change avatar'				=>	'Cambiar avatar',
 'Use avatar'				=>	'Usar avatar.',
 'Signature legend'			=>	'Crea tu firma',
@@ -136,9 +136,9 @@ $lang_profile = array(
 'Delete warning'			=>	'¡Aviso! Los usuarios y/o mensajes eliminados no se pueden recuperar. Si eliges no eliminar los mensajes hechos por este usuario, después los mensajes sólo podrán ser eliminados manualmente.',
 'Delete posts'				=>	'Elimina cualquier mensaje y tema hecho por este usuario.',
 'Delete'					=>	'Eliminar',		// submit button (confirm user delete)
-'User delete redirect'		=>	'Usuario eliminado. Redirigiendo &hellip;',
-'Group membership redirect'	=>	'Grupo de usuarios guardado. Redirigiendo &hellip;',
-'Update forums redirect'	=>	'Derechos de moderador del foro actualizados. Redirigiendo &hellip;',
-'Ban redirect'				=>	'Redirigiendo &hellip;'
+'User delete redirect'		=>	'Usuario eliminado. Redirigiendo …',
+'Group membership redirect'	=>	'Grupo de usuarios guardado. Redirigiendo …',
+'Update forums redirect'	=>	'Derechos de moderador del foro actualizados. Redirigiendo …',
+'Ban redirect'				=>	'Redirigiendo …'
 
 );
