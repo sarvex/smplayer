@@ -94,7 +94,7 @@ Please read these instructions carefully before using this utility.
 */
 
 $translate_from = 'English';
-$translate_to = 'German';
+$translate_to = 'Spanish';
 // $translate_import = 'dk';
 
 require('_localizer.php');

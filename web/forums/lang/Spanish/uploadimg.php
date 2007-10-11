@@ -4,9 +4,9 @@
 $lang_uploadimg = array(
 
 //Upload main
-'Upload image'		    =>	'Upload image',  // title of page
+'Upload image'		    =>	'Subir imagen',  // title of page
 'Uploads'				=>	'Uploads',
-'Select image'			=>	'Select image to upload',
+'Select image'			=>	'Selecciona imagen para subir',
 'Upload message'		=>	'Use this form to upload an image for use on the forum.',
 'Restrictions'		    =>	'Restrictions:',
 'Size limit'		    =>	'File must be less than <MAX_SIZE>KB in size',

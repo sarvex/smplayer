@@ -26,7 +26,7 @@ $lang_post = array(
 
 // Edit post
 'Edit post legend'		=>	'Editar el mensaje y envíar los cambios',
-'Silent edit'			=>	'Edición silenciosa (no muestra \\\"Editado por ...\\\" al ver el tema)',
+'Silent edit'			=>	'Edición silenciosa (no muestra \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Editado por ...\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" al ver el tema)',
 'Edit post'				=>	'Editar mensaje',
 'Edit redirect'			=>	'Mensaje actualizado. Redirigiendo …'
 

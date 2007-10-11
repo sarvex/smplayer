@@ -36,7 +36,7 @@ $lang_common = array(
 'Bad request'			=>	'Solicitud errónea. El enlace es incorrecto o ha caducado.',
 'No view'				=>	'Careces de permisos para ver estos foros.',
 'No permission'			=>	'Careces de permisos para acceder a esta página',
-'Bad referrer'			=>	'HTTP_REFERER erróneo. Has sido dirigido a esta página desde una fuente no autorizada. Si el problema continua por favor asegúrate de que la \\\'URL base\\\' está correctamente configurada en Admin/Options y que estás visitando el foro desde esta URL. Puedes encontrar más información sobre este tema en la documentación de PunB.',
+'Bad referrer'			=>	'HTTP_REFERER erróneo. Has sido dirigido a esta página desde una fuente no autorizada. Si el problema continua por favor asegúrate de que la \\\'URL base\\\' está correctamente configurada en Admin/Options y que estás visitando el foro desde esta URL. Puedes encontrar más información sobre este tema en la documentación de PunBB.',
 
 // Topic/forum indicators
 'New icon'				=>	'Hay mensajes nuevos',
@@ -56,7 +56,7 @@ $lang_common = array(
 'Never'					=>	'Nunca',
 'Today'					=>	'Hoy',
 'Yesterday'				=>	'Ayer',
-'Info'					=>	'Info',		// a common table header
+'Info'					=>	'Información',		// a common table header
 'Go back'				=>	'Volver',
 'Maintenance'			=>	'Mantenimiento',
 'Redirecting'			=>	'Redirigiendo',
