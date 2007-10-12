@@ -76,7 +76,7 @@ function save() {
 			//$contents = $t;
 		}
 
-		file_put_contents_php4($translate_to.'/'.$file, $contents);
+		file_put_contents_php4($translate_to.'/'.$file, stripslashes($contents));
 	}
 
 
