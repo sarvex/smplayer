@@ -14,7 +14,7 @@ $lang_post = array(
 'Post errors info'		=>	'Se tienen que corregir los siguientes errores antes de poder enviar el mensaje:',
 'Post preview'			=>	'Visualización previa',
 'Guest name'			=>	'Nombre',	// For guests (instead of Username)
-'Post redirect'			=>	'Mensaje introducido. Redirigiendo &hellip;',
+'Post redirect'			=>	'Mensaje introducido. Redirigiendo …',
 'Post a reply'			=>	'Responder',
 'Post new topic'		=>	'Nuevo tema',
 'Hide smilies'			=>	'No mostrar los smileys como iconos',
@@ -26,8 +26,8 @@ $lang_post = array(
 
 // Edit post
 'Edit post legend'		=>	'Editar el mensaje y envíar los cambios',
-'Silent edit'			=>	'Edición silenciosa (no muestra "Editado por ..." al ver el tema)',
+'Silent edit'			=>	'Edición silenciosa (no muestra \"Editado por ...\" al ver el tema)',
 'Edit post'				=>	'Editar mensaje',
-'Edit redirect'			=>	'Mensaje actualizado. Redirigiendo &hellip;'
+'Edit redirect'			=>	'Mensaje actualizado. Redirigiendo …'
 
 );
