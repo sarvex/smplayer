@@ -4,7 +4,7 @@
 $lang_modern_bbcode = array(
 
 // Prompt message for list tag message box
-'List tag prompt'		=>	'Introduce el texto. Pulsa "Cancel" o deja el campo vacío para salir.',
+'List tag prompt'		=>	'Introduce el texto. Pulsa \"Cancel\" o deja el campo vacío para salir.',
 
 // Buttons texts
 'Bold'				=>	'N',

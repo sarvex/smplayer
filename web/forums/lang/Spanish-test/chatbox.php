@@ -5,7 +5,7 @@ $lang_chatbox = array(
 
 'Page_title'			=>	'ChatBox',
 'Chatbox'			=>	'ChatBox',
-'Posts'				=>	'ChatBox Posts',
+'Posts'				=>	' ChatBox Posts',
 'Sending'			=>	'Sending...',
 
 'No Read Permission'		=>	'You have not permission to read ChatBox.',
