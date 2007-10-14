@@ -31,10 +31,10 @@ you can update the link later and the translation will still be valid.
 
 It's possible to add up to 4 additional arguments. An example using 2:
 [code]
-tr("The latest version is %1. You can get it <a href=\"%1\">here</a>.", "0.5.61", "download/smplayer_0.5.61.tar.gz");
+tr("The latest version is %1. You can get it <a href=\"%2\">here</a>.", "0.5.61", "download/smplayer_0.5.61.tar.gz");
 [/code]
 
 How to create a translation? 
 Easy. In the translation subdirectory there's a Makefile. In the FILES line
 there should be listed all web pages. Just simply it's needed to type [i]make[/i]
-in that directory to get update *.po files that translators could translate.
+in that directory to get updated *.po files that translators could translate.
