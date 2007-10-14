@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-15 01:15+0200\n"
+"POT-Creation-Date: 2007-10-15 01:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,9 @@ msgid "This is another <a href=\"%1\">link</a>."
 msgstr "Esto es otro <a href=\"%1\">enlace</a>."
 
 #: ../index.php:25
-msgid "The latest version is %1. You can get it <a href=\"%1\">here</a>."
-msgstr "La última versión es %1. La puedes conseguir <a href=\"%1\">aquí</a>."
+msgid "The latest version is %1. You can get it <a href=\"%2\">here</a>."
+msgstr ""
+"La última versión es %1. La puedes conseguir <a href=\"%2\">aquí</a>."
 
 #: ../index.php:28
 msgid ""
@@ -74,3 +75,7 @@ msgstr "<a href=\"%1\">Volver</a>"
 
 #~ msgid "This is a <a href=\"download/smplayer_0.5.61.tar.gz\">link."
 #~ msgstr "Esto es un <a href=\"download/smplayer_0.5.61.tar.gz\">enlace."
+
+#~ msgid "The latest version is %1. You can get it <a href=\"%1\">here</a>."
+#~ msgstr ""
+#~ "La última versión es %1. La puedes conseguir <a href=\"%1\">aquí</a>."
