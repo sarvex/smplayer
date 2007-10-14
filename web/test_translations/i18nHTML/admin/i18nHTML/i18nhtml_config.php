@@ -1,0 +1,1 @@
+../../i18nhtml_config.php
