@@ -67,7 +67,8 @@ $i18nHTMLsqlDB = "s185512_translations";
  *
  * Must end with a "/" (and must be a directory).
  */
-$i18nHTMLbase = "http://" . @php_uname('n') . "/i18nhtml/"; 
+//$i18nHTMLbase = "http://" . @php_uname('n') . "/i18nhtml/"; 
+$i18nHTMLbase = "http://smplayer.sourceforge.net/SVN/test_translations/i18nHTML/admin/"; 
 
 /**
  * What marker should be used for untranslated sentences?
