@@ -37,7 +37,9 @@ if (!defined('PUN_ROOT'))
 require PUN_ROOT.'include/functions.php';
 
 // Reverse the effect of register_globals
+$temp_tr_lang = $tr_lang;
 unregister_globals();
+$tr_lang = $temp_tr_lang;
 
 
 @include PUN_ROOT.'config.php';
