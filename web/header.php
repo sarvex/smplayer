@@ -5,10 +5,11 @@ function header_set_section($s) {
 	echo "<div id=\"languages\">\n";
 	echo "<div id=\"languages_links\">\n";
 	echo "<ul>\n";
-	echo "<li><a href=\"index.php?tr_lang=nl\">Dutch</a> |&nbsp</li>\n";
+	echo "<li><a href=\"index.php?tr_lang=nl\">Nederlands</a> |&nbsp</li>\n";
 	echo "<li><a href=\"index.php\">English</a> |&nbsp</li>\n";
-	echo "<li><a href=\"index.php?tr_lang=fr\">French</a> |&nbsp</li>\n";
-	echo "<li><a href=\"index.php?tr_lang=es\">Spanish</a></li>\n";
+	echo "<li><a href=\"index.php?tr_lang=fr\">Français</a> |&nbsp</li>\n";
+	echo "<li><a href=\"index.php?tr_lang=es\">Español</a></li>\n";
+	echo "<li><a href=\"index.php?tr_lang=ja\">日本語</a></li>\n";
 	echo "</ul>\n";
 	echo "</div>\n";
 	echo "</div>\n";
