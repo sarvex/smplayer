@@ -1,7 +1,7 @@
 all: es.po nl.po fr.po
 
 FILES=../index.php ../info.php ../header.php ../downloads.php \
-      ../documentation.php
+      ../documentation.php ../screenshots.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \

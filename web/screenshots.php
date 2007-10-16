@@ -26,7 +26,7 @@ header_set_section("screenshots");
 <!----------------------begin content---------------------->
 
 <div id="content">
-Screenshots
+<?php tr("Here you can see some screenshots from SMPlayer:"); ?>
 </div>
 
 <!----------------------end content---------------------->
