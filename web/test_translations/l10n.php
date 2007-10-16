@@ -163,4 +163,8 @@ function init_translation() {
 		$po_contents = parse_po_file($filename);
 	}
 }
+
+// main
+init_translation();
+
 ?>

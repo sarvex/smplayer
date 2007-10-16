@@ -4,7 +4,6 @@ First it's needed to include in every page this code at the beginning:
 [code]
 <?php
 include_once("l10n.php");
-init_translation();
 ?>
 [/code]
 

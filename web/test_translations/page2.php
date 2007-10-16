@@ -1,6 +1,5 @@
 <?php
 include_once("l10n.php");
-init_translation();
 ?>
 <html>
 <head>
