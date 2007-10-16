@@ -2,6 +2,17 @@
 function header_set_section($s) {
 	global $tr_lang;
 
+	echo "<div id=\"languages\">\n";
+	echo "<div id=\"languages_links\">\n";
+	echo "<ul>\n";
+	echo "<li><a href=\"index.php?tr_lang=nl\">Dutch</a> |&nbsp</li>\n";
+	echo "<li><a href=\"index.php\">English</a> |&nbsp</li>\n";
+	echo "<li><a href=\"index.php?tr_lang=fr\">French</a> |&nbsp</li>\n";
+	echo "<li><a href=\"index.php?tr_lang=es\">Spanish</a></li>\n";
+	echo "</ul>\n";
+	echo "</div>\n";
+	echo "</div>\n";
+
 	echo "<div id=\"header\">\n";
 	echo "<br><br>\n";
 	echo "<span style=\"font-size: 26px\">\n";

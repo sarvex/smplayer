@@ -19,23 +19,10 @@ list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punb
 <div id="container">
 
 <!----------------------header---------------------->
-
-<div id="languages">
-<div id="languages_links">
-<ul>
-<li><a href="#">Dutch</a> |&nbsp</li>
-<li><a href="index.php">English</a> |&nbsp</li>
-<li><a href="#">French</a> |&nbsp</li>
-<li><a href="index.php?tr_lang=es">Spanish</a></li>
-</ul>
-</div>
-</div>
-
 <?php
 include("header.php");
 header_set_section("main");
 ?>
-
 <!----------------------end header---------------------->
 
 <!----------------------begin content---------------------->
