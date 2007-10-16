@@ -36,7 +36,7 @@ echo "<li><a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913576\
 tr("Feature Requests");
 echo "</span></a></li>\n";
 
-echo "<li><a href=\"documentation.php?lang=".$tr_lang."\"><span>";
+echo "<li><a href=\"documentation.php?tr_lang=".$tr_lang."\"><span>";
 tr("Documentation");
 echo "</span></a></li>\n";
 ?>
