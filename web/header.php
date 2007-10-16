@@ -58,5 +58,5 @@ function header_set_section($s) {
 	echo "</div>\n";
 
 	echo "</div>\n";
-);
+}
 ?>
