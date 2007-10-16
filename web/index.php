@@ -33,6 +33,7 @@ list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punb
 
 <?php
 include("header.php");
+header_set_section("main");
 ?>
 
 <!----------------------end header---------------------->
