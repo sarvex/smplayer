@@ -1,18 +1,45 @@
 <div id="header">
 <br><br>
-<span style="font-size: 26px"><a href="index.php">The SMPlayer Project</a></span>
+<span style="font-size: 26px">
+<?php 
+echo "<a href=\"index.php?lang=".$lang."\">";
+tr("The SMPlayer Project");
+echo "</a></span>";
+?>
 
 <div id="navigation">
 <div id="navigation_box">
 <div id="header_links">
 <ul>
-<li id="active_tab"><a href="index.php"><span id="text_black">Main</a></span></li>
-<li><a href="screenshots.php"><span>Screenshots</span></a></li>
-<li><a href="downloads.php"><span>Downloads</span></a></li>
-<li><a href="forums/index.php"><span>Forums</span></a></li>
-<li><a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573"><span>Bug Tracking</span></a></li>
-<li><a href="http://sourceforge.net/tracker/?group_id=185512&atid=913576"><span>Feature Requests</span></a></li>
-<li><a href="documentation.php"><span>Documentation</span></a></li>
+<?php
+echo "<li id=\"active_tab\"><a href=\"index.php?lang=".$lang."\"><span id=\"text_black\">";
+tr("Main");
+echo "</a></span></li>\n";
+
+echo "<li><a href=\"screenshots.php?lang=".$lang."\"><span>";
+tr("Screenshots");
+echo "</span></a></li>\n";
+
+echo "<li><a href=\"downloads.php?lang=".$lang."\"><span>";
+tr("Downloads");
+echo "</span></a></li>\n";
+
+echo "<li><a href=\"forums/index.php\"><span>";
+tr("Forums");
+echo "</span></a></li>\n";
+
+echo "<li><a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573\"><span>";
+tr("Bug Tracking");
+echo "</span></a></li>\n";
+
+echo "<li><a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913576\"><span>";
+tr("Feature Requests");
+echo "</span></a></li>\n";
+
+echo "<li><a href=\"documentation.php?lang=".$lang."\"><span>";
+tr("Documentation");
+echo "</span></a></li>\n";
+?>
 </ul>
 </div>
 </div>

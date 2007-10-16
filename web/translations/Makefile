@@ -1,6 +1,6 @@
 all: es.po
 
-FILES=../index.php ../info.php
+FILES=../index.php ../info.php ../header.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \

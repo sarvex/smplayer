@@ -8,13 +8,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-16 11:03+0200\n"
+"POT-Creation-Date: 2007-10-16 11:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../header.php:6
+msgid "The SMPlayer Project"
+msgstr "SMPlayer"
+
+#: ../header.php:16
+msgid "Main"
+msgstr "Principal"
+
+#: ../header.php:20
+msgid "Screenshots"
+msgstr "Capturas de pantalla"
+
+#: ../header.php:24
+msgid "Downloads"
+msgstr "Descargas"
+
+#: ../header.php:28
+msgid "Forums"
+msgstr "Foros"
+
+#: ../header.php:32
+msgid "Bug Tracking"
+msgstr "Seguimiento de Bugs"
+
+#: ../header.php:36
+msgid "Feature Requests"
+msgstr "Peticiones"
+
+#: ../header.php:40
+msgid "Documentation"
+msgstr "Documentación"
 
 #: ../info.php:2
 msgid ""
@@ -45,5 +77,5 @@ msgstr ""
 "Una de las cosas más interesantes de SMPlayer: recuerda las opciones de "
 "todos los ficheros que reproduzcas. Empiezas a ver una películas pero tienes "
 "que irte... no te preocupes, cuando vuelvas a abrir la película continuará "
-"desde el mismo lugar donde la dejaste, y con las mismas opciones: "
-"pista de audio, subtítulos, volumen..."
+"desde el mismo lugar donde la dejaste, y con las mismas opciones: pista de "
+"audio, subtítulos, volumen..."
