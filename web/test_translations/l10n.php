@@ -155,11 +155,10 @@ function tr($orig_text, $arg1="", $arg2="", $arg3="", $arg4="") {
 }
 
 function init_translation() {
-	global $lang, $tr_lang, $po_contents;
-	$lang = $_REQUEST["lang"];
-	$tr_lang = $lang;
+	global $tr_lang, $po_contents;
+	$tr_lang = $_REQUEST["tr_lang"];
 	$po_contents = array();
-	$filename = "translations/".$lang.".po";
+	$filename = "translations/".$tr_lang.".po";
 	if (file_exists($filename)) {
 		$po_contents = parse_po_file($filename);
 	}

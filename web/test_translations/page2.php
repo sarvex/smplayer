@@ -21,7 +21,7 @@ playing videos, DVDs, and VCDs to more advanced features like support
 for MPlayer filters and more.");
 
 echo "<center>";
-tr("<a href=\"%1\">Go back</a>", "index.php?lang=".$lang);
+tr("<a href=\"%1\">Go back</a>", "index.php?tr_lang=".$tr_lang);
 echo "</center>";
 ?>
 

@@ -2,7 +2,7 @@
 <br><br>
 <span style="font-size: 26px">
 <?php 
-echo "<a href=\"index.php?lang=".$lang."\">";
+echo "<a href=\"index.php?tr_lang=".$tr_lang."\">";
 tr("The SMPlayer Project");
 echo "</a></span>";
 ?>
@@ -12,15 +12,15 @@ echo "</a></span>";
 <div id="header_links">
 <ul>
 <?php
-echo "<li id=\"active_tab\"><a href=\"index.php?lang=".$lang."\"><span id=\"text_black\">";
+echo "<li id=\"active_tab\"><a href=\"index.php?tr_lang=".$tr_lang."\"><span id=\"text_black\">";
 tr("Main");
 echo "</a></span></li>\n";
 
-echo "<li><a href=\"screenshots.php?lang=".$lang."\"><span>";
+echo "<li><a href=\"screenshots.php?tr_lang=".$tr_lang."\"><span>";
 tr("Screenshots");
 echo "</span></a></li>\n";
 
-echo "<li><a href=\"downloads.php?lang=".$lang."\"><span>";
+echo "<li><a href=\"downloads.php?tr_lang=".$tr_lang."\"><span>";
 tr("Downloads");
 echo "</span></a></li>\n";
 

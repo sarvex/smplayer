@@ -26,7 +26,7 @@ list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punb
 <li><a href="#">Dutch</a> |&nbsp</li>
 <li><a href="index.php">English</a> |&nbsp</li>
 <li><a href="#">French</a> |&nbsp</li>
-<li><a href="index.php?lang=es">Spanish</a></li>
+<li><a href="index.php?tr_lang=es">Spanish</a></li>
 </ul>
 </div>
 </div>

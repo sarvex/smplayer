@@ -27,10 +27,10 @@ echo "<p>";
 tr("Testing parameters: %1, %2, %1 again, %3 and finally %4. Let's repeat %4.", "par1", "par2", "par3", "par4");
 
 echo "<p>";
-tr("Please, visit <a href=\"%1\">page 2</a>.", "page2.php?lang=".$lang);
+tr("Please, visit <a href=\"%1\">page 2</a>.", "page2.php?tr_lang=".$tr_lang);
 
 echo "<center>";
-echo tr("Choose language: <a href=\"%1\">[English]</a> <a href=\"%2\">[Spanish]</a>", "index.php", "index.php?lang=es");
+echo tr("Choose language: <a href=\"%1\">[English]</a> <a href=\"%2\">[Spanish]</a>", "index.php", "index.php?tr_lang=es");
 echo "</center>";
 ?>
 
