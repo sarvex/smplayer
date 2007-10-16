@@ -1,6 +1,7 @@
-all: es.po
+all: es.po nl.po fr.po
 
-FILES=../index.php ../info.php ../header.php
+FILES=../index.php ../info.php ../header.php ../downloads.php \
+      ../documentation.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \
@@ -9,4 +10,10 @@ empty.pot: $(FILES)
 
 es.po: empty.pot
 	msgmerge -F -U -N --backup=numbered es.po empty.pot
+
+nl.po: empty.pot
+	msgmerge -F -U -N --backup=numbered nl.po empty.pot
+
+fr.po: empty.pot
+	msgmerge -F -U -N --backup=numbered fr.po empty.pot
 
