@@ -19,7 +19,7 @@ list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punb
 <!----------------------header---------------------->
 <?php
 include("header.php");
-header_set_section("main");
+header_set_section("screenshots");
 ?>
 <!----------------------end header---------------------->
 
