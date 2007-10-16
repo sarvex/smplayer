@@ -27,7 +27,7 @@ function header_set_section($s) {
 	echo "<ul>\n";
 
 	$act_tab = " id=\"active_tab\"";
-	$act_color = " id=\"text_black\">":
+	$act_color = " id=\"text_black\">";
 
 	echo "<li"; if ($s=="main") echo $act_tab;
 	echo "><a href=\"index.php?tr_lang=".$tr_lang."\"><span";
