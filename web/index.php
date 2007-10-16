@@ -1,3 +1,4 @@
+<?php include_once("l10n.php"); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
@@ -25,7 +26,7 @@ list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punb
 <li><a href="#">Dutch</a> |&nbsp</li>
 <li><a href="#">English</a> |&nbsp</li>
 <li><a href="#">French</a> |&nbsp</li>
-<li><a href="#">Spanish</a></li>
+<li><a href="index.php?lang=es">Spanish</a></li>
 </ul>
 </div>
 </div>
