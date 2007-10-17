@@ -53,7 +53,7 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&atid=913576", ($s=="features"));
 
-	header_print_section(get_tr("Documentation"), $rel_path."documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
+	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 ?>
 	</ul>
 

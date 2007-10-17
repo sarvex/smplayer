@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
  <head>
-  <title>SMPlayer - The SMPlayer Project</title>
+  <title><?php tr("SMPlayer - General Info"); ?></title>
   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
   <meta name="Description" content="smplayer, multiplatform front-end for mplayer">
   <meta name="Keywords" content="smplayer, mplayer, multimedia, player">

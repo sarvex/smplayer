@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
  <head>
-  <title>SMPlayer - The S Media Player</title>
+  <title><?php tr("SMPlayer - Screenshots"); ?></title>
   <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
 <?php define('PUN_ROOT', 'forums/');

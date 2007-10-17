@@ -8,13 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-17 12:37+0200\n"
+"POT-Creation-Date: 2007-10-18 01:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../downloads.php:6
+msgid "SMPlayer - Downloads"
+msgstr ""
 
 #: ../header.php:34
 msgid "The SMPlayer Project"
@@ -45,16 +49,20 @@ msgid "Feature Requests"
 msgstr "機能のリクエスト (英語)"
 
 #: ../header.php:56
-msgid "Documentation"
-msgstr "資料"
+msgid "Wiki"
+msgstr ""
+
+#: ../index.php:6
+msgid "SMPlayer - General Info"
+msgstr ""
 
 #: ../info.php:2
 msgid ""
 "Download <a href=\"downloads.php\">here</a> the latest version of the "
 "SMPlayer"
 msgstr ""
-"最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>から"
-"ダウンロードできます"
+"最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードでき"
+"ます"
 
 #: ../info.php:4
 msgid ""
@@ -62,9 +70,9 @@ msgid ""
 "like playing videos, DVDs, and VCDs to more advanced features like support "
 "for MPlayer filters and more."
 msgstr ""
-"SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
-"MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全な"
-"フロントエンドとなることを目指します。"
+"SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、MPlayer "
+"フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロントエンドと"
+"なることを目指します。"
 
 #: ../info.php:6
 msgid ""
@@ -75,11 +83,17 @@ msgid ""
 "volume..."
 msgstr ""
 "SMPlayer の最大の特徴: 再生したファイルの設定をすべて記憶します。ですから、"
-"ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いりません。"
-"再びムービーを開いたときには、以前と同じ位置と設定 (オーディオトラック、字幕、"
-"音量などなど...) で再開されます。"
+"ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いりませ"
+"ん。再びムービーを開いたときには、以前と同じ位置と設定 (オーディオトラック、"
+"字幕、音量などなど...) で再開されます。"
 
+#: ../screenshots.php:6
+msgid "SMPlayer - Screenshots"
+msgstr ""
 
 #: ../screenshots.php:29
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは SMPlayer のスクリーンショットをいくつかご覧いただけます:"
+
+#~ msgid "Documentation"
+#~ msgstr "資料"
