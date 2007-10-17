@@ -78,9 +78,10 @@ function header_set_section($s) {
 	tr("Feature Requests");
 	echo "</span></a></li>\n";
 
-	header_print_section(tr("Documentation"), "documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
+	header_print_section(get_tr("Documentation"), "documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
 
 	echo "</ul>\n";
+
 	echo "</div>\n";
 	echo "</div>\n";
 	echo "</div>\n";

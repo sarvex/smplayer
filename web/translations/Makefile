@@ -5,7 +5,7 @@ FILES=../index.php ../info.php ../header.php ../downloads.php \
 
 empty.pot: $(FILES)
 	xgettext --add-comments \
-             --output=empty.pot --keyword=tr --language=PHP \
+             --output=empty.pot --keyword=tr --keyword=get_tr --language=PHP \
              --from-code=ISO-8859-1 $(FILES)
 
 es.po: empty.pot
