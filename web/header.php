@@ -11,7 +11,7 @@ function header_print_section($name, $link, $is_active) {
 	echo "</a></span></li>\n";
 }
 
-function header_set_section($s) {
+function header_set_section($s, $rel_path="") {
 	global $tr_lang;
 ?>
 	<div id="languages">
@@ -41,19 +41,19 @@ function header_set_section($s) {
 	<ul>
 
 <?php
-	header_print_section(get_tr("Main"), "index.php?tr_lang=".$tr_lang, ($s=="main"));
+	header_print_section(get_tr("Main"), $rel_path."index.php?tr_lang=".$tr_lang, ($s=="main"));
 
-	header_print_section(get_tr("Screenshots"), "screenshots.php?tr_lang=".$tr_lang, ($s=="screenshots"));
+	header_print_section(get_tr("Screenshots"), $rel_path."screenshots.php?tr_lang=".$tr_lang, ($s=="screenshots"));
 
-	header_print_section(get_tr("Downloads"), "downloads.php?tr_lang=".$tr_lang, ($s=="downloads"));
+	header_print_section(get_tr("Downloads"), $rel_path."downloads.php?tr_lang=".$tr_lang, ($s=="downloads"));
 
-	header_print_section(get_tr("Forum"), "forums/index.php", ($s=="forums"));
+	header_print_section(get_tr("Forum"), $rel_path."forums/index.php", ($s=="forums"));
 
 	header_print_section(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&atid=913573", ($s=="bugs"));
 
 	header_print_section(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&atid=913576", ($s=="features"));
 
-	header_print_section(get_tr("Documentation"), "documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
+	header_print_section(get_tr("Documentation"), $rel_path."documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
 ?>
 	</ul>
 
