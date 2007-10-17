@@ -163,6 +163,7 @@ function init_translation() {
 	$tr_lang = $_REQUEST["tr_lang"];
 	$po_contents = array();
 	$filename = "translations/".$tr_lang.".po";
+//echo "realpath: ". realpath($filename);
 	if (file_exists($filename)) {
 		$po_contents = parse_po_file($filename);
 	}
