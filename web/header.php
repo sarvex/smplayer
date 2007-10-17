@@ -1,4 +1,16 @@
 <?php
+
+function header_print_section($name, $link, $is_active) {
+	$act_tab = " id=\"active_tab\"";
+	$act_color = " id=\"text_black\">";
+
+	echo "<li"; if ($is_active) echo $act_tab;
+	echo "><a href=\"".$link."\"><span";
+	if ($is_active) echo $act_color; else echo ">";
+	echo $name;
+	echo "</a></span></li>\n";
+}
+
 function header_set_section($s) {
 	global $tr_lang;
 
@@ -66,11 +78,7 @@ function header_set_section($s) {
 	tr("Feature Requests");
 	echo "</span></a></li>\n";
 
-	echo "<li"; if ($s=="documentation") echo $act_tab;
-	echo "><a href=\"documentation.php?tr_lang=".$tr_lang."\"><span";
-	if ($s=="documentation") echo $act_color; else echo ">";
-	tr("Documentation");
-	echo "</span></a></li>\n";
+	header_print_section(tr("Documentation"), "documentation.php?tr_lang=".$tr_lang, ($s=="documentation"));
 
 	echo "</ul>\n";
 	echo "</div>\n";
