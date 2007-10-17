@@ -154,7 +154,7 @@ function tr($orig_text, $arg1="", $arg2="", $arg3="", $arg4="") {
 	echo get_translation($orig_text, $arg1, $arg2, $arg3, $arg4);
 }
 
-function get_tr(orig_text, $arg1="", $arg2="", $arg3="", $arg4="") {
+function get_tr($orig_text, $arg1="", $arg2="", $arg3="", $arg4="") {
   return get_translation($orig_text, $arg1, $arg2, $arg3, $arg4);
 }
 
