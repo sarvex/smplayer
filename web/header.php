@@ -17,8 +17,8 @@ function header_set_section($s, $rel_path="") {
 	<div id="languages">
 	<div id="languages_links">
 	<ul>
-	<li><a href="index.php?tr_lang=nl\">Nederlands</a> |&nbsp</li>
-	<li><a href="index.php">English</a> |&nbsp</li>
+	<li><a href="index.php?tr_lang=nl">Nederlands</a> |&nbsp</li>
+	<li><a href="index.php?tr_lang=en">English</a> |&nbsp</li>
 	<li><a href="index.php?tr_lang=fr">Français</a> |&nbsp</li>
 	<li><a href="index.php?tr_lang=es">Español</a> |&nbsp</li>
 	<li><a href="index.php?tr_lang=ja">日本語</a></li>

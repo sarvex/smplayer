@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-18 01:22+0200\n"
+"POT-Creation-Date: 2007-10-19 00:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,15 +56,11 @@ msgstr ""
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - 一般情報"
 
-#: ../info.php:2
-msgid ""
-"Download <a href=\"downloads.php\">here</a> the latest version of the "
-"SMPlayer"
-msgstr ""
-"最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードでき"
-"ます"
-
 #: ../info.php:4
+msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+msgstr ""
+
+#: ../info.php:7
 msgid ""
 "SMPlayer intends to be a complete front-end for MPlayer, from basic features "
 "like playing videos, DVDs, and VCDs to more advanced features like support "
@@ -74,7 +70,7 @@ msgstr ""
 "フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロントエンドと"
 "なることを目指します。"
 
-#: ../info.php:6
+#: ../info.php:9
 msgid ""
 "One of the most interesting features of SMPlayer: it remembers the settings "
 "of all files you play. So you start to watch a movie but you have to "
@@ -97,3 +93,10 @@ msgstr "ここでは SMPlayer のスクリーンショットをいくつかご�
 
 #~ msgid "Documentation"
 #~ msgstr "資料"
+
+#~ msgid ""
+#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
+#~ "SMPlayer"
+#~ msgstr ""
+#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
+#~ "きます"

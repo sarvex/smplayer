@@ -1,5 +1,8 @@
 <div id="info">
-<div id="info_download"><?php tr("Download <a href=\"downloads.php\">here</a> the latest version of the SMPlayer"); ?></div>
+<div id="info_download">
+<?php 
+tr("Download <a href=%1>here</a> the latest version of the SMPlayer", "\"downloads.php?tr_lang=".$tr_lang."\""); ?>
+</div>
 
 <div id="info_features"><?php tr("SMPlayer intends to be a complete front-end for MPlayer, from basic features like playing videos, DVDs, and VCDs to more advanced features like support for MPlayer filters and more."); ?><br><br>
 

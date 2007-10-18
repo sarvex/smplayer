@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-18 01:22+0200\n"
+"POT-Creation-Date: 2007-10-19 00:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,15 +56,11 @@ msgstr "Wiki"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Información general"
 
-#: ../info.php:2
-msgid ""
-"Download <a href=\"downloads.php\">here</a> the latest version of the "
-"SMPlayer"
-msgstr ""
-"Descarga <a href=\"downloads.php\">aquí</a> la versión más reciente de "
-"SMPlayer"
-
 #: ../info.php:4
+msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+msgstr "Descarga <a href=%1>aquí</a> la versión más reciente de SMPlayer"
+
+#: ../info.php:7
 msgid ""
 "SMPlayer intends to be a complete front-end for MPlayer, from basic features "
 "like playing videos, DVDs, and VCDs to more advanced features like support "
@@ -74,7 +70,7 @@ msgstr ""
 "cosas básicas, como reproducir vídeos, DVDs y VCDs hasta opciones más "
 "avanzadas como soporte para los filtros del MPlayer y mucho más."
 
-#: ../info.php:6
+#: ../info.php:9
 msgid ""
 "One of the most interesting features of SMPlayer: it remembers the settings "
 "of all files you play. So you start to watch a movie but you have to "
@@ -96,8 +92,15 @@ msgstr "SMPlayer - Capturas de pantalla"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí puedes ver algunas capturas de pantalla de SMPlayer:"
 
+#~ msgid "Forums"
+#~ msgstr "Foros"
+
 #~ msgid "Documentation"
 #~ msgstr "Documentación"
 
-#~ msgid "Forums"
-#~ msgstr "Foros"
+#~ msgid ""
+#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
+#~ "SMPlayer"
+#~ msgstr ""
+#~ "Descarga <a href=\"downloads.php\">aquí</a> la versión más reciente de "
+#~ "SMPlayer"
