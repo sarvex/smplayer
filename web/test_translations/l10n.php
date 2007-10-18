@@ -160,10 +160,21 @@ function get_tr($orig_text, $arg1="", $arg2="", $arg3="", $arg4="") {
 
 function init_translation() {
 	global $tr_lang, $po_contents;
-	$tr_lang = $_REQUEST["tr_lang"];
+
+	session_start();
+
+	if (isset($_REQUEST["tr_lang"])) {
+		$tr_lang = $_REQUEST["tr_lang"];
+		$_SESSION["tr_lang"] = $tr_lang;
+	}
+	else
+	if (isset($_SESSION["tr_lang"])) {
+		$tr_lang = $_SESSION["tr_lang"];
+	}
+
 	$po_contents = array();
 	$filename = "translations/".$tr_lang.".po";
-//echo "realpath: ". realpath($filename);
+
 	if (file_exists($filename)) {
 		$po_contents = parse_po_file($filename);
 	}
