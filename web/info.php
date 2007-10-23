@@ -13,14 +13,14 @@ tr("SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,
 from basic features like playing videos, DVDs, and VCDs to more advanced 
 features like support for MPlayer filters and more.", 
 "\"http://www.mplayerhq.hu/\"");
-echo "<br>";
+echo "<br><br>";
 echo "<p>";
 tr("One of the most interesting features of SMPlayer: <b>it remembers the 
 settings of all files you play</b>. So you start to watch a movie but you 
 have to leave... don't worry, when you open that movie again it will 
 resume at the same point you left it, and with the same settings: audio 
 track, subtitles, volume..."); 
-echo "<br>";
+echo "<br><br>";
 ?>
 
 <p>
