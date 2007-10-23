@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-23 02:57+0200\n"
+"POT-Creation-Date: 2007-10-23 03:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,36 +20,67 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - ダウンロード"
 
-#: ../downloads.php:30 ../header.php:48
-msgid "Downloads"
-msgstr "ダウンロード"
-
-#: ../downloads.php:31
+#: ../downloads.php:30
 msgid "Stable version"
 msgstr ""
 
-#: ../downloads.php:38
+#: ../downloads.php:31
+msgid "Windows"
+msgstr ""
+
+#: ../downloads.php:40
 msgid "Full package with installer:"
 msgstr ""
 
-#: ../downloads.php:43
+#: ../downloads.php:45
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
 "build. The version included is %1 from <a href=%2>CCCP</a>."
 msgstr ""
 
-#: ../downloads.php:49
+#: ../downloads.php:51
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
 "<b>smplayer may look hung. Don't worry, just wait.</b>"
 msgstr ""
 
-#: ../downloads.php:53
+#: ../downloads.php:55
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
+msgstr ""
+
+#: ../downloads.php:64
+msgid "Linux"
+msgstr ""
+
+#: ../downloads.php:65
+msgid "Source"
+msgstr ""
+
+#: ../downloads.php:74
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+
+#: ../downloads.php:83
+msgid "Optional package which provides some icon themes."
+msgstr ""
+
+#: ../downloads.php:89
+msgid "Binaries"
+msgstr ""
+
+#: ../downloads.php:99
+msgid ""
+"Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, \n"
+"recommended 1.0rc2 or svn)."
+msgstr ""
+
+#: ../downloads.php:112
+msgid "Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."
 msgstr ""
 
 #: ../header.php:34
@@ -63,6 +94,10 @@ msgstr "メイン"
 #: ../header.php:46
 msgid "Screenshots"
 msgstr "スクリーンショット"
+
+#: ../header.php:48
+msgid "Downloads"
+msgstr "ダウンロード"
 
 #: ../header.php:50
 msgid "Forum"
@@ -119,12 +154,12 @@ msgstr "SMPlayer - スクリーンショット"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは SMPlayer のスクリーンショットをいくつかご覧いただけます:"
 
+#~ msgid "Documentation"
+#~ msgstr "資料"
+
 #~ msgid ""
 #~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
 #~ "SMPlayer"
 #~ msgstr ""
 #~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
 #~ "きます"
-
-#~ msgid "Documentation"
-#~ msgstr "資料"

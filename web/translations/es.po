@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-23 02:57+0200\n"
+"POT-Creation-Date: 2007-10-23 03:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Descargas"
 
-#: ../downloads.php:30 ../header.php:48
-msgid "Downloads"
-msgstr "Descargas"
-
-#: ../downloads.php:31
+#: ../downloads.php:30
 msgid "Stable version"
 msgstr "Versión estable"
 
-#: ../downloads.php:38
+#: ../downloads.php:31
+msgid "Windows"
+msgstr "Window"
+
+#: ../downloads.php:40
 msgid "Full package with installer:"
 msgstr "Paquete completo con instalador:"
 
-#: ../downloads.php:43
+#: ../downloads.php:45
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
@@ -40,25 +40,60 @@ msgid ""
 msgstr ""
 "Este paquete contiene todo lo necesario para que funcione correctamente "
 "SMPlayer: librerías Qt, traducciones, juegos de iconos... También incluye "
-"una versión del MPlayer. La versión incluida es %1 obtenida de "
-"<a href=%2>CCCP</a>."
+"una versión del MPlayer. La versión incluida es %1 obtenida de <a href=%"
+"2>CCCP</a>."
 
-#: ../downloads.php:49
+#: ../downloads.php:51
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
 "<b>smplayer may look hung. Don't worry, just wait.</b>"
 msgstr ""
-"<b>Nota:</b> la primera vez que la librería SSA/ASS o fontconfig sean usados, "
-"MPlayer creará una caché con los tipos de letra. Este proceso dura unos cuantos "
-"segundos durante los cuales <b>SMPlayer puede parecer colgado. No te preocupes, simplemente espera.</b>"
+"<b>Nota:</b> la primera vez que la librería SSA/ASS o fontconfig sean "
+"usados, MPlayer creará una caché con los tipos de letra. Este proceso dura "
+"unos cuantos segundos durante los cuales <b>SMPlayer puede parecer colgado. "
+"No te preocupes, simplemente espera.</b>"
 
-#: ../downloads.php:53
+#: ../downloads.php:55
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
 msgstr ""
-"<b>Nota 2:</b> Si tenías instalada una versión anterior, es muy recomendable que la desinstales antes de instalar la nueva."
+"<b>Nota 2:</b> Si tenías instalada una versión anterior, es muy recomendable "
+"que la desinstales antes de instalar la nueva."
+
+#: ../downloads.php:64
+msgid "Linux"
+msgstr "Linux"
+
+#: ../downloads.php:65
+msgid "Source"
+msgstr "Código fuente"
+
+#: ../downloads.php:74
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Lee el fichero Install.txt incluido en el paquete para saber cómo compilarlo."
+
+#: ../downloads.php:83
+msgid "Optional package which provides some icon themes."
+msgstr "Paquete opcional que incluye varios juegos de iconos."
+
+#: ../downloads.php:89
+msgid "Binaries"
+msgstr "Binarios"
+
+#: ../downloads.php:99
+msgid ""
+"Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, \n"
+"recommended 1.0rc2 or svn)."
+msgstr ""
+"Compilado en SuSE 9.2. Require: libqt3 y mplayer (al menos la versión 1.0rc1, recomendada 1.0rc2 o svn)."
+
+#: ../downloads.php:112
+msgid "Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."
+msgstr "Compilado en kubuntu 70.4 (debería servir también para ubuntu) con Qt 4."
 
 #: ../header.php:34
 msgid "The SMPlayer Project"
@@ -71,6 +106,10 @@ msgstr "Principal"
 #: ../header.php:46
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
+
+#: ../header.php:48
+msgid "Downloads"
+msgstr "Descargas"
 
 #: ../header.php:50
 msgid "Forum"
@@ -128,15 +167,15 @@ msgstr "SMPlayer - Capturas de pantalla"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí puedes ver algunas capturas de pantalla de SMPlayer:"
 
+#~ msgid "Forums"
+#~ msgstr "Foros"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentación"
+
 #~ msgid ""
 #~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
 #~ "SMPlayer"
 #~ msgstr ""
 #~ "Descarga <a href=\"downloads.php\">aquí</a> la versión más reciente de "
 #~ "SMPlayer"
-
-#~ msgid "Documentation"
-#~ msgstr "Documentación"
-
-#~ msgid "Forums"
-#~ msgstr "Foros"

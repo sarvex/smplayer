@@ -27,9 +27,10 @@ header_set_section("downloads");
 
 <div id="content">
 <?php
-echo "<h2>".get_tr("Downloads")."</h2>";
-echo "<h3>".get_tr("Stable version")."</h3>";
+echo "<h1>".get_tr("Stable version")."</h1>";
+echo "<h2>".get_tr("Windows")."</h2>";
 ?>
+<!-- WINDOWS -->
 <p>
 <table>
 <tr>
@@ -57,6 +58,64 @@ recommended that you uninstall the old package before installing the new one.");
 </td>
 </tr>
 </table>
+
+<!-- LINUX -->
+<?php
+echo "<h2>".get_tr("Linux")."</h2>";
+echo "<h3>".get_tr("Source")."</h3>";
+?>
+<p>
+<table>
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<a href="http://downloads.sourceforge.net/smplayer/smplayer-0.5.21.tar.gz">smplayer-0.5.21.tar.gz</a> (1003 KB)
+<br>
+<?php tr("Read the file Install.txt included in the package to know how compile it."); ?>
+</td>
+</tr>
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<?php 
+include("download_themes.php");
+echo "<br>";
+tr("Optional package which provides some icon themes."); 
+?>
+</td>
+</tr>
+</table>
+
+<?php echo "<h3>".get_tr("Binaries")."</h3>"; ?>
+<p>
+<table>
+
+<tr>
+<td><img src="iconos/suse.png"></td>
+<td>
+<a href="http://downloads.sourceforge.net/smplayer/smplayer-0.5.21-rvm.i586.rpm">smplayer-0.5.21-rvm.i586.rpm</a> (806 KB)
+<br>
+<?php 
+tr("Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, 
+recommended 1.0rc2 or svn).");
+echo "<br>";
+include("download_themes_rpm.php"); 
+?>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/ubuntu.png"></td>
+<td>
+<a href="http://downloads.sourceforge.net/smplayer/smplayer_0.5.21_i386.deb">smplayer_0.5.21_i386.deb</a> (930 KB)
+<br>
+<?php tr("Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."); ?>
+<br>
+<a href="http://downloads.sourceforge.net/smplayer/smplayer-themes_0.1.5_all.deb">smplayer-themes_0.1.5_all.deb</a> (1.1 MB)
+</td>
+</tr>
+</table>
+
 
 </div>
 
