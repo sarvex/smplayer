@@ -35,7 +35,8 @@ echo "<h3>".get_tr("Stable version")."</h3>";
 <tr>
 <td><img src="iconos/kpackage.png"></td>
 <td><b>
-<?php tr("Full package with installer:");
+<?php 
+tr("Full package with installer:"); echo " ";
 include("download_windows.php"); 
 ?>
 </b><br>
