@@ -26,7 +26,37 @@ header_set_section("downloads");
 <!----------------------begin content---------------------->
 
 <div id="content">
-Downloads
+<?php
+echo "<h2>".get_tr("Downloads")."</h2>";
+echo "<h3>".get_tr("Stable version")."</h3>";
+?>
+<p>
+<table>
+<tr>
+<td><img src="iconos/kpackage.png"></td>
+<td><b>
+<?php tr("Full package with installer:");
+include("download_windows.php"); 
+?>
+</b><br>
+<?php
+tr("This package contains everything needed to run smplayer: Qt shared 
+libraries, translation files, icon themes... It also includes a mplayer 
+build. The version included is %1 from <a href=%2>CCCP</a>.",
+"<i>svn-r23855</i>",
+"\"http://www.cccp-project.net/smf/index.php?topic=811.0\"");
+
+tr("<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer
+will create a font cache. This process takes some seconds and meanwhile 
+<b>smplayer may look hung. Don't worry, just wait.</b>");
+echo "<br>";
+tr("<b>Note 2:</b> If you had already installed a previous version, it's highly
+recommended that you uninstall the old package before installing the new one.");
+?>
+</td>
+</tr>
+</table>
+
 </div>
 
 <!----------------------end content---------------------->

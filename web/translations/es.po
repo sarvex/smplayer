@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-19 00:56+0200\n"
+"POT-Creation-Date: 2007-10-23 02:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,46 @@ msgstr ""
 #: ../downloads.php:6
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Descargas"
+
+#: ../downloads.php:30 ../header.php:48
+msgid "Downloads"
+msgstr "Descargas"
+
+#: ../downloads.php:31
+msgid "Stable version"
+msgstr "Versión estable"
+
+#: ../downloads.php:38
+msgid "Full package with installer:"
+msgstr "Paquete completo con instalador:"
+
+#: ../downloads.php:43
+msgid ""
+"This package contains everything needed to run smplayer: Qt shared \n"
+"libraries, translation files, icon themes... It also includes a mplayer \n"
+"build. The version included is %1 from <a href=%2>CCCP</a>."
+msgstr ""
+"Este paquete contiene todo lo necesario para que funcione correctamente "
+"SMPlayer: librerías Qt, traducciones, juegos de iconos... También incluye "
+"una versión del MPlayer. La versión incluida es %1 obtenida de "
+"<a href=%2>CCCP</a>."
+
+#: ../downloads.php:49
+msgid ""
+"<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
+"will create a font cache. This process takes some seconds and meanwhile \n"
+"<b>smplayer may look hung. Don't worry, just wait.</b>"
+msgstr ""
+"<b>Nota:</b> la primera vez que la librería SSA/ASS o fontconfig sean usados, "
+"MPlayer creará una caché con los tipos de letra. Este proceso dura unos cuantos "
+"segundos durante los cuales <b>SMPlayer puede parecer colgado. No te preocupes, simplemente espera.</b>"
+
+#: ../downloads.php:53
+msgid ""
+"<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
+"recommended that you uninstall the old package before installing the new one."
+msgstr ""
+"<b>Nota 2:</b> Si tenías instalada una versión anterior, es muy recomendable que la desinstales antes de instalar la nueva."
 
 #: ../header.php:34
 msgid "The SMPlayer Project"
@@ -31,10 +71,6 @@ msgstr "Principal"
 #: ../header.php:46
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
-
-#: ../header.php:48
-msgid "Downloads"
-msgstr "Descargas"
 
 #: ../header.php:50
 msgid "Forum"
@@ -92,15 +128,15 @@ msgstr "SMPlayer - Capturas de pantalla"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí puedes ver algunas capturas de pantalla de SMPlayer:"
 
-#~ msgid "Forums"
-#~ msgstr "Foros"
-
-#~ msgid "Documentation"
-#~ msgstr "Documentación"
-
 #~ msgid ""
 #~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
 #~ "SMPlayer"
 #~ msgstr ""
 #~ "Descarga <a href=\"downloads.php\">aquí</a> la versión más reciente de "
 #~ "SMPlayer"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentación"
+
+#~ msgid "Forums"
+#~ msgstr "Foros"
