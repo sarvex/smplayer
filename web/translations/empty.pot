@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-23 03:51+0200\n"
+"POT-Creation-Date: 2007-10-23 02:15-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,24 +20,103 @@ msgstr ""
 msgid "SMPlayer - General Info"
 msgstr ""
 
-#: ../info.php:4
+#: ../info.php:5
 msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
 msgstr ""
 
-#: ../info.php:7
+#: ../info.php:12
 msgid ""
-"SMPlayer intends to be a complete front-end for MPlayer, from basic features "
-"like playing videos, DVDs, and VCDs to more advanced features like support "
-"for MPlayer filters and more."
+"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
+"features like support for MPlayer filters and more."
 msgstr ""
 
-#: ../info.php:9
+#: ../info.php:18
 msgid ""
-"One of the most interesting features of SMPlayer: it remembers the settings "
-"of all files you play. So you start to watch a movie but you have to "
-"leave... don't worry, when you open that movie again it will resume at the "
-"same point you left it, and with the same settings: audio track, subtitles, "
-"volume..."
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+
+#: ../info.php:27
+msgid "Other additional interesting features:"
+msgstr ""
+
+#: ../info.php:29
+msgid ""
+"Configurable subtitles. You can choose font and size, and even \n"
+"colors for the subtitles.</li>"
+msgstr ""
+
+#: ../info.php:31
+msgid ""
+"Audio track switching. You can choose the audio track you want\n"
+"to listen. Works with avi and mkv. And of course with DVDs."
+msgstr ""
+
+#: ../info.php:33
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+
+#: ../info.php:35
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+
+#: ../info.php:37
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr ""
+
+#: ../info.php:40
+msgid ""
+"Filters. Several filters are available: deinterlace, postprocessing,\n"
+"denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+
+#: ../info.php:42
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr ""
+
+#: ../info.php:44
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr ""
+
+#: ../info.php:47
+msgid ""
+"Playlist. Allows you to enqueue several files to be played one after \n"
+"each other. Autorepeat and shuffle supported too."
+msgstr ""
+
+#: ../info.php:49
+msgid ""
+"Preferences dialog. You can easily configure every option of SMPlayer\n"
+"by using a nice preferences dialog."
+msgstr ""
+
+#: ../info.php:51
+msgid ""
+"Translations: currently SMPlayer is translated into more than 20 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+
+#: ../info.php:54
+msgid "It's multiplatform. Binaries available for Windows and Linux."
+msgstr ""
+
+#: ../info.php:56
+msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
 #: ../header.php:34
@@ -149,11 +228,11 @@ msgid ""
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:129
+#: ../downloads.php:131
 msgid "Unstable releases"
 msgstr ""
 
-#: ../downloads.php:130
+#: ../downloads.php:133
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
