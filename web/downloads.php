@@ -120,6 +120,13 @@ include("download_themes_deb.php");
 </tr>
 </table>
 
+<?php
+echo "<h2>".get_tr("Additional packages")."</h2>";
+echo "<p>";
+tr("There are several additional packages for advanced users:
+<a href=%1>See sourceforge download page</a>.",
+"\"http://sourceforge.net/project/showfiles.php?group_id=185512\"");
+?>
 
 </div>
 
