@@ -1,15 +1,18 @@
 <div id="info">
 <div id="info_download">
-<?php 
-echo "<p>";
-tr("Download <a href=%1>here</a> the latest version of the SMPlayer", 
-"\"downloads.php?tr_lang=".$tr_lang."\""); ?>
-</div>
-
-<div id="info_features">
 <center>
 <img src="images/screenshots/video_en.jpg">
 </center>
+
+<?php 
+echo "<p>";
+tr("Download <a href=%1>here</a> the latest version of the SMPlayer", 
+"\"downloads.php?tr_lang=".$tr_lang."\""); 
+?>
+</div>
+
+<div id="info_features">
+
 <?php 
 echo "<p>";
 tr("SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,
