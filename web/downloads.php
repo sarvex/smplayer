@@ -128,7 +128,7 @@ tr("There are several additional packages for advanced users:
 
 echo "<h2>".get_tr("Unstable releases")."</h2>";
 tr("You can get packages directly taken from the SVN (source code and
-Windows updates), <a href=%1><b>here</b>.",
+Windows updates), <a href=%1><b>here</b></a>.",
 "\"http://smplayer.wiki.sourceforge.net/Unstable+releases\"");
 
 ?>
