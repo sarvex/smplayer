@@ -27,7 +27,7 @@ echo "<br><br>";
 <?php tr("Other additional interesting features:"); ?>
 <ul>
 <li><?php tr("Configurable subtitles. You can choose font and size, and even 
-colors for the subtitles.</li>"); ?>
+colors for the subtitles."); ?></li>
 <li><?php tr("Audio track switching. You can choose the audio track you want
 to listen. Works with avi and mkv. And of course with DVDs."); ?></li>
 <li><?php tr("Seeking by mouse wheel. You can use your mouse wheel to go forward 
