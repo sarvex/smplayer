@@ -13,15 +13,19 @@ function header_print_section($name, $link, $is_active) {
 
 function header_set_section($s, $rel_path="") {
 	global $tr_lang;
+	
+	$file=basename($_SERVER['SCRIPT_NAME']);
 ?>
 	<div id="languages">
 	<div id="languages_links">
 	<ul>
-	<li><a href="index.php?tr_lang=nl">Nederlands</a> |&nbsp</li>
-	<li><a href="index.php?tr_lang=en">English</a> |&nbsp</li>
-	<li><a href="index.php?tr_lang=fr">Français</a> |&nbsp</li>
-	<li><a href="index.php?tr_lang=es">Español</a> |&nbsp</li>
-	<li><a href="index.php?tr_lang=ja">日本語</a></li>
+<?php
+	echo "<li><a href=\"".$file."?tr_lang=nl\">Nederlands</a> |&nbsp</li>";
+	echo "<li><a href=\"".$file."?tr_lang=en\">English</a> |&nbsp</li>";
+	echo "<li><a href=\"".$file."?tr_lang=fr\">Français</a> |&nbsp</li>";
+	echo "<li><a href=\"".$file."?tr_lang=es\">Español</a> |&nbsp</li>";
+	echo "<li><a href=\"".$file."?tr_lang=ja\">日本語</a></li>";
+?>
 	</ul>
 	</div>
 	</div>
