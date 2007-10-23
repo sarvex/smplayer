@@ -22,15 +22,15 @@ msgstr "SMPlayer - ダウンロード"
 
 #: ../downloads.php:30
 msgid "Stable version"
-msgstr ""
+msgstr "安定バージョン"
 
 #: ../downloads.php:31
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../downloads.php:40
 msgid "Full package with installer:"
-msgstr ""
+msgstr "インストーラ付きフルパッケージ:"
 
 #: ../downloads.php:45
 msgid ""
@@ -38,6 +38,9 @@ msgid ""
 "libraries, translation files, icon themes... It also includes a mplayer \n"
 "build. The version included is %1 from <a href=%2>CCCP</a>."
 msgstr ""
+"このパッケージには、mplayer ビルド、Qt 共有ライブラリ、翻訳ファイル、"
+"アイコンテーマなど、smplayer を起動するのに必要なものがすべて含まれています。"
+"含まれている mplayer のバージョンは <a href=%2>CCCP</a> からの %1 です。"
 
 #: ../downloads.php:51
 msgid ""
@@ -45,63 +48,74 @@ msgid ""
 "will create a font cache. This process takes some seconds and meanwhile \n"
 "<b>smplayer may look hung. Don't worry, just wait.</b>"
 msgstr ""
+"<b>ご注意:</b> ライブラリ SSA/ASS や fontconfig が初めて使用されると、"
+"mplayer はフォントキャッシュを作成します。この処理には数秒かかり、その間\n"
+"<b>smplayer はハングします。ご心配せず、そのままお待ちください。</b>"
 
 #: ../downloads.php:55
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
 msgstr ""
+"<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新しい"
+"バージョンをインストールする前に古いパッケージをアンインストールすることを強く推奨します。"
 
 #: ../downloads.php:64
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../downloads.php:65
 msgid "Source"
-msgstr ""
+msgstr "ソース"
 
 #: ../downloads.php:75
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
-msgstr ""
+msgstr "コンパイル方法は、パッケージ内の Install.txt に記載されています。"
 
 #: ../downloads.php:85
 msgid "Optional package which provides some icon themes."
-msgstr ""
+msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
 
 #: ../downloads.php:91
 msgid "Binaries"
-msgstr ""
+msgstr "バイナリ"
 
 #: ../downloads.php:101
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
 msgstr ""
+"OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer (最低で 1.0rc1、"
+"1.0rc2 か svn を推奨) が必要です。"
 
 #: ../downloads.php:115
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-msgstr ""
+msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作します)。"
 
 #: ../downloads.php:124
 msgid "Additional packages"
-msgstr ""
+msgstr "さらなるパッケージ"
 
 #: ../downloads.php:125
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
+"上級者向けにいくつかのさらなるパッケージがあります:\n"
+"<a href=%1>sourceforge のダウンロードページをご覧ください</a>."
 
 #: ../downloads.php:129
 msgid "Unstable releases"
-msgstr ""
+msgstr "不安定リリース"
 
 #: ../downloads.php:130
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
-"Windows updates), <a href=%1><b>here</b>."
+"Windows updates), <a href=%1><b>here</b></a>."
 msgstr ""
+"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ\n"
+"(ソースコードと Windows 用の更新) をダウンロードできます。"
 
 #: ../header.php:34
 msgid "The SMPlayer Project"
