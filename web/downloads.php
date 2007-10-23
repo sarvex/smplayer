@@ -122,10 +122,15 @@ include("download_themes_deb.php");
 
 <?php
 echo "<h2>".get_tr("Additional packages")."</h2>";
-echo "<p>";
 tr("There are several additional packages for advanced users:
 <a href=%1>See sourceforge download page</a>.",
 "\"http://sourceforge.net/project/showfiles.php?group_id=185512\"");
+
+echo "<h2>".get_tr("Unstable releases")."</h2>";
+tr("You can get packages directly taken from the SVN (source code and
+Windows updates), <a href=%1><b>here</b>.",
+"\"http://smplayer.wiki.sourceforge.net/Unstable+releases\"");
+
 ?>
 
 </div>
