@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-23 03:21+0200\n"
+"POT-Creation-Date: 2007-10-23 03:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "Versión estable"
 
 #: ../downloads.php:31
 msgid "Windows"
-msgstr "Window"
+msgstr "Windows"
 
 #: ../downloads.php:40
 msgid "Full package with installer:"
@@ -70,30 +70,31 @@ msgstr "Linux"
 msgid "Source"
 msgstr "Código fuente"
 
-#: ../downloads.php:74
+#: ../downloads.php:75
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Lee el fichero Install.txt incluido en el paquete para saber cómo compilarlo."
 
-#: ../downloads.php:83
+#: ../downloads.php:85
 msgid "Optional package which provides some icon themes."
 msgstr "Paquete opcional que incluye varios juegos de iconos."
 
-#: ../downloads.php:89
+#: ../downloads.php:91
 msgid "Binaries"
 msgstr "Binarios"
 
-#: ../downloads.php:99
+#: ../downloads.php:101
 msgid ""
-"Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, \n"
+"Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
 msgstr ""
-"Compilado en SuSE 9.2. Require: libqt3 y mplayer (al menos la versión 1.0rc1, recomendada 1.0rc2 o svn)."
+"Compilado en OpenSuSE 10.2. Require: libqt4 y mplayer (al menos la versión "
+"1.0rc1, recomendada 1.0rc2 o svn)."
 
-#: ../downloads.php:112
-msgid "Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."
-msgstr "Compilado en kubuntu 70.4 (debería servir también para ubuntu) con Qt 4."
+#: ../downloads.php:115
+msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+msgstr "Compilado en kubuntu 70.4 (debería servir también para ubuntu)."
 
 #: ../header.php:34
 msgid "The SMPlayer Project"
@@ -167,15 +168,26 @@ msgstr "SMPlayer - Capturas de pantalla"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí puedes ver algunas capturas de pantalla de SMPlayer:"
 
-#~ msgid "Forums"
-#~ msgstr "Foros"
-
-#~ msgid "Documentation"
-#~ msgstr "Documentación"
-
 #~ msgid ""
 #~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
 #~ "SMPlayer"
 #~ msgstr ""
 #~ "Descarga <a href=\"downloads.php\">aquí</a> la versión más reciente de "
 #~ "SMPlayer"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentación"
+
+#~ msgid "Forums"
+#~ msgstr "Foros"
+
+#~ msgid ""
+#~ "Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Compilado en SuSE 9.2. Require: libqt3 y mplayer (al menos la versión "
+#~ "1.0rc1, recomendada 1.0rc2 o svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."
+#~ msgstr ""
+#~ "Compilado en kubuntu 70.4 (debería servir también para ubuntu) con Qt 4."

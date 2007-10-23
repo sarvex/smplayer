@@ -69,9 +69,11 @@ echo "<h3>".get_tr("Source")."</h3>";
 <tr>
 <td><img src="iconos/package.png"></td>
 <td>
-<a href="http://downloads.sourceforge.net/smplayer/smplayer-0.5.21.tar.gz">smplayer-0.5.21.tar.gz</a> (1003 KB)
-<br>
-<?php tr("Read the file Install.txt included in the package to know how compile it."); ?>
+<?php
+include("download_source.php");
+echo "<br>";
+tr("Read the file Install.txt included in the package to know how compile it."); 
+?>
 </td>
 </tr>
 <tr>
@@ -93,10 +95,10 @@ tr("Optional package which provides some icon themes.");
 <tr>
 <td><img src="iconos/suse.png"></td>
 <td>
-<a href="http://downloads.sourceforge.net/smplayer/smplayer-0.5.21-rvm.i586.rpm">smplayer-0.5.21-rvm.i586.rpm</a> (806 KB)
-<br>
-<?php 
-tr("Compiled on SuSE 9.2. Requires: libqt3 and mplayer (at least 1.0rc1, 
+<?php
+include("download_suse.php");
+echo "<br>";
+tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, 
 recommended 1.0rc2 or svn).");
 echo "<br>";
 include("download_themes_rpm.php"); 
@@ -107,11 +109,13 @@ include("download_themes_rpm.php");
 <tr>
 <td><img src="iconos/ubuntu.png"></td>
 <td>
-<a href="http://downloads.sourceforge.net/smplayer/smplayer_0.5.21_i386.deb">smplayer_0.5.21_i386.deb</a> (930 KB)
-<br>
-<?php tr("Compiled on kubuntu 7.04 (should work in ubuntu too) with Qt 4."); ?>
-<br>
-<a href="http://downloads.sourceforge.net/smplayer/smplayer-themes_0.1.5_all.deb">smplayer-themes_0.1.5_all.deb</a> (1.1 MB)
+<?php
+include("download_ubuntu.php");
+echo "<br>";
+tr("Compiled on kubuntu 7.04 (should work in ubuntu too)."); 
+echo "<br>";
+include("download_themes_deb.php");
+?>
 </td>
 </tr>
 </table>
