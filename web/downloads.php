@@ -126,7 +126,10 @@ tr("There are several additional packages for advanced users:
 <a href=%1>See sourceforge download page</a>.",
 "\"http://sourceforge.net/project/showfiles.php?group_id=185512\"");
 
-echo "<h2>".get_tr("Unstable releases")."</h2>";
+echo "<hr>\n";
+
+echo "<h1>".get_tr("Unstable releases")."</h1>";
+echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 tr("You can get packages directly taken from the SVN (source code and
 Windows updates), <a href=%1><b>here</b></a>.",
 "\"http://smplayer.wiki.sourceforge.net/Unstable+releases\"");
