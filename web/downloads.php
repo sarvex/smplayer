@@ -67,7 +67,7 @@ recommended that you uninstall the old package before installing the new one.");
 <!-- LINUX -->
 <?php
 echo "<h2>".get_tr("Linux")."</h2>";
-echo "<h3>".get_tr("Source")."</h3>";
+//echo "<h3>".get_tr("smplayer")."</h3>";
 ?>
 <p>
 <table>
@@ -81,21 +81,6 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 ?>
 </td>
 </tr>
-<tr>
-<td><img src="iconos/package.png"></td>
-<td>
-<?php 
-include("download_themes.php");
-echo "<br>";
-tr("Optional package which provides some icon themes."); 
-?>
-</td>
-</tr>
-</table>
-
-<?php echo "<h3>".get_tr("Binaries")."</h3>"; ?>
-<p>
-<table>
 
 <tr>
 <td><img src="iconos/suse.png"></td>
@@ -105,8 +90,6 @@ include("download_suse.php");
 echo "<br>";
 tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, 
 recommended 1.0rc2 or svn).");
-echo "<br>";
-include("download_themes_rpm.php"); 
 ?>
 </td>
 </tr>
@@ -118,27 +101,74 @@ include("download_themes_rpm.php");
 include("download_ubuntu.php");
 echo "<br>";
 tr("Compiled on kubuntu 7.04 (should work in ubuntu too)."); 
-echo "<br>";
-include("download_themes_deb.php");
 ?>
 </td>
 </tr>
 </table>
 
 <?php
+echo "<h3>".get_tr("Icon Themes:")."</h3>";
+?>
+<p>
+<table>
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<?php 
+include("download_themes.php");
+echo "<br>";
+tr("Optional package which provides some icon themes."); 
+?>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/suse.png"></td>
+<td>
+<?php
+include("download_themes_rpm.php"); 
+?>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/ubuntu.png"></td>
+<td>
+<?php
+include("download_themes_deb.php");
+?>
+</td>
+</tr>
+</table>
+
+
+<!-- Additional packages -->
+
+<?php
 echo "<h2>".get_tr("Additional packages")."</h2>";
 tr("There are several additional packages for advanced users:
 <a href=%1>See sourceforge download page</a>.",
 "\"http://sourceforge.net/project/showfiles.php?group_id=185512\"");
+?>
 
-echo "<hr>\n";
+<!-- Contributed packages -->
+<?php
+echo "<h2>".get_tr("Contributed packages")."</h2>";
+tr("There are available packages for other distros, created
+by other people. <a href=%1>Click here</a> to see them.",
+"\"http://smplayer.wiki.sourceforge.net/Contributed+Packages\"");
+?>
 
+<!-- Unstable releases -->
+
+<hr>
+
+<?php
 echo "<h1>".get_tr("Unstable releases")."</h1>";
 echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 tr("You can get packages directly taken from the SVN (source code and
 Windows updates), <a href=%1><b>here</b></a>.",
 "\"http://smplayer.wiki.sourceforge.net/Unstable+releases\"");
-
 ?>
 
 </div>

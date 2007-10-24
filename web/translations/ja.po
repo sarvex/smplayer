@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-23 02:26-0700\n"
+"POT-Creation-Date: 2007-10-24 02:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - ダウンロード"
 
-#: ../downloads.php:30
+#: ../downloads.php:35
 msgid "Stable version"
 msgstr "安定バージョン"
 
-#: ../downloads.php:31
+#: ../downloads.php:36
 msgid "Windows"
 msgstr "Windows"
 
-#: ../downloads.php:40
+#: ../downloads.php:45
 msgid "Full package with installer:"
 msgstr "インストーラ付きフルパッケージ:"
 
-#: ../downloads.php:45
+#: ../downloads.php:50
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
@@ -42,7 +42,7 @@ msgstr ""
 "テーマなど、smplayer を起動するのに必要なものがすべて含まれています。含まれて"
 "いる mplayer のバージョンは <a href=%2>CCCP</a> からの %1 です。"
 
-#: ../downloads.php:51
+#: ../downloads.php:56
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
@@ -52,7 +52,7 @@ msgstr ""
 "mplayer はフォントキャッシュを作成します。この処理には数秒かかり、その間\n"
 "<b>smplayer はハングします。ご心配せず、そのままお待ちください。</b>"
 
-#: ../downloads.php:55
+#: ../downloads.php:60
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
@@ -61,28 +61,16 @@ msgstr ""
 "バージョンをインストールする前に古いパッケージをアンインストールすることを強"
 "く推奨します。"
 
-#: ../downloads.php:64
+#: ../downloads.php:69
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:65
-msgid "Source"
-msgstr "ソース"
-
-#: ../downloads.php:75
+#: ../downloads.php:80
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "コンパイル方法は、パッケージ内の Install.txt に記載されています。"
 
-#: ../downloads.php:85
-msgid "Optional package which provides some icon themes."
-msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
-
 #: ../downloads.php:91
-msgid "Binaries"
-msgstr "バイナリ"
-
-#: ../downloads.php:101
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
@@ -90,15 +78,23 @@ msgstr ""
 "OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer (最低で 1.0rc1、"
 "1.0rc2 か svn を推奨) が必要です。"
 
-#: ../downloads.php:115
+#: ../downloads.php:103
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作します)。"
 
-#: ../downloads.php:124
+#: ../downloads.php:110
+msgid "Icon Themes:"
+msgstr ""
+
+#: ../downloads.php:120
+msgid "Optional package which provides some icon themes."
+msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
+
+#: ../downloads.php:148
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:125
+#: ../downloads.php:149
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -106,11 +102,21 @@ msgstr ""
 "上級者向けにいくつかのさらなるパッケージがあります:\n"
 "<a href=%1>sourceforge のダウンロードページをご覧ください</a>."
 
-#: ../downloads.php:131
+#: ../downloads.php:156
+msgid "Contributed packages"
+msgstr ""
+
+#: ../downloads.php:157
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+
+#: ../downloads.php:167
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
-#: ../downloads.php:133
+#: ../downloads.php:169
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -118,35 +124,35 @@ msgstr ""
 "<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ\n"
 "(ソースコードと Windows 用の更新) をダウンロードできます。"
 
-#: ../header.php:34
+#: ../header.php:38
 msgid "The SMPlayer Project"
 msgstr "SMPlayer プロジェクト"
 
-#: ../header.php:44
+#: ../header.php:48
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:46
+#: ../header.php:50
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:48
+#: ../header.php:52
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../header.php:50
+#: ../header.php:54
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../header.php:52
+#: ../header.php:56
 msgid "Bug Tracking"
 msgstr "バグトラック (英語)"
 
-#: ../header.php:54
+#: ../header.php:58
 msgid "Feature Requests"
 msgstr "機能のリクエスト (英語)"
 
-#: ../header.php:56
+#: ../header.php:60
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -154,18 +160,18 @@ msgstr "Wiki"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - 一般情報"
 
-#: ../info.php:5
+#: ../info.php:9
 msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
 msgstr "最新の SMPlayer は、<a href=%1>こちら</a>からダウンロードできます"
 
-#: ../info.php:12
+#: ../info.php:18
 msgid ""
 "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
 
-#: ../info.php:18
+#: ../info.php:24
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -174,82 +180,82 @@ msgid ""
 "track, subtitles, volume..."
 msgstr ""
 
-#: ../info.php:27
+#: ../info.php:33
 msgid "Other additional interesting features:"
 msgstr ""
 
-#: ../info.php:29
+#: ../info.php:35
 msgid ""
 "Configurable subtitles. You can choose font and size, and even \n"
 "colors for the subtitles."
 msgstr ""
 
-#: ../info.php:31
+#: ../info.php:37
 msgid ""
 "Audio track switching. You can choose the audio track you want\n"
 "to listen. Works with avi and mkv. And of course with DVDs."
 msgstr ""
 
-#: ../info.php:33
+#: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
 msgstr ""
 
-#: ../info.php:35
+#: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
 msgstr ""
 
-#: ../info.php:37
+#: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr ""
 
-#: ../info.php:40
+#: ../info.php:46
 msgid ""
 "Filters. Several filters are available: deinterlace, postprocessing,\n"
 "denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:42
+#: ../info.php:48
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr ""
 
-#: ../info.php:44
+#: ../info.php:50
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
 msgstr ""
 
-#: ../info.php:47
+#: ../info.php:53
 msgid ""
 "Playlist. Allows you to enqueue several files to be played one after \n"
 "each other. Autorepeat and shuffle supported too."
 msgstr ""
 
-#: ../info.php:49
+#: ../info.php:55
 msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
 msgstr ""
 
-#: ../info.php:51
+#: ../info.php:57
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:54
+#: ../info.php:60
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr ""
 
-#: ../info.php:56
+#: ../info.php:62
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
@@ -260,6 +266,25 @@ msgstr "SMPlayer - スクリーンショット"
 #: ../screenshots.php:29
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは SMPlayer のスクリーンショットをいくつかご覧いただけます:"
+
+#~ msgid "Documentation"
+#~ msgstr "資料"
+
+#~ msgid ""
+#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
+#~ "SMPlayer"
+#~ msgstr ""
+#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
+#~ "きます"
+
+#~ msgid ""
+#~ "SMPlayer intends to be a complete front-end for MPlayer, from basic "
+#~ "features like playing videos, DVDs, and VCDs to more advanced features "
+#~ "like support for MPlayer filters and more."
+#~ msgstr ""
+#~ "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
+#~ "MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロン"
+#~ "トエンドとなることを目指します。"
 
 #~ msgid ""
 #~ "One of the most interesting features of SMPlayer: it remembers the "
@@ -273,21 +298,8 @@ msgstr "ここでは SMPlayer のスクリーンショットをいくつかご�
 #~ "ません。再びムービーを開いたときには、以前と同じ位置と設定 (オーディオト"
 #~ "ラック、字幕、音量などなど...) で再開されます。"
 
-#~ msgid ""
-#~ "SMPlayer intends to be a complete front-end for MPlayer, from basic "
-#~ "features like playing videos, DVDs, and VCDs to more advanced features "
-#~ "like support for MPlayer filters and more."
-#~ msgstr ""
-#~ "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
-#~ "MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロン"
-#~ "トエンドとなることを目指します。"
+#~ msgid "Source"
+#~ msgstr "ソース"
 
-#~ msgid ""
-#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
-#~ "SMPlayer"
-#~ msgstr ""
-#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
-#~ "きます"
-
-#~ msgid "Documentation"
-#~ msgstr "資料"
+#~ msgid "Binaries"
+#~ msgstr "バイナリ"
