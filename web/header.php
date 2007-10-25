@@ -11,20 +11,33 @@ function header_print_section($name, $link, $is_active) {
 	echo "</a></span></li>\n";
 }
 
+function print_language_link($file, $name, $cod, $query, $last=false) {
+	echo "<li><a href=\"".$file."?tr_lang=".$cod.$query."\">".$name."</a>";
+	if (!$last) echo " |&nbsp";
+	echo "</li>";
+}
+
 function header_set_section($s, $rel_path="") {
 	global $tr_lang;
 	
-	$file=basename($_SERVER['SCRIPT_NAME']);
+	$file = basename($_SERVER['SCRIPT_NAME']);
+	$query =  $_SERVER['QUERY_STRING'];
+
+	$query = preg_replace("/&tr_lang=\S\S/", "", $query);
+	$query = preg_replace("/tr_lang=\S\S/", "", $query);
+	$query = preg_replace("/^&/", "", $query);
+	if ($query!="") $query = "&".$query;
+	//echo "query: $query";
 ?>
 	<div id="languages">
 	<div id="languages_links">
 	<ul>
 <?php
-	echo "<li><a href=\"".$file."?tr_lang=nl\">Nederlands</a> |&nbsp</li>";
-	echo "<li><a href=\"".$file."?tr_lang=en\">English</a> |&nbsp</li>";
-	echo "<li><a href=\"".$file."?tr_lang=fr\">Français</a> |&nbsp</li>";
-	echo "<li><a href=\"".$file."?tr_lang=es\">Español</a> |&nbsp</li>";
-	echo "<li><a href=\"".$file."?tr_lang=ja\">日本語</a></li>";
+	print_language_link($file, "Nederlands", "nl", $query);
+	print_language_link($file, "English", "en", $query);
+	print_language_link($file, "Français", "fr", $query);
+	print_language_link($file, "Español", "es", $query);
+	print_language_link($file, "日本語", "ja", $query, true);
 ?>
 	</ul>
 	</div>
