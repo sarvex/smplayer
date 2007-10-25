@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-24 02:15+0200\n"
+"POT-Creation-Date: 2007-10-25 16:42-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,8 +113,8 @@ msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
-"Hay disponibles paquetes para otras distros, creados "
-"por otras personas. <a href=%1>Haz click aquí</a> para verlos."
+"Hay disponibles paquetes para otras distros, creados por otras personas. <a "
+"href=%1>Haz click aquí</a> para verlos."
 
 #: ../downloads.php:167
 msgid "Unstable releases"
@@ -128,35 +128,35 @@ msgstr ""
 "Puedes obtener paquetes sacados del SVN (código fuente y actualizaciones "
 "para Windows), <a href=%1><b>aquí</b></a>."
 
-#: ../header.php:38
+#: ../header.php:51
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
-#: ../header.php:48
+#: ../header.php:61
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:50
+#: ../header.php:63
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
-#: ../header.php:52
+#: ../header.php:65
 msgid "Downloads"
 msgstr "Descargas"
 
-#: ../header.php:54
+#: ../header.php:67
 msgid "Forum"
 msgstr "Foro"
 
-#: ../header.php:56
+#: ../header.php:69
 msgid "Bug Tracking"
 msgstr "Seguimiento de Bugs"
 
-#: ../header.php:58
+#: ../header.php:71
 msgid "Feature Requests"
 msgstr "Peticiones"
 
-#: ../header.php:60
+#: ../header.php:73
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -299,3 +299,8 @@ msgstr "SMPlayer - Capturas de pantalla"
 #: ../screenshots.php:29
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí puedes ver algunas capturas de pantalla de SMPlayer:"
+
+#. Test translation of posts
+#: ../screenshots.php:35
+msgid "139"
+msgstr "43"

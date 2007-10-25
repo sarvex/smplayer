@@ -30,9 +30,12 @@ header_set_section("screenshots");
 
 include_once("print_post.php");
 echo "<hr>";
-print_post(139);
-echo "<hr>";
-print_post(125);
+
+// Test translation of posts
+print_post( intval(get_tr("139")) );
+
+//echo "<hr>";
+//print_post(125);
 
 ?>
 </div>

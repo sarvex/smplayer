@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-24 02:15+0200\n"
+"POT-Creation-Date: 2007-10-25 16:42-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,35 +124,35 @@ msgstr ""
 "<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ\n"
 "(ソースコードと Windows 用の更新) をダウンロードできます。"
 
-#: ../header.php:38
+#: ../header.php:51
 msgid "The SMPlayer Project"
 msgstr "SMPlayer プロジェクト"
 
-#: ../header.php:48
+#: ../header.php:61
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:50
+#: ../header.php:63
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:52
+#: ../header.php:65
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../header.php:54
+#: ../header.php:67
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../header.php:56
+#: ../header.php:69
 msgid "Bug Tracking"
 msgstr "バグトラック (英語)"
 
-#: ../header.php:58
+#: ../header.php:71
 msgid "Feature Requests"
 msgstr "機能のリクエスト (英語)"
 
-#: ../header.php:60
+#: ../header.php:73
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -267,24 +267,16 @@ msgstr "SMPlayer - スクリーンショット"
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは SMPlayer のスクリーンショットをいくつかご覧いただけます:"
 
-#~ msgid "Documentation"
-#~ msgstr "資料"
+#. Test translation of posts
+#: ../screenshots.php:35
+msgid "139"
+msgstr ""
 
-#~ msgid ""
-#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
-#~ "SMPlayer"
-#~ msgstr ""
-#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
-#~ "きます"
+#~ msgid "Binaries"
+#~ msgstr "バイナリ"
 
-#~ msgid ""
-#~ "SMPlayer intends to be a complete front-end for MPlayer, from basic "
-#~ "features like playing videos, DVDs, and VCDs to more advanced features "
-#~ "like support for MPlayer filters and more."
-#~ msgstr ""
-#~ "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
-#~ "MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロン"
-#~ "トエンドとなることを目指します。"
+#~ msgid "Source"
+#~ msgstr "ソース"
 
 #~ msgid ""
 #~ "One of the most interesting features of SMPlayer: it remembers the "
@@ -298,8 +290,21 @@ msgstr "ここでは SMPlayer のスクリーンショットをいくつかご�
 #~ "ません。再びムービーを開いたときには、以前と同じ位置と設定 (オーディオト"
 #~ "ラック、字幕、音量などなど...) で再開されます。"
 
-#~ msgid "Source"
-#~ msgstr "ソース"
+#~ msgid ""
+#~ "SMPlayer intends to be a complete front-end for MPlayer, from basic "
+#~ "features like playing videos, DVDs, and VCDs to more advanced features "
+#~ "like support for MPlayer filters and more."
+#~ msgstr ""
+#~ "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
+#~ "MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロン"
+#~ "トエンドとなることを目指します。"
 
-#~ msgid "Binaries"
-#~ msgstr "バイナリ"
+#~ msgid ""
+#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
+#~ "SMPlayer"
+#~ msgstr ""
+#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
+#~ "きます"
+
+#~ msgid "Documentation"
+#~ msgstr "資料"
