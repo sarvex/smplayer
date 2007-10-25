@@ -26,7 +26,15 @@ header_set_section("screenshots");
 <!----------------------begin content---------------------->
 
 <div id="content">
-<?php tr("Here you can see some screenshots from SMPlayer:"); ?>
+<?php tr("Here you can see some screenshots from SMPlayer:"); 
+
+include_once("print_post.php");
+echo "<hr>";
+print_post(139);
+echo "<hr>";
+print_post(125);
+
+?>
 </div>
 
 <!----------------------end content---------------------->
