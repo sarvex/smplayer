@@ -18,7 +18,7 @@ function get_messages() {
 
 // Request function for send new message
 function send_message() {
-        var req_message = escape($F('req_message'));
+        var req_message = $F('req_message');
         var form_user = escape($F('form_user'));
         var req_username = escape($F('req_username'));
         var req_email = escape($F('req_email'));
