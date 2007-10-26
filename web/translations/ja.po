@@ -57,9 +57,9 @@ msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
 msgstr ""
-"<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新しい"
-"バージョンをインストールする前に古いパッケージをアンインストールすることを強"
-"く推奨します。"
+"<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新しいバ"
+"ージョンをインストールする前に古いパッケージをアンインストールすることを強く"
+"推奨します。"
 
 #: ../downloads.php:69
 msgid "Linux"
@@ -84,7 +84,7 @@ msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作�
 
 #: ../downloads.php:110
 msgid "Icon Themes:"
-msgstr ""
+msgstr "アイコンテーマ:"
 
 #: ../downloads.php:120
 msgid "Optional package which provides some icon themes."
@@ -104,13 +104,14 @@ msgstr ""
 
 #: ../downloads.php:156
 msgid "Contributed packages"
-msgstr ""
+msgstr "いただいたパッケージ"
 
 #: ../downloads.php:157
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
+"有志によるその他の配布用パッケージは、<a href=%1>こちら</a> をご覧ください。"
 
 #: ../downloads.php:167
 msgid "Unstable releases"
@@ -121,8 +122,8 @@ msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
 msgstr ""
-"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ\n"
-"(ソースコードと Windows 用の更新) をダウンロードできます。"
+"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコード"
+"と Windows 用の更新) をダウンロードできます。"
 
 #: ../header.php:51
 msgid "The SMPlayer Project"
@@ -170,6 +171,9 @@ msgid ""
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
+"SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、MPlayer\n"
+"フィルタなどの高度な機能に対応する <a href=%1>MPlayer</a> の完全なフロントエ"
+"ンドとなることを目指します。"
 
 #: ../info.php:24
 msgid ""
@@ -179,70 +183,86 @@ msgid ""
 "resume at the same point you left it, and with the same settings: audio \n"
 "track, subtitles, volume..."
 msgstr ""
+"SMPlayer の最大の特徴: <b>再生したファイルの設定をすべて記憶します</b>。です"
+"から、ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いり"
+"ません。再びムービーを開いたときには、以前と同じ位置と設定 (オーディオトラッ"
+"ク、字幕、音量など) で再開されます。"
 
 #: ../info.php:33
 msgid "Other additional interesting features:"
-msgstr ""
+msgstr "その他の特徴:"
 
 #: ../info.php:35
 msgid ""
 "Configurable subtitles. You can choose font and size, and even \n"
 "colors for the subtitles."
-msgstr ""
+msgstr "字幕の設定。字幕のフォント、サイズ、色を自由に選択できます。"
 
 #: ../info.php:37
 msgid ""
 "Audio track switching. You can choose the audio track you want\n"
 "to listen. Works with avi and mkv. And of course with DVDs."
 msgstr ""
+"オーディオトラックの切り替え。お聴きになりたいオーディオトラックを自由に選択"
+"できます。avi、mkv、DVD で動作します。"
 
 #: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
 msgstr ""
+"マウスホイールによるシーク。お使いのマウスをホイールすることで、ビデオを進め"
+"たり戻したりできます。"
 
 #: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
 msgstr ""
+"ビデオイコライザ。ビデオ画像の明るさ、コントラスト、色合い、鮮やかさ、ガンマ"
+"値の調整を可能にします。"
 
 #: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
-msgstr ""
+msgstr "変速再生。2 倍速、4 倍速... そしてスローモーションでも再生できます。"
 
 #: ../info.php:46
 msgid ""
 "Filters. Several filters are available: deinterlace, postprocessing,\n"
 "denoise... and even a karaoke filter (voice removal)."
 msgstr ""
+"フィルタ。インターレイス解除、後処理、ノイズ除去... そしてカラオケフィルタ\n"
+"(歌声除去) などがあります。"
 
 #: ../info.php:48
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
-msgstr ""
+msgstr "オーディオと字幕の遅延調整。オーディオと字幕の同期化を可能にします。"
 
 #: ../info.php:50
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
-msgstr ""
+msgstr "高度なオプション。デミュクサやコーデックの選択などがあります。"
 
 #: ../info.php:53
 msgid ""
 "Playlist. Allows you to enqueue several files to be played one after \n"
 "each other. Autorepeat and shuffle supported too."
 msgstr ""
+"プレイリスト。複数のファイルを順番に再生できます。自動リピートやシャッフルに"
+"も対応しています。"
 
 #: ../info.php:55
 msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
 msgstr ""
+"環境設定ダイアログ。分かりやすい環境設定ダイアログで、SMPlayer の細かなオプシ"
+"ョンを簡単に設定することができます。"
 
 #: ../info.php:57
 msgid ""
@@ -250,14 +270,17 @@ msgid ""
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
+"翻訳: 現在 SMPlayer は、スペイン語、ドイツ語、フランス語、イタリア語、ロシア"
+"語、中国語、日本語など、20 を超える言語に翻訳されています。"
 
 #: ../info.php:60
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr ""
+msgstr "マルチプラットフォームです。Windows 用と Linux 用のバイナリがありま"
+"す。"
 
 #: ../info.php:62
 msgid "SMPlayer is under the <b>GPL</b> license."
-msgstr ""
+msgstr "SMPlayer は、<b>GPL</b> ライセンスの下にあります。"
 
 #: ../screenshots.php:6
 msgid "SMPlayer - Screenshots"
@@ -271,40 +294,3 @@ msgstr "ここでは SMPlayer のスクリーンショットをいくつかご�
 #: ../screenshots.php:35
 msgid "139"
 msgstr ""
-
-#~ msgid "Binaries"
-#~ msgstr "バイナリ"
-
-#~ msgid "Source"
-#~ msgstr "ソース"
-
-#~ msgid ""
-#~ "One of the most interesting features of SMPlayer: it remembers the "
-#~ "settings of all files you play. So you start to watch a movie but you "
-#~ "have to leave... don't worry, when you open that movie again it will "
-#~ "resume at the same point you left it, and with the same settings: audio "
-#~ "track, subtitles, volume..."
-#~ msgstr ""
-#~ "SMPlayer の最大の特徴: 再生したファイルの設定をすべて記憶します。ですか"
-#~ "ら、ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いり"
-#~ "ません。再びムービーを開いたときには、以前と同じ位置と設定 (オーディオト"
-#~ "ラック、字幕、音量などなど...) で再開されます。"
-
-#~ msgid ""
-#~ "SMPlayer intends to be a complete front-end for MPlayer, from basic "
-#~ "features like playing videos, DVDs, and VCDs to more advanced features "
-#~ "like support for MPlayer filters and more."
-#~ msgstr ""
-#~ "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、"
-#~ "MPlayer フィルタなどのさらなる高度な機能に対応する、MPlayer の完全なフロン"
-#~ "トエンドとなることを目指します。"
-
-#~ msgid ""
-#~ "Download <a href=\"downloads.php\">here</a> the latest version of the "
-#~ "SMPlayer"
-#~ msgstr ""
-#~ "最新の SMPlayer は、<a href=\"downloads.php\">こちら</a>からダウンロードで"
-#~ "きます"
-
-#~ msgid "Documentation"
-#~ msgstr "資料"
