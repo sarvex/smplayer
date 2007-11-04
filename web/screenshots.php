@@ -42,10 +42,11 @@ function show_thumb($filename, $desc) {
 
 tr("Here you can see some screenshots from SMPlayer:"); 
 
+echo "<center>";
 echo "<table>";
 echo "<tr>";
 
-show_thumb("mainwindow_xp.pn", get_tr("This is the main window") );
+show_thumb("mainwindow_xp.png", get_tr("This is the main window") );
 
 show_thumb("playlist_embedded3.jpg", 
 	get_tr("The playlist can be embedded in the main window") );
@@ -67,6 +68,7 @@ show_thumb("languages.png", get_tr("SMPlayer is translated into more than 20 lan
 echo "</tr>";
 
 echo "</table>";
+echo "</center>";
 
 /*
 include_once("print_post.php");
