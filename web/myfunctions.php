@@ -7,7 +7,7 @@ function print_link($url, $bytes) {
 		$s = round(($bytes / (1024*1024)),2) . " MB";
 	} else
 	if ($bytes > 1024) {
-		$s = round(($bytes / 1024),2) . " KB";
+		$s = round(($bytes / 1024), 0) . " KB";
 	} else {
 		$s = $bytes . " bytes";
 	}
