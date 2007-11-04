@@ -45,7 +45,7 @@ tr("Here you can see some screenshots from SMPlayer:");
 echo "<table>";
 echo "<tr>";
 
-show_thumb("playlist_embedded2.jpg", 
+show_thumb("playlist_embedded3.jpg", 
 	get_tr("The playlist can be embedded in the main window") );
 
 show_thumb("preferences1.png", get_tr("The preferences dialog") );
