@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-25 16:42-0700\n"
+"POT-Creation-Date: 2007-11-04 01:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,9 +57,9 @@ msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
 msgstr ""
-"<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新しいバ"
-"ージョンをインストールする前に古いパッケージをアンインストールすることを強く"
-"推奨します。"
+"<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新しい"
+"バージョンをインストールする前に古いパッケージをアンインストールすることを強"
+"く推奨します。"
 
 #: ../downloads.php:69
 msgid "Linux"
@@ -122,8 +122,8 @@ msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
 msgstr ""
-"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコード"
-"と Windows 用の更新) をダウンロードできます。"
+"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコードと "
+"Windows 用の更新) をダウンロードできます。"
 
 #: ../header.php:51
 msgid "The SMPlayer Project"
@@ -261,8 +261,8 @@ msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
 msgstr ""
-"環境設定ダイアログ。分かりやすい環境設定ダイアログで、SMPlayer の細かなオプシ"
-"ョンを簡単に設定することができます。"
+"環境設定ダイアログ。分かりやすい環境設定ダイアログで、SMPlayer の細かなオプ"
+"ションを簡単に設定することができます。"
 
 #: ../info.php:57
 msgid ""
@@ -275,8 +275,8 @@ msgstr ""
 
 #: ../info.php:60
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr "マルチプラットフォームです。Windows 用と Linux 用のバイナリがありま"
-"す。"
+msgstr ""
+"マルチプラットフォームです。Windows 用と Linux 用のバイナリがあります。"
 
 #: ../info.php:62
 msgid "SMPlayer is under the <b>GPL</b> license."
@@ -286,11 +286,18 @@ msgstr "SMPlayer は、<b>GPL</b> ライセンスの下にあります。"
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - スクリーンショット"
 
-#: ../screenshots.php:29
+#: ../screenshots.php:43
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは SMPlayer のスクリーンショットをいくつかご覧いただけます:"
 
-#. Test translation of posts
-#: ../screenshots.php:35
-msgid "139"
+#: ../screenshots.php:48
+msgid "The playlist can be embedded in the main window"
+msgstr ""
+
+#: ../screenshots.php:50
+msgid "The preferences dialog"
+msgstr ""
+
+#: ../screenshots.php:52
+msgid "SMPlayer running on Windows Vista"
 msgstr ""

@@ -6,10 +6,13 @@
   <title><?php tr("SMPlayer - Screenshots"); ?></title>
   <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<?php define('PUN_ROOT', 'forums/');
-require PUN_ROOT.'include/common.php';
-if (isset($_COOKIE['punbb_cookie']))
-list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
+<?php 
+if (!isset($_GET['noforum'])) {
+	define('PUN_ROOT', 'forums/');
+	require PUN_ROOT.'include/common.php';
+	if (isset($_COOKIE['punbb_cookie']))
+	list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
+}
 ?>
  </head>
  <body>
@@ -26,8 +29,36 @@ header_set_section("screenshots");
 <!----------------------begin content---------------------->
 
 <div id="content">
-<?php tr("Here you can see some screenshots from SMPlayer:"); 
+<?php 
+function show_thumb($filename, $desc) {
+	echo "<td align=\"center\">\n";
+	echo "<a href=\"images/screenshots/$filename\">\n";
+	echo "<img src=\"images/screenshots/thumbs/th_$filename\">\n";
+	echo "</a>\n";
+	echo "<br>\n";
+	echo $desc;
+	echo "</td>\n";
+}
 
+tr("Here you can see some screenshots from SMPlayer:"); 
+
+echo "<table>";
+echo "<tr>";
+
+show_thumb("playlist_embedded2.jpg", 
+	get_tr("The playlist can be embedded in the main window") );
+
+show_thumb("preferences1.png", get_tr("The preferences dialog") );
+
+echo "</tr>";
+echo "<tr>";
+
+show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
+
+echo "</tr>";
+echo "</table>";
+
+/*
 include_once("print_post.php");
 echo "<hr>";
 
@@ -36,7 +67,7 @@ print_post( intval(get_tr("139")) );
 
 //echo "<hr>";
 //print_post(125);
-
+*/
 ?>
 </div>
 
