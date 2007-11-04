@@ -45,6 +45,8 @@ tr("Here you can see some screenshots from SMPlayer:");
 echo "<table>";
 echo "<tr>";
 
+show_thumb("mainwindow_xp.pn", get_tr("This is the main window") );
+
 show_thumb("playlist_embedded3.jpg", 
 	get_tr("The playlist can be embedded in the main window") );
 
@@ -54,8 +56,16 @@ echo "</tr>";
 echo "<tr>";
 
 show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
+show_thumb("subtitles1.jpg", get_tr("A video displaying a srt subtitle") );
+show_thumb("subtitles2.jpg", get_tr("Matroshka embedded subtitles") );
 
 echo "</tr>";
+echo "<tr>";
+
+show_thumb("languages.png", get_tr("SMPlayer is translated into more than 20 languages") );
+
+echo "</tr>";
+
 echo "</table>";
 
 /*
