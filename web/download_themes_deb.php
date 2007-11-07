@@ -1,6 +1,6 @@
 <?
-$URL="http://downloads.sourceforge.net/smplayer/smplayer-themes_0.1.13_all.deb";
+$URL="http://downloads.sourceforge.net/smplayer/smplayer-themes_0.1.14_all.deb";
 
-print_link($URL, 4046260);
+print_link($URL, 2006116);
 
 ?>
