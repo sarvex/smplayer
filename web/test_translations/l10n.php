@@ -172,6 +172,8 @@ function init_translation() {
 		$tr_lang = $_SESSION["tr_lang"];
 	}
 
+	if (!isset($tr_lang)) $tr_lang="en";
+
 	$po_contents = array();
 	$filename = "translations/".$tr_lang.".po";
 
