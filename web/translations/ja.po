@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 15:16-0800\n"
+"POT-Creation-Date: 2007-11-15 17:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,6 +117,7 @@ msgstr ""
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 #: ../downloads.php:169
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
@@ -125,35 +126,35 @@ msgstr ""
 "<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコードと "
 "Windows 用の更新) をダウンロードできます。"
 
-#: ../header.php:51
+#: ../header.php:52
 msgid "The SMPlayer Project"
 msgstr "SMPlayer プロジェクト"
 
-#: ../header.php:61
+#: ../header.php:62
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:63
+#: ../header.php:64
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:65
+#: ../header.php:66
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../header.php:67
+#: ../header.php:68
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../header.php:69
+#: ../header.php:70
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../header.php:71
+#: ../header.php:72
 msgid "Feature Requests"
 msgstr "機能のリクエスト"
 
-#: ../header.php:73
+#: ../header.php:74
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -316,9 +317,12 @@ msgid "A video displaying a srt subtitle"
 msgstr "srt 字幕を表示中のビデオ"
 
 #: ../screenshots.php:61
-msgid "Matroshka embedded subtitles"
-msgstr "Matroshka 埋め込み字幕"
+msgid "Matroska embedded subtitles"
+msgstr ""
 
 #: ../screenshots.php:66
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer は 20 以上もの言語に翻訳されています"
+
+#~ msgid "Matroshka embedded subtitles"
+#~ msgstr "Matroshka 埋め込み字幕"

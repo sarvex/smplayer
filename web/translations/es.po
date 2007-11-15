@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 15:16-0800\n"
+"POT-Creation-Date: 2007-11-15 17:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,7 @@ msgstr ""
 msgid "Unstable releases"
 msgstr "Versiones inestables"
 
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 #: ../downloads.php:169
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
@@ -128,35 +129,35 @@ msgstr ""
 "Puedes obtener paquetes sacados del SVN (código fuente y actualizaciones "
 "para Windows), <a href=%1><b>aquí</b></a>."
 
-#: ../header.php:51
+#: ../header.php:52
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
-#: ../header.php:61
+#: ../header.php:62
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:63
+#: ../header.php:64
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
-#: ../header.php:65
+#: ../header.php:66
 msgid "Downloads"
 msgstr "Descargas"
 
-#: ../header.php:67
+#: ../header.php:68
 msgid "Forum"
 msgstr "Foro"
 
-#: ../header.php:69
+#: ../header.php:70
 msgid "Bug Tracking"
 msgstr "Seguimiento de Bugs"
 
-#: ../header.php:71
+#: ../header.php:72
 msgid "Feature Requests"
 msgstr "Peticiones"
 
-#: ../header.php:73
+#: ../header.php:74
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -326,8 +327,8 @@ msgid "A video displaying a srt subtitle"
 msgstr "Un vídeo con un subtítulo en formato srt"
 
 #: ../screenshots.php:61
-msgid "Matroshka embedded subtitles"
-msgstr "Subtítulos Matroshka"
+msgid "Matroska embedded subtitles"
+msgstr "Subtítulos Matroska"
 
 #: ../screenshots.php:66
 msgid "SMPlayer is translated into more than 20 languages"
@@ -335,3 +336,6 @@ msgstr "SMPlayer ha sido traducido a más de 20 idiomas"
 
 #~ msgid "139"
 #~ msgstr "43"
+
+#~ msgid "Matroshka embedded subtitles"
+#~ msgstr "Subtítulos Matroshka"
