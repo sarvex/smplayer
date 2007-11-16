@@ -1,4 +1,4 @@
-all: es.po nl.po fr.po ja.po
+all: es.po nl.po fr.po ja.po pl.po ro.po
 
 FILES=../index.php ../info.php ../header.php ../downloads.php \
       ../documentation.php ../screenshots.php

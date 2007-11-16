@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-06 15:16-0800\n"
+"POT-Creation-Date: 2007-11-16 11:27-0800\n"
 "PO-Revision-Date: 2007-11-10 20:52+0100\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -15,6 +15,152 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: ../downloads.php:6
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - Pobieranie"
+
+#: ../downloads.php:35
+msgid "Stable version"
+msgstr "Wersja stabilna"
+
+#: ../downloads.php:36
+msgid "Windows"
+msgstr "Windows"
+
+#: ../downloads.php:45
+msgid "Full package with installer:"
+msgstr "Pełna wersja instalacyjna:"
+
+#: ../downloads.php:50
+msgid ""
+"This package contains everything needed to run smplayer: Qt shared \n"
+"libraries, translation files, icon themes... It also includes a mplayer \n"
+"build. The version included is %1 from <a href=%2>CCCP</a>."
+msgstr ""
+"Ten plik zawiera wszystko co jest niezbędne do uruchomienia smplayera: "
+"bibliotekę Qt, \n"
+"pliki językowe, tematy ikon... Zawiera również program mplayer. \n"
+"Jest on w wersji %1 od <a href=%2>CCCP</a>."
+
+#: ../downloads.php:56
+msgid ""
+"<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
+"will create a font cache. This process takes some seconds and meanwhile \n"
+"<b>smplayer may look hung. Don't worry, just wait.</b>"
+msgstr ""
+"<b>Notka:</b> przy pierwszym uruchomieniu SSA/ASS lub ustawień czcionki, "
+"mplayer\n"
+"tworzy bufor czcionki. Ten proces zajmie parę sekund i w tym czasie \n"
+"<b>smplayer może nie odpowiadać. Nie przejmuj się, po prostu czekaj.</b>"
+
+#: ../downloads.php:60
+msgid ""
+"<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
+"recommended that you uninstall the old package before installing the new one."
+msgstr ""
+"<b>Notka 2:</b> Jeśli posiadasz zainstalowaną poprzednią wersję, zalecamy\n"
+"ją odinstalować, a dopiero później instalację nowej.."
+
+#: ../downloads.php:69
+msgid "Linux"
+msgstr "Linux"
+
+#: ../downloads.php:80
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
+
+#: ../downloads.php:91
+msgid ""
+"Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
+"recommended 1.0rc2 or svn)."
+msgstr ""
+"Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayer (wersja 1.0rc1, \n"
+"rekomendowana 1.0rc2 or svn)."
+
+#: ../downloads.php:103
+msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
+
+#: ../downloads.php:110
+msgid "Icon Themes:"
+msgstr "Tematy ikon:"
+
+#: ../downloads.php:120
+msgid "Optional package which provides some icon themes."
+msgstr "Pakiety zawierające kilka tematów ikon."
+
+#: ../downloads.php:148
+msgid "Additional packages"
+msgstr "Dodatkowe pakiety"
+
+#: ../downloads.php:149
+msgid ""
+"There are several additional packages for advanced users:\n"
+"<a href=%1>See sourceforge download page</a>."
+msgstr ""
+"Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
+"<a href=%1>Zobacz stronę pobierania sourceforge</a>."
+
+#: ../downloads.php:156
+msgid "Contributed packages"
+msgstr "Pakiety stworzone przez różne osoby"
+
+#: ../downloads.php:157
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+"Tutaj dostępne są pakiety wykonane przez różne osoby\n"
+"dla innych dystrybucji. <a href=%1>Kliknij tutaj</a> aby je zobaczyć."
+
+#: ../downloads.php:167
+msgid "Unstable releases"
+msgstr "Wydania niestabile"
+
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
+#: ../downloads.php:169
+msgid ""
+"You can get packages directly taken from the SVN (source code and\n"
+"Windows updates), <a href=%1><b>here</b></a>."
+msgstr ""
+"<a href=%1><b>Tutaj</b></a> możesz pobrać bezpośrednio pakiety SVN (kod "
+"źródłowy\n"
+"i aktualizacje dla Windows)."
+
+#: ../header.php:53
+msgid "The SMPlayer Project"
+msgstr "The SMPlayer Project"
+
+#: ../header.php:63
+msgid "Main"
+msgstr "Główna"
+
+#: ../header.php:65
+msgid "Screenshots"
+msgstr "Zrzuty ekranu"
+
+#: ../header.php:67
+msgid "Downloads"
+msgstr "Pobieranie"
+
+#: ../header.php:69
+msgid "Forum"
+msgstr "Forum"
+
+#: ../header.php:71
+msgid "Bug Tracking"
+msgstr "Zgłoś błąd"
+
+#: ../header.php:73
+msgid "Feature Requests"
+msgstr "Prośby nowych funkcji"
+
+#: ../header.php:75
+msgid "Wiki"
+msgstr "Wiki"
 
 #: ../index.php:6
 msgid "SMPlayer - General Info"
@@ -36,7 +182,8 @@ msgid ""
 "features like support for MPlayer filters and more."
 msgstr ""
 "SMPlayer jest graficzną nakładką programu <a href=%1>MPlayer</a>,\n"
-"z prostymi funkcjami, takimi jak odtwarzanie wideo, DVD i VCD oraz z bardziej zaawansowanymi \n"
+"z prostymi funkcjami, takimi jak odtwarzanie wideo, DVD i VCD oraz z "
+"bardziej zaawansowanymi \n"
 "funkcjami np: obsługa filtrów MPlayera i wiele innych."
 
 #: ../info.php:24
@@ -49,7 +196,8 @@ msgid ""
 msgstr ""
 "Jedna z interesujących funkcji SMPlayera: <b>zapamiętuje ona ustawienia \n"
 "odtwarzanych plików</b>. Więc gdy oglądasz film ale musisz wyjść...\n"
-"nie przejmuj się, gdy uruchomisz film ponownie obejrzysz go od ostatniego punktu, \n"
+"nie przejmuj się, gdy uruchomisz film ponownie obejrzysz go od ostatniego "
+"punktu, \n"
 "w którym go wyłączyłeś , z tymi samymi ustawieniami: ścieżki audio, \n"
 "napisów, głośności... "
 
@@ -78,7 +226,8 @@ msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
 msgstr ""
-"Wyszukiwanie za pomocą kółka myszki. Możesz użyć kółka myszki aby przewijać \n"
+"Wyszukiwanie za pomocą kółka myszki. Możesz użyć kółka myszki aby "
+"przewijać \n"
 "wideo do przodu i do tyłu."
 
 #: ../info.php:41
@@ -94,7 +243,8 @@ msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr ""
-"Odtwarzanie z wielokrotną prędkością. Można odtwarzać z prędkością 2X, 4X... \n"
+"Odtwarzanie z wielokrotną prędkością. Można odtwarzać z prędkością 2X, "
+"4X... \n"
 "i nawet w zwolnionym ruchu."
 
 #: ../info.php:46
@@ -155,146 +305,6 @@ msgstr "Jest wieloplatformowy. Dostępny zarówno dla Windows jak i dla Linux"
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer jest na licencji <b>GPL</b>"
 
-#: ../header.php:51
-msgid "The SMPlayer Project"
-msgstr "The SMPlayer Project"
-
-#: ../header.php:61
-msgid "Main"
-msgstr "Główna"
-
-#: ../header.php:63
-msgid "Screenshots"
-msgstr "Zrzuty ekranu"
-
-#: ../header.php:65
-msgid "Downloads"
-msgstr "Pobieranie"
-
-#: ../header.php:67
-msgid "Forum"
-msgstr "Forum"
-
-#: ../header.php:69
-msgid "Bug Tracking"
-msgstr "Zgłoś błąd"
-
-#: ../header.php:71
-msgid "Feature Requests"
-msgstr "Prośby nowych funkcji"
-
-#: ../header.php:73
-msgid "Wiki"
-msgstr "Wiki"
-
-#: ../downloads.php:6
-msgid "SMPlayer - Downloads"
-msgstr "SMPlayer - Pobieranie"
-
-#: ../downloads.php:35
-msgid "Stable version"
-msgstr "Wersja stabilna"
-
-#: ../downloads.php:36
-msgid "Windows"
-msgstr "Windows"
-
-#: ../downloads.php:45
-msgid "Full package with installer:"
-msgstr "Pełna wersja instalacyjna:"
-
-#: ../downloads.php:50
-msgid ""
-"This package contains everything needed to run smplayer: Qt shared \n"
-"libraries, translation files, icon themes... It also includes a mplayer \n"
-"build. The version included is %1 from <a href=%2>CCCP</a>."
-msgstr ""
-"Ten plik zawiera wszystko co jest niezbędne do uruchomienia smplayera: bibliotekę Qt, \n"
-"pliki językowe, tematy ikon... Zawiera również program mplayer. \n"
-"Jest on w wersji %1 od <a href=%2>CCCP</a>."
-
-#: ../downloads.php:56
-msgid ""
-"<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
-"will create a font cache. This process takes some seconds and meanwhile \n"
-"<b>smplayer may look hung. Don't worry, just wait.</b>"
-msgstr ""
-"<b>Notka:</b> przy pierwszym uruchomieniu SSA/ASS lub ustawień czcionki, mplayer\n"
-"tworzy bufor czcionki. Ten proces zajmie parę sekund i w tym czasie \n"
-"<b>smplayer może nie odpowiadać. Nie przejmuj się, po prostu czekaj.</b>"
-
-#: ../downloads.php:60
-msgid ""
-"<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
-"recommended that you uninstall the old package before installing the new one."
-msgstr ""
-"<b>Notka 2:</b> Jeśli posiadasz zainstalowaną poprzednią wersję, zalecamy\n"
-"ją odinstalować, a dopiero później instalację nowej.."
-
-#: ../downloads.php:69
-msgid "Linux"
-msgstr "Linux"
-
-#: ../downloads.php:80
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
-
-#: ../downloads.php:91
-msgid ""
-"Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
-"recommended 1.0rc2 or svn)."
-msgstr ""
-"Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayer (wersja 1.0rc1, \n"
-"rekomendowana 1.0rc2 or svn)."
-
-#: ../downloads.php:103
-msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
-
-#: ../downloads.php:110
-msgid "Icon Themes:"
-msgstr "Tematy ikon:"
-
-#: ../downloads.php:120
-msgid "Optional package which provides some icon themes."
-msgstr "Pakiety zawierające kilka tematów ikon."
-
-#: ../downloads.php:148
-msgid "Additional packages"
-msgstr "Dodatkowe pakiety"
-
-#: ../downloads.php:149
-msgid ""
-"There are several additional packages for advanced users:\n"
-"<a href=%1>See sourceforge download page</a>."
-msgstr ""
-"Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
-"<a href=%1>Zobacz stronę pobierania sourceforge</a>."
-
-#: ../downloads.php:156
-msgid "Contributed packages"
-msgstr "Pakiety stworzone przez różne osoby"
-
-#: ../downloads.php:157
-msgid ""
-"There are available packages for other distros, created\n"
-"by other people. <a href=%1>Click here</a> to see them."
-msgstr ""
-"Tutaj dostępne są pakiety wykonane przez różne osoby\n"
-"dla innych dystrybucji. <a href=%1>Kliknij tutaj</a> aby je zobaczyć."
-
-#: ../downloads.php:167
-msgid "Unstable releases"
-msgstr "Wydania niestabile"
-
-#: ../downloads.php:169
-msgid ""
-"You can get packages directly taken from the SVN (source code and\n"
-"Windows updates), <a href=%1><b>here</b></a>."
-msgstr ""
-"<a href=%1><b>Tutaj</b></a> możesz pobrać bezpośrednio pakiety SVN (kod źródłowy\n"
-"i aktualizacje dla Windows)."
-
 #: ../screenshots.php:6
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Zrzuty ekranu"
@@ -324,10 +334,12 @@ msgid "A video displaying a srt subtitle"
 msgstr "Wideo wyświetlające napisy srt"
 
 #: ../screenshots.php:61
-msgid "Matroshka embedded subtitles"
-msgstr "Plik wideo mkv z zawartymi napisami"
+msgid "Matroska embedded subtitles"
+msgstr ""
 
 #: ../screenshots.php:66
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer dostępny jest w ponad 20 językach"
 
+#~ msgid "Matroshka embedded subtitles"
+#~ msgstr "Plik wideo mkv z zawartymi napisami"
