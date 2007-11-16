@@ -20,3 +20,8 @@ fr.po: empty.pot
 ja.po: empty.pot
 	msgmerge -F -U -N --backup=numbered ja.po empty.pot
 
+pl.po: empty.pot
+	msgmerge -F -U -N --backup=numbered pl.po empty.pot
+
+ro.po: empty.pot
+	msgmerge -F -U -N --backup=numbered ro.po empty.pot
