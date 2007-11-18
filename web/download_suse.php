@@ -1,7 +1,7 @@
 <?
 
-$URL="http://downloads.sourceforge.net/smplayer/smplayer-0.5.61-rvm.i586.rpm";
+$URL="http://downloads.sourceforge.net/smplayer/smplayer-0.5.62-suse10.2.i586.rpm";
 
-print_link($URL, 961397);
+print_link($URL, 1030900);
 
 ?>
