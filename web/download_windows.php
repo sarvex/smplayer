@@ -1,7 +1,7 @@
 <?
 
-$URL="http://downloads.sourceforge.net/smplayer/smplayer_0.5.60_win32-setup.exe";
+$URL="http://downloads.sourceforge.net/smplayer/smplayer_0.5.62_full_setup.exe";
 
-print_link($URL, 18688047);
+print_link($URL, 18259242);
 
 ?>
