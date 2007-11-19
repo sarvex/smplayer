@@ -36,8 +36,8 @@ include("info.php");
 //include("news.php");
 include_once("print_post.php");
 
-// Message id of the post in the forum for "SMPlayer 0.5.0 Release Notes"
-print_post( intval(get_tr("10")) );
+// Message id of the post in the forum for "Version 0.5.62 released"
+print_post( intval(get_tr("256")) );
 ?>
 </div>
 </div>
