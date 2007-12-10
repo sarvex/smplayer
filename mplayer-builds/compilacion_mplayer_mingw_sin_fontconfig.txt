@@ -1,193 +1,44 @@
+COMPILING MPLAYER WITHOUT FONTCONFIG SUPPORT
+
+MINGW:
 Download: http://downloads.sourceforge.net/mingw/MinGW-5.1.3.exe?use_mirror=surfnet
-En la instalación elegir Mingw-make y g++.
-Instalación en J:\MinGW
+On setup choose Mingw-make y g++.
+Installed on J:\MinGW
 
+MSYS:
 Download: http://downloads.sourceforge.net/mingw/MSYS-1.0.10.exe?use_mirror=garr
-Instalación en j:\msys\1.0
+On setup type the path the mingw is installed: j:/mingw/
+Installed on j:\msys\1.0
 
-Download: http://downloads.sourceforge.net/mingw/msysDTK-1.0.1.exe?use_mirror=surfnet
-//Instalación en j:\msys\1.0
-(No instalado)
+msysdtk: NOT INSTALLED (not needed)
+# Download: http://downloads.sourceforge.net/mingw/msysDTK-1.0.1.exe?use_mirror=surfnet
+# Installed on j:\msys\1.0
 
-/*
-Download: http://downloads.sourceforge.net/mingw/wget-1.9.1.tar.gz?use_mirror=kent
-Extraer en J:\msys\1.0\home\ricardo
-Compilar:
-$ ./configure --prefix j:/mingw
-*/
-
+DIRECTX HEADERS: (needed for directx support)
 Download: http://www.videolan.org/vlc/dx7headers.tgz
-Descomprimir en J:\mingw\include
+Uncompress on j:\msys\1.0\home\ricardo\directx
 
-/*
-Download: http://downloads.sourceforge.net/mingw/libiconv-1.11-1-src.tar.bz2?use_mirror=surfnet
-*/
-Download: http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.11.tar.gz
-Extraer en J:\msys\1.0\home\ricardo
-Compilar:
-./configure --prefix=j:/mingw --disable-shared
-make
-make install
-*/
-
-Download: http://downloads.sourceforge.net/freetype/freetype-2.3.5.tar.bz2?use_mirror=surfnet (no funciona)
-Download: http://downloads.sourceforge.net/freetype/freetype-2.1.9.tar.bz2?use_mirror=dfn
-Extraer en J:\msys\1.0\home\ricardo
-Compilar:
-./configure --prefix=j:/mingw --disable-shared
-make
-make install
-
-Download: http://www.zlib.net/zlib-1.2.3.tar.bz2
-Compilar:
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: http://downloads.sourceforge.net/libpng/libpng-1.2.23.tar.bz2?use_mirror=dfn
-Compilar:
-./configure --prefix=j:/mingw --disable-shared
-make
-make install
-
-svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
-Compilar:
-./configure --enable-runtime-cpudetection --codecsdir=codecs --enable-static
-make
-
-
-// FONTCONFIG:
-Download: ftp://ftp.cs.tu-berlin.de/pub/gnu/gettext/gettext-0.17.tar.gz
-./configure --prefix=j:/mingw --disable-shared
-make
-make install
-
-Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz
-./configure --prefix=j:/mingw --disable-shared
-/*
-Download: http://pkgconfig.freedesktop.org/releases/pkg-config-0.22.tar.gz
-./configure --prefix=j:/ming
-make
-make install
-
-Download: ftp://ftp.gtk.org/pub/glib/2.12/glib-2.12.0.tar.bz2
-ftp://ftp.gtk.org/pub/glib/2.10/glib-2.10.0.tar.bz2
-./configure --prefix=j:/mingw
-
-Download: ftp://xmlsoft.org/libxml2/libxml2-2.6.11.tar.gz
-./configure --prefix=j:/mingw --disable-shared
-
-Download: ftp://ftp.cs.tu-berlin.de/pub/gnu/gettext/gettext-0.10.40.tar.gz
-./configure --prefix=j:/mingw
-*/
-
-
-ftp://ftp.gtk.org/pub/glib/2.10/win32/glib-2.10.0.zip
-ftp://ftp.gtk.org/pub/glib/2.10/win32/glib-dev-2.10.0.zip
-
-
-
-glib:
- gcc -DHAVE_CONFIG_H -I. -I. -I.. -I.. -DG_LOG_DOMAIN=\"GLib\" -DG_DISABLE_CAST_CHECKS -DG_DISABLE_DEPRECATED -DGLIB_COMPILATION -g -O2 -mms-bitfields -Wall -MT gwin32.lo -MD -MP -MF .deps/gwin32.Tpo -c gwin32.c  -DDLL_EXPORT -DPIC -o .libs/gwin32.o
-gwin32.c: In function `g_win32_getlocale':
-gwin32.c:689: error: duplicate case value
-gwin32.c:688: error: previously used here
-gwin32.c:905: error: duplicate case value
-gwin32.c:904: error: previously used here
-gwin32.c:914: error: duplicate case value
-gwin32.c:913: error: previously used here
-gwin32.c: In function `g_win32_error_message':
-gwin32.c:1068: warning: dereferencing type-punned pointer will break strict-aliasing rules
-make[4]: *** [gwin32.lo] Error 1
-make[4]: Leaving directory `/home/ricardo/glib-2.12.0/glib'
-make[3]: *** [all-recursive] Error 1
-make[3]: Leaving directory `/home/ricardo/glib-2.12.0/glib'
-make[2]: *** [all] Error 2
-make[2]: Leaving directory `/home/ricardo/glib-2.12.0/glib'
-make[1]: *** [all-recursive] Error 1
-make[1]: Leaving directory `/home/ricardo/glib-2.12.0'
-make: *** [all] Error 2
-
-configure glib:
-#if test x$PKG_CONFIG = xno ; then
-#  { { echo "$as_me:$LINENO: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/" >&5
-#echo "$as_me: error: *** pkg-config not found. See http://www.freedesktop.org/software/pkgconfig/" >&2;}
-#   { (exit 1); exit 1; }; }
-#fi
-
-#if $PKG_CONFIG --atleast-pkgconfig-version 0.14 ; then
-#  :
-#else
-#  { { echo "$as_me:$LINENO: error: *** pkg-config too old; version 0.14 or better required." >&5
-#echo "$as_me: error: *** pkg-config too old; version 0.14 or better required." >&2;}
-#   { (exit 1); exit 1; }; }
-#fi
-
-------------------------------------------------------------------------------------
-
-Intento 2:
-Download: http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.11.tar.gz
-Extraer en J:\msys\1.0\home\ricardo
-Compilar:
-./configure --prefix=j:/mingw
-make
-make install
-
-/*
-Download: ftp://ftp.cs.tu-berlin.de/pub/gnu/gettext/gettext-0.17.tar.gz
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: ftp://ftp.gtk.org/pub/glib/2.12/glib-2.12.0.tar.bz2
-Parchear configure y glib/gwin32.c
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: http://pkgconfig.freedesktop.org/releases/pkg-config-0.22.tar.gz
-./configure --prefix=j:/mingw
-make
-make install
-*/
-
+FREETYPE:
 Download: http://downloads.sourceforge.net/freetype/freetype-2.3.5.tar.bz2?use_mirror=surfnet
-Extraer en J:\msys\1.0\home\ricardo
-Compilar:
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: http://downloads.sourceforge.net/expat/expat-2.0.1.tar.gz?use_mirror=mesh
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz
-// ./configure --prefix=j:/mingw
-./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
-make
-copiar libexpat-1.dll  libfontconfig-1.dll  libfreetype-6.dll  libiconv-2.dll a ~/fontconfig-2.5.0 (shared)
-//touch src/.libs/libfontconfig.dll.a (static)
-make install
-
-Download: http://www.zlib.net/zlib-1.2.3.tar.bz2
-Compilar:
-./configure --prefix=j:/mingw
-make
-make install
-
-Download: http://downloads.sourceforge.net/libpng/libpng-1.2.23.tar.bz2?use_mirror=dfn
-Compilar:
+Uncompress on j:\msys\1.0\home\ricardo
+Compile:
 ./configure --prefix=j:/mingw --disable-shared
 make
 make install
 
-Download: http://www.videolan.org/vlc/dx7headers.tgz
-Descomprimir en J:\msys\1.0\home\ricardo\directx
+ZLIB:
+Download: http://www.zlib.net/zlib-1.2.3.tar.bz2
+./configure --prefix=j:/mingw
+make
+make install
 
+LIBPNG:
+Download: http://downloads.sourceforge.net/libpng/libpng-1.2.23.tar.bz2?use_mirror=dfn
+./configure --prefix=j:/mingw --disable-shared
+make
+make install
 
+MPLAYER:
 svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
-Compilar:
-./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/
+./configure --enable-runtime-cpudetection --codecsdir=codecs --enable-static --with-extraincdir=/home/ricardo/directx/
 make
