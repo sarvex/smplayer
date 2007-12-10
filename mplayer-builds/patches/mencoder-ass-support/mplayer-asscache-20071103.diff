@@ -1,0 +1,12 @@
+Index: libass/ass_render.c
+===================================================================
+--- libass/ass_render.c	(revision 24928)
++++ libass/ass_render.c	(working copy)
+@@ -1218,6 +1218,7 @@
+ 	int error;
+ 	glyph_hash_val_t* val;
+ 	glyph_hash_key_t key;
++	memset(&key, 0, sizeof(key));
+ 	key.font = render_context.font;
+ 	key.size = render_context.font_size;
+ 	key.ch = symbol;

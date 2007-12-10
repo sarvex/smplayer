@@ -1,0 +1,12 @@
+diff -uarN fontconfig-2.4.2/src/fccfg.c fontconfig-2.4.2-new/src/fccfg.c
+--- fontconfig-2.4.2/src/fccfg.c	Fri Sep 15 00:20:12 2006
++++ fontconfig-2.4.2-new/src/fccfg.c	Wed Sep 26 03:27:59 2007
+@@ -1542,7 +1542,7 @@
+ 	  if (p && (FcStrCmpIgnoreCase (p + 1, "bin") == 0 ||
+ 		    FcStrCmpIgnoreCase (p + 1, "lib") == 0))
+ 	      *p = '\0';
+-	  strcat (fontconfig_path, "\\etc\\fonts");
++	  strcat (fontconfig_path, "\\mplayer");
+       }
+       else
+           fontconfig_path[0] = '\0';

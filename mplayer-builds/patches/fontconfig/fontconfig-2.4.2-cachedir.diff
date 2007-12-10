@@ -1,0 +1,52 @@
+diff -uarN fontconfig-2.4.2/configure.in fontconfig-2.4.2-new/configure.in
+--- fontconfig-2.4.2/configure.in	Sat Dec  2 14:24:38 2006
++++ fontconfig-2.4.2-new/configure.in	Wed Sep 26 03:24:31 2007
+@@ -459,7 +459,11 @@
+ 
+ case $fc_cachedir in
+ no|yes)
+-	fc_cachedir=`eval echo "${localstatedir}/cache/"${PACKAGE}`
++	if test "$os_win32" = "yes"; then
++		fc_cachedir="USERPROFILE_FONTCONFIG_CACHE"
++	else
++		fc_cachedir=`eval echo "${localstatedir}/cache/"${PACKAGE}`
++	fi
+ 	;;
+ *)
+ 	;;
+diff -uarN fontconfig-2.4.2/src/fcxml.c fontconfig-2.4.2-new/src/fcxml.c
+--- fontconfig-2.4.2/src/fcxml.c	Sat Dec  2 12:54:02 2006
++++ fontconfig-2.4.2-new/src/fcxml.c	Wed Sep 26 03:23:43 2007
+@@ -2072,6 +2072,32 @@
+ 	    FcConfigMessage (parse, FcSevereError, "out of memory");
+ 	    break;
+ 	}
++#ifdef _WIN32
++	if (strcmp (data, "USERPROFILE_FONTCONFIG_CACHE") == 0)
++	{
++	    int rc;
++	    FcStrFree (data);
++	    data = malloc (1000);
++	    if (!data)
++	    {
++		FcConfigMessage (parse, FcSevereError, "out of memory");
++		break;
++	    }
++	    FcMemAlloc (FC_MEM_STRING, 1000);
++	    int bufsize;
++	    bufsize = ExpandEnvironmentStrings ("%USERPROFILE%", NULL, 0);
++	    rc = ExpandEnvironmentStrings ("%USERPROFILE%", data, bufsize);
++	    if (rc == 0 || rc > 800)
++	    {
++		FcConfigMessage (parse, FcSevereError, "ExpandEnvironmentStrings %USERPROFILE% failed");
++		FcStrFree (data);
++		break;
++	    }
++	    if (data [strlen (data) - 1] != '\\')
++		strcat (data, "\\");
++	    strcat (data, "fontconfig\\cache");
++	}
++#endif
+ 	if (!FcStrUsesHome (data) || FcConfigHome ())
+ 	{
+ 	    if (!FcConfigAddCacheDir (parse->config, data))

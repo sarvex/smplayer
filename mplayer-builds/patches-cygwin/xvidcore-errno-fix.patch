@@ -1,0 +1,11 @@
+--- src/plugins/plugin_2pass1.c-orig	2007-12-10 01:15:27.468750000 +0100
++++ src/plugins/plugin_2pass1.c	2007-12-10 01:16:03.625000000 +0100
+@@ -119,7 +119,7 @@
+ {
+ 	if (rc->stat_file) {
+ 		if (fclose(rc->stat_file) == EOF) {
+-			DPRINTF(XVID_DEBUG_RC, "Error closing stats file (%s)", strerror(errno));
++			/* DPRINTF(XVID_DEBUG_RC, "Error closing stats file (%s)", strerror(errno)); */
+ 		}
+ 	}
+ 	rc->stat_file = NULL; /* Just a paranoid reset */

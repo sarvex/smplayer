@@ -1,0 +1,158 @@
+--- mencoder.c.v1	2007-11-01 17:15:24.019226575 +0100
++++ mencoder.c	2007-11-01 17:40:05.188727372 +0100
+@@ -364,6 +364,44 @@
+ 
+ static muxer_t* muxer=NULL;
+ 
++void add_subtitles(char *filename, float fps, int silent)
++{
++    sub_data *subd;
++#ifdef USE_ASS
++    ass_track_t *asst = 0;
++#endif
++
++    if (filename == NULL) return;
++
++    subd = sub_read_file(filename, fps);
++#ifdef USE_ASS
++    if (ass_enabled)
++#ifdef USE_ICONV
++        asst = ass_read_file(ass_library, filename, sub_cp);
++#else
++        asst = ass_read_file(ass_library, filename, 0);
++#endif
++    if (ass_enabled && subd && !asst)
++        asst = ass_read_subdata(ass_library, subd, fps);
++
++    if (!asst && !subd && !silent)
++#else
++    if(!subd && !silent) 
++#endif
++        mp_msg(MSGT_CPLAYER, MSGL_ERR, MSGTR_CantLoadSub,
++		filename_recode(filename));
++ 
++#ifdef USE_ASS
++    if (!asst && !subd) return;
++    ass_track = asst;
++#else
++    if (!subd) return;
++#endif
++    mp_msg(MSGT_IDENTIFY, MSGL_INFO, "ID_FILE_SUB_FILENAME=%s\n",
++	   filename_recode(filename));
++    subdata = subd;
++}
++
+ extern void print_wave_header(WAVEFORMATEX *h, int verbose_level);
+ 
+ int main(int argc,char* argv[]){
+@@ -562,6 +600,10 @@
+   m_entry_set_options(mconfig,&filelist[curfile]);
+   filename = filelist[curfile].name;
+  
++#ifdef USE_ASS
++  ass_library = ass_init();
++#endif
++
+   if(!filename){
+ 	mp_msg(MSGT_CPLAYER, MSGL_FATAL, MSGTR_MissingFilename);
+ 	mencoder_exit(1,NULL);
+@@ -662,26 +704,6 @@
+     }
+   }
+ 
+-// after reading video params we should load subtitles because
+-// we know fps so now we can adjust subtitles time to ~6 seconds AST
+-// check .sub
+-//  current_module="read_subtitles_file";
+-  if(sub_name && sub_name[0]){
+-    subdata=sub_read_file(sub_name[0], sh_video->fps);
+-    if(!subdata) mp_msg(MSGT_CPLAYER,MSGL_ERR,MSGTR_CantLoadSub,sub_name[0]);
+-  } else
+-  if(sub_auto && filename) { // auto load sub file ...
+-    char **tmp = NULL;
+-    int i = 0;
+-    char *psub = get_path( "sub/" );
+-    tmp = sub_filenames((psub ? psub : ""), filename);
+-    free(psub);
+-    subdata=sub_read_file(tmp[0], sh_video->fps);
+-    while (tmp[i])
+-      free(tmp[i++]);
+-    free(tmp);
+-  }
+-
+ // set up video encoder:
+ 
+ if (!curfile) { // curfile is non zero when a second file is opened
+@@ -861,12 +883,72 @@
+     ve = sh_video->vfilter;
+   } else sh_video->vfilter = ve;
+     // append 'expand' filter, it fixes stride problems and renders osd:
++#ifdef USE_ASS
++    if (auto_expand && !ass_enabled) { /* we do not want both */
++#else
+     if (auto_expand) {
++#endif
+       char* vf_args[] = { "osd", "1", NULL };
+       sh_video->vfilter=vf_open_filter(sh_video->vfilter,"expand",vf_args);
+     }
++
++#ifdef USE_ASS
++  if(ass_enabled) {
++    int i;
++    int insert = 1;
++    if (vf_settings)
++      for (i = 0; vf_settings[i].name; ++i)
++        if (strcmp(vf_settings[i].name, "ass") == 0) {
++          insert = 0;
++          break;
++        }
++    if (insert) {
++      extern vf_info_t vf_info_ass;
++      vf_info_t* libass_vfs[] = {&vf_info_ass, NULL};
++      char* vf_arg[] = {"auto", "1", NULL};
++      vf_instance_t* vf_ass = vf_open_plugin(libass_vfs,sh_video->vfilter,"ass",vf_arg);
++      if (vf_ass)
++        sh_video->vfilter=(void*)vf_ass;
++      else
++        mp_msg(MSGT_CPLAYER,MSGL_ERR, "ASS: cannot add video filter\n");
++    }
++    if (!keep_pts) {
++      keep_pts = 1;
++      mp_msg(MSGT_MENCODER, MSGL_WARN, "Warning: -ass implies -keep-pts, "
++	"which may cause \"badly interleaved\" files.\n");
++    }
++  }
++#endif
++
+     sh_video->vfilter=append_filters(sh_video->vfilter);
+ 
++#ifdef USE_ASS
++  if (ass_enabled)
++    ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_INIT_EOSD, ass_library);
++#endif
++
++// after reading video params we should load subtitles because
++// we know fps so now we can adjust subtitles time to ~6 seconds AST
++// check .sub
++//  current_module="read_subtitles_file";
++  if(sub_name && sub_name[0]){
++    for (i = 0; sub_name[i] != NULL; ++i) 
++        add_subtitles (sub_name[i], sh_video->fps, 0); 
++  } else
++  if(sub_auto && filename) { // auto load sub file ...
++    char **tmp = NULL;
++    int i = 0;
++    char *psub = get_path( "sub/" );
++    tmp = sub_filenames((psub ? psub : ""), filename);
++    free(psub);
++    while (tmp[i])
++    {
++      add_subtitles (tmp[i], sh_video->fps, 0);
++      free(tmp[i++]);
++    }
++    free(tmp);
++  }
++
+     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
+     init_best_video_codec(sh_video,video_codec_list,video_fm_list);
+     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");

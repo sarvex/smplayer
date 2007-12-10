@@ -1,0 +1,21 @@
+/*
+http://downloads.sourceforge.net/nasm/nasm-0.98.39.tar.bz2
+./configure
+make 
+make install
+*/
+
+Download: http://www.tortall.net/projects/yasm/releases/yasm-0.6.2.tar.gz
+./configure
+make
+make install
+
+xvidcore:
+editar src/plugins/plugin_2pass1.c y comentar esta línea:
+			//DPRINTF(XVID_DEBUG_RC, "Error closing stats file (%s)", strerror(errno));
+./configure
+make
+make install
+
+
+./configure --enable-static --enable-runtime-cpudetection --codecsdir=codecs --disable-fontconfig

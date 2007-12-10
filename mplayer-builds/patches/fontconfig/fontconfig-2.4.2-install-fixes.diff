@@ -1,0 +1,38 @@
+diff -uarN fontconfig-2.4.2/configure.in fontconfig-2.4.2-new/configure.in
+--- fontconfig-2.4.2/configure.in	Sat Dec  2 14:24:38 2006
++++ fontconfig-2.4.2-new/configure.in	Wed Sep 26 03:38:36 2007
+@@ -362,11 +362,12 @@
+ 
+ AC_ARG_ENABLE(libxml2,         [  --enable-libxml2              Use libxml2 instead of Expat])
+ 
+-PKG_PROG_PKG_CONFIG
++#PKG_PROG_PKG_CONFIG
+ 
+ if test "$enable_libxml2" = "yes" -o "$expat" = "no"; then
+-    PKG_CHECK_MODULES([LIBXML2], [libxml-2.0 >= 2.6])
+-    AC_DEFINE_UNQUOTED(ENABLE_LIBXML2,1,[Use libxml2 instead of Expat])
++#    PKG_CHECK_MODULES([LIBXML2], [libxml-2.0 >= 2.6])
++#    AC_DEFINE_UNQUOTED(ENABLE_LIBXML2,1,[Use libxml2 instead of Expat])
++  :
+ 
+     AC_SUBST(LIBXML2_CFLAGS)
+     AC_SUBST(LIBXML2_LIBS)
+diff -uarN fontconfig-2.4.2/src/Makefile.am fontconfig-2.4.2-new/src/Makefile.am
+--- fontconfig-2.4.2/src/Makefile.am	Sun Sep 17 14:06:40 2006
++++ fontconfig-2.4.2-new/src/Makefile.am	Wed Sep 26 03:40:06 2007
+@@ -30,11 +30,13 @@
+ # gcc import library install/uninstall
+ 
+ install-libtool-import-lib: 
+-	$(INSTALL) .libs/libfontconfig.dll.a $(DESTDIR)$(libdir)
++	if test -f ".libs/libfontconfig.dll.a"; then \
++	$(INSTALL) .libs/libfontconfig.dll.a $(DESTDIR)$(libdir); fi; \
+ 	$(INSTALL) fontconfig.def $(DESTDIR)$(libdir)/fontconfig.def
+ 
+ uninstall-libtool-import-lib:
+-	-rm $(DESTDIR)$(libdir)/libfontconfig.dll.a $(DESTDIR)$(libdir)/fontconfig.def
++	if test -f ".libs/libfontconfig.dll.a"; then \
++	-rm $(DESTDIR)$(libdir)/libfontconfig.dll.a $(DESTDIR)$(libdir)/fontconfig.def; fi
+ 
+ else
+ 

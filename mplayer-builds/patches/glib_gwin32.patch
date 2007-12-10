@@ -1,0 +1,29 @@
+--- glib/gwin32.c-orig	Sat Dec  1 12:41:12 2007
++++ glib/gwin32.c	Sat Dec  1 12:44:10 2007
+@@ -686,7 +686,7 @@
+       switch (sub)
+ 	{
+ 	case SUBLANG_BENGALI_INDIA: sl = "IN"; break;
+-	case SUBLANG_BENGALI_BANGLADESH: sl = "BD"; break;
++	//case SUBLANG_BENGALI_BANGLADESH: sl = "BD"; break;
+ 	}
+       break;
+     case LANG_BULGARIAN: l = "bg"; sl = "BG"; break;
+@@ -902,7 +902,7 @@
+       switch (sub)
+ 	{
+ 	case SUBLANG_PUNJABI_INDIA: sl = "IN"; break; /* Gurmukhi script */
+-	case SUBLANG_PUNJABI_PAKISTAN: sl = "PK"; break; /* Arabic script */
++	//case SUBLANG_PUNJABI_PAKISTAN: sl = "PK"; break; /* Arabic script */
+ 	}
+       break;
+     case LANG_RHAETO_ROMANCE: l = "rm"; sl = "CH"; break;
+@@ -911,7 +911,7 @@
+       switch (sub)
+ 	{
+ 	case SUBLANG_ROMANIAN_ROMANIA: sl = "RO"; break;
+-	case SUBLANG_ROMANIAN_MOLDOVA: sl = "MD"; break;
++	//case SUBLANG_ROMANIAN_MOLDOVA: sl = "MD"; break;
+ 	}
+       break;
+     case LANG_RUSSIAN:
