@@ -62,11 +62,23 @@ patch -p2 < ~/file64_mingw.diff
 
 MPLAYER:
 svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
-./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
+./configure --enable-runtime-cpudetection --enable-menu --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
 make
 
-TO DO: dvdnav (requres autoconf)
 /*
-dvdnav
-Download: svn co svn://svn.mplayerhq.hu/dvdnav/trunk/libdvdnav
+MSYSDTK (provides autoconf, required by dvdnav)
+Download: http://downloads.sourceforge.net/mingw/msysDTK-1.0.1.exe?use_mirror=surfnet
+Install in J:\msys\1.0
+
+DVDNAV:
+Download: svn co svn://svn.mplayerhq.hu/dvdnav/trunk/libdvdnav libdvdnav
+(fails)
+$ ./autogen.sh 
+./autogen.sh: test: too many arguments
+expr: syntax error
+./autogen.sh: [: -ge: unary operator expected
+
+**Error**: You must have `libtool' >= 140 installed to
+           compile libdvdnav. Download the appropriate package
+           for your distribution or source from ftp.gnu.org.
 */
