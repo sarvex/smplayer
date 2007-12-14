@@ -55,6 +55,11 @@ Download: http://download.videolan.org/pub/videolan/libdca/0.0.5/libdca-0.0.5.ta
 make
 make install
 
+Patch mingw to add support for large files:
+Copy file64_mingw.diff to J:\msys\1.0\home\ricardo
+cd j:/mingw/include/
+patch -p2 < ~/file64_mingw.diff
+
 MPLAYER:
 svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
 ./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
