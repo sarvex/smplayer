@@ -9,9 +9,13 @@
   <meta name="Keywords" content="smplayer, mplayer, multimedia, player">
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
 <?php define('PUN_ROOT', 'forums/');
-require PUN_ROOT.'include/common.php';
-if (isset($_COOKIE['punbb_cookie']))
-list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
+$use_forum = $_GET['use_forum'];
+if (!isset($use_forum)) $use_forum = 1;
+if ($use_forum) {
+	require PUN_ROOT.'include/common.php';
+	if (isset($_COOKIE['punbb_cookie']))
+	list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
+}
 ?>
  </head>
  <body>
@@ -33,11 +37,13 @@ include("info.php");
 ?>
 <div id="news">
 <?php
-//include("news.php");
-include_once("print_post.php");
+if ($use_forum) {
+	//include("news.php");
+	include_once("print_post.php");
 
-// Message id of the post in the forum for "Version 0.5.62 released"
-print_post( intval(get_tr("256")) );
+	// Message id of the post in the forum for "Version 0.5.62 released"
+	print_post( intval(get_tr("256")) );
+}
 ?>
 </div>
 </div>

@@ -7,7 +7,8 @@
   <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
 <?php 
-if (!isset($_GET['noforum'])) {
+$use_forum = 0;
+if ($use_forum) {
 	define('PUN_ROOT', 'forums/');
 	require PUN_ROOT.'include/common.php';
 	if (isset($_COOKIE['punbb_cookie']))
