@@ -40,7 +40,8 @@ function header_set_section($s, $rel_path="") {
 	print_language_link($file, "日本語", "ja", $query);
 	print_language_link($file, "Polski", "pl", $query);
 	print_language_link($file, "Română", "ro", $query);
-	print_language_link($file, "Українська", "uk", $query, true);
+	print_language_link($file, "Українська", "uk", $query);
+	print_language_link($file, "Русский", "ru", $query, true);
 ?>
 	</ul>
 	</div>
