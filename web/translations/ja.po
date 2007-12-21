@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-06 03:57+0100\n"
+"POT-Creation-Date: 2007-12-21 01:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,19 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - ダウンロード"
 
-#: ../downloads.php:35
+#: ../downloads.php:36
 msgid "Stable version"
 msgstr "安定バージョン"
 
-#: ../downloads.php:36
+#: ../downloads.php:37
 msgid "Windows"
 msgstr "Windows"
 
-#: ../downloads.php:45
+#: ../downloads.php:46
 msgid "Full package with installer:"
 msgstr "インストーラ付きフルパッケージ:"
 
-#: ../downloads.php:50
+#: ../downloads.php:51
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
@@ -42,7 +42,7 @@ msgstr ""
 "テーマなど、smplayer を起動するのに必要なものがすべて含まれています。含まれて"
 "いる mplayer のバージョンは <a href=%2>CCCP</a> からの %1 です。"
 
-#: ../downloads.php:56
+#: ../downloads.php:57
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
@@ -52,7 +52,7 @@ msgstr ""
 "mplayer がフォントキャッシュを作成します。この処理には数秒かかり、その間\n"
 "<b>smplayer がハングします。ご心配せず、そのままお待ちください。</b>"
 
-#: ../downloads.php:60
+#: ../downloads.php:61
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
@@ -61,16 +61,16 @@ msgstr ""
 "バージョンをインストールする前に古いパッケージをアンインストールすることを強"
 "く推奨します。"
 
-#: ../downloads.php:69
+#: ../downloads.php:70
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:80
+#: ../downloads.php:81
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "コンパイル方法は、パッケージ内の Install.txt に記載されています。"
 
-#: ../downloads.php:91
+#: ../downloads.php:92
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
@@ -78,23 +78,23 @@ msgstr ""
 "OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer (最低で 1.0rc1、"
 "1.0rc2 か svn を推奨) が必要です。"
 
-#: ../downloads.php:103
+#: ../downloads.php:104
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作します)。"
 
-#: ../downloads.php:110
+#: ../downloads.php:111
 msgid "Icon Themes:"
 msgstr "アイコンテーマ:"
 
-#: ../downloads.php:120
+#: ../downloads.php:121
 msgid "Optional package which provides some icon themes."
 msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:149
+#: ../downloads.php:150
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -102,23 +102,23 @@ msgstr ""
 "上級者向けにいくつかのさらなるパッケージがあります:\n"
 "<a href=%1>sourceforge のダウンロードページをご覧ください</a>."
 
-#: ../downloads.php:156
+#: ../downloads.php:157
 msgid "Contributed packages"
 msgstr "いただいたパッケージ"
 
-#: ../downloads.php:157
+#: ../downloads.php:158
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "有志によるその他の配布用パッケージは、<a href=%1>こちら</a> をご覧ください。"
 
-#: ../downloads.php:167
+#: ../downloads.php:168
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:169
+#: ../downloads.php:170
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -126,35 +126,35 @@ msgstr ""
 "<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコードと "
 "Windows 用の更新) をダウンロードできます。"
 
-#: ../header.php:54
+#: ../header.php:55
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
-#: ../header.php:64
+#: ../header.php:65
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:66
+#: ../header.php:67
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../header.php:74
+#: ../header.php:75
 msgid "Feature Requests"
 msgstr "機能のリクエスト"
 
-#: ../header.php:76
+#: ../header.php:77
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -163,7 +163,7 @@ msgid "SMPlayer - General Info"
 msgstr "SMPlayer - 一般情報"
 
 #. Message id of the post in the forum for "Version 0.5.62 released"
-#: ../index.php:40
+#: ../index.php:45
 msgid "256"
 msgstr "313"
 
@@ -292,38 +292,38 @@ msgstr "SMPlayer は、<b>GPL</b> ライセンスの下にあります。"
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - スクリーンショット"
 
-#: ../screenshots.php:43
+#: ../screenshots.php:44
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "ここでは、SMPlayer のスクリーンショットをいくつかご覧いただけます:"
 
-#: ../screenshots.php:49
+#: ../screenshots.php:50
 msgid "This is the main window"
 msgstr "メインウィンドウ"
 
-#: ../screenshots.php:52
+#: ../screenshots.php:53
 msgid "The playlist can be embedded in the main window"
 msgstr "メインウィンドウに埋め込み可能なプレイリスト"
 
-#: ../screenshots.php:54
+#: ../screenshots.php:55
 msgid "The preferences dialog"
 msgstr "環境設定ダイアログ"
 
-#: ../screenshots.php:59
+#: ../screenshots.php:60
 msgid "SMPlayer running on Windows Vista"
 msgstr "Windows Vista で起動中の SMPlayer"
 
-#: ../screenshots.php:60
+#: ../screenshots.php:61
 msgid "A video displaying a srt subtitle"
 msgstr "srt 字幕を表示中のビデオ"
 
-#: ../screenshots.php:61
+#: ../screenshots.php:62
 msgid "Matroska embedded subtitles"
 msgstr "Matroska 埋め込み字幕"
 
-#: ../screenshots.php:66
+#: ../screenshots.php:67
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer は、20 以上もの言語に翻訳されています"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "The mini GUI"
 msgstr "ミニ GUI"

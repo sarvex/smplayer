@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-06 03:57+0100\n"
+"POT-Creation-Date: 2007-12-21 01:44+0100\n"
 "PO-Revision-Date: 2007-11-19 22:58+0200\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -20,19 +20,19 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Завантаження"
 
-#: ../downloads.php:35
+#: ../downloads.php:36
 msgid "Stable version"
 msgstr "Стабільна версія"
 
-#: ../downloads.php:36
+#: ../downloads.php:37
 msgid "Windows"
 msgstr "Windows"
 
-#: ../downloads.php:45
+#: ../downloads.php:46
 msgid "Full package with installer:"
 msgstr "Повний пакет з інсталлером:"
 
-#: ../downloads.php:50
+#: ../downloads.php:51
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
@@ -42,7 +42,7 @@ msgstr ""
 "файли перекладів, теми іконок... Також містить готову збірку \n"
 "mplayer. Включено версію %1 від <a href=%2>CCCP</a>."
 
-#: ../downloads.php:56
+#: ../downloads.php:57
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
@@ -54,7 +54,7 @@ msgstr ""
 "здатись що \n"
 "<b>smplayer завис. Не турбуйтесь, просто зачекайте.</b>"
 
-#: ../downloads.php:60
+#: ../downloads.php:61
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
@@ -62,17 +62,17 @@ msgstr ""
 "<b>Примітка 2:</b> Якщо у Вас встановлено попередню версію, переконливо\n"
 "рекомендується видалити її перед встановленням нової версії."
 
-#: ../downloads.php:69
+#: ../downloads.php:70
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:80
+#: ../downloads.php:81
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:91
+#: ../downloads.php:92
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
@@ -80,23 +80,23 @@ msgstr ""
 "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
 "рекомендується 1.0rc2 чи svn)."
 
-#: ../downloads.php:103
+#: ../downloads.php:104
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
 
-#: ../downloads.php:110
+#: ../downloads.php:111
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:120
+#: ../downloads.php:121
 msgid "Optional package which provides some icon themes."
 msgstr "Додатковий пакет, який містить різні теми іконок."
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:149
+#: ../downloads.php:150
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -104,11 +104,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:156
+#: ../downloads.php:157
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:157
+#: ../downloads.php:158
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -116,12 +116,12 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:167
+#: ../downloads.php:168
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:169
+#: ../downloads.php:170
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -129,35 +129,35 @@ msgstr ""
 "Ви можете взяти пакети прямо з SVN (вихідні тексти та\n"
 "оновлення для Windows), <a href=%1><b>тут</b></a>."
 
-#: ../header.php:54
+#: ../header.php:55
 msgid "The SMPlayer Project"
 msgstr "Проект SMPlayer"
 
-#: ../header.php:64
+#: ../header.php:65
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:66
+#: ../header.php:67
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Downloads"
 msgstr "Завантаження"
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Forum"
 msgstr "Форум"
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Bug Tracking"
 msgstr "Простежування помилок"
 
-#: ../header.php:74
+#: ../header.php:75
 msgid "Feature Requests"
 msgstr "Особливі прохання"
 
-#: ../header.php:76
+#: ../header.php:77
 msgid "Wiki"
 msgstr "Wiki"
 
@@ -166,7 +166,7 @@ msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Головна інформація"
 
 #. Message id of the post in the forum for "Version 0.5.62 released"
-#: ../index.php:40
+#: ../index.php:45
 msgid "256"
 msgstr ""
 
@@ -306,38 +306,38 @@ msgstr "SMPlayer розповсюджується під ліцензією <b>G
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Скріншоти"
 
-#: ../screenshots.php:43
+#: ../screenshots.php:44
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Тут Ви можете переглянути скріншоти SMPlayer:"
 
-#: ../screenshots.php:49
+#: ../screenshots.php:50
 msgid "This is the main window"
 msgstr "Головне вікно"
 
-#: ../screenshots.php:52
+#: ../screenshots.php:53
 msgid "The playlist can be embedded in the main window"
 msgstr "Список може бути вкладено в головне вікно."
 
-#: ../screenshots.php:54
+#: ../screenshots.php:55
 msgid "The preferences dialog"
 msgstr "Діалог налаштувань"
 
-#: ../screenshots.php:59
+#: ../screenshots.php:60
 msgid "SMPlayer running on Windows Vista"
 msgstr "SMPlayer, запущений під Windows Vista"
 
-#: ../screenshots.php:60
+#: ../screenshots.php:61
 msgid "A video displaying a srt subtitle"
 msgstr "Відео з відображенням srt-субтитрами"
 
-#: ../screenshots.php:61
+#: ../screenshots.php:62
 msgid "Matroska embedded subtitles"
 msgstr "Вложені субтитри Matroska"
 
-#: ../screenshots.php:66
+#: ../screenshots.php:67
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer перекладено на більше ніж 20 мов"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "The mini GUI"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-06 03:57+0100\n"
+"POT-Creation-Date: 2007-12-21 01:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "SMPlayer - General Info"
 msgstr ""
 
 #. Message id of the post in the forum for "Version 0.5.62 released"
-#: ../index.php:40
+#: ../index.php:45
 msgid "256"
 msgstr ""
 
@@ -124,35 +124,35 @@ msgstr ""
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../header.php:54
+#: ../header.php:55
 msgid "The SMPlayer Project"
 msgstr ""
 
-#: ../header.php:64
+#: ../header.php:65
 msgid "Main"
 msgstr ""
 
-#: ../header.php:66
+#: ../header.php:67
 msgid "Screenshots"
 msgstr ""
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Downloads"
 msgstr ""
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Forum"
 msgstr ""
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../header.php:74
+#: ../header.php:75
 msgid "Feature Requests"
 msgstr ""
 
-#: ../header.php:76
+#: ../header.php:77
 msgid "Wiki"
 msgstr ""
 
@@ -160,91 +160,91 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr ""
 
-#: ../downloads.php:35
+#: ../downloads.php:36
 msgid "Stable version"
 msgstr ""
 
-#: ../downloads.php:36
+#: ../downloads.php:37
 msgid "Windows"
 msgstr ""
 
-#: ../downloads.php:45
+#: ../downloads.php:46
 msgid "Full package with installer:"
 msgstr ""
 
-#: ../downloads.php:50
+#: ../downloads.php:51
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
 "libraries, translation files, icon themes... It also includes a mplayer \n"
 "build. The version included is %1 from <a href=%2>CCCP</a>."
 msgstr ""
 
-#: ../downloads.php:56
+#: ../downloads.php:57
 msgid ""
 "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
 "will create a font cache. This process takes some seconds and meanwhile \n"
 "<b>smplayer may look hung. Don't worry, just wait.</b>"
 msgstr ""
 
-#: ../downloads.php:60
+#: ../downloads.php:61
 msgid ""
 "<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
 "recommended that you uninstall the old package before installing the new one."
 msgstr ""
 
-#: ../downloads.php:69
+#: ../downloads.php:70
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:80
+#: ../downloads.php:81
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 
-#: ../downloads.php:91
+#: ../downloads.php:92
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
 msgstr ""
 
-#: ../downloads.php:103
+#: ../downloads.php:104
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr ""
 
-#: ../downloads.php:110
+#: ../downloads.php:111
 msgid "Icon Themes:"
 msgstr ""
 
-#: ../downloads.php:120
+#: ../downloads.php:121
 msgid "Optional package which provides some icon themes."
 msgstr ""
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Additional packages"
 msgstr ""
 
-#: ../downloads.php:149
+#: ../downloads.php:150
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:156
+#: ../downloads.php:157
 msgid "Contributed packages"
 msgstr ""
 
-#: ../downloads.php:157
+#: ../downloads.php:158
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 
-#: ../downloads.php:167
+#: ../downloads.php:168
 msgid "Unstable releases"
 msgstr ""
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:169
+#: ../downloads.php:170
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -254,38 +254,38 @@ msgstr ""
 msgid "SMPlayer - Screenshots"
 msgstr ""
 
-#: ../screenshots.php:43
+#: ../screenshots.php:44
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr ""
 
-#: ../screenshots.php:49
+#: ../screenshots.php:50
 msgid "This is the main window"
 msgstr ""
 
-#: ../screenshots.php:52
+#: ../screenshots.php:53
 msgid "The playlist can be embedded in the main window"
 msgstr ""
 
-#: ../screenshots.php:54
+#: ../screenshots.php:55
 msgid "The preferences dialog"
 msgstr ""
 
-#: ../screenshots.php:59
+#: ../screenshots.php:60
 msgid "SMPlayer running on Windows Vista"
 msgstr ""
 
-#: ../screenshots.php:60
+#: ../screenshots.php:61
 msgid "A video displaying a srt subtitle"
 msgstr ""
 
-#: ../screenshots.php:61
+#: ../screenshots.php:62
 msgid "Matroska embedded subtitles"
 msgstr ""
 
-#: ../screenshots.php:66
+#: ../screenshots.php:67
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr ""
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "The mini GUI"
 msgstr ""
