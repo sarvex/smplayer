@@ -55,6 +55,26 @@ Download: http://download.videolan.org/pub/videolan/libdca/0.0.5/libdca-0.0.5.ta
 make
 make install
 
+LIBOGG (required by libtheora):
+Download: http://downloads.xiph.org/releases/ogg/libogg-1.1.3.tar.gz
+./configure --prefix=j:/mingw --disable-shared
+make
+make install
+
+LIBVORBIS (required by libtheora):
+http://downloads.xiph.org/releases/vorbis/libvorbis-1.2.0.tar.gz
+./configure --prefix=j:/mingw --disable-shared
+make
+make install
+
+LIBTHEORA:
+Download: http://downloads.xiph.org/releases/theora/libtheora-1.0beta2.tar.gz
+./configure --prefix=j:/mingw --disable-shared --disable-examples
+make
+make install
+
+
+
 Patch mingw to add support for large files:
 Copy file64_mingw.diff to J:\msys\1.0\home\ricardo
 cd j:/mingw/include/
@@ -62,7 +82,7 @@ patch -p2 < ~/file64_mingw.diff
 
 MPLAYER:
 svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
-./configure --enable-runtime-cpudetection --enable-menu --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
+./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
 make
 
 /*
@@ -81,4 +101,7 @@ expr: syntax error
 **Error**: You must have `libtool' >= 140 installed to
            compile libdvdnav. Download the appropriate package
            for your distribution or source from ftp.gnu.org.
+		   
+FAAC:
+Download: http://downloads.sourceforge.net/faac/faac-1.26.tar.gz
 */
