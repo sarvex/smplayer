@@ -73,7 +73,13 @@ Download: http://downloads.xiph.org/releases/theora/libtheora-1.0beta2.tar.gz
 make
 make install
 
-
+FRIBIDI:
+Download: http://fribidi.org/download/fribidi-0.10.9.tar.gz
+Download patch: http://www.cccp-project.net/nichorai/mplayer-patches/fribidi-0.10.9-win32-headers.diff
+patch -p1 < ../fribidi-0.10.9-win32-headers.diff
+./configure --prefix=j:/mingw --disable-shared
+make
+make install
 
 Patch mingw to add support for large files:
 Copy file64_mingw.diff to J:\msys\1.0\home\ricardo

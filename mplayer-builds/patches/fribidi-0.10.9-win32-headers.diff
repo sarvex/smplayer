@@ -1,0 +1,50 @@
+diff -uarN fribidi-0.10.9/fribidi_benchmark.c fribidi-0.10.9-new/fribidi_benchmark.c
+--- fribidi-0.10.9/fribidi_benchmark.c	Sun Sep 25 11:57:56 2005
++++ fribidi-0.10.9-new/fribidi_benchmark.c	Mon Oct 15 16:35:10 2007
+@@ -28,7 +28,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <stdarg.h>
+-#include <sys/times.h>
++//#include <sys/times.h>
+ #include "getopt.h"
+ #include "fribidi.h"
+ 
+@@ -92,9 +92,13 @@
+ static double
+ utime (void)
+ {
++#if HAVE_SYS_TIMES_H 
+   struct tms tb;
+   times (&tb);
+   return 0.01 * tb.tms_utime;
++#else
++  return 0.00;
++#endif
+ }
+ 
+ static void
+diff -uarN fribidi-0.10.9/fribidi_config.h.in fribidi-0.10.9-new/fribidi_config.h.in
+--- fribidi-0.10.9/fribidi_config.h.in	Sun Sep 25 14:52:12 2005
++++ fribidi-0.10.9-new/fribidi_config.h.in	Mon Oct 15 16:41:54 2007
+@@ -17,19 +17,11 @@
+ 
+ #ifdef WIN32
+ 
+-#ifdef FRIBIDI_EXPORTS
+-#define FRIBIDI_API __declspec(dllexport)
+-#else
+-#define FRIBIDI_API __declspec(dllimport)
+-#endif
+-
+ #define snprintf _snprintf
+ 
+-#else /* NOT WIN32 */
++#endif /* WIN32 */
+ 
+ #define FRIBIDI_API
+-
+-#endif /* WIN32 */
+ 
+ #define FRIBIDI_TRUE    1
+ #define FRIBIDI_FALSE   0
