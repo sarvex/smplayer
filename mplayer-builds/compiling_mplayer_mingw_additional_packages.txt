@@ -81,7 +81,6 @@ patch -p1 < ../fribidi-0.10.9-win32-headers.diff
 make
 make install
 
-
 Patch mingw to add support for large files:
 Copy file64_mingw.diff to J:\msys\1.0\home\ricardo
 cd j:/mingw/include/
@@ -115,4 +114,8 @@ Download: http://downloads.sourceforge.net/faac/faac-1.26.tar.gz
 PTHREADS:
 Download: ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-8-0-release.tar.gz
 make clean GC-static
+
+LIBAMRNB (requires unzip):
+Download: http://ftp.penguin.cz/pub/users/utx/amr/amrnb-7.0.0.0.tar.bz2
+./configure --prefix=j:/mingw --disable-shared 
 */
