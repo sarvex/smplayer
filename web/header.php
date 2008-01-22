@@ -76,7 +76,7 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 
-	header_print_section(get_tr("Donations"), "http://sourceforge.net/donate/index.php?user_id=115931", ($s=="donations"));
+	header_print_section(get_tr("Donations"), "https://sourceforge.net/donate/index.php?group_id=185512", ($s=="donations"));
 ?>
 	</ul>
 
