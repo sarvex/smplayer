@@ -1,0 +1,20 @@
+Index: i386/mathops.h
+===================================================================
+--- i386/mathops.h	(revision 11200)
++++ i386/mathops.h	(working copy)
+@@ -42,4 +42,15 @@
+      asm ("imull %2\n\t" : "=A"(rt) : "a" (ra), "g" (rb));\
+      rt; })
+ 
++#ifndef llrint
++inline long long int llrint (double x)
++{
++    long long int llrintres;
++    asm
++    ("fistpll %0"
++    : "=m" (llrintres) : "t" (x) : "st");
++    return llrintres;
++}
++#endif
++
+ #endif /* FFMPEG_I386_MATHOPS_H */
