@@ -42,7 +42,7 @@ if ($use_forum) {
 	include_once("print_post.php");
 
 	// Message id of the post in the forum for "Version 0.5.62 released"
-	print_post( intval(get_tr("256")) );
+	print_post( intval(get_tr("849")) );
 }
 ?>
 </div>
