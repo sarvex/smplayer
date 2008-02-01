@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 23:33+0100\n"
+"POT-Creation-Date: 2008-02-01 01:35+0100\n"
 "PO-Revision-Date: 2007-12-27 12:39+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,19 +86,30 @@ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr ""
 "Compilat pe kubuntu 7.04 cu Qt 4 (trebuie să funcţioneze şi în ubuntu)."
 
-#: ../downloads.php:111
+#: ../downloads.php:106
+msgid "Suggested package:"
+msgstr ""
+
+#: ../downloads.php:107
+msgid ""
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended. You can download here %2 (from %3)."
+msgstr ""
+
+#: ../downloads.php:118
 msgid "Icon Themes:"
 msgstr "Teme Iconiţe"
 
-#: ../downloads.php:121
+#: ../downloads.php:128
 msgid "Optional package which provides some icon themes."
 msgstr "Pachete opţionale pentru modificarea aspectului grafic."
 
-#: ../downloads.php:149
+#: ../downloads.php:156
 msgid "Additional packages"
 msgstr "Pachete suplimentare"
 
-#: ../downloads.php:150
+#: ../downloads.php:157
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -106,11 +117,11 @@ msgstr ""
 "Există mai multe pachete suplimentare pentru utilizatorii avansaţi:\n"
 "<a href=%1>Vedeţi pagina de descărcări a sitului sourceforge</a>"
 
-#: ../downloads.php:157
+#: ../downloads.php:164
 msgid "Contributed packages"
 msgstr "Pachete pentru diverse distribuţii"
 
-#: ../downloads.php:158
+#: ../downloads.php:165
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -118,12 +129,12 @@ msgstr ""
 "Sunt disponibile pachete pentru alte distribuţii, create \n"
 "de alte persoane. Le puteţi vedea <a href=%1><b>aici</b></a>."
 
-#: ../downloads.php:168
+#: ../downloads.php:175
 msgid "Unstable releases"
 msgstr "Versiuni Instabile"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:170
+#: ../downloads.php:177
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -171,7 +182,7 @@ msgstr "Donaţii"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Informaţii Generale"
 
-#. Message id of the post in the forum for "Version 0.5.62 released"
+#. Message id of the post in the forum for "Version 0.6.0rc1 released"
 #: ../index.php:45
 msgid "849"
 msgstr ""
@@ -364,11 +375,11 @@ msgstr "Mini GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr ""
 
-#~ msgid "Matroshka embedded subtitles"
-#~ msgstr "Un fişier mkv cu subtitrare încorporată"
+#~ msgid "256"
+#~ msgstr "772"
 
 #~ msgid "10"
 #~ msgstr "10"
 
-#~ msgid "256"
-#~ msgstr "772"
+#~ msgid "Matroshka embedded subtitles"
+#~ msgstr "Un fişier mkv cu subtitrare încorporată"

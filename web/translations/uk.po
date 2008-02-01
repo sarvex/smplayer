@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 23:33+0100\n"
+"POT-Creation-Date: 2008-02-01 01:35+0100\n"
 "PO-Revision-Date: 2007-11-19 22:58+0200\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -84,19 +84,30 @@ msgstr ""
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
 
-#: ../downloads.php:111
+#: ../downloads.php:106
+msgid "Suggested package:"
+msgstr ""
+
+#: ../downloads.php:107
+msgid ""
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended. You can download here %2 (from %3)."
+msgstr ""
+
+#: ../downloads.php:118
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:121
+#: ../downloads.php:128
 msgid "Optional package which provides some icon themes."
 msgstr "Додатковий пакет, який містить різні теми іконок."
 
-#: ../downloads.php:149
+#: ../downloads.php:156
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:150
+#: ../downloads.php:157
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -104,11 +115,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:157
+#: ../downloads.php:164
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:158
+#: ../downloads.php:165
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -116,12 +127,12 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:168
+#: ../downloads.php:175
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:170
+#: ../downloads.php:177
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -169,7 +180,7 @@ msgstr ""
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Головна інформація"
 
-#. Message id of the post in the forum for "Version 0.5.62 released"
+#. Message id of the post in the forum for "Version 0.6.0rc1 released"
 #: ../index.php:45
 msgid "849"
 msgstr ""

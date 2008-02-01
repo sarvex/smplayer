@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-30 23:33+0100\n"
+"POT-Creation-Date: 2008-02-01 01:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,19 +82,30 @@ msgstr ""
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作します)。"
 
-#: ../downloads.php:111
+#: ../downloads.php:106
+msgid "Suggested package:"
+msgstr ""
+
+#: ../downloads.php:107
+msgid ""
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended. You can download here %2 (from %3)."
+msgstr ""
+
+#: ../downloads.php:118
 msgid "Icon Themes:"
 msgstr "アイコンテーマ:"
 
-#: ../downloads.php:121
+#: ../downloads.php:128
 msgid "Optional package which provides some icon themes."
 msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
 
-#: ../downloads.php:149
+#: ../downloads.php:156
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:150
+#: ../downloads.php:157
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -102,23 +113,23 @@ msgstr ""
 "上級者向けにいくつかのさらなるパッケージがあります:\n"
 "<a href=%1>sourceforge のダウンロードページをご覧ください</a>."
 
-#: ../downloads.php:157
+#: ../downloads.php:164
 msgid "Contributed packages"
 msgstr "いただいたパッケージ"
 
-#: ../downloads.php:158
+#: ../downloads.php:165
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧ください。"
 
-#: ../downloads.php:168
+#: ../downloads.php:175
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:170
+#: ../downloads.php:177
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -166,7 +177,7 @@ msgstr "寄付"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - 一般情報"
 
-#. Message id of the post in the forum for "Version 0.5.62 released"
+#. Message id of the post in the forum for "Version 0.6.0rc1 released"
 #: ../index.php:45
 msgid "849"
 msgstr "853"
