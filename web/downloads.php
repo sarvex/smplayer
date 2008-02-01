@@ -102,6 +102,13 @@ recommended 1.0rc2 or svn).");
 include("download_ubuntu.php");
 echo "<br>";
 tr("Compiled on kubuntu 7.04 (should work in ubuntu too)."); 
+echo "<br>";
+echo "<b>"; tr("Suggested package:"); echo "</b><br>";
+tr("The version of mplayer included in Ubuntu is very old (%1). SMPlayer 
+has support for some of the new features of mplayer, so a newer version 
+is highly recommended. You can download here %2 (from %3).", "1.0rc1", 
+"<b><a href=\"http://downloads.sourceforge.net/smplayer/mplayer_1.0rc2svn25873_i386.deb\">MPlayer SVN r25873</a></b>",
+"2008-01-27");
 ?>
 </td>
 </tr>

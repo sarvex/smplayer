@@ -41,7 +41,7 @@ if ($use_forum) {
 	//include("news.php");
 	include_once("print_post.php");
 
-	// Message id of the post in the forum for "Version 0.5.62 released"
+	// Message id of the post in the forum for "Version 0.6.0rc1 released"
 	print_post( intval(get_tr("849")) );
 }
 ?>
