@@ -38,6 +38,8 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
+"このパッケージには、smplayer を起動するのに必要な Qt 共有ライブラリ、翻訳ファ"
+"イル、アイコンテーマ、mplayer ビルド (%1) がすべて含まれています。"
 
 #: ../downloads.php:55
 msgid ""
@@ -46,40 +48,52 @@ msgid ""
 "used by mplayer only and they will be installed in the same folder, so \n"
 "they can't cause any conflict with other codecs you may have installed."
 msgstr ""
+"また、いくつかの追加フォーマット (rmvb ファイルなど) の再生を可能にする "
+"mplayer 用追加フォーマットも含まれています。これらのコーデックは同じフォルダ"
+"にインストールされます。mplayer にしか使用されませんので、すでにインストール"
+"されている他のコーデックと競合することはありません。"
 
 #: ../downloads.php:60
 msgid ""
 "Package intended for those who want to be sure they'll be able to\n"
 "play (almost) anything."
-msgstr ""
+msgstr "ほぼすべてのメディアを再生したいという方におすすめのパッケージです。"
 
 #: ../downloads.php:72
 msgid "Lite package with installer:"
-msgstr ""
+msgstr "インストーラ付きライトパッケージ:"
 
 #: ../downloads.php:77
 msgid ""
 "This package is like the one above, but it doesn't include the extra\n"
 "codecs, so it's smaller."
 msgstr ""
+"このパッケージは上記のフルパッケージに似ていますが、追加コーデックが含まれて"
+"いません。そのため、フルパッケージに比べてより小さくスマートになっています。"
 
 #: ../downloads.php:80
 msgid ""
 "Package for the ones who usually play only the most known formats, like\n"
 "avi, mkv, mpeg..."
 msgstr ""
+"avi、mkv、mpeg など、主要なフォーマットしか再生しないという方におすすめのパッ"
+"ケージです。"
 
 #: ../downloads.php:93
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
+"このパッケージには、smplayer、Qt 共有ライブラリ、翻訳、アイコンテーマが含まれ"
+"ています (インストーラなし)。mplayer は含まれません。"
 
 #: ../downloads.php:96
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
+"インストーラがお好みでないという方や、別の mplayer ビルドを利用したいという方"
+"におすすめのパッケージです。"
 
 #: ../downloads.php:107
 msgid "Linux"
@@ -135,7 +149,7 @@ msgid ""
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 "上級者向けにいくつかのさらなるパッケージがあります:\n"
-"<a href=%1>sourceforge のダウンロードページをご覧ください</a>."
+"<a href=%1>sourceforge のダウンロードページをご覧ください</a>。"
 
 #: ../downloads.php:201
 msgid "Contributed packages"
@@ -218,7 +232,7 @@ msgid ""
 msgstr ""
 "SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、MPlayer\n"
 "フィルタなどの高度な機能に対応する <a href=%1>MPlayer</a> の完全なフロントエ"
-"ンドとなることを目指します。"
+"ンドとなるよう意図されています。"
 
 #: ../info.php:24
 msgid ""
@@ -370,32 +384,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で起動中の SMPlayer"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
-#~ msgstr ""
-#~ "このパッケージには、mplayer ビルド、Qt 共有ライブラリ、翻訳ファイル、アイ"
-#~ "コンテーマなど、smplayer を起動するのに必要なものがすべて含まれています。"
-#~ "含まれている mplayer のバージョンは <a href=%2>CCCP</a> からの %1 です。"
-
-#~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
-#~ msgstr ""
-#~ "<b>ご注意:</b> ライブラリ SSA/ASS や fontconfig が初めて使用されると、"
-#~ "mplayer がフォントキャッシュを作成します。この処理には数秒かかり、その間\n"
-#~ "<b>smplayer がハングします。ご心配せず、そのままお待ちください。</b>"
-
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>ご注意 2:</b> 以前のバージョンがすでにインストールされている場合、新し"
-#~ "いバージョンをインストールする前に古いパッケージをアンインストールすること"
-#~ "が強く推奨されます。"
