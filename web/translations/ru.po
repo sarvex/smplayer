@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-01 01:35+0100\n"
+"POT-Creation-Date: 2008-02-02 02:03+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: Yurkovsky Andrey <anyr@tut.by>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -30,51 +30,71 @@ msgstr "Стабильная версия"
 msgid "Windows"
 msgstr "Windows"
 
-#: ../downloads.php:46
+#: ../downloads.php:47
 msgid "Full package with installer:"
 msgstr "Полный пакет с инсталлятором:"
 
-#: ../downloads.php:51
+#: ../downloads.php:52
 msgid ""
 "This package contains everything needed to run smplayer: Qt shared \n"
-"libraries, translation files, icon themes... It also includes a mplayer \n"
-"build. The version included is %1 from <a href=%2>CCCP</a>."
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
 msgstr ""
-"Этот пакет включает всё необходимое для работы smplayer: библиотеки Qt, \n"
-"файлы переводов, темы иконок... Также содержит готовую сборку \n"
-"mplayer. Включена версия %1 от <a href=%2>CCCP</a>."
 
-#: ../downloads.php:57
+#: ../downloads.php:55
 msgid ""
-"<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer\n"
-"will create a font cache. This process takes some seconds and meanwhile \n"
-"<b>smplayer may look hung. Don't worry, just wait.</b>"
+"The package includes also the extra codecs for mplayer, which will allow \n"
+"to play some additional formats (like rmvb files). These codecs are to be\n"
+"used by mplayer only and they will be installed in the same folder, so \n"
+"they can't cause any conflict with other codecs you may have installed."
 msgstr ""
-"<b>Примечание:</b> при первом запуске бібліотеки SSA/ASS или fontconfig, "
-"mplayer создаёт кэш шрифтов. Этот процесс займёт несколько секунд, и в это "
-"время может показаться, что smplayer завис. Не волнуйтесь, просто подождите."
-"</b>"
 
-#: ../downloads.php:61
+#: ../downloads.php:60
 msgid ""
-"<b>Note 2:</b> If you had already installed a previous version, it's highly\n"
-"recommended that you uninstall the old package before installing the new one."
+"Package intended for those who want to be sure they'll be able to\n"
+"play (almost) anything."
 msgstr ""
-"<b>Примечание 2:</b> Если у Вас установлена предыдущая версия, убедительно \n"
-"рекомендуем удалить её перед установкой новой версии."
 
-#: ../downloads.php:70
+#: ../downloads.php:72
+msgid "Lite package with installer:"
+msgstr ""
+
+#: ../downloads.php:77
+msgid ""
+"This package is like the one above, but it doesn't include the extra\n"
+"codecs, so it's smaller."
+msgstr ""
+
+#: ../downloads.php:80
+msgid ""
+"Package for the ones who usually play only the most known formats, like\n"
+"avi, mkv, mpeg..."
+msgstr ""
+
+#: ../downloads.php:93
+msgid ""
+"Package (without installer) which includes smplayer, Qt shared libraries,\n"
+"translations and icon themes. It doesn't include mplayer."
+msgstr ""
+
+#: ../downloads.php:96
+msgid ""
+"Package for those who don't like installers and/or want to use another \n"
+"mplayer build."
+msgstr ""
+
+#: ../downloads.php:107
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:81
+#: ../downloads.php:118
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Для успешной компиляции просмотрите файл Install.txt, который содержится в "
 "пакете."
 
-#: ../downloads.php:92
+#: ../downloads.php:129
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
@@ -82,34 +102,34 @@ msgstr ""
 "Собрано на OpenSuSE 10.2. Требует: libqt4 и mplayer (не ниже 1.0rc1, \n"
 "рекомендуется 1.0rc2 или svn)."
 
-#: ../downloads.php:104
+#: ../downloads.php:141
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "Собрано на kubuntu 7.04 (также должно работать и на ubuntu)."
 
-#: ../downloads.php:106
+#: ../downloads.php:143
 msgid "Suggested package:"
 msgstr ""
 
-#: ../downloads.php:107
+#: ../downloads.php:144
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
 
-#: ../downloads.php:118
+#: ../downloads.php:155
 msgid "Icon Themes:"
 msgstr "Темы иконок:"
 
-#: ../downloads.php:128
+#: ../downloads.php:165
 msgid "Optional package which provides some icon themes."
 msgstr "Дополнительный пакет, включающий несколько тем иконок."
 
-#: ../downloads.php:156
+#: ../downloads.php:193
 msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
-#: ../downloads.php:157
+#: ../downloads.php:194
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -117,11 +137,11 @@ msgstr ""
 "Дополнительные пакеты для продвинутых пользователей: \n"
 "<a href=%1>Смотрите страницу загрузок sourceforge</a>."
 
-#: ../downloads.php:164
+#: ../downloads.php:201
 msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
-#: ../downloads.php:165
+#: ../downloads.php:202
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -129,12 +149,12 @@ msgstr ""
 "Здесь доступны пакеты для других дистрибутивов, созданные \n"
 "другими людьми. <a href=%1>Нажмите сюда</a> для просмотра."
 
-#: ../downloads.php:175
+#: ../downloads.php:212
 msgid "Unstable releases"
 msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:177
+#: ../downloads.php:214
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -366,3 +386,33 @@ msgstr ""
 
 #~ msgid "256"
 #~ msgstr "256"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
+#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
+#~ msgstr ""
+#~ "Этот пакет включает всё необходимое для работы smplayer: библиотеки Qt, \n"
+#~ "файлы переводов, темы иконок... Также содержит готовую сборку \n"
+#~ "mplayer. Включена версия %1 от <a href=%2>CCCP</a>."
+
+#~ msgid ""
+#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
+#~ "mplayer\n"
+#~ "will create a font cache. This process takes some seconds and meanwhile \n"
+#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
+#~ msgstr ""
+#~ "<b>Примечание:</b> при первом запуске бібліотеки SSA/ASS или fontconfig, "
+#~ "mplayer создаёт кэш шрифтов. Этот процесс займёт несколько секунд, и в "
+#~ "это время может показаться, что smplayer завис. Не волнуйтесь, просто "
+#~ "подождите.</b>"
+
+#~ msgid ""
+#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
+#~ "highly\n"
+#~ "recommended that you uninstall the old package before installing the new "
+#~ "one."
+#~ msgstr ""
+#~ "<b>Примечание 2:</b> Если у Вас установлена предыдущая версия, "
+#~ "убедительно \n"
+#~ "рекомендуем удалить её перед установкой новой версии."
