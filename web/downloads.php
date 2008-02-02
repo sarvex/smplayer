@@ -39,30 +39,67 @@ echo "<h2>".get_tr("Windows")."</h2>";
 <!-- WINDOWS -->
 <p>
 <table>
+
 <tr>
 <td><img src="iconos/kpackage.png"></td>
 <td><b>
 <?php 
 tr("Full package with installer:"); echo " ";
-include("download_windows.php"); 
+include("download_windows_full.php"); 
 ?>
 </b><br>
 <?php
 tr("This package contains everything needed to run smplayer: Qt shared 
-libraries, translation files, icon themes... It also includes a mplayer 
-build. The version included is %1 from <a href=%2>CCCP</a>.",
-"<i>1.0rc2 (svn-r24722)</i>",
-"\"http://www.cccp-project.net/smf/index.php?topic=811.0\"");
-echo "<br>";
-tr("<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, mplayer
-will create a font cache. This process takes some seconds and meanwhile 
-<b>smplayer may look hung. Don't worry, just wait.</b>");
-echo "<br>";
-tr("<b>Note 2:</b> If you had already installed a previous version, it's highly
-recommended that you uninstall the old package before installing the new one.");
+libraries, translation files, icon themes and a mplayer 
+build (the version included is %1).","<i>SVN r25850</i>"); echo " ";
+tr("The package includes also the extra codecs for mplayer, which will allow 
+to play some additional formats (like rmvb files). These codecs are to be
+used by mplayer only and they will be installed in the same folder, so 
+they can't cause any conflict with other codecs you may have installed.");
+echo "<br><b><i>";
+tr("Package intended for those who want to be sure they'll be able to
+play (almost) anything.");
+echo"</i></b>";
 ?>
 </td>
 </tr>
+
+
+<tr>
+<td><img src="iconos/kpackage.png"></td>
+<td><b>
+<?php 
+tr("Lite package with installer:"); echo " ";
+include("download_windows_lite.php"); 
+?>
+</b><br>
+<?php
+tr("This package is like the one above, but it doesn't include the extra
+codecs, so it's smaller.");
+echo "<br><b><i>";
+tr("Package for the ones who usually play only the most known formats, like
+avi, mkv, mpeg...");
+echo"</i></b>";
+?>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<?php
+include("download_windows_7z.php");
+echo "<br>";
+tr("Package (without installer) which includes smplayer, Qt shared libraries,
+translations and icon themes. It doesn't include mplayer."); 
+echo "<br><b><i>";
+tr("Package for those who don't like installers and/or want to use another 
+mplayer build.");
+echo"</i></b>";
+?>
+</td>
+</tr>
+
 </table>
 
 <!-- LINUX -->
