@@ -42,12 +42,12 @@ echo "<h2>".get_tr("Windows")."</h2>";
 
 <tr>
 <td><img src="iconos/kpackage.png"></td>
-<td><b>
+<td>
 <?php 
-tr("Full package with installer:"); echo " ";
+echo "<b>"; tr("Full package with installer:"); echo "</b> ";
 include("download_windows_full.php"); 
 ?>
-</b><br>
+<br>
 <?php
 tr("This package contains everything needed to run smplayer: Qt shared 
 libraries, translation files, icon themes and a mplayer 
@@ -67,12 +67,12 @@ echo"</i></b>";
 
 <tr>
 <td><img src="iconos/kpackage.png"></td>
-<td><b>
+<td>
 <?php 
-tr("Lite package with installer:"); echo " ";
+echo "<b>"; tr("Lite package with installer:"); echo "</b> ";
 include("download_windows_lite.php"); 
 ?>
-</b><br>
+<br>
 <?php
 tr("This package is like the one above, but it doesn't include the extra
 codecs, so it's smaller.");
