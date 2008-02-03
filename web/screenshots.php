@@ -66,7 +66,7 @@ echo "<tr>";
 
 show_thumb("languages.png", get_tr("SMPlayer is translated into more than 20 languages") );
 show_thumb("mini_gui.png", get_tr("The mini GUI") );
-show_thumb("kde4-3.png", get_tr("SMPlayer running on the new KDE 4") );
+show_thumb("kde4-3.jpg", get_tr("SMPlayer running on the new KDE 4") );
 
 echo "</tr>";
 
