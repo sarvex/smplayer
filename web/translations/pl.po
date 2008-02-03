@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Jarek <ajep9691@wp.pl>, 2007.
+# Jarek <ajep9691@wp.pl>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-02 02:03+0100\n"
-"PO-Revision-Date: 2007-11-10 20:52+0100\n"
+"PO-Revision-Date: 2008-02-02 13:05+0100\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,6 +38,9 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
+"Ten plik zawiera wszystko co jest niezbędne do uruchomienia smplayera:\n "
+"bibliotekę Qt, pliki językowe, tematy ikon, i mplayer\n"
+"(jest on w wersji %1)."
 
 #: ../downloads.php:55
 msgid ""
@@ -46,50 +49,62 @@ msgid ""
 "used by mplayer only and they will be installed in the same folder, so \n"
 "they can't cause any conflict with other codecs you may have installed."
 msgstr ""
+"Pakiet zawierający extra kodeki dla mplayera, które pozwolą na odtwarzanie\n"
+"dodatkowych formatów (takich jak rmvb). Kodeki te instalowane są\n"
+"w tym samym folderze i będą używane tylko przez mplayer, więc nie\n"
+"będą powodować konfliktów z innymi zainstalowanymi kodekami."
 
 #: ../downloads.php:60
 msgid ""
 "Package intended for those who want to be sure they'll be able to\n"
 "play (almost) anything."
 msgstr ""
+"Pakiet stworzony dla tych, którzy chcą być pewni, że smplayer\n"
+"odtworzy (prawie) wszystko."
 
 #: ../downloads.php:72
 msgid "Lite package with installer:"
-msgstr ""
+msgstr "Mały pakiet instalacyjny:"
 
 #: ../downloads.php:77
 msgid ""
 "This package is like the one above, but it doesn't include the extra\n"
 "codecs, so it's smaller."
 msgstr ""
+"Ten pakiet jest podobny do tego powyżej, jednak nie zawiera\n"
+"extra kodeków, więc jest mniejszy."
 
 #: ../downloads.php:80
 msgid ""
 "Package for the ones who usually play only the most known formats, like\n"
 "avi, mkv, mpeg..."
 msgstr ""
+"Pakiet dla tych, którzy zazwyczaj odtwarzają większość znanych formatów\n"
+"takich jak avi, mpeg, mkv..."
 
 #: ../downloads.php:93
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
+"Pakiet (bez instalatora), który zawiera smplayer, bibliotekę Qt, \n"
+"pliki językowe i tematy ikon. Nie zawiera on mplayera."
 
 #: ../downloads.php:96
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
+"Pakiet dla tych, którzy nie lubią instalatora i/lub chcą użyć mplayera\n"
+"w innej wersji."
 
 #: ../downloads.php:107
 msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:118
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
+msgid "Read the file Install.txt included in the package to know how compile it."
+msgstr "Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
 
 #: ../downloads.php:129
 msgid ""
@@ -105,7 +120,7 @@ msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
 
 #: ../downloads.php:143
 msgid "Suggested package:"
-msgstr ""
+msgstr "Proponowany pakiet:"
 
 #: ../downloads.php:144
 msgid ""
@@ -113,6 +128,9 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
+"W Ubuntu znajdziesz mplayer w dość starej wersji (%1). SMPlayer obsłuży\n"
+"kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja\n"
+"Można ją pobrać stąd %2 (z %3)."
 
 #: ../downloads.php:155
 msgid "Icon Themes:"
@@ -194,7 +212,7 @@ msgstr "Wiki"
 
 #: ../header.php:79
 msgid "Donations"
-msgstr ""
+msgstr "Dotacje"
 
 #: ../index.php:6
 msgid "SMPlayer - General Info"
@@ -377,45 +395,9 @@ msgstr "SMPlayer dostępny jest w ponad 20 językach"
 
 #: ../screenshots.php:68
 msgid "The mini GUI"
-msgstr ""
+msgstr "Mini GUI"
 
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
-msgstr ""
+msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
-#~ msgid "Matroshka embedded subtitles"
-#~ msgstr "Plik wideo mkv z zawartymi napisami"
-
-#~ msgid "10"
-#~ msgstr "10"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
-#~ msgstr ""
-#~ "Ten plik zawiera wszystko co jest niezbędne do uruchomienia smplayera: "
-#~ "bibliotekę Qt, \n"
-#~ "pliki językowe, tematy ikon... Zawiera również program mplayer. \n"
-#~ "Jest on w wersji %1 od <a href=%2>CCCP</a>."
-
-#~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
-#~ msgstr ""
-#~ "<b>Notka:</b> przy pierwszym uruchomieniu SSA/ASS lub ustawień czcionki, "
-#~ "mplayer\n"
-#~ "tworzy bufor czcionki. Ten proces zajmie parę sekund i w tym czasie \n"
-#~ "<b>smplayer może nie odpowiadać. Nie przejmuj się, po prostu czekaj.</b>"
-
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>Notka 2:</b> Jeśli posiadasz zainstalowaną poprzednią wersję, "
-#~ "zalecamy\n"
-#~ "ją odinstalować, a dopiero później instalację nowej."
