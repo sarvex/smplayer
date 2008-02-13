@@ -1,7 +1,7 @@
 <?
 
-$URL="http://downloads.sourceforge.net/smplayer/smplayer_0.6.0rc1_without_mplayer.7z";
+$URL="http://downloads.sourceforge.net/smplayer/smplayer-0.6.0rc2_without_mplayer.7z";
 
-print_link($URL, 5816932);
+print_link($URL, 5813561);
 
 ?>
