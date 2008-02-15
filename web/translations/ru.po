@@ -40,6 +40,9 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
+"Этот пакет включает всё необходимое для работы smplayer: библиотеки Qt, \n"
+"файлы переводов, темы иконок... Также содержит готовую сборку \n"
+"mplayer (версию %1)."
 
 #: ../downloads.php:55
 msgid ""
@@ -48,40 +51,51 @@ msgid ""
 "used by mplayer only and they will be installed in the same folder, so \n"
 "they can't cause any conflict with other codecs you may have installed."
 msgstr ""
+"Также пакет содержит дополнительные кодеки для mplayer, которые позволяют \n"
+"воспроизвести некоторые доп. форматы (вроде rmvb файлов). Эти кодеки будут \n"
+"использованы mplayer-ом, только если они будут установлены в ту же папку, т.е. \n"
+"они не будут конфликтовать с другими установленными кодеками"
 
 #: ../downloads.php:60
 msgid ""
 "Package intended for those who want to be sure they'll be able to\n"
 "play (almost) anything."
 msgstr ""
+"Пакет предназначен для тех, кто хочет быть уверен, что всё будет воспроизведено."
 
 #: ../downloads.php:72
 msgid "Lite package with installer:"
-msgstr ""
+msgstr "Облегчённая версия с инсталлятором:"
 
 #: ../downloads.php:77
 msgid ""
 "This package is like the one above, but it doesn't include the extra\n"
 "codecs, so it's smaller."
 msgstr ""
+"Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
+"поэтому он меньше по размеру."
 
 #: ../downloads.php:80
 msgid ""
 "Package for the ones who usually play only the most known formats, like\n"
 "avi, mkv, mpeg..."
 msgstr ""
+"Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, mpeg..."
 
 #: ../downloads.php:93
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
+"Пакет (без инсталлятора), включающий smplayer, библиотеки QT, файлы переводов,\n"
+" и темы иконок. Не содержит mplayer."
 
 #: ../downloads.php:96
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
+"Пакет для тех, кто не любит инсталляторы или хочет использовать другую сборку mplayer."
 
 #: ../downloads.php:107
 msgid "Linux"
@@ -116,6 +130,9 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
+"Версия mplayer в Ubuntu слишком старая. SMPlayer поддерживает некоторые \n"
+"новые возможности mplayer, поэтому настоятельно рекомендуется новая версия. \n"
+"Вы можете загрузить здесь %2 (от %3)."
 
 #: ../downloads.php:155
 msgid "Icon Themes:"
@@ -383,37 +400,3 @@ msgstr "Мини GUI"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, работающий в новом KDE 4"
-msgstr ""
-
-#~ msgid "256"
-#~ msgstr "256"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
-#~ msgstr ""
-#~ "Этот пакет включает всё необходимое для работы smplayer: библиотеки Qt, \n"
-#~ "файлы переводов, темы иконок... Также содержит готовую сборку \n"
-#~ "mplayer. Включена версия %1 от <a href=%2>CCCP</a>."
-
-#~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
-#~ msgstr ""
-#~ "<b>Примечание:</b> при первом запуске бібліотеки SSA/ASS или fontconfig, "
-#~ "mplayer создаёт кэш шрифтов. Этот процесс займёт несколько секунд, и в "
-#~ "это время может показаться, что smplayer завис. Не волнуйтесь, просто "
-#~ "подождите.</b>"
-
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>Примечание 2:</b> Если у Вас установлена предыдущая версия, "
-#~ "убедительно \n"
-#~ "рекомендуем удалить её перед установкой новой версии."
