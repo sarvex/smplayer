@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-02 02:03+0100\n"
+"POT-Creation-Date: 2008-02-21 00:36+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: Yurkovsky Andrey <anyr@tut.by>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -53,7 +53,8 @@ msgid ""
 msgstr ""
 "Также пакет содержит дополнительные кодеки для mplayer, которые позволяют \n"
 "воспроизвести некоторые доп. форматы (вроде rmvb файлов). Эти кодеки будут \n"
-"использованы mplayer-ом, только если они будут установлены в ту же папку, т.е. \n"
+"использованы mplayer-ом, только если они будут установлены в ту же папку, т."
+"е. \n"
 "они не будут конфликтовать с другими установленными кодеками"
 
 #: ../downloads.php:60
@@ -61,13 +62,20 @@ msgid ""
 "Package intended for those who want to be sure they'll be able to\n"
 "play (almost) anything."
 msgstr ""
-"Пакет предназначен для тех, кто хочет быть уверен, что всё будет воспроизведено."
+"Пакет предназначен для тех, кто хочет быть уверен, что всё будет "
+"воспроизведено."
 
-#: ../downloads.php:72
+#: ../downloads.php:66
+msgid ""
+"Note: this package has been removed, Sourceforge doesn't allow\n"
+"to host closed source binaries (the codecs)"
+msgstr ""
+
+#: ../downloads.php:79
 msgid "Lite package with installer:"
 msgstr "Облегчённая версия с инсталлятором:"
 
-#: ../downloads.php:77
+#: ../downloads.php:84
 msgid ""
 "This package is like the one above, but it doesn't include the extra\n"
 "codecs, so it's smaller."
@@ -75,40 +83,43 @@ msgstr ""
 "Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
 "поэтому он меньше по размеру."
 
-#: ../downloads.php:80
+#: ../downloads.php:87
 msgid ""
 "Package for the ones who usually play only the most known formats, like\n"
 "avi, mkv, mpeg..."
 msgstr ""
-"Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, mpeg..."
+"Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, "
+"mpeg..."
 
-#: ../downloads.php:93
+#: ../downloads.php:100
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
-"Пакет (без инсталлятора), включающий smplayer, библиотеки QT, файлы переводов,\n"
+"Пакет (без инсталлятора), включающий smplayer, библиотеки QT, файлы "
+"переводов,\n"
 " и темы иконок. Не содержит mplayer."
 
-#: ../downloads.php:96
+#: ../downloads.php:103
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
-"Пакет для тех, кто не любит инсталляторы или хочет использовать другую сборку mplayer."
+"Пакет для тех, кто не любит инсталляторы или хочет использовать другую "
+"сборку mplayer."
 
-#: ../downloads.php:107
+#: ../downloads.php:114
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:118
+#: ../downloads.php:125
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Для успешной компиляции просмотрите файл Install.txt, который содержится в "
 "пакете."
 
-#: ../downloads.php:129
+#: ../downloads.php:136
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
@@ -116,37 +127,38 @@ msgstr ""
 "Собрано на OpenSuSE 10.2. Требует: libqt4 и mplayer (не ниже 1.0rc1, \n"
 "рекомендуется 1.0rc2 или svn)."
 
-#: ../downloads.php:141
+#: ../downloads.php:148
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "Собрано на kubuntu 7.04 (также должно работать и на ubuntu)."
 
-#: ../downloads.php:143
+#: ../downloads.php:150
 msgid "Suggested package:"
 msgstr ""
 
-#: ../downloads.php:144
+#: ../downloads.php:151
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
 "Версия mplayer в Ubuntu слишком старая. SMPlayer поддерживает некоторые \n"
-"новые возможности mplayer, поэтому настоятельно рекомендуется новая версия. \n"
+"новые возможности mplayer, поэтому настоятельно рекомендуется новая "
+"версия. \n"
 "Вы можете загрузить здесь %2 (от %3)."
 
-#: ../downloads.php:155
+#: ../downloads.php:162
 msgid "Icon Themes:"
 msgstr "Темы иконок:"
 
-#: ../downloads.php:165
+#: ../downloads.php:172
 msgid "Optional package which provides some icon themes."
 msgstr "Дополнительный пакет, включающий несколько тем иконок."
 
-#: ../downloads.php:193
+#: ../downloads.php:200
 msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
-#: ../downloads.php:194
+#: ../downloads.php:201
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -154,11 +166,11 @@ msgstr ""
 "Дополнительные пакеты для продвинутых пользователей: \n"
 "<a href=%1>Смотрите страницу загрузок sourceforge</a>."
 
-#: ../downloads.php:201
+#: ../downloads.php:208
 msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
-#: ../downloads.php:202
+#: ../downloads.php:209
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -166,12 +178,12 @@ msgstr ""
 "Здесь доступны пакеты для других дистрибутивов, созданные \n"
 "другими людьми. <a href=%1>Нажмите сюда</a> для просмотра."
 
-#: ../downloads.php:212
+#: ../downloads.php:219
 msgid "Unstable releases"
 msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:214
+#: ../downloads.php:221
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

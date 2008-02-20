@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-02 02:03+0100\n"
+"POT-Creation-Date: 2008-02-21 00:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,98 +53,104 @@ msgid ""
 "play (almost) anything."
 msgstr ""
 
-#: ../downloads.php:72
+#: ../downloads.php:66
+msgid ""
+"Note: this package has been removed, Sourceforge doesn't allow\n"
+"to host closed source binaries (the codecs)"
+msgstr ""
+
+#: ../downloads.php:79
 msgid "Lite package with installer:"
 msgstr ""
 
-#: ../downloads.php:77
+#: ../downloads.php:84
 msgid ""
 "This package is like the one above, but it doesn't include the extra\n"
 "codecs, so it's smaller."
 msgstr ""
 
-#: ../downloads.php:80
+#: ../downloads.php:87
 msgid ""
 "Package for the ones who usually play only the most known formats, like\n"
 "avi, mkv, mpeg..."
 msgstr ""
 
-#: ../downloads.php:93
+#: ../downloads.php:100
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 
-#: ../downloads.php:96
+#: ../downloads.php:103
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
 
-#: ../downloads.php:107
+#: ../downloads.php:114
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:118
+#: ../downloads.php:125
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 
-#: ../downloads.php:129
+#: ../downloads.php:136
 msgid ""
 "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
 "recommended 1.0rc2 or svn)."
 msgstr ""
 
-#: ../downloads.php:141
+#: ../downloads.php:148
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr ""
 
-#: ../downloads.php:143
+#: ../downloads.php:150
 msgid "Suggested package:"
 msgstr ""
 
-#: ../downloads.php:144
+#: ../downloads.php:151
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
 
-#: ../downloads.php:155
+#: ../downloads.php:162
 msgid "Icon Themes:"
 msgstr ""
 
-#: ../downloads.php:165
+#: ../downloads.php:172
 msgid "Optional package which provides some icon themes."
 msgstr ""
 
-#: ../downloads.php:193
+#: ../downloads.php:200
 msgid "Additional packages"
 msgstr ""
 
-#: ../downloads.php:194
+#: ../downloads.php:201
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:201
+#: ../downloads.php:208
 msgid "Contributed packages"
 msgstr ""
 
-#: ../downloads.php:202
+#: ../downloads.php:209
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 
-#: ../downloads.php:212
+#: ../downloads.php:219
 msgid "Unstable releases"
 msgstr ""
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:214
+#: ../downloads.php:221
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

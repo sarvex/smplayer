@@ -60,6 +60,13 @@ echo "<br><b><i>";
 tr("Package intended for those who want to be sure they'll be able to
 play (almost) anything.");
 echo"</i></b>";
+
+echo "<br>";
+echo "<b>";
+tr("Note: this package has been removed, Sourceforge doesn't allow
+to host closed source binaries (the codecs)");
+echo "<b>";
+
 ?>
 </td>
 </tr>

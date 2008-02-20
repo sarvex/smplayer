@@ -1,5 +1,5 @@
 <?php
-function print_link($url, $bytes) {
+function print_link($url, $bytes, $disabled = false) {
 	$u = parse_url($url);
 	$filename = basename($u['path']);
 
@@ -12,6 +12,9 @@ function print_link($url, $bytes) {
 		$s = $bytes . " bytes";
 	}
 
-	echo "<a href=\"$url\"><b>$filename</b></a> ($s)";
+	if ($disabled)
+		echo "<b>$filename</b> ($s)";
+	else
+		echo "<a href=\"$url\"><b>$filename</b></a> ($s)";
 }
 ?>
