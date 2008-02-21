@@ -51,7 +51,7 @@ include("download_windows_full.php");
 <?php
 tr("This package contains everything needed to run smplayer: Qt shared 
 libraries, translation files, icon themes and a mplayer 
-build (the version included is %1).","<i>SVN r25850</i>"); echo " ";
+build (the version included is %1).","<i>SVN r25979</i>"); echo " ";
 tr("The package includes also the extra codecs for mplayer, which will allow 
 to play some additional formats (like rmvb files). These codecs are to be
 used by mplayer only and they will be installed in the same folder, so 
