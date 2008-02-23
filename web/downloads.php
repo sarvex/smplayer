@@ -31,7 +31,7 @@ header_set_section("downloads");
 
 <div id="content">
 <?php
-include_once("myfunctions.php");
+include_once("download_links.php");
 
 echo "<h1>".get_tr("Stable version")."</h1>";
 echo "<h2>".get_tr("Windows")."</h2>";
@@ -45,7 +45,7 @@ echo "<h2>".get_tr("Windows")."</h2>";
 <td>
 <?php 
 echo "<b>"; tr("Full package with installer:"); echo "</b> ";
-include("download_windows_full.php"); 
+echo download_windows_full_link(); 
 ?>
 <br>
 <?php
@@ -77,7 +77,7 @@ echo "<b>";
 <td>
 <?php 
 echo "<b>"; tr("Lite package with installer:"); echo "</b> ";
-include("download_windows_lite.php"); 
+echo download_windows_lite_link(); 
 ?>
 <br>
 <?php
@@ -95,7 +95,7 @@ echo"</i></b>";
 <td><img src="iconos/package.png"></td>
 <td>
 <?php
-include("download_windows_7z.php");
+echo download_windows_7z_link();
 echo "<br>";
 tr("Package (without installer) which includes smplayer, Qt shared libraries,
 translations and icon themes. It doesn't include mplayer."); 
@@ -112,7 +112,6 @@ echo"</i></b>";
 <!-- LINUX -->
 <?php
 echo "<h2>".get_tr("Linux")."</h2>";
-//echo "<h3>".get_tr("smplayer")."</h3>";
 ?>
 <p>
 <table>
@@ -120,7 +119,7 @@ echo "<h2>".get_tr("Linux")."</h2>";
 <td><img src="iconos/package.png"></td>
 <td>
 <?php
-include("download_source.php");
+echo download_src_link();
 echo "<br>";
 tr("Read the file Install.txt included in the package to know how compile it."); 
 ?>
@@ -131,7 +130,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 <td><img src="iconos/suse.png"></td>
 <td>
 <?php
-include("download_suse.php");
+echo download_rpm_link();
 echo "<br>";
 tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, 
 recommended 1.0rc2 or svn).");
@@ -143,7 +142,7 @@ recommended 1.0rc2 or svn).");
 <td><img src="iconos/ubuntu.png"></td>
 <td>
 <?php
-include("download_ubuntu.php");
+echo download_deb_link();
 echo "<br>";
 tr("Compiled on kubuntu 7.04 (should work in ubuntu too)."); 
 echo "<br>";
@@ -167,7 +166,7 @@ echo "<h3>".get_tr("Icon Themes:")."</h3>";
 <td><img src="iconos/package.png"></td>
 <td>
 <?php 
-include("download_themes.php");
+echo download_themes_src_link();
 echo "<br>";
 tr("Optional package which provides some icon themes."); 
 ?>
@@ -178,7 +177,7 @@ tr("Optional package which provides some icon themes.");
 <td><img src="iconos/suse.png"></td>
 <td>
 <?php
-include("download_themes_rpm.php"); 
+echo download_themes_rpm_link(); 
 ?>
 </td>
 </tr>
@@ -187,7 +186,7 @@ include("download_themes_rpm.php");
 <td><img src="iconos/ubuntu.png"></td>
 <td>
 <?php
-include("download_themes_deb.php");
+echo download_themes_deb_link();
 ?>
 </td>
 </tr>

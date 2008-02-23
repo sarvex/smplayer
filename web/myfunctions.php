@@ -1,5 +1,5 @@
 <?php
-function print_link($url, $bytes, $disabled = false) {
+function get_link($url, $bytes, $disabled = false) {
 	$u = parse_url($url);
 	$filename = basename($u['path']);
 
@@ -13,8 +13,17 @@ function print_link($url, $bytes, $disabled = false) {
 	}
 
 	if ($disabled)
-		echo "<b>$filename</b> ($s)";
+		return "<b>$filename</b> ($s)";
 	else
-		echo "<a href=\"$url\"><b>$filename</b></a> ($s)";
+		return "<a href=\"$url\"><b>$filename</b></a> ($s)";
 }
+
+function print_link($url, $bytes, $disabled = false) {
+	echo get_link($url, $bytes, $disable);
+}
+
+function create_link($filename, $bytes) {
+	return get_link("http://downloads.sourceforge.net/smplayer/$filename", $bytes);
+}
+
 ?>
