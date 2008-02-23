@@ -1,4 +1,5 @@
 <?php
+include_once("site.php");
 
 function header_print_section($name, $link, $is_active) {
 	$act_tab = " id=\"active_tab\"";
@@ -18,7 +19,7 @@ function print_language_link($file, $name, $cod, $query, $last=false) {
 }
 
 function header_set_section($s, $rel_path="") {
-	global $tr_lang;
+	global $tr_lang, $is_sourceforge;
 	
 	$file = basename($_SERVER['SCRIPT_NAME']);
 	$query =  $_SERVER['QUERY_STRING'];
@@ -76,7 +77,8 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 
-	header_print_section(get_tr("Donations"), "https://sourceforge.net/donate/index.php?group_id=185512", ($s=="donations"));
+	if ($is_sourceforge)
+		header_print_section(get_tr("Donations"), "https://sourceforge.net/donate/index.php?group_id=185512", ($s=="donations"));
 ?>
 	</ul>
 
