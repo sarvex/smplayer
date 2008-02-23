@@ -68,7 +68,7 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Downloads"), $rel_path."downloads.php?tr_lang=".$tr_lang, ($s=="downloads"));
 
-	header_print_section(get_tr("Forum"), $rel_path."forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
+	header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
 
 	header_print_section(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&atid=913573", ($s=="bugs"));
 
