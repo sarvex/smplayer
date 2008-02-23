@@ -8,10 +8,16 @@
   <meta name="Description" content="smplayer, multiplatform front-end for mplayer">
   <meta name="Keywords" content="smplayer, mplayer, multimedia, player">
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<?php define('PUN_ROOT', 'forums/');
-$use_forum = $_GET['use_forum'];
+<?php 
+include_once("site.php");
+if ($is_sourceforge) 
+	$use_forum = $_GET['use_forum'];
+else
+	$use_forum = false;
+
 if (!isset($use_forum)) $use_forum = 1;
 if ($use_forum) {
+	define('PUN_ROOT', 'forums/');
 	require PUN_ROOT.'include/common.php';
 	if (isset($_COOKIE['punbb_cookie']))
 	list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
