@@ -10,7 +10,7 @@
   <link href="base.css" rel="stylesheet" title="base style" type="text/css">
 <?php 
 include_once("site.php");
-if ($is_sourceforge) 
+if ($site == "sourceforge") 
 	$use_forum = $_GET['use_forum'];
 else
 	$use_forum = false;

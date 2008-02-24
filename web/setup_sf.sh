@@ -9,5 +9,5 @@ echo 'php_value session.save_path "/tmp/persistent/smplayer/sessions"' > .htacce
 echo 'php_value session.save_handler "files"' >> .htaccess
 
 # Create site.php
-echo '<?php $is_sourceforge = true; ?>' > site.php
+echo '<?php $site = "sourceforge"; ?>' > site.php
 

@@ -19,7 +19,7 @@ function print_language_link($file, $name, $cod, $query, $last=false) {
 }
 
 function header_set_section($s, $rel_path="") {
-	global $tr_lang, $is_sourceforge;
+	global $tr_lang, $site;
 	
 	$file = basename($_SERVER['SCRIPT_NAME']);
 	$query =  $_SERVER['QUERY_STRING'];
@@ -77,7 +77,7 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 
-	if ($is_sourceforge)
+	if ($site != "berlios")
 		header_print_section(get_tr("Donations"), "https://sourceforge.net/donate/index.php?group_id=185512", ($s=="donations"));
 ?>
 	</ul>

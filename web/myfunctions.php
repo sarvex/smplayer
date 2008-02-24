@@ -1,4 +1,7 @@
 <?php
+
+include_once("site.php");
+
 function get_link($url, $bytes, $disabled = false) {
 	$u = parse_url($url);
 	$filename = basename($u['path']);
@@ -23,7 +26,12 @@ function print_link($url, $bytes, $disabled = false) {
 }
 
 function create_link($filename, $bytes) {
-	return get_link("http://downloads.sourceforge.net/smplayer/$filename", $bytes);
+	global $site;
+
+	if ($site == "berlios")
+		return get_link("http://prdownload.berlios.de/smplayer/$filename", $bytes);
+	else
+		return get_link("http://downloads.sourceforge.net/smplayer/$filename", $bytes);
 }
 
 ?>

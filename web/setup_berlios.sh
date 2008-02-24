@@ -5,5 +5,5 @@
 #mkdir forums/img/avatars
 
 # Create site.php
-echo '<?php $is_sourceforge = false; ?>' > site.php
+echo '<?php $site = "berlios"; ?>' > site.php
 
