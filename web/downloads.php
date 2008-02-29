@@ -44,7 +44,7 @@ echo "<h2>".get_tr("Windows")."</h2>";
 <td><img src="iconos/kpackage.png"></td>
 <td>
 <?php 
-echo "<b>"; tr("Full package with installer:"); echo "</b> ";
+echo "<b>"; tr("Package with installer:"); echo "</b> ";
 echo download_windows_lite_link(); 
 ?>
 <br>
@@ -72,26 +72,6 @@ echo "<b>";
 </td>
 </tr>
 
-<!--
-<tr>
-<td><img src="iconos/kpackage.png"></td>
-<td>
-<?php 
-echo "<b>"; tr("Lite package with installer:"); echo "</b> ";
-echo download_windows_lite_link(); 
-?>
-<br>
-<?php
-tr("This package is like the one above, but it doesn't include the extra
-codecs, so it's smaller.");
-echo "<br><b><i>";
-tr("Package for the ones who usually play only the most known formats, like
-avi, mkv, mpeg...");
-echo"</i></b>";
-?>
-</td>
-</tr>
--->
 
 <tr>
 <td><img src="iconos/package.png"></td>
@@ -108,6 +88,36 @@ echo"</i></b>";
 ?>
 </td>
 </tr>
+
+<!-- codecs -->
+
+<tr>
+<td><img src="iconos/kpackage.png"></td>
+<td>
+<?php 
+echo "<b>"; tr("Additional codecs:"); echo "</b> ";
+echo download_codecs_link(); 
+?>
+<br>
+<?php
+
+tr("This package adds support for codecs that are not yet implemented
+natively in mplayer, like newer RealVideo variants and a lot of uncommon
+formats. Note that they are not necessary to play most common formats
+like DVDs, MPEG-1/2/4, etc.");
+echo " ";
+tr("These codecs are to be used by mplayer only and they will be installed 
+in the same folder, so they can't cause any conflict with other codecs you 
+may have installed.");
+echo " ";
+tr("If you prefer a zip file, you can get it at 
+the <a href=%1>mplayer site</a> (%2).",
+"\"http://www.mplayerhq.hu/design7/dload.html\"", 
+"windows-essential-20071007.zip");
+?>
+</td>
+</tr>
+
 
 </table>
 

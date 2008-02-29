@@ -38,4 +38,8 @@ function download_themes_deb_link() {
 	return create_link("smplayer-themes_0.1.15_all.deb", 1762904 );
 }
 
+function download_codecs_link() {
+	return "<a href=\"http://www.mediafire.com/?jzlj6iw0wls\"><b>smplayer_codecs_20071007.exe</b></a>";
+}
+
 ?>
