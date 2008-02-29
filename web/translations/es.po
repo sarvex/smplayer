@@ -30,7 +30,7 @@ msgstr "Windows"
 
 #: ../downloads.php:47
 msgid "Package with installer:"
-msgstr ""
+msgstr "Paquete con instalador:"
 
 #: ../downloads.php:52
 msgid ""
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../downloads.php:98
 msgid "Additional codecs:"
-msgstr ""
+msgstr "Códecs adicionales:"
 
 #: ../downloads.php:104
 msgid ""
@@ -69,6 +69,10 @@ msgid ""
 "formats. Note that they are not necessary to play most common formats\n"
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
+"Este paquete proporciona algunos codecs que aún no han sido implementados "
+"nativamente en mplayer, como las nuevas variantes de RealVideo y un "
+"montón de formatos poco comunes. No son necesarios para reproducir formatos "
+"comunes como DVDs, MPEG-1/2/4, etc." 
 
 #: ../downloads.php:109
 msgid ""
@@ -76,12 +80,17 @@ msgid ""
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
+"Estos códecs son sólo usados por mplayer y se instalarán en el mismo "
+"directorio, por tanto no pueden causar ningún conflicto con otros códecs "
+"que puedas tener instalados."
 
 #: ../downloads.php:113
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
+"Si prefieres un fichero zip, lo puedes bajar de la "
+"<a href=%1>web del mplayer</a> (%2)."
 
 #: ../downloads.php:126
 msgid "Linux"
