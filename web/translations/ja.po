@@ -30,7 +30,7 @@ msgstr "Windows"
 
 #: ../downloads.php:47
 msgid "Package with installer:"
-msgstr ""
+msgstr "インストーラ付きパッケージ:"
 
 #: ../downloads.php:52
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../downloads.php:98
 msgid "Additional codecs:"
-msgstr ""
+msgstr "追加コーデック:"
 
 #: ../downloads.php:104
 msgid ""
@@ -68,6 +68,9 @@ msgid ""
 "formats. Note that they are not necessary to play most common formats\n"
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
+"このパッケージは、mplayer に直接実装されていない最新の RealVideo 派生などのマ"
+"イナーなフォーマットのコーデックへの対応を追加します。DVD、MPEG-1/2/4 など、"
+"主要なフォーマットを再生する際は不要です。"
 
 #: ../downloads.php:109
 msgid ""
@@ -75,12 +78,17 @@ msgid ""
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
+"これらのコーデックは同じフォルダにインストールされます。mplayer にしか使用さ"
+"れませんので、すでにインストールされている他のコーデックと競合することはあり"
+"ません。"
 
 #: ../downloads.php:113
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
+"zip ファイルをお好みの方は <a href=%1>mplayer のサイト</a>からダウンロードし"
+"てください (%2)。"
 
 #: ../downloads.php:126
 msgid "Linux"
@@ -159,8 +167,8 @@ msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
 msgstr ""
-"<a href=%1><b>こちら</b>で、SVN から直接取得されたパッケージ (ソースコードと "
-"Windows 用の更新) をダウンロードできます。"
+"<a href=%1><b>こちら</b>に SVN から直接取得されたパッケージ (ソースコードと "
+"Windows 用の更新) があります。"
 
 #: ../header.php:56
 msgid "The SMPlayer Project"
@@ -372,43 +380,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で起動中の SMPlayer"
-
-#~ msgid "Full package with installer:"
-#~ msgstr "インストーラ付きフルパッケージ:"
-
-#~ msgid ""
-#~ "The package includes also the extra codecs for mplayer, which will "
-#~ "allow \n"
-#~ "to play some additional formats (like rmvb files). These codecs are to "
-#~ "be\n"
-#~ "used by mplayer only and they will be installed in the same folder, so \n"
-#~ "they can't cause any conflict with other codecs you may have installed."
-#~ msgstr ""
-#~ "また、いくつかの追加フォーマット (rmvb ファイルなど) の再生を可能にする "
-#~ "mplayer 用追加フォーマットも含まれています。これらのコーデックは同じフォル"
-#~ "ダにインストールされます。mplayer にしか使用されませんので、すでにインス"
-#~ "トールされている他のコーデックと競合することはありません。"
-
-#~ msgid ""
-#~ "Package intended for those who want to be sure they'll be able to\n"
-#~ "play (almost) anything."
-#~ msgstr ""
-#~ "ほぼすべてのメディアを再生したいという方におすすめのパッケージです。"
-
-#~ msgid "Lite package with installer:"
-#~ msgstr "インストーラ付きライトパッケージ:"
-
-#~ msgid ""
-#~ "This package is like the one above, but it doesn't include the extra\n"
-#~ "codecs, so it's smaller."
-#~ msgstr ""
-#~ "このパッケージは上記のフルパッケージに似ていますが、追加コーデックが含まれ"
-#~ "ていません。そのため、フルパッケージに比べてより小さくスマートになっていま"
-#~ "す。"
-
-#~ msgid ""
-#~ "Package for the ones who usually play only the most known formats, like\n"
-#~ "avi, mkv, mpeg..."
-#~ msgstr ""
-#~ "avi、mkv、mpeg など、主要なフォーマットしか再生しないという方におすすめの"
-#~ "パッケージです。"
