@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../downloads.php:98
 msgid "Additional codecs:"
-msgstr ""
+msgstr "Дополнительные кодеки:"
 
 #: ../downloads.php:104
 msgid ""
@@ -72,6 +72,10 @@ msgid ""
 "formats. Note that they are not necessary to play most common formats\n"
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
+"Этот пакет добавляет поддержку кодеков, которые не включены в mplayer,\n"
+"например, форматы RelVideo и некоторые другие, реже используемые.\n"
+"Обратите внимания, что эти кодеки не нужны для воспроизведения большинства\n"
+"форматов вроде DVD, MPEG-1/2/4 и прочих\n"
 
 #: ../downloads.php:109
 msgid ""
@@ -79,12 +83,18 @@ msgid ""
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
+"Эти кодеки будут использоваться mplayer-ом только при установке в тот же\n"
+"каталог, таким образом они не будут конфликтовать с другими кодеками,\n"
+"которые вы устанавливаете сами.\n"
+
 
 #: ../downloads.php:113
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
+"Если вы предпочитаете zip-архив, вы можете загрузить его\n"
+"на <a href=%1>странице mplayer </a> (%2).\n"
 
 #: ../downloads.php:126
 msgid "Linux"
