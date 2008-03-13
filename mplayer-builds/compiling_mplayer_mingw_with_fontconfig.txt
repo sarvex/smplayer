@@ -29,22 +29,16 @@ Download: http://downloads.sourceforge.net/expat/expat-2.0.1.tar.gz?use_mirror=m
 make
 make install
 
-FONTCONFIG:
-# Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz (not tested yet)
-Download: http://fontconfig.org/release/fontconfig-2.4.2.tar.gz
-Patch (version 2.5.0 may not need it):
 
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-stat-fix.diff
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-install-fixes.diff
-  # Optional to change cachedir to %USERPROFILE% if win32.
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-cachedir.diff
-  # Optional to change fonts.conf dir to /mplayer rather then /etc/fonts (also can be used in 2.3.2)
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-mplayer-fconfdir.diff
-
+FONTCONFIG (2.5.0):
+Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz
+cd fontconfig-2.5.0
+patch -p1 < ../fontconfig-2.4.2-mplayer-fconfdir.diff
 ./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
 make
 copy libexpat-1.dll  libfontconfig-1.dll  libfreetype-6.dll  libiconv-2.dll from j:/mingw/bin? to ~/fontconfig-2.4.2 (otherwise fc-cache fails)
 make install
+
 
 ZLIB:
 Download: http://www.zlib.net/zlib-1.2.3.tar.bz2
@@ -70,6 +64,42 @@ make
 
 Install mplayer.exe wherever you want, create the subdir mplayer/ and copy in it the file font.conf.
 
+
+/*
+FONTCONFIG:
+# Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz (not tested yet)
+Download: http://fontconfig.org/release/fontconfig-2.4.2.tar.gz
+Patch (version 2.5.0 may not need it):
+
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-stat-fix.diff
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-install-fixes.diff
+  # Optional to change cachedir to %USERPROFILE% if win32.
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-cachedir.diff
+  # Optional to change fonts.conf dir to /mplayer rather then /etc/fonts (also can be used in 2.3.2)
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-mplayer-fconfdir.diff
+
+./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
+make
+copy libexpat-1.dll  libfontconfig-1.dll  libfreetype-6.dll  libiconv-2.dll from j:/mingw/bin? to ~/fontconfig-2.4.2 (otherwise fc-cache fails)
+make install
+*/
+
+/*
+FONTCONFIG (2.5.91):
+Download: http://fontconfig.org/release/fontconfig-2.5.91.tar.gz
+cd fontconfig-2.5.91
+patch -p1 < ../fontconfig-2.4.2-mplayer-fconfdir.diff
+./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
+make
+make install
+
+(Compilation of mplayer fails):
+make[1]: Leaving directory `/home/ricardo/mplayer/osdep'
+gcc -o mplayer.exe osdep/mplayer-rc.o mplayer.o m_property.o mp_fifo.o mp_msg.o mixer.o parser-mpcmd.o command.o asxparser.o codec-cfg.o cpudetect.o edl.o find_sub.o get_path.o m_config.o m_option.o m_struct.o mpcommon.o parser-cfg.o playtree.o playtreeparser.o spudec.o sub_cc.o subopt-helper.o subreader.o vobsub.o libvo/libvo.a libao2/libao2.a input/libinput.a vidix/libvidix.a libmpcodecs/libmpcodecs.a libaf/libaf.a libmpdemux/libmpdemux.a stream/stream.a libswscale/libswscale.a libvo/libosd.a libavformat/libavformat.a libavcodec/libavcodec.a libavutil/libavutil.a libpostproc/libpostproc.a loader/libloader.a mp3lib/libmp3.a liba52/liba52.a libmpeg2/libmpeg2.a libfaad2/libfaad2.a tremor/libvorbisidec.a libass/libass.a osdep/libosdep.a -lopengl32 -lgdi32 -lgdi32 -lwinmm -lgdi32 -lx264 -lmp3lame /home/ricardo/live//liveMedia/libliveMedia.a                  /home/ricardo/live//groupsock/libgroupsock.a                  /home/ricardo/live//UsageEnvironment/libUsageEnvironment.a                  /home/ricardo/live//BasicUsageEnvironment/libBasicUsageEnvironment.a                   -lwinmm -lws2_32 -liconv -lpng -lz -ljpeg -Lj:/mingw/lib -Lj:/mingw/lib -lfreetype -lz -lfontconfig  -Lj:/mingw/lib -lfribidi -lz -ltheora -logg -ldts -ladvapi32 -lole32  -lstdc++ -lxvidcore -lm -lole32 -luuid     -lm   
+libass/libass.a(ass_fontconfig.o):ass_fontconfig.c:(.text+0x583): undefined reference to `FcFreeTypeQueryFace'
+collect2: ld returned 1 exit status
+make: *** [mplayer.exe] Error 1
+*/
 
 pkg-config: NOT NEEDED
 /*
