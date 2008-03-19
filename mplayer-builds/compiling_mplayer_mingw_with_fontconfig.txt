@@ -30,10 +30,18 @@ make
 make install
 
 
-FONTCONFIG (2.5.0):
-Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz
-cd fontconfig-2.5.0
-patch -p1 < ../fontconfig-2.4.2-mplayer-fconfdir.diff
+FONTCONFIG:
+# Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz (not tested yet)
+Download: http://fontconfig.org/release/fontconfig-2.4.2.tar.gz
+Patch (version 2.5.0 may not need it):
+
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-stat-fix.diff
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-install-fixes.diff
+  # Optional to change cachedir to %USERPROFILE% if win32.
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-cachedir.diff
+  # Optional to change fonts.conf dir to /mplayer rather then /etc/fonts (also can be used in 2.3.2)
+  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-mplayer-fconfdir.diff
+
 ./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
 make
 copy libexpat-1.dll  libfontconfig-1.dll  libfreetype-6.dll  libiconv-2.dll from j:/mingw/bin? to ~/fontconfig-2.4.2 (otherwise fc-cache fails)
@@ -66,18 +74,10 @@ Install mplayer.exe wherever you want, create the subdir mplayer/ and copy in it
 
 
 /*
-FONTCONFIG:
-# Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz (not tested yet)
-Download: http://fontconfig.org/release/fontconfig-2.4.2.tar.gz
-Patch (version 2.5.0 may not need it):
-
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-stat-fix.diff
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-install-fixes.diff
-  # Optional to change cachedir to %USERPROFILE% if win32.
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-cachedir.diff
-  # Optional to change fonts.conf dir to /mplayer rather then /etc/fonts (also can be used in 2.3.2)
-  # http://www.cccp-project.net/nichorai/mplayer-patches/fontconfig-2.4.2-mplayer-fconfdir.diff
-
+FONTCONFIG (2.5.0):
+Download: http://fontconfig.org/release/fontconfig-2.5.0.tar.gz
+cd fontconfig-2.5.0
+patch -p1 < ../fontconfig-2.4.2-mplayer-fconfdir.diff
 ./configure --prefix=j:/mingw --disable-libxml2 --disable-docs
 make
 copy libexpat-1.dll  libfontconfig-1.dll  libfreetype-6.dll  libiconv-2.dll from j:/mingw/bin? to ~/fontconfig-2.4.2 (otherwise fc-cache fails)

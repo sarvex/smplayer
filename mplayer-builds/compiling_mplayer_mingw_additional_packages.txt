@@ -114,6 +114,10 @@ patch -p2 < ~/file64_mingw.diff
 MPLAYER:
 svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
 ./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/
+
+For r26264:
+./configure --enable-runtime-cpudetection --codecsdir=codecs --with-extraincdir=/home/ricardo/directx/:/home/ricardo/live/ --enable-dvdread-internal --enable-dvdread
+
 make
 
 /*
