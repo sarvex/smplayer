@@ -6,7 +6,7 @@ function download_src_link() {
 }
 
 function download_rpm_link() {
-	return create_link("smplayer-0.6.0rc2-suse10.2.i586.rpm", 1273348 );
+	return create_link("smplayer-0.6.0rc3-suse10.2.i586.rpm", 1369394 );
 }
 
 function download_deb_link() {
