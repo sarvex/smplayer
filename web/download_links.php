@@ -18,11 +18,11 @@ function download_windows_full_link() {
 }
 
 function download_windows_lite_link() {
-	return create_link("smplayer_0.6.0rc2_lite.exe", 11621015 );
+	return create_link("smplayer_0.6.0rc3_setup.exe", 11468351 );
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.6.0rc2_without_mplayer.7z", 5813561 );
+	return create_link("smplayer-0.6.0rc3_without_mplayer.7z", 5872029 );
 }
 
 
