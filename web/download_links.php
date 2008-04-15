@@ -2,7 +2,7 @@
 include_once("myfunctions.php");
 
 function download_src_link() {
-	return create_link("smplayer-0.6.0rc3.tar.bz2", 1011857 );
+	return create_link("smplayer-0.6.0rc4.tar.bz2", 1017697 );
 }
 
 function download_rpm_link() {
@@ -10,7 +10,7 @@ function download_rpm_link() {
 }
 
 function download_deb_link() {
-	return create_link("smplayer_0.6.0rc3_i386.deb", 1871970 );
+	return create_link("smplayer_0.6.0rc4_i386.deb", 1898744 );
 }
 
 function download_windows_full_link() {
@@ -18,11 +18,11 @@ function download_windows_full_link() {
 }
 
 function download_windows_lite_link() {
-	return create_link("smplayer_0.6.0rc3_setup.exe", 11468351 );
+	return create_link("smplayer_0.6.0rc4_setup.exe", 11481730 );
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.6.0rc3_without_mplayer.7z", 5872029 );
+	return create_link("smplayer-0.6.0rc4_without_mplayer.7z", 5882670 );
 }
 
 
