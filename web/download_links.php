@@ -6,11 +6,15 @@ function download_src_link() {
 }
 
 function download_rpm_link() {
-	return create_link("smplayer-0.6.0rc3-suse10.2.i586.rpm", 1369394 );
+	return create_link("smplayer-0.6.0rc4-rvm.i586.rpm", 1385037 );
 }
 
 function download_deb_link() {
 	return create_link("smplayer_0.6.0rc4_i386.deb", 1898744 );
+}
+
+function download_amd64deb_link() {
+	return create_link("smplayer_0.6.0rc4_amd64.deb", 1908828 );
 }
 
 function download_windows_full_link() {
