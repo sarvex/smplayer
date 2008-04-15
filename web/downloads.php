@@ -162,8 +162,15 @@ echo "<br>";
 echo download_amd64deb_link();
 echo "<br>";
 tr("Package for AMD64. Compiled on kubuntu 7.10."); 
-echo "<br>";
+//echo "<br>";
+?>
+</td>
+</tr>
 
+<tr>
+<td><img src="iconos/ubuntu.png"></td>
+<td>
+<?php
 echo "<b>"; tr("Suggested package:"); echo "</b><br>";
 tr("The version of mplayer included in Ubuntu is very old (%1). SMPlayer 
 has support for some of the new features of mplayer, so a newer version 
