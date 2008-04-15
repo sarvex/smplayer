@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-29 18:39+0100\n"
+"POT-Creation-Date: 2008-04-16 01:12+0200\n"
 "PO-Revision-Date: 2008-03-05 20:29+0100\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -97,8 +97,10 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:136
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
 
 #: ../downloads.php:147
 msgid ""
@@ -112,11 +114,15 @@ msgstr ""
 msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
 msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
 
-#: ../downloads.php:161
+#: ../downloads.php:164
+msgid "Package for AMD64. Compiled on kubuntu 7.10."
+msgstr ""
+
+#: ../downloads.php:167
 msgid "Suggested package:"
 msgstr "Proponowany pakiet:"
 
-#: ../downloads.php:162
+#: ../downloads.php:168
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -126,19 +132,19 @@ msgstr ""
 "kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
 "Można ją pobrać stąd %2 (z %3)."
 
-#: ../downloads.php:173
+#: ../downloads.php:179
 msgid "Icon Themes:"
 msgstr "Tematy ikon:"
 
-#: ../downloads.php:183
+#: ../downloads.php:189
 msgid "Optional package which provides some icon themes."
 msgstr "Pakiety zawierające kilka tematów ikon."
 
-#: ../downloads.php:211
+#: ../downloads.php:217
 msgid "Additional packages"
 msgstr "Dodatkowe pakiety"
 
-#: ../downloads.php:212
+#: ../downloads.php:218
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -146,11 +152,11 @@ msgstr ""
 "Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
 "<a href=%1>Zobacz stronę pobierania sourceforge</a>."
 
-#: ../downloads.php:219
+#: ../downloads.php:225
 msgid "Contributed packages"
 msgstr "Pakiety stworzone przez różne osoby"
 
-#: ../downloads.php:220
+#: ../downloads.php:226
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -158,12 +164,12 @@ msgstr ""
 "Tutaj dostępne są pakiety wykonane przez różne osoby\n"
 "dla innych dystrybucji. <a href=%1>Kliknij tutaj</a> aby je zobaczyć."
 
-#: ../downloads.php:230
+#: ../downloads.php:236
 msgid "Unstable releases"
 msgstr "Wydania niestabilne"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:232
+#: ../downloads.php:238
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -395,4 +401,3 @@ msgstr "Mini GUI"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer uruchomiony w nowym KDE 4"
-
