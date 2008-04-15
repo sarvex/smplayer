@@ -25,7 +25,7 @@
 
 define('PUN_ROOT', './');
 require PUN_ROOT.'include/common.php';
-
+require PUN_ROOT.'figlet.php';
 
 if ($pun_user['g_read_board'] == '0')
     message($lang_common['No view']);
@@ -580,6 +580,7 @@ if ($quickpost)
                     </div>
                 </fieldset>
             </div>
+            <?php print_figlet(); ?>
             <p><input type="submit" name="submit" tabindex="2" value="<?php echo $lang_common['Submit'] ?>" accesskey="s" /></p>
         </form>
     </div>

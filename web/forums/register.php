@@ -25,7 +25,7 @@
 
 define('PUN_ROOT', './');
 require PUN_ROOT.'include/common.php';
-
+require PUN_ROOT.'figlet.php';
 
 // If we are logged in, we shouldn't be here
 if (!$pun_user['is_guest'])
@@ -182,6 +182,12 @@ else if (isset($_POST['form_sent']))
 	}
 	else
 		$language = $pun_config['o_default_lang'];
+
+        // Spam protection with figlet
+        if (!check_figlet ()) {
+                message ("Spam protection not passed.");
+        }
+
 
 	$timezone = round($_POST['timezone'], 1);
 	$save_pass = (!isset($_POST['save_pass']) || $_POST['save_pass'] != '1') ? '0' : '1';
@@ -402,6 +408,7 @@ require PUN_ROOT.'header.php';
 					</div>
 				</fieldset>
 			</div>
+                        <?php print_figlet (); ?>
 			<p><input type="submit" name="register" value="<?php echo $lang_register['Register'] ?>" /></p>
 		</form>
 	</div>
