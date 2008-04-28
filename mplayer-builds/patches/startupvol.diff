@@ -1,8 +1,21 @@
+Index: version.sh
+===================================================================
+--- version.sh	(revisión: 26446)
++++ version.sh	(copia de trabajo)
+@@ -9,7 +9,7 @@
+ 
+ NEW_REVISION="#define VERSION \"dev-SVN-r${svn_revision}${extra}\""
+ OLD_REVISION=`cat version.h 2> /dev/null`
+-TITLE="#define MP_TITLE \"MPlayer dev-SVN-r${svn_revision}${extra} (C) 2000-2008 MPlayer Team\""
++TITLE="#define MP_TITLE \"MPlayer dev-SVN-r${svn_revision}${extra} (with -volume) (C) 2000-2008 MPlayer Team\""
+ 
+ # Update version.h only on revision changes to avoid spurious rebuilds
+ if test "$NEW_REVISION" != "$OLD_REVISION"; then
 Index: mplayer.c
 ===================================================================
---- mplayer.c	(revision 25234)
-+++ mplayer.c	(working copy)
-@@ -84,6 +84,7 @@
+--- mplayer.c	(revisión: 26446)
++++ mplayer.c	(copia de trabajo)
+@@ -86,6 +86,7 @@
  int player_idle_mode=0;
  int quiet=0;
  int enable_mouse_movements=0;
@@ -10,7 +23,7 @@ Index: mplayer.c
  
  #ifdef WIN32
  char * proc_priority=NULL;
-@@ -3292,6 +3294,8 @@
+@@ -3582,6 +3583,8 @@
      audio_delay += mpctx->sh_video->stream_delay;
  }
  if(mpctx->sh_audio){
@@ -21,9 +34,9 @@ Index: mplayer.c
    mpctx->delay=-audio_delay;
 Index: cfg-mplayer.h
 ===================================================================
---- cfg-mplayer.h	(revision 25234)
-+++ cfg-mplayer.h	(working copy)
-@@ -124,6 +124,7 @@
+--- cfg-mplayer.h	(revisión: 26446)
++++ cfg-mplayer.h	(copia de trabajo)
+@@ -108,6 +108,7 @@
          {"nosoftvol", &soft_vol, CONF_TYPE_FLAG, 0, 1, 0, NULL},
          {"softvol-max", &soft_vol_max, CONF_TYPE_FLOAT, CONF_RANGE, 10, 10000, NULL},
  	{"volstep", &volstep, CONF_TYPE_INT, CONF_RANGE, 0, 100, NULL},
