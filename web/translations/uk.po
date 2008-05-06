@@ -1,14 +1,14 @@
-# translation of uk.po to Russian
+# translation of uk.po to Ukrainian
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Motsyo Gennadi <drool@altlinux.ru>, 2007.
+# Motsyo Gennadi <drool@altlinux.ru>, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-16 01:12+0200\n"
-"PO-Revision-Date: 2007-11-19 22:58+0200\n"
+"PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Windows"
 
 #: ../downloads.php:47
 msgid "Package with installer:"
-msgstr ""
+msgstr "Пакет з інсталятором:"
 
 #: ../downloads.php:52
 msgid ""
@@ -38,22 +38,28 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
+"Цей пакет містить все необхідне для роботи SMPlayer: бібліотеки Qt, \n"
+"файли перекладів, теми іконок та сам mplayer (включена версія %1)."
 
 #: ../downloads.php:82
 msgid ""
 "Package (without installer) which includes smplayer, Qt shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
+"Пакет (без інсталера) містить в собі SMPlayer, Qt бібліотеки,\n"
+"переклади та теми іконок. Не містить mplayer. "
 
 #: ../downloads.php:85
 msgid ""
 "Package for those who don't like installers and/or want to use another \n"
 "mplayer build."
 msgstr ""
+"Пакет для тих, хто не любить інсталятори чи бажає використати \n"
+"іншу збірку mplayer."
 
 #: ../downloads.php:98
 msgid "Additional codecs:"
-msgstr ""
+msgstr "Додаткові кодеки:"
 
 #: ../downloads.php:104
 msgid ""
@@ -62,29 +68,33 @@ msgid ""
 "formats. Note that they are not necessary to play most common formats\n"
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
+"Цей пакет додає підтримку кодеків, які не включено до mplayer, наприклад, \n"
+"формати RelVideo та деякі інші, рідко використовувані. Зверніть увагу на те, \n"
+"що ці кодеки не потрібні для відтворення більшості форматів, таких як DVD, \n"
+"MPEG-1/2/4 та інших. "
 
 #: ../downloads.php:109
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
-msgstr ""
+msgstr "Ці кодеки будуть використовуватись mplayer-ом тільки при встановленні в ту ж теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими кодеками, котрі ви встановлюєте семі. "
 
 #: ../downloads.php:113
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
+"Якщо ви надаєте перевагу zip-архівам, ви \n"
+"можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%2)."
 
 #: ../downloads.php:126
 msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:136
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
+msgid "Read the file Install.txt included in the package to know how compile it."
+msgstr "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
 #: ../downloads.php:147
 msgid ""
@@ -100,11 +110,11 @@ msgstr "Зібрано на kubuntu 7.04 (також повинно працюв
 
 #: ../downloads.php:164
 msgid "Package for AMD64. Compiled on kubuntu 7.10."
-msgstr ""
+msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
 
 #: ../downloads.php:167
 msgid "Suggested package:"
-msgstr ""
+msgstr "Рекомендації пакету:"
 
 #: ../downloads.php:168
 msgid ""
@@ -112,6 +122,9 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
+"Версія mplayer в Ubuntu занадто стара (%1). SMPlayer підтримує деякі \n"
+"нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
+"Ви можете завантажити тут %2 (від %3)."
 
 #: ../downloads.php:179
 msgid "Icon Themes:"
@@ -193,7 +206,7 @@ msgstr "Wiki"
 
 #: ../header.php:82 ../header.php:84
 msgid "Donations"
-msgstr ""
+msgstr "Пожертви"
 
 #: ../index.php:6
 msgid "SMPlayer - General Info"
@@ -216,7 +229,7 @@ msgid ""
 msgstr ""
 "SMPlayer є потужним інтерфейсом для <a href=%1>MPlayer</a>,\n"
 "підтримує функції від відтворення відео, DVD та VCD, до більш розширених \n"
-"властивостей MPlayer, таких як вліьтри та інше."
+"властивостей MPlayer, таких як фільтри та інше."
 
 #: ../info.php:24
 msgid ""
@@ -374,41 +387,9 @@ msgstr "SMPlayer перекладено на більше ніж 20 мов"
 
 #: ../screenshots.php:68
 msgid "The mini GUI"
-msgstr ""
+msgstr "Компактний інтерфейс"
 
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
-msgstr ""
+msgstr "SMPlayer працює у новому KDE 4"
 
-#~ msgid "Full package with installer:"
-#~ msgstr "Повний пакет з інсталлером:"
-
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>Примітка 2:</b> Якщо у Вас встановлено попередню версію, переконливо\n"
-#~ "рекомендується видалити її перед встановленням нової версії."
-
-#~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
-#~ msgstr ""
-#~ "<b>Примітка:</b> при першому запуску бібліотека SSA/ASS чи fontconfig, "
-#~ "mplayer\n"
-#~ "створює кеш шрифтів. Це процес займає декілька секунд і в цей час може "
-#~ "здатись що \n"
-#~ "<b>smplayer завис. Не турбуйтесь, просто зачекайте.</b>"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
-#~ msgstr ""
-#~ "Цей пакет містить все необхідне для роботи smplayer: бібліотекиQt \n"
-#~ "файли перекладів, теми іконок... Також містить готову збірку \n"
-#~ "mplayer. Включено версію %1 від <a href=%2>CCCP</a>."
