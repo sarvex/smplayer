@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-16 01:12+0200\n"
+"POT-Creation-Date: 2008-05-13 01:44+0200\n"
 "PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -69,7 +69,8 @@ msgid ""
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
 "Цей пакет додає підтримку кодеків, які не включено до mplayer, наприклад, \n"
-"формати RelVideo та деякі інші, рідко використовувані. Зверніть увагу на те, \n"
+"формати RelVideo та деякі інші, рідко використовувані. Зверніть увагу на "
+"те, \n"
 "що ці кодеки не потрібні для відтворення більшості форматів, таких як DVD, \n"
 "MPEG-1/2/4 та інших. "
 
@@ -78,7 +79,10 @@ msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
-msgstr "Ці кодеки будуть використовуватись mplayer-ом тільки при встановленні в ту ж теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими кодеками, котрі ви встановлюєте семі. "
+msgstr ""
+"Ці кодеки будуть використовуватись mplayer-ом тільки при встановленні в ту ж "
+"теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими "
+"кодеками, котрі ви встановлюєте семі. "
 
 #: ../downloads.php:113
 msgid ""
@@ -93,8 +97,10 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:136
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
 #: ../downloads.php:147
 msgid ""
@@ -112,11 +118,11 @@ msgstr "Зібрано на kubuntu 7.04 (також повинно працюв
 msgid "Package for AMD64. Compiled on kubuntu 7.10."
 msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
 
-#: ../downloads.php:167
+#: ../downloads.php:174
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:168
+#: ../downloads.php:175
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -126,19 +132,19 @@ msgstr ""
 "нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
 "Ви можете завантажити тут %2 (від %3)."
 
-#: ../downloads.php:179
+#: ../downloads.php:186
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:189
+#: ../downloads.php:196
 msgid "Optional package which provides some icon themes."
 msgstr "Додатковий пакет, який містить різні теми іконок."
 
-#: ../downloads.php:217
+#: ../downloads.php:224
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:218
+#: ../downloads.php:225
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -146,11 +152,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:225
+#: ../downloads.php:232
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:226
+#: ../downloads.php:233
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -158,12 +164,12 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:236
+#: ../downloads.php:243
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:238
+#: ../downloads.php:245
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -212,9 +218,9 @@ msgstr "Пожертви"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Головна інформація"
 
-#. Message id of the post in the forum for "Version 0.6.0rc1 released"
+#. Message id of the post in the forum for "Version 0.6.0 final released"
 #: ../index.php:51
-msgid "849"
+msgid "1970"
 msgstr ""
 
 #: ../info.php:9
@@ -392,4 +398,3 @@ msgstr "Компактний інтерфейс"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
-

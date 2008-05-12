@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-16 01:12+0200\n"
+"POT-Creation-Date: 2008-05-13 01:44+0200\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: Yurkovsky Andrey <anyr@tut.by>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -122,11 +122,11 @@ msgstr "Собрано на kubuntu 7.04 (также должно работат
 msgid "Package for AMD64. Compiled on kubuntu 7.10."
 msgstr ""
 
-#: ../downloads.php:167
+#: ../downloads.php:174
 msgid "Suggested package:"
 msgstr "Рекомендуемый пакет:"
 
-#: ../downloads.php:168
+#: ../downloads.php:175
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -137,19 +137,19 @@ msgstr ""
 "версия. \n"
 "Вы можете загрузить здесь %2 (от %3)."
 
-#: ../downloads.php:179
+#: ../downloads.php:186
 msgid "Icon Themes:"
 msgstr "Темы иконок:"
 
-#: ../downloads.php:189
+#: ../downloads.php:196
 msgid "Optional package which provides some icon themes."
 msgstr "Дополнительный пакет, включающий несколько тем иконок."
 
-#: ../downloads.php:217
+#: ../downloads.php:224
 msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
-#: ../downloads.php:218
+#: ../downloads.php:225
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -157,11 +157,11 @@ msgstr ""
 "Дополнительные пакеты для продвинутых пользователей: \n"
 "<a href=%1>Смотрите страницу загрузок sourceforge</a>."
 
-#: ../downloads.php:225
+#: ../downloads.php:232
 msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
-#: ../downloads.php:226
+#: ../downloads.php:233
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -169,12 +169,12 @@ msgstr ""
 "Здесь доступны пакеты для других дистрибутивов, созданные \n"
 "другими людьми. <a href=%1>Нажмите сюда</a> для просмотра."
 
-#: ../downloads.php:236
+#: ../downloads.php:243
 msgid "Unstable releases"
 msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:238
+#: ../downloads.php:245
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -223,10 +223,10 @@ msgstr "Пожертвования"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Главная страница"
 
-#. Message id of the post in the forum for "Version 0.6.0rc1 released"
+#. Message id of the post in the forum for "Version 0.6.0 final released"
 #: ../index.php:51
-msgid "849"
-msgstr "978"
+msgid "1970"
+msgstr ""
 
 #: ../info.php:9
 msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
@@ -405,36 +405,8 @@ msgstr "Мини GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, работающий в новом KDE 4"
 
-#~ msgid ""
-#~ "Package for the ones who usually play only the most known formats, like\n"
-#~ "avi, mkv, mpeg..."
-#~ msgstr ""
-#~ "Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, "
-#~ "mpeg..."
-
-#~ msgid ""
-#~ "This package is like the one above, but it doesn't include the extra\n"
-#~ "codecs, so it's smaller."
-#~ msgstr ""
-#~ "Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
-#~ "поэтому он меньше по размеру."
-
-#~ msgid "Lite package with installer:"
-#~ msgstr "Облегчённая версия с инсталлятором:"
-
-#~ msgid ""
-#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
-#~ "to host closed source binaries (the codecs)"
-#~ msgstr ""
-#~ "Заметка: этот пакет был удалёт, так как Sourceforege не позволяет\n"
-#~ " размещать бинарные файлы с закрытыми исходными кодами (кодеки)"
-
-#~ msgid ""
-#~ "Package intended for those who want to be sure they'll be able to\n"
-#~ "play (almost) anything."
-#~ msgstr ""
-#~ "Пакет предназначен для тех, кто хочет быть уверен, что всё будет "
-#~ "воспроизведено."
+#~ msgid "Full package with installer:"
+#~ msgstr "Полный пакет с инсталлятором:"
 
 #~ msgid ""
 #~ "The package includes also the extra codecs for mplayer, which will "
@@ -452,5 +424,36 @@ msgstr "SMPlayer, работающий в новом KDE 4"
 #~ "т.е. \n"
 #~ "они не будут конфликтовать с другими установленными кодеками"
 
-#~ msgid "Full package with installer:"
-#~ msgstr "Полный пакет с инсталлятором:"
+#~ msgid ""
+#~ "Package intended for those who want to be sure they'll be able to\n"
+#~ "play (almost) anything."
+#~ msgstr ""
+#~ "Пакет предназначен для тех, кто хочет быть уверен, что всё будет "
+#~ "воспроизведено."
+
+#~ msgid ""
+#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
+#~ "to host closed source binaries (the codecs)"
+#~ msgstr ""
+#~ "Заметка: этот пакет был удалёт, так как Sourceforege не позволяет\n"
+#~ " размещать бинарные файлы с закрытыми исходными кодами (кодеки)"
+
+#~ msgid "Lite package with installer:"
+#~ msgstr "Облегчённая версия с инсталлятором:"
+
+#~ msgid ""
+#~ "This package is like the one above, but it doesn't include the extra\n"
+#~ "codecs, so it's smaller."
+#~ msgstr ""
+#~ "Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
+#~ "поэтому он меньше по размеру."
+
+#~ msgid ""
+#~ "Package for the ones who usually play only the most known formats, like\n"
+#~ "avi, mkv, mpeg..."
+#~ msgstr ""
+#~ "Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, "
+#~ "mpeg..."
+
+#~ msgid "849"
+#~ msgstr "978"
