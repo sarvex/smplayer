@@ -2,7 +2,7 @@
 include_once("myfunctions.php");
 
 function download_src_link() {
-	return create_link("smplayer-0.6.0rc4.tar.bz2", 1017697 );
+	return create_link("smplayer-0.6.0final.tar.bz2", 1016544 );
 }
 
 function download_rpm_link() {
