@@ -50,8 +50,8 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	# Add here commands to install the package into debian/smplayer-themes.
-	$(MAKE) PREFIX=/usr DESTDIR=$(CURDIR)/debian/smplayer-themes install
+	# Add here commands to install the package into debian/smplayer-themes-nonfree.
+	$(MAKE) PREFIX=/usr DESTDIR=$(CURDIR)/debian/smplayer-themes-nonfree install
 
 
 # Build architecture-independent files here.
