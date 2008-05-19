@@ -6,7 +6,7 @@ function download_src_link() {
 }
 
 function download_rpm_link() {
-	return create_link("smplayer-0.6.0rc4-rvm.i586.rpm", 1385037 );
+	return create_link("smplayer-0.6.0final-rvm.i586.rpm", 1424919 );
 }
 
 function download_deb_link() {
@@ -14,7 +14,7 @@ function download_deb_link() {
 }
 
 function download_amd64deb_link() {
-	return create_link("smplayer_0.6.0rc4_amd64.deb", 1908828 );
+	return create_link("smplayer_0.6.0final_amd64.deb", 1961454 );
 }
 
 function download_windows_full_link() {
