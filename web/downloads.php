@@ -185,7 +185,7 @@ is highly recommended. You can download here %2 (from %3).", "1.0rc2",
 
 <?php
 echo "<h3>".get_tr("Icon Themes:")."</h3>";
-tr("Optional packages which provides some icon themes."); 
+tr("Optional packages which provide some icon themes."); 
 ?>
 <p>
 <table>
