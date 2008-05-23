@@ -82,8 +82,10 @@ echo "<br>";
 tr("Package (without installer) which includes smplayer, Qt shared libraries,
 translations and icon themes. It doesn't include mplayer."); 
 echo "<br><b><i>";
+/*
 tr("Package for those who don't like installers and/or want to use another 
 mplayer build.");
+*/
 echo"</i></b>";
 ?>
 </td>
@@ -144,8 +146,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 <?php
 echo download_rpm_link();
 echo "<br>";
-tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, 
-recommended 1.0rc2 or svn).");
+tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer.");
 ?>
 </td>
 </tr>
@@ -156,12 +157,12 @@ recommended 1.0rc2 or svn).");
 <?php
 echo download_deb_link();
 echo "<br>";
-tr("Compiled on kubuntu 7.04 (should work in ubuntu too)."); 
+tr("Compiled on Ubuntu 7.04."); 
 echo "<br>";
 
 echo download_amd64deb_link();
 echo "<br>";
-tr("Package for AMD64. Compiled on kubuntu 7.10."); 
+tr("Package for AMD64. Compiled on Ubuntu 8.04."); 
 //echo "<br>";
 ?>
 </td>
@@ -172,9 +173,9 @@ tr("Package for AMD64. Compiled on kubuntu 7.10.");
 <td>
 <?php
 echo "<b>"; tr("Suggested package:"); echo "</b><br>";
-tr("The version of mplayer included in Ubuntu is very old (%1). SMPlayer 
+tr("The version of mplayer included in Ubuntu is a little bit old (%1). SMPlayer 
 has support for some of the new features of mplayer, so a newer version 
-is highly recommended. You can download here %2 (from %3).", "1.0rc1", 
+is highly recommended. You can download here %2 (from %3).", "1.0rc2", 
 "<b><a href=\"http://downloads.sourceforge.net/smplayer/mplayer_1.0rc2svn25873_i386.deb\">MPlayer SVN r25873</a></b>",
 "2008-01-27");
 ?>
@@ -184,6 +185,7 @@ is highly recommended. You can download here %2 (from %3).", "1.0rc1",
 
 <?php
 echo "<h3>".get_tr("Icon Themes:")."</h3>";
+tr("Optional packages which provides some icon themes."); 
 ?>
 <p>
 <table>
@@ -193,7 +195,7 @@ echo "<h3>".get_tr("Icon Themes:")."</h3>";
 <?php 
 echo download_themes_src_link();
 echo "<br>";
-tr("Optional package which provides some icon themes."); 
+echo download_themes_nonfree_src_link();
 ?>
 </td>
 </tr>
@@ -202,7 +204,9 @@ tr("Optional package which provides some icon themes.");
 <td><img src="iconos/suse.png"></td>
 <td>
 <?php
-echo download_themes_rpm_link(); 
+echo download_themes_rpm_link();
+echo "<br>";
+echo download_themes_nonfree_rpm_link(); 
 ?>
 </td>
 </tr>
@@ -212,6 +216,8 @@ echo download_themes_rpm_link();
 <td>
 <?php
 echo download_themes_deb_link();
+echo "<br>";
+echo download_themes_nonfree_deb_link();
 ?>
 </td>
 </tr>

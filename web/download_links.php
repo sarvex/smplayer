@@ -42,6 +42,18 @@ function download_themes_deb_link() {
 	return create_link("smplayer-themes_0.1.15_all.deb", 1762904 );
 }
 
+function download_themes_nonfree_src_link() {
+	return create_link("smplayer-themes-nonfree-0.1.0.tar.bz2", 412295 );
+}
+
+function download_themes_nonfree_rpm_link() {
+	return create_link("smplayer-themes-nonfree-0.1.0-rvm.noarch.rpm", 419370 );
+}
+
+function download_themes_nonfree_deb_link() {
+	return create_link("smplayer-themes-nonfree_0.1.0_all.deb", 419272 );
+}
+
 function download_codecs_link() {
 	return "<a href=\"http://www.mediafire.com/?jzlj6iw0wls\"><b>smplayer_codecs_20071007.exe</b></a>";
 }
