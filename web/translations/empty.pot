@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-13 01:44+0200\n"
+"POT-Creation-Date: 2008-05-24 01:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,17 +190,11 @@ msgid ""
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 
-#: ../downloads.php:85
-msgid ""
-"Package for those who don't like installers and/or want to use another \n"
-"mplayer build."
-msgstr ""
-
-#: ../downloads.php:98
+#: ../downloads.php:100
 msgid "Additional codecs:"
 msgstr ""
 
-#: ../downloads.php:104
+#: ../downloads.php:106
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -208,87 +202,86 @@ msgid ""
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
 
-#: ../downloads.php:109
+#: ../downloads.php:111
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
 
-#: ../downloads.php:113
+#: ../downloads.php:115
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
 
-#: ../downloads.php:126
+#: ../downloads.php:128
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:136
+#: ../downloads.php:138
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 
-#: ../downloads.php:147
-msgid ""
-"Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
-"recommended 1.0rc2 or svn)."
+#: ../downloads.php:149
+msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
 msgstr ""
 
-#: ../downloads.php:159
-msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#: ../downloads.php:160
+msgid "Compiled on Ubuntu 7.04."
 msgstr ""
 
-#: ../downloads.php:164
-msgid "Package for AMD64. Compiled on kubuntu 7.10."
-msgstr ""
-
-#: ../downloads.php:174
-msgid "Suggested package:"
+#: ../downloads.php:165
+msgid "Package for AMD64. Compiled on Ubuntu 8.04."
 msgstr ""
 
 #: ../downloads.php:175
+msgid "Suggested package:"
+msgstr ""
+
+#: ../downloads.php:176
 msgid ""
-"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"The version of mplayer included in Ubuntu is a little bit old (%1). "
+"SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
 
-#: ../downloads.php:186
+#: ../downloads.php:187
 msgid "Icon Themes:"
 msgstr ""
 
-#: ../downloads.php:196
-msgid "Optional package which provides some icon themes."
+#: ../downloads.php:188
+msgid "Optional packages which provides some icon themes."
 msgstr ""
 
-#: ../downloads.php:224
+#: ../downloads.php:230
 msgid "Additional packages"
 msgstr ""
 
-#: ../downloads.php:225
+#: ../downloads.php:231
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:232
+#: ../downloads.php:238
 msgid "Contributed packages"
 msgstr ""
 
-#: ../downloads.php:233
+#: ../downloads.php:239
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 
-#: ../downloads.php:243
+#: ../downloads.php:249
 msgid "Unstable releases"
 msgstr ""
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:245
+#: ../downloads.php:251
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

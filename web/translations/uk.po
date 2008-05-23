@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-13 01:44+0200\n"
+"POT-Creation-Date: 2008-05-24 01:26+0200\n"
 "PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -49,19 +49,11 @@ msgstr ""
 "Пакет (без інсталера) містить в собі SMPlayer, Qt бібліотеки,\n"
 "переклади та теми іконок. Не містить mplayer. "
 
-#: ../downloads.php:85
-msgid ""
-"Package for those who don't like installers and/or want to use another \n"
-"mplayer build."
-msgstr ""
-"Пакет для тих, хто не любить інсталятори чи бажає використати \n"
-"іншу збірку mplayer."
-
-#: ../downloads.php:98
+#: ../downloads.php:100
 msgid "Additional codecs:"
 msgstr "Додаткові кодеки:"
 
-#: ../downloads.php:104
+#: ../downloads.php:106
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -74,7 +66,7 @@ msgstr ""
 "що ці кодеки не потрібні для відтворення більшості форматів, таких як DVD, \n"
 "MPEG-1/2/4 та інших. "
 
-#: ../downloads.php:109
+#: ../downloads.php:111
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -84,7 +76,7 @@ msgstr ""
 "теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими "
 "кодеками, котрі ви встановлюєте семі. "
 
-#: ../downloads.php:113
+#: ../downloads.php:115
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -92,59 +84,53 @@ msgstr ""
 "Якщо ви надаєте перевагу zip-архівам, ви \n"
 "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%2)."
 
-#: ../downloads.php:126
+#: ../downloads.php:128
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:136
+#: ../downloads.php:138
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:147
-msgid ""
-"Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least 1.0rc1, \n"
-"recommended 1.0rc2 or svn)."
+#: ../downloads.php:149
+msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
 msgstr ""
-"Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
-"рекомендується 1.0rc2 чи svn)."
 
-#: ../downloads.php:159
-msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
+#: ../downloads.php:160
+msgid "Compiled on Ubuntu 7.04."
+msgstr ""
 
-#: ../downloads.php:164
-msgid "Package for AMD64. Compiled on kubuntu 7.10."
-msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
+#: ../downloads.php:165
+msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+msgstr ""
 
-#: ../downloads.php:174
+#: ../downloads.php:175
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:175
+#: ../downloads.php:176
 msgid ""
-"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"The version of mplayer included in Ubuntu is a little bit old (%1). "
+"SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
-"Версія mplayer в Ubuntu занадто стара (%1). SMPlayer підтримує деякі \n"
-"нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
-"Ви можете завантажити тут %2 (від %3)."
 
-#: ../downloads.php:186
+#: ../downloads.php:187
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:196
-msgid "Optional package which provides some icon themes."
-msgstr "Додатковий пакет, який містить різні теми іконок."
+#: ../downloads.php:188
+msgid "Optional packages which provides some icon themes."
+msgstr ""
 
-#: ../downloads.php:224
+#: ../downloads.php:230
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:225
+#: ../downloads.php:231
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -152,11 +138,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:232
+#: ../downloads.php:238
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:233
+#: ../downloads.php:239
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -164,12 +150,12 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:243
+#: ../downloads.php:249
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:245
+#: ../downloads.php:251
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -398,3 +384,36 @@ msgstr "Компактний інтерфейс"
 #: ../screenshots.php:69
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
+
+#~ msgid ""
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
+#~ msgstr ""
+#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
+#~ "іншу збірку mplayer."
+
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
+#~ "рекомендується 1.0rc2 чи svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
+
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended. You can download here %2 (from %3)."
+#~ msgstr ""
+#~ "Версія mplayer в Ubuntu занадто стара (%1). SMPlayer підтримує деякі \n"
+#~ "нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
+#~ "Ви можете завантажити тут %2 (від %3)."
+
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Додатковий пакет, який містить різні теми іконок."
