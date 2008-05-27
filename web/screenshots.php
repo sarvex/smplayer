@@ -58,7 +58,7 @@ echo "</tr>";
 echo "<tr>";
 
 //show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
-show_thumb("smplayer_gnome.jpg"), get_tr("SMPlayer running on Gnome"));
+show_thumb("smplayer_gnome.jpg", get_tr("SMPlayer running on Gnome") );
 show_thumb("subtitles1.jpg", get_tr("A video displaying a srt subtitle") );
 show_thumb("subtitles2.jpg", get_tr("Matroska embedded subtitles") );
 
