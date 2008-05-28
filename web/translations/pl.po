@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-24 01:33+0200\n"
+"POT-Creation-Date: 2008-05-29 01:56+0200\n"
 "PO-Revision-Date: 2008-03-05 20:29+0100\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -364,32 +364,48 @@ msgstr "Lista odtwarzania wbudowana w okno główne programu"
 msgid "The preferences dialog"
 msgstr "Ustawienia programu"
 
-#: ../screenshots.php:60
-msgid "SMPlayer running on Windows Vista"
-msgstr "SMPlayer uruchomiony na Windows Vista"
-
+#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:61
+msgid "SMPlayer running on Gnome"
+msgstr ""
+
+#: ../screenshots.php:62
 msgid "A video displaying a srt subtitle"
 msgstr "Wideo wyświetlające napisy srt"
 
-#: ../screenshots.php:62
+#: ../screenshots.php:63
 msgid "Matroska embedded subtitles"
 msgstr "Napisy wbudowane w plik Matroska"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer dostępny jest w ponad 20 językach"
 
-#: ../screenshots.php:68
+#: ../screenshots.php:69
 msgid "The mini GUI"
 msgstr "Mini GUI"
 
-#: ../screenshots.php:69
+#: ../screenshots.php:70
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Pakiety zawierające kilka tematów ikon."
+#~ msgid ""
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
+#~ msgstr ""
+#~ "Pakiet dla tych, którzy nie lubią instalatora i/lub chcą użyć mplayera\n"
+#~ "w innej wersji."
+
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayer (wersja 1.0rc1, \n"
+#~ "rekomendowana 1.0rc2 or svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
@@ -400,20 +416,8 @@ msgstr "SMPlayer uruchomiony w nowym KDE 4"
 #~ "kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
 #~ "Można ją pobrać stąd %2 (z %3)."
 
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Kompilowany na kubuntu 7.04 (powinien działać także na ubuntu)"
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Pakiety zawierające kilka tematów ikon."
 
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayer (wersja 1.0rc1, \n"
-#~ "rekomendowana 1.0rc2 or svn)."
-
-#~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
-#~ msgstr ""
-#~ "Pakiet dla tych, którzy nie lubią instalatora i/lub chcą użyć mplayera\n"
-#~ "w innej wersji."
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer uruchomiony na Windows Vista"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-24 01:33+0200\n"
+"POT-Creation-Date: 2008-05-29 01:56+0200\n"
 "PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -361,32 +361,51 @@ msgstr "Список може бути вкладено в головне вік
 msgid "The preferences dialog"
 msgstr "Діалог налаштувань"
 
-#: ../screenshots.php:60
-msgid "SMPlayer running on Windows Vista"
-msgstr "SMPlayer, запущений під Windows Vista"
-
+#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:61
+msgid "SMPlayer running on Gnome"
+msgstr ""
+
+#: ../screenshots.php:62
 msgid "A video displaying a srt subtitle"
 msgstr "Відео з відображенням srt-субтитрами"
 
-#: ../screenshots.php:62
+#: ../screenshots.php:63
 msgid "Matroska embedded subtitles"
 msgstr "Вложені субтитри Matroska"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer перекладено на більше ніж 20 мов"
 
-#: ../screenshots.php:68
+#: ../screenshots.php:69
 msgid "The mini GUI"
 msgstr "Компактний інтерфейс"
 
-#: ../screenshots.php:69
+#: ../screenshots.php:70
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Додатковий пакет, який містить різні теми іконок."
+#~ msgid ""
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
+#~ msgstr ""
+#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
+#~ "іншу збірку mplayer."
+
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
+#~ "рекомендується 1.0rc2 чи svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
+
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
@@ -397,23 +416,8 @@ msgstr "SMPlayer працює у новому KDE 4"
 #~ "нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
 #~ "Ви можете завантажити тут %2 (від %3)."
 
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
-#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Додатковий пакет, який містить різні теми іконок."
 
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
-
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
-#~ "рекомендується 1.0rc2 чи svn)."
-
-#~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
-#~ msgstr ""
-#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
-#~ "іншу збірку mplayer."
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer, запущений під Windows Vista"

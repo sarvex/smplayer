@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-24 01:33+0200\n"
+"POT-Creation-Date: 2008-05-29 01:56+0200\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: Yurkovsky Andrey <anyr@tut.by>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -366,63 +366,64 @@ msgstr "Список может быть встроен в главное окн
 msgid "The preferences dialog"
 msgstr "Диалог настроек"
 
-#: ../screenshots.php:60
-msgid "SMPlayer running on Windows Vista"
-msgstr "SMPlayer, запущенный под Windows Vista"
-
+#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:61
+msgid "SMPlayer running on Gnome"
+msgstr ""
+
+#: ../screenshots.php:62
 msgid "A video displaying a srt subtitle"
 msgstr "Видео с отображением srt-субтитров"
 
-#: ../screenshots.php:62
+#: ../screenshots.php:63
 msgid "Matroska embedded subtitles"
 msgstr "Встроенные сутбитры Matroska"
 
-#: ../screenshots.php:67
+#: ../screenshots.php:68
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer переведён более чем на 20 языков"
 
-#: ../screenshots.php:68
+#: ../screenshots.php:69
 msgid "The mini GUI"
 msgstr "Мини GUI"
 
-#: ../screenshots.php:69
+#: ../screenshots.php:70
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, работающий в новом KDE 4"
 
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Дополнительный пакет, включающий несколько тем иконок."
+#~ msgid "849"
+#~ msgstr "978"
 
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended. You can download here %2 (from %3)."
+#~ "Package for the ones who usually play only the most known formats, like\n"
+#~ "avi, mkv, mpeg..."
 #~ msgstr ""
-#~ "Версия mplayer в Ubuntu слишком старая. SMPlayer поддерживает некоторые \n"
-#~ "новые возможности mplayer, поэтому настоятельно рекомендуется новая "
-#~ "версия. \n"
-#~ "Вы можете загрузить здесь %2 (от %3)."
-
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Собрано на kubuntu 7.04 (также должно работать и на ubuntu)."
+#~ "Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, "
+#~ "mpeg..."
 
 #~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
+#~ "This package is like the one above, but it doesn't include the extra\n"
+#~ "codecs, so it's smaller."
 #~ msgstr ""
-#~ "Собрано на OpenSuSE 10.2. Требует: libqt4 и mplayer (не ниже 1.0rc1, \n"
-#~ "рекомендуется 1.0rc2 или svn)."
+#~ "Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
+#~ "поэтому он меньше по размеру."
+
+#~ msgid "Lite package with installer:"
+#~ msgstr "Облегчённая версия с инсталлятором:"
 
 #~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
+#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
+#~ "to host closed source binaries (the codecs)"
 #~ msgstr ""
-#~ "Пакет для тех, кто не любит инсталляторы или хочет использовать другую "
-#~ "сборку mplayer."
+#~ "Заметка: этот пакет был удалёт, так как Sourceforege не позволяет\n"
+#~ " размещать бинарные файлы с закрытыми исходными кодами (кодеки)"
 
-#~ msgid "Full package with installer:"
-#~ msgstr "Полный пакет с инсталлятором:"
+#~ msgid ""
+#~ "Package intended for those who want to be sure they'll be able to\n"
+#~ "play (almost) anything."
+#~ msgstr ""
+#~ "Пакет предназначен для тех, кто хочет быть уверен, что всё будет "
+#~ "воспроизведено."
 
 #~ msgid ""
 #~ "The package includes also the extra codecs for mplayer, which will "
@@ -440,36 +441,39 @@ msgstr "SMPlayer, работающий в новом KDE 4"
 #~ "т.е. \n"
 #~ "они не будут конфликтовать с другими установленными кодеками"
 
-#~ msgid ""
-#~ "Package intended for those who want to be sure they'll be able to\n"
-#~ "play (almost) anything."
-#~ msgstr ""
-#~ "Пакет предназначен для тех, кто хочет быть уверен, что всё будет "
-#~ "воспроизведено."
+#~ msgid "Full package with installer:"
+#~ msgstr "Полный пакет с инсталлятором:"
 
 #~ msgid ""
-#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
-#~ "to host closed source binaries (the codecs)"
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
 #~ msgstr ""
-#~ "Заметка: этот пакет был удалёт, так как Sourceforege не позволяет\n"
-#~ " размещать бинарные файлы с закрытыми исходными кодами (кодеки)"
-
-#~ msgid "Lite package with installer:"
-#~ msgstr "Облегчённая версия с инсталлятором:"
+#~ "Пакет для тех, кто не любит инсталляторы или хочет использовать другую "
+#~ "сборку mplayer."
 
 #~ msgid ""
-#~ "This package is like the one above, but it doesn't include the extra\n"
-#~ "codecs, so it's smaller."
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
 #~ msgstr ""
-#~ "Этот пакет похож на предыдущий, но не содержит дополнительных кодеков \n"
-#~ "поэтому он меньше по размеру."
+#~ "Собрано на OpenSuSE 10.2. Требует: libqt4 и mplayer (не ниже 1.0rc1, \n"
+#~ "рекомендуется 1.0rc2 или svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Собрано на kubuntu 7.04 (также должно работать и на ubuntu)."
 
 #~ msgid ""
-#~ "Package for the ones who usually play only the most known formats, like\n"
-#~ "avi, mkv, mpeg..."
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "Пакет для тех, кто обычно воспроизводит самые обычные форматы – avi, mkv, "
-#~ "mpeg..."
+#~ "Версия mplayer в Ubuntu слишком старая. SMPlayer поддерживает некоторые \n"
+#~ "новые возможности mplayer, поэтому настоятельно рекомендуется новая "
+#~ "версия. \n"
+#~ "Вы можете загрузить здесь %2 (от %3)."
 
-#~ msgid "849"
-#~ msgstr "978"
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Дополнительный пакет, включающий несколько тем иконок."
+
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer, запущенный под Windows Vista"
