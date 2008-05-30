@@ -93,15 +93,15 @@ msgstr "コンパイル方法はパッケージ内の Install.txt に記載さ�
 
 #: ../downloads.php:149
 msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-msgstr ""
+msgstr "OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer が必要です。"
 
 #: ../downloads.php:160
 msgid "Compiled on Ubuntu 7.04."
-msgstr ""
+msgstr "Ubuntu 7.04 でコンパイルされています。"
 
 #: ../downloads.php:165
 msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-msgstr ""
+msgstr "AMD64 用パッケージです。Ubuntu 8.04 でコンパイルされています。"
 
 #: ../downloads.php:175
 msgid "Suggested package:"
@@ -114,6 +114,9 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
+"SMPlayer は mplayer の新しい機能にいくつか対応しています。Ubuntu に含まれてい"
+"る mplayer のバージョンは %1 とやや古く、新しいバージョンを使用することが強く"
+"推奨されます。新しいバージョンはこちらからダウンロードできます: %2 (%3)"
 
 #: ../downloads.php:187
 msgid "Icon Themes:"
@@ -121,7 +124,7 @@ msgstr "アイコンテーマ:"
 
 #: ../downloads.php:188
 msgid "Optional packages which provide some icon themes."
-msgstr ""
+msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
 
 #: ../downloads.php:230
 msgid "Additional packages"
@@ -132,7 +135,7 @@ msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
-"上級者向けにいくつかのさらなるパッケージがあります:\n"
+"上級者向けにいくつかのパッケージがあります:\n"
 "<a href=%1>sourceforge のダウンロードページをご覧ください</a>。"
 
 #: ../downloads.php:238
@@ -349,7 +352,7 @@ msgstr "環境設定ダイアログ"
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:61
 msgid "SMPlayer running on Gnome"
-msgstr ""
+msgstr "Gnome で起動中の SMPlayer"
 
 #: ../screenshots.php:62
 msgid "A video displaying a srt subtitle"
@@ -370,43 +373,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:70
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で起動中の SMPlayer"
-
-#~ msgid "849"
-#~ msgstr "853"
-
-#~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
-#~ msgstr ""
-#~ "インストーラがお好みでないという方や、別の mplayer ビルドを利用したいとい"
-#~ "う方におすすめのパッケージです。"
-
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer (最低でも "
-#~ "1.0rc1、1.0rc2 または svn が推奨) が必要です。"
-
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "kubuntu 7.04 でコンパイルされています (ubuntu でも動作します)。"
-
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
-#~ msgstr "AMD64 用パッケージ。 kubuntu 7.10 でコンパイルされています。"
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended. You can download here %2 (from %3)."
-#~ msgstr ""
-#~ "Ubuntu には、mplayer の古いバージョンが含まれています (%1)。SMPlayer は "
-#~ "mplayer の新しい機能にいくつか対応しているので、新しいバージョンを使用する"
-#~ "ことが強く推奨されます。新しいバージョンはこちらからダウンロードできます: "
-#~ "%2 (%3)"
-
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "いくつかのアイコンテーマを提供するオプションパッケージです。"
-
-#~ msgid "SMPlayer running on Windows Vista"
-#~ msgstr "Windows Vista で起動中の SMPlayer"
