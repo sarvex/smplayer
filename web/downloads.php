@@ -81,6 +81,9 @@ echo download_windows_7z_link();
 echo "<br>";
 tr("Package (without installer) which includes smplayer, Qt shared libraries,
 translations and icon themes. It doesn't include mplayer."); 
+echo " <b>";
+echo tr("This package is for advanced users only!");
+echo "</b>";
 echo "<br><b><i>";
 /*
 tr("Package for those who don't like installers and/or want to use another 
