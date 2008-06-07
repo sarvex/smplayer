@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-29 01:56+0200\n"
+"POT-Creation-Date: 2008-06-07 02:02+0200\n"
 "PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -49,11 +49,15 @@ msgstr ""
 "Пакет (без інсталера) містить в собі SMPlayer, Qt бібліотеки,\n"
 "переклади та теми іконок. Не містить mplayer. "
 
-#: ../downloads.php:100
+#: ../downloads.php:85
+msgid "This package is for advanced users only!"
+msgstr ""
+
+#: ../downloads.php:103
 msgid "Additional codecs:"
 msgstr "Додаткові кодеки:"
 
-#: ../downloads.php:106
+#: ../downloads.php:109
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -66,7 +70,7 @@ msgstr ""
 "що ці кодеки не потрібні для відтворення більшості форматів, таких як DVD, \n"
 "MPEG-1/2/4 та інших. "
 
-#: ../downloads.php:111
+#: ../downloads.php:114
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -76,7 +80,7 @@ msgstr ""
 "теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими "
 "кодеками, котрі ви встановлюєте семі. "
 
-#: ../downloads.php:115
+#: ../downloads.php:118
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -84,33 +88,33 @@ msgstr ""
 "Якщо ви надаєте перевагу zip-архівам, ви \n"
 "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%2)."
 
-#: ../downloads.php:128
+#: ../downloads.php:131
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:138
+#: ../downloads.php:141
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:149
+#: ../downloads.php:152
 msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
 msgstr ""
 
-#: ../downloads.php:160
+#: ../downloads.php:163
 msgid "Compiled on Ubuntu 7.04."
 msgstr ""
 
-#: ../downloads.php:165
+#: ../downloads.php:168
 msgid "Package for AMD64. Compiled on Ubuntu 8.04."
 msgstr ""
 
-#: ../downloads.php:175
+#: ../downloads.php:178
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:176
+#: ../downloads.php:179
 msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
@@ -118,19 +122,19 @@ msgid ""
 "is highly recommended. You can download here %2 (from %3)."
 msgstr ""
 
-#: ../downloads.php:187
+#: ../downloads.php:190
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:188
+#: ../downloads.php:191
 msgid "Optional packages which provide some icon themes."
 msgstr ""
 
-#: ../downloads.php:230
+#: ../downloads.php:233
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:231
+#: ../downloads.php:234
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -138,11 +142,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:238
+#: ../downloads.php:241
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:239
+#: ../downloads.php:242
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -150,12 +154,12 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:249
+#: ../downloads.php:252
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:251
+#: ../downloads.php:254
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -163,40 +167,40 @@ msgstr ""
 "Ви можете взяти пакети прямо з SVN (вихідні тексти та\n"
 "оновлення для Windows), <a href=%1><b>тут</b></a>."
 
-#: ../header.php:56
+#: ../header.php:57
 msgid "The SMPlayer Project"
 msgstr "Проект SMPlayer"
 
-#: ../header.php:66
+#: ../header.php:67
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Downloads"
 msgstr "Завантаження"
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:73
+#: ../header.php:74
 msgid "Forum"
 msgstr "Форум"
 
-#: ../header.php:75
+#: ../header.php:76
 msgid "Bug Tracking"
 msgstr "Простежування помилок"
 
-#: ../header.php:77
+#: ../header.php:78
 msgid "Feature Requests"
 msgstr "Особливі прохання"
 
-#: ../header.php:79
+#: ../header.php:80
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:82 ../header.php:84
+#: ../header.php:83 ../header.php:85
 msgid "Donations"
 msgstr "Пожертви"
 
@@ -209,11 +213,7 @@ msgstr "SMPlayer - Головна інформація"
 msgid "1970"
 msgstr ""
 
-#: ../info.php:9
-msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-msgstr "Завантажуйте <a href=%1>тут</a> останню версію SMPlayer"
-
-#: ../info.php:18
+#: ../info.php:24
 msgid ""
 "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
@@ -223,7 +223,7 @@ msgstr ""
 "підтримує функції від відтворення відео, DVD та VCD, до більш розширених \n"
 "властивостей MPlayer, таких як фільтри та інше."
 
-#: ../info.php:24
+#: ../info.php:30
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -238,11 +238,11 @@ msgstr ""
 "відтворення продовжиться з того ж місця, з тими ж налаштуваннями: звукова \n"
 "доріжка, субтитри, гучність..."
 
-#: ../info.php:33
+#: ../info.php:39
 msgid "Other additional interesting features:"
 msgstr "Інші додаткові цікаві властивості:"
 
-#: ../info.php:35
+#: ../info.php:41
 msgid ""
 "Configurable subtitles. You can choose font and size, and even \n"
 "colors for the subtitles."
@@ -250,7 +250,7 @@ msgstr ""
 "Конфігуровані субтитри. Ви можете вказати шрифт, розмір та \n"
 "колір субтитрів."
 
-#: ../info.php:37
+#: ../info.php:43
 msgid ""
 "Audio track switching. You can choose the audio track you want\n"
 "to listen. Works with avi and mkv. And of course with DVDs."
@@ -258,7 +258,7 @@ msgstr ""
 "Перемикання звукових доріжок. Ви можете змінити звукову доріжку\n"
 "на Ваш вибір. Робота з avi та mkv. І, звичайно, з DVD."
 
-#: ../info.php:39
+#: ../info.php:45
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -266,7 +266,7 @@ msgstr ""
 "Пошук мишкою. Ви можете користуватись колесом мишки для перемотки \n"
 "відео вперед чи назад."
 
-#: ../info.php:41
+#: ../info.php:47
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -274,7 +274,7 @@ msgstr ""
 "Еквалайзер відео, дозволяе Вам регулювати яскравість, контрастність,\n"
 "відтінок, колір, насиченість та гаму зображення."
 
-#: ../info.php:43
+#: ../info.php:49
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -282,7 +282,7 @@ msgstr ""
 "Багатошвидкісне відтворення. Можна прискористи в 2, 4 \n"
 "рази... або навіть уповільнити."
 
-#: ../info.php:46
+#: ../info.php:52
 msgid ""
 "Filters. Several filters are available: deinterlace, postprocessing,\n"
 "denoise... and even a karaoke filter (voice removal)."
@@ -290,7 +290,7 @@ msgstr ""
 "Фільтри. Деякі доступні фільтри: деінтерлейсинг, післяобробка,\n"
 "denoise... і навіть караоке-фільтр (видалення голосу)."
 
-#: ../info.php:48
+#: ../info.php:54
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -298,7 +298,7 @@ msgstr ""
 "Регулювання затримки звуку та субтитрів. Дозволить Вам синхронизувати\n"
 "звук та субтитри."
 
-#: ../info.php:50
+#: ../info.php:56
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -306,7 +306,7 @@ msgstr ""
 "Розширені опції, так як вибір демультиплексора чи звукових \n"
 "та відео кодеків."
 
-#: ../info.php:53
+#: ../info.php:59
 msgid ""
 "Playlist. Allows you to enqueue several files to be played one after \n"
 "each other. Autorepeat and shuffle supported too."
@@ -314,7 +314,7 @@ msgstr ""
 "Список. Дозволяє відтворювати відібрані Вами файли один за \n"
 "одним. Також підтримується автоповтор та перемішування."
 
-#: ../info.php:55
+#: ../info.php:61
 msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
@@ -322,7 +322,7 @@ msgstr ""
 "Діалог налаштувань. Ви можете легко конфігурувати всі опції SMPlayer\n"
 "використовуючи зручний діалог налаштувань."
 
-#: ../info.php:57
+#: ../info.php:63
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -333,11 +333,11 @@ msgstr ""
 "китайську,\n"
 "українську, японську...."
 
-#: ../info.php:60
+#: ../info.php:66
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr "Мультиплатформність. Доступні збірки для Windows та Linux."
 
-#: ../info.php:62
+#: ../info.php:68
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer розповсюджується під ліцензією <b>GPL</b>."
 
@@ -386,26 +386,11 @@ msgstr "Компактний інтерфейс"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
-#~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
-#~ msgstr ""
-#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
-#~ "іншу збірку mplayer."
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer, запущений під Windows Vista"
 
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
-#~ "рекомендується 1.0rc2 чи svn)."
-
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
-
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
-#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Додатковий пакет, який містить різні теми іконок."
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
@@ -416,8 +401,26 @@ msgstr "SMPlayer працює у новому KDE 4"
 #~ "нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
 #~ "Ви можете завантажити тут %2 (від %3)."
 
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Додатковий пакет, який містить різні теми іконок."
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
 
-#~ msgid "SMPlayer running on Windows Vista"
-#~ msgstr "SMPlayer, запущений під Windows Vista"
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
+
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
+#~ "рекомендується 1.0rc2 чи svn)."
+
+#~ msgid ""
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
+#~ msgstr ""
+#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
+#~ "іншу збірку mplayer."
+
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "Завантажуйте <a href=%1>тут</a> останню версію SMPlayer"
