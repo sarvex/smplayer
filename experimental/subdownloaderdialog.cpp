@@ -17,9 +17,7 @@
 */
 
 #include "subdownloaderdialog.h"
-#include <QHttp>
-#include <QUrl>
-#include <QXmlSimpleReader>
+#include "subdownloader.h"
 #include <QMessageBox>
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
@@ -27,70 +25,29 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 {
 	setupUi(this);
 
-	http = new QHttp(this);
-	connect( http, SIGNAL(requestFinished(int, bool)),
-             this, SLOT(httpRequestFinished(int, bool)) );
+	downloader = new SubDownloader(this);
 
-	connect( http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)) );
+	connect( downloader, SIGNAL(downloadFinished(QString)), 
+             this, SLOT(readDownloadedText(QString)) );
+	connect( downloader, SIGNAL(downloadFailed(QString)),
+             this, SLOT(showError(QString)) );
 
-	connect( this, SIGNAL(downloadFinished()), this, SLOT(parseXml()) );
-
-	download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 }
 
 SubDownloaderDialog::~SubDownloaderDialog() {
 }
 
-void SubDownloaderDialog::download(const QString & url) {
-	downloaded_text.clear();
-
-	QUrl u(url);
-	http->setHost( u.host() );
-	http->get( u.path() );
+void SubDownloaderDialog::readDownloadedText(QString text) {
+	log->setPlainText(text);
 }
 
-void SubDownloaderDialog::readResponseHeader(const QHttpResponseHeader &responseHeader) {
-	qDebug("SubDownloaderDialog::readResponseHeader: statusCode: %d", responseHeader.statusCode());
-
-	if (responseHeader.statusCode() == 301)  {
-		QString new_url = responseHeader.value("Location");
-		qDebug("SubDownloaderDialog::readResponseHeader: Location: '%s'", new_url.toLatin1().constData());
-		download(new_url);
-	}
-	else
-	if (responseHeader.statusCode() != 200) {
-		QMessageBox::information(this, tr("HTTP"),
-                                 tr("Download failed: %1.")
-                                 .arg(responseHeader.reasonPhrase()));
-         http->abort();
-     }
+void SubDownloaderDialog::showError(QString error) {
+	QMessageBox::information(this, tr("HTTP"),
+                             tr("Download failed: %1.")
+                             .arg(error));
 }
 
-void SubDownloaderDialog::httpRequestFinished(int id, bool error) {
-	qDebug("SubDownloaderDialog::httpRequestFinished: %d, %d", id, error);
-
-	downloaded_text += http->readAll();
-
-	if (!downloaded_text.isEmpty()) {
-		log->insertPlainText( downloaded_text );
-		emit downloadFinished();
-	}
-}
-
-void SubDownloaderDialog::parseXml() {
-	qDebug("SubDownloaderDialog::parseXml");
-
-	QXmlInputSource xml_input;
-	xml_input.setData(downloaded_text);
-
-	QXmlSimpleReader xml_reader;
-	bool ok = xml_reader.parse(&xml_input, false);
-
-	qDebug("SubDownloaderDialog::parseXml: success: %d", ok);
-
-	// What to do now?
-}
 
 #include "moc_subdownloaderdialog.cpp"
 
