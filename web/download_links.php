@@ -31,15 +31,15 @@ function download_windows_7z_link() {
 
 
 function download_themes_src_link() {
-	return create_link("smplayer-themes-0.1.15.tar.bz2", 1749140 );
+	return create_link("smplayer-themes-0.1.16.tar.bz2", 1885765 );
 }
 
 function download_themes_rpm_link() {
-	return create_link("smplayer-themes-0.1.15-rvm.noarch.rpm", 1789561 );
+	return create_link("smplayer-themes-0.1.16-rvm.noarch.rpm", 1938336 );
 }
 
 function download_themes_deb_link() {
-	return create_link("smplayer-themes_0.1.15_all.deb", 1762904 );
+	return create_link("smplayer-themes_0.1.16_all.deb", 1886868 );
 }
 
 function download_themes_nonfree_src_link() {
