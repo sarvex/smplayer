@@ -15,3 +15,7 @@ unix {
   OBJECTS_DIR = .obj
 }
 
+win32 {
+  CONFIG += console
+}
+
