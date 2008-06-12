@@ -3,7 +3,7 @@ LANGUAGE = C++
 
 CONFIG += qt warn_on release
 
-QT += network
+QT += network xml
 
 HEADERS += subdownloaderdialog.h
 SOURCES += subdownloaderdialog.cpp main.cpp

@@ -34,12 +34,17 @@ public:
 
 	void download(const QString & url);
 
+signals:
+	void downloadFinished();
+
 protected slots:
 	void readResponseHeader(const QHttpResponseHeader &responseHeader);
 	void httpRequestFinished(int id, bool error);
+	void parseXml();
 
 protected:
 	QHttp * http;
+	QString downloaded_text;
 };
 
 #endif

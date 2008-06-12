@@ -19,6 +19,7 @@
 #include "subdownloaderdialog.h"
 #include <QHttp>
 #include <QUrl>
+#include <QXmlSimpleReader>
 #include <QMessageBox>
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
@@ -33,6 +34,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
              this, SLOT(readResponseHeader(const QHttpResponseHeader &)) );
 
+	connect( this, SIGNAL(downloadFinished()), this, SLOT(parseXml()) );
+
 	download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 }
 
@@ -40,8 +43,7 @@ SubDownloaderDialog::~SubDownloaderDialog() {
 }
 
 void SubDownloaderDialog::download(const QString & url) {
-	//QUrl url("http://www.opensubtitles.com/es/simplexml");
-	//QUrl url("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	downloaded_text.clear();
 
 	QUrl u(url);
 	http->setHost( u.host() );
@@ -68,7 +70,26 @@ void SubDownloaderDialog::readResponseHeader(const QHttpResponseHeader &response
 void SubDownloaderDialog::httpRequestFinished(int id, bool error) {
 	qDebug("SubDownloaderDialog::httpRequestFinished: %d, %d", id, error);
 
-	log->insertPlainText( http->readAll() );
+	downloaded_text += http->readAll();
+
+	if (!downloaded_text.isEmpty()) {
+		log->insertPlainText( downloaded_text );
+		emit downloadFinished();
+	}
+}
+
+void SubDownloaderDialog::parseXml() {
+	qDebug("SubDownloaderDialog::parseXml");
+
+	QXmlInputSource xml_input;
+	xml_input.setData(downloaded_text);
+
+	QXmlSimpleReader xml_reader;
+	bool ok = xml_reader.parse(&xml_input, false);
+
+	qDebug("SubDownloaderDialog::parseXml: success: %d", ok);
+
+	// What to do now?
 }
 
 #include "moc_subdownloaderdialog.cpp"
