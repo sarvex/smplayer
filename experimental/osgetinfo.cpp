@@ -16,12 +16,12 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include "subdownloader.h"
+#include "osgetinfo.h"
 #include <QHttp>
 #include <QUrl>
 #include <QXmlSimpleReader>
 
-SubDownloader::SubDownloader( QObject * parent )
+OSGetInfo::OSGetInfo( QObject * parent )
 	: QObject(parent)
 {
 	http = new QHttp(this);
@@ -34,10 +34,10 @@ SubDownloader::SubDownloader( QObject * parent )
 	connect( this, SIGNAL(downloadFinished(QString)), this, SLOT(parseXml(QString)) );
 }
 
-SubDownloader::~SubDownloader() {
+OSGetInfo::~OSGetInfo() {
 }
 
-void SubDownloader::download(const QString & url) {
+void OSGetInfo::download(const QString & url) {
 	downloaded_text.clear();
 
 	QUrl u(url);
@@ -45,24 +45,24 @@ void SubDownloader::download(const QString & url) {
 	http->get( u.path() );
 }
 
-void SubDownloader::readResponseHeader(const QHttpResponseHeader &responseHeader) {
-	qDebug("SubDownloader::readResponseHeader: statusCode: %d", responseHeader.statusCode());
+void OSGetInfo::readResponseHeader(const QHttpResponseHeader &responseHeader) {
+	qDebug("OSGetInfo::readResponseHeader: statusCode: %d", responseHeader.statusCode());
 
 	if (responseHeader.statusCode() == 301)  {
 		QString new_url = responseHeader.value("Location");
-		qDebug("SubDownloader::readResponseHeader: Location: '%s'", new_url.toLatin1().constData());
+		qDebug("OSGetInfo::readResponseHeader: Location: '%s'", new_url.toLatin1().constData());
 		download(new_url);
 	}
 	else
 	if (responseHeader.statusCode() != 200) {
-		qDebug("SubDownloader::readResponseHeader: error: '%s'", responseHeader.reasonPhrase().toLatin1().constData());
+		qDebug("OSGetInfo::readResponseHeader: error: '%s'", responseHeader.reasonPhrase().toLatin1().constData());
 		emit downloadFailed(responseHeader.reasonPhrase());
 		http->abort();
 	}
 }
 
-void SubDownloader::httpRequestFinished(int id, bool error) {
-	qDebug("SubDownloader::httpRequestFinished: %d, %d", id, error);
+void OSGetInfo::httpRequestFinished(int id, bool error) {
+	qDebug("OSGetInfo::httpRequestFinished: %d, %d", id, error);
 
 	downloaded_text += http->readAll();
 
@@ -71,8 +71,8 @@ void SubDownloader::httpRequestFinished(int id, bool error) {
 	}
 }
 
-void SubDownloader::parseXml(QString text) {
-	qDebug("SubDownloader::parseXml");
+void OSGetInfo::parseXml(QString text) {
+	qDebug("OSGetInfo::parseXml");
 
 	QXmlInputSource xml_input;
 	xml_input.setData(text);
@@ -80,10 +80,10 @@ void SubDownloader::parseXml(QString text) {
 	QXmlSimpleReader xml_reader;
 	bool ok = xml_reader.parse(&xml_input, false);
 
-	qDebug("SubDownloader::parseXml: success: %d", ok);
+	qDebug("OSGetInfo::parseXml: success: %d", ok);
 
 	// What to do now?
 }
 
-#include "moc_subdownloader.cpp"
+#include "moc_osgetinfo.cpp"
 

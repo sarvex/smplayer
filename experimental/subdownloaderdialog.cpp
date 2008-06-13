@@ -17,7 +17,7 @@
 */
 
 #include "subdownloaderdialog.h"
-#include "subdownloader.h"
+#include "osgetinfo.h"
 #include <QMessageBox>
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
@@ -25,7 +25,7 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 {
 	setupUi(this);
 
-	downloader = new SubDownloader(this);
+	downloader = new OSGetInfo(this);
 
 	connect( downloader, SIGNAL(downloadFinished(QString)), 
              this, SLOT(readDownloadedText(QString)) );

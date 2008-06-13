@@ -16,21 +16,21 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#ifndef _SUBDOWNLOADER_H_
-#define _SUBDOWNLOADER_H_
+#ifndef _OSGETINFO_H_
+#define _OSGETINFO_H_
 
 #include <QObject>
 
 class QHttp;
 class QHttpResponseHeader;
 
-class SubDownloader : public QObject
+class OSGetInfo : public QObject
 {
 	Q_OBJECT
 
 public:
-	SubDownloader( QObject* parent = 0 );
-	~SubDownloader();
+	OSGetInfo( QObject* parent = 0 );
+	~OSGetInfo();
 
 	void download(const QString & url);
 

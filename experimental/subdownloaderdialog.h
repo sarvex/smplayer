@@ -21,7 +21,7 @@
 
 #include "ui_subdownloaderdialog.h"
 
-class SubDownloader;
+class OSGetInfo;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
 {
@@ -36,7 +36,7 @@ protected slots:
 	void showError(QString error);
 
 protected:
-	SubDownloader * downloader;
+	OSGetInfo * downloader;
 };
 
 #endif
