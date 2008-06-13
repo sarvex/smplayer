@@ -74,6 +74,7 @@ void OSGetInfo::httpRequestFinished(int id, bool error) {
 void OSGetInfo::parseXml(QString text) {
 	qDebug("OSGetInfo::parseXml");
 
+	/*
 	QXmlInputSource xml_input;
 	xml_input.setData(text);
 
@@ -81,6 +82,37 @@ void OSGetInfo::parseXml(QString text) {
 	bool ok = xml_reader.parse(&xml_input, false);
 
 	qDebug("OSGetInfo::parseXml: success: %d", ok);
+	*/
+
+	bool ok = dom_document.setContent(text);
+	qDebug("OSGetInfo::parseXml: success: %d", ok);
+
+	QDomNode root = dom_document.documentElement();
+	qDebug("tagname: '%s'", root.toElement().tagName().toLatin1().constData());
+
+	QDomNode child = root.firstChildElement("results");
+	if (!child.isNull()) {
+		qDebug("items: %s", child.toElement().attribute("items").toLatin1().constData());
+		QDomNode subtitle = child.firstChildElement("subtitle");
+		while (!subtitle.isNull()) {
+			//qDebug("tagname: '%s'", subtitle.tagName().toLatin1().constData());
+			//qDebug("text: '%s'", subtitle.toElement().text().toLatin1().constData());
+
+			QDomElement e = subtitle.namedItem("releasename").toElement();
+			if (!e.isNull()) {
+				qDebug("Release name: '%s'", e.text().toLatin1().constData());
+			}
+
+			e = subtitle.namedItem("download").toElement();
+			if (!e.isNull()) {
+				qDebug("Download: '%s'", e.text().toLatin1().constData());
+			}
+
+			subtitle = subtitle.nextSiblingElement("subtitle");
+		}
+	}
+
+
 
 	// What to do now?
 }

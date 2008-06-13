@@ -20,6 +20,7 @@
 #define _OSGETINFO_H_
 
 #include <QObject>
+#include <QDomDocument>
 
 class QHttp;
 class QHttpResponseHeader;
@@ -46,6 +47,7 @@ protected slots:
 protected:
 	QHttp * http;
 	QString downloaded_text;
+	QDomDocument dom_document;
 };
 
 #endif
