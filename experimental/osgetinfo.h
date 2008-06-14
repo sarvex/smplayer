@@ -20,6 +20,7 @@
 #define _OSGETINFO_H_
 
 #include <QObject>
+#include <QByteArray>
 #include <QList>
 #include <QDomDocument>
 
@@ -40,12 +41,12 @@ public:
 	~OSGetInfo();
 
 	void download(const QString & url);
-	bool parseXml(QString text);
+	bool parseXml(QByteArray text);
 
 	QList<OSSubtitle> subtitleList() { return s_list; };
 
 signals:
-	void downloadFinished(QString downloaded_text);
+	void downloadFinished(QByteArray downloaded_text);
 	void downloadFailed(QString error);
 
 protected slots:
@@ -54,7 +55,7 @@ protected slots:
 
 protected:
 	QHttp * http;
-	QString downloaded_text;
+	QByteArray downloaded_text;
 	QDomDocument dom_document;
 	QList <OSSubtitle> s_list;
 };

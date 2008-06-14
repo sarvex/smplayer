@@ -71,7 +71,7 @@ void OSGetInfo::httpRequestFinished(int id, bool error) {
 	}
 }
 
-bool OSGetInfo::parseXml(QString text) {
+bool OSGetInfo::parseXml(QByteArray text) {
 	qDebug("OSGetInfo::parseXml");
 
 	/*

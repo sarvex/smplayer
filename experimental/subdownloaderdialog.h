@@ -20,6 +20,7 @@
 #define _SUBDOWNLOADERDIALOG_H_
 
 #include "ui_subdownloaderdialog.h"
+#include <QByteArray>
 
 class OSGetInfo;
 
@@ -32,10 +33,10 @@ public:
 	~SubDownloaderDialog();
 
 protected slots:
-	void readDownloadedText(QString text);
+	void readDownloadedText(QByteArray text);
 	void showError(QString error);
 
-	void parseInfo(QString xml_text);
+	void parseInfo(QByteArray xml_text);
 
 protected:
 	OSGetInfo * downloader;
