@@ -31,7 +31,7 @@ OSGetInfo::OSGetInfo( QObject * parent )
 	connect( http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
              this, SLOT(readResponseHeader(const QHttpResponseHeader &)) );
 
-	connect( this, SIGNAL(downloadFinished(QString)), this, SLOT(parseXml(QString)) );
+	//connect( this, SIGNAL(downloadFinished(QString)), this, SLOT(parseXml(QString)) );
 }
 
 OSGetInfo::~OSGetInfo() {
@@ -71,7 +71,7 @@ void OSGetInfo::httpRequestFinished(int id, bool error) {
 	}
 }
 
-void OSGetInfo::parseXml(QString text) {
+bool OSGetInfo::parseXml(QString text) {
 	qDebug("OSGetInfo::parseXml");
 
 	/*
@@ -84,8 +84,12 @@ void OSGetInfo::parseXml(QString text) {
 	qDebug("OSGetInfo::parseXml: success: %d", ok);
 	*/
 
+	s_list.clear();
+
 	bool ok = dom_document.setContent(text);
 	qDebug("OSGetInfo::parseXml: success: %d", ok);
+
+	if (!ok) return false;
 
 	QDomNode root = dom_document.documentElement();
 	qDebug("tagname: '%s'", root.toElement().tagName().toLatin1().constData());
@@ -96,25 +100,50 @@ void OSGetInfo::parseXml(QString text) {
 		QDomNode subtitle = child.firstChildElement("subtitle");
 		while (!subtitle.isNull()) {
 			//qDebug("tagname: '%s'", subtitle.tagName().toLatin1().constData());
-			//qDebug("text: '%s'", subtitle.toElement().text().toLatin1().constData());
+			qDebug("text: '%s'", subtitle.toElement().text().toLatin1().constData());
+
+			OSSubtitle sub;
 
 			QDomElement e = subtitle.namedItem("releasename").toElement();
-			if (!e.isNull()) {
-				qDebug("Release name: '%s'", e.text().toLatin1().constData());
-			}
+			if (!e.isNull()) sub.releasename = e.text();
 
 			e = subtitle.namedItem("download").toElement();
-			if (!e.isNull()) {
-				qDebug("Download: '%s'", e.text().toLatin1().constData());
-			}
+			if (!e.isNull()) sub.link = e.text();
+
+			e = subtitle.namedItem("detail").toElement();
+			if (!e.isNull()) sub.detail = e.text();
+
+			e = subtitle.namedItem("subadddate").toElement();
+			if (!e.isNull()) sub.date = e.text();
+
+			e = subtitle.namedItem("subrating").toElement();
+			if (!e.isNull()) sub.rating = e.text();
+
+			e = subtitle.namedItem("subcomments").toElement();
+			if (!e.isNull()) sub.comments = e.text();
+
+			e = subtitle.namedItem("movie").toElement();
+			if (!e.isNull()) sub.movie = e.text();
+
+			e = subtitle.namedItem("files").toElement();
+			if (!e.isNull()) sub.files = e.text();
+
+			e = subtitle.namedItem("format").toElement();
+			if (!e.isNull()) sub.format = e.text();
+
+			e = subtitle.namedItem("language").toElement();
+			if (!e.isNull()) sub.language = e.text();
+
+			e = subtitle.namedItem("iso639").toElement();
+			if (!e.isNull()) sub.iso639 = e.text();
+
+			s_list.append(sub);
 
 			subtitle = subtitle.nextSiblingElement("subtitle");
 		}
 	}
 
-
-
-	// What to do now?
+	return true;
 }
 
 #include "moc_osgetinfo.cpp"

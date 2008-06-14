@@ -35,6 +35,8 @@ protected slots:
 	void readDownloadedText(QString text);
 	void showError(QString error);
 
+	void parseInfo(QString xml_text);
+
 protected:
 	OSGetInfo * downloader;
 };

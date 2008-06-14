@@ -32,6 +32,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( downloader, SIGNAL(downloadFailed(QString)),
              this, SLOT(showError(QString)) );
 
+	connect( downloader, SIGNAL(downloadFinished(QString)), this, SLOT(parseInfo(QString)) );
+
 	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 }
 
@@ -39,7 +41,7 @@ SubDownloaderDialog::~SubDownloaderDialog() {
 }
 
 void SubDownloaderDialog::readDownloadedText(QString text) {
-	log->setPlainText(text);
+	log->insertPlainText(text);
 }
 
 void SubDownloaderDialog::showError(QString error) {
@@ -48,6 +50,16 @@ void SubDownloaderDialog::showError(QString error) {
                              .arg(error));
 }
 
+void SubDownloaderDialog::parseInfo(QString xml_text) {
+	bool ok = downloader->parseXml(xml_text);
+
+	if (ok) {
+		QList<OSSubtitle> l = downloader->subtitleList();
+		for (int n=0; n < l.count(); n++) {
+			log->insertPlainText( QString::number(n) + " " + l[n].releasename + "|" + l[n].movie + "\n" );
+		}
+	}
+}
 
 #include "moc_subdownloaderdialog.cpp"
 

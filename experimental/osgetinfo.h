@@ -20,10 +20,16 @@
 #define _OSGETINFO_H_
 
 #include <QObject>
+#include <QList>
 #include <QDomDocument>
 
 class QHttp;
 class QHttpResponseHeader;
+
+class OSSubtitle {
+public:
+	QString link, detail, iso639, releasename, date, rating, comments, movie, files, format, language;
+};
 
 class OSGetInfo : public QObject
 {
@@ -34,6 +40,9 @@ public:
 	~OSGetInfo();
 
 	void download(const QString & url);
+	bool parseXml(QString text);
+
+	QList<OSSubtitle> subtitleList() { return s_list; };
 
 signals:
 	void downloadFinished(QString downloaded_text);
@@ -42,12 +51,12 @@ signals:
 protected slots:
 	void readResponseHeader(const QHttpResponseHeader &responseHeader);
 	void httpRequestFinished(int id, bool error);
-	void parseXml(QString text);
 
 protected:
 	QHttp * http;
 	QString downloaded_text;
 	QDomDocument dom_document;
+	QList <OSSubtitle> s_list;
 };
 
 #endif
