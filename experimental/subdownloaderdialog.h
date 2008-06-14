@@ -23,6 +23,7 @@
 #include <QByteArray>
 
 class SimpleHttp;
+class QStandardItemModel;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
 {
@@ -40,6 +41,7 @@ protected slots:
 
 protected:
 	SimpleHttp * downloader;
+	QStandardItemModel * table;
 };
 
 #endif

@@ -19,12 +19,27 @@
 #include "subdownloaderdialog.h"
 #include "simplehttp.h"
 #include "osparser.h"
+#include <QStandardItemModel>
 #include <QMessageBox>
+
+#define COL_LANG 0
+#define COL_NAME 1
+#define COL_FORMAT 2
+#define COL_DATE 3
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	: QDialog(parent,f)
 {
 	setupUi(this);
+
+	table = new QStandardItemModel(this);
+	table->setColumnCount(3);
+	table->setHorizontalHeaderLabels( QStringList() << tr("Language") 
+                                                    << tr("Name") 
+                                                    << tr("Format") 
+                                                    << tr("Date") );
+
+	view->setModel(table);
 
 	downloader = new SimpleHttp(this);
 
@@ -43,7 +58,7 @@ SubDownloaderDialog::~SubDownloaderDialog() {
 }
 
 void SubDownloaderDialog::readDownloadedText(QByteArray text) {
-	log->insertPlainText(text);
+	//log->insertPlainText(text);
 }
 
 void SubDownloaderDialog::showError(QString error) {
@@ -56,10 +71,22 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 	OSParser osparser;
 	bool ok = osparser.parseXml(xml_text);
 
+	table->setRowCount(0);
+
 	if (ok) {
 		QList<OSSubtitle> l = osparser.subtitleList();
 		for (int n=0; n < l.count(); n++) {
-			log->insertPlainText( QString::number(n) + " " + l[n].releasename + " | " + l[n].movie + " | " + l[n].link + "\n" );
+
+			QString title_name = l[n].movie;
+			if (!l[n].releasename.isEmpty()) {
+				title_name += " - " + l[n].releasename;
+			}
+
+			table->setItem(n, COL_LANG, new QStandardItem(l[n].language));
+			table->setItem(n, COL_NAME, new QStandardItem(title_name));
+			table->setItem(n, COL_FORMAT, new QStandardItem(l[n].format));
+			table->setItem(n, COL_DATE, new QStandardItem(l[n].date));
+
 		}
 	}
 }

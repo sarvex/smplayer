@@ -26,8 +26,8 @@
 
 class OSSubtitle {
 public:
-	QString link, detail, iso639, releasename, date, rating, comments, movie;
-    QString files, format, language;
+	QString movie, releasename, link, iso639, language, date;
+	QString format, comments, detail, rating, files;
 };
 
 class OSParser {
