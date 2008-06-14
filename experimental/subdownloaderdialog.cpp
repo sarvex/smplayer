@@ -40,6 +40,10 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
                                                     << tr("Date") );
 
 	view->setModel(table);
+	view->setRootIsDecorated(false);
+	view->setSortingEnabled(true);
+	view->setAlternatingRowColors(true);
+	view->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
 	downloader = new SimpleHttp(this);
 
@@ -77,10 +81,12 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 		QList<OSSubtitle> l = osparser.subtitleList();
 		for (int n=0; n < l.count(); n++) {
 
+			//QString title_name = "<a href=\"hola\">" + l[n].movie;
 			QString title_name = l[n].movie;
 			if (!l[n].releasename.isEmpty()) {
 				title_name += " - " + l[n].releasename;
 			}
+			//title_name += "</a>";
 
 			table->setItem(n, COL_LANG, new QStandardItem(l[n].language));
 			table->setItem(n, COL_NAME, new QStandardItem(title_name));
@@ -89,6 +95,8 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 
 		}
 	}
+
+	view->resizeColumnToContents(COL_NAME);
 }
 
 #include "moc_subdownloaderdialog.cpp"
