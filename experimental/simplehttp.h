@@ -16,31 +16,34 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#ifndef _SUBDOWNLOADERDIALOG_H_
-#define _SUBDOWNLOADERDIALOG_H_
+#ifndef _SIMPLEHTTP_H_
+#define _SIMPLEHTTP_H_
 
-#include "ui_subdownloaderdialog.h"
-#include <QByteArray>
+#include <QHttp>
 
-class SimpleHttp;
-class OSGetInfo;
+class QHttp;
+class QHttpResponseHeader;
 
-class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
+class SimpleHttp : public QHttp
 {
 	Q_OBJECT
 
 public:
-	SubDownloaderDialog( QWidget* parent = 0, Qt::WindowFlags f = 0 );
-	~SubDownloaderDialog();
+	SimpleHttp( QObject* parent = 0 );
+	~SimpleHttp();
+
+	void download(const QString & url);
+
+signals:
+	void downloadFinished(QByteArray downloaded_text);
+	void downloadFailed(QString error);
 
 protected slots:
-	void readDownloadedText(QByteArray text);
-	void showError(QString error);
-
-	void parseInfo(QByteArray xml_text);
+	void readResponseHeader(const QHttpResponseHeader &responseHeader);
+	void httpRequestFinished(int id, bool error);
 
 protected:
-	SimpleHttp * downloader;
+	QByteArray downloaded_text;
 };
 
 #endif

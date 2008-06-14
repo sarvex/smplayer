@@ -17,58 +17,13 @@
 */
 
 #include "osgetinfo.h"
-#include <QHttp>
-#include <QUrl>
-#include <QXmlSimpleReader>
+#include <QDomDocument>
 
-OSGetInfo::OSGetInfo( QObject * parent )
-	: QObject(parent)
+OSGetInfo::OSGetInfo( QObject * parent ) : QObject(parent)
 {
-	http = new QHttp(this);
-	connect( http, SIGNAL(requestFinished(int, bool)),
-             this, SLOT(httpRequestFinished(int, bool)) );
-
-	connect( http, SIGNAL(responseHeaderReceived(const QHttpResponseHeader &)),
-             this, SLOT(readResponseHeader(const QHttpResponseHeader &)) );
-
-	//connect( this, SIGNAL(downloadFinished(QString)), this, SLOT(parseXml(QString)) );
 }
 
 OSGetInfo::~OSGetInfo() {
-}
-
-void OSGetInfo::download(const QString & url) {
-	downloaded_text.clear();
-
-	QUrl u(url);
-	http->setHost( u.host() );
-	http->get( u.path() );
-}
-
-void OSGetInfo::readResponseHeader(const QHttpResponseHeader &responseHeader) {
-	qDebug("OSGetInfo::readResponseHeader: statusCode: %d", responseHeader.statusCode());
-
-	if (responseHeader.statusCode() == 301)  {
-		QString new_url = responseHeader.value("Location");
-		qDebug("OSGetInfo::readResponseHeader: Location: '%s'", new_url.toLatin1().constData());
-		download(new_url);
-	}
-	else
-	if (responseHeader.statusCode() != 200) {
-		qDebug("OSGetInfo::readResponseHeader: error: '%s'", responseHeader.reasonPhrase().toLatin1().constData());
-		emit downloadFailed(responseHeader.reasonPhrase());
-		http->abort();
-	}
-}
-
-void OSGetInfo::httpRequestFinished(int id, bool error) {
-	qDebug("OSGetInfo::httpRequestFinished: %d, %d", id, error);
-
-	downloaded_text += http->readAll();
-
-	if (!downloaded_text.isEmpty()) {
-		emit downloadFinished(downloaded_text);
-	}
 }
 
 bool OSGetInfo::parseXml(QByteArray text) {

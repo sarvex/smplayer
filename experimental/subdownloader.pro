@@ -5,8 +5,8 @@ CONFIG += qt warn_on release
 
 QT += network xml
 
-HEADERS += osgetinfo.h subdownloaderdialog.h
-SOURCES += osgetinfo.cpp subdownloaderdialog.cpp main.cpp
+HEADERS += simplehttp.h osgetinfo.h subdownloaderdialog.h
+SOURCES += simplehttp.cpp osgetinfo.cpp subdownloaderdialog.cpp main.cpp
 FORMS += subdownloaderdialog.ui
 
 unix {

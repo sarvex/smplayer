@@ -24,9 +24,6 @@
 #include <QList>
 #include <QDomDocument>
 
-class QHttp;
-class QHttpResponseHeader;
-
 class OSSubtitle {
 public:
 	QString link, detail, iso639, releasename, date, rating, comments, movie, files, format, language;
@@ -40,22 +37,11 @@ public:
 	OSGetInfo( QObject* parent = 0 );
 	~OSGetInfo();
 
-	void download(const QString & url);
 	bool parseXml(QByteArray text);
 
 	QList<OSSubtitle> subtitleList() { return s_list; };
 
-signals:
-	void downloadFinished(QByteArray downloaded_text);
-	void downloadFailed(QString error);
-
-protected slots:
-	void readResponseHeader(const QHttpResponseHeader &responseHeader);
-	void httpRequestFinished(int id, bool error);
-
 protected:
-	QHttp * http;
-	QByteArray downloaded_text;
 	QDomDocument dom_document;
 	QList <OSSubtitle> s_list;
 };

@@ -17,6 +17,7 @@
 */
 
 #include "subdownloaderdialog.h"
+#include "simplehttp.h"
 #include "osgetinfo.h"
 #include <QMessageBox>
 
@@ -25,7 +26,7 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 {
 	setupUi(this);
 
-	downloader = new OSGetInfo(this);
+	downloader = new SimpleHttp(this);
 
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
              this, SLOT(readDownloadedText(QByteArray)) );
@@ -52,10 +53,11 @@ void SubDownloaderDialog::showError(QString error) {
 }
 
 void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
-	bool ok = downloader->parseXml(xml_text);
+	OSGetInfo osgetinfo;
+	bool ok = osgetinfo.parseXml(xml_text);
 
 	if (ok) {
-		QList<OSSubtitle> l = downloader->subtitleList();
+		QList<OSSubtitle> l = osgetinfo.subtitleList();
 		for (int n=0; n < l.count(); n++) {
 			log->insertPlainText( QString::number(n) + " " + l[n].releasename + " | " + l[n].movie + " | " + l[n].link + "\n" );
 		}
