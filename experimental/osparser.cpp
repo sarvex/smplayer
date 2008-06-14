@@ -16,33 +16,22 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include "osgetinfo.h"
+#include "osparser.h"
 #include <QDomDocument>
 
-OSGetInfo::OSGetInfo( QObject * parent ) : QObject(parent)
-{
+OSParser::OSParser() {
 }
 
-OSGetInfo::~OSGetInfo() {
+OSParser::~OSParser() {
 }
 
-bool OSGetInfo::parseXml(QByteArray text) {
-	qDebug("OSGetInfo::parseXml");
-
-	/*
-	QXmlInputSource xml_input;
-	xml_input.setData(text);
-
-	QXmlSimpleReader xml_reader;
-	bool ok = xml_reader.parse(&xml_input, false);
-
-	qDebug("OSGetInfo::parseXml: success: %d", ok);
-	*/
+bool OSParser::parseXml(QByteArray text) {
+	qDebug("OSParser::parseXml");
 
 	s_list.clear();
 
 	bool ok = dom_document.setContent(text);
-	qDebug("OSGetInfo::parseXml: success: %d", ok);
+	qDebug("OSParser::parseXml: success: %d", ok);
 
 	if (!ok) return false;
 
@@ -92,6 +81,4 @@ bool OSGetInfo::parseXml(QByteArray text) {
 
 	return true;
 }
-
-#include "moc_osgetinfo.cpp"
 

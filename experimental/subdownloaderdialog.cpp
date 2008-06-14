@@ -18,7 +18,7 @@
 
 #include "subdownloaderdialog.h"
 #include "simplehttp.h"
-#include "osgetinfo.h"
+#include "osparser.h"
 #include <QMessageBox>
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
@@ -53,11 +53,11 @@ void SubDownloaderDialog::showError(QString error) {
 }
 
 void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
-	OSGetInfo osgetinfo;
-	bool ok = osgetinfo.parseXml(xml_text);
+	OSParser osparser;
+	bool ok = osparser.parseXml(xml_text);
 
 	if (ok) {
-		QList<OSSubtitle> l = osgetinfo.subtitleList();
+		QList<OSSubtitle> l = osparser.subtitleList();
 		for (int n=0; n < l.count(); n++) {
 			log->insertPlainText( QString::number(n) + " " + l[n].releasename + " | " + l[n].movie + " | " + l[n].link + "\n" );
 		}

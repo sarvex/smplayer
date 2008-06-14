@@ -23,7 +23,6 @@
 #include <QByteArray>
 
 class SimpleHttp;
-class OSGetInfo;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
 {

@@ -16,8 +16,8 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#ifndef _OSGETINFO_H_
-#define _OSGETINFO_H_
+#ifndef _OSPARSER_H_
+#define _OSPARSER_H_
 
 #include <QObject>
 #include <QByteArray>
@@ -26,16 +26,15 @@
 
 class OSSubtitle {
 public:
-	QString link, detail, iso639, releasename, date, rating, comments, movie, files, format, language;
+	QString link, detail, iso639, releasename, date, rating, comments, movie;
+    QString files, format, language;
 };
 
-class OSGetInfo : public QObject
-{
-	Q_OBJECT
+class OSParser {
 
 public:
-	OSGetInfo( QObject* parent = 0 );
-	~OSGetInfo();
+	OSParser();
+	~OSParser();
 
 	bool parseXml(QByteArray text);
 
