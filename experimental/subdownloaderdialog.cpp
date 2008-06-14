@@ -57,7 +57,7 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 	if (ok) {
 		QList<OSSubtitle> l = downloader->subtitleList();
 		for (int n=0; n < l.count(); n++) {
-			log->insertPlainText( QString::number(n) + " " + l[n].releasename + "|" + l[n].movie + "\n" );
+			log->insertPlainText( QString::number(n) + " " + l[n].releasename + " | " + l[n].movie + " | " + l[n].link + "\n" );
 		}
 	}
 }

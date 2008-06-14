@@ -104,38 +104,27 @@ bool OSGetInfo::parseXml(QByteArray text) {
 
 			OSSubtitle sub;
 
-			QDomElement e = subtitle.namedItem("releasename").toElement();
-			if (!e.isNull()) sub.releasename = e.text();
+			sub.releasename = subtitle.firstChildElement("releasename").text();
 
-			e = subtitle.namedItem("download").toElement();
-			if (!e.isNull()) sub.link = e.text();
+			sub.link = subtitle.firstChildElement("download").text();
 
-			e = subtitle.namedItem("detail").toElement();
-			if (!e.isNull()) sub.detail = e.text();
+			sub.detail = subtitle.firstChildElement("detail").text();
 
-			e = subtitle.namedItem("subadddate").toElement();
-			if (!e.isNull()) sub.date = e.text();
+			sub.date = subtitle.firstChildElement("subadddate").text();
 
-			e = subtitle.namedItem("subrating").toElement();
-			if (!e.isNull()) sub.rating = e.text();
+			sub.rating = subtitle.firstChildElement("subrating").text();
 
-			e = subtitle.namedItem("subcomments").toElement();
-			if (!e.isNull()) sub.comments = e.text();
+			sub.comments = subtitle.firstChildElement("subcomments").text();
 
-			e = subtitle.namedItem("movie").toElement();
-			if (!e.isNull()) sub.movie = e.text();
+			sub.movie = subtitle.firstChildElement("movie").text();
 
-			e = subtitle.namedItem("files").toElement();
-			if (!e.isNull()) sub.files = e.text();
+			sub.files = subtitle.firstChildElement("files").text();
 
-			e = subtitle.namedItem("format").toElement();
-			if (!e.isNull()) sub.format = e.text();
+			sub.format = subtitle.firstChildElement("format").text();
 
-			e = subtitle.namedItem("language").toElement();
-			if (!e.isNull()) sub.language = e.text();
+			sub.language = subtitle.firstChildElement("language").text();
 
-			e = subtitle.namedItem("iso639").toElement();
-			if (!e.isNull()) sub.iso639 = e.text();
+			sub.iso639 = subtitle.firstChildElement("iso639").text();
 
 			s_list.append(sub);
 
