@@ -93,6 +93,9 @@ bool OSGetInfo::parseXml(QByteArray text) {
 
 	QDomNode root = dom_document.documentElement();
 	qDebug("tagname: '%s'", root.toElement().tagName().toLatin1().constData());
+	
+	QString base_url = root.firstChildElement("base").text();
+	qDebug("base_url: '%s'", base_url.toLatin1().constData());
 
 	QDomNode child = root.firstChildElement("results");
 	if (!child.isNull()) {
@@ -106,7 +109,7 @@ bool OSGetInfo::parseXml(QByteArray text) {
 
 			sub.releasename = subtitle.firstChildElement("releasename").text();
 
-			sub.link = subtitle.firstChildElement("download").text();
+			sub.link = base_url + subtitle.firstChildElement("download").text();
 
 			sub.detail = subtitle.firstChildElement("detail").text();
 
