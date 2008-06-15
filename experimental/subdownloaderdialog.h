@@ -35,7 +35,6 @@ public:
 	~SubDownloaderDialog();
 
 protected slots:
-	void readDownloadedText(QByteArray text);
 	void showError(QString error);
 	void connecting(QString host);
 	void updateDataReadProgress(int done, int total);

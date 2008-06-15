@@ -48,16 +48,15 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 
 	downloader = new SimpleHttp(this);
 
-	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
-             this, SLOT(readDownloadedText(QByteArray)) );
 	connect( downloader, SIGNAL(downloadFailed(QString)),
              this, SLOT(showError(QString)) );
-
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
              this, SLOT(parseInfo(QByteArray)) );
 
 	progress_dialog = new QProgressDialog(this);
 	progress_dialog->setWindowTitle( tr("Progress") );
+	progress_dialog->setCancelButtonText( tr("Cancel") );
+	progress_dialog->setMinimumDuration( 200 );
 
 	connect( downloader, SIGNAL(connecting(QString)),
              this, SLOT(connecting(QString)) );
@@ -65,15 +64,13 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
              this, SLOT(updateDataReadProgress(int, int)) );
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)),
              progress_dialog, SLOT(hide()) );
+	connect( progress_dialog, SIGNAL(canceled()), downloader, SLOT(abort()) );
 
-	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
 }
 
 SubDownloaderDialog::~SubDownloaderDialog() {
-}
-
-void SubDownloaderDialog::readDownloadedText(QByteArray text) {
-	//log->insertPlainText(text);
 }
 
 void SubDownloaderDialog::showError(QString error) {
@@ -89,7 +86,9 @@ void SubDownloaderDialog::connecting(QString host) {
 }
 
 void SubDownloaderDialog::updateDataReadProgress(int done, int total) {
-	if (!progress_dialog->isVisible()) progress_dialog->show();
+	qDebug("SubDownloaderDialog::updateDataReadProgress: %d, %d", done, total);
+
+	//if (!progress_dialog->isVisible()) progress_dialog->show();
 
 	progress_dialog->setLabelText( tr("Downloading...") );
 	progress_dialog->setMaximum(total);
