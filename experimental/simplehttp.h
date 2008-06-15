@@ -35,6 +35,7 @@ public:
 	void download(const QString & url);
 
 signals:
+	void connecting(QString host);
 	void downloadFinished(QByteArray downloaded_text);
 	void downloadFailed(QString error);
 

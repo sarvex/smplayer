@@ -24,6 +24,7 @@
 
 class SimpleHttp;
 class QStandardItemModel;
+class QProgressDialog;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
 {
@@ -36,12 +37,15 @@ public:
 protected slots:
 	void readDownloadedText(QByteArray text);
 	void showError(QString error);
+	void connecting(QString host);
+	void updateDataReadProgress(int done, int total);
 
 	void parseInfo(QByteArray xml_text);
 
 protected:
 	SimpleHttp * downloader;
 	QStandardItemModel * table;
+	QProgressDialog * progress_dialog;
 };
 
 #endif

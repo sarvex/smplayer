@@ -37,6 +37,8 @@ void SimpleHttp::download(const QString & url) {
 	QUrl u(url);
 	setHost( u.host() );
 	get( u.path() );
+
+	emit connecting(u.host());
 }
 
 void SimpleHttp::readResponseHeader(const QHttpResponseHeader &responseHeader) {

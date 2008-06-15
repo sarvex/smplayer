@@ -21,6 +21,7 @@
 #include "osparser.h"
 #include <QStandardItemModel>
 #include <QMessageBox>
+#include <QProgressDialog>
 
 #define COL_LANG 0
 #define COL_NAME 1
@@ -55,6 +56,16 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
              this, SLOT(parseInfo(QByteArray)) );
 
+	progress_dialog = new QProgressDialog(this);
+	progress_dialog->setWindowTitle( tr("Progress") );
+
+	connect( downloader, SIGNAL(connecting(QString)),
+             this, SLOT(connecting(QString)) );
+	connect( downloader, SIGNAL(dataReadProgress(int, int)),
+             this, SLOT(updateDataReadProgress(int, int)) );
+	connect( downloader, SIGNAL(downloadFinished(QByteArray)),
+             progress_dialog, SLOT(hide()) );
+
 	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 }
 
@@ -69,6 +80,20 @@ void SubDownloaderDialog::showError(QString error) {
 	QMessageBox::information(this, tr("HTTP"),
                              tr("Download failed: %1.")
                              .arg(error));
+}
+
+void SubDownloaderDialog::connecting(QString host) {
+	if (!progress_dialog->isVisible()) progress_dialog->show();
+
+	progress_dialog->setLabelText( tr("Connecting to %1...").arg(host) );
+}
+
+void SubDownloaderDialog::updateDataReadProgress(int done, int total) {
+	if (!progress_dialog->isVisible()) progress_dialog->show();
+
+	progress_dialog->setLabelText( tr("Downloading...") );
+	progress_dialog->setMaximum(total);
+	progress_dialog->setValue(done);
 }
 
 void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
