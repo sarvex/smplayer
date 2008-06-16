@@ -35,6 +35,9 @@ public:
 	SubDownloaderDialog( QWidget* parent = 0, Qt::WindowFlags f = 0 );
 	~SubDownloaderDialog();
 
+public slots:
+	void setMovie(QString filename);
+
 protected slots:
 	void showError(QString error);
 	void connecting(QString host);

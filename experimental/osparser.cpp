@@ -18,6 +18,8 @@
 
 #include "osparser.h"
 #include <QDomDocument>
+#include <QFile>
+#include <QDataStream>
 
 OSParser::OSParser() {
 }
@@ -71,5 +73,33 @@ bool OSParser::parseXml(QByteArray text) {
 	}
 
 	return true;
+}
+
+QString OSParser::calculateHash(QString filename) {
+	QFile file(filename);
+
+	if (!file.exists()) {
+		qWarning("OSParser:calculateHash: error hashing file. File doesn't exist.");
+		return QString();
+	}
+
+	file.open(QIODevice::ReadOnly);
+	QDataStream in(&file);
+	in.setByteOrder(QDataStream::LittleEndian);
+	quint64 size=file.size ();
+	quint64 hash=size; 
+	quint64 a;
+	for(int i = 0; i < 8192; i++) {
+		in >> a ; hash += a;
+	};
+	file.seek(size-65536);
+	for(int i = 0; i < 8192; i++) {
+		in >> a ; hash += a;
+	};
+
+	QString hexhash("");
+	hexhash.setNum(hash,16);
+
+	return hexhash;
 }
 

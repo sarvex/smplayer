@@ -37,6 +37,9 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 {
 	setupUi(this);
 
+	connect( file_chooser, SIGNAL(fileChanged(QString)),
+             this, SLOT(setMovie(QString)) );
+
 	table = new QStandardItemModel(this);
 	table->setColumnCount(COL_USER + 1);
 	table->setHorizontalHeaderLabels( QStringList() << tr("Language") 
@@ -75,11 +78,24 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
              progress_dialog, SLOT(hide()) );
 	connect( progress_dialog, SIGNAL(canceled()), downloader, SLOT(abort()) );
 
-	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
 }
 
 SubDownloaderDialog::~SubDownloaderDialog() {
+}
+
+void SubDownloaderDialog::setMovie(QString filename) {
+	qDebug("SubDownloaderDialog::setMovie: '%s'", filename.toLatin1().constData());
+
+	QString hash = OSParser::calculateHash(filename);
+	if (hash.isEmpty()) {
+		qWarning("SubDownloaderDialog::setMovie: hash invalid. Doing nothing.");
+	} else {
+		QString link = "http://www.opensubtitles.org/search/sublanguageid-all/moviehash-" + hash + "/simplexml";
+		qDebug("SubDownloaderDialog::setMovie: link: '%s'", link.toLatin1().constData());
+		downloader->download(link);
+	}
 }
 
 void SubDownloaderDialog::showError(QString error) {

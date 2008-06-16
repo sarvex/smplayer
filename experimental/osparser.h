@@ -40,6 +40,8 @@ public:
 
 	QList<OSSubtitle> subtitleList() { return s_list; };
 
+	static QString calculateHash(QString filename);
+
 protected:
 	QDomDocument dom_document;
 	QList <OSSubtitle> s_list;
