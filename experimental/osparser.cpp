@@ -28,7 +28,7 @@ OSParser::~OSParser() {
 }
 
 bool OSParser::parseXml(QByteArray text) {
-	qDebug("OSParser::parseXml");
+	qDebug("OSParser::parseXml: text: '%s'", text.constData());
 
 	s_list.clear();
 

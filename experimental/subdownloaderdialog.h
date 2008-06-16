@@ -47,10 +47,13 @@ protected slots:
 
 	void itemActivated(const QModelIndex & index );
 
+	void editingFinished();
+
 protected:
 	SimpleHttp * downloader;
 	QStandardItemModel * table;
 	QProgressDialog * progress_dialog;
+	QString last_file;
 };
 
 #endif
