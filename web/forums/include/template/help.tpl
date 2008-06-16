@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<pun_content_direction>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png" />
+<link rel="icon" type="image/png" href="../images/icons/smplayer_icon16.png" />
 <pun_head>
 </head>
 <body>
