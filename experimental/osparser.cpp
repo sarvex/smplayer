@@ -52,26 +52,17 @@ bool OSParser::parseXml(QByteArray text) {
 			OSSubtitle sub;
 
 			sub.releasename = subtitle.firstChildElement("releasename").text();
-
 			sub.link = base_url + subtitle.firstChildElement("download").text();
-
 			sub.detail = subtitle.firstChildElement("detail").text();
-
 			sub.date = subtitle.firstChildElement("subadddate").text();
-
 			sub.rating = subtitle.firstChildElement("subrating").text();
-
 			sub.comments = subtitle.firstChildElement("subcomments").text();
-
 			sub.movie = subtitle.firstChildElement("movie").text();
-
 			sub.files = subtitle.firstChildElement("files").text();
-
 			sub.format = subtitle.firstChildElement("format").text();
-
 			sub.language = subtitle.firstChildElement("language").text();
-
 			sub.iso639 = subtitle.firstChildElement("iso639").text();
+			sub.user = subtitle.firstChildElement("user").text();
 
 			s_list.append(sub);
 

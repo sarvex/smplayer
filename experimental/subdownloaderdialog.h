@@ -25,6 +25,7 @@
 class SimpleHttp;
 class QStandardItemModel;
 class QProgressDialog;
+class QModelIndex;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
 {
@@ -40,6 +41,8 @@ protected slots:
 	void updateDataReadProgress(int done, int total);
 
 	void parseInfo(QByteArray xml_text);
+
+	void itemActivated(const QModelIndex & index );
 
 protected:
 	SimpleHttp * downloader;

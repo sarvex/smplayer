@@ -22,11 +22,15 @@
 #include <QStandardItemModel>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <QDesktopServices>
+#include <QUrl>
 
 #define COL_LANG 0
 #define COL_NAME 1
 #define COL_FORMAT 2
-#define COL_DATE 3
+#define COL_FILES 3
+#define COL_DATE 4
+#define COL_USER 5
 
 SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	: QDialog(parent,f)
@@ -34,17 +38,22 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	setupUi(this);
 
 	table = new QStandardItemModel(this);
-	table->setColumnCount(3);
+	table->setColumnCount(COL_USER + 1);
 	table->setHorizontalHeaderLabels( QStringList() << tr("Language") 
                                                     << tr("Name") 
                                                     << tr("Format") 
-                                                    << tr("Date") );
+                                                    << tr("Files")
+                                                    << tr("Date") 
+                                                    << tr("Uploaded by") );
 
 	view->setModel(table);
 	view->setRootIsDecorated(false);
 	view->setSortingEnabled(true);
 	view->setAlternatingRowColors(true);
 	view->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+	connect(view, SIGNAL(activated(const QModelIndex &)),
+            this, SLOT(itemActivated(const QModelIndex &)) );
 
 	downloader = new SimpleHttp(this);
 
@@ -66,8 +75,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
              progress_dialog, SLOT(hide()) );
 	connect( progress_dialog, SIGNAL(canceled()), downloader, SLOT(abort()) );
 
-	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
-	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
+	downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
+	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
 }
 
 SubDownloaderDialog::~SubDownloaderDialog() {
@@ -112,15 +121,36 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 			}
 			//title_name += "</a>";
 
+			QStandardItem * i_name = new QStandardItem(title_name);
+			i_name->setData( l[n].link );
+			i_name->setToolTip( l[n].link );
+			/*
+			if (!l[n].comments.isEmpty()) {
+				i_name->setToolTip(l[n].comments);
+			}
+			*/
+
 			table->setItem(n, COL_LANG, new QStandardItem(l[n].language));
-			table->setItem(n, COL_NAME, new QStandardItem(title_name));
+			table->setItem(n, COL_NAME, i_name);
 			table->setItem(n, COL_FORMAT, new QStandardItem(l[n].format));
+			table->setItem(n, COL_FILES, new QStandardItem(l[n].files));
 			table->setItem(n, COL_DATE, new QStandardItem(l[n].date));
+			table->setItem(n, COL_USER, new QStandardItem(l[n].user));
 
 		}
 	}
 
 	view->resizeColumnToContents(COL_NAME);
+}
+
+void SubDownloaderDialog::itemActivated(const QModelIndex & index ) {
+	qDebug("SubDownloaderDialog::itemActivated: row: %d, col %d", index.row(), index.column());
+
+	QString download_link = table->item(index.row(), COL_NAME)->data().toString();
+
+	qDebug("SubDownloaderDialog::itemActivated: download link: '%s'", download_link.toLatin1().constData());
+
+	QDesktopServices::openUrl( QUrl(download_link) );
 }
 
 #include "moc_subdownloaderdialog.cpp"
