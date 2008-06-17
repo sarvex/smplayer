@@ -22,11 +22,8 @@
 #include "ui_subdownloaderdialog.h"
 #include <QByteArray>
 
-//#define USE_PROGRESS_DIALOG
-
 class SimpleHttp;
 class QStandardItemModel;
-class QProgressDialog;
 class QModelIndex;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
@@ -56,10 +53,6 @@ protected slots:
 protected:
 	SimpleHttp * downloader;
 	QStandardItemModel * table;
-#ifdef USE_PROGRESS_DIALOG
-	QProgressDialog * progress_dialog;
-#endif
-
 };
 
 #endif

@@ -21,7 +21,6 @@
 #include "osparser.h"
 #include <QStandardItemModel>
 #include <QMessageBox>
-#include <QProgressDialog>
 #include <QDesktopServices>
 #include <QUrl>
 
@@ -76,22 +75,10 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( downloader, SIGNAL(stateChanged(int)),
              this, SLOT(updateRefreshButton()) );
 
-#ifdef USE_PROGRESS_DIALOG
-	progress_dialog = new QProgressDialog(this);
-	progress_dialog->setWindowTitle( tr("Progress") );
-	progress_dialog->setCancelButtonText( tr("Cancel") );
-	progress_dialog->setMinimumDuration( 200 );
-#endif
-
 	connect( downloader, SIGNAL(connecting(QString)),
              this, SLOT(connecting(QString)) );
 	connect( downloader, SIGNAL(dataReadProgress(int, int)),
              this, SLOT(updateDataReadProgress(int, int)) );
-#ifdef USE_PROGRESS_DIALOG
-	connect( downloader, SIGNAL(downloadFinished(QByteArray)),
-             progress_dialog, SLOT(hide()) );
-	connect( progress_dialog, SIGNAL(canceled()), downloader, SLOT(abort()) );
-#endif
 
 	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
@@ -132,25 +119,11 @@ void SubDownloaderDialog::showError(QString error) {
 }
 
 void SubDownloaderDialog::connecting(QString host) {
-#ifdef USE_PROGRESS_DIALOG
-	if (!progress_dialog->isVisible()) progress_dialog->show();
-
-	progress_dialog->setLabelText( tr("Connecting to %1...").arg(host) );
-#endif
-
 	status->setText( tr("Connecting to %1...").arg(host) );
 }
 
 void SubDownloaderDialog::updateDataReadProgress(int done, int total) {
 	qDebug("SubDownloaderDialog::updateDataReadProgress: %d, %d", done, total);
-
-#ifdef USE_PROGRESS_DIALOG
-	//if (!progress_dialog->isVisible()) progress_dialog->show();
-
-	progress_dialog->setLabelText( tr("Downloading...") );
-	progress_dialog->setMaximum(total);
-	progress_dialog->setValue(done);
-#endif
 
 	status->setText( tr("Downloading...") );
 
