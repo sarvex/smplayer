@@ -22,6 +22,8 @@
 #include "ui_subdownloaderdialog.h"
 #include <QByteArray>
 
+//#define USE_PROGRESS_DIALOG
+
 class SimpleHttp;
 class QStandardItemModel;
 class QProgressDialog;
@@ -37,23 +39,27 @@ public:
 
 public slots:
 	void setMovie(QString filename);
+	void refresh();
 
 protected slots:
 	void showError(QString error);
 	void connecting(QString host);
 	void updateDataReadProgress(int done, int total);
+	void downloadFinished();
 
 	void parseInfo(QByteArray xml_text);
 
 	void itemActivated(const QModelIndex & index );
 
-	void editingFinished();
+	/* void editingFinished(); */
 
 protected:
 	SimpleHttp * downloader;
 	QStandardItemModel * table;
+#ifdef USE_PROGRESS_DIALOG
 	QProgressDialog * progress_dialog;
-	QString last_file;
+#endif
+	/* QString last_file; */
 };
 
 #endif

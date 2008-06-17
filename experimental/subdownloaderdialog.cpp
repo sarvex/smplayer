@@ -37,10 +37,17 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 {
 	setupUi(this);
 
+	progress->hide();
+
 	connect( file_chooser, SIGNAL(fileChanged(QString)),
              this, SLOT(setMovie(QString)) );
+	/*
 	connect( file_chooser->lineEdit(), SIGNAL(editingFinished()), 
              this, SLOT(editingFinished()) );
+	*/
+
+	connect( refresh_button, SIGNAL(clicked()),
+             this, SLOT(refresh()) );
 
 	table = new QStandardItemModel(this);
 	table->setColumnCount(COL_USER + 1);
@@ -65,20 +72,26 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( downloader, SIGNAL(downloadFailed(QString)),
              this, SLOT(showError(QString)) );
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
+             this, SLOT(downloadFinished()) );
+	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
              this, SLOT(parseInfo(QByteArray)) );
 
+#ifdef USE_PROGRESS_DIALOG
 	progress_dialog = new QProgressDialog(this);
 	progress_dialog->setWindowTitle( tr("Progress") );
 	progress_dialog->setCancelButtonText( tr("Cancel") );
 	progress_dialog->setMinimumDuration( 200 );
+#endif
 
 	connect( downloader, SIGNAL(connecting(QString)),
              this, SLOT(connecting(QString)) );
 	connect( downloader, SIGNAL(dataReadProgress(int, int)),
              this, SLOT(updateDataReadProgress(int, int)) );
+#ifdef USE_PROGRESS_DIALOG
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)),
              progress_dialog, SLOT(hide()) );
 	connect( progress_dialog, SIGNAL(canceled()), downloader, SLOT(abort()) );
+#endif
 
 	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
 	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
@@ -90,9 +103,10 @@ SubDownloaderDialog::~SubDownloaderDialog() {
 void SubDownloaderDialog::setMovie(QString filename) {
 	qDebug("SubDownloaderDialog::setMovie: '%s'", filename.toLatin1().constData());
 
+	/*
 	if (filename != last_file) {
 		last_file = filename;
-
+	*/
 		QString hash = OSParser::calculateHash(filename);
 		if (hash.isEmpty()) {
 			qWarning("SubDownloaderDialog::setMovie: hash invalid. Doing nothing.");
@@ -101,14 +115,22 @@ void SubDownloaderDialog::setMovie(QString filename) {
 			qDebug("SubDownloaderDialog::setMovie: link: '%s'", link.toLatin1().constData());
 			downloader->download(link);
 		}
+	/*
 	}
+	*/
 }
 
+void SubDownloaderDialog::refresh() {
+	setMovie(file_chooser->text());
+}
+
+/*
 void SubDownloaderDialog::editingFinished() {
 	QString file = file_chooser->text();
 	qDebug("SubDownloaderDialog::editingFinished: '%s'", file.toLatin1().constData());
 	setMovie(file);
 }
+*/
 
 void SubDownloaderDialog::showError(QString error) {
 	QMessageBox::information(this, tr("HTTP"),
@@ -117,19 +139,38 @@ void SubDownloaderDialog::showError(QString error) {
 }
 
 void SubDownloaderDialog::connecting(QString host) {
+#ifdef USE_PROGRESS_DIALOG
 	if (!progress_dialog->isVisible()) progress_dialog->show();
 
 	progress_dialog->setLabelText( tr("Connecting to %1...").arg(host) );
+#endif
+
+	status->setText( tr("Connecting to %1...").arg(host) );
 }
 
 void SubDownloaderDialog::updateDataReadProgress(int done, int total) {
 	qDebug("SubDownloaderDialog::updateDataReadProgress: %d, %d", done, total);
 
+#ifdef USE_PROGRESS_DIALOG
 	//if (!progress_dialog->isVisible()) progress_dialog->show();
 
 	progress_dialog->setLabelText( tr("Downloading...") );
 	progress_dialog->setMaximum(total);
 	progress_dialog->setValue(done);
+#endif
+
+	status->setText( tr("Downloading...") );
+
+	if (!progress->isVisible()) progress->show();
+	progress->setMaximum(total);
+	progress->setValue(done);
+}
+
+void SubDownloaderDialog::downloadFinished() {
+	status->setText( tr("Done.") );
+	progress->setMaximum(1);
+	progress->setValue(0);
+	progress->hide();
 }
 
 void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
@@ -166,6 +207,7 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 			table->setItem(n, COL_USER, new QStandardItem(l[n].user));
 
 		}
+		status->setText( tr("%1 files available").arg(l.count()) );
 	}
 
 	view->resizeColumnToContents(COL_NAME);
