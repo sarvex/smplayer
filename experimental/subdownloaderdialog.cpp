@@ -45,6 +45,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( file_chooser->lineEdit(), SIGNAL(editingFinished()), 
              this, SLOT(editingFinished()) );
 	*/
+	connect( file_chooser->lineEdit(), SIGNAL(textChanged(const QString &)),
+             this, SLOT(updateRefreshButton()) );
 
 	connect( refresh_button, SIGNAL(clicked()),
              this, SLOT(refresh()) );
@@ -75,6 +77,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
              this, SLOT(downloadFinished()) );
 	connect( downloader, SIGNAL(downloadFinished(QByteArray)), 
              this, SLOT(parseInfo(QByteArray)) );
+	connect( downloader, SIGNAL(stateChanged(int)),
+             this, SLOT(updateRefreshButton()) );
 
 #ifdef USE_PROGRESS_DIALOG
 	progress_dialog = new QProgressDialog(this);
@@ -122,6 +126,13 @@ void SubDownloaderDialog::setMovie(QString filename) {
 
 void SubDownloaderDialog::refresh() {
 	setMovie(file_chooser->text());
+}
+
+void SubDownloaderDialog::updateRefreshButton() {
+	QString file = file_chooser->lineEdit()->text();
+	bool enabled = ( (!file.isEmpty()) && (QFile::exists(file)) && 
+                     (downloader->state()==QHttp::Unconnected) );
+	refresh_button->setEnabled(enabled);
 }
 
 /*

@@ -47,6 +47,8 @@ protected slots:
 	void updateDataReadProgress(int done, int total);
 	void downloadFinished();
 
+	void updateRefreshButton();
+
 	void parseInfo(QByteArray xml_text);
 
 	void itemActivated(const QModelIndex & index );
