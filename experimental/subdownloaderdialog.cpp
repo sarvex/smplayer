@@ -41,10 +41,6 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 
 	connect( file_chooser, SIGNAL(fileChanged(QString)),
              this, SLOT(setMovie(QString)) );
-	/*
-	connect( file_chooser->lineEdit(), SIGNAL(editingFinished()), 
-             this, SLOT(editingFinished()) );
-	*/
 	connect( file_chooser->lineEdit(), SIGNAL(textChanged(const QString &)),
              this, SLOT(updateRefreshButton()) );
 
@@ -107,21 +103,14 @@ SubDownloaderDialog::~SubDownloaderDialog() {
 void SubDownloaderDialog::setMovie(QString filename) {
 	qDebug("SubDownloaderDialog::setMovie: '%s'", filename.toLatin1().constData());
 
-	/*
-	if (filename != last_file) {
-		last_file = filename;
-	*/
-		QString hash = OSParser::calculateHash(filename);
-		if (hash.isEmpty()) {
-			qWarning("SubDownloaderDialog::setMovie: hash invalid. Doing nothing.");
-		} else {
-			QString link = "http://www.opensubtitles.org/search/sublanguageid-all/moviehash-" + hash + "/simplexml";
-			qDebug("SubDownloaderDialog::setMovie: link: '%s'", link.toLatin1().constData());
-			downloader->download(link);
-		}
-	/*
+	QString hash = OSParser::calculateHash(filename);
+	if (hash.isEmpty()) {
+		qWarning("SubDownloaderDialog::setMovie: hash invalid. Doing nothing.");
+	} else {
+		QString link = "http://www.opensubtitles.org/search/sublanguageid-all/moviehash-" + hash + "/simplexml";
+		qDebug("SubDownloaderDialog::setMovie: link: '%s'", link.toLatin1().constData());
+		downloader->download(link);
 	}
-	*/
 }
 
 void SubDownloaderDialog::refresh() {
@@ -135,13 +124,6 @@ void SubDownloaderDialog::updateRefreshButton() {
 	refresh_button->setEnabled(enabled);
 }
 
-/*
-void SubDownloaderDialog::editingFinished() {
-	QString file = file_chooser->text();
-	qDebug("SubDownloaderDialog::editingFinished: '%s'", file.toLatin1().constData());
-	setMovie(file);
-}
-*/
 
 void SubDownloaderDialog::showError(QString error) {
 	QMessageBox::information(this, tr("HTTP"),
