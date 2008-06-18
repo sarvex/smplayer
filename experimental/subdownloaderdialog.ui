@@ -10,7 +10,7 @@
    </rect>
   </property>
   <property name="windowTitle" >
-   <string>Subtitle Downloader</string>
+   <string>Find Subtitles</string>
   </property>
   <layout class="QVBoxLayout" >
    <property name="margin" >
@@ -53,7 +53,10 @@
      <item>
       <widget class="QLabel" name="filter_language_label" >
        <property name="text" >
-        <string>Language:</string>
+        <string>&amp;Language:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>language_filter</cstring>
        </property>
       </widget>
      </item>

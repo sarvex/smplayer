@@ -91,9 +91,6 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
              this, SLOT(connecting(QString)) );
 	connect( downloader, SIGNAL(dataReadProgress(int, int)),
              this, SLOT(updateDataReadProgress(int, int)) );
-
-	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-f967db8edee2873b/simplexml");
-	//downloader->download("http://www.opensubtitles.org/search/sublanguageid-all/moviehash-b64b940fcfe885e9/simplexml");
 }
 
 SubDownloaderDialog::~SubDownloaderDialog() {
@@ -137,7 +134,7 @@ void SubDownloaderDialog::applyCurrentFilter() {
 }
 
 void SubDownloaderDialog::showError(QString error) {
-	QMessageBox::information(this, tr("HTTP"),
+	QMessageBox::information(this, tr("Error"),
                              tr("Download failed: %1.")
                              .arg(error));
 }
@@ -173,21 +170,14 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 		QList<OSSubtitle> l = osparser.subtitleList();
 		for (int n=0; n < l.count(); n++) {
 
-			//QString title_name = "<a href=\"hola\">" + l[n].movie;
 			QString title_name = l[n].movie;
 			if (!l[n].releasename.isEmpty()) {
 				title_name += " - " + l[n].releasename;
 			}
-			//title_name += "</a>";
 
 			QStandardItem * i_name = new QStandardItem(title_name);
 			i_name->setData( l[n].link );
 			i_name->setToolTip( l[n].link );
-			/*
-			if (!l[n].comments.isEmpty()) {
-				i_name->setToolTip(l[n].comments);
-			}
-			*/
 
 			QStandardItem * i_lang = new QStandardItem(l[n].language);
 			i_lang->setData(l[n].iso639, Qt::UserRole);

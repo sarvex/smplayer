@@ -28,7 +28,7 @@ OSParser::~OSParser() {
 }
 
 bool OSParser::parseXml(QByteArray text) {
-	qDebug("OSParser::parseXml: text: '%s'", text.constData());
+	qDebug("OSParser::parseXml: source: '%s'", text.constData());
 
 	s_list.clear();
 
@@ -38,18 +38,18 @@ bool OSParser::parseXml(QByteArray text) {
 	if (!ok) return false;
 
 	QDomNode root = dom_document.documentElement();
-	qDebug("tagname: '%s'", root.toElement().tagName().toLatin1().constData());
+	//qDebug("tagname: '%s'", root.toElement().tagName().toLatin1().constData());
 	
 	QString base_url = root.firstChildElement("base").text();
-	qDebug("base_url: '%s'", base_url.toLatin1().constData());
+	//qDebug("base_url: '%s'", base_url.toLatin1().constData());
 
 	QDomNode child = root.firstChildElement("results");
 	if (!child.isNull()) {
-		qDebug("items: %s", child.toElement().attribute("items").toLatin1().constData());
+		//qDebug("items: %s", child.toElement().attribute("items").toLatin1().constData());
 		QDomNode subtitle = child.firstChildElement("subtitle");
 		while (!subtitle.isNull()) {
 			//qDebug("tagname: '%s'", subtitle.tagName().toLatin1().constData());
-			qDebug("text: '%s'", subtitle.toElement().text().toLatin1().constData());
+			qDebug("OSParser::parseXml: text: '%s'", subtitle.toElement().text().toLatin1().constData());
 
 			OSSubtitle sub;
 
@@ -75,6 +75,8 @@ bool OSParser::parseXml(QByteArray text) {
 	return true;
 }
 
+// From the patch by Kamil Dziobek turbos11(at)gmail.com
+// (c) Kamil Dziobek turbos11(at)gmail.com | BSD or GPL or public domain
 QString OSParser::calculateHash(QString filename) {
 	QFile file(filename);
 
