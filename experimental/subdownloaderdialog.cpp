@@ -73,6 +73,8 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 
 	connect(view, SIGNAL(activated(const QModelIndex &)),
             this, SLOT(itemActivated(const QModelIndex &)) );
+	connect(view->selectionModel(), SIGNAL(currentChanged(const QModelIndex &,const QModelIndex &)),
+            this, SLOT(currentItemChanged(const QModelIndex &,const QModelIndex &)) );
 
 	downloader = new SimpleHttp(this);
 
@@ -119,6 +121,11 @@ void SubDownloaderDialog::updateRefreshButton() {
 	bool enabled = ( (!file.isEmpty()) && (QFile::exists(file)) && 
                      (downloader->state()==QHttp::Unconnected) );
 	refresh_button->setEnabled(enabled);
+}
+
+void SubDownloaderDialog::currentItemChanged(const QModelIndex & current, const QModelIndex & /*previous*/) {
+	qDebug("SubDownloaderDialog::currentItemChanged: row: %d, col: %d", current.row(), current.column());
+	download_button->setEnabled(current.isValid());
 }
 
 void SubDownloaderDialog::applyFilter(const QString & filter) {
@@ -220,6 +227,13 @@ void SubDownloaderDialog::itemActivated(const QModelIndex & index ) {
 	qDebug("SubDownloaderDialog::itemActivated: download link: '%s'", download_link.toLatin1().constData());
 
 	QDesktopServices::openUrl( QUrl(download_link) );
+}
+
+void SubDownloaderDialog::on_download_button_clicked() {
+	qDebug("SubDownloaderDialog::on_download_button_clicked");
+	if (view->currentIndex().isValid()) {
+		itemActivated(view->currentIndex());
+	}
 }
 
 #include "moc_subdownloaderdialog.cpp"

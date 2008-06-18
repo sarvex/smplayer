@@ -52,6 +52,9 @@ protected slots:
 	void parseInfo(QByteArray xml_text);
 
 	void itemActivated(const QModelIndex & index );
+	void currentItemChanged(const QModelIndex & current, const QModelIndex & previous);
+
+	void on_download_button_clicked();
 
 protected:
 	SimpleHttp * downloader;
