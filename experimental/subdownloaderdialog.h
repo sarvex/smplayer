@@ -24,6 +24,7 @@
 
 class SimpleHttp;
 class QStandardItemModel;
+class QSortFilterProxyModel;
 class QModelIndex;
 
 class SubDownloaderDialog : public QDialog, public Ui::SubDownloaderDialog
@@ -37,6 +38,8 @@ public:
 public slots:
 	void setMovie(QString filename);
 	void refresh();
+	void applyFilter(const QString & filter);
+	void applyCurrentFilter();
 
 protected slots:
 	void showError(QString error);
@@ -53,6 +56,7 @@ protected slots:
 protected:
 	SimpleHttp * downloader;
 	QStandardItemModel * table;
+	QSortFilterProxyModel * proxy_model;
 };
 
 #endif

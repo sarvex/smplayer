@@ -20,6 +20,8 @@
 #include "simplehttp.h"
 #include "osparser.h"
 #include <QStandardItemModel>
+#include <QSortFilterProxyModel>
+#include <QHeaderView>
 #include <QMessageBox>
 #include <QDesktopServices>
 #include <QUrl>
@@ -46,6 +48,9 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
 	connect( refresh_button, SIGNAL(clicked()),
              this, SLOT(refresh()) );
 
+	connect( language_filter, SIGNAL(editTextChanged(const QString &)),
+             this, SLOT(applyFilter(const QString &)) );
+
 	table = new QStandardItemModel(this);
 	table->setColumnCount(COL_USER + 1);
 	table->setHorizontalHeaderLabels( QStringList() << tr("Language") 
@@ -55,7 +60,12 @@ SubDownloaderDialog::SubDownloaderDialog( QWidget * parent, Qt::WindowFlags f )
                                                     << tr("Date") 
                                                     << tr("Uploaded by") );
 
-	view->setModel(table);
+	proxy_model = new QSortFilterProxyModel(this);
+	proxy_model->setSourceModel(table);
+	proxy_model->setFilterKeyColumn(COL_LANG);
+	proxy_model->setFilterRole(Qt::UserRole);
+
+	view->setModel(proxy_model);
 	view->setRootIsDecorated(false);
 	view->setSortingEnabled(true);
 	view->setAlternatingRowColors(true);
@@ -111,6 +121,13 @@ void SubDownloaderDialog::updateRefreshButton() {
 	refresh_button->setEnabled(enabled);
 }
 
+void SubDownloaderDialog::applyFilter(const QString & filter) {
+	proxy_model->setFilterWildcard(filter);
+}
+
+void SubDownloaderDialog::applyCurrentFilter() {
+	proxy_model->setFilterWildcard(language_filter->currentText());
+}
 
 void SubDownloaderDialog::showError(QString error) {
 	QMessageBox::information(this, tr("HTTP"),
@@ -165,7 +182,11 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 			}
 			*/
 
-			table->setItem(n, COL_LANG, new QStandardItem(l[n].language));
+			QStandardItem * i_lang = new QStandardItem(l[n].language);
+			i_lang->setData(l[n].iso639, Qt::UserRole);
+			i_lang->setToolTip(l[n].iso639);
+
+			table->setItem(n, COL_LANG, i_lang);
 			table->setItem(n, COL_NAME, i_name);
 			table->setItem(n, COL_FORMAT, new QStandardItem(l[n].format));
 			table->setItem(n, COL_FILES, new QStandardItem(l[n].files));
@@ -174,15 +195,27 @@ void SubDownloaderDialog::parseInfo(QByteArray xml_text) {
 
 		}
 		status->setText( tr("%1 files available").arg(l.count()) );
+		applyCurrentFilter();
+
+		// For some reason sorting doesn't work
+		/*
+		qDebug("sort column: %d", view->header()->sortIndicatorSection());
+		qDebug("sort indicator: %d", view->header()->sortIndicatorOrder());
+		
+		view->sortByColumn( view->header()->sortIndicatorSection(),
+                            view->header()->sortIndicatorOrder() );
+		*/
+	} else {
+		status->setText( tr("Failed to parse the received data.") );
 	}
 
 	view->resizeColumnToContents(COL_NAME);
 }
 
 void SubDownloaderDialog::itemActivated(const QModelIndex & index ) {
-	qDebug("SubDownloaderDialog::itemActivated: row: %d, col %d", index.row(), index.column());
+	qDebug("SubDownloaderDialog::itemActivated: row: %d, col %d", proxy_model->mapToSource(index).row(), proxy_model->mapToSource(index).column());
 
-	QString download_link = table->item(index.row(), COL_NAME)->data().toString();
+	QString download_link = table->item(proxy_model->mapToSource(index).row(), COL_NAME)->data().toString();
 
 	qDebug("SubDownloaderDialog::itemActivated: download link: '%s'", download_link.toLatin1().constData());
 
