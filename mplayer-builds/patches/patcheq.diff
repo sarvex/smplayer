@@ -1,0 +1,87 @@
+--- ./libaf/af_equalizer.old-c	Sun Jun 15 16:42:11 2008
++++ ./libaf/af_equalizer.c	Mon Jun 16 21:19:43 2008
+@@ -125,12 +125,12 @@
+     }else{
+         s->gain_factor=1;
+     }
+-	
+     return af_test_output(af,arg);
+   }
+   case AF_CONTROL_COMMAND_LINE:{
+     float g[10]={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
+     int i,j;
++    float gain_factor2=0.0;
+     sscanf((char*)arg,"%f:%f:%f:%f:%f:%f:%f:%f:%f:%f", &g[0], &g[1], 
+ 	   &g[2], &g[3], &g[4], &g[5], &g[6], &g[7], &g[8] ,&g[9]);
+     for(i=0;i<AF_NCH;i++){
+@@ -139,6 +139,17 @@
+ 	  pow(10.0,clamp(g[j],G_MIN,G_MAX)/20.0)-1.0;
+       }
+     }
++    
++    //calculate gainfactor for slave command
++    //see: af_eq_set_bands  -> input.c
++    //see code: AF_CONTROL_REINIT  in this file
++     for(j=0;j<KM;j++)
++        if(gain_factor2< s->g[0][j]) gain_factor2=s->g[0][j];
++     gain_factor2=log10(gain_factor2 + 1.0) * 20.0;
++     if(gain_factor2 > 0.0)   gain_factor2=0.1+(gain_factor2/12.0);
++     else gain_factor2=1;
++     s->gain_factor=gain_factor2;
++    
+     return AF_OK;
+   }
+   case AF_CONTROL_EQUALIZER_GAIN | AF_CONTROL_SET:{
+--- ./DOCS/tech//slave.old-txt	Wed Jun 11 09:59:50 2008
++++ ./DOCS/tech/slave.txt	Sun Jun 15 16:30:37 2008
+@@ -455,6 +455,11 @@
+     Run <value> as shell command. In OSD menu console mode stdout and stdin
+     are through the video output driver.
+ 
++af_eq_set_bands <values>
++    Set bands gain in audio equalizer. Se details in manual (-af equalizer).
++    Example:
++       af_eq_set_bands 11:11:10:5:0:-12:0:5:12:12
++
+ 
+ Available properties:
+ 
+--- ./input/input.old-h	Fri Jun 20 21:04:39 2008
++++ ./input/input.h	Fri Jun 20 21:29:02 2008
+@@ -111,6 +111,7 @@
+   MP_CMD_ASS_USE_MARGINS,
+   MP_CMD_SWITCH_TITLE,
+   MP_CMD_STOP,
++  MP_CMD_AF_EQ_SET,
+ 
+   /// GUI commands
+   MP_CMD_GUI_EVENTS = 5000,
+
+--- ./input/input.old-c	Wed Jun 11 09:58:52 2008
++++ ./input/input.c	Sun Jun 15 15:46:54 2008
+@@ -154,6 +154,9 @@
+   { MP_CMD_LOADLIST, "loadlist", 1, { {MP_CMD_ARG_STRING, {0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
+   { MP_CMD_RUN, "run", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
+   { MP_CMD_VF_CHANGE_RECTANGLE, "change_rectangle", 2, { {MP_CMD_ARG_INT,{0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}}}},
++  { MP_CMD_AF_EQ_SET, "af_eq_set_bands", 1, { {MP_CMD_ARG_STRING, {0}}, {-1,{0}}}}, //turbos
++ 
++
+ #ifdef HAVE_TV_TELETEXT
+   { MP_CMD_TV_TELETEXT_ADD_DEC, "teletext_add_dec", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
+   { MP_CMD_TV_TELETEXT_GO_LINK, "teletext_go_link", 1, { {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
+--- ./command.old-c	Wed Jun 11 10:00:42 2008
++++ ./command.c	Sun Jun 15 16:55:48 2008
+@@ -2907,6 +2907,13 @@
+ 	    }
+ 	    break;
+ 
++	case MP_CMD_AF_EQ_SET:{  
++      af_instance_t* m1=af_get(sh_audio->afilter, "equalizer");
++      if (m1) m1->control( m1, AF_CONTROL_COMMAND_LINE, cmd->args[0].v.s);
++      else mp_msg(MSGT_CPLAYER, MSGL_INFO, "failed (forgot -af equalizer=0:0 ?)\n");
++	    }
++      break;
++
+ 	case MP_CMD_VF_CHANGE_RECTANGLE:
+ 	    set_rectangle(sh_video, cmd->args[0].v.i, cmd->args[1].v.i);
+ 	    break;
