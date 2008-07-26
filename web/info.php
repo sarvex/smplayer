@@ -11,9 +11,6 @@ tr("Download <a href=%1>here</a> the latest version of the SMPlayer",
 "\"downloads.php?tr_lang=".$tr_lang."\""); 
 */
 ?>
-<center>
-<a href="http://sourceforge.net/awards/cca/?group_id=185512"><img src="http://sourceforge.net/awards/cca/badge_img.php?group_id=185512&style=5" border="0" /></a>
-</center>
 
 </div>
 
