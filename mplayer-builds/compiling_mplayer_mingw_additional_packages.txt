@@ -81,6 +81,12 @@ patch -p1 < ../fribidi-0.10.9-win32-headers.diff
 make
 make install
 
+PTHREADS:
+Download: ftp://sourceware.org/pub/pthreads-win32/pthreads-w32-2-8-0-release.tar.gz
+make clean GC
+cp pthreadGC2.dll j:/mingw/lib/
+cp pthread.h sched.h semaphore.h j:/mingw/include/
+
 ----------------------------------------------------------------------------
 UNZIP (required by libamrnb):
 Download: ftp://ftp.uu.net/pub/archiving/zip/WIN32/unz542dN.zip
