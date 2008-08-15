@@ -50,7 +50,7 @@ echo download_windows_lite_link();
 ?>
 <br>
 <?php
-tr("This package contains everything needed to run smplayer: Qt shared 
+tr("This package contains everything needed to run smplayer: shared 
 libraries, translation files, icon themes and a mplayer 
 build (the version included is %1).","<i>SVN r27130</i>"); echo " ";
 /*
@@ -80,7 +80,7 @@ echo "<b>";
 <?php
 echo download_windows_7z_link();
 echo "<br>";
-tr("Package (without installer) which includes smplayer, Qt shared libraries,
+tr("Package (without installer) which includes smplayer, shared libraries,
 translations and icon themes. It doesn't include mplayer."); 
 echo " <b>";
 echo tr("This package is for advanced users only!");
@@ -123,8 +123,6 @@ the <a href=%1>mplayer site</a> (%2).",
 ?>
 </td>
 </tr>
-
-
 </table>
 
 <!-- LINUX -->
@@ -243,6 +241,16 @@ echo "<h2>".get_tr("Contributed packages")."</h2>";
 tr("There are available packages for other distros, created
 by other people. <a href=%1>Click here</a> to see them.",
 "\"http://smplayer.wiki.sourceforge.net/Contributed+Packages\"");
+?>
+
+<?php
+echo "<h2>".get_tr("Related Project")."</h2>";
+echo "<b><a href=\"http://mulder.dummwiedeutsch.de/home/?page=projects#mplayer\">";
+echo "MPlayer for Windows</a></b> ".get_tr("by MuldeR")."<br>";
+tr("This package contains a very recent version of SMPlayer (often taken from
+the SVN repository) as well as a recent version of MPlayer. It also provides
+its own installer, mplayer builds optimized for several processors and
+binary codecs.");
 ?>
 
 <!-- Unstable releases -->
