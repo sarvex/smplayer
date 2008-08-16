@@ -73,28 +73,6 @@ echo "<b>";
 </td>
 </tr>
 
-
-<tr>
-<td><img src="iconos/package.png"></td>
-<td>
-<?php
-echo download_windows_7z_link();
-echo "<br>";
-tr("Package (without installer) which includes smplayer, shared libraries,
-translations and icon themes. It doesn't include mplayer."); 
-echo " <b>";
-echo tr("This package is for advanced users only!");
-echo "</b>";
-echo "<br><b><i>";
-/*
-tr("Package for those who don't like installers and/or want to use another 
-mplayer build.");
-*/
-echo"</i></b>";
-?>
-</td>
-</tr>
-
 <!-- codecs -->
 
 <tr>
@@ -123,6 +101,52 @@ the <a href=%1>mplayer site</a> (%2).",
 ?>
 </td>
 </tr>
+
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<?php
+echo download_windows_7z_link();
+echo "<br>";
+tr("Package (without installer) which includes smplayer, shared libraries,
+translations and icon themes. It doesn't include mplayer."); 
+echo " <b>";
+echo tr("This package is for advanced users only!");
+echo "</b>";
+//echo "<br>";
+//echo "<b><i>";
+/*
+tr("Package for those who don't like installers and/or want to use another 
+mplayer build.");
+*/
+//echo"</i></b>";
+?>
+</td>
+</tr>
+
+
+<!-- Portable Edition -->
+
+<tr>
+<td><img src="iconos/package.png"></td>
+<td>
+<?php
+echo download_windows_portable_link();
+echo "<br>";
+tr("Portable version of SMPlayer. It can be run from external devices, like 
+USB flash drives. It doesn't require installation, just uncompress the 
+package wherever you want and double click to run it.");
+echo " ";
+tr("The package also includes the icon themes, translations and a 
+MPlayer build.");
+echo " ";
+tr("Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>.",
+"\"http://www.7-zip.org/\"");
+?>
+</td>
+</tr>
+
+
 </table>
 
 <!-- LINUX -->

@@ -29,6 +29,10 @@ function download_windows_7z_link() {
 	return create_link("smplayer-0.6.2_without_mplayer.7z", 6327804 );
 }
 
+function download_windows_portable_link() {
+	return create_link("smplayer-portable_0.6.2.7z", 11175983 );
+}
+
 
 function download_themes_src_link() {
 	return create_link("smplayer-themes-0.1.16.tar.bz2", 1885765 );
