@@ -9,7 +9,7 @@ function header_print_section($name, $link, $is_active) {
 	echo "><a href=\"".$link."\"><span";
 	if ($is_active) echo $act_color; else echo ">";
 	echo $name;
-	echo "</a></span></li>\n";
+	echo "</span></a></li>\n";
 }
 
 function print_language_link($file, $name, $cod, $query, $last=false) {
@@ -74,9 +74,9 @@ function header_set_section($s, $rel_path="") {
 	//header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
 	header_print_section(get_tr("Forum"), "http://smplayer.berlios.de/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
 
-	header_print_section(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&atid=913573", ($s=="bugs"));
+	header_print_section(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", ($s=="bugs"));
 
-	header_print_section(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&atid=913576", ($s=="features"));
+	header_print_section(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", ($s=="features"));
 
 	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 

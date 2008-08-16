@@ -42,7 +42,7 @@ echo "<h2>".get_tr("Windows")."</h2>";
 <table>
 
 <tr>
-<td><img src="iconos/kpackage.png"></td>
+<td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php 
 echo "<b>"; tr("Package with installer:"); echo "</b> ";
@@ -76,7 +76,7 @@ echo "<b>";
 <!-- codecs -->
 
 <tr>
-<td><img src="iconos/kpackage.png"></td>
+<td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php 
 echo "<b>"; tr("Additional codecs:"); echo "</b> ";
@@ -103,7 +103,7 @@ the <a href=%1>mplayer site</a> (%2).",
 </tr>
 
 <tr>
-<td><img src="iconos/package.png"></td>
+<td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
 echo download_windows_7z_link();
@@ -128,7 +128,7 @@ mplayer build.");
 <!-- Portable Edition -->
 
 <tr>
-<td><img src="iconos/package.png"></td>
+<td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
 echo download_windows_portable_link();
@@ -156,7 +156,7 @@ echo "<h2>".get_tr("Linux")."</h2>";
 <p>
 <table>
 <tr>
-<td><img src="iconos/package.png"></td>
+<td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
 echo download_src_link();
@@ -167,7 +167,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 </tr>
 
 <tr>
-<td><img src="iconos/suse.png"></td>
+<td><img src="iconos/suse.png" alt="*"></td>
 <td>
 <?php
 echo download_rpm_link();
@@ -178,7 +178,7 @@ tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer.");
 </tr>
 
 <tr>
-<td><img src="iconos/ubuntu.png"></td>
+<td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
 <?php
 echo download_deb_link();
@@ -195,7 +195,7 @@ tr("Package for AMD64. Compiled on Ubuntu 8.04.");
 </tr>
 
 <tr>
-<td><img src="iconos/ubuntu.png"></td>
+<td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
 <?php
 echo "<b>"; tr("Suggested package:"); echo "</b><br>";
@@ -216,7 +216,7 @@ tr("Optional packages which provide some icon themes.");
 <p>
 <table>
 <tr>
-<td><img src="iconos/package.png"></td>
+<td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php 
 echo download_themes_src_link();
@@ -227,7 +227,7 @@ echo download_themes_nonfree_src_link();
 </tr>
 
 <tr>
-<td><img src="iconos/suse.png"></td>
+<td><img src="iconos/suse.png" alt="*"></td>
 <td>
 <?php
 echo download_themes_rpm_link();
@@ -238,7 +238,7 @@ echo download_themes_nonfree_rpm_link();
 </tr>
 
 <tr>
-<td><img src="iconos/ubuntu.png"></td>
+<td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
 <?php
 echo download_themes_deb_link();
