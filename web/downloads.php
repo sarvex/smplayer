@@ -135,7 +135,7 @@ echo download_windows_portable_link();
 echo "<br>";
 tr("Portable version of SMPlayer. It can be run from external devices, like 
 USB flash drives. It doesn't require installation, just uncompress the 
-package wherever you want and double click to run it.");
+package wherever you want and double click on smplayer.exe to run it.");
 echo " ";
 tr("The package also includes the icon themes, translations and a 
 MPlayer build.");
