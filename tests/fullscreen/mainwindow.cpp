@@ -2,6 +2,7 @@
 #include "mainwindow.h"
 #include <QStatusBar>
 #include <QMenuBar>
+#include <QToolBar>
 #include <QAction>
 #include <QMenu>
 #include <QColorDialog>
@@ -39,9 +40,14 @@ MainWindow::MainWindow( QWidget* parent, Qt::WindowFlags flags )
     QMenu * file_menu = menuBar()->addMenu(tr("&Actions"));
     file_menu->addAction(fullscreen_action);
     file_menu->addAction(pickcolor_action);
+    file_menu->addSeparator();
     file_menu->addAction(exit_action);
 
     this->addAction(fullscreen_action); // So the shortcut works without the menu
+
+    toolbar = addToolBar("Toolbar");
+    toolbar->addAction(fullscreen_action);
+    toolbar->addAction(pickcolor_action);
 
     statusBar()->showMessage("Hello", 0);
 }
@@ -65,10 +71,14 @@ void MainWindow::setFullscreen(bool b) {
     if (b) {
         menuBar()->hide();
         statusBar()->hide();
+        toolbar->hide();
+
         showFullScreen();
     } else {
         showNormal();
+
         menuBar()->show();
         statusBar()->show();
+        toolbar->show();
     }
 }

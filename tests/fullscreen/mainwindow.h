@@ -3,6 +3,7 @@
 
 class QWidget;
 class QAction;
+class QToolBar;
 
 class MainWindow : public QMainWindow
 {
@@ -25,4 +26,6 @@ protected:
     QAction * exit_action;
 
     QWidget * panel;
+
+    QToolBar * toolbar;
 };
