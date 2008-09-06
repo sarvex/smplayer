@@ -1,22 +1,23 @@
 Index: debian/control
 ===================================================================
---- debian/control	(revisión: 27514)
+--- debian/control	(revisión: 27531)
 +++ debian/control	(copia de trabajo)
-@@ -7,7 +7,10 @@
+@@ -7,7 +7,11 @@
  
  Package: mplayer
  Architecture: any
 -Depends: ${shlibs:Depends},debconf,libconfhelper-perl
-+Depends: ${shlibs:Depends}
++Depends: ${shlibs:Depends}, mplayer-skin-blue, ttf-bitstream-vera, ttf-dejavu
 +Replaces: mplayer-nogui, mplayer-doc, mencoder
 +Conflicts: mplayer-nogui, mplayer-doc, mencoder
 +Provides: mencoder, mplayer-doc
++Suggests: w32codecs
  Description: The Ultimate Movie Player 
   MPlayer is a movie player for LINUX (runs on many other Unices, and non-x86
   CPUs, see the ports section). It plays most MPEG, VOB, AVI, OGG/OGM, VIVO,
 Index: debian/postinst
 ===================================================================
---- debian/postinst	(revisión: 27514)
+--- debian/postinst	(revisión: 27531)
 +++ debian/postinst	(copia de trabajo)
 @@ -1,58 +0,0 @@
 -#!/usr/bin/perl -w
@@ -79,7 +80,7 @@ Index: debian/postinst
 -   or die "Problem with debhelper scripts: $!";
 Index: debian/postrm
 ===================================================================
---- debian/postrm	(revisión: 27514)
+--- debian/postrm	(revisión: 27531)
 +++ debian/postrm	(copia de trabajo)
 @@ -1,18 +0,0 @@
 -#!/bin/sh
