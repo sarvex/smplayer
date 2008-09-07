@@ -2,7 +2,7 @@ Index: create_deb.sh
 ===================================================================
 --- create_deb.sh	(revisión: 0)
 +++ create_deb.sh	(revisión: 0)
-@@ -0,0 +1,19 @@
+@@ -0,0 +1,22 @@
 +#!/bin/sh
 +
 +svn_revision=`LC_ALL=C svn info 2> /dev/null | grep Revision | cut -d' ' -f2`
@@ -14,10 +14,13 @@ Index: create_deb.sh
 +dch -v "2:1.0rc2svn$svn_revision" "New version"
 +
 +# Generic build
-+#DEB_BUILD_OPTIONS="--enable-runtime-cpudetection --enable-gui" fakeroot debian/rules binary
++DEB_BUILD_OPTIONS="--enable-runtime-cpudetection --enable-gui" fakeroot debian/rules binary
++
++# Build with cpu runtime detection, and using 2 threads for make
++#DEB_BUILD_OPTIONS="--enable-runtime-cpudetection --enable-gui" MAKE_OPTS="-j 2" fakeroot debian/rules binary
 +
 +# Build optimized for the user's processor, and using 2 threads for make
-+DEB_BUILD_OPTIONS="--enable-gui" MAKE_OPTS="-j 2" fakeroot debian/rules binary
++#DEB_BUILD_OPTIONS="--enable-gui" MAKE_OPTS="-j 2" fakeroot debian/rules binary
 +
 +# Clean
 +rm debian/changelog
@@ -41,6 +44,17 @@ Index: debian/rules
  
  	touch build-stamp
  
+@@ -59,8 +59,9 @@
+ 	dh_link usr/bin/mplayer usr/bin/gmplayer \
+ 		usr/share/man/man1/mplayer.1.gz usr/share/man/man1/gmplayer.1.gz
+ 
++	dh_install debian/mplayer.conf etc/mplayer/
+ 
+-	dh_installdebconf	
++#	dh_installdebconf	
+ 	dh_installdocs -X.svn -Xmplayer.1 DOCS/*
+ 	dh_installexamples etc/example.conf etc/dvb-menu.conf etc/input.conf etc/menu.conf
+ 	dh_installmenu
 Index: debian/changelog
 ===================================================================
 --- debian/changelog	(revisión: 27531)
@@ -455,3 +469,142 @@ Index: debian/changelog-orig
 +  * Initial release.
 +
 + -- * TeLeNiEkO * <telenieko@telenieko.com>  Mon, 26 Feb 2001 12:24:04 +0100
+Index: debian/mplayer.conf
+===================================================================
+--- debian/mplayer.conf	(revisión: 0)
++++ debian/mplayer.conf	(revisión: 0)
+@@ -0,0 +1,134 @@
++#
++# MPlayer configuration file
++#
++# Configuration files are read system-wide from /usr/local/etc/mplayer.conf
++# and per user from ~/.mplayer/config, where per-user settings override
++# system-wide settings, all of which are overrriden by the command line.
++#
++# The configuration file settings are the same as the command line
++# options without the preceding '-'.
++#
++# See the CONFIGURATION FILES section in the man page
++# for a detailed description of the syntax.
++
++
++##################
++# video settings #
++##################
++
++# Specify default video driver (see -vo help for a list).
++vo=xv,
++
++# Use SDL video with the aalib subdriver by default.
++#vo = sdl:aalib
++
++# FBdev driver:
++#
++# mode to use (read from fb.modes)
++#fbmode = 640x480-120
++#
++# location of the fb.modes file
++#fbmodeconfig = /etc/fb.modes
++
++# Specify your monitor timings for the vesa and fbdev video output drivers.
++# See /etc/X11/XF86Config for timings. Be careful; if you specify settings
++# that exceed the capabilities of your monitor, you may damage it.
++#
++# horizontal frequency range (k stands for 1000)
++#monitor-hfreq = 31.5k-50k,70k
++#
++# vertical frequency range
++#monitor-vfreq = 50-90
++#
++# dotclock (or pixelclock) range (m stands for 1000000)
++#monitor-dotclock = 30M-300M
++
++# Start in fullscreen mode by default.
++#fs=yes
++
++# Change to a different videomode when going fullscreen.
++#vm=yes
++
++# Override the autodetected color depth, may need 'vm=yes' as well.
++#bpp=0
++
++# Enable software scaling (powerful CPU needed) for video output
++# drivers that do not support hardware scaling.
++#zoom=yes
++
++# standard monitor size, with square pixels
++#monitoraspect=4:3
++
++# Use this for a widescreen monitor, non-square pixels.
++#monitoraspect=16:9
++
++# Keep the player window on top of all other windows.
++#ontop=yes
++
++
++##################
++# audio settings #
++##################
++
++# Specify default audio driver (see -ao help for a list).
++ao=alsa,
++
++# Use SDL audio driver with the esd subdriver by default.
++#ao = sdl:esd
++
++# Specify the mixer device.
++#mixer = /dev/mixer
++
++# Resample the sound to 44100Hz with the lavcresample audio filter.
++#af=lavcresample=44100
++
++
++##################
++# other settings #
++##################
++
++# Default font
++font=/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf
++
++# Pretend to be Window Media Player.
++# Fixes playback when playlist and media file use the same URL.
++#user-agent=NSPlayer/4.1.0.3856
++
++# Drop frames to preserve audio/video sync.
++#framedrop = yes
++
++# Specify your preferred skin here (skins are searched for in
++# /usr/local/share/mplayer/skins/<name> and ~/.mplayer/skins/<name>).
++#skin = Abyss
++
++# Resample the font alphamap.
++# 0     plain white fonts
++# 0.75  very narrow black outline (default)
++# 1     narrow black outline
++# 10    bold black outline
++#ffactor = 0.75
++
++# cache settings
++#
++# Use 8MB input cache by default.
++#cache = 8192
++#
++# Prefill 20% of the cache before starting playback.
++#cache-min = 20.0
++#
++# Prefill 50% of the cache before restarting playback after the cache emptied.
++#cache-seek-min = 50
++
++# DVD: Display English subtitles if available.
++#slang = en
++
++# DVD: Play English audio tracks if available.
++#alang = en
++
++###################
++# DVDNAV Settings #
++###################
++#vc=ffmpeg12,
++
++# You can also include other configuration files.
++#include = /path/to/the/file/you/want/to/include
