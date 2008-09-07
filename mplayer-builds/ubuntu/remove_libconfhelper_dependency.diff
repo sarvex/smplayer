@@ -7,7 +7,7 @@ Index: debian/control
  Package: mplayer
  Architecture: any
 -Depends: ${shlibs:Depends},debconf,libconfhelper-perl
-+Depends: ${shlibs:Depends}, mplayer-skin-blue, ttf-bitstream-vera, ttf-dejavu
++Depends: ${shlibs:Depends}, mplayer-skin-blue, ttf-bitstream-vera
 +Replaces: mplayer-nogui, mplayer-doc, mencoder
 +Conflicts: mplayer-nogui, mplayer-doc, mencoder
 +Provides: mencoder, mplayer-doc
