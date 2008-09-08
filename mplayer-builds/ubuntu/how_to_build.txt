@@ -1,0 +1,33 @@
+The following document will explain how to build the above package, in case you prefer to compile mplayer yourself.
+
+First let's install Subversion and other packages we're going to need:
+
+[code]sudo apt-get install subversion devscripts fakeroot[/code]
+Now we create a directory to save the mplayer sources:
+[code]mkdir mplayer
+cd mplayer[/code]
+Download the mplayer sources from svn:
+[code]svn checkout svn://svn.mplayerhq.hu/mplayer/trunk svn[/code]
+Now we're going to download the patches we'll use later:
+[code]wget http://smplayer.svn.sourceforge.net/viewvc/smplayer/mplayer-builds/ubuntu/create_deb.diff
+wget http://smplayer.svn.sourceforge.net/viewvc/smplayer/mplayer-builds/ubuntu/remove_libconfhelper_dependency.diff
+wget http://smplayer.svn.sourceforge.net/viewvc/smplayer/mplayer-builds/patches/startupvol.diff
+wget http://smplayer.svn.sourceforge.net/viewvc/smplayer/mplayer-builds/patches/patcheq.diff[/code]
+Now we download and install all build dependencies for mplayer (this may take a while, it may download up to 37 MB):
+[code]cd svn
+sudo apt-get build-dep mplayer[/code]
+Now we're going to patch the mplayer sources (be sure you're in the [i]svn[/i] directory):
+[code]patch -p0 -E -i ../remove_libconfhelper_dependency.diff
+patch -p0 -E -i ../create_deb.diff
+patch -p0 -E -i ../startupvol.diff
+patch -p0 -E -i ../patcheq.diff[/code]
+Now we're ready to start to compile. But first, let's give the script [i]create_deb.sh[/i] executable permissions:
+[code]chmod 755 create_deb.sh[/code]
+Finally, let's compile mplayer:
+[code]./create_deb.sh[/code]
+That'll take some minutes, depending on your processor's speed.
+
+Now we can install the package:
+[code]sudo dpkg -i mplayer_1.0rc2svn27483_i386.deb[/code]
+If it complains about missing dependencies, just let's install them with apt-get.
+[code]sudo apt-get install mplayer-skin-blue[/code]
