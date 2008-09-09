@@ -201,9 +201,13 @@ tr("Package for AMD64. Compiled on Ubuntu 8.04.");
 echo "<b>"; tr("Suggested package:"); echo "</b><br>";
 tr("The version of mplayer included in Ubuntu is a little bit old (%1). SMPlayer 
 has support for some of the new features of mplayer, so a newer version 
-is highly recommended. You can download here %2 (from %3).", "1.0rc2", 
-"<b><a href=\"http://downloads.sourceforge.net/smplayer/mplayer_1.0rc2svn25873_i386.deb\">MPlayer SVN r25873</a></b>",
-"2008-01-27");
+is highly recommended.", "1.0rc2");
+echo " ";
+tr("You can get updated versions <a href=%1>here</a>",
+"\"http://sourceforge.net/project/showfiles.php?group_id=185512&package_id=260588\"");
+echo ". ";
+echo "<a href=\"http://smplayer.berlios.de/forums/viewtopic.php?id=741\">" . 
+get_tr("More info") . "</a>.";
 ?>
 </td>
 </tr>
