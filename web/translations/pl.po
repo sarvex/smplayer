@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-17 01:49+0200\n"
+"POT-Creation-Date: 2008-09-09 02:21+0200\n"
 "PO-Revision-Date: 2008-06-23 12:59+0200\n"
 "Last-Translator: Jarek\n"
 "Language-Team:  <pl@li.org>\n"
@@ -131,25 +131,30 @@ msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
-"is highly recommended. You can download here %2 (from %3)."
+"is highly recommended."
 msgstr ""
-"W Ubuntu znajdziesz mplayer w dość starej wersji (%1). SMPlayer obsłuży\n"
-"kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
-"Można ją pobrać stąd %2 (z %3)."
 
-#: ../downloads.php:213
+#: ../downloads.php:206
+msgid "You can get updated versions <a href=%1>here</a>"
+msgstr ""
+
+#: ../downloads.php:210
+msgid "More info"
+msgstr ""
+
+#: ../downloads.php:217
 msgid "Icon Themes:"
 msgstr "Tematy ikon:"
 
-#: ../downloads.php:214
+#: ../downloads.php:218
 msgid "Optional packages which provide some icon themes."
 msgstr "Opcjonalne pakiety zawierające kilka tematów ikon"
 
-#: ../downloads.php:256
+#: ../downloads.php:260
 msgid "Additional packages"
 msgstr "Dodatkowe pakiety"
 
-#: ../downloads.php:257
+#: ../downloads.php:261
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -157,11 +162,11 @@ msgstr ""
 "Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
 "<a href=%1>Zobacz stronę pobierania sourceforge</a>."
 
-#: ../downloads.php:264
+#: ../downloads.php:268
 msgid "Contributed packages"
 msgstr "Pakiety stworzone przez różne osoby"
 
-#: ../downloads.php:265
+#: ../downloads.php:269
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -169,15 +174,15 @@ msgstr ""
 "Tutaj dostępne są pakiety wykonane przez różne osoby\n"
 "dla innych dystrybucji. <a href=%1>Kliknij</a> aby je zobaczyć."
 
-#: ../downloads.php:271
+#: ../downloads.php:275
 msgid "Related Project"
 msgstr ""
 
-#: ../downloads.php:273
+#: ../downloads.php:277
 msgid "by MuldeR"
 msgstr ""
 
-#: ../downloads.php:274
+#: ../downloads.php:278
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -186,12 +191,12 @@ msgid ""
 "binary codecs."
 msgstr ""
 
-#: ../downloads.php:285
+#: ../downloads.php:289
 msgid "Unstable releases"
 msgstr "Wydania niestabilne"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:287
+#: ../downloads.php:291
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -422,6 +427,14 @@ msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
 #~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Pakiet (bez instalatora), który zawiera smplayer, bibliotekę Qt, \n"
+#~ "pliki językowe i tematy ikon. Nie zawiera on mplayera."
+
+#~ msgid ""
 #~ "This package contains everything needed to run smplayer: Qt shared \n"
 #~ "libraries, translation files, icon themes and a mplayer \n"
 #~ "build (the version included is %1)."
@@ -431,9 +444,11 @@ msgstr "SMPlayer uruchomiony w nowym KDE 4"
 #~ "(jest on w wersji %1)."
 
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "Pakiet (bez instalatora), który zawiera smplayer, bibliotekę Qt, \n"
-#~ "pliki językowe i tematy ikon. Nie zawiera on mplayera."
+#~ "W Ubuntu znajdziesz mplayer w dość starej wersji (%1). SMPlayer obsłuży\n"
+#~ "kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
+#~ "Można ją pobrać stąd %2 (z %3)."
