@@ -1,15 +1,3 @@
-Index: libmpcodecs/Makefile
-===================================================================
---- libmpcodecs/Makefile	(revisión: 25312)
-+++ libmpcodecs/Makefile	(copia de trabajo)
-@@ -52,6 +52,7 @@
-               vf_field.c \
-               vf_fil.c \
-               vf_filmdint.c \
-+              vf_fixpts.c \
-               vf_flip.c \
-               vf_format.c \
-               vf_framestep.c \
 Index: libmpcodecs/vf_fixpts.c
 ===================================================================
 --- libmpcodecs/vf_fixpts.c	(revisión: 0)
@@ -154,7 +142,7 @@ Index: libmpcodecs/vf_fixpts.c
 +};
 Index: libmpcodecs/vf.c
 ===================================================================
---- libmpcodecs/vf.c	(revisión: 25312)
+--- libmpcodecs/vf.c	(revisión: 27605)
 +++ libmpcodecs/vf.c	(copia de trabajo)
 @@ -99,6 +99,7 @@
  extern const vf_info_t vf_info_blackframe;
@@ -172,11 +160,23 @@ Index: libmpcodecs/vf.c
      NULL
  };
  
+Index: Makefile
+===================================================================
+--- Makefile	(revisión: 27605)
++++ Makefile	(copia de trabajo)
+@@ -125,6 +125,7 @@
+               libmpcodecs/vf_field.c \
+               libmpcodecs/vf_fil.c \
+               libmpcodecs/vf_filmdint.c \
++              libmpcodecs/vf_fixpts.c \
+               libmpcodecs/vf_flip.c \
+               libmpcodecs/vf_format.c \
+               libmpcodecs/vf_framestep.c \
 Index: cfg-mencoder.h
 ===================================================================
---- cfg-mencoder.h	(revisión: 25312)
+--- cfg-mencoder.h	(revisión: 27605)
 +++ cfg-mencoder.h	(copia de trabajo)
-@@ -211,6 +211,9 @@
+@@ -213,6 +213,9 @@
  	
  	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
  	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
@@ -188,9 +188,9 @@ Index: cfg-mencoder.h
  	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
 Index: DOCS/man/en/mplayer.1
 ===================================================================
---- DOCS/man/en/mplayer.1	(revisión: 25312)
+--- DOCS/man/en/mplayer.1	(revisión: 27605)
 +++ DOCS/man/en/mplayer.1	(copia de trabajo)
-@@ -6948,6 +6948,48 @@
+@@ -7154,6 +7154,48 @@
  Threshold below which a pixel value is considered black (default: 32).
  .RE
  .
@@ -239,7 +239,7 @@ Index: DOCS/man/en/mplayer.1
  .
  .
  .SH "GENERAL ENCODING OPTIONS (MENCODER ONLY)"
-@@ -7070,6 +7112,14 @@
+@@ -7276,6 +7318,14 @@
  Do not write OpenDML index for AVI files >1GB.
  .
  .TP
@@ -256,9 +256,9 @@ Index: DOCS/man/en/mplayer.1
  .
 Index: libass/ass_cache.c
 ===================================================================
---- libass/ass_cache.c	(revisión: 25312)
+--- libass/ass_cache.c	(revisión: 27605)
 +++ libass/ass_cache.c	(copia de trabajo)
-@@ -289,6 +289,39 @@
+@@ -291,6 +291,39 @@
  	free(value);
  }
  
@@ -298,7 +298,7 @@ Index: libass/ass_cache.c
  void* cache_add_glyph(glyph_hash_key_t* key, glyph_hash_val_t* val)
  {
  	return hashmap_insert(glyph_cache, key, val);
-@@ -309,7 +342,9 @@
+@@ -311,7 +344,9 @@
  	glyph_cache = hashmap_init(sizeof(glyph_hash_key_t),
  				   sizeof(glyph_hash_val_t),
  				   0xFFFF + 13,
@@ -311,9 +311,9 @@ Index: libass/ass_cache.c
  void ass_glyph_cache_done(void)
 Index: mencoder.c
 ===================================================================
---- mencoder.c	(revisión: 25312)
+--- mencoder.c	(revisión: 27605)
 +++ mencoder.c	(copia de trabajo)
-@@ -204,6 +204,7 @@
+@@ -198,6 +198,7 @@
  
  int auto_expand=1;
  int encode_duplicates=1;
@@ -321,21 +321,21 @@ Index: mencoder.c
  
  // infos are empty by default
  char *info_name=NULL;
-@@ -363,6 +364,44 @@
+@@ -361,6 +362,44 @@
  
  static muxer_t* muxer=NULL;
  
 +void add_subtitles(char *filename, float fps, int silent)
 +{
 +    sub_data *subd;
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +    ass_track_t *asst = 0;
 +#endif
 +
 +    if (filename == NULL) return;
 +
 +    subd = sub_read_file(filename, fps);
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +    if (ass_enabled)
 +#ifdef USE_ICONV
 +        asst = ass_read_file(ass_library, filename, sub_cp);
@@ -352,7 +352,7 @@ Index: mencoder.c
 +        mp_msg(MSGT_CPLAYER, MSGL_ERR, MSGTR_CantLoadSub,
 +		filename_recode(filename));
 + 
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +    if (!asst && !subd) return;
 +    ass_track = asst;
 +#else
@@ -366,18 +366,18 @@ Index: mencoder.c
  extern void print_wave_header(WAVEFORMATEX *h, int verbose_level);
  
  int main(int argc,char* argv[]){
-@@ -561,6 +600,10 @@
+@@ -562,6 +601,10 @@
    m_entry_set_options(mconfig,&filelist[curfile]);
    filename = filelist[curfile].name;
   
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +  ass_library = ass_init();
 +#endif
 +
    if(!filename){
  	mp_msg(MSGT_CPLAYER, MSGL_FATAL, MSGTR_MissingFilename);
  	mencoder_exit(1,NULL);
-@@ -661,26 +704,6 @@
+@@ -685,26 +728,6 @@
      }
    }
  
@@ -404,11 +404,11 @@ Index: mencoder.c
  // set up video encoder:
  
  if (!curfile) { // curfile is non zero when a second file is opened
-@@ -860,12 +883,72 @@
+@@ -885,12 +908,72 @@
      ve = sh_video->vfilter;
    } else sh_video->vfilter = ve;
      // append 'expand' filter, it fixes stride problems and renders osd:
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +    if (auto_expand && !ass_enabled) { /* we do not want both */
 +#else
      if (auto_expand) {
@@ -417,7 +417,7 @@ Index: mencoder.c
        sh_video->vfilter=vf_open_filter(sh_video->vfilter,"expand",vf_args);
      }
 +
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +  if(ass_enabled) {
 +    int i;
 +    int insert = 1;
@@ -447,7 +447,7 @@ Index: mencoder.c
 +
      sh_video->vfilter=append_filters(sh_video->vfilter);
  
-+#ifdef USE_ASS
++#ifdef CONFIG_ASS
 +  if (ass_enabled)
 +    ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_INIT_EOSD, ass_library);
 +#endif
@@ -477,7 +477,7 @@ Index: mencoder.c
      mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
      init_best_video_codec(sh_video,video_codec_list,video_fm_list);
      mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
-@@ -1316,7 +1399,8 @@
+@@ -1346,7 +1429,8 @@
      // decode_video will callback down to ve_*.c encoders, through the video filters
      {void *decoded_frame = decode_video(sh_video,frame_data.start,frame_data.in_size,
        skip_flag>0 && (!sh_video->vfilter || ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_SKIP_NEXT_FRAME, 0) != CONTROL_TRUE), MP_NOPTS_VALUE);
@@ -485,5 +485,5 @@ Index: mencoder.c
 +    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame,
 +	keep_pts ? sh_video->pts : MP_NOPTS_VALUE);}
      
-     if (sh_video->vf_inited < 0) mencoder_exit(1, NULL);
+     if (sh_video->vf_initialized < 0) mencoder_exit(1, NULL);
      
