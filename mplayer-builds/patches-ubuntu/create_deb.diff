@@ -1,0 +1,36 @@
+Index: create_deb.sh
+===================================================================
+--- create_deb.sh	(revisión: 0)
++++ create_deb.sh	(revisión: 0)
+@@ -0,0 +1,25 @@
++#!/bin/sh
++
++svn_revision=`LC_ALL=C svn info 2> /dev/null | grep Revision | cut -d' ' -f2`
++test $svn_revision || svn_revision=`grep revision .svn/entries 2>/dev/null | cut -d '"' -f2`
++test $svn_revision || svn_revision=`sed -n -e '/^dir$/{n;p;q;}' .svn/entries 2>/dev/null`
++test $svn_revision || svn_revision=UNKNOWN
++
++# New debian
++mv debian debian-upstream
++ln -sf debian-rvm debian
++
++# Add entry to changelog with svn revision
++cp debian/changelog-orig debian/changelog
++dch -v "2:1.0rc2svn$svn_revision" "New version"
++
++# Build
++rm build-gui-stamp
++chmod 755 debian-rvm/rules
++fakeroot debian/rules binary
++
++# Clean
++dh_clean
++rm debian/changelog
++rm debian
++mv debian-upstream debian
+
+Cambios de propiedades en create_deb.sh
+___________________________________________________________________
+Nombre: svn:executable
+   + *
+

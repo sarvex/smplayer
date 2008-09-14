@@ -1,0 +1,1083 @@
+Index: debian-rvm/control
+===================================================================
+--- debian-rvm/control	(revisión: 0)
++++ debian-rvm/control	(revisión: 0)
+@@ -0,0 +1,48 @@
++Source: mplayer
++Section: graphics
++Priority: extra
++Maintainer: Ubuntu MOTU Media Team <motumedia@tauware.de>
++Standards-Version: 3.7.2
++Build-Depends: debhelper (>= 5.0.37), libncurses5-dev, libesd0-dev, liblircclient-dev, libgtk2.0-dev, libvorbis-dev, libsdl1.2-dev, sharutils, libasound2-dev (>= 1.0.1), liblzo-dev, gawk, libjpeg62-dev, libaudiofile-dev, libsmbclient-dev, libxv-dev, libpng3-dev, libgif-dev, libcdparanoia0-dev, libxvidcore4-dev, libdv-dev, liblivemedia-dev (>= 2004.05.01), libfreetype6-dev, em8300-headers, libgl1-mesa-dev | libgl-dev, libdvdread-dev, libdts-dev, libtheora-dev, libglu1-mesa-dev | libglu-dev, libartsc0-dev, libfontconfig-dev, libxxf86dga-dev, libxinerama-dev, libxxf86vm-dev, libmp3lame-dev | liblame-dev, libxvmc-dev, libggi2-dev, ttf-bitstream-vera, libmpcdec-dev, libspeex-dev, libfribidi-dev, libfaac-dev (>=1.26), sed (>= 4.0), libaa1-dev, libcaca-dev, libx264-dev (>= 1:0.cvs20060720), libpulse-dev, libmad0-dev, ladspa-sdk, libdbus-glib-1-dev, libaudio-dev, liblzo2-dev, libdvdnav-dev, libopenal-dev, libjack-dev, libtwolame-dev, libsvga1-dev [i386 amd64], libenca-dev
++XS-Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-dev/mplayer/ubuntu
++
++Package: mplayer
++Architecture: any
++Depends: ${shlibs:Depends}, ttf-bitstream-vera, mplayer-skins, ttf-dejavu-core
++Suggests: w32codecs, libdvdcss, mplayer-doc, ladspa-sdk
++Conflicts: mplayer-nogui
++Replaces: mplayer-nogui
++Description: The Ultimate Movie Player For Linux
++ It plays most mpeg, avi and asf files, supported by many native and win32
++ DLL codecs. You can watch VCD, DVD and even DivX movies too. The other
++ big feature of mplayer is the wide range of supported output drivers. It
++ works with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, but you can use SDL (and
++ this way all drivers of SDL) and some lowlevel card-specific drivers (for
++ Matrox/3dfx/SiS) too! Most of them supports software or hardware scaling,
++ so you can enjoy movies in fullscreen.
++ .
++ This version includes the Gtk GUI
++
++Package: mencoder
++Architecture: any
++Depends: ${shlibs:Depends}
++Suggests: w32codecs, libdvdcss, mplayer-doc
++Description: MPlayer's Movie Encoder
++ A simple movie encoder, designed to encode MPlayer-playable movies
++ (AVI/ASF/OGG/DVD/VCD/VOB/MPG/MOV/VIV/FLI/RM/NUV/NET) to other
++ MPlayer-playable formats. It can encode with various codecs, like DivX4 (1
++ or 2 passes), libavcodec, PCM/MP3/VBRMP3 audio. Also has stream copying and
++ video resizing abilities.
++
++Package: mplayer-doc
++Architecture: all
++Description: The Ultimate Movie Player For Linux (Documentation)
++ It plays most mpeg, avi and asf files, supported by many native and win32
++ DLL codecs. You can watch VCD, DVD and even DivX movies too. The other
++ big feature of mplayer is the wide range of supported output drivers. It
++ works with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, but you can use SDL (and
++ this way all drivers of SDL) and some lowlevel card-specific drivers (for
++ Matrox/3dfx/SiS) too! Most of them supports software or hardware scaling,
++ so you can enjoy movies in fullscreen.
++ .
++ This package contains the documentation for mplayer/mencoder
+Index: debian-rvm/compat
+===================================================================
+--- debian-rvm/compat	(revisión: 0)
++++ debian-rvm/compat	(revisión: 0)
+@@ -0,0 +1 @@
++5
+Index: debian-rvm/changelog-orig
+===================================================================
+--- debian-rvm/changelog-orig	(revisión: 0)
++++ debian-rvm/changelog-orig	(revisión: 0)
+@@ -0,0 +1,507 @@
++mplayer (2:1.0~rc2-0ubuntu15) intrepid; urgency=low
++
++  * Modify etc/mplayer.desktop to make it validate with
++    desktop-file-validate (LP: #244720)
++
++ -- Nathan Handler <nathan.handler@gmail.com>  Wed, 03 Sep 2008 12:38:53 +0100
++
++mplayer (2:1.0~rc2-0ubuntu14) intrepid; urgency=low
++
++  * Rebuild for liblame -> libmp3lame transition and adjust build-deps
++    accordingly (LP: #262832)
++  * Disable IVTV vo and ao as this causes the package to fail to build 
++
++ -- Iain Lane <iain@orangesquash.org.uk>  Tue, 02 Sep 2008 08:12:10 +0100
++
++mplayer (2:1.0~rc2-0ubuntu13) hardy; urgency=low
++
++  * SECURITY UPDATE: arbitrary code execution via crafted RTSP stream.
++    (LP: #212601)
++    - stream/realrtsp/sdpplin.c: Properly check the stream ID. Patch from
++      upstream.
++    - References:
++      + CVE-2008-1558
++
++ -- William Grant <william@qeuni.net>  Sun, 06 Apr 2008 10:49:10 +1000
++
++mplayer (2:1.0~rc2-0ubuntu12) hardy; urgency=low
++
++  * Modify mplayer.desktop to support opening URIs with spaces (LP: #164709).
++
++ -- Matti Lindell <mlind@cs.joensuu.fi>  Tue, 25 Mar 2008 19:01:10 +0200
++
++mplayer (2:1.0~rc2-0ubuntu11) hardy; urgency=low
++
++  * Actually drop the runtime CPU detection configure flag from the
++    arch-global variable, which I apparently missed in bzr last time.
++
++ -- William Grant <william@qeuni.net>  Mon, 24 Mar 2008 21:29:34 +1100
++
++mplayer (2:1.0~rc2-0ubuntu10) hardy; urgency=low
++
++  * Only build-depend on libsvga1-dev on i386 and amd64; it doesn't exist
++    anywhere else.
++  * Only enable runtime CPU detection on i386, amd64 and powerpc. Fixes FTBFS
++    on [!i386 amd64 powerpc].
++
++ -- William Grant <william@qeuni.net>  Mon, 24 Mar 2008 20:32:46 +1100
++
++mplayer (2:1.0~rc2-0ubuntu9) hardy; urgency=low
++
++  [ Luke Yelavich ]
++  * etc/example.conf: Use pulseaudio by default, and fallback to alsa.
++
++  [ William Grant ]
++  * SECURITY UPDATE: buffer overruns in CDDB, MOV demuxer, FLAC header parser,
++    and URL parser. (LP: #191488)
++  * libmpdemux/demux_audio.c, libmpdemux/demux_mov.c, stream/stream_cddb.c,
++    stream/url.c: Patches from upstream.
++  * References:
++    - CVE-2008-0485
++    - CVE-2008-0486
++    - CVE-2008-0629
++    - CVE-2008-0630
++  * debian/rules: Unset CFLAGS, to make it build again.
++
++ -- William Grant <william@qeuni.net>  Mon, 24 Mar 2008 13:55:38 +1100
++
++mplayer (2:1.0~rc2-0ubuntu8) hardy; urgency=low
++
++  * Use DejaVu instead of Bitstream Vera for subtitles so they show
++    correct characters for many non-English languages (LP: #48497)
++
++ -- Jani Monoses <jani@ubuntu.com>  Wed, 06 Feb 2008 09:27:55 +0200
++
++mplayer (2:1.0~rc2-0ubuntu7) hardy; urgency=low
++
++  * Add debian/mime to install mime types in (g)mplayer.
++  * Rebuild against newer x264 (LP: 177082, 172683, 181389)
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Wed, 23 Jan 2008 01:24:45 -0600
++
++mplayer (2:1.0~rc2-0ubuntu6) hardy; urgency=low
++
++  * debian/rules:
++    - Drop old get-orig-source to avoid confusion.
++  * debian/control:
++    - Build depend on newer faac for libmp4v2 transition. (LP: 181389)
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 22 Jan 2008 13:41:16 -0600
++
++mplayer (2:1.0~rc2-0ubuntu5) hardy; urgency=low
++
++  * Rebuild against libgif-dev instead of linungif4-dev (LP: #174252)
++
++ -- Ilya Eremin <che_guevara_3@bk.ru>  Sat, 22 Dec 2007 01:32:53 +0000
++
++mplayer (2:1.0~rc2-0ubuntu4) hardy; urgency=low
++
++  [ Mario Limonciello ]
++  * Rebuild against newer x264. (LP: #173624, 174087)
++  * Build with enca support. (LP: #115519)
++  * Fix gnome_screensaver errors. (LP: #108785, 104660, 159909, 113818)
++
++  [ Luca Barbieri ]
++  * Add locking support to Pulse Audio to prevent deadlocks. (LP: #136850)
++
++  [ Phillip Belemezov ]
++  * Fix gnome screensaver on amd64 (LP: #104660, 159861)
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 11 Dec 2007 02:13:54 -0600
++
++mplayer (2:1.0~rc2-0ubuntu3) hardy; urgency=low
++
++  * No source changes, rebuild against newer x264. (LP: #173624)
++
++ -- Brandon Holtsclaw <brandon@imbrandon.com>  Mon, 03 Dec 2007 05:25:41 -0600
++
++mplayer (2:1.0~rc2-0ubuntu2) hardy; urgency=low
++
++  * No source changes, rebuild against newer x264. (LP: #138854)
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Tue, 20 Nov 2007 15:55:53 -0600
++
++mplayer (2:1.0~rc2-0ubuntu1) hardy; urgency=low
++
++  * New upstream version. 
++    - Packaging (LP: #150925)
++    - MP3 Distortion (LP: #85751)
++    - Aspect ratio fixes (LP: #103038, #153543)
++    - Samba support (LP: #85052)
++  * Move 01_default_config.dpatch into bzr.
++  * Drop dpatch from build-depends and debian/rules
++  * Add liblzo2-dev, libdvdnav-dev, libopenal-dev,
++    libjack-dev, libtwolame-dev, libsvga1-dev to build dependencies.
++  * debian/rules:
++    - Build with radio interface support
++    - Build with OpenAL, Jack audio support. (LP: #122042)
++    - Let Xvid support be autodetected for proper linking.
++    - Let Faac support be autodetected for proper linking.
++    - Let fontconfig support be autodetected for proper linking.
++    - Let LIVE555 support be autodetected for proper linking.
++    - Drop DOCS/zh from dh_installdocs
++    - Build with dvdnav support.
++    - Adjust changelog that gets installed.
++  * Add polish translation for .desktop file (LP: #93382)
++  * Adjust configure script to properly link dbus-glib and pulse audio.
++  * Disable joystick by default (LP: #75925)
++  * Adjust configure script to call dvdnav-config properly.
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Sat, 03 Nov 2007 09:26:21 -0400
++
++mplayer (2:1.0~rc1-0ubuntu13) gutsy; urgency=low
++
++  * 01_default_config.dpatch: Fix typo that prevent the screensaver to be
++    disabled (LP: #152080)
++
++ -- Laurent Bigonville <bigon@ubuntu.com>  Sat, 13 Oct 2007 14:28:11 +0200
++
++mplayer (2:1.0~rc1-0ubuntu12) gutsy; urgency=low
++
++  * Add 01_default_config.dpatch.
++    - Sets screensaver by default for non gmplayer. 
++      (LP: #95038), (LP: #139770)
++    - Sets xv as video output for gmplayer and mplayer. 
++      (LP: #65165), (LP: #146307)
++  * Add dpatch to build-depends in debian/control.
++  * Add dpatch support to debian/rules.
++
++ -- Mario Limonciello <superm1@ubuntu.com>  Mon, 08 Oct 2007 01:07:53 -0500
++
++mplayer (2:1.0~rc1-0ubuntu11) gutsy; urgency=low
++
++  * Added Network Audio System (NAS) support  (LP: #110151)
++
++ -- Alfredo Matos <alfredo.matos@digitalself.org>  Thu, 07 Jun 2007 21:53:04 +0100
++
++mplayer (2:1.0~rc1-0ubuntu10) gutsy; urgency=low
++
++  * SECURITY UPDATE: Upstream fix for CVE 2007-2948. Fixes a buffer overrun in
++    the cddb code. (LP: #118855)
++
++ -- William Grant <william@qeuni.net>  Wed, 06 Jun 2007 17:22:22 +1000
++
++mplayer (2:1.0~rc1-0ubuntu9) feisty; urgency=low
++
++  * Rebuild to get correct version of libdirectfb
++  * Modified Maintainer value to match Debian-Maintainer-Field Spec
++
++ -- Sarah Hobbs <hobbsee@ubuntu.com>  Mon,  9 Apr 2007 21:55:23 +1000
++
++mplayer (2:1.0~rc1-0ubuntu8) feisty; urgency=low
++
++  * Fix some formatting in our patches.
++  * etc/examples.conf:
++    - Add ac=mad, to use libmad as first choice.
++  * debian/rules:
++    - Reenable mp3lib again... *sigh*
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Mon, 12 Mar 2007 03:42:49 +0100
++
++mplayer (2:1.0~rc1-0ubuntu7) feisty; urgency=low
++
++  [ Christian Bjälevik ]
++  * debian/rules:
++    - Add --disable-mp3lib to actually disable the damn thing.
++  * DOCS/man/en/mplayer.1:
++    - Remove documentation about -vo aa:help (LP: #43301).
++  * Various files (see bzr diff for info):
++    - Apply patch taken from Mandriva CVS (LP: #53947)
++      to use dbus for disabling gnome-screensaver.
++
++  [ William Grant ]
++  * Enable LADSPA (LP: #67400)
++    - Add ladspa-sdk to Build-Depends.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Sun, 11 Mar 2007 05:43:02 +0100
++
++mplayer (2:1.0~rc1-0ubuntu6) feisty; urgency=low
++
++  * debian/rules:
++    - Disable mp3lib and enable mad (LP: #85751).
++  * debian/control:
++    - Add libmad0-dev to Build-Deps.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Sat, 10 Mar 2007 11:05:40 +0100
++
++mplayer (2:1.0~rc1-0ubuntu5) feisty; urgency=low
++
++  * SECURITY UPDATE: DirectShow decoder heap overflow.
++  * loader/dshow/DS_VideoDecoder.c: added upstream fix.
++  * References
++    http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=414072
++
++ -- Kees Cook <kees@ubuntu.com>  Fri,  9 Mar 2007 08:52:34 -0800
++
++mplayer (2:1.0~rc1-0ubuntu4) feisty; urgency=low
++
++  * SECURITY UPDATE: DMO decoder heap overflow.
++  * loader/dmo/DMO_VideoDecoder.c: added upstream fix.
++  * References
++    http://svn.mplayerhq.hu/mplayer/trunk/loader/dmo/DMO_VideoDecoder.c?r1=22019&r2=22204
++    CVE-2007-1246
++
++ -- Kees Cook <kees@ubuntu.com>  Tue,  6 Mar 2007 15:21:26 -0800
++
++mplayer (2:1.0~rc1-0ubuntu3) feisty; urgency=low
++
++  * debian/rules:
++    - Add --enable-mp3lib to CONFIGURE_AUDIO_CODECS (LP: #83580).
++    - Remove --disable-mp3lib. This one took some time to find.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Tue,  6 Feb 2007 19:47:34 +0100
++
++mplayer (2:1.0~rc1-0ubuntu2) feisty; urgency=low
++
++  * debian/rules:
++    - Add --enable-libvorbis to CONFIGURE_AUDIO_CODECS.
++  * debian/{compat,control}:
++    - Bump Standard-Versions and debhelper >=.
++  * Applied patch from: http://0pointer.de/public/mplayer-pulse.patch
++    and adapted it for our current mplayer. Closes: #83493.
++  * debian/{control,rules}
++    - Add Build-Deps on libpulse-dev and --enable-pulse.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Tue,  6 Feb 2007 07:19:34 +0100
++
++mplayer (2:1.0~rc1-0ubuntu1) feisty; urgency=low
++
++  * New upstream version.
++  * Apply RTSP buffer overflow fix patch from upstream.
++  * Remove --enable-{vorbis,x264} and s/internal-tremor/tremor-internal/ in
++    debian/rules. The defaults are detected properly, and forcing x264 now
++    causes it to FTBFS.
++  * Remove DOCS/it from dh_installdocs. Aforementioned directory no longer
++    exists.
++
++ -- William Grant <william.grant@ubuntu.org.au>  Sun,  4 Feb 2007 15:04:46 +1100
++
++mplayer (2:0.99+1.0pre8-0ubuntu8) edgy; urgency=low
++
++  * No-change rebuild against newer libx264-dev (affects
++    Ubuntu: #63842),
++    - RC freeze exception granted by Andrew Mitchell.
++
++ -- Daniel T Chen <crimsun@ubuntu.com>  Thu, 12 Oct 2006 17:07:36 -0400
++
++mplayer (2:0.99+1.0pre8-0ubuntu7) edgy; urgency=low
++
++  * libvo/osd_template.c:
++    - Add patch from Ubuntu #62209 to fix AMD64 FTBFS.
++      Thanks Andreas Schultz.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Tue, 26 Sep 2006 15:15:27 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu6) edgy; urgency=low
++
++  * debian/preinst:
++    - Remove codecs.conf if it exists on the system
++      (thanks Johan Kiviniemi).
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Fri, 22 Sep 2006 20:45:08 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu5) edgy; urgency=low
++
++  * configure:
++    - Revert "if cygwin", we don't want to care changes like that.
++  * etc/example.conf:
++    - Revert vo and make "ao=alsa,". That means prefer alsa and
++      then auto-detect the rest.
++  * libmpcodecs/ve_lavc.c:
++    - Revert our changes. We build against internal ffmpeg again.
++  * debian/control:
++    - Dropped dpatch and libmad0-dev as Build-Deps.
++    - Drop all dummy packages and fix Conflicts/Replaces.
++    - Dropped the field Uploaders. Useless for Ubuntu.
++    - Dropped libavcodec-dev, libavformat-dev, libpostproc-dev
++      from Build-Deps.
++  * debian/rules:
++    - Stop copying config.{guess,sub}, this just add bloat to the
++      diff.
++    - Use --with-codecsdir instead of setting the same for win32,
++      xanim and real. Also drop --enable-{win32,real}, they are
++      implied by --with-codecsdir and enabled on all arches now.
++    - Drop defaults (--datadir and --disable-external-faad).
++    - Dropped libmad, the other two mp3-decoders should be enough.
++    - --enable-dshow was dropped upstream.
++    - Stop installing codecs.conf.
++    - Build against internal ffmpeg.
++
++ -- Christian Bjälevik <nafallo@ubuntu.com>  Thu, 21 Sep 2006 14:18:44 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu4) edgy; urgency=low
++
++  * debian/control,
++    debian/rules:
++    + Use the system's libavcodec, libavformat and libpostproc
++  * debian/rules:
++    + Add hack to enable more runtime-detected CPU optimizations on i386
++  * debian/control:
++    + Build-Depend on libx264-dev (>= 1:0.cvs20060720) to get a compatible
++      version
++  * debian/rules:
++    + disable internal mp3lib. This will enable mad or ffmpeg as
++      replacement (Ubuntu: #52729)
++  * libmpcodecs/ve_lavc.c:
++    + remove stuff that uses a newer libavcodec API than we have
++  * libmpcodecs/ve_x264.c:
++    + fix from upstream svn to build against our latest libx264
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Sun, 23 Jul 2006 13:33:53 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu3) edgy; urgency=low
++
++  * Remove a broken newline in debian/rules to really build with i586 as
++    target
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Sat,  8 Jul 2006 19:50:53 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu2) edgy; urgency=low
++
++  * Don't use --enable-vidix on powerpc. This parameter doesn't exist anymore
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Sat,  8 Jul 2006 19:28:42 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu1) edgy; urgency=low
++
++  * converted to bzr
++  * dropped dpatch, converted them all to bzr branches
++  * remerged all missing branches, except 57_demuxer_heap_overflow,
++    which has been merged upstream
++  * revert nsv-support patch, due to syntax error in codecs.conf
++
++ -- Reinhard Tartler <siretart@tauware.de>  Sat,  8 Jul 2006 15:05:34 +0200
++
++mplayer (2:0.99+1.0pre8-0ubuntu0) UNRELEASED; urgency=low
++
++  * unreleased testversion
++  * new upstream version
++    + far too many changes to list here
++  *  disabled dpatches temporarily:
++     -04_ubuntu-branding.dpatch
++     -57_demuxer_heap_overflow
++     -06_close_gracefully.dpatch
++
++ -- Reinhard Tartler <siretart@tauware.de>  Sat,  8 Jul 2006 12:03:40 +0200
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu8) dapper; urgency=low
++
++  * 07_hig-compliant-desktop-file.dpatch:
++    - Use a more HIG compliant name for mplayer in the .desktop file.
++      Thanks to Matthew East for the patch (Ubuntu: #38205)
++  * 08_nsv-support.dpatch:
++    - Add support for specific NSV files. Thanks to Dana Olson for the patch.
++      (Ubuntu: #44831)
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Mon, 15 May 2006 22:22:34 +0200
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu7) dapper; urgency=low
++
++  * debian/patches/06_close_gracefully.dpatch:
++    + Close gracefully when closing the mplayer window (Ubuntu: #38737)
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Wed, 10 May 2006 16:04:56 +0200
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu6) dapper; urgency=low
++
++  * add libx264-dev to builddeps and activate that in debian rules
++    Thanks to Yagisan (Closes: M#31519)
++  * disable external faad (Closes: M#33828)
++  * add some of the script which upstream distributs in TOOLS/ to
++    /usr/share/doc/mplayer/examples. Please report bugs if you want
++    additional scripts added there.
++
++ -- Reinhard Tartler <siretart@tauware.de>  Sat, 25 Mar 2006 19:14:02 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu5) dapper; urgency=low
++
++  * [SECURITY]: Fix heap overflow in libmpdemux/demuxer.h. Patch
++    retrieved from upstream CVS courtesy of Dennis Kaarsemaker.
++  * References
++    - CVE-2006-0579
++    - http://bugs.gentoo.org/show_bug.cgi?id=122029
++
++ -- Daniel T Chen <crimsun@ubuntu.com>  Sat, 25 Feb 2006 23:19:46 -0800
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu4) dapper; urgency=low
++
++  * added 05_gnome-screensaver-handling.dpatch to add support for
++    gnome-screensaver to the -stop-xscreensaver option 
++
++ -- Oliver Grawert <ogra@ubuntu.com>  Sat, 25 Feb 2006 20:52:36 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu3) dapper; urgency=low
++
++  * Add support for real codecs on powerpc (Closes Malone: #29190)
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Sat, 18 Feb 2006 11:05:18 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu2) dapper; urgency=low
++
++  * enable libaa and libcaca support
++    - enable in debian/rules
++    - fix configure to link mplayer with -laa (update 03_fix-linking.dpatch)
++
++ -- Reinhard Tartler <siretart@ubuntu.com>  Tue, 24 Jan 2006 01:31:46 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20060117-0ubuntu1) dapper; urgency=low
++
++  * New CVS snapshot
++  * Improved Ubuntu branding by using the version from the changelog instead
++    of the default "dev-CVS--Ubuntu-4.0.3"
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Tue, 17 Jan 2006 08:21:48 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu7) dapper; urgency=low
++
++  * Revert last change... I see no way how win32 support could ever work with
++    a 64bit binary on amd64 but when someone has a patch to enable it please
++    send it to me
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Fri,  9 Dec 2005 17:50:36 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu6) dapper; urgency=low
++
++  * Enable win32 support for amd64 (thanks fabbione) :)
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Thu,  8 Dec 2005 23:04:07 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu5) dapper; urgency=low
++
++  * Don't install the mencoder manpage in the mplayer package to prevent a
++    conflict
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Thu,  8 Dec 2005 19:35:18 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu4) dapper; urgency=low
++
++  * Don't install .libdeps in examples
++  * Install {input,codecs,menu}.conf to /etc/mplayer where we had them before
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Thu,  8 Dec 2005 19:15:39 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu3) dapper; urgency=low
++
++  * Stop having mplayer conflict with the mplayer-$arch transitional
++    packages, so the transition can actually happen correctly.
++
++ -- Adam Conrad <adconrad@ubuntu.com>  Thu,  8 Dec 2005 15:43:58 +1100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu2) dapper; urgency=low
++
++  * Add dummy packages for the mplayer-$arch packages we had before
++  * Patch away the CPU runtime detection warning
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Wed,  7 Dec 2005 15:39:24 +0100
++
++mplayer (2:0.99+1.0pre7try2+cvs20051205-0ubuntu1) dapper; urgency=low
++
++  * Initial release.
++  * Completly repackaged
++  * Based on ffmpeg/mplayer CVS 2005-12-05
++  * debian/patches/01_configure.dpatch: fixes live.com bulding.
++    the patch is taken from Marillat's mplayer package
++  * debian/patches/02_mplayer.conf.dpatch: use a better suited config for
++    ubuntu
++
++ -- Sebastian Dröge <slomo@ubuntu.com>  Wed, 05 Dec 2005 14:43:37 +0100
+Index: debian-rvm/mplayer.examples
+===================================================================
+--- debian-rvm/mplayer.examples	(revisión: 0)
++++ debian-rvm/mplayer.examples	(revisión: 0)
+@@ -0,0 +1 @@
++TOOLS/*
+Index: debian-rvm/mime
+===================================================================
+--- debian-rvm/mime	(revisión: 0)
++++ debian-rvm/mime	(revisión: 0)
+@@ -0,0 +1,20 @@
++application/x-ogg; mplayer %s; description="Ogg Stream"
++application/ogg; mplayer %s; description="Ogg Stream"
++audio/mpeg; mplayer %s; description="MPEG Audio"
++audio/x-mpegurl; mplayer %s; description="Icecast Playlist"
++audio/x-ms-wax; mplayer %s; description="Windows Media Audio"
++audio/x-ms-wma; mplayer %s; description="Windows Media Audio"
++audio/x-pls; mplayer %s; description="MP3 ShoutCast/IceCast Playlist"
++audio/x-scpls; mplayer %s; description="Shoutcast Playlist"
++audio/x-wav; mplayer %s; description="WAV Audio"
++video/mpeg; mplayer %s; description="MPEG Video";
++video/quicktime; mplayer %s; description="Apple QuickTime Video";
++video/x-mpeg; mplayer %s; description="MPEG Video";
++video/x-mpeg2; mplayer %s; description="MPEG-2 Video";
++video/x-msvideo; mplayer %s; description="MS Video (AVI)";
++video/x-ms-afs; mplayer %s; description="Microsoft ASF Video";
++video/x-ms-asf; mplayer %s; description="Microsoft ASF Video";
++video/x-ms-wma; mplayer %s; description="Windows Media Audio";
++video/x-ms-wmv; mplayer %s; description="Windows Media Video";
++video/x-ms-wmx; mplayer %s; description="Windows Media Video";
++video/x-ms-wvx; mplayer %s; description="Windows Media Video";
+Index: debian-rvm/copyright
+===================================================================
+--- debian-rvm/copyright	(revisión: 0)
++++ debian-rvm/copyright	(revisión: 0)
+@@ -0,0 +1,28 @@
++This package was debianized by Sebastian Dröge <slomo@ubuntu.com>
++Thu, 01 Dec 2005 20:40:19 +0100.
++
++It was downloaded from http://www.mplayerhq.hu
++
++Copyright Holders:
++ MPlayer is copyrighted by various authors.
++ They are all listed in the 'Copyright' file
++
++License:
++
++ mplayer is free software; you can redistribute it and/or
++ modify it under the terms of the GNU General Public License as
++ published by the Free Software Foundation; either version 2 of the
++ License, or (at your option) any later version.
++
++ mplayer is distributed in the hope that it will be useful,
++ but WITHOUT ANY WARRANTY; without even the implied warranty of
++ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++ General Public License for more details.
++
++ You should have received a copy of the GNU General Public License
++ along with this program; if not, write to the Free Software
++ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
++
++On Debian systems, the complete text of the GNU General
++Public License can be found in `/usr/share/common-licenses/GPL'.
++
+Index: debian-rvm/rules
+===================================================================
+--- debian-rvm/rules	(revisión: 0)
++++ debian-rvm/rules	(revisión: 0)
+@@ -0,0 +1,183 @@
++#!/usr/bin/make -f
++#-*- makefile -*-
++
++#export DH_VERBOSE=1
++
++unexport CFLAGS
++
++DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
++
++ifeq (,$(findstring nostrip,$(DEB_BUILD_OPTIONS)))
++	INSTALL_PROGRAM += -s
++endif
++
++ifeq "$(DEB_BUILD_ARCH)" "i386"
++	CONFIGURE_ARCH = --enable-runtime-cpudetection --target=i586-linux
++else
++ifeq "$(DEB_BUILD_ARCH)" "powerpc"
++	CONFIGURE_ARCH = --enable-runtime-cpudetection --enable-altivec
++else
++ifeq "$(DEB_BUILD_ARCH)" "amd64"
++	CONFIGURE_ARCH = --enable-runtime-cpudetection
++endif
++endif
++endif
++
++CONFIGURE_PATH := --prefix=/usr --confdir=/etc/mplayer --mandir=/usr/share/man --win32codecsdir=/usr/lib/win32
++#CONFIGURE_COMMON := --enable-largefiles
++#CONFIGURE_INPUT :=  --disable-libdvdcss-internal --enable-smb --enable-ftp --enable-cdparanoia --enable-radio
++#CONFIGURE_CONTROL := --enable-lirc --enable-joystick --enable-xf86keysym 
++#CONFIGURE_AUDIO_CODECS := --disable-tremor-internal --enable-liba52 --enable-musepack --enable-speex --enable-libvorbis --enable-mad --enable-mp3lib
++#CONFIGURE_VIDEO_CODECS := --enable-theora --enable-libdv --enable-libmpeg2 --enable-tv-v4l2
++#CONFIGURE_AUDIO_OUT := --enable-alsa --enable-ossaudio --enable-esd --enable-arts --enable-pulse --enable-nas
++#CONFIGURE_VIDEO_OUT := --enable-xinerama --enable-menu --enable-xv --enable-vm --enable-gl --enable-xmga --enable-mga --enable-3dfx --enable-tdfxfb --enable-sdl --enable-aa --enable-caca --enable-dxr3 --enable-xvmc --with-xvmclib=XvMCW --enable-ggi --enable-fbdev --disable-ivtv
++#CONFIGURE_MISC := --enable-freetype --enable-gif --enable-png --enable-jpeg --enable-liblzo --enable-fribidi --enable-ladspa
++
++CONFIGURE_ALL := $(CONFIGURE_ARCH) $(CONFIGURE_PATH) $(CONFIGURE_COMMON) $(CONFIGURE_INPUT) $(CONFIGURE_CONTROL) $(CONFIGURE_AUDIO_CODECS) $(CONFIGURE_VIDEO_CODECS) $(CONFIGURE_AUDIO_OUT) $(CONFIGURE_VIDEO_OUT) $(CONFIGURE_MISC)
++
++
++#modify-config:
++#ifeq "$(DEB_BUILD_ARCH)" "i386"
++#	sed -i 's;#undef HAVE_3DNOW;#define HAVE_3DNOW 1;g' config.h
++#	sed -i 's;#undef HAVE_3DNOWEX;#define HAVE_3DNOWEX 1;g' config.h
++#	sed -i 's;#undef HAVE_MMX;#define HAVE_MMX 1;g' config.h
++#	sed -i 's;#undef HAVE_MMX2;#define HAVE_MMX2 1;g' config.h
++#	sed -i 's;#undef HAVE_SSE;#define HAVE_SSE 1;g' config.h
++#	sed -i 's;#undef HAVE_SSE2;#define HAVE_SSE2 1;g' config.h
++#	sed -i 's;#undef HAVE_BUILTIN_VECTOR;#define HAVE_BUILTIN_VECTOR 1;g' config.h
++#	sed -i 's;#undef HAVE_MM3DNOW;#define HAVE_MM3DNOW 1;g' config.h
++#	sed -i '/TARGET_MMX =/d' config.mak
++#	echo 'TARGET_MMX = yes' >> config.mak
++#	sed -i '/TARGET_MMX2 =/d' config.mak
++#	echo 'TARGET_MMX2 = yes' >> config.mak
++#	sed -i '/TARGET_SSE =/d' config.mak
++#	echo 'TARGET_SSE = yes' >> config.mak
++#	sed -i '/TARGET_SSE2 =/d' config.mak
++#	echo 'TARGET_SSE2 = yes' >> config.mak
++#	sed -i '/TARGET_3DNOW =/d' config.mak
++#	echo 'TARGET_3DNOW = yes' >> config.mak
++#	sed -i '/TARGET_3DNOWEX =/d' config.mak
++#	echo 'TARGET_3DNOWEX = yes' >> config.mak
++#	sed -i '/TARGET_BUILTIN_VECTOR =/d' config.mak
++#	echo 'TARGET_BUILTIN_VECTOR = yes' >> config.mak
++#	sed -i '/TARGET_BUILTIN_3DNOW =/d' config.mak
++#	echo 'TARGET_BUILTIN_3DNOW = yes' >> config.mak
++#endif
++	
++build-gui: build-gui-stamp
++build-gui-stamp: 
++	dh_testdir
++#	if test -f build-nogui-stamp; then \
++#	  $(MAKE) distclean; \
++#	  rm -f build-nogui-stamp; \
++#	fi
++	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
++#	$(MAKE) -f debian/rules modify-config
++	$(MAKE)
++	touch build-gui-stamp
++
++#build-nogui: build-nogui-stamp
++#build-nogui-stamp:
++#	dh_testdir
++#	if test -f build-gui-stamp; then \
++#	  $(MAKE) distclean; \
++#	  rm -f build-gui-stamp; \
++#	fi
++#	./configure $(CONFIGURE_ALL) --disable-gui --disable-mencoder
++#	$(MAKE) -f debian/rules modify-config
++#	$(MAKE)
++#	touch build-nogui-stamp
++
++install:
++	dh_testdir
++	dh_testroot
++	dh_clean -k
++	$(MAKE) -f debian/rules install-gui
++#	$(MAKE) -f debian/rules install-nogui
++
++install-gui: build-gui
++	dh_installdirs -pmplayer
++	$(MAKE) install DESTDIR=$(CURDIR)/debian/mplayer
++	
++	dh_link -pmplayer usr/bin/mplayer usr/bin/gmplayer
++	dh_link -pmplayer usr/share/man/man1/mplayer.1.gz usr/share/man/man1/gmplayer.1.gz
++	dh_link -pmplayer usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf usr/share/mplayer/subfont.ttf
++#	cp etc/example.conf etc/mplayer.conf
++	cp debian/mplayer.conf debian/mplayer/etc/mplayer/
++#	dh_install -pmplayer etc/mplayer.conf etc/mplayer
++#	rm -f etc/mplayer.conf
++	dh_install -pmplayer etc/input.conf etc/mplayer
++	dh_install -pmplayer etc/menu.conf etc/mplayer
++	dh_installexamples -pmplayer -X.svn -X.libdeps etc
++	dh_install -pmplayer
++
++	#remove mencoder manpage link to prevent conflict with the mencoder package
++	rm debian/mplayer/usr/share/man/man1/mencoder.1
++
++	#split off mencoder package
++	mkdir -p debian/mencoder/usr/bin
++	mv debian/mplayer/usr/bin/mencoder debian/mencoder/usr/bin
++	mkdir -p debian/mencoder/usr/share/man/man1
++	cp debian/mplayer/usr/share/man/man1/mplayer.1 debian/mencoder/usr/share/man/man1/mencoder.1
++
++#install-nogui: build-nogui
++#	dh_installdirs -pmplayer-nogui
++#	$(MAKE) install DESTDIR=$(CURDIR)/debian/mplayer-nogui
++#	dh_link -pmplayer-nogui usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf usr/share/mplayer/subfont.ttf
++#	cp etc/example.conf etc/mplayer.conf
++#	dh_install -pmplayer-nogui etc/mplayer.conf etc/mplayer
++#	rm -f etc/mplayer.conf
++#	dh_install -pmplayer-nogui etc/input.conf etc/mplayer
++#	dh_install -pmplayer-nogui etc/menu.conf etc/mplayer
++#	dh_installexamples -pmplayer-nogui -X.libdeps etc
++#	dh_install -pmplayer-nogui
++
++clean::
++	dh_testdir
++	dh_testroot
++	-$(MAKE) distclean
++	-rm -f build-nogui-stamp build-gui-stamp
++	# additional cleanups
++	-rm config.mak version.h libaf/config.mak libao2/config.mak libvo/config.mak Gui/config.mak
++	dh_clean
++
++binary-indep: build install
++	dh_testdir
++	dh_testroot
++	dh_installdocs
++#	dh_installdocs -pmplayer-doc Copyright DOCS/HTML DOCS/tech
++	dh_installdocs -pmplayer-doc -X.svn -Xmplayer.1 Copyright DOCS/*
++	dh_installchangelogs
++	dh_compress
++	dh_link
++	dh_fixperms
++	dh_strip
++	dh_installdeb
++	dh_gencontrol
++	dh_md5sums
++	dh_builddeb
++
++binary-arch: DH_OPTIONS=-a
++binary-arch: build install
++	dh_testdir
++	dh_testroot
++	dh_install
++	dh_installdocs -A Copyright
++	dh_installmenu
++	dh_installmime
++	dh_installman
++	dh_installchangelogs Changelog
++	dh_desktop
++	dh_compress
++	dh_link
++	dh_fixperms
++	dh_strip
++	dh_perl
++	dh_installdeb
++	dh_shlibdeps
++	dh_gencontrol
++	dh_md5sums
++	dh_builddeb
++
++binary: binary-indep binary-arch
++.PHONY: build clean binary-indep binary-arch binary
+
+Cambios de propiedades en debian-rvm/rules
+___________________________________________________________________
+Nombre: svn:executable
+   + *
+
+Index: debian-rvm/mplayer-nogui.preinst
+===================================================================
+--- debian-rvm/mplayer-nogui.preinst	(revisión: 0)
++++ debian-rvm/mplayer-nogui.preinst	(revisión: 0)
+@@ -0,0 +1,40 @@
++#!/bin/sh
++
++set -e
++
++# Remove a no-longer used conffile
++rm_conffile() {
++    CONFFILE="$1"
++
++    if [ -e "$CONFFILE" ]; then
++        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
++	old_md5sum="`sed -n -e \"/^Conffiles:/,/^[^ ]/{\\\\' $CONFFILE '{s/ obsolete$//;s/.* //;p}}\" /var/lib/dpkg/status`"
++        if [ "$md5sum" != "$old_md5sum" ]; then
++            echo "Obsolete conffile $CONFFILE has been modified by you."
++            echo "Saving as $CONFFILE.dpkg-bak ..."
++            mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
++        else
++            echo "Removing obsolete conffile $CONFFILE ..."
++            rm -f "$CONFFILE"
++        fi
++    fi
++}
++
++case "$1" in
++    install|upgrade)
++        if dpkg --compare-versions "$2" le "2:0.99+1.0pre8-0ubuntu5"; then
++            rm_conffile "/etc/mplayer/codecs.conf"
++        fi
++    ;;
++
++    abort-upgrade)
++    ;;
++
++    *)
++        echo "preinst called with unknown argument \`$1'" >&2
++        exit 1
++    ;;
++esac
++
++#DEBHELPER#
++
+Index: debian-rvm/mplayer.preinst
+===================================================================
+--- debian-rvm/mplayer.preinst	(revisión: 0)
++++ debian-rvm/mplayer.preinst	(revisión: 0)
+@@ -0,0 +1,40 @@
++#!/bin/sh
++
++set -e
++
++# Remove a no-longer used conffile
++rm_conffile() {
++    CONFFILE="$1"
++
++    if [ -e "$CONFFILE" ]; then
++        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
++	old_md5sum="`sed -n -e \"/^Conffiles:/,/^[^ ]/{\\\\' $CONFFILE '{s/ obsolete$//;s/.* //;p}}\" /var/lib/dpkg/status`"
++        if [ "$md5sum" != "$old_md5sum" ]; then
++            echo "Obsolete conffile $CONFFILE has been modified by you."
++            echo "Saving as $CONFFILE.dpkg-bak ..."
++            mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
++        else
++            echo "Removing obsolete conffile $CONFFILE ..."
++            rm -f "$CONFFILE"
++        fi
++    fi
++}
++
++case "$1" in
++    install|upgrade)
++        if dpkg --compare-versions "$2" le "2:0.99+1.0pre8-0ubuntu5"; then
++            rm_conffile "/etc/mplayer/codecs.conf"
++        fi
++    ;;
++
++    abort-upgrade)
++    ;;
++
++    *)
++        echo "preinst called with unknown argument \`$1'" >&2
++        exit 1
++    ;;
++esac
++
++#DEBHELPER#
++
+Index: debian-rvm/README
+===================================================================
+--- debian-rvm/README	(revisión: 0)
++++ debian-rvm/README	(revisión: 0)
+@@ -0,0 +1,16 @@
++Source managment of ubuntu package
++
++Short: go here:
++
++https://launchpad.net/products/mplayer/+branches
++
++In the past we used dpatch to handle the mplayer package.
++nowadays, we handle the ubuntu package in bzr. Have a look
++at https://launchpad.net/products/mplayer/+branches to see 
++the different branches, into which the former dpatches
++where included.
++
++Please be careful when you update to 'upstream' branch. 
++Use the 'get-orig-source' target to clean the upstream tarballs.
++
++use bzr export to generate new orig.tar.gz
+Index: debian-rvm/mplayer.conf
+===================================================================
+--- debian-rvm/mplayer.conf	(revisión: 0)
++++ debian-rvm/mplayer.conf	(revisión: 0)
+@@ -0,0 +1,138 @@
++#
++# MPlayer configuration file
++#
++# Configuration files are read system-wide from /usr/local/etc/mplayer.conf
++# and per user from ~/.mplayer/config, where per-user settings override
++# system-wide settings, all of which are overrriden by the command line.
++#
++# The configuration file settings are the same as the command line
++# options without the preceding '-'.
++#
++# See the CONFIGURATION FILES section in the man page
++# for a detailed description of the syntax.
++
++
++##################
++# video settings #
++##################
++
++# Specify default video driver (see -vo help for a list).
++vo=xv,
++
++# Use SDL video with the aalib subdriver by default.
++#vo = sdl:aalib
++
++# FBdev driver:
++#
++# mode to use (read from fb.modes)
++#fbmode = 640x480-120
++#
++# location of the fb.modes file
++#fbmodeconfig = /etc/fb.modes
++
++# Specify your monitor timings for the vesa and fbdev video output drivers.
++# See /etc/X11/XF86Config for timings. Be careful; if you specify settings
++# that exceed the capabilities of your monitor, you may damage it.
++#
++# horizontal frequency range (k stands for 1000)
++#monitor-hfreq = 31.5k-50k,70k
++#
++# vertical frequency range
++#monitor-vfreq = 50-90
++#
++# dotclock (or pixelclock) range (m stands for 1000000)
++#monitor-dotclock = 30M-300M
++
++# Start in fullscreen mode by default.
++#fs=yes
++
++# Change to a different videomode when going fullscreen.
++#vm=yes
++
++# Override the autodetected color depth, may need 'vm=yes' as well.
++#bpp=0
++
++# Enable software scaling (powerful CPU needed) for video output
++# drivers that do not support hardware scaling.
++#zoom=yes
++
++# standard monitor size, with square pixels
++#monitoraspect=4:3
++
++# Use this for a widescreen monitor, non-square pixels.
++#monitoraspect=16:9
++
++# Keep the player window on top of all other windows.
++#ontop=yes
++
++
++##################
++# audio settings #
++##################
++
++# Specify default audio driver (see -ao help for a list).
++ao=alsa,
++
++# Use SDL audio driver with the esd subdriver by default.
++#ao = sdl:esd
++
++# Specify the mixer device.
++#mixer = /dev/mixer
++
++# Resample the sound to 44100Hz with the lavcresample audio filter.
++#af=lavcresample=44100
++
++
++##################
++# other settings #
++##################
++
++# Default font
++#font=/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf
++
++# Font size
++subfont-text-scale=3
++subfont-osd-scale=3
++
++# Pretend to be Window Media Player.
++# Fixes playback when playlist and media file use the same URL.
++#user-agent=NSPlayer/4.1.0.3856
++
++# Drop frames to preserve audio/video sync.
++#framedrop = yes
++
++# Specify your preferred skin here (skins are searched for in
++# /usr/local/share/mplayer/skins/<name> and ~/.mplayer/skins/<name>).
++#skin = Abyss
++
++# Resample the font alphamap.
++# 0     plain white fonts
++# 0.75  very narrow black outline (default)
++# 1     narrow black outline
++# 10    bold black outline
++#ffactor = 0.75
++
++# cache settings
++#
++# Use 8MB input cache by default.
++#cache = 8192
++#
++# Prefill 20% of the cache before starting playback.
++#cache-min = 20.0
++#
++# Prefill 50% of the cache before restarting playback after the cache emptied.
++#cache-seek-min = 50
++
++# DVD: Display English subtitles if available.
++#slang = en
++
++# DVD: Play English audio tracks if available.
++#alang = en
++
++###################
++# DVDNAV Settings #
++###################
++#vc=ffmpeg12,
++
++# You can also include other configuration files.
++#include = /path/to/the/file/you/want/to/include
