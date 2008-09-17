@@ -1,3 +1,39 @@
+Index: create_deb.sh
+===================================================================
+--- create_deb.sh	(revisión: 0)
++++ create_deb.sh	(revisión: 0)
+@@ -0,0 +1,25 @@
++#!/bin/sh
++
++svn_revision=`LC_ALL=C svn info 2> /dev/null | grep Revision | cut -d' ' -f2`
++test $svn_revision || svn_revision=`grep revision .svn/entries 2>/dev/null | cut -d '"' -f2`
++test $svn_revision || svn_revision=`sed -n -e '/^dir$/{n;p;q;}' .svn/entries 2>/dev/null`
++test $svn_revision || svn_revision=UNKNOWN
++
++# New debian
++mv debian debian-upstream
++ln -sf debian-rvm debian
++
++# Add entry to changelog with svn revision
++cp debian/changelog-orig debian/changelog
++dch -v "2:1.0rc2svn$svn_revision" "New version"
++
++# Build
++rm build-gui-stamp
++chmod 755 debian-rvm/rules
++fakeroot debian/rules binary
++
++# Clean
++dh_clean
++rm debian/changelog
++rm debian
++mv debian-upstream debian
+
+Cambios de propiedades en create_deb.sh
+___________________________________________________________________
+Nombre: svn:executable
+   + *
+
 Index: debian-rvm/control
 ===================================================================
 --- debian-rvm/control	(revisión: 0)
@@ -637,7 +673,7 @@ Index: debian-rvm/rules
 ===================================================================
 --- debian-rvm/rules	(revisión: 0)
 +++ debian-rvm/rules	(revisión: 0)
-@@ -0,0 +1,183 @@
+@@ -0,0 +1,188 @@
 +#!/usr/bin/make -f
 +#-*- makefile -*-
 +
@@ -714,6 +750,10 @@ Index: debian-rvm/rules
 +	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
 +#	$(MAKE) -f debian/rules modify-config
 +	$(MAKE)
++
++# Documentation
++	cd DOCS/xml && ./configure && make html-chunked
++
 +	touch build-gui-stamp
 +
 +#build-nogui: build-nogui-stamp
@@ -786,7 +826,8 @@ Index: debian-rvm/rules
 +	dh_testroot
 +	dh_installdocs
 +#	dh_installdocs -pmplayer-doc Copyright DOCS/HTML DOCS/tech
-+	dh_installdocs -pmplayer-doc -X.svn -Xmplayer.1 Copyright DOCS/*
++#	dh_installdocs -pmplayer-doc -X.svn -Xmplayer.1 Copyright DOCS/*
++	dh_installdocs -pmplayer-doc -X.svn Copyright DOCS/HTML DOCS/tech
 +	dh_installchangelogs
 +	dh_compress
 +	dh_link
