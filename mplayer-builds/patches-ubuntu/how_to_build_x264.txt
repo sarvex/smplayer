@@ -1,0 +1,52 @@
+How to compile a recent version of x264:
+
+
+AMD64: sudo apt-get install yasm libgtk2.0-dev libgpac-dev quilt
+I386: sudo apt-get install nasm libgtk2.0-dev libgpac-dev quilt
+
+wget ftp://ftp.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20080917-2245.tar.bz2
+wget http://es.archive.ubuntu.com/ubuntu/pool/multiverse/x/x264/x264_0.svn20080408-0.0ubuntu1.diff.gz
+
+tar xvfj x264-snapshot-20080917-2245.tar.bz2 
+cd x264-snapshot-20080917-2245/
+zcat ../x264_0.svn20080408-0.0ubuntu1.diff.gz | patch -p1
+dch -v 1:0.svn20080917 "New version"
+chmod 755 debian/rules
+
+Edit debian rules:
+
+Optional:
+---------
+(AMD64) if you don't want to compile yasm:
+Change:
+confflags = --enable-pthread --prefix=/usr --enable-debug
+with
+confflags = --enable-pthread --prefix=/usr --enable-debug --disable-asm
+---------
+
+Change this:
+   dh_installchangelogs ChangeLog
+with
+#   dh_installchangelogs ChangeLog
+
+
+Edit debian/control.
+
+Change 
+
+Package: libx264-59
+with
+Package: libx264-64
+
+and 
+
+Depends: libx264-59 (= ${binary:Version})
+with
+Depends: libx264-64 (= ${binary:Version})
+
+mv debian/libx264-59.install debian/libx264-64.install
+
+
+fakeroot debian/rules binary
+
+sudo dpkg -i libx264-64_0.svn20080917_amd64.deb libx264-dev_0.svn20080917_amd64.deb
