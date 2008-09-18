@@ -1,0 +1,14 @@
+How to compile yasm (only needed for amd64):
+
+wget http://es.archive.ubuntu.com/ubuntu/pool/universe/y/yasm/yasm_0.7.1.orig.tar.gz
+wget http://es.archive.ubuntu.com/ubuntu/pool/universe/y/yasm/yasm_0.7.1-0ubuntu1.diff.gz
+wget http://es.archive.ubuntu.com/ubuntu/pool/universe/y/yasm/yasm_0.7.1-0ubuntu1.dsc
+
+dpkg-source -x yasm_0.7.1-0ubuntu1.dsc
+
+cd yasm-0.7.1/
+
+fakeroot debian/rules binary
+
+sudo dpkg -i yasm_0.7.1-0ubuntu1_amd64.deb
+
