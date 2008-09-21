@@ -57,6 +57,8 @@ audio codecs."); ?>
 each other. Autorepeat and shuffle supported too."); ?></li>
 <li><?php tr("Preferences dialog. You can easily configure every option of SMPlayer
 by using a nice preferences dialog."); ?></li>
+<li><?php tr("Possibility to search automatically for subtitles in %1.", 
+"<a href=\"http://www.opensubtitles.org\">opensubtitles.org</a>"); ?></li>
 <li><?php tr("Translations: currently SMPlayer is translated into more than 20 
 languages, including Spanish, German, French, Italian, Russian, Chinese,
 Japanese...."); ?></li>
