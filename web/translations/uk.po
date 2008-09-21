@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-09 02:21+0200\n"
+"POT-Creation-Date: 2008-09-21 23:59+0200\n"
 "PO-Revision-Date: 2008-05-06 23:21+0300\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -238,7 +238,8 @@ msgstr "Особливі прохання"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:84 ../header.php:86
+#. if ($site == "sourceforge")
+#: ../header.php:84
 msgid "Donations"
 msgstr "Пожертви"
 
@@ -361,6 +362,10 @@ msgstr ""
 "використовуючи зручний діалог налаштувань."
 
 #: ../info.php:60
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr ""
+
+#: ../info.php:62
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -371,11 +376,11 @@ msgstr ""
 "китайську,\n"
 "українську, японську...."
 
-#: ../info.php:63
+#: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr "Мультиплатформність. Доступні збірки для Windows та Linux."
 
-#: ../info.php:65
+#: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer розповсюджується під ліцензією <b>GPL</b>."
 
@@ -424,27 +429,29 @@ msgstr "Компактний інтерфейс"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "Пакет (без інсталера) містить в собі SMPlayer, Qt бібліотеки,\n"
-#~ "переклади та теми іконок. Не містить mplayer. "
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "Завантажуйте <a href=%1>тут</a> останню версію SMPlayer"
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
 #~ msgstr ""
-#~ "Цей пакет містить все необхідне для роботи SMPlayer: бібліотеки Qt, \n"
-#~ "файли перекладів, теми іконок та сам mplayer (включена версія %1)."
+#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
+#~ "іншу збірку mplayer."
 
-#~ msgid "SMPlayer running on Windows Vista"
-#~ msgstr "SMPlayer, запущений під Windows Vista"
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
+#~ "рекомендується 1.0rc2 чи svn)."
 
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Додатковий пакет, який містить різні теми іконок."
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
+
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
@@ -455,26 +462,24 @@ msgstr "SMPlayer працює у новому KDE 4"
 #~ "нові можливості mplayer, тому переконливо рекомендується нова версія. \n"
 #~ "Ви можете завантажити тут %2 (від %3)."
 
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
-#~ msgstr "Пакет для AMD64. Зібрано на kubuntu 7.10."
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Додатковий пакет, який містить різні теми іконок."
 
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Зібрано на kubuntu 7.04 (також повинно працювати на ubuntu)."
-
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "Зібрано на OpenSuSE 10.2. Вимагає: libqt4 та mplayer (не менше 1.0rc1, \n"
-#~ "рекомендується 1.0rc2 чи svn)."
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer, запущений під Windows Vista"
 
 #~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
 #~ msgstr ""
-#~ "Пакет для тих, хто не любить інсталятори чи бажає використати \n"
-#~ "іншу збірку mplayer."
+#~ "Цей пакет містить все необхідне для роботи SMPlayer: бібліотеки Qt, \n"
+#~ "файли перекладів, теми іконок та сам mplayer (включена версія %1)."
 
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr "Завантажуйте <a href=%1>тут</a> останню версію SMPlayer"
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Пакет (без інсталера) містить в собі SMPlayer, Qt бібліотеки,\n"
+#~ "переклади та теми іконок. Не містить mplayer. "

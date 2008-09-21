@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-09 02:21+0200\n"
+"POT-Creation-Date: 2008-09-21 23:59+0200\n"
 "PO-Revision-Date: 2008-02-02 23:52+0100\n"
 "Last-Translator: Kud Gray <kud.gray@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,7 +220,8 @@ msgstr ""
 msgid "Wiki"
 msgstr ""
 
-#: ../header.php:84 ../header.php:86
+#. if ($site == "sourceforge")
+#: ../header.php:84
 msgid "Donations"
 msgstr ""
 
@@ -314,17 +315,21 @@ msgid ""
 msgstr ""
 
 #: ../info.php:60
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr ""
+
+#: ../info.php:62
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:63
+#: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr ""
 
-#: ../info.php:65
+#: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-09 02:21+0200\n"
+"POT-Creation-Date: 2008-09-21 23:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,7 +248,8 @@ msgstr "ご要望"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:84 ../header.php:86
+#. if ($site == "sourceforge")
+#: ../header.php:84
 msgid "Donations"
 msgstr "寄付"
 
@@ -361,6 +362,10 @@ msgstr ""
 "ションを簡単に設定することができます。"
 
 #: ../info.php:60
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr ""
+
+#: ../info.php:62
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -369,12 +374,12 @@ msgstr ""
 "翻訳: SMPlayer は、スペイン語、ドイツ語、フランス語、イタリア語、ロシア語、中"
 "国語、日本語など、20 以上もの言語に翻訳されています。"
 
-#: ../info.php:63
+#: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr ""
 "マルチプラットフォームです。Windows 用と Linux 用のバイナリがあります。"
 
-#: ../info.php:65
+#: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 

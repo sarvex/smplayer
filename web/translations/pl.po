@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-09 02:21+0200\n"
+"POT-Creation-Date: 2008-09-21 23:59+0200\n"
 "PO-Revision-Date: 2008-06-23 12:59+0200\n"
 "Last-Translator: Jarek\n"
 "Language-Team:  <pl@li.org>\n"
@@ -238,7 +238,8 @@ msgstr "Prośby nowych funkcji"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:84 ../header.php:86
+#. if ($site == "sourceforge")
+#: ../header.php:84
 msgid "Donations"
 msgstr "Dotacje"
 
@@ -364,6 +365,10 @@ msgstr ""
 "używając rozbudowany system ustawień."
 
 #: ../info.php:60
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr ""
+
+#: ../info.php:62
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -373,11 +378,11 @@ msgstr ""
 "języków, włączając Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 
-#: ../info.php:63
+#: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr "Jest wieloplatformowy. Dostępny zarówno dla Windows jak i dla Linux"
 
-#: ../info.php:65
+#: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer jest na licencji <b>GPL</b>"
 
@@ -427,12 +432,14 @@ msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "Pakiet (bez instalatora), który zawiera smplayer, bibliotekę Qt, \n"
-#~ "pliki językowe i tematy ikon. Nie zawiera on mplayera."
+#~ "W Ubuntu znajdziesz mplayer w dość starej wersji (%1). SMPlayer obsłuży\n"
+#~ "kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
+#~ "Można ją pobrać stąd %2 (z %3)."
 
 #~ msgid ""
 #~ "This package contains everything needed to run smplayer: Qt shared \n"
@@ -444,11 +451,9 @@ msgstr "SMPlayer uruchomiony w nowym KDE 4"
 #~ "(jest on w wersji %1)."
 
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended. You can download here %2 (from %3)."
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
 #~ msgstr ""
-#~ "W Ubuntu znajdziesz mplayer w dość starej wersji (%1). SMPlayer obsłuży\n"
-#~ "kilka nowych funkcji mplayera, jednak zalecana jest jego nowsza wersja.\n"
-#~ "Można ją pobrać stąd %2 (z %3)."
+#~ "Pakiet (bez instalatora), który zawiera smplayer, bibliotekę Qt, \n"
+#~ "pliki językowe i tematy ikon. Nie zawiera on mplayera."
