@@ -1,4 +1,4 @@
-all: es.po nl.po fr.po ja.po pl.po ro.po uk.po ru.po
+all: es.po nl.po fr.po ja.po pl.po ro.po uk.po ru.po hu.po zh.po
 
 FILES=../index.php ../info.php ../header.php ../downloads.php \
       ../documentation.php ../screenshots.php
@@ -31,3 +31,10 @@ uk.po: empty.pot
 
 ru.po: empty.pot
 	msgmerge -F -U -N --backup=numbered ru.po empty.pot
+
+hu.po: empty.pot
+	msgmerge -F -U -N --backup=numbered hu.po empty.pot
+
+zh.po: empty.pot
+	msgmerge -F -U -N --backup=numbered zh.po empty.pot
+
