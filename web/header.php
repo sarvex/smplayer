@@ -80,10 +80,10 @@ function header_set_section($s, $rel_path="") {
 
 	header_print_section(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($s=="wiki"));
 
-	if ($site == "sourceforge")
+//	if ($site == "sourceforge")
 		header_print_section(get_tr("Donations"), "https://sourceforge.net/donate/index.php?group_id=185512", ($s=="donations"));
-	else
-		header_print_section(get_tr("Donations"), "http://www.qt-apps.org/content/donate.php?content=61041", ($s=="donations"));
+//	else
+//		header_print_section(get_tr("Donations"), "http://www.qt-apps.org/content/donate.php?content=61041", ($s=="donations"));
 ?>
 	</ul>
 
