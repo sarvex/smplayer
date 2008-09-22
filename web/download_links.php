@@ -35,11 +35,11 @@ function download_windows_portable_link() {
 
 
 function download_themes_src_link() {
-	return create_link("smplayer-themes-0.1.16.tar.bz2", 1885765 );
+	return create_link("smplayer-themes-0.1.17.tar.bz2", 1894960 );
 }
 
 function download_themes_rpm_link() {
-	return create_link("smplayer-themes-0.1.16-rvm.noarch.rpm", 1938336 );
+	return create_link("smplayer-themes-0.1.17-rvm.noarch.rpm", 1946845 );
 }
 
 function download_themes_deb_link() {
@@ -47,11 +47,11 @@ function download_themes_deb_link() {
 }
 
 function download_themes_nonfree_src_link() {
-	return create_link("smplayer-themes-nonfree-0.1.0.tar.bz2", 412295 );
+	return create_link("smplayer-themes-nonfree-0.1.1.tar.bz2", 413478 );
 }
 
 function download_themes_nonfree_rpm_link() {
-	return create_link("smplayer-themes-nonfree-0.1.0-rvm.noarch.rpm", 419370 );
+	return create_link("smplayer-themes-nonfree-0.1.1-rvm.noarch.rpm", 420472 );
 }
 
 function download_themes_nonfree_deb_link() {
