@@ -43,7 +43,7 @@ function download_themes_rpm_link() {
 }
 
 function download_themes_deb_link() {
-	return create_link("smplayer-themes_0.1.16_all.deb", 1886868 );
+	return create_link("smplayer-themes_0.1.17_all.deb", 1909388 );
 }
 
 function download_themes_nonfree_src_link() {
@@ -55,7 +55,7 @@ function download_themes_nonfree_rpm_link() {
 }
 
 function download_themes_nonfree_deb_link() {
-	return create_link("smplayer-themes-nonfree_0.1.0_all.deb", 419272 );
+	return create_link("smplayer-themes-nonfree_0.1.1_all.deb", 420498 );
 }
 
 function download_codecs_link() {
