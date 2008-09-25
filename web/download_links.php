@@ -10,11 +10,11 @@ function download_rpm_link() {
 }
 
 function download_deb_link() {
-	return create_link("smplayer_0.6.2_i386.deb", 2202470 );
+	return create_link("smplayer_0.6.3_i386.deb", 2353424 );
 }
 
 function download_amd64deb_link() {
-	return create_link("smplayer_0.6.2_amd64.deb", 2218774 );
+	return create_link("smplayer_0.6.3_amd64.deb", 2369010 );
 }
 
 function download_windows_full_link() {
@@ -26,7 +26,7 @@ function download_windows_lite_link() {
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.6.2_without_mplayer.7z", 6327804 );
+	return create_link("smplayer-0.6.3_without_mplayer.7z", 7089626 );
 }
 
 function download_windows_portable_link() {
