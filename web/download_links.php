@@ -30,7 +30,7 @@ function download_windows_7z_link() {
 }
 
 function download_windows_portable_link() {
-	return create_link("smplayer-portable_0.6.2.7z", 11175983 );
+	return create_link("smplayer-portable_0.6.3.zip", 16620354 );
 }
 
 
