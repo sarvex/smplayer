@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-21 23:59+0200\n"
+"POT-Creation-Date: 2008-09-26 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,12 +120,12 @@ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
 msgstr "OpenSuSE 10.2 でコンパイルされています。libqt4 と mplayer が必要です。"
 
 #: ../downloads.php:186
-msgid "Compiled on Ubuntu 7.04."
-msgstr "Ubuntu 7.04 でコンパイルされています。"
+msgid "Compiled on Ubuntu %1."
+msgstr ""
 
 #: ../downloads.php:191
-msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-msgstr "AMD64 用パッケージです。Ubuntu 8.04 でコンパイルされています。"
+msgid "Package for AMD64. Compiled on Ubuntu %1."
+msgstr ""
 
 #: ../downloads.php:201
 msgid "Suggested package:"
@@ -427,3 +427,9 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:71
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で実行中の SMPlayer"
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "AMD64 用パッケージです。Ubuntu 8.04 でコンパイルされています。"
+
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "Ubuntu 7.04 でコンパイルされています。"
