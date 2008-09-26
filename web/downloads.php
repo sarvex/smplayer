@@ -183,12 +183,12 @@ tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer.");
 <?php
 echo download_deb_link();
 echo "<br>";
-tr("Compiled on Ubuntu %1.", "8.04."); 
+tr("Compiled on Ubuntu %1.", "8.04"); 
 echo "<br>";
 
 echo download_amd64deb_link();
 echo "<br>";
-tr("Package for AMD64. Compiled on Ubuntu %1.", "8.04."); 
+tr("Package for AMD64. Compiled on Ubuntu %1.", "8.04"); 
 //echo "<br>";
 ?>
 </td>
