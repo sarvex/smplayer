@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 			printf("Error: can't list the audio devices\n");
 		}
 	}
-
+	else
 	if ((strcmp(argv[1],"-display")==0) || (strcmp(argv[1],"-d")==0)) {	
 		display_devices = 0;
 		printf("Display devices:\n");
