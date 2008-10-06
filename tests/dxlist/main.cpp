@@ -47,18 +47,29 @@ BOOL WINAPI DirectDrawEnum(GUID FAR *lpGUID, LPSTR lpDriverDescription, LPSTR lp
 
 int main(int argc, char* argv[])
 {
-	sound_devices = 0;
-	printf("Sound devices:\n");
-	if (DirectSoundEnumerateA(DirectSoundEnum, NULL) != DS_OK){
-		printf("Error: can't list the audio devices\n");
+	if (argc != 2){
+		printf("Usage: dxlist.exe [-sound] [-s] [-display] [-d]\n");
+		return 1;
 	}
 
-	display_devices = 0;
-	printf("Display devices:\n");
-	if (DirectDrawEnumerateExA(DirectDrawEnum, NULL, DDENUM_ATTACHEDSECONDARYDEVICES) != DS_OK) {
-		printf("Error: can't list the display devices\n");
+	if ((strcmp(argv[1],"-sound")==0) || (strcmp(argv[1],"-s")==0)) {
+		sound_devices = 0;
+		printf("Sound devices:\n");
+		if (DirectSoundEnumerateA(DirectSoundEnum, NULL) != DS_OK){
+			printf("Error: can't list the audio devices\n");
+		}
 	}
 
- return 0;
+	if ((strcmp(argv[1],"-display")==0) || (strcmp(argv[1],"-d")==0)) {	
+		display_devices = 0;
+		printf("Display devices:\n");
+		if (DirectDrawEnumerateExA(DirectDrawEnum, NULL, DDENUM_ATTACHEDSECONDARYDEVICES) != DS_OK) {
+			printf("Error: can't list the display devices\n");
+		}
+	}
+	else
+	printf("Unknown option %s\n", argv[1]);
+
+	return 0;
 }
 
