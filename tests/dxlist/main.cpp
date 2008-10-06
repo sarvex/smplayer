@@ -26,7 +26,7 @@ int display_devices;
 
 BOOL CALLBACK DirectSoundEnum(LPGUID guid, LPCSTR desc, LPCSTR module, LPVOID context)
 {		
-	printf("%i - %s\n", sound_devices, desc);
+	printf("%i: %s\n", sound_devices, desc);
 	
 	sound_devices++;
 	
@@ -36,9 +36,9 @@ BOOL CALLBACK DirectSoundEnum(LPGUID guid, LPCSTR desc, LPCSTR module, LPVOID co
 BOOL WINAPI DirectDrawEnum(GUID FAR *lpGUID, LPSTR lpDriverDescription, LPSTR lpDriverName, LPVOID lpContext, HMONITOR  hm)
 {
 	if (!lpGUID) 
-		printf("%i - %s\n", display_devices, "Primary Display Adapter");
+		printf("%i: %s\n", display_devices, "Primary Display Adapter");
 	else
-		printf("%i - %s\n", display_devices, lpDriverDescription);
+		printf("%i: %s\n", display_devices, lpDriverDescription);
 
 	display_devices++;
 	
