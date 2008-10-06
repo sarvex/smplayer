@@ -19,8 +19,10 @@
 #define DIRECTSOUND_VERSION 5
 #include <stdio.h>
 #include <dsound.h>
+#include <ddraw.h>
 
 int sound_devices;
+int display_devices;
 
 BOOL CALLBACK DirectSoundEnum(LPGUID guid, LPCSTR desc, LPCSTR module, LPVOID context)
 {		
@@ -31,14 +33,30 @@ BOOL CALLBACK DirectSoundEnum(LPGUID guid, LPCSTR desc, LPCSTR module, LPVOID co
 	return TRUE;
 }
 
+BOOL WINAPI DirectDrawEnum(GUID FAR *lpGUID, LPSTR lpDriverDescription, LPSTR lpDriverName, LPVOID lpContext, HMONITOR  hm)
+{
+	if (!lpGUID) 
+		printf("%i - %s\n", display_devices, "Primary Display Adapter");
+	else
+		printf("%i - %s\n", display_devices, lpDriverDescription);
+
+	display_devices++;
+	
+	return TRUE;
+}
+
 int main(int argc, char* argv[])
 {
-	printf("Sound devices:\n");
-	
 	sound_devices = 0;
-	
+	printf("Sound devices:\n");
 	if (DirectSoundEnumerateA(DirectSoundEnum, NULL) != DS_OK){
 		printf("Error: can't list the audio devices\n");
+	}
+
+	display_devices = 0;
+	printf("Display devices:\n");
+	if (DirectDrawEnumerateExA(DirectDrawEnum, NULL, DDENUM_ATTACHEDSECONDARYDEVICES) != DS_OK) {
+		printf("Error: can't list the display devices\n");
 	}
 
  return 0;
