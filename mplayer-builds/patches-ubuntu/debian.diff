@@ -49,7 +49,7 @@ Index: debian-rvm/control
 +Package: mplayer
 +Architecture: any
 +Depends: ${shlibs:Depends}, ttf-bitstream-vera, mplayer-skins, ttf-dejavu-core
-+Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss, mplayer-doc, smplayer
++Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss2, mplayer-doc, smplayer
 +Conflicts: mplayer-nogui
 +Replaces: mplayer-nogui
 +Description: The Ultimate Movie Player For Linux
@@ -66,7 +66,7 @@ Index: debian-rvm/control
 +Package: mencoder
 +Architecture: any
 +Depends: ${shlibs:Depends}
-+Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss, mplayer-doc
++Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss2, mplayer-doc
 +Description: MPlayer's Movie Encoder
 + A simple movie encoder, designed to encode MPlayer-playable movies
 + (AVI/ASF/OGG/DVD/VCD/VOB/MPG/MOV/VIV/FLI/RM/NUV/NET) to other
@@ -672,7 +672,7 @@ Index: debian-rvm/rules
 ===================================================================
 --- debian-rvm/rules	(revisión: 0)
 +++ debian-rvm/rules	(revisión: 0)
-@@ -0,0 +1,189 @@
+@@ -0,0 +1,190 @@
 +#!/usr/bin/make -f
 +#-*- makefile -*-
 +
@@ -746,7 +746,8 @@ Index: debian-rvm/rules
 +#	  $(MAKE) distclean; \
 +#	  rm -f build-nogui-stamp; \
 +#	fi
-+	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
++#	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
++	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder --disable-dvdread-internal
 +#	$(MAKE) -f debian/rules modify-config
 +	$(MAKE)
 +#	$(MAKE) -j 2
