@@ -166,6 +166,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 </td>
 </tr>
 
+<?php /*
 <tr>
 <td><img src="iconos/suse.png" alt="*"></td>
 <td>
@@ -176,7 +177,7 @@ tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer.");
 ?>
 </td>
 </tr>
-
+*/ ?>
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
@@ -209,6 +210,18 @@ echo ". ";
 echo "<a href=\"http://smplayer.berlios.de/forums/viewtopic.php?id=741\">" . 
 get_tr("More info") . "</a>.";
 ?>
+
+<tr>
+<td><img src="iconos/ubuntu.png" alt="*"></td>
+<td>
+<?php
+echo "<b>". get_tr("New!") ."</b> ";
+echo tr("Now you can easily install the SMPlayer and MPlayer packages with 
+%1. Just add this line to your %2:", "<i>apt</i>", 
+"<i>/etc/apt/sources.list</i>");
+echo "<pre>deb http://ppa.launchpad.net/rvm/ubuntu hardy main</pre>";
+?>
+
 </td>
 </tr>
 </table>
