@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-26 12:51+0200\n"
+"POT-Creation-Date: 2008-10-25 00:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,23 +120,19 @@ msgid ""
 msgstr ""
 "Lee el fichero Install.txt incluido en el paquete para saber cómo compilarlo."
 
-#: ../downloads.php:175
-msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-msgstr "Compilado en OpenSuSE 10.2. Requiere: libqt4 y mplayer."
-
-#: ../downloads.php:186
+#: ../downloads.php:187
 msgid "Compiled on Ubuntu %1."
 msgstr "Compilado en Ubuntu %1."
 
-#: ../downloads.php:191
+#: ../downloads.php:192
 msgid "Package for AMD64. Compiled on Ubuntu %1."
 msgstr "Paquete para AMD64. Compilado en Ubuntu %1."
 
-#: ../downloads.php:201
+#: ../downloads.php:202
 msgid "Suggested package:"
 msgstr "Paquete recomendado:"
 
-#: ../downloads.php:202
+#: ../downloads.php:203
 msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
@@ -147,27 +143,37 @@ msgstr ""
 "es capaz de usar las nuevas funciones de las versiones más recientes de "
 "mplayer, por tanto se recomienda usar una versión más nueva."
 
-#: ../downloads.php:206
+#: ../downloads.php:207
 msgid "You can get updated versions <a href=%1>here</a>"
 msgstr "Puedes conseguir versiones actualizadas <a href=%1>aquí</a>"
 
-#: ../downloads.php:210
+#: ../downloads.php:211
 msgid "More info"
 msgstr "Más información"
 
-#: ../downloads.php:217
+#: ../downloads.php:218
+msgid "New!"
+msgstr ""
+
+#: ../downloads.php:219
+msgid ""
+"Now you can easily install the SMPlayer and MPlayer packages with \n"
+"%1. Just add this line to your %2:"
+msgstr ""
+
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Temas de iconos:"
 
-#: ../downloads.php:218
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Paquetes opcionales que incluyen varios juegos de iconos."
 
-#: ../downloads.php:260
+#: ../downloads.php:273
 msgid "Additional packages"
 msgstr "Paquetes adicionales"
 
-#: ../downloads.php:261
+#: ../downloads.php:274
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -175,11 +181,11 @@ msgstr ""
 "Hay unos cuantos paquetes adicionales para usuarios avanzados: <a href=%"
 "1>Ver la página de descargas de sourceforge</a>."
 
-#: ../downloads.php:268
+#: ../downloads.php:281
 msgid "Contributed packages"
 msgstr "Otros paquetes"
 
-#: ../downloads.php:269
+#: ../downloads.php:282
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -187,15 +193,15 @@ msgstr ""
 "Hay disponibles paquetes para otras distros, creados por otras personas. <a "
 "href=%1>Haz click aquí</a> para verlos."
 
-#: ../downloads.php:275
+#: ../downloads.php:288
 msgid "Related Project"
 msgstr "Proyecto Relacionado"
 
-#: ../downloads.php:277
+#: ../downloads.php:290
 msgid "by MuldeR"
 msgstr "por MuldeR"
 
-#: ../downloads.php:278
+#: ../downloads.php:291
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -208,12 +214,12 @@ msgstr ""
 "propio instalador, varios ejecutables del mplayer optimizados para distintos "
 "tipos de procesadores y códecs binarios."
 
-#: ../downloads.php:289
+#: ../downloads.php:302
 msgid "Unstable releases"
 msgstr "Versiones inestables"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:291
+#: ../downloads.php:304
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -441,95 +447,52 @@ msgstr "El mini GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer en el nuevo KDE 4"
 
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "Paquete (sin instalador) que incluye smplayer, librerías Qt, traducciones "
-#~ "y juegos de iconos. No incluye mplayer."
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "Compilado en Ubuntu 7.04."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "Paquete para AMD64. Compilado en Ubuntu 8.04."
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "Este paquete contiene todo lo necesario para que funcione correctamente "
-#~ "SMPlayer: librerías Qt, traducciones, juegos de iconos y una versión del "
-#~ "MPlayer (la versión incluida es %1)."
-
-#~ msgid "SMPlayer running on Windows Vista"
-#~ msgstr "SMPlayer en Windows Vista"
-
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Paquete opcional que incluye varios juegos de iconos."
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
 #~ "has support for some of the new features of mplayer, so a newer version \n"
 #~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "La versión de mplayer incluida en Ubuntu es muy vieja (%1). SMPlayer \n"
+#~ "La versión de mplayer incluida en Ubuntu es algo vieja (%1). SMPlayer \n"
 #~ "es capaz de usar las nuevas funciones de las versiones más recientes de "
 #~ "mplayer, por tanto se recomienda usar una versión más nueva. Puedes "
 #~ "descargar aquí %2 (de %3)."
 
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
-#~ msgstr "Paquete para AMD64. Compilado en kubuntu 7.10."
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "Descarga <a href=%1>aquí</a> la versión más reciente de SMPlayer"
 
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr "Compilado en kubuntu 7.04 (debería servir también para ubuntu)."
-
-#~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
-#~ msgstr ""
-#~ "Compilado en OpenSuSE 10.2. Requiere: libqt4 y mplayer (al menos la "
-#~ "versión 1.0rc1, recomendada 1.0rc2 o svn)."
+#~ msgid "849"
+#~ msgstr "887"
 
 #~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
+#~ "Package for the ones who usually play only the most known formats, like\n"
+#~ "avi, mkv, mpeg..."
 #~ msgstr ""
-#~ "Paquete para aquellos a los que no les gusta los instaladores y/o quieran "
-#~ "usar otra versión del mplayer."
-
-#~ msgid "256"
-#~ msgstr "306"
+#~ "Paquete para los que suelen reproducir sólo los formatos más conocidos, "
+#~ "como avi, mkv, mpeg..."
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
+#~ "This package is like the one above, but it doesn't include the extra\n"
+#~ "codecs, so it's smaller."
 #~ msgstr ""
-#~ "Este paquete contiene todo lo necesario para que funcione correctamente "
-#~ "SMPlayer: librerías Qt, traducciones, juegos de iconos... También incluye "
-#~ "una versión del MPlayer. La versión incluida es %1 obtenida de <a href=%"
-#~ "2>CCCP</a>."
+#~ "Este paquete es igual que el anterior pero no incluye los códecs extra, "
+#~ "así que es un poco más pequeño."
+
+#~ msgid "Lite package with installer:"
+#~ msgstr "Paquete ligero con instalador:"
 
 #~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
+#~ "Package intended for those who want to be sure they'll be able to\n"
+#~ "play (almost) anything."
 #~ msgstr ""
-#~ "<b>Nota:</b> la primera vez que la librería SSA/ASS o fontconfig sean "
-#~ "usados, MPlayer creará una caché con los tipos de letra. Este proceso "
-#~ "dura unos cuantos segundos durante los cuales <b>SMPlayer puede parecer "
-#~ "colgado. No te preocupes, simplemente espera.</b>"
-
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>Nota 2:</b> Si tenías instalada una versión anterior, es muy "
-#~ "recomendable que la desinstales antes de instalar la nueva."
-
-#~ msgid "Full package with installer:"
-#~ msgstr "Paquete completo con instalador:"
+#~ "Paquete para aquellos que quieran estar seguros de poder reproducir "
+#~ "(casi) todo."
 
 #~ msgid ""
 #~ "The package includes also the extra codecs for mplayer, which will "
@@ -545,49 +508,95 @@ msgstr "SMPlayer en el nuevo KDE 4"
 #~ "directorio, por tanto no pueden causar ningún conflicto con otros códecs "
 #~ "que puedas tener instalados."
 
+#~ msgid "Full package with installer:"
+#~ msgstr "Paquete completo con instalador:"
+
 #~ msgid ""
-#~ "Package intended for those who want to be sure they'll be able to\n"
-#~ "play (almost) anything."
+#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
+#~ "highly\n"
+#~ "recommended that you uninstall the old package before installing the new "
+#~ "one."
 #~ msgstr ""
-#~ "Paquete para aquellos que quieran estar seguros de poder reproducir "
-#~ "(casi) todo."
-
-#~ msgid "Lite package with installer:"
-#~ msgstr "Paquete ligero con instalador:"
+#~ "<b>Nota 2:</b> Si tenías instalada una versión anterior, es muy "
+#~ "recomendable que la desinstales antes de instalar la nueva."
 
 #~ msgid ""
-#~ "This package is like the one above, but it doesn't include the extra\n"
-#~ "codecs, so it's smaller."
+#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
+#~ "mplayer\n"
+#~ "will create a font cache. This process takes some seconds and meanwhile \n"
+#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
 #~ msgstr ""
-#~ "Este paquete es igual que el anterior pero no incluye los códecs extra, "
-#~ "así que es un poco más pequeño."
+#~ "<b>Nota:</b> la primera vez que la librería SSA/ASS o fontconfig sean "
+#~ "usados, MPlayer creará una caché con los tipos de letra. Este proceso "
+#~ "dura unos cuantos segundos durante los cuales <b>SMPlayer puede parecer "
+#~ "colgado. No te preocupes, simplemente espera.</b>"
 
 #~ msgid ""
-#~ "Package for the ones who usually play only the most known formats, like\n"
-#~ "avi, mkv, mpeg..."
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
+#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
 #~ msgstr ""
-#~ "Paquete para los que suelen reproducir sólo los formatos más conocidos, "
-#~ "como avi, mkv, mpeg..."
+#~ "Este paquete contiene todo lo necesario para que funcione correctamente "
+#~ "SMPlayer: librerías Qt, traducciones, juegos de iconos... También incluye "
+#~ "una versión del MPlayer. La versión incluida es %1 obtenida de <a href=%"
+#~ "2>CCCP</a>."
 
-#~ msgid "849"
-#~ msgstr "887"
-
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr "Descarga <a href=%1>aquí</a> la versión más reciente de SMPlayer"
+#~ msgid "256"
+#~ msgstr "306"
 
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
+#~ msgstr ""
+#~ "Paquete para aquellos a los que no les gusta los instaladores y/o quieran "
+#~ "usar otra versión del mplayer."
+
+#~ msgid ""
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Compilado en OpenSuSE 10.2. Requiere: libqt4 y mplayer (al menos la "
+#~ "versión 1.0rc1, recomendada 1.0rc2 o svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr "Compilado en kubuntu 7.04 (debería servir también para ubuntu)."
+
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr "Paquete para AMD64. Compilado en kubuntu 7.10."
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 #~ "has support for some of the new features of mplayer, so a newer version \n"
 #~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "La versión de mplayer incluida en Ubuntu es algo vieja (%1). SMPlayer \n"
+#~ "La versión de mplayer incluida en Ubuntu es muy vieja (%1). SMPlayer \n"
 #~ "es capaz de usar las nuevas funciones de las versiones más recientes de "
 #~ "mplayer, por tanto se recomienda usar una versión más nueva. Puedes "
 #~ "descargar aquí %2 (de %3)."
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-#~ msgstr "Paquete para AMD64. Compilado en Ubuntu 8.04."
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Paquete opcional que incluye varios juegos de iconos."
 
-#~ msgid "Compiled on Ubuntu 7.04."
-#~ msgstr "Compilado en Ubuntu 7.04."
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer en Windows Vista"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "Este paquete contiene todo lo necesario para que funcione correctamente "
+#~ "SMPlayer: librerías Qt, traducciones, juegos de iconos y una versión del "
+#~ "MPlayer (la versión incluida es %1)."
+
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Paquete (sin instalador) que incluye smplayer, librerías Qt, traducciones "
+#~ "y juegos de iconos. No incluye mplayer."
+
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "Compilado en OpenSuSE 10.2. Requiere: libqt4 y mplayer."

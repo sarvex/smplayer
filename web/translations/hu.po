@@ -8,13 +8,265 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-26 12:51+0200\n"
+"POT-Creation-Date: 2008-10-25 00:49+0200\n"
 "PO-Revision-Date: 2008-10-02 00:28+0200\n"
 "Last-Translator: CyberDragon <cyberdragon777@gmail.com>\n"
 "Language-Team: hungarian <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../downloads.php:6
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - Letöltések"
+
+#: ../downloads.php:37
+msgid "Stable version"
+msgstr "Stabil verzió"
+
+#: ../downloads.php:38
+msgid "Windows"
+msgstr "Windows"
+
+#: ../downloads.php:48
+msgid "Package with installer:"
+msgstr "Csomag telepítővel:"
+
+#: ../downloads.php:53
+msgid ""
+"This package contains everything needed to run smplayer: shared \n"
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
+msgstr ""
+"Ez a csomag tartalmaz mindent, ami az SMPlayer futtatásához szükséges: \n"
+"megosztott könyvtárak, fordítások, ikon témák és egy MPlayer build \n"
+"(a mellékelt verzió %1)"
+
+#: ../downloads.php:82
+msgid "Additional codecs:"
+msgstr "További kodekek:"
+
+#: ../downloads.php:88
+msgid ""
+"This package adds support for codecs that are not yet implemented\n"
+"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+"formats. Note that they are not necessary to play most common formats\n"
+"like DVDs, MPEG-1/2/4, etc."
+msgstr ""
+"Ez a csomag támogatást nyújt az MPlayer által natívan még nem támogatott \n"
+"kodekekhez, mint az újabb RealVideo fajták és sok kevésbé gyakori "
+"formátumhoz. \n"
+"Nem szükségesek a legtöbb gyakori formátum lejátszásához, mint a DVD-k, \n"
+"MPEG-1/2/4, stb."
+
+#: ../downloads.php:93
+msgid ""
+"These codecs are to be used by mplayer only and they will be installed \n"
+"in the same folder, so they can't cause any conflict with other codecs you \n"
+"may have installed."
+msgstr ""
+"Ezeket a kodekeket csak az MPlayer használja és annak a könyvtárába \n"
+"lesznek telepítve, ezért nem képesek konfliktust okozni más esetlegesen \n"
+"feltelepített kodekekkel."
+
+#: ../downloads.php:97
+msgid ""
+"If you prefer a zip file, you can get it at \n"
+"the <a href=%1>mplayer site</a> (%2)."
+msgstr ""
+"Ha inkább zip fájlt szeretne, letöltheti az \n"
+"<a href=%1>MPlayer oldalról</a> (%2)."
+
+#: ../downloads.php:111
+msgid ""
+"Package (without installer) which includes smplayer, shared libraries,\n"
+"translations and icon themes. It doesn't include mplayer."
+msgstr ""
+"Csomag (telepítő nélkül) amely tartalmazza az SMPlayert, megosztott \n"
+"könyvtárakat, fordításokat és ikon témákat. Nem tartalmazza az MPlayert."
+
+#: ../downloads.php:114
+msgid "This package is for advanced users only!"
+msgstr "Ez a csomag csak haladó felhasználóknak ajánlott!"
+
+#: ../downloads.php:136
+msgid ""
+"Portable version of SMPlayer. It can be run from external devices, like \n"
+"USB flash drives. It doesn't require installation, just uncompress the \n"
+"package wherever you want and double click on smplayer.exe to run it."
+msgstr ""
+"Az SMPlayer hordozható verziója. Futtatható külső egységekről, pl. USB \n"
+"flash meghajtók. Nem igényel telepítést, csak tömörítse ki a csomagot \n"
+"és kattintson duplán az smplayer.exe-re a futtatáshoz."
+
+#: ../downloads.php:140
+msgid ""
+"The package also includes the icon themes, translations and a \n"
+"MPlayer build."
+msgstr ""
+"Ez a csomag ikon témákat, fordításokat és egy MPlayer buildet \n"
+"is tartalmaz."
+
+#: ../downloads.php:143
+msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+msgstr "Megjegyzés: a 7z fájlok <a href=%1>7-Zip</a>-el kitömöríthetők."
+
+#: ../downloads.php:154
+msgid "Linux"
+msgstr "Linux"
+
+#: ../downloads.php:164
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Olvassa el a csomagban lévő Install.txt-t a fordításhoz szükséges "
+"információkért."
+
+#: ../downloads.php:187
+msgid "Compiled on Ubuntu %1."
+msgstr "Fordítva Ubuntu %1-en."
+
+#: ../downloads.php:192
+msgid "Package for AMD64. Compiled on Ubuntu %1."
+msgstr "Csomag AMD64-re. Fordítva Ubuntu %1-en."
+
+#: ../downloads.php:202
+msgid "Suggested package:"
+msgstr "Ajánlott csomag:"
+
+#: ../downloads.php:203
+msgid ""
+"The version of mplayer included in Ubuntu is a little bit old (%1). "
+"SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended."
+msgstr ""
+"Az Ubuntuhoz mellékelt MPlayer kissé régi (%1). Az SMPlayer támogatja az "
+"MPlayer néhány új funkcióját, \n"
+"ezért egy újabb verzió erősen ajánlott."
+
+#: ../downloads.php:207
+msgid "You can get updated versions <a href=%1>here</a>"
+msgstr "Letöltheti a frissített verziót <a href=%1>innen</a>"
+
+#: ../downloads.php:211
+msgid "More info"
+msgstr "Több információ"
+
+#: ../downloads.php:218
+msgid "New!"
+msgstr ""
+
+#: ../downloads.php:219
+msgid ""
+"Now you can easily install the SMPlayer and MPlayer packages with \n"
+"%1. Just add this line to your %2:"
+msgstr ""
+
+#: ../downloads.php:230
+msgid "Icon Themes:"
+msgstr "Ikon témák:"
+
+#: ../downloads.php:231
+msgid "Optional packages which provide some icon themes."
+msgstr "Opcionális csomagok néhány ikon témával."
+
+#: ../downloads.php:273
+msgid "Additional packages"
+msgstr "További csomagok"
+
+#: ../downloads.php:274
+msgid ""
+"There are several additional packages for advanced users:\n"
+"<a href=%1>See sourceforge download page</a>."
+msgstr ""
+"További csomagok érhetők el haladó felhasználóknak:\n"
+"<a href=%1>Lásd SourceForge letöltési oldal</a>."
+
+#: ../downloads.php:281
+msgid "Contributed packages"
+msgstr "Hozzájárulók csomagjai"
+
+#: ../downloads.php:282
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+"Elérhetőek más emberek által készített csomagok egyéb \n"
+"disztribúciókra. <a href=%1>Kattintson ide</a> a megtekintésükhöz."
+
+#: ../downloads.php:288
+msgid "Related Project"
+msgstr "Kapcsolódó projekt"
+
+#: ../downloads.php:290
+msgid "by MuldeR"
+msgstr "MuldeR által"
+
+#: ../downloads.php:291
+msgid ""
+"This package contains a very recent version of SMPlayer (often taken from\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
+"its own installer, mplayer builds optimized for several processors and\n"
+"binary codecs."
+msgstr ""
+"Ez a csomag az SMPlayer nagyon friss verzióját tartalmazza (gyakran az \n"
+"SVN repositoryról szedve) valamint az MPlayer egy friss verzióját. Továbbá \n"
+"saját telepítőt, különboző processzorokra optimalizált MPlayer buildeket "
+"és \n"
+"kodekeket tartalmaz."
+
+#: ../downloads.php:302
+msgid "Unstable releases"
+msgstr "Nem stabil kiadások"
+
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
+#: ../downloads.php:304
+msgid ""
+"You can get packages directly taken from the SVN (source code and\n"
+"Windows updates), <a href=%1><b>here</b></a>."
+msgstr ""
+"Letölthet közvetlenül az SVN-ről készített csomagokat (forráskód \n"
+"és Windows frissítések), <a href=%1><b>innen</b></a>."
+
+#: ../header.php:58
+msgid "The SMPlayer Project"
+msgstr "Az SMPlayer projekt"
+
+#: ../header.php:68
+msgid "Main"
+msgstr "Kezdőlap"
+
+#: ../header.php:70
+msgid "Screenshots"
+msgstr "Képek"
+
+#: ../header.php:72
+msgid "Downloads"
+msgstr "Letöltések"
+
+#. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
+#: ../header.php:75
+msgid "Forum"
+msgstr "Fórum"
+
+#: ../header.php:77
+msgid "Bug Tracking"
+msgstr "Hibajelentés"
+
+#: ../header.php:79
+msgid "Feature Requests"
+msgstr "Kívánságlista"
+
+#: ../header.php:81
+msgid "Wiki"
+msgstr "Wiki"
+
+#. if ($site == "sourceforge")
+#: ../header.php:84
+msgid "Donations"
+msgstr "Támogatás"
 
 #: ../index.php:6
 msgid "SMPlayer - General Info"
@@ -150,255 +402,12 @@ msgstr ""
 
 #: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr "Többplatformos. A futtatható állományok elérhetők Windowsra és Linuxra."
+msgstr ""
+"Többplatformos. A futtatható állományok elérhetők Windowsra és Linuxra."
 
 #: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "Az SMPlayer a <b>GPL</b> licensz alatt áll."
-
-#: ../header.php:58
-msgid "The SMPlayer Project"
-msgstr "Az SMPlayer projekt"
-
-#: ../header.php:68
-msgid "Main"
-msgstr "Kezdőlap"
-
-#: ../header.php:70
-msgid "Screenshots"
-msgstr "Képek"
-
-#: ../header.php:72
-msgid "Downloads"
-msgstr "Letöltések"
-
-#. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:75
-msgid "Forum"
-msgstr "Fórum"
-
-#: ../header.php:77
-msgid "Bug Tracking"
-msgstr "Hibajelentés"
-
-#: ../header.php:79
-msgid "Feature Requests"
-msgstr "Kívánságlista"
-
-#: ../header.php:81
-msgid "Wiki"
-msgstr "Wiki"
-
-#. if ($site == "sourceforge")
-#: ../header.php:84
-msgid "Donations"
-msgstr "Támogatás"
-
-#: ../downloads.php:6
-msgid "SMPlayer - Downloads"
-msgstr "SMPlayer - Letöltések"
-
-#: ../downloads.php:37
-msgid "Stable version"
-msgstr "Stabil verzió"
-
-#: ../downloads.php:38
-msgid "Windows"
-msgstr "Windows"
-
-#: ../downloads.php:48
-msgid "Package with installer:"
-msgstr "Csomag telepítővel:"
-
-#: ../downloads.php:53
-msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
-msgstr ""
-"Ez a csomag tartalmaz mindent, ami az SMPlayer futtatásához szükséges: \n"
-"megosztott könyvtárak, fordítások, ikon témák és egy MPlayer build \n"
-"(a mellékelt verzió %1)"
-
-#: ../downloads.php:82
-msgid "Additional codecs:"
-msgstr "További kodekek:"
-
-#: ../downloads.php:88
-msgid ""
-"This package adds support for codecs that are not yet implemented\n"
-"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-"formats. Note that they are not necessary to play most common formats\n"
-"like DVDs, MPEG-1/2/4, etc."
-msgstr ""
-"Ez a csomag támogatást nyújt az MPlayer által natívan még nem támogatott \n"
-"kodekekhez, mint az újabb RealVideo fajták és sok kevésbé gyakori formátumhoz. \n"
-"Nem szükségesek a legtöbb gyakori formátum lejátszásához, mint a DVD-k, \n"
-"MPEG-1/2/4, stb."
-
-#: ../downloads.php:93
-msgid ""
-"These codecs are to be used by mplayer only and they will be installed \n"
-"in the same folder, so they can't cause any conflict with other codecs you \n"
-"may have installed."
-msgstr ""
-"Ezeket a kodekeket csak az MPlayer használja és annak a könyvtárába \n"
-"lesznek telepítve, ezért nem képesek konfliktust okozni más esetlegesen \n"
-"feltelepített kodekekkel."
-
-#: ../downloads.php:97
-msgid ""
-"If you prefer a zip file, you can get it at \n"
-"the <a href=%1>mplayer site</a> (%2)."
-msgstr ""
-"Ha inkább zip fájlt szeretne, letöltheti az \n"
-"<a href=%1>MPlayer oldalról</a> (%2)."
-
-#: ../downloads.php:111
-msgid ""
-"Package (without installer) which includes smplayer, shared libraries,\n"
-"translations and icon themes. It doesn't include mplayer."
-msgstr ""
-"Csomag (telepítő nélkül) amely tartalmazza az SMPlayert, megosztott \n"
-"könyvtárakat, fordításokat és ikon témákat. Nem tartalmazza az MPlayert."
-
-#: ../downloads.php:114
-msgid "This package is for advanced users only!"
-msgstr "Ez a csomag csak haladó felhasználóknak ajánlott!"
-
-#: ../downloads.php:136
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"Az SMPlayer hordozható verziója. Futtatható külső egységekről, pl. USB \n"
-"flash meghajtók. Nem igényel telepítést, csak tömörítse ki a csomagot \n"
-"és kattintson duplán az smplayer.exe-re a futtatáshoz."
-
-#: ../downloads.php:140
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr ""
-"Ez a csomag ikon témákat, fordításokat és egy MPlayer buildet \n"
-"is tartalmaz."
-
-#: ../downloads.php:143
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Megjegyzés: a 7z fájlok <a href=%1>7-Zip</a>-el kitömöríthetők."
-
-#: ../downloads.php:154
-msgid "Linux"
-msgstr "Linux"
-
-#: ../downloads.php:164
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Olvassa el a csomagban lévő Install.txt-t a fordításhoz szükséges "
-"információkért."
-
-#: ../downloads.php:175
-msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-msgstr "OpenSuSE 10.2-n fordítva. libqt4 és mplayer szükséges."
-
-#: ../downloads.php:186
-msgid "Compiled on Ubuntu %1."
-msgstr "Fordítva Ubuntu %1-en."
-
-#: ../downloads.php:191
-msgid "Package for AMD64. Compiled on Ubuntu %1."
-msgstr "Csomag AMD64-re. Fordítva Ubuntu %1-en."
-
-#: ../downloads.php:201
-msgid "Suggested package:"
-msgstr "Ajánlott csomag:"
-
-#: ../downloads.php:202
-msgid ""
-"The version of mplayer included in Ubuntu is a little bit old (%1). "
-"SMPlayer \n"
-"has support for some of the new features of mplayer, so a newer version \n"
-"is highly recommended."
-msgstr ""
-"Az Ubuntuhoz mellékelt MPlayer kissé régi (%1). "
-"Az SMPlayer támogatja az MPlayer néhány új funkcióját, \n"
-"ezért egy újabb verzió erősen ajánlott."
-
-#: ../downloads.php:206
-msgid "You can get updated versions <a href=%1>here</a>"
-msgstr "Letöltheti a frissített verziót <a href=%1>innen</a>"
-
-#: ../downloads.php:210
-msgid "More info"
-msgstr "Több információ"
-
-#: ../downloads.php:217
-msgid "Icon Themes:"
-msgstr "Ikon témák:"
-
-#: ../downloads.php:218
-msgid "Optional packages which provide some icon themes."
-msgstr "Opcionális csomagok néhány ikon témával."
-
-#: ../downloads.php:260
-msgid "Additional packages"
-msgstr "További csomagok"
-
-#: ../downloads.php:261
-msgid ""
-"There are several additional packages for advanced users:\n"
-"<a href=%1>See sourceforge download page</a>."
-msgstr ""
-"További csomagok érhetők el haladó felhasználóknak:\n"
-"<a href=%1>Lásd SourceForge letöltési oldal</a>."
-
-#: ../downloads.php:268
-msgid "Contributed packages"
-msgstr "Hozzájárulók csomagjai"
-
-#: ../downloads.php:269
-msgid ""
-"There are available packages for other distros, created\n"
-"by other people. <a href=%1>Click here</a> to see them."
-msgstr ""
-"Elérhetőek más emberek által készített csomagok egyéb \n"
-"disztribúciókra. <a href=%1>Kattintson ide</a> a megtekintésükhöz."
-
-#: ../downloads.php:275
-msgid "Related Project"
-msgstr "Kapcsolódó projekt"
-
-#: ../downloads.php:277
-msgid "by MuldeR"
-msgstr "MuldeR által"
-
-#: ../downloads.php:278
-msgid ""
-"This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also "
-"provides\n"
-"its own installer, mplayer builds optimized for several processors and\n"
-"binary codecs."
-msgstr ""
-"Ez a csomag az SMPlayer nagyon friss verzióját tartalmazza (gyakran az \n"
-"SVN repositoryról szedve) valamint az MPlayer egy friss verzióját. Továbbá \n"
-"saját telepítőt, különboző processzorokra optimalizált MPlayer buildeket és \n"
-"kodekeket tartalmaz."
-
-#: ../downloads.php:289
-msgid "Unstable releases"
-msgstr "Nem stabil kiadások"
-
-#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:291
-msgid ""
-"You can get packages directly taken from the SVN (source code and\n"
-"Windows updates), <a href=%1><b>here</b></a>."
-msgstr ""
-"Letölthet közvetlenül az SVN-ről készített csomagokat (forráskód \n"
-"és Windows frissítések), <a href=%1><b>innen</b></a>."
 
 #: ../screenshots.php:6
 msgid "SMPlayer - Screenshots"
@@ -444,3 +453,6 @@ msgstr "A Mini felület"
 #: ../screenshots.php:71
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer az új KDE 4-en"
+
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "OpenSuSE 10.2-n fordítva. libqt4 és mplayer szükséges."
