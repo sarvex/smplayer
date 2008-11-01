@@ -635,67 +635,6 @@ Index: debian-rvm/mime
 +video/x-ms-wmv; mplayer %s; description="Windows Media Video";
 +video/x-ms-wmx; mplayer %s; description="Windows Media Video";
 +video/x-ms-wvx; mplayer %s; description="Windows Media Video";
-Index: debian-rvm/patches/02-startupvol.dpatch
-===================================================================
---- debian-rvm/patches/02-startupvol.dpatch	(revisión: 0)
-+++ debian-rvm/patches/02-startupvol.dpatch	(revisión: 0)
-@@ -0,0 +1,50 @@
-+#! /bin/sh /usr/share/dpatch/dpatch-run
-+## 02-startupvol.dpatch by  <rvm@escomposlinux.org>
-+##
-+## All lines beginning with `## DP:' are a description of the patch.
-+## DP: No description.
-+
-+@DPATCH@
-+diff -urNad svn~/cfg-mplayer.h svn/cfg-mplayer.h
-+--- svn~/cfg-mplayer.h	2008-10-19 09:16:41.000000000 +0200
-++++ svn/cfg-mplayer.h	2008-10-19 09:36:48.000000000 +0200
-+@@ -108,6 +108,7 @@
-+         {"nosoftvol", &soft_vol, CONF_TYPE_FLAG, 0, 1, 0, NULL},
-+         {"softvol-max", &soft_vol_max, CONF_TYPE_FLOAT, CONF_RANGE, 10, 10000, NULL},
-+ 	{"volstep", &volstep, CONF_TYPE_INT, CONF_RANGE, 0, 100, NULL},
-++	{"volume", &start_volume, CONF_TYPE_FLOAT, CONF_RANGE, -1, 10000, NULL},
-+ 	{"master", "Option -master has been removed, use -af volume instead.\n", CONF_TYPE_PRINT, 0, 0, 0, NULL},
-+ 	// override audio buffer size (used only by -ao oss, anyway obsolete...)
-+ 	{"abs", &ao_data.buffersize, CONF_TYPE_INT, CONF_MIN, 0, 0, NULL},
-+diff -urNad svn~/mplayer.c svn/mplayer.c
-+--- svn~/mplayer.c	2008-10-19 09:16:41.000000000 +0200
-++++ svn/mplayer.c	2008-10-19 09:36:48.000000000 +0200
-+@@ -86,6 +86,7 @@
-+ int player_idle_mode=0;
-+ int quiet=0;
-+ int enable_mouse_movements=0;
-++float start_volume = -1;
-+ 
-+ #ifdef WIN32
-+ char * proc_priority=NULL;
-+@@ -3598,6 +3599,8 @@
-+     audio_delay += mpctx->sh_video->stream_delay;
-+ }
-+ if(mpctx->sh_audio){
-++  if (start_volume >= 0)
-++    mixer_setvolume(&mpctx->mixer, start_volume, start_volume);
-+   if (! ignore_start)
-+     audio_delay -= mpctx->sh_audio->stream_delay;
-+   mpctx->delay=-audio_delay;
-+diff -urNad svn~/version.sh svn/version.sh
-+--- svn~/version.sh	2008-10-19 09:16:41.000000000 +0200
-++++ svn/version.sh	2008-10-19 09:36:48.000000000 +0200
-+@@ -9,7 +9,7 @@
-+ 
-+ NEW_REVISION="#define VERSION \"dev-SVN-r${svn_revision}${extra}\""
-+ OLD_REVISION=`cat version.h 2> /dev/null`
-+-TITLE="#define MP_TITLE \"MPlayer dev-SVN-r${svn_revision}${extra} (C) 2000-2008 MPlayer Team\""
-++TITLE="#define MP_TITLE \"MPlayer dev-SVN-r${svn_revision}${extra} (with -volume) (C) 2000-2008 MPlayer Team\""
-+ 
-+ # Update version.h only on revision changes to avoid spurious rebuilds
-+ if test "$NEW_REVISION" != "$OLD_REVISION"; then
-
-Cambios de propiedades en debian-rvm/patches/02-startupvol.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/patches/03-runtime_eq.dpatch
 ===================================================================
 --- debian-rvm/patches/03-runtime_eq.dpatch	(revisión: 0)
@@ -1307,8 +1246,7 @@ Index: debian-rvm/patches/00list
 ===================================================================
 --- debian-rvm/patches/00list	(revisión: 0)
 +++ debian-rvm/patches/00list	(revisión: 0)
-@@ -0,0 +1,3 @@
-+02-startupvol.dpatch
+@@ -0,0 +1,2 @@
 +03-runtime_eq.dpatch
 +04-ass_for_mencoder.dpatch
 Index: debian-rvm/copyright
