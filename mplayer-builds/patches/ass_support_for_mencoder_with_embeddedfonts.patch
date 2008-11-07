@@ -1,0 +1,500 @@
+Index: libmpcodecs/vf_fixpts.c
+===================================================================
+--- libmpcodecs/vf_fixpts.c	(revisión: 0)
++++ libmpcodecs/vf_fixpts.c	(revisión: 0)
+@@ -0,0 +1,137 @@
++/*
++    Copyright (C) 2007 Nicolas George <nicolas.george@normalesup.org>
++
++    This program is free software; you can redistribute it and/or modify
++    it under the terms of the GNU General Public License as published by
++    the Free Software Foundation; either version 2 of the License, or
++    (at your option) any later version.
++
++    This program is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this program; if not, write to the Free Software
++    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
++*/
++
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++#include <inttypes.h>
++
++#include "config.h"
++#include "mp_msg.h"
++#include "help_mp.h"
++
++#include "img_format.h"
++#include "mp_image.h"
++#include "vf.h"
++
++struct vf_priv_s {
++    double current;
++    double step;
++    int autostart;
++    int autostep;
++    unsigned have_step: 1;
++    unsigned print: 1;
++};
++
++static int put_image(vf_instance_t *vf, mp_image_t *src, double pts)
++{
++    struct vf_priv_s *p = vf->priv;
++
++    if(p->print) {
++	if(pts == MP_NOPTS_VALUE)
++	    printf("PTS: undef\n");
++	else
++	    printf("PTS: %f\n", pts);
++    }
++    if(pts != MP_NOPTS_VALUE && p->autostart != 0) {
++	p->current = pts;
++	if(p->autostart > 0)
++	    p->autostart--;
++    } else if(pts != MP_NOPTS_VALUE && p->autostep > 0) {
++	p->step = pts - p->current;
++	p->current = pts;
++	p->autostep--;
++	p->have_step = 1;
++    } else if(p->have_step) {
++	p->current += p->step;
++	pts = p->current;
++    } else {
++	pts = MP_NOPTS_VALUE;
++    }
++    return vf_next_put_image(vf, src, pts);
++}
++
++static void uninit(vf_instance_t *vf)
++{
++    free(vf->priv);
++}
++
++static int parse_args(struct vf_priv_s *p, const char *args)
++{
++    int pos;
++    double num, denom = 1;
++    int iarg;
++
++    while(*args != 0) {
++	pos = 0;
++	if(sscanf(args, "print%n", &pos) == 0 && pos > 0) {
++	    p->print = 1;
++	} else if(sscanf(args, "fps=%lf%n/%lf%n", &num, &pos, &denom, &pos) >= 1
++	    && pos > 0) {
++	    p->step = denom / num;
++	    p->have_step = 1;
++	} else if(sscanf(args, "start=%lf%n", &num, &pos) >= 1 && pos > 0) {
++	    p->current = num;
++	} else if(sscanf(args, "autostart=%d%n", &iarg, &pos) == 1 && pos > 0) {
++	    p->autostart = iarg;
++	} else if(sscanf(args, "autofps=%d%n", &iarg, &pos) == 1 && pos > 0) {
++	    p->autostep = iarg;
++	} else {
++	    mp_msg(MSGT_VFILTER, MSGL_FATAL,
++		"fixpts: unknown suboption: %s\n", args);
++	    return 0;
++	}
++	args += pos;
++	if(*args == ':')
++	    args++;
++    }
++    return 1;
++}
++
++static int open(vf_instance_t *vf, char *args)
++{
++    struct vf_priv_s *p;
++    struct vf_priv_s ptmp = {
++	.current = 0,
++	.step = 0,
++	.autostart = 0,
++	.autostep = 0,
++	.have_step = 0,
++	.print = 0,
++    };
++
++    if(!parse_args(&ptmp, args == NULL ? "" : args))
++	return 0;
++
++    vf->put_image = put_image;
++    vf->uninit = uninit;
++    vf->priv = p = malloc(sizeof(struct vf_priv_s));
++    *p = ptmp;
++    p->current = -p->step;
++
++    return 1;
++}
++
++vf_info_t vf_info_fixpts = {
++  "Fix presentation timestamps",
++  "fixpts",
++  "Nicolas George",
++  "",
++  &open,
++  NULL
++};
+Index: libmpcodecs/vf.c
+===================================================================
+--- libmpcodecs/vf.c	(revisión: 27897)
++++ libmpcodecs/vf.c	(copia de trabajo)
+@@ -99,6 +99,7 @@
+ extern const vf_info_t vf_info_blackframe;
+ extern const vf_info_t vf_info_geq;
+ extern const vf_info_t vf_info_ow;
++extern const vf_info_t vf_info_fixpts;
+ 
+ // list of available filters:
+ static const vf_info_t* const filter_list[]={
+@@ -191,6 +192,7 @@
+     &vf_info_yadif,
+     &vf_info_blackframe,
+     &vf_info_ow,
++    &vf_info_fixpts,
+     NULL
+ };
+ 
+Index: Makefile
+===================================================================
+--- Makefile	(revisión: 27897)
++++ Makefile	(copia de trabajo)
+@@ -125,6 +125,7 @@
+               libmpcodecs/vf_field.c \
+               libmpcodecs/vf_fil.c \
+               libmpcodecs/vf_filmdint.c \
++              libmpcodecs/vf_fixpts.c \
+               libmpcodecs/vf_flip.c \
+               libmpcodecs/vf_format.c \
+               libmpcodecs/vf_framestep.c \
+Index: cfg-mencoder.h
+===================================================================
+--- cfg-mencoder.h	(revisión: 27897)
++++ cfg-mencoder.h	(copia de trabajo)
+@@ -213,6 +213,9 @@
+ 	
+ 	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
+ 	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
++
++	{"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
++	{"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
+ 	
+ 	// info header strings
+ 	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
+Index: DOCS/man/en/mplayer.1
+===================================================================
+--- DOCS/man/en/mplayer.1	(revisión: 27897)
++++ DOCS/man/en/mplayer.1	(copia de trabajo)
+@@ -7177,6 +7177,48 @@
+ Threshold below which a pixel value is considered black (default: 32).
+ .RE
+ .
++.TP
++.B fixpts[=options]
++Fixes the presentation timestamps (PTS) of the frames.
++By default, the PTS passed to the next filter is dropped, but the following
++options can change that:
++.RSs
++.IPs print
++Print the incoming PTS.
++.IPs fps=<fps>
++Specify a frame per second value.
++.IPs start=<pts>
++Specify an initial value for the PTS.
++.IPs autostart=<n>
++Uses the 
++.IR n th
++incoming PTS as the initial PTS.
++All previous pts are kept, so setting a huge value or \-1 keeps the PTS
++intact.
++.IPs autofps=<n>
++Uses the 
++.IR n th
++incoming PTS after the end of autostart to determine the framerate.
++.RE
++.sp 1
++.RS
++.I EXAMPLE:
++.RE
++.PD 0
++.RSs
++.IPs "\-vf fixpts=fps=24000/1001,ass,fixpts"
++Generates a new sequence of PTS, uses it for ASS subtitles, then drops it.
++Generating a new sequence is useful when the timestamps are reset during the
++program; this is frequent on DVDs.
++Dropping it may be necessary to avoid confusing encoders.
++.RE
++.PD 1
++.sp 1
++.RS
++.I NOTE:
++Using this filter together with any sort of seeking (including -ss and EDLs)
++may make demons fly out of your nose.
++.RE
+ .
+ .
+ .SH "GENERAL ENCODING OPTIONS (MENCODER ONLY)"
+@@ -7299,6 +7341,14 @@
+ Do not write OpenDML index for AVI files >1GB.
+ .
+ .TP
++.B \-keep\-pts
++Send the original presentation timestamp (PTS) down the filter and encoder
++chain.
++This may cause incorrect output ("badly interleaved") if the original PTS
++are wrong or the framerate is changed, but can be necessary for certain
++filters (such as ASS).
++.
++.TP
+ .B \-noskip
+ Do not skip frames.
+ .
+Index: libass/ass_cache.c
+===================================================================
+--- libass/ass_cache.c	(revisión: 27897)
++++ libass/ass_cache.c	(copia de trabajo)
+@@ -291,6 +291,39 @@
+ 	free(value);
+ }
+ 
++static int glyph_compare(void* key1, void* key2, size_t key_size) {
++	glyph_hash_key_t* a = key1;
++	glyph_hash_key_t* b = key2;
++	return
++		a->font == b->font &&
++		a->size == b->size &&
++		a->ch == b->ch &&
++		a->bold == b->bold &&
++		a->italic == b->italic &&
++		a->scale_x == b->scale_x &&
++		a->scale_y == b->scale_y &&
++		a->advance.x == b->advance.x &&
++		a->advance.y == b->advance.y &&
++		a->outline == b->outline;
++}
++
++static unsigned glyph_hash(void* buf, size_t len)
++{
++	glyph_hash_key_t* g = buf;
++	unsigned hval = FNV1_32A_INIT;
++	hval = fnv_32a_buf(&g->font, sizeof(g->font), hval);
++	hval = fnv_32a_buf(&g->size, sizeof(g->size), hval);
++	hval = fnv_32a_buf(&g->ch, sizeof(g->ch), hval);
++	hval = fnv_32a_buf(&g->bold, sizeof(g->bold), hval);
++	hval = fnv_32a_buf(&g->italic, sizeof(g->italic), hval);
++	hval = fnv_32a_buf(&g->scale_x, sizeof(g->scale_x), hval);
++	hval = fnv_32a_buf(&g->scale_y, sizeof(g->scale_y), hval);
++	hval = fnv_32a_buf(&g->advance.x, sizeof(g->advance.x), hval);
++	hval = fnv_32a_buf(&g->advance.y, sizeof(g->advance.y), hval);
++	hval = fnv_32a_buf(&g->outline, sizeof(g->outline), hval);
++	return hval;
++}
++
+ void* cache_add_glyph(glyph_hash_key_t* key, glyph_hash_val_t* val)
+ {
+ 	return hashmap_insert(glyph_cache, key, val);
+@@ -311,7 +344,9 @@
+ 	glyph_cache = hashmap_init(sizeof(glyph_hash_key_t),
+ 				   sizeof(glyph_hash_val_t),
+ 				   0xFFFF + 13,
+-				   glyph_hash_dtor, NULL, NULL);
++				   glyph_hash_dtor,
++				   glyph_compare,
++				   glyph_hash);
+ }
+ 
+ void ass_glyph_cache_done(void)
+Index: mencoder.c
+===================================================================
+--- mencoder.c	(revisión: 27897)
++++ mencoder.c	(copia de trabajo)
+@@ -198,6 +198,7 @@
+ 
+ int auto_expand=1;
+ int encode_duplicates=1;
++int keep_pts=0;
+ 
+ // infos are empty by default
+ char *info_name=NULL;
+@@ -361,6 +362,44 @@
+ 
+ static muxer_t* muxer=NULL;
+ 
++void add_subtitles(char *filename, float fps, int silent)
++{
++    sub_data *subd;
++#ifdef CONFIG_ASS
++    ass_track_t *asst = 0;
++#endif
++
++    if (filename == NULL) return;
++
++    subd = sub_read_file(filename, fps);
++#ifdef CONFIG_ASS
++    if (ass_enabled)
++#ifdef CONFIG_ICONV
++        asst = ass_read_file(ass_library, filename, sub_cp);
++#else
++        asst = ass_read_file(ass_library, filename, 0);
++#endif
++    if (ass_enabled && subd && !asst)
++        asst = ass_read_subdata(ass_library, subd, fps);
++
++    if (!asst && !subd && !silent)
++#else
++    if(!subd && !silent) 
++#endif
++        mp_msg(MSGT_CPLAYER, MSGL_ERR, MSGTR_CantLoadSub,
++		filename_recode(filename));
++ 
++#ifdef CONFIG_ASS
++    if (!asst && !subd) return;
++    ass_track = asst;
++#else
++    if (!subd) return;
++#endif
++    mp_msg(MSGT_IDENTIFY, MSGL_INFO, "ID_FILE_SUB_FILENAME=%s\n",
++	   filename_recode(filename));
++    subdata = subd;
++}
++
+ extern void print_wave_header(WAVEFORMATEX *h, int verbose_level);
+ 
+ int main(int argc,char* argv[]){
+@@ -562,6 +601,10 @@
+   m_entry_set_options(mconfig,&filelist[curfile]);
+   filename = filelist[curfile].name;
+  
++#ifdef CONFIG_ASS
++  ass_library = ass_init();
++#endif
++
+   if(!filename){
+ 	mp_msg(MSGT_CPLAYER, MSGL_FATAL, MSGTR_MissingFilename);
+ 	mencoder_exit(1,NULL);
+@@ -685,26 +728,6 @@
+     }
+   }
+ 
+-// after reading video params we should load subtitles because
+-// we know fps so now we can adjust subtitles time to ~6 seconds AST
+-// check .sub
+-//  current_module="read_subtitles_file";
+-  if(sub_name && sub_name[0]){
+-    subdata=sub_read_file(sub_name[0], sh_video->fps);
+-    if(!subdata) mp_msg(MSGT_CPLAYER,MSGL_ERR,MSGTR_CantLoadSub,sub_name[0]);
+-  } else
+-  if(sub_auto && filename) { // auto load sub file ...
+-    char **tmp = NULL;
+-    int i = 0;
+-    char *psub = get_path( "sub/" );
+-    tmp = sub_filenames((psub ? psub : ""), filename);
+-    free(psub);
+-    subdata=sub_read_file(tmp[0], sh_video->fps);
+-    while (tmp[i])
+-      free(tmp[i++]);
+-    free(tmp);
+-  }
+-
+ // set up video encoder:
+ 
+ if (!curfile) { // curfile is non zero when a second file is opened
+@@ -882,12 +905,83 @@
+     ve = sh_video->vfilter;
+   } else sh_video->vfilter = ve;
+     // append 'expand' filter, it fixes stride problems and renders osd:
++#ifdef CONFIG_ASS
++    if (auto_expand && !ass_enabled) { /* we do not want both */
++#else
+     if (auto_expand) {
++#endif
+       char* vf_args[] = { "osd", "1", NULL };
+       sh_video->vfilter=vf_open_filter(sh_video->vfilter,"expand",vf_args);
+     }
++
++#ifdef CONFIG_ASS
++  if(ass_enabled) {
++    int i;
++    int insert = 1;
++    if (vf_settings)
++      for (i = 0; vf_settings[i].name; ++i)
++        if (strcmp(vf_settings[i].name, "ass") == 0) {
++          insert = 0;
++          break;
++        }
++    if (insert) {
++      extern vf_info_t vf_info_ass;
++      vf_info_t* libass_vfs[] = {&vf_info_ass, NULL};
++      char* vf_arg[] = {"auto", "1", NULL};
++      vf_instance_t* vf_ass = vf_open_plugin(libass_vfs,sh_video->vfilter,"ass",vf_arg);
++      if (vf_ass)
++        sh_video->vfilter=(void*)vf_ass;
++      else
++        mp_msg(MSGT_CPLAYER,MSGL_ERR, "ASS: cannot add video filter\n");
++    }
++    if (!keep_pts) {
++      keep_pts = 1;
++      mp_msg(MSGT_MENCODER, MSGL_WARN, "Warning: -ass implies -keep-pts, "
++	"which may cause \"badly interleaved\" files.\n");
++    }
++
++    if (ass_library) {
++      for (i = 0; i < demuxer->num_attachments; ++i) {
++        demux_attachment_t* att = demuxer->attachments + i;
++        if (extract_embedded_fonts &&
++            att->name && att->type && att->data && att->data_size &&
++            (strcmp(att->type, "application/x-truetype-font") == 0 ||
++             strcmp(att->type, "application/x-font") == 0))
++          ass_add_font(ass_library, att->name, att->data, att->data_size);
++      }
++    }
++  }
++#endif
++
+     sh_video->vfilter=append_filters(sh_video->vfilter);
+ 
++#ifdef CONFIG_ASS
++  if (ass_enabled)
++    ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_INIT_EOSD, ass_library);
++#endif
++
++// after reading video params we should load subtitles because
++// we know fps so now we can adjust subtitles time to ~6 seconds AST
++// check .sub
++//  current_module="read_subtitles_file";
++  if(sub_name && sub_name[0]){
++    for (i = 0; sub_name[i] != NULL; ++i) 
++        add_subtitles (sub_name[i], sh_video->fps, 0); 
++  } else
++  if(sub_auto && filename) { // auto load sub file ...
++    char **tmp = NULL;
++    int i = 0;
++    char *psub = get_path( "sub/" );
++    tmp = sub_filenames((psub ? psub : ""), filename);
++    free(psub);
++    while (tmp[i])
++    {
++      add_subtitles (tmp[i], sh_video->fps, 0);
++      free(tmp[i++]);
++    }
++    free(tmp);
++  }
++
+     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
+     init_best_video_codec(sh_video,video_codec_list,video_fm_list);
+     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
+@@ -1343,7 +1437,8 @@
+     // decode_video will callback down to ve_*.c encoders, through the video filters
+     {void *decoded_frame = decode_video(sh_video,frame_data.start,frame_data.in_size,
+       skip_flag>0 && (!sh_video->vfilter || ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_SKIP_NEXT_FRAME, 0) != CONTROL_TRUE), MP_NOPTS_VALUE);
+-    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame, MP_NOPTS_VALUE);}
++    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame,
++	keep_pts ? sh_video->pts : MP_NOPTS_VALUE);}
+     
+     if (sh_video->vf_initialized < 0) mencoder_exit(1, NULL);
+     
