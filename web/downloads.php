@@ -219,10 +219,10 @@ echo "<b>". get_tr("New!") ."</b> ";
 echo tr("Now you can easily install the SMPlayer and MPlayer packages with 
 %1. Just add this line to your %2:", "<i>apt</i>", 
 "<i>/etc/apt/sources.list</i>");
-echo "<pre>";
-echo "deb http://ppa.launchpad.net/rvm/ubuntu hardy main";
-echo "deb http://ppa.launchpad.net/rvm/ubuntu intrepid main";
-echo "</pre>";
+echo "<pre>\n";
+echo "deb http://ppa.launchpad.net/rvm/ubuntu hardy main\n";
+echo "deb http://ppa.launchpad.net/rvm/ubuntu intrepid main\n";
+echo "</pre>\n";
 ?>
 
 </td>
