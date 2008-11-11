@@ -205,7 +205,7 @@ has support for some of the new features of mplayer, so a newer version
 is highly recommended.", "1.0rc2");
 echo " ";
 tr("You can get updated versions <a href=%1>here</a>",
-"\"http://sourceforge.net/project/showfiles.php?group_id=185512&package_id=260588\"");
+"\"https://launchpad.net/~rvm/+archive\"");
 echo ". ";
 echo "<a href=\"http://smplayer.berlios.de/forums/viewtopic.php?id=741\">" . 
 get_tr("More info") . "</a>.";
