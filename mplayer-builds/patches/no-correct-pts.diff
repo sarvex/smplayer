@@ -1,0 +1,27 @@
+Index: cfg-mplayer.h
+===================================================================
+--- cfg-mplayer.h	(revisión: 27904)
++++ cfg-mplayer.h	(copia de trabajo)
+@@ -322,6 +322,7 @@
+ 	// a-v sync stuff:
+         {"correct-pts", &user_correct_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
+         {"nocorrect-pts", &user_correct_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
++        {"no-correct-pts", &user_correct_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
+ 	{"noautosync", &autosync, CONF_TYPE_FLAG, 0, 0, -1, NULL},
+ 	{"autosync", &autosync, CONF_TYPE_INT, CONF_RANGE, 0, 10000, NULL},
+ //	{"dapsync", &dapsync, CONF_TYPE_FLAG, 0, 0, 1, NULL},
+Index: DOCS/man/en/mplayer.1
+===================================================================
+--- DOCS/man/en/mplayer.1	(revisión: 27904)
++++ DOCS/man/en/mplayer.1	(copia de trabajo)
+@@ -1052,6 +1052,10 @@
+ loadlist slave commands.
+ .
+ .TP
++.B \-no\-correct\-pts (DEPRECATED)
++Kept for backwards compatibility. Use \-nocorrect-pts instead.
++.
++.TP
+ .B \-nojoystick
+ Turns off joystick support.
+ .
