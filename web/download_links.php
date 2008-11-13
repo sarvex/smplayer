@@ -10,11 +10,11 @@ function download_rpm_link() {
 }
 
 function download_deb_link() {
-	return create_link("smplayer_0.6.5_i386.deb", 2564190 );
+	return create_link("smplayer_0.6.5.1_i386.deb", 2564534 );
 }
 
 function download_amd64deb_link() {
-	return create_link("smplayer_0.6.5_amd64.deb", 2582376 );
+	return create_link("smplayer_0.6.5.1_amd64.deb", 2582552 );
 }
 
 /*
