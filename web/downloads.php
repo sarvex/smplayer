@@ -97,7 +97,7 @@ echo " ";
 tr("If you prefer a zip file, you can get it at 
 the <a href=%1>mplayer site</a> (%2).",
 "\"http://www.mplayerhq.hu/design7/dload.html\"", 
-"windows-essential-20071007.zip");
+"Windows x86 20071007");
 ?>
 </td>
 </tr>
