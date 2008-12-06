@@ -142,7 +142,7 @@ Index: libmpcodecs/vf_fixpts.c
 +};
 Index: libmpcodecs/vf.c
 ===================================================================
---- libmpcodecs/vf.c	(revisión: 27897)
+--- libmpcodecs/vf.c	(revisión: 28103)
 +++ libmpcodecs/vf.c	(copia de trabajo)
 @@ -99,6 +99,7 @@
  extern const vf_info_t vf_info_blackframe;
@@ -162,7 +162,7 @@ Index: libmpcodecs/vf.c
  
 Index: Makefile
 ===================================================================
---- Makefile	(revisión: 27897)
+--- Makefile	(revisión: 28103)
 +++ Makefile	(copia de trabajo)
 @@ -125,6 +125,7 @@
                libmpcodecs/vf_field.c \
@@ -174,7 +174,7 @@ Index: Makefile
                libmpcodecs/vf_framestep.c \
 Index: cfg-mencoder.h
 ===================================================================
---- cfg-mencoder.h	(revisión: 27897)
+--- cfg-mencoder.h	(revisión: 28103)
 +++ cfg-mencoder.h	(copia de trabajo)
 @@ -213,6 +213,9 @@
  	
@@ -188,9 +188,9 @@ Index: cfg-mencoder.h
  	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
 Index: DOCS/man/en/mplayer.1
 ===================================================================
---- DOCS/man/en/mplayer.1	(revisión: 27897)
+--- DOCS/man/en/mplayer.1	(revisión: 28103)
 +++ DOCS/man/en/mplayer.1	(copia de trabajo)
-@@ -7177,6 +7177,48 @@
+@@ -7190,6 +7190,48 @@
  Threshold below which a pixel value is considered black (default: 32).
  .RE
  .
@@ -239,7 +239,7 @@ Index: DOCS/man/en/mplayer.1
  .
  .
  .SH "GENERAL ENCODING OPTIONS (MENCODER ONLY)"
-@@ -7299,6 +7341,14 @@
+@@ -7312,6 +7354,14 @@
  Do not write OpenDML index for AVI files >1GB.
  .
  .TP
@@ -256,7 +256,7 @@ Index: DOCS/man/en/mplayer.1
  .
 Index: libass/ass_cache.c
 ===================================================================
---- libass/ass_cache.c	(revisión: 27897)
+--- libass/ass_cache.c	(revisión: 28103)
 +++ libass/ass_cache.c	(copia de trabajo)
 @@ -291,6 +291,39 @@
  	free(value);
@@ -311,7 +311,7 @@ Index: libass/ass_cache.c
  void ass_glyph_cache_done(void)
 Index: mencoder.c
 ===================================================================
---- mencoder.c	(revisión: 27897)
+--- mencoder.c	(revisión: 28103)
 +++ mencoder.c	(copia de trabajo)
 @@ -198,6 +198,7 @@
  
@@ -363,7 +363,7 @@ Index: mencoder.c
 +    subdata = subd;
 +}
 +
- extern void print_wave_header(WAVEFORMATEX *h, int verbose_level);
+ void print_wave_header(WAVEFORMATEX *h, int verbose_level);
  
  int main(int argc,char* argv[]){
 @@ -562,6 +601,10 @@
