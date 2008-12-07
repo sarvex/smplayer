@@ -1006,7 +1006,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 ++    subdata = subd;
 ++}
 ++
-+ extern void print_wave_header(WAVEFORMATEX *h, int verbose_level);
++ void print_wave_header(WAVEFORMATEX *h, int verbose_level);
 + 
 + int main(int argc,char* argv[]){
 +@@ -562,6 +601,10 @@
