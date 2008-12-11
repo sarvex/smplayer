@@ -19,21 +19,19 @@
 #ifndef _VIDEOPREVIEW_H_
 #define _VIDEOPREVIEW_H_
 
-#include <QObject>
+#include <QWidget>
 #include <QString>
 
-class QWidget;
-
-class VideoPreview : public QObject 
+class VideoPreview : public QWidget
 {
 public:
-	VideoPreview(QString mplayer_path, QObject * parent = 0 );
+	VideoPreview(QString mplayer_path, QWidget * parent = 0, Qt::WindowFlags f = 0);
 	~VideoPreview();
 
 	void setVideoFile(QString file) { input_video = file; };
 	QString videoFile() { return input_video; };
 
-	QWidget * createThumbnails(int cols, int rows, int video_length = 0);
+	bool createThumbnails(int cols, int rows, int video_length = 0);
 
 protected:
 	int getLength();

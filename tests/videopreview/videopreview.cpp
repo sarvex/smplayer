@@ -27,7 +27,7 @@
 #include <QLabel>
 #include <QApplication>
 
-VideoPreview::VideoPreview(QString mplayer_path, QObject * parent) : QObject(parent)
+VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
 	mplayer_bin = mplayer_path;
 
@@ -38,24 +38,23 @@ VideoPreview::VideoPreview(QString mplayer_path, QObject * parent) : QObject(par
 VideoPreview::~VideoPreview() {
 }
 
-QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
+bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	QStringList images;
 
 	if (!extractImages(cols, rows, images, video_length)) {
 		cleanDir(full_output_dir);
-		return 0;
+		return false;
 	}
 
-	QWidget * widget = new QWidget(0);
 	QGridLayout * layout = new QGridLayout;
-	widget->setLayout(layout);
+	setLayout(layout);
 
 	int c=0;
 	int r=0;
 	for (int n=0; n < images.count(); n++) {
 		qDebug("VideoPreview::createThumbnails: '%s'", images[n].toUtf8().constData());
 		QPixmap picture(images[n]);
-		QLabel * l = new QLabel(widget);
+		QLabel * l = new QLabel(this);
 		l->setPixmap(picture.scaledToHeight(100));
 		//l->setPixmap(picture);
 		layout->addWidget(l, c, r);
@@ -64,7 +63,7 @@ QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	}
 
 	cleanDir(full_output_dir);
-	return widget;
+	return true;
 }
 
 bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int video_length) {
@@ -89,7 +88,7 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 
 	int current_time = initial_step;
 
-	QProgressDialog progress(tr("Generating thumbnails..."), tr("Cancel"), 1, num_pictures, 0);
+	QProgressDialog progress(tr("Generating thumbnails..."), tr("Cancel"), 1, num_pictures, this);
 	for (int n=1; n <= num_pictures; n++) {
 		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
 		progress.setValue(n);
