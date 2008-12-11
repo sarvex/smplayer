@@ -17,17 +17,18 @@
 */
 
 #include "videopreview.h"
-#include <QCoreApplication>
+#include <QApplication>
+#include <QWidget>
 
 int main( int argc, char ** argv ) 
 {
-	//QCoreApplication a( argc, argv );
+	QApplication a( argc, argv );
 
 	VideoPreview vp("mplayer");
 	vp.setVideoFile("video.avi");
 
-	vp.createThumbnails(4,3);
+	QWidget *w = vp.createThumbnails(4,3);
+	w->show();
 
-	//return a.exec();
-	return 0;
+	return a.exec();
 }

@@ -21,6 +21,8 @@
 
 #include <QString>
 
+class QWidget;
+
 class VideoPreview 
 {
 public:
@@ -30,10 +32,11 @@ public:
 	void setVideoFile(QString file) { input_video = file; };
 	QString videoFile() { return input_video; };
 
-	bool createThumbnails(int cols, int rows, int video_length = 0);
+	QWidget * createThumbnails(int cols, int rows, int video_length = 0);
 
 protected:
 	int getLength();
+	bool extractImages(int cols, int rows, QStringList & images, int video_length);
 
 	QString mplayer_bin;
 	QString input_video;

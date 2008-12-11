@@ -21,6 +21,9 @@
 #include <QRegExp>
 #include <QDir>
 #include <QTime>
+#include <QWidget>
+#include <QGridLayout>
+#include <QLabel>
 
 VideoPreview::VideoPreview(QString mplayer_path) {
 	mplayer_bin = mplayer_path;
@@ -29,7 +32,34 @@ VideoPreview::VideoPreview(QString mplayer_path) {
 VideoPreview::~VideoPreview() {
 }
 
-bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
+QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
+	QStringList images;
+
+	if (!extractImages(cols, rows, images, video_length)) return 0;
+
+	QWidget * widget = new QWidget(0);
+	QGridLayout * layout = new QGridLayout;
+	widget->setLayout(layout);
+
+	int c=0;
+	int r=0;
+	for (int n=0; n < images.count(); n++) {
+		qDebug("VideoPreview::createThumbnails: '%s'", images[n].toUtf8().constData());
+		QPixmap picture(images[n]);
+		QLabel * l = new QLabel;
+		l->setPixmap(picture.scaledToHeight(100));
+		//l->setPixmap(picture);
+		layout->addWidget(l, c, r);
+		c++;
+		if (c >= cols) { c = 0; r++; }
+	}
+
+	return widget;
+}
+
+bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int video_length) {
+	images.clear();
+
 	int length = video_length;
 	if (length == 0) length = getLength();
 
@@ -39,20 +69,20 @@ bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	QDir d(QDir::tempPath());
 	if (!d.exists(output_dir)) {
 		if (!d.mkpath(output_dir)) {
-			qDebug("VideoPreview::createThumbnails: error: can't create '%s'", full_output_dir.toUtf8().constData());
+			qDebug("VideoPreview::extractImages: error: can't create '%s'", full_output_dir.toUtf8().constData());
 			return false;
 		}
 	}
 
 	int num_pictures = cols * rows;
-	int initial_step = 0;
+	int initial_step = 40;
 	length -= initial_step;
 	int s_step = length / num_pictures;
 
 	int current_time = initial_step;
 
 	for (int n=1; n <= num_pictures; n++) {
-		qDebug("VideoPreview::createThumbnails: getting frame %d of %d...", n, num_pictures);
+		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
 
 		QStringList args;
 		args << "-nosound" << "-vo" << "jpeg:outdir="+full_output_dir << "-frames" << "6"
@@ -61,13 +91,13 @@ bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 		QProcess p;
 		p.start(mplayer_bin, args);
 		if (!p.waitForFinished()) {
-			qDebug("VideoPreview::createThumbnails: error running process");
+			qDebug("VideoPreview::extractImages: error running process");
 			return false;
 		}
 
-		//QTime t = QTime().addSecs(current_time);
-		//d.rename(output_dir + "/00000005.jpg", output_dir +"/picture_"+ t.toString() +".jpg");
-		d.rename(output_dir + "/00000005.jpg", output_dir +"/picture_"+ QString::number(current_time) +".jpg");
+		QString output_file = output_dir + QString("/picture_%1.jpg").arg(current_time, 8, 10, QLatin1Char('0'));
+		d.rename(output_dir + "/00000005.jpg", output_file);
+		images.append(QDir::tempPath() +"/"+ output_file);
 
 		current_time += s_step;
 	}
