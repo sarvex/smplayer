@@ -53,6 +53,9 @@ public:
 	void setMaxWidth(int w) { max_width = w; };
 	int maxWidth() { return max_width; };
 
+	void setDisplayOSD(bool b) { display_osd = b; };
+	bool displayOSD() { return display_osd; };
+
 	bool createThumbnails();
 
 	static VideoInfo getInfo(const QString & mplayer_path, const QString & filename);
@@ -71,6 +74,7 @@ protected:
 
 	QString input_video;
 	int n_cols, n_rows, initial_step, max_width;
+	bool display_osd;
 
 	int thumbnail_width;
 };

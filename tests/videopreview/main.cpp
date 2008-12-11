@@ -36,6 +36,7 @@ int main( int argc, char ** argv )
 	vp.setVideoFile(filename);
 	vp.setGrid(4,5);
 	vp.setMaxWidth(800);
+	vp.setDisplayOSD(true);
 
 	if (vp.createThumbnails()) {
 		vp.setWindowTitle("Videopreview - "+ filename);

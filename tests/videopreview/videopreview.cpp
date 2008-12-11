@@ -36,6 +36,7 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 	n_rows = 4;
 	initial_step = 20;
 	max_width = 800;
+	display_osd = false;
 
 	output_dir = "smplayer_preview";
 	full_output_dir = QDir::tempPath() +"/"+ output_dir;
@@ -93,7 +94,13 @@ bool VideoPreview::extractImages() {
 
 		QStringList args;
 		args << "-nosound" << "-vo" << "jpeg:outdir="+full_output_dir << "-frames" << "6"
-             << "-ss" << QString::number(current_time) << input_video;
+             << "-ss" << QString::number(current_time);
+
+		if (display_osd) {
+			args << "-vf" << "expand=osd=1" << "-osdlevel" << "2";
+		}
+
+		args << input_video;
 
 		QProcess p;
 		p.start(mplayer_bin, args);
