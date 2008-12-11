@@ -44,6 +44,7 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 	progress->setCancelButtonText( tr("Cancel") );
 
 	QGridLayout * layout = new QGridLayout;
+	layout->setSpacing(2);
 	setLayout(layout);
 }
 
@@ -71,6 +72,8 @@ bool VideoPreview::extractImages() {
 			return false;
 		}
 	}
+
+	thumbnail_width = 0;
 
 	int num_pictures = n_cols * n_rows;
 	length -= initial_step;
@@ -102,7 +105,7 @@ bool VideoPreview::extractImages() {
 		QString output_file = output_dir + QString("/picture_%1.jpg").arg(current_time, 8, 10, QLatin1Char('0'));
 		d.rename(output_dir + "/00000005.jpg", output_file);
 
-		addPicture(QDir::tempPath() +"/"+ output_file, current_col, current_row);
+		addPicture(QDir::tempPath() +"/"+ output_file, current_row, current_col);
 		current_col++;
 		if (current_col >= n_cols) { current_col = 0; current_row++; }
 
@@ -112,14 +115,26 @@ bool VideoPreview::extractImages() {
 	return true;
 }
 
-void VideoPreview::addPicture(const QString & filename, int col, int row) {
+void VideoPreview::addPicture(const QString & filename, int row, int col) {
+	qDebug("VideoPreview::addPicture: %d %d", row, col);
+
 	QGridLayout * grid_layout = static_cast<QGridLayout*> (layout());
 
 	QPixmap picture(filename);
+
+	if (thumbnail_width == 0) {
+		int spacing = grid_layout->horizontalSpacing() * (n_cols-1);
+		if (spacing < 0) spacing = 0;
+		qDebug("VideoPreview::addPicture: spacing: %d", spacing);
+		thumbnail_width = (max_width - spacing) / n_cols;
+		if (thumbnail_width > picture.width()) thumbnail_width = picture.width();
+		qDebug("VideoPreview::addPicture: thumbnail_width set to %d", thumbnail_width);
+	}
+
 	QLabel * l = new QLabel(this);
-	l->setPixmap(picture.scaledToHeight(100, Qt::SmoothTransformation));
+	l->setPixmap(picture.scaledToWidth(thumbnail_width, Qt::SmoothTransformation));
 	//l->setPixmap(picture);
-	grid_layout->addWidget(l, col, row);
+	grid_layout->addWidget(l, row, col);
 }
 
 void VideoPreview::cleanDir(QString directory) {

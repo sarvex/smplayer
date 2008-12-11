@@ -71,6 +71,8 @@ protected:
 
 	QString input_video;
 	int n_cols, n_rows, initial_step, max_width;
+
+	int thumbnail_width;
 };
 
 #endif

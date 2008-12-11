@@ -34,7 +34,8 @@ int main( int argc, char ** argv )
 
 	VideoPreview vp("mplayer");
 	vp.setVideoFile(filename);
-	vp.setGrid(5,4);
+	vp.setGrid(4,5);
+	vp.setMaxWidth(800);
 
 	if (vp.createThumbnails()) {
 		vp.setWindowTitle("Videopreview - "+ filename);
