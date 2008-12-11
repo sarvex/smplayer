@@ -35,7 +35,7 @@ int main( int argc, char ** argv )
 	VideoPreview vp("mplayer");
 	vp.setVideoFile(filename);
 
-	QWidget *w = vp.createThumbnails(4,3);
+	QWidget *w = vp.createThumbnails(5,4);
 
 	if (w) {
 		w->setWindowTitle("Videopreview - "+ filename);

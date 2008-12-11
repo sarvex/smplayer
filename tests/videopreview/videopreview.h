@@ -19,14 +19,15 @@
 #ifndef _VIDEOPREVIEW_H_
 #define _VIDEOPREVIEW_H_
 
+#include <QObject>
 #include <QString>
 
 class QWidget;
 
-class VideoPreview 
+class VideoPreview : public QObject 
 {
 public:
-	VideoPreview(QString mplayer_path);
+	VideoPreview(QString mplayer_path, QObject * parent = 0 );
 	~VideoPreview();
 
 	void setVideoFile(QString file) { input_video = file; };

@@ -21,11 +21,13 @@
 #include <QRegExp>
 #include <QDir>
 #include <QTime>
+#include <QProgressDialog>
 #include <QWidget>
 #include <QGridLayout>
 #include <QLabel>
+#include <QApplication>
 
-VideoPreview::VideoPreview(QString mplayer_path) 
+VideoPreview::VideoPreview(QString mplayer_path, QObject * parent) : QObject(parent)
 {
 	mplayer_bin = mplayer_path;
 
@@ -53,7 +55,7 @@ QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	for (int n=0; n < images.count(); n++) {
 		qDebug("VideoPreview::createThumbnails: '%s'", images[n].toUtf8().constData());
 		QPixmap picture(images[n]);
-		QLabel * l = new QLabel;
+		QLabel * l = new QLabel(widget);
 		l->setPixmap(picture.scaledToHeight(100));
 		//l->setPixmap(picture);
 		layout->addWidget(l, c, r);
@@ -87,8 +89,11 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 
 	int current_time = initial_step;
 
+	QProgressDialog progress(tr("Generating thumbnails..."), tr("Cancel"), 1, num_pictures, 0);
 	for (int n=1; n <= num_pictures; n++) {
 		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
+		progress.setValue(n);
+		qApp->processEvents();
 
 		QStringList args;
 		args << "-nosound" << "-vo" << "jpeg:outdir="+full_output_dir << "-frames" << "6"
