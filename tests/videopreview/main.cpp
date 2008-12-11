@@ -26,7 +26,7 @@ int main( int argc, char ** argv )
 	VideoPreview vp("mplayer");
 	vp.setVideoFile("video.avi");
 
-	vp.createThumbnails(6,6);
+	vp.createThumbnails(4,3);
 
 	//return a.exec();
 	return 0;

@@ -18,6 +18,9 @@
 
 #include "videopreview.h"
 #include <QProcess>
+#include <QRegExp>
+#include <QDir>
+#include <QTime>
 
 VideoPreview::VideoPreview(QString mplayer_path) {
 	mplayer_bin = mplayer_path;
@@ -26,9 +29,50 @@ VideoPreview::VideoPreview(QString mplayer_path) {
 VideoPreview::~VideoPreview() {
 }
 
-void VideoPreview::createThumbnails(int cols, int rows, int video_length) {
+bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	int length = video_length;
 	if (length == 0) length = getLength();
+
+	// Create a temporary directory
+	QString output_dir = "thumbnails";
+	QString full_output_dir = QDir::tempPath() +"/"+ output_dir;
+	QDir d(QDir::tempPath());
+	if (!d.exists(output_dir)) {
+		if (!d.mkpath(output_dir)) {
+			qDebug("VideoPreview::createThumbnails: error: can't create '%s'", full_output_dir.toUtf8().constData());
+			return false;
+		}
+	}
+
+	int num_pictures = cols * rows;
+	int initial_step = 0;
+	length -= initial_step;
+	int s_step = length / num_pictures;
+
+	int current_time = initial_step;
+
+	for (int n=1; n <= num_pictures; n++) {
+		qDebug("VideoPreview::createThumbnails: getting frame %d of %d...", n, num_pictures);
+
+		QStringList args;
+		args << "-nosound" << "-vo" << "jpeg:outdir="+full_output_dir << "-frames" << "6"
+             << "-ss" << QString::number(current_time) << input_video;
+
+		QProcess p;
+		p.start(mplayer_bin, args);
+		if (!p.waitForFinished()) {
+			qDebug("VideoPreview::createThumbnails: error running process");
+			return false;
+		}
+
+		//QTime t = QTime().addSecs(current_time);
+		//d.rename(output_dir + "/00000005.jpg", output_dir +"/picture_"+ t.toString() +".jpg");
+		d.rename(output_dir + "/00000005.jpg", output_dir +"/picture_"+ QString::number(current_time) +".jpg");
+
+		current_time += s_step;
+	}
+
+	return true;
 }
 
 int VideoPreview::getLength() {

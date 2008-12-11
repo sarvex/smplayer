@@ -30,7 +30,7 @@ public:
 	void setVideoFile(QString file) { input_video = file; };
 	QString videoFile() { return input_video; };
 
-	void createThumbnails(int cols, int rows, int video_length = 0);
+	bool createThumbnails(int cols, int rows, int video_length = 0);
 
 protected:
 	int getLength();
