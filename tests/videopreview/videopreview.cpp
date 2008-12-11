@@ -43,6 +43,7 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 
 	progress = new QProgressDialog(this);
 	progress->setCancelButtonText( tr("Cancel") );
+	connect( progress, SIGNAL(canceled()), this, SLOT(cancelPressed()) );
 
 	QGridLayout * layout = new QGridLayout;
 	layout->setSpacing(2);
@@ -82,6 +83,7 @@ bool VideoPreview::extractImages() {
 
 	int current_time = initial_step;
 
+	canceled = false;
 	progress->setLabelText(tr("Creating thumbnails..."));
 	progress->setRange(1, num_pictures);
 
@@ -91,6 +93,8 @@ bool VideoPreview::extractImages() {
 		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
 		progress->setValue(n);
 		qApp->processEvents();
+
+		if (canceled) return false;
 
 		QStringList args;
 		args << "-nosound" << "-vo" << "jpeg:outdir="+full_output_dir << "-frames" << "6"
@@ -196,3 +200,10 @@ VideoInfo VideoPreview::getInfo(const QString & mplayer_path, const QString & fi
 
 	return i;
 }
+
+void VideoPreview::cancelPressed() {
+	canceled = true;
+}
+
+#include "moc_videopreview.cpp"
+

@@ -32,6 +32,8 @@ struct VideoInfo {
 
 class VideoPreview : public QWidget
 {
+	Q_OBJECT
+
 public:
 	VideoPreview(QString mplayer_path, QWidget * parent = 0, Qt::WindowFlags f = 0);
 	~VideoPreview();
@@ -60,6 +62,9 @@ public:
 
 	static VideoInfo getInfo(const QString & mplayer_path, const QString & filename);
 
+protected slots:
+	void cancelPressed();
+
 protected:
 	bool extractImages();
 	void addPicture(const QString & filename, int col, int row); 
@@ -71,6 +76,7 @@ protected:
 	QString full_output_dir;
 
 	QProgressDialog * progress;
+	bool canceled;
 
 	QString input_video;
 	int n_cols, n_rows, initial_step, max_width;
