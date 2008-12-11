@@ -36,50 +36,26 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 
 	progress = new QProgressDialog(this);
 	progress->setCancelButtonText( tr("Cancel") );
+
+	QGridLayout * layout = new QGridLayout;
+	setLayout(layout);
 }
 
 VideoPreview::~VideoPreview() {
 }
 
 bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
-	QStringList images;
-
-	if (!extractImages(cols, rows, images, video_length)) {
-		cleanDir(full_output_dir);
-		return false;
-	}
-
-	QGridLayout * layout = new QGridLayout;
-	setLayout(layout);
-
-	progress->setLabelText(tr("Generating thumbnails..."));
-	progress->setRange(0, images.count()-1);
-
-	int c=0;
-	int r=0;
-	for (int n=0; n < images.count(); n++) {
-		qDebug("VideoPreview::createThumbnails: '%s'", images[n].toUtf8().constData());
-		progress->setValue(n);
-		qApp->processEvents();
-
-		QPixmap picture(images[n]);
-		QLabel * l = new QLabel(this);
-		l->setPixmap(picture.scaledToHeight(100, Qt::SmoothTransformation));
-		//l->setPixmap(picture);
-		layout->addWidget(l, c, r);
-		c++;
-		if (c >= cols) { c = 0; r++; }
-	}
+	bool result = extractImages(cols, rows, video_length);
 
 	cleanDir(full_output_dir);
-	return true;
+	return result;
 }
 
-bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int video_length) {
-	images.clear();
-
+bool VideoPreview::extractImages(int cols, int rows, int video_length) {
 	int length = video_length;
 	if (length == 0) length = getLength();
+
+	if (length == 0) return false;
 
 	// Create a temporary directory
 	QDir d(QDir::tempPath());
@@ -97,8 +73,11 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 
 	int current_time = initial_step;
 
-	progress->setLabelText(tr("Extracting frames..."));
+	progress->setLabelText(tr("Creating thumbnails..."));
 	progress->setRange(1, num_pictures);
+
+	int current_col = 0;
+	int current_row = 0;
 	for (int n=1; n <= num_pictures; n++) {
 		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
 		progress->setValue(n);
@@ -117,12 +96,25 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 
 		QString output_file = output_dir + QString("/picture_%1.jpg").arg(current_time, 8, 10, QLatin1Char('0'));
 		d.rename(output_dir + "/00000005.jpg", output_file);
-		images.append(QDir::tempPath() +"/"+ output_file);
+
+		addPicture(QDir::tempPath() +"/"+ output_file, current_col, current_row);
+		current_col++;
+		if (current_col >= cols) { current_col = 0; current_row++; }
 
 		current_time += s_step;
 	}
 
 	return true;
+}
+
+void VideoPreview::addPicture(const QString & filename, int col, int row) {
+	QGridLayout * grid_layout = static_cast<QGridLayout*> (layout());
+
+	QPixmap picture(filename);
+	QLabel * l = new QLabel(this);
+	l->setPixmap(picture.scaledToHeight(100, Qt::SmoothTransformation));
+	//l->setPixmap(picture);
+	grid_layout->addWidget(l, col, row);
 }
 
 void VideoPreview::cleanDir(QString directory) {
