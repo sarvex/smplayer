@@ -31,6 +31,12 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 {
 	mplayer_bin = mplayer_path;
 
+	input_video.clear();
+	n_cols = 3;
+	n_rows = 4;
+	initial_step = 20;
+	max_width = 800;
+
 	output_dir = "smplayer_preview";
 	full_output_dir = QDir::tempPath() +"/"+ output_dir;
 
@@ -44,14 +50,14 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 VideoPreview::~VideoPreview() {
 }
 
-bool VideoPreview::createThumbnails(int cols, int rows) {
-	bool result = extractImages(cols, rows);
+bool VideoPreview::createThumbnails() {
+	bool result = extractImages();
 
 	cleanDir(full_output_dir);
 	return result;
 }
 
-bool VideoPreview::extractImages(int cols, int rows) {
+bool VideoPreview::extractImages() {
 	VideoInfo i = getInfo(mplayer_bin, input_video);
 	int length = i.length;
 
@@ -66,8 +72,7 @@ bool VideoPreview::extractImages(int cols, int rows) {
 		}
 	}
 
-	int num_pictures = cols * rows;
-	int initial_step = 40;
+	int num_pictures = n_cols * n_rows;
 	length -= initial_step;
 	int s_step = length / num_pictures;
 
@@ -99,7 +104,7 @@ bool VideoPreview::extractImages(int cols, int rows) {
 
 		addPicture(QDir::tempPath() +"/"+ output_file, current_col, current_row);
 		current_col++;
-		if (current_col >= cols) { current_col = 0; current_row++; }
+		if (current_col >= n_cols) { current_col = 0; current_row++; }
 
 		current_time += s_step;
 	}

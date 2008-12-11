@@ -39,22 +39,38 @@ public:
 	void setVideoFile(QString file) { input_video = file; };
 	QString videoFile() { return input_video; };
 
-	bool createThumbnails(int cols, int rows);
+	void setCols(int cols) { n_cols = cols; };
+	int cols() { return n_cols; };
+
+	void setRows(int rows) { n_rows = rows; };
+	int rows() { return n_rows; };
+
+	void setGrid(int cols, int rows) { n_cols = cols; n_rows = rows; };
+
+	void setInitialStep(int step) { initial_step = step; };
+	int initialStep() { return initial_step; };
+
+	void setMaxWidth(int w) { max_width = w; };
+	int maxWidth() { return max_width; };
+
+	bool createThumbnails();
 
 	static VideoInfo getInfo(const QString & mplayer_path, const QString & filename);
 
 protected:
-	bool extractImages(int cols, int rows);
+	bool extractImages();
 	void addPicture(const QString & filename, int col, int row); 
 	void cleanDir(QString directory);
 
 	QString mplayer_bin;
-	QString input_video;
 
 	QString output_dir;
 	QString full_output_dir;
 
 	QProgressDialog * progress;
+
+	QString input_video;
+	int n_cols, n_rows, initial_step, max_width;
 };
 
 #endif
