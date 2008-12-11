@@ -25,8 +25,12 @@
 #include <QGridLayout>
 #include <QLabel>
 
-VideoPreview::VideoPreview(QString mplayer_path) {
+VideoPreview::VideoPreview(QString mplayer_path) 
+{
 	mplayer_bin = mplayer_path;
+
+	output_dir = "smplayer_preview";
+	full_output_dir = QDir::tempPath() +"/"+ output_dir;
 }
 
 VideoPreview::~VideoPreview() {
@@ -35,7 +39,10 @@ VideoPreview::~VideoPreview() {
 QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	QStringList images;
 
-	if (!extractImages(cols, rows, images, video_length)) return 0;
+	if (!extractImages(cols, rows, images, video_length)) {
+		cleanDir(full_output_dir);
+		return 0;
+	}
 
 	QWidget * widget = new QWidget(0);
 	QGridLayout * layout = new QGridLayout;
@@ -54,6 +61,7 @@ QWidget * VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 		if (c >= cols) { c = 0; r++; }
 	}
 
+	cleanDir(full_output_dir);
 	return widget;
 }
 
@@ -64,8 +72,6 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 	if (length == 0) length = getLength();
 
 	// Create a temporary directory
-	QString output_dir = "thumbnails";
-	QString full_output_dir = QDir::tempPath() +"/"+ output_dir;
 	QDir d(QDir::tempPath());
 	if (!d.exists(output_dir)) {
 		if (!d.mkpath(output_dir)) {
@@ -103,6 +109,18 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 	}
 
 	return true;
+}
+
+void VideoPreview::cleanDir(QString directory) {
+	QDir d(directory);
+	QStringList l = d.entryList( QStringList() << "*.jpg", QDir::Files, QDir::Unsorted);
+
+	for (int n = 0; n < l.count(); n++) {
+		qDebug("VideoPreview::cleanDir: deleting '%s'", l[n].toUtf8().constData());
+		d.remove(l[n]);
+	}
+	qDebug("VideoPreview::cleanDir: removing directory '%s'", directory.toUtf8().constData());
+	d.rmpath(directory);
 }
 
 int VideoPreview::getLength() {

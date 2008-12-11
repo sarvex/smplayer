@@ -37,9 +37,13 @@ public:
 protected:
 	int getLength();
 	bool extractImages(int cols, int rows, QStringList & images, int video_length);
+	void cleanDir(QString directory);
 
 	QString mplayer_bin;
 	QString input_video;
+
+	QString output_dir;
+	QString full_output_dir;
 };
 
 #endif

@@ -28,7 +28,7 @@ int main( int argc, char ** argv )
 	vp.setVideoFile("video.avi");
 
 	QWidget *w = vp.createThumbnails(4,3);
-	w->show();
+	if (w) w->show();
 
 	return a.exec();
 }
