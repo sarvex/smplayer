@@ -23,11 +23,20 @@
 #include <QString>
 
 class QProgressDialog;
+class QGridLayout;
+class QLabel;
 
-struct VideoInfo {
+class VideoInfo 
+{
+public:
+	VideoInfo() { filename.clear(); width = 0; height = 0; length = 0; size = 0; };
+	~VideoInfo() {};
+
+	QString filename;
 	int width;
 	int height;
 	int length;
+	qint64 size;
 };
 
 class VideoPreview : public QWidget
@@ -69,6 +78,10 @@ protected:
 	bool extractImages();
 	void addPicture(const QString & filename, int col, int row); 
 	void cleanDir(QString directory);
+
+	QGridLayout * grid_layout;
+	QLabel * info;
+	QLabel * foot;
 
 	QString mplayer_bin;
 
