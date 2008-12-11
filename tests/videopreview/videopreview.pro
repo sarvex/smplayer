@@ -1,3 +1,4 @@
+CONFIG += debug
 
 HEADERS = videopreview.h
 SOURCES = videopreview.cpp main.cpp
