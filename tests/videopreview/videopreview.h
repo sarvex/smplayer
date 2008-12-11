@@ -22,6 +22,8 @@
 #include <QWidget>
 #include <QString>
 
+class QProgressDialog;
+
 class VideoPreview : public QWidget
 {
 public:
@@ -43,6 +45,8 @@ protected:
 
 	QString output_dir;
 	QString full_output_dir;
+
+	QProgressDialog * progress;
 };
 
 #endif

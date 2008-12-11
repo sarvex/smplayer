@@ -33,6 +33,9 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 
 	output_dir = "smplayer_preview";
 	full_output_dir = QDir::tempPath() +"/"+ output_dir;
+
+	progress = new QProgressDialog(this);
+	progress->setCancelButtonText( tr("Cancel") );
 }
 
 VideoPreview::~VideoPreview() {
@@ -49,13 +52,19 @@ bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
 	QGridLayout * layout = new QGridLayout;
 	setLayout(layout);
 
+	progress->setLabelText(tr("Generating thumbnails..."));
+	progress->setRange(0, images.count()-1);
+
 	int c=0;
 	int r=0;
 	for (int n=0; n < images.count(); n++) {
 		qDebug("VideoPreview::createThumbnails: '%s'", images[n].toUtf8().constData());
+		progress->setValue(n);
+		qApp->processEvents();
+
 		QPixmap picture(images[n]);
 		QLabel * l = new QLabel(this);
-		l->setPixmap(picture.scaledToHeight(100));
+		l->setPixmap(picture.scaledToHeight(100, Qt::SmoothTransformation));
 		//l->setPixmap(picture);
 		layout->addWidget(l, c, r);
 		c++;
@@ -88,10 +97,11 @@ bool VideoPreview::extractImages(int cols, int rows, QStringList & images, int v
 
 	int current_time = initial_step;
 
-	QProgressDialog progress(tr("Generating thumbnails..."), tr("Cancel"), 1, num_pictures, this);
+	progress->setLabelText(tr("Extracting frames..."));
+	progress->setRange(1, num_pictures);
 	for (int n=1; n <= num_pictures; n++) {
 		qDebug("VideoPreview::extractImages: getting frame %d of %d...", n, num_pictures);
-		progress.setValue(n);
+		progress->setValue(n);
 		qApp->processEvents();
 
 		QStringList args;
