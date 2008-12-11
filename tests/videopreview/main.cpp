@@ -19,16 +19,29 @@
 #include "videopreview.h"
 #include <QApplication>
 #include <QWidget>
+#include <stdio.h>
 
 int main( int argc, char ** argv ) 
 {
 	QApplication a( argc, argv );
 
+	if (a.arguments().count() < 2) {
+		printf("Usage: videopreview video_file\n");
+		return 0;
+	}
+
+	QString filename = a.arguments()[1];
+
 	VideoPreview vp("mplayer");
-	vp.setVideoFile("video.avi");
+	vp.setVideoFile(filename);
 
 	QWidget *w = vp.createThumbnails(4,3);
-	if (w) w->show();
 
-	return a.exec();
+	if (w) {
+		w->setWindowTitle("Videopreview - "+ filename);
+		w->show();
+		return a.exec();
+	} else {
+		return 0;
+	}
 }
