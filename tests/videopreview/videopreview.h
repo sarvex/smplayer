@@ -24,6 +24,12 @@
 
 class QProgressDialog;
 
+struct VideoInfo {
+	int width;
+	int height;
+	int length;
+};
+
 class VideoPreview : public QWidget
 {
 public:
@@ -33,11 +39,12 @@ public:
 	void setVideoFile(QString file) { input_video = file; };
 	QString videoFile() { return input_video; };
 
-	bool createThumbnails(int cols, int rows, int video_length = 0);
+	bool createThumbnails(int cols, int rows);
+
+	static VideoInfo getInfo(const QString & mplayer_path, const QString & filename);
 
 protected:
-	int getLength();
-	bool extractImages(int cols, int rows, int video_length);
+	bool extractImages(int cols, int rows);
 	void addPicture(const QString & filename, int col, int row); 
 	void cleanDir(QString directory);
 

@@ -44,16 +44,16 @@ VideoPreview::VideoPreview(QString mplayer_path, QWidget * parent, Qt::WindowFla
 VideoPreview::~VideoPreview() {
 }
 
-bool VideoPreview::createThumbnails(int cols, int rows, int video_length) {
-	bool result = extractImages(cols, rows, video_length);
+bool VideoPreview::createThumbnails(int cols, int rows) {
+	bool result = extractImages(cols, rows);
 
 	cleanDir(full_output_dir);
 	return result;
 }
 
-bool VideoPreview::extractImages(int cols, int rows, int video_length) {
-	int length = video_length;
-	if (length == 0) length = getLength();
+bool VideoPreview::extractImages(int cols, int rows) {
+	VideoInfo i = getInfo(mplayer_bin, input_video);
+	int length = i.length;
 
 	if (length == 0) return false;
 
@@ -129,31 +129,43 @@ void VideoPreview::cleanDir(QString directory) {
 	d.rmpath(directory);
 }
 
-int VideoPreview::getLength() {
-	int length = 0;
+VideoInfo VideoPreview::getInfo(const QString & mplayer_path, const QString & filename) {
+	VideoInfo i;
+	i.width = 0;
+	i.height = 0;
+	i.length = 0;
 
-	QRegExp rx("^ID_LENGTH=(.*)");
+	if (filename.isEmpty()) return i;
+
+	QRegExp rx("^ID_(.*)=(.*)");
 
 	QProcess p;
 	p.setProcessChannelMode( QProcess::MergedChannels );
 
 	QStringList args;
-	args << "-vo" << "null" << "-ao" << "null" << "-frames" << "1" << "-identify" << input_video;
-	p.start(mplayer_bin, args);
+	args << "-vo" << "null" << "-ao" << "null" << "-frames" << "1" << "-identify" << "-nocache" << "-noquiet" << filename;
+	p.start(mplayer_path, args);
 
 	if (p.waitForFinished()) {
 		QByteArray line;
 		while (p.canReadLine()) {
-			line = p.readLine();
-			qDebug("VideoPreview::getLength: '%s'", line.constData());
-			if ( rx.indexIn(line) > -1 ) {
-				length = rx.cap(1).toDouble();
-				qDebug("VideoPreview::getLength: found length: %d", length);
+			line = p.readLine().trimmed();
+			qDebug("VideoPreview::getInfo: '%s'", line.constData());
+			if (rx.indexIn(line) > -1) {
+				QString tag = rx.cap(1);
+				QString value = rx.cap(2);
+				qDebug("VideoPreview::getInfo: tag: '%s', value: '%s'", tag.toUtf8().constData(), value.toUtf8().constData());
+
+				if (tag == "LENGTH") i.length = value.toDouble();
+				else
+				if (tag == "VIDEO_WIDTH") i.width = value.toInt();
+				else
+				if (tag == "VIDEO_HEIGHT") i.height = value.toInt();
 			}
 		}
 	} else {
-		qDebug("VideoPreview::getLength: error: process didn't start");
+		qDebug("VideoPreview::getInfo: error: process didn't start");
 	}
 
-	return length;
+	return i;
 }
