@@ -28,9 +28,9 @@ function print_link($url, $bytes, $disabled = false) {
 function create_link($filename, $bytes) {
 	global $site;
 
-	if ($site == "berlios")
-		return get_link("http://prdownload.berlios.de/smplayer/$filename", $bytes);
-	else
+//	if ($site == "berlios")
+//		return get_link("http://prdownload.berlios.de/smplayer/$filename", $bytes);
+//	else
 		return get_link("http://downloads.sourceforge.net/smplayer/$filename", $bytes);
 }
 
