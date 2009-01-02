@@ -24,11 +24,11 @@ function download_windows_full_link() {
 */
 
 function download_windows_lite_link() {
-	return create_link("smplayer_0.6.5.1_setup.exe", 12799855 );
+	return create_link("smplayer_0.6.6_setup.exe", 13094838 );
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.6.5.1_without_mplayer.7z", 7181255 );
+	return create_link("smplayer-0.6.6_without_mplayer.7z", 7259821 );
 }
 
 function download_windows_portable_link() {
