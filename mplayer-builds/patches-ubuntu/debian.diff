@@ -38,7 +38,7 @@ Index: debian-rvm/control
 ===================================================================
 --- debian-rvm/control	(revisión: 0)
 +++ debian-rvm/control	(revisión: 0)
-@@ -0,0 +1,48 @@
+@@ -0,0 +1,51 @@
 +Source: mplayer
 +Section: graphics
 +Priority: extra
@@ -49,6 +49,7 @@ Index: debian-rvm/control
 +
 +Package: mplayer
 +Architecture: any
++Pre-Depends: dpkg (>= 1.14.12ubuntu3)
 +Depends: ${shlibs:Depends}, ttf-bitstream-vera, mplayer-skins, ttf-dejavu-core
 +Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss2, mplayer-doc, smplayer
 +Conflicts: mplayer-nogui
@@ -66,6 +67,7 @@ Index: debian-rvm/control
 +
 +Package: mencoder
 +Architecture: any
++Pre-Depends: dpkg (>= 1.14.12ubuntu3)
 +Depends: ${shlibs:Depends}
 +Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss2, mplayer-doc
 +Description: MPlayer's Movie Encoder
@@ -77,6 +79,7 @@ Index: debian-rvm/control
 +
 +Package: mplayer-doc
 +Architecture: all
++Pre-Depends: dpkg (>= 1.14.12ubuntu3)
 +Description: The Ultimate Movie Player For Linux (Documentation)
 + It plays most mpeg, avi and asf files, supported by many native and win32
 + DLL codecs. You can watch VCD, DVD and even DivX movies too. The other
