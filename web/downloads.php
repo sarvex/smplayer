@@ -205,7 +205,7 @@ has support for some of the new features of mplayer, so a newer version
 is highly recommended.", "1.0rc2");
 echo " ";
 tr("You can get updated versions <a href=%1>here</a>",
-"\"https://launchpad.net/~rvm/+archive\"");
+"\"https://launchpad.net/~rvm/+archive/ppa\"");
 echo ". ";
 echo "<a href=\"http://smplayer.berlios.de/forums/viewtopic.php?id=741\">" . 
 get_tr("More info") . "</a>.";
@@ -220,9 +220,9 @@ echo tr("Now you can easily install the SMPlayer and MPlayer packages with
 %1. Just add one of the following lines to your %2, according to your 
 version of Ubuntu:", "<i>apt</i>", "<i>/etc/apt/sources.list</i>");
 echo "<br><b>8.04 (hardy):</b> ";
-echo "<i>deb http://ppa.launchpad.net/rvm/ubuntu hardy main</i>";
+echo "<i>deb deb http://ppa.launchpad.net/rvm/ppa/ubuntu hardy main</i>";
 echo "<br><b>8.10 (intrepid):</b> ";
-echo "<i>deb http://ppa.launchpad.net/rvm/ubuntu intrepid main</i>";
+echo "<i>deb deb http://ppa.launchpad.net/rvm/ppa/ubuntu intrepid main</i>";
 ?>
 
 </td>
