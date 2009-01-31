@@ -32,7 +32,7 @@
 
   ;General
   Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-  OutFile "smplayer_${PRODUCT_VERSION}_svn_r2720_websetup.exe"
+  OutFile "smplayer_${PRODUCT_VERSION}_svn_r2743_websetup.exe"
   
   ;Version tab properties
   VIProductVersion "${PRODUCT_VERSION}.0"
@@ -259,10 +259,13 @@ SectionGroup /e "MPlayer Components"
     AddSize 15300
 
     DetailPrint "Downloading MPlayer..."
-    inetc::get /caption "Downloading MPlayer..." /popup "" "http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" "$PLUGINSDIR\${MPLAYER_VERSION}.7z"
+    inetc::get /caption "Downloading MPlayer..." \
+		"http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" \
+		"$PLUGINSDIR\${MPLAYER_VERSION}.7z"
     Pop $R0
     StrCmp $R0 OK mplayerdl1
-      MessageBox MB_OK "Failed to download mplayer package: $R0. MPlayer installation will be skipped."
+      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nInstallation can't continue."
+	  Abort
       mplayerdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${MPLAYER_VERSION}.7z" -o"$PLUGINSDIR"'
@@ -280,10 +283,12 @@ SectionGroup /e "MPlayer Components"
     AddSize 22300
 
     DetailPrint "Downloading MPlayer Codecs..."
-    inetc::get /caption "Downloading MPlayer Codecs..." /popup "" "http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" "$PLUGINSDIR\${CODEC_VERSION}.zip"
+    inetc::get /caption "Downloading MPlayer Codecs..." \
+		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
+		"$PLUGINSDIR\${CODEC_VERSION}.zip"
     Pop $R0
     StrCmp $R0 OK codecdl1
-      MessageBox MB_OK "Failed to download codec package: $R0. Codec installation will be skipped."
+      MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
       codecdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${CODEC_VERSION}.zip" -o"$PLUGINSDIR"'
