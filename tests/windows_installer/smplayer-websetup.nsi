@@ -83,7 +83,7 @@
 
   # Install Pages
   !insertmacro MUI_PAGE_WELCOME
-  !insertmacro MUI_PAGE_LICENSE "Copying.txt"
+  !insertmacro MUI_PAGE_LICENSE "smplayer-build\Copying.txt"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
