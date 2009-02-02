@@ -14,7 +14,7 @@
 ;Defines & includes
 
 !define PRODUCT_NAME "SMPlayer"
-!define PRODUCT_VERSION "0.6.6"
+!define PRODUCT_VERSION "0.6.7"
 !define PRODUCT_PUBLISHER "RVM"
 !define PRODUCT_WEB_SITE "http://smplayer.sf.net"
 !define PRODUCT_FORUM "http://smplayer.sourceforge.net/forums"
@@ -31,7 +31,7 @@
 
   ;General
   Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-  OutFile "smplayer_${PRODUCT_VERSION}_svn_r2749_setup.exe"
+  OutFile "smplayer_${PRODUCT_VERSION}_setup.exe"
   
   ;Version tab properties
   VIProductVersion "${PRODUCT_VERSION}.0"
@@ -82,7 +82,7 @@
 
   # Install Pages
   !insertmacro MUI_PAGE_WELCOME
-  !insertmacro MUI_PAGE_LICENSE "Copying.txt"
+  !insertmacro MUI_PAGE_LICENSE "smplayer-build\Copying.txt"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
@@ -254,7 +254,7 @@ SectionGroup /e "MPlayer Components"
 ;--------------------------------
 ; MPlayer
   Section MPlayer SEC03A
-    SectionIn 1 2
+    SectionIn 1 2 RO
 
     SetOutPath "$INSTDIR"
     File /r "smplayer-build\mplayer"
@@ -268,7 +268,12 @@ SectionGroup /e "MPlayer Components"
     AddSize 22300
 
     DetailPrint "Downloading MPlayer Codecs..."
-    inetc::get /caption "Downloading MPlayer Codecs..." /popup "" "http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" "$PLUGINSDIR\${CODEC_VERSION}.zip"
+    inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
+		"$PLUGINSDIR\${CODEC_VERSION}.zip"
+	;inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+		"ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
+		"$PLUGINSDIR\${CODEC_VERSION}.zip"
     Pop $R0
     StrCmp $R0 OK codecdl1
       MessageBox MB_OK "Failed to download codec package: $R0. Codec installation will be skipped."
@@ -421,23 +426,11 @@ Section Uninstall
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
-  Delete "$INSTDIR\Audio_equalizer.txt"
-  Delete "$INSTDIR\Configuring_the_toolbars.txt"
-  Delete "$INSTDIR\Copying.txt"
-  Delete "$INSTDIR\dxlist.exe"
-  Delete "$INSTDIR\Finding_subtitles.txt"
-  Delete "$INSTDIR\Install.txt"
+  Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
-  Delete "$INSTDIR\Not_so_obvious_things.txt"
-  Delete "$INSTDIR\Portable_Edition.txt"
-  Delete "$INSTDIR\QtCore4.dll"
-  Delete "$INSTDIR\QtGui4.dll"
-  Delete "$INSTDIR\QtNetwork4.dll"
-  Delete "$INSTDIR\QtXml4.dll"
-  Delete "$INSTDIR\QxtCore.dll"
-  Delete "$INSTDIR\Readme.txt"
-  Delete "$INSTDIR\Release_notes.txt"
+  Delete "$INSTDIR\Q*.dll"
   Delete "$INSTDIR\smplayer.exe"
+  Delete "$INSTDIR\dxlist.exe"
   Delete "$INSTDIR\uninst.exe"
   RMDir "$INSTDIR"
 

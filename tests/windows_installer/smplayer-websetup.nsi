@@ -14,7 +14,7 @@
 ;Defines & includes
 
 !define PRODUCT_NAME "SMPlayer"
-!define PRODUCT_VERSION "0.6.6"
+!define PRODUCT_VERSION "0.6.7"
 !define PRODUCT_PUBLISHER "RVM"
 !define PRODUCT_WEB_SITE "http://smplayer.sf.net"
 !define PRODUCT_FORUM "http://smplayer.sourceforge.net/forums"
@@ -22,7 +22,7 @@
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
 !define PRODUCT_STARTMENU_GROUP "SMPlayer"
 !define CODEC_VERSION "windows-essential-20071007"
-!define MPLAYER_VERSION "MPlayer-rtm-svn-28311"
+!define MPLAYER_VERSION "mplayer-svn-28311"
 
 !include MUI2.nsh
 !include WinVer.nsh
@@ -32,7 +32,7 @@
 
   ;General
   Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-  OutFile "smplayer_${PRODUCT_VERSION}_svn_r2749_websetup.exe"
+  OutFile "smplayer_${PRODUCT_VERSION}_websetup.exe"
   
   ;Version tab properties
   VIProductVersion "${PRODUCT_VERSION}.0"
@@ -255,14 +255,19 @@ SectionGroup /e "MPlayer Components"
 ;--------------------------------
 ; MPlayer
   Section MPlayer SEC03A
-    SectionIn 1 2
+    SectionIn 1 2 RO
     AddSize 15300
 
     DetailPrint "Downloading MPlayer..."
-    inetc::get /caption "Downloading MPlayer..." /popup "" "http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" "$PLUGINSDIR\${MPLAYER_VERSION}.7z"
+    inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
+		"http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" \
+		"$PLUGINSDIR\${MPLAYER_VERSION}.7z"
+	;inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
+		"ftp://ftp.berlios.de/pub/smplayer/test/${MPLAYER_VERSION}.7z" \
+		"$PLUGINSDIR\${MPLAYER_VERSION}.7z"
     Pop $R0
     StrCmp $R0 OK mplayerdl1
-      MessageBox MB_OK "Failed to download mplayer package: $R0. MPlayer installation will be skipped."
+      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nMPlayer installation will be skipped.$\nSMPlayer won't be able to play anything without a MPlayer build!"
       mplayerdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${MPLAYER_VERSION}.7z" -o"$PLUGINSDIR"'
@@ -280,10 +285,15 @@ SectionGroup /e "MPlayer Components"
     AddSize 22300
 
     DetailPrint "Downloading MPlayer Codecs..."
-    inetc::get /caption "Downloading MPlayer Codecs..." /popup "" "http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" "$PLUGINSDIR\${CODEC_VERSION}.zip"
+    inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
+		"$PLUGINSDIR\${CODEC_VERSION}.zip"
+	;inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+		"ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
+		"$PLUGINSDIR\${CODEC_VERSION}.zip"
     Pop $R0
     StrCmp $R0 OK codecdl1
-      MessageBox MB_OK "Failed to download codec package: $R0. Codec installation will be skipped."
+      MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
       codecdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${CODEC_VERSION}.zip" -o"$PLUGINSDIR"'
@@ -433,24 +443,12 @@ Section Uninstall
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
-  Delete "$INSTDIR\Audio_equalizer.txt"
-  Delete "$INSTDIR\Configuring_the_toolbars.txt"
-  Delete "$INSTDIR\Copying.txt"
-  Delete "$INSTDIR\dxlist.exe"
-  Delete "$INSTDIR\Finding_subtitles.txt"
-  Delete "$INSTDIR\Install.txt"
+  Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
-  Delete "$INSTDIR\Not_so_obvious_things.txt"
-  Delete "$INSTDIR\Portable_Edition.txt"
-  Delete "$INSTDIR\QtCore4.dll"
-  Delete "$INSTDIR\QtGui4.dll"
-  Delete "$INSTDIR\QtNetwork4.dll"
-  Delete "$INSTDIR\QtXml4.dll"
-  Delete "$INSTDIR\QxtCore.dll"
-  Delete "$INSTDIR\Readme.txt"
-  Delete "$INSTDIR\Release_notes.txt"
+  Delete "$INSTDIR\Q*.dll"
   Delete "$INSTDIR\smplayer.exe"
   Delete "$INSTDIR\uninst.exe"
+  Delete "$INSTDIR\dxlist.exe"
   RMDir "$INSTDIR"
 
   # Delete keys pertaining to SMPlayer
