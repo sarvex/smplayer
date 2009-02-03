@@ -54,8 +54,6 @@
 ;--------------------------------
 ;Variables
 
-  Var IndependentSectionState
-
 ;--------------------------------
 ;Interface Settings
 
@@ -267,7 +265,8 @@ SectionGroup /e "MPlayer Components"
 		"$PLUGINSDIR\${MPLAYER_VERSION}.7z"
     Pop $R0
     StrCmp $R0 OK mplayerdl1
-      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nMPlayer installation will be skipped.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+      Abort
       mplayerdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${MPLAYER_VERSION}.7z" -o"$PLUGINSDIR"'
@@ -359,64 +358,38 @@ Function .onInit
 
   !insertmacro MUI_LANGDLL_DISPLAY
 
-  # This is necessary otherwise SEC03B won't be selectable for the first time you click it.
-  SectionGetFlags ${SEC03A} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCpy $IndependentSectionState $R5
-
 FunctionEnd
 
-Function .onSelChange
-Push $R5
-Push $R6
- 
-  # Check if SEC03A was just selected then select SEC03B.
-  SectionGetFlags ${SEC03A} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCmp $R5 $IndependentSectionState +3
-    StrCpy $IndependentSectionState $R5
-  Goto UnselectDependentSections
-    StrCpy $IndependentSectionState $R5
- 
-  Goto CheckDependentSections
- 
-  # Select SEC03A if SEC03B was selected.
-  SelectIndependentSection:
- 
-    SectionGetFlags ${SEC03A} $R5
-    IntOp $R6 $R5 & ${SF_SELECTED}
-    StrCmp $R6 ${SF_SELECTED} +3
- 
-    IntOp $R5 $R5 | ${SF_SELECTED}
-    SectionSetFlags ${SEC03A} $R5
- 
-    StrCpy $IndependentSectionState ${SF_SELECTED}
- 
-  Goto End
- 
-  # Was SEC03B just unselected?
-  CheckDependentSections:
- 
-  SectionGetFlags ${SEC03B} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCmp $R5 ${SF_SELECTED} SelectIndependentSection
- 
-  Goto End
- 
-  # Unselect SEC03B if SEC03A was unselected.
-  UnselectDependentSections:
- 
-    SectionGetFlags ${SEC03B} $R5
-    IntOp $R6 $R5 & ${SF_SELECTED}
-    StrCmp $R6 ${SF_SELECTED} 0 +3
- 
-    IntOp $R5 $R5 ^ ${SF_SELECTED}
-    SectionSetFlags ${SEC03B} $R5
- 
-  End:
- 
-Pop $R6
-Pop $R5
+Function .onInstFailed
+
+  # Delete desktop and start menu shortcuts
+  SetShellVarContext all
+  Delete "$DESKTOP\SMPlayer.lnk"
+  RMDir /r "$SMPROGRAMS\${PRODUCT_STARTMENU_GROUP}"
+	
+  # Delete directories recursively except for main directory
+  # Nullsoft says it is unsafe to recursively delete $INSTDIR 
+  RMDir /r "$INSTDIR\docs"
+  RMDir /r "$INSTDIR\imageformats"
+  RMDir /r "$INSTDIR\mplayer"
+  RMDir /r "$INSTDIR\shortcuts"
+  RMDir /r "$INSTDIR\themes"
+  RMDir /r "$INSTDIR\translations"
+  Delete "$INSTDIR\*.txt"
+  Delete "$INSTDIR\mingwm10.dll"
+  Delete "$INSTDIR\Q*.dll"
+  Delete "$INSTDIR\smplayer.exe"
+  Delete "$INSTDIR\uninst.exe"
+  Delete "$INSTDIR\dxlist.exe"
+  RMDir "$INSTDIR"
+
+  # Delete keys pertaining to SMPlayer
+  DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
+  DeleteRegKey HKCR "MPlayerFileVideo"
+  DeleteRegKey HKLM "Software\SMPlayer"
+  DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
+  DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
+
 FunctionEnd
 
 ;End Installer Sections
@@ -447,8 +420,8 @@ Section Uninstall
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
   Delete "$INSTDIR\smplayer.exe"
-  Delete "$INSTDIR\uninst.exe"
   Delete "$INSTDIR\dxlist.exe"
+  Delete "$INSTDIR\uninst.exe"
   RMDir "$INSTDIR"
 
   # Delete keys pertaining to SMPlayer

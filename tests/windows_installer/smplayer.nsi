@@ -53,8 +53,6 @@
 ;--------------------------------
 ;Variables
 
-  Var IndependentSectionState
-
 ;--------------------------------
 ;Interface Settings
 
@@ -342,64 +340,6 @@ Function .onInit
 
   !insertmacro MUI_LANGDLL_DISPLAY
 
-  # This is necessary otherwise SEC03B won't be selectable for the first time you click it.
-  SectionGetFlags ${SEC03A} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCpy $IndependentSectionState $R5
-
-FunctionEnd
-
-Function .onSelChange
-Push $R5
-Push $R6
- 
-  # Check if SEC03A was just selected then select SEC03B.
-  SectionGetFlags ${SEC03A} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCmp $R5 $IndependentSectionState +3
-    StrCpy $IndependentSectionState $R5
-  Goto UnselectDependentSections
-    StrCpy $IndependentSectionState $R5
- 
-  Goto CheckDependentSections
- 
-  # Select SEC03A if SEC03B was selected.
-  SelectIndependentSection:
- 
-    SectionGetFlags ${SEC03A} $R5
-    IntOp $R6 $R5 & ${SF_SELECTED}
-    StrCmp $R6 ${SF_SELECTED} +3
- 
-    IntOp $R5 $R5 | ${SF_SELECTED}
-    SectionSetFlags ${SEC03A} $R5
- 
-    StrCpy $IndependentSectionState ${SF_SELECTED}
- 
-  Goto End
- 
-  # Was SEC03B just unselected?
-  CheckDependentSections:
- 
-  SectionGetFlags ${SEC03B} $R5
-  IntOp $R5 $R5 & ${SF_SELECTED}
-  StrCmp $R5 ${SF_SELECTED} SelectIndependentSection
- 
-  Goto End
- 
-  # Unselect SEC03B if SEC03A was unselected.
-  UnselectDependentSections:
- 
-    SectionGetFlags ${SEC03B} $R5
-    IntOp $R6 $R5 & ${SF_SELECTED}
-    StrCmp $R6 ${SF_SELECTED} 0 +3
- 
-    IntOp $R5 $R5 ^ ${SF_SELECTED}
-    SectionSetFlags ${SEC03B} $R5
- 
-  End:
- 
-Pop $R6
-Pop $R5
 FunctionEnd
 
 ;End Installer Sections
