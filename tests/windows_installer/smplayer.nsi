@@ -140,7 +140,6 @@ Section SMPlayer SEC01
 
   SectionIn 1 2 RO
   SetOutPath "$INSTDIR"
-  SetOverwrite ifnewer
   File "smplayer-build\*"
 
   # Docs folder
@@ -267,14 +266,14 @@ SectionGroup /e "MPlayer Components"
 
     DetailPrint "Downloading MPlayer Codecs..."
     inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
-		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
-		"$PLUGINSDIR\${CODEC_VERSION}.zip"
-	;inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+    "http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
+    "$PLUGINSDIR\${CODEC_VERSION}.zip"
+    /* inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
 		"ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
-		"$PLUGINSDIR\${CODEC_VERSION}.zip"
+		"$PLUGINSDIR\${CODEC_VERSION}.zip" */
     Pop $R0
     StrCmp $R0 OK codecdl1
-      MessageBox MB_OK "Failed to download codec package: $R0. Codec installation will be skipped."
+      MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
       codecdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${CODEC_VERSION}.zip" -o"$PLUGINSDIR"'
@@ -337,6 +336,13 @@ SectionEnd
 ;Installer Functions
 
 Function .onInit
+
+  System::Call 'kernel32::CreateMutexA(i 0, i 0, t "$(^Name)") i .r1 ?e'
+  Pop $R0
+
+  StrCmp $R0 0 +3
+    MessageBox MB_OK|MB_ICONEXCLAMATION "The installer is already running."
+    Abort
 
   !insertmacro MUI_LANGDLL_DISPLAY
 
