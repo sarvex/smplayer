@@ -114,8 +114,9 @@
   !insertmacro MUI_LANGUAGE "Slovak"
   !insertmacro MUI_LANGUAGE "Slovenian"
   !insertmacro MUI_LANGUAGE "Spanish"
-  !insertmacro MUI_LANGUAGE "SpanishInternational"
+;  !insertmacro MUI_LANGUAGE "SpanishInternational"
 
+  !include installer_translations.nsh
 ;--------------------------------
 ;Reserve Files
   
@@ -255,8 +256,8 @@ SectionGroup /e "MPlayer Components"
     SectionIn 1 2 RO
     AddSize 15300
 
-    DetailPrint "Downloading MPlayer..."
-    inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
+    DetailPrint "$(DownloadingMPlayer)"
+    inetc::get /caption "$(DownloadingMPlayer)" /banner "$(Downloading) ${MPLAYER_VERSION}.7z" \
     "http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" \
     "$PLUGINSDIR\${MPLAYER_VERSION}.7z"
     /* inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
@@ -264,7 +265,7 @@ SectionGroup /e "MPlayer Components"
     "$PLUGINSDIR\${MPLAYER_VERSION}.7z" */
     Pop $R0
     StrCmp $R0 OK mplayerdl1
-      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+      MessageBox MB_OK "$(MplayerDownloadFailed)"
       Abort
       mplayerdl1:
         # Extract
@@ -282,8 +283,8 @@ SectionGroup /e "MPlayer Components"
     SectionIn 2
     AddSize 22300
 
-    DetailPrint "Downloading MPlayer Codecs..."
-    inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+    DetailPrint "$(DownloadingCodecs)"
+    inetc::get /caption "$(DownloadingCodecs)" /banner "$(Downloading) ${CODEC_VERSION}.zip" \
 		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
 		"$PLUGINSDIR\${CODEC_VERSION}.zip"
     /* inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
@@ -291,7 +292,7 @@ SectionGroup /e "MPlayer Components"
 		"$PLUGINSDIR\${CODEC_VERSION}.zip" */
     Pop $R0
     StrCmp $R0 OK codecdl1
-      MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
+      MessageBox MB_OK "$(CodecsDownloadFailed)"
       codecdl1:
         # Extract
         nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${CODEC_VERSION}.zip" -o"$PLUGINSDIR"'
