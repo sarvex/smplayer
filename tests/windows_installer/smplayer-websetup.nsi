@@ -22,7 +22,6 @@
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
 !define PRODUCT_STARTMENU_GROUP "SMPlayer"
 !define CODEC_VERSION "windows-essential-20071007"
-!define MPLAYER_VERSION "mplayer-svn-28311"
 
 !include MUI2.nsh
 !include WinVer.nsh
@@ -53,6 +52,8 @@
 
 ;--------------------------------
 ;Variables
+
+  Var MPLAYER_VERSION
 
 ;--------------------------------
 ;Interface Settings
@@ -255,24 +256,35 @@ SectionGroup /e "MPlayer Components"
     SectionIn 1 2 RO
     AddSize 15300
 
-    DetailPrint "Downloading MPlayer..."
-    inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
-    "http://downloads.sourceforge.net/smplayer/${MPLAYER_VERSION}.7z?big_mirror=0" \
-    "$PLUGINSDIR\${MPLAYER_VERSION}.7z"
-    /* inetc::get /caption "Downloading MPlayer..." /banner "Downloading ${MPLAYER_VERSION}.7z" \
-    "ftp://ftp.berlios.de/pub/smplayer/test/${MPLAYER_VERSION}.7z" \
-    "$PLUGINSDIR\${MPLAYER_VERSION}.7z" */
+    DetailPrint "Gathering version information..."
+    inetc::get /silent "http://red.caek.org/version-info" \
+    "$PLUGINSDIR\version-info"
     Pop $R0
-    StrCmp $R0 OK mplayerdl1
-      MessageBox MB_OK "Failed to download mplayer package: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+    StrCmp $R0 OK mplayerdl0
+      MessageBox MB_OK "Failed to retrieve version information: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
       Abort
-      mplayerdl1:
-        # Extract
-        nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${MPLAYER_VERSION}.7z" -o"$PLUGINSDIR"'
+      mplayerdl0:
+        # Read version info
+        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
 
-        # Copy
-        CreateDirectory "$INSTDIR\mplayer"
-        CopyFiles /SILENT "$PLUGINSDIR\${MPLAYER_VERSION}\*" "$INSTDIR\mplayer"
+        DetailPrint "Downloading MPlayer..." 
+        inetc::get /caption "Downloading MPlayer..." /banner "Downloading $MPLAYER_VERSION.7z" \
+        "http://downloads.sourceforge.net/smplayer/$MPLAYER_VERSION.7z?big_mirror=0" \
+        "$PLUGINSDIR\$MPLAYER_VERSION.7z"
+        /* inetc::get /caption "Downloading MPlayer..." /banner "Downloading $MPLAYER_VERSION.7z" \
+        "ftp://ftp.berlios.de/pub/smplayer/test/$MPLAYER_VERSION.7z" \
+        "$PLUGINSDIR\$MPLAYER_VERSION.7z" */
+        Pop $R0
+        StrCmp $R0 OK mplayerdl1
+          MessageBox MB_OK "Failed to download mplayer package: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+          Abort
+          mplayerdl1:
+            # Extract
+            nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPLAYER_VERSION.7z" -o"$PLUGINSDIR"'
+
+            # Copy
+            CreateDirectory "$INSTDIR\mplayer"
+            CopyFiles /SILENT "$PLUGINSDIR\$MPLAYER_VERSION\*" "$INSTDIR\mplayer"
 
   SectionEnd
 
