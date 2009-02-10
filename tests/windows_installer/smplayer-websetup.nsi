@@ -21,9 +21,9 @@
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
 !define PRODUCT_STARTMENU_GROUP "SMPlayer"
-!define CODEC_VERSION "windows-essential-20071007"
 
 !include MUI2.nsh
+!include Sections.nsh
 !include WinVer.nsh
 
 ;--------------------------------
@@ -54,6 +54,7 @@
 ;Variables
 
   Var MPLAYER_VERSION
+  Var CODEC_VERSION
 
 ;--------------------------------
 ;Interface Settings
@@ -256,19 +257,24 @@ SectionGroup /e "MPlayer Components"
     SectionIn 1 2 RO
     AddSize 15300
 
-    DetailPrint "Gathering version information..."
-    inetc::get /silent "http://red.caek.org/version-info" \
-    "$PLUGINSDIR\version-info"
-    Pop $R0
-    StrCmp $R0 OK mplayerdl0
-      MessageBox MB_OK "Failed to retrieve version information: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
-      Abort
-      mplayerdl0:
-        # Read version info
-        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
+    ReadINIStr $0 "$INSTDIR\options.ini" smplayer mplayer
+
+    IntCmp $0 1 mplayerInstalled mplayerNotInstalled
+      mplayerInstalled:
+        MessageBox MB_YESNO "MPlayer is already installed. Re-Download?" IDYES mplayerNotInstalled IDNO skipMplayer
+      mplayerNotInstalled:
+        ${IfNot} ${FileExists} "$PLUGINSDIR\version-info"
+          Call getVerInfo
+        ${EndIf}
+
+        ${If} ${FileExists} "$PLUGINSDIR\version-info"
+          ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
+        ${ElseIfNot} ${FileExists} "$PLUGINSDIR\version-info"
+          StrCpy $MPLAYER_VERSION "mplayer-svn-28311"
+        ${EndIf}
 
         DetailPrint "Downloading MPlayer..." 
-        inetc::get /caption "Downloading MPlayer..." /banner "Downloading $MPLAYER_VERSION.7z" \
+        inetc::get /timeout 30000 /resume "" /caption "Downloading MPlayer..." /banner "Downloading $MPLAYER_VERSION.7z" \
         "http://downloads.sourceforge.net/smplayer/$MPLAYER_VERSION.7z?big_mirror=0" \
         "$PLUGINSDIR\$MPLAYER_VERSION.7z"
         /* inetc::get /caption "Downloading MPlayer..." /banner "Downloading $MPLAYER_VERSION.7z" \
@@ -286,7 +292,9 @@ SectionGroup /e "MPlayer Components"
             CreateDirectory "$INSTDIR\mplayer"
             CopyFiles /SILENT "$PLUGINSDIR\$MPLAYER_VERSION\*" "$INSTDIR\mplayer"
 
-  SectionEnd
+      skipMplayer:
+
+SectionEnd
 
 ;--------------------------------
 ; Binary codecs
@@ -294,23 +302,41 @@ SectionGroup /e "MPlayer Components"
     SectionIn 2
     AddSize 22300
 
-    DetailPrint "Downloading MPlayer Codecs..."
-    inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
-		"http://www.mplayerhq.hu/MPlayer/releases/codecs/${CODEC_VERSION}.zip" \
-		"$PLUGINSDIR\${CODEC_VERSION}.zip"
-    /* inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
-		"ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
-		"$PLUGINSDIR\${CODEC_VERSION}.zip" */
-    Pop $R0
-    StrCmp $R0 OK codecdl1
-      MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
-      codecdl1:
-        # Extract
-        nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\${CODEC_VERSION}.zip" -o"$PLUGINSDIR"'
+    ReadINIStr $1 "$INSTDIR\options.ini" smplayer mplayercodecs
 
-        # Copy
-        CreateDirectory "$INSTDIR\mplayer\codecs"
-        CopyFiles /SILENT "$PLUGINSDIR\${CODEC_VERSION}\*" "$INSTDIR\mplayer\codecs"
+    IntCmp $1 1 mplayerCodecsInstalled mplayerCodecsNotInstalled
+      mplayerCodecsInstalled:
+        MessageBox MB_YESNO "MPlayer codecs are already installed. Re-Download?" IDYES mplayerCodecsNotInstalled IDNO skipMplayerCodecs
+      mplayerCodecsNotInstalled:
+        ${IfNot} ${FileExists} "$PLUGINSDIR\version-info"
+          Call getVerInfo
+        ${EndIf}
+
+        ${If} ${FileExists} "$PLUGINSDIR\version-info"
+          ReadINIStr $CODEC_VERSION "$PLUGINSDIR\version-info" smplayer mplayercodecs
+        ${ElseIfNot} ${FileExists} "$PLUGINSDIR\version-info"
+          StrCpy $CODEC_VERSION "windows-essential-20071007"
+        ${EndIf}
+
+        DetailPrint "Downloading MPlayer Codecs..."
+        inetc::get /timeout 30000 /resume "" /caption "Downloading MPlayer Codecs..." /banner "Downloading $CODEC_VERSION.zip" \
+        "http://www.mplayerhq.hu/MPlayer/releases/codecs/$CODEC_VERSION.zip" \
+        "$PLUGINSDIR\$CODEC_VERSION.zip"
+        /* inetc::get /caption "Downloading MPlayer Codecs..." /banner "Downloading ${CODEC_VERSION}.zip" \
+        "ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
+        "$PLUGINSDIR\${CODEC_VERSION}.zip" */
+        Pop $R0
+        StrCmp $R0 OK codecdl1
+          MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
+          codecdl1:
+            # Extract
+            nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$CODEC_VERSION.zip" -o"$PLUGINSDIR"'
+
+            # Copy
+            CreateDirectory "$INSTDIR\mplayer\codecs"
+            CopyFiles /SILENT "$PLUGINSDIR\$CODEC_VERSION\*" "$INSTDIR\mplayer\codecs"
+
+      skipMplayerCodecs:
 
 	SectionEnd
 
@@ -349,6 +375,8 @@ SectionEnd
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 Section -Post
+
+  Call recordOptions
 
   # Uninstall information
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -393,6 +421,7 @@ Function .onInstFailed
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
+  Delete "$INSTDIR\*.ini"
   Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
@@ -407,6 +436,45 @@ Function .onInstFailed
   DeleteRegKey HKLM "Software\SMPlayer"
   DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
   DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
+
+FunctionEnd
+
+Function getVerInfo
+
+  DetailPrint "Gathering version information..."
+  inetc::get /timeout 30000 /resume "" /silent "http://red.caek.org/version-info" \
+  "$PLUGINSDIR\version-info"
+  Pop $R0
+  StrCmp $R0 OK +2
+    MessageBox MB_OK "Failed to retrieve version information: $R0.$\nSetup will assume a default version."
+
+FunctionEnd
+
+Function recordOptions
+
+  ${If} ${SectionIsSelected} ${SEC03B}
+    ${AndIf} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 1
+    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 0
+  ${ElseIfNot} ${SectionIsSelected} ${SEC03B}
+    ${AndIf} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 1
+    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 0
+  ${EndIf}
+
+  ${If} ${SectionIsSelected} ${SEC03B}
+    ${AndIf} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 1
+    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 0
+  ${ElseIfNot} ${SectionIsSelected} ${SEC03B}
+    ${AndIf} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 1
+    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 0
+  ${EndIf}
 
 FunctionEnd
 
@@ -434,6 +502,7 @@ Section Uninstall
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
+  Delete "$INSTDIR\*.ini"
   Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
