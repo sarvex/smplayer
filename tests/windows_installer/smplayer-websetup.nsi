@@ -23,7 +23,6 @@
 !define PRODUCT_STARTMENU_GROUP "SMPlayer"
 
 !include MUI2.nsh
-!include Sections.nsh
 !include WinVer.nsh
 
 ;--------------------------------
@@ -32,7 +31,7 @@
   ;General
   Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
   OutFile "smplayer_${PRODUCT_VERSION}_websetup.exe"
-  
+
   ;Version tab properties
   VIProductVersion "${PRODUCT_VERSION}.0"
   VIAddVersionKey "ProductName" "SMPlayer"
@@ -42,9 +41,12 @@
   VIAddVersionKey "CompanyName" "RVM"
   VIAddVersionKey "FileDescription" "SMPlayer for Windows"
   VIAddVersionKey "FileVersion" "${PRODUCT_VERSION}"
-  
-  ;Default installation page stored to $INSTDIR
+
+  /* Sets default install dir to $PROGRAMFILES\SMPlayer.
+  If InstallDirRegKey exists (from a previous installation,
+  it will default to that directory instead. */
   InstallDir "$PROGRAMFILES\SMPlayer"
+  InstallDirRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "InstallLocation"
 
   ;Put on a show
   ShowInstDetails show
@@ -159,7 +161,7 @@ Section SMPlayer SEC01
 
   # UnInstall file
   WriteUninstaller "$INSTDIR\uninst.exe"
-  
+
   # HKEY_CLASSES_ROOT ProgId registration
   WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
   WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
@@ -225,6 +227,7 @@ SectionGroup "Program Shortcuts"
   Section Desktop SEC02A
     SectionIn 1 2
 
+    SetOutPath "$INSTDIR"
     # all = global; current = current user
     SetShellVarContext all
     CreateShortCut "$DESKTOP\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
@@ -236,6 +239,7 @@ SectionGroup "Program Shortcuts"
   Section "Start Menu" SEC02B
     SectionIn 1 2
 
+    SetOutPath "$INSTDIR"
     # Start menu shortcut creation
     SetShellVarContext all
     CreateDirectory "$SMPROGRAMS\${PRODUCT_STARTMENU_GROUP}"
@@ -244,7 +248,7 @@ SectionGroup "Program Shortcuts"
     CreateShortCut "$SMPROGRAMS\${PRODUCT_STARTMENU_GROUP}\Uninstall ${PRODUCT_NAME}.lnk" "$INSTDIR\uninst.exe"
 
   SectionEnd
-  
+
 SectionGroupEnd
 
 ;--------------------------------
@@ -257,7 +261,11 @@ SectionGroup /e "MPlayer Components"
     SectionIn 1 2 RO
     AddSize 15300
 
-    ReadINIStr $0 "$INSTDIR\options.ini" smplayer mplayer
+    ${If} ${FileExists} "$INSTDIR\install.ini"
+      ReadINIStr $0 "$INSTDIR\install.ini" smplayer mplayer
+    ${Else}
+      StrCpy $0 0
+    ${EndIf}
 
     IntCmp $0 1 mplayerInstalled mplayerNotInstalled
       mplayerInstalled:
@@ -269,7 +277,7 @@ SectionGroup /e "MPlayer Components"
 
         ${If} ${FileExists} "$PLUGINSDIR\version-info"
           ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
-        ${ElseIfNot} ${FileExists} "$PLUGINSDIR\version-info"
+        ${Else}
           StrCpy $MPLAYER_VERSION "mplayer-svn-28311"
         ${EndIf}
 
@@ -302,7 +310,11 @@ SectionEnd
     SectionIn 2
     AddSize 22300
 
-    ReadINIStr $1 "$INSTDIR\options.ini" smplayer mplayercodecs
+    ${If} ${FileExists} "$INSTDIR\install.ini"
+      ReadINIStr $1 "$INSTDIR\install.ini" smplayer mplayercodecs
+    ${Else}
+      StrCpy $1 0
+    ${EndIf}
 
     IntCmp $1 1 mplayerCodecsInstalled mplayerCodecsNotInstalled
       mplayerCodecsInstalled:
@@ -314,7 +326,7 @@ SectionEnd
 
         ${If} ${FileExists} "$PLUGINSDIR\version-info"
           ReadINIStr $CODEC_VERSION "$PLUGINSDIR\version-info" smplayer mplayercodecs
-        ${ElseIfNot} ${FileExists} "$PLUGINSDIR\version-info"
+        ${Else}
           StrCpy $CODEC_VERSION "windows-essential-20071007"
         ${EndIf}
 
@@ -326,9 +338,10 @@ SectionEnd
         "ftp://ftp.berlios.de/pub/smplayer/test/${CODEC_VERSION}.zip" \
         "$PLUGINSDIR\${CODEC_VERSION}.zip" */
         Pop $R0
-        StrCmp $R0 OK codecdl1
+        StrCmp $R0 OK codecdlSuccess
           MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
-          codecdl1:
+          Goto skipMplayerCodecs
+          codecdlSuccess:
             # Extract
             nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$CODEC_VERSION.zip" -o"$PLUGINSDIR"'
 
@@ -384,6 +397,7 @@ Section -Post
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "HelpLink" "${PRODUCT_FORUM}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "InstallLocation" "$INSTDIR"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLUpdateInfo" "${PRODUCT_WEB_SITE}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
@@ -412,7 +426,7 @@ Function .onInstFailed
   SetShellVarContext all
   Delete "$DESKTOP\SMPlayer.lnk"
   RMDir /r "$SMPROGRAMS\${PRODUCT_STARTMENU_GROUP}"
-	
+
   # Delete directories recursively except for main directory
   # Nullsoft says it is unsafe to recursively delete $INSTDIR 
   RMDir /r "$INSTDIR\docs"
@@ -433,7 +447,6 @@ Function .onInstFailed
   # Delete keys pertaining to SMPlayer
   DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
   DeleteRegKey HKCR "MPlayerFileVideo"
-  DeleteRegKey HKLM "Software\SMPlayer"
   DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
   DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
 
@@ -452,28 +465,16 @@ FunctionEnd
 
 Function recordOptions
 
-  ${If} ${SectionIsSelected} ${SEC03B}
-    ${AndIf} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 1
-    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 0
-  ${ElseIfNot} ${SectionIsSelected} ${SEC03B}
-    ${AndIf} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 1
-    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayer 0
+  ${If} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+    WriteINIStr "$INSTDIR\install.ini" smplayer mplayer 1
+  ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+    WriteINIStr "$INSTDIR\install.ini" smplayer mplayer 0
   ${EndIf}
 
-  ${If} ${SectionIsSelected} ${SEC03B}
-    ${AndIf} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 1
-    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 0
-  ${ElseIfNot} ${SectionIsSelected} ${SEC03B}
-    ${AndIf} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 1
-    ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-      WriteINIStr "$INSTDIR\options.ini" smplayer mplayercodecs 0
+  ${If} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+    WriteINIStr "$INSTDIR\install.ini" smplayer mplayercodecs 1
+  ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+    WriteINIStr "$INSTDIR\install.ini" smplayer mplayercodecs 0
   ${EndIf}
 
 FunctionEnd
@@ -493,7 +494,7 @@ Section Uninstall
   SetShellVarContext all
   Delete "$DESKTOP\SMPlayer.lnk"
   RMDir /r "$SMPROGRAMS\${PRODUCT_STARTMENU_GROUP}"
-	
+
   # Delete directories recursively except for main directory
   # Nullsoft says it is unsafe to recursively delete $INSTDIR 
   RMDir /r "$INSTDIR\docs"
@@ -514,7 +515,6 @@ Section Uninstall
   # Delete keys pertaining to SMPlayer
   DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"
   DeleteRegKey HKCR "MPlayerFileVideo"
-  DeleteRegKey HKLM "Software\SMPlayer"
   DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
   DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
   SetAutoClose true
