@@ -1,0 +1,412 @@
+# This is the German translation of the SMPlayer web page.
+# Copyright (C) 2009 arti
+# This file is distributed under the same license as the SMPlayer package.
+# arti <artii@gmx.net>, 2009.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-08 18:34+0100\n"
+"PO-Revision-Date: 2009-02-18 22:05+0100\n"
+"Last-Translator: arti <artii@gmx.net>\n"
+"Language-Team: German <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../index.php:6
+msgid "SMPlayer - General Info"
+msgstr "SMPlayer - Allgemeine Infos"
+
+#. Message id of the post in the forum for "Version 0.6.0 final released"
+#: ../index.php:52
+msgid "1970"
+msgstr ""
+
+#: ../info.php:21
+msgid ""
+"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
+"features like support for MPlayer filters and more."
+msgstr "SMPlayer beabsichtigt ein vollständiges Front-End für \n"
+"<ahref=%1>MPlayer</a> anzubieten, von Grundfunktionen wie dem Abspielen von \n"
+"Videos, DVDs und VCDs über erweiterte Funktionen wie der Unterstützung \n"
+"von MPlayers Filtern und vielem mehr.\n"
+
+#: ../info.php:27
+msgid ""
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr "Eines der interessantesten Merkmale von SMPlayer ist, <b>dass er \n"
+"sich alle Einstellungen der Dateien merkt, die du abspielst</b>. Du \n"
+"fängst also an einen Film anzusehen, aber du musst kurz weg... keine \n"
+"Sorge, wenn du diesen Film wieder ansiehst, dann geht es an derselben \n"
+"Stelle weiter, an der du aufgehört hast und zwar mit denselben \n"
+"Einstellungen: Tonspur, Untertiteln, Lautstärke..."
+
+#: ../info.php:36
+msgid "Other additional interesting features:"
+msgstr "Weitere interessante Merkmale:"
+
+#: ../info.php:38
+msgid ""
+"Configurable subtitles. You can choose font and size, and even \n"
+"colors for the subtitles."
+msgstr "Einstellbare Untertitel. Du kannst die Schriftart und \n"
+"-größe und sogar die Farbe der Untertitel wählen."
+
+#: ../info.php:40
+msgid ""
+"Audio track switching. You can choose the audio track you want\n"
+"to listen. Works with avi and mkv. And of course with DVDs."
+msgstr "Umschalten der Tonspur. Du kanst die Tonspur auswählen, die du \n"
+"anhören willst. Das funktioniert mit avi und mkv. Und natürlich auch mit\n"
+"DVDs."
+
+#: ../info.php:42
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr "Suchlauf mit dem Mausrad. Benutze dein Mausrad, um im Video vor- oder
+zurückzuspulen."
+
+#: ../info.php:44
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr "Das Video Mischpult ermöglicht es dir, Helligkeit, Kontrast,\n"
+"Farbton, Sättigung und Gammawert des Videobildes anzupassen."
+
+#: ../info.php:46
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr "Vielfache Geschwindigkeitswiedergabe. Spiele dein Video mit \n"
+"2-facher, 4-facher, x-facher Geschwindigkeit, oder sogar in Zeitlupe ab."
+
+#: ../info.php:49
+msgid ""
+"Filters. Several filters are available: deinterlace, postprocessing,\n"
+"denoise... and even a karaoke filter (voice removal)."
+msgstr "Filter. Es gibt verschiedene Filter: Zeilenentflechtung, \n"
+"Nachbearbeitung, Rauschfilter"
+
+#: ../info.php:51
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr "Anpassung der Zeitverzögerung von Ton und Untertitel. Erlaubt es \n"
+"dir, Ton und Untertitel aufeinander abzustimmen."
+
+#: ../info.php:53
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr "Erweiterte Einstellmöglichkeiten, wie die Auswahl eines Demuxers\n"
+"oder Video- und Audiocodecs. \n"
+
+#: ../info.php:56
+msgid ""
+"Playlist. Allows you to enqueue several files to be played one after \n"
+"each other. Autorepeat and shuffle supported too."
+msgstr "Abspielliste. Erlaubt dir das Einstellen verschiedener Dateien, um \n"
+"sie nacheinander abzuspielen. Wiederholtes und zufälliges Abspielen \n"
+"wird ebenfalls unterstützt."
+
+#: ../info.php:58
+msgid ""
+"Preferences dialog. You can easily configure every option of SMPlayer\n"
+"by using a nice preferences dialog."
+msgstr "Einstellungen Dialog. Du kannst jede Option ganz einfach \n"
+"einstellen, indem du diesen hübschen Konfigurationsdialog verwendest."
+
+#: ../info.php:60
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr "Die Möglichkeit, in %1 automatisch nach Untertiteln zu suchen."
+
+#: ../info.php:62
+msgid ""
+"Translations: currently SMPlayer is translated into more than 20 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr "Übersetzungen: gegenwärtig gibt es SMPlayer in mehr als 20 Sprachen, \n"
+"einschließlich Spanisch, Deutsch, Französisch, Italienisch, Russisch, \n"
+"Chinesisch, Japanisch, ..."
+
+#: ../info.php:65
+msgid "It's multiplatform. Binaries available for Windows and Linux."
+msgstr "Auf vielen Plattformen erhältlich. Binärdateien für Windows und \n"
+"Linux."
+
+#: ../info.php:67
+msgid "SMPlayer is under the <b>GPL</b> license."
+msgstr "SMPlayer steht unter der <b>GPL</b> Lizenz."
+
+#: ../header.php:58
+msgid "The SMPlayer Project"
+msgstr "Das SMPlayer Projekt"
+
+#: ../header.php:68
+msgid "Main"
+msgstr "Hauptseite"
+
+#: ../header.php:70
+msgid "Screenshots"
+msgstr "Schnappschüsse"
+
+#: ../header.php:72
+msgid "Downloads"
+msgstr "Downloads"
+
+#. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
+#: ../header.php:75
+msgid "Forum"
+msgstr "Forum"
+
+#: ../header.php:77
+msgid "Bug Tracking"
+msgstr "Fehlersuche"
+
+#: ../header.php:79
+msgid "Feature Requests"
+msgstr "Anfrage nach Merkmalen"
+
+#: ../header.php:81
+msgid "Wiki"
+msgstr "Wiki"
+
+#. if ($site == "sourceforge")
+#: ../header.php:84
+msgid "Donations"
+msgstr "Spenden"
+
+#: ../downloads.php:6
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - Downloads"
+
+#: ../downloads.php:37
+msgid "Stable version"
+msgstr "Stabile Version"
+
+#: ../downloads.php:38
+msgid "Windows"
+msgstr "Windows"
+
+#: ../downloads.php:48
+msgid "Package with installer:"
+msgstr "Paket mit Installationsprogramm:"
+
+#: ../downloads.php:53
+msgid ""
+"This package contains everything needed to run smplayer: shared \n"
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
+msgstr "Dieses Paket enthält alles was man für smplayer braucht: \n"
+"Gemeinsam benutzte Bibliotheken, Übersetzungsdateien, Icon Themen und \n"
+"eine kompilierte mplayer Binärdatei (die beinhaltete Version ist %1)."
+
+#: ../downloads.php:82
+msgid "Additional codecs:"
+msgstr "Zusätzliche Codecs:"
+
+#: ../downloads.php:88
+msgid ""
+"This package adds support for codecs that are not yet implemented\n"
+"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+"formats. Note that they are not necessary to play most common formats\n"
+"like DVDs, MPEG-1/2/4, etc."
+msgstr ""
+
+#: ../downloads.php:93
+msgid ""
+"These codecs are to be used by mplayer only and they will be installed \n"
+"in the same folder, so they can't cause any conflict with other codecs you \n"
+"may have installed."
+msgstr ""
+
+#: ../downloads.php:97
+msgid ""
+"If you prefer a zip file, you can get it at \n"
+"the <a href=%1>mplayer site</a> (%2)."
+msgstr ""
+
+#: ../downloads.php:111
+msgid ""
+"Package (without installer) which includes smplayer, shared libraries,\n"
+"translations and icon themes. It doesn't include mplayer."
+msgstr ""
+
+#: ../downloads.php:114
+msgid "This package is for advanced users only!"
+msgstr ""
+
+#: ../downloads.php:136
+msgid ""
+"Portable version of SMPlayer. It can be run from external devices, like \n"
+"USB flash drives. It doesn't require installation, just uncompress the \n"
+"package wherever you want and double click on smplayer.exe to run it."
+msgstr ""
+
+#: ../downloads.php:140
+msgid ""
+"The package also includes the icon themes, translations and a \n"
+"MPlayer build."
+msgstr ""
+
+#: ../downloads.php:143
+msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+msgstr ""
+
+#: ../downloads.php:154
+msgid "Linux"
+msgstr ""
+
+#: ../downloads.php:164
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+
+#: ../downloads.php:187
+msgid "Compiled on Ubuntu %1."
+msgstr ""
+
+#: ../downloads.php:192
+msgid "Package for AMD64. Compiled on Ubuntu %1."
+msgstr ""
+
+#: ../downloads.php:202
+msgid "Suggested package:"
+msgstr ""
+
+#: ../downloads.php:203
+msgid ""
+"The version of mplayer included in Ubuntu is a little bit old (%1). "
+"SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended."
+msgstr ""
+
+#: ../downloads.php:207
+msgid "You can get updated versions <a href=%1>here</a>"
+msgstr ""
+
+#: ../downloads.php:211
+msgid "More info"
+msgstr ""
+
+#: ../downloads.php:218
+msgid "New!"
+msgstr ""
+
+#: ../downloads.php:219
+msgid ""
+"Now you can easily install the SMPlayer and MPlayer packages with \n"
+"%1. Just add one of the following lines to your %2, according to your \n"
+"version of Ubuntu:"
+msgstr ""
+
+#: ../downloads.php:233
+msgid "Icon Themes:"
+msgstr ""
+
+#: ../downloads.php:234
+msgid "Optional packages which provide some icon themes."
+msgstr ""
+
+#: ../downloads.php:276
+msgid "Additional packages"
+msgstr ""
+
+#: ../downloads.php:277
+msgid ""
+"There are several additional packages for advanced users:\n"
+"<a href=%1>See sourceforge download page</a>."
+msgstr ""
+
+#: ../downloads.php:284
+msgid "Contributed packages"
+msgstr ""
+
+#: ../downloads.php:285
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+
+#: ../downloads.php:291
+msgid "Related Project"
+msgstr ""
+
+#: ../downloads.php:293
+msgid "by MuldeR"
+msgstr ""
+
+#: ../downloads.php:294
+msgid ""
+"This package contains a very recent version of SMPlayer (often taken from\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
+"its own installer, mplayer builds optimized for several processors and\n"
+"binary codecs."
+msgstr ""
+
+#: ../downloads.php:305
+msgid "Unstable releases"
+msgstr ""
+
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
+#: ../downloads.php:307
+msgid ""
+"You can get packages directly taken from the SVN (source code and\n"
+"Windows updates), <a href=%1><b>here</b></a>."
+msgstr ""
+
+#: ../screenshots.php:6
+msgid "SMPlayer - Screenshots"
+msgstr ""
+
+#: ../screenshots.php:45
+msgid "Here you can see some screenshots from SMPlayer:"
+msgstr ""
+
+#: ../screenshots.php:51
+msgid "This is the main window"
+msgstr ""
+
+#: ../screenshots.php:54
+msgid "The playlist can be embedded in the main window"
+msgstr ""
+
+#: ../screenshots.php:56
+msgid "The preferences dialog"
+msgstr ""
+
+#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
+#: ../screenshots.php:62
+msgid "SMPlayer running on Gnome"
+msgstr ""
+
+#: ../screenshots.php:63
+msgid "A video displaying a srt subtitle"
+msgstr ""
+
+#: ../screenshots.php:64
+msgid "Matroska embedded subtitles"
+msgstr ""
+
+#: ../screenshots.php:69
+msgid "SMPlayer is translated into more than 20 languages"
+msgstr ""
+
+#: ../screenshots.php:70
+msgid "The mini GUI"
+msgstr ""
+
+#: ../screenshots.php:71
+msgid "SMPlayer running on the new KDE 4"
+msgstr ""
