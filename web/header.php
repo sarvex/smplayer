@@ -38,14 +38,14 @@ function header_set_section($s, $rel_path="") {
 	print_language_link($file, "English", "en", $query);
 	print_language_link($file, "Français", "fr", $query);
 	print_language_link($file, "Español", "es", $query);
+	print_language_link($file, "Deutsch", "de", $query);
 	print_language_link($file, "日本語", "ja", $query);
 	print_language_link($file, "Polski", "pl", $query);
 	print_language_link($file, "Română", "ro", $query);
 	print_language_link($file, "Українська", "uk", $query);
 	print_language_link($file, "Русский", "ru", $query);
 	print_language_link($file, "中文", "zh", $query);
-	print_language_link($file, "Magyar", "hu", $query);
-	print_language_link($file, "Deutsch", "de", $query, true);
+	print_language_link($file, "Magyar", "hu", $query, true);
 ?>
 	</ul>
 	</div>
