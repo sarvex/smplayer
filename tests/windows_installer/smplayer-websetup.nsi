@@ -472,7 +472,7 @@ FunctionEnd
 Function getVerInfo
 
   DetailPrint "Gathering version information..."
-  inetc::get /timeout 30000 /resume "" /silent "http://red.caek.org/version-info" \
+  inetc::get /timeout 30000 /resume "" /silent "http://smplayer.sourceforge.net/mplayer-version-info" \
   "$PLUGINSDIR\version-info"
   Pop $R0
   StrCmp $R0 OK +2
