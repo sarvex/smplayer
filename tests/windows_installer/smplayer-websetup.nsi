@@ -46,7 +46,7 @@
   If InstallDirRegKey exists (from a previous installation,
   it will default to that directory instead. */
   InstallDir "$PROGRAMFILES\SMPlayer"
-  InstallDirRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "InstallLocation"
+  InstallDirRegKey HKLM "Software\SMPlayer" "Path"
 
   ;Put on a show
   ShowInstDetails show
@@ -162,6 +162,9 @@ Section SMPlayer SEC01
   # UnInstall file
   WriteUninstaller "$INSTDIR\uninst.exe"
 
+  # Store installed path
+  WriteRegStr HKLM "Software\SMPlayer" "Path" "$INSTDIR"
+
   # HKEY_CLASSES_ROOT ProgId registration
   WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
   WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
@@ -212,6 +215,25 @@ Section SMPlayer SEC01
     WriteRegStr HKLM "Software\RegisteredApplications" "SMPlayer" "Software\Clients\Media\SMPlayer\Capabilities"
   ${EndIf}
 
+  # Registry Uninstall information
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "HelpLink" "${PRODUCT_FORUM}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLUpdateInfo" "${PRODUCT_WEB_SITE}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
+
+  ; If you really just want uninstalled components to show in registry as "0", they are "0" already if the key don't exist
+/*  ${IfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+    WriteRegDWORD HKLM Software\SMPlayer Section_mplayer 0x0
+  ${EndIf}
+
+  ${IfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+    WriteRegDWORD HKLM Software\SMPlayer Section_codecs 0x0
+  ${EndIf}*/
+
   # Copy 7zip to installer's temp directory
   SetOutPath "$PLUGINSDIR"
   File 7za.exe
@@ -219,12 +241,8 @@ Section SMPlayer SEC01
 SectionEnd
 
 ;--------------------------------
-; Program shortcuts
-SectionGroup "Program Shortcuts"
-
-;--------------------------------
 ; Desktop shortcut
-  Section Desktop SEC02A
+  Section "Create Desktop shortcut" SEC02
     SectionIn 1 2
 
     SetOutPath "$INSTDIR"
@@ -236,7 +254,7 @@ SectionGroup "Program Shortcuts"
 
 ;--------------------------------
 ; Start menu shortcuts
-  Section "Start Menu" SEC02B
+  Section "Create Start Menu shortcuts" SEC03
     SectionIn 1 2
 
     SetOutPath "$INSTDIR"
@@ -249,23 +267,17 @@ SectionGroup "Program Shortcuts"
 
   SectionEnd
 
-SectionGroupEnd
-
 ;--------------------------------
 ; MPlayer Components
 SectionGroup /e "MPlayer Components"
 
 ;--------------------------------
 ; MPlayer
-  Section MPlayer SEC03A
+  Section MPlayer SEC04A
     SectionIn 1 2 RO
     AddSize 15300
 
-    ${If} ${FileExists} "$INSTDIR\install.ini"
-      ReadINIStr $0 "$INSTDIR\install.ini" smplayer mplayer
-    ${Else}
-      StrCpy $0 0
-    ${EndIf}
+    ReadRegDWORD $0 HKLM Software\SMPlayer Section_mplayer
 
     IntCmp $0 1 mplayerInstalled mplayerNotInstalled
       mplayerInstalled:
@@ -290,9 +302,11 @@ SectionGroup /e "MPlayer Components"
         "$PLUGINSDIR\$MPLAYER_VERSION.7z" */
         Pop $R0
         StrCmp $R0 OK mplayerdl1
-          MessageBox MB_OK "Failed to download mplayer package: $R0.$\nSMPlayer won't be able to play anything without a MPlayer build!"
+          MessageBox MB_OK "Failed to download mplayer package: $R0.$\nMPlayer is required for playback!"
           Abort
           mplayerdl1:
+            ClearErrors
+
             # Extract
             nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPLAYER_VERSION.7z" -o"$PLUGINSDIR"'
 
@@ -300,21 +314,29 @@ SectionGroup /e "MPlayer Components"
             CreateDirectory "$INSTDIR\mplayer"
             CopyFiles /SILENT "$PLUGINSDIR\$MPLAYER_VERSION\*" "$INSTDIR\mplayer"
 
+            ${If} ${Errors}
+              MessageBox MB_OK "Failed to install MPlayer. MPlayer is required for playback!"
+              Abort
+            ${ElseIfNot} ${Errors}
+              ${AndIf} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+                WriteRegDWORD HKLM Software\SMPlayer Section_mplayer 0x1
+            ${ElseIfNot} ${Errors}
+              ${AndIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
+                MessageBox MB_OK "Failed to install MPlayer. MPlayer is required for playback!"
+                Abort
+            ${EndIf}
+
       skipMplayer:
 
 SectionEnd
 
 ;--------------------------------
 ; Binary codecs
-  Section /o "Optional Codecs" SEC03B
+  Section /o "Optional Codecs" SEC04B
     SectionIn 2
     AddSize 22300
 
-    ${If} ${FileExists} "$INSTDIR\install.ini"
-      ReadINIStr $1 "$INSTDIR\install.ini" smplayer mplayercodecs
-    ${Else}
-      StrCpy $1 0
-    ${EndIf}
+    ReadRegDWORD $1 HKLM Software\SMPlayer Section_codecs
 
     IntCmp $1 1 mplayerCodecsInstalled mplayerCodecsNotInstalled
       mplayerCodecsInstalled:
@@ -342,12 +364,24 @@ SectionEnd
           MessageBox MB_OK "Failed to download codec package: $R0.$\nCodec installation will be skipped."
           Goto skipMplayerCodecs
           codecdlSuccess:
+            ClearErrors
+
             # Extract
             nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$CODEC_VERSION.zip" -o"$PLUGINSDIR"'
 
             # Copy
             CreateDirectory "$INSTDIR\mplayer\codecs"
             CopyFiles /SILENT "$PLUGINSDIR\$CODEC_VERSION\*" "$INSTDIR\mplayer\codecs"
+
+            ${If} ${Errors}
+              MessageBox MB_OK "Failed to install MPlayer codecs. Re-run setup and try again."
+            ${ElseIfNot} ${Errors}
+              ${AndIf} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+                WriteRegDWORD HKLM Software\SMPlayer Section_codecs 0x1
+            ${ElseIfNot} ${Errors}
+              ${AndIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
+                MessageBox MB_OK "Failed to install MPlayer codecs. Re-run setup and try again."
+            ${EndIf}
 
       skipMplayerCodecs:
 
@@ -357,7 +391,7 @@ SectionGroupEnd
 
 ;--------------------------------
 ; Icon Themes
-Section "Icon Themes" SEC04
+Section "Icon Themes" SEC05
 
   SectionIn 1 2
   SetOutPath "$INSTDIR"
@@ -367,7 +401,7 @@ SectionEnd
 
 ;--------------------------------
 ; Translations
-Section Translations SEC05
+Section Translations SEC06
 
   SectionIn 1 2
   SetOutPath "$INSTDIR"
@@ -379,30 +413,13 @@ SectionEnd
 ; Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
   !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} "SMPlayer, shared libraries, and documentation."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02A} "Creates a shortcut on the desktop."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02B} "Creates start menu shortcuts."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03A} "Downloads/installs mplayer; requires an active internet connection. Required for playback."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03B} "Downloads optional codecs that aren't yet implemented in mplayer; e.g. RealVideo and uncommon formats."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04} "Stylish icon themes for SMPlayer."
-  !insertmacro MUI_DESCRIPTION_TEXT ${SEC05} "Translations for SMPlayer."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} "Creates a shortcut on the desktop."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC03} "Creates start menu shortcuts."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04A} "Downloads/installs mplayer; requires an active internet connection. Required for playback."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC04B} "Downloads optional codecs that aren't yet implemented in mplayer; e.g. RealVideo and uncommon formats."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC05} "Stylish icon themes for SMPlayer."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC06} "Translations for SMPlayer."
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
-
-Section -Post
-
-  Call recordOptions
-
-  # Uninstall information
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "HelpLink" "${PRODUCT_FORUM}"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "InstallLocation" "$INSTDIR"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLUpdateInfo" "${PRODUCT_WEB_SITE}"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
-
-SectionEnd
 
 ;--------------------------------
 ;Installer Functions
@@ -435,7 +452,6 @@ Function .onInstFailed
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
-  Delete "$INSTDIR\*.ini"
   Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
@@ -449,6 +465,7 @@ Function .onInstFailed
   DeleteRegKey HKCR "MPlayerFileVideo"
   DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
   DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
+  DeleteRegKey HKLM "Software\SMPlayer"
 
 FunctionEnd
 
@@ -459,23 +476,7 @@ Function getVerInfo
   "$PLUGINSDIR\version-info"
   Pop $R0
   StrCmp $R0 OK +2
-    MessageBox MB_OK "Failed to retrieve version information: $R0.$\nSetup will assume a default version."
-
-FunctionEnd
-
-Function recordOptions
-
-  ${If} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-    WriteINIStr "$INSTDIR\install.ini" smplayer mplayer 1
-  ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\mplayer.exe"
-    WriteINIStr "$INSTDIR\install.ini" smplayer mplayer 0
-  ${EndIf}
-
-  ${If} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-    WriteINIStr "$INSTDIR\install.ini" smplayer mplayercodecs 1
-  ${ElseIfNot} ${FileExists} "$INSTDIR\mplayer\codecs\Readme.txt"
-    WriteINIStr "$INSTDIR\install.ini" smplayer mplayercodecs 0
-  ${EndIf}
+    DetailPrint "Error retrieving version info: $R0. Setup will use a default version."
 
 FunctionEnd
 
@@ -503,7 +504,6 @@ Section Uninstall
   RMDir /r "$INSTDIR\shortcuts"
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
-  Delete "$INSTDIR\*.ini"
   Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
@@ -517,6 +517,8 @@ Section Uninstall
   DeleteRegKey HKCR "MPlayerFileVideo"
   DeleteRegKey HKLM "Software\Clients\Media\SMPlayer"
   DeleteRegValue HKLM "Software\RegisteredApplications" "SMPlayer"
+  DeleteRegKey HKLM "Software\SMPlayer"
+
   SetAutoClose true
 
 SectionEnd
