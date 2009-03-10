@@ -2,7 +2,7 @@
 include_once("myfunctions.php");
 
 function download_src_link() {
-	return create_link("smplayer-0.6.6.tar.bz2", 1373258 );
+	return create_link("smplayer-0.6.7.tar.bz2", 1393830 );
 }
 
 function download_rpm_link() {
@@ -10,11 +10,11 @@ function download_rpm_link() {
 }
 
 function download_deb_link() {
-	return create_link("smplayer_0.6.6_i386.deb", 2772792 );
+	return create_link("smplayer_0.6.7_i386.deb", 1476630 );
 }
 
 function download_amd64deb_link() {
-	return create_link("smplayer_0.6.6_amd64.deb", 2790502 );
+	return create_link("smplayer_0.6.7_amd64.deb", 1495604 );
 }
 
 /*

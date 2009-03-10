@@ -246,6 +246,7 @@ echo download_themes_nonfree_src_link();
 </td>
 </tr>
 
+<!--
 <tr>
 <td><img src="iconos/suse.png" alt="*"></td>
 <td>
@@ -256,6 +257,7 @@ echo download_themes_nonfree_rpm_link();
 ?>
 </td>
 </tr>
+-->
 
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
