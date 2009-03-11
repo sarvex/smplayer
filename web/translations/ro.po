@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-08 18:34+0100\n"
+"POT-Creation-Date: 2009-03-12 00:44+0100\n"
 "PO-Revision-Date: 2008-11-25 18:28+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,21 +31,25 @@ msgstr "Windows"
 msgid "Package with installer:"
 msgstr "Pachete cu program de instalare:"
 
-#: ../downloads.php:53
+#.
+#. tr("This package contains everything needed to run smplayer: shared
+#. libraries, translation files, icon themes and a mplayer
+#. build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
+#.
+#: ../downloads.php:58
 msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
+"This package contains smplayer, shared libraries, translation \n"
+"files and icon themes. During the installation a recent version of\n"
+"mplayer will be downloaded and installed. Optionally you can also\n"
+"install some additional codecs (necessary only for a few formats, \n"
+"like newer RealVideo variants)."
 msgstr ""
-"Acest pachet conține tot ce este necesar pentru a rula smplayer: biblioteci \n"
-"comune, fișierele cu traduceri, temele pentru pictograme și un executabil mplayer \n"
-"(versiunea inclusă este %1)."
 
-#: ../downloads.php:82
+#: ../downloads.php:90
 msgid "Additional codecs:"
 msgstr "Codecuri suplimentare:"
 
-#: ../downloads.php:88
+#: ../downloads.php:95
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -53,21 +57,23 @@ msgid ""
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
 "Acest pachet adaugă suport pentru codecuri ce nu au fost încă implementate\n"
-" în mplayer, precum versiunile noi RealVideo și multe alte formate neobișnuite.\n"
+" în mplayer, precum versiunile noi RealVideo și multe alte formate "
+"neobișnuite.\n"
 " Aceste codecuri nu sunt necesare pentru redarea formatelor\n"
 " obișnuite precum DVD, MPEG-1/2/4, etc. "
 
-#: ../downloads.php:93
+#: ../downloads.php:100
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
 "Aceste codecuri vor fi folosite numai de către mplayer și vor fi instalate \n"
-" în același director, astfel nu vor intra în conflict cu diverse alte codecuri \n"
+" în același director, astfel nu vor intra în conflict cu diverse alte "
+"codecuri \n"
 " pe care le mai aveți instalate în sistem."
 
-#: ../downloads.php:97
+#: ../downloads.php:104
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -75,29 +81,34 @@ msgstr ""
 "Dacă preferați un fișier zip îl puteți găsi la \n"
 "<a href=%1>mplayer site</a> (%2)."
 
-#: ../downloads.php:111
+#: ../downloads.php:119
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
-"Acest pachet (fără program de instalare) include smplayer, bibliotecile comune, \n"
-"fișierele cu traduceri și temele pentru pictograme. Pachetul nu include și mplayer."
+"Acest pachet (fără program de instalare) include smplayer, bibliotecile "
+"comune, \n"
+"fișierele cu traduceri și temele pentru pictograme. Pachetul nu include și "
+"mplayer."
 
-#: ../downloads.php:114
+#: ../downloads.php:122
 msgid "This package is for advanced users only!"
 msgstr "Acest pachet este doar pentru utilizatorii avansați!"
 
-#: ../downloads.php:136
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
-"Aceasta este versiunea portabilă pentru SMPlayer. Poate fi rulat de pe dispozitive externe precum \n"
-"dispozitive de memorie flash USB. Nu are nevoie de instalare, doar dezarhivați \n"
-"pachetul oriunde doriți și efectuați clic dublu pe fișierul smplayer.exe pentru a-l rula."
+"Aceasta este versiunea portabilă pentru SMPlayer. Poate fi rulat de pe "
+"dispozitive externe precum \n"
+"dispozitive de memorie flash USB. Nu are nevoie de instalare, doar "
+"dezarhivați \n"
+"pachetul oriunde doriți și efectuați clic dublu pe fișierul smplayer.exe "
+"pentru a-l rula."
 
-#: ../downloads.php:140
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -105,75 +116,82 @@ msgstr ""
 "Acest pachet conține teme pentru pictograme, fișierele cu traduceri și \n"
 "un executabil MPLayer."
 
-#: ../downloads.php:143
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr "Notă: fișierele de tip 7z pot fi dezarhivate cu <a href=%1>7-Zip</a>."
 
-#: ../downloads.php:154
+#: ../downloads.php:162
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:164
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Pentru a afla cum se compilează citiți fișierul Install.txt inclus în pachet."
+#: ../downloads.php:172
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Pentru a afla cum se compilează citiți fișierul Install.txt inclus în pachet."
 
-#: ../downloads.php:187
+#: ../downloads.php:195
 msgid "Compiled on Ubuntu %1."
 msgstr "Compilat pe Ubuntu %1."
 
-#: ../downloads.php:192
+#: ../downloads.php:200
 msgid "Package for AMD64. Compiled on Ubuntu %1."
 msgstr "Pachet pentru arhitectură de tip AMD64. Compilat pe Ubuntu %1."
 
-#: ../downloads.php:202
+#: ../downloads.php:210
 msgid "Suggested package:"
 msgstr "Pachete sugerate:"
 
-#: ../downloads.php:203
+#: ../downloads.php:211
 msgid ""
-"The version of mplayer included in Ubuntu is a little bit old (%1). SMPlayer \n"
+"The version of mplayer included in Ubuntu is a little bit old (%1). "
+"SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
-"Versiunea de mplayer inclusă în Ubuntu este un pic cam veche (%1). SMPlayer \n"
-"Are suport pentru câteva din caracteristicile noi ale lui mplayer, așa că se recomandă \n"
+"Versiunea de mplayer inclusă în Ubuntu este un pic cam veche (%1). "
+"SMPlayer \n"
+"Are suport pentru câteva din caracteristicile noi ale lui mplayer, așa că se "
+"recomandă \n"
 "folosirea unei versiuni mai noi."
 
-#: ../downloads.php:207
+#: ../downloads.php:215
 msgid "You can get updated versions <a href=%1>here</a>"
 msgstr "Puteți achiziționa versiuni actualizate <a href=%1>de aici</a>"
 
-#: ../downloads.php:211
+#: ../downloads.php:219
 msgid "More info"
 msgstr "Mai multe informații"
 
-#: ../downloads.php:218
+#: ../downloads.php:226
 msgid "New!"
 msgstr "Nou!"
 
-#: ../downloads.php:219
+#: ../downloads.php:227
 msgid ""
 "Now you can easily install the SMPlayer and MPlayer packages with \n"
 "%1. Just add one of the following lines to your %2, according to your \n"
 "version of Ubuntu:"
 msgstr ""
 "Acum puteți instala cu ușurință pachetele SMPlayer și MPlayer cu \n"
-"%1. Nu trebuie decât să adăugați una din liniile următoare în %2, conform cu \n"
+"%1. Nu trebuie decât să adăugați una din liniile următoare în %2, conform "
+"cu \n"
 "versiunea Ubuntu pe care o aveți:"
 
-#: ../downloads.php:233
+#: ../downloads.php:241
 msgid "Icon Themes:"
 msgstr "Teme Pictograme:"
 
-#: ../downloads.php:234
+#: ../downloads.php:242
 msgid "Optional packages which provide some icon themes."
-msgstr "Pachete opționale care oferă mai multe teme pentru interfața programului."
+msgstr ""
+"Pachete opționale care oferă mai multe teme pentru interfața programului."
 
-#: ../downloads.php:276
+#: ../downloads.php:286
 msgid "Additional packages"
 msgstr "Pachete suplimentare"
 
-#: ../downloads.php:277
+#: ../downloads.php:287
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -181,11 +199,11 @@ msgstr ""
 "Există mai multe pachete suplimentare pentru utilizatorii avansați:\n"
 "<a href=%1>Consultați pagina de descărcări a sitului sourceforge</a>"
 
-#: ../downloads.php:284
+#: ../downloads.php:294
 msgid "Contributed packages"
 msgstr "Pachete pentru diverse distribuții"
 
-#: ../downloads.php:285
+#: ../downloads.php:295
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -193,32 +211,36 @@ msgstr ""
 "Sunt disponibile pachete pentru alte distribuții, create \n"
 "de alte persoane. Le puteți vedea <a href=%1><b>aici</b></a>."
 
-#: ../downloads.php:291
+#: ../downloads.php:301
 msgid "Related Project"
 msgstr "Proiecte înrudite"
 
-#: ../downloads.php:293
+#: ../downloads.php:303
 msgid "by MuldeR"
 msgstr "realizate de către MuldeR"
 
-#: ../downloads.php:294
+#: ../downloads.php:304
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also provides\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
 "its own installer, mplayer builds optimized for several processors and\n"
 "binary codecs."
 msgstr ""
-"Acest pachet conține o versiune foarte recentă pentru SMPlayer (de regulă luată \n"
-"din arhivele software SVN) precum și cea mai recentă versiune pentru MPLayer. De asemenea mai furnizează \n"
-"și propriul program de instalare, propriul executabil mplayer optimizat pentru diferite procesoare și \n"
+"Acest pachet conține o versiune foarte recentă pentru SMPlayer (de regulă "
+"luată \n"
+"din arhivele software SVN) precum și cea mai recentă versiune pentru "
+"MPLayer. De asemenea mai furnizează \n"
+"și propriul program de instalare, propriul executabil mplayer optimizat "
+"pentru diferite procesoare și \n"
 "mai conține mai multe codecuri."
 
-#: ../downloads.php:305
+#: ../downloads.php:315
 msgid "Unstable releases"
 msgstr "Versiuni Instabile"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:307
+#: ../downloads.php:317
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -226,41 +248,41 @@ msgstr ""
 "Puteți descărca pachete obținute direct din SVN (cod sursă și\n"
 "actualizări pentru Windows), <a href=%1><b>de aici</b></a>."
 
-#: ../header.php:58
+#: ../header.php:59
 msgid "The SMPlayer Project"
 msgstr "Proiectul SMPlayer"
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Main"
 msgstr "Pagina Principală"
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Screenshots"
 msgstr "Capturi Ecran"
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Downloads"
 msgstr "Descărcare"
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:75
+#: ../header.php:76
 msgid "Forum"
 msgstr "Forum"
 
-#: ../header.php:77
+#: ../header.php:78
 msgid "Bug Tracking"
 msgstr "Bug Tracking"
 
-#: ../header.php:79
+#: ../header.php:80
 msgid "Feature Requests"
 msgstr "Sugestii"
 
-#: ../header.php:81
+#: ../header.php:82
 msgid "Wiki"
 msgstr "Wiki"
 
 #. if ($site == "sourceforge")
-#: ../header.php:84
+#: ../header.php:85
 msgid "Donations"
 msgstr "Donații"
 
@@ -279,9 +301,12 @@ msgid ""
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer intenționează să fie un front-end complet pentru <a href=%1>MPlayer</a>,\n"
-"având funcții de bază precum redarea fişierelor video, a DVD-urilor și a VCD-urilor \n"
-"dar și funcții avansate precum suport pentru filtrele specifice MPlayer și mult mai multe."
+"SMPlayer intenționează să fie un front-end complet pentru <a href=%"
+"1>MPlayer</a>,\n"
+"având funcții de bază precum redarea fişierelor video, a DVD-urilor și a VCD-"
+"urilor \n"
+"dar și funcții avansate precum suport pentru filtrele specifice MPlayer și "
+"mult mai multe."
 
 #: ../info.php:27
 msgid ""
@@ -291,10 +316,14 @@ msgid ""
 "resume at the same point you left it, and with the same settings: audio \n"
 "track, subtitles, volume..."
 msgstr ""
-"Una din cele mai interesante caracteristici ale SMPlayer: <b>memorarea tuturor \n"
-"reglajelor făcute fișierelor redate</b>. Astfel dacă atunci când vizionați un film sunteți \n"
-"nevoit să plecați... nu vă impacientați, când veți deschide acel fișier din nou filmul se va \n"
-"relua din același punct de unde l-ați lăsat și va păstra aceleași reglaje: piste \n"
+"Una din cele mai interesante caracteristici ale SMPlayer: <b>memorarea "
+"tuturor \n"
+"reglajelor făcute fișierelor redate</b>. Astfel dacă atunci când vizionați "
+"un film sunteți \n"
+"nevoit să plecați... nu vă impacientați, când veți deschide acel fișier din "
+"nou filmul se va \n"
+"relua din același punct de unde l-ați lăsat și va păstra aceleași reglaje: "
+"piste \n"
 "audio, subtitrări, volum..."
 
 #: ../info.php:36
@@ -337,14 +366,17 @@ msgstr ""
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
-msgstr "Redare la diferite viteze. Puteți reda filmele cu viteze 2X, 4X... și chiar relanti.\n"
+msgstr ""
+"Redare la diferite viteze. Puteți reda filmele cu viteze 2X, 4X... și chiar "
+"relanti.\n"
 
 #: ../info.php:49
 msgid ""
 "Filters. Several filters are available: deinterlace, postprocessing,\n"
 "denoise... and even a karaoke filter (voice removal)."
 msgstr ""
-"Filtre. Sunt disponibile și o serie de filtre precum: deîntrețesere, postprocesare,\n"
+"Filtre. Sunt disponibile și o serie de filtre precum: deîntrețesere, "
+"postprocesare,\n"
 "înlăturare zgomote... și chiar un filtru karaoke (înlăturare voce)."
 
 #: ../info.php:51
@@ -352,14 +384,17 @@ msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr ""
-"Ajustarea întârzierii subtitrării și a coloanei sonore. Acestea vă permit sincronizarea\n"
+"Ajustarea întârzierii subtitrării și a coloanei sonore. Acestea vă permit "
+"sincronizarea\n"
 "coloanei sonore și a subtitrării."
 
 #: ../info.php:53
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
-msgstr "Opțiuni avansate, precum selectarea unui demux sau a codecurilor audio și video.\n"
+msgstr ""
+"Opțiuni avansate, precum selectarea unui demux sau a codecurilor audio și "
+"video.\n"
 
 #: ../info.php:56
 msgid ""
@@ -375,7 +410,8 @@ msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
 msgstr ""
-"Reglaje preferate. Aici puteți configura cu ușurință toate opțiunile SMPlayer\n"
+"Reglaje preferate. Aici puteți configura cu ușurință toate opțiunile "
+"SMPlayer\n"
 "utilizând o casetă de dialog intuitivă."
 
 #: ../info.php:60
@@ -394,7 +430,8 @@ msgstr ""
 
 #: ../info.php:65
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr "Este multiplatformă. Sunt disponibile executabile pentru Windows și Linux."
+msgstr ""
+"Este multiplatformă. Sunt disponibile executabile pentru Windows și Linux."
 
 #: ../info.php:67
 msgid "SMPlayer is under the <b>GPL</b> license."
@@ -414,7 +451,9 @@ msgstr "Aceasta este fereastra principală"
 
 #: ../screenshots.php:54
 msgid "The playlist can be embedded in the main window"
-msgstr "Lista cu fișierele ce vor fi redate poate fi încorporată în fereastra principală."
+msgstr ""
+"Lista cu fișierele ce vor fi redate poate fi încorporată în fereastra "
+"principală."
 
 #: ../screenshots.php:56
 msgid "The preferences dialog"
@@ -445,98 +484,65 @@ msgstr "Mini GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer rulând pe noul KDE 4"
 
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "Compilat pe OpenSuSE 10.2. Cerințe: libqt4 și mplayer."
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "Compilat pe Ubuntu 7.04."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "Pachet pentru arhitectură de tip AMD64. Compilat pe Ubuntu 8.04."
+
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "Acest pachet (fără program de instalare) include SMPlayer, bibliotecile "
-#~ "comune Qt,\n"
-#~ "fișierele cu traduceri și temele pentru iconițe. Nu include și mplayer."
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "Acest pachet conține tot ce aveți nevoie ca să rulați SMPlayer: "
-#~ "bibliotecile \n"
-#~ "comune Qt, fișierele cu traduceri, temele pentru iconițe și o versiune \n"
-#~ "pentru mplayer (versiunea inclusă este %1)."
-#~ msgid "SMPlayer running on Windows Vista"
-#~ msgstr "SMPlayer rulând pe Windows Vista"
-#~ msgid "Optional package which provides some icon themes."
-#~ msgstr "Pachete opţionale pentru modificarea aspectului grafic."
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
 #~ "has support for some of the new features of mplayer, so a newer version \n"
 #~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "Versiunea mplayer inclusă în Ubuntu este foarte veche (%1). SMPlayer \n"
-#~ "oferă suport pentru unele dintre cele mai noi funcții ale lui mplayer, "
-#~ "așa că este recomandată \n"
-#~ "utilizarea unei versiuni mai noi. Puteți descărca de aici %2 (începânt cu "
-#~ "%3)."
-#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ "Versiunea de mplayer inclusă în Ubuntu este puțin cam veche (%1). "
+#~ "SMPlayer \n"
+#~ "are suport pentru unele din caracteristicile noi oferite de mplayer, prin "
+#~ "urmare \n"
+#~ "se recomandă o folosirea unei versiuni de mplayer cât mai noi. Puteți "
+#~ "descărca o astfel \n"
+#~ "de versiune de aici %2 (de la %3)."
+
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
 #~ msgstr ""
-#~ "Pachet pentru calculatoare cu arhitectură tip AMD64. Compilat pe Kubuntu "
-#~ "7.10."
-#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
-#~ msgstr ""
-#~ "Compilat pe kubuntu 7.04 cu Qt 4 (trebuie să funcţioneze şi în ubuntu)."
+#~ "Puteţi descărca <a href=%1>de aici</a> ultima versiune pentru SMPlayer"
+
+#~ msgid "849"
+#~ msgstr "849"
+
 #~ msgid ""
-#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
-#~ "1.0rc1, \n"
-#~ "recommended 1.0rc2 or svn)."
+#~ "Package for the ones who usually play only the most known formats, like\n"
+#~ "avi, mkv, mpeg..."
 #~ msgstr ""
-#~ "Compilat pe OpenSuSE 10.2. Cerinţe: libqt4 şi mplayer (cel puţin "
-#~ "versiunea \n"
-#~ "1.0rc1, recomandat versiunea 1.0rc2 sau svn)."
+#~ "Acest pachet este pentru cei care redau în mod obișnuit doar formate "
+#~ "cunoscute, precum\n"
+#~ "avi, mkv, mpeg, ..."
+
 #~ msgid ""
-#~ "Package for those who don't like installers and/or want to use another \n"
-#~ "mplayer build."
+#~ "This package is like the one above, but it doesn't include the extra\n"
+#~ "codecs, so it's smaller."
 #~ msgstr ""
-#~ "Acest pachet este pentru cei care nu agreează programe de instalare și/"
-#~ "sau doresc să folosească \n"
-#~ "o altă versiune pentru mplayer."
-#~ msgid "Matroshka embedded subtitles"
-#~ msgstr "Un fişier mkv cu subtitrare încorporată"
-#~ msgid "10"
-#~ msgstr "10"
-#~ msgid "256"
-#~ msgstr "772"
+#~ "Acest pachet este la fel cu cel de deasupra, dar nu conține codecurile\n"
+#~ "suplimentare, de aceea este mai mic."
+
+#~ msgid "Lite package with installer:"
+#~ msgstr "Pachete incluzând program de instalare:"
+
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
-#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
+#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
+#~ "to host closed source binaries (the codecs)"
 #~ msgstr ""
-#~ "Acest pachet conţine tot ce aveţi nevoie pentru a rula SMPlayer: "
-#~ "bibliotecile QT \n"
-#~ "comune, fişierele de traduceri, temele pentru iconiţe,... Conţine şi "
-#~ "pachetul mplayer \n"
-#~ "Versiunea de mplayer inclusă este %1 furnizată de <a href=%2>CCCP</a>."
+#~ "Notă: acest pachet a fost scos, Sourceforge nu permite găzduirea \n"
+#~ "executabilelor (codecul) al căror cod sursă nu este accesibil."
+
 #~ msgid ""
-#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
-#~ "mplayer\n"
-#~ "will create a font cache. This process takes some seconds and meanwhile \n"
-#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
+#~ "Package intended for those who want to be sure they'll be able to\n"
+#~ "play (almost) anything."
 #~ msgstr ""
-#~ "<b>Notă:</b> prima dată când este folosită lib SSA/ASS sau fontconfig, "
-#~ "mplayer\n"
-#~ "va crea un font cache. Procesul va dura ceva timp şi în acest timp "
-#~ "<b>smplayer va părea că s-a blocat. Nu vă impacientaţi, doar aşteptaţi</b>"
-#~ msgid ""
-#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
-#~ "highly\n"
-#~ "recommended that you uninstall the old package before installing the new "
-#~ "one."
-#~ msgstr ""
-#~ "<b>Notă 2:</b> dacă aveţi deja instalată o versiune mai veche, se \n"
-#~ "recomandă cu prioritate dezinstalarea pachetului vechi înaintea \n"
-#~ "instalării versiunii noi."
-#~ msgid "Full package with installer:"
-#~ msgstr "Pachete complete incluzând program de instalare:"
+#~ "Acest pachet este pentru cei care vor să se asigure că pot reda \n"
+#~ "(aproape) orice format."
+
 #~ msgid ""
 #~ "The package includes also the extra codecs for mplayer, which will "
 #~ "allow \n"
@@ -552,53 +558,123 @@ msgstr "SMPlayer rulând pe noul KDE 4"
 #~ "doar de către mplayer și vor fi instalate în același director, deci \n"
 #~ "nu vor intra în conflict cu alte codecuri pe care le aveți instalate în "
 #~ "sistemul dumneavoastră."
+
+#~ msgid "Full package with installer:"
+#~ msgstr "Pachete complete incluzând program de instalare:"
+
 #~ msgid ""
-#~ "Package intended for those who want to be sure they'll be able to\n"
-#~ "play (almost) anything."
+#~ "<b>Note 2:</b> If you had already installed a previous version, it's "
+#~ "highly\n"
+#~ "recommended that you uninstall the old package before installing the new "
+#~ "one."
 #~ msgstr ""
-#~ "Acest pachet este pentru cei care vor să se asigure că pot reda \n"
-#~ "(aproape) orice format."
+#~ "<b>Notă 2:</b> dacă aveţi deja instalată o versiune mai veche, se \n"
+#~ "recomandă cu prioritate dezinstalarea pachetului vechi înaintea \n"
+#~ "instalării versiunii noi."
+
 #~ msgid ""
-#~ "Note: this package has been removed, Sourceforge doesn't allow\n"
-#~ "to host closed source binaries (the codecs)"
+#~ "<b>Note:</b> the first time the lib SSA/ASS or fontconfig is used, "
+#~ "mplayer\n"
+#~ "will create a font cache. This process takes some seconds and meanwhile \n"
+#~ "<b>smplayer may look hung. Don't worry, just wait.</b>"
 #~ msgstr ""
-#~ "Notă: acest pachet a fost scos, Sourceforge nu permite găzduirea \n"
-#~ "executabilelor (codecul) al căror cod sursă nu este accesibil."
-#~ msgid "Lite package with installer:"
-#~ msgstr "Pachete incluzând program de instalare:"
+#~ "<b>Notă:</b> prima dată când este folosită lib SSA/ASS sau fontconfig, "
+#~ "mplayer\n"
+#~ "va crea un font cache. Procesul va dura ceva timp şi în acest timp "
+#~ "<b>smplayer va părea că s-a blocat. Nu vă impacientaţi, doar aşteptaţi</b>"
+
 #~ msgid ""
-#~ "This package is like the one above, but it doesn't include the extra\n"
-#~ "codecs, so it's smaller."
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes... It also includes a mplayer \n"
+#~ "build. The version included is %1 from <a href=%2>CCCP</a>."
 #~ msgstr ""
-#~ "Acest pachet este la fel cu cel de deasupra, dar nu conține codecurile\n"
-#~ "suplimentare, de aceea este mai mic."
+#~ "Acest pachet conţine tot ce aveţi nevoie pentru a rula SMPlayer: "
+#~ "bibliotecile QT \n"
+#~ "comune, fişierele de traduceri, temele pentru iconiţe,... Conţine şi "
+#~ "pachetul mplayer \n"
+#~ "Versiunea de mplayer inclusă este %1 furnizată de <a href=%2>CCCP</a>."
+
+#~ msgid "256"
+#~ msgstr "772"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid "Matroshka embedded subtitles"
+#~ msgstr "Un fişier mkv cu subtitrare încorporată"
+
 #~ msgid ""
-#~ "Package for the ones who usually play only the most known formats, like\n"
-#~ "avi, mkv, mpeg..."
+#~ "Package for those who don't like installers and/or want to use another \n"
+#~ "mplayer build."
 #~ msgstr ""
-#~ "Acest pachet este pentru cei care redau în mod obișnuit doar formate "
-#~ "cunoscute, precum\n"
-#~ "avi, mkv, mpeg, ..."
-#~ msgid "849"
-#~ msgstr "849"
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr ""
-#~ "Puteţi descărca <a href=%1>de aici</a> ultima versiune pentru SMPlayer"
+#~ "Acest pachet este pentru cei care nu agreează programe de instalare și/"
+#~ "sau doresc să folosească \n"
+#~ "o altă versiune pentru mplayer."
+
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
+#~ "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer (at least "
+#~ "1.0rc1, \n"
+#~ "recommended 1.0rc2 or svn)."
+#~ msgstr ""
+#~ "Compilat pe OpenSuSE 10.2. Cerinţe: libqt4 şi mplayer (cel puţin "
+#~ "versiunea \n"
+#~ "1.0rc1, recomandat versiunea 1.0rc2 sau svn)."
+
+#~ msgid "Compiled on kubuntu 7.04 (should work in ubuntu too)."
+#~ msgstr ""
+#~ "Compilat pe kubuntu 7.04 cu Qt 4 (trebuie să funcţioneze şi în ubuntu)."
+
+#~ msgid "Package for AMD64. Compiled on kubuntu 7.10."
+#~ msgstr ""
+#~ "Pachet pentru calculatoare cu arhitectură tip AMD64. Compilat pe Kubuntu "
+#~ "7.10."
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 #~ "has support for some of the new features of mplayer, so a newer version \n"
 #~ "is highly recommended. You can download here %2 (from %3)."
 #~ msgstr ""
-#~ "Versiunea de mplayer inclusă în Ubuntu este puțin cam veche (%1). "
-#~ "SMPlayer \n"
-#~ "are suport pentru unele din caracteristicile noi oferite de mplayer, prin "
-#~ "urmare \n"
-#~ "se recomandă o folosirea unei versiuni de mplayer cât mai noi. Puteți "
-#~ "descărca o astfel \n"
-#~ "de versiune de aici %2 (de la %3)."
-#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-#~ msgstr "Pachet pentru arhitectură de tip AMD64. Compilat pe Ubuntu 8.04."
-#~ msgid "Compiled on Ubuntu 7.04."
-#~ msgstr "Compilat pe Ubuntu 7.04."
+#~ "Versiunea mplayer inclusă în Ubuntu este foarte veche (%1). SMPlayer \n"
+#~ "oferă suport pentru unele dintre cele mai noi funcții ale lui mplayer, "
+#~ "așa că este recomandată \n"
+#~ "utilizarea unei versiuni mai noi. Puteți descărca de aici %2 (începânt cu "
+#~ "%3)."
 
+#~ msgid "Optional package which provides some icon themes."
+#~ msgstr "Pachete opţionale pentru modificarea aspectului grafic."
+
+#~ msgid "SMPlayer running on Windows Vista"
+#~ msgstr "SMPlayer rulând pe Windows Vista"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "Acest pachet conține tot ce aveți nevoie ca să rulați SMPlayer: "
+#~ "bibliotecile \n"
+#~ "comune Qt, fișierele cu traduceri, temele pentru iconițe și o versiune \n"
+#~ "pentru mplayer (versiunea inclusă este %1)."
+
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Acest pachet (fără program de instalare) include SMPlayer, bibliotecile "
+#~ "comune Qt,\n"
+#~ "fișierele cu traduceri și temele pentru iconițe. Nu include și mplayer."
+
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "Compilat pe OpenSuSE 10.2. Cerințe: libqt4 și mplayer."
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "Acest pachet conține tot ce este necesar pentru a rula smplayer: "
+#~ "biblioteci \n"
+#~ "comune, fișierele cu traduceri, temele pentru pictograme și un executabil "
+#~ "mplayer \n"
+#~ "(versiunea inclusă este %1)."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-08 18:34+0100\n"
+"POT-Creation-Date: 2009-03-12 00:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,41 +124,41 @@ msgstr ""
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../header.php:58
+#: ../header.php:59
 msgid "The SMPlayer Project"
 msgstr ""
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Main"
 msgstr ""
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Screenshots"
 msgstr ""
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Downloads"
 msgstr ""
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:75
+#: ../header.php:76
 msgid "Forum"
 msgstr ""
 
-#: ../header.php:77
+#: ../header.php:78
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../header.php:79
+#: ../header.php:80
 msgid "Feature Requests"
 msgstr ""
 
-#: ../header.php:81
+#: ../header.php:82
 msgid "Wiki"
 msgstr ""
 
 #. if ($site == "sourceforge")
-#: ../header.php:84
+#: ../header.php:85
 msgid "Donations"
 msgstr ""
 
@@ -178,18 +178,25 @@ msgstr ""
 msgid "Package with installer:"
 msgstr ""
 
-#: ../downloads.php:53
+#.
+#. tr("This package contains everything needed to run smplayer: shared
+#. libraries, translation files, icon themes and a mplayer
+#. build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
+#.
+#: ../downloads.php:58
 msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
+"This package contains smplayer, shared libraries, translation \n"
+"files and icon themes. During the installation a recent version of\n"
+"mplayer will be downloaded and installed. Optionally you can also\n"
+"install some additional codecs (necessary only for a few formats, \n"
+"like newer RealVideo variants)."
 msgstr ""
 
-#: ../downloads.php:82
+#: ../downloads.php:90
 msgid "Additional codecs:"
 msgstr ""
 
-#: ../downloads.php:88
+#: ../downloads.php:95
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -197,68 +204,68 @@ msgid ""
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
 
-#: ../downloads.php:93
+#: ../downloads.php:100
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
 
-#: ../downloads.php:97
+#: ../downloads.php:104
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
 
-#: ../downloads.php:111
+#: ../downloads.php:119
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 
-#: ../downloads.php:114
+#: ../downloads.php:122
 msgid "This package is for advanced users only!"
 msgstr ""
 
-#: ../downloads.php:136
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
 
-#: ../downloads.php:140
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
 msgstr ""
 
-#: ../downloads.php:143
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr ""
 
-#: ../downloads.php:154
+#: ../downloads.php:162
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:164
+#: ../downloads.php:172
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 
-#: ../downloads.php:187
+#: ../downloads.php:195
 msgid "Compiled on Ubuntu %1."
 msgstr ""
 
-#: ../downloads.php:192
+#: ../downloads.php:200
 msgid "Package for AMD64. Compiled on Ubuntu %1."
 msgstr ""
 
-#: ../downloads.php:202
+#: ../downloads.php:210
 msgid "Suggested package:"
 msgstr ""
 
-#: ../downloads.php:203
+#: ../downloads.php:211
 msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
@@ -266,62 +273,62 @@ msgid ""
 "is highly recommended."
 msgstr ""
 
-#: ../downloads.php:207
+#: ../downloads.php:215
 msgid "You can get updated versions <a href=%1>here</a>"
 msgstr ""
 
-#: ../downloads.php:211
+#: ../downloads.php:219
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:218
+#: ../downloads.php:226
 msgid "New!"
 msgstr ""
 
-#: ../downloads.php:219
+#: ../downloads.php:227
 msgid ""
 "Now you can easily install the SMPlayer and MPlayer packages with \n"
 "%1. Just add one of the following lines to your %2, according to your \n"
 "version of Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:233
+#: ../downloads.php:241
 msgid "Icon Themes:"
 msgstr ""
 
-#: ../downloads.php:234
+#: ../downloads.php:242
 msgid "Optional packages which provide some icon themes."
 msgstr ""
 
-#: ../downloads.php:276
+#: ../downloads.php:286
 msgid "Additional packages"
 msgstr ""
 
-#: ../downloads.php:277
+#: ../downloads.php:287
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:284
+#: ../downloads.php:294
 msgid "Contributed packages"
 msgstr ""
 
-#: ../downloads.php:285
+#: ../downloads.php:295
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 
-#: ../downloads.php:291
+#: ../downloads.php:301
 msgid "Related Project"
 msgstr ""
 
-#: ../downloads.php:293
+#: ../downloads.php:303
 msgid "by MuldeR"
 msgstr ""
 
-#: ../downloads.php:294
+#: ../downloads.php:304
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -330,12 +337,12 @@ msgid ""
 "binary codecs."
 msgstr ""
 
-#: ../downloads.php:305
+#: ../downloads.php:315
 msgid "Unstable releases"
 msgstr ""
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:307
+#: ../downloads.php:317
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

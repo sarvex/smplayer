@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-08 18:34+0100\n"
+"POT-Creation-Date: 2009-03-12 00:44+0100\n"
 "PO-Revision-Date: 2008-11-13 23:45+0200\n"
 "Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
 "Language-Team: Ukrainian\n"
@@ -32,21 +32,25 @@ msgstr "Windows"
 msgid "Package with installer:"
 msgstr "Пакет з інсталятором:"
 
-#: ../downloads.php:53
+#.
+#. tr("This package contains everything needed to run smplayer: shared
+#. libraries, translation files, icon themes and a mplayer
+#. build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
+#.
+#: ../downloads.php:58
 msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
+"This package contains smplayer, shared libraries, translation \n"
+"files and icon themes. During the installation a recent version of\n"
+"mplayer will be downloaded and installed. Optionally you can also\n"
+"install some additional codecs (necessary only for a few formats, \n"
+"like newer RealVideo variants)."
 msgstr ""
-"Цей пакет містить все необхідне для роботи smplayer: загальні \n"
-"бібліотеки, файли перекладів, теми іконок та збірку \n"
-"mplayer (містить версію %1)."
 
-#: ../downloads.php:82
+#: ../downloads.php:90
 msgid "Additional codecs:"
 msgstr "Додаткові кодеки:"
 
-#: ../downloads.php:88
+#: ../downloads.php:95
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -59,7 +63,7 @@ msgstr ""
 "що ці кодеки не потрібні для відтворення більшості форматів, таких як DVD, \n"
 "MPEG-1/2/4 та інших. "
 
-#: ../downloads.php:93
+#: ../downloads.php:100
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -69,7 +73,7 @@ msgstr ""
 "теку, що і сам програвач, таким чином вони не будуть конфліктувати з іншими "
 "кодеками, котрі ви встановлюєте семі. "
 
-#: ../downloads.php:97
+#: ../downloads.php:104
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -77,7 +81,7 @@ msgstr ""
 "Якщо ви надаєте перевагу zip-архівам, ви \n"
 "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%2)."
 
-#: ../downloads.php:111
+#: ../downloads.php:119
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
@@ -85,11 +89,11 @@ msgstr ""
 "Пакет (без інсталлера), який містить smplayer, загальні бібліотеки,\n"
 "переклади та теми іконок. Не містить mplayer."
 
-#: ../downloads.php:114
+#: ../downloads.php:122
 msgid "This package is for advanced users only!"
 msgstr "Цей пакет виключно для досвідчених користувачів!"
 
-#: ../downloads.php:136
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
@@ -99,7 +103,7 @@ msgstr ""
 "таких як USB-флешки. Не потребує інсталляції, просто розпакуйте архів \n"
 "куди Ви хочете та двічі клацність по smplayer.exe для запуску."
 
-#: ../downloads.php:140
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -107,55 +111,57 @@ msgstr ""
 "Пакет також містить теми іконок, переклади та збірку \n"
 "MPlayer."
 
-#: ../downloads.php:143
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
+msgstr ""
+"Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
 
-#: ../downloads.php:154
+#: ../downloads.php:162
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:164
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
+#: ../downloads.php:172
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:187
+#: ../downloads.php:195
 msgid "Compiled on Ubuntu %1."
 msgstr "Зкомпільовано в Ubuntu %1."
 
-#: ../downloads.php:192
+#: ../downloads.php:200
 msgid "Package for AMD64. Compiled on Ubuntu %1."
 msgstr "Пакет для AMD64. Зкомпільовано в Ubuntu %1."
 
-#: ../downloads.php:202
+#: ../downloads.php:210
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:203
+#: ../downloads.php:211
 msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
-"Версія mplayer в Ubuntu, трохи застаріла (%1). "
-"SMPlayer \n"
+"Версія mplayer в Ubuntu, трохи застаріла (%1). SMPlayer \n"
 "підтримує деякі з нових можливостей mplayer, тому новіша версія \n"
 "суворо рекомендується."
 
-#: ../downloads.php:207
+#: ../downloads.php:215
 msgid "You can get updated versions <a href=%1>here</a>"
 msgstr "Ви можете взяти оновлену версію <a href=%1>тут</a>"
 
-#: ../downloads.php:211
+#: ../downloads.php:219
 msgid "More info"
 msgstr "Більше інформації"
 
-#: ../downloads.php:218
+#: ../downloads.php:226
 msgid "New!"
 msgstr "Новина!"
 
-#: ../downloads.php:219
+#: ../downloads.php:227
 msgid ""
 "Now you can easily install the SMPlayer and MPlayer packages with \n"
 "%1. Just add one of the following lines to your %2, according to your \n"
@@ -165,19 +171,19 @@ msgstr ""
 "%1. Просто додайте один з цих рядків до Вашого %2, відповідно до Вашої \n"
 "версії Ubuntu."
 
-#: ../downloads.php:233
+#: ../downloads.php:241
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:234
+#: ../downloads.php:242
 msgid "Optional packages which provide some icon themes."
 msgstr "Додаткові пакети з деякими темами іконок."
 
-#: ../downloads.php:276
+#: ../downloads.php:286
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:277
+#: ../downloads.php:287
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -185,11 +191,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:284
+#: ../downloads.php:294
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:285
+#: ../downloads.php:295
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -197,15 +203,15 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:291
+#: ../downloads.php:301
 msgid "Related Project"
 msgstr "Пов'язані проекти"
 
-#: ../downloads.php:293
+#: ../downloads.php:303
 msgid "by MuldeR"
 msgstr "від MuldeR"
 
-#: ../downloads.php:294
+#: ../downloads.php:304
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -214,17 +220,16 @@ msgid ""
 "binary codecs."
 msgstr ""
 "Цей пакет містить дуже свіжу версію SMPlayer (часто взяту з\n"
-"SVN репозиторію) а також нову версію MPlayer. Ця версія "
-"має\n"
+"SVN репозиторію) а також нову версію MPlayer. Ця версія має\n"
 "власний інсталлер, mplayer зібраний з оптимізацією під декілька\n"
 "процесорів та з бінарними кодеками."
 
-#: ../downloads.php:305
+#: ../downloads.php:315
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:307
+#: ../downloads.php:317
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -232,41 +237,41 @@ msgstr ""
 "Ви можете взяти пакети прямо з SVN (вихідні тексти та\n"
 "оновлення для Windows), <a href=%1><b>тут</b></a>."
 
-#: ../header.php:58
+#: ../header.php:59
 msgid "The SMPlayer Project"
 msgstr "Проект SMPlayer"
 
-#: ../header.php:68
+#: ../header.php:69
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:70
+#: ../header.php:71
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:72
+#: ../header.php:73
 msgid "Downloads"
 msgstr "Завантаження"
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:75
+#: ../header.php:76
 msgid "Forum"
 msgstr "Форум"
 
-#: ../header.php:77
+#: ../header.php:78
 msgid "Bug Tracking"
 msgstr "Простежування помилок"
 
-#: ../header.php:79
+#: ../header.php:80
 msgid "Feature Requests"
 msgstr "Особливі прохання"
 
-#: ../header.php:81
+#: ../header.php:82
 msgid "Wiki"
 msgstr "Wiki"
 
 #. if ($site == "sourceforge")
-#: ../header.php:84
+#: ../header.php:85
 msgid "Donations"
 msgstr "Пожертви"
 
@@ -299,8 +304,7 @@ msgid ""
 msgstr ""
 "Одна з найцікавіших властивостей SMPlayer - <b>здатність запам'ятовувати \n"
 "налаштування всіх відтворюваних файлів</b>. Ви дивитеся кіно, але треба \n"
-"терміново кудись їхати... Не турбуйтесь, коли Ви відкриєте кіно знову "
-"- \n"
+"терміново кудись їхати... Не турбуйтесь, коли Ви відкриєте кіно знову - \n"
 "відтворення продовжиться з того ж місця, з тими ж налаштуваннями: звукова \n"
 "доріжка, субтитри, гучність..."
 
@@ -456,3 +460,11 @@ msgstr "Компактний інтерфейс"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "Цей пакет містить все необхідне для роботи smplayer: загальні \n"
+#~ "бібліотеки, файли перекладів, теми іконок та збірку \n"
+#~ "mplayer (містить версію %1)."
