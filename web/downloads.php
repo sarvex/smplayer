@@ -50,9 +50,17 @@ echo download_windows_lite_link();
 ?>
 <br>
 <?php
+/*
 tr("This package contains everything needed to run smplayer: shared 
 libraries, translation files, icon themes and a mplayer 
 build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
+*/
+tr("This package contains smplayer, shared libraries, translation 
+files and icon themes. During the installation a recent version of
+mplayer will be downloaded and installed. Optionally you can also
+install some additional codecs (necessary only for a few formats, 
+like newer RealVideo variants).");
+echo " ";
 /*
 tr("The package includes also the extra codecs for mplayer, which will allow 
 to play some additional formats (like rmvb files). These codecs are to be
@@ -74,7 +82,7 @@ echo "<b>";
 </tr>
 
 <!-- codecs -->
-
+<!--
 <tr>
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
@@ -84,7 +92,6 @@ echo download_codecs_link();
 ?>
 <br>
 <?php
-
 tr("This package adds support for codecs that are not yet implemented
 natively in mplayer, like newer RealVideo variants and a lot of uncommon
 formats. Note that they are not necessary to play most common formats
@@ -101,6 +108,7 @@ the <a href=%1>mplayer site</a> (%2).",
 ?>
 </td>
 </tr>
+-->
 
 <tr>
 <td><img src="iconos/package.png" alt="*"></td>
