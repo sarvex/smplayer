@@ -50,17 +50,11 @@ echo download_windows_lite_link();
 ?>
 <br>
 <?php
-/*
-tr("This package contains everything needed to run smplayer: shared 
-libraries, translation files, icon themes and a mplayer 
-build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
-*/
 tr("This package contains smplayer, shared libraries, translation 
 files and icon themes. During the installation a recent version of
 mplayer will be downloaded and installed. Optionally you can also
 install some additional codecs (necessary only for a few formats, 
 like newer RealVideo variants).");
-echo " ";
 /*
 tr("The package includes also the extra codecs for mplayer, which will allow 
 to play some additional formats (like rmvb files). These codecs are to be
@@ -77,6 +71,21 @@ tr("Note: this package has been removed, Sourceforge doesn't allow
 to host closed source binaries (the codecs)");
 echo "<b>";
 */
+?>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/kpackage.png" alt="*"></td>
+<td>
+<?php 
+echo download_windows_full_link(); 
+?>
+<br>
+<?php
+tr("This package contains everything needed to run smplayer: shared 
+libraries, translation files, icon themes and a mplayer 
+build (the version included is %1).","<i>SVN r28311</i>");
 ?>
 </td>
 </tr>

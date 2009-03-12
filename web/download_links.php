@@ -17,11 +17,9 @@ function download_amd64deb_link() {
 	return create_link("smplayer_0.6.7_amd64.deb", 1495604 );
 }
 
-/*
 function download_windows_full_link() {
-	return create_link("smplayer_0.6.0rc2_full.exe", 18489602 );
+	return create_link("smplayer_0.6.7_setup.exe", 13694588 );
 }
-*/
 
 function download_windows_lite_link() {
 	return create_link("smplayer_0.6.7_websetup.exe", 8395666 );
