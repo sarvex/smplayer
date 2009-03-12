@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 00:44+0100\n"
+"POT-Creation-Date: 2009-03-12 18:57+0100\n"
 "PO-Revision-Date: 2008-05-29 12:40+0800\n"
 "Last-Translator: MA Gang <magang@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,7 @@ msgstr "Windows"
 msgid "Package with installer:"
 msgstr "含有安装程序的程序包"
 
-#.
-#. tr("This package contains everything needed to run smplayer: shared
-#. libraries, translation files, icon themes and a mplayer
-#. build (the version included is %1).","<i>SVN r28126</i>"); echo " ";
-#.
-#: ../downloads.php:58
+#: ../downloads.php:53
 msgid ""
 "This package contains smplayer, shared libraries, translation \n"
 "files and icon themes. During the installation a recent version of\n"
@@ -45,11 +40,18 @@ msgid ""
 "like newer RealVideo variants)."
 msgstr ""
 
-#: ../downloads.php:90
+#: ../downloads.php:86
+msgid ""
+"This package contains everything needed to run smplayer: shared \n"
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
+msgstr ""
+
+#: ../downloads.php:99
 msgid "Additional codecs:"
 msgstr "附加解码器："
 
-#: ../downloads.php:95
+#: ../downloads.php:104
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -60,7 +62,7 @@ msgstr ""
 "常见\n"
 "格式解码器。注意这些解码器对于播放常见的DVD和MPEG-1/2/4格式文件是不必要的。"
 
-#: ../downloads.php:100
+#: ../downloads.php:109
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -69,61 +71,61 @@ msgstr ""
 "这些解码器仅用于mplayer，且安装于mplayer目录下，所以不会和你\n"
 "之前安装的其他解码器造成任何冲突。"
 
-#: ../downloads.php:104
+#: ../downloads.php:113
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr "如果你偏爱zip格式，你可以在<a href=%1>mplayer 网站</a> (%2)下载。"
 
-#: ../downloads.php:119
+#: ../downloads.php:128
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 
-#: ../downloads.php:122
+#: ../downloads.php:131
 msgid "This package is for advanced users only!"
 msgstr ""
 
-#: ../downloads.php:144
+#: ../downloads.php:153
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
 
-#: ../downloads.php:148
+#: ../downloads.php:157
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
 msgstr ""
 
-#: ../downloads.php:151
+#: ../downloads.php:160
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr ""
 
-#: ../downloads.php:162
+#: ../downloads.php:171
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:172
+#: ../downloads.php:181
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "阅读程序包内的Install.txt来了解编译方法。"
 
-#: ../downloads.php:195
+#: ../downloads.php:204
 msgid "Compiled on Ubuntu %1."
 msgstr ""
 
-#: ../downloads.php:200
+#: ../downloads.php:209
 msgid "Package for AMD64. Compiled on Ubuntu %1."
 msgstr ""
 
-#: ../downloads.php:210
+#: ../downloads.php:219
 msgid "Suggested package:"
 msgstr "建议安装的程序包："
 
-#: ../downloads.php:211
+#: ../downloads.php:220
 msgid ""
 "The version of mplayer included in Ubuntu is a little bit old (%1). "
 "SMPlayer \n"
@@ -131,38 +133,38 @@ msgid ""
 "is highly recommended."
 msgstr ""
 
-#: ../downloads.php:215
+#: ../downloads.php:224
 msgid "You can get updated versions <a href=%1>here</a>"
 msgstr ""
 
-#: ../downloads.php:219
+#: ../downloads.php:228
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:226
+#: ../downloads.php:235
 msgid "New!"
 msgstr ""
 
-#: ../downloads.php:227
+#: ../downloads.php:236
 msgid ""
 "Now you can easily install the SMPlayer and MPlayer packages with \n"
 "%1. Just add one of the following lines to your %2, according to your \n"
 "version of Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:241
+#: ../downloads.php:250
 msgid "Icon Themes:"
 msgstr "图标主题："
 
-#: ../downloads.php:242
+#: ../downloads.php:251
 msgid "Optional packages which provide some icon themes."
 msgstr "可选包，提供一些图标主题。"
 
-#: ../downloads.php:286
+#: ../downloads.php:295
 msgid "Additional packages"
 msgstr "附加包"
 
-#: ../downloads.php:287
+#: ../downloads.php:296
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -170,25 +172,25 @@ msgstr ""
 "提供给高级用户的若干附加包：\n"
 "<a href=%1>查看 sourceforge下载页</a>。"
 
-#: ../downloads.php:294
+#: ../downloads.php:303
 msgid "Contributed packages"
 msgstr "共享包"
 
-#: ../downloads.php:295
+#: ../downloads.php:304
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr "来自其他发行版的包，其他人创建的。<a href=%1>点击这里</a>来查看列表。"
 
-#: ../downloads.php:301
+#: ../downloads.php:310
 msgid "Related Project"
 msgstr ""
 
-#: ../downloads.php:303
+#: ../downloads.php:312
 msgid "by MuldeR"
 msgstr ""
 
-#: ../downloads.php:304
+#: ../downloads.php:313
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -197,12 +199,12 @@ msgid ""
 "binary codecs."
 msgstr ""
 
-#: ../downloads.php:315
+#: ../downloads.php:324
 msgid "Unstable releases"
 msgstr "不稳定版本"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:317
+#: ../downloads.php:326
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -426,27 +428,11 @@ msgstr "迷你GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "运行于新KDE4下的SMPlayer"
 
-#~ msgid "Compiled on Ubuntu 7.04."
-#~ msgstr "在Ubuntu 7.04下编译。"
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
-#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
-
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
-#~ "本地语言界面和图标主题。不包含mplayer。"
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -458,8 +444,24 @@ msgstr "运行于新KDE4下的SMPlayer"
 #~ "已经支持mplayer的新功能，所以建议安装更新版本的mplayer。你可以在这里下载"
 #~ "You can download here %2 (从 %3)."
 
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
+#~ "本地语言界面和图标主题。不包含mplayer。"
 
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
+#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
+
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "在Ubuntu 7.04下编译。"
