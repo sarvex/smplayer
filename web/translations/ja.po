@@ -45,6 +45,10 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
+"このパッケージには、smplayer、共有ライブラリ、翻訳ファイル、およびアイコンテ"
+"ーマが含まれています。mplayer はインストール中にダウンロードおよびインストー"
+"ルされます。オプションとして、最新の RealVideo 派生など一部のフォーマットに必"
+"要な追加コーデックをインストールすることができます。"
 
 #: ../downloads.php:90
 msgid "Additional codecs:"
@@ -442,11 +446,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:71
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で実行中の SMPlayer"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "このパッケージには、smplayer を実行するのに必要な共有ライブラリ、翻訳ファ"
-#~ "イル、アイコンテーマ、mplayer ビルド (%1) がすべて含まれています。"
