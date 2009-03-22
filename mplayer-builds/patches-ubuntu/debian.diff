@@ -44,7 +44,7 @@ Index: debian-rvm/control
 +Priority: extra
 +Maintainer: Ricardo Villalba <rvm@escomposlinux.org>
 +Standards-Version: 3.7.2
-+Build-Depends: debhelper (>= 5.0.37), dpatch, libncurses5-dev, libesd0-dev, liblircclient-dev, libgtk2.0-dev, libvorbis-dev, libsdl1.2-dev, sharutils, libasound2-dev (>= 1.0.1), liblzo-dev, gawk, libjpeg62-dev, libaudiofile-dev, libsmbclient-dev, libxv-dev, libpng3-dev, libgif-dev, libcdparanoia0-dev, libxvidcore4-dev, libdv-dev, liblivemedia-dev (>= 2004.05.01), libfreetype6-dev, em8300-headers, libgl1-mesa-dev | libgl-dev, libdvdread-dev (>= 4.1.3), libdts-dev, libtheora-dev, libglu1-mesa-dev | libglu-dev, libfontconfig-dev, libxxf86dga-dev, libxinerama-dev, libxxf86vm-dev, libmp3lame-dev | liblame-dev, libxvmc-dev, libggi2-dev, ttf-bitstream-vera, libmpcdec-dev, libspeex-dev, libfribidi-dev, libfaac-dev (>=1.26), sed (>= 4.0), libaa1-dev, libcaca-dev, libx264-dev (>= 1:0.svn20081230), libpulse-dev, libmad0-dev, ladspa-sdk, libdbus-glib-1-dev, libaudio-dev, liblzo2-dev, libdvdnav-dev (>= 4.1.3), libopenal-dev, libjack-dev, libtwolame-dev, libsvga1-dev [i386 amd64], libenca-dev, docbook-xml, docbook-xsl, xsltproc, libxml2-utils
++Build-Depends: debhelper (>= 5.0.37), dpatch, nvidia-180-libvdpau-dev | libartsc0-dev, libncurses5-dev, libesd0-dev, liblircclient-dev, libgtk2.0-dev, libvorbis-dev, libsdl1.2-dev, sharutils, libasound2-dev (>= 1.0.1), liblzo-dev, gawk, libjpeg62-dev, libaudiofile-dev, libsmbclient-dev, libxv-dev, libpng3-dev, libgif-dev, libcdparanoia0-dev, libxvidcore4-dev, libdv-dev, liblivemedia-dev (>= 2004.05.01), libfreetype6-dev, em8300-headers, libgl1-mesa-dev | libgl-dev, libdvdread-dev (>= 4.1.3), libdts-dev, libtheora-dev, libglu1-mesa-dev | libglu-dev, libfontconfig-dev, libxxf86dga-dev, libxinerama-dev, libxxf86vm-dev, libmp3lame-dev | liblame-dev, libxvmc-dev, libggi2-dev, ttf-bitstream-vera, libmpcdec-dev, libspeex-dev, libfribidi-dev, libfaac-dev (>=1.26), sed (>= 4.0), libaa1-dev, libcaca-dev, libx264-dev (>= 1:0.svn20081230), libpulse-dev, libmad0-dev, ladspa-sdk, libdbus-glib-1-dev, libaudio-dev, liblzo2-dev, libdvdnav-dev (>= 4.1.3), libopenal-dev, libjack-dev, libtwolame-dev, libsvga1-dev [i386 amd64], libenca-dev, docbook-xml, docbook-xsl, xsltproc, libxml2-utils
 +XSBC-Original-Maintainer: Ubuntu MOTU Media Team <motumedia@tauware.de>
 +
 +Package: mplayer
@@ -2257,7 +2257,7 @@ Index: debian-rvm/rules
 ===================================================================
 --- debian-rvm/rules	(revisión: 0)
 +++ debian-rvm/rules	(revisión: 0)
-@@ -0,0 +1,193 @@
+@@ -0,0 +1,154 @@
 +#!/usr/bin/make -f
 +#-*- makefile -*-
 +
@@ -2287,55 +2287,20 @@ Index: debian-rvm/rules
 +
 +CONFIGURE_PATH := --prefix=/usr --confdir=/etc/mplayer --mandir=/usr/share/man --win32codecsdir=/usr/lib/win32
 +#CONFIGURE_COMMON := --enable-largefiles
-+#CONFIGURE_INPUT :=  --disable-libdvdcss-internal --enable-smb --enable-ftp --enable-cdparanoia --enable-radio
++CONFIGURE_INPUT :=  --disable-dvdread-internal 
 +#CONFIGURE_CONTROL := --enable-lirc --enable-joystick --enable-xf86keysym 
 +#CONFIGURE_AUDIO_CODECS := --disable-tremor-internal --enable-liba52 --enable-musepack --enable-speex --enable-libvorbis --enable-mad --enable-mp3lib
 +#CONFIGURE_VIDEO_CODECS := --enable-theora --enable-libdv --enable-libmpeg2 --enable-tv-v4l2
 +#CONFIGURE_AUDIO_OUT := --enable-alsa --enable-ossaudio --enable-esd --enable-arts --enable-pulse --enable-nas
-+#CONFIGURE_VIDEO_OUT := --enable-xinerama --enable-menu --enable-xv --enable-vm --enable-gl --enable-xmga --enable-mga --enable-3dfx --enable-tdfxfb --enable-sdl --enable-aa --enable-caca --enable-dxr3 --enable-xvmc --with-xvmclib=XvMCW --enable-ggi --enable-fbdev --disable-ivtv
++CONFIGURE_VIDEO_OUT := --enable-xvmc
 +#CONFIGURE_MISC := --enable-freetype --enable-gif --enable-png --enable-jpeg --enable-liblzo --enable-fribidi --enable-ladspa
 +
 +CONFIGURE_ALL := $(CONFIGURE_ARCH) $(CONFIGURE_PATH) $(CONFIGURE_COMMON) $(CONFIGURE_INPUT) $(CONFIGURE_CONTROL) $(CONFIGURE_AUDIO_CODECS) $(CONFIGURE_VIDEO_CODECS) $(CONFIGURE_AUDIO_OUT) $(CONFIGURE_VIDEO_OUT) $(CONFIGURE_MISC)
 +
-+
-+#modify-config:
-+#ifeq "$(DEB_BUILD_ARCH)" "i386"
-+#	sed -i 's;#undef HAVE_3DNOW;#define HAVE_3DNOW 1;g' config.h
-+#	sed -i 's;#undef HAVE_3DNOWEX;#define HAVE_3DNOWEX 1;g' config.h
-+#	sed -i 's;#undef HAVE_MMX;#define HAVE_MMX 1;g' config.h
-+#	sed -i 's;#undef HAVE_MMX2;#define HAVE_MMX2 1;g' config.h
-+#	sed -i 's;#undef HAVE_SSE;#define HAVE_SSE 1;g' config.h
-+#	sed -i 's;#undef HAVE_SSE2;#define HAVE_SSE2 1;g' config.h
-+#	sed -i 's;#undef HAVE_BUILTIN_VECTOR;#define HAVE_BUILTIN_VECTOR 1;g' config.h
-+#	sed -i 's;#undef HAVE_MM3DNOW;#define HAVE_MM3DNOW 1;g' config.h
-+#	sed -i '/TARGET_MMX =/d' config.mak
-+#	echo 'TARGET_MMX = yes' >> config.mak
-+#	sed -i '/TARGET_MMX2 =/d' config.mak
-+#	echo 'TARGET_MMX2 = yes' >> config.mak
-+#	sed -i '/TARGET_SSE =/d' config.mak
-+#	echo 'TARGET_SSE = yes' >> config.mak
-+#	sed -i '/TARGET_SSE2 =/d' config.mak
-+#	echo 'TARGET_SSE2 = yes' >> config.mak
-+#	sed -i '/TARGET_3DNOW =/d' config.mak
-+#	echo 'TARGET_3DNOW = yes' >> config.mak
-+#	sed -i '/TARGET_3DNOWEX =/d' config.mak
-+#	echo 'TARGET_3DNOWEX = yes' >> config.mak
-+#	sed -i '/TARGET_BUILTIN_VECTOR =/d' config.mak
-+#	echo 'TARGET_BUILTIN_VECTOR = yes' >> config.mak
-+#	sed -i '/TARGET_BUILTIN_3DNOW =/d' config.mak
-+#	echo 'TARGET_BUILTIN_3DNOW = yes' >> config.mak
-+#endif
-+	
 +build-gui: build-gui-stamp
 +build-gui-stamp: patch 
 +	dh_testdir
-+#	if test -f build-nogui-stamp; then \
-+#	  $(MAKE) distclean; \
-+#	  rm -f build-nogui-stamp; \
-+#	fi
-+#	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
-+	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder --disable-dvdread-internal --enable-xvmc
-+#	$(MAKE) -f debian/rules modify-config
++	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder 
 +	$(MAKE)
 +
 +# Documentation
@@ -2411,43 +2376,39 @@ Index: debian-rvm/rules
 +binary-indep: build install
 +	dh_testdir
 +	dh_testroot
-+	dh_installdocs
-+#	dh_installdocs -pmplayer-doc Copyright DOCS/HTML DOCS/tech
-+#	dh_installdocs -pmplayer-doc -X.svn -Xmplayer.1 Copyright DOCS/*
 +	dh_installdocs -pmplayer-doc -X.svn Copyright DOCS/HTML DOCS/tech
-+	dh_installchangelogs
-+	dh_compress
-+	dh_link
-+	dh_fixperms
-+	dh_strip
-+	dh_installdeb
-+	dh_gencontrol
-+	dh_md5sums
++	dh_installchangelogs -i
++	dh_compress -i
++	dh_link -i
++	dh_fixperms -i
++	dh_strip -i
++	dh_installdeb -i
++	dh_gencontrol -i
++	dh_md5sums -i
 +#	dh_builddeb -- -Z lzma
-+	dh_builddeb
++	dh_builddeb -i
 +
-+binary-arch: DH_OPTIONS=-a
 +binary-arch: build install
 +	dh_testdir
 +	dh_testroot
-+	dh_install
-+	dh_installdocs -A Copyright
-+	dh_installmenu
-+	dh_installmime
-+	dh_installman
-+	dh_installchangelogs Changelog
-+	dh_desktop
-+	dh_compress
-+	dh_link
-+	dh_fixperms
-+	dh_strip
-+	dh_perl
-+	dh_installdeb
-+	dh_shlibdeps
-+	dh_gencontrol
-+	dh_md5sums
++	dh_install -a
++	dh_installdocs -a -A Copyright
++	dh_installmenu -a
++	dh_installmime -a
++	dh_installman -a
++	dh_installchangelogs -a Changelog
++	dh_desktop -a
++	dh_compress -a
++	dh_link -a
++	dh_fixperms -a
++	dh_strip -a
++	dh_perl -a
++	dh_installdeb -a
++	dh_shlibdeps -a
++	dh_gencontrol -a
++	dh_md5sums -a
 +#	dh_builddeb -- -Z lzma
-+	dh_builddeb
++	dh_builddeb -a
 +
 +binary: binary-indep binary-arch
 +.PHONY: build clean binary-indep binary-arch binary
