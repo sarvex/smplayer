@@ -16,7 +16,7 @@ Index: create_deb.sh
 +
 +# Add entry to changelog with svn revision
 +cp debian/changelog-orig debian/changelog
-+dch -v "2:1.0rc2svn$svn_revision" "New version"
++dch -v "2:1.0~rc2svn$svn_revision" "New version"
 +
 +# Build
 +rm build-gui-stamp
@@ -2257,7 +2257,7 @@ Index: debian-rvm/rules
 ===================================================================
 --- debian-rvm/rules	(revisión: 0)
 +++ debian-rvm/rules	(revisión: 0)
-@@ -0,0 +1,154 @@
+@@ -0,0 +1,155 @@
 +#!/usr/bin/make -f
 +#-*- makefile -*-
 +
@@ -2292,7 +2292,7 @@ Index: debian-rvm/rules
 +#CONFIGURE_AUDIO_CODECS := --disable-tremor-internal --enable-liba52 --enable-musepack --enable-speex --enable-libvorbis --enable-mad --enable-mp3lib
 +#CONFIGURE_VIDEO_CODECS := --enable-theora --enable-libdv --enable-libmpeg2 --enable-tv-v4l2
 +#CONFIGURE_AUDIO_OUT := --enable-alsa --enable-ossaudio --enable-esd --enable-arts --enable-pulse --enable-nas
-+CONFIGURE_VIDEO_OUT := --enable-xvmc
++CONFIGURE_VIDEO_OUT := --enable-xvmc --enable-menu
 +#CONFIGURE_MISC := --enable-freetype --enable-gif --enable-png --enable-jpeg --enable-liblzo --enable-fribidi --enable-ladspa
 +
 +CONFIGURE_ALL := $(CONFIGURE_ARCH) $(CONFIGURE_PATH) $(CONFIGURE_COMMON) $(CONFIGURE_INPUT) $(CONFIGURE_CONTROL) $(CONFIGURE_AUDIO_CODECS) $(CONFIGURE_VIDEO_CODECS) $(CONFIGURE_AUDIO_OUT) $(CONFIGURE_VIDEO_OUT) $(CONFIGURE_MISC)
@@ -2367,10 +2367,11 @@ Index: debian-rvm/rules
 +clean: unpatch
 +	dh_testdir
 +	dh_testroot
++	-cd DOCS/xml && $(MAKE) distclean
 +	-$(MAKE) distclean
 +	-rm -f build-nogui-stamp build-gui-stamp
 +	# additional cleanups
-+	-rm config.mak version.h libaf/config.mak libao2/config.mak libvo/config.mak Gui/config.mak
++	#-rm config.mak version.h libaf/config.mak libao2/config.mak libvo/config.mak Gui/config.mak
 +	dh_clean
 +
 +binary-indep: build install
