@@ -41,6 +41,10 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
+"Этот пакет включает smplayer, необходимые библиотеки, файлы переводов \n"
+"и темы иконок. При инсталляции будет загружена и установлена последняя \n"
+"последняя версия mplayer. Опционально вы можете также установить некоторые \n"
+"дополнительные кодеки (нужны лишь для некоторых форматов вроде RealVideo)."
 
 #: ../downloads.php:86
 msgid ""
@@ -76,7 +80,7 @@ msgid ""
 msgstr ""
 "Эти кодеки используются только mplayer-ом и будут установлены в тот же\n"
 "каталог, таким образом они не будут конфликтовать с другими кодеками,\n"
-"которые вы устанавливаете сами.\n"
+"которые у вас могут быть установлены в системе.\n"
 
 #: ../downloads.php:113
 msgid ""
@@ -92,8 +96,7 @@ msgid ""
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 "Архив (без программы установки), содержащий smplayer, необходимые "
-"библиотеки,\n"
-"переводы, и темы иконок. Не включает в себя mplayer."
+"библиотеки, переводы, и темы иконок. Не включает в себя mplayer."
 
 #: ../downloads.php:131
 msgid "This package is for advanced users only!"
@@ -117,8 +120,7 @@ msgstr "Пакет также включает темы иконок, перев
 
 #: ../downloads.php:160
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr ""
-"Внимание: 7z файлы могут быть распакованы с помощью  <a href=%1>7-Zip</a>."
+msgstr "Внимание: 7z файлы можно распаковать с помощью <a href=%1>7-Zip</a>."
 
 #: ../downloads.php:171
 msgid "Linux"
@@ -171,7 +173,7 @@ msgid ""
 "version of Ubuntu:"
 msgstr ""
 "Теперь вы можете легко установить пакеты с SMPlayer и MPlayer с помощью \n"
-"%1. Лишь добавьте одну из следующих строк в ваш %2, согласно вашей \n"
+"%1. Просто добавьте одну из следующих строк в ваш %2, согласно вашей \n"
 "версии Ubuntu:"
 
 #: ../downloads.php:250
