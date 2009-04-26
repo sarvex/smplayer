@@ -1908,14 +1908,14 @@ Index: debian-rvm/patches/11-dshowserver.dpatch
 + 
 + 
 + ###### variable declarations #######
-+@@ -223,6 +224,7 @@
++@@ -518,6 +518,7 @@
 +               stream/stream_mf.c \
 +               stream/stream_null.c \
 +               stream/url.c \
 ++              libmpcodecs/vd_dshowserver.c \
++               $(SRCS_COMMON-yes)
 + 
-+ SRCS_COMMON-$(AUDIO_INPUT)-$(ALSA1X) += stream/ai_alsa1x.c
-+ SRCS_COMMON-$(AUDIO_INPUT)-$(ALSA9)  += stream/ai_alsa.c
++ 
 +diff -urNad mplayer-1.0~rc2svn28035~/libmpcodecs/vd.c mplayer-1.0~rc2svn28035/libmpcodecs/vd.c
 +--- mplayer-1.0~rc2svn28035~/libmpcodecs/vd.c	2008-10-16 20:24:18.000000000 +0200
 ++++ mplayer-1.0~rc2svn28035/libmpcodecs/vd.c	2008-12-10 12:36:58.000000000 +0100
