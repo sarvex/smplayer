@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 18:57+0100\n"
+"POT-Creation-Date: 2009-05-05 01:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
-"このパッケージには、smplayer を実行するのに必要な共有ライブラリ、翻訳ファイル"
-"、アイコンテーマ、mplayer ビルド (%1) がすべて含まれています。"
+"このパッケージには、smplayer を実行するのに必要な共有ライブラリ、翻訳ファイ"
+"ル、アイコンテーマ、mplayer ビルド (%1) がすべて含まれています。"
 
 #: ../downloads.php:99
 msgid "Additional codecs:"
@@ -128,91 +128,75 @@ msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "コンパイル方法はパッケージ内の Install.txt に記載されています。"
 
-#: ../downloads.php:204
-msgid "Compiled on Ubuntu %1."
-msgstr "Ubuntu %1 でコンパイルされています。"
+#: ../downloads.php:190
+msgid "Packages for Ubuntu:"
+msgstr ""
 
-#: ../downloads.php:209
-msgid "Package for AMD64. Compiled on Ubuntu %1."
-msgstr "AMD64 用パッケージです。Ubuntu %1 でコンパイルされています。"
+#: ../downloads.php:191
+msgid ""
+"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"from this PPA:"
+msgstr ""
 
-#: ../downloads.php:219
+#: ../downloads.php:203
 msgid "Suggested package:"
 msgstr "推奨されるパッケージ:"
 
-#: ../downloads.php:220
+#: ../downloads.php:204
 msgid ""
-"The version of mplayer included in Ubuntu is a little bit old (%1). "
-"SMPlayer \n"
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
-"Ubuntu に含まれている mplayer のバージョンは %1 とやや古いです。SMPlayer は "
-"mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くおす"
-"すめします。"
 
-#: ../downloads.php:224
-msgid "You can get updated versions <a href=%1>here</a>"
-msgstr "最新のバージョンは<a href=%1>こちら</a>からダウンロードできます"
-
-#: ../downloads.php:228
-msgid "More info"
-msgstr "詳しくはこちらをご覧ください"
-
-#: ../downloads.php:235
-msgid "New!"
-msgstr "ヒント:"
-
-#: ../downloads.php:236
-msgid ""
-"Now you can easily install the SMPlayer and MPlayer packages with \n"
-"%1. Just add one of the following lines to your %2, according to your \n"
-"version of Ubuntu:"
+#: ../downloads.php:208
+msgid "You can get updated versions from this PPA:"
 msgstr ""
-"%1 を使えば、SMPlayer および MPlayer パッケージを簡単にインストールできるよう"
-"になりました。お使いの Ubuntu のバージョンに従い、以下の 1 行を %2 に追加して"
-"ください:"
 
-#: ../downloads.php:250
+#: ../downloads.php:212
+msgid "more info"
+msgstr ""
+
+#: ../downloads.php:218
 msgid "Icon Themes:"
 msgstr "アイコンテーマ:"
 
-#: ../downloads.php:251
+#: ../downloads.php:219
 msgid "Optional packages which provide some icon themes."
 msgstr "いくつかのアイコンテーマを供給するオプションパッケージです。"
 
-#: ../downloads.php:295
+#: ../downloads.php:263
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:296
+#: ../downloads.php:264
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
-"上級者向けにいくつかのパッケージがあります: <a href=%1>sourceforge のダウンロ"
-"ードページをご覧ください</a>。"
+"上級者向けにいくつかのパッケージがあります: <a href=%1>sourceforge のダウン"
+"ロードページをご覧ください</a>。"
 
-#: ../downloads.php:303
+#: ../downloads.php:271
 msgid "Contributed packages"
 msgstr "いただいたパッケージ"
 
-#: ../downloads.php:304
+#: ../downloads.php:272
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧ください。"
 
-#: ../downloads.php:310
+#: ../downloads.php:278
 msgid "Related Project"
 msgstr "関連プロジェクト"
 
-#: ../downloads.php:312
+#: ../downloads.php:280
 msgid "by MuldeR"
 msgstr "by MuldeR"
 
-#: ../downloads.php:313
+#: ../downloads.php:281
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -221,16 +205,16 @@ msgid ""
 "binary codecs."
 msgstr ""
 "最近の MPlayer のバージョンと同様、このパッケージにも主に SVN リポジトリーか"
-"ら取得された SMPlayer の直近のバージョンが含まれています。独自のインストーラ"
-"ーや、特定のプロセッサー向けに最適化された mplayer ビルド、バイナリコーデック"
-"などを供給しています。"
+"ら取得された SMPlayer の直近のバージョンが含まれています。独自のインストー"
+"ラーや、特定のプロセッサー向けに最適化された mplayer ビルド、バイナリコーデッ"
+"クなどを供給しています。"
 
-#: ../downloads.php:324
+#: ../downloads.php:292
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:326
+#: ../downloads.php:294
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -238,41 +222,41 @@ msgstr ""
 "<a href=%1><b>こちら</b>に SVN から直接取得されたパッケージ (ソースコードと "
 "Windows 用の更新) があります。"
 
-#: ../header.php:59
+#: ../header.php:60
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
-#: ../header.php:69
+#: ../header.php:70
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:71
+#: ../header.php:72
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:73
+#: ../header.php:74
 msgid "Downloads"
 msgstr "ダウンロード"
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:76
+#: ../header.php:77
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../header.php:78
+#: ../header.php:79
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../header.php:80
+#: ../header.php:81
 msgid "Feature Requests"
 msgstr "ご要望"
 
-#: ../header.php:82
+#: ../header.php:83
 msgid "Wiki"
 msgstr "Wiki"
 
 #. if ($site == "sourceforge")
-#: ../header.php:85
+#: ../header.php:86
 msgid "Donations"
 msgstr "寄付"
 
@@ -291,9 +275,9 @@ msgid ""
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、フィルタ"
-"ーなどの高度な機能に対応する <a href=%1>MPlayer</a> の完全なフロントエンドを"
-"目指しています。"
+"SMPlayer は、ビデオ、DVD、VCD の再生といった基本的な機能はもちろん、フィル"
+"ターなどの高度な機能に対応する <a href=%1>MPlayer</a> の完全なフロントエンド"
+"を目指しています。"
 
 #: ../info.php:27
 msgid ""
@@ -381,8 +365,8 @@ msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
 msgstr ""
-"環境設定ダイアログ。わかりやすい環境設定ダイアログで、SMPlayer の詳細なオプシ"
-"ョンを簡単に設定することができます。"
+"環境設定ダイアログ。わかりやすい環境設定ダイアログで、SMPlayer の詳細なオプ"
+"ションを簡単に設定することができます。"
 
 #: ../info.php:60
 msgid "Possibility to search automatically for subtitles in %1."
@@ -450,3 +434,37 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:71
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で実行中の SMPlayer"
+
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Ubuntu %1 でコンパイルされています。"
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "AMD64 用パッケージです。Ubuntu %1 でコンパイルされています。"
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Ubuntu に含まれている mplayer のバージョンは %1 とやや古いです。SMPlayer "
+#~ "は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強"
+#~ "くおすすめします。"
+
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "最新のバージョンは<a href=%1>こちら</a>からダウンロードできます"
+
+#~ msgid "More info"
+#~ msgstr "詳しくはこちらをご覧ください"
+
+#~ msgid "New!"
+#~ msgstr "ヒント:"
+
+#~ msgid ""
+#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
+#~ "%1. Just add one of the following lines to your %2, according to your \n"
+#~ "version of Ubuntu:"
+#~ msgstr ""
+#~ "%1 を使えば、SMPlayer および MPlayer パッケージを簡単にインストールできる"
+#~ "ようになりました。お使いの Ubuntu のバージョンに従い、以下の 1 行を %2 に"
+#~ "追加してください:"

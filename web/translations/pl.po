@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-12 18:57+0100\n"
+"POT-Creation-Date: 2009-05-05 01:53+0200\n"
 "PO-Revision-Date: 2008-10-02 10:55+0200\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -132,61 +132,48 @@ msgid ""
 msgstr ""
 "Wszystkie informacje dotyczące instalacji zawarte są w pliku install.txt"
 
-#: ../downloads.php:204
-msgid "Compiled on Ubuntu %1."
-msgstr "Kompilowany na Ubuntu %1."
+#: ../downloads.php:190
+msgid "Packages for Ubuntu:"
+msgstr ""
 
-#: ../downloads.php:209
-msgid "Package for AMD64. Compiled on Ubuntu %1."
-msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
+#: ../downloads.php:191
+msgid ""
+"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"from this PPA:"
+msgstr ""
 
-#: ../downloads.php:219
+#: ../downloads.php:203
 msgid "Suggested package:"
 msgstr "Proponowany pakiet:"
 
-#: ../downloads.php:220
+#: ../downloads.php:204
 msgid ""
-"The version of mplayer included in Ubuntu is a little bit old (%1). "
-"SMPlayer \n"
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
-"Wersja mplayera zawarta w Ubuntu jest nieco zbyt stara (%1). SMPlayer \n"
-"potrafi obsłużyć kilka nowych funkcji mplayera, a więc nowsza wersja \n"
-"jest wysoce rekomendowana."
 
-#: ../downloads.php:224
-msgid "You can get updated versions <a href=%1>here</a>"
-msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
-
-#: ../downloads.php:228
-msgid "More info"
-msgstr "Więcej informacji"
-
-#: ../downloads.php:235
-msgid "New!"
+#: ../downloads.php:208
+msgid "You can get updated versions from this PPA:"
 msgstr ""
 
-#: ../downloads.php:236
-msgid ""
-"Now you can easily install the SMPlayer and MPlayer packages with \n"
-"%1. Just add one of the following lines to your %2, according to your \n"
-"version of Ubuntu:"
+#: ../downloads.php:212
+msgid "more info"
 msgstr ""
 
-#: ../downloads.php:250
+#: ../downloads.php:218
 msgid "Icon Themes:"
 msgstr "Tematy ikon:"
 
-#: ../downloads.php:251
+#: ../downloads.php:219
 msgid "Optional packages which provide some icon themes."
 msgstr "Opcjonalne pakiety zawierające kilka tematów ikon"
 
-#: ../downloads.php:295
+#: ../downloads.php:263
 msgid "Additional packages"
 msgstr "Dodatkowe pakiety"
 
-#: ../downloads.php:296
+#: ../downloads.php:264
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -194,11 +181,11 @@ msgstr ""
 "Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
 "<a href=%1>Zobacz stronę pobierania sourceforge</a>."
 
-#: ../downloads.php:303
+#: ../downloads.php:271
 msgid "Contributed packages"
 msgstr "Pakiety stworzone przez różne osoby"
 
-#: ../downloads.php:304
+#: ../downloads.php:272
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -206,15 +193,15 @@ msgstr ""
 "Tutaj dostępne są pakiety wykonane przez różne osoby\n"
 "dla innych dystrybucji. <a href=%1>Kliknij</a> żeby je zobaczyć."
 
-#: ../downloads.php:310
+#: ../downloads.php:278
 msgid "Related Project"
 msgstr "Prejekty pokrewne"
 
-#: ../downloads.php:312
+#: ../downloads.php:280
 msgid "by MuldeR"
 msgstr "wykonany przez"
 
-#: ../downloads.php:313
+#: ../downloads.php:281
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -227,12 +214,12 @@ msgstr ""
 "własny instalator, wbudowany mplayer zoptymalizowany pod kilka procesorów i\n"
 "kodeki binarne."
 
-#: ../downloads.php:324
+#: ../downloads.php:292
 msgid "Unstable releases"
 msgstr "Wydania niestabilne"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:326
+#: ../downloads.php:294
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -241,41 +228,41 @@ msgstr ""
 "źródłowy\n"
 "i aktualizacje dla Windows)."
 
-#: ../header.php:59
+#: ../header.php:60
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
-#: ../header.php:69
+#: ../header.php:70
 msgid "Main"
 msgstr "Główna"
 
-#: ../header.php:71
+#: ../header.php:72
 msgid "Screenshots"
 msgstr "Zrzuty ekranu"
 
-#: ../header.php:73
+#: ../header.php:74
 msgid "Downloads"
 msgstr "Pobieranie"
 
 #. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:76
+#: ../header.php:77
 msgid "Forum"
 msgstr "Forum"
 
-#: ../header.php:78
+#: ../header.php:79
 msgid "Bug Tracking"
 msgstr "Zgłoś błąd"
 
-#: ../header.php:80
+#: ../header.php:81
 msgid "Feature Requests"
 msgstr "Prośby nowych funkcji"
 
-#: ../header.php:82
+#: ../header.php:83
 msgid "Wiki"
 msgstr "Wiki"
 
 #. if ($site == "sourceforge")
-#: ../header.php:85
+#: ../header.php:86
 msgid "Donations"
 msgstr "Dotacje"
 
@@ -469,3 +456,25 @@ msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
 #~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
 #~ msgstr "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayera"
+
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Kompilowany na Ubuntu %1."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Wersja mplayera zawarta w Ubuntu jest nieco zbyt stara (%1). SMPlayer \n"
+#~ "potrafi obsłużyć kilka nowych funkcji mplayera, a więc nowsza wersja \n"
+#~ "jest wysoce rekomendowana."
+
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
+
+#~ msgid "More info"
+#~ msgstr "Więcej informacji"
