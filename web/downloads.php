@@ -183,31 +183,15 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 </td>
 </tr>
 
-<?php /*
-<tr>
-<td><img src="iconos/suse.png" alt="*"></td>
-<td>
-<?php
-echo download_rpm_link();
-echo "<br>";
-tr("Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer.");
-?>
-</td>
-</tr>
-*/ ?>
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
 <?php
-echo download_deb_link();
+echo "<b>"; tr("Packages for Ubuntu:"); echo "</b><br>";
+tr("You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)
+from this PPA:");
 echo "<br>";
-tr("Compiled on Ubuntu %1.", "8.04"); 
-echo "<br>";
-
-echo download_amd64deb_link();
-echo "<br>";
-tr("Package for AMD64. Compiled on Ubuntu %1.", "8.04"); 
-//echo "<br>";
+echo "<a href=\"https://launchpad.net/~rvm/+archive/smplayer\">https://launchpad.net/~rvm/+archive/smplayer</a>";
 ?>
 </td>
 </tr>
@@ -217,33 +201,17 @@ tr("Package for AMD64. Compiled on Ubuntu %1.", "8.04");
 <td>
 <?php
 echo "<b>"; tr("Suggested package:"); echo "</b><br>";
-tr("The version of mplayer included in Ubuntu is a little bit old (%1). SMPlayer 
+tr("The version of mplayer included in Ubuntu is very old (%1). SMPlayer 
 has support for some of the new features of mplayer, so a newer version 
 is highly recommended.", "1.0rc2");
 echo " ";
-tr("You can get updated versions <a href=%1>here</a>",
-"\"https://launchpad.net/~rvm/+archive/ppa\"");
-echo ". ";
-echo "<a href=\"http://smplayer.berlios.de/forums/viewtopic.php?id=741\">" . 
-get_tr("More info") . "</a>.";
+tr("You can get updated versions from this PPA:");
+echo "<br>";
+echo "<a href=\"https://launchpad.net/~rvm/+archive/mplayer\">https://launchpad.net/~rvm/+archive/mplayer</a>";
+echo " (<a href=\"http://smplayer.berlios.de/forums/viewforum.php?id=9\">" . 
+get_tr("more info") . ")</a>.";
 ?>
 
-<tr>
-<td><img src="iconos/ubuntu.png" alt="*"></td>
-<td>
-<?php
-echo "<b>". get_tr("New!") ."</b> ";
-echo tr("Now you can easily install the SMPlayer and MPlayer packages with 
-%1. Just add one of the following lines to your %2, according to your 
-version of Ubuntu:", "<i>apt</i>", "<i>/etc/apt/sources.list</i>");
-echo "<br><b>8.04 (hardy):</b> ";
-echo "<i>deb deb http://ppa.launchpad.net/rvm/ppa/ubuntu hardy main</i>";
-echo "<br><b>8.10 (intrepid):</b> ";
-echo "<i>deb deb http://ppa.launchpad.net/rvm/ppa/ubuntu intrepid main</i>";
-?>
-
-</td>
-</tr>
 </table>
 
 <?php
