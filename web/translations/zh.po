@@ -39,6 +39,9 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
+"此程序包包含 SMPlayer, 共享库, 翻译文件和图标主题。\n"
+"安装时, 最新版本的 MPlayer 将会被下载并安装。\n"
+"可选的您可以安装一些附加解码器 (只有少数格式需要, 如最新的 RealVideo)。"
 
 #: ../downloads.php:86
 msgid ""
@@ -46,6 +49,8 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
+"此程序包包含运行 SMPlayer 所需的所有文件: 共享库, 翻译文件, 图标主题和\n"
+"MPlayer (内置的版本为 %1)。"
 
 #: ../downloads.php:99
 msgid "Additional codecs:"
@@ -82,10 +87,11 @@ msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
+"此程序包包含 SMPlayer, 共享库, 翻译文件和图标主题。不包含安装程序和 MPlayer。"
 
 #: ../downloads.php:131
 msgid "This package is for advanced users only!"
-msgstr ""
+msgstr "此程序包只针对高级用户!"
 
 #: ../downloads.php:153
 msgid ""
@@ -93,16 +99,20 @@ msgid ""
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
+"SMPlayer 便携版。可以从外部设备运行, 如 U 盘。无需安装,\n"
+"直接解压到任意位置然后双击 smplayer.exe 运行。"
 
 #: ../downloads.php:157
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
 msgstr ""
+"程序包也包含图标主题, 翻译文件和 MPlayer。"
 
 #: ../downloads.php:160
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr ""
+"注意: 7z 格式可以用 <a href=%1>7-Zip</a>。"
 
 #: ../downloads.php:171
 msgid "Linux"
@@ -115,13 +125,15 @@ msgstr "阅读程序包内的Install.txt来了解编译方法。"
 
 #: ../downloads.php:190
 msgid "Packages for Ubuntu:"
-msgstr ""
+msgstr "Ubuntu 程序包:"
 
 #: ../downloads.php:191
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
+"您可以从这个 PPA 获得 Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"的程序包"
 
 #: ../downloads.php:203
 msgid "Suggested package:"
@@ -133,14 +145,17 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
+"Ubuntu 包含了过时的 MPlayer 版本。\n"
+"而 SMPlayer 支持一些 MPlayer 的新特性,\n"
+"所以推荐使用新版 MPlayer 。"
 
 #: ../downloads.php:208
 msgid "You can get updated versions from this PPA:"
-msgstr ""
+msgstr "您在这个 PPA 上获得更新:"
 
 #: ../downloads.php:212
 msgid "more info"
-msgstr ""
+msgstr "更多信息"
 
 #: ../downloads.php:218
 msgid "Icon Themes:"
@@ -174,7 +189,7 @@ msgstr "来自其他发行版的包，其他人创建的。<a href=%1>点击这�
 
 #: ../downloads.php:278
 msgid "Related Project"
-msgstr ""
+msgstr "相关项目"
 
 #: ../downloads.php:280
 msgid "by MuldeR"
@@ -242,7 +257,7 @@ msgstr "捐赠"
 
 #: ../index.php:6
 msgid "SMPlayer - General Info"
-msgstr "SMPlayer－介绍"
+msgstr "SMPlayer - 介绍"
 
 #. Message id of the post in the forum for "Version 0.6.0 final released"
 #: ../index.php:52
