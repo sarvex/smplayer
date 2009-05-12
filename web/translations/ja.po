@@ -130,13 +130,15 @@ msgstr "コンパイル方法はパッケージ内の Install.txt に記載さ�
 
 #: ../downloads.php:190
 msgid "Packages for Ubuntu:"
-msgstr ""
+msgstr "Ubuntu 用パッケージ"
 
 #: ../downloads.php:191
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
+"Ubuntu (gutsy、hardy、intrepid および jaunty) 用 deb パッケージはこちらの "
+"PPA から取得できます:"
 
 #: ../downloads.php:203
 msgid "Suggested package:"
@@ -148,14 +150,17 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
+"Ubuntu に含まれている mplayer のバージョンは %1 と非常に古いです。SMPlayer "
+"は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くお"
+"すすめします。"
 
 #: ../downloads.php:208
 msgid "You can get updated versions from this PPA:"
-msgstr ""
+msgstr "最新のバージョンはこちらの PPA から取得できます:"
 
 #: ../downloads.php:212
 msgid "more info"
-msgstr ""
+msgstr "Ubuntu PPA について"
 
 #: ../downloads.php:218
 msgid "Icon Themes:"
@@ -434,37 +439,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:71
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で実行中の SMPlayer"
-
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Ubuntu %1 でコンパイルされています。"
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "AMD64 用パッケージです。Ubuntu %1 でコンパイルされています。"
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
-#~ msgstr ""
-#~ "Ubuntu に含まれている mplayer のバージョンは %1 とやや古いです。SMPlayer "
-#~ "は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強"
-#~ "くおすすめします。"
-
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "最新のバージョンは<a href=%1>こちら</a>からダウンロードできます"
-
-#~ msgid "More info"
-#~ msgstr "詳しくはこちらをご覧ください"
-
-#~ msgid "New!"
-#~ msgstr "ヒント:"
-
-#~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
-#~ msgstr ""
-#~ "%1 を使えば、SMPlayer および MPlayer パッケージを簡単にインストールできる"
-#~ "ようになりました。お使いの Ubuntu のバージョンに従い、以下の 1 行を %2 に"
-#~ "追加してください:"
