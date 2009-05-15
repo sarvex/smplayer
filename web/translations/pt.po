@@ -88,7 +88,7 @@ msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
-"Se preferir um ficheiro zip, pode obtê-lo em \n"
+"Se preferir um ficheiro zip, pode obtê-lo em\n"
 "<a href=%1>sítio mplayer</a> (%2)."
 
 #: ../downloads.php:128
@@ -109,8 +109,7 @@ msgid ""
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
-"Versão portátil do SMPlayer. Pode ser executado a partir de dispositivos "
-"externos como\n"
+"Versão portátil do SMPlayer. Pode ser executado a partir de dispositivos externos como\n"
 "unidades USB. Não requer instalação. Só precisa descomprimir o pacote para\n"
 "um local à sua escolha e duplo clique em smplayer.exe para o executar."
 
@@ -131,20 +130,20 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:181
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
+msgid "Read the file Install.txt included in the package to know how compile it."
+msgstr "Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
 
 #: ../downloads.php:190
 msgid "Packages for Ubuntu:"
-msgstr ""
+msgstr "Pacotes para Ubuntu:"
 
 #: ../downloads.php:191
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
+"Você pode obter os pacotes de para Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"neste PPA:"
 
 #: ../downloads.php:203
 msgid "Suggested package:"
@@ -156,14 +155,17 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
+"Aversão do mplayer incluída no Ubuntu é muito antiga (%1).  \n"
+"O SMPlayer suporta algumas novas funções do mplayer, por isso recomenda-se\n"
+"actualizar para uma versão mais recente."
 
 #: ../downloads.php:208
 msgid "You can get updated versions from this PPA:"
-msgstr ""
+msgstr "Pode obter versões actualizadas neste PPA:"
 
 #: ../downloads.php:212
 msgid "more info"
-msgstr ""
+msgstr "mais informação"
 
 #: ../downloads.php:218
 msgid "Icon Themes:"
@@ -171,7 +173,7 @@ msgstr "Temas de Ícones:"
 
 #: ../downloads.php:219
 msgid "Optional packages which provide some icon themes."
-msgstr "Pacotes adicionais que providenciam temas de ícones."
+msgstr "Pacotes adicionais que fornecem temas de ícones."
 
 #: ../downloads.php:263
 msgid "Additional packages"
@@ -208,13 +210,11 @@ msgstr "por MuldeR"
 #: ../downloads.php:281
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also "
-"provides\n"
+"the SVN repository) as well as a recent version of MPlayer. It also provides\n"
 "its own installer, mplayer builds optimized for several processors and\n"
 "binary codecs."
 msgstr ""
-"Este pacote contém uma versão recente do SMPlayer (retirada do repositório "
-"SVN)\n"
+"Este pacote contém uma versão recente do SMPlayer (retirada do repositório SVN)\n"
 "bem como uma versão recente do MPlayer. Também providencia o instalador,\n"
 "versões Mplayer optimizadas para os diversos processadores e \n"
 "codecs binários."
@@ -297,10 +297,10 @@ msgid ""
 "resume at the same point you left it, and with the same settings: audio \n"
 "track, subtitles, volume..."
 msgstr ""
-"Uma das características mais interesantes do SMPlayer:<b>ele lembra-se\n"
+"Uma das características mais interessantes do SMPlayer:<b>ele lembra-se\n"
 "das definições dos ficheiros que reproduz</b>. Se começar a ver um filme e\n"
 "tiver que parar...não se preocupe, pois quando o abrir novamente\n"
-"ele continuará do ponto onde o deixou e com as mesmas definições: áudio\n"
+"ele continuará do ponto onde o deixou e com as mesmas definições: áudio,\n"
 "faixa, legendas, volume..."
 
 #: ../info.php:36
@@ -336,7 +336,7 @@ msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
 msgstr ""
-"Equalizador de vídeo, permite-lhe ajustar o brilho, contraste,cor,\n"
+"Equalizador de vídeo, permite-lhe ajustar o brilho, contraste, cor,\n"
 "saturação e gama da imagem vídeo."
 
 #: ../info.php:46
@@ -353,7 +353,7 @@ msgid ""
 "denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 "Filtros. Diversos filtros disponíveis: desentrelaçar, pós-processamento,\n"
-"reduzir ruído ... e até um filto karaoke (remoção de voz)."
+"reduzir ruído ... e até um filtro karaoke (remoção de voz)."
 
 #: ../info.php:51
 msgid ""
@@ -423,7 +423,7 @@ msgstr "Esta é a janela principal"
 
 #: ../screenshots.php:54
 msgid "The playlist can be embedded in the main window"
-msgstr "A lista de reprodução pode ser embutida na janela principal"
+msgstr "A lista de reprodução pode ser incorporada na janela principal"
 
 #: ../screenshots.php:56
 msgid "The preferences dialog"
@@ -440,7 +440,7 @@ msgstr "Um vídeo apresentando uma legenda srt"
 
 #: ../screenshots.php:64
 msgid "Matroska embedded subtitles"
-msgstr "Legendas Matroska embutidas"
+msgstr "Legendas Matroska incorporadas"
 
 #: ../screenshots.php:69
 msgid "SMPlayer is translated into more than 20 languages"
@@ -456,10 +456,8 @@ msgstr "SMPlayer executando no novo KDE 4"
 
 #~ msgid "Compiled on Ubuntu %1."
 #~ msgstr "Compilado em Ubuntu %1."
-
 #~ msgid "Package for AMD64. Compiled on Ubuntu %1."
 #~ msgstr "Pacote para AMD64. Compilado em Ubuntu %1."
-
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
 #~ "SMPlayer \n"
@@ -469,16 +467,12 @@ msgstr "SMPlayer executando no novo KDE 4"
 #~ "A versão mplayer incluída no Ubuntu é antiga (%1). O SMPlayer suporta \n"
 #~ "algumas das novas características do mplayer, logo é recomendada uma \n"
 #~ "versão mais recente."
-
 #~ msgid "You can get updated versions <a href=%1>here</a>"
 #~ msgstr "Pode obter versões actualizadas <a href=%1>aqui</a>"
-
 #~ msgid "More info"
 #~ msgstr "Mais informação"
-
 #~ msgid "New!"
 #~ msgstr "Novo!"
-
 #~ msgid ""
 #~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
 #~ "%1. Just add one of the following lines to your %2, according to your \n"
@@ -487,3 +481,4 @@ msgstr "SMPlayer executando no novo KDE 4"
 #~ "Agora pode facilmente instalar os pacotes SMPlayer e MPlayer com %1\n"
 #~ "Adicione uma das seguintes linhas ao seu %2, de acordo com a sua \n"
 #~ "versão Ubuntu:"
+
