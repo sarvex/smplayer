@@ -652,9 +652,9 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 +
 +@DPATCH@
 +diff -urNad svn~/DOCS/man/en/mplayer.1 svn/DOCS/man/en/mplayer.1
-+--- svn~/DOCS/man/en/mplayer.1	2008-11-07 16:10:14.000000000 +0100
-++++ svn/DOCS/man/en/mplayer.1	2008-11-07 16:16:44.000000000 +0100
-+@@ -7177,6 +7177,48 @@
++--- svn~/DOCS/man/en/mplayer.1	2009-05-20 13:32:19.000000000 +0200
+++++ svn/DOCS/man/en/mplayer.1	2009-05-20 13:37:43.000000000 +0200
++@@ -7336,6 +7336,48 @@
 + Threshold below which a pixel value is considered black (default: 32).
 + .RE
 + .
@@ -703,7 +703,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + .
 + .
 + .SH "GENERAL ENCODING OPTIONS (MENCODER ONLY)"
-+@@ -7299,6 +7341,14 @@
++@@ -7458,6 +7500,14 @@
 + Do not write OpenDML index for AVI files >1GB.
 + .
 + .TP
@@ -719,9 +719,9 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + Do not skip frames.
 + .
 +diff -urNad svn~/Makefile svn/Makefile
-+--- svn~/Makefile	2008-11-01 11:26:10.000000000 +0100
-++++ svn/Makefile	2008-11-07 16:16:44.000000000 +0100
-+@@ -125,6 +125,7 @@
++--- svn~/Makefile	2009-05-20 13:32:28.000000000 +0200
+++++ svn/Makefile	2009-05-20 13:37:43.000000000 +0200
++@@ -422,6 +422,7 @@
 +               libmpcodecs/vf_field.c \
 +               libmpcodecs/vf_fil.c \
 +               libmpcodecs/vf_filmdint.c \
@@ -730,22 +730,22 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 +               libmpcodecs/vf_format.c \
 +               libmpcodecs/vf_framestep.c \
 +diff -urNad svn~/cfg-mencoder.h svn/cfg-mencoder.h
-+--- svn~/cfg-mencoder.h	2008-11-01 11:26:10.000000000 +0100
-++++ svn/cfg-mencoder.h	2008-11-07 16:16:44.000000000 +0100
-+@@ -213,6 +213,9 @@
-+ 	
++--- svn~/cfg-mencoder.h	2009-05-20 13:32:28.000000000 +0200
+++++ svn/cfg-mencoder.h	2009-05-20 13:37:43.000000000 +0200
++@@ -214,6 +214,9 @@
 + 	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
 + 	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
-++
++ 
 ++	{"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
 ++	{"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
-+ 	
+++
 + 	// info header strings
 + 	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
++ 
 +diff -urNad svn~/libass/ass_cache.c svn/libass/ass_cache.c
-+--- svn~/libass/ass_cache.c	2008-11-01 11:26:10.000000000 +0100
-++++ svn/libass/ass_cache.c	2008-11-07 16:16:44.000000000 +0100
-+@@ -291,6 +291,39 @@
++--- svn~/libass/ass_cache.c	2009-05-20 13:32:21.000000000 +0200
+++++ svn/libass/ass_cache.c	2009-05-20 13:37:43.000000000 +0200
++@@ -293,6 +293,39 @@
 + 	free(value);
 + }
 + 
@@ -785,7 +785,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + void* cache_add_glyph(glyph_hash_key_t* key, glyph_hash_val_t* val)
 + {
 + 	return hashmap_insert(glyph_cache, key, val);
-+@@ -311,7 +344,9 @@
++@@ -313,7 +346,9 @@
 + 	glyph_cache = hashmap_init(sizeof(glyph_hash_key_t),
 + 				   sizeof(glyph_hash_val_t),
 + 				   0xFFFF + 13,
@@ -797,8 +797,8 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + 
 + void ass_glyph_cache_done(void)
 +diff -urNad svn~/libmpcodecs/vf.c svn/libmpcodecs/vf.c
-+--- svn~/libmpcodecs/vf.c	2008-11-01 11:26:10.000000000 +0100
-++++ svn/libmpcodecs/vf.c	2008-11-07 16:16:44.000000000 +0100
++--- svn~/libmpcodecs/vf.c	2009-05-20 13:32:08.000000000 +0200
+++++ svn/libmpcodecs/vf.c	2009-05-20 13:37:43.000000000 +0200
 +@@ -99,6 +99,7 @@
 + extern const vf_info_t vf_info_blackframe;
 + extern const vf_info_t vf_info_geq;
@@ -817,7 +817,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + 
 +diff -urNad svn~/libmpcodecs/vf_fixpts.c svn/libmpcodecs/vf_fixpts.c
 +--- svn~/libmpcodecs/vf_fixpts.c	1970-01-01 01:00:00.000000000 +0100
-++++ svn/libmpcodecs/vf_fixpts.c	2008-11-07 16:16:44.000000000 +0100
+++++ svn/libmpcodecs/vf_fixpts.c	2009-05-20 13:37:43.000000000 +0200
 +@@ -0,0 +1,137 @@
 ++/*
 ++    Copyright (C) 2007 Nicolas George <nicolas.george@normalesup.org>
@@ -957,9 +957,9 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 ++  NULL
 ++};
 +diff -urNad svn~/mencoder.c svn/mencoder.c
-+--- svn~/mencoder.c	2008-11-01 11:26:10.000000000 +0100
-++++ svn/mencoder.c	2008-11-07 16:16:44.000000000 +0100
-+@@ -198,6 +198,7 @@
++--- svn~/mencoder.c	2009-05-20 13:32:28.000000000 +0200
+++++ svn/mencoder.c	2009-05-20 13:37:43.000000000 +0200
++@@ -192,6 +192,7 @@
 + 
 + int auto_expand=1;
 + int encode_duplicates=1;
@@ -967,7 +967,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + 
 + // infos are empty by default
 + char *info_name=NULL;
-+@@ -361,6 +362,44 @@
++@@ -353,6 +354,44 @@
 + 
 + static muxer_t* muxer=NULL;
 + 
@@ -1012,10 +1012,10 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + void print_wave_header(WAVEFORMATEX *h, int verbose_level);
 + 
 + int main(int argc,char* argv[]){
-+@@ -562,6 +601,10 @@
++@@ -512,6 +551,10 @@
 +   m_entry_set_options(mconfig,&filelist[curfile]);
 +   filename = filelist[curfile].name;
-+  
++ 
 ++#ifdef CONFIG_ASS
 ++  ass_library = ass_init();
 ++#endif
@@ -1023,7 +1023,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 +   if(!filename){
 + 	mp_msg(MSGT_CPLAYER, MSGL_FATAL, MSGTR_MissingFilename);
 + 	mencoder_exit(1,NULL);
-+@@ -685,26 +728,6 @@
++@@ -635,26 +678,6 @@
 +     }
 +   }
 + 
@@ -1050,7 +1050,7 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 + // set up video encoder:
 + 
 + if (!curfile) { // curfile is non zero when a second file is opened
-+@@ -882,12 +905,83 @@
++@@ -834,12 +857,83 @@
 +     ve = sh_video->vfilter;
 +   } else sh_video->vfilter = ve;
 +     // append 'expand' filter, it fixes stride problems and renders osd:
@@ -1134,16 +1134,16 @@ Index: debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 +     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
 +     init_best_video_codec(sh_video,video_codec_list,video_fm_list);
 +     mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
-+@@ -1343,7 +1437,8 @@
++@@ -1295,7 +1389,8 @@
 +     // decode_video will callback down to ve_*.c encoders, through the video filters
 +     {void *decoded_frame = decode_video(sh_video,frame_data.start,frame_data.in_size,
 +       skip_flag>0 && (!sh_video->vfilter || ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_SKIP_NEXT_FRAME, 0) != CONTROL_TRUE), MP_NOPTS_VALUE);
 +-    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame, MP_NOPTS_VALUE);}
 ++    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame,
 ++	keep_pts ? sh_video->pts : MP_NOPTS_VALUE);}
-+     
++ 
 +     if (sh_video->vf_initialized < 0) mencoder_exit(1, NULL);
-+     
++ 
 
 Cambios de propiedades en debian-rvm/patches/05-ass_for_mencoder_embeddedfonts.dpatch
 ___________________________________________________________________
@@ -1272,7 +1272,7 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 ===================================================================
 --- debian-rvm/patches/03-runtime_eq.dpatch	(revisión: 0)
 +++ debian-rvm/patches/03-runtime_eq.dpatch	(revisión: 0)
-@@ -0,0 +1,96 @@
+@@ -0,0 +1,90 @@
 +#! /bin/sh /usr/share/dpatch/dpatch-run
 +## 03-runtime_eq.dpatch by  <rvm@escomposlinux.org>
 +##
@@ -1281,9 +1281,9 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +
 +@DPATCH@
 +diff -urNad svn~/DOCS/tech/slave.txt svn/DOCS/tech/slave.txt
-+--- svn~/DOCS/tech/slave.txt	2008-10-19 09:16:55.000000000 +0200
-++++ svn/DOCS/tech/slave.txt	2008-10-19 09:40:52.000000000 +0200
-+@@ -461,6 +461,11 @@
++--- svn~/DOCS/tech/slave.txt	2009-05-20 13:32:19.000000000 +0200
+++++ svn/DOCS/tech/slave.txt	2009-05-20 13:36:06.000000000 +0200
++@@ -463,6 +463,11 @@
 +     Run <value> as shell command. In OSD menu console mode stdout and stdin
 +     are through the video output driver.
 + 
@@ -1296,9 +1296,9 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 + Available properties:
 + 
 +diff -urNad svn~/command.c svn/command.c
-+--- svn~/command.c	2008-10-19 09:16:55.000000000 +0200
-++++ svn/command.c	2008-10-19 09:40:52.000000000 +0200
-+@@ -2966,6 +2966,13 @@
++--- svn~/command.c	2009-05-20 13:32:28.000000000 +0200
+++++ svn/command.c	2009-05-20 13:36:06.000000000 +0200
++@@ -2970,6 +2970,13 @@
 + 	    }
 + 	    break;
 + 
@@ -1310,12 +1310,12 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 ++      break;
 ++
 + 	case MP_CMD_VF_CHANGE_RECTANGLE:
-+ 	    set_rectangle(sh_video, cmd->args[0].v.i, cmd->args[1].v.i);
-+ 	    break;
++             if (!sh_video)
++                 break;
 +diff -urNad svn~/input/input.c svn/input/input.c
-+--- svn~/input/input.c	2008-10-19 09:16:55.000000000 +0200
-++++ svn/input/input.c	2008-10-19 09:40:52.000000000 +0200
-+@@ -154,6 +154,7 @@
++--- svn~/input/input.c	2009-05-20 13:32:09.000000000 +0200
+++++ svn/input/input.c	2009-05-20 13:36:06.000000000 +0200
++@@ -172,6 +172,7 @@
 +   { MP_CMD_LOADLIST, "loadlist", 1, { {MP_CMD_ARG_STRING, {0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
 +   { MP_CMD_RUN, "run", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
 +   { MP_CMD_VF_CHANGE_RECTANGLE, "change_rectangle", 2, { {MP_CMD_ARG_INT,{0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}}}},
@@ -1324,9 +1324,9 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +   { MP_CMD_TV_TELETEXT_ADD_DEC, "teletext_add_dec", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
 +   { MP_CMD_TV_TELETEXT_GO_LINK, "teletext_go_link", 1, { {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
 +diff -urNad svn~/input/input.h svn/input/input.h
-+--- svn~/input/input.h	2008-10-19 09:16:55.000000000 +0200
-++++ svn/input/input.h	2008-10-19 09:40:52.000000000 +0200
-+@@ -111,6 +111,7 @@
++--- svn~/input/input.h	2009-05-20 13:32:09.000000000 +0200
+++++ svn/input/input.h	2009-05-20 13:36:06.000000000 +0200
++@@ -129,6 +129,7 @@
 +   MP_CMD_ASS_USE_MARGINS,
 +   MP_CMD_SWITCH_TITLE,
 +   MP_CMD_STOP,
@@ -1335,23 +1335,17 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +   /// DVDNAV commands
 +   MP_CMD_DVDNAV_UP = 1000,
 +diff -urNad svn~/libaf/af_equalizer.c svn/libaf/af_equalizer.c
-+--- svn~/libaf/af_equalizer.c	2008-10-19 09:16:55.000000000 +0200
-++++ svn/libaf/af_equalizer.c	2008-10-19 09:40:52.000000000 +0200
-+@@ -125,12 +125,12 @@
-+     }else{
-+         s->gain_factor=1;
-+     }
-+-	
-+     return af_test_output(af,arg);
-+   }
++--- svn~/libaf/af_equalizer.c	2009-05-20 13:32:28.000000000 +0200
+++++ svn/libaf/af_equalizer.c	2009-05-20 13:36:06.000000000 +0200
++@@ -140,6 +140,7 @@
 +   case AF_CONTROL_COMMAND_LINE:{
 +     float g[10]={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
 +     int i,j;
 ++    float gain_factor2=0.0;
-+     sscanf((char*)arg,"%f:%f:%f:%f:%f:%f:%f:%f:%f:%f", &g[0], &g[1], 
++     sscanf((char*)arg,"%f:%f:%f:%f:%f:%f:%f:%f:%f:%f", &g[0], &g[1],
 + 	   &g[2], &g[3], &g[4], &g[5], &g[6], &g[7], &g[8] ,&g[9]);
 +     for(i=0;i<AF_NCH;i++){
-+@@ -139,6 +139,17 @@
++@@ -148,6 +149,17 @@
 + 	  pow(10.0,clamp(g[j],G_MIN,G_MAX)/20.0)-1.0;
 +       }
 +     }
