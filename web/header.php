@@ -36,6 +36,7 @@ function header_set_section($s, $rel_path="") {
 <?php
 	//print_language_link($file, "Nederlands", "nl", $query);
 	print_language_link($file, "English", "en", $query);
+        print_language_link($file, "Italiano", "it", $query);
 	print_language_link($file, "Français", "fr", $query);
 	print_language_link($file, "Español", "es", $query);
 	print_language_link($file, "Deutsch", "de", $query);
