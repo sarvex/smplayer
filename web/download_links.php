@@ -18,7 +18,7 @@ function download_amd64deb_link() {
 }
 
 function download_windows_full_link() {
-	return create_link("smplayer_0.6.7_setup.exe", 13694588 );
+	return create_link("smplayer-0.6.8-win32.exe", 14026506 );
 }
 
 function download_windows_lite_link() {
@@ -30,7 +30,7 @@ function download_windows_7z_link() {
 }
 
 function download_windows_portable_link() {
-	return create_link("smplayer-portable-0.6.7.7z", 12627891 );
+	return create_link("smplayer-portable-0.6.8.7z", 12986934 );
 }
 
 
