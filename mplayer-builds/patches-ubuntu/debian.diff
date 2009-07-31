@@ -4386,12 +4386,11 @@ Index: debian-rvm/patches/00list
 ===================================================================
 --- debian-rvm/patches/00list	(revisión: 0)
 +++ debian-rvm/patches/00list	(revisión: 0)
-@@ -0,0 +1,5 @@
+@@ -0,0 +1,4 @@
 +03-runtime_eq.dpatch
 +05-ass_for_mencoder_embeddedfonts.dpatch
 +11-dshowserver.dpatch
 +12-codecs.dpatch
-+13-wmapro.dpatch
 Index: debian-rvm/patches/11-dshowserver.dpatch
 ===================================================================
 --- debian-rvm/patches/11-dshowserver.dpatch	(revisión: 0)
@@ -4808,7 +4807,7 @@ Index: debian-rvm/rules
 +build-gui: build-gui-stamp
 +build-gui-stamp: patch 
 +	dh_testdir
-+	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder 
++	./configure $(CONFIGURE_ALL) --enable-gui --enable-mencoder
 +	$(MAKE)
 +
 +# Documentation
