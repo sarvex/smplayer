@@ -34,6 +34,19 @@ ___________________________________________________________________
 Nombre: svn:executable
    + *
 
+Index: version.sh
+===================================================================
+--- version.sh	(revisión: 29484)
++++ version.sh	(copia de trabajo)
+@@ -15,6 +15,8 @@
+ version=$(cat VERSION 2> /dev/null)
+ test $version || version=$svn_revision
+ 
++extra="-Ubuntu-RVM"
++
+ NEW_REVISION="#define VERSION \"${version}${extra}\""
+ OLD_REVISION=$(head -n 1 version.h 2> /dev/null)
+ TITLE='#define MP_TITLE "%s "VERSION" (C) 2000-2009 MPlayer Team\n"'
 Index: debian-rvm/control
 ===================================================================
 --- debian-rvm/control	(revisión: 0)
