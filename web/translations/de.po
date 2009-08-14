@@ -40,6 +40,11 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
+"Dieses Paket enthält smplayer, gemeinsam benutzte Bibliotheken \n"
+"Übersetzungsdateien und Symbolthemen. Während der Installation wird \n"
+"eine vorherige Version von mplayer heruntergeladen und installiert. \n"
+"Wahlweise kannst du auch ein paar zusätzliche Codecs installieren \n"
+"(nur für einige Formate erforderlich, wie neuere RealVideo Varianten)."
 
 #: ../downloads.php:86
 msgid ""
@@ -47,8 +52,8 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
-"Dieses Paket enthält alles was man für smplayer braucht: \n"
-"Gemeinsam benutzte Bibliotheken, Übersetzungsdateien, Icon Themen und \n"
+"Dieses Paket enthält alles, was man für smplayer braucht: \n"
+"Gemeinsam benutzte Bibliotheken, Übersetzungsdateien, Symbolthemen und \n"
 "eine kompilierte mplayer Binärdatei (die beinhaltete Version ist %1)."
 
 #: ../downloads.php:99
@@ -93,7 +98,7 @@ msgid ""
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
 "Paket (ohne Installationsprogramm), welches smplayer, gemeinsam \n"
-"benutzte Bibliotheken, Übersetzungen und Icon Themen enthält. Es beinhaltet\n"
+"benutzte Bibliotheken, Übersetzungen und Symbolthemen enthält. Es beinhaltet\n"
 "nicht mplayer."
 
 #: ../downloads.php:131
@@ -107,9 +112,8 @@ msgid ""
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
 "Portable Version von SMPlayer. Sie kann von externen Geräten, wie \n"
-"z.B. USB Flash Drives gestartet werden. Es setzt keine Installation "
-"voraus. \n"
-"Entpacke einfach das Paket wohin du willst und klicke doppelt auf \n"
+"z.B. USB Flash Drives gestartet werden. Es setzt keine Installation \n"
+"voraus. Entpacke einfach das Paket wohin du willst und klicke doppelt auf \n"
 "smplayer.exe, um es zu starten."
 
 #: ../downloads.php:157
@@ -117,7 +121,7 @@ msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
 msgstr ""
-"Dieses Paket enthält auch die Icon Themen, Übersetzungen und einen \n"
+"Dieses Paket enthält auch die Symbolthemen, Übersetzungen und einen \n"
 "MPlayer Binärdatei."
 
 #: ../downloads.php:160
@@ -137,13 +141,15 @@ msgstr ""
 
 #: ../downloads.php:190
 msgid "Packages for Ubuntu:"
-msgstr ""
+msgstr "Pakete für Ubuntu:"
 
 #: ../downloads.php:191
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
+"Es gibt deb Pakete für Ubuntu (gutsy, hardy, intrepid und jaunty)\n"
+"in diesem PPA:"
 
 #: ../downloads.php:203
 msgid "Suggested package:"
@@ -155,22 +161,25 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
+"Die mit Ubuntu ausgelieferte Version ist ziemlich alt (%1). SMPlayer \n"
+"unterstützt einige neue Merkmale von mplayer, deshalb wird eine neuere \n"
+"Version dringend empfohlen".
 
 #: ../downloads.php:208
 msgid "You can get updated versions from this PPA:"
-msgstr ""
+msgstr "Es gibt aktualisierte Versionen von diesem PPA:"
 
 #: ../downloads.php:212
 msgid "more info"
-msgstr ""
+msgstr "weitere Infos"
 
 #: ../downloads.php:218
 msgid "Icon Themes:"
-msgstr "Icon Themen:"
+msgstr "Symbolthemen:"
 
 #: ../downloads.php:219
 msgid "Optional packages which provide some icon themes."
-msgstr "Wahlfreie Pakete, die einige Icon Themen zur Verfügung stellen."
+msgstr "Wahlfreie Pakete, die einige Symbolthemen zur Verfügung stellen."
 
 #: ../downloads.php:263
 msgid "Additional packages"
@@ -194,7 +203,7 @@ msgid ""
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "Es gibt verfügbare Pakete für andere Distributionen, die von \n"
-"anderen Leuten gebaut wurden. <a href=%1>Klicke hier</a>, um sie zu sehen.\n"
+"anderen Leuten gebaut wurden. <a href=%1>Klicke hier</a>, um sie zu sehen."
 
 #: ../downloads.php:278
 msgid "Related Project"
@@ -257,7 +266,7 @@ msgstr "Fehlersuche"
 
 #: ../header.php:81
 msgid "Feature Requests"
-msgstr "Anfrage nach Merkmalen"
+msgstr "Merkmalsanfragen"
 
 #: ../header.php:83
 msgid "Wiki"
