@@ -36,7 +36,7 @@ Nombre: svn:executable
 
 Index: version.sh
 ===================================================================
---- version.sh	(revisión: 29638)
+--- version.sh	(revisión: 29643)
 +++ version.sh	(copia de trabajo)
 @@ -15,6 +15,8 @@
  version=$(cat VERSION 2> /dev/null)
@@ -51,7 +51,7 @@ Index: debian-rvm/control
 ===================================================================
 --- debian-rvm/control	(revisión: 0)
 +++ debian-rvm/control	(revisión: 0)
-@@ -0,0 +1,51 @@
+@@ -0,0 +1,52 @@
 +Source: mplayer
 +Section: graphics
 +Priority: extra
@@ -67,6 +67,7 @@ Index: debian-rvm/control
 +Suggests: w32codecs [i386], w64codecs [amd64], libdvdcss2, mplayer-doc, smplayer
 +Conflicts: mplayer-nogui
 +Replaces: mplayer-nogui
++Provides: mplayer-nogui
 +Description: The Ultimate Movie Player For Linux
 + It plays most mpeg, avi and asf files, supported by many native and win32
 + DLL codecs. You can watch VCD, DVD and even DivX movies too. The other
