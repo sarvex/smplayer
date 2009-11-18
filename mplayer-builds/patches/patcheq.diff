@@ -1,18 +1,18 @@
 Index: input/input.c
 ===================================================================
---- input/input.c	(revisión: 29311)
+--- input/input.c	(revisión: 29930)
 +++ input/input.c	(copia de trabajo)
 @@ -172,6 +172,7 @@
    { MP_CMD_LOADLIST, "loadlist", 1, { {MP_CMD_ARG_STRING, {0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
    { MP_CMD_RUN, "run", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
    { MP_CMD_VF_CHANGE_RECTANGLE, "change_rectangle", 2, { {MP_CMD_ARG_INT,{0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}}}},
 +  { MP_CMD_AF_EQ_SET, "af_eq_set_bands", 1, { {MP_CMD_ARG_STRING, {0}}, {-1,{0}}}}, //turbos
- #ifdef CONFIG_TV_TELETEXT
    { MP_CMD_TV_TELETEXT_ADD_DEC, "teletext_add_dec", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
    { MP_CMD_TV_TELETEXT_GO_LINK, "teletext_go_link", 1, { {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
+ 
 Index: input/input.h
 ===================================================================
---- input/input.h	(revisión: 29311)
+--- input/input.h	(revisión: 29930)
 +++ input/input.h	(copia de trabajo)
 @@ -129,6 +129,7 @@
    MP_CMD_ASS_USE_MARGINS,
@@ -24,9 +24,9 @@ Index: input/input.h
    MP_CMD_DVDNAV_UP = 1000,
 Index: DOCS/tech/slave.txt
 ===================================================================
---- DOCS/tech/slave.txt	(revisión: 29311)
+--- DOCS/tech/slave.txt	(revisión: 29930)
 +++ DOCS/tech/slave.txt	(copia de trabajo)
-@@ -463,7 +463,12 @@
+@@ -472,7 +472,12 @@
      Run <value> as shell command. In OSD menu console mode stdout and stdin
      are through the video output driver.
  
@@ -41,9 +41,9 @@ Index: DOCS/tech/slave.txt
  name               type      min     max     get set step comment
 Index: command.c
 ===================================================================
---- command.c	(revisión: 29311)
+--- command.c	(revisión: 29930)
 +++ command.c	(copia de trabajo)
-@@ -2970,6 +2970,13 @@
+@@ -2957,6 +2957,13 @@
  	    }
  	    break;
  
@@ -59,7 +59,7 @@ Index: command.c
                  break;
 Index: libaf/af_equalizer.c
 ===================================================================
---- libaf/af_equalizer.c	(revisión: 29311)
+--- libaf/af_equalizer.c	(revisión: 29930)
 +++ libaf/af_equalizer.c	(copia de trabajo)
 @@ -140,6 +140,7 @@
    case AF_CONTROL_COMMAND_LINE:{
