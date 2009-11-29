@@ -36,7 +36,7 @@ Nombre: svn:executable
 
 Index: version.sh
 ===================================================================
---- version.sh	(revisión: 29814)
+--- version.sh	(revisión: 29930)
 +++ version.sh	(copia de trabajo)
 @@ -15,6 +15,8 @@
  version=$(cat VERSION 2> /dev/null)
@@ -3847,9 +3847,9 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +   { MP_CMD_RUN, "run", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
 +   { MP_CMD_VF_CHANGE_RECTANGLE, "change_rectangle", 2, { {MP_CMD_ARG_INT,{0}}, {MP_CMD_ARG_INT,{0}}, {-1,{0}}}},
 ++  { MP_CMD_AF_EQ_SET, "af_eq_set_bands", 1, { {MP_CMD_ARG_STRING, {0}}, {-1,{0}}}}, //turbos
-+ #ifdef CONFIG_TV_TELETEXT
 +   { MP_CMD_TV_TELETEXT_ADD_DEC, "teletext_add_dec", 1, { {MP_CMD_ARG_STRING,{0}}, {-1,{0}} } },
 +   { MP_CMD_TV_TELETEXT_GO_LINK, "teletext_go_link", 1, { {MP_CMD_ARG_INT,{0}}, {-1,{0}} } },
++ 
 +diff -urNad svn~/input/input.h svn/input/input.h
 +--- svn~/input/input.h	2009-05-20 13:32:09.000000000 +0200
 ++++ svn/input/input.h	2009-05-20 13:36:06.000000000 +0200
