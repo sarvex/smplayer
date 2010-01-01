@@ -1,5 +1,3 @@
-<div id="info">
-<div id="info_download">
 <center>
 <img src="images/screenshots/video_en.jpg">
 </center>
@@ -11,10 +9,6 @@ tr("Download <a href=%1>here</a> the latest version of the SMPlayer",
 "\"downloads.php?tr_lang=".$tr_lang."\""); 
 */
 ?>
-
-</div>
-
-<div id="info_features">
 
 <?php 
 echo "<p>";
@@ -67,6 +61,3 @@ Japanese...."); ?></li>
 <li><?php tr("SMPlayer is under the <b>GPL</b> license."); ?>
 </li>
 </ul>
-
-</div>
-</div>

@@ -1,36 +1,25 @@
 <?php include_once("l10n.php"); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
- <head>
-  <title><?php tr("SMPlayer - Downloads"); ?></title>
-  <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
-  <link href="base.css" rel="stylesheet" title="base style" type="text/css">
-  <link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
-<?php 
-$use_forum = 0;
-if ($use_forum) {
-	define('PUN_ROOT', 'forums/');
-	require PUN_ROOT.'include/common.php';
-	if (isset($_COOKIE['punbb_cookie']))
-	list($cookie['user_id'], $cookie['password_hash']) = @unserialize($_COOKIE['punbb_cookie']);
-}
-?>
- </head>
- <body>
+<head>
+<title><?php tr("SMPlayer - Downloads"); ?></title>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+<link href="base.css" rel="stylesheet" title="base style" type="text/css">
+<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
+</head>
+<body>
 
-<div id="container">
+<div id="sm_container">
 
-<!----------------------header---------------------->
+<!-- header -->
 <?php
 include("header.php");
-header_set_section("downloads");
 ?>
-<!----------------------end header---------------------->
+<!-- end header -->
 
-<!----------------------begin content---------------------->
+<!-- begin content -->
 
-<div id="content">
+<div id="sm_content">
 <?php
 include_once("download_links.php");
 
@@ -298,17 +287,14 @@ Windows updates), <a href=%1><b>here</b></a>.",
 
 </div>
 
-<!----------------------end content---------------------->
+<!-- end content -->
 
-<!----------------------begin footer---------------------->
-
+<!-- begin footer -->
 <?php
 include("footer.php");
 ?>
-
-<!----------------------end footer---------------------->
-
+<!-- end footer -->
 </div>
 
- </body>
+</body>
 </html>
