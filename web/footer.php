@@ -1,7 +1,9 @@
 <?php
+include_once("l10n.php");
+
 function print_language_link($file, $name, $cod, $query, $last=false) {
 	echo "<a href=\"".$file."?tr_lang=".$cod.$query."\">".$name."</a>";
-	if (!$last) echo " |&nbsp;";
+	if (!$last) echo " | ";
 	echo "\n";
 }
 
@@ -35,8 +37,9 @@ function print_languages() {
 ?>
 
 <div id="sm_footer">
-This page is available in the following languages: 
 <?php
+tr("This page is available in the following languages:");
+echo " ";
 print_languages();
 ?>
 <br><br>
