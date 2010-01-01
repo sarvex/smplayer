@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-05 01:53+0200\n"
+"POT-Creation-Date: 2010-01-01 19:07+0100\n"
 "PO-Revision-Date: 2008-11-25 18:28+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,23 +15,23 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../downloads.php:6
+#: ../downloads.php:5
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Descărcare"
 
-#: ../downloads.php:37
+#: ../downloads.php:27
 msgid "Stable version"
 msgstr "Versiunea stabilă"
 
-#: ../downloads.php:38
+#: ../downloads.php:28
 msgid "Windows"
 msgstr "Windows"
 
-#: ../downloads.php:48
+#: ../downloads.php:38
 msgid "Package with installer:"
 msgstr "Pachete cu program de instalare:"
 
-#: ../downloads.php:53
+#: ../downloads.php:43
 msgid ""
 "This package contains smplayer, shared libraries, translation \n"
 "files and icon themes. During the installation a recent version of\n"
@@ -40,7 +40,7 @@ msgid ""
 "like newer RealVideo variants)."
 msgstr ""
 
-#: ../downloads.php:86
+#: ../downloads.php:76
 msgid ""
 "This package contains everything needed to run smplayer: shared \n"
 "libraries, translation files, icon themes and a mplayer \n"
@@ -52,11 +52,11 @@ msgstr ""
 "mplayer \n"
 "(versiunea inclusă este %1)."
 
-#: ../downloads.php:99
+#: ../downloads.php:89
 msgid "Additional codecs:"
 msgstr "Codecuri suplimentare:"
 
-#: ../downloads.php:104
+#: ../downloads.php:94
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -69,7 +69,7 @@ msgstr ""
 " Aceste codecuri nu sunt necesare pentru redarea formatelor\n"
 " obișnuite precum DVD, MPEG-1/2/4, etc. "
 
-#: ../downloads.php:109
+#: ../downloads.php:99
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -80,7 +80,7 @@ msgstr ""
 "codecuri \n"
 " pe care le mai aveți instalate în sistem."
 
-#: ../downloads.php:113
+#: ../downloads.php:103
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -88,7 +88,7 @@ msgstr ""
 "Dacă preferați un fișier zip îl puteți găsi la \n"
 "<a href=%1>mplayer site</a> (%2)."
 
-#: ../downloads.php:128
+#: ../downloads.php:118
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
@@ -98,11 +98,11 @@ msgstr ""
 "fișierele cu traduceri și temele pentru pictograme. Pachetul nu include și "
 "mplayer."
 
-#: ../downloads.php:131
+#: ../downloads.php:121
 msgid "This package is for advanced users only!"
 msgstr "Acest pachet este doar pentru utilizatorii avansați!"
 
-#: ../downloads.php:153
+#: ../downloads.php:143
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
@@ -115,7 +115,7 @@ msgstr ""
 "pachetul oriunde doriți și efectuați clic dublu pe fișierul smplayer.exe "
 "pentru a-l rula."
 
-#: ../downloads.php:157
+#: ../downloads.php:147
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -123,63 +123,63 @@ msgstr ""
 "Acest pachet conține teme pentru pictograme, fișierele cu traduceri și \n"
 "un executabil MPLayer."
 
-#: ../downloads.php:160
+#: ../downloads.php:150
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr "Notă: fișierele de tip 7z pot fi dezarhivate cu <a href=%1>7-Zip</a>."
 
-#: ../downloads.php:171
+#: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:181
+#: ../downloads.php:171
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Pentru a afla cum se compilează citiți fișierul Install.txt inclus în pachet."
 
-#: ../downloads.php:190
+#: ../downloads.php:180
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:191
+#: ../downloads.php:181
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
 
-#: ../downloads.php:203
+#: ../downloads.php:193
 msgid "Suggested package:"
 msgstr "Pachete sugerate:"
 
-#: ../downloads.php:204
+#: ../downloads.php:194
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
 
-#: ../downloads.php:208
+#: ../downloads.php:198
 msgid "You can get updated versions from this PPA:"
 msgstr ""
 
-#: ../downloads.php:212
+#: ../downloads.php:202
 msgid "more info"
 msgstr ""
 
-#: ../downloads.php:218
+#: ../downloads.php:208
 msgid "Icon Themes:"
 msgstr "Teme Pictograme:"
 
-#: ../downloads.php:219
+#: ../downloads.php:209
 msgid "Optional packages which provide some icon themes."
 msgstr ""
 "Pachete opționale care oferă mai multe teme pentru interfața programului."
 
-#: ../downloads.php:263
+#: ../downloads.php:253
 msgid "Additional packages"
 msgstr "Pachete suplimentare"
 
-#: ../downloads.php:264
+#: ../downloads.php:254
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -187,11 +187,11 @@ msgstr ""
 "Există mai multe pachete suplimentare pentru utilizatorii avansați:\n"
 "<a href=%1>Consultați pagina de descărcări a sitului sourceforge</a>"
 
-#: ../downloads.php:271
+#: ../downloads.php:261
 msgid "Contributed packages"
 msgstr "Pachete pentru diverse distribuții"
 
-#: ../downloads.php:272
+#: ../downloads.php:262
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -199,15 +199,15 @@ msgstr ""
 "Sunt disponibile pachete pentru alte distribuții, create \n"
 "de alte persoane. Le puteți vedea <a href=%1><b>aici</b></a>."
 
-#: ../downloads.php:278
+#: ../downloads.php:268
 msgid "Related Project"
 msgstr "Proiecte înrudite"
 
-#: ../downloads.php:280
+#: ../downloads.php:270
 msgid "by MuldeR"
 msgstr "realizate de către MuldeR"
 
-#: ../downloads.php:281
+#: ../downloads.php:271
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -223,12 +223,12 @@ msgstr ""
 "pentru diferite procesoare și \n"
 "mai conține mai multe codecuri."
 
-#: ../downloads.php:292
+#: ../downloads.php:282
 msgid "Unstable releases"
 msgstr "Versiuni Instabile"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:294
+#: ../downloads.php:284
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -236,54 +236,55 @@ msgstr ""
 "Puteți descărca pachete obținute direct din SVN (cod sursă și\n"
 "actualizări pentru Windows), <a href=%1><b>de aici</b></a>."
 
-#: ../header.php:60
-msgid "The SMPlayer Project"
-msgstr "Proiectul SMPlayer"
+#: ../footer.php:41
+msgid "This page is available in the following languages:"
+msgstr ""
 
-#: ../header.php:70
+#: ../header.php:16
 msgid "Main"
 msgstr "Pagina Principală"
 
-#: ../header.php:72
+#: ../header.php:17
 msgid "Screenshots"
 msgstr "Capturi Ecran"
 
-#: ../header.php:74
+#: ../header.php:18
 msgid "Downloads"
 msgstr "Descărcare"
 
-#. header_print_section(get_tr("Forum"), $rel_path."http://smplayer.sourceforge.net/forums/index.php?tr_lang=".$tr_lang, ($s=="forums"));
-#: ../header.php:77
+#: ../header.php:19
 msgid "Forum"
 msgstr "Forum"
 
-#: ../header.php:79
+#: ../header.php:20
 msgid "Bug Tracking"
 msgstr "Bug Tracking"
 
-#: ../header.php:81
+#: ../header.php:21
 msgid "Feature Requests"
 msgstr "Sugestii"
 
-#: ../header.php:83
+#: ../header.php:22
 msgid "Wiki"
 msgstr "Wiki"
 
-#. if ($site == "sourceforge")
-#: ../header.php:86
-msgid "Donations"
-msgstr "Donații"
+#: ../header.php:41
+msgid "The SMPlayer Project"
+msgstr "Proiectul SMPlayer"
 
-#: ../index.php:6
+#: ../header.php:42
+msgid "Forget about codecs"
+msgstr ""
+
+#: ../header.php:42
+msgid "Play anything"
+msgstr ""
+
+#: ../index.php:5
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Informații Generale"
 
-#. Message id of the post in the forum for "Version 0.6.0 final released"
-#: ../index.php:52
-msgid "1970"
-msgstr "1970"
-
-#: ../info.php:21
+#: ../info.php:15
 msgid ""
 "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
@@ -296,7 +297,7 @@ msgstr ""
 "dar și funcții avansate precum suport pentru filtrele specifice MPlayer și "
 "mult mai multe."
 
-#: ../info.php:27
+#: ../info.php:21
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -314,11 +315,11 @@ msgstr ""
 "piste \n"
 "audio, subtitrări, volum..."
 
-#: ../info.php:36
+#: ../info.php:30
 msgid "Other additional interesting features:"
 msgstr "Alte caracteristici suplimentare interesante:"
 
-#: ../info.php:38
+#: ../info.php:32
 msgid ""
 "Configurable subtitles. You can choose font and size, and even \n"
 "colors for the subtitles."
@@ -326,7 +327,7 @@ msgstr ""
 "Configurarea subtitrărilor. Pentru subtitrări puteți alege caracterele, \n"
 "mărimea și chiar culoarea lor."
 
-#: ../info.php:40
+#: ../info.php:34
 msgid ""
 "Audio track switching. You can choose the audio track you want\n"
 "to listen. Works with avi and mkv. And of course with DVDs."
@@ -334,7 +335,7 @@ msgstr ""
 "Comutarea coloanelor sonore. Puteți alege ce coloană sonoră doriți\n"
 "să ascultați. Funcționează cu fișiere avi și mkv. Și bineînțeles cu DVD."
 
-#: ../info.php:42
+#: ../info.php:36
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -342,7 +343,7 @@ msgstr ""
 "Căutare cu rotița mausului. Puteți utiliza rotița mausului pentru derulare\n"
 "înainte și înapoi a filmului."
 
-#: ../info.php:44
+#: ../info.php:38
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -350,7 +351,7 @@ msgstr ""
 "Egalizorul video vă permite ajustarea luminozității, contrastului, culorii,\n"
 "saturației și corecției gama a imaginii."
 
-#: ../info.php:46
+#: ../info.php:40
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -358,7 +359,7 @@ msgstr ""
 "Redare la diferite viteze. Puteți reda filmele cu viteze 2X, 4X... și chiar "
 "relanti.\n"
 
-#: ../info.php:49
+#: ../info.php:43
 msgid ""
 "Filters. Several filters are available: deinterlace, postprocessing,\n"
 "denoise... and even a karaoke filter (voice removal)."
@@ -367,7 +368,7 @@ msgstr ""
 "postprocesare,\n"
 "înlăturare zgomote... și chiar un filtru karaoke (înlăturare voce)."
 
-#: ../info.php:51
+#: ../info.php:45
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -376,7 +377,7 @@ msgstr ""
 "sincronizarea\n"
 "coloanei sonore și a subtitrării."
 
-#: ../info.php:53
+#: ../info.php:47
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -384,7 +385,7 @@ msgstr ""
 "Opțiuni avansate, precum selectarea unui demux sau a codecurilor audio și "
 "video.\n"
 
-#: ../info.php:56
+#: ../info.php:50
 msgid ""
 "Playlist. Allows you to enqueue several files to be played one after \n"
 "each other. Autorepeat and shuffle supported too."
@@ -393,7 +394,7 @@ msgstr ""
 "altul. De asemenea puteți repeta redarea automat sau puteți reda\n"
 "aleator fișiere din listă."
 
-#: ../info.php:58
+#: ../info.php:52
 msgid ""
 "Preferences dialog. You can easily configure every option of SMPlayer\n"
 "by using a nice preferences dialog."
@@ -402,11 +403,11 @@ msgstr ""
 "SMPlayer\n"
 "utilizând o casetă de dialog intuitivă."
 
-#: ../info.php:60
+#: ../info.php:54
 msgid "Possibility to search automatically for subtitles in %1."
 msgstr "Posibilitatea de a căuta automat subtitrări în %1."
 
-#: ../info.php:62
+#: ../info.php:56
 msgid ""
 "Translations: currently SMPlayer is translated into more than 20 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -416,61 +417,67 @@ msgstr ""
 "de limbi, incluzând Spaniolă, Germană, Franceză, Italiană, Rusă, Chineză,\n"
 "Japoneză, Română..."
 
-#: ../info.php:65
+#: ../info.php:59
 msgid "It's multiplatform. Binaries available for Windows and Linux."
 msgstr ""
 "Este multiplatformă. Sunt disponibile executabile pentru Windows și Linux."
 
-#: ../info.php:67
+#: ../info.php:61
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer se supune termenilor licenței <b>GPL</b>."
 
-#: ../screenshots.php:6
+#: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Capturi de ecran"
 
-#: ../screenshots.php:45
+#: ../screenshots.php:35
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aici puteți vedea unele capturi de ecran cu SMPlayer:"
 
-#: ../screenshots.php:51
+#: ../screenshots.php:41
 msgid "This is the main window"
 msgstr "Aceasta este fereastra principală"
 
-#: ../screenshots.php:54
+#: ../screenshots.php:44
 msgid "The playlist can be embedded in the main window"
 msgstr ""
 "Lista cu fișierele ce vor fi redate poate fi încorporată în fereastra "
 "principală."
 
-#: ../screenshots.php:56
+#: ../screenshots.php:46
 msgid "The preferences dialog"
 msgstr "Caseta de dialog cu opțiunile preferate"
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
-#: ../screenshots.php:62
+#: ../screenshots.php:52
 msgid "SMPlayer running on Gnome"
 msgstr "SMPlayer rulând în Gnome."
 
-#: ../screenshots.php:63
+#: ../screenshots.php:53
 msgid "A video displaying a srt subtitle"
 msgstr "Un fișier video cu subtitrare srt"
 
-#: ../screenshots.php:64
+#: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Subtitrări Matroska încorporate"
 
-#: ../screenshots.php:69
+#: ../screenshots.php:59
 msgid "SMPlayer is translated into more than 20 languages"
 msgstr "SMPlayer este tradus în mai mult de 20 de limbi"
 
-#: ../screenshots.php:70
+#: ../screenshots.php:60
 msgid "The mini GUI"
 msgstr "Mini GUI"
 
-#: ../screenshots.php:71
+#: ../screenshots.php:61
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer rulând pe noul KDE 4"
+
+#~ msgid "1970"
+#~ msgstr "1970"
+
+#~ msgid "Donations"
+#~ msgstr "Donații"
 
 #~ msgid "Compiled on Ubuntu 7.04."
 #~ msgstr "Compilat pe Ubuntu 7.04."

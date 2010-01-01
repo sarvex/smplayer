@@ -1,6 +1,6 @@
 all: es.po nl.po fr.po ja.po pl.po ro.po uk.po ru.po hu.po zh.po de.po pt.po it.po
 
-FILES=../index.php ../info.php ../header.php ../downloads.php \
+FILES=../index.php ../info.php ../header.php ../footer.php ../downloads.php \
       ../documentation.php ../screenshots.php
 
 empty.pot: $(FILES)
