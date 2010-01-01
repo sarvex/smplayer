@@ -31,13 +31,13 @@ function print_host_logo() {
 		echo "<a href=\"http://developer.berlios.de\"><img src=\"http://developer.berlios.de/bslogo.php?group_id=9394\" width=\"124\" height=\"32\" border=\"0\" alt=\"BerliOS Logo\"></a>";
 }
 
+function print_header($rel_path="") {
 ?>
-
 <div class="sm_headerbar">
 	<div class="inner"><span class="sm_corners-top"><span></span></span>
 
 	<div id="sm_site-description">
-		<a href="./index.php" id="sm_logo"><img src="./images/smplayer_logo.png" width="90" height="90" alt="" title=""></a>
+		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" alt="" title=""></a>'; ?>
 		<h1><?php tr("The SMPlayer Project"); ?></h1>
 		<p><?php tr("Play anything"); echo " &bull; "; tr("Forget about codecs"); ?></p>
 	</div>
@@ -47,9 +47,12 @@ function print_host_logo() {
 	</div>
 
 	<div id="sm_linkbar"><hr>
-	<?php header_print_links(); ?>
+	<?php header_print_links($rel_path); ?>
 	</div>
 
 	<span class="sm_corners-bottom"><span></span></span></div>
 	</div>
 </div>
+<?php
+}
+?>

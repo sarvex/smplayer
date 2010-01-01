@@ -9,7 +9,10 @@
 <body>
 
 <div id="container">
+
+<!--
 <pun_include "web_header.php">
+-->
 
 <div id="pun<pun_page>" class="pun">
 
@@ -27,6 +30,10 @@
 <pun_footer>
 
 </div>
+
+<!--
+<pun_include "web_footer.php">
+-->
 </div>
 
 </body>

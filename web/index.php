@@ -16,6 +16,7 @@
 <!- header -->
 <?php
 include("header.php");
+print_header();
 ?>
 <!-- end header -->
 
