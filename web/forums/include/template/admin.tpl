@@ -27,6 +27,8 @@
 <pun_footer>
 
 </div>
+
+<pun_include "web_footer.php">
 </div>
 
 </body>

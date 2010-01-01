@@ -34,7 +34,9 @@ function print_host_logo() {
 function print_header($rel_path="") {
 ?>
 <div class="sm_headerbar">
-	<div class="inner"><span class="sm_corners-top"><span></span></span>
+	<div class="inner">
+
+	<span class="sm_corners-top"><span></span></span>
 
 	<div id="sm_site-description">
 		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" alt="" title=""></a>'; ?>
@@ -50,7 +52,8 @@ function print_header($rel_path="") {
 	<?php header_print_links($rel_path); ?>
 	</div>
 
-	<span class="sm_corners-bottom"><span></span></span></div>
+	<span class="sm_corners-bottom"><span></span></span>
+
 	</div>
 </div>
 <?php

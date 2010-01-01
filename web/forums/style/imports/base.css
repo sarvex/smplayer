@@ -2,6 +2,176 @@
  margin: 10px 0px 10px 0px;
 }
 
+/* Copied from header.css */
+/* Site description and logo
+--------------------------------------------- */
+#sm_site-description {
+	float: left;
+	width: 70%;
+}
+
+#sm_site-description h1 {
+	margin-right: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-right: 100px;
+	color: #FFFFFF;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#sm_site-description p {
+	line-height: 1.3em;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+}
+
+
+#sm_logo {
+	float: left;
+	width: auto;
+	padding: 10px 13px 0 10px;
+}
+
+a#sm_logo:hover {
+	text-decoration: none;
+}
+
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.sm_headerbar {
+	background: #ebebeb none repeat-x 0 0;
+	color: #FFFFFF;
+	margin-bottom: 4px;
+	padding: 0 5px;
+}
+
+.sm_headerbar {
+	background-color: #12A3EB;
+	background-image: url("./images/bg_header.gif");
+	color: #FFFFFF;
+}
+
+span.sm_corners-top, span.sm_corners-bottom, span.sm_corners-top span, span.sm_corners-bottom span {
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 5px;
+	background-repeat: no-repeat;
+}
+
+span.sm_corners-top {
+	background-image: none;
+	background-position: 0 0;
+	margin: 0 -5px;
+}
+
+span.sm_corners-top span {
+	background-image: none;
+	background-position: 100% 0;
+}
+
+span.sm_corners-bottom {
+	background-image: none;
+	background-position: 0 100%;
+	margin: 0 -5px;
+	clear: both;
+}
+
+span.sm_corners-bottom span {
+	background-image: none;
+	background-position: 100% 100%;
+}
+
+span.sm_corners-top {
+	background-image: url("./images/corners_left.png");
+}
+
+span.sm_corners-top span {
+	background-image: url("./images/corners_right.png");
+}
+
+span.sm_corners-bottom {
+	background-image: url("./images/corners_left.png");
+}
+
+span.sm_corners-bottom span {
+	background-image: url("./images/corners_right.png");
+}
+
+
+/* Link bar
+--------------------------------------------- */
+#sm_linkbar {
+	display: block;
+	text-align: right;
+
+	float: right;
+	margin-right: 5px;
+	width: 100%;
+	/*white-space: nowrap;*/ /* For Opera */
+
+	font-weight: bold;
+}
+
+#sm_linkbar hr {
+	margin: 0px;
+}
+
+/* Links on gradient backgrounds */
+#sm_linkbar a:link  {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#sm_linkbar a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#sm_linkbar a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#sm_linkbar a:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* The right side of the header
+--------------------------------------------- */
+#sm_right-side {
+	color: #FFFFFF;
+	position: relative;
+	margin-top: 30px;
+	margin-right: 5px;
+	display: block;
+	float: right;
+	text-align: right;
+	white-space: nowrap; /* For Opera */
+}
+
+/* Copied from footer.css */
+/*--------------------begin footer--------------------*/
+
+#sm_footer {
+ position: relative;
+ width: auto;
+ height: auto;
+ padding: 4px;
+ margin: 0px 0px 0px 0px;
+ border: solid black;
+ border-width: 1px 0px 0px 0px;
+ background: transparent;
+ text-align: center;
+}
+
+/*--------------------end footer--------------------*/
+
+
 /*--------------------begin body--------------------*/
 
 body {
@@ -25,7 +195,8 @@ a:active {color: #555555;}
 
 #container {
  position: relative;
- width: 950px;
+/* width: 950px; */
+ width: auto;
  height: auto;
  padding: 0px;
  margin: 0px auto 0px auto;
