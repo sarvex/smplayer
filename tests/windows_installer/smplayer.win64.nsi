@@ -253,7 +253,7 @@ Section SMPlayer SMPlayer
   ${If} ${Errors}
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x0
   ${EndIf}
-
+  ClearErrors
   ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs
   ${If} ${Errors}
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs 0x0
