@@ -41,7 +41,7 @@ function print_header($rel_path="") {
 	<div id="sm_site-description">
 		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" border="0" alt="" title=""></a>'; ?>
 		<h1><?php tr("The SMPlayer Project"); ?></h1>
-		<p><?php tr("Play anything"); echo " &bull; "; tr("Forget about codecs"); ?></p>
+		<p><?php /*tr("Play anything"); echo " &bull; "; tr("Forget about codecs");*/ ?></p>
 	</div>
 
 	<div id="sm_right-side">
