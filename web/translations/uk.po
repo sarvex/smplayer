@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Motsyo Gennadi <drool@altlinux.ru>, 2007, 2008.
+# Gennadi <drool@altlinux.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-01 19:07+0100\n"
-"PO-Revision-Date: 2008-11-13 23:45+0200\n"
-"Last-Translator: Motsyo Gennadi <drool@altlinux.ru>\n"
+"PO-Revision-Date: 2010-01-15 09:16+0200\n"
+"Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,6 +41,11 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
+"Цей пакет містить SMPlayer, загальні бібліотеки, файли \n"
+"перекладів та теми іконок. При встановленні останньої версії \n"
+"MPlayer буде завантажено та встановлено. За бажанням Ви \n"
+"можете встановити додаткові кодеки (необхідні лише для деяких \n"
+"нових форматів, таких як нові варіанти RealVideo)."
 
 #: ../downloads.php:76
 msgid ""
@@ -118,28 +124,27 @@ msgstr ""
 
 #: ../downloads.php:150
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr ""
-"Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
+msgstr "Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
 
 #: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:171
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
+msgid "Read the file Install.txt included in the package to know how compile it."
+msgstr "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
 #: ../downloads.php:180
 msgid "Packages for Ubuntu:"
-msgstr ""
+msgstr "Пакети для Ubuntu:"
 
 #: ../downloads.php:181
 msgid ""
 "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 "from this PPA:"
 msgstr ""
+"Ви можете взяти пакети deb для Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"з PPA:"
 
 #: ../downloads.php:193
 msgid "Suggested package:"
@@ -151,14 +156,17 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
+"Версія MPlayer з комплекту Ubuntu дуже застаріла (%1). SMPlayer \n"
+"наразі підтримує деякі нові функції MPlayer, тому рекомендується \n"
+"застосовувати нову версія."
 
 #: ../downloads.php:198
 msgid "You can get updated versions from this PPA:"
-msgstr ""
+msgstr "Ви можете взяти оновлену версію з PPA:"
 
 #: ../downloads.php:202
 msgid "more info"
-msgstr ""
+msgstr "докладніше"
 
 #: ../downloads.php:208
 msgid "Icon Themes:"
@@ -228,7 +236,7 @@ msgstr ""
 
 #: ../footer.php:41
 msgid "This page is available in the following languages:"
-msgstr ""
+msgstr "Ця сторінка доступна на наступних мовах:"
 
 #: ../header.php:16
 msgid "Main"
@@ -264,11 +272,11 @@ msgstr "Проект SMPlayer"
 
 #: ../header.php:42
 msgid "Forget about codecs"
-msgstr ""
+msgstr "Забудьте про кодеки"
 
 #: ../header.php:42
 msgid "Play anything"
-msgstr ""
+msgstr "Відтворюйте будь-що"
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -450,39 +458,3 @@ msgstr "Компактний інтерфейс"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
-#~ msgid "Donations"
-#~ msgstr "Пожертви"
-
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Зкомпільовано в Ubuntu %1."
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Пакет для AMD64. Зкомпільовано в Ubuntu %1."
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
-#~ msgstr ""
-#~ "Версія mplayer в Ubuntu, трохи застаріла (%1). SMPlayer \n"
-#~ "підтримує деякі з нових можливостей mplayer, тому новіша версія \n"
-#~ "суворо рекомендується."
-
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Ви можете взяти оновлену версію <a href=%1>тут</a>"
-
-#~ msgid "More info"
-#~ msgstr "Більше інформації"
-
-#~ msgid "New!"
-#~ msgstr "Новина!"
-
-#~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
-#~ msgstr ""
-#~ "Тепер Ви можете легко встановлювати пакети SMPlayer та MPlayer через \n"
-#~ "%1. Просто додайте один з цих рядків до Вашого %2, відповідно до Вашої \n"
-#~ "версії Ubuntu."
