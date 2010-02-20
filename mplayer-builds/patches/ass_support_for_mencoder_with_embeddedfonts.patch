@@ -256,9 +256,9 @@ Index: DOCS/man/en/mplayer.1
  .
 Index: mencoder.c
 ===================================================================
---- mencoder.c	(revisión: 29311)
+--- mencoder.c	(revisiÃ³n: 30662)
 +++ mencoder.c	(copia de trabajo)
-@@ -192,6 +192,7 @@
+@@ -206,6 +206,7 @@
  
  int auto_expand=1;
  int encode_duplicates=1;
@@ -266,7 +266,7 @@ Index: mencoder.c
  
  // infos are empty by default
  char *info_name=NULL;
-@@ -353,6 +354,44 @@
+@@ -370,6 +371,44 @@
  
  static muxer_t* muxer=NULL;
  
@@ -308,10 +308,10 @@ Index: mencoder.c
 +    subdata = subd;
 +}
 +
- void print_wave_header(WAVEFORMATEX *h, int verbose_level);
- 
  int main(int argc,char* argv[]){
-@@ -512,6 +551,10 @@
+ 
+ stream_t* stream=NULL;
+@@ -527,6 +566,10 @@
    m_entry_set_options(mconfig,&filelist[curfile]);
    filename = filelist[curfile].name;
  
@@ -322,7 +322,7 @@ Index: mencoder.c
    if(!filename){
  	mp_msg(MSGT_CPLAYER, MSGL_FATAL, MSGTR_MissingFilename);
  	mencoder_exit(1,NULL);
-@@ -635,26 +678,6 @@
+@@ -658,26 +701,6 @@
      }
    }
  
@@ -349,7 +349,7 @@ Index: mencoder.c
  // set up video encoder:
  
  if (!curfile) { // curfile is non zero when a second file is opened
-@@ -834,12 +857,83 @@
+@@ -857,12 +880,83 @@
      ve = sh_video->vfilter;
    } else sh_video->vfilter = ve;
      // append 'expand' filter, it fixes stride problems and renders osd:
@@ -433,7 +433,7 @@ Index: mencoder.c
      mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
      init_best_video_codec(sh_video,video_codec_list,video_fm_list);
      mp_msg(MSGT_CPLAYER,MSGL_INFO,"==========================================================================\n");
-@@ -1295,7 +1389,8 @@
+@@ -1318,7 +1412,8 @@
      // decode_video will callback down to ve_*.c encoders, through the video filters
      {void *decoded_frame = decode_video(sh_video,frame_data.start,frame_data.in_size,
        skip_flag>0 && (!sh_video->vfilter || ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_SKIP_NEXT_FRAME, 0) != CONTROL_TRUE), MP_NOPTS_VALUE);
