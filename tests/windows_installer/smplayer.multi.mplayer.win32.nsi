@@ -51,7 +51,7 @@
 !ifdef WITH_MPLAYER
   OutFile "smplayer-${SMPLAYER_VERSION}-multi-win32.exe"
 !else ifndef WITH_MPLAYER
-  OutFile "smplayer-${SMPLAYER_VERSION}-win32-webdl.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}-multi-win32-webdl.exe"
 !endif
 
   ;Version tab properties
@@ -87,7 +87,9 @@
   Var MPLAYER_AMDMULTI
   Var MPLAYER_INTELMULTI
   Var MPLAYER_SELECTION_STATE
+!ifndef WITH_MPLAYER
   Var MPLAYER_VERSION
+!endif
   Var PREVIOUS_VERSION
   Var PREVIOUS_VERSION_STATE
   Var REINSTALL_UNINSTALL
@@ -299,19 +301,26 @@ SectionGroup /e "MPlayer Components"
   Section MPlayer MPlayer
     SectionIn 1 2 3 RO
 
+    /* All the files for the FFmpeg-mt builds should be the same
+    except the mplayer.exe so we'll share the folder contents; we
+    have the mplayer executables named as so:
+      mplayer-p4mt.exe (Intel)
+      mplayer-amdmt.exe (AMD)
+
+    Exclude them with /x then include the appropriate build using 
+    /oname= so we don't have to have two different source folders. */
     SetOutPath "$INSTDIR\mplayer"
     ${If} $MPLAYER_SELECTION_STATE = 1
       File /r "smplayer-build\mplayer\*.*"
     ${ElseIf} $MPLAYER_SELECTION_STATE = 2
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
-      File  /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
+      File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE = 3
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
 
-    WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x1
-    WriteRegStr HKLM "${SMPLAYER_REG_KEY}" MPlayer_Arch "$MPLAYER_VERSION"
+    WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
 
   SectionEnd
 !else ifndef WITH_MPLAYER
@@ -552,10 +561,11 @@ Function CheckPreviousVersion
 
   ReadRegStr $PREVIOUS_VERSION HKLM "${SMPLAYER_REG_KEY}" "Version"
 
+  /* $PREVIOUS_VERSION_STATE Assignments:
+  $PREVIOUS_VERSION_STATE=0  This installer is the same version as the installed copy
+  $PREVIOUS_VERSION_STATE=1  A newer version than this installer is already installed
+  $PREVIOUS_VERSION_STATE=2  An older version than this installer is already installed */
   ${VersionCompare} $PREVIOUS_VERSION ${SMPLAYER_VERSION} $PREVIOUS_VERSION_STATE
-  ;$PREVIOUS_VERSION_STATE=0  This installer is the same version as the installed copy
-  ;$PREVIOUS_VERSION_STATE=1  A newer version than this installer is already installed
-  ;$PREVIOUS_VERSION_STATE=2  An older version than this installer is already installed
 
 FunctionEnd
 
@@ -692,6 +702,9 @@ Function PageMPlayerBuild
   Pop $MPLAYER_INTELMULTI
   ${NSD_CreateLabel} 26 175 100% 20u "Optimized for multicore Intel processors using experimental multithreaded$\nFFmpeg-mt branch."
 
+  /* Restores selection when the user leaves the page and comes back
+  or sets the default choice (last Else statement) if they are viewing
+  the page for the first time. */
   ${If} $MPLAYER_SELECTION_STATE = 1
     SendMessage $MPLAYER_486GENERIC ${BM_SETCHECK} 1 0
   ${ElseIf} $MPLAYER_SELECTION_STATE = 2
@@ -708,18 +721,22 @@ FunctionEnd
 
 Function PageMPlayerBuildLeave
 
+  /* Gets the state of each of the choices.
+  The radio button selected is assigned '1',
+  the rest should be '0'.*/
   ${NSD_GetState} $MPLAYER_486GENERIC $R0
   ${NSD_GetState} $MPLAYER_AMDMULTI $R1
   ${NSD_GetState} $MPLAYER_INTELMULTI $R2
 
+  /* $MPLAYER_SELECTION_STATE Assignments:
+  1 = Generic RTM Build
+  2 = FFmpeg-mt AMD Build
+  3 = FFmepg-mt Intel Build */
   ${If} $R0 = 1
-    StrCpy $MPLAYER_VERSION "mplayer-svn-30369"
     StrCpy $MPLAYER_SELECTION_STATE 1
 	${ElseIf} $R1 = 1
-	  StrCpy $MPLAYER_VERSION "mplayer-amd-30687-mt"
     StrCpy $MPLAYER_SELECTION_STATE 2
 	${ElseIf} $R2 = 1
-    StrCpy $MPLAYER_VERSION "mplayer-intel-30687-mt"
     StrCpy $MPLAYER_SELECTION_STATE 3
 	${EndIf}
 
