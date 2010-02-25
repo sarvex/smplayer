@@ -1,5 +1,10 @@
 ; Installer script for win32 SMPlayer
 ; Written by redxii (redxii@users.sourceforge.net)
+; Tested/Developed with Unicode NSIS 2.45.1
+
+!ifndef VER_MAJOR | VER_MINOR | VER_BUILD
+  !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
+!endif
 
 ;--------------------------------
 ;Compressor
@@ -11,7 +16,6 @@
 ;Additional plugin folders
 
   !addplugindir .
-  !addincludedir .
 
 ;--------------------------------
 ;Defines
@@ -34,7 +38,25 @@
   ;Fallback versions
   ;These can be changed in the compiler, otherwise
   ;if not defined the values shown here will be used.
-  !include Defaults.nsh
+!ifndef DEFAULT_CODECS_VERSION
+  !define DEFAULT_CODECS_VERSION "windows-essential-20071007"
+!endif
+
+!ifndef WITH_MPLAYER
+
+  !ifndef DEFAULT_MPLAYER_GENERIC
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-30369"
+  !endif
+
+  !ifndef DEFAULT_MPLAYER_AMDMT
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-30687"
+  !endif
+
+  !ifndef DEFAULT_MPLAYER_INTELMT
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-30687"
+  !endif
+
+!endif
 
 ;--------------------------------
 ;General
@@ -75,11 +97,11 @@
 ;--------------------------------
 ;Variables
 
+  Var BUTTON_486GENERIC
+  Var BUTTON_AMDMULTI
+  Var BUTTON_INTELMULTI
   Var CODEC_VERSION
   Var IS_ADMIN
-  Var MPLAYER_486GENERIC
-  Var MPLAYER_AMDMULTI
-  Var MPLAYER_INTELMULTI
   Var MPLAYER_SELECTION_STATE
 !ifndef WITH_MPLAYER
   Var MPLAYER_VERSION
@@ -145,7 +167,7 @@
   Page custom PageReinstall PageLeaveReinstall
   !define MUI_PAGE_CUSTOMFUNCTION_PRE PageComponentsPre
   !insertmacro MUI_PAGE_COMPONENTS
-  Page custom PageMPlayerBuild PageMPlayerBuildLeave
+  Page custom PageMPlayerBuild PageLeaveMPlayerBuild
   !define MUI_PAGE_CUSTOMFUNCTION_PRE PageDirectoryPre
   !insertmacro MUI_PAGE_DIRECTORY
   !define MUI_PAGE_CUSTOMFUNCTION_SHOW PageInstfilesShow
@@ -323,8 +345,9 @@ SectionGroup /e "MPlayer Components"
 
     Call GetVerInfo
 
-    ;Read from version-info
-    ;If it was unable to download, set version to that defined in Defaults.nsh
+    /* Read from version-info
+    If it was unable to download, set version to that defined in the
+    beginning of the script. */
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
       ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
     ${Else}
@@ -374,8 +397,9 @@ SectionGroup /e "MPlayer Components"
 
     Call GetVerInfo
 
-    ;Read from version-info
-    ;If it was unable to download, set version to that defined in Defaults.nsh
+    /* Read from version-info
+    If it was unable to download, set version to that defined in the
+    beginning of the script. */
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
       ReadINIStr $CODEC_VERSION "$PLUGINSDIR\version-info" smplayer mplayercodecs
     ${Else}
@@ -690,56 +714,33 @@ Function PageMPlayerBuild
   ${NSD_CreateLabel} 0 0 100% 10u "Select the MPlayer build you would like to install and click Install to continue."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
-  Pop $MPLAYER_486GENERIC
-  ${NSD_AddStyle} $MPLAYER_486GENERIC ${WS_GROUP}
+  Pop $BUTTON_486GENERIC
+  ${NSD_AddStyle} $BUTTON_486GENERIC ${WS_GROUP}
   ${NSD_CreateLabel} 26 55 100% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection, performance$\n\
   may be restricted. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 95 100% 10u "AMD Multicore (X2/X3/X4/Phenom)"
-  Pop $MPLAYER_AMDMULTI
+  Pop $BUTTON_AMDMULTI
   ${NSD_CreateLabel} 26 115 100% 20u "Optimized for multicore AMD processors using experimental multithreaded$\nFFmpeg-mt branch."
   
   ${NSD_CreateRadioButton} 10 155 100% 10u "Intel Multicore (P4EE/P4D/Xeon/Core2/i7/etc)"
-  Pop $MPLAYER_INTELMULTI
+  Pop $BUTTON_INTELMULTI
   ${NSD_CreateLabel} 26 175 100% 20u "Optimized for multicore Intel processors using experimental multithreaded$\nFFmpeg-mt branch."
 
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
   the page for the first time. */
   ${If} $MPLAYER_SELECTION_STATE == 1
-    SendMessage $MPLAYER_486GENERIC ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_486GENERIC ${BM_SETCHECK} 1 0
   ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-    SendMessage $MPLAYER_AMDMULTI ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_AMDMULTI ${BM_SETCHECK} 1 0
   ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-    SendMessage $MPLAYER_INTELMULTI ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_INTELMULTI ${BM_SETCHECK} 1 0
   ${Else}
-    SendMessage $MPLAYER_486GENERIC ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_486GENERIC ${BM_SETCHECK} 1 0
   ${EndIf}
 
   nsDialogs::Show
-
-FunctionEnd
-
-Function PageMPlayerBuildLeave
-
-  /* Gets the state of each of the choices.
-  The radio button selected is assigned '1',
-  the rest should be '0'.*/
-  ${NSD_GetState} $MPLAYER_486GENERIC $R0
-  ${NSD_GetState} $MPLAYER_AMDMULTI $R1
-  ${NSD_GetState} $MPLAYER_INTELMULTI $R2
-
-  /* $MPLAYER_SELECTION_STATE Assignments:
-  1 = Generic RTM Build
-  2 = FFmpeg-mt AMD Build
-  3 = FFmepg-mt Intel Build */
-  ${If} $R0 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 1
-  ${ElseIf} $R1 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 2
-  ${ElseIf} $R2 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 3
-  ${EndIf}
 
 FunctionEnd
 
@@ -832,6 +833,29 @@ Function PageInstfilesShow
   ${If} $REINSTALL_UNINSTALL != ""
     Call RunUninstaller
     BringToFront
+  ${EndIf}
+
+FunctionEnd
+
+Function PageLeaveMPlayerBuild
+
+  /* Gets the state of each of the choices.
+  The radio button selected is assigned '1',
+  the rest should be '0'.*/
+  ${NSD_GetState} $BUTTON_486GENERIC $R0
+  ${NSD_GetState} $BUTTON_AMDMULTI $R1
+  ${NSD_GetState} $BUTTON_INTELMULTI $R2
+
+  /* $MPLAYER_SELECTION_STATE Assignments:
+  1 = Generic RTM Build
+  2 = FFmpeg-mt AMD Build
+  3 = FFmepg-mt Intel Build */
+  ${If} $R0 == 1
+    StrCpy $MPLAYER_SELECTION_STATE 1
+  ${ElseIf} $R1 == 1
+    StrCpy $MPLAYER_SELECTION_STATE 2
+  ${ElseIf} $R2 == 1
+    StrCpy $MPLAYER_SELECTION_STATE 3
   ${EndIf}
 
 FunctionEnd
