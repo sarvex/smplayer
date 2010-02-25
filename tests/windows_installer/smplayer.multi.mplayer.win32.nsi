@@ -328,9 +328,11 @@ SectionGroup /e "MPlayer Components"
     ${If} $MPLAYER_SELECTION_STATE == 1
       File /r "smplayer-build\mplayer\*.*"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 2
+    ;AMD
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 3
+    ;Intel
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
@@ -349,9 +351,25 @@ SectionGroup /e "MPlayer Components"
     If it was unable to download, set version to that defined in the
     beginning of the script. */
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
-      ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
+
+      ${If} $MPLAYER_SELECTION_STATE == 1
+        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
+      ${ElseIf} $MPLAYER_SELECTION_STATE == 2
+        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-amd
+      ${ElseIf} $MPLAYER_SELECTION_STATE == 3
+        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-intel
+      ${EndIf}
+
     ${Else}
-      StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_VERSION}
+
+      ${If} $MPLAYER_SELECTION_STATE == 1
+        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_GENERIC}
+      ${ElseIf} $MPLAYER_SELECTION_STATE == 2
+        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_AMDMT}
+      ${ElseIf} $MPLAYER_SELECTION_STATE == 3
+        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_INTELMT}
+      ${EndIf}
+
     ${EndIf}
 
     retry_mplayer:
@@ -359,7 +377,7 @@ SectionGroup /e "MPlayer Components"
     DetailPrint $(MPLAYER_IS_DOWNLOADING)
     inetc::get /timeout 30000 /resume "" /caption $(MPLAYER_IS_DOWNLOADING) /banner "Downloading $MPLAYER_VERSION.7z" \
     "http://downloads.sourceforge.net/smplayer/$MPLAYER_VERSION.7z?big_mirror=0" \
-    "$PLUGINSDIR\$MPLAYER_VERSION.7z"
+    "$PLUGINSDIR\$MPLAYER_VERSION.7z" /end
     Pop $R0
     StrCmp $R0 OK 0 check_mplayer
 
@@ -378,7 +396,7 @@ SectionGroup /e "MPlayer Components"
 
     IfFileExists "$INSTDIR\mplayer\mplayer.exe" mplayerInstSuccess mplayerInstFailed
       mplayerInstSuccess:
-        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x1
+        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
         Goto done
       mplayerInstFailed:
         MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(MPLAYER_DL_RETRY) /SD IDCANCEL IDRETRY retry_mplayer
@@ -411,7 +429,7 @@ SectionGroup /e "MPlayer Components"
     DetailPrint $(CODECS_IS_DOWNLOADING)
     inetc::get /timeout 30000 /resume "" /caption $(CODECS_IS_DOWNLOADING) /banner "Downloading $CODEC_VERSION.zip" \
     "http://www.mplayerhq.hu/MPlayer/releases/codecs/$CODEC_VERSION.zip" \
-    "$PLUGINSDIR\$CODEC_VERSION.zip"
+    "$PLUGINSDIR\$CODEC_VERSION.zip" /end
     Pop $R0
     StrCmp $R0 OK 0 check_codecs
 
@@ -676,7 +694,7 @@ Function GetVerInfo
   IfFileExists "$PLUGINSDIR\version-info" end_dl_ver_info 0
     DetailPrint $(VERINFO_IS_DOWNLOADING)
     inetc::get /timeout 30000 /resume "" /silent "http://smplayer.sourceforge.net/mplayer-version-info" \
-    "$PLUGINSDIR\version-info"
+    "$PLUGINSDIR\version-info" /end
     Pop $R0
     StrCmp $R0 OK +2
       DetailPrint $(VERINFO_DL_FAILED)
@@ -711,7 +729,7 @@ Function PageMPlayerBuild
   Pop $0
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 100% 10u "Select the MPlayer build you would like to install and click Install to continue."
+  ${NSD_CreateLabel} 0 0 100% 10u "Select the MPlayer build you would like to install and click Next to continue."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $BUTTON_486GENERIC
