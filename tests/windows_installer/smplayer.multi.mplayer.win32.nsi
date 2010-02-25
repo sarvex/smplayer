@@ -11,6 +11,7 @@
 ;Additional plugin folders
 
   !addplugindir .
+  !addincludedir .
 
 ;--------------------------------
 ;Defines
@@ -33,14 +34,7 @@
   ;Fallback versions
   ;These can be changed in the compiler, otherwise
   ;if not defined the values shown here will be used.
-!ifndef DEFAULT_CODECS_VERSION
-  !define DEFAULT_CODECS_VERSION "windows-essential-20071007"
-!endif
-!ifndef WITH_MPLAYER
-!ifndef DEFAULT_MPLAYER_VERSION
-  !define DEFAULT_MPLAYER_VERSION "mplayer-svn-28311-2"
-!endif
-!endif
+  !include Defaults.nsh
 
 ;--------------------------------
 ;General
@@ -109,7 +103,6 @@
   !define MUI_FINISHPAGE_NOREBOOTSUPPORT
   !define MUI_FINISHPAGE_RUN $INSTDIR\smplayer.exe
   !define MUI_FINISHPAGE_RUN_NOTCHECKED
-  ;!define MUI_FINISHPAGE_RUN_PARAMETERS http://88.191.30.130:8050
   !define MUI_FINISHPAGE_SHOWREADME $INSTDIR\Release_notes.txt
   !define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
   !define MUI_FINISHPAGE_SHOWREADME_TEXT "View Release Notes"
@@ -310,12 +303,12 @@ SectionGroup /e "MPlayer Components"
     Exclude them with /x then include the appropriate build using 
     /oname= so we don't have to have two different source folders. */
     SetOutPath "$INSTDIR\mplayer"
-    ${If} $MPLAYER_SELECTION_STATE = 1
+    ${If} $MPLAYER_SELECTION_STATE == 1
       File /r "smplayer-build\mplayer\*.*"
-    ${ElseIf} $MPLAYER_SELECTION_STATE = 2
+    ${ElseIf} $MPLAYER_SELECTION_STATE == 2
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
-    ${ElseIf} $MPLAYER_SELECTION_STATE = 3
+    ${ElseIf} $MPLAYER_SELECTION_STATE == 3
       File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
@@ -331,7 +324,7 @@ SectionGroup /e "MPlayer Components"
     Call GetVerInfo
 
     ;Read from version-info
-    ;If it was unable to download, set version to that defined in DEFAULT_MPLAYER_VERSION
+    ;If it was unable to download, set version to that defined in Defaults.nsh
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
       ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
     ${Else}
@@ -382,7 +375,7 @@ SectionGroup /e "MPlayer Components"
     Call GetVerInfo
 
     ;Read from version-info
-    ;If it was unable to download, set version to that defined in DEFAULT_CODECS_VERSION
+    ;If it was unable to download, set version to that defined in Defaults.nsh
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
       ReadINIStr $CODEC_VERSION "$PLUGINSDIR\version-info" smplayer mplayercodecs
     ${Else}
@@ -518,7 +511,7 @@ Function .onInit
   ${If} $IS_ADMIN == 0
     MessageBox MB_OK|MB_ICONSTOP $(SMPLAYER_INSTALLER_NO_ADMIN)
     Abort
-  ${EndIf} 
+  ${EndIf}
 
   /* Ask for setup language */
   !insertmacro MUI_LANGDLL_DISPLAY
@@ -670,8 +663,11 @@ FunctionEnd
 
 Function LoadPreviousSettings
 
+  ;Retrieves MPlayer build
+  ReadRegDWORD $MPLAYER_SELECTION_STATE HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
+
   ;MPlayer codecs section doesn't use Memento so we need to restore it manually
-  ReadRegStr $R0 HKLM "${SMPLAYER_REG_KEY}" "Installed_Codecs"
+  ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" "Installed_Codecs"
   ${If} $R0 == 1
     !insertmacro SelectSection ${Codecs}
   ${EndIf}
@@ -681,6 +677,11 @@ Function LoadPreviousSettings
 FunctionEnd
 
 Function PageMPlayerBuild
+
+  ;Skip if doing reinstall
+  ${If} $REINSTALL_UNINSTALL == 1
+    Abort
+  ${EndIf}
 
   nsDialogs::Create /NOUNLOAD 1018
   Pop $0
@@ -705,11 +706,11 @@ Function PageMPlayerBuild
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
   the page for the first time. */
-  ${If} $MPLAYER_SELECTION_STATE = 1
+  ${If} $MPLAYER_SELECTION_STATE == 1
     SendMessage $MPLAYER_486GENERIC ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPLAYER_SELECTION_STATE = 2
+  ${ElseIf} $MPLAYER_SELECTION_STATE == 2
     SendMessage $MPLAYER_AMDMULTI ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPLAYER_SELECTION_STATE = 3
+  ${ElseIf} $MPLAYER_SELECTION_STATE == 3
     SendMessage $MPLAYER_INTELMULTI ${BM_SETCHECK} 1 0
   ${Else}
     SendMessage $MPLAYER_486GENERIC ${BM_SETCHECK} 1 0
@@ -732,13 +733,13 @@ Function PageMPlayerBuildLeave
   1 = Generic RTM Build
   2 = FFmpeg-mt AMD Build
   3 = FFmepg-mt Intel Build */
-  ${If} $R0 = 1
+  ${If} $R0 == 1
     StrCpy $MPLAYER_SELECTION_STATE 1
-	${ElseIf} $R1 = 1
+  ${ElseIf} $R1 == 1
     StrCpy $MPLAYER_SELECTION_STATE 2
-	${ElseIf} $R2 = 1
+  ${ElseIf} $R2 == 1
     StrCpy $MPLAYER_SELECTION_STATE 3
-	${EndIf}
+  ${EndIf}
 
 FunctionEnd
 
