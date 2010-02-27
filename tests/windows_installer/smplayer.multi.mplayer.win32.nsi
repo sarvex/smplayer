@@ -320,20 +320,20 @@ SectionGroup /e "MPlayer Components"
     same so we'll share the folder contents; we have the mplayer
     executables named as so:
       mplayer.exe (Generic)
-      mplayer-p4mt.exe (Intel)
       mplayer-amdmt.exe (AMD)
+      mplayer-p4mt.exe (Intel)
 
     Exclude them with /x then include the appropriate build using 
     /oname= so we don't have to maintain different source folders. */
     SetOutPath "$INSTDIR\mplayer"
-    File /r /x mplayer.exe /x mplayer-amdmt.exe /x mplayer-p4mt.exe "smplayer-build\mplayer\*.*"
+    File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
 
     ${If} $MPLAYER_SELECTION_STATE == 1
-      File "mplayer\mplayer.exe"
+      File "smplayer-build\mplayer\mplayer.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-      File /oname=mplayer.exe "mplayer\mplayer-amdmt.exe"
+      File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-      File /oname=mplayer.exe "mplayer\mplayer-p4mt.exe"
+      File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
