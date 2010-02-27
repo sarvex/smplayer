@@ -316,25 +316,24 @@ SectionGroup /e "MPlayer Components"
   Section MPlayer MPlayer
     SectionIn 1 2 3 RO
 
-    /* All the files for the FFmpeg-mt builds should be the same
-    except the mplayer.exe so we'll share the folder contents; we
-    have the mplayer executables named as so:
+    /* All the other files for the FFmpeg-mt builds should be the
+    same so we'll share the folder contents; we have the mplayer
+    executables named as so:
+      mplayer.exe (Generic)
       mplayer-p4mt.exe (Intel)
       mplayer-amdmt.exe (AMD)
 
     Exclude them with /x then include the appropriate build using 
-    /oname= so we don't have to have two different source folders. */
+    /oname= so we don't have to maintain different source folders. */
     SetOutPath "$INSTDIR\mplayer"
+    File /r /x mplayer.exe /x mplayer-amdmt.exe /x mplayer-p4mt.exe "smplayer-build\mplayer\*.*"
+
     ${If} $MPLAYER_SELECTION_STATE == 1
-      File /r "smplayer-build\mplayer\*.*"
+      File "mplayer\mplayer.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-    ;AMD
-      File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
-      File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
+      File /oname=mplayer.exe "mplayer\mplayer-amdmt.exe"
     ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-    ;Intel
-      File /r /x mplayer-p4mt.exe /x mplayer-amdmt.exe "mplayer-mt\*.*"
-      File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
+      File /oname=mplayer.exe "mplayer\mplayer-p4mt.exe"
     ${EndIf}
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
@@ -734,16 +733,18 @@ Function PageMPlayerBuild
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $BUTTON_486GENERIC
   ${NSD_AddStyle} $BUTTON_486GENERIC ${WS_GROUP}
-  ${NSD_CreateLabel} 26 55 100% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection, performance$\n\
-  may be restricted. If you are unsure, select this build."
+  ${NSD_CreateLabel} 26 50 100% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance$\n\
+  may be limited. If you are unsure, select this build."
 
-  ${NSD_CreateRadioButton} 10 95 100% 10u "AMD Multicore (X2/X3/X4/Phenom)"
+  ${NSD_CreateRadioButton} 10 90 100% 10u "AMD Multi-Core (X2/X3/X4/Phenom)"
   Pop $BUTTON_AMDMULTI
-  ${NSD_CreateLabel} 26 115 100% 20u "Optimized for multicore AMD processors using experimental multithreaded$\nFFmpeg-mt branch."
-  
-  ${NSD_CreateRadioButton} 10 155 100% 10u "Intel Multicore (P4EE/P4D/Xeon/Core2/i7/etc)"
+  ${NSD_CreateLabel} 26 105 100% 20u "Optimized for multi-core AMD processors using the experimental multithreaded$\n\
+  FFmpeg-mt branch for optimal high definition video playback."
+
+  ${NSD_CreateRadioButton} 10 145 100% 10u "Intel Multi-Core (P4EE/P4D/Xeon/Core2/i7/etc)"
   Pop $BUTTON_INTELMULTI
-  ${NSD_CreateLabel} 26 175 100% 20u "Optimized for multicore Intel processors using experimental multithreaded$\nFFmpeg-mt branch."
+  ${NSD_CreateLabel} 26 160 100% 20u "Optimized for multi-core Intel processors using the experimental multithreaded$\n\
+  FFmpeg-mt branch for optimal high definition video playback."
 
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
