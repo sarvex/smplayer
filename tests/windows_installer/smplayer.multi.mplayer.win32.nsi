@@ -65,9 +65,9 @@
   Name "SMPlayer ${SMPLAYER_VERSION}"
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION}"
 !ifdef WITH_MPLAYER
-  OutFile "smplayer-${SMPLAYER_VERSION}-multi-win32.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}-win32.exe"
 !else ifndef WITH_MPLAYER
-  OutFile "smplayer-${SMPLAYER_VERSION}-multi-win32-webdl.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}-win32-webdl.exe"
 !endif
 
   ;Version tab properties
@@ -505,7 +505,7 @@ Section -Post
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayVersion" "${SMPLAYER_VERSION}"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.berlios.de/forum"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "Publisher" "RVM"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "Publisher" "Ricardo Villalba"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLInfoAbout" "http://smplayer.sf.net"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLUpdateInfo" "http://smplayer.sf.net"
@@ -585,7 +585,7 @@ Function .onSelChange
     StrCpy $R1 $R0
     IntOp $R0 $R0 & ${SF_SELECTED}
   ${If} $R0 == ${SF_SELECTED}
-    MessageBox MB_OK $(MPLAYER_CODEC_INFORMATION)
+    MessageBox MB_OK|MB_ICONINFORMATION $(MPLAYER_CODEC_INFORMATION)
   ${EndIf}
   ${EndIf}
 
