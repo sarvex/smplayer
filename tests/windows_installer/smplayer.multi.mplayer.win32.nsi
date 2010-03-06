@@ -733,17 +733,17 @@ Function PageMPlayerBuild
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $BUTTON_486GENERIC
   ${NSD_AddStyle} $BUTTON_486GENERIC ${WS_GROUP}
-  ${NSD_CreateLabel} 26 50 100% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance$\n\
+  ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance \
   may be limited. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 90 100% 10u "AMD Multi-Core (X2/X3/X4/Phenom)"
   Pop $BUTTON_AMDMULTI
-  ${NSD_CreateLabel} 26 105 100% 20u "Optimized for multi-core AMD processors using the experimental multithreaded$\n\
+  ${NSD_CreateLabel} 26 105 90% 20u "Optimized for multi-core AMD processors using the experimental multithreaded \
   FFmpeg-mt branch for optimal high definition video playback."
 
   ${NSD_CreateRadioButton} 10 145 100% 10u "Intel Multi-Core (P4EE/P4D/Xeon/Core2/i7/etc)"
   Pop $BUTTON_INTELMULTI
-  ${NSD_CreateLabel} 26 160 100% 20u "Optimized for multi-core Intel processors using the experimental multithreaded$\n\
+  ${NSD_CreateLabel} 26 160 90% 20u "Optimized for multi-core Intel processors using the experimental multithreaded \
   FFmpeg-mt branch for optimal high definition video playback."
 
   /* Restores selection when the user leaves the page and comes back
