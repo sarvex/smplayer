@@ -43,7 +43,6 @@
 !endif
 
 !ifndef WITH_MPLAYER
-
   !ifndef DEFAULT_MPLAYER_GENERIC
     !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-30369"
   !endif
@@ -55,7 +54,11 @@
   !ifndef DEFAULT_MPLAYER_INTELMT
     !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-30687"
   !endif
+!endif
 
+  ;Version control
+!ifndef VERSION_FILE_URL
+  !define VERSION_FILE_URL "http://smplayer.sourceforge.net/mplayer-version-info"
 !endif
 
 ;--------------------------------
@@ -184,12 +187,12 @@
 ;--------------------------------
 ;Languages
 
+  !insertmacro MUI_LANGUAGE "English"
   !insertmacro MUI_LANGUAGE "Basque"
   !insertmacro MUI_LANGUAGE "Catalan"
   !insertmacro MUI_LANGUAGE "Czech"
   !insertmacro MUI_LANGUAGE "Danish"
   !insertmacro MUI_LANGUAGE "Dutch"
-  !insertmacro MUI_LANGUAGE "English"
   !insertmacro MUI_LANGUAGE "Finnish"
   !insertmacro MUI_LANGUAGE "French"
   !insertmacro MUI_LANGUAGE "German"
@@ -206,12 +209,12 @@
 
 ; Custom translations for setup
 
+  !insertmacro LANGFILE_INCLUDE "translations\english.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\basque.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\catalan.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\czech.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\danish.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\dutch.nsh"
-  !insertmacro LANGFILE_INCLUDE "translations\english.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\finnish.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\french.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\german.nsh"
@@ -692,8 +695,7 @@ Function GetVerInfo
 
   IfFileExists "$PLUGINSDIR\version-info" end_dl_ver_info 0
     DetailPrint $(VERINFO_IS_DOWNLOADING)
-    inetc::get /timeout 30000 /resume "" /silent "http://smplayer.sourceforge.net/mplayer-version-info" \
-    "$PLUGINSDIR\version-info" /end
+    inetc::get /timeout 30000 /resume "" /silent ${VERSION_FILE_URL} "$PLUGINSDIR\version-info" /end
     Pop $R0
     StrCmp $R0 OK +2
       DetailPrint $(VERINFO_DL_FAILED)
