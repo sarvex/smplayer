@@ -100,9 +100,9 @@
 ;--------------------------------
 ;Variables
 
-  Var BUTTON_486GENERIC
-  Var BUTTON_AMDMULTI
-  Var BUTTON_INTELMULTI
+  Var BUTTON_MPLAYER_CHOICE1
+  Var BUTTON_MPLAYER_CHOICE2
+  Var BUTTON_MPLAYER_CHOICE3
   Var CODEC_VERSION
   Var IS_ADMIN
   Var MPLAYER_SELECTION_STATE
@@ -319,15 +319,16 @@ SectionGroup /e "MPlayer Components"
   Section MPlayer MPlayer
     SectionIn 1 2 3 RO
 
-    /* All the other files for the FFmpeg-mt builds should be the
-    same so we'll share the folder contents; we have the mplayer
+    /* All the other files for the FFmpeg-mt and CPU Detection builds
+    should be the same so we'll share the folder contents; we have the mplayer
     executables named as so:
-      mplayer.exe (Generic)
+      mplayer.exe (Runtime CPU Detection)
       mplayer-amdmt.exe (AMD)
       mplayer-p4mt.exe (Intel)
 
-    Exclude them with /x then include the appropriate build using 
-    /oname= so we don't have to maintain different source folders. */
+    Exclude mplayer.exe from `smplayer-build\mplayer` with /x then
+    include them individually depending on MPLAYER_SELECTION_STATE
+    rename the Intel or AMD executable using `/oname=`. */
     SetOutPath "$INSTDIR\mplayer"
     File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
 
@@ -733,32 +734,32 @@ Function PageMPlayerBuild
   ${NSD_CreateLabel} 0 0 100% 10u "Select the MPlayer build you would like to install and click Next to continue."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
-  Pop $BUTTON_486GENERIC
-  ${NSD_AddStyle} $BUTTON_486GENERIC ${WS_GROUP}
+  Pop $BUTTON_MPLAYER_CHOICE1
+  ${NSD_AddStyle} $BUTTON_MPLAYER_CHOICE1 ${WS_GROUP}
   ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance \
   may be limited. If you are unsure, select this build."
 
-  ${NSD_CreateRadioButton} 10 90 100% 10u "AMD Multi-Core (X2/X3/X4/Phenom)"
-  Pop $BUTTON_AMDMULTI
-  ${NSD_CreateLabel} 26 105 90% 20u "Optimized for multi-core AMD processors using the experimental multithreaded \
+  ${NSD_CreateRadioButton} 10 80 100% 10u "AMD Multi-Core (X2/X3/X4/Phenom/etc)"
+  Pop $BUTTON_MPLAYER_CHOICE2
+  ${NSD_CreateLabel} 26 95 90% 20u "Optimized for multi-core AMD processors using the multithreaded \
   FFmpeg-mt branch for optimal high definition video playback."
 
-  ${NSD_CreateRadioButton} 10 145 100% 10u "Intel Multi-Core (P4EE/P4D/Xeon/Core2/i7/etc)"
-  Pop $BUTTON_INTELMULTI
-  ${NSD_CreateLabel} 26 160 90% 20u "Optimized for multi-core Intel processors using the experimental multithreaded \
+  ${NSD_CreateRadioButton} 10 125 100% 10u "Intel Multi-Core (P4EE/P4D/Xeon/Core2/i7/etc)"
+  Pop $BUTTON_MPLAYER_CHOICE3
+  ${NSD_CreateLabel} 26 140 90% 20u "Optimized for multi-core Intel processors using the multithreaded \
   FFmpeg-mt branch for optimal high definition video playback."
 
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
   the page for the first time. */
   ${If} $MPLAYER_SELECTION_STATE == 1
-    SendMessage $BUTTON_486GENERIC ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_MPLAYER_CHOICE1 ${BM_SETCHECK} 1 0
   ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-    SendMessage $BUTTON_AMDMULTI ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_MPLAYER_CHOICE2 ${BM_SETCHECK} 1 0
   ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-    SendMessage $BUTTON_INTELMULTI ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_MPLAYER_CHOICE3 ${BM_SETCHECK} 1 0
   ${Else}
-    SendMessage $BUTTON_486GENERIC ${BM_SETCHECK} 1 0
+    SendMessage $BUTTON_MPLAYER_CHOICE1 ${BM_SETCHECK} 1 0
   ${EndIf}
 
   nsDialogs::Show
@@ -863,9 +864,9 @@ Function PageLeaveMPlayerBuild
   /* Gets the state of each of the choices.
   The radio button selected is assigned '1',
   the rest should be '0'.*/
-  ${NSD_GetState} $BUTTON_486GENERIC $R0
-  ${NSD_GetState} $BUTTON_AMDMULTI $R1
-  ${NSD_GetState} $BUTTON_INTELMULTI $R2
+  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE1 $R0
+  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE2 $R1
+  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE3 $R2
 
   /* $MPLAYER_SELECTION_STATE Assignments:
   1 = Generic RTM Build
