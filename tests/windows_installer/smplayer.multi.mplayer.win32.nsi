@@ -731,23 +731,20 @@ Function PageMPlayerBuild
   Pop $0
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 100% 10u "Select the MPlayer build you would like to install and click Next to continue."
+  ${NSD_CreateLabel} 0 0 90% 10u "Select an MPlayer build you would like to install and click Next to continue."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $BUTTON_MPLAYER_CHOICE1
   ${NSD_AddStyle} $BUTTON_MPLAYER_CHOICE1 ${WS_GROUP}
-  ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance \
-  may be limited. If you are unsure, select this build."
+  ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance is limited with multi-core processors. If you are unsure, select this build."
 
-  ${NSD_CreateRadioButton} 10 80 100% 10u "AMD Multi-Core (X2/X3/X4/Phenom/etc)"
+  ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
   Pop $BUTTON_MPLAYER_CHOICE2
-  ${NSD_CreateLabel} 26 95 90% 20u "Optimized for multi-core AMD processors using the multithreaded \
-  FFmpeg-mt branch for optimal high definition video playback."
+  ${NSD_CreateLabel} 26 100 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
 
-  ${NSD_CreateRadioButton} 10 125 100% 10u "Intel Multi-Core (P4EE/P4D/Xeon/Core2/i7/etc)"
+  ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
   Pop $BUTTON_MPLAYER_CHOICE3
-  ${NSD_CreateLabel} 26 140 90% 20u "Optimized for multi-core Intel processors using the multithreaded \
-  FFmpeg-mt branch for optimal high definition video playback."
+  ${NSD_CreateLabel} 26 150 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
