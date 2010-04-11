@@ -771,6 +771,87 @@ ___________________________________________________________________
 Nombre: svn:executable
    + *
 
+Index: debian-rvm/patches/01-keep-pts.dpatch
+===================================================================
+--- debian-rvm/patches/01-keep-pts.dpatch	(revisión: 0)
++++ debian-rvm/patches/01-keep-pts.dpatch	(revisión: 0)
+@@ -0,0 +1,70 @@
++#! /bin/sh /usr/share/dpatch/dpatch-run
++## 01-keep-pts.dpatch by  <rvm@escomposlinux.org>
++##
++## All lines beginning with `## DP:' are a description of the patch.
++## DP: No description.
++
++@DPATCH@
++diff -urNad svn~/DOCS/man/en/mplayer.1 svn/DOCS/man/en/mplayer.1
++--- svn~/DOCS/man/en/mplayer.1	2010-04-11 15:02:23.000000000 +0200
+++++ svn/DOCS/man/en/mplayer.1	2010-04-11 15:07:42.000000000 +0200
++@@ -7669,6 +7669,14 @@
++ Do not write OpenDML index for AVI files >1GB.
++ .
++ .TP
+++.B \-keep\-pts
+++Send the original presentation timestamp (PTS) down the filter and encoder
+++chain.
+++This may cause incorrect output ("badly interleaved") if the original PTS
+++are wrong or the framerate is changed, but can be necessary for certain
+++filters (such as ASS).
+++.
+++.TP
++ .B \-noskip
++ Do not skip frames.
++ .
++diff -urNad svn~/cfg-mencoder.h svn/cfg-mencoder.h
++--- svn~/cfg-mencoder.h	2010-04-11 15:02:23.000000000 +0200
+++++ svn/cfg-mencoder.h	2010-04-11 15:07:42.000000000 +0200
++@@ -228,6 +228,9 @@
++ 	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
++ 	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
++ 
+++	{"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
+++	{"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
+++
++ 	// info header strings
++ 	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
++ 
++diff -urNad svn~/mencoder.c svn/mencoder.c
++--- svn~/mencoder.c	2010-04-11 15:02:23.000000000 +0200
+++++ svn/mencoder.c	2010-04-11 15:07:42.000000000 +0200
++@@ -200,6 +200,7 @@
++ 
++ int auto_expand=1;
++ int encode_duplicates=1;
+++int keep_pts=0;
++ 
++ // infos are empty by default
++ char *info_name=NULL;
++@@ -1044,6 +1045,11 @@
++       else
++         mp_msg(MSGT_CPLAYER,MSGL_ERR, "ASS: cannot add video filter\n");
++     }
+++    if (!keep_pts) {
+++      keep_pts = 1;
+++      mp_msg(MSGT_MENCODER, MSGL_WARN, "Warning: -ass implies -keep-pts, "
+++             "which may cause \"badly interleaved\" files.\n");
+++    }
++ 
++     if (ass_library) {
++       for (i = 0; i < demuxer->num_attachments; ++i) {
++@@ -1537,7 +1543,7 @@
++     // decode_video will callback down to ve_*.c encoders, through the video filters
++     {void *decoded_frame = decode_video(sh_video,frame_data.start,frame_data.in_size,
++       skip_flag>0 && (!sh_video->vfilter || ((vf_instance_t *)sh_video->vfilter)->control(sh_video->vfilter, VFCTRL_SKIP_NEXT_FRAME, 0) != CONTROL_TRUE), MP_NOPTS_VALUE);
++-    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame, MP_NOPTS_VALUE);}
+++    blit_frame = decoded_frame && filter_video(sh_video, decoded_frame, keep_pts ? sh_video->pts : MP_NOPTS_VALUE);}
++ 
++     if (sh_video->vf_initialized < 0) mencoder_exit(1, NULL);
++ 
+
+Cambios de propiedades en debian-rvm/patches/01-keep-pts.dpatch
+___________________________________________________________________
+Nombre: svn:executable
+   + *
+
 Index: debian-rvm/patches/03-runtime_eq.dpatch
 ===================================================================
 --- debian-rvm/patches/03-runtime_eq.dpatch	(revisión: 0)
@@ -876,7 +957,8 @@ Index: debian-rvm/patches/00list
 ===================================================================
 --- debian-rvm/patches/00list	(revisión: 0)
 +++ debian-rvm/patches/00list	(revisión: 0)
-@@ -0,0 +1 @@
+@@ -0,0 +1,2 @@
++01-keep-pts.dpatch
 +03-runtime_eq.dpatch
 Index: debian-rvm/patches/11-dshowserver.dpatch
 ===================================================================
