@@ -44,15 +44,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-30945"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31027"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-30945"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31027"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-30945"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31027"
   !endif
 !endif
 
@@ -133,13 +133,13 @@
   !define MUI_FINISHPAGE_SHOWREADME_TEXT "View Release Notes"
 
   ; Misc
-  !define MUI_WELCOMEFINISHPAGE_BITMAP "${NSISDIR}\Contrib\Graphics\Wizard\orange.bmp"
-  !define MUI_UNWELCOMEFINISHPAGE_BITMAP "${NSISDIR}\Contrib\Graphics\Wizard\orange-uninstall.bmp"
+  !define MUI_WELCOMEFINISHPAGE_BITMAP "smplayer-wizard.bmp"
+  !define MUI_UNWELCOMEFINISHPAGE_BITMAP "smplayer-wizard-uninstall.bmp"
   !define MUI_ABORTWARNING
 
   ;Installer/Uninstaller icons
-  !define MUI_ICON "${NSISDIR}\Contrib\Graphics\Icons\orange-install.ico"
-  !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\orange-uninstall.ico"
+  !define MUI_ICON "smplayer-orange-installer.ico"
+  !define MUI_UNICON "smplayer-orange-uninstaller.ico"
 
   ;Language Selection Dialog Settings
   !define MUI_LANGDLL_REGISTRY_ROOT HKLM
@@ -868,7 +868,7 @@ Function PageLeaveMPlayerBuild
   /* $MPLAYER_SELECTION_STATE Assignments:
   1 = Generic RTM Build
   2 = FFmpeg-mt AMD Build
-  3 = FFmepg-mt Intel Build */
+  3 = FFmpeg-mt Intel Build */
   ${If} $R0 == 1
     StrCpy $MPLAYER_SELECTION_STATE 1
   ${ElseIf} $R1 == 1
