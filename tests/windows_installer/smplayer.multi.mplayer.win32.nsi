@@ -99,20 +99,23 @@
 ;--------------------------------
 ;Variables
 
-  Var BUTTON_MPLAYER_CHOICE1
-  Var BUTTON_MPLAYER_CHOICE2
-  Var BUTTON_MPLAYER_CHOICE3
-  Var CODEC_VERSION
-  Var IS_ADMIN
-  Var MPLAYER_SELECTION_STATE
+  Var Codec_Version
+  Var Is_Admin
+  Var MPlayer_Choice1
+  Var MPlayer_Choice1_State
+  Var MPlayer_Choice2
+  Var MPlayer_Choice2_State
+  Var MPlayer_Choice3
+  Var MPlayer_Choice3_State
+  Var MPlayer_Selection_State
 !ifndef WITH_MPLAYER
-  Var MPLAYER_VERSION
+  Var MPlayer_Version
 !endif
-  Var PREVIOUS_VERSION
-  Var PREVIOUS_VERSION_STATE
-  Var REINSTALL_UNINSTALL
-  Var REINSTALL_UNINSTALLBUTTON
-  Var USERNAME
+  Var Previous_Version
+  Var Previous_Version_State
+  Var Reinstall_Uninstall
+  Var Reinstall_UninstallButton
+  Var UserName
 
 ;--------------------------------
 ;Interface Settings
@@ -326,20 +329,20 @@ SectionGroup /e "MPlayer Components"
       mplayer-p4mt.exe (Intel)
 
     Exclude mplayer.exe from `smplayer-build\mplayer` with /x then
-    include them individually depending on MPLAYER_SELECTION_STATE
+    include them individually depending on MPlayer_Selection_State
     rename the Intel or AMD executable using `/oname=`. */
     SetOutPath "$INSTDIR\mplayer"
     File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
 
-    ${If} $MPLAYER_SELECTION_STATE == 1
+    ${If} $MPlayer_Selection_State == 1
       File "smplayer-build\mplayer\mplayer.exe"
-    ${ElseIf} $MPLAYER_SELECTION_STATE == 2
+    ${ElseIf} $MPlayer_Selection_State == 2
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
-    ${ElseIf} $MPLAYER_SELECTION_STATE == 3
+    ${ElseIf} $MPlayer_Selection_State == 3
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
 
-    WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
+    WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPlayer_Selection_State
 
   SectionEnd
 !else ifndef WITH_MPLAYER
@@ -354,22 +357,22 @@ SectionGroup /e "MPlayer Components"
     beginning of the script. */
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
 
-      ${If} $MPLAYER_SELECTION_STATE == 1
-        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer
-      ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-amd
-      ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-        ReadINIStr $MPLAYER_VERSION "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-intel
+      ${If} $MPlayer_Selection_State == 1
+        ReadINIStr $MPlayer_Version "$PLUGINSDIR\version-info" smplayer mplayer
+      ${ElseIf} $MPlayer_Selection_State == 2
+        ReadINIStr $MPlayer_Version "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-amd
+      ${ElseIf} $MPlayer_Selection_State == 3
+        ReadINIStr $MPlayer_Version "$PLUGINSDIR\version-info" smplayer mplayer-ffmpegmt-intel
       ${EndIf}
 
     ${Else}
 
-      ${If} $MPLAYER_SELECTION_STATE == 1
-        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_GENERIC}
-      ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_AMDMT}
-      ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-        StrCpy $MPLAYER_VERSION ${DEFAULT_MPLAYER_INTELMT}
+      ${If} $MPlayer_Selection_State == 1
+        StrCpy $MPlayer_Version ${DEFAULT_MPLAYER_GENERIC}
+      ${ElseIf} $MPlayer_Selection_State == 2
+        StrCpy $MPlayer_Version ${DEFAULT_MPLAYER_AMDMT}
+      ${ElseIf} $MPlayer_Selection_State == 3
+        StrCpy $MPlayer_Version ${DEFAULT_MPLAYER_INTELMT}
       ${EndIf}
 
     ${EndIf}
@@ -377,18 +380,18 @@ SectionGroup /e "MPlayer Components"
     retry_mplayer:
 
     DetailPrint $(MPLAYER_IS_DOWNLOADING)
-    inetc::get /timeout 30000 /resume "" /caption $(MPLAYER_IS_DOWNLOADING) /banner "Downloading $MPLAYER_VERSION.7z" \
-    "http://downloads.sourceforge.net/smplayer/$MPLAYER_VERSION.7z?big_mirror=0" \
-    "$PLUGINSDIR\$MPLAYER_VERSION.7z" /end
+    inetc::get /timeout 30000 /resume "" /caption $(MPLAYER_IS_DOWNLOADING) /banner "Downloading $MPlayer_Version.7z" \
+    "http://downloads.sourceforge.net/smplayer/$MPlayer_Version.7z?big_mirror=0" \
+    "$PLUGINSDIR\$MPlayer_Version.7z" /end
     Pop $R0
     StrCmp $R0 OK 0 check_mplayer
 
     ;Extract
-    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPLAYER_VERSION.7z" -y -o"$PLUGINSDIR"'
+    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPlayer_Version.7z" -y -o"$PLUGINSDIR"'
 
     ;Copy
     CreateDirectory "$INSTDIR\mplayer"
-    CopyFiles /SILENT "$PLUGINSDIR\$MPLAYER_VERSION\*" "$INSTDIR\mplayer"
+    CopyFiles /SILENT "$PLUGINSDIR\$MPlayer_Version\*" "$INSTDIR\mplayer"
 
     check_mplayer:
     ;This label does not necessarily mean there was a download error, so check first
@@ -398,7 +401,7 @@ SectionGroup /e "MPlayer Components"
 
     IfFileExists "$INSTDIR\mplayer\mplayer.exe" mplayerInstSuccess mplayerInstFailed
       mplayerInstSuccess:
-        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPLAYER_SELECTION_STATE
+        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPlayer_Selection_State
         Goto done
       mplayerInstFailed:
         MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(MPLAYER_DL_RETRY) /SD IDCANCEL IDRETRY retry_mplayer
@@ -421,26 +424,26 @@ SectionGroup /e "MPlayer Components"
     If it was unable to download, set version to that defined in the
     beginning of the script. */
     ${If} ${FileExists} "$PLUGINSDIR\version-info"
-      ReadINIStr $CODEC_VERSION "$PLUGINSDIR\version-info" smplayer mplayercodecs
+      ReadINIStr $Codec_Version "$PLUGINSDIR\version-info" smplayer mplayercodecs
     ${Else}
-      StrCpy $CODEC_VERSION ${DEFAULT_CODECS_VERSION}
+      StrCpy $Codec_Version ${DEFAULT_CODECS_VERSION}
     ${EndIf}
 
     retry_codecs:
 
     DetailPrint $(CODECS_IS_DOWNLOADING)
-    inetc::get /timeout 30000 /resume "" /caption $(CODECS_IS_DOWNLOADING) /banner "Downloading $CODEC_VERSION.zip" \
-    "http://www.mplayerhq.hu/MPlayer/releases/codecs/$CODEC_VERSION.zip" \
-    "$PLUGINSDIR\$CODEC_VERSION.zip" /end
+    inetc::get /timeout 30000 /resume "" /caption $(CODECS_IS_DOWNLOADING) /banner "Downloading $Codec_Version.zip" \
+    "http://www.mplayerhq.hu/MPlayer/releases/codecs/$Codec_Version.zip" \
+    "$PLUGINSDIR\$Codec_Version.zip" /end
     Pop $R0
     StrCmp $R0 OK 0 check_codecs
 
     ;Extract
-    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$CODEC_VERSION.zip" -y -o"$PLUGINSDIR"'
+    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$Codec_Version.zip" -y -o"$PLUGINSDIR"'
 
     ;Copy
     CreateDirectory "$INSTDIR\mplayer\codecs"
-    CopyFiles /SILENT "$PLUGINSDIR\$CODEC_VERSION\*" "$INSTDIR\mplayer\codecs"
+    CopyFiles /SILENT "$PLUGINSDIR\$Codec_Version\*" "$INSTDIR\mplayer\codecs"
 
     check_codecs:
     ;This label does not necessarily mean there was a download error, so check first
@@ -500,7 +503,17 @@ Section -Post
 
   ;Registry entries needed for Default Programs in Vista & later
   ${If} ${AtLeastWinVista}
-    Call DefaultProgramsReg
+    WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
+    WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
+    WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue\command" "" '"$INSTDIR\smplayer.exe" -add-to-playlist "%1"'
+    WriteRegStr HKCR "MPlayerFileVideo\shell\open" "FriendlyAppName" "SMPlayer Media Player"
+    WriteRegStr HKCR "MPlayerFileVideo\shell\open\command" "" '"$INSTDIR\smplayer.exe" "%1"'
+
+    ;Modify the list of extensions added in the MacroAllExtensions macro
+    WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationDescription" $(APPLICATION_DESCRIPTION)
+    WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationName" "SMPlayer"
+    WriteRegStr HKLM "Software\RegisteredApplications" "SMPlayer" "${SMPLAYER_REG_KEY}\Capabilities"
+    !insertmacro MacroAllExtensions WriteRegStrSupportedTypes
   ${EndIf}
 
   ;Registry Uninstall information
@@ -552,6 +565,7 @@ ${MementoSectionDone}
   !insertmacro ${_action} ".f4v"
   !insertmacro ${_action} ".flac"
   !insertmacro ${_action} ".flv"
+  !insertmacro ${_action} ".hdmov"
   !insertmacro ${_action} ".iso"
   !insertmacro ${_action} ".m1v"
   !insertmacro ${_action} ".m2t"
@@ -654,7 +668,7 @@ Function .onInit
   Call CheckUserRights
 
   ;Check for admin (mimic old Inno Setup behavior)
-  ${If} $IS_ADMIN == 0
+  ${If} $Is_Admin == 0
     MessageBox MB_OK|MB_ICONSTOP $(SMPLAYER_INSTALLER_NO_ADMIN)
     Abort
   ${EndIf}
@@ -698,13 +712,13 @@ FunctionEnd
 
 Function CheckPreviousVersion
 
-  ReadRegStr $PREVIOUS_VERSION HKLM "${SMPLAYER_REG_KEY}" "Version"
+  ReadRegStr $Previous_Version HKLM "${SMPLAYER_REG_KEY}" "Version"
 
-  /* $PREVIOUS_VERSION_STATE Assignments:
-  $PREVIOUS_VERSION_STATE=0  This installer is the same version as the installed copy
-  $PREVIOUS_VERSION_STATE=1  A newer version than this installer is already installed
-  $PREVIOUS_VERSION_STATE=2  An older version than this installer is already installed */
-  ${VersionCompare} $PREVIOUS_VERSION ${SMPLAYER_VERSION} $PREVIOUS_VERSION_STATE
+  /* $Previous_Version_State Assignments:
+  $Previous_Version_State=0  This installer is the same version as the installed copy
+  $Previous_Version_State=1  A newer version than this installer is already installed
+  $Previous_Version_State=2  An older version than this installer is already installed */
+  ${VersionCompare} $Previous_Version ${SMPLAYER_VERSION} $Previous_Version_State
 
 FunctionEnd
 
@@ -713,39 +727,22 @@ Function CheckUserRights
   ClearErrors
   UserInfo::GetName
   ${If} ${Errors}
-    StrCpy $IS_ADMIN 1
+    StrCpy $Is_Admin 1
     Return
   ${EndIf}
 
-  Pop $USERNAME
+  Pop $UserName
   UserInfo::GetAccountType
   Pop $R0
   ${Switch} $R0
     ${Case} "Admin"
     ${Case} "Power"
-      StrCpy $IS_ADMIN 1
+      StrCpy $Is_Admin 1
       ${Break}
     ${Default}
-      StrCpy $IS_ADMIN 0
+      StrCpy $Is_Admin 0
       ${Break}
   ${EndSwitch}
-
-FunctionEnd
-
-Function DefaultProgramsReg
-
-  ;HKEY_CLASSES_ROOT ProgId registration
-  WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
-  WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
-  WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue\command" "" '"$INSTDIR\smplayer.exe" -add-to-playlist "%1"'
-  WriteRegStr HKCR "MPlayerFileVideo\shell\open" "FriendlyAppName" "SMPlayer Media Player"
-  WriteRegStr HKCR "MPlayerFileVideo\shell\open\command" "" '"$INSTDIR\smplayer.exe" "%1"'
-
-  ;Modify the list of extensions added in the MacroAllExtensions macro
-  WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationDescription" $(APPLICATION_DESCRIPTION)
-  WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationName" "SMPlayer"
-  WriteRegStr HKLM "Software\RegisteredApplications" "SMPlayer" "${SMPLAYER_REG_KEY}\Capabilities"
-  !insertmacro MacroAllExtensions WriteRegStrSupportedTypes
 
 FunctionEnd
 
@@ -765,7 +762,7 @@ FunctionEnd
 Function LoadPreviousSettings
 
   ;Retrieves MPlayer build
-  ReadRegDWORD $MPLAYER_SELECTION_STATE HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
+  ReadRegDWORD $MPlayer_Selection_State HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
 
   ;MPlayer codecs section doesn't use Memento so we need to restore it manually
   ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" "Installed_Codecs"
@@ -780,7 +777,7 @@ FunctionEnd
 Function PageMPlayerBuild
 
   ;Skip if doing reinstall
-  ${If} $REINSTALL_UNINSTALL == 1
+  ${If} $Reinstall_Uninstall == 1
     Abort
   ${EndIf}
 
@@ -791,29 +788,29 @@ Function PageMPlayerBuild
   ${NSD_CreateLabel} 0 0 90% 10u "Select an MPlayer build you would like to install and click Next to continue."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
-  Pop $BUTTON_MPLAYER_CHOICE1
-  ${NSD_AddStyle} $BUTTON_MPLAYER_CHOICE1 ${WS_GROUP}
+  Pop $MPlayer_Choice1
+  ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
   ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance is limited with multi-core processors. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
-  Pop $BUTTON_MPLAYER_CHOICE2
+  Pop $MPlayer_Choice2
   ${NSD_CreateLabel} 26 100 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
 
   ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
-  Pop $BUTTON_MPLAYER_CHOICE3
+  Pop $MPlayer_Choice3
   ${NSD_CreateLabel} 26 150 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
   /* Restores selection when the user leaves the page and comes back
   or sets the default choice (last Else statement) if they are viewing
   the page for the first time. */
-  ${If} $MPLAYER_SELECTION_STATE == 1
-    SendMessage $BUTTON_MPLAYER_CHOICE1 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPLAYER_SELECTION_STATE == 2
-    SendMessage $BUTTON_MPLAYER_CHOICE2 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPLAYER_SELECTION_STATE == 3
-    SendMessage $BUTTON_MPLAYER_CHOICE3 ${BM_SETCHECK} 1 0
+  ${If} $MPlayer_Selection_State == 1
+    SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
+  ${ElseIf} $MPlayer_Selection_State == 2
+    SendMessage $MPlayer_Choice2 ${BM_SETCHECK} 1 0
+  ${ElseIf} $MPlayer_Selection_State == 3
+    SendMessage $MPlayer_Choice3 ${BM_SETCHECK} 1 0
   ${Else}
-    SendMessage $BUTTON_MPLAYER_CHOICE1 ${BM_SETCHECK} 1 0
+    SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
   ${EndIf}
 
   nsDialogs::Show
@@ -822,42 +819,42 @@ FunctionEnd
 
 Function PageReinstall
 
-  ${If} $PREVIOUS_VERSION == ""
+  ${If} $Previous_Version == ""
     Abort
   ${EndIf}
 
   nsDialogs::Create /NOUNLOAD 1018
   Pop $0
 
-  ${If} $PREVIOUS_VERSION_STATE == 2
+  ${If} $Previous_Version_State == 2
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT)
     nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_OLDVER_DESCRIPTION)
     Pop $R0
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_OLDVER_UPGRADE)
-    Pop $REINSTALL_UNINSTALLBUTTON
+    Pop $Reinstall_UninstallButton
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_CHGSETTINGS)
     Pop $R0
 
-    ${If} $REINSTALL_UNINSTALL == ""
-      StrCpy $REINSTALL_UNINSTALL 1
+    ${If} $Reinstall_Uninstall == ""
+      StrCpy $Reinstall_Uninstall 1
     ${EndIf}
 
-  ${ElseIf} $PREVIOUS_VERSION_STATE == 1
+  ${ElseIf} $Previous_Version_State == 1
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT)
     nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_NEWVER_DESCRIPTION)
     Pop $R0
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_NEWVER_DOWNGRADE)
-    Pop $REINSTALL_UNINSTALLBUTTON
+    Pop $Reinstall_UninstallButton
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_CHGSETTINGS)
     Pop $R0
 
-    ${If} $REINSTALL_UNINSTALL == ""
-      StrCpy $REINSTALL_UNINSTALL 1
+    ${If} $Reinstall_Uninstall == ""
+      StrCpy $Reinstall_Uninstall 1
     ${EndIf}
 
-  ${ElseIf} $PREVIOUS_VERSION_STATE == 0
+  ${ElseIf} $Previous_Version_State == 0
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT_MAINT)
     nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_SAMEVER_DESCRIPTION)
@@ -865,10 +862,10 @@ Function PageReinstall
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_SAMEVER_ADDREMREINST)
     Pop $R0
     nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_SAMEVER_UNINSTSMP)
-    Pop $REINSTALL_UNINSTALLBUTTON
+    Pop $Reinstall_UninstallButton
 
-    ${If} $REINSTALL_UNINSTALL == ""
-      StrCpy $REINSTALL_UNINSTALL 2
+    ${If} $Reinstall_Uninstall == ""
+      StrCpy $Reinstall_Uninstall 2
     ${EndIf}
 
   ${Else}
@@ -878,8 +875,8 @@ Function PageReinstall
 
   ${EndIf}
 
-  ${If} $REINSTALL_UNINSTALL == 1
-    SendMessage $REINSTALL_UNINSTALLBUTTON ${BM_SETCHECK} 1 0
+  ${If} $Reinstall_Uninstall == 1
+    SendMessage $Reinstall_UninstallButton ${BM_SETCHECK} 1 0
   ${Else}
     SendMessage $R0 ${BM_SETCHECK} 1 0
   ${EndIf}
@@ -890,7 +887,7 @@ FunctionEnd
 
 Function PageComponentsPre
 
-  ${If} $REINSTALL_UNINSTALL == 1
+  ${If} $Reinstall_Uninstall == 1
     Abort
   ${EndIf}
 
@@ -898,7 +895,7 @@ FunctionEnd
 
 Function PageDirectoryPre
 
-  ${If} $REINSTALL_UNINSTALL == 1
+  ${If} $Reinstall_Uninstall == 1
     Abort
   ${EndIf}
 
@@ -906,7 +903,7 @@ FunctionEnd
 
 Function PageInstfilesShow
 
-  ${If} $REINSTALL_UNINSTALL != ""
+  ${If} $Reinstall_Uninstall != ""
     Call RunUninstaller
     BringToFront
   ${EndIf}
@@ -918,37 +915,37 @@ Function PageLeaveMPlayerBuild
   /* Gets the state of each of the choices.
   The radio button selected is assigned '1',
   the rest should be '0'.*/
-  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE1 $R0
-  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE2 $R1
-  ${NSD_GetState} $BUTTON_MPLAYER_CHOICE3 $R2
+  ${NSD_GetState} $MPlayer_Choice1 $MPlayer_Choice1_State
+  ${NSD_GetState} $MPlayer_Choice2 $MPlayer_Choice2_State
+  ${NSD_GetState} $MPlayer_Choice3 $MPlayer_Choice3_State
 
-  /* $MPLAYER_SELECTION_STATE Assignments:
+  /* $MPlayer_Selection_State Assignments:
   1 = Generic RTM Build
   2 = FFmpeg-mt AMD Build
   3 = FFmpeg-mt Intel Build */
-  ${If} $R0 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 1
-  ${ElseIf} $R1 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 2
-  ${ElseIf} $R2 == 1
-    StrCpy $MPLAYER_SELECTION_STATE 3
+  ${If} $MPlayer_Choice1_State == 1
+    StrCpy $MPlayer_Selection_State 1
+  ${ElseIf} $MPlayer_Choice2_State == 1
+    StrCpy $MPlayer_Selection_State 2
+  ${ElseIf} $MPlayer_Choice3_State == 1
+    StrCpy $MPlayer_Selection_State 3
   ${EndIf}
 
 FunctionEnd
 
 Function PageLeaveReinstall
 
-  SendMessage $REINSTALL_UNINSTALLBUTTON ${BM_GETCHECK} 0 0 $R0
+  SendMessage $Reinstall_UninstallButton ${BM_GETCHECK} 0 0 $R0
   ${If} $R0 == 1
     ; Option to uninstall old version selected
-    StrCpy $REINSTALL_UNINSTALL 1
+    StrCpy $Reinstall_Uninstall 1
   ${Else}
     ; Custom up/downgrade or add/remove/reinstall
-    StrCpy $REINSTALL_UNINSTALL 2
+    StrCpy $Reinstall_Uninstall 2
   ${EndIf}
 
-  ${If} $REINSTALL_UNINSTALL == 1
-    ${If} $PREVIOUS_VERSION_STATE == 0
+  ${If} $Reinstall_Uninstall == 1
+    ${If} $Previous_Version_State == 0
       Call RunUninstaller
       Quit
     ${Else}
@@ -971,8 +968,8 @@ Function RunUninstaller
 
   ClearErrors
 
-  ${If} $PREVIOUS_VERSION_STATE == 0
-  ${AndIf} $REINSTALL_UNINSTALL == 1
+  ${If} $Previous_Version_State == 0
+  ${AndIf} $Reinstall_Uninstall == 1
     ExecWait '$R1 _?=$INSTDIR'
   ${Else}
     ExecWait '$R1 /frominstall _?=$INSTDIR'
@@ -1032,7 +1029,7 @@ Function un.onInit
   Call un.CheckUserRights
 
   ;Check for admin (mimic old Inno Setup behavior)
-  ${If} $IS_ADMIN == 0
+  ${If} $Is_Admin == 0
     MessageBox MB_OK|MB_ICONSTOP $(UNINSTALL_NO_ADMIN)
     Abort
   ${EndIf}
@@ -1047,20 +1044,20 @@ Function un.CheckUserRights
   ClearErrors
   UserInfo::GetName
   ${If} ${Errors}
-    StrCpy $IS_ADMIN 1
+    StrCpy $Is_Admin 1
     Return
   ${EndIf}
 
-  Pop $USERNAME
+  Pop $UserName
   UserInfo::GetAccountType
   Pop $R0
   ${Switch} $R0
     ${Case} "Admin"
     ${Case} "Power"
-      StrCpy $IS_ADMIN 1
+      StrCpy $Is_Admin 1
       ${Break}
     ${Default}
-      StrCpy $IS_ADMIN 0
+      StrCpy $Is_Admin 0
       ${Break}
   ${EndSwitch}
 
