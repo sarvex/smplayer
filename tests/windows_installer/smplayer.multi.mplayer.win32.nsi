@@ -335,10 +335,13 @@ SectionGroup /e "MPlayer Components"
     File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
 
     ${If} $MPlayer_Selection_State == 1
+      DetailPrint "Installing CPU Runtime Detection MPlayer..."
       File "smplayer-build\mplayer\mplayer.exe"
     ${ElseIf} $MPlayer_Selection_State == 2
+      DetailPrint "Installing AMD FFmpeg-mt MPlayer..."
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPlayer_Selection_State == 3
+      DetailPrint "Installing Intel FFmpeg-mt MPlayer..."
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
 
@@ -503,17 +506,7 @@ Section -Post
 
   ;Registry entries needed for Default Programs in Vista & later
   ${If} ${AtLeastWinVista}
-    WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
-    WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
-    WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue\command" "" '"$INSTDIR\smplayer.exe" -add-to-playlist "%1"'
-    WriteRegStr HKCR "MPlayerFileVideo\shell\open" "FriendlyAppName" "SMPlayer Media Player"
-    WriteRegStr HKCR "MPlayerFileVideo\shell\open\command" "" '"$INSTDIR\smplayer.exe" "%1"'
-
-    ;Modify the list of extensions added in the MacroAllExtensions macro
-    WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationDescription" $(APPLICATION_DESCRIPTION)
-    WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationName" "SMPlayer"
-    WriteRegStr HKLM "Software\RegisteredApplications" "SMPlayer" "${SMPLAYER_REG_KEY}\Capabilities"
-    !insertmacro MacroAllExtensions WriteRegStrSupportedTypes
+    RegisterDefaultPrograms
   ${EndIf}
 
   ;Registry Uninstall information
@@ -952,6 +945,22 @@ Function PageLeaveReinstall
   ${EndIf}
 
   ${EndIf}
+
+FunctionEnd
+
+Function RegisterDefaultPrograms
+
+  WriteRegStr HKCR "MPlayerFileVideo\DefaultIcon" "" '"$INSTDIR\smplayer.exe",1'
+  WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue" "" "Enqueue in SMPlayer"
+  WriteRegStr HKCR "MPlayerFileVideo\shell\enqueue\command" "" '"$INSTDIR\smplayer.exe" -add-to-playlist "%1"'
+  WriteRegStr HKCR "MPlayerFileVideo\shell\open" "FriendlyAppName" "SMPlayer Media Player"
+  WriteRegStr HKCR "MPlayerFileVideo\shell\open\command" "" '"$INSTDIR\smplayer.exe" "%1"'
+
+  ;Modify the list of extensions added in the MacroAllExtensions macro
+  WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationDescription" $(APPLICATION_DESCRIPTION)
+  WriteRegStr HKLM "${SMPLAYER_REG_KEY}\Capabilities" "ApplicationName" "SMPlayer"
+  WriteRegStr HKLM "Software\RegisteredApplications" "SMPlayer" "${SMPLAYER_REG_KEY}\Capabilities"
+  !insertmacro MacroAllExtensions WriteRegStrSupportedTypes
 
 FunctionEnd
 
