@@ -506,7 +506,7 @@ Section -Post
 
   ;Registry entries needed for Default Programs in Vista & later
   ${If} ${AtLeastWinVista}
-    RegisterDefaultPrograms
+    Call RegisterDefaultPrograms
   ${EndIf}
 
   ;Registry Uninstall information
