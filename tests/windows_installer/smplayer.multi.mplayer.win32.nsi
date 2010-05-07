@@ -1,6 +1,6 @@
 ; Installer script for win32 SMPlayer
 ; Written by redxii (redxii@users.sourceforge.net)
-; Tested/Developed with Unicode NSIS 2.45.1
+; Tested/Developed with Unicode NSIS 2.45.1/2.46
 
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
@@ -115,10 +115,20 @@
   Var Previous_Version_State
   Var Reinstall_Uninstall
   Var Reinstall_UninstallButton
+  Var SMP_StartMenuFolder
   Var UserName
 
 ;--------------------------------
 ;Interface Settings
+
+  ;Installer/Uninstaller icons
+  !define MUI_ICON "smplayer-orange-installer.ico"
+  !define MUI_UNICON "smplayer-orange-uninstaller.ico"
+
+  ; Misc
+  !define MUI_WELCOMEFINISHPAGE_BITMAP "smplayer-orange-wizard.bmp"
+  !define MUI_UNWELCOMEFINISHPAGE_BITMAP "smplayer-orange-wizard-un.bmp"
+  !define MUI_ABORTWARNING
 
   ; License page
   !define MUI_LICENSEPAGE_RADIOBUTTONS
@@ -132,16 +142,6 @@
   !define MUI_FINISHPAGE_RUN_NOTCHECKED
   !define MUI_FINISHPAGE_SHOWREADME $INSTDIR\Release_notes.txt
   !define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
-  !define MUI_FINISHPAGE_SHOWREADME_TEXT "View Release Notes"
-
-  ; Misc
-  !define MUI_WELCOMEFINISHPAGE_BITMAP "smplayer-wizard.bmp"
-  !define MUI_UNWELCOMEFINISHPAGE_BITMAP "smplayer-wizard-uninstall.bmp"
-  !define MUI_ABORTWARNING
-
-  ;Installer/Uninstaller icons
-  !define MUI_ICON "smplayer-orange-installer.ico"
-  !define MUI_UNICON "smplayer-orange-uninstaller.ico"
 
   ;Language Selection Dialog Settings
   !define MUI_LANGDLL_REGISTRY_ROOT HKLM
@@ -151,6 +151,13 @@
   ;Memento Settings
   !define MEMENTO_REGISTRY_ROOT HKLM
   !define MEMENTO_REGISTRY_KEY "${SMPLAYER_REG_KEY}"
+
+  ;Start Menu Settings
+  !define MUI_STARTMENUPAGE_DEFAULTFOLDER "SMPlayer"
+  !define MUI_STARTMENUPAGE_NODISABLE
+  !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
+  !define MUI_STARTMENUPAGE_REGISTRY_KEY "${SMPLAYER_UNINST_KEY}"
+  !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "NSIS:StartMenu"
 
 ;--------------------------------
 ;Include Modern UI and functions
@@ -167,16 +174,27 @@
 ;Pages
 
   ;Install pages
+  #Welcome
   !insertmacro MUI_PAGE_WELCOME
+  #License
   !insertmacro MUI_PAGE_LICENSE "smplayer-build\Copying.txt"
+  #Upgrade/Reinstall
   Page custom PageReinstall PageLeaveReinstall
+  #Components
   !define MUI_PAGE_CUSTOMFUNCTION_PRE PageComponentsPre
   !insertmacro MUI_PAGE_COMPONENTS
-  Page custom PageMPlayerBuild PageLeaveMPlayerBuild
+  #Install Directory
   !define MUI_PAGE_CUSTOMFUNCTION_PRE PageDirectoryPre
   !insertmacro MUI_PAGE_DIRECTORY
+  #Start Menu
+  !define MUI_PAGE_CUSTOMFUNCTION_PRE PageStartMenuPre
+  !insertmacro MUI_PAGE_STARTMENU "SMP_SMenu" $SMP_StartMenuFolder
+  #MPlayer Build
+  Page custom PageMPlayerBuild PageLeaveMPlayerBuild
+  #Install
   !define MUI_PAGE_CUSTOMFUNCTION_SHOW PageInstfilesShow
   !insertmacro MUI_PAGE_INSTFILES
+  #Finish
   !insertmacro MUI_PAGE_FINISH
 
   ;Uninstall pages
@@ -242,20 +260,14 @@
   ReserveFile "${NSISDIR}\Plugins\UserInfo.dll"
 
 ;--------------------------------
-;Installer Types
-
-  InstType "Typical"
-  InstType "Compact"
-  InstType "Full"
-
-;--------------------------------
 ;Installer Sections
 
 ;--------------------------------
 ;Main SMPlayer files
 Section SMPlayer SMPlayer
 
-  SectionIn 1 2 3 RO
+  SectionIn RO
+
   SetOutPath "$INSTDIR"
   File "smplayer-build\*"
 
@@ -291,7 +303,6 @@ SectionEnd
 ;--------------------------------
 ;Desktop shortcut
 ${MementoSection} "Desktop Shortcut" DesktopIcon
-  SectionIn 1 3
 
   SetOutPath "$INSTDIR"
   SetShellVarContext all
@@ -302,14 +313,15 @@ ${MementoSectionEnd}
 ;--------------------------------
 ;Start menu shortcuts
 ${MementoSection} "Start Menu Shortcut" StartMenuIcon
-  SectionIn 1 3
 
   SetOutPath "$INSTDIR"
   SetShellVarContext all
-  CreateDirectory "$SMPROGRAMS\SMPlayer"
-  CreateShortCut "$SMPROGRAMS\SMPlayer\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
-  WriteINIStr    "$SMPROGRAMS\SMPlayer\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
-  CreateShortCut "$SMPROGRAMS\SMPlayer\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
+  !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
+    CreateDirectory "$SMPROGRAMS\$SMP_StartMenuFolder"
+    CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
+    WriteINIStr    "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
+    CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
+  !insertmacro MUI_STARTMENU_WRITE_END
 
 ${MementoSectionEnd}
 
@@ -319,7 +331,8 @@ SectionGroup /e "MPlayer Components"
 
 !ifdef WITH_MPLAYER
   Section MPlayer MPlayer
-    SectionIn 1 2 3 RO
+
+    SectionIn RO
 
     /* All the other files for the FFmpeg-mt and CPU Detection builds
     should be the same so we'll share the folder contents; we have the mplayer
@@ -350,7 +363,8 @@ SectionGroup /e "MPlayer Components"
   SectionEnd
 !else ifndef WITH_MPLAYER
   Section MPlayer MPlayer
-    SectionIn 1 2 3 RO
+
+    SectionIn RO
     AddSize 16800
 
     Call GetVerInfo
@@ -389,10 +403,8 @@ SectionGroup /e "MPlayer Components"
     Pop $R0
     StrCmp $R0 OK 0 check_mplayer
 
-    ;Extract
     nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPlayer_Version.7z" -y -o"$PLUGINSDIR"'
 
-    ;Copy
     CreateDirectory "$INSTDIR\mplayer"
     CopyFiles /SILENT "$PLUGINSDIR\$MPlayer_Version\*" "$INSTDIR\mplayer"
 
@@ -415,10 +427,8 @@ SectionGroup /e "MPlayer Components"
   SectionEnd
 !endif
 
-;--------------------------------
-;MPlayer codecs
   Section /o "Binary Codecs" Codecs
-    SectionIn 3
+
     AddSize 22300
 
     Call GetVerInfo
@@ -441,10 +451,8 @@ SectionGroup /e "MPlayer Components"
     Pop $R0
     StrCmp $R0 OK 0 check_codecs
 
-    ;Extract
     nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$Codec_Version.zip" -y -o"$PLUGINSDIR"'
 
-    ;Copy
     CreateDirectory "$INSTDIR\mplayer\codecs"
     CopyFiles /SILENT "$PLUGINSDIR\$Codec_Version\*" "$INSTDIR\mplayer\codecs"
 
@@ -474,7 +482,6 @@ SectionGroupEnd
 ;Icon themes
 ${MementoSection} "Icon Themes" Themes
 
-  SectionIn 1 3
   SetOutPath "$INSTDIR\themes"
   File /r "smplayer-build\themes\*.*"
 
@@ -484,7 +491,6 @@ ${MementoSectionEnd}
 ;Translations
 ${MementoSection} Translations Translations
 
-  SectionIn 1 3
   SetOutPath "$INSTDIR\translations"
   File /r "smplayer-build\translations\*.*"
 
@@ -607,10 +613,10 @@ ${MementoSectionDone}
 
   SetShellVarContext all
   Delete "$DESKTOP\SMPlayer.lnk"
-  Delete "$SMPROGRAMS\SMPlayer\SMPlayer.lnk" 
-  Delete "$SMPROGRAMS\SMPlayer\SMPlayer on the Web.url"
-  Delete "$SMPROGRAMS\SMPlayer\Uninstall SMPlayer.lnk"
-  RMDir "$SMPROGRAMS\SMPlayer"
+  Delete "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer.lnk" 
+  Delete "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer on the Web.url"
+  Delete "$SMPROGRAMS\$SMP_StartMenuFolder\Uninstall SMPlayer.lnk"
+  RMDir "$SMPROGRAMS\$SMP_StartMenuFolder"
 
   ;Delete directories recursively except for main directory
   ;Do not recursively delete $INSTDIR
@@ -649,7 +655,7 @@ ${MementoSectionDone}
 
 Function .onInit
 
-  /* Check if setup is already running */
+  ;Check if setup is already running
   System::Call 'kernel32::CreateMutexW(i 0, i 0, t "MPlayerSMPlayer") i .r1 ?e'
   Pop $R0
 
@@ -657,16 +663,15 @@ Function .onInit
     MessageBox MB_OK|MB_ICONEXCLAMATION $(SMPLAYER_INSTALLER_IS_RUNNING)
     Abort
 
-  /* Privileges Check */
+  ;Check for admin (mimic old Inno Setup behavior)
   Call CheckUserRights
 
-  ;Check for admin (mimic old Inno Setup behavior)
   ${If} $Is_Admin == 0
     MessageBox MB_OK|MB_ICONSTOP $(SMPLAYER_INSTALLER_NO_ADMIN)
     Abort
   ${EndIf}
 
-  /* Ask for setup language */
+  ;Setup language selection
   !insertmacro MUI_LANGDLL_DISPLAY
 
   Call CheckPreviousVersion
@@ -754,14 +759,17 @@ FunctionEnd
 
 Function LoadPreviousSettings
 
-  ;Retrieves MPlayer build
-  ReadRegDWORD $MPlayer_Selection_State HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
-
   ;MPlayer codecs section doesn't use Memento so we need to restore it manually
   ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" "Installed_Codecs"
   ${If} $R0 == 1
     !insertmacro SelectSection ${Codecs}
   ${EndIf}
+
+  ;Retrieves MPlayer build
+  ReadRegDWORD $MPlayer_Selection_State HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
+
+  ;Gets start menu folder name
+  !insertmacro MUI_STARTMENU_GETFOLDER "SMP_SMenu" $SMP_StartMenuFolder
 
   ${MementoSectionRestore}
 
@@ -778,7 +786,7 @@ Function PageMPlayerBuild
   Pop $0
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 90% 10u "Select an MPlayer build you would like to install and click Next to continue."
+  ${NSD_CreateLabel} 0 0 90% 10u "Select an MPlayer build you would like to install. Click Install to start the installation."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $MPlayer_Choice1
@@ -793,9 +801,9 @@ Function PageMPlayerBuild
   Pop $MPlayer_Choice3
   ${NSD_CreateLabel} 26 150 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
-  /* Restores selection when the user leaves the page and comes back
-  or sets the default choice (last Else statement) if they are viewing
-  the page for the first time. */
+  /* Selects build previously installed based on Install_MPlayer,
+  or select first choice by default. */
+
   ${If} $MPlayer_Selection_State == 1
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
   ${ElseIf} $MPlayer_Selection_State == 2
@@ -889,6 +897,18 @@ FunctionEnd
 Function PageDirectoryPre
 
   ${If} $Reinstall_Uninstall == 1
+    Abort
+  ${EndIf}
+
+FunctionEnd
+
+Function PageStartMenuPre
+
+  ${If} $Reinstall_Uninstall == 1
+    Abort
+  ${EndIf}
+
+  ${IfNot} ${SectionIsSelected} ${StartMenuIcon}
     Abort
   ${EndIf}
 
@@ -1035,13 +1055,16 @@ SectionEnd
 
 Function un.onInit
 
+  ;Check for admin (mimic old Inno Setup behavior)
   Call un.CheckUserRights
 
-  ;Check for admin (mimic old Inno Setup behavior)
   ${If} $Is_Admin == 0
     MessageBox MB_OK|MB_ICONSTOP $(UNINSTALL_NO_ADMIN)
     Abort
   ${EndIf}
+
+  ;Gets start menu folder name
+  !insertmacro MUI_STARTMENU_GETFOLDER "SMP_SMenu" $SMP_StartMenuFolder
 
   ;Get the stored language preference
   !insertmacro MUI_UNGETLANGUAGE
