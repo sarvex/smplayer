@@ -107,6 +107,7 @@
   Var MPlayer_Choice2_State
   Var MPlayer_Choice3
   Var MPlayer_Choice3_State
+  Var MPlayer_Font
   Var MPlayer_Selection_State
 !ifndef WITH_MPLAYER
   Var MPlayer_Version
@@ -137,6 +138,8 @@
   !define MUI_COMPONENTSPAGE_SMALLDESC
 
   ; Finish page
+  !define MUI_FINISHPAGE_LINK "http://smplayer.sourceforge.net"
+  !define MUI_FINISHPAGE_LINK_LOCATION "http://smplayer.sourceforge.net"
   !define MUI_FINISHPAGE_NOREBOOTSUPPORT
   !define MUI_FINISHPAGE_RUN $INSTDIR\smplayer.exe
   !define MUI_FINISHPAGE_RUN_NOTCHECKED
@@ -786,20 +789,20 @@ Function PageMPlayerBuild
   Pop $0
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 90% 10u "Select an MPlayer build you would like to install. Click Install to start the installation."
+  ${NSD_CreateLabel} 0 0 100% 20u "Select an MPlayer build you would like to install. Click Install to start the installation."
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
-  ${NSD_CreateLabel} 26 50 90% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance is limited with multi-core processors. If you are unsure, select this build."
+  ${NSD_CreateLabel} 27 50 95% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance is limited with multi-core processors. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
   Pop $MPlayer_Choice2
-  ${NSD_CreateLabel} 26 100 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
+  ${NSD_CreateLabel} 27 100 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
 
   ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
   Pop $MPlayer_Choice3
-  ${NSD_CreateLabel} 26 150 90% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
+  ${NSD_CreateLabel} 27 150 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
   /* Selects build previously installed based on Install_MPlayer,
   or select first choice by default. */
@@ -813,6 +816,11 @@ Function PageMPlayerBuild
   ${Else}
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
   ${EndIf}
+
+  CreateFont $MPlayer_Font $(^Font) $(^FontSize) 700
+  SendMessage $MPlayer_Choice1 ${WM_SETFONT} $MPlayer_Font 1
+  SendMessage $MPlayer_Choice2 ${WM_SETFONT} $MPlayer_Font 1
+  SendMessage $MPlayer_Choice3 ${WM_SETFONT} $MPlayer_Font 1
 
   nsDialogs::Show
 
