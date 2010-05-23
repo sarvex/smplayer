@@ -79,9 +79,9 @@
   VIAddVersionKey "FileVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "LegalCopyright" ""
 !ifdef WITH_MPLAYER
-  VIAddVersionKey "FileDescription" "SMPlayer Installer (w/ MPlayer)"
+  VIAddVersionKey "FileDescription" "SMPlayer Installer (Offline)"
 !else ifndef WITH_MPLAYER
-  VIAddVersionKey "FileDescription" "SMPlayer Installer (MPlayer Web Downloader)"
+  VIAddVersionKey "FileDescription" "SMPlayer Installer (Web Downloader)"
 !endif
 
   ;Default installation folder
@@ -275,7 +275,7 @@
 
 ;--------------------------------
 ;Main SMPlayer files
-Section SMPlayer SMPlayer
+Section "SMPlayer (required)" SecSMPlayer
 
   SectionIn RO
 
@@ -312,36 +312,36 @@ Section SMPlayer SMPlayer
 SectionEnd
 
 ;--------------------------------
-;Desktop shortcut
-${MementoSection} "Desktop Shortcut" DesktopIcon
+;Shortcuts
+SectionGroup /e "Shortcuts"
 
-  SetOutPath "$INSTDIR"
-  SetShellVarContext all
-  CreateShortCut "$DESKTOP\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
+  ${MementoSection} "Desktop" SecDesktopShortcut
 
-${MementoSectionEnd}
+    SetOutPath "$INSTDIR"
+    CreateShortCut "$DESKTOP\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
 
-;--------------------------------
-;Start menu shortcuts
-${MementoSection} "Start Menu Shortcut" StartMenuIcon
+  ${MementoSectionEnd}
 
-  SetOutPath "$INSTDIR"
-  SetShellVarContext all
-  !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
-    CreateDirectory "$SMPROGRAMS\$SMP_StartMenuFolder"
-    CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
-    WriteINIStr    "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
-    CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
-  !insertmacro MUI_STARTMENU_WRITE_END
+  ${MementoSection} "Start Menu" SecStartMenuShortcut
 
-${MementoSectionEnd}
+    SetOutPath "$INSTDIR"
+    !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
+      CreateDirectory "$SMPROGRAMS\$SMP_StartMenuFolder"
+      CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
+      WriteINIStr    "$SMPROGRAMS\$SMP_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
+      CreateShortCut "$SMPROGRAMS\$SMP_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
+    !insertmacro MUI_STARTMENU_WRITE_END
+
+  ${MementoSectionEnd}
+
+SectionGroupEnd
 
 ;--------------------------------
 ;MPlayer & MPlayer Codecs
-SectionGroup /e "MPlayer Components"
+SectionGroup "MPlayer Components"
 
 !ifdef WITH_MPLAYER
-  Section MPlayer MPlayer
+  Section "MPlayer (required)" SecMPlayer
 
     SectionIn RO
 
@@ -359,13 +359,10 @@ SectionGroup /e "MPlayer Components"
     File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
 
     ${If} $MPlayer_Selection_State == 1
-      DetailPrint "Installing CPU Runtime Detection MPlayer..."
       File "smplayer-build\mplayer\mplayer.exe"
     ${ElseIf} $MPlayer_Selection_State == 2
-      DetailPrint "Installing AMD FFmpeg-mt MPlayer..."
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPlayer_Selection_State == 3
-      DetailPrint "Installing Intel FFmpeg-mt MPlayer..."
       File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
     ${EndIf}
 
@@ -373,7 +370,7 @@ SectionGroup /e "MPlayer Components"
 
   SectionEnd
 !else ifndef WITH_MPLAYER
-  Section MPlayer MPlayer
+  Section "MPlayer (required)" SecMPlayer
 
     SectionIn RO
     AddSize 16800
@@ -438,7 +435,7 @@ SectionGroup /e "MPlayer Components"
   SectionEnd
 !endif
 
-  Section /o "Binary Codecs" Codecs
+  Section /o "Binary Codecs" SecCodecs
 
     AddSize 22300
 
@@ -491,7 +488,7 @@ SectionGroupEnd
 
 ;--------------------------------
 ;Icon themes
-${MementoSection} "Icon Themes" Themes
+${MementoSection} "Icon Themes" SecThemes
 
   SetOutPath "$INSTDIR\themes"
   File /r "smplayer-build\themes\*.*"
@@ -500,7 +497,7 @@ ${MementoSectionEnd}
 
 ;--------------------------------
 ;Translations
-${MementoSection} Translations Translations
+${MementoSection} "Localizations" SecTranslations
 
   SetOutPath "$INSTDIR\translations"
   File /r "smplayer-build\translations\*.*"
@@ -545,17 +542,17 @@ ${MementoSectionDone}
 ;--------------------------------
 ;Section descriptions
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-  !insertmacro MUI_DESCRIPTION_TEXT ${SMPlayer} "SMPlayer, shared libraries, and documentation."
-  !insertmacro MUI_DESCRIPTION_TEXT ${DesktopIcon} "Creates a shortcut on the desktop."
-  !insertmacro MUI_DESCRIPTION_TEXT ${StartMenuIcon} "Creates start menu shortcuts."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecSMPlayer} "SMPlayer, shared libraries, and documentation."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecDesktopShortcut} "Creates a shortcut to SMPlayer on the desktop."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecStartMenuShortcut} "Create a Start Menu entry for SMPlayer."
 !ifdef WITH_MPLAYER
-  !insertmacro MUI_DESCRIPTION_TEXT ${MPlayer} "The engine behind SMPlayer, required for playback."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecMPlayer} "MPlayer; required for playback."
 !else ifndef WITH_MPLAYER
-  !insertmacro MUI_DESCRIPTION_TEXT ${MPlayer} "Downloads/installs MPlayer; requires an active internet connection. Required for playback."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecMPlayer} "MPlayer; required for playback. (Internet Connection required for installation)"
 !endif
-  !insertmacro MUI_DESCRIPTION_TEXT ${Codecs} "Downloads/installs optional binary codecs for MPlayer; requires an active internet connection."
-  !insertmacro MUI_DESCRIPTION_TEXT ${Themes} "Additional icon themes for SMPlayer."
-  !insertmacro MUI_DESCRIPTION_TEXT ${Translations} "Translations for the SMPlayer interface && help into 30+ additional languages."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecCodecs} "Optional codecs for MPlayer. (Internet Connection required for installation)"
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecThemes} "Additional icon themes for SMPlayer."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecTranslations} "Non-English localizations."
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ;--------------------------------
@@ -689,6 +686,8 @@ Function .onInit
 
   Call LoadPreviousSettings
 
+  SetShellVarContext all
+
 FunctionEnd
 
 Function .onInstSuccess
@@ -708,7 +707,7 @@ FunctionEnd
 
 Function .onSelChange
 
-  SectionGetFlags ${Codecs} $R0
+  SectionGetFlags ${SecCodecs} $R0
   ${If} $R0 != $R1
     StrCpy $R1 $R0
     IntOp $R0 $R0 & ${SF_SELECTED}
@@ -773,7 +772,7 @@ Function LoadPreviousSettings
   ;MPlayer codecs section doesn't use Memento so we need to restore it manually
   ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" "Installed_Codecs"
   ${If} $R0 == 1
-    !insertmacro SelectSection ${Codecs}
+    !insertmacro SelectSection ${SecCodecs}
   ${EndIf}
 
   ;Retrieves MPlayer build
@@ -797,7 +796,7 @@ Function PageMPlayerBuild
   Pop $0
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 100% 20u "Select an MPlayer build you would like to install. Click Install to start the installation."
+  ${NSD_CreateLabel} 0 0 100% 20u "Select an MPlayer build you would like to install. $_CLICK"
 
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
   Pop $MPlayer_Choice1
@@ -924,7 +923,7 @@ Function PageStartMenuPre
     Abort
   ${EndIf}
 
-  ${IfNot} ${SectionIsSelected} ${StartMenuIcon}
+  ${IfNot} ${SectionIsSelected} ${SecStartMenuShortcut}
     Abort
   ${EndIf}
 
