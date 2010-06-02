@@ -16,6 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+"X-Language: ru_RU\n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -31,7 +32,7 @@ msgstr "Windows"
 
 #: ../downloads.php:38
 msgid "Package with installer:"
-msgstr "Пакет с программой установки"
+msgstr "Пакет с программой установки:"
 
 #: ../downloads.php:43
 msgid ""
@@ -70,7 +71,7 @@ msgstr ""
 "Этот пакет добавляет поддержку кодеков, которые не включены в mplayer,\n"
 "например, новые форматы RealVideo и большое количество других.\n"
 "Обратите внимания, что эти кодеки не нужны для воспроизведения большинства\n"
-"популярных форматов вроде DVD, MPEG-1/2/4 и прочих\n"
+"популярных форматов вроде DVD, MPEG-1/2/4 и прочих.\n"
 
 #: ../downloads.php:99
 msgid ""
@@ -110,13 +111,13 @@ msgid ""
 msgstr ""
 "Переносимая версия SMPlayer. Может запускаться с внешних устройств, таких\n"
 "как USB-Flash носители. Не требует инсталляции, нужно лишь распаковать\n"
-"архив куда вам необходимо и двойным кликом запустить smplayer.exe"
+"архив куда вам необходимо и двойным кликом запустить smplayer.exe."
 
 #: ../downloads.php:147
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
-msgstr "Пакет также включает темы иконок, переводы и сборку MPlayer"
+msgstr "Пакет также включает темы иконок, переводы и сборку MPlayer."
 
 #: ../downloads.php:150
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
@@ -217,7 +218,7 @@ msgstr ""
 "Этот пакет содержит новейшую версию SMPlayer (часто прямо из\n"
 "SVN-репозитория), а также новейшую версию MPlayer. Он также содержит\n"
 "свою программу установки, а сборки mplayer оптимизированы для разных\n"
-"типов процессоров и бинарных кодеков"
+"типов процессоров и бинарных кодеков."
 
 #: ../downloads.php:282
 msgid "Unstable releases"
@@ -286,8 +287,8 @@ msgid ""
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer представляет собой полноценную графическую оболочку для <a href=%"
-"1>MPlayer</a>,\n"
+"SMPlayer представляет собой полноценную графическую оболочку для <a "
+"href=%1>MPlayer</a>,\n"
 "обеспечивающую как базовые функции MPlayer (воспроизведение видео, DVD и "
 "VCD), \n"
 "так и более продвинутые, такие как поддержка фильтров для MPlayer и прочие."
@@ -407,11 +408,11 @@ msgstr ""
 
 #: ../info.php:59
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr "Мультиплатформенность. Доступны сборки для Windows и Linux"
+msgstr "Мультиплатформенность. Доступны сборки для Windows и Linux."
 
 #: ../info.php:61
 msgid "SMPlayer is under the <b>GPL</b> license."
-msgstr "SMPlayer распространяется по <b>GPL</b> лицензии"
+msgstr "SMPlayer распространяется по <b>GPL</b> лицензии."
 
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
@@ -419,7 +420,7 @@ msgstr "SMPlayer - Скриншоты"
 
 #: ../screenshots.php:35
 msgid "Here you can see some screenshots from SMPlayer:"
-msgstr "Здесь можно посмотреть на некоторые скриншоты SMPlayer"
+msgstr "Здесь можно посмотреть на некоторые скриншоты SMPlayer:"
 
 #: ../screenshots.php:41
 msgid "This is the main window"
@@ -459,7 +460,7 @@ msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, запущенный в новом KDE 4"
 
 #~ msgid "1970"
-#~ msgstr "1973"
+#~ msgstr "1970"
 
 #~ msgid "Donations"
 #~ msgstr "Пожертвования"
@@ -476,8 +477,8 @@ msgstr "SMPlayer, запущенный в новом KDE 4"
 #~ "has support for some of the new features of mplayer, so a newer version \n"
 #~ "is highly recommended."
 #~ msgstr ""
-#~ "Версия mplayer, включённая в Ubuntu старовата (%1). SMPlayer "
-#~ "поддерживает \n"
+#~ "Версия mplayer, включённая в Ubuntu старовата (%1). SMPlayer поддерживает "
+#~ "\n"
 #~ "некоторые возможности новых версий mplayer, поэтому настоятельно \n"
 #~ "рекомендуется новая версия. Вы можете загрузить здесь %2 (от %3)."
 
