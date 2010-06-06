@@ -340,11 +340,10 @@ SectionGroupEnd
 ;MPlayer & MPlayer Codecs
 SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
 
-!ifdef WITH_MPLAYER
   Section $(SMPLAYER_SECMPLAYER_TITLE) SecMPlayer
 
     SectionIn RO
-
+!ifdef WITH_MPLAYER
     /* All the other files for the FFmpeg-mt and CPU Detection builds
     should be the same so we'll share the folder contents; we have the mplayer
     executables named as so:
@@ -367,12 +366,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
     ${EndIf}
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPlayer_Selection_State
-
-  SectionEnd
 !else ifndef WITH_MPLAYER
-  Section $(SMPLAYER_SECMPLAYER_TITLE) SecMPlayer
-
-    SectionIn RO
     AddSize 16800
 
     Call GetVerInfo
@@ -431,9 +425,8 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
         Abort $(MPLAYER_INST_FAILED)
 
     done:
-
-  SectionEnd
 !endif
+  SectionEnd
 
   Section /o $(SMPLAYER_SECCODECS_TITLE) SecCodecs
 
@@ -798,10 +791,10 @@ Function PageMPlayerBuild
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
   ${NSD_CreateLabel} 0 0 100% 20u "Select an MPlayer build you would like to install. $_CLICK"
 
-  ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (Generic)"
+  ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (x86/x86-64 Generic)"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
-  ${NSD_CreateLabel} 27 50 95% 20u "Generic build for all x86/x86-64 CPUs using runtime cpudetection; performance is limited with multi-core processors. If you are unsure, select this build."
+  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit CPUs. Performance is limited, and cannot fully utilize multi-core CPUs. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
   Pop $MPlayer_Choice2
