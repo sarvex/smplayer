@@ -43,15 +43,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31027"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31170"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31027"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31170"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31027"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31170"
   !endif
 !endif
 
@@ -405,6 +405,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
     Pop $R0
     StrCmp $R0 OK 0 check_mplayer
 
+    DetailPrint "Extracting files..."
     nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$MPlayer_Version.7z" -y -o"$PLUGINSDIR"'
 
     CreateDirectory "$INSTDIR\mplayer"
@@ -452,6 +453,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
     Pop $R0
     StrCmp $R0 OK 0 check_codecs
 
+    DetailPrint "Extracting files..."
     nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$Codec_Version.zip" -y -o"$PLUGINSDIR"'
 
     CreateDirectory "$INSTDIR\mplayer\codecs"
@@ -632,6 +634,7 @@ ${MementoSectionDone}
   RMDir /r "$INSTDIR\themes"
   RMDir /r "$INSTDIR\translations"
   Delete "$INSTDIR\*.txt"
+  Delete "$INSTDIR\libgcc_s_dw2-1.dll"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\Q*.dll"
   Delete "$INSTDIR\smplayer.exe"
@@ -794,7 +797,7 @@ Function PageMPlayerBuild
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (x86/x86-64 Generic)"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
-  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit CPUs. Performance is limited, and cannot fully utilize multi-core CPUs. If you are unsure, select this build."
+  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot fully utilize multi-core CPUs. If you are unsure, select this build."
 
   ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
   Pop $MPlayer_Choice2
