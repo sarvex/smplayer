@@ -33,7 +33,7 @@
   Name "SMPlayer"
   BrandingText "SMPlayer v${SMPLAYER_VERSION} Portable Edition"
 !ifdef WITH_MULTIMP
-  OutFile "smplayer-multimp-${SMPLAYER_VERSION}-portable.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}-multimp-portable.exe"
 !else ifndef WITH_MULTIMP
   OutFile "smplayer-${SMPLAYER_VERSION}-portable.exe"
 !endif
@@ -158,6 +158,8 @@ Section -SMPlayer
 !ifndef WITH_MULTIMP
   File /r /x *.bak "smplayer-build\*.*"
 !else ifdef WITH_MULTIMP
+  AddSize -31400
+
   File /r /x *.bak /x mplayer.exe "smplayer-build\*.*"
 
   SetOutPath "$INSTDIR\mplayer"
