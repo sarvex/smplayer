@@ -47,7 +47,7 @@
   VIAddVersionKey "ProductVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "FileVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "LegalCopyright" ""
-  VIAddVersionKey "FileDescription" "SMPlayer Portable Extractor"
+  VIAddVersionKey "FileDescription" "SMPlayer Portable SFX"
 
   ;Default extraction folder
   InstallDir ".\SMPlayer-Portable-${SMPLAYER_VERSION}"
@@ -112,16 +112,16 @@ Function PageMPlayerBuild
   ${NSD_CreateIcon} 0 0 32 32 icon
   Pop $7zIcon
   ${NSD_SetIconFromInstaller} $7zIcon $7zIcon_Handle
-  
+
   ${NSD_CreateLabel} 25u 0 241u 18u "Select an MPlayer build optimized for your CPU. If you are unsure, select 'Runtime CPU Detection'. Click Extract to continue."
 
-  ${NSD_CreateRadioButton} 10u 25u 100% 10u "Runtime CPU Detection (x86/x86-64 Generic)"
+  ${NSD_CreateRadioButton} 25u 25u 200u 10u "Runtime CPU Detection (x86/x86-64 Generic)"
   Pop $MPlayer_Choice1
 
-  ${NSD_CreateRadioButton} 10u 38u 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
+  ${NSD_CreateRadioButton} 25u 37u 200u 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
   Pop $MPlayer_Choice2
 
-  ${NSD_CreateRadioButton} 10u 51u 100% 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
+  ${NSD_CreateRadioButton} 25u 49u 200u 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
   Pop $MPlayer_Choice3
 
   SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
