@@ -10,7 +10,7 @@
 ;Compressor
 
   SetCompressor /SOLID lzma
-  SetCompressorDictSize 32
+  SetCompressorDictSize 64
 
 ;--------------------------------
 ;Additional plugin folders
@@ -31,26 +31,22 @@
 
   ;Name and file
   Name "SMPlayer"
-  BrandingText "SMPlayer v${SMPLAYER_VERSION} Portable Edition"
-!ifdef WITH_MULTIMP
-  OutFile "smplayer-${SMPLAYER_VERSION}-multimp-portable.exe"
-!else ifndef WITH_MULTIMP
-  OutFile "smplayer-${SMPLAYER_VERSION}-portable.exe"
-!endif
+  BrandingText "SMPlayer v${SMPLAYER_VERSION} SFX"
+  OutFile "smplayer-${SMPLAYER_VERSION}-sfx.exe"
 
   ;Installer/Uninstaller icons
   !define MUI_ICON "7z.ico"
 
   ;Version tab properties
   VIProductVersion "${SMPLAYER_PRODUCT_VERSION}"
-  VIAddVersionKey "ProductName" "SMPlayer Portable Edition"
+  VIAddVersionKey "ProductName" "SMPlayer SFX/Portable"
   VIAddVersionKey "ProductVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "FileVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "LegalCopyright" ""
-  VIAddVersionKey "FileDescription" "SMPlayer Portable SFX"
+  VIAddVersionKey "FileDescription" "SMPlayer SFX/Portable"
 
   ;Default extraction folder
-  InstallDir ".\SMPlayer-Portable-${SMPLAYER_VERSION}"
+  InstallDir ".\smplayer-${SMPLAYER_VERSION}"
 
   ;Request application privileges for Windows Vista/7
   RequestExecutionLevel user
@@ -58,11 +54,16 @@
   ShowInstDetails nevershow
 
   !include MUI2.nsh
-!ifdef WITH_MULTIMP
   !include nsDialogs.nsh
 
   Var 7zIcon
   Var 7zIcon_Handle
+  Var InstOpt_Choice1
+  Var InstOpt_Choice1_State
+  Var InstOpt_Choice2
+  Var InstOpt_Choice2_State
+  Var Install_MPlayer
+  Var Install_Portable
   Var MPlayer_Choice1
   Var MPlayer_Choice1_State
   Var MPlayer_Choice2
@@ -70,17 +71,12 @@
   Var MPlayer_Choice3
   Var MPlayer_Choice3_State
   Var MPlayer_Selection_State
-!endif
 
 ;--------------------------------
 ;Interface Settings
 
-  Caption "SMPlayer Portable Edition ${SMPLAYER_VERSION}"
-!ifdef WITH_MULTIMP
-  DirText "Select a folder to extract SMPlayer Portable Edition to. $_CLICK" "" "" "Select the folder to extract SMPlayer to:"
-!else ifndef WITH_MULTIMP
-  DirText "Select a folder to extract SMPlayer Portable Edition to. Click Extract to continue." "" "" "Select the folder to extract SMPlayer to:"
-!endif
+  Caption "SMPlayer SFX ${SMPLAYER_VERSION}"
+  DirText "Select a folder to extract SMPlayer to. $_CLICK" "" "" "Select the folder to extract SMPlayer to:"
   InstallButtonText "Extract"
 
   !define MUI_UI "${NSISDIR}\Contrib\UIs\sdbarker_tiny.exe" 
@@ -90,9 +86,8 @@
 
   ;Install pages
   !insertmacro MUI_PAGE_DIRECTORY
-!ifdef WITH_MULTIMP
+  Page custom PageInstOptions PageLeaveInstOptions
   Page custom PageMPlayerBuild PageLeaveMPlayerBuild
-!endif
   !insertmacro MUI_PAGE_INSTFILES
 
 ;--------------------------------
@@ -102,14 +97,59 @@
 
 ;--------------------------------
 ;Installer Functions
+Function PageInstOptions
 
-!ifdef WITH_MULTIMP
+  nsDialogs::Create /NOUNLOAD 1018
+  Pop $2
+
+  ${NSD_CreateIcon} 0 0 32 32 ""
+  Pop $7zIcon
+  ${NSD_SetIconFromInstaller} $7zIcon $7zIcon_Handle
+
+  ${NSD_CreateLabel} 25u 0 241u 18u "Select additional options to customize SMPlayer. $_CLICK"
+
+  ${NSD_CreateCheckBox} 25u 25u 150u 10u "Extract Portable Edition"
+  Pop $InstOpt_Choice1
+
+  ${NSD_CreateLabel} 25u 37u 150u 10u "Advanced Settings:"
+  ${NSD_CreateCheckBox} 25u 48u 150u 10u "Do not extract MPlayer"
+  Pop $InstOpt_Choice2
+
+  nsDialogs::Show
+
+  ${NSD_FreeIcon} $7zIcon_Handle
+
+FunctionEnd
+
+Function PageLeaveInstOptions
+
+  ${NSD_GetState} $InstOpt_Choice1 $InstOpt_Choice1_State
+  ${NSD_GetState} $InstOpt_Choice2 $InstOpt_Choice2_State
+
+  ${If} $InstOpt_Choice1_State == ${BST_CHECKED}
+    StrCpy $Install_Portable 1
+  ${Else}
+    StrCpy $Install_Portable 0
+  ${EndIf}
+
+  ${If} $InstOpt_Choice2_State == ${BST_CHECKED}
+    StrCpy $Install_MPlayer 0
+  ${Else}
+    StrCpy $Install_MPlayer 1
+  ${EndIf}
+
+FunctionEnd
+
 Function PageMPlayerBuild
+
+  ${If} $Install_MPlayer == 0
+    Abort
+  ${EndIf}
 
   nsDialogs::Create /NOUNLOAD 1018
   Pop $1
 
-  ${NSD_CreateIcon} 0 0 32 32 icon
+  ${NSD_CreateIcon} 0 0 32 32 ""
   Pop $7zIcon
   ${NSD_SetIconFromInstaller} $7zIcon $7zIcon_Handle
 
@@ -147,30 +187,57 @@ Function PageLeaveMPlayerBuild
 	${EndIf}
 
 FunctionEnd
-!endif
 
 ;--------------------------------
 ;Installer Sections
 
 Section -SMPlayer
 
+  AddSize -34000
+
   SetOutPath "$INSTDIR"
-!ifndef WITH_MULTIMP
-  File /r /x *.bak "smplayer-build\*.*"
-!else ifdef WITH_MULTIMP
-  AddSize -31400
+  File /x smplayer.exe "smplayer-build\*"
 
-  File /r /x *.bak /x mplayer.exe "smplayer-build\*.*"
-
-  SetOutPath "$INSTDIR\mplayer"
-  ${If} $MPlayer_Selection_State == 1
-    File "smplayer-build\mplayer\mplayer.exe"
-  ${ElseIf} $MPlayer_Selection_State == 2
-    File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
-  ${ElseIf} $MPlayer_Selection_State == 3
-    File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
+  ${If} $Install_Portable == 0
+    File "smplayer-build\smplayer.exe"
+  ${Else}
+    File /oname=smplayer.exe "portable\smplayer-portable.exe"
   ${EndIf}
-!endif
+
+  SetOutPath "$INSTDIR\imageformats"
+  File /r "smplayer-build\imageformats\*.*"
+
+  SetOutPath "$INSTDIR\shortcuts"
+  File /r "smplayer-build\shortcuts\*.*"
+
+  SetOutPath "$INSTDIR\docs"
+  File /r "smplayer-build\docs\*.*"
+
+  SetOutPath "$INSTDIR\themes"
+  File /r "smplayer-build\themes\*.*"
+
+  SetOutPath "$INSTDIR\translations"
+  File /r "smplayer-build\translations\*.*"
+
+  ${If} $Install_MPlayer != 0
+
+    SetOutPath "$INSTDIR\mplayer"
+    File /r /x mplayer.exe "smplayer-build\mplayer\*.*"
+
+    ${If} $MPlayer_Selection_State == 1
+      File "smplayer-build\mplayer\mplayer.exe"
+    ${ElseIf} $MPlayer_Selection_State == 2
+      File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
+    ${ElseIf} $MPlayer_Selection_State == 3
+      File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
+    ${EndIf}
+
+    ${If} $Install_Portable == 1
+      SetOutPath "$INSTDIR\mplayer\fonts"
+      File "portable\local.conf"
+    ${EndIf}
+
+  ${EndIf}
 
   SetAutoClose true
 
