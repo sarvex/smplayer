@@ -43,15 +43,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31170"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31372"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31170"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31372"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31170"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31372"
   !endif
 !endif
 
@@ -344,6 +344,8 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
 
     SectionIn RO
 !ifdef WITH_MPLAYER
+    AddSize -31400
+
     /* All the other files for the FFmpeg-mt and CPU Detection builds
     should be the same so we'll share the folder contents; we have the mplayer
     executables named as so:
@@ -367,7 +369,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPlayer_Selection_State
 !else ifndef WITH_MPLAYER
-    AddSize 16800
+    AddSize 16650
 
     Call GetVerInfo
 
@@ -797,13 +799,13 @@ Function PageMPlayerBuild
   ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (x86/x86-64 Generic)"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
-  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot fully utilize multi-core CPUs. If you are unsure, select this build."
+  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot utilize multi-core CPUs. If you are unsure, select this build."
 
-  ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (X2/X3/X4/Phenom/etc)"
+  ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (Opteron/Phenom/Turion X2/etc)"
   Pop $MPlayer_Choice2
   ${NSD_CreateLabel} 27 100 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
 
-  ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (P4EE/P4D/Xeon/Core2/i7/etc)"
+  ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (D/Xeon/Core 2/i3/i5/i7/etc)"
   Pop $MPlayer_Choice3
   ${NSD_CreateLabel} 27 150 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
