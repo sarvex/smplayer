@@ -101,13 +101,13 @@
 
   Var Codec_Version
   Var Is_Admin
+  Var MPBuild_Desc
   Var MPlayer_Choice1
   Var MPlayer_Choice1_State
   Var MPlayer_Choice2
   Var MPlayer_Choice2_State
   Var MPlayer_Choice3
   Var MPlayer_Choice3_State
-  Var MPlayer_Font
   Var MPlayer_Selection_State
 !ifndef WITH_MPLAYER
   Var MPlayer_Version
@@ -793,41 +793,58 @@ Function PageMPlayerBuild
   nsDialogs::Create /NOUNLOAD 1018
   Pop $0
 
-  !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 100% 20u "Select an MPlayer build you would like to install. $_CLICK"
+  nsDialogs::SetRTL $(^RTL)
 
-  ${NSD_CreateRadioButton} 10 35 100% 10u "Runtime CPU Detection (x86/x86-64 Generic)"
+  !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
+  ${NSD_CreateLabel} 0 0 100% 24u "Several MPlayer builds are available for installation. For optimal playback, choose a build optimized for your CPU. $_CLICK"
+
+  ${NSD_CreateRadioButton} 10u 34u 250u 10u "Runtime CPU Detection (x86/x86-64 Generic)"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
-  ${NSD_CreateLabel} 27 50 95% 20u "Unoptimized build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot utilize multi-core CPUs. If you are unsure, select this build."
 
-  ${NSD_CreateRadioButton} 10 85 100% 10u "AMD Multi-Core Processors (Opteron/Phenom/Turion X2/etc)"
+  ${NSD_CreateRadioButton} 10u 46u 250u 10u "AMD Multi-Core Processors (Opteron/Phenom/Turion X2/etc)"
   Pop $MPlayer_Choice2
-  ${NSD_CreateLabel} 27 100 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core AMD processors for optimal high definition video playback."
 
-  ${NSD_CreateRadioButton} 10 135 100% 10u "Intel Multi-Core Processors (D/Xeon/Core 2/i3/i5/i7/etc)"
+  ${NSD_CreateRadioButton} 10u 58u 250u 10u "Intel Multi-Core Processors (Pentium D/Xeon/Core 2/i3 - i7/etc)"
   Pop $MPlayer_Choice3
-  ${NSD_CreateLabel} 27 150 95% 20u "FFmpeg-mt build optimized to take advantage of multi-core Intel processors for optimal high definition video playback."
 
-  /* Selects build previously installed based on Install_MPlayer,
-  or select first choice by default. */
+  ${NSD_CreateGroupBox} 0 105u 297u 35u $(MUI_INNERTEXT_COMPONENTS_DESCRIPTION_TITLE)
+  ${NSD_CreateLabel} 6u 117u 285u 18u
+  Pop $MPBuild_Desc
 
-  ${If} $MPlayer_Selection_State == 1
+  ${NSD_OnClick} $MPlayer_Choice1 PageMPlayerUpdateDesc
+  ${NSD_OnClick} $MPlayer_Choice2 PageMPlayerUpdateDesc
+  ${NSD_OnClick} $MPlayer_Choice3 PageMPlayerUpdateDesc
+
+  ${If} $MPlayer_Selection_State = 1
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPlayer_Selection_State == 2
+  ${ElseIf} $MPlayer_Selection_State = 2
     SendMessage $MPlayer_Choice2 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPlayer_Selection_State == 3
+  ${ElseIf} $MPlayer_Selection_State = 3
     SendMessage $MPlayer_Choice3 ${BM_SETCHECK} 1 0
   ${Else}
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
   ${EndIf}
 
-  CreateFont $MPlayer_Font $(^Font) $(^FontSize) 700
-  SendMessage $MPlayer_Choice1 ${WM_SETFONT} $MPlayer_Font 1
-  SendMessage $MPlayer_Choice2 ${WM_SETFONT} $MPlayer_Font 1
-  SendMessage $MPlayer_Choice3 ${WM_SETFONT} $MPlayer_Font 1
+  Call PageMPlayerUpdateDesc
 
   nsDialogs::Show
+
+FunctionEnd
+
+Function PageMPlayerUpdateDesc
+
+  ${NSD_GetState} $MPlayer_Choice1 $MPlayer_Choice1_State
+  ${NSD_GetState} $MPlayer_Choice2 $MPlayer_Choice2_State
+  ${NSD_GetState} $MPlayer_Choice3 $MPlayer_Choice3_State
+
+  ${If} $MPlayer_Choice1_State == 1
+    ${NSD_SetText} $MPBuild_Desc "Generic build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot utilize multi-core CPUs. If you are unsure, select this build."
+  ${ElseIf} $MPlayer_Choice2_State == 1
+    ${NSD_SetText} $MPBuild_Desc "FFmpeg-mt (multi-threaded) build optimized for multi-core AMD processors for optimal high definition video playback."
+  ${ElseIf} $MPlayer_Choice3_State == 1
+    ${NSD_SetText} $MPBuild_Desc "FFmpeg-mt (multi-threaded) build optimized for multi-core Intel processors for optimal high definition video playback."
+  ${EndIf}
 
 FunctionEnd
 
@@ -838,16 +855,18 @@ Function PageReinstall
   ${EndIf}
 
   nsDialogs::Create /NOUNLOAD 1018
-  Pop $0
+  Pop $1
+
+  nsDialogs::SetRTL $(^RTL)
 
   ${If} $Previous_Version_State == 2
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT)
-    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_OLDVER_DESCRIPTION)
+    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 24u $(REINSTALL_OLDVER_DESCRIPTION)
     Pop $R0
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_OLDVER_UPGRADE)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10u 34u 250u 10u $(REINSTALL_OLDVER_UPGRADE)
     Pop $Reinstall_UninstallButton
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_CHGSETTINGS)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10u 46u 250u 10u $(REINSTALL_CHGSETTINGS)
     Pop $R0
 
     ${If} $Reinstall_Uninstall == ""
@@ -857,11 +876,11 @@ Function PageReinstall
   ${ElseIf} $Previous_Version_State == 1
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT)
-    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_NEWVER_DESCRIPTION)
+    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 24u $(REINSTALL_NEWVER_DESCRIPTION)
     Pop $R0
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_NEWVER_DOWNGRADE)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10u 34u 250u 10u $(REINSTALL_NEWVER_DOWNGRADE)
     Pop $Reinstall_UninstallButton
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_CHGSETTINGS)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10u 46u 250u 10u $(REINSTALL_CHGSETTINGS)
     Pop $R0
 
     ${If} $Reinstall_Uninstall == ""
@@ -871,11 +890,11 @@ Function PageReinstall
   ${ElseIf} $Previous_Version_State == 0
 
     !insertmacro MUI_HEADER_TEXT $(REINSTALL_HEADER_TEXT) $(REINSTALL_HEADER_SUBTEXT_MAINT)
-    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 40 $(REINSTALL_SAMEVER_DESCRIPTION)
+    nsDialogs::CreateItem /NOUNLOAD STATIC ${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 0 0 100% 24u $(REINSTALL_SAMEVER_DESCRIPTION)
     Pop $R0
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10 55 100% 30 $(REINSTALL_SAMEVER_ADDREMREINST)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_VCENTER}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS}|${WS_GROUP}|${WS_TABSTOP} 0 10u 34u 250u 10u $(REINSTALL_SAMEVER_ADDREMREINST)
     Pop $R0
-    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10 85 100% 50 $(REINSTALL_SAMEVER_UNINSTSMP)
+    nsDialogs::CreateItem /NOUNLOAD BUTTON ${BS_AUTORADIOBUTTON}|${BS_TOP}|${BS_MULTILINE}|${WS_VISIBLE}|${WS_CHILD}|${WS_CLIPSIBLINGS} 0 10u 46u 250u 10u $(REINSTALL_SAMEVER_UNINSTSMP)
     Pop $Reinstall_UninstallButton
 
     ${If} $Reinstall_Uninstall == ""
