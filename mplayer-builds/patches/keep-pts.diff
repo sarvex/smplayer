@@ -2,15 +2,15 @@ Index: cfg-mencoder.h
 ===================================================================
 --- cfg-mencoder.h	(revisión: 31028)
 +++ cfg-mencoder.h	(copia de trabajo)
-@@ -228,6 +228,9 @@
- 	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
- 	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
+@@ -217,6 +217,9 @@
+     {"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
+     {"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
  
-+	{"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
-+	{"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
++    {"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
++    {"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
 +
- 	// info header strings
- 	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
+     // info header strings
+     {"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
  
 Index: mencoder.c
 ===================================================================

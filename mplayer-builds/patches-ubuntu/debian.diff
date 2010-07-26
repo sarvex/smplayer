@@ -28,15 +28,9 @@ Index: create_deb.sh
 +rm debian/changelog
 +rm debian
 +mv debian-upstream debian
-
-Cambios de propiedades en create_deb.sh
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: version.sh
 ===================================================================
---- version.sh	(revisión: 31028)
+--- version.sh	(revisión: 31826)
 +++ version.sh	(copia de trabajo)
 @@ -15,6 +15,8 @@
  version=$(cat VERSION 2> /dev/null)
@@ -723,12 +717,6 @@ Index: debian-rvm/patches/10-gnome-screensave.dpatch
 + 
 + static XErrorHandler old_handler = NULL;
 +
-
-Cambios de propiedades en debian-rvm/patches/10-gnome-screensave.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/patches/12-codecs.dpatch
 ===================================================================
 --- debian-rvm/patches/12-codecs.dpatch	(revisión: 0)
@@ -765,17 +753,11 @@ Index: debian-rvm/patches/12-codecs.dpatch
 + videocodec ffsvq3
 +   info "FFmpeg Sorenson Video v3 (SVQ3)"
 +   status working
-
-Cambios de propiedades en debian-rvm/patches/12-codecs.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/patches/01-keep-pts.dpatch
 ===================================================================
 --- debian-rvm/patches/01-keep-pts.dpatch	(revisión: 0)
 +++ debian-rvm/patches/01-keep-pts.dpatch	(revisión: 0)
-@@ -0,0 +1,70 @@
+@@ -0,0 +1,71 @@
 +#! /bin/sh /usr/share/dpatch/dpatch-run
 +## 01-keep-pts.dpatch by  <rvm@escomposlinux.org>
 +##
@@ -804,16 +786,17 @@ Index: debian-rvm/patches/01-keep-pts.dpatch
 +diff -urNad svn~/cfg-mencoder.h svn/cfg-mencoder.h
 +--- svn~/cfg-mencoder.h	2010-04-11 15:02:23.000000000 +0200
 ++++ svn/cfg-mencoder.h	2010-04-11 15:07:42.000000000 +0200
-+@@ -228,6 +228,9 @@
-+ 	{"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
-+ 	{"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
++@@ -217,6 +217,9 @@
++     {"odml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 0, 1, NULL},
++     {"noodml", &write_odml, CONF_TYPE_FLAG, CONF_GLOBAL, 1, 0, NULL},
 + 
-++	{"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
-++	{"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
+++    {"keep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 0, 1, NULL},
+++    {"nokeep-pts", &keep_pts, CONF_TYPE_FLAG, 0, 1, 0, NULL},
 ++
-+ 	// info header strings
-+ 	{"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
++     // info header strings
++     {"info", info_conf, CONF_TYPE_SUBCONFIG, CONF_GLOBAL, 0, 0, NULL},
 + 
++
 +diff -urNad svn~/mencoder.c svn/mencoder.c
 +--- svn~/mencoder.c	2010-04-11 15:02:23.000000000 +0200
 ++++ svn/mencoder.c	2010-04-11 15:07:42.000000000 +0200
@@ -846,12 +829,6 @@ Index: debian-rvm/patches/01-keep-pts.dpatch
 + 
 +     if (sh_video->vf_initialized < 0) mencoder_exit(1, NULL);
 + 
-
-Cambios de propiedades en debian-rvm/patches/01-keep-pts.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/patches/03-runtime_eq.dpatch
 ===================================================================
 --- debian-rvm/patches/03-runtime_eq.dpatch	(revisión: 0)
@@ -882,9 +859,9 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +diff -urNad svn~/command.c svn/command.c
 +--- svn~/command.c	2009-05-20 13:32:28.000000000 +0200
 ++++ svn/command.c	2009-05-20 13:36:06.000000000 +0200
-+@@ -2970,6 +2970,13 @@
-+ 	    }
-+ 	    break;
++@@ -3076,6 +3076,13 @@
++             }
++             break;
 + 
 ++	case MP_CMD_AF_EQ_SET:{  
 ++      af_instance_t* m1=af_get(sh_audio->afilter, "equalizer");
@@ -893,7 +870,7 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 ++	    }
 ++      break;
 ++
-+ 	case MP_CMD_VF_CHANGE_RECTANGLE:
++         case MP_CMD_VF_CHANGE_RECTANGLE:
 +             if (!sh_video)
 +                 break;
 +diff -urNad svn~/input/input.c svn/input/input.c
@@ -947,12 +924,6 @@ Index: debian-rvm/patches/03-runtime_eq.dpatch
 +     return AF_OK;
 +   }
 +   case AF_CONTROL_EQUALIZER_GAIN | AF_CONTROL_SET:{
-
-Cambios de propiedades en debian-rvm/patches/03-runtime_eq.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/patches/00list
 ===================================================================
 --- debian-rvm/patches/00list	(revisión: 0)
@@ -1289,12 +1260,6 @@ Index: debian-rvm/patches/11-dshowserver.dpatch
 ++   }
 ++   return mpi;
 ++}
-
-Cambios de propiedades en debian-rvm/patches/11-dshowserver.dpatch
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/copyright
 ===================================================================
 --- debian-rvm/copyright	(revisión: 0)
@@ -1489,12 +1454,6 @@ Index: debian-rvm/rules
 +
 +binary: binary-indep binary-arch
 +.PHONY: build clean binary-indep binary-arch binary
-
-Cambios de propiedades en debian-rvm/rules
-___________________________________________________________________
-Nombre: svn:executable
-   + *
-
 Index: debian-rvm/mplayer-nogui.preinst
 ===================================================================
 --- debian-rvm/mplayer-nogui.preinst	(revisión: 0)

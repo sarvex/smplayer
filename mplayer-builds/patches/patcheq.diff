@@ -41,11 +41,11 @@ Index: DOCS/tech/slave.txt
  name               type      min     max     get set step comment
 Index: command.c
 ===================================================================
---- command.c	(revisión: 29930)
+--- command.c	(revisiÃ³n: 31826)
 +++ command.c	(copia de trabajo)
-@@ -2957,6 +2957,13 @@
- 	    }
- 	    break;
+@@ -3076,6 +3076,13 @@
+             }
+             break;
  
 +	case MP_CMD_AF_EQ_SET:{  
 +      af_instance_t* m1=af_get(sh_audio->afilter, "equalizer");
@@ -54,9 +54,10 @@ Index: command.c
 +	    }
 +      break;
 +
- 	case MP_CMD_VF_CHANGE_RECTANGLE:
+         case MP_CMD_VF_CHANGE_RECTANGLE:
              if (!sh_video)
                  break;
+
 Index: libaf/af_equalizer.c
 ===================================================================
 --- libaf/af_equalizer.c	(revisión: 29930)
