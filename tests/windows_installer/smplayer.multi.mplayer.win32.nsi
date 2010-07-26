@@ -351,7 +351,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
     executables named as so:
       mplayer.exe (Runtime CPU Detection)
       mplayer-amdmt.exe (AMD)
-      mplayer-p4mt.exe (Intel)
+      mplayer-intelmt.exe (Intel)
 
     Exclude mplayer.exe from `smplayer-build\mplayer` with /x then
     include them individually depending on MPlayer_Selection_State
@@ -364,7 +364,7 @@ SectionGroup $(SMPLAYER_MPLAYERGROUP_TITLE)
     ${ElseIf} $MPlayer_Selection_State == 2
       File /oname=mplayer.exe "mplayer-mt\mplayer-amdmt.exe"
     ${ElseIf} $MPlayer_Selection_State == 3
-      File /oname=mplayer.exe "mplayer-mt\mplayer-p4mt.exe"
+      File /oname=mplayer.exe "mplayer-mt\mplayer-intelmt.exe"
     ${EndIf}
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x$MPlayer_Selection_State
