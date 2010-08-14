@@ -16,6 +16,7 @@
 ;Additional plugin folders
 
   !addplugindir .
+  !addincludedir .
 
 ;--------------------------------
 ;Defines
@@ -43,15 +44,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31372"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31878"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31372"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31878"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31372"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31878"
   !endif
 !endif
 
@@ -100,6 +101,8 @@
 ;Variables
 
   Var Codec_Version
+  Var CPUInfo_Name
+  Var CPUInfo_Cores
   Var Is_Admin
   Var MPBuild_Desc
   Var MPlayer_Choice1
@@ -166,6 +169,7 @@
 ;Include Modern UI and functions
 
   !include MUI2.nsh
+  !include CPUInfo.nsh
   !include FileFunc.nsh
   !include Memento.nsh
   !include nsDialogs.nsh
@@ -177,6 +181,10 @@
 ;Pages
 
   ;Install pages
+!ifdef PRE_RELEASE
+  #Pre-release Information
+  Page custom PagePrereleaseInformation
+!endif
   #Welcome
   !insertmacro MUI_PAGE_WELCOME
   #License
@@ -791,37 +799,45 @@ Function PageMPlayerBuild
     Abort
   ${EndIf}
 
+  ReadRegStr $CPUInfo_Name HKLM "HARDWARE\DESCRIPTION\System\CentralProcessor\0" "ProcessorNameString"
+
+  Call GetCPUInfo
+  Pop $CPUInfo_Cores
+
   nsDialogs::Create /NOUNLOAD 1018
   Pop $0
 
   nsDialogs::SetRTL $(^RTL)
 
   !insertmacro MUI_HEADER_TEXT "Choose MPlayer Build" "Choose which MPlayer build you would like to install."
-  ${NSD_CreateLabel} 0 0 100% 24u "Several MPlayer builds are available for installation. For optimal playback, choose a build optimized for your CPU. $_CLICK"
+  ${NSD_CreateLabel} 0 0 100% 24u "Several MPlayer builds are available for installation. For optimal playback, choose an MPlayer build optimized for your CPU. $_CLICK"
 
-  ${NSD_CreateRadioButton} 10u 34u 250u 10u "Runtime CPU Detection (x86/x86-64 Generic)"
+  ${NSD_CreateRadioButton} 10u 34u 250u 10u "Runtime CPU Detection"
   Pop $MPlayer_Choice1
   ${NSD_AddStyle} $MPlayer_Choice1 ${WS_GROUP}
 
-  ${NSD_CreateRadioButton} 10u 46u 250u 10u "AMD Multi-Core Processors (Opteron/Phenom/Turion X2/etc)"
+  ${NSD_CreateRadioButton} 10u 46u 250u 10u "AMD Multi-Core Processors"
   Pop $MPlayer_Choice2
 
-  ${NSD_CreateRadioButton} 10u 58u 250u 10u "Intel Multi-Core Processors (Pentium D/Xeon/Core 2/i3 - i7/etc)"
+  ${NSD_CreateRadioButton} 10u 58u 250u 10u "Intel Multi-Core Processors"
   Pop $MPlayer_Choice3
 
-  ${NSD_CreateGroupBox} 0 105u 297u 35u $(MUI_INNERTEXT_COMPONENTS_DESCRIPTION_TITLE)
-  ${NSD_CreateLabel} 6u 117u 285u 18u
+  ${NSD_CreateLabel} 0u 98u 58u 16u "Compatibility:"
+  ${NSD_CreateLabel} 62u 98u 238u 24u ""
   Pop $MPBuild_Desc
+
+  ${NSD_CreateLabel} 0u 124u 58u 16u "Detected CPU:"
+  ${NSD_CreateLabel} 62u 124u 238u 16u "$CPUInfo_Name$CPUInfo_Cores"
 
   ${NSD_OnClick} $MPlayer_Choice1 PageMPlayerUpdateDesc
   ${NSD_OnClick} $MPlayer_Choice2 PageMPlayerUpdateDesc
   ${NSD_OnClick} $MPlayer_Choice3 PageMPlayerUpdateDesc
 
-  ${If} $MPlayer_Selection_State = 1
+  ${If} $MPlayer_Selection_State == 1
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPlayer_Selection_State = 2
+  ${ElseIf} $MPlayer_Selection_State == 2
     SendMessage $MPlayer_Choice2 ${BM_SETCHECK} 1 0
-  ${ElseIf} $MPlayer_Selection_State = 3
+  ${ElseIf} $MPlayer_Selection_State == 3
     SendMessage $MPlayer_Choice3 ${BM_SETCHECK} 1 0
   ${Else}
     SendMessage $MPlayer_Choice1 ${BM_SETCHECK} 1 0
@@ -840,14 +856,53 @@ Function PageMPlayerUpdateDesc
   ${NSD_GetState} $MPlayer_Choice3 $MPlayer_Choice3_State
 
   ${If} $MPlayer_Choice1_State == 1
-    ${NSD_SetText} $MPBuild_Desc "Generic build compatible with all modern 32-bit && 64-bit x86 CPUs. Performance is limited, and cannot utilize multi-core CPUs. If you are unsure, select this build."
+    ${NSD_SetText} $MPBuild_Desc "Compatible with all modern CPUs but does not support multiple threads for decoding. For multi-core processors, choose a multi-core build for best performance with HD videos."
   ${ElseIf} $MPlayer_Choice2_State == 1
-    ${NSD_SetText} $MPBuild_Desc "FFmpeg-mt (multi-threaded) build optimized for multi-core AMD processors for optimal high definition video playback."
+    ${NSD_SetText} $MPBuild_Desc "Opteron, Turion 64 X2, Turion II, Athlon X2, Athlon 64 FX/X2, Phenom, Phenom II or better."
   ${ElseIf} $MPlayer_Choice3_State == 1
-    ${NSD_SetText} $MPBuild_Desc "FFmpeg-mt (multi-threaded) build optimized for multi-core Intel processors for optimal high definition video playback."
+    ${NSD_SetText} $MPBuild_Desc "Xeon, Pentium Dual-Core, Pentium D/EE, Core/Core 2 Duo, Core 2 Quad, Core i3/i5/i7 or better."
   ${EndIf}
 
 FunctionEnd
+
+!ifdef PRE_RELEASE
+Function PagePrereleaseInformation
+
+  Var /GLOBAL AgreeCheckbox
+  Var /GLOBAL AgreeCheckbox_State
+  Var /GLOBAL NextButton
+
+  GetDlgItem $NextButton $HWNDPARENT 1
+  EnableWindow $NextButton 0
+
+  nsDialogs::Create /NOUNLOAD 1018
+  Pop $0
+
+  !insertmacro MUI_HEADER_TEXT "Pre-release Information" "This is a pre-release version of SMPlayer"
+
+  ${NSD_CreateLabel} 0 0 100% 20u "You are about to install a pre-release version of SMPlayer that is only meant to be used for testing purposes."
+  ${NSD_CreateLabel} 0 25u 100% 20u "If you have a previous version of SMPlayer installed, you should back up your settings before you continue. If you do not, you may lose them."
+  ${NSD_CreateLabel} 0 50u 100% 20u "The latest stable release of SMPlayer can be found on the SMPlayer website, is safer and more reliable, and is recommended for most users."
+  ${NSD_CreateLabel} 0 75u 100% 20u "Please report any issues in the SMPlayer forum."
+  ${NSD_CreateCheckBox} 0 125u 100% 10u "I understand and would like to continue installing the pre-release version of SMPlayer."
+  Pop $AgreeCheckbox
+  ${NSD_OnClick} $AgreeCheckbox PagePrereleaseInformationUpdate
+
+  nsDialogs::Show
+
+FunctionEnd
+
+Function PagePrereleaseInformationUpdate
+
+  ${NSD_GetState} $AgreeCheckbox $AgreeCheckbox_State
+  ${If} $AgreeCheckbox_State == ${BST_CHECKED}
+    EnableWindow $NextButton 1
+  ${ElseIf} $AgreeCheckbox_State == ${BST_UNCHECKED}
+    EnableWindow $NextButton 0
+  ${EndIf}
+
+FunctionEnd
+!endif
 
 Function PageReinstall
 
