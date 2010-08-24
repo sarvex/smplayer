@@ -115,6 +115,8 @@
 !ifndef WITH_MPLAYER
   Var MPlayer_Version
 !endif
+  Var Dialog_MPlayer
+  Var Dialog_Reinstall
   Var Previous_Version
   Var Previous_Version_State
   Var Reinstall_Uninstall
@@ -666,6 +668,12 @@ ${MementoSectionDone}
 !macroend
 
 ;--------------------------------
+;Required functions
+
+!insertmacro GetParameters
+!insertmacro GetOptions
+
+;--------------------------------
 ;Installer functions
 
 Function .onInit
@@ -686,12 +694,14 @@ Function .onInit
     Abort
   ${EndIf}
 
+  Call LoadPreviousSettings
+
+  Call ReadMPlayerCommandline
+
   ;Setup language selection
   !insertmacro MUI_LANGDLL_DISPLAY
 
   Call CheckPreviousVersion
-
-  Call LoadPreviousSettings
 
   SetShellVarContext all
 
@@ -709,19 +719,6 @@ Function .onInstFailed
 
   Delete "$INSTDIR\${SMPLAYER_UNINST_EXE}"
   RMDir "$INSTDIR"
-
-FunctionEnd
-
-Function .onSelChange
-
-  SectionGetFlags ${SecCodecs} $R0
-  ${If} $R0 != $R1
-    StrCpy $R1 $R0
-    IntOp $R0 $R0 & ${SF_SELECTED}
-  ${If} $R0 == ${SF_SELECTED}
-    MessageBox MB_OK|MB_ICONINFORMATION $(MPLAYER_CODEC_INFORMATION)
-  ${EndIf}
-  ${EndIf}
 
 FunctionEnd
 
@@ -783,7 +780,12 @@ Function LoadPreviousSettings
   ${EndIf}
 
   ;Retrieves MPlayer build
+  ClearErrors
   ReadRegDWORD $MPlayer_Selection_State HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
+  ${If} ${Errors}
+  ${AndIf} ${Silent}
+    StrCpy $MPlayer_Selection_State 1
+  ${EndIf}
 
   ;Gets start menu folder name
   !insertmacro MUI_STARTMENU_GETFOLDER "SMP_SMenu" $SMP_StartMenuFolder
@@ -805,7 +807,7 @@ Function PageMPlayerBuild
   Pop $CPUInfo_Cores
 
   nsDialogs::Create /NOUNLOAD 1018
-  Pop $0
+  Pop $Dialog_MPlayer
 
   nsDialogs::SetRTL $(^RTL)
 
@@ -911,7 +913,7 @@ Function PageReinstall
   ${EndIf}
 
   nsDialogs::Create /NOUNLOAD 1018
-  Pop $1
+  Pop $Dialog_Reinstall
 
   nsDialogs::SetRTL $(^RTL)
 
@@ -1053,6 +1055,24 @@ Function PageLeaveReinstall
   ${EndIf}
 
   ${EndIf}
+
+FunctionEnd
+
+Function ReadMPlayerCommandline
+
+  ${un.GetParameters} $R0
+  ${un.GetOptionsS} $R0 "/M" $R1
+
+  ${Unless} ${Errors}
+    ${If} $R1 == "=amdmt"
+      StrCpy $MPlayer_Selection_State 2
+    ${ElseIf} $R1 == "=intelmt"
+      StrCpy $MPlayer_Selection_State 3
+    ${Else}
+      MessageBox MB_OK|MB_ICONSTOP "Invalid option for /M. Must be either '=amdmt' or '=intelmt'."
+      Abort
+    ${EndIf}
+  ${EndUnless}
 
 FunctionEnd
 

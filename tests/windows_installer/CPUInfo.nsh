@@ -85,7 +85,7 @@ Function GetCPUInfo_Eval
   ${EndWhile}
 
   ; Set processor information as return value
-  StrCpy $0 " ~ $5 Core(s), $6 Thread(s)"
+  StrCpy $0 " -- $5 Core(s), $6 Thread(s)"
 
   Pop $6
   Pop $5
