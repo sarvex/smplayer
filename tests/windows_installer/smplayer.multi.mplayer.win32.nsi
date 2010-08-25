@@ -783,7 +783,6 @@ Function LoadPreviousSettings
   ClearErrors
   ReadRegDWORD $MPlayer_Selection_State HKLM "${SMPLAYER_REG_KEY}" "Installed_MPlayer"
   ${If} ${Errors}
-  ${AndIf} ${Silent}
     StrCpy $MPlayer_Selection_State 1
   ${EndIf}
 
@@ -1064,12 +1063,14 @@ Function ReadMPlayerCommandline
   ${un.GetOptionsS} $R0 "/M" $R1
 
   ${Unless} ${Errors}
-    ${If} $R1 == "=amdmt"
+    ${If} $R1 == "=rtm"
+      StrCpy $MPlayer_Selection_State 1
+    ${ElseIf} $R1 == "=amdmt"
       StrCpy $MPlayer_Selection_State 2
     ${ElseIf} $R1 == "=intelmt"
       StrCpy $MPlayer_Selection_State 3
     ${Else}
-      MessageBox MB_OK|MB_ICONSTOP "Invalid option for /M. Must be either '=amdmt' or '=intelmt'."
+      MessageBox MB_OK|MB_ICONSTOP "Invalid option for /M. Must be either /M=rtm, /M=amdmt, or /M=intelmt."
       Abort
     ${EndIf}
   ${EndUnless}
