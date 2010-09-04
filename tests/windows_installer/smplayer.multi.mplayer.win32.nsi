@@ -612,7 +612,9 @@ ${MementoSectionDone}
   !insertmacro ${_action} ".vcd"
   !insertmacro ${_action} ".vfw"
   !insertmacro ${_action} ".vob"
+  !insertmacro ${_action} ".vp8"
   !insertmacro ${_action} ".wav"
+  !insertmacro ${_action} ".webm"
   !insertmacro ${_action} ".wma"
   !insertmacro ${_action} ".wmv"
 !macroend
