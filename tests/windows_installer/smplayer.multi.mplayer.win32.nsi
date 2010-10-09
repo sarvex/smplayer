@@ -44,15 +44,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-31878"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-32198"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-31878"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-32198"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-31878"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-32198"
   !endif
 !endif
 
