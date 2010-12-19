@@ -44,15 +44,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-32198"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-32674"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-32198"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-32674"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-32198"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-32674"
   !endif
 !endif
 
@@ -859,11 +859,11 @@ Function PageMPlayerUpdateDesc
   ${NSD_GetState} $MPlayer_Choice3 $MPlayer_Choice3_State
 
   ${If} $MPlayer_Choice1_State == 1
-    ${NSD_SetText} $MPBuild_Desc "Compatible with all modern CPUs but does not support multiple threads for decoding. For multi-core processors, choose a multi-core build for best performance with HD videos."
+    ${NSD_SetText} $MPBuild_Desc "Most compatible with all CPUs but does not support multiple threads for decoding. For multi-core or hyperthreaded processors, choose a multi-core build for best performance with HD videos."
   ${ElseIf} $MPlayer_Choice2_State == 1
     ${NSD_SetText} $MPBuild_Desc "Opteron, Turion 64 X2, Turion II, Athlon X2, Athlon 64 FX/X2, Phenom, Phenom II or better."
   ${ElseIf} $MPlayer_Choice3_State == 1
-    ${NSD_SetText} $MPBuild_Desc "Xeon, Pentium Dual-Core, Pentium D/EE, Core/Core 2 Duo, Core 2 Quad, Core i3/i5/i7 or better."
+    ${NSD_SetText} $MPBuild_Desc "Pentium 4 HT, Pentium D, Pentium Dual-Core, Core Duo, Core 2 Duo/Quad/Extreme, Core i3/i5/i7 or better."
   ${EndIf}
 
 FunctionEnd
