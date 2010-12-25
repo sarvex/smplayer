@@ -101,8 +101,7 @@
 ;Variables
 
   Var Codec_Version
-  Var CPUInfo_Name
-  Var CPUInfo_Cores
+  Var CPUInfo
   Var Is_Admin
   Var MPBuild_Desc
   Var MPlayer_Choice1
@@ -542,6 +541,21 @@ Section -Post
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoModify" "1"
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoRepair" "1"
 
+  ${If} $MPlayer_Selection_State == 2
+  ${OrIf} $MPlayer_Selection_State == 3
+  ${AndIf} $CPUInfo_Threads > 1
+    SetDetailsPrint textonly
+    DetailPrint "Patching MPlayer Config..."
+    SetDetailsPrint listonly
+
+    FileOpen $2 "$INSTDIR\mplayer\mplayer\config" a
+    FileSeek $2 0 END
+    FileWrite $2 "$\r$\n"
+    FileWrite $2 "lavdopts=threads=$CPUInfo_Threads"
+    FileWrite $2 "$\r$\n"
+    FileClose $2
+  ${EndIf}
+
 SectionEnd
 
 ${MementoSectionDone}
@@ -802,10 +816,8 @@ Function PageMPlayerBuild
     Abort
   ${EndIf}
 
-  ReadRegStr $CPUInfo_Name HKLM "HARDWARE\DESCRIPTION\System\CentralProcessor\0" "ProcessorNameString"
-
   Call GetCPUInfo
-  Pop $CPUInfo_Cores
+  Pop $CPUInfo
 
   nsDialogs::Create /NOUNLOAD 1018
   Pop $Dialog_MPlayer
@@ -830,7 +842,7 @@ Function PageMPlayerBuild
   Pop $MPBuild_Desc
 
   ${NSD_CreateLabel} 0u 124u 58u 16u "Detected CPU:"
-  ${NSD_CreateLabel} 62u 124u 238u 16u "$CPUInfo_Name$CPUInfo_Cores"
+  ${NSD_CreateLabel} 62u 124u 238u 16u "$CPUInfo"
 
   ${NSD_OnClick} $MPlayer_Choice1 PageMPlayerUpdateDesc
   ${NSD_OnClick} $MPlayer_Choice2 PageMPlayerUpdateDesc

@@ -9,6 +9,10 @@
 !define RELATIONPROCESSORCORE     0 ; Enum value of Relationship identifying Processor Core
 !define SYS_LOG_PROC_INFO_SIZE    24 ; Size of SYSTEM_LOGICAL_PROCESSOR_INFORMATION on 32-bit systems
 
+Var CpuInfo_Cores
+Var CpuInfo_Name
+Var CpuInfo_Threads
+
 ; Count the number of bits set in given value
 ; Parameters: value
 ; Returns: number of bits set in given value
@@ -85,7 +89,13 @@ Function GetCPUInfo_Eval
   ${EndWhile}
 
   ; Set processor information as return value
-  StrCpy $0 " -- $5 Core(s), $6 Thread(s)"
+  StrCpy $CpuInfo_Cores $5
+  StrCpy $CpuInfo_Threads $6
+
+  ReadRegStr $CpuInfo_Name HKLM "HARDWARE\DESCRIPTION\System\CentralProcessor\0" "ProcessorNameString"
+
+  StrCpy $0 "$CpuInfo_Name -- $CpuInfo_Cores Core(s), $CpuInfo_Threads Thread(s)"
+
 
   Pop $6
   Pop $5
