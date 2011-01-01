@@ -541,21 +541,6 @@ Section -Post
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoModify" "1"
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoRepair" "1"
 
-  ${If} $MPlayer_Selection_State == 2
-  ${OrIf} $MPlayer_Selection_State == 3
-  ${AndIf} $CPUInfo_Threads > 1
-    SetDetailsPrint textonly
-    DetailPrint "Patching MPlayer Config..."
-    SetDetailsPrint listonly
-
-    FileOpen $2 "$INSTDIR\mplayer\mplayer\config" a
-    FileSeek $2 0 END
-    FileWrite $2 "$\r$\n"
-    FileWrite $2 "lavdopts=threads=$CPUInfo_Threads"
-    FileWrite $2 "$\r$\n"
-    FileClose $2
-  ${EndIf}
-
 SectionEnd
 
 ${MementoSectionDone}
