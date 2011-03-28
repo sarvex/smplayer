@@ -1,6 +1,6 @@
 ; Installer script for win32 SMPlayer
 ; Written by redxii (redxii@users.sourceforge.net)
-; Tested/Developed with Unicode NSIS 2.45.1/2.46
+; Tested/Developed with Unicode NSIS 2.46
 
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
@@ -44,15 +44,15 @@
 
 !ifndef WITH_MPLAYER
   !ifndef DEFAULT_MPLAYER_GENERIC
-    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-32674"
+    !define DEFAULT_MPLAYER_GENERIC "mplayer-svn-32735"
   !endif
 
   !ifndef DEFAULT_MPLAYER_AMDMT
-    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-32674"
+    !define DEFAULT_MPLAYER_AMDMT "mplayer-amd-mt-32735"
   !endif
 
   !ifndef DEFAULT_MPLAYER_INTELMT
-    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-32674"
+    !define DEFAULT_MPLAYER_INTELMT "mplayer-intel-mt-32735"
   !endif
 !endif
 
@@ -68,9 +68,9 @@
   Name "SMPlayer ${SMPLAYER_VERSION}"
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION}"
 !ifdef WITH_MPLAYER
-  OutFile "smplayer-${SMPLAYER_VERSION}-win32.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}-offline.exe"
 !else ifndef WITH_MPLAYER
-  OutFile "smplayer-${SMPLAYER_VERSION}-win32-webdl.exe"
+  OutFile "smplayer-${SMPLAYER_VERSION}.exe"
 !endif
 
   ;Version tab properties
