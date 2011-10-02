@@ -16,7 +16,7 @@ function header_print_links($rel_path="") {
 	header_print_link(get_tr("Main"), $rel_path."index.php");
 	header_print_link(get_tr("Screenshots"), $rel_path."screenshots.php");
 	header_print_link(get_tr("Downloads"), $rel_path."downloads.php");
-	header_print_link(get_tr("Forum"), "http://smplayer.berlios.de/forum/", true);
+	header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", true);
 	header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", true);
 	header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", true);
 	header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", true, true);
