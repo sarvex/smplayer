@@ -178,7 +178,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 <td>
 <?php
 echo "<b>"; tr("Packages for Ubuntu:"); echo "</b><br>";
-tr("You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)
+tr("You can get deb packages for Ubuntu (hardy, intrepid, jaunty, karmic, lucid, maverick, natty and oneiric)
 from this PPA:");
 echo "<br>";
 echo "<a href=\"https://launchpad.net/~rvm/+archive/smplayer\">https://launchpad.net/~rvm/+archive/smplayer</a>";
@@ -186,6 +186,7 @@ echo "<a href=\"https://launchpad.net/~rvm/+archive/smplayer\">https://launchpad
 </td>
 </tr>
 
+<!--
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
@@ -201,6 +202,8 @@ echo "<a href=\"https://launchpad.net/~rvm/+archive/mplayer\">https://launchpad.
 echo " (<a href=\"http://smplayer.berlios.de/forums/viewforum.php?id=9\">" . 
 get_tr("more info") . ")</a>.";
 ?>
+</tr>
+-->
 
 </table>
 
