@@ -2,7 +2,7 @@
 include_once("myfunctions.php");
 
 function download_src_link() {
-	return create_link("smplayer-0.6.9.tar.bz2", 1723032 );
+	return create_link("smplayer-0.6.10.tar.bz2", 2204068 );
 }
 
 function download_rpm_link() {
@@ -18,19 +18,19 @@ function download_amd64deb_link() {
 }
 
 function download_windows_full_link() {
-	return create_link("smplayer-0.6.9-win32.exe", 14838814 );
+	return create_link("smplayer-0.6.10-win32.exe", 15965707 );
 }
 
 function download_windows_lite_link() {
-	return create_link("smplayer-0.6.9-win32-webdl.exe", 9108627 );
+	return create_link("smplayer-0.6.10-webdl.exe", 9211930 );
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.6.9_without_mplayer.7z", 8367880 );
+	return create_link("smplayer-0.6.10_without_mplayer.7z", 7838433 );
 }
 
 function download_windows_portable_link() {
-	return create_link("smplayer-portable-0.6.9.7z", 13970870 );
+	return create_link("mplayer-portable-0.6.10.7z", 14023408 );
 }
 
 
