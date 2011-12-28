@@ -30,7 +30,7 @@ function download_windows_7z_link() {
 }
 
 function download_windows_portable_link() {
-	return create_link("mplayer-portable-0.6.10.7z", 14023408 );
+	return create_link("smplayer-portable-0.6.10.7z", 14023408 );
 }
 
 
