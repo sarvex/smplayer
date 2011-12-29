@@ -269,7 +269,7 @@ by other people. <a href=%1>Click here</a> to see them.",
 
 <?php
 echo "<h2>".get_tr("Related Project")."</h2>";
-echo "<b><a href=\"http://mulder.dummwiedeutsch.de/home/?page=projects#mplayer\">";
+echo "<b><a href=\"http://mulder.brhack.net/#mplayer\">";
 echo "MPlayer for Windows</a></b> ".get_tr("by MuldeR")."<br>";
 tr("This package contains a very recent version of SMPlayer (often taken from
 the SVN repository) as well as a recent version of MPlayer. It also provides
