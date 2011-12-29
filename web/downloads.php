@@ -75,7 +75,7 @@ echo download_windows_full_link();
 <?php
 tr("This package contains everything needed to run smplayer: shared 
 libraries, translation files, icon themes and a mplayer 
-build (the version included is %1).","<i>SVN r28311</i>");
+build (the version included is %1).","<i>SVN r34401</i>");
 ?>
 </td>
 </tr>
@@ -178,7 +178,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 <td>
 <?php
 echo "<b>"; tr("Packages for Ubuntu:"); echo "</b><br>";
-tr("You can get deb packages for Ubuntu (hardy, <strike>intrepid</strike>, <strike>jaunty</strike>, karmic, lucid, maverick, natty, oneiric and precise)
+tr("You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, oneiric and precise)
 from this PPA:");
 echo "<br>";
 echo "<a href=\"https://launchpad.net/~rvm/+archive/smplayer\">https://launchpad.net/~rvm/+archive/smplayer</a>";

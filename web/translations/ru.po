@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-01 19:07+0100\n"
+"POT-Creation-Date: 2011-12-29 23:14+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -138,18 +138,16 @@ msgstr "Пакеты для Ubuntu:"
 
 #: ../downloads.php:181
 msgid ""
-"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, "
+"oneiric and precise)\n"
 "from this PPA:"
 msgstr ""
-"Вы можете загрузить deb-пакеты для Ubuntu (gutsy, hardy, intrepid and "
-"jaunty)\n"
-"из этого PPA:"
 
-#: ../downloads.php:193
+#: ../downloads.php:194
 msgid "Suggested package:"
 msgstr "Рекомендуемый пакет:"
 
-#: ../downloads.php:194
+#: ../downloads.php:195
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -159,27 +157,27 @@ msgstr ""
 "поддерживает некоторые из новых возможностей mplayer, поэтому \n"
 "крайне рекомендуется использовать более свежую версию."
 
-#: ../downloads.php:198
+#: ../downloads.php:199
 msgid "You can get updated versions from this PPA:"
 msgstr "Вы можете получить обновлённые версии из этого PPA:"
 
-#: ../downloads.php:202
+#: ../downloads.php:203
 msgid "more info"
 msgstr "дополнительная информация"
 
-#: ../downloads.php:208
+#: ../downloads.php:211
 msgid "Icon Themes:"
 msgstr "Темы иконок:"
 
-#: ../downloads.php:209
+#: ../downloads.php:212
 msgid "Optional packages which provide some icon themes."
 msgstr "Дополнительные пакеты, содержащие несколько тем иконок."
 
-#: ../downloads.php:253
+#: ../downloads.php:256
 msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
-#: ../downloads.php:254
+#: ../downloads.php:257
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -187,11 +185,11 @@ msgstr ""
 "Дополнительные пакеты для продвинутых пользователей: \n"
 "<a href=%1>Смотрите страницу загрузок sourceforge</a>."
 
-#: ../downloads.php:261
+#: ../downloads.php:264
 msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
-#: ../downloads.php:262
+#: ../downloads.php:265
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -199,15 +197,15 @@ msgstr ""
 "Здесь доступны пакеты для других дистрибутивов, созданные \n"
 "другими людьми. <a href=%1>Нажмите сюда</a> для просмотра."
 
-#: ../downloads.php:268
+#: ../downloads.php:271
 msgid "Related Project"
 msgstr "Связанный проект"
 
-#: ../downloads.php:270
+#: ../downloads.php:273
 msgid "by MuldeR"
 msgstr "от MuldeR"
 
-#: ../downloads.php:271
+#: ../downloads.php:274
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -220,12 +218,12 @@ msgstr ""
 "свою программу установки, а сборки mplayer оптимизированы для разных\n"
 "типов процессоров и бинарных кодеков."
 
-#: ../downloads.php:282
+#: ../downloads.php:285
 msgid "Unstable releases"
 msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:284
+#: ../downloads.php:287
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -233,7 +231,7 @@ msgstr ""
 "Можно получить файлы напрямую с <a href=%1><b>SVN</b></a> (исходные коды и\n"
 "обновления программы для Windows)."
 
-#: ../footer.php:41
+#: ../footer.php:42
 msgid "This page is available in the following languages:"
 msgstr "Эта страница доступна на следующих языках:"
 
@@ -265,17 +263,9 @@ msgstr "Особые пожелания"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:41
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "Проект SMPlayer"
-
-#: ../header.php:42
-msgid "Forget about codecs"
-msgstr "Забудьте о кодеках"
-
-#: ../header.php:42
-msgid "Play anything"
-msgstr "Играет всё"
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -287,8 +277,8 @@ msgid ""
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer представляет собой полноценную графическую оболочку для <a "
-"href=%1>MPlayer</a>,\n"
+"SMPlayer представляет собой полноценную графическую оболочку для <a href=%"
+"1>MPlayer</a>,\n"
 "обеспечивающую как базовые функции MPlayer (воспроизведение видео, DVD и "
 "VCD), \n"
 "так и более продвинутые, такие как поддержка фильтров для MPlayer и прочие."
@@ -459,38 +449,6 @@ msgstr "Мини GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, запущенный в новом KDE 4"
 
-#~ msgid "1970"
-#~ msgstr "1970"
-
-#~ msgid "Donations"
-#~ msgstr "Пожертвования"
-
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Скомпилирован на Ubuntu %1."
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Пакет для AMD64. Скомпилирован на Ubuntu %1"
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
-#~ msgstr ""
-#~ "Версия mplayer, включённая в Ubuntu старовата (%1). SMPlayer поддерживает "
-#~ "\n"
-#~ "некоторые возможности новых версий mplayer, поэтому настоятельно \n"
-#~ "рекомендуется новая версия. Вы можете загрузить здесь %2 (от %3)."
-
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Вы можете получить обновленные версии <a href=%1>здесь</a>"
-
-#~ msgid "More info"
-#~ msgstr "Больше информации"
-
-#~ msgid "New!"
-#~ msgstr "Новинка!"
-
 #~ msgid ""
 #~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
 #~ "%1. Just add one of the following lines to your %2, according to your \n"
@@ -499,3 +457,49 @@ msgstr "SMPlayer, запущенный в новом KDE 4"
 #~ "Теперь вы можете легко установить пакеты с SMPlayer и MPlayer с помощью \n"
 #~ "%1. Просто добавьте одну из следующих строк в ваш %2, согласно вашей \n"
 #~ "версии Ubuntu:"
+
+#~ msgid "New!"
+#~ msgstr "Новинка!"
+
+#~ msgid "More info"
+#~ msgstr "Больше информации"
+
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "Вы можете получить обновленные версии <a href=%1>здесь</a>"
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
+#~ "SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Версия mplayer, включённая в Ubuntu старовата (%1). SMPlayer "
+#~ "поддерживает \n"
+#~ "некоторые возможности новых версий mplayer, поэтому настоятельно \n"
+#~ "рекомендуется новая версия. Вы можете загрузить здесь %2 (от %3)."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Пакет для AMD64. Скомпилирован на Ubuntu %1"
+
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Скомпилирован на Ubuntu %1."
+
+#~ msgid "Donations"
+#~ msgstr "Пожертвования"
+
+#~ msgid "1970"
+#~ msgstr "1970"
+
+#~ msgid ""
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
+#~ msgstr ""
+#~ "Вы можете загрузить deb-пакеты для Ubuntu (gutsy, hardy, intrepid and "
+#~ "jaunty)\n"
+#~ "из этого PPA:"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Забудьте о кодеках"
+
+#~ msgid "Play anything"
+#~ msgstr "Играет всё"

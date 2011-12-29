@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-01 19:07+0100\n"
+"POT-Creation-Date: 2011-12-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,17 +134,16 @@ msgstr "Ubuntu 用パッケージ"
 
 #: ../downloads.php:181
 msgid ""
-"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, "
+"oneiric and precise)\n"
 "from this PPA:"
 msgstr ""
-"Ubuntu (gutsy、hardy、intrepid および jaunty) 用 deb パッケージはこちらの "
-"PPA から取得できます:"
 
-#: ../downloads.php:193
+#: ../downloads.php:194
 msgid "Suggested package:"
 msgstr "推奨されるパッケージ:"
 
-#: ../downloads.php:194
+#: ../downloads.php:195
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -154,27 +153,27 @@ msgstr ""
 "は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くお"
 "すすめします。"
 
-#: ../downloads.php:198
+#: ../downloads.php:199
 msgid "You can get updated versions from this PPA:"
 msgstr "最新のバージョンはこちらの PPA から取得できます:"
 
-#: ../downloads.php:202
+#: ../downloads.php:203
 msgid "more info"
 msgstr "Ubuntu PPA について"
 
-#: ../downloads.php:208
+#: ../downloads.php:211
 msgid "Icon Themes:"
 msgstr "アイコンテーマ:"
 
-#: ../downloads.php:209
+#: ../downloads.php:212
 msgid "Optional packages which provide some icon themes."
 msgstr "いくつかのアイコンテーマを供給するオプションパッケージです。"
 
-#: ../downloads.php:253
+#: ../downloads.php:256
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:254
+#: ../downloads.php:257
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -182,26 +181,26 @@ msgstr ""
 "上級者向けにいくつかのパッケージがあります: <a href=%1>sourceforge のダウン"
 "ロードページをご覧ください</a>。"
 
-#: ../downloads.php:261
+#: ../downloads.php:264
 msgid "Contributed packages"
 msgstr "いただいたパッケージ"
 
-#: ../downloads.php:262
+#: ../downloads.php:265
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧ください。"
 
-#: ../downloads.php:268
+#: ../downloads.php:271
 msgid "Related Project"
 msgstr "関連プロジェクト"
 
-#: ../downloads.php:270
+#: ../downloads.php:273
 msgid "by MuldeR"
 msgstr "by MuldeR"
 
-#: ../downloads.php:271
+#: ../downloads.php:274
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -214,12 +213,12 @@ msgstr ""
 "ラーや、特定のプロセッサー向けに最適化された mplayer ビルド、バイナリコーデッ"
 "クなどを供給しています。"
 
-#: ../downloads.php:282
+#: ../downloads.php:285
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:284
+#: ../downloads.php:287
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -227,7 +226,7 @@ msgstr ""
 "<a href=%1><b>こちら</b>に SVN から直接取得されたパッケージ (ソースコードと "
 "Windows 用の更新) があります。"
 
-#: ../footer.php:41
+#: ../footer.php:42
 msgid "This page is available in the following languages:"
 msgstr "このページは以下の言語でご覧いただけます: "
 
@@ -259,17 +258,9 @@ msgstr "ご要望"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:41
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "SMPlayer プロジェクト"
-
-#: ../header.php:42
-msgid "Forget about codecs"
-msgstr "コーデックのことは忘れよう"
-
-#: ../header.php:42
-msgid "Play anything"
-msgstr "再生できないものはない"
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -440,3 +431,16 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:61
 msgid "SMPlayer running on the new KDE 4"
 msgstr "KDE 4 で実行中の SMPlayer"
+
+#~ msgid ""
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
+#~ msgstr ""
+#~ "Ubuntu (gutsy、hardy、intrepid および jaunty) 用 deb パッケージはこちらの "
+#~ "PPA から取得できます:"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "コーデックのことは忘れよう"
+
+#~ msgid "Play anything"
+#~ msgstr "再生できないものはない"

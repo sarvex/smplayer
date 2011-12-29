@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-01 19:07+0100\n"
+"POT-Creation-Date: 2011-12-29 23:14+0100\n"
 "PO-Revision-Date: 2008-10-02 10:55+0200\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -138,42 +138,43 @@ msgstr ""
 
 #: ../downloads.php:181
 msgid ""
-"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, "
+"oneiric and precise)\n"
 "from this PPA:"
 msgstr ""
 
-#: ../downloads.php:193
+#: ../downloads.php:194
 msgid "Suggested package:"
 msgstr "Proponowany pakiet:"
 
-#: ../downloads.php:194
+#: ../downloads.php:195
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
 
-#: ../downloads.php:198
+#: ../downloads.php:199
 msgid "You can get updated versions from this PPA:"
 msgstr ""
 
-#: ../downloads.php:202
+#: ../downloads.php:203
 msgid "more info"
 msgstr ""
 
-#: ../downloads.php:208
+#: ../downloads.php:211
 msgid "Icon Themes:"
 msgstr "Tematy ikon:"
 
-#: ../downloads.php:209
+#: ../downloads.php:212
 msgid "Optional packages which provide some icon themes."
 msgstr "Opcjonalne pakiety zawierające kilka tematów ikon"
 
-#: ../downloads.php:253
+#: ../downloads.php:256
 msgid "Additional packages"
 msgstr "Dodatkowe pakiety"
 
-#: ../downloads.php:254
+#: ../downloads.php:257
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -181,11 +182,11 @@ msgstr ""
 "Tutaj znajdziesz dodatkowe pakiety dla zaawansowanych użytkowników:\n"
 "<a href=%1>Zobacz stronę pobierania sourceforge</a>."
 
-#: ../downloads.php:261
+#: ../downloads.php:264
 msgid "Contributed packages"
 msgstr "Pakiety stworzone przez różne osoby"
 
-#: ../downloads.php:262
+#: ../downloads.php:265
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -193,15 +194,15 @@ msgstr ""
 "Tutaj dostępne są pakiety wykonane przez różne osoby\n"
 "dla innych dystrybucji. <a href=%1>Kliknij</a> żeby je zobaczyć."
 
-#: ../downloads.php:268
+#: ../downloads.php:271
 msgid "Related Project"
 msgstr "Prejekty pokrewne"
 
-#: ../downloads.php:270
+#: ../downloads.php:273
 msgid "by MuldeR"
 msgstr "wykonany przez"
 
-#: ../downloads.php:271
+#: ../downloads.php:274
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -214,12 +215,12 @@ msgstr ""
 "własny instalator, wbudowany mplayer zoptymalizowany pod kilka procesorów i\n"
 "kodeki binarne."
 
-#: ../downloads.php:282
+#: ../downloads.php:285
 msgid "Unstable releases"
 msgstr "Wydania niestabilne"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:284
+#: ../downloads.php:287
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -228,7 +229,7 @@ msgstr ""
 "źródłowy\n"
 "i aktualizacje dla Windows)."
 
-#: ../footer.php:41
+#: ../footer.php:42
 msgid "This page is available in the following languages:"
 msgstr ""
 
@@ -260,17 +261,9 @@ msgstr "Prośby nowych funkcji"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:41
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
-
-#: ../header.php:42
-msgid "Forget about codecs"
-msgstr ""
-
-#: ../header.php:42
-msgid "Play anything"
-msgstr ""
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -455,20 +448,11 @@ msgstr "Mini GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer uruchomiony w nowym KDE 4"
 
-#~ msgid "1970"
-#~ msgstr "1970"
+#~ msgid "More info"
+#~ msgstr "Więcej informacji"
 
-#~ msgid "Donations"
-#~ msgstr "Dotacje"
-
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayera"
-
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Kompilowany na Ubuntu %1."
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -480,8 +464,17 @@ msgstr "SMPlayer uruchomiony w nowym KDE 4"
 #~ "potrafi obsłużyć kilka nowych funkcji mplayera, a więc nowsza wersja \n"
 #~ "jest wysoce rekomendowana."
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
 
-#~ msgid "More info"
-#~ msgstr "Więcej informacji"
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Kompilowany na Ubuntu %1."
+
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayera"
+
+#~ msgid "Donations"
+#~ msgstr "Dotacje"
+
+#~ msgid "1970"
+#~ msgstr "1970"

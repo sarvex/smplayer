@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-01 19:07+0100\n"
+"POT-Creation-Date: 2011-12-29 23:14+0100\n"
 "PO-Revision-Date: 2009-02-18 22:05+0100\n"
 "Last-Translator: arti <artii@gmx.net>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -146,17 +146,16 @@ msgstr "Pakete für Ubuntu:"
 
 #: ../downloads.php:181
 msgid ""
-"You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+"You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, "
+"oneiric and precise)\n"
 "from this PPA:"
 msgstr ""
-"Es gibt deb Pakete für Ubuntu (gutsy, hardy, intrepid und jaunty)\n"
-"in diesem PPA:"
 
-#: ../downloads.php:193
+#: ../downloads.php:194
 msgid "Suggested package:"
 msgstr "Vorgeschlagene Pakete:"
 
-#: ../downloads.php:194
+#: ../downloads.php:195
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -166,27 +165,27 @@ msgstr ""
 "unterstützt einige neue Merkmale von mplayer, deshalb wird eine neuere \n"
 "Version dringend empfohlen."
 
-#: ../downloads.php:198
+#: ../downloads.php:199
 msgid "You can get updated versions from this PPA:"
 msgstr "Es gibt aktualisierte Versionen von diesem PPA:"
 
-#: ../downloads.php:202
+#: ../downloads.php:203
 msgid "more info"
 msgstr "weitere Infos"
 
-#: ../downloads.php:208
+#: ../downloads.php:211
 msgid "Icon Themes:"
 msgstr "Symbolthemen:"
 
-#: ../downloads.php:209
+#: ../downloads.php:212
 msgid "Optional packages which provide some icon themes."
 msgstr "Wahlfreie Pakete, die einige Symbolthemen zur Verfügung stellen."
 
-#: ../downloads.php:253
+#: ../downloads.php:256
 msgid "Additional packages"
 msgstr "Zusätzliche Pakete"
 
-#: ../downloads.php:254
+#: ../downloads.php:257
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -194,11 +193,11 @@ msgstr ""
 "Es gibt einige zusätzliche Pakete für fortgeschrittene Anwender:\n"
 "<a href=%1>siehe Sourceforge Download Seite</a>."
 
-#: ../downloads.php:261
+#: ../downloads.php:264
 msgid "Contributed packages"
 msgstr "Beigesteuerte Pakete"
 
-#: ../downloads.php:262
+#: ../downloads.php:265
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -206,15 +205,15 @@ msgstr ""
 "Es gibt verfügbare Pakete für andere Distributionen, die von \n"
 "anderen Leuten gebaut wurden. <a href=%1>Klicke hier</a>, um sie zu sehen."
 
-#: ../downloads.php:268
+#: ../downloads.php:271
 msgid "Related Project"
 msgstr "Ähnliche Projekte"
 
-#: ../downloads.php:270
+#: ../downloads.php:273
 msgid "by MuldeR"
 msgstr "von MuldeR"
 
-#: ../downloads.php:271
+#: ../downloads.php:274
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -227,12 +226,12 @@ msgstr ""
 "Es bietet auch ein Installationsprogramm und für verschiedene Prozessoren \n"
 "optimierte mplayer Binärdateien und Binärcodecs an."
 
-#: ../downloads.php:282
+#: ../downloads.php:285
 msgid "Unstable releases"
 msgstr "Instabile Freigabeversionen"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:284
+#: ../downloads.php:287
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -240,7 +239,7 @@ msgstr ""
 "Du kannst auch direkt <a href=%1><b>hier</b></a> Pakete aus dem SVN \n"
 "holen (Quellcode und Windows Aktualisierungen)."
 
-#: ../footer.php:41
+#: ../footer.php:42
 msgid "This page is available in the following languages:"
 msgstr ""
 
@@ -272,17 +271,9 @@ msgstr "Merkmalsanfragen"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:41
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "Das SMPlayer Projekt"
-
-#: ../header.php:42
-msgid "Forget about codecs"
-msgstr ""
-
-#: ../header.php:42
-msgid "Play anything"
-msgstr ""
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -469,17 +460,24 @@ msgstr "Die mini GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer unter dem neuen KDE 4 laufend"
 
-#~ msgid "1970"
-#~ msgstr "5694"
+#~ msgid ""
+#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
+#~ "%1. Just add one of the following lines to your %2, according to your \n"
+#~ "version of Ubuntu:"
+#~ msgstr ""
+#~ "Jetzt kannst du ganz einfach die SMPlayer und MPlayer Pakete mit %1 \n"
+#~ "installieren. Füge einfach eine der folgenden Zeilen deine %2, gemäß "
+#~ "deiner \n"
+#~ "Ubuntu Version:"
 
-#~ msgid "Donations"
-#~ msgstr "Spenden"
+#~ msgid "New!"
+#~ msgstr "Neu!"
 
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Unter Ubuntu %1 kompiliert."
+#~ msgid "More info"
+#~ msgstr "Mehr Infos"
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Paket für AMD64. Unter Ubuntu %1 kompiliert."
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "Aktualisierte Versionen findest du <a href=%1>hier</a>"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -492,21 +490,21 @@ msgstr "SMPlayer unter dem neuen KDE 4 laufend"
 #~ "neuere \n"
 #~ "Version sehr empfohlen wird."
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Aktualisierte Versionen findest du <a href=%1>hier</a>"
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Paket für AMD64. Unter Ubuntu %1 kompiliert."
 
-#~ msgid "More info"
-#~ msgstr "Mehr Infos"
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Unter Ubuntu %1 kompiliert."
 
-#~ msgid "New!"
-#~ msgstr "Neu!"
+#~ msgid "Donations"
+#~ msgstr "Spenden"
+
+#~ msgid "1970"
+#~ msgstr "5694"
 
 #~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
 #~ msgstr ""
-#~ "Jetzt kannst du ganz einfach die SMPlayer und MPlayer Pakete mit %1 \n"
-#~ "installieren. Füge einfach eine der folgenden Zeilen deine %2, gemäß "
-#~ "deiner \n"
-#~ "Ubuntu Version:"
+#~ "Es gibt deb Pakete für Ubuntu (gutsy, hardy, intrepid und jaunty)\n"
+#~ "in diesem PPA:"
