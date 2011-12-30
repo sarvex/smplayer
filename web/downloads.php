@@ -178,7 +178,7 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 <td>
 <?php
 echo "<b>"; tr("Packages for Ubuntu:"); echo "</b><br>";
-tr("You can get deb packages for Ubuntu (hardy, karmic, lucid, maverick, natty, oneiric and precise)
+tr("You can get deb packages for Ubuntu (hardy, jaunty, karmic, lucid, maverick, natty, oneiric and precise)
 from this PPA:");
 echo "<br>";
 echo "<a href=\"https://launchpad.net/~rvm/+archive/smplayer\">https://launchpad.net/~rvm/+archive/smplayer</a>";
