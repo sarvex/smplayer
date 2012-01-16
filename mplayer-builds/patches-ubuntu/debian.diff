@@ -30,17 +30,17 @@ Index: create_deb.sh
 +mv debian-upstream debian
 Index: version.sh
 ===================================================================
---- version.sh	(revisión: 31826)
+--- version.sh	(revisión: 34540)
 +++ version.sh	(copia de trabajo)
-@@ -15,6 +15,8 @@
- version=$(cat VERSION 2> /dev/null)
- test $version || version=$svn_revision
+@@ -17,6 +17,8 @@
+ version=$svn_revision
+ fi
  
 +extra="-Ubuntu-RVM"
 +
  NEW_REVISION="#define VERSION \"${version}${extra}\""
  OLD_REVISION=$(head -n 1 version.h 2> /dev/null)
- TITLE='#define MP_TITLE "%s "VERSION" (C) 2000-2010 MPlayer Team\n"'
+ TITLE='#define MP_TITLE "%s "VERSION" (C) 2000-2012 MPlayer Team\n"'
 Index: debian-rvm/control
 ===================================================================
 --- debian-rvm/control	(revisión: 0)
@@ -929,8 +929,8 @@ Index: debian-rvm/patches/00list
 --- debian-rvm/patches/00list	(revisión: 0)
 +++ debian-rvm/patches/00list	(revisión: 0)
 @@ -0,0 +1,2 @@
-+01-keep-pts.dpatch
-+03-runtime_eq.dpatch
++#01-keep-pts.dpatch
++#03-runtime_eq.dpatch
 Index: debian-rvm/patches/11-dshowserver.dpatch
 ===================================================================
 --- debian-rvm/patches/11-dshowserver.dpatch	(revisión: 0)
@@ -1297,7 +1297,7 @@ Index: debian-rvm/rules
 ===================================================================
 --- debian-rvm/rules	(revisión: 0)
 +++ debian-rvm/rules	(revisión: 0)
-@@ -0,0 +1,156 @@
+@@ -0,0 +1,157 @@
 +#!/usr/bin/make -f
 +#-*- makefile -*-
 +
@@ -1341,11 +1341,12 @@ Index: debian-rvm/rules
 +build-gui: build-gui-stamp
 +build-gui-stamp: patch 
 +	dh_testdir
-+	./configure $(CONFIGURE_ALL) --cc=gcc-4.3 --enable-gui --enable-mencoder
++	./configure $(CONFIGURE_ALL) --cc=gcc-4.3 --enable-gui --enable-mencoder --disable-cdparanoia --disable-caca
 +	$(MAKE)
 +
 +# Documentation
-+	cd DOCS/xml && ./configure && make html-chunked
++	#cd DOCS/xml && ./configure && make html-chunked
++	$(MAKE) html-chunked
 +
 +	touch build-gui-stamp
 +
