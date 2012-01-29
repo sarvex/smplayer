@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-03 12:24+0100\n"
+"POT-Creation-Date: 2012-01-29 01:37+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -109,7 +109,8 @@ msgid ""
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
-"Versão portátil do SMPlayer. Pode ser executada em dispositivos externos como\n"
+"Versão portátil do SMPlayer. Pode ser executada em dispositivos externos "
+"como\n"
 "unidades USB. Não requer instalação. Só precisa descomprimir o pacote para\n"
 "um local à sua escolha e clique duas vezes em smplayer.exe para o executar."
 
@@ -123,15 +124,18 @@ msgstr ""
 
 #: ../downloads.php:150
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Nota: os ficheiros 7z podem ser descomprimidos com o <a href=%1>7-Zip</a>."
+msgstr ""
+"Nota: os ficheiros 7z podem ser descomprimidos com o <a href=%1>7-Zip</a>."
 
 #: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:171
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
 
 #: ../downloads.php:180
 msgid "Packages for Ubuntu:"
@@ -210,11 +214,13 @@ msgstr "por MuldeR"
 #: ../downloads.php:282
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also provides\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
 "its own installer, mplayer builds optimized for several processors and\n"
 "binary codecs."
 msgstr ""
-"Este pacote contém uma versão recente do SMPlayer (retirada do repositório SVN)\n"
+"Este pacote contém uma versão recente do SMPlayer (retirada do repositório "
+"SVN)\n"
 "bem como uma versão recente do MPlayer. Também providencia o instalador,\n"
 "versões Mplayer ptimizadas para os diversos processadores e\n"
 "os codificadores."
@@ -402,6 +408,14 @@ msgstr "É multiplataforma. Binários disponíveis para Windows e Linux."
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "O SMPlayer é licenciado sob a licença <b>GPL</b>."
 
+#: ../latest.php:5
+msgid "SMPlayer - Latest Version"
+msgstr ""
+
+#: ../latest.php:36
+msgid "Go to the download page"
+msgstr ""
+
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Imagens"
@@ -446,4 +460,3 @@ msgstr "O mini GUI"
 #: ../screenshots.php:61
 msgid "SMPlayer running on the new KDE 4"
 msgstr "O SMPlayer no KDE 4"
-

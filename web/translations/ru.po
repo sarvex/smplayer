@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-03 12:24+0100\n"
+"POT-Creation-Date: 2012-01-29 01:37+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -405,6 +405,14 @@ msgstr "Мультиплатформенность. Доступны сборк�
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer распространяется по <b>GPL</b> лицензии."
 
+#: ../latest.php:5
+msgid "SMPlayer - Latest Version"
+msgstr ""
+
+#: ../latest.php:36
+msgid "Go to the download page"
+msgstr ""
+
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Скриншоты"
@@ -450,23 +458,31 @@ msgstr "Мини GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, запущенный в новом KDE 4"
 
+#~ msgid "Play anything"
+#~ msgstr "Играет всё"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Забудьте о кодеках"
+
 #~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
 #~ msgstr ""
-#~ "Теперь вы можете легко установить пакеты с SMPlayer и MPlayer с помощью \n"
-#~ "%1. Просто добавьте одну из следующих строк в ваш %2, согласно вашей \n"
-#~ "версии Ubuntu:"
+#~ "Вы можете загрузить deb-пакеты для Ubuntu (gutsy, hardy, intrepid and "
+#~ "jaunty)\n"
+#~ "из этого PPA:"
 
-#~ msgid "New!"
-#~ msgstr "Новинка!"
+#~ msgid "1970"
+#~ msgstr "1970"
 
-#~ msgid "More info"
-#~ msgstr "Больше информации"
+#~ msgid "Donations"
+#~ msgstr "Пожертвования"
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Вы можете получить обновленные версии <a href=%1>здесь</a>"
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Скомпилирован на Ubuntu %1."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Пакет для AMD64. Скомпилирован на Ubuntu %1"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -479,28 +495,20 @@ msgstr "SMPlayer, запущенный в новом KDE 4"
 #~ "некоторые возможности новых версий mplayer, поэтому настоятельно \n"
 #~ "рекомендуется новая версия. Вы можете загрузить здесь %2 (от %3)."
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Пакет для AMD64. Скомпилирован на Ubuntu %1"
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "Вы можете получить обновленные версии <a href=%1>здесь</a>"
 
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Скомпилирован на Ubuntu %1."
+#~ msgid "More info"
+#~ msgstr "Больше информации"
 
-#~ msgid "Donations"
-#~ msgstr "Пожертвования"
-
-#~ msgid "1970"
-#~ msgstr "1970"
+#~ msgid "New!"
+#~ msgstr "Новинка!"
 
 #~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
+#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
+#~ "%1. Just add one of the following lines to your %2, according to your \n"
+#~ "version of Ubuntu:"
 #~ msgstr ""
-#~ "Вы можете загрузить deb-пакеты для Ubuntu (gutsy, hardy, intrepid and "
-#~ "jaunty)\n"
-#~ "из этого PPA:"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Забудьте о кодеках"
-
-#~ msgid "Play anything"
-#~ msgstr "Играет всё"
+#~ "Теперь вы можете легко установить пакеты с SMPlayer и MPlayer с помощью \n"
+#~ "%1. Просто добавьте одну из следующих строк в ваш %2, согласно вашей \n"
+#~ "версии Ubuntu:"
