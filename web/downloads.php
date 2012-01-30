@@ -227,7 +227,7 @@ tr("Optional packages which provide some icon themes.");
 <?php 
 echo download_themes_src_link();
 echo "<br>";
-echo download_themes_nonfree_src_link();
+//echo download_themes_nonfree_src_link();
 ?>
 </td>
 </tr>
@@ -251,7 +251,7 @@ echo download_themes_nonfree_rpm_link();
 <?php
 echo download_themes_deb_link();
 echo "<br>";
-echo download_themes_nonfree_deb_link();
+//echo download_themes_nonfree_deb_link();
 ?>
 </td>
 </tr>
