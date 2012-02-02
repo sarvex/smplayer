@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Algimantas Margevičius <margevicius.algimantas@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: web\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-29 01:37+0100\n"
+"PO-Revision-Date: 2012-02-02 09:35+0200\n"
+"Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
+"Language-Team: Lietuvių <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../index.php:5
+msgid "SMPlayer - General Info"
+msgstr "SMPlayer - Bendra informacija"
+
+#: ../info.php:15
+msgid ""
+"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
+"features like support for MPlayer filters and more."
+msgstr ""
+"SMPlayer stengiasi būti pilna <a href=%1>MPlayer</a> grafinė sąsaja,\n"
+"pradedant pagrindinėmis funkcijomis kaip video, DVD, VCD atkūrimas ir "
+"baigiant\n"
+"išplėstinėmis funkcijomis tokiomis kaip MPlayer filtrų palaikymas ir kita."
+
+#: ../info.php:21
+msgid ""
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+"Viena iš įdomiausių SMPlayer galimybių: <b>jis prisimena visų atkurtų\n"
+"failų nustatymus</b>. Taigi pradedate žiūrėti filmą, bet jums reikia "
+"išeiti... \n"
+"Nesijaudinkite, kai atversite tą filmą dar kartą, jis prasidės nuo\n"
+"tos vietos kur palikote, taipogi su tais pačiais nustatymais: garso\n"
+"takeliu, subtitrais, garsu..."
+
+#: ../info.php:30
+msgid "Other additional interesting features:"
+msgstr "Kitos papildomos dėmesio vertos galimybės:"
+
+#: ../info.php:32
+msgid ""
+"Configurable subtitles. You can choose font and size, and even \n"
+"colors for the subtitles."
+msgstr ""
+"Konfigūruojami subtitrai. Galite pasirinkti šriftą ir jo dydį, netgi\n"
+"subtitrų spalvas."
+
+#: ../info.php:34
+msgid ""
+"Audio track switching. You can choose the audio track you want\n"
+"to listen. Works with avi and mkv. And of course with DVDs."
+msgstr ""
+"Audio takelių perjungimas. Galite pasirinkti kurį takelį norite\n"
+"girdėti. Veikia su avi ir mkv. Ir aišku su DVD."
+
+#: ../info.php:36
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+"Prasukimas naudojantis pelės ratuku. Su pelės ratuku filmą galite\n"
+"prasukti pirmyn ar atgal."
+
+#: ../info.php:38
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+"Video ekvalaizeris, leidžia reguliuoti video failų ryškumą, kontrastą,\n"
+"atspalvius, grynumą ir gamą."
+
+#: ../info.php:40
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr ""
+"Keli atkūrimo greičiai. Galite atkurti 2X, 4X... greičiais ir netgi\n"
+"sulėtintame režime."
+
+#: ../info.php:43
+msgid ""
+"Filters. Several filters are available: deinterlace, postprocessing,\n"
+"denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+"Filtrai. Prieinami keli filtrai: deinterliacija, papildomas apdorojimas,\n"
+"triukšmo šalinimas... ir netgi karaoke filtras(balso pašalinimas)."
+
+#: ../info.php:45
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr ""
+"Garso ir subtitrų delsos nustatymas. Leidžia susinchronizuoti\n"
+"garsą ir subtitrus."
+
+#: ../info.php:47
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr ""
+"Papildomos parinktys, tokios kaip demukserio ar video ir garso\n"
+"kodekų pasirinkimas."
+
+#: ../info.php:50
+msgid ""
+"Playlist. Allows you to enqueue several files to be played one after \n"
+"each other. Autorepeat and shuffle supported too."
+msgstr ""
+"Grojaraštis. Leidžia pridėti kelis failus ir jie bus atkurti vienas po "
+"kito.\n"
+"Taipogi palaikomas automatinis kartojimas ir maišymo funkcija."
+
+#: ../info.php:52
+msgid ""
+"Preferences dialog. You can easily configure every option of SMPlayer\n"
+"by using a nice preferences dialog."
+msgstr ""
+"Nustatymų dialogas. Galite lengvai konfigūruoti kiekvieną SMPlayer\n"
+"parinkty naudodamiesi gražiu nustatymų dialogu."
+
+#: ../info.php:54
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr "Galimybė automatiškai ieškoti subtitrų %1 puslapyje."
+
+#: ../info.php:56
+msgid ""
+"Translations: currently SMPlayer is translated into more than 20 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+"Vertimai: šiuo metu SMPlayer yra išverstas į daugiau nei 20\n"
+"kalbų, įskaitant Ispanų, Vokiečių, Prancūzų, Italų, Rusų, Kinų,\n"
+"Japonų, Lietuvių..."
+
+#: ../info.php:59
+msgid "It's multiplatform. Binaries available for Windows and Linux."
+msgstr ""
+"Multiplatforminis. Sukompiliuoti failai prieinami Linux ir Windows "
+"naudotojams."
+
+#: ../info.php:61
+msgid "SMPlayer is under the <b>GPL</b> license."
+msgstr "SMPlayer taikoma <b>GPL</b> licencija."
+
+#: ../header.php:16
+msgid "Main"
+msgstr "Pagrindinis"
+
+#: ../header.php:17
+msgid "Screenshots"
+msgstr "Ekranvaizdžiai"
+
+#: ../header.php:18
+msgid "Downloads"
+msgstr "Atsisiuntimai"
+
+#: ../header.php:19
+msgid "Forum"
+msgstr "Forumas"
+
+#: ../header.php:20
+msgid "Bug Tracking"
+msgstr "Pranešimai apie klaidas"
+
+#: ../header.php:21
+msgid "Feature Requests"
+msgstr "Naujų galimybių prašymai"
+
+#: ../header.php:22
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../header.php:43
+msgid "The SMPlayer Project"
+msgstr "SMPlayer projektas"
+
+#: ../footer.php:42
+msgid "This page is available in the following languages:"
+msgstr "Šis puslapis prieinamas šiomis kalbomis:"
+
+#: ../downloads.php:5
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - Atsisiuntimai"
+
+#: ../downloads.php:27
+msgid "Stable version"
+msgstr "Stabili versija"
+
+#: ../downloads.php:28
+msgid "Windows"
+msgstr "Windows"
+
+#: ../downloads.php:38
+msgid "Package with installer:"
+msgstr "Paketas su diegykle:"
+
+#: ../downloads.php:43
+msgid ""
+"This package contains smplayer, shared libraries, translation \n"
+"files and icon themes. During the installation a recent version of\n"
+"mplayer will be downloaded and installed. Optionally you can also\n"
+"install some additional codecs (necessary only for a few formats, \n"
+"like newer RealVideo variants)."
+msgstr ""
+"Šiame pakete yra smplayer, bendrosios bibliotekos, vertimo failai\n"
+"ir piktogramų temos. Įdiegimo metu bus parsiųsta ir įdiegta naujausia \n"
+"mplayer versija. Jei norite galite įdiegti nebūtinus kodekus (būtina\n"
+"tik keliems formatams pvz. naujiem RealVideo variantam)."
+
+#: ../downloads.php:76
+msgid ""
+"This package contains everything needed to run smplayer: shared \n"
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
+msgstr ""
+"Šiame pakete yra viskas ko jums reikia norint paleisti smplayer:\n"
+"bendrosios bibliotekos, vertimo failai, piktogramų temos ir mplayer\n"
+"(įterpta versija yra %1)."
+
+#: ../downloads.php:89
+msgid "Additional codecs:"
+msgstr "Papildomi kodekai:"
+
+#: ../downloads.php:94
+msgid ""
+"This package adds support for codecs that are not yet implemented\n"
+"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+"formats. Note that they are not necessary to play most common formats\n"
+"like DVDs, MPEG-1/2/4, etc."
+msgstr ""
+"Šis paketas suteikia kodekų palaikymą kurie dar nėra įterpti\n"
+"į mplayer, pvz. RealVideo variantai ir daug nedažnų formatų. Turėkite\n"
+"omeny jog jie nereikalingi atkurti daugumai populiarių formatų\n"
+"pvz. DVD, MPEG-1/2/4 ir t.t."
+
+#: ../downloads.php:99
+msgid ""
+"These codecs are to be used by mplayer only and they will be installed \n"
+"in the same folder, so they can't cause any conflict with other codecs you \n"
+"may have installed."
+msgstr ""
+"Šiuos kodekus mplayer naudos tik tada jei jie įdiegti tame pačiame\n"
+"aplanke kaip ir mplayer. Tai padaryta norint išvengti konfliktų su jūsų\n"
+"sistemoje įdiegtais kodekais."
+
+#: ../downloads.php:103
+msgid ""
+"If you prefer a zip file, you can get it at \n"
+"the <a href=%1>mplayer site</a> (%2)."
+msgstr ""
+"Jei pageidaujate zip failo, jį galite gauti\n"
+"<a href=%1>mplayer puslapyje</a> (%2)."
+
+#: ../downloads.php:118
+msgid ""
+"Package (without installer) which includes smplayer, shared libraries,\n"
+"translations and icon themes. It doesn't include mplayer."
+msgstr ""
+"Paketas (be diegyklės) kuriame yra smplayer, bendrosios bibliotekos,\n"
+"vertimai ir piktogramų temos. Jame nėra mplayer."
+
+#: ../downloads.php:121
+msgid "This package is for advanced users only!"
+msgstr "Šis paketas skirtas tik pažengusiems naudotojams!"
+
+#: ../downloads.php:143
+msgid ""
+"Portable version of SMPlayer. It can be run from external devices, like \n"
+"USB flash drives. It doesn't require installation, just uncompress the \n"
+"package wherever you want and double click on smplayer.exe to run it."
+msgstr ""
+"Portatyvi SMPlayer versija. Ją galima paleisti iš išorinių įrenginių, tokių "
+"kaip\n"
+"USB atmintinukai. Jai nereikia įdiegimo, tiesiog išarchyvuokite paketą į\n"
+"norimą vietą ir dukart spustelėkite smplayer.exe norėdami paleisti."
+
+#: ../downloads.php:147
+msgid ""
+"The package also includes the icon themes, translations and a \n"
+"MPlayer build."
+msgstr ""
+"Pakete taipogi yra piktogramų temos, vertimai ir\n"
+"MPlayer leidimas."
+
+#: ../downloads.php:150
+msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+msgstr "Pastaba: 7z failus galima išarchyvuoti su <a href=%1>7-Zip</a>."
+
+#: ../downloads.php:161
+msgid "Linux"
+msgstr "Linux"
+
+#: ../downloads.php:171
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Norėdami sužinoti kaip sukompiliuoti, perskaitykite „Install.txt“ kuris yra "
+"pakete."
+
+#: ../downloads.php:180
+msgid "Packages for Ubuntu:"
+msgstr "Ubuntu paketai:"
+
+#: ../downloads.php:181
+msgid "You can get deb packages for Ubuntu from this PPA:"
+msgstr "Deb paketus skirtus Ubuntu galite gauti iš šio PPA:"
+
+#: ../downloads.php:187
+msgid "To install smplayer, just run these commands in a terminal:"
+msgstr "Norėdami įdiegti smplayer, terminale įvykdykite šias komandas:"
+
+#: ../downloads.php:202
+msgid "Suggested package:"
+msgstr "Siūlomas paketas:"
+
+#: ../downloads.php:203
+msgid ""
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended."
+msgstr ""
+"Mplayer versija kuri įterpta į Ubuntu yra labai sena (%1). SMPlayer\n"
+"turi kai kurių naujų mplayer galimybių palaikymą, todėl naujesnė\n"
+"versija yra rekomenduojama."
+
+#: ../downloads.php:207
+msgid "You can get updated versions from this PPA:"
+msgstr "Iš šio PPA galite gauti naujausią versiją:"
+
+#: ../downloads.php:211
+msgid "more info"
+msgstr "daugiau informacijos"
+
+#: ../downloads.php:219
+msgid "Icon Themes:"
+msgstr "Piktogramų temos:"
+
+#: ../downloads.php:220
+msgid "Optional packages which provide some icon themes."
+msgstr "Nebūtini paketai kurie suteikia kelias piktogramų temas."
+
+#: ../downloads.php:264
+msgid "Additional packages"
+msgstr "Papildomi paketai"
+
+#: ../downloads.php:265
+msgid ""
+"There are several additional packages for advanced users:\n"
+"<a href=%1>See sourceforge download page</a>."
+msgstr ""
+"Yra keli papildomi paketai pažengusiems naudotojams:\n"
+"<a href=%1>Pažiūrėkite sourceforge atsisiuntimo puslapyje</a>."
+
+#: ../downloads.php:272
+msgid "Contributed packages"
+msgstr "Naudotojų paketai"
+
+#: ../downloads.php:273
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+"Yra paketų kitiem distributyvam, kuriuos kūrė kiti\n"
+"žmonės. <a href=%1>Spauskite čia</a> norėdami pamatyti."
+
+#: ../downloads.php:279
+msgid "Related Project"
+msgstr "Susijęs projektas"
+
+#: ../downloads.php:281
+msgid "by MuldeR"
+msgstr "kūrė MuldeR"
+
+#: ../downloads.php:282
+msgid ""
+"This package contains a very recent version of SMPlayer (often taken from\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
+"its own installer, mplayer builds optimized for several processors and\n"
+"binary codecs."
+msgstr ""
+"Šiame pakete yra naujausia SMPlayer versija (dažniausiai paimta\n"
+"iš SVN saugyklos) taipogi naujausia MPlayer versija. Taipogi suteikia\n"
+"savo diegyklę, mplayer sukuria keliems procesoriams optimizuotus ir\n"
+"sukompiliuotus kodekus."
+
+#: ../downloads.php:293
+msgid "Unstable releases"
+msgstr "Nestabilūs leidimai"
+
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
+#: ../downloads.php:295
+msgid ""
+"You can get packages directly taken from the SVN (source code and\n"
+"Windows updates), <a href=%1><b>here</b></a>."
+msgstr ""
+"Galite gauti paketus tiesiai iš SVN (pradinis kodas ir Windows \n"
+"atnaujinimai), <a href=%1><b>čia</b></a>."
+
+#: ../screenshots.php:5
+msgid "SMPlayer - Screenshots"
+msgstr "SMPlayer - Ekranvaizdžiai"
+
+#: ../screenshots.php:35
+msgid "Here you can see some screenshots from SMPlayer:"
+msgstr "Štai keletas SMPlayer ekranvaizdžių:"
+
+#: ../screenshots.php:41
+msgid "This is the main window"
+msgstr "Tai yra pagrindinis langas"
+
+#: ../screenshots.php:44
+msgid "The playlist can be embedded in the main window"
+msgstr "Grojaraštis gali būti įterpiamas į pagrindinį langą"
+
+#: ../screenshots.php:46
+msgid "The preferences dialog"
+msgstr "Nustatymų dialogas"
+
+#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
+#: ../screenshots.php:52
+msgid "SMPlayer running on Gnome"
+msgstr "SMPlayer veikia su Gnome"
+
+#: ../screenshots.php:53
+msgid "A video displaying a srt subtitle"
+msgstr "Vaizdo failai rodo srt subtitrus"
+
+#: ../screenshots.php:54
+msgid "Matroska embedded subtitles"
+msgstr "Matroska įterptieji subtitrai"
+
+#: ../screenshots.php:59
+msgid "SMPlayer is translated into more than 20 languages"
+msgstr "SMPlayer yra išverstas į daugiau nei 20 kalbų"
+
+#: ../screenshots.php:60
+msgid "The mini GUI"
+msgstr "Minimali grafinė sąsaja"
+
+#: ../screenshots.php:61
+msgid "SMPlayer running on the new KDE 4"
+msgstr "SMPlayer veikia su nauja KDE 4"
+
+#: ../latest.php:5
+msgid "SMPlayer - Latest Version"
+msgstr "SMPlayer - Naujausia versija"
+
+#: ../latest.php:36
+msgid "Go to the download page"
+msgstr "Eiti į atsisiuntimų puslapį"
