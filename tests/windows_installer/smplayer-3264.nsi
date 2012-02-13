@@ -194,9 +194,7 @@
   !include Sections.nsh
   !include WinVer.nsh
   !include WordFunc.nsh
-!ifdef WIN64
   !include x64.nsh
-!endif
 
 ;--------------------------------
 ;Pages
@@ -525,7 +523,11 @@ Section -Post
   ${EndIf}
 
   ;Registry Uninstall information
+!ifdef WIN64
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayName" "$(^Name) (x64)"
+!else
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayName" "$(^Name)"
+!endif
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayVersion" "${SMPLAYER_VERSION}"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.berlios.de/forum"
@@ -712,7 +714,7 @@ Function .onInit
 
 !ifdef WIN64
   ${IfNot} ${RunningX64}
-    MessageBox MB_OK|MB_ICONSTOP "A 64-bit Windows system is required to install this software."
+    MessageBox MB_OK|MB_ICONSTOP "A 64-bit Windows operating system is required to install this software."
     Abort
   ${EndIf}
 
@@ -725,6 +727,18 @@ Function .onInit
     Abort
   
   SetRegView 64
+!else
+  ${If} ${RunningX64}
+    SetRegView 64
+    ClearErrors
+    ReadRegStr $R0 HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString"
+
+    IfErrors +3 0
+      MessageBox MB_OK|MB_ICONSTOP "An existing 64-bit installation of SMPlayer exists. You must uninstall 64-bit SMPlayer first."
+      Abort
+    
+    SetRegView 32
+  ${EndIf}
 !endif
 
   !ifdef PRE_RELEASE
