@@ -38,15 +38,9 @@
 #include "ytdelegate.h"
 #include "ytdataapi.h"
 #include "retrievevideourl.h"
-//#include "images.h"
 #include "myborder.h"
 #include "searchbox.h"
 #include "recordingdialog.h"
-//#include "preferences.h"
-//#include "global.h"
-
-
-//using namespace Global;
 
 #define PAGE_RESULT_COUNT 25
 
@@ -215,11 +209,9 @@ void PixmapLoader::reset()
 YTDialog::YTDialog(QWidget *parent) :
     QWidget(parent), overlayVisible(false)
 {
-    QStringList logos;
-    logos << "Umplayer-16" << "Umplayer-24" <<"Umplayer-32" << "Umplayer-48" << "Umplayer-256" << "Umplayer-512" ;
-    //setWindowIcon( Images::icon(logos) );
+    setWindowIcon( QPixmap(":/icons/logo.png") );
     setAutoFillBackground(true);
-    setWindowTitle("YouTube Browser - UMPlayer");    
+    setWindowTitle("YouTube Browser - SMPlayer");    
     tabBar = new YTTabBar(this);
     connect(tabBar, SIGNAL(currentChanged(int)), this, SLOT(gotCurrentTab(int)));
     overlay = new OverlayWidget(this);
@@ -592,8 +584,7 @@ void YTDialog::videoDblClicked(QListWidgetItem *item)
     rvu->fetchYTVideoPage(svi->videoid, svi->header );
     */
     QString video = "http://www.youtube.com/watch?v=" + svi->videoid;
-    //QDesktopServices::openUrl(QString("http://www.youtube.com/watch?v=%1").arg(svi->videoid));
-	QProcess::startDetached("smplayer", QStringList() << video);
+    QProcess::startDetached("smplayer", QStringList() << video);
 }
 
 void YTDialog::showContextMenu(QPoint point)

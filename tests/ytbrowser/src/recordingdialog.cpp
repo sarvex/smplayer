@@ -41,12 +41,6 @@
 #include "retrievevideourl.h"
 #include "helper.h"
 #include "myborder.h"
-//#include "images.h"
-//#include "global.h"
-//#include "preferences.h"
-//#include "infoprovider.h"
-
-//using namespace Global;
 
 RecordingDialog* RecordingDialog::instance = 0;
 
@@ -199,13 +193,11 @@ QSize RecordingDelegate::sizeHint(const QStyleOptionViewItem &option, const QMod
 RecordingDialog::RecordingDialog(QWidget *parent) :
     QWidget(parent), pressedItemLeftButton(0), pressedItemRightButton(0)
 {
-	recordings_directory = "/tmp/";
-	recording_quality = 37;
-	recording_format = 0;
+    recordings_directory = "/tmp/";
+    recording_quality = 37;
+    recording_format = 0;
 
-    QStringList logos;
-    logos << "Umplayer-16" << "Umplayer-24" <<"Umplayer-32" << "Umplayer-48" << "Umplayer-256" << "Umplayer-512" ;
-    //setWindowIcon( Images::icon(logos) );
+    setWindowIcon( QPixmap(":/icons/logo.png") );
     setWindowTitle("Recordings");
     clearListButton = new QPushButton("&Clear List", this);
     openFolderButton = new QPushButton("&Open Folder", this);
@@ -358,7 +350,8 @@ void RecordingDialog::oneDownloadFinished(bool error)
     else {
         dd->downloadState = DownloadData::Completed;
         dd->downloadProgress = "Completed";
-        dd->videoDuration = 0; //InfoProvider::getInfo( dd->filePath ).duration;
+        /* dd->videoDuration = InfoProvider::getInfo( dd->filePath ).duration; */
+        dd->videoDuration = 0;
     }
     dd->completionTime = QDateTime::currentDateTime();    
     dd->fileSize = dfile->fileSize();    
@@ -820,12 +813,12 @@ void RecordingDialog::saveList()
         }
         itemList.append(ddMap);
     }
-    //pref->downloadHistory = itemList;
+    /* pref->downloadHistory = itemList; */
 }
 
 void RecordingDialog::loadList()
 {
-	/*
+    /*
     for(int i=0; i < pref->downloadHistory.count(); ++i)
     {
         QVariantMap ddMap = pref->downloadHistory.value(i).toMap();
@@ -842,5 +835,5 @@ void RecordingDialog::loadList()
         item->setData(DownloadDataRole, QVariant::fromValue(dd));
         item->setData(emitDataChangedRole, true);
     }
-	*/
+    */
 }
