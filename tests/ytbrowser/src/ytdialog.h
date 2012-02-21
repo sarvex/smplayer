@@ -175,7 +175,7 @@ public slots:
     void setSearchTerm(QString term);
     void showContextMenu(QPoint point);
     void recordItem(QListWidgetItem* item);
-
+    void play(QString file);
 
 private:
     static YTDialog* m_instance;

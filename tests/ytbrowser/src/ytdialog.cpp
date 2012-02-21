@@ -263,6 +263,8 @@ YTDialog::YTDialog(QWidget *parent) :
     connect(videoList, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(videoDblClicked(QListWidgetItem*)));
     connect(videoList, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(showContextMenu(QPoint)));
 
+    RecordingDialog * rec = RecordingDialog::getInstance();
+    connect(rec, SIGNAL(playFile(QString)), this, SLOT(play(QString)));
     /*
     connect(this, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), 
             this, SLOT(playYTUrl(QMap<int,QString>,QString, QString)));
@@ -584,7 +586,7 @@ void YTDialog::videoDblClicked(QListWidgetItem *item)
     rvu->fetchYTVideoPage(svi->videoid, svi->header );
     */
     QString video = "http://www.youtube.com/watch?v=" + svi->videoid;
-    QProcess::startDetached("smplayer", QStringList() << video);
+    play(video);
 }
 
 void YTDialog::showContextMenu(QPoint point)
@@ -617,6 +619,10 @@ void YTDialog::recordItem(QListWidgetItem *item)
     RecordingDialog::downloadVideoId(svi->videoid, svi->header, 0);
 }
 
+void YTDialog::play(QString file) 
+{
+    QProcess::startDetached("smplayer", QStringList() << file);
+}
 
 YTDialog* YTDialog::instance()
 {
