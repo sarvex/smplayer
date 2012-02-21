@@ -42,8 +42,6 @@
 #include "helper.h"
 #include "myborder.h"
 
-RecordingDialog* RecordingDialog::instance = 0;
-
 RecordingDelegate::RecordingDelegate(QObject *parent)
     :QStyledItemDelegate(parent), selectedBrush(QPixmap(":/Control/bg-download-active.png"))
 {
@@ -247,16 +245,12 @@ RecordingDialog::~RecordingDialog()
 
 void RecordingDialog::downloadVideoId(QString videoId, QString title, double)
 {
-    if(!instance)
-    {
-        instance = new RecordingDialog;
-    }
-    RetrieveVideoUrl* rvu = new RetrieveVideoUrl(instance);
-    connect(rvu, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), instance, SLOT(recordVideo(QMap<int,QString>,QString,QString)));
+    RetrieveVideoUrl* rvu = new RetrieveVideoUrl(this);
+    connect(rvu, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), this, SLOT(recordVideo(QMap<int,QString>,QString,QString)));
     connect(rvu, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), rvu, SLOT(deleteLater()));
     rvu->fetchYTVideoPage(videoId, title);
-    if(!instance->isVisible())
-        instance->show();
+
+    if(!isVisible()) show();
 }
 
 void RecordingDialog::recordVideo(QMap<int, QString> qualityMap, QString title, QString id)

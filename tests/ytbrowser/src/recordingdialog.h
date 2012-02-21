@@ -106,12 +106,20 @@ public:
     QString getUniqueFileName(QString name);
     bool eventFilter(QObject *watched, QEvent *event);
 
+    void setRecordingsDirectory(const QString & dir) { recordings_directory = dir; }
+    QString recordingsDirectory() { return recordings_directory; }
+
+    void setRecordingQuality(int q) { recording_quality = q; }
+    int recordingQuality() { return recording_quality; }
+
+    void setRecordingFormat(int f) { recording_format = f; }
+    int recordingFormat() { return recording_format; }
+
 private:
     QPushButton* clearListButton;
     QPushButton* openFolderButton;
 
     QListWidget* downloadList;
-    static RecordingDialog* instance;        
     QListWidgetItem* pressedItemLeftButton;
     QListWidgetItem* pressedItemRightButton;
 
@@ -147,9 +155,9 @@ public slots:
     void recordVideo(QMap<int,QString> qualityMap, QString title, QString id);
 
 protected:
-	QString recordings_directory;
-	int recording_quality;
-	int recording_format;
+    QString recordings_directory;
+    int recording_quality;
+    int recording_format;
 };
 
 #endif // RECORDINGDIALOG_H

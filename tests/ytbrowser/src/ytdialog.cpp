@@ -206,7 +206,11 @@ YTDialog::YTDialog(QWidget *parent) :
     overlay = new OverlayWidget(this);
     videoList = new QListWidget(this);
     pixmap_loader = new PixmapLoader;
+
     recording_dialog = new RecordingDialog;
+    recording_dialog->setRecordingsDirectory("/tmp/");
+    recording_dialog->setRecordingQuality(HD);
+    recording_dialog->setRecordingFormat(0);
 
     MyBorder* border = new MyBorder(this);
     border ->setBGColor(palette().color(backgroundRole()));
