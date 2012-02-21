@@ -27,7 +27,7 @@ int main( int argc, char ** argv )
 
 	a.setStyleSheet(":/Control/main.css");
 
-	YTDialog * yt = YTDialog::instance();
+	YTDialog * yt = new YTDialog();
 	yt->setMode(YTDialog::Button);
 	yt->show();
 	yt->resize(400, 500);

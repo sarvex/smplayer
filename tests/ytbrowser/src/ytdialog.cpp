@@ -44,9 +44,6 @@
 
 #define PAGE_RESULT_COUNT 25
 
-PixmapLoader* PixmapLoader::m_instance = 0;
-YTDialog* YTDialog::m_instance = 0;
-
 OverlayWidget::OverlayWidget(QWidget* parent) : QWidget(parent)
 {
     loadingOverlay = QPixmap(":/Control/bg-youtube-loading-overlay.png");
@@ -157,14 +154,6 @@ void YTButton::paintEvent(QPaintEvent *e)
 }
 /*******************************************************************************************************
 ***********************************************************************************************************/
-PixmapLoader* PixmapLoader::instance()
-{
-    if(!m_instance)
-    {
-        m_instance = new PixmapLoader;
-    }
-    return m_instance;
-}
 
 PixmapLoader::~PixmapLoader()
 {
@@ -216,6 +205,8 @@ YTDialog::YTDialog(QWidget *parent) :
     connect(tabBar, SIGNAL(currentChanged(int)), this, SLOT(gotCurrentTab(int)));
     overlay = new OverlayWidget(this);
     videoList = new QListWidget(this);
+    pixmap_loader = new PixmapLoader;
+    recording_dialog = new RecordingDialog;
 
     MyBorder* border = new MyBorder(this);
     border ->setBGColor(palette().color(backgroundRole()));
@@ -258,17 +249,22 @@ YTDialog::YTDialog(QWidget *parent) :
     setLoadingOverlay(false);    
     api = new YTDataAPI(this);
     connect(api, SIGNAL(finalResults(YTReply)), this, SLOT(gotAPIReply(YTReply)));
-    connect(PixmapLoader::instance(), SIGNAL(pixmapResult(QPixmap,int)), this, SLOT(gotPixmap(QPixmap,int)));
+    connect(pixmap_loader, SIGNAL(pixmapResult(QPixmap,int)), this, SLOT(gotPixmap(QPixmap,int)));
     connect(videoList, SIGNAL(itemClicked(QListWidgetItem*)), this, SLOT(videoClicked(QListWidgetItem*)));
     connect(videoList, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(videoDblClicked(QListWidgetItem*)));
     connect(videoList, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(showContextMenu(QPoint)));
 
-    RecordingDialog * rec = RecordingDialog::getInstance();
-    connect(rec, SIGNAL(playFile(QString)), this, SLOT(play(QString)));
+    connect(recording_dialog, SIGNAL(playFile(QString)), this, SLOT(play(QString)));
     /*
     connect(this, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), 
             this, SLOT(playYTUrl(QMap<int,QString>,QString, QString)));
     */
+}
+
+YTDialog::~YTDialog() 
+{
+    delete pixmap_loader;
+    delete recording_dialog; 
 }
 
 void YTDialog::setLoadingOverlay(bool enable)
@@ -466,7 +462,7 @@ void YTDialog::updateNextPrevWidget()
         SingleVideoItem* svi = *it;
         if(!svi->pixUrl.isEmpty())
         {
-            int id = PixmapLoader::instance()->getPixmap(svi->pixUrl);
+            int id = pixmap_loader->getPixmap(svi->pixUrl);
             pendingPixmapQueue[id] = svi;
         }
         wItem->setData(0, qVariantFromValue(*it));
@@ -544,7 +540,7 @@ void YTDialog::setSearchTerm(QString term)
 
 void YTDialog::reset()
 {
-    PixmapLoader::instance()->reset();
+    pixmap_loader->reset();
     api->reset();
     pendingPixmapQueue.clear();
     resultForTab.clear();
@@ -616,7 +612,7 @@ void YTDialog::showContextMenu(QPoint point)
 void YTDialog::recordItem(QListWidgetItem *item)
 {
     SingleVideoItem* svi = item->data(0).value<SingleVideoItem*>();
-    RecordingDialog::downloadVideoId(svi->videoid, svi->header, 0);
+    recording_dialog->downloadVideoId(svi->videoid, svi->header, 0);
 }
 
 void YTDialog::play(QString file) 
@@ -624,12 +620,4 @@ void YTDialog::play(QString file)
     QProcess::startDetached("smplayer", QStringList() << file);
 }
 
-YTDialog* YTDialog::instance()
-{
-    if(m_instance == 0)
-    {
-        m_instance = new YTDialog;
-    }
-    return m_instance;
-}
-
+#include "moc_ytdialog.cpp"

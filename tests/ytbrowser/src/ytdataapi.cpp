@@ -114,3 +114,5 @@ QString YTDataAPI::unescape(QString html)
     html.replace("&lt;", "<");
     return html.replace("&gt;", ">");
 }
+
+#include "moc_ytdataapi.cpp"

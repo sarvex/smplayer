@@ -128,3 +128,5 @@ void RetrieveVideoUrl::cancel()
 {
     reply->abort();
 }
+
+#include "moc_retrievevideourl.cpp"

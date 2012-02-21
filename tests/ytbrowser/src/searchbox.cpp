@@ -17,7 +17,6 @@
 */
 
 #include "searchbox.h"
-//#include "images.h"
 #include <QPaintEvent>
 #include <QResizeEvent>
 #include <QPainter>
@@ -83,6 +82,8 @@ void SearchBox::startSearch()
 }
 
 QSize SearchBox::sizeHint() const
-{    
+{
     return QSize(150, lineEdit->sizeHint().height());
 }
+
+#include "moc_searchbox.cpp"

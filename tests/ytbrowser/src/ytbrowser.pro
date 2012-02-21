@@ -8,7 +8,8 @@ TARGET =
 DEPENDPATH += .
 INCLUDEPATH += .
 
-CONFIG += qt warn_on
+CONFIG += qt warn_on release
+
 RESOURCES = icons.qrc
 
 # Input
@@ -37,4 +38,10 @@ SOURCES += helper.cpp \
            yttabbar.cpp \
            main.cpp
 
+
+unix {
+    UI_DIR = .ui
+    MOC_DIR = .moc
+    OBJECTS_DIR = .obj
+}
 

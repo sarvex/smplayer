@@ -206,3 +206,5 @@ void DownloadFile::emitError(QNetworkReply::NetworkError error)
         else
                 qDebug() << "Hello Darling";
 }
+
+#include "moc_downloadfile.cpp"

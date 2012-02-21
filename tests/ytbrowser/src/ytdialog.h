@@ -37,6 +37,7 @@ class SearchBox;
 class QNetworkReply;
 class QNetworkAccessManager;
 class QTimeLine;
+class RecordingDialog;
 
 class OverlayWidget : public QWidget
 {
@@ -85,10 +86,12 @@ class PixmapLoader : public QObject
 {
     Q_OBJECT
 public:
-    static PixmapLoader* instance();
+    PixmapLoader(QObject* parent = 0);
+    ~PixmapLoader();
+
     int getPixmap(QString url);
     void reset();
-    ~PixmapLoader();
+
 public slots:
     void gotPixmap(QNetworkReply* reply);
 
@@ -96,11 +99,7 @@ signals:
     void pixmapResult(QPixmap, int);
 
 private:
-    PixmapLoader(QObject* parent = 0);
-
     QNetworkAccessManager* manager;
-    static PixmapLoader* m_instance;
-
 };
 
 
@@ -152,14 +151,13 @@ public:
         QString nextUrl;
     };
 
-    static YTDialog* instance();
-    ~YTDialog() { delete PixmapLoader::instance();}
-    void setLoadingOverlay(bool enable);    
-    bool eventFilter(QObject *w, QEvent *e);    
+    YTDialog(QWidget *parent = 0);
+    ~YTDialog();
+
+    void setLoadingOverlay(bool enable);
+    bool eventFilter(QObject *w, QEvent *e);
     void setMode(Mode mode);
-    void addTab(Tabs tab);    
-
-
+    void addTab(Tabs tab);
 
 signals:
     void gotUrls(const QMap<int, QString>&, QString, QString);
@@ -178,11 +176,13 @@ public slots:
     void play(QString file);
 
 private:
-    static YTDialog* m_instance;
     YTTabBar* tabBar;
     YTDataAPI* api;
     QListWidget* videoList;
     YTDelegate* delegate;
+    PixmapLoader * pixmap_loader;
+    RecordingDialog * recording_dialog;
+
     bool overlayVisible;
     OverlayWidget* overlay;
     QMap<Tabs, TabData> entries;
@@ -193,16 +193,12 @@ private:
     QString searchTerm;
     SearchBox* searchBox;
 
-    explicit YTDialog(QWidget *parent = 0);    
-    void updateNextPrevWidget();    
+    void updateNextPrevWidget();
     void reset();
     int lastPageNo(Tabs tab);
 
-
 protected:
     void resizeEvent(QResizeEvent *r);
-
-
 };
 
 #endif // YTDIALOG_H

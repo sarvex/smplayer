@@ -291,15 +291,6 @@ void RecordingDialog::recordVideo(QMap<int, QString> qualityMap, QString title, 
     download(url, title, id, 0);
 }
 
-RecordingDialog* RecordingDialog::getInstance()
-{
-    if(!instance)
-    {
-        instance = new RecordingDialog;
-    }
-    return instance;
-}
-
 void RecordingDialog::download(QString url, QString title, QString id, double duration)
 {
     QUrl qurl(url);    
@@ -837,3 +828,5 @@ void RecordingDialog::loadList()
     }
     */
 }
+
+#include "moc_recordingdialog.cpp"

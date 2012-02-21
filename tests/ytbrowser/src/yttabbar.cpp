@@ -95,3 +95,5 @@ void YTTabBar::leaveEvent(QEvent *e)
     hoveredIndex = -1;
     update();
 }
+
+#include "moc_yttabbar.cpp"

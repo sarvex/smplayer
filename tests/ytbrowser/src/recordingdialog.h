@@ -98,13 +98,13 @@ public:
         emitDataChangedRole // hack to make sure DataChanged signal is emitted
     };
 
-    static void downloadVideoId(QString videoId, QString title, double duration = 0);
-    static RecordingDialog* getInstance();
+    RecordingDialog(QWidget *parent = 0);    
+    ~RecordingDialog();
+
+    void downloadVideoId(QString videoId, QString title, double duration = 0);
     void download(QString url, QString title, QString id, double duration);
     QString getUniqueFileName(QString name);
     bool eventFilter(QObject *watched, QEvent *event);
-    ~RecordingDialog();
-
 
 private:
     QPushButton* clearListButton;
@@ -115,15 +115,12 @@ private:
     QListWidgetItem* pressedItemLeftButton;
     QListWidgetItem* pressedItemRightButton;
 
-
-    RecordingDialog(QWidget *parent = 0);    
     QMap<DownloadFile*, QListWidgetItem*> itemDownloadMap;
     QMap<RetrieveVideoUrl*, QListWidgetItem*> itemRVUMap;
 
     void removeDFileFromMap(DownloadFile* dfile);
     void updateWindowTitle();
     QList<QListWidgetItem*> itemsMarkedForRemoval;
-
 
 protected:
     void resizeEvent(QResizeEvent *r);

@@ -158,16 +158,16 @@ void YTDelegate::layoutText(QTextLayout& textLayout, QString text, QSize constra
     while(true){
         QTextLine line = textLayout.createLine();
         if(!line.isValid())
-            break;        
+            break;
         line.setLineWidth(constraint.width());
         line.setPosition(QPointF(0, lHeight));
         if(lHeight + line.height() > constraint.height())
-        {            
+        {
             QTextLine lastLine = textLayout.lineAt(textLayout.lineCount() - 2);
             QString lastString = text.mid(lastLine.textStart());
             QFontMetrics fm(textLayout.font());
             text.chop(lastString.length());
-            text += fm.elidedText(lastString, Qt::ElideRight, constraint.width());            
+            text += fm.elidedText(lastString, Qt::ElideRight, constraint.width());
             textLayout.endLayout();
             layoutText(textLayout, text, constraint);
             return;
@@ -177,3 +177,5 @@ void YTDelegate::layoutText(QTextLayout& textLayout, QString text, QSize constra
     }
     textLayout.endLayout();
 }
+
+#include "moc_ytdelegate.cpp"

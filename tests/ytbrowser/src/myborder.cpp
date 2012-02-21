@@ -26,3 +26,5 @@ void MyBorder::paintEvent(QPaintEvent *pe)
     p.setPen(pen);
     p.drawLine(0, 1, width(), 1);
 }
+
+#include "moc_myborder.cpp"
