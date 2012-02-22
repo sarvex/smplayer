@@ -18,12 +18,18 @@
 */
 
 #include <QApplication>
+#include <QTranslator>
 #include "ytdialog.h"
 
 int main( int argc, char ** argv ) 
 {
 	QApplication a( argc, argv );
 	a.connect( &a, SIGNAL( lastWindowClosed() ), &a, SLOT( quit() ) );
+
+    QString locale = QLocale::system().name();
+    QTranslator translator;
+    translator.load(QString("translations/ytbrowser_") + locale);
+    a.installTranslator(&translator);
 
 	a.setStyleSheet(":/Control/main.css");
 

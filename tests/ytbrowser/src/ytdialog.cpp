@@ -201,7 +201,7 @@ YTDialog::YTDialog(QWidget *parent) :
 {
     setWindowIcon( QPixmap(":/icons/logo.png") );
     setAutoFillBackground(true);
-    setWindowTitle("YouTube Browser - SMPlayer");    
+    setWindowTitle(tr("YouTube Browser - SMPlayer"));
     tabBar = new YTTabBar(this);
     connect(tabBar, SIGNAL(currentChanged(int)), this, SLOT(gotCurrentTab(int)));
     overlay = new OverlayWidget(this);
@@ -224,11 +224,11 @@ YTDialog::YTDialog(QWidget *parent) :
     videoList->setContextMenuPolicy(Qt::CustomContextMenu);
     videoList->setAutoScroll(false);
     nextButton = new QPushButton(this);
-    nextButton->setText("Next");
+    nextButton->setText(tr("&Next"));
     nextButton->adjustSize();
     nextButton->setFixedWidth(nextButton->width());
     prevButton = new QPushButton(this);
-    prevButton->setText("Previous");
+    prevButton->setText(tr("&Previous"));
     prevButton->adjustSize();
     prevButton->setFixedWidth(prevButton->width());
     searchBox = new SearchBox(this);
@@ -238,6 +238,7 @@ YTDialog::YTDialog(QWidget *parent) :
 
     configButton = new QToolButton(this);
     configButton->setText("Config");
+    configButton->setToolTip(tr("Settings"));
     connect(configButton, SIGNAL(clicked()), this, SLOT(showConfigDialog()));
 
     QHBoxLayout* hbox = new QHBoxLayout;
@@ -369,27 +370,27 @@ void YTDialog::addTab(Tabs tab)
     int index = -1;    
     if(tab == Relevant)
     {
-        index = tabBar->addTab("Most Relevant");
+        index = tabBar->addTab(tr("Most Relevant"));
     }
     else if(tab == Recent)
     {
-        index = tabBar->addTab("Most Recent");
+        index = tabBar->addTab(tr("Most Recent"));
     }
     else if(tab == Viewed)
     {
-        index = tabBar->addTab("Most Viewed");
+        index = tabBar->addTab(tr("Most Viewed"));
     }
     else if(tab == Popular)
     {
-        index = tabBar->addTab("Most Popular");
+        index = tabBar->addTab(tr("Most Popular"));
     }
     else if(tab == ViewedButton)
     {
-        index = tabBar->addTab("Most Viewed");
+        index = tabBar->addTab(tr("Most Viewed"));
     }
     else if(tab == Rated)
     {
-        index = tabBar->addTab("Most Rated");
+        index = tabBar->addTab(tr("Most Rated"));
     }    
     tabBar->setTabData(index, tab);
 }
@@ -400,12 +401,12 @@ void YTDialog::gotCurrentTab(int index)
     //Title text
     switch((int)tab)
     {
-    case Popular: setWindowTitle(QString("Most Popular Videos on YouTube%1").arg(QChar(0x2122)));break;
-    case Rated: setWindowTitle(QString("Most Rated Videos on YouTube%1").arg(QChar(0x2122)));break;
-    case ViewedButton: setWindowTitle(QString("Most Viewed Videos on YouTube%1").arg(QChar(0x2122)));break;
+    case Popular: setWindowTitle(tr("Most Popular Videos on YouTube%1").arg(QChar(0x2122)));break;
+    case Rated: setWindowTitle(tr("Most Rated Videos on YouTube%1").arg(QChar(0x2122)));break;
+    case ViewedButton: setWindowTitle(tr("Most Viewed Videos on YouTube%1").arg(QChar(0x2122)));break;
     case Relevant :
     case Recent :
-    case Viewed : setWindowTitle(QString("YouTube%2 results for \"%1\"").arg(searchTerm).arg(QChar(0x2122)));break;
+    case Viewed : setWindowTitle(tr("YouTube%2 results for \"%1\"").arg(searchTerm).arg(QChar(0x2122)));break;
     }
 
     if(entries.value(tab).populated)
@@ -516,15 +517,15 @@ void YTDialog::gotAPIReply(const YTReply& formattedReply)
         updateNextPrevWidget();
         if(!formattedReply.errorString.isEmpty())
         {
-            overlay->setText("Error: Could not connect to Youtube Server.");
+            overlay->setText(tr("Error: Could not connect to Youtube Server."));
             return;
         }
         if(formattedReply.results.count() == 0)
         {
             if(searchTerm.isEmpty())
-                overlay->setText("No videos found");
+                overlay->setText(tr("No videos found"));
             else
-                overlay->setText("No videos found for \"" + searchTerm + "\"");
+                overlay->setText(tr("No videos found for \"%1\"").arg(searchTerm));
             return;
         }
 

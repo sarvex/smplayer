@@ -48,6 +48,8 @@ SOURCES += helper.cpp \
 
 FORMS += configdialog.ui
 
+TRANSLATIONS = translations/ytbrowser_es.ts
+
 unix {
     UI_DIR = .ui
     MOC_DIR = .moc
