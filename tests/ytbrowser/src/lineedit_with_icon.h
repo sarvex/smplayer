@@ -16,30 +16,30 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#ifndef CONFIGDIALOG_H
-#define CONFIGDIALOG_H
+#ifndef LINEEDIT_WITH_ICON_H
+#define LINEEDIT_WITH_ICON_H
 
-#include "ui_configdialog.h"
+#include <QLineEdit>
 
-#include <QDialog>
+class QToolButton;
 
-class ConfigDialog : public QDialog, public Ui::ConfigDialog
+class LineEditWithIcon : public QLineEdit
 {
     Q_OBJECT
 
 public:
-    ConfigDialog( QWidget * parent = 0, Qt::WindowFlags f = 0 );
-    ~ConfigDialog();
+    LineEditWithIcon(QWidget *parent = 0);
 
-public slots:
-    void setRecordingDirectory( const QString & folder );
-    void setRecordingQuality( int quality );
-    void setRecordingFormat( int format );
+	void setIcon(const QPixmap & pixmap);
 
-public:
-    QString recordingDirectory();
-    int recordingQuality();
-    int recordingFormat();
+protected:
+    void resizeEvent(QResizeEvent *);
+	virtual void changeEvent(QEvent *);
+	virtual void setupButton();
+
+protected:
+    QToolButton *button;
 };
 
 #endif
+

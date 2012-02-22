@@ -637,10 +637,12 @@ void YTDialog::showConfigDialog()
     qDebug("YTDialog::showConfigDialog");
 
     ConfigDialog d(this);
-    d.setRecordingFormat( recording_dialog->recordingFormat() );
-    d.setRecordingQuality( recording_dialog->recordingQuality() );
+    d.setRecordingDirectory(recording_dialog->recordingsDirectory());
+    d.setRecordingFormat(recording_dialog->recordingFormat());
+    d.setRecordingQuality(recording_dialog->recordingQuality());
 
     if (d.exec() == QDialog::Accepted) {
+        recording_dialog->setRecordingsDirectory(d.recordingDirectory());
         recording_dialog->setRecordingFormat(d.recordingFormat());
         recording_dialog->setRecordingQuality(d.recordingQuality());
     }

@@ -12,6 +12,8 @@ CONFIG += qt warn_on release
 
 RESOURCES = icons.qrc
 
+DEFINES += NO_SMPLAYER_SUPPORT
+
 # Input
 HEADERS += helper.h \
            myborder.h \
@@ -24,6 +26,8 @@ HEADERS += helper.h \
            ytdelegate.h \
            ytdialog.h \
            yttabbar.h \
+           lineedit_with_icon.h \
+           filechooser.h \
            configdialog.h
 
 SOURCES += helper.cpp \
@@ -37,6 +41,8 @@ SOURCES += helper.cpp \
            ytdelegate.cpp \
            ytdialog.cpp \
            yttabbar.cpp \
+           lineedit_with_icon.cpp \
+           filechooser.cpp \
            configdialog.cpp \
            main.cpp
 

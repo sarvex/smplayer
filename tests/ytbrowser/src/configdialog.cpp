@@ -26,10 +26,21 @@ ConfigDialog::ConfigDialog(QWidget * parent, Qt::WindowFlags f)
     setupUi(this);
     connect(recordFormatCombo, SIGNAL(currentIndexChanged(int)), this, SLOT(setRecordingFormat(int)));
 
+    directory_edit->setDialogType(FileChooser::GetDirectory);
     //layout()->setSizeConstraint(QLayout::SetFixedSize);
 }
 
 ConfigDialog::~ConfigDialog() {
+}
+
+void ConfigDialog::setRecordingDirectory(const QString & folder) 
+{
+    directory_edit->setText(folder);
+}
+
+QString ConfigDialog::recordingDirectory() 
+{
+    return directory_edit->text();
 }
 
 void ConfigDialog::setRecordingQuality(int quality)
