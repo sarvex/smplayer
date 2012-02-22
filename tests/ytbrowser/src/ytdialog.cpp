@@ -41,6 +41,7 @@
 #include "myborder.h"
 #include "searchbox.h"
 #include "recordingdialog.h"
+#include "configdialog.h"
 
 #define PAGE_RESULT_COUNT 25
 
@@ -234,8 +235,15 @@ YTDialog::YTDialog(QWidget *parent) :
     connect(searchBox, SIGNAL(search(QString)), this, SLOT(setSearchTerm(QString)));    
     connect(nextButton, SIGNAL(clicked()), this, SLOT(nextClicked()));
     connect(prevButton, SIGNAL(clicked()), this, SLOT(prevClicked()));
+
+    configButton = new QToolButton(this);
+    configButton->setText("Config");
+    connect(configButton, SIGNAL(clicked()), this, SLOT(showConfigDialog()));
+
     QHBoxLayout* hbox = new QHBoxLayout;
     hbox->addWidget(searchBox);
+    hbox->addWidget(configButton);
+
     hbox->addSpacerItem(new QSpacerItem(1,1, QSizePolicy::Expanding, QSizePolicy::Preferred));
     hbox->addWidget(prevButton);        
     hbox->addWidget(nextButton);    
@@ -622,6 +630,20 @@ void YTDialog::recordItem(QListWidgetItem *item)
 void YTDialog::play(QString file) 
 {
     QProcess::startDetached("smplayer", QStringList() << file);
+}
+
+void YTDialog::showConfigDialog() 
+{
+    qDebug("YTDialog::showConfigDialog");
+
+    ConfigDialog d(this);
+    d.setRecordingFormat( recording_dialog->recordingFormat() );
+    d.setRecordingQuality( recording_dialog->recordingQuality() );
+
+    if (d.exec() == QDialog::Accepted) {
+        recording_dialog->setRecordingFormat(d.recordingFormat());
+        recording_dialog->setRecordingQuality(d.recordingQuality());
+    }
 }
 
 #include "moc_ytdialog.cpp"

@@ -25,6 +25,7 @@
 #include <QMovie>
 #include <QMap>
 #include <QPushButton>
+#include <QToolButton>
 #include <QLineEdit>
 
 
@@ -121,6 +122,12 @@ public:
         BelowNormalFlv = 34,
         LowFlv = 5
     };
+    enum Format
+    {
+        MP4 = 0,
+        FLV = 1
+    };
+
     enum Tabs
     {
         Relevant,
@@ -175,6 +182,9 @@ public slots:
     void recordItem(QListWidgetItem* item);
     void play(QString file);
 
+protected slots:
+    void showConfigDialog();
+
 private:
     YTTabBar* tabBar;
     YTDataAPI* api;
@@ -192,6 +202,7 @@ private:
     QMap<int, SingleVideoItem*> pendingPixmapQueue;
     QString searchTerm;
     SearchBox* searchBox;
+    QToolButton * configButton;
 
     void updateNextPrevWidget();
     void reset();

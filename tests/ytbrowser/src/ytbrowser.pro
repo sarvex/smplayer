@@ -23,7 +23,8 @@ HEADERS += helper.h \
            ytdataapi.h \
            ytdelegate.h \
            ytdialog.h \
-           yttabbar.h
+           yttabbar.h \
+           configdialog.h
 
 SOURCES += helper.cpp \
            myborder.cpp \
@@ -36,8 +37,10 @@ SOURCES += helper.cpp \
            ytdelegate.cpp \
            ytdialog.cpp \
            yttabbar.cpp \
+           configdialog.cpp \
            main.cpp
 
+FORMS += configdialog.ui
 
 unix {
     UI_DIR = .ui
