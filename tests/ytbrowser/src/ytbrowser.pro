@@ -15,8 +15,7 @@ RESOURCES = icons.qrc
 DEFINES += NO_SMPLAYER_SUPPORT
 
 # Input
-HEADERS += helper.h \
-           myborder.h \
+HEADERS += myborder.h \
            myicon.h \
            downloadfile.h \
            recordingdialog.h \
@@ -30,8 +29,7 @@ HEADERS += helper.h \
            filechooser.h \
            configdialog.h
 
-SOURCES += helper.cpp \
-           myborder.cpp \
+SOURCES += myborder.cpp \
            myicon.cpp \
            downloadfile.cpp \
            recordingdialog.cpp \

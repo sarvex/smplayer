@@ -39,7 +39,7 @@
 #include "recordingdialog.h"
 #include "downloadfile.h"
 #include "retrievevideourl.h"
-#include "helper.h"
+/* #include "helper.h" */
 #include "myborder.h"
 
 RecordingDelegate::RecordingDelegate(QObject *parent)
@@ -138,8 +138,11 @@ void RecordingDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opt
         painter->drawText(QRect(rect.width() - 13 - wid, headerTextRect.top(), wid,
                                 headerTextRect.height()), Qt::AlignVCenter | Qt::AlignRight, currentDateString );
         int size = dd->fileSize;
+        /*
         QString sizeString = Helper::formatTime(dd->videoDuration) + " -- ";
         if(sizeString.startsWith("00:")) sizeString.remove(0, 3);
+        */
+        QString sizeString;
         if(size > 1048576 )
         {
             sizeString += QString::number(size / (qreal)1048576, 'f', 1);
