@@ -5,7 +5,7 @@
     <name>ConfigDialog</name>
     <message>
         <location filename="../configdialog.ui" line="14"/>
-        <source>Dialog</source>
+        <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

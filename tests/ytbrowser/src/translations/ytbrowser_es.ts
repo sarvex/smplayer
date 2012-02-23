@@ -5,8 +5,8 @@
     <name>ConfigDialog</name>
     <message>
         <location filename="../configdialog.ui" line="14"/>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <source>Settings</source>
+        <translation>Opciones</translation>
     </message>
     <message>
         <location filename="../configdialog.ui" line="20"/>
@@ -97,51 +97,51 @@
 <context>
     <name>RecordingDialog</name>
     <message>
-        <location filename="../recordingdialog.cpp" line="199"/>
-        <location filename="../recordingdialog.cpp" line="412"/>
+        <location filename="../recordingdialog.cpp" line="202"/>
+        <location filename="../recordingdialog.cpp" line="415"/>
         <source>Recordings</source>
         <translation>Grabaciones</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="200"/>
+        <location filename="../recordingdialog.cpp" line="203"/>
         <source>&amp;Clear List</source>
         <translation>&amp;Borrar la Lista</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="201"/>
+        <location filename="../recordingdialog.cpp" line="204"/>
         <source>&amp;Open Folder</source>
         <translation>&amp;Abrir Carpeta</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="282"/>
-        <location filename="../recordingdialog.cpp" line="677"/>
+        <location filename="../recordingdialog.cpp" line="285"/>
+        <location filename="../recordingdialog.cpp" line="680"/>
         <source>Recording Failed</source>
         <translation>La grabación ha fallado</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="282"/>
-        <location filename="../recordingdialog.cpp" line="677"/>
+        <location filename="../recordingdialog.cpp" line="285"/>
+        <location filename="../recordingdialog.cpp" line="680"/>
         <source>There was an error in retrieving the download URL.</source>
         <translation>Se ha producido un error al cargar la URL de descarga.</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="300"/>
-        <location filename="../recordingdialog.cpp" line="695"/>
+        <location filename="../recordingdialog.cpp" line="303"/>
+        <location filename="../recordingdialog.cpp" line="698"/>
         <source>Starting</source>
         <translation>Empezando</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="333"/>
+        <location filename="../recordingdialog.cpp" line="336"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="337"/>
+        <location filename="../recordingdialog.cpp" line="340"/>
         <source>Completed</source>
         <translation>Finalizado</translation>
     </message>
     <message numerus="yes">
-        <location filename="../recordingdialog.cpp" line="416"/>
+        <location filename="../recordingdialog.cpp" line="419"/>
         <source>%1% of %n video - Recordings</source>
         <translation>
             <numerusform>%1% de %n video - Grabaciones</numerusform>
@@ -160,17 +160,17 @@
         <translation type="obsolete">%1% de %2 videos%3 - Grabaciones</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="622"/>
+        <location filename="../recordingdialog.cpp" line="625"/>
         <source>Fetching URL...</source>
         <translation>Cargando URL...</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="637"/>
+        <location filename="../recordingdialog.cpp" line="640"/>
         <source>File error</source>
         <translation>Error de archivo</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="638"/>
+        <location filename="../recordingdialog.cpp" line="641"/>
         <source>The file does not exists, would you like to remove it from the list?</source>
         <translation>El archivo no existe; ¿quieres borrarlo de la lista?</translation>
     </message>
