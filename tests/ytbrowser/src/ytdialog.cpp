@@ -212,6 +212,7 @@ YTDialog::YTDialog(QWidget *parent) :
 	QString mdir = QDesktopServices::storageLocation(QDesktopServices::MoviesLocation);
 	if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
 	if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::HomeLocation);
+	if (mdir.isEmpty()) mdir = "/tmp";
     QString default_recording_folder = mdir + "/Youtube";
     if (!QFile::exists(default_recording_folder)) {
         QDir().mkpath(default_recording_folder);
