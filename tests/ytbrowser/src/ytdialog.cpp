@@ -209,7 +209,11 @@ YTDialog::YTDialog(QWidget *parent) :
     pixmap_loader = new PixmapLoader;
 
     recording_dialog = new RecordingDialog;
-    recording_dialog->setRecordingsDirectory("/tmp/");
+    QString default_recording_folder = QDesktopServices::storageLocation(QDesktopServices::MoviesLocation) + "/Youtube";
+    if (!QFile::exists(default_recording_folder)) {
+        QDir().mkpath(default_recording_folder);
+    }
+    recording_dialog->setRecordingsDirectory(default_recording_folder);
     recording_dialog->setRecordingQuality(HD);
     recording_dialog->setRecordingFormat(0);
 
