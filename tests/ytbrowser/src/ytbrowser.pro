@@ -46,7 +46,7 @@ SOURCES += myborder.cpp \
 
 FORMS += configdialog.ui
 
-TRANSLATIONS = translations/ytbrowser_es.ts
+TRANSLATIONS = translations/ytbrowser_es.ts translations/ytbrowser_en.ts
 
 unix {
     UI_DIR = .ui
