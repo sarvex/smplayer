@@ -33,6 +33,7 @@
 #include <QUrl>
 #include <QTimeLine>
 #include <QProcess>
+#include <QClipboard>
 #include "ytdialog.h"
 #include "yttabbar.h"
 #include "ytdelegate.h"
@@ -612,6 +613,8 @@ void YTDialog::showContextMenu(QPoint point)
     menu.addAction(tr("&Play video"))->setData("play");
     menu.addAction(tr("&Record video"))->setData("record");
     menu.addAction(tr("&Watch on YouTube"))->setData("watch");
+    menu.addAction(tr("&Copy link"))->setData("link");
+
     QAction* action = menu.exec(videoList->viewport()->mapToGlobal(point));
     if(!action) return;
     QListWidgetItem* item = videoList->itemAt(point);
@@ -627,6 +630,11 @@ void YTDialog::showContextMenu(QPoint point)
     {
         SingleVideoItem* svi = item->data(0).value<SingleVideoItem*>();
         QDesktopServices::openUrl(QString("http://www.youtube.com/watch?v=%1").arg(svi->videoid));
+    }
+    else if(action->data().toString() == "link")
+    {
+        SingleVideoItem* svi = item->data(0).value<SingleVideoItem*>();
+        qApp->clipboard()->setText(QString("http://www.youtube.com/watch?v=%1").arg(svi->videoid));
     }
 }
 
