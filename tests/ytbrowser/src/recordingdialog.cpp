@@ -115,7 +115,7 @@ void RecordingDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opt
         painter->drawText(QRect(rect.width() - 13 - wid , headerTextRect.top(), wid,
                                 headerTextRect.height()), Qt::AlignVCenter | Qt::AlignRight, currentDateString );
         painter->drawText(QRect(headerTextRect.left(), headerTextRect.bottom() + 5, rect.width(), rect.height()),
-                          Qt::AlignLeft | Qt::AlignTop, dd->downloadState == DownloadData::Canceled ? "Canceled" : "Error");
+                          Qt::AlignLeft | Qt::AlignTop, dd->downloadState == DownloadData::Canceled ? tr("Canceled") : tr("Error"));
         currentPix = retryIcon.pixmap(dd->buttonState, MyIcon::Off );
         QRect buttonRect(rect.width() - 13 - currentPix.width(), headerTextRect.bottom() + 5, currentPix.width(), currentPix.height());
         if(dd->buttonRect != buttonRect) dd->buttonRect = buttonRect;
@@ -196,9 +196,9 @@ RecordingDialog::RecordingDialog(QWidget *parent) :
     recording_format = 0;
 
     setWindowIcon( QPixmap(":/icons/logo.png") );
-    setWindowTitle("Recordings");
-    clearListButton = new QPushButton("&Clear List", this);
-    openFolderButton = new QPushButton("&Open Folder", this);
+    setWindowTitle(tr("Recordings"));
+    clearListButton = new QPushButton(tr("&Clear List"), this);
+    openFolderButton = new QPushButton(tr("&Open Folder"), this);
     downloadList = new QListWidget(this);
 
     QHBoxLayout* hbox = new QHBoxLayout;
@@ -279,7 +279,7 @@ void RecordingDialog::recordVideo(QMap<int, QString> qualityMap, QString title, 
     }
     if(url.isNull())
     {
-        QMessageBox::warning(0, "Recording Failed", "There was an error in retrieving the download URL.");
+        QMessageBox::warning(0, tr("Recording Failed"), tr("There was an error in retrieving the download URL."));
         return;
     }
     download(url, title, id, 0);
@@ -297,7 +297,7 @@ void RecordingDialog::download(QString url, QString title, QString id, double du
     dd->title = QFileInfo(*file).fileName();
     dd->filePath = QFileInfo(*file).absoluteFilePath();
     dd->videoDuration = (int)duration;
-    dd->downloadProgress = "Starting";
+    dd->downloadProgress = tr("Starting");
     dd->completionTime = QDateTime::currentDateTime();
     item->setData(DownloadDataRole, QVariant::fromValue(dd));
     item->setData(emitDataChangedRole, true);
@@ -330,11 +330,11 @@ void RecordingDialog::oneDownloadFinished(bool error)
     DownloadData* dd = itemDownloadMap.value(dfile)->data(DownloadDataRole).value<DownloadData*>();
     if(error){
         dd->downloadState = DownloadData::Error;
-        dd->downloadProgress = "Error";
+        dd->downloadProgress = tr("Error");
     }
     else {
         dd->downloadState = DownloadData::Completed;
-        dd->downloadProgress = "Completed";
+        dd->downloadProgress = tr("Completed");
         /* dd->videoDuration = InfoProvider::getInfo( dd->filePath ).duration; */
         dd->videoDuration = 0;
     }
@@ -409,11 +409,11 @@ void RecordingDialog::updateWindowTitle()
     }
     if(count == 0)
     {
-        setWindowTitle("Recordings");
+        setWindowTitle(tr("Recordings"));
         return;
     }
     int percent = downloadedSum*100/(double)sum;
-    setWindowTitle(QString("%1% of %2 video%3 - Recordings").arg(percent).arg(count).arg(count > 1 ? "s" : ""));
+    setWindowTitle(tr("%1% of %n video - Recordings", "", count).arg(percent));
 }
 
 void RecordingDialog::removeDFileFromMap(DownloadFile *dfile)
@@ -619,7 +619,7 @@ void RecordingDialog::retryDownload(QListWidgetItem *item)
 {
     DownloadData* dd = item->data(DownloadDataRole).value<DownloadData*>();
     dd->downloadState = DownloadData::Progressing;
-    dd->downloadProgress = "Fetching URL...";
+    dd->downloadProgress = tr("Fetching URL...");
     dd->downloadProgressPercent = 0;
     item->setData(emitDataChangedRole, !item->data(emitDataChangedRole).toBool());
     RetrieveVideoUrl* rvu = new RetrieveVideoUrl(this);
@@ -634,8 +634,8 @@ void RecordingDialog::playDownload(QListWidgetItem *item)
     DownloadData* dd = item->data(DownloadDataRole).value<DownloadData*>();
     if(!QFile::exists(dd->filePath))
     {
-        int button = QMessageBox::warning(this, "File error",
-                                          "The file does not exists, would you like to remove it from the list?",
+        int button = QMessageBox::warning(this, tr("File error"),
+                                          tr("The file does not exists, would you like to remove it from the list?"),
                                           QMessageBox::Yes, QMessageBox::No);
         if(button == QMessageBox::Yes)
         {
@@ -674,7 +674,7 @@ void RecordingDialog::urlToDownload(QMap<int, QString> qualityMap, QString title
     }
     if(url.isNull())
     {
-        QMessageBox::warning(0, "Recording Failed", "There was an error in retrieving the download URL.");
+        QMessageBox::warning(0, tr("Recording Failed"), tr("There was an error in retrieving the download URL."));
         return;
     }
     RetrieveVideoUrl* rvu = static_cast<RetrieveVideoUrl*>(sender());
@@ -692,7 +692,7 @@ void RecordingDialog::urlToDownload(QMap<int, QString> qualityMap, QString title
         QFile* file = new QFile(getUniqueFileName(title));
         dd->title = QFileInfo(*file).fileName();
         dd->filePath = QFileInfo(*file).absoluteFilePath();
-        dd->downloadProgress = "Starting";
+        dd->downloadProgress = tr("Starting");
         dd->completionTime = QDateTime::currentDateTime();        
         item->setData(emitDataChangedRole, !item->data(emitDataChangedRole).toBool());
         DownloadFile* dfile = new DownloadFile(url, file, this);
