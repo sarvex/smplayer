@@ -28,14 +28,18 @@ int main( int argc, char ** argv )
 	a.connect( &a, SIGNAL( lastWindowClosed() ), &a, SLOT( quit() ) );
 
 	QString locale = QLocale::system().name();
-	QTranslator translator;
-	translator.load("ytbrowser_" + locale, "translations");
+	QTranslator app_trans;
+	app_trans.load("ytbrowser_" + locale, "translations");
+
+	QTranslator qt_trans;
 #if defined(Q_OS_WIN)
-	translator.load("qt_" + locale, "translations");
+	qt_trans.load("qt_" + locale, "translations");
 #else
-	translator.load("qt_" + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+	qt_trans.load("qt_" + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
 #endif
-	a.installTranslator(&translator);
+
+	a.installTranslator(&app_trans);
+	a.installTranslator(&qt_trans);
 
 	a.setStyleSheet(":/Control/main.css");
 
