@@ -19,6 +19,7 @@
 
 #include <QApplication>
 #include <QTranslator>
+#include <QLibraryInfo>
 #include "ytdialog.h"
 
 int main( int argc, char ** argv ) 
@@ -26,10 +27,15 @@ int main( int argc, char ** argv )
 	QApplication a( argc, argv );
 	a.connect( &a, SIGNAL( lastWindowClosed() ), &a, SLOT( quit() ) );
 
-    QString locale = QLocale::system().name();
-    QTranslator translator;
-    translator.load(QString("translations/ytbrowser_") + locale);
-    a.installTranslator(&translator);
+	QString locale = QLocale::system().name();
+	QTranslator translator;
+	translator.load("ytbrowser_" + locale, "translations");
+#if defined(Q_OS_WIN)
+	translator.load("qt_" + locale, "translations");
+#else
+	translator.load("qt_" + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+#endif
+	a.installTranslator(&translator);
 
 	a.setStyleSheet(":/Control/main.css");
 
