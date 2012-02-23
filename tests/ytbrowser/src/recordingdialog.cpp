@@ -501,17 +501,17 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     QMenu contextMenu;
                     if(dd->downloadState == DownloadData::Progressing)
                     {
-                        contextMenu.addAction("Cancel");
+                        contextMenu.addAction(tr("&Cancel"))->setData("cancel");
                         contextMenu.addSeparator();
-                        contextMenu.addAction("Remove From List");
+                        contextMenu.addAction(tr("&Remove From List"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
-                            if(action->text().startsWith('C'))
+                            if(action->data().toString() == "cancel")
                             {
                                 cancelDownload(releasedItem);
                             }
-                            else if(action->text().startsWith('R'))
+                            else if(action->data().toString() == "remove")
                             {
                                 itemsMarkedForRemoval.append(releasedItem);
                                 cancelDownload(releasedItem);
@@ -520,17 +520,17 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     }
                     else if(dd->downloadState == DownloadData::Canceled || dd->downloadState == DownloadData::Error )
                     {
-                        contextMenu.addAction("Retry");
+                        contextMenu.addAction(tr("&Retry"))->setData("retry");
                         contextMenu.addSeparator();
-                        contextMenu.addAction("Remove From List");
+                        contextMenu.addAction(tr("Remove From &List"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
-                            if(action->text().startsWith("Retry"))
+                            if(action->data().toString() == "retry")
                             {
                                 retryDownload(releasedItem);
                             }
-                            else if(action->text().startsWith("Remove"))
+                            else if(action->data().toString() == ("remove"))
                             {
                                 delete releasedItem->data(DownloadDataRole).value<DownloadData*>();
                                 delete downloadList->takeItem(downloadList->row(releasedItem));
@@ -540,29 +540,29 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     }
                     else if(dd->downloadState == DownloadData::Completed)
                     {
-                        contextMenu.addAction("Play");
-                        contextMenu.addAction("Open Containing Folder");
+                        contextMenu.addAction(tr("&Play"))->setData("play");
+                        contextMenu.addAction(tr("&Open Containing Folder"))->setData("folder");
                         contextMenu.addSeparator();
-                        contextMenu.addAction("Delete");
-                        contextMenu.addAction("Remove From List");
+                        contextMenu.addAction(tr("&Delete"))->setData("delete");
+                        contextMenu.addAction(tr("Remove From &List"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
-                            if(action->text().startsWith("Play"))
+                            if(action->data().toString() == "play")
                             {
                                 playDownload(releasedItem);
                             }
-                            else if(action->text().startsWith("Open"))
+                            else if(action->data().toString() == "folder")
                             {
                                 openFolder();
                             }
-                            else if(action->text().startsWith("Delete"))
+                            else if(action->data().toString() == "delete")
                             {
                                 QFile::remove(releasedItem->data(DownloadDataRole).value<DownloadData*>()->filePath);
                                 delete releasedItem->data(DownloadDataRole).value<DownloadData*>();
                                 delete downloadList->takeItem(downloadList->row(releasedItem));
                             }
-                            else if(action->text().startsWith("Remove"))
+                            else if(action->data().toString() == "remove")
                             {
                                 delete releasedItem->data(DownloadDataRole).value<DownloadData*>();
                                 delete downloadList->takeItem(downloadList->row(releasedItem));

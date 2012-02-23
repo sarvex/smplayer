@@ -609,21 +609,21 @@ void YTDialog::videoDblClicked(QListWidgetItem *item)
 void YTDialog::showContextMenu(QPoint point)
 { 
     QMenu menu;
-    menu.addAction("Play video");
-    menu.addAction("Record video");
-    menu.addAction("Watch on YouTube");
+    menu.addAction(tr("&Play video"))->setData("play");
+    menu.addAction(tr("&Record video"))->setData("record");
+    menu.addAction(tr("&Watch on YouTube"))->setData("watch");
     QAction* action = menu.exec(videoList->viewport()->mapToGlobal(point));
     if(!action) return;
     QListWidgetItem* item = videoList->itemAt(point);
-    if(action->text().startsWith('P'))
+    if(action->data().toString() == "play")
     {
        videoDblClicked(item);
     }
-    else if(action->text().startsWith('R'))
+    else if(action->data().toString() == "record")
     {
        recordItem(item);
     }
-    else if(action->text().startsWith('W'))
+    else if(action->data().toString() == "watch")
     {
         SingleVideoItem* svi = item->data(0).value<SingleVideoItem*>();
         QDesktopServices::openUrl(QString("http://www.youtube.com/watch?v=%1").arg(svi->videoid));
