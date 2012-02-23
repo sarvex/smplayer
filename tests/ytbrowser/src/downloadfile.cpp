@@ -94,67 +94,60 @@ void DownloadFile::updateFooterText()
         if(speed > 0 )
                 remainingTime = (totalSize - completed)/speed + 1 ;
         if(remainingTime == -1)
-                remainingTimeString = "unknown time remaining - ";
+                remainingTimeString = tr("unknown time remaining") + " - ";
         else
         {
+                QString rem;
                 bool flag = false; // if hour is there but not minutes
                 if(remainingTime > 3600)
                 {
-                        remainingTimeString += QString::number(remainingTime / 3600) + " hours, ";
+                        rem += tr("%1 hours").arg(remainingTime / 3600) + ", ";
                         remainingTime = remainingTime % 3600;
                         flag = true;
                 }
                 if(remainingTime > 60 || flag)
                 {
-                        remainingTimeString += QString("%1 minutes, ").arg(remainingTime / 60, 2, 10, QChar('0'));
+                        rem += tr("%1 minutes").arg(remainingTime / 60, 2, 10, QChar('0')) + ", ";
                         remainingTime = remainingTime % 60;
                 }
-                remainingTimeString += QString("%1 seconds remaining - ").arg(remainingTime, 2, 10, QChar('0'));
+                rem += tr("%1 seconds").arg(remainingTime, 2, 10, QChar('0'));
+                remainingTimeString = tr("%1 remaining").arg(rem) + " - ";
         }
 
         if(totalSize > 1048576 )
         {
-                remainingTimeString += QString::number(completed / (qreal)1048576, 'f', 2);
-                remainingTimeString += " of ";
-                remainingTimeString += QString::number(totalSize / (qreal)1048576, 'f', 2);
-                remainingTimeString += " MB ";
+                remainingTimeString += tr("%1 of %2 MB")
+                                          .arg(QString::number(completed / (qreal)1048576, 'f', 2))
+                                          .arg(QString::number(totalSize / (qreal)1048576, 'f', 2));
         }
         else if(totalSize > 1024 )
         {
-                remainingTimeString += QString::number(completed / (qreal)1024, 'f', 2);
-                remainingTimeString += " of ";
-                remainingTimeString += QString::number(totalSize / (qreal)1024, 'f', 2);
-                remainingTimeString += " KB ";
+                remainingTimeString += tr("%1 of %2 KB")
+                                          .arg(QString::number(completed / (qreal)1024, 'f', 2))
+                                          .arg(QString::number(totalSize / (qreal)1024, 'f', 2));
         }
         else if(totalSize >= 0)
         {
-                remainingTimeString += QString::number(completed);
-                remainingTimeString += " of ";
-                remainingTimeString += QString::number(totalSize);
-                remainingTimeString += " bytes ";
+                remainingTimeString += tr("%1 of %2 bytes").arg(completed).arg(totalSize);
         }
         else
         {
-                remainingTimeString += QString::number(completed);
-                remainingTimeString += " of ";
-                remainingTimeString += " Unknown size ";
+                remainingTimeString += tr("%1 of unknown size").arg(completed);
         }
-        remainingTimeString += "(";
+        remainingTimeString += " (";
         if(speed > 1048576 )
         {
-                remainingTimeString += QString::number(speed/ (qreal)1048576, 'f', 2);
-                remainingTimeString += " MB/sec)";
+                remainingTimeString += tr("%1 MB/sec").arg(QString::number(speed/ (qreal)1048576, 'f', 2));
         }
         else if(totalSize > 1024 )
         {
-                remainingTimeString += QString::number(speed/ (qreal)1024, 'f', 2);
-                remainingTimeString += " KB/sec)";
+                remainingTimeString += tr("%1 KB/sec").arg(QString::number(speed/ (qreal)1024, 'f', 2));
         }
         else
         {
-                remainingTimeString += QString::number(speed);
-                remainingTimeString += " bytes/sec)";
+                remainingTimeString += tr("%1 bytes/sec").arg(speed);
         }
+        remainingTimeString += ")";
         emit downloadStatus(remainingTimeString);
 }
 
