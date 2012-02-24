@@ -38,6 +38,26 @@ QString configPath() {
 #endif
 }
 
+QString translationsPath() {
+	QString path = "translations";
+#if !defined(Q_OS_WIN)
+#ifdef TRANSLATION_PATH
+	 QString s = QString(TRANSLATION_PATH);
+	 if (!s.isEmpty()) path = s;
+#endif
+#endif
+    //qDebug("Translations path: '%s'", path.toUtf8().constData());
+    return path;
+}
+
+QString qtTranslationsPath() {
+#if defined(Q_OS_WIN)
+    return "translations";
+#else
+    return QLibraryInfo::location(QLibraryInfo::TranslationsPath);
+#endif
+}
+
 int main( int argc, char ** argv ) 
 {
 	QApplication a( argc, argv );
@@ -45,20 +65,10 @@ int main( int argc, char ** argv )
 
 	QString locale = QLocale::system().name();
 	QTranslator app_trans;
-#ifdef TRANSLATION_PATH
-	 QString path = QString(TRANSLATION_PATH);
-	 if (path.isEmpty()) path = "translations";
-	app_trans.load("smtube_" + locale, path);
-#else
-	app_trans.load("smtube_" + locale, "translations");
-#endif
+	app_trans.load("smtube_" + locale, translationsPath());
 
 	QTranslator qt_trans;
-#if defined(Q_OS_WIN)
-	qt_trans.load("qt_" + locale, "translations");
-#else
-	qt_trans.load("qt_" + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-#endif
+	qt_trans.load("qt_" + locale, qtTranslationsPath());
 
 	a.installTranslator(&app_trans);
 	a.installTranslator(&qt_trans);
