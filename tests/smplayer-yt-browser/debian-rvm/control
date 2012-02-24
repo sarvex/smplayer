@@ -1,0 +1,13 @@
+Source: smplayer-yt-browser
+Section: graphics
+Priority: extra
+Maintainer: Ricardo <rvm@users.sourceforge.net>
+Build-Depends: debhelper (>= 8.0.0), libqt4-dev
+Standards-Version: 3.9.2
+Homepage: http://smplayer.sourceforge.net/
+
+Package: smplayer-yt-browser
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, smplayer (>= 0.7.0)
+Description: YouTube browser for SMPlayer
+ YouTube browser for SMPlayer
