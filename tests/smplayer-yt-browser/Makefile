@@ -1,6 +1,6 @@
 
-#PREFIX=/usr/local
-PREFIX=/tmp/smplayer
+PREFIX=/usr/local
+#PREFIX=/tmp/smplayer
 
 CONF_PREFIX=$(PREFIX)
 
