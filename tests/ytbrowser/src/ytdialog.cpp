@@ -249,7 +249,8 @@ YTDialog::YTDialog(QWidget *parent, QSettings * settings) :
     connect(prevButton, SIGNAL(clicked()), this, SLOT(prevClicked()));
 
     configButton = new QToolButton(this);
-    configButton->setText("Config");
+    //configButton->setText("Config");
+    configButton->setIcon(QPixmap(":/icons/prefs.png"));
     configButton->setToolTip(tr("Settings"));
     connect(configButton, SIGNAL(clicked()), this, SLOT(showConfigDialog()));
 
