@@ -34,6 +34,7 @@
 #include <QTimeLine>
 #include <QProcess>
 #include <QClipboard>
+#include <QSettings>
 #include "ytdialog.h"
 #include "yttabbar.h"
 #include "ytdelegate.h"
@@ -197,9 +198,11 @@ void PixmapLoader::reset()
 /*******************************************************************************************************
 ***********************************************************************************************************/
 
-YTDialog::YTDialog(QWidget *parent) :
+YTDialog::YTDialog(QWidget *parent, QSettings * settings) :
     QWidget(parent), overlayVisible(false)
 {
+    set = settings;
+
     setWindowIcon( QPixmap(":/icons/logo.png") );
     setAutoFillBackground(true);
     setWindowTitle(tr("YouTube Browser - SMPlayer"));
@@ -210,10 +213,10 @@ YTDialog::YTDialog(QWidget *parent) :
     pixmap_loader = new PixmapLoader;
 
     recording_dialog = new RecordingDialog;
-	QString mdir = QDesktopServices::storageLocation(QDesktopServices::MoviesLocation);
-	if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
-	if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::HomeLocation);
-	if (mdir.isEmpty()) mdir = "/tmp";
+    QString mdir = QDesktopServices::storageLocation(QDesktopServices::MoviesLocation);
+    if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+    if (mdir.isEmpty()) mdir = QDesktopServices::storageLocation(QDesktopServices::HomeLocation);
+    if (mdir.isEmpty()) mdir = "/tmp";
     QString default_recording_folder = mdir + "/Youtube";
     if (!QFile::exists(default_recording_folder)) {
         QDir().mkpath(default_recording_folder);
@@ -281,6 +284,8 @@ YTDialog::YTDialog(QWidget *parent) :
     connect(this, SIGNAL(gotUrls(QMap<int,QString>, QString, QString)), 
             this, SLOT(playYTUrl(QMap<int,QString>,QString, QString)));
     */
+
+    loadConfig();
 }
 
 YTDialog::~YTDialog() 
@@ -662,6 +667,30 @@ void YTDialog::showConfigDialog()
         recording_dialog->setRecordingsDirectory(d.recordingDirectory());
         recording_dialog->setRecordingFormat(d.recordingFormat());
         recording_dialog->setRecordingQuality(d.recordingQuality());
+        saveConfig();
+    }
+}
+
+void YTDialog::loadConfig() 
+{
+    if (set) {
+        set->beginGroup("general");
+        recording_dialog->setRecordingsDirectory(set->value("recording_directory", recording_dialog->recordingsDirectory()).toString());
+        recording_dialog->setRecordingFormat(set->value("recording_format", recording_dialog->recordingFormat()).toInt());
+        recording_dialog->setRecordingQuality(set->value("recording_quality", recording_dialog->recordingQuality()).toInt());
+        set->endGroup();
+    }
+}
+
+void YTDialog::saveConfig() 
+{
+    if (set) {
+        set->beginGroup("general");
+        set->setValue("recording_directory", recording_dialog->recordingsDirectory());
+        set->setValue("recording_format", recording_dialog->recordingFormat());
+        set->setValue("recording_quality", recording_dialog->recordingQuality());
+        set->endGroup();
+        set->sync();
     }
 }
 

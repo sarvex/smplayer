@@ -20,7 +20,23 @@
 #include <QApplication>
 #include <QTranslator>
 #include <QLibraryInfo>
+#include <QSettings>
+#include <QDir>
 #include "ytdialog.h"
+
+QString configPath() {
+#if !defined(Q_OS_WIN) && !defined(Q_OS_OS2)
+    const char * XDG_CONFIG_HOME = getenv("XDG_CONFIG_HOME");
+    if (XDG_CONFIG_HOME!=NULL) {
+        qDebug("configPath: XDG_CONFIG_HOME: %s", XDG_CONFIG_HOME);
+        return QString(XDG_CONFIG_HOME) + "/smplayer";
+    } 
+    else
+    return QDir::homePath() + "/.config/smplayer";
+#else
+    return QDir::homePath() + "/.smplayer";
+#endif
+}
 
 int main( int argc, char ** argv ) 
 {
@@ -43,7 +59,9 @@ int main( int argc, char ** argv )
 
 	a.setStyleSheet(":/Control/main.css");
 
-	YTDialog * yt = new YTDialog();
+    QSettings settings(configPath() + "/ytbrowser.ini", QSettings::IniFormat);
+
+	YTDialog * yt = new YTDialog(0, &settings);
 	yt->setMode(YTDialog::Button);
 	yt->show();
 	yt->resize(400, 500);

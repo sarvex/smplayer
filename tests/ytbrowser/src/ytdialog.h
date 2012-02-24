@@ -39,6 +39,7 @@ class QNetworkReply;
 class QNetworkAccessManager;
 class QTimeLine;
 class RecordingDialog;
+class QSettings;
 
 class OverlayWidget : public QWidget
 {
@@ -158,7 +159,7 @@ public:
         QString nextUrl;
     };
 
-    YTDialog(QWidget *parent = 0);
+    YTDialog(QWidget *parent = 0, QSettings * settings = 0);
     ~YTDialog();
 
     void setLoadingOverlay(bool enable);
@@ -204,12 +205,17 @@ private:
     SearchBox* searchBox;
     QToolButton * configButton;
 
+    QSettings * set;
+
     void updateNextPrevWidget();
     void reset();
     int lastPageNo(Tabs tab);
 
 protected:
     void resizeEvent(QResizeEvent *r);
+
+    void loadConfig();
+    void saveConfig();
 };
 
 #endif // YTDIALOG_H
