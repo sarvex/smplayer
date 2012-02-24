@@ -76,17 +76,17 @@
 <context>
     <name>DownloadFile</name>
     <message>
-        <location filename="../downloadfile.cpp" line="97"/>
+        <location filename="../downloadfile.cpp" line="106"/>
         <source>unknown time remaining</source>
         <translation>tiempo restante desconocido</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="104"/>
+        <location filename="../downloadfile.cpp" line="113"/>
         <source>%1 hours</source>
         <translation>%1 horas</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="110"/>
+        <location filename="../downloadfile.cpp" line="119"/>
         <source>%1 minutes</source>
         <translation>%1 minutos</translation>
     </message>
@@ -99,47 +99,47 @@
         <translation type="obsolete">Tiempo restante desconocido</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="113"/>
+        <location filename="../downloadfile.cpp" line="122"/>
         <source>%1 seconds</source>
         <translation>%1 segundos</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="114"/>
+        <location filename="../downloadfile.cpp" line="123"/>
         <source>%1 remaining</source>
-        <translation>falta %1</translation>
+        <translation>faltan %1</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="119"/>
+        <location filename="../downloadfile.cpp" line="128"/>
         <source>%1 of %2 MB</source>
         <translation>%1 de %2 MB</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="125"/>
+        <location filename="../downloadfile.cpp" line="134"/>
         <source>%1 of %2 KB</source>
         <translation>%1 de %2 KB</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="131"/>
+        <location filename="../downloadfile.cpp" line="140"/>
         <source>%1 of %2 bytes</source>
         <translation>%1 de %2 bytes</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="135"/>
+        <location filename="../downloadfile.cpp" line="144"/>
         <source>%1 of unknown size</source>
         <translation>%1 de tamaño desconocido</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="140"/>
+        <location filename="../downloadfile.cpp" line="149"/>
         <source>%1 MB/sec</source>
         <translation>%1 MB/s</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="144"/>
+        <location filename="../downloadfile.cpp" line="153"/>
         <source>%1 KB/sec</source>
         <translation>%1 KB/s</translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="148"/>
+        <location filename="../downloadfile.cpp" line="157"/>
         <source>%1 bytes/sec</source>
         <translation>%1 bytes/s</translation>
     </message>

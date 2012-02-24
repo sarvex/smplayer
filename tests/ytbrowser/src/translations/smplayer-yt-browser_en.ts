@@ -75,62 +75,62 @@
 <context>
     <name>DownloadFile</name>
     <message>
-        <location filename="../downloadfile.cpp" line="104"/>
+        <location filename="../downloadfile.cpp" line="113"/>
         <source>%1 hours</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="110"/>
+        <location filename="../downloadfile.cpp" line="119"/>
         <source>%1 minutes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="97"/>
+        <location filename="../downloadfile.cpp" line="106"/>
         <source>unknown time remaining</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="113"/>
+        <location filename="../downloadfile.cpp" line="122"/>
         <source>%1 seconds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="114"/>
+        <location filename="../downloadfile.cpp" line="123"/>
         <source>%1 remaining</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="119"/>
+        <location filename="../downloadfile.cpp" line="128"/>
         <source>%1 of %2 MB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="125"/>
+        <location filename="../downloadfile.cpp" line="134"/>
         <source>%1 of %2 KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="131"/>
+        <location filename="../downloadfile.cpp" line="140"/>
         <source>%1 of %2 bytes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="135"/>
+        <location filename="../downloadfile.cpp" line="144"/>
         <source>%1 of unknown size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="140"/>
+        <location filename="../downloadfile.cpp" line="149"/>
         <source>%1 MB/sec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="144"/>
+        <location filename="../downloadfile.cpp" line="153"/>
         <source>%1 KB/sec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../downloadfile.cpp" line="148"/>
+        <location filename="../downloadfile.cpp" line="157"/>
         <source>%1 bytes/sec</source>
         <translation type="unfinished"></translation>
     </message>
