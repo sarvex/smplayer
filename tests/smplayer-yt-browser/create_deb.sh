@@ -10,7 +10,7 @@ dch -v 0.99-`cat svn_revision` "New version"
 
 # This should be faster:
 rm build-stamp
-rm src/smplayer-yt-browser
+rm src/smtube
 fakeroot debian/rules build
 fakeroot debian/rules binary
 

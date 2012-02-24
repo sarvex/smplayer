@@ -1,4 +1,4 @@
-/*  smplayer-yt-browser
+/*  smtube - a small youtube browser
     Copyright (C) 2006-2012 Ricardo Villalba <rvm@users.sourceforge.net>
     Copyright (C) 2010 Ori Rejwan
 
@@ -48,9 +48,9 @@ int main( int argc, char ** argv )
 #ifdef TRANSLATION_PATH
 	 QString path = QString(TRANSLATION_PATH);
 	 if (path.isEmpty()) path = "translations";
-	app_trans.load("smplayer-yt-browser_" + locale, path);
+	app_trans.load("smtube_" + locale, path);
 #else
-	app_trans.load("smplayer-yt-browser_" + locale, "translations");
+	app_trans.load("smtube_" + locale, "translations");
 #endif
 
 	QTranslator qt_trans;
@@ -65,7 +65,7 @@ int main( int argc, char ** argv )
 
 	a.setStyleSheet(":/Control/main.css");
 
-    QSettings settings(configPath() + "/smplayer-yt-browser.ini", QSettings::IniFormat);
+    QSettings settings(configPath() + "/smtube.ini", QSettings::IniFormat);
 
 	YTDialog * yt = new YTDialog(0, &settings);
 	yt->setMode(YTDialog::Button);

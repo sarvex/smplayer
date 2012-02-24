@@ -46,8 +46,8 @@ SOURCES += myborder.cpp \
 
 FORMS += configdialog.ui
 
-TRANSLATIONS = translations/smplayer-yt-browser_es.ts \
-               translations/smplayer-yt-browser_en.ts
+TRANSLATIONS = translations/smtube_es.ts \
+               translations/smtube_en.ts
 
 unix {
     UI_DIR = .ui

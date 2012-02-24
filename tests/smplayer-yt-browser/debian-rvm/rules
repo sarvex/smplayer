@@ -55,7 +55,7 @@ install: build
 	dh_installdirs
 
 	# Add here commands to install the package into debian/smplayer.
-	$(MAKE) PREFIX=/usr DESTDIR=$(CURDIR)/debian/smplayer-yt-browser install
+	$(MAKE) PREFIX=/usr DESTDIR=$(CURDIR)/debian/smtube install
 
 
 # Build architecture-independent files here.
