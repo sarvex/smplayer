@@ -60,21 +60,31 @@ void DownloadFile::getRequest( QUrl url )
 
 void DownloadFile::downloaded(qint64 bytesReceived, qint64 total)
 {
-        totalSize = total;
-        completed = bytesReceived;
-        QTime current = QTime::currentTime();
-        QPair<QTime, qint64> head = lastReceivedBytes.head();
-        if(MOD_TIME(lastReceivedBytes.last().first.msecsTo(current)) >= 1000)
+        static unsigned int count = 0;
+        count++;
+
+        if (count % 50 == 0) 
         {
+            totalSize = total;
+            completed = bytesReceived;
+            QTime current = QTime::currentTime();
+            QPair<QTime, qint64> head = lastReceivedBytes.head();
+            if(MOD_TIME(lastReceivedBytes.last().first.msecsTo(current)) >= 1000)
+            {
                 lastReceivedBytes.enqueue(qMakePair(current, bytesReceived));
                 speed = (bytesReceived - head.second)*1000/ MOD_TIME(head.first.msecsTo(current));
-        }
-        if(MOD_TIME(lastReceivedBytes.head().first.msecsTo(current)) >= 5000)
-        {
+            }
+            if(MOD_TIME(lastReceivedBytes.head().first.msecsTo(current)) >= 5000)
+            {
                 lastReceivedBytes.dequeue();
+            }
+            emit progress(qRound(bytesReceived*100.0/total), total);
+            file->write(static_cast<QNetworkReply*>(sender())->readAll());
+
+            updateFooterText();
+            count = 0;
         }
-        emit progress(qRound(bytesReceived*100.0/total), total);
-        file->write(static_cast<QNetworkReply*>(sender())->readAll());
+
         if(bytesReceived == total)
         {
                 if(reply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl().isEmpty())
@@ -84,7 +94,6 @@ void DownloadFile::downloaded(qint64 bytesReceived, qint64 total)
                         deleteLater();
                 }
         }
-        updateFooterText();
 }
 
 void DownloadFile::updateFooterText()
