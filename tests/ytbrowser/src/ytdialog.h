@@ -185,6 +185,7 @@ public slots:
 
 protected slots:
     void showConfigDialog();
+    void showAboutDialog();
 
 private:
     YTTabBar* tabBar;
@@ -204,6 +205,7 @@ private:
     QString searchTerm;
     SearchBox* searchBox;
     QToolButton * configButton;
+    QToolButton * infoButton;
 
     QSettings * set;
 

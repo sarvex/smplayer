@@ -254,9 +254,15 @@ YTDialog::YTDialog(QWidget *parent, QSettings * settings) :
     configButton->setToolTip(tr("Settings"));
     connect(configButton, SIGNAL(clicked()), this, SLOT(showConfigDialog()));
 
+    infoButton = new QToolButton(this);
+    infoButton->setIcon(QPixmap(":/icons/info.png"));
+    infoButton->setToolTip(tr("Information"));
+    connect(infoButton, SIGNAL(clicked()), this, SLOT(showAboutDialog()));
+
     QHBoxLayout* hbox = new QHBoxLayout;
     hbox->addWidget(searchBox);
     hbox->addWidget(configButton);
+    hbox->addWidget(infoButton);
 
     hbox->addSpacerItem(new QSpacerItem(1,1, QSizePolicy::Expanding, QSizePolicy::Preferred));
     hbox->addWidget(prevButton);        
@@ -653,6 +659,29 @@ void YTDialog::recordItem(QListWidgetItem *item)
 void YTDialog::play(QString file) 
 {
     QProcess::startDetached("smplayer", QStringList() << file);
+}
+
+void YTDialog::showAboutDialog() 
+{
+    QMessageBox::information(this, tr("About..."), 
+        "<b>"+ tr("YouTube%1 Browser for SMPlayer").arg(QChar(0x2122)) +"</b>"
+        "<p>&copy; 2012 Ricardo Villalba &lt;rvm@users.sourceforge.net&gt;" + 
+        "<br>" + tr("Based on UMPlayer") + " &copy; 2010 Ori Rejwan"
+        "<p>"
+        "This program is free software; you can redistribute it and/or modify "
+        "it under the terms of the GNU General Public License as published by "
+        "the Free Software Foundation; either version 2 of the License, or "
+        "(at your option) any later version. "
+        "<p>"
+        "This program is distributed in the hope that it will be useful, "
+        "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+        "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
+        "GNU General Public License for more details. "
+        "<p>"
+        "You should have received a copy of the GNU General Public License "
+        "along with this program; if not, write to the Free Software "
+        "Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
+    );
 }
 
 void YTDialog::showConfigDialog() 
