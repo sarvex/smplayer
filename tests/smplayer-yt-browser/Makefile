@@ -45,8 +45,8 @@ install: src/smplayer-yt-browser
 #	install -m 644 icons/smplayer_icon32.png $(DESTDIR)$(KDE_ICONS)/32x32/apps/smplayer.png
 #	install -m 644 icons/smplayer_icon22.png $(DESTDIR)$(KDE_ICONS)/22x22/apps/smplayer.png
 #	install -m 644 icons/smplayer_icon16.png $(DESTDIR)$(KDE_ICONS)/16x16/apps/smplayer.png
-#	-install -d $(DESTDIR)$(KDE_APPLNK)
-#	install -m 644 smplayer-yt-browser.desktop $(DESTDIR)$(KDE_APPLNK)
+	-install -d $(DESTDIR)$(KDE_APPLNK)
+	install -m 644 smplayer-yt-browser.desktop $(DESTDIR)$(KDE_APPLNK)
 #	-install -d $(DESTDIR)$(PREFIX)/share/man/man1/
 #	install -m 644 man/smplayer-yt-browser.1 $(DESTDIR)$(PREFIX)/share/man/man1/
 #	gzip -9 -f $(DESTDIR)$(PREFIX)/share/man/man1/smplayer-yt-browser.1
@@ -60,7 +60,7 @@ uninstall:
 #	-rm -f $(KDE_ICONS)/32x32/apps/smplayer.png
 #	-rm -f $(KDE_ICONS)/22x22/apps/smplayer.png
 #	-rm -f $(KDE_ICONS)/16x16/apps/smplayer.png
-#	-rm -f $(KDE_APPLNK)/smplayer-yt-browser.desktop
+	-rm -f $(KDE_APPLNK)/smplayer-yt-browser.desktop
 #	-rm -f $(PREFIX)/share/man/man1/smplayer-bt-browser.1.gz
 	-rmdir $(TRANSLATION_PATH)/
 
