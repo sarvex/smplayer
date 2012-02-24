@@ -53,5 +53,7 @@ unix {
     UI_DIR = .ui
     MOC_DIR = .moc
     OBJECTS_DIR = .obj
+
+    DEFINES += TRANSLATION_PATH=$(TRANSLATION_PATH)
 }
 

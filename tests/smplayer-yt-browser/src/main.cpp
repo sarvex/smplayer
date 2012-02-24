@@ -45,7 +45,13 @@ int main( int argc, char ** argv )
 
 	QString locale = QLocale::system().name();
 	QTranslator app_trans;
+#ifdef TRANSLATION_PATH
+	 QString path = QString(TRANSLATION_PATH);
+	 if (path.isEmpty()) path = "translations";
+	app_trans.load("smplayer-yt-browser_" + locale, path);
+#else
 	app_trans.load("smplayer-yt-browser_" + locale, "translations");
+#endif
 
 	QTranslator qt_trans;
 #if defined(Q_OS_WIN)
