@@ -164,55 +164,83 @@
         <source>Error</source>
         <translation>Error</translation>
     </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="148"/>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="152"/>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="156"/>
+        <source>%1 bytes</source>
+        <translation>%1 bytes</translation>
+    </message>
 </context>
 <context>
     <name>RecordingDialog</name>
     <message>
-        <location filename="../recordingdialog.cpp" line="202"/>
-        <location filename="../recordingdialog.cpp" line="415"/>
+        <location filename="../recordingdialog.cpp" line="200"/>
+        <location filename="../recordingdialog.cpp" line="413"/>
         <source>Recordings</source>
         <translation>Grabaciones</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="203"/>
         <source>&amp;Clear List</source>
-        <translation>&amp;Borrar la Lista</translation>
+        <translation type="obsolete">&amp;Borrar la Lista</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="204"/>
         <source>&amp;Open Folder</source>
-        <translation>&amp;Abrir Carpeta</translation>
+        <translation type="obsolete">&amp;Abrir Carpeta</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="285"/>
-        <location filename="../recordingdialog.cpp" line="680"/>
         <source>Recording Failed</source>
-        <translation>La grabación ha fallado</translation>
+        <translation type="obsolete">La grabación ha fallado</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="285"/>
-        <location filename="../recordingdialog.cpp" line="680"/>
+        <location filename="../recordingdialog.cpp" line="201"/>
+        <source>&amp;Clear list</source>
+        <translation>&amp;Borrar la lista</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="202"/>
+        <location filename="../recordingdialog.cpp" line="542"/>
+        <source>&amp;Open folder</source>
+        <translation>&amp;Abrir carpeta</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="283"/>
+        <location filename="../recordingdialog.cpp" line="678"/>
         <source>There was an error in retrieving the download URL.</source>
         <translation>Se ha producido un error al cargar la URL de descarga.</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="303"/>
-        <location filename="../recordingdialog.cpp" line="698"/>
+        <location filename="../recordingdialog.cpp" line="283"/>
+        <location filename="../recordingdialog.cpp" line="678"/>
+        <source>Recording failed</source>
+        <translation>La grabación ha fallado</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="301"/>
+        <location filename="../recordingdialog.cpp" line="696"/>
         <source>Starting</source>
         <translation>Empezando</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="336"/>
+        <location filename="../recordingdialog.cpp" line="334"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="340"/>
+        <location filename="../recordingdialog.cpp" line="338"/>
         <source>Completed</source>
         <translation>Finalizado</translation>
     </message>
     <message numerus="yes">
-        <location filename="../recordingdialog.cpp" line="419"/>
+        <location filename="../recordingdialog.cpp" line="417"/>
         <source>%1% of %n video - Recordings</source>
         <translation>
             <numerusform>%1% de %n video - Grabaciones</numerusform>
@@ -220,38 +248,45 @@
         </translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="504"/>
+        <location filename="../recordingdialog.cpp" line="502"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Cancelar</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="506"/>
-        <source>&amp;Remove From List</source>
+        <location filename="../recordingdialog.cpp" line="504"/>
+        <source>&amp;Remove from list</source>
         <translation>&amp;Quitar de la lista</translation>
     </message>
     <message>
         <location filename="../recordingdialog.cpp" line="523"/>
+        <location filename="../recordingdialog.cpp" line="545"/>
+        <source>Remove from &amp;list</source>
+        <translation>Quitar de la &amp;lista</translation>
+    </message>
+    <message>
+        <source>&amp;Remove From List</source>
+        <translation type="obsolete">&amp;Quitar de la lista</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="521"/>
         <source>&amp;Retry</source>
         <translation>&amp;Reintentar</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="525"/>
-        <location filename="../recordingdialog.cpp" line="547"/>
         <source>Remove From &amp;List</source>
-        <translation>Quitar de la &amp;lista</translation>
+        <translation type="obsolete">Quitar de la &amp;lista</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="543"/>
+        <location filename="../recordingdialog.cpp" line="541"/>
         <source>&amp;Play</source>
         <translation>&amp;Reproducir</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="544"/>
         <source>&amp;Open Containing Folder</source>
-        <translation>&amp;Abrir carpeta contenedora</translation>
+        <translation type="obsolete">&amp;Abrir carpeta contenedora</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="546"/>
+        <location filename="../recordingdialog.cpp" line="544"/>
         <source>&amp;Delete</source>
         <translation>&amp;Borrar</translation>
     </message>
@@ -267,17 +302,17 @@
         <translation type="obsolete">%1% de %2 videos%3 - Grabaciones</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="625"/>
+        <location filename="../recordingdialog.cpp" line="623"/>
         <source>Fetching URL...</source>
         <translation>Cargando URL...</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="640"/>
+        <location filename="../recordingdialog.cpp" line="638"/>
         <source>File error</source>
         <translation>Error de archivo</translation>
     </message>
     <message>
-        <location filename="../recordingdialog.cpp" line="641"/>
+        <location filename="../recordingdialog.cpp" line="639"/>
         <source>The file does not exists, would you like to remove it from the list?</source>
         <translation>El archivo no existe; ¿quieres borrarlo de la lista?</translation>
     </message>
@@ -285,103 +320,119 @@
 <context>
     <name>YTDialog</name>
     <message>
-        <location filename="../ytdialog.cpp" line="205"/>
+        <location filename="../ytdialog.cpp" line="208"/>
         <source>YouTube Browser - SMPlayer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="236"/>
+        <location filename="../ytdialog.cpp" line="239"/>
         <source>&amp;Next</source>
         <translation>&amp;Siguiente</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="240"/>
+        <location filename="../ytdialog.cpp" line="243"/>
         <source>&amp;Previous</source>
         <translation>&amp;Anterior</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="250"/>
+        <location filename="../ytdialog.cpp" line="253"/>
         <source>Settings</source>
         <translation>Opciones</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="382"/>
+        <location filename="../ytdialog.cpp" line="387"/>
         <source>Most Relevant</source>
         <translation>Más Relevante</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="386"/>
+        <location filename="../ytdialog.cpp" line="391"/>
         <source>Most Recent</source>
         <translation>Más Reciente</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="390"/>
-        <location filename="../ytdialog.cpp" line="398"/>
+        <location filename="../ytdialog.cpp" line="395"/>
+        <location filename="../ytdialog.cpp" line="403"/>
         <source>Most Viewed</source>
         <translation>Más Visto</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="394"/>
+        <location filename="../ytdialog.cpp" line="399"/>
         <source>Most Popular</source>
         <translation>Más Popular</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="402"/>
+        <location filename="../ytdialog.cpp" line="407"/>
         <source>Most Rated</source>
         <translation>Mejor Calificado</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="413"/>
-        <source>Most Popular Videos on YouTube%1</source>
-        <translation>Vídeos Más Populares en YouTube%1</translation>
-    </message>
-    <message>
-        <location filename="../ytdialog.cpp" line="414"/>
-        <source>Most Rated Videos on YouTube%1</source>
-        <translation>Vídeos Mejor Calificados en YouTube%1</translation>
-    </message>
-    <message>
-        <location filename="../ytdialog.cpp" line="415"/>
-        <source>Most Viewed Videos on YouTube%1</source>
-        <translation>Vídeos Más Vistos en  YouTube%1</translation>
-    </message>
-    <message>
         <location filename="../ytdialog.cpp" line="418"/>
+        <source>Most popular videos on YouTube%1</source>
+        <translation>Vídeos más populares en YouTube%1</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="419"/>
+        <source>Most rated videos on YouTube%1</source>
+        <translation>Vídeos mejor calificados en YouTube%1</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="420"/>
+        <source>Most viewed videos on YouTube%1</source>
+        <translation>Vídeos más vistos en  YouTube%1</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="534"/>
+        <source>Error: Could not connect to Youtube server.</source>
+        <translation>Error: No se puede conectar al servidor de Youtube.</translation>
+    </message>
+    <message>
+        <source>Most Popular Videos on YouTube%1</source>
+        <translation type="obsolete">Vídeos Más Populares en YouTube%1</translation>
+    </message>
+    <message>
+        <source>Most Rated Videos on YouTube%1</source>
+        <translation type="obsolete">Vídeos Mejor Calificados en YouTube%1</translation>
+    </message>
+    <message>
+        <source>Most Viewed Videos on YouTube%1</source>
+        <translation type="obsolete">Vídeos Más Vistos en  YouTube%1</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="423"/>
         <source>YouTube%2 results for &quot;%1&quot;</source>
         <translation>YouTube%2 resultados de &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="529"/>
         <source>Error: Could not connect to Youtube Server.</source>
-        <translation>Error: No se puede conectar al servidor de Youtube.</translation>
+        <translation type="obsolete">Error: No se puede conectar al servidor de Youtube.</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="535"/>
+        <location filename="../ytdialog.cpp" line="540"/>
         <source>No videos found</source>
         <translation>No se han encontrado vídeos</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="537"/>
+        <location filename="../ytdialog.cpp" line="542"/>
         <source>No videos found for &quot;%1&quot;</source>
         <translation>No se han encontrado vídeos para &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="613"/>
+        <location filename="../ytdialog.cpp" line="618"/>
         <source>&amp;Play video</source>
         <translation>&amp;Reproducir vídeo</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="614"/>
+        <location filename="../ytdialog.cpp" line="619"/>
         <source>&amp;Record video</source>
         <translation>&amp;Grabar vídeo</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="615"/>
+        <location filename="../ytdialog.cpp" line="620"/>
         <source>&amp;Watch on YouTube</source>
         <translation>&amp;Ver en  YouTube</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="616"/>
+        <location filename="../ytdialog.cpp" line="621"/>
         <source>&amp;Copy link</source>
         <translation>&amp;Copiar enlace</translation>
     </message>
