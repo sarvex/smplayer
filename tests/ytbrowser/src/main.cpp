@@ -1,4 +1,4 @@
-/*  ytbrowser
+/*  smplayer-yt-browser
     Copyright (C) 2006-2012 Ricardo Villalba <rvm@users.sourceforge.net>
     Copyright (C) 2010 Ori Rejwan
 
@@ -45,7 +45,7 @@ int main( int argc, char ** argv )
 
 	QString locale = QLocale::system().name();
 	QTranslator app_trans;
-	app_trans.load("ytbrowser_" + locale, "translations");
+	app_trans.load("smplayer-yt-browser_" + locale, "translations");
 
 	QTranslator qt_trans;
 #if defined(Q_OS_WIN)
@@ -59,7 +59,7 @@ int main( int argc, char ** argv )
 
 	a.setStyleSheet(":/Control/main.css");
 
-    QSettings settings(configPath() + "/ytbrowser.ini", QSettings::IniFormat);
+    QSettings settings(configPath() + "/smplayer-yt-browser.ini", QSettings::IniFormat);
 
 	YTDialog * yt = new YTDialog(0, &settings);
 	yt->setMode(YTDialog::Button);
