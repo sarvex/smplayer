@@ -74,6 +74,77 @@
     </message>
 </context>
 <context>
+    <name>DownloadFile</name>
+    <message>
+        <location filename="../downloadfile.cpp" line="97"/>
+        <source>unknown time remaining</source>
+        <translation>tiempo restante desconocido</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="104"/>
+        <source>%1 hours</source>
+        <translation>%1 horas</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="110"/>
+        <source>%1 minutes</source>
+        <translation>%1 minutos</translation>
+    </message>
+    <message>
+        <source>%1 seconds remaining</source>
+        <translation type="obsolete">faltan %1 segundos</translation>
+    </message>
+    <message>
+        <source>Unknown time remaining</source>
+        <translation type="obsolete">Tiempo restante desconocido</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="113"/>
+        <source>%1 seconds</source>
+        <translation>%1 segundos</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="114"/>
+        <source>%1 remaining</source>
+        <translation>falta %1</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="119"/>
+        <source>%1 of %2 MB</source>
+        <translation>%1 de %2 MB</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="125"/>
+        <source>%1 of %2 KB</source>
+        <translation>%1 de %2 KB</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="131"/>
+        <source>%1 of %2 bytes</source>
+        <translation>%1 de %2 bytes</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="135"/>
+        <source>%1 of unknown size</source>
+        <translation>%1 de tamaño desconocido</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="140"/>
+        <source>%1 MB/sec</source>
+        <translation>%1 MB/s</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="144"/>
+        <source>%1 KB/sec</source>
+        <translation>%1 KB/s</translation>
+    </message>
+    <message>
+        <location filename="../downloadfile.cpp" line="148"/>
+        <source>%1 bytes/sec</source>
+        <translation>%1 bytes/s</translation>
+    </message>
+</context>
+<context>
     <name>FileChooser</name>
     <message>
         <location filename="../filechooser.cpp" line="54"/>
@@ -148,6 +219,42 @@
             <numerusform>%1% de %n videos - Grabaciones</numerusform>
         </translation>
     </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="504"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Cancelar</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="506"/>
+        <source>&amp;Remove From List</source>
+        <translation>&amp;Quitar de la lista</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="523"/>
+        <source>&amp;Retry</source>
+        <translation>&amp;Reintentar</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="525"/>
+        <location filename="../recordingdialog.cpp" line="547"/>
+        <source>Remove From &amp;List</source>
+        <translation>Quitar de la &amp;lista</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="543"/>
+        <source>&amp;Play</source>
+        <translation>&amp;Reproducir</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="544"/>
+        <source>&amp;Open Containing Folder</source>
+        <translation>&amp;Abrir carpeta contenedora</translation>
+    </message>
+    <message>
+        <location filename="../recordingdialog.cpp" line="546"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Borrar</translation>
+    </message>
     <message numerus="yes">
         <source>%1% of %2 video - Recordings</source>
         <translation type="obsolete">
@@ -178,85 +285,105 @@
 <context>
     <name>YTDialog</name>
     <message>
-        <location filename="../ytdialog.cpp" line="204"/>
+        <location filename="../ytdialog.cpp" line="205"/>
         <source>YouTube Browser - SMPlayer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="231"/>
+        <location filename="../ytdialog.cpp" line="236"/>
         <source>&amp;Next</source>
         <translation>&amp;Siguiente</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="235"/>
+        <location filename="../ytdialog.cpp" line="240"/>
         <source>&amp;Previous</source>
         <translation>&amp;Anterior</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="245"/>
+        <location filename="../ytdialog.cpp" line="250"/>
         <source>Settings</source>
         <translation>Opciones</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="377"/>
+        <location filename="../ytdialog.cpp" line="382"/>
         <source>Most Relevant</source>
         <translation>Más Relevante</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="381"/>
+        <location filename="../ytdialog.cpp" line="386"/>
         <source>Most Recent</source>
         <translation>Más Reciente</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="385"/>
-        <location filename="../ytdialog.cpp" line="393"/>
+        <location filename="../ytdialog.cpp" line="390"/>
+        <location filename="../ytdialog.cpp" line="398"/>
         <source>Most Viewed</source>
         <translation>Más Visto</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="389"/>
+        <location filename="../ytdialog.cpp" line="394"/>
         <source>Most Popular</source>
         <translation>Más Popular</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="397"/>
+        <location filename="../ytdialog.cpp" line="402"/>
         <source>Most Rated</source>
         <translation>Mejor Calificado</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="408"/>
+        <location filename="../ytdialog.cpp" line="413"/>
         <source>Most Popular Videos on YouTube%1</source>
         <translation>Vídeos Más Populares en YouTube%1</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="409"/>
+        <location filename="../ytdialog.cpp" line="414"/>
         <source>Most Rated Videos on YouTube%1</source>
         <translation>Vídeos Mejor Calificados en YouTube%1</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="410"/>
+        <location filename="../ytdialog.cpp" line="415"/>
         <source>Most Viewed Videos on YouTube%1</source>
         <translation>Vídeos Más Vistos en  YouTube%1</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="413"/>
+        <location filename="../ytdialog.cpp" line="418"/>
         <source>YouTube%2 results for &quot;%1&quot;</source>
         <translation>YouTube%2 resultados de &quot;%1&quot;</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="524"/>
+        <location filename="../ytdialog.cpp" line="529"/>
         <source>Error: Could not connect to Youtube Server.</source>
         <translation>Error: No se puede conectar al servidor de Youtube.</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="530"/>
+        <location filename="../ytdialog.cpp" line="535"/>
         <source>No videos found</source>
         <translation>No se han encontrado vídeos</translation>
     </message>
     <message>
-        <location filename="../ytdialog.cpp" line="532"/>
+        <location filename="../ytdialog.cpp" line="537"/>
         <source>No videos found for &quot;%1&quot;</source>
         <translation>No se han encontrado vídeos para &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="613"/>
+        <source>&amp;Play video</source>
+        <translation>&amp;Reproducir vídeo</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="614"/>
+        <source>&amp;Record video</source>
+        <translation>&amp;Grabar vídeo</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="615"/>
+        <source>&amp;Watch on YouTube</source>
+        <translation>&amp;Ver en  YouTube</translation>
+    </message>
+    <message>
+        <location filename="../ytdialog.cpp" line="616"/>
+        <source>&amp;Copy link</source>
+        <translation>&amp;Copiar enlace</translation>
     </message>
 </context>
 </TS>
