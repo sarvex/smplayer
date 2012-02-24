@@ -107,24 +107,24 @@ void DownloadFile::updateFooterText()
                 }
                 if(remainingTime > 60 || flag)
                 {
-                        rem += tr("%1 minutes").arg(remainingTime / 60, 2, 10, QChar('0')) + ", ";
+                        rem += tr("%1 minutes").arg(remainingTime / 60 /*, 2, 10, QChar('0')*/) + ", ";
                         remainingTime = remainingTime % 60;
                 }
-                rem += tr("%1 seconds").arg(remainingTime, 2, 10, QChar('0'));
+                rem += tr("%1 seconds").arg(remainingTime /*, 2, 10, QChar('0')*/);
                 remainingTimeString = tr("%1 remaining").arg(rem) + " - ";
         }
 
         if(totalSize > 1048576 )
         {
                 remainingTimeString += tr("%1 of %2 MB")
-                                          .arg(QString::number(completed / (qreal)1048576, 'f', 2))
-                                          .arg(QString::number(totalSize / (qreal)1048576, 'f', 2));
+                                          .arg(completed / (qreal)1048576, 0, 'f', 1)
+                                          .arg(totalSize / (qreal)1048576, 0, 'f', 1);
         }
         else if(totalSize > 1024 )
         {
                 remainingTimeString += tr("%1 of %2 KB")
-                                          .arg(QString::number(completed / (qreal)1024, 'f', 2))
-                                          .arg(QString::number(totalSize / (qreal)1024, 'f', 2));
+                                          .arg(completed / (qreal)1024, 0, 'f', 1)
+                                          .arg(totalSize / (qreal)1024, 0, 'f', 1);
         }
         else if(totalSize >= 0)
         {
@@ -137,11 +137,11 @@ void DownloadFile::updateFooterText()
         remainingTimeString += " (";
         if(speed > 1048576 )
         {
-                remainingTimeString += tr("%1 MB/sec").arg(QString::number(speed/ (qreal)1048576, 'f', 2));
+                remainingTimeString += tr("%1 MB/sec").arg(speed/ (qreal)1048576, 0, 'f', 1);
         }
         else if(totalSize > 1024 )
         {
-                remainingTimeString += tr("%1 KB/sec").arg(QString::number(speed/ (qreal)1024, 'f', 2));
+                remainingTimeString += tr("%1 KB/sec").arg(speed/ (qreal)1024, 0, 'f', 1);
         }
         else
         {
