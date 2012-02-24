@@ -145,19 +145,17 @@ void RecordingDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opt
         QString sizeString;
         if(size > 1048576 )
         {
-            sizeString += QString::number(size / (qreal)1048576, 'f', 1);
-            sizeString += " MB ";
+            sizeString += tr("%1 MB").arg(QString::number(size / (qreal)1048576, 'f', 1));
         }
         else if(size > 1024 )
         {
-            sizeString += QString::number(size / (qreal)1024, 'f', 1);
-            sizeString += " KB ";
+            sizeString += tr("%1 KB").arg(QString::number(size / (qreal)1024, 'f', 1));
         }
         else
         {
-            sizeString += QString::number(size);
-            sizeString += " bytes ";
+            sizeString += tr("%1 bytes").arg(size);
         }
+        sizeString += " ";
         painter->drawText(QRect(headerTextRect.left(), headerTextRect.bottom() + 5, rect.width(), rect.height()),
                           Qt::AlignLeft | Qt::AlignTop, sizeString);        
         currentPix = playIcon.pixmap(dd->buttonState, MyIcon::Off );
@@ -200,8 +198,8 @@ RecordingDialog::RecordingDialog(QWidget *parent) :
 
     setWindowIcon( QPixmap(":/icons/logo.png") );
     setWindowTitle(tr("Recordings"));
-    clearListButton = new QPushButton(tr("&Clear List"), this);
-    openFolderButton = new QPushButton(tr("&Open Folder"), this);
+    clearListButton = new QPushButton(tr("&Clear list"), this);
+    openFolderButton = new QPushButton(tr("&Open folder"), this);
     downloadList = new QListWidget(this);
 
     QHBoxLayout* hbox = new QHBoxLayout;
@@ -282,7 +280,7 @@ void RecordingDialog::recordVideo(QMap<int, QString> qualityMap, QString title, 
     }
     if(url.isNull())
     {
-        QMessageBox::warning(0, tr("Recording Failed"), tr("There was an error in retrieving the download URL."));
+        QMessageBox::warning(0, tr("Recording failed"), tr("There was an error in retrieving the download URL."));
         return;
     }
     download(url, title, id, 0);
@@ -503,7 +501,7 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     {
                         contextMenu.addAction(tr("&Cancel"))->setData("cancel");
                         contextMenu.addSeparator();
-                        contextMenu.addAction(tr("&Remove From List"))->setData("remove");
+                        contextMenu.addAction(tr("&Remove from list"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
@@ -522,7 +520,7 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     {
                         contextMenu.addAction(tr("&Retry"))->setData("retry");
                         contextMenu.addSeparator();
-                        contextMenu.addAction(tr("Remove From &List"))->setData("remove");
+                        contextMenu.addAction(tr("Remove from &list"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
@@ -541,10 +539,10 @@ bool RecordingDialog::eventFilter(QObject *watched, QEvent *event)
                     else if(dd->downloadState == DownloadData::Completed)
                     {
                         contextMenu.addAction(tr("&Play"))->setData("play");
-                        contextMenu.addAction(tr("&Open Containing Folder"))->setData("folder");
+                        contextMenu.addAction(tr("&Open folder"))->setData("folder");
                         contextMenu.addSeparator();
                         contextMenu.addAction(tr("&Delete"))->setData("delete");
-                        contextMenu.addAction(tr("Remove From &List"))->setData("remove");
+                        contextMenu.addAction(tr("Remove from &list"))->setData("remove");
                         QAction* action = contextMenu.exec(m->globalPos());
                         if(action)
                         {
@@ -677,7 +675,7 @@ void RecordingDialog::urlToDownload(QMap<int, QString> qualityMap, QString title
     }
     if(url.isNull())
     {
-        QMessageBox::warning(0, tr("Recording Failed"), tr("There was an error in retrieving the download URL."));
+        QMessageBox::warning(0, tr("Recording failed"), tr("There was an error in retrieving the download URL."));
         return;
     }
     RetrieveVideoUrl* rvu = static_cast<RetrieveVideoUrl*>(sender());

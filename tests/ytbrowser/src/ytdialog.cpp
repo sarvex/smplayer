@@ -415,9 +415,9 @@ void YTDialog::gotCurrentTab(int index)
     //Title text
     switch((int)tab)
     {
-    case Popular: setWindowTitle(tr("Most Popular Videos on YouTube%1").arg(QChar(0x2122)));break;
-    case Rated: setWindowTitle(tr("Most Rated Videos on YouTube%1").arg(QChar(0x2122)));break;
-    case ViewedButton: setWindowTitle(tr("Most Viewed Videos on YouTube%1").arg(QChar(0x2122)));break;
+    case Popular: setWindowTitle(tr("Most popular videos on YouTube%1").arg(QChar(0x2122)));break;
+    case Rated: setWindowTitle(tr("Most rated videos on YouTube%1").arg(QChar(0x2122)));break;
+    case ViewedButton: setWindowTitle(tr("Most viewed videos on YouTube%1").arg(QChar(0x2122)));break;
     case Relevant :
     case Recent :
     case Viewed : setWindowTitle(tr("YouTube%2 results for \"%1\"").arg(searchTerm).arg(QChar(0x2122)));break;
@@ -531,7 +531,7 @@ void YTDialog::gotAPIReply(const YTReply& formattedReply)
         updateNextPrevWidget();
         if(!formattedReply.errorString.isEmpty())
         {
-            overlay->setText(tr("Error: Could not connect to Youtube Server."));
+            overlay->setText(tr("Error: Could not connect to Youtube server."));
             return;
         }
         if(formattedReply.results.count() == 0)
