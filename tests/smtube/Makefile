@@ -5,7 +5,7 @@ PREFIX=/usr/local
 CONF_PREFIX=$(PREFIX)
 
 DATA_PATH=$(PREFIX)/share/smtube
-DOC_PATH=$(PREFIX)/share/doc/packages/smtube
+DOC_PATH=$(PREFIX)/share/doc/smtube
 TRANSLATION_PATH=$(PREFIX)/share/smtube/translations
 
 KDE_PREFIX=$(PREFIX)
