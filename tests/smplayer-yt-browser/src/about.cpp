@@ -48,7 +48,7 @@ About::About(QWidget * parent, Qt::WindowFlags f)
            "connect, inform, and inspire others across the globe and acts as a "
            "distribution platform for original content creators and advertisers large and small.<br><br>"
            "By using smtube you hereby agree to be bound by Google Terms of Services located "
-           "at ") + link("http://www.google.com/accounts/TOS", "http://www.google.com/accounts/TOS") + "."
+           "at %1.").arg(link("http://www.google.com/accounts/TOS", "http://www.google.com/accounts/TOS"))
     );
 
     license->setHtml(
