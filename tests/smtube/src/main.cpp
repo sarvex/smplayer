@@ -72,8 +72,6 @@ int main( int argc, char ** argv )
 	a.installTranslator(&app_trans);
 	a.installTranslator(&qt_trans);
 
-	/* a.setStyleSheet(":/Control/main.css"); */
-
     QSettings settings(configPath() + "/smtube.ini", QSettings::IniFormat);
 
 	YTDialog * yt = new YTDialog(0, &settings);
