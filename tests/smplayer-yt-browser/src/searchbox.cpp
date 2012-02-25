@@ -17,73 +17,30 @@
 */
 
 #include "searchbox.h"
-#include <QPaintEvent>
-#include <QResizeEvent>
-#include <QPainter>
-#include <QStyle>
-#include <QStyleOptionFrame>
+#include <QToolButton>
 
 SearchBox::SearchBox(QWidget *parent) :
-    QWidget(parent)
+    LineEditWithIcon(parent)
 {
-    lineEdit = new QLineEdit(this);
-    lineEdit->setFrame(false);
-    searchPix = QPixmap(":/Control/search-icon.png");
-    pressed = false;
-    connect(lineEdit, SIGNAL(returnPressed()), this, SLOT(startSearch()));
-    setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-
+    setupButton();
+    connect(button, SIGNAL(clicked()), this, SLOT(startSearch()));
+    connect(this, SIGNAL(returnPressed()), this, SLOT(startSearch()));
 }
 
-
-void SearchBox::paintEvent(QPaintEvent *pe)
+void SearchBox::setupButton()
 {
-    int pixWidth = searchPix.width();
-    int pixHeight = searchPix.height();
-    QPainter p(this);
-    QStyleOptionFrame styleOption;
-    styleOption.initFrom(this);
-    styleOption.state = QStyle::State_Sunken;
-    styleOption.lineWidth = 1;
-    styleOption.rect = QRect (0, 0, width(), height());
-    style()->drawPrimitive(QStyle::PE_PanelLineEdit, &styleOption, &p, this);
-    p.fillRect(searchIconRect, Qt::white);
-    p.drawPixmap(width() - pixWidth - 1, (height() - pixHeight)/2, searchPix );
-    p.end();
-}
-
-void SearchBox::resizeEvent(QResizeEvent *re)
-{
-    int pixWidth = searchPix.width();
-    lineEdit->setGeometry(1, 1, width() - pixWidth - 2, height() - 2);
-    searchIconRect = QRect(width() - pixWidth - 1, 1, pixWidth, height() - 2);
-}
-
-void SearchBox::mousePressEvent(QMouseEvent *m)
-{
-    if(searchIconRect.contains(m->pos()))
-    {
-        pressed = true;
-    }
-}
-
-void SearchBox::mouseReleaseEvent(QMouseEvent *m)
-{
-    if(pressed && searchIconRect.contains(m->pos()) && !lineEdit->text().isEmpty())
-    {
-        emit search(lineEdit->text());
-    }
+    setIcon( QPixmap(":/Control/search-icon.png") );
 }
 
 void SearchBox::startSearch()
 {
-    if(!lineEdit->text().isEmpty())
-        emit search(lineEdit->text());
+    if(!text().isEmpty())
+        emit search(text());
 }
 
 QSize SearchBox::sizeHint() const
 {
-    return QSize(150, lineEdit->sizeHint().height());
+    return QSize(150, LineEditWithIcon::sizeHint().height());
 }
 
 #include "moc_searchbox.cpp"

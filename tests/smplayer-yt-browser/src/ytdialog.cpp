@@ -370,14 +370,14 @@ void YTDialog::setMode(Mode mode)
     if(mode == Button)
     {
         searchTerm = QString();
-        searchBox->updateText(searchTerm);
+        searchBox->setText(searchTerm);
         addTab(Popular);
         addTab(ViewedButton);
         addTab(Rated);        
     }
     else if(mode == Search)
     {
-        searchBox->updateText(searchTerm);
+        searchBox->setText(searchTerm);
         addTab(Relevant);
         addTab(Recent);
         addTab(Viewed);        

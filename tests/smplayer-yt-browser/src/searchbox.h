@@ -1,38 +1,23 @@
 #ifndef SEARCHBOX_H
 #define SEARCHBOX_H
 
-#include <QWidget>
-#include <QLineEdit>
-#include <QPixmap>
+#include "lineedit_with_icon.h"
 
-
-class SearchBox : public QWidget
+class SearchBox : public LineEditWithIcon
 {
     Q_OBJECT
 public:
     explicit SearchBox(QWidget *parent = 0);
     QSize sizeHint() const;
-    void updateText(QString text) { lineEdit->setText(text); }
-
-protected:
-    void paintEvent(QPaintEvent *pe);
-    void resizeEvent(QResizeEvent *re);
-    void mousePressEvent(QMouseEvent *m);
-    void mouseReleaseEvent(QMouseEvent *m);
 
 signals:
     void search(QString);
 
 public slots:
-
     void startSearch();
 
-private:
-    QLineEdit* lineEdit;
-    QPixmap searchPix;
-    QRect searchIconRect;
-    bool pressed;
-
+protected:
+    virtual void setupButton();
 };
 
 #endif // SEARCHBOX_H
