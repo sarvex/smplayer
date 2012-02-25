@@ -27,7 +27,8 @@ HEADERS += myborder.h \
            yttabbar.h \
            lineedit_with_icon.h \
            filechooser.h \
-           configdialog.h
+           configdialog.h \
+           about.h
 
 SOURCES += myborder.cpp \
            myicon.cpp \
@@ -42,9 +43,10 @@ SOURCES += myborder.cpp \
            lineedit_with_icon.cpp \
            filechooser.cpp \
            configdialog.cpp \
+           about.cpp \
            main.cpp
 
-FORMS += configdialog.ui
+FORMS += configdialog.ui about.ui
 
 TRANSLATIONS = translations/smtube_es.ts \
                translations/smtube_en.ts
