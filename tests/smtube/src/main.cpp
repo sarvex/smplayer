@@ -17,6 +17,7 @@
 */
 
 #include <QApplication>
+#include "QtSingleApplication"
 #include <QTranslator>
 #include <QLibraryInfo>
 #include <QSettings>
@@ -59,7 +60,11 @@ QString qtTranslationsPath() {
 
 int main( int argc, char ** argv ) 
 {
-	QApplication a( argc, argv );
+	QtSingleApplication a( argc, argv );
+	if (a.isRunning()) {
+		qDebug("Another instance is running. Exiting.");
+		return 0;
+	}
 	a.connect( &a, SIGNAL( lastWindowClosed() ), &a, SLOT( quit() ) );
 
 	QString locale = QLocale::system().name();

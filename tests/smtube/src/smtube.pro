@@ -5,8 +5,8 @@
 TEMPLATE = app
 QT += network xml
 TARGET = 
-DEPENDPATH += .
-INCLUDEPATH += .
+DEPENDPATH += . qtsingleapplication
+INCLUDEPATH += . qtsingleapplication
 
 CONFIG += qt warn_on release
 
@@ -50,6 +50,10 @@ FORMS += configdialog.ui about.ui
 
 TRANSLATIONS = translations/smtube_es.ts \
                translations/smtube_en.ts
+
+# qtsingleapplication
+SOURCES += qtsingleapplication.cpp qtlocalpeer.cpp
+HEADERS += qtsingleapplication.h qtlocalpeer.h
 
 unix {
     UI_DIR = .ui
