@@ -326,8 +326,8 @@ Section $(Section_SMPlayer) SecSMPlayer
   File /r "${SMPLAYER_BUILD_DIR}\docs\*.*"
 
   ;Qt imageformats
-  SetOutPath "$INSTDIR\imageformats"
-  File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
+  ;SetOutPath "$INSTDIR\imageformats"
+  ;File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
 
   ;SMPlayer key shortcuts
   SetOutPath "$INSTDIR\shortcuts"
@@ -366,6 +366,7 @@ SectionGroup $(ShortcutGroupTitle)
     !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
       CreateDirectory "$SMPROGRAMS\$SMPlayer_StartMenuFolder"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
+      CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMTube.lnk" "$INSTDIR\smtube.exe"
       WriteINIStr    "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
     !insertmacro MUI_STARTMENU_WRITE_END
@@ -642,10 +643,12 @@ ${MementoSectionDone}
   RMDir /r "$INSTDIR\translations"
   Delete "$INSTDIR\*.txt"
   Delete "$INSTDIR\libgcc_s_dw2-1.dll"
+  Delete "$INSTDIR\libwinpthread-1.dll"
   Delete "$INSTDIR\mingwm10.dll"
   Delete "$INSTDIR\zlib1.dll"
   Delete "$INSTDIR\Q*.dll"
   Delete "$INSTDIR\smplayer.exe"
+  Delete "$INSTDIR\smtube.exe"
   Delete "$INSTDIR\dxlist.exe"
 
   ;Delete registry keys
