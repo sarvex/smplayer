@@ -289,8 +289,8 @@ Section $(Section_SMPlayer) SecSMPlayer
   File /r "${SMPLAYER_BUILD_DIR}\docs\*.*"
 
   ;Qt imageformats
-  ;SetOutPath "$INSTDIR\imageformats"
-  ;File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
+  SetOutPath "$INSTDIR\imageformats"
+  File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
 
   ;SMPlayer key shortcuts
   SetOutPath "$INSTDIR\shortcuts"
