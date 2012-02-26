@@ -667,6 +667,7 @@ void YTDialog::play(QString file)
 void YTDialog::handleMessage(const QString& message)
 {
     qDebug("YTDialog::handleMessage: '%s'", message.toUtf8().constData());
+    if (!isVisible()) show();
     if (message.startsWith("search "))
     {
         QString search_term = message.mid(7);
