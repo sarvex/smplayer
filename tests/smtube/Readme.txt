@@ -35,6 +35,10 @@
     Forum:
     http://smplayer.berlios.de/forum
 
+    Icon for smtube created by redxii (<redxii@users.sourceforge.net>), 
+    based on Crystal Project icons(http://everaldo.com/crystal/), 
+    license LGPL.
+
     -------------------------------------------------------------------------
 
     Third-party:

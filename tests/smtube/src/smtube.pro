@@ -64,3 +64,6 @@ unix {
     DEFINES += TRANSLATION_PATH=$(TRANSLATION_PATH)
 }
 
+win32 {
+    RC_FILE = smtube.rc
+}

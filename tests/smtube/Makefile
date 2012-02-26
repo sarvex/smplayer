@@ -37,14 +37,18 @@ install: src/smtube
 	-install -d $(DESTDIR)$(DOC_PATH)
 	install -m 644 Changelog *.txt $(DESTDIR)$(DOC_PATH)
 
-#	-install -d $(DESTDIR)$(KDE_ICONS)/64x64/apps/
-#	-install -d $(DESTDIR)$(KDE_ICONS)/32x32/apps/
-#	-install -d $(DESTDIR)$(KDE_ICONS)/22x22/apps/
-#	-install -d $(DESTDIR)$(KDE_ICONS)/16x16/apps/
-#	install -m 644 icons/smplayer_icon64.png $(DESTDIR)$(KDE_ICONS)/64x64/apps/smplayer.png
-#	install -m 644 icons/smplayer_icon32.png $(DESTDIR)$(KDE_ICONS)/32x32/apps/smplayer.png
-#	install -m 644 icons/smplayer_icon22.png $(DESTDIR)$(KDE_ICONS)/22x22/apps/smplayer.png
-#	install -m 644 icons/smplayer_icon16.png $(DESTDIR)$(KDE_ICONS)/16x16/apps/smplayer.png
+	-install -d $(DESTDIR)$(KDE_ICONS)/256x256/apps/
+	-install -d $(DESTDIR)$(KDE_ICONS)/128x128/apps/
+	-install -d $(DESTDIR)$(KDE_ICONS)/64x64/apps/
+	-install -d $(DESTDIR)$(KDE_ICONS)/48x48/apps/
+	-install -d $(DESTDIR)$(KDE_ICONS)/32x32/apps/
+	-install -d $(DESTDIR)$(KDE_ICONS)/16x16/apps/
+	install -m 644 src/icons/logo.png $(DESTDIR)$(KDE_ICONS)/256x256/apps/smtube.png
+	install -m 644 icons/smtube_128.png $(DESTDIR)$(KDE_ICONS)/128x128/apps/smtube.png
+	install -m 644 icons/smtube_64.png $(DESTDIR)$(KDE_ICONS)/64x64/apps/smtube.png
+	install -m 644 icons/smtube_48.png $(DESTDIR)$(KDE_ICONS)/48x48/apps/smtube.png
+	install -m 644 icons/smtube_32.png $(DESTDIR)$(KDE_ICONS)/32x32/apps/smtube.png
+	install -m 644 icons/smtube_16.png $(DESTDIR)$(KDE_ICONS)/16x16/apps/smtube.png
 	-install -d $(DESTDIR)$(KDE_APPLNK)
 	install -m 644 smtube.desktop $(DESTDIR)$(KDE_APPLNK)
 #	-install -d $(DESTDIR)$(PREFIX)/share/man/man1/
@@ -56,11 +60,13 @@ uninstall:
 	-rm -f $(TRANSLATION_PATH)/*.qm
 	-rm -f $(DOC_PATH)/Changelog
 	-rm -f $(DOC_PATH)/*.txt
-#	-rm -f $(KDE_ICONS)/64x64/apps/smplayer.png
-#	-rm -f $(KDE_ICONS)/32x32/apps/smplayer.png
-#	-rm -f $(KDE_ICONS)/22x22/apps/smplayer.png
-#	-rm -f $(KDE_ICONS)/16x16/apps/smplayer.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/256x256/apps/smtube.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/128x128/apps/smtube.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/64x64/apps/smtube.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/48x48/apps/smtube.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/32x32/apps/smtube.png
+	-rm -f $(DESTDIR)$(KDE_ICONS)/16x16/apps/smtube.png
 	-rm -f $(KDE_APPLNK)/smtube.desktop
-#	-rm -f $(PREFIX)/share/man/man1/smplayer-bt-browser.1.gz
+#	-rm -f $(PREFIX)/share/man/man1/smtube.1.gz
 	-rmdir $(TRANSLATION_PATH)/
 
