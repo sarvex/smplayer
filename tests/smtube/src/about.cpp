@@ -91,6 +91,7 @@ QString About::getTranslators() {
          "<table>" +
 #endif
          trad(tr("Spanish"), "Ricardo Villalba <rvm@users.sourceforge.net>") +
+         trad(tr("Russian"), QString::fromUtf8("Белый Владимир <wiselord1983@gmail.com>"))+
 #ifndef TRANS_TABLE
         "</ul>");
 #else
