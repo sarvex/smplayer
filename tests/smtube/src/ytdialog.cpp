@@ -664,6 +664,17 @@ void YTDialog::play(QString file)
     QProcess::startDetached("smplayer", QStringList() << file);
 }
 
+void YTDialog::handleMessage(const QString& message)
+{
+    qDebug("YTDialog::handleMessage: '%s'", message.toUtf8().constData());
+    if (message.startsWith("search "))
+    {
+        QString search_term = message.mid(7);
+        qDebug("YTDialog::handleMessage: search_term: '%s'", search_term.toUtf8().constData());
+        setSearchTerm(search_term);
+    }
+}
+
 void YTDialog::showAboutDialog() 
 {
     About d(this);

@@ -171,6 +171,7 @@ signals:
     void gotUrls(const QMap<int, QString>&, QString, QString);
 
 public slots:
+    void handleMessage(const QString& message);
     void gotCurrentTab(int index);
     void nextClicked();
     void prevClicked();

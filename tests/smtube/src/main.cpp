@@ -60,7 +60,13 @@ QString qtTranslationsPath() {
 int main( int argc, char ** argv ) 
 {
 	QtSingleApplication a( argc, argv );
-	if (a.sendMessage(QString::null)) {
+
+	QString search_term;
+	if (argc >= 1) search_term = argv[1];
+
+	QString message;
+	if (!search_term.isEmpty()) message = "search " + search_term;
+	if (a.sendMessage(message)) {
 		qDebug("Another instance is running. Exiting.");
 		return 0;
 	}
@@ -79,8 +85,16 @@ int main( int argc, char ** argv )
     QSettings settings(configPath() + "/smtube.ini", QSettings::IniFormat);
 
 	YTDialog * yt = new YTDialog(0, &settings);
+	QObject::connect(&a, SIGNAL(messageReceived(const QString&)),
+                     yt, SLOT(handleMessage(const QString&)));
+
 	a.setActivationWindow(yt);
-	yt->setMode(YTDialog::Button);
+
+	if (!search_term.isEmpty()) {
+		yt->setSearchTerm(search_term);
+	} else {
+		yt->setMode(YTDialog::Button);
+	}
 	yt->show();
 	yt->resize(400, 500);
 
