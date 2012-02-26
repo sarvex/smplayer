@@ -123,7 +123,6 @@
   Var Codec_Version
   Var Dialog_Reinstall
   Var Inst_Type
-  Var Is_Admin
 !ifndef WITH_MPLAYER
   Var MPlayer_Version
 !endif
@@ -139,7 +138,6 @@
   Var Reinstall_UninstallButton_State
   Var SMPlayer_Path
   Var SMPlayer_StartMenuFolder
-  Var UserName
 
 ;--------------------------------
 ;Interface Settings
@@ -668,34 +666,6 @@ ${MementoSectionDone}
 ;--------------------------------
 ;Shared functions
 
-!macro CheckUserRightsMacro UN
-Function ${UN}CheckUserRights
-
-  ClearErrors
-  UserInfo::GetName
-  ${If} ${Errors}
-    StrCpy $Is_Admin 1
-    Return
-  ${EndIf}
-
-  Pop $UserName
-  UserInfo::GetAccountType
-  Pop $R0
-  ${Switch} $R0
-    ${Case} "Admin"
-    ${Case} "Power"
-      StrCpy $Is_Admin 1
-      ${Break}
-    ${Default}
-      StrCpy $Is_Admin 0
-      ${Break}
-  ${EndSwitch}
-
-FunctionEnd
-!macroend
-!insertmacro CheckUserRightsMacro ""
-!insertmacro CheckUserRightsMacro "un."
-
 !macro RunCheckMacro UN
 Function ${UN}RunCheck
 
@@ -759,10 +729,10 @@ Function .onInit
   ;Check if SMPlayer is running
   Call RunCheck
 
-  ;Check for admin on older OSes
-  Call CheckUserRights
-
-  ${If} $Is_Admin == 0
+  ;Check for admin on < Vista
+  UserInfo::GetAccountType
+  Pop $R0
+  ${If} $R0 != "admin"
     MessageBox MB_OK|MB_ICONSTOP $(Installer_No_Admin)
     Abort
   ${EndIf}
@@ -1036,10 +1006,10 @@ Function un.onInit
   SetRegView 64
 !endif
 
-  ;Check for admin (mimic old Inno Setup behavior)
-  Call un.CheckUserRights
-
-  ${If} $Is_Admin == 0
+  ;Check for admin on < Vista
+  UserInfo::GetAccountType
+  Pop $R0
+  ${If} $R0 != "admin"
     MessageBox MB_OK|MB_ICONSTOP $(Uninstaller_No_Admin)
     Abort
   ${EndIf}
