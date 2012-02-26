@@ -16,7 +16,6 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <QApplication>
 #include "QtSingleApplication"
 #include <QTranslator>
 #include <QLibraryInfo>
@@ -61,7 +60,7 @@ QString qtTranslationsPath() {
 int main( int argc, char ** argv ) 
 {
 	QtSingleApplication a( argc, argv );
-	if (a.isRunning()) {
+	if (a.sendMessage(QString::null)) {
 		qDebug("Another instance is running. Exiting.");
 		return 0;
 	}
@@ -80,6 +79,7 @@ int main( int argc, char ** argv )
     QSettings settings(configPath() + "/smtube.ini", QSettings::IniFormat);
 
 	YTDialog * yt = new YTDialog(0, &settings);
+	a.setActivationWindow(yt);
 	yt->setMode(YTDialog::Button);
 	yt->show();
 	yt->resize(400, 500);
