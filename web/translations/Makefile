@@ -45,10 +45,10 @@ pt.po: empty.pot
 	msgmerge -F -U -N --backup=numbered pt.po empty.pot
 
 it.po: empty.pot
-        msgmerge -F -U -N --backup=numbered it.po empty.pot
+	msgmerge -F -U -N --backup=numbered it.po empty.pot
 
 fi.po: empty.pot
-        msgmerge -F -U -N --backup=numbered fi.po empty.pot
+	msgmerge -F -U -N --backup=numbered fi.po empty.pot
 
 lt.po: empty.pot
-        msgmerge -F -U -N --backup=numbered lt.po empty.pot
+	msgmerge -F -U -N --backup=numbered lt.po empty.pot

@@ -8,190 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-29 01:37+0100\n"
+"POT-Creation-Date: 2012-03-01 03:16+0100\n"
 "PO-Revision-Date: 2012-02-02 09:35+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-
-#: ../index.php:5
-msgid "SMPlayer - General Info"
-msgstr "SMPlayer - Bendra informacija"
-
-#: ../info.php:15
-msgid ""
-"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
-"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
-"features like support for MPlayer filters and more."
-msgstr ""
-"SMPlayer stengiasi būti pilna <a href=%1>MPlayer</a> grafinė sąsaja,\n"
-"pradedant pagrindinėmis funkcijomis kaip video, DVD, VCD atkūrimas ir "
-"baigiant\n"
-"išplėstinėmis funkcijomis tokiomis kaip MPlayer filtrų palaikymas ir kita."
-
-#: ../info.php:21
-msgid ""
-"One of the most interesting features of SMPlayer: <b>it remembers the \n"
-"settings of all files you play</b>. So you start to watch a movie but you \n"
-"have to leave... don't worry, when you open that movie again it will \n"
-"resume at the same point you left it, and with the same settings: audio \n"
-"track, subtitles, volume..."
-msgstr ""
-"Viena iš įdomiausių SMPlayer galimybių: <b>jis prisimena visų atkurtų\n"
-"failų nustatymus</b>. Taigi pradedate žiūrėti filmą, bet jums reikia "
-"išeiti... \n"
-"Nesijaudinkite, kai atversite tą filmą dar kartą, jis prasidės nuo\n"
-"tos vietos kur palikote, taipogi su tais pačiais nustatymais: garso\n"
-"takeliu, subtitrais, garsu..."
-
-#: ../info.php:30
-msgid "Other additional interesting features:"
-msgstr "Kitos papildomos dėmesio vertos galimybės:"
-
-#: ../info.php:32
-msgid ""
-"Configurable subtitles. You can choose font and size, and even \n"
-"colors for the subtitles."
-msgstr ""
-"Konfigūruojami subtitrai. Galite pasirinkti šriftą ir jo dydį, netgi\n"
-"subtitrų spalvas."
-
-#: ../info.php:34
-msgid ""
-"Audio track switching. You can choose the audio track you want\n"
-"to listen. Works with avi and mkv. And of course with DVDs."
-msgstr ""
-"Audio takelių perjungimas. Galite pasirinkti kurį takelį norite\n"
-"girdėti. Veikia su avi ir mkv. Ir aišku su DVD."
-
-#: ../info.php:36
-msgid ""
-"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
-"or backward in the video."
-msgstr ""
-"Prasukimas naudojantis pelės ratuku. Su pelės ratuku filmą galite\n"
-"prasukti pirmyn ar atgal."
-
-#: ../info.php:38
-msgid ""
-"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
-"saturation and gamma of the video image."
-msgstr ""
-"Video ekvalaizeris, leidžia reguliuoti video failų ryškumą, kontrastą,\n"
-"atspalvius, grynumą ir gamą."
-
-#: ../info.php:40
-msgid ""
-"Multiple speed playback. You can play at 2X, 4X... and even in \n"
-"slow motion."
-msgstr ""
-"Keli atkūrimo greičiai. Galite atkurti 2X, 4X... greičiais ir netgi\n"
-"sulėtintame režime."
-
-#: ../info.php:43
-msgid ""
-"Filters. Several filters are available: deinterlace, postprocessing,\n"
-"denoise... and even a karaoke filter (voice removal)."
-msgstr ""
-"Filtrai. Prieinami keli filtrai: deinterliacija, papildomas apdorojimas,\n"
-"triukšmo šalinimas... ir netgi karaoke filtras(balso pašalinimas)."
-
-#: ../info.php:45
-msgid ""
-"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
-"subtitles."
-msgstr ""
-"Garso ir subtitrų delsos nustatymas. Leidžia susinchronizuoti\n"
-"garsą ir subtitrus."
-
-#: ../info.php:47
-msgid ""
-"Advanced options, such as selecting a demuxer or video & \n"
-"audio codecs."
-msgstr ""
-"Papildomos parinktys, tokios kaip demukserio ar video ir garso\n"
-"kodekų pasirinkimas."
-
-#: ../info.php:50
-msgid ""
-"Playlist. Allows you to enqueue several files to be played one after \n"
-"each other. Autorepeat and shuffle supported too."
-msgstr ""
-"Grojaraštis. Leidžia pridėti kelis failus ir jie bus atkurti vienas po "
-"kito.\n"
-"Taipogi palaikomas automatinis kartojimas ir maišymo funkcija."
-
-#: ../info.php:52
-msgid ""
-"Preferences dialog. You can easily configure every option of SMPlayer\n"
-"by using a nice preferences dialog."
-msgstr ""
-"Nustatymų dialogas. Galite lengvai konfigūruoti kiekvieną SMPlayer\n"
-"parinkty naudodamiesi gražiu nustatymų dialogu."
-
-#: ../info.php:54
-msgid "Possibility to search automatically for subtitles in %1."
-msgstr "Galimybė automatiškai ieškoti subtitrų %1 puslapyje."
-
-#: ../info.php:56
-msgid ""
-"Translations: currently SMPlayer is translated into more than 20 \n"
-"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-"Japanese...."
-msgstr ""
-"Vertimai: šiuo metu SMPlayer yra išverstas į daugiau nei 20\n"
-"kalbų, įskaitant Ispanų, Vokiečių, Prancūzų, Italų, Rusų, Kinų,\n"
-"Japonų, Lietuvių..."
-
-#: ../info.php:59
-msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr ""
-"Multiplatforminis. Sukompiliuoti failai prieinami Linux ir Windows "
-"naudotojams."
-
-#: ../info.php:61
-msgid "SMPlayer is under the <b>GPL</b> license."
-msgstr "SMPlayer taikoma <b>GPL</b> licencija."
-
-#: ../header.php:16
-msgid "Main"
-msgstr "Pagrindinis"
-
-#: ../header.php:17
-msgid "Screenshots"
-msgstr "Ekranvaizdžiai"
-
-#: ../header.php:18
-msgid "Downloads"
-msgstr "Atsisiuntimai"
-
-#: ../header.php:19
-msgid "Forum"
-msgstr "Forumas"
-
-#: ../header.php:20
-msgid "Bug Tracking"
-msgstr "Pranešimai apie klaidas"
-
-#: ../header.php:21
-msgid "Feature Requests"
-msgstr "Naujų galimybių prašymai"
-
-#: ../header.php:22
-msgid "Wiki"
-msgstr "Wiki"
-
-#: ../header.php:43
-msgid "The SMPlayer Project"
-msgstr "SMPlayer projektas"
-
-#: ../footer.php:42
-msgid "This page is available in the following languages:"
-msgstr "Šis puslapis prieinamas šiomis kalbomis:"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -412,6 +238,189 @@ msgstr ""
 "Galite gauti paketus tiesiai iš SVN (pradinis kodas ir Windows \n"
 "atnaujinimai), <a href=%1><b>čia</b></a>."
 
+#: ../footer.php:43
+msgid "This page is available in the following languages:"
+msgstr "Šis puslapis prieinamas šiomis kalbomis:"
+
+#: ../header.php:16
+msgid "Main"
+msgstr "Pagrindinis"
+
+#: ../header.php:17
+msgid "Screenshots"
+msgstr "Ekranvaizdžiai"
+
+#: ../header.php:18
+msgid "Downloads"
+msgstr "Atsisiuntimai"
+
+#: ../header.php:19
+msgid "Forum"
+msgstr "Forumas"
+
+#: ../header.php:20
+msgid "Bug Tracking"
+msgstr "Pranešimai apie klaidas"
+
+#: ../header.php:21
+msgid "Feature Requests"
+msgstr "Naujų galimybių prašymai"
+
+#: ../header.php:22
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../header.php:43
+msgid "The SMPlayer Project"
+msgstr "SMPlayer projektas"
+
+#: ../index.php:5
+msgid "SMPlayer - General Info"
+msgstr "SMPlayer - Bendra informacija"
+
+#: ../info.php:15
+msgid ""
+"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
+"features like support for MPlayer filters and more."
+msgstr ""
+"SMPlayer stengiasi būti pilna <a href=%1>MPlayer</a> grafinė sąsaja,\n"
+"pradedant pagrindinėmis funkcijomis kaip video, DVD, VCD atkūrimas ir "
+"baigiant\n"
+"išplėstinėmis funkcijomis tokiomis kaip MPlayer filtrų palaikymas ir kita."
+
+#: ../info.php:21
+msgid ""
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+"Viena iš įdomiausių SMPlayer galimybių: <b>jis prisimena visų atkurtų\n"
+"failų nustatymus</b>. Taigi pradedate žiūrėti filmą, bet jums reikia "
+"išeiti... \n"
+"Nesijaudinkite, kai atversite tą filmą dar kartą, jis prasidės nuo\n"
+"tos vietos kur palikote, taipogi su tais pačiais nustatymais: garso\n"
+"takeliu, subtitrais, garsu..."
+
+#: ../info.php:30
+msgid "Other additional interesting features:"
+msgstr "Kitos papildomos dėmesio vertos galimybės:"
+
+#: ../info.php:32
+msgid ""
+"Configurable subtitles. You can choose font and size, and even \n"
+"colors for the subtitles."
+msgstr ""
+"Konfigūruojami subtitrai. Galite pasirinkti šriftą ir jo dydį, netgi\n"
+"subtitrų spalvas."
+
+#: ../info.php:34
+msgid ""
+"Audio track switching. You can choose the audio track you want\n"
+"to listen. Works with avi and mkv. And of course with DVDs."
+msgstr ""
+"Audio takelių perjungimas. Galite pasirinkti kurį takelį norite\n"
+"girdėti. Veikia su avi ir mkv. Ir aišku su DVD."
+
+#: ../info.php:36
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+"Prasukimas naudojantis pelės ratuku. Su pelės ratuku filmą galite\n"
+"prasukti pirmyn ar atgal."
+
+#: ../info.php:38
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+"Video ekvalaizeris, leidžia reguliuoti video failų ryškumą, kontrastą,\n"
+"atspalvius, grynumą ir gamą."
+
+#: ../info.php:40
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr ""
+"Keli atkūrimo greičiai. Galite atkurti 2X, 4X... greičiais ir netgi\n"
+"sulėtintame režime."
+
+#: ../info.php:43
+msgid ""
+"Filters. Several filters are available: deinterlace, postprocessing,\n"
+"denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+"Filtrai. Prieinami keli filtrai: deinterliacija, papildomas apdorojimas,\n"
+"triukšmo šalinimas... ir netgi karaoke filtras(balso pašalinimas)."
+
+#: ../info.php:45
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr ""
+"Garso ir subtitrų delsos nustatymas. Leidžia susinchronizuoti\n"
+"garsą ir subtitrus."
+
+#: ../info.php:47
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr ""
+"Papildomos parinktys, tokios kaip demukserio ar video ir garso\n"
+"kodekų pasirinkimas."
+
+#: ../info.php:50
+msgid ""
+"Playlist. Allows you to enqueue several files to be played one after \n"
+"each other. Autorepeat and shuffle supported too."
+msgstr ""
+"Grojaraštis. Leidžia pridėti kelis failus ir jie bus atkurti vienas po "
+"kito.\n"
+"Taipogi palaikomas automatinis kartojimas ir maišymo funkcija."
+
+#: ../info.php:52
+msgid ""
+"Preferences dialog. You can easily configure every option of SMPlayer\n"
+"by using a nice preferences dialog."
+msgstr ""
+"Nustatymų dialogas. Galite lengvai konfigūruoti kiekvieną SMPlayer\n"
+"parinkty naudodamiesi gražiu nustatymų dialogu."
+
+#: ../info.php:54
+msgid "Possibility to search automatically for subtitles in %1."
+msgstr "Galimybė automatiškai ieškoti subtitrų %1 puslapyje."
+
+#: ../info.php:56
+msgid ""
+"Translations: currently SMPlayer is translated into more than 20 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+"Vertimai: šiuo metu SMPlayer yra išverstas į daugiau nei 20\n"
+"kalbų, įskaitant Ispanų, Vokiečių, Prancūzų, Italų, Rusų, Kinų,\n"
+"Japonų, Lietuvių..."
+
+#: ../info.php:59
+msgid "It's multiplatform. Binaries available for Windows and Linux."
+msgstr ""
+"Multiplatforminis. Sukompiliuoti failai prieinami Linux ir Windows "
+"naudotojams."
+
+#: ../info.php:61
+msgid "SMPlayer is under the <b>GPL</b> license."
+msgstr "SMPlayer taikoma <b>GPL</b> licencija."
+
+#: ../latest.php:5
+msgid "SMPlayer - Latest Version"
+msgstr "SMPlayer - Naujausia versija"
+
+#: ../latest.php:35
+msgid "Go to the download page"
+msgstr "Eiti į atsisiuntimų puslapį"
+
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Ekranvaizdžiai"
@@ -456,11 +465,3 @@ msgstr "Minimali grafinė sąsaja"
 #: ../screenshots.php:61
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer veikia su nauja KDE 4"
-
-#: ../latest.php:5
-msgid "SMPlayer - Latest Version"
-msgstr "SMPlayer - Naujausia versija"
-
-#: ../latest.php:36
-msgid "Go to the download page"
-msgstr "Eiti į atsisiuntimų puslapį"

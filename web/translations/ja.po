@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-29 01:37+0100\n"
+"POT-Creation-Date: 2012-03-01 03:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -138,7 +139,9 @@ msgstr "この PPA から Ubuntu 用 deb パッケージを取得できます:"
 
 #: ../downloads.php:187
 msgid "To install smplayer, just run these commands in a terminal:"
-msgstr "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してください:"
+msgstr ""
+"smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
+"い:"
 
 #: ../downloads.php:202
 msgid "Suggested package:"
@@ -224,10 +227,10 @@ msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
 msgstr ""
-"<a href=%1><b>こちら</b></a>に SVN から直接取得されたパッケージ (ソースコードと "
-"Windows 用の更新) があります。"
+"<a href=%1><b>こちら</b></a>に SVN から直接取得されたパッケージ (ソースコード"
+"と Windows 用の更新) があります。"
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "This page is available in the following languages:"
 msgstr "このページは以下の言語でご覧いただけます: "
 
@@ -392,7 +395,7 @@ msgstr "SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 msgid "SMPlayer - Latest Version"
 msgstr "SMPlayer - 最新のバージョン"
 
-#: ../latest.php:36
+#: ../latest.php:35
 msgid "Go to the download page"
 msgstr "ダウンロード ページへ"
 

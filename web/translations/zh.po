@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-29 01:37+0100\n"
+"POT-Creation-Date: 2012-03-01 03:16+0100\n"
 "PO-Revision-Date: 2008-05-29 12:40+0800\n"
 "Last-Translator: MA Gang <magang@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -215,7 +216,7 @@ msgstr ""
 "你可以从SVN直接下载程序包(源程序代码和Windows升级程序)，<a href=%1><b>这里</"
 "b></a>。"
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "This page is available in the following languages:"
 msgstr ""
 
@@ -383,7 +384,7 @@ msgstr "SMPlayer基于<b>GPL</b>协议发布。"
 msgid "SMPlayer - Latest Version"
 msgstr ""
 
-#: ../latest.php:36
+#: ../latest.php:35
 msgid "Go to the download page"
 msgstr ""
 
@@ -432,40 +433,11 @@ msgstr "迷你GUI"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "运行于新KDE4下的SMPlayer"
 
-#~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
-#~ msgstr ""
-#~ "您可以从这个 PPA 获得 Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "的程序包"
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
 
-#~ msgid "1970"
-#~ msgstr "1970"
-
-#~ msgid "Donations"
-#~ msgstr "捐赠"
-
-#~ msgid "Compiled on Ubuntu 7.04."
-#~ msgstr "在Ubuntu 7.04下编译。"
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
-#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
-
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
-#~ "本地语言界面和图标主题。不包含mplayer。"
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -477,8 +449,37 @@ msgstr "运行于新KDE4下的SMPlayer"
 #~ "已经支持mplayer的新功能，所以建议安装更新版本的mplayer。你可以在这里下载"
 #~ "You can download here %2 (从 %3)."
 
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
+#~ "本地语言界面和图标主题。不包含mplayer。"
 
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
+#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
+
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "在Ubuntu 7.04下编译。"
+
+#~ msgid "Donations"
+#~ msgstr "捐赠"
+
+#~ msgid "1970"
+#~ msgstr "1970"
+
+#~ msgid ""
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
+#~ msgstr ""
+#~ "您可以从这个 PPA 获得 Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "的程序包"
