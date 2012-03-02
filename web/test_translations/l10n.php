@@ -21,7 +21,71 @@
  * Includes some code from Pophorator:
  *  Pophorator :: Copyright (C) 2004, 2005 Jarno Elonen <elonen@iki.fi>
  */
-
+/* detect language and set tr_lang variable to that language */
+/* Copyright gymka <gymka@mail.ru> 2012                      */
+function detect_lang() {
+        if(!isset($_REQUEST["tr_lang"])) { // if it's first visit, in url tr_lang is not set, so you can set it.
+                switch (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2)) { // take first language from browser „autoselect language“ variable
+        case "lt":
+        $_REQUEST["tr_lang"]="lt"; 
+        $tr_lang="lt";
+        break;
+        case "it":
+        $_REQUEST["tr_lang"]="it"; 
+        $tr_lang="it";
+        break; 
+        case "es":
+        $_REQUEST["tr_lang"]="es"; 
+        $tr_lang="es";
+        break; 
+        case "ja":
+        $_REQUEST["tr_lang"]="ja"; 
+        $tr_lang="ja";
+        break; 
+        case "de":
+        $_REQUEST["tr_lang"]="de"; 
+        $tr_lang="de";
+        break; 
+        case "ru":
+        $_REQUEST["tr_lang"]="ru"; 
+        $tr_lang="ru";
+        break; 
+        case "pl":
+        $_REQUEST["tr_lang"]="pl"; 
+        $tr_lang="pl";
+        break; 
+        case "ro":
+        $_REQUEST["tr_lang"]="ro"; 
+        $tr_lang="ro";
+        break; 
+        case "uk":
+        $_REQUEST["tr_lang"]="uk"; 
+        $tr_lang="uk";
+        break; 
+        case "zh":
+        $_REQUEST["tr_lang"]="zh"; 
+        $tr_lang="zh";
+        break; 
+        case "hu":
+        $_REQUEST["tr_lang"]="hu"; 
+        $tr_lang="hu";
+        break; 
+        case "pt":
+        $_REQUEST["tr_lang"]="pt"; 
+        $tr_lang="pt";
+        break; 
+        case "fi":
+        $_REQUEST["tr_lang"]="fi"; 
+        $tr_lang="fi";
+        break; 
+        default:
+        $_REQUEST["tr_lang"]="en"; 
+        $tr_lang="en";
+        break; 
+        }  
+}
+}
+        
 function decode_po_quotes($txt)
 {
   return stripcslashes(preg_replace('/"[^"]*$/', '', preg_replace('/^[^"]*"/', '', $txt)));
@@ -183,6 +247,8 @@ function init_translation() {
 }
 
 // main
+
+detect_lang();
 init_translation();
 
 ?>
