@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 03:16+0100\n"
+"POT-Creation-Date: 2012-03-03 11:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -138,23 +138,27 @@ msgid ""
 msgstr ""
 "Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
+msgid "Allows to play and download videos from YouTube. Source code."
+msgstr ""
+
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr "Pacotes para Ubuntu:"
 
-#: ../downloads.php:181
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr "Pode obter os pacotes para o Ubuntu neste PPA:"
 
-#: ../downloads.php:187
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Para instalar o SMPlayer, execute estes comandos no terminal:"
 
-#: ../downloads.php:202
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Pacotes sugeridos:"
 
-#: ../downloads.php:203
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -164,27 +168,27 @@ msgstr ""
 "suporta algumas novas funções do mplayer, por isso recomenda-se\n"
 "atualizar para uma versão mais recente."
 
-#: ../downloads.php:207
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Pode obter versões atualizadas neste PPA:"
 
-#: ../downloads.php:211
+#: ../downloads.php:222
 msgid "more info"
 msgstr "mais informações"
 
-#: ../downloads.php:219
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Ícones:"
 
-#: ../downloads.php:220
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Pacotes adicionais que fornecem temas de ícones."
 
-#: ../downloads.php:264
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "Pacotes adicionais"
 
-#: ../downloads.php:265
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -192,11 +196,11 @@ msgstr ""
 "Existem diversos pacotes para utilizadores avançados:\n"
 "<a href=%1>Veja a página de transferências sourceforge</a>."
 
-#: ../downloads.php:272
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Pacotes em colaboração"
 
-#: ../downloads.php:273
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -204,15 +208,15 @@ msgstr ""
 "Existem pacotes disponíveis para outras distros, criados\n"
 "por outras pessoas. <a href=%1>Clique aqui</a> para os ver."
 
-#: ../downloads.php:279
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Projetos relacionados"
 
-#: ../downloads.php:281
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "por MuldeR"
 
-#: ../downloads.php:282
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -226,12 +230,12 @@ msgstr ""
 "versões Mplayer ptimizadas para os diversos processadores e\n"
 "os codificadores."
 
-#: ../downloads.php:293
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Versões instáveis"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:295
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

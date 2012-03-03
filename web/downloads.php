@@ -174,6 +174,17 @@ tr("Read the file Install.txt included in the package to know how compile it.");
 </tr>
 
 <tr>
+<td><img src="iconos/package.png" alt="*"></td>
+<td>
+<?php
+echo download_smtube_link();
+echo "<br>";
+tr("Allows to play and download videos from YouTube. Source code."); 
+?>
+</td>
+</tr>
+
+<tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
 <?php

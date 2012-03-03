@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 03:16+0100\n"
+"POT-Creation-Date: 2012-03-03 11:43+0100\n"
 "PO-Revision-Date: 2012-02-02 09:35+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
+"100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -138,23 +138,27 @@ msgstr ""
 "Norėdami sužinoti kaip sukompiliuoti, perskaitykite „Install.txt“ kuris yra "
 "pakete."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
+msgid "Allows to play and download videos from YouTube. Source code."
+msgstr ""
+
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu paketai:"
 
-#: ../downloads.php:181
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr "Deb paketus skirtus Ubuntu galite gauti iš šio PPA:"
 
-#: ../downloads.php:187
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Norėdami įdiegti smplayer, terminale įvykdykite šias komandas:"
 
-#: ../downloads.php:202
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Siūlomas paketas:"
 
-#: ../downloads.php:203
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -164,27 +168,27 @@ msgstr ""
 "turi kai kurių naujų mplayer galimybių palaikymą, todėl naujesnė\n"
 "versija yra rekomenduojama."
 
-#: ../downloads.php:207
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Iš šio PPA galite gauti naujausią versiją:"
 
-#: ../downloads.php:211
+#: ../downloads.php:222
 msgid "more info"
 msgstr "daugiau informacijos"
 
-#: ../downloads.php:219
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Piktogramų temos:"
 
-#: ../downloads.php:220
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Nebūtini paketai kurie suteikia kelias piktogramų temas."
 
-#: ../downloads.php:264
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "Papildomi paketai"
 
-#: ../downloads.php:265
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -192,11 +196,11 @@ msgstr ""
 "Yra keli papildomi paketai pažengusiems naudotojams:\n"
 "<a href=%1>Pažiūrėkite sourceforge atsisiuntimo puslapyje</a>."
 
-#: ../downloads.php:272
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Naudotojų paketai"
 
-#: ../downloads.php:273
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -204,15 +208,15 @@ msgstr ""
 "Yra paketų kitiem distributyvam, kuriuos kūrė kiti\n"
 "žmonės. <a href=%1>Spauskite čia</a> norėdami pamatyti."
 
-#: ../downloads.php:279
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Susijęs projektas"
 
-#: ../downloads.php:281
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "kūrė MuldeR"
 
-#: ../downloads.php:282
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -225,12 +229,12 @@ msgstr ""
 "savo diegyklę, mplayer sukuria keliems procesoriams optimizuotus ir\n"
 "sukompiliuotus kodekus."
 
-#: ../downloads.php:293
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Nestabilūs leidimai"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:295
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-01 03:16+0100\n"
+"POT-Creation-Date: 2012-03-03 11:43+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../downloads.php:5
@@ -138,23 +138,27 @@ msgid ""
 msgstr ""
 "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
+msgid "Allows to play and download videos from YouTube. Source code."
+msgstr ""
+
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr "Пакети для Ubuntu:"
 
-#: ../downloads.php:181
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:187
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:202
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:203
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -164,27 +168,27 @@ msgstr ""
 "наразі підтримує деякі нові функції MPlayer, тому рекомендується \n"
 "застосовувати нову версія."
 
-#: ../downloads.php:207
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Ви можете взяти оновлену версію з PPA:"
 
-#: ../downloads.php:211
+#: ../downloads.php:222
 msgid "more info"
 msgstr "докладніше"
 
-#: ../downloads.php:219
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:220
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Додаткові пакети з деякими темами іконок."
 
-#: ../downloads.php:264
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:265
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -192,11 +196,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:272
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:273
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -204,15 +208,15 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:279
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Пов'язані проекти"
 
-#: ../downloads.php:281
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "від MuldeR"
 
-#: ../downloads.php:282
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -225,12 +229,12 @@ msgstr ""
 "власний інсталлер, mplayer зібраний з оптимізацією під декілька\n"
 "процесорів та з бінарними кодеками."
 
-#: ../downloads.php:293
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:295
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -462,6 +466,12 @@ msgstr "Компактний інтерфейс"
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer працює у новому KDE 4"
 
+#~ msgid "Play anything"
+#~ msgstr "Відтворюйте будь-що"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Забудьте про кодеки"
+
 #~ msgid ""
 #~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 #~ "from this PPA:"
@@ -469,9 +479,3 @@ msgstr "SMPlayer працює у новому KDE 4"
 #~ "Ви можете взяти пакети deb для Ubuntu (gutsy, hardy, intrepid and "
 #~ "jaunty)\n"
 #~ "з PPA:"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Забудьте про кодеки"
-
-#~ msgid "Play anything"
-#~ msgstr "Відтворюйте будь-що"

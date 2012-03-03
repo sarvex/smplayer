@@ -2,7 +2,11 @@
 include_once("myfunctions.php");
 
 function download_src_link() {
-	return create_link("smplayer-0.7.0.tar.bz2", 2280593 );
+	return create_link("smplayer-0.7.1.tar.bz2", 2788634 );
+}
+
+function download_smtube_link() {
+	return create_link("smtube-1.0.tar.bz2", 289840 );
 }
 
 function download_rpm_link() {
@@ -18,11 +22,11 @@ function download_amd64deb_link() {
 }
 
 function download_windows_full_link() {
-	return create_link("smplayer-0.7.0-win32.exe", 15358732 );
+	return create_link("smplayer-0.7.1-win32.exe", 15868152 );
 }
 
 function download_windows_lite_link() {
-	return create_link("smplayer-0.7.0-webdl.exe", 9094586 );
+	return create_link("smplayer-0.7.1-webdl.exe", 9597935 );
 }
 
 function download_windows_7z_link() {
