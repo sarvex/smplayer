@@ -30,11 +30,11 @@ function download_windows_lite_link() {
 }
 
 function download_windows_7z_link() {
-	return create_link("smplayer-0.7.0_without_mplayer.7z", 7709381 );
+	return create_link("smplayer-0.7.1_without_mplayer.7z", 8376602 );
 }
 
 function download_windows_portable_link() {
-	return create_link("smplayer-portable-0.7.0.7z", 13627092 );
+	return create_link("smplayer-portable-0.7.1.7z", 14303132 );
 }
 
 
