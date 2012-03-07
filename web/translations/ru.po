@@ -3,7 +3,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Last translator: WiseLord <wiselord1983@gmail.com>, 2007.
+# Last translator: WiseLord <wiselord1983@gmail.com>, 2007-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
@@ -18,6 +18,8 @@ msgstr ""
 "Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Source-Language: C\n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -49,6 +51,7 @@ msgstr ""
 "дополнительные кодеки (нужны лишь для некоторых форматов вроде RealVideo)."
 
 #: ../downloads.php:76
+#, qt-format
 msgid ""
 "This package contains everything needed to run smplayer: shared \n"
 "libraries, translation files, icon themes and a mplayer \n"
@@ -85,6 +88,7 @@ msgstr ""
 "которые у вас могут быть установлены в системе.\n"
 
 #: ../downloads.php:103
+#, qt-format
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -121,6 +125,7 @@ msgid ""
 msgstr "Пакет также включает темы иконок, переводы и сборку MPlayer."
 
 #: ../downloads.php:150
+#, qt-format
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr "Внимание: 7z файлы можно распаковать с помощью <a href=%1>7-Zip</a>."
 
@@ -135,7 +140,7 @@ msgstr "Для успешной компиляции читайте файл Ins
 
 #: ../downloads.php:182
 msgid "Allows to play and download videos from YouTube. Source code."
-msgstr ""
+msgstr "Позволяет проигрывать и загружать видео с Youtube. Исходный код."
 
 #: ../downloads.php:191
 msgid "Packages for Ubuntu:"
@@ -143,17 +148,18 @@ msgstr "Пакеты для Ubuntu:"
 
 #: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
-msgstr ""
+msgstr "Вы можете получить deb-пакеты для Ubuntu из этого PPA:"
 
 #: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
-msgstr ""
+msgstr "Для установки smplayer, выполните следующий команды в терминале:"
 
 #: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Рекомендуемый пакет:"
 
 #: ../downloads.php:214
+#, qt-format
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -184,6 +190,7 @@ msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
 #: ../downloads.php:276
+#, qt-format
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -196,6 +203,7 @@ msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
 #: ../downloads.php:284
+#, qt-format
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -230,6 +238,7 @@ msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 #: ../downloads.php:306
+#, qt-format
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -278,13 +287,14 @@ msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Главная страница"
 
 #: ../info.php:15
+#, qt-format
 msgid ""
 "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer представляет собой полноценную графическую оболочку для <a href=%"
-"1>MPlayer</a>,\n"
+"SMPlayer представляет собой полноценную графическую оболочку для <a "
+"href=%1>MPlayer</a>,\n"
 "обеспечивающую как базовые функции MPlayer (воспроизведение видео, DVD и "
 "VCD), \n"
 "так и более продвинутые, такие как поддержка фильтров для MPlayer и прочие."
@@ -389,6 +399,7 @@ msgstr ""
 "используя удобный диалог настроек."
 
 #: ../info.php:54
+#, qt-format
 msgid "Possibility to search automatically for subtitles in %1."
 msgstr "Возможность автоматического поиска субтитров в %1."
 
@@ -412,11 +423,11 @@ msgstr "SMPlayer распространяется по <b>GPL</b> лицензи
 
 #: ../latest.php:5
 msgid "SMPlayer - Latest Version"
-msgstr ""
+msgstr "SMPlayer - последняя версия"
 
 #: ../latest.php:35
 msgid "Go to the download page"
-msgstr ""
+msgstr "Перейти на страницу загрузок"
 
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
@@ -462,58 +473,3 @@ msgstr "Мини GUI"
 #: ../screenshots.php:61
 msgid "SMPlayer running on the new KDE 4"
 msgstr "SMPlayer, запущенный в новом KDE 4"
-
-#~ msgid "Play anything"
-#~ msgstr "Играет всё"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Забудьте о кодеках"
-
-#~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
-#~ msgstr ""
-#~ "Вы можете загрузить deb-пакеты для Ubuntu (gutsy, hardy, intrepid and "
-#~ "jaunty)\n"
-#~ "из этого PPA:"
-
-#~ msgid "1970"
-#~ msgstr "1970"
-
-#~ msgid "Donations"
-#~ msgstr "Пожертвования"
-
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Скомпилирован на Ubuntu %1."
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Пакет для AMD64. Скомпилирован на Ubuntu %1"
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
-#~ "SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
-#~ msgstr ""
-#~ "Версия mplayer, включённая в Ubuntu старовата (%1). SMPlayer "
-#~ "поддерживает \n"
-#~ "некоторые возможности новых версий mplayer, поэтому настоятельно \n"
-#~ "рекомендуется новая версия. Вы можете загрузить здесь %2 (от %3)."
-
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Вы можете получить обновленные версии <a href=%1>здесь</a>"
-
-#~ msgid "More info"
-#~ msgstr "Больше информации"
-
-#~ msgid "New!"
-#~ msgstr "Новинка!"
-
-#~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
-#~ msgstr ""
-#~ "Теперь вы можете легко установить пакеты с SMPlayer и MPlayer с помощью \n"
-#~ "%1. Просто добавьте одну из следующих строк в ваш %2, согласно вашей \n"
-#~ "версии Ubuntu:"
