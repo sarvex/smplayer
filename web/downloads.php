@@ -133,7 +133,8 @@ mplayer build.");
 
 
 <!-- Portable Edition -->
-
+<?php
+/*
 <tr>
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
@@ -152,7 +153,8 @@ tr("Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>.",
 ?>
 </td>
 </tr>
-
+*/
+?>
 
 </table>
 
