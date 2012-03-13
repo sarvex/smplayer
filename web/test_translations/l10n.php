@@ -168,7 +168,7 @@ function parse_po( $lines )
       }
     }
   }
-  if ( strlen($cur["msgid"]) || strlen($cur["comments"]) )
+  if ( strlen($cur["msgid"]) /* || strlen($cur["comments"]) */ )
     $res[] = $cur;
 
   $res2 = array();
