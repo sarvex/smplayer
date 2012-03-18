@@ -34,7 +34,8 @@ function print_languages() {
 	print_language_link($file, "Magyar", "hu", $query);
 	print_language_link($file, "Português", "pt", $query);
 	print_language_link($file, "Suomi", "fi", $query);
-	print_language_link($file, "Lietuvių", "lt",  $query, true);
+	print_language_link($file, "Lietuvių", "lt",  $query);
+	print_language_link($file, "Euskara", "eu",  $query, true);
 }
 ?>
 
