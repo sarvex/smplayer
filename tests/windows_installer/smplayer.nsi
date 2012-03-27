@@ -71,15 +71,15 @@
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION}"
 !ifdef WIN64
   !ifdef WITH_MPLAYER
-    OutFile "smplayer-${SMPLAYER_VERSION}-x64.exe"
+    OutFile "output\smplayer-${SMPLAYER_VERSION}-x64.exe"
   !else ifndef WITH_MPLAYER
-    OutFile "smplayer-${SMPLAYER_VERSION}-dl-x64.exe"
+    OutFile "output\smplayer-${SMPLAYER_VERSION}-dl-x64.exe"
   !endif
 !else
   !ifdef WITH_MPLAYER
-    OutFile "smplayer-${SMPLAYER_VERSION}-x86.exe"
+    OutFile "output\smplayer-${SMPLAYER_VERSION}-x86.exe"
   !else ifndef WITH_MPLAYER
-    OutFile "smplayer-${SMPLAYER_VERSION}-dl-x86.exe"
+    OutFile "output\smplayer-${SMPLAYER_VERSION}-dl-x86.exe"
   !endif
 !endif
 
@@ -125,9 +125,6 @@
   Var Codec_Version
   Var Dialog_Reinstall
   Var Inst_Type
-!ifndef WITH_MPLAYER
-  Var MPlayer_Version
-!endif
   Var Previous_Version
   Var Previous_Version_State
   Var Reinstall_ChgSettings
@@ -319,7 +316,7 @@ Section $(Section_SMPlayer) SecSMPlayer
   ${EndIf}
 
   SetOutPath "$INSTDIR"
-  File "${SMPLAYER_BUILD_DIR}\*"
+  File /x Portable_Edition.txt "${SMPLAYER_BUILD_DIR}\*"
 
   ;SMPlayer docs
   SetOutPath "$INSTDIR\docs"
@@ -390,6 +387,8 @@ SectionGroup $(MPlayerGroupTitle)
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x1
 !else ifndef WITH_MPLAYER
     AddSize 16800
+
+    Var /GLOBAL MPlayer_Version
 
     Call GetVerInfo
 

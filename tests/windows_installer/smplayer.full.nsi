@@ -52,9 +52,9 @@
   Name "SMPlayer ${SMPLAYER_VERSION}"
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION}"
 !ifdef WIN64
-  OutFile "smplayer-${DATE}-full-x64.exe"
+  OutFile "output\smplayer-${DATE}-full-x64.exe"
 !else
-  OutFile "smplayer-${DATE}-full.exe"
+  OutFile "output\smplayer-${DATE}-full.exe"
 !endif
 
   ;Version tab properties
@@ -281,7 +281,7 @@ Section $(Section_SMPlayer) SecSMPlayer
   ${EndIf}
 
   SetOutPath "$INSTDIR"
-  File "${SMPLAYER_BUILD_DIR}\*"
+  File /x Portable_Edition.txt "${SMPLAYER_BUILD_DIR}\*"
 
   ;SMPlayer docs
   SetOutPath "$INSTDIR\docs"
