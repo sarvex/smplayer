@@ -281,7 +281,7 @@ Section $(Section_SMPlayer) SecSMPlayer
   ${EndIf}
 
   SetOutPath "$INSTDIR"
-  File /x Portable_Edition.txt "${SMPLAYER_BUILD_DIR}\*"
+  File "${SMPLAYER_BUILD_DIR}\*"
 
   ;SMPlayer docs
   SetOutPath "$INSTDIR\docs"
