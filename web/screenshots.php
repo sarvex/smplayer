@@ -38,27 +38,27 @@ echo "<center>";
 echo "<table>";
 echo "<tr>";
 
-show_thumb("mainwindow_xp.png", get_tr("This is the main window") );
+show_thumb("mainwindow.png", get_tr("This is the main window") );
 
-show_thumb("playlist_embedded3.jpg", 
-	get_tr("The playlist can be embedded in the main window") );
+show_thumb("mainwindow_vista.png",
+	get_tr("The Windows version") );
 
-show_thumb("preferences1.png", get_tr("The preferences dialog") );
+show_thumb("preferences2.png", get_tr("The preferences dialog") );
 
 echo "</tr>";
 echo "<tr>";
 
 //show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
-show_thumb("smplayer_gnome.jpg", get_tr("SMPlayer running on Gnome") );
-show_thumb("subtitles1.jpg", get_tr("A video displaying a srt subtitle") );
+show_thumb("youtube1.png", get_tr("The YouTube browser") );
+show_thumb("video_preview.png", get_tr("Video preview") );
 show_thumb("subtitles2.jpg", get_tr("Matroska embedded subtitles") );
 
 echo "</tr>";
 echo "<tr>";
 
-show_thumb("languages.png", get_tr("SMPlayer is translated into more than 20 languages") );
-show_thumb("mini_gui.png", get_tr("The mini GUI") );
-show_thumb("kde4-3.jpg", get_tr("SMPlayer running on the new KDE 4") );
+show_thumb("languages2.png", get_tr("More than 30 translations available") );
+show_thumb("mini_gui2.png", get_tr("The mini GUI") );
+show_thumb("find_subtitles.png", get_tr("Possibility to search for subtitles") );
 
 echo "</tr>";
 
