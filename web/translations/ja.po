@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 11:43+0100\n"
+"POT-Creation-Date: 2012-03-30 00:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -100,58 +100,38 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr "このパッケージは上級者専用です!"
 
-#: ../downloads.php:143
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"USB フラッシュドライブなどの外部機器から実行可能な SMPlayer のポータブルバー"
-"ジョンです。インストールを必要とせず、お好みの場所に解凍して smplayer.exe を"
-"ダブルクリックするだけで実行できます。"
-
-#: ../downloads.php:147
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr "アイコンテーマ、翻訳、MPlayer ビルドが含まれています。"
-
-#: ../downloads.php:150
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "ご注意: 7z ファイルは <a href=%1>7-Zip</a> で解凍できます。"
-
-#: ../downloads.php:161
+#: ../downloads.php:163
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:171
+#: ../downloads.php:173
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "コンパイル方法はパッケージ内の Install.txt に記載されています。"
 
-#: ../downloads.php:182
+#: ../downloads.php:184
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:191
+#: ../downloads.php:193
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:192
+#: ../downloads.php:194
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr "この PPA から Ubuntu 用 deb パッケージを取得できます:"
 
-#: ../downloads.php:198
+#: ../downloads.php:200
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:213
+#: ../downloads.php:215
 msgid "Suggested package:"
 msgstr "推奨されるパッケージ:"
 
-#: ../downloads.php:214
+#: ../downloads.php:216
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -161,27 +141,27 @@ msgstr ""
 "は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くお"
 "すすめします。"
 
-#: ../downloads.php:218
+#: ../downloads.php:220
 msgid "You can get updated versions from this PPA:"
 msgstr "最新のバージョンはこちらの PPA から取得できます:"
 
-#: ../downloads.php:222
+#: ../downloads.php:224
 msgid "more info"
 msgstr "Ubuntu PPA について"
 
-#: ../downloads.php:230
+#: ../downloads.php:232
 msgid "Icon Themes:"
 msgstr "アイコンテーマ:"
 
-#: ../downloads.php:231
+#: ../downloads.php:233
 msgid "Optional packages which provide some icon themes."
 msgstr "いくつかのアイコンテーマを供給するオプションパッケージです。"
 
-#: ../downloads.php:275
+#: ../downloads.php:277
 msgid "Additional packages"
 msgstr "さらなるパッケージ"
 
-#: ../downloads.php:276
+#: ../downloads.php:278
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -189,26 +169,26 @@ msgstr ""
 "上級者向けにいくつかのパッケージがあります: <a href=%1>sourceforge のダウン"
 "ロードページをご覧ください</a>。"
 
-#: ../downloads.php:283
+#: ../downloads.php:285
 msgid "Contributed packages"
 msgstr "いただいたパッケージ"
 
-#: ../downloads.php:284
+#: ../downloads.php:286
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 "有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧ください。"
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "Related Project"
 msgstr "関連プロジェクト"
 
-#: ../downloads.php:292
+#: ../downloads.php:294
 msgid "by MuldeR"
 msgstr "by MuldeR"
 
-#: ../downloads.php:293
+#: ../downloads.php:295
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -221,12 +201,12 @@ msgstr ""
 "ラーや、特定のプロセッサー向けに最適化された mplayer ビルド、バイナリコーデッ"
 "クなどを供給しています。"
 
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid "Unstable releases"
 msgstr "不安定リリース"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
+#: ../downloads.php:308
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -234,7 +214,7 @@ msgstr ""
 "<a href=%1><b>こちら</b></a>に SVN から直接取得されたパッケージ (ソースコード"
 "と Windows 用の更新) があります。"
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "This page is available in the following languages:"
 msgstr "このページは以下の言語でご覧いただけます: "
 
@@ -416,8 +396,8 @@ msgid "This is the main window"
 msgstr "メインウィンドウ"
 
 #: ../screenshots.php:44
-msgid "The playlist can be embedded in the main window"
-msgstr "メインウィンドウに埋め込み可能なプレイリスト"
+msgid "The Windows version"
+msgstr ""
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -425,25 +405,57 @@ msgstr "環境設定ダイアログ"
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
-msgid "SMPlayer running on Gnome"
-msgstr "Gnome で実行中の SMPlayer"
+msgid "The YouTube browser"
+msgstr ""
 
 #: ../screenshots.php:53
-msgid "A video displaying a srt subtitle"
-msgstr "srt 字幕を表示中のビデオ"
+msgid "Video preview"
+msgstr ""
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Matroska 埋め込み字幕"
 
 #: ../screenshots.php:59
-msgid "SMPlayer is translated into more than 20 languages"
-msgstr "SMPlayer は 20 以上もの言語に翻訳されています"
+msgid "More than 30 translations available"
+msgstr ""
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
 msgstr "ミニ GUI"
 
 #: ../screenshots.php:61
-msgid "SMPlayer running on the new KDE 4"
-msgstr "KDE 4 で実行中の SMPlayer"
+msgid "Possibility to search for subtitles"
+msgstr ""
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "KDE 4 で実行中の SMPlayer"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer は 20 以上もの言語に翻訳されています"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "srt 字幕を表示中のビデオ"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "Gnome で実行中の SMPlayer"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "メインウィンドウに埋め込み可能なプレイリスト"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr "ご注意: 7z ファイルは <a href=%1>7-Zip</a> で解凍できます。"
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr "アイコンテーマ、翻訳、MPlayer ビルドが含まれています。"
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "USB フラッシュドライブなどの外部機器から実行可能な SMPlayer のポータブル"
+#~ "バージョンです。インストールを必要とせず、お好みの場所に解凍して smplayer."
+#~ "exe をダブルクリックするだけで実行できます。"

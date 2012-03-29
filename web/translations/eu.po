@@ -7,15 +7,256 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 11:43+0100\n"
+"POT-Creation-Date: 2012-03-30 00:58+0200\n"
 "PO-Revision-Date: 2012-03-21 12:07+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Euskara (Basque)\n"
 "X-Poedit-Country: Basque Country (Navarre)\n"
+
+#: ../downloads.php:5
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - Jeisketak"
+
+#: ../downloads.php:27
+msgid "Stable version"
+msgstr "Bertsio egonkorra"
+
+#: ../downloads.php:28
+msgid "Windows"
+msgstr "Windows"
+
+#: ../downloads.php:38
+msgid "Package with installer:"
+msgstr "Ezartzailedun Paketea:"
+
+#: ../downloads.php:43
+msgid ""
+"This package contains smplayer, shared libraries, translation \n"
+"files and icon themes. During the installation a recent version of\n"
+"mplayer will be downloaded and installed. Optionally you can also\n"
+"install some additional codecs (necessary only for a few formats, \n"
+"like newer RealVideo variants)."
+msgstr ""
+"Pakete honek smplayer, elkarbanatutako liburutegiak, itzulpen \n"
+"agiriak eta ikur azalgaiak ditu. Ezarpenean zehar mplayerren\n"
+"bertsio berri bat jeitsi eta ezarriko da. Aukeran kodek gehigarri\n"
+"batzuk ere ezarri ditzakezu (beharrezkoak bakarrik heuskarri gutxi \n"
+"batzuentzat, RealVideo aldaera berrienak bezala)."
+
+#: ../downloads.php:76
+msgid ""
+"This package contains everything needed to run smplayer: shared \n"
+"libraries, translation files, icon themes and a mplayer \n"
+"build (the version included is %1)."
+msgstr ""
+"Pakete honek smplayerri ekiteko behar duzun guztia du: elkarbanaketa \n"
+"liburutegiak, itzulpen agiriak, ikur azalgaiak eta mplayer eraiketa bat \n"
+"(barne duen bertsioa da: %1)"
+
+#: ../downloads.php:89
+msgid "Additional codecs:"
+msgstr "Kodek gehigarriak:"
+
+#: ../downloads.php:94
+msgid ""
+"This package adds support for codecs that are not yet implemented\n"
+"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+"formats. Note that they are not necessary to play most common formats\n"
+"like DVDs, MPEG-1/2/4, etc."
+msgstr ""
+"Pakete honek mplayerren jatorriz ez dauden kodekentzako sostengua\n"
+"gehitzen du, RealVideo aldaera berrienak eta heuskarri ezohiko asko\n"
+"bezalakoak. Nabaritu ez direla beharrezkoak heuskarri arrunt asko\n"
+"irakurtzeko, DVD, MPEG-1/2/4, etab. bezalakoak."
+
+#: ../downloads.php:99
+msgid ""
+"These codecs are to be used by mplayer only and they will be installed \n"
+"in the same folder, so they can't cause any conflict with other codecs you \n"
+"may have installed."
+msgstr ""
+"Kodek hauek mplayerrek bakarrik erabiltzeko dira eta agiritegi \n"
+"berdinean ezarriko dira, hortaz ezin dute inolako gatazkarik eragin "
+"ezarrita \n"
+"dituzun beste kodekekin."
+
+#: ../downloads.php:103
+msgid ""
+"If you prefer a zip file, you can get it at \n"
+"the <a href=%1>mplayer site</a> (%2)."
+msgstr ""
+"Nahiago baduzu zip agiri bat, hemen lortu dezakezu: \n"
+"<a href=%1>mplayer gunea</a> (%2)."
+
+#: ../downloads.php:118
+msgid ""
+"Package (without installer) which includes smplayer, shared libraries,\n"
+"translations and icon themes. It doesn't include mplayer."
+msgstr ""
+"Pakete honek (ezartzaile gabe) barne ditu smplayer, elkarbanaketa "
+"liburutegiak,\n"
+"itzulpenak eta ikur azalgaiak. Ez du mplayer barne."
+
+#: ../downloads.php:121
+msgid "This package is for advanced users only!"
+msgstr "Pakete hau erabiltzaile aurreratuentzako da bakarrik!"
+
+#: ../downloads.php:163
+msgid "Linux"
+msgstr "Linux"
+
+#: ../downloads.php:173
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr "Irakurri paketearen barneko Install.txt agiria nola bildu jakiteko."
+
+#: ../downloads.php:184
+msgid "Allows to play and download videos from YouTube. Source code."
+msgstr ""
+"Ahalbidetzen du YouTubetik bideoak irakurtzea eta jeistea. Iturburu kodea."
+
+#: ../downloads.php:193
+msgid "Packages for Ubuntu:"
+msgstr "Ubunturako Paketeak:"
+
+#: ../downloads.php:194
+msgid "You can get deb packages for Ubuntu from this PPA:"
+msgstr "Ubunturentzako deb paketeak lortu ditzakezu PPA honetatik:"
+
+#: ../downloads.php:200
+msgid "To install smplayer, just run these commands in a terminal:"
+msgstr "SMplayer ezartzeko, ekin agindu hauei terminalean:"
+
+#: ../downloads.php:215
+msgid "Suggested package:"
+msgstr "Iradokitako paketea:"
+
+#: ../downloads.php:216
+msgid ""
+"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+"has support for some of the new features of mplayer, so a newer version \n"
+"is highly recommended."
+msgstr ""
+"Ubunturen barne dagoen mplayer bertsioa oso zaharra da (%1). SMPlayerrek \n"
+"mplayerren ezaugarri berriago batzuk sostengatzen ditu, bertsio berriena "
+"bezala \n"
+"oso gomendagarria da."
+
+#: ../downloads.php:220
+msgid "You can get updated versions from this PPA:"
+msgstr "Bertsioak eguneratuta eduki ditzakezu PPA honetatik:"
+
+#: ../downloads.php:224
+msgid "more info"
+msgstr "argibide gehiago"
+
+#: ../downloads.php:232
+msgid "Icon Themes:"
+msgstr "Ikur Azalgaiak:"
+
+#: ../downloads.php:233
+msgid "Optional packages which provide some icon themes."
+msgstr "Aukerazko paketeak ikur azalgai batzuk eskainiz."
+
+#: ../downloads.php:277
+msgid "Additional packages"
+msgstr "Pakete gehigarriak"
+
+#: ../downloads.php:278
+msgid ""
+"There are several additional packages for advanced users:\n"
+"<a href=%1>See sourceforge download page</a>."
+msgstr ""
+"Pakete gehigarri ugari daude erabiltzaile aurreratuentzat:\n"
+"<a href=%1>Ikusi sourceforge-ko jeisketa orrialdea</a>."
+
+#: ../downloads.php:285
+msgid "Contributed packages"
+msgstr "Ekarpen paketeak"
+
+#: ../downloads.php:286
+msgid ""
+"There are available packages for other distros, created\n"
+"by other people. <a href=%1>Click here</a> to see them."
+msgstr ""
+"Hauek beste sistema eragile-banaketa batzuetarako paketeak dira,\n"
+"beste jende batek sortuak. <a href=%1>Klikatu hemen</a> ikusteko."
+
+#: ../downloads.php:292
+msgid "Related Project"
+msgstr "Lotura duten Egitamoak"
+
+#: ../downloads.php:294
+msgid "by MuldeR"
+msgstr "MuldeR-k egina"
+
+#: ../downloads.php:295
+msgid ""
+"This package contains a very recent version of SMPlayer (often taken from\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
+"its own installer, mplayer builds optimized for several processors and\n"
+"binary codecs."
+msgstr ""
+"Pakete honek SMPlayerren bertsio oso berri bat du (sarri hartuta\n"
+"SVN biltegitik) eta baita ere MPlayerren betsio berri bat. Eskaintzen du "
+"ere\n"
+"bere ezartzailea, mplayer eraiketa hoberenduak prozesagailu askorentzat\n"
+"eta kodek binarioak."
+
+#: ../downloads.php:306
+msgid "Unstable releases"
+msgstr "Argitalpen ezegonkorrak"
+
+#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
+#: ../downloads.php:308
+msgid ""
+"You can get packages directly taken from the SVN (source code and\n"
+"Windows updates), <a href=%1><b>here</b></a>."
+msgstr ""
+"Paketeak zuzenean lortu ditzakezu SVN-tik hartuz (iturburu kodea eta\n"
+"Windows eguneraketak), <a href=%1><b>hemen</b></a>."
+
+#: ../footer.php:44
+msgid "This page is available in the following languages:"
+msgstr "Orrialde hau hurrengo hizkuntzatan dago eskuragarri:"
+
+#: ../header.php:16
+msgid "Main"
+msgstr "Nagusia"
+
+#: ../header.php:17
+msgid "Screenshots"
+msgstr "Ikusleiho-argazkiak"
+
+#: ../header.php:18
+msgid "Downloads"
+msgstr "Jeisketak"
+
+#: ../header.php:19
+msgid "Forum"
+msgstr "Eztabaidagunea"
+
+#: ../header.php:20
+msgid "Bug Tracking"
+msgstr "Matxura Aztarnaritza"
+
+#: ../header.php:21
+msgid "Feature Requests"
+msgstr "Ezaugarri Eskabideak"
+
+#: ../header.php:22
+msgid "Wiki"
+msgstr "Wikia"
+
+#: ../header.php:43
+msgid "The SMPlayer Project"
+msgstr "SMPlayer Egitasmoa"
 
 #: ../index.php:5
 msgid "SMPlayer - General Info"
@@ -28,7 +269,8 @@ msgid ""
 "features like support for MPlayer filters and more."
 msgstr ""
 "SMPlayerrek <a href=%1>MPlayer</a> erabiltzaile interfaze oso bat izateko\n"
-"asmoa du, bideoak, DVD-ak eta VCD-ak  irakurtzetik ezaugarri aurreratuagoetara, \n"
+"asmoa du, bideoak, DVD-ak eta VCD-ak  irakurtzetik ezaugarri "
+"aurreratuagoetara, \n"
 "MPlayer iragazkiak eta abar sostengatzea bezalakoak."
 
 #: ../info.php:21
@@ -54,7 +296,8 @@ msgid ""
 "Configurable subtitles. You can choose font and size, and even \n"
 "colors for the subtitles."
 msgstr ""
-"Azpidatzi itxuragarriak. Azpidatzien hizki-mota eta neurria hautatu ditzakezu, \n"
+"Azpidatzi itxuragarriak. Azpidatzien hizki-mota eta neurria hautatu "
+"ditzakezu, \n"
 "eta baita margoa."
 
 #: ../info.php:34
@@ -140,271 +383,26 @@ msgid ""
 "Japanese...."
 msgstr ""
 "Itzulpenak: une honetan SMPlayer 20 hizkuntza baino gehiagora \n"
-"itzulita dago, Espainiera, Alemaniera, Frantziera, Italiera, Errusiera, Txinera,\n"
+"itzulita dago, Espainiera, Alemaniera, Frantziera, Italiera, Errusiera, "
+"Txinera,\n"
 "Japoniera...."
 
 #: ../info.php:59
 msgid "It's multiplatform. Binaries available for Windows and Linux."
-msgstr "Plataforma-anitzerako da. Binarioak eskuragarri Windows eta Linuxentzat."
+msgstr ""
+"Plataforma-anitzerako da. Binarioak eskuragarri Windows eta Linuxentzat."
 
 #: ../info.php:61
 msgid "SMPlayer is under the <b>GPL</b> license."
 msgstr "SMPlayer <b>GPL</b> baimenpean dago."
 
-#: ../header.php:16
-msgid "Main"
-msgstr "Nagusia"
+#: ../latest.php:5
+msgid "SMPlayer - Latest Version"
+msgstr "SMPlayer - Azken Bertsioa"
 
-#: ../header.php:17
-msgid "Screenshots"
-msgstr "Ikusleiho-argazkiak"
-
-#: ../header.php:18
-msgid "Downloads"
-msgstr "Jeisketak"
-
-#: ../header.php:19
-msgid "Forum"
-msgstr "Eztabaidagunea"
-
-#: ../header.php:20
-msgid "Bug Tracking"
-msgstr "Matxura Aztarnaritza"
-
-#: ../header.php:21
-msgid "Feature Requests"
-msgstr "Ezaugarri Eskabideak"
-
-#: ../header.php:22
-msgid "Wiki"
-msgstr "Wikia"
-
-#: ../header.php:43
-msgid "The SMPlayer Project"
-msgstr "SMPlayer Egitasmoa"
-
-#: ../footer.php:43
-msgid "This page is available in the following languages:"
-msgstr "Orrialde hau hurrengo hizkuntzatan dago eskuragarri:"
-
-#: ../downloads.php:5
-msgid "SMPlayer - Downloads"
-msgstr "SMPlayer - Jeisketak"
-
-#: ../downloads.php:27
-msgid "Stable version"
-msgstr "Bertsio egonkorra"
-
-#: ../downloads.php:28
-msgid "Windows"
-msgstr "Windows"
-
-#: ../downloads.php:38
-msgid "Package with installer:"
-msgstr "Ezartzailedun Paketea:"
-
-#: ../downloads.php:43
-msgid ""
-"This package contains smplayer, shared libraries, translation \n"
-"files and icon themes. During the installation a recent version of\n"
-"mplayer will be downloaded and installed. Optionally you can also\n"
-"install some additional codecs (necessary only for a few formats, \n"
-"like newer RealVideo variants)."
-msgstr ""
-"Pakete honek smplayer, elkarbanatutako liburutegiak, itzulpen \n"
-"agiriak eta ikur azalgaiak ditu. Ezarpenean zehar mplayerren\n"
-"bertsio berri bat jeitsi eta ezarriko da. Aukeran kodek gehigarri\n"
-"batzuk ere ezarri ditzakezu (beharrezkoak bakarrik heuskarri gutxi \n"
-"batzuentzat, RealVideo aldaera berrienak bezala)."
-
-#: ../downloads.php:76
-msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
-msgstr ""
-"Pakete honek smplayerri ekiteko behar duzun guztia du: elkarbanaketa \n"
-"liburutegiak, itzulpen agiriak, ikur azalgaiak eta mplayer eraiketa bat \n"
-"(barne duen bertsioa da: %1)"
-
-#: ../downloads.php:89
-msgid "Additional codecs:"
-msgstr "Kodek gehigarriak:"
-
-#: ../downloads.php:94
-msgid ""
-"This package adds support for codecs that are not yet implemented\n"
-"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-"formats. Note that they are not necessary to play most common formats\n"
-"like DVDs, MPEG-1/2/4, etc."
-msgstr ""
-"Pakete honek mplayerren jatorriz ez dauden kodekentzako sostengua\n"
-"gehitzen du, RealVideo aldaera berrienak eta heuskarri ezohiko asko\n"
-"bezalakoak. Nabaritu ez direla beharrezkoak heuskarri arrunt asko\n"
-"irakurtzeko, DVD, MPEG-1/2/4, etab. bezalakoak."
-
-#: ../downloads.php:99
-msgid ""
-"These codecs are to be used by mplayer only and they will be installed \n"
-"in the same folder, so they can't cause any conflict with other codecs you \n"
-"may have installed."
-msgstr ""
-"Kodek hauek mplayerrek bakarrik erabiltzeko dira eta agiritegi \n"
-"berdinean ezarriko dira, hortaz ezin dute inolako gatazkarik eragin ezarrita \n"
-"dituzun beste kodekekin."
-
-#: ../downloads.php:103
-msgid ""
-"If you prefer a zip file, you can get it at \n"
-"the <a href=%1>mplayer site</a> (%2)."
-msgstr ""
-"Nahiago baduzu zip agiri bat, hemen lortu dezakezu: \n"
-"<a href=%1>mplayer gunea</a> (%2)."
-
-#: ../downloads.php:118
-msgid ""
-"Package (without installer) which includes smplayer, shared libraries,\n"
-"translations and icon themes. It doesn't include mplayer."
-msgstr ""
-"Pakete honek (ezartzaile gabe) barne ditu smplayer, elkarbanaketa liburutegiak,\n"
-"itzulpenak eta ikur azalgaiak. Ez du mplayer barne."
-
-#: ../downloads.php:121
-msgid "This package is for advanced users only!"
-msgstr "Pakete hau erabiltzaile aurreratuentzako da bakarrik!"
-
-#: ../downloads.php:143
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"SMPlayerren bertsio eramangarria. Kanpoko gailuetatik abiarazi daiteke,\n"
-"USB flash gidagailuetatik bezala. Ez du ezarpenik behar, bakarrik deskonprimitu \n"
-"paketea nahi duzun tokian eta klik bikoitza egin smplayer.exe-en abiarazteko."
-
-#: ../downloads.php:147
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr ""
-"Paketeak barne ditu ere ikur azalgaiak, itzulpenak eta \n"
-"MPlayer eraiketa bat.."
-
-#: ../downloads.php:150
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Oharra: 7z agiriak <a href=%1>7-Zip</a>-rekin deskonprimitu daitezke."
-
-#: ../downloads.php:161
-msgid "Linux"
-msgstr "Linux"
-
-#: ../downloads.php:171
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Irakurri paketearen barneko Install.txt agiria nola bildu jakiteko."
-
-#: ../downloads.php:182
-msgid "Allows to play and download videos from YouTube. Source code."
-msgstr "Ahalbidetzen du YouTubetik bideoak irakurtzea eta jeistea. Iturburu kodea."
-
-#: ../downloads.php:191
-msgid "Packages for Ubuntu:"
-msgstr "Ubunturako Paketeak:"
-
-#: ../downloads.php:192
-msgid "You can get deb packages for Ubuntu from this PPA:"
-msgstr "Ubunturentzako deb paketeak lortu ditzakezu PPA honetatik:"
-
-#: ../downloads.php:198
-msgid "To install smplayer, just run these commands in a terminal:"
-msgstr "SMplayer ezartzeko, ekin agindu hauei terminalean:"
-
-#: ../downloads.php:213
-msgid "Suggested package:"
-msgstr "Iradokitako paketea:"
-
-#: ../downloads.php:214
-msgid ""
-"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-"has support for some of the new features of mplayer, so a newer version \n"
-"is highly recommended."
-msgstr ""
-"Ubunturen barne dagoen mplayer bertsioa oso zaharra da (%1). SMPlayerrek \n"
-"mplayerren ezaugarri berriago batzuk sostengatzen ditu, bertsio berriena bezala \n"
-"oso gomendagarria da."
-
-#: ../downloads.php:218
-msgid "You can get updated versions from this PPA:"
-msgstr "Bertsioak eguneratuta eduki ditzakezu PPA honetatik:"
-
-#: ../downloads.php:222
-msgid "more info"
-msgstr "argibide gehiago"
-
-#: ../downloads.php:230
-msgid "Icon Themes:"
-msgstr "Ikur Azalgaiak:"
-
-#: ../downloads.php:231
-msgid "Optional packages which provide some icon themes."
-msgstr "Aukerazko paketeak ikur azalgai batzuk eskainiz."
-
-#: ../downloads.php:275
-msgid "Additional packages"
-msgstr "Pakete gehigarriak"
-
-#: ../downloads.php:276
-msgid ""
-"There are several additional packages for advanced users:\n"
-"<a href=%1>See sourceforge download page</a>."
-msgstr ""
-"Pakete gehigarri ugari daude erabiltzaile aurreratuentzat:\n"
-"<a href=%1>Ikusi sourceforge-ko jeisketa orrialdea</a>."
-
-#: ../downloads.php:283
-msgid "Contributed packages"
-msgstr "Ekarpen paketeak"
-
-#: ../downloads.php:284
-msgid ""
-"There are available packages for other distros, created\n"
-"by other people. <a href=%1>Click here</a> to see them."
-msgstr ""
-"Hauek beste sistema eragile-banaketa batzuetarako paketeak dira,\n"
-"beste jende batek sortuak. <a href=%1>Klikatu hemen</a> ikusteko."
-
-#: ../downloads.php:290
-msgid "Related Project"
-msgstr "Lotura duten Egitamoak"
-
-#: ../downloads.php:292
-msgid "by MuldeR"
-msgstr "MuldeR-k egina"
-
-#: ../downloads.php:293
-msgid ""
-"This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also provides\n"
-"its own installer, mplayer builds optimized for several processors and\n"
-"binary codecs."
-msgstr ""
-"Pakete honek SMPlayerren bertsio oso berri bat du (sarri hartuta\n"
-"SVN biltegitik) eta baita ere MPlayerren betsio berri bat. Eskaintzen du ere\n"
-"bere ezartzailea, mplayer eraiketa hoberenduak prozesagailu askorentzat\n"
-"eta kodek binarioak."
-
-#: ../downloads.php:304
-msgid "Unstable releases"
-msgstr "Argitalpen ezegonkorrak"
-
-#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
-msgid ""
-"You can get packages directly taken from the SVN (source code and\n"
-"Windows updates), <a href=%1><b>here</b></a>."
-msgstr ""
-"Paketeak zuzenean lortu ditzakezu SVN-tik hartuz (iturburu kodea eta\n"
-"Windows eguneraketak), <a href=%1><b>hemen</b></a>."
+#: ../latest.php:35
+msgid "Go to the download page"
+msgstr "Joan Jeisketa orrialdera"
 
 #: ../screenshots.php:5
 msgid "SMPlayer - Screenshots"
@@ -419,8 +417,8 @@ msgid "This is the main window"
 msgstr "Hau leiho nagusia da"
 
 #: ../screenshots.php:44
-msgid "The playlist can be embedded in the main window"
-msgstr "Irakur-zerrenda leiho nagusian barneratu daiteke"
+msgid "The Windows version"
+msgstr ""
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -428,34 +426,62 @@ msgstr "Hobespen elkarrizketa"
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
-msgid "SMPlayer running on Gnome"
-msgstr "SMPlayer ekinean Gnomen"
+msgid "The YouTube browser"
+msgstr ""
 
 #: ../screenshots.php:53
-msgid "A video displaying a srt subtitle"
-msgstr "Bideo bat srt azpidatzia erakusten"
+msgid "Video preview"
+msgstr ""
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Matroskan barneratutako azpidatziak"
 
 #: ../screenshots.php:59
-msgid "SMPlayer is translated into more than 20 languages"
-msgstr "SMPlayer 20 hizkuntza baino gehiagora itzulita dago"
+msgid "More than 30 translations available"
+msgstr ""
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
 msgstr "GUI Txikia"
 
 #: ../screenshots.php:61
-msgid "SMPlayer running on the new KDE 4"
-msgstr "SMPlayer ekinean KDE 4 berrian"
+msgid "Possibility to search for subtitles"
+msgstr ""
 
-#: ../latest.php:5
-msgid "SMPlayer - Latest Version"
-msgstr "SMPlayer - Azken Bertsioa"
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer ekinean KDE 4 berrian"
 
-#: ../latest.php:35
-msgid "Go to the download page"
-msgstr "Joan Jeisketa orrialdera"
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer 20 hizkuntza baino gehiagora itzulita dago"
 
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Bideo bat srt azpidatzia erakusten"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer ekinean Gnomen"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Irakur-zerrenda leiho nagusian barneratu daiteke"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr ""
+#~ "Oharra: 7z agiriak <a href=%1>7-Zip</a>-rekin deskonprimitu daitezke."
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "Paketeak barne ditu ere ikur azalgaiak, itzulpenak eta \n"
+#~ "MPlayer eraiketa bat.."
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "SMPlayerren bertsio eramangarria. Kanpoko gailuetatik abiarazi daiteke,\n"
+#~ "USB flash gidagailuetatik bezala. Ez du ezarpenik behar, bakarrik "
+#~ "deskonprimitu \n"
+#~ "paketea nahi duzun tokian eta klik bikoitza egin smplayer.exe-en "
+#~ "abiarazteko."

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 11:43+0100\n"
+"POT-Creation-Date: 2012-03-30 00:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -151,7 +152,7 @@ msgstr ""
 msgid "The SMPlayer Project"
 msgstr ""
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "This page is available in the following languages:"
 msgstr ""
 
@@ -222,104 +223,87 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr ""
 
-#: ../downloads.php:143
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-
-#: ../downloads.php:147
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr ""
-
-#: ../downloads.php:150
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr ""
-
-#: ../downloads.php:161
+#: ../downloads.php:163
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:171
+#: ../downloads.php:173
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 
-#: ../downloads.php:182
+#: ../downloads.php:184
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:191
+#: ../downloads.php:193
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:192
+#: ../downloads.php:194
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:198
+#: ../downloads.php:200
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:213
+#: ../downloads.php:215
 msgid "Suggested package:"
 msgstr ""
 
-#: ../downloads.php:214
+#: ../downloads.php:216
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
 
-#: ../downloads.php:218
+#: ../downloads.php:220
 msgid "You can get updated versions from this PPA:"
 msgstr ""
 
-#: ../downloads.php:222
+#: ../downloads.php:224
 msgid "more info"
 msgstr ""
 
-#: ../downloads.php:230
+#: ../downloads.php:232
 msgid "Icon Themes:"
 msgstr ""
 
-#: ../downloads.php:231
+#: ../downloads.php:233
 msgid "Optional packages which provide some icon themes."
 msgstr ""
 
-#: ../downloads.php:275
+#: ../downloads.php:277
 msgid "Additional packages"
 msgstr ""
 
-#: ../downloads.php:276
+#: ../downloads.php:278
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
 msgstr ""
 
-#: ../downloads.php:283
+#: ../downloads.php:285
 msgid "Contributed packages"
 msgstr ""
 
-#: ../downloads.php:284
+#: ../downloads.php:286
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr ""
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "Related Project"
 msgstr ""
 
-#: ../downloads.php:292
+#: ../downloads.php:294
 msgid "by MuldeR"
 msgstr ""
 
-#: ../downloads.php:293
+#: ../downloads.php:295
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -328,12 +312,12 @@ msgid ""
 "binary codecs."
 msgstr ""
 
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid "Unstable releases"
 msgstr ""
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
+#: ../downloads.php:308
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -352,7 +336,7 @@ msgid "This is the main window"
 msgstr ""
 
 #: ../screenshots.php:44
-msgid "The playlist can be embedded in the main window"
+msgid "The Windows version"
 msgstr ""
 
 #: ../screenshots.php:46
@@ -361,11 +345,11 @@ msgstr ""
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
-msgid "SMPlayer running on Gnome"
+msgid "The YouTube browser"
 msgstr ""
 
 #: ../screenshots.php:53
-msgid "A video displaying a srt subtitle"
+msgid "Video preview"
 msgstr ""
 
 #: ../screenshots.php:54
@@ -373,7 +357,7 @@ msgid "Matroska embedded subtitles"
 msgstr ""
 
 #: ../screenshots.php:59
-msgid "SMPlayer is translated into more than 20 languages"
+msgid "More than 30 translations available"
 msgstr ""
 
 #: ../screenshots.php:60
@@ -381,7 +365,7 @@ msgid "The mini GUI"
 msgstr ""
 
 #: ../screenshots.php:61
-msgid "SMPlayer running on the new KDE 4"
+msgid "Possibility to search for subtitles"
 msgstr ""
 
 #: ../latest.php:5

@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 11:43+0100\n"
+"POT-Creation-Date: 2012-03-30 00:58+0200\n"
 "PO-Revision-Date: 2009-07-06 03:37+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Language: it_IT\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -56,8 +56,8 @@ msgid ""
 "build (the version included is %1)."
 msgstr ""
 "Il pacchetto contiene tutto ciò che è necessario a smplayer, le librerie \n"
-"condivise, le traduzioni, i temi visuali e il programma mplayer (versione %"
-"1)."
+"condivise, le traduzioni, i temi visuali e il programma mplayer (versione "
+"%1)."
 
 #: ../downloads.php:89
 msgid "Additional codecs:"
@@ -108,60 +108,37 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr "Questo pacchetto è solo per utenti esperti!"
 
-#: ../downloads.php:143
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"Versione portatile di SMPlayer. Può essere eseguita su apparecchi "
-"portatili, \n"
-"come i dischi USB flash. Non richiede installazione, basta scompattare il \n"
-"pacchetto ove si vuole e cliccare su smplayer.exe per eseguirlo."
-
-#: ../downloads.php:147
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr ""
-"Il pacchetto comprende anche i temi visuali, le traduzioni e \n"
-"il programma MPlayer."
-
-#: ../downloads.php:150
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Nota: i file 7z possono essere scompattati con <a href=%1>7-Zip</a>."
-
-#: ../downloads.php:161
+#: ../downloads.php:163
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:171
+#: ../downloads.php:173
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Leggi il file Install.txt incluso nel pacchetto per capire come compilarlo."
 
-#: ../downloads.php:182
+#: ../downloads.php:184
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:191
+#: ../downloads.php:193
 msgid "Packages for Ubuntu:"
 msgstr "Pacchetti per Ubuntu:"
 
-#: ../downloads.php:192
+#: ../downloads.php:194
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:198
+#: ../downloads.php:200
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:213
+#: ../downloads.php:215
 msgid "Suggested package:"
 msgstr "Pacchetto suggerito:"
 
-#: ../downloads.php:214
+#: ../downloads.php:216
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -172,27 +149,27 @@ msgstr ""
 "raccomanda\n"
 "una versione più nuova."
 
-#: ../downloads.php:218
+#: ../downloads.php:220
 msgid "You can get updated versions from this PPA:"
 msgstr "Puoi recuperare versioni aggiornate da questo PPA:"
 
-#: ../downloads.php:222
+#: ../downloads.php:224
 msgid "more info"
 msgstr "altre informazioni"
 
-#: ../downloads.php:230
+#: ../downloads.php:232
 msgid "Icon Themes:"
 msgstr "Temi visuali:"
 
-#: ../downloads.php:231
+#: ../downloads.php:233
 msgid "Optional packages which provide some icon themes."
 msgstr "Pacchetti opzionali che contengono alcuni temi di icone."
 
-#: ../downloads.php:275
+#: ../downloads.php:277
 msgid "Additional packages"
 msgstr "Pacchetti aggiuntivi"
 
-#: ../downloads.php:276
+#: ../downloads.php:278
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -200,11 +177,11 @@ msgstr ""
 "Svariati altri pacchetti aggiuntivi per utenti esperti:\n"
 "<a href=%1>Vedi la pagina download di Sourceforge</a>."
 
-#: ../downloads.php:283
+#: ../downloads.php:285
 msgid "Contributed packages"
 msgstr "Pacchetti donati"
 
-#: ../downloads.php:284
+#: ../downloads.php:286
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -212,15 +189,15 @@ msgstr ""
 "Sono disponibili pacchetti per altre distro, creati\n"
 "da altre persone. <a href=%1>Clicca qui</a> per vederli."
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "Related Project"
 msgstr "Progetti collegati"
 
-#: ../downloads.php:292
+#: ../downloads.php:294
 msgid "by MuldeR"
 msgstr "di MuldeR"
 
-#: ../downloads.php:293
+#: ../downloads.php:295
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -234,12 +211,12 @@ msgstr ""
 "fornisce un proprio programma di installazione, i codec binari aggiuntivi e "
 "il programma mplayer è ottimizzato per svariati processori."
 
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid "Unstable releases"
 msgstr "Rilasci instabili"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
+#: ../downloads.php:308
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -247,7 +224,7 @@ msgstr ""
 "Puoi recuperare i pacchetti direttamente da SVN (codice sorgente e \n"
 "aggiornamenti per Windows), <a href=%1><b>qui</b></a>."
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "This page is available in the following languages:"
 msgstr ""
 
@@ -446,9 +423,8 @@ msgid "This is the main window"
 msgstr "Questa è la finestra principale"
 
 #: ../screenshots.php:44
-msgid "The playlist can be embedded in the main window"
+msgid "The Windows version"
 msgstr ""
-"La lista di riproduzione può venire incorporata nella finestra principale"
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -456,34 +432,28 @@ msgstr "La finestra delle preferenze"
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
-msgid "SMPlayer running on Gnome"
-msgstr "SMPlayer in esecuzione in Gnome"
+msgid "The YouTube browser"
+msgstr ""
 
 #: ../screenshots.php:53
-msgid "A video displaying a srt subtitle"
-msgstr "Un video con sottotitoli srt"
+msgid "Video preview"
+msgstr ""
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Sottotitoli incorporati in Matroska"
 
 #: ../screenshots.php:59
-msgid "SMPlayer is translated into more than 20 languages"
-msgstr "SMPlayer è tradotto in più di 20 lingue"
+msgid "More than 30 translations available"
+msgstr ""
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
 msgstr "La mini interfaccia"
 
 #: ../screenshots.php:61
-msgid "SMPlayer running on the new KDE 4"
-msgstr "SMPlayer in esecuzione nel nuovo KDE 4"
-
-#~ msgid "1970"
-#~ msgstr "6021"
-
-#~ msgid "Donations"
-#~ msgstr "Donazioni"
+msgid "Possibility to search for subtitles"
+msgstr ""
 
 #~ msgid ""
 #~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
@@ -492,3 +462,47 @@ msgstr "SMPlayer in esecuzione nel nuovo KDE 4"
 #~ "Puoi recuperare i pacchetti deb per Ubuntu (gutsy, hardy, intrepid e "
 #~ "jaunty)\n"
 #~ "da questo PPA:"
+
+#~ msgid "Donations"
+#~ msgstr "Donazioni"
+
+#~ msgid "1970"
+#~ msgstr "6021"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer in esecuzione nel nuovo KDE 4"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer è tradotto in più di 20 lingue"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Un video con sottotitoli srt"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer in esecuzione in Gnome"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr ""
+#~ "La lista di riproduzione può venire incorporata nella finestra principale"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr ""
+#~ "Nota: i file 7z possono essere scompattati con <a href=%1>7-Zip</a>."
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "Il pacchetto comprende anche i temi visuali, le traduzioni e \n"
+#~ "il programma MPlayer."
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "Versione portatile di SMPlayer. Può essere eseguita su apparecchi "
+#~ "portatili, \n"
+#~ "come i dischi USB flash. Non richiede installazione, basta scompattare "
+#~ "il \n"
+#~ "pacchetto ove si vuole e cliccare su smplayer.exe per eseguirlo."

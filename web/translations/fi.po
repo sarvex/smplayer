@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-03 11:43+0100\n"
+"POT-Creation-Date: 2012-03-30 00:58+0200\n"
 "PO-Revision-Date: 2010-01-24 18:15+0200\n"
 "Last-Translator: Olli <ollinpostit@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -103,61 +103,37 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr "Tämä paketti on vain kehittyneille käyttäjille!"
 
-#: ../downloads.php:143
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"SMPlayerin siirrettävä versio. Voit käyttää sitä ulkoisilta laitteilta, "
-"kuten \n"
-"USB-muistitikuilta. Se ei vaadi asennusta, sinun pitää vain purkaa \n"
-"paketti mihin ikinä haluatkaan ja kaksoisklikata smplayer.exe tiedostoa "
-"käynnistääksesi."
-
-#: ../downloads.php:147
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr ""
-"Paketti sisältää myös kuvaketeemat, käännökset ja \n"
-"MPlayer-version."
-
-#: ../downloads.php:150
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "Huomautus: 7z -tiedostot voidaan purkaa <a href=%1>7-Zip</a>illä."
-
-#: ../downloads.php:161
+#: ../downloads.php:163
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:171
+#: ../downloads.php:173
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Lue tiedosto Install.txt paketin sisällä tietääksesi kuinka voit kääntää sen."
 
-#: ../downloads.php:182
+#: ../downloads.php:184
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:191
+#: ../downloads.php:193
 msgid "Packages for Ubuntu:"
 msgstr "Paketit Ubuntulle:"
 
-#: ../downloads.php:192
+#: ../downloads.php:194
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:198
+#: ../downloads.php:200
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:213
+#: ../downloads.php:215
 msgid "Suggested package:"
 msgstr "Suositeltu paketti:"
 
-#: ../downloads.php:214
+#: ../downloads.php:216
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -167,27 +143,27 @@ msgstr ""
 "on tuki joillekin mplayerin uusille ominaisuuksille, joten uudempi versio \n"
 "on paljon suositeltu."
 
-#: ../downloads.php:218
+#: ../downloads.php:220
 msgid "You can get updated versions from this PPA:"
 msgstr "Voit hakea päivitetyt versiot tästä PPA:sta:"
 
-#: ../downloads.php:222
+#: ../downloads.php:224
 msgid "more info"
 msgstr "lisää tietoja"
 
-#: ../downloads.php:230
+#: ../downloads.php:232
 msgid "Icon Themes:"
 msgstr "Kuvaketeemat:"
 
-#: ../downloads.php:231
+#: ../downloads.php:233
 msgid "Optional packages which provide some icon themes."
 msgstr "Vapaaehtoisia paketteja, jotka antavat joitakin kuvaketeemoja."
 
-#: ../downloads.php:275
+#: ../downloads.php:277
 msgid "Additional packages"
 msgstr "Lisäpaketteja"
 
-#: ../downloads.php:276
+#: ../downloads.php:278
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -195,11 +171,11 @@ msgstr ""
 "Kehittyneille käyttäjille on joitakin lisäpaketteja:\n"
 "<a href=%1>Katso SourceForgen lataussivu</a>."
 
-#: ../downloads.php:283
+#: ../downloads.php:285
 msgid "Contributed packages"
 msgstr "Avustetut paketit"
 
-#: ../downloads.php:284
+#: ../downloads.php:286
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -207,15 +183,15 @@ msgstr ""
 "Paketteja on saatavilla myös muille jakoversioille, jotka\n"
 "muut ihmiset ovat tehneet. <a href=%1>Klikkaa tästä</a> katsoaksesi ne."
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "Related Project"
 msgstr "Suositeltu projekti"
 
-#: ../downloads.php:292
+#: ../downloads.php:294
 msgid "by MuldeR"
 msgstr "MuldeR:ltä"
 
-#: ../downloads.php:293
+#: ../downloads.php:295
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -228,12 +204,12 @@ msgstr ""
 "sen oman asentajan, mplayer-versiot optimoitu tietyille prosessoreille ja\n"
 "lähdekoodin koodekit."
 
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid "Unstable releases"
 msgstr "Epävakaat julkaisut"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
+#: ../downloads.php:308
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -241,7 +217,7 @@ msgstr ""
 "Voit hakea paketit suoraan SVN:stä (lähdekoodi ja\n"
 "Windows-päivitykset), <a href=%1><b>tästä</b></a>."
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "This page is available in the following languages:"
 msgstr "Tämä sivu on saatavilla seuraavilla kielillä:"
 
@@ -441,8 +417,8 @@ msgid "This is the main window"
 msgstr "Tämä on pääikkuna"
 
 #: ../screenshots.php:44
-msgid "The playlist can be embedded in the main window"
-msgstr "Toistolista voidaan sisällyttää pääikkunaan"
+msgid "The Windows version"
+msgstr ""
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -450,34 +426,28 @@ msgstr "Asetusikkuna"
 
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
-msgid "SMPlayer running on Gnome"
-msgstr "SMPlayer käynnissä Gnomella"
+msgid "The YouTube browser"
+msgstr ""
 
 #: ../screenshots.php:53
-msgid "A video displaying a srt subtitle"
-msgstr "Video, joka näyttää srt-tekstitystä"
+msgid "Video preview"
+msgstr ""
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Matroska-sisällytetyt tekstitykset"
 
 #: ../screenshots.php:59
-msgid "SMPlayer is translated into more than 20 languages"
-msgstr "SMPlayer on käännetty useammalle kuin 20 eri kielelle"
+msgid "More than 30 translations available"
+msgstr ""
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
 msgstr "Pelkistetty ikkuna"
 
 #: ../screenshots.php:61
-msgid "SMPlayer running on the new KDE 4"
-msgstr "SMPlayer käynnissä uudella KDE 4:llä"
-
-#~ msgid "Play anything"
-#~ msgstr "Toista mitä tahansa"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Unohda koodekit"
+msgid "Possibility to search for subtitles"
+msgstr ""
 
 #~ msgid ""
 #~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
@@ -485,3 +455,45 @@ msgstr "SMPlayer käynnissä uudella KDE 4:llä"
 #~ msgstr ""
 #~ "Voit hakea deb-paketit Ubuntulle (gutsy, hardy, intrepid ja jaunty)\n"
 #~ "tästä PPA:sta:"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Unohda koodekit"
+
+#~ msgid "Play anything"
+#~ msgstr "Toista mitä tahansa"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer käynnissä uudella KDE 4:llä"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer on käännetty useammalle kuin 20 eri kielelle"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Video, joka näyttää srt-tekstitystä"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer käynnissä Gnomella"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Toistolista voidaan sisällyttää pääikkunaan"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr "Huomautus: 7z -tiedostot voidaan purkaa <a href=%1>7-Zip</a>illä."
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "Paketti sisältää myös kuvaketeemat, käännökset ja \n"
+#~ "MPlayer-version."
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "SMPlayerin siirrettävä versio. Voit käyttää sitä ulkoisilta laitteilta, "
+#~ "kuten \n"
+#~ "USB-muistitikuilta. Se ei vaadi asennusta, sinun pitää vain purkaa \n"
+#~ "paketti mihin ikinä haluatkaan ja kaksoisklikata smplayer.exe tiedostoa "
+#~ "käynnistääksesi."
