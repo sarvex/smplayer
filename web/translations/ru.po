@@ -18,8 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
 
 #: ../downloads.php:5
@@ -52,6 +51,7 @@ msgstr ""
 "дополнительные кодеки (нужны лишь для некоторых форматов вроде RealVideo)."
 
 #: ../downloads.php:76
+#, qt-format
 msgid ""
 "This package contains everything needed to run smplayer: shared \n"
 "libraries, translation files, icon themes and a mplayer \n"
@@ -88,6 +88,7 @@ msgstr ""
 "которые у вас могут быть установлены в системе.\n"
 
 #: ../downloads.php:103
+#, qt-format
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -137,6 +138,7 @@ msgid "Suggested package:"
 msgstr "Рекомендуемый пакет:"
 
 #: ../downloads.php:216
+#, qt-format
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -167,6 +169,7 @@ msgid "Additional packages"
 msgstr "Дополнительные пакеты"
 
 #: ../downloads.php:278
+#, qt-format
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -179,6 +182,7 @@ msgid "Contributed packages"
 msgstr "Сторонние пакеты"
 
 #: ../downloads.php:286
+#, qt-format
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -213,6 +217,7 @@ msgstr "Нестабильные релизы"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
 #: ../downloads.php:308
+#, qt-format
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -261,13 +266,14 @@ msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Главная страница"
 
 #: ../info.php:15
+#, qt-format
 msgid ""
 "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
 "from basic features like playing videos, DVDs, and VCDs to more advanced \n"
 "features like support for MPlayer filters and more."
 msgstr ""
-"SMPlayer представляет собой полноценную графическую оболочку для <a href="
-"%1>MPlayer</a>,\n"
+"SMPlayer представляет собой полноценную графическую оболочку для <a "
+"href=%1>MPlayer</a>,\n"
 "обеспечивающую как базовые функции MPlayer (воспроизведение видео, DVD и "
 "VCD), \n"
 "так и более продвинутые, такие как поддержка фильтров для MPlayer и прочие."
@@ -372,6 +378,7 @@ msgstr ""
 "используя удобный диалог настроек."
 
 #: ../info.php:54
+#, qt-format
 msgid "Possibility to search automatically for subtitles in %1."
 msgstr "Возможность автоматического поиска субтитров в %1."
 
@@ -415,7 +422,7 @@ msgstr "Это главное окно"
 
 #: ../screenshots.php:44
 msgid "The Windows version"
-msgstr ""
+msgstr "Версия для Windows"
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -424,11 +431,11 @@ msgstr "Диалог настроек"
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
 msgid "The YouTube browser"
-msgstr ""
+msgstr "Браузер YouTube"
 
 #: ../screenshots.php:53
 msgid "Video preview"
-msgstr ""
+msgstr "Предпросмотр видео"
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
@@ -436,7 +443,7 @@ msgstr "Встроенные сутбитры Matroska"
 
 #: ../screenshots.php:59
 msgid "More than 30 translations available"
-msgstr ""
+msgstr "Более 30 переводов доступно"
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
@@ -444,7 +451,7 @@ msgstr "Мини GUI"
 
 #: ../screenshots.php:61
 msgid "Possibility to search for subtitles"
-msgstr ""
+msgstr "Возможность поиска субтитров"
 
 #~ msgid "SMPlayer running on the new KDE 4"
 #~ msgstr "SMPlayer, запущенный в новом KDE 4"
@@ -461,6 +468,7 @@ msgstr ""
 #~ msgid "The playlist can be embedded in the main window"
 #~ msgstr "Список может быть встроен в главное окно"
 
+#, qt-format
 #~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 #~ msgstr ""
 #~ "Внимание: 7z файлы можно распаковать с помощью <a href=%1>7-Zip</a>."
