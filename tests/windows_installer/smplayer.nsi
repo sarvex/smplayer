@@ -1,6 +1,6 @@
 ﻿; Installer script for win32 SMPlayer
 ; Written by redxii (redxii@users.sourceforge.net)
-; Tested/Developed with Unicode NSIS 2.46
+; Tested/Developed with Unicode NSIS 2.46.4
 
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
@@ -38,7 +38,6 @@
   !define SMPLAYER_REG_KEY "Software\SMPlayer"
   !define SMPLAYER_APP_PATHS_KEY "Software\Microsoft\Windows\CurrentVersion\App Paths\smplayer.exe"
   !define SMPLAYER_DEF_PROGS_KEY "Software\Clients\Media\SMPlayer"
-
 
   !define SMPLAYER_UNINST_EXE "uninst.exe"
   !define SMPLAYER_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\SMPlayer"
