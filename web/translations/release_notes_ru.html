@@ -1,77 +1,54 @@
-<b>Последняя версия – 0.7.1.</b>
+<b>The latest version is 0.8.0.</b>
 <p>
-<b>0.7.1:</b>
-<p>
-Эта версия включает несколько исправлений, в том числе важных.
-Настоятельно рекомендуется обновиться.
-<p>
-Исправления:
+<b>smplayer 0.8.0:</b>
 <ul>
 <li>
-SMPlayer показывался только через 10 секунд при первом запуске.
+A toolbar editor has been added. Now it's possible to select the buttons
+and controls that want to appear in the toolbars. 
+(<a href="http://y2u.be/F5OcZBVPwOA">See video</a>)
 </li>
 <li>
-Ссылки на загрузку субтитров с Opensubtitles были неверными.
+New video filters: gradfun, blur and sharpen.
 </li>
 <li>
-SMPlayer падал в редакторе списка избранного при попытке выделить файл
-при использовании диалога открытия файлов KDE.
-<li>
-Некоторые переводы отсутствовали в пакете для Windows.
-</li>
-</ul>
-<p>
-Новое:
-<ul>
-<li>
-По умолчанию скриншоты сохраняются в пользовательский каталог изображений
-вместо указанного каталога с настройками SMPlayer.
+Now it's possible to change the GUI (default, mini, mpc) at runtime,
+no restart required.
 </li>
 <li>
-Теперь стало возможным изменение сервера opensubtitles.
+sub files from opensubtitles should work again.
 </li>
 <li>
-Youtube: перемотка медленная в случае flv файлов, поэтому flv видеоролики
-теперь имеют минимальный приоритет.
+(Youtube) Recognize short urls (like this one: http://y2u.be/F5OcZBVPwOA).
 </li>
 <li>
-Youtube: теперь стало возможным искать и загружать видео с youtube.
-Это реализовано в виде внешнего приложения (в linux вы должны
-установить независимый пакет: smtube)
+Better support for chapters in video files.
+</li>
+<li>
+Bug fix: remote m3u files work from the favorites menu or command line.
+</li>
+<li>
+Internal changes in the single instance option (switch to
+QtSingleApplication).
 </li>
 </ul>
 
 <p>
-<b>0.7.0:</b>
-<ul>
-<li>
-Новое меню избранного, где можно добавить любимые видеофайлы, музыкальные файлы,
-потоки, видео youtube... Также можно добавлять подменю.
-</li>
-
-<li>
-Поддержка youtube. Теперь можно открывать url вида
-<i>http://www.youtube.com/watch?v=.....</i>, используя диалог Открыть -> Адрес
-или перетащив ссылку из браузера на окно smplayer.
-</li>
-
-<li>
-Поддержка mplayer2 (http://www.mplayer2.org). Это форк mplayer с
-интересными возможностями вроде точной перемотки, линкованными mkv видеофайлами
-и лучшей обработкой пауз (например, перемотка работает и в случае паузы).
-</li>
-<li>
-Новый перевод: хорватский.
-</li>
-</ul>
-
+<b>The latest version of the YouTube browser is 1.1.</b>
 <p>
-<b>0.6.10:</b>
+<b>smtube 1.1:</b>
 <ul>
-<li>Новый диалог настройки vdpau, позволяющий выбрать используемые кодеки vdpau.</li>
-<li>Порт на eCS, OS/2 (от Silvan Scherrer).</li>
-<li>Новое меню выбора канала закрытых субтитров
-(требуется mplayer >= r32607).</li>
-<li>Возможность выбрать метод перемотки (абсолютный или относительный).</li>
-<li>Возможность сортировки элементов в плейлисте.</li>
+<li>
+(Linux) Possibility to select the player to use: smplayer, mplayer, vlc,
+dragon player and totem.
+</li>
+<li>
+Fix a possible crash that may happen on Ubuntu if using the ambiance or
+radiance themes.
+</li>
+<li>
+New translations: Basque and Portuguese.
+</li>
+<li>
+(Windows) Possibility to build a portable version.
+</li>
 </ul>

@@ -1,40 +1,54 @@
-<b>最新のバージョンは 0.7.1 です。このバージョンには重要なバグ修正が含まれていますので、更新を強くおすすめします。</b>
+<b>The latest version is 0.8.0.</b>
 <p>
-<b>0.7.1:</b>
+<b>smplayer 0.8.0:</b>
 <ul>
-<li>修正:
-<ul>
-<li>初回起動時に SMPlayer の表示まで 10 秒以上かかるのを修正しました。</li>
-<li>OpenSubtitles からの字幕のダウンロードへのリンクが間違っていました。</li>
-<li>KDE の [開く] ダイアログが使用されていた場合にお気に入りエディターでファイルを選択しようとすると SMPlayer がクラッシュするのを修正しました。</li>
-<li>Windows パッケージに一部の翻訳が入っていなかったのを修正しました。</li>
-</ul>
+<li>
+A toolbar editor has been added. Now it's possible to select the buttons
+and controls that want to appear in the toolbars. 
+(<a href="http://y2u.be/F5OcZBVPwOA">See video</a>)
 </li>
-<li>更新:
-<ul>
-<li>スクリーンショットのデフォルトの保存先が SMPlayer の設定フォルダーからユーザーのピクチャフォルダーになりました。</li>
-<li>OpenSubtitles のサーバーが変更できるようになりました。</li>
-<li>YouTube: FLV ではシークが遅くなるので、FLV は優先順位の最低になりました。</li>
-<li>YouTube: YouTube 動画の検索やダウンロードが可能になりました。これは外部アプリケーションによって提供されます (Linux では smtube という独立したパッケージをインストールすることになります)。</li>
-</ul>
+<li>
+New video filters: gradfun, blur and sharpen.
+</li>
+<li>
+Now it's possible to change the GUI (default, mini, mpc) at runtime,
+no restart required.
+</li>
+<li>
+sub files from opensubtitles should work again.
+</li>
+<li>
+(Youtube) Recognize short urls (like this one: http://y2u.be/F5OcZBVPwOA).
+</li>
+<li>
+Better support for chapters in video files.
+</li>
+<li>
+Bug fix: remote m3u files work from the favorites menu or command line.
+</li>
+<li>
+Internal changes in the single instance option (switch to
+QtSingleApplication).
 </li>
 </ul>
 
 <p>
-<b>0.7.0:</b>
-<ul>
-<li>お気に入りメニューが新たに追加されました。ここで動画、音楽、ストリーム、YouTube 動画などを追加できます。サブメニューも追加できます。</li>
-<li>youtube に対応しました。[開く] -> [URL] ダイアログを使用するか、ブラウザーから SMPlayer ウィンドウにリンクをドラッグして <i>http://www.youtube.com/watch?v=.....</i> のような URL を追加できます。</li>
-<li>mplayer2 (http://www.mplayer2.org) に対応しました。これは正確なシーク、MKV 動画でのチャプター順序、優れた一時停止の制御 (停止中のシークなど) といった魅力的な機能を備えた mplayer のフォークです。</li>
-<li>クロアチア語訳が追加されました。</li>
-</ul>
-
+<b>The latest version of the YouTube browser is 1.1.</b>
 <p>
-<b>0.6.10:</b>
+<b>smtube 1.1:</b>
 <ul>
-<li>vdpau の構成ダイアログが新たに追加されました。使用する vdpau コーデックを選択できます。</li>
-<li>eCS、OS/2 のポートが追加されました (Silvan Scherrer 氏による)。</li>
-<li>クローズド キャプションのチャンネルを選択するメニューが新たに追加されました (mplayer r32607 以降を必要とします)。</li>
-<li>シーク方法 (絶対シークと相対シーク) を選択できるようになりました。</li>
-<li>プレイリストのアイテムをソートできるようになりました。</li>
+<li>
+(Linux) Possibility to select the player to use: smplayer, mplayer, vlc,
+dragon player and totem.
+</li>
+<li>
+Fix a possible crash that may happen on Ubuntu if using the ambiance or
+radiance themes.
+</li>
+<li>
+New translations: Basque and Portuguese.
+</li>
+<li>
+(Windows) Possibility to build a portable version.
+</li>
 </ul>
