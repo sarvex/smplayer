@@ -41,8 +41,8 @@ msgid ""
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
-"このパッケージには、smplayer、共有ライブラリ、翻訳ファイル、およびアイコン"
-"テーマが含まれています。mplayer はインストール中にダウンロードおよびインス"
+"このパッケージには、SMPlayer、共有ライブラリ、翻訳ファイル、およびアイコン"
+"テーマが含まれています。MPlayer はインストール中にダウンロードおよびインス"
 "トールされます。オプションとして、最新の RealVideo 派生など一部のフォーマット"
 "に必要な追加コーデックをインストールすることができます。"
 
@@ -52,8 +52,8 @@ msgid ""
 "libraries, translation files, icon themes and a mplayer \n"
 "build (the version included is %1)."
 msgstr ""
-"このパッケージには、smplayer を実行するのに必要な共有ライブラリ、翻訳ファイ"
-"ル、アイコンテーマ、mplayer ビルド (%1) がすべて含まれています。"
+"このパッケージには、SMPlayer を実行するのに必要な共有ライブラリ、翻訳ファイ"
+"ル、アイコンテーマ、MPlayer ビルド (%1) がすべて含まれています。"
 
 #: ../downloads.php:89
 msgid "Additional codecs:"
@@ -66,7 +66,7 @@ msgid ""
 "formats. Note that they are not necessary to play most common formats\n"
 "like DVDs, MPEG-1/2/4, etc."
 msgstr ""
-"このパッケージは、mplayer に直接実装されていない最新の RealVideo 派生などのマ"
+"このパッケージは、MPlayer に直接実装されていない最新の RealVideo 派生などのマ"
 "イナーなフォーマットのコーデックへの対応を追加します。DVD、MPEG-1/2/4 など、"
 "主要なフォーマットを再生する際は不要です。"
 
@@ -76,7 +76,7 @@ msgid ""
 "in the same folder, so they can't cause any conflict with other codecs you \n"
 "may have installed."
 msgstr ""
-"これらのコーデックは同じフォルダにインストールされます。mplayer にしか使用さ"
+"これらのコーデックは同じフォルダにインストールされます。MPlayer にしか使用さ"
 "れませんので、すでにインストールされている他のコーデックと競合することはあり"
 "ません。"
 
@@ -85,7 +85,7 @@ msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
 msgstr ""
-"zip ファイルがお好みの方は <a href=%1>mplayer のサイト</a>からダウンロードし"
+"zip ファイルがお好みの方は <a href=%1>MPlayer のサイト</a>からダウンロードし"
 "てください (%2)。"
 
 #: ../downloads.php:118
@@ -93,8 +93,8 @@ msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
 msgstr ""
-"このパッケージには、smplayer、共有ライブラリ、翻訳、アイコンテーマが含まれて"
-"います (インストーラーはありません)。mplayer は含まれていません。"
+"このパッケージには、SMPlayer、共有ライブラリ、翻訳、アイコンテーマが含まれて"
+"います (インストーラーはありません)。MPlayer は含まれていません。"
 
 #: ../downloads.php:121
 msgid "This package is for advanced users only!"
@@ -111,7 +111,7 @@ msgstr "コンパイル方法はパッケージ内の Install.txt に記載さ�
 
 #: ../downloads.php:184
 msgid "Allows to play and download videos from YouTube. Source code."
-msgstr ""
+msgstr "YouTube 動画の再生・ダウンロードを可能にします。ソースコードです。"
 
 #: ../downloads.php:193
 msgid "Packages for Ubuntu:"
@@ -137,7 +137,7 @@ msgid ""
 "has support for some of the new features of mplayer, so a newer version \n"
 "is highly recommended."
 msgstr ""
-"Ubuntu に含まれている mplayer のバージョンは %1 と非常に古いです。SMPlayer "
+"Ubuntu に含まれている MPlayer のバージョンは %1 と非常に古いです。SMPlayer "
 "は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くお"
 "すすめします。"
 
@@ -198,7 +198,7 @@ msgid ""
 msgstr ""
 "最近の MPlayer のバージョンと同様、このパッケージにも主に SVN リポジトリーか"
 "ら取得された SMPlayer の直近のバージョンが含まれています。独自のインストー"
-"ラーや、特定のプロセッサー向けに最適化された mplayer ビルド、バイナリコーデッ"
+"ラーや、特定のプロセッサー向けに最適化された MPlayer ビルド、バイナリコーデッ"
 "クなどを供給しています。"
 
 #: ../downloads.php:306
@@ -397,7 +397,7 @@ msgstr "メインウィンドウ"
 
 #: ../screenshots.php:44
 msgid "The Windows version"
-msgstr ""
+msgstr "Windows バージョン"
 
 #: ../screenshots.php:46
 msgid "The preferences dialog"
@@ -406,11 +406,11 @@ msgstr "環境設定ダイアログ"
 #. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
 #: ../screenshots.php:52
 msgid "The YouTube browser"
-msgstr ""
+msgstr "YouTube ブラウザー"
 
 #: ../screenshots.php:53
 msgid "Video preview"
-msgstr ""
+msgstr "ビデオプレビュー"
 
 #: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
@@ -418,7 +418,7 @@ msgstr "Matroska 埋め込み字幕"
 
 #: ../screenshots.php:59
 msgid "More than 30 translations available"
-msgstr ""
+msgstr "30 以上の翻訳が利用可能"
 
 #: ../screenshots.php:60
 msgid "The mini GUI"
@@ -426,36 +426,4 @@ msgstr "ミニ GUI"
 
 #: ../screenshots.php:61
 msgid "Possibility to search for subtitles"
-msgstr ""
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "KDE 4 で実行中の SMPlayer"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer は 20 以上もの言語に翻訳されています"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "srt 字幕を表示中のビデオ"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "Gnome で実行中の SMPlayer"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "メインウィンドウに埋め込み可能なプレイリスト"
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr "ご注意: 7z ファイルは <a href=%1>7-Zip</a> で解凍できます。"
-
-#~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
-#~ msgstr "アイコンテーマ、翻訳、MPlayer ビルドが含まれています。"
-
-#~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
-#~ msgstr ""
-#~ "USB フラッシュドライブなどの外部機器から実行可能な SMPlayer のポータブル"
-#~ "バージョンです。インストールを必要とせず、お好みの場所に解凍して smplayer."
-#~ "exe をダブルクリックするだけで実行できます。"
+msgstr "字幕の検索機能"
