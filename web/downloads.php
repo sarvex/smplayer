@@ -75,7 +75,7 @@ echo download_windows_full_link();
 <?php
 tr("This package contains everything needed to run smplayer: shared 
 libraries, translation files, icon themes and a mplayer 
-build (the version included is %1).","<i>SVN r34401</i>");
+build (the version included is %1).","<i>SVN r34835</i>");
 ?>
 </td>
 </tr>
