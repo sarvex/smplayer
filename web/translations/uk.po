@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 00:58+0200\n"
+"POT-Creation-Date: 2012-04-05 02:14+0200\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -105,37 +105,60 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr "Цей пакет виключно для досвідчених користувачів!"
 
-#: ../downloads.php:163
+#: ../downloads.php:142
+msgid ""
+"Portable version of SMPlayer. It can be run from external devices, like \n"
+"USB flash drives. It doesn't require installation, just uncompress the \n"
+"package wherever you want and double click on smplayer.exe to run it."
+msgstr ""
+"Портативна версія SMPlayer. Може працювати з довнішніх пристроїв, \n"
+"таких як USB-флешки. Не потребує інсталляції, просто розпакуйте архів \n"
+"куди Ви хочете та двічі клацність по smplayer.exe для запуску."
+
+#: ../downloads.php:146
+msgid ""
+"The package also includes the icon themes, translations and a \n"
+"MPlayer build."
+msgstr ""
+"Пакет також містить теми іконок, переклади та збірку \n"
+"MPlayer."
+
+#: ../downloads.php:149
+msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+msgstr ""
+"Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
+
+#: ../downloads.php:159
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:173
+#: ../downloads.php:169
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
 
-#: ../downloads.php:184
+#: ../downloads.php:180
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:193
+#: ../downloads.php:189
 msgid "Packages for Ubuntu:"
 msgstr "Пакети для Ubuntu:"
 
-#: ../downloads.php:194
+#: ../downloads.php:190
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:200
+#: ../downloads.php:196
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:215
+#: ../downloads.php:211
 msgid "Suggested package:"
 msgstr "Рекомендації пакету:"
 
-#: ../downloads.php:216
+#: ../downloads.php:212
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -145,27 +168,27 @@ msgstr ""
 "наразі підтримує деякі нові функції MPlayer, тому рекомендується \n"
 "застосовувати нову версія."
 
-#: ../downloads.php:220
+#: ../downloads.php:216
 msgid "You can get updated versions from this PPA:"
 msgstr "Ви можете взяти оновлену версію з PPA:"
 
-#: ../downloads.php:224
+#: ../downloads.php:220
 msgid "more info"
 msgstr "докладніше"
 
-#: ../downloads.php:232
+#: ../downloads.php:228
 msgid "Icon Themes:"
 msgstr "Теми іконок:"
 
-#: ../downloads.php:233
+#: ../downloads.php:229
 msgid "Optional packages which provide some icon themes."
 msgstr "Додаткові пакети з деякими темами іконок."
 
-#: ../downloads.php:277
+#: ../downloads.php:273
 msgid "Additional packages"
 msgstr "Додаткові пакети"
 
-#: ../downloads.php:278
+#: ../downloads.php:274
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -173,11 +196,11 @@ msgstr ""
 "Додаткові пакети для продвинутих користувачів:\n"
 "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
 
-#: ../downloads.php:285
+#: ../downloads.php:281
 msgid "Contributed packages"
 msgstr "Сторонні пакети"
 
-#: ../downloads.php:286
+#: ../downloads.php:282
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -185,15 +208,15 @@ msgstr ""
 "Тут доступні пакети для інших дистрибутивів, створені\n"
 "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
 
-#: ../downloads.php:292
+#: ../downloads.php:288
 msgid "Related Project"
 msgstr "Пов'язані проекти"
 
-#: ../downloads.php:294
+#: ../downloads.php:290
 msgid "by MuldeR"
 msgstr "від MuldeR"
 
-#: ../downloads.php:295
+#: ../downloads.php:291
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -206,12 +229,12 @@ msgstr ""
 "власний інсталлер, mplayer зібраний з оптимізацією під декілька\n"
 "процесорів та з бінарними кодеками."
 
-#: ../downloads.php:306
+#: ../downloads.php:302
 msgid "Unstable releases"
 msgstr "Нестабільні релізи"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:308
+#: ../downloads.php:304
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -443,6 +466,27 @@ msgstr "Компактний інтерфейс"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Список може бути вкладено в головне вікно."
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer працює у Gnome"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Відео з відображенням srt-субтитрами"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer перекладено на більше ніж 20 мов"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer працює у новому KDE 4"
+
+#~ msgid "Play anything"
+#~ msgstr "Відтворюйте будь-що"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Забудьте про кодеки"
+
 #~ msgid ""
 #~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 #~ "from this PPA:"
@@ -450,44 +494,3 @@ msgstr ""
 #~ "Ви можете взяти пакети deb для Ubuntu (gutsy, hardy, intrepid and "
 #~ "jaunty)\n"
 #~ "з PPA:"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Забудьте про кодеки"
-
-#~ msgid "Play anything"
-#~ msgstr "Відтворюйте будь-що"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer працює у новому KDE 4"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer перекладено на більше ніж 20 мов"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Відео з відображенням srt-субтитрами"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer працює у Gnome"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Список може бути вкладено в головне вікно."
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr ""
-#~ "Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
-
-#~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
-#~ msgstr ""
-#~ "Пакет також містить теми іконок, переклади та збірку \n"
-#~ "MPlayer."
-
-#~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
-#~ msgstr ""
-#~ "Портативна версія SMPlayer. Може працювати з довнішніх пристроїв, \n"
-#~ "таких як USB-флешки. Не потребує інсталляції, просто розпакуйте архів \n"
-#~ "куди Ви хочете та двічі клацність по smplayer.exe для запуску."

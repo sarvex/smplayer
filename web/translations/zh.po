@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-30 00:58+0200\n"
+"POT-Creation-Date: 2012-04-05 02:14+0200\n"
 "PO-Revision-Date: 2008-05-29 12:40+0800\n"
 "Last-Translator: MA Gang <magang@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,36 +94,55 @@ msgstr ""
 msgid "This package is for advanced users only!"
 msgstr "此程序包只针对高级用户!"
 
-#: ../downloads.php:163
+#: ../downloads.php:142
+msgid ""
+"Portable version of SMPlayer. It can be run from external devices, like \n"
+"USB flash drives. It doesn't require installation, just uncompress the \n"
+"package wherever you want and double click on smplayer.exe to run it."
+msgstr ""
+"SMPlayer 便携版。可以从外部设备运行, 如 U 盘。无需安装,\n"
+"直接解压到任意位置然后双击 smplayer.exe 运行。"
+
+#: ../downloads.php:146
+msgid ""
+"The package also includes the icon themes, translations and a \n"
+"MPlayer build."
+msgstr "程序包也包含图标主题, 翻译文件和 MPlayer。"
+
+#: ../downloads.php:149
+msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+msgstr "注意: 7z 格式可以用 <a href=%1>7-Zip</a>。"
+
+#: ../downloads.php:159
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:173
+#: ../downloads.php:169
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "阅读程序包内的Install.txt来了解编译方法。"
 
-#: ../downloads.php:184
+#: ../downloads.php:180
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:193
+#: ../downloads.php:189
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 程序包:"
 
-#: ../downloads.php:194
+#: ../downloads.php:190
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:200
+#: ../downloads.php:196
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:215
+#: ../downloads.php:211
 msgid "Suggested package:"
 msgstr "建议安装的程序包："
 
-#: ../downloads.php:216
+#: ../downloads.php:212
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -133,27 +152,27 @@ msgstr ""
 "而 SMPlayer 支持一些 MPlayer 的新特性,\n"
 "所以推荐使用新版 MPlayer 。"
 
-#: ../downloads.php:220
+#: ../downloads.php:216
 msgid "You can get updated versions from this PPA:"
 msgstr "您在这个 PPA 上获得更新:"
 
-#: ../downloads.php:224
+#: ../downloads.php:220
 msgid "more info"
 msgstr "更多信息"
 
-#: ../downloads.php:232
+#: ../downloads.php:228
 msgid "Icon Themes:"
 msgstr "图标主题："
 
-#: ../downloads.php:233
+#: ../downloads.php:229
 msgid "Optional packages which provide some icon themes."
 msgstr "可选包，提供一些图标主题。"
 
-#: ../downloads.php:277
+#: ../downloads.php:273
 msgid "Additional packages"
 msgstr "附加包"
 
-#: ../downloads.php:278
+#: ../downloads.php:274
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -161,25 +180,25 @@ msgstr ""
 "提供给高级用户的若干附加包：\n"
 "<a href=%1>查看 sourceforge下载页</a>。"
 
-#: ../downloads.php:285
+#: ../downloads.php:281
 msgid "Contributed packages"
 msgstr "共享包"
 
-#: ../downloads.php:286
+#: ../downloads.php:282
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
 msgstr "来自其他发行版的包，其他人创建的。<a href=%1>点击这里</a>来查看列表。"
 
-#: ../downloads.php:292
+#: ../downloads.php:288
 msgid "Related Project"
 msgstr "相关项目"
 
-#: ../downloads.php:294
+#: ../downloads.php:290
 msgid "by MuldeR"
 msgstr ""
 
-#: ../downloads.php:295
+#: ../downloads.php:291
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -188,12 +207,12 @@ msgid ""
 "binary codecs."
 msgstr ""
 
-#: ../downloads.php:306
+#: ../downloads.php:302
 msgid "Unstable releases"
 msgstr "不稳定版本"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:308
+#: ../downloads.php:304
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -418,11 +437,55 @@ msgstr "迷你GUI"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "嵌入主窗口的播放列表"
 
-#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
-#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "运行于GNOME的SMPlayer"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "显示srt字幕的视频播放"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer有超过20种语言的界面"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "运行于新KDE4下的SMPlayer"
+
+#~ msgid ""
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
+#~ msgstr ""
+#~ "您可以从这个 PPA 获得 Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "的程序包"
+
+#~ msgid "1970"
+#~ msgstr "1970"
+
+#~ msgid "Donations"
+#~ msgstr "捐赠"
+
+#~ msgid "Compiled on Ubuntu 7.04."
+#~ msgstr "在Ubuntu 7.04下编译。"
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
+#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: Qt shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
+#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
+
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, Qt shared "
+#~ "libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
+#~ "本地语言界面和图标主题。不包含mplayer。"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -434,68 +497,8 @@ msgstr ""
 #~ "已经支持mplayer的新功能，所以建议安装更新版本的mplayer。你可以在这里下载"
 #~ "You can download here %2 (从 %3)."
 
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, Qt shared "
-#~ "libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "此程序包（不含安装程序）包括smplayer、Qt共享库、\n"
-#~ "本地语言界面和图标主题。不包含mplayer。"
+#~ msgid "Download <a href=%1>here</a> the latest version of the SMPlayer"
+#~ msgstr "从<a href=%1>这里</a>下载最新版本的SMPlayer"
 
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: Qt shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "此程序包含有你运行smplayer所需要的一切：Qt\n"
-#~ "共享库、本地语言界面、图标主题、和一个mplayer编译版(版本为%1)。"
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu 8.04."
-#~ msgstr "用于AMD64的程序包。在Ubuntu 8.04下编译。"
-
-#~ msgid "Compiled on Ubuntu 7.04."
-#~ msgstr "在Ubuntu 7.04下编译。"
-
-#~ msgid "Donations"
-#~ msgstr "捐赠"
-
-#~ msgid "1970"
-#~ msgstr "1970"
-
-#~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
-#~ msgstr ""
-#~ "您可以从这个 PPA 获得 Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "的程序包"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "运行于新KDE4下的SMPlayer"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer有超过20种语言的界面"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "显示srt字幕的视频播放"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "运行于GNOME的SMPlayer"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "嵌入主窗口的播放列表"
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr "注意: 7z 格式可以用 <a href=%1>7-Zip</a>。"
-
-#~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
-#~ msgstr "程序包也包含图标主题, 翻译文件和 MPlayer。"
-
-#~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
-#~ msgstr ""
-#~ "SMPlayer 便携版。可以从外部设备运行, 如 U 盘。无需安装,\n"
-#~ "直接解压到任意位置然后双击 smplayer.exe 运行。"
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "在 OpenSuSE 10.2下编译。依赖：libqt4和mplayer。"
