@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+html, body {
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+body {
+  margin: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #000000;
+}
+a {
+  color: #0069d6;
+  text-decoration: none;
+  line-height: inherit;
+  font-weight: inherit;
+}
+a:hover {
+  color: #0050a3;
+  text-decoration: underline;
+}
+p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height:18px;
+  margin-bottom: 9px;
+}
+p small {
+  font-size: 11px;
+  color: #bfbfbf;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #202020;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: #bfbfbf;
+}
+h1 {
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 36px;
+}
+h1 small {
+  font-size: 18px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+h2 small {
+  font-size: 14px;
+}
+h3,
+h4,
+h5,
+h6 {
+  line-height: 36px;
+}
+h3 {
+  font-size: 18px;
+}
+h3 small {
+  font-size: 14px;
+}
+h4 {
+  font-size: 16px;
+}
+h4 small {
+  font-size: 12px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 13px;
+  color: #bfbfbf;
+  text-transform: uppercase;
+}
+ul, ol {
+  margin: 0 0 18px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li {
+  line-height: 18px;
+  color: #000;
+}
+pre {
+  background-color: #E0E0E0;
+  padding: 6px;
+  width: 950px;
+  font-family: Consolas,monospace;
+  line-height: 19px;
+}
+</style>
+<title>SMPlayer</title>
+</head>
+<body>
+<h1>SMPlayer</h1>
+<p>SMPlayer is a fully featured front-end for <a href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>, an award-winning open source media player supporting popular video and audio formats such as H.264, DVD, DivX, & MP3. SMPlayer and MPlayer are also multi-platform.</p>
+<p>SMPlayer and MPlayer are also licensed under the <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public License</a>.
+<ol>
+<li><a href="#usage">Usage</a></li>
+</ol>
+
+<h4><span id="#usage">Usage</span></h4>
+<p>SMPlayer supports command line parameters that can be called while launching SMPlayer from either a shortcut or a command line environment. These are useful for advanced users who want to change the default behavior when launching SMPlayer or used by SMPlayer internally. For most users, it is unnecessary to worry about any of these.</p>
+<pre>
+Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [-send-action action_name] [-actions action_list]
+[-close-at-end] [-no-close-at-end] [-fullscreen] [-no-fullscreen] [-sub subtitle_file] [-pos x y] [-size width height]
+[-add-to-playlist] [-help|--help|-h|-?] [media] [media]...</b>
+
+<b>-uninstall</b>       Restores the old associations and cleans up the registry.
+<b>-minigui</b>         Opens the mini gui instead of the default one.
+<b>-mpcgui</b>          Opens the mpc gui.
+<b>-defaultgui</b>      Opens the default gui.
+<b>-config-path</b>     Specifies the directory where SMPlayer will store its configuration files (smplayer.ini, smplayer_files.ini...)
+<b>-send-action</b>     Tries to make a connection to another running instance and send to it the specified action.
+
+                 Example: -send-action pause
+
+                 The rest of the options (if any) will be ignored and the application will exit. It will return 0 on success or -1 on
+                 failure.
+<b>-actions</b>         A list of actions separated by spaces. The actions will be executed just after loading the file (if any) in the same
+                 order you entered. For checkable actions you can pass true or false as parameter.
+                 
+                 Example: -actions "fullscreen compact true"
+                 
+                 Quotes are necessary in case you pass more than one action.
+<b>-close-at-end</b>    The main window will be closed when the file/playlist finishes.
+<b>-no-close-at-end</b> The main window won't be closed when the file/playlist finishes.
+<b>-fullscreen</b>      The video will be played in fullscreen mode.
+<b>-no-fullscreen</b>   The video will be played in window mode.
+<b>-sub</b>             Specifies the subtitle file to be loaded for the first video.
+<b>-pos</b>             Specifies the coordinates where the main window will be displayed.
+<b>-size</b>            Specifies the size of the main window.
+<b>-help</b>            Shows this message and then will exit.
+<b>-add-to-playlist</b> If there's another instance running, the media will be added to that instance's playlist. If there's no other instance,
+                 this option will be ignored and the files will be opened in a new instance. 
+<b>media</b>            'media' is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream
+                 (e.g. mms://....) or a local playlist in format m3u or pls.
+</pre>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
