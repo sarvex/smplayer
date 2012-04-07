@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-05 02:14+0200\n"
+"POT-Creation-Date: 2012-04-07 23:14+0200\n"
 "PO-Revision-Date: 2009-02-18 22:05+0100\n"
 "Last-Translator: arti <artii@gmx.net>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -35,17 +35,12 @@ msgstr "Paket mit Installationsprogramm:"
 
 #: ../downloads.php:43
 msgid ""
-"This package contains smplayer, shared libraries, translation \n"
+"This package contains smplayer, smtube, shared libraries, translation \n"
 "files and icon themes. During the installation a recent version of\n"
 "mplayer will be downloaded and installed. Optionally you can also\n"
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
-"Dieses Paket enthält smplayer, gemeinsam benutzte Bibliotheken \n"
-"Übersetzungsdateien und Symbolthemen. Während der Installation wird \n"
-"eine vorherige Version von mplayer heruntergeladen und installiert. \n"
-"Wahlweise kannst du auch ein paar zusätzliche Codecs installieren \n"
-"(nur für einige Formate erforderlich, wie neuere RealVideo Varianten)."
 
 #: ../downloads.php:76
 msgid ""
@@ -57,11 +52,15 @@ msgstr ""
 "Gemeinsam benutzte Bibliotheken, Übersetzungsdateien, Symbolthemen und \n"
 "eine kompilierte mplayer Binärdatei (die beinhaltete Version ist %1)."
 
-#: ../downloads.php:89
+#: ../downloads.php:80
+msgid "It also includes the YouTube browser (smtube)"
+msgstr ""
+
+#: ../downloads.php:91
 msgid "Additional codecs:"
 msgstr "Zusätzliche Codecs:"
 
-#: ../downloads.php:94
+#: ../downloads.php:96
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -74,7 +73,7 @@ msgstr ""
 "normalerweise nicht benötigt, um die allgemein gebräuchlichen Formate, wie \n"
 "DVDs, MPEG-1/2/4, usw. abspielen zu können."
 
-#: ../downloads.php:99
+#: ../downloads.php:101
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -85,7 +84,7 @@ msgstr ""
 "Konflikte mit anderen Codecs verursachen, die du möglicherweise bereits \n"
 "installiert hast."
 
-#: ../downloads.php:103
+#: ../downloads.php:105
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -93,7 +92,7 @@ msgstr ""
 "Wenn du eine zip-Datei bevorzugst, dann bekommst du sie auf der \n"
 "<a href=%1>mplayer Webseite</a> (%2)."
 
-#: ../downloads.php:118
+#: ../downloads.php:120
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
@@ -103,11 +102,11 @@ msgstr ""
 "beinhaltet\n"
 "nicht mplayer."
 
-#: ../downloads.php:121
+#: ../downloads.php:123
 msgid "This package is for advanced users only!"
 msgstr "Dieses Paket ist nur für fortgeschrittene Anwender gedacht!"
 
-#: ../downloads.php:142
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
@@ -118,7 +117,7 @@ msgstr ""
 "voraus. Entpacke einfach das Paket wohin du willst und klicke doppelt auf \n"
 "smplayer.exe, um es zu starten."
 
-#: ../downloads.php:146
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -126,42 +125,42 @@ msgstr ""
 "Dieses Paket enthält auch die Symbolthemen, Übersetzungen und einen \n"
 "MPlayer Binärdatei."
 
-#: ../downloads.php:149
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr "Hinweis: 7z-Dateien können mit <a href=%1>7-Zip</a> entpackt werden."
 
-#: ../downloads.php:159
+#: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:169
+#: ../downloads.php:171
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Lese die im Paket enthaltene Datei Install.txt, um herauszufinden, \n"
 "wie man das Paket kompiliert."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:189
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr "Pakete für Ubuntu:"
 
-#: ../downloads.php:190
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:196
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:211
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Vorgeschlagene Pakete:"
 
-#: ../downloads.php:212
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -171,27 +170,27 @@ msgstr ""
 "unterstützt einige neue Merkmale von mplayer, deshalb wird eine neuere \n"
 "Version dringend empfohlen."
 
-#: ../downloads.php:216
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Es gibt aktualisierte Versionen von diesem PPA:"
 
-#: ../downloads.php:220
+#: ../downloads.php:222
 msgid "more info"
 msgstr "weitere Infos"
 
-#: ../downloads.php:228
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Symbolthemen:"
 
-#: ../downloads.php:229
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Wahlfreie Pakete, die einige Symbolthemen zur Verfügung stellen."
 
-#: ../downloads.php:273
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "Zusätzliche Pakete"
 
-#: ../downloads.php:274
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -199,11 +198,11 @@ msgstr ""
 "Es gibt einige zusätzliche Pakete für fortgeschrittene Anwender:\n"
 "<a href=%1>siehe Sourceforge Download Seite</a>."
 
-#: ../downloads.php:281
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Beigesteuerte Pakete"
 
-#: ../downloads.php:282
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -211,15 +210,15 @@ msgstr ""
 "Es gibt verfügbare Pakete für andere Distributionen, die von \n"
 "anderen Leuten gebaut wurden. <a href=%1>Klicke hier</a>, um sie zu sehen."
 
-#: ../downloads.php:288
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Ähnliche Projekte"
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "von MuldeR"
 
-#: ../downloads.php:291
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -232,12 +231,12 @@ msgstr ""
 "Es bietet auch ein Installationsprogramm und für verschiedene Prozessoren \n"
 "optimierte mplayer Binärdateien und Binärcodecs an."
 
-#: ../downloads.php:302
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Instabile Freigabeversionen"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -474,39 +473,24 @@ msgstr "Die mini GUI"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Die Abspielliste kann im Hauptfenster eingebettet werden"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer unter Gnome laufend"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Ein Video, welches einen srt-Untertitel darstellt"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer ist bereits in mehr als 20 Sprachen übersetzt worden"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer unter dem neuen KDE 4 laufend"
-
 #~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
+#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
+#~ "%1. Just add one of the following lines to your %2, according to your \n"
+#~ "version of Ubuntu:"
 #~ msgstr ""
-#~ "Es gibt deb Pakete für Ubuntu (gutsy, hardy, intrepid und jaunty)\n"
-#~ "in diesem PPA:"
+#~ "Jetzt kannst du ganz einfach die SMPlayer und MPlayer Pakete mit %1 \n"
+#~ "installieren. Füge einfach eine der folgenden Zeilen deine %2, gemäß "
+#~ "deiner \n"
+#~ "Ubuntu Version:"
 
-#~ msgid "1970"
-#~ msgstr "5694"
+#~ msgid "New!"
+#~ msgstr "Neu!"
 
-#~ msgid "Donations"
-#~ msgstr "Spenden"
+#~ msgid "More info"
+#~ msgstr "Mehr Infos"
 
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Unter Ubuntu %1 kompiliert."
-
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Paket für AMD64. Unter Ubuntu %1 kompiliert."
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "Aktualisierte Versionen findest du <a href=%1>hier</a>"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -519,21 +503,49 @@ msgstr ""
 #~ "neuere \n"
 #~ "Version sehr empfohlen wird."
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Aktualisierte Versionen findest du <a href=%1>hier</a>"
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Paket für AMD64. Unter Ubuntu %1 kompiliert."
 
-#~ msgid "More info"
-#~ msgstr "Mehr Infos"
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Unter Ubuntu %1 kompiliert."
 
-#~ msgid "New!"
-#~ msgstr "Neu!"
+#~ msgid "Donations"
+#~ msgstr "Spenden"
+
+#~ msgid "1970"
+#~ msgstr "5694"
 
 #~ msgid ""
-#~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
 #~ msgstr ""
-#~ "Jetzt kannst du ganz einfach die SMPlayer und MPlayer Pakete mit %1 \n"
-#~ "installieren. Füge einfach eine der folgenden Zeilen deine %2, gemäß "
-#~ "deiner \n"
-#~ "Ubuntu Version:"
+#~ "Es gibt deb Pakete für Ubuntu (gutsy, hardy, intrepid und jaunty)\n"
+#~ "in diesem PPA:"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer unter dem neuen KDE 4 laufend"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer ist bereits in mehr als 20 Sprachen übersetzt worden"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Ein Video, welches einen srt-Untertitel darstellt"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer unter Gnome laufend"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Die Abspielliste kann im Hauptfenster eingebettet werden"
+
+#~ msgid ""
+#~ "This package contains smplayer, shared libraries, translation \n"
+#~ "files and icon themes. During the installation a recent version of\n"
+#~ "mplayer will be downloaded and installed. Optionally you can also\n"
+#~ "install some additional codecs (necessary only for a few formats, \n"
+#~ "like newer RealVideo variants)."
+#~ msgstr ""
+#~ "Dieses Paket enthält smplayer, gemeinsam benutzte Bibliotheken \n"
+#~ "Übersetzungsdateien und Symbolthemen. Während der Installation wird \n"
+#~ "eine vorherige Version von mplayer heruntergeladen und installiert. \n"
+#~ "Wahlweise kannst du auch ein paar zusätzliche Codecs installieren \n"
+#~ "(nur für einige Formate erforderlich, wie neuere RealVideo Varianten)."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-05 02:14+0200\n"
+"POT-Creation-Date: 2012-04-07 23:14+0200\n"
 "PO-Revision-Date: 2009-03-13 10:57+0100\n"
 "Last-Translator: CyberDragon <cyberdragon777@gmail.com>\n"
 "Language-Team: hungarian <LL@li.org>\n"
@@ -35,17 +35,12 @@ msgstr "Csomag telepítővel:"
 
 #: ../downloads.php:43
 msgid ""
-"This package contains smplayer, shared libraries, translation \n"
+"This package contains smplayer, smtube, shared libraries, translation \n"
 "files and icon themes. During the installation a recent version of\n"
 "mplayer will be downloaded and installed. Optionally you can also\n"
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
-"Ez a csomag tartalmazza az SMPlayert, megosztott könyvtárakat, \n"
-"fordításokat és ikon témákat. A telepítés közben egy friss MPlayer \n"
-"verzió lesz letöltve és telepítve. Valamint telepíthet további kodekeket \n"
-"(csak néhány formátumhoz szükségesek, mint pl. újabb RealVideó \n"
-"variánsok)."
 
 #: ../downloads.php:76
 msgid ""
@@ -57,11 +52,15 @@ msgstr ""
 "megosztott könyvtárak, fordítások, ikon témák és egy MPlayer build \n"
 "(a mellékelt verzió %1)."
 
-#: ../downloads.php:89
+#: ../downloads.php:80
+msgid "It also includes the YouTube browser (smtube)"
+msgstr ""
+
+#: ../downloads.php:91
 msgid "Additional codecs:"
 msgstr "További kodekek:"
 
-#: ../downloads.php:94
+#: ../downloads.php:96
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -73,7 +72,7 @@ msgstr ""
 "formátumhoz. Nem szükségesek a legtöbb gyakori formátum lejátszásához, \n"
 "mint a DVD-k, MPEG-1/2/4, stb."
 
-#: ../downloads.php:99
+#: ../downloads.php:101
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -83,7 +82,7 @@ msgstr ""
 "lesznek telepítve, ezért nem képesek konfliktust okozni más esetlegesen \n"
 "feltelepített kodekekkel."
 
-#: ../downloads.php:103
+#: ../downloads.php:105
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -91,7 +90,7 @@ msgstr ""
 "Ha inkább zip fájlt szeretne, letöltheti az \n"
 "<a href=%1>MPlayer oldalról</a> (%2)."
 
-#: ../downloads.php:118
+#: ../downloads.php:120
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
@@ -99,11 +98,11 @@ msgstr ""
 "Csomag (telepítő nélkül), amely tartalmazza az SMPlayert, megosztott \n"
 "könyvtárakat, fordításokat és ikon témákat. Nem tartalmazza az MPlayert."
 
-#: ../downloads.php:121
+#: ../downloads.php:123
 msgid "This package is for advanced users only!"
 msgstr "Ez a csomag csak haladó felhasználóknak ajánlott!"
 
-#: ../downloads.php:142
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
@@ -113,7 +112,7 @@ msgstr ""
 "flash meghajtók. Nem igényel telepítést, csak tömörítse ki a csomagot \n"
 "és kattintson duplán az smplayer.exe-re a futtatáshoz."
 
-#: ../downloads.php:146
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -121,43 +120,43 @@ msgstr ""
 "Ez a csomag ikon témákat, fordításokat és egy MPlayer buildet \n"
 "is tartalmaz."
 
-#: ../downloads.php:149
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr ""
 "Megjegyzés: a 7z fájlok <a href=%1>7-Zip</a> segítségével \n"
 "tömöríthetők ki."
 
-#: ../downloads.php:159
+#: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:169
+#: ../downloads.php:171
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Olvassa el a csomagban lévő Install.txt fájlt a fordítási információkért."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:189
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:190
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:196
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:211
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Ajánlott csomag:"
 
-#: ../downloads.php:212
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -167,27 +166,27 @@ msgstr ""
 "támogatja az MPlayer néhány új funkcióját, ezért egy újabb verzió \n"
 "erősen ajánlott."
 
-#: ../downloads.php:216
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Friss verziókat errõl a PPA-ról szerezhet:"
 
-#: ../downloads.php:220
+#: ../downloads.php:222
 msgid "more info"
 msgstr "több infó"
 
-#: ../downloads.php:228
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Ikon témák:"
 
-#: ../downloads.php:229
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Opcionális csomagok néhány ikon témával."
 
-#: ../downloads.php:273
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "További csomagok"
 
-#: ../downloads.php:274
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -195,11 +194,11 @@ msgstr ""
 "További csomagok érhetők el haladó felhasználók számára: \n"
 "<a href=%1>Lásd SourceForge letöltési oldal</a>."
 
-#: ../downloads.php:281
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Hozzájárulók csomagjai"
 
-#: ../downloads.php:282
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -207,15 +206,15 @@ msgstr ""
 "Elérhetőek más emberek által készített csomagok egyéb \n"
 "disztribúciókra. <a href=%1>Kattintson ide</a> a megtekintésükhöz."
 
-#: ../downloads.php:288
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Kapcsolódó projekt"
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "MuldeR által"
 
-#: ../downloads.php:291
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -228,12 +227,12 @@ msgstr ""
 "Továbbá saját telepítőt, különböző processzorokra optimalizált MPlayer \n"
 "buildeket és kodekeket tartalmaz."
 
-#: ../downloads.php:302
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Nem stabil kiadások"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -464,49 +463,23 @@ msgstr "A Mini felület"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "A lejátszási lista a főablakba ágyazható"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer Gnome-on"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Egy videó srt felirattal"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "Az SMPlayer több mint 20 nyelvre le van fordítva"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer az új KDE 4-en"
-
-#~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
-#~ msgstr ""
-#~ "Ubuntuhoz (gutsy, hardy, intrepid és jaunty) deb csomagokat errõl\n"
-#~ "a PPA-ról szerezhet:"
-
-#~ msgid "1970"
-#~ msgstr "6020"
-
-#~ msgid "Donations"
-#~ msgstr "Támogatás"
-
 #~ msgid ""
 #~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add this line to your %2:"
+#~ "%1. Just add one of the following lines to your %2, according to your \n"
+#~ "version of Ubuntu:"
 #~ msgstr ""
-#~ "Mosst egyszerűen telepítheti az SMPlayer és MPlayer csomagokat %1 -al."
-#~ "Csak adja hozzá ezt a sort a %2 -höz:"
+#~ "Most egyszerűen telepítheti az SMPlayer és MPlayer csomagokat %1 \n"
+#~ "segítségével. Csak adja hozzá a %2 fájljához a következő sorok egyikét, \n"
+#~ "az Ubuntu verziójának megfelelően:"
 
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "OpenSuSE 10.2-n fordítva. libqt4 és mplayer szükséges."
+#~ msgid "New!"
+#~ msgstr "Új!"
 
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Fordítva Ubuntu %1-en."
+#~ msgid "More info"
+#~ msgstr "Több információ"
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Csomag AMD64-re. Fordítva Ubuntu %1-en."
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "Letöltheti a frissített verziót <a href=%1>innen</a>"
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -517,20 +490,60 @@ msgstr ""
 #~ "Az Ubuntuhoz mellékelt MPlayer kissé régi (%1). Az SMPlayer támogatja \n"
 #~ "az MPlayer néhány új funkcióját, ezért egy újabb verzió erősen ajánlott."
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "Letöltheti a frissített verziót <a href=%1>innen</a>"
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Csomag AMD64-re. Fordítva Ubuntu %1-en."
 
-#~ msgid "More info"
-#~ msgstr "Több információ"
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Fordítva Ubuntu %1-en."
 
-#~ msgid "New!"
-#~ msgstr "Új!"
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "OpenSuSE 10.2-n fordítva. libqt4 és mplayer szükséges."
 
 #~ msgid ""
 #~ "Now you can easily install the SMPlayer and MPlayer packages with \n"
-#~ "%1. Just add one of the following lines to your %2, according to your \n"
-#~ "version of Ubuntu:"
+#~ "%1. Just add this line to your %2:"
 #~ msgstr ""
-#~ "Most egyszerűen telepítheti az SMPlayer és MPlayer csomagokat %1 \n"
-#~ "segítségével. Csak adja hozzá a %2 fájljához a következő sorok egyikét, \n"
-#~ "az Ubuntu verziójának megfelelően:"
+#~ "Mosst egyszerűen telepítheti az SMPlayer és MPlayer csomagokat %1 -al."
+#~ "Csak adja hozzá ezt a sort a %2 -höz:"
+
+#~ msgid "Donations"
+#~ msgstr "Támogatás"
+
+#~ msgid "1970"
+#~ msgstr "6020"
+
+#~ msgid ""
+#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
+#~ "from this PPA:"
+#~ msgstr ""
+#~ "Ubuntuhoz (gutsy, hardy, intrepid és jaunty) deb csomagokat errõl\n"
+#~ "a PPA-ról szerezhet:"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer az új KDE 4-en"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "Az SMPlayer több mint 20 nyelvre le van fordítva"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Egy videó srt felirattal"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer Gnome-on"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "A lejátszási lista a főablakba ágyazható"
+
+#~ msgid ""
+#~ "This package contains smplayer, shared libraries, translation \n"
+#~ "files and icon themes. During the installation a recent version of\n"
+#~ "mplayer will be downloaded and installed. Optionally you can also\n"
+#~ "install some additional codecs (necessary only for a few formats, \n"
+#~ "like newer RealVideo variants)."
+#~ msgstr ""
+#~ "Ez a csomag tartalmazza az SMPlayert, megosztott könyvtárakat, \n"
+#~ "fordításokat és ikon témákat. A telepítés közben egy friss MPlayer \n"
+#~ "verzió lesz letöltve és telepítve. Valamint telepíthet további "
+#~ "kodekeket \n"
+#~ "(csak néhány formátumhoz szükségesek, mint pl. újabb RealVideó \n"
+#~ "variánsok)."

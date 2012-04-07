@@ -40,7 +40,7 @@ echo download_windows_lite_link();
 ?>
 <br>
 <?php
-tr("This package contains smplayer, shared libraries, translation 
+tr("This package contains smplayer, smtube, shared libraries, translation 
 files and icon themes. During the installation a recent version of
 mplayer will be downloaded and installed. Optionally you can also
 install some additional codecs (necessary only for a few formats, 
@@ -76,6 +76,8 @@ echo download_windows_full_link();
 tr("This package contains everything needed to run smplayer: shared 
 libraries, translation files, icon themes and a mplayer 
 build (the version included is %1).","<i>SVN r34835</i>");
+echo " ";
+tr("It also includes the YouTube browser (smtube)");
 ?>
 </td>
 </tr>
@@ -198,7 +200,7 @@ tr("To install smplayer, just run these commands in a terminal:");
 <pre>
 sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
-sudo apt-get install smplayer
+sudo apt-get install smplayer smtube
 </pre>
 </td>
 </tr>

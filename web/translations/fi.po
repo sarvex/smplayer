@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-05 02:14+0200\n"
+"POT-Creation-Date: 2012-04-07 23:14+0200\n"
 "PO-Revision-Date: 2010-01-24 18:15+0200\n"
 "Last-Translator: Olli <ollinpostit@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,17 +34,12 @@ msgstr "Paketti, sisältää asennusohjelman:"
 
 #: ../downloads.php:43
 msgid ""
-"This package contains smplayer, shared libraries, translation \n"
+"This package contains smplayer, smtube, shared libraries, translation \n"
 "files and icon themes. During the installation a recent version of\n"
 "mplayer will be downloaded and installed. Optionally you can also\n"
 "install some additional codecs (necessary only for a few formats, \n"
 "like newer RealVideo variants)."
 msgstr ""
-"Tämä paketti sisältää smplayerin, jaetut kirjastot, käännös- \n"
-"tiedostot ja kuvaketeemat. Asennuksen aikana mplayerin viimeisin\n"
-"versio ladataan ja asennetaan. Vapaaehtoisesti voit myös\n"
-"asentaa lisää koodekkeja (tarpeellinen vain muutamille muodoille, \n"
-"kuten uudemmat RealVideo-muunnokset)"
 
 #: ../downloads.php:76
 msgid ""
@@ -56,11 +51,15 @@ msgstr ""
 "kirjastot, käännöstiedostot, kuvaketeemat ja mplayer \n"
 "-ohjelman (versio on %1)."
 
-#: ../downloads.php:89
+#: ../downloads.php:80
+msgid "It also includes the YouTube browser (smtube)"
+msgstr ""
+
+#: ../downloads.php:91
 msgid "Additional codecs:"
 msgstr "Lisäkoodekit:"
 
-#: ../downloads.php:94
+#: ../downloads.php:96
 msgid ""
 "This package adds support for codecs that are not yet implemented\n"
 "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
@@ -72,7 +71,7 @@ msgstr ""
 "muotoja. Huomaa, että nämä eivät ole tarpeen kun toistetaan yleisiä muotoja\n"
 "kuten DVD:itä, MPEG-1/2/4 jne."
 
-#: ../downloads.php:99
+#: ../downloads.php:101
 msgid ""
 "These codecs are to be used by mplayer only and they will be installed \n"
 "in the same folder, so they can't cause any conflict with other codecs you \n"
@@ -82,7 +81,7 @@ msgstr ""
 "samaan kansioon, joten eivät aiheuta mitään ristiriitoja muitten \n"
 "mahdollisesti asentamiesi koodekkien kanssa."
 
-#: ../downloads.php:103
+#: ../downloads.php:105
 msgid ""
 "If you prefer a zip file, you can get it at \n"
 "the <a href=%1>mplayer site</a> (%2)."
@@ -90,7 +89,7 @@ msgstr ""
 "Jos suosit zip-tiedostoa, voit hakea sen \n"
 "<a href=%1>mplayer-sivuilta</a> (%2)."
 
-#: ../downloads.php:118
+#: ../downloads.php:120
 msgid ""
 "Package (without installer) which includes smplayer, shared libraries,\n"
 "translations and icon themes. It doesn't include mplayer."
@@ -99,11 +98,11 @@ msgstr ""
 "kirjastot,\n"
 "käännökset ja kuvaketeemat. Se ei sisällytä mplayeria."
 
-#: ../downloads.php:121
+#: ../downloads.php:123
 msgid "This package is for advanced users only!"
 msgstr "Tämä paketti on vain kehittyneille käyttäjille!"
 
-#: ../downloads.php:142
+#: ../downloads.php:144
 msgid ""
 "Portable version of SMPlayer. It can be run from external devices, like \n"
 "USB flash drives. It doesn't require installation, just uncompress the \n"
@@ -115,7 +114,7 @@ msgstr ""
 "paketti mihin ikinä haluatkaan ja kaksoisklikata smplayer.exe tiedostoa "
 "käynnistääksesi."
 
-#: ../downloads.php:146
+#: ../downloads.php:148
 msgid ""
 "The package also includes the icon themes, translations and a \n"
 "MPlayer build."
@@ -123,41 +122,41 @@ msgstr ""
 "Paketti sisältää myös kuvaketeemat, käännökset ja \n"
 "MPlayer-version."
 
-#: ../downloads.php:149
+#: ../downloads.php:151
 msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
 msgstr "Huomautus: 7z -tiedostot voidaan purkaa <a href=%1>7-Zip</a>illä."
 
-#: ../downloads.php:159
+#: ../downloads.php:161
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:169
+#: ../downloads.php:171
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr ""
 "Lue tiedosto Install.txt paketin sisällä tietääksesi kuinka voit kääntää sen."
 
-#: ../downloads.php:180
+#: ../downloads.php:182
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr ""
 
-#: ../downloads.php:189
+#: ../downloads.php:191
 msgid "Packages for Ubuntu:"
 msgstr "Paketit Ubuntulle:"
 
-#: ../downloads.php:190
+#: ../downloads.php:192
 msgid "You can get deb packages for Ubuntu from this PPA:"
 msgstr ""
 
-#: ../downloads.php:196
+#: ../downloads.php:198
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:211
+#: ../downloads.php:213
 msgid "Suggested package:"
 msgstr "Suositeltu paketti:"
 
-#: ../downloads.php:212
+#: ../downloads.php:214
 msgid ""
 "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
 "has support for some of the new features of mplayer, so a newer version \n"
@@ -167,27 +166,27 @@ msgstr ""
 "on tuki joillekin mplayerin uusille ominaisuuksille, joten uudempi versio \n"
 "on paljon suositeltu."
 
-#: ../downloads.php:216
+#: ../downloads.php:218
 msgid "You can get updated versions from this PPA:"
 msgstr "Voit hakea päivitetyt versiot tästä PPA:sta:"
 
-#: ../downloads.php:220
+#: ../downloads.php:222
 msgid "more info"
 msgstr "lisää tietoja"
 
-#: ../downloads.php:228
+#: ../downloads.php:230
 msgid "Icon Themes:"
 msgstr "Kuvaketeemat:"
 
-#: ../downloads.php:229
+#: ../downloads.php:231
 msgid "Optional packages which provide some icon themes."
 msgstr "Vapaaehtoisia paketteja, jotka antavat joitakin kuvaketeemoja."
 
-#: ../downloads.php:273
+#: ../downloads.php:275
 msgid "Additional packages"
 msgstr "Lisäpaketteja"
 
-#: ../downloads.php:274
+#: ../downloads.php:276
 msgid ""
 "There are several additional packages for advanced users:\n"
 "<a href=%1>See sourceforge download page</a>."
@@ -195,11 +194,11 @@ msgstr ""
 "Kehittyneille käyttäjille on joitakin lisäpaketteja:\n"
 "<a href=%1>Katso SourceForgen lataussivu</a>."
 
-#: ../downloads.php:281
+#: ../downloads.php:283
 msgid "Contributed packages"
 msgstr "Avustetut paketit"
 
-#: ../downloads.php:282
+#: ../downloads.php:284
 msgid ""
 "There are available packages for other distros, created\n"
 "by other people. <a href=%1>Click here</a> to see them."
@@ -207,15 +206,15 @@ msgstr ""
 "Paketteja on saatavilla myös muille jakoversioille, jotka\n"
 "muut ihmiset ovat tehneet. <a href=%1>Klikkaa tästä</a> katsoaksesi ne."
 
-#: ../downloads.php:288
+#: ../downloads.php:290
 msgid "Related Project"
 msgstr "Suositeltu projekti"
 
-#: ../downloads.php:290
+#: ../downloads.php:292
 msgid "by MuldeR"
 msgstr "MuldeR:ltä"
 
-#: ../downloads.php:291
+#: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
 "the SVN repository) as well as a recent version of MPlayer. It also "
@@ -228,12 +227,12 @@ msgstr ""
 "sen oman asentajan, mplayer-versiot optimoitu tietyille prosessoreille ja\n"
 "lähdekoodin koodekit."
 
-#: ../downloads.php:302
+#: ../downloads.php:304
 msgid "Unstable releases"
 msgstr "Epävakaat julkaisut"
 
 #. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:304
+#: ../downloads.php:306
 msgid ""
 "You can get packages directly taken from the SVN (source code and\n"
 "Windows updates), <a href=%1><b>here</b></a>."
@@ -473,30 +472,43 @@ msgstr "Pelkistetty ikkuna"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Toistolista voidaan sisällyttää pääikkunaan"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer käynnissä Gnomella"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Video, joka näyttää srt-tekstitystä"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer on käännetty useammalle kuin 20 eri kielelle"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer käynnissä uudella KDE 4:llä"
-
-#~ msgid "Play anything"
-#~ msgstr "Toista mitä tahansa"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Unohda koodekit"
-
 #~ msgid ""
 #~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
 #~ "from this PPA:"
 #~ msgstr ""
 #~ "Voit hakea deb-paketit Ubuntulle (gutsy, hardy, intrepid ja jaunty)\n"
 #~ "tästä PPA:sta:"
+
+#~ msgid "Forget about codecs"
+#~ msgstr "Unohda koodekit"
+
+#~ msgid "Play anything"
+#~ msgstr "Toista mitä tahansa"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer käynnissä uudella KDE 4:llä"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer on käännetty useammalle kuin 20 eri kielelle"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Video, joka näyttää srt-tekstitystä"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer käynnissä Gnomella"
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Toistolista voidaan sisällyttää pääikkunaan"
+
+#~ msgid ""
+#~ "This package contains smplayer, shared libraries, translation \n"
+#~ "files and icon themes. During the installation a recent version of\n"
+#~ "mplayer will be downloaded and installed. Optionally you can also\n"
+#~ "install some additional codecs (necessary only for a few formats, \n"
+#~ "like newer RealVideo variants)."
+#~ msgstr ""
+#~ "Tämä paketti sisältää smplayerin, jaetut kirjastot, käännös- \n"
+#~ "tiedostot ja kuvaketeemat. Asennuksen aikana mplayerin viimeisin\n"
+#~ "versio ladataan ja asennetaan. Vapaaehtoisesti voit myös\n"
+#~ "asentaa lisää koodekkeja (tarpeellinen vain muutamille muodoille, \n"
+#~ "kuten uudemmat RealVideo-muunnokset)"
