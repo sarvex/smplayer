@@ -180,10 +180,30 @@ pre {
 </head>
 <body>
 <h1>SMPlayer</h1>
-<p>SMPlayer is a fully featured front-end for <a href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>, an award-winning open source media player supporting popular video and audio formats such as H.264, DVD, DivX, & MP3. SMPlayer and MPlayer are also multi-platform.</p>
-<p>SMPlayer and MPlayer are also licensed under the <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public License</a>.
+<p>SMPlayer is a fully featured front-end for <a href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>, an award-winning open source media player supporting popular video and audio formats such as H.264, DVD, (S)VCDs, DivX, & MP3. SMPlayer is written under the Qt platform and is available for Microsoft Windows and GNU/Linux opertaing systems. There's an optional package available called smplayer-themes. It contains some icon themes for smplayer and it's highly recommended that you install it too.</p>
+<p>SMPlayer Portable Edition is a special version of SMPlayer (for Windows) which tries to not write anything outside from the directory where it is installed, so it can be used from external devices like pendrives. You can get a package from here:<br>
+<a href="https://sourceforge.net/projects/smplayer/files/SMPlayer">https://sourceforge.net/projects/smplayer/files/SMPlayer</a></p>
+<p>To install it, just uncompress it wherever you want. To run it just double click on smplayer.exe.</p>
+<p>Differences from the normal SMPlayer:</p>
+<p>* By default it will save the ini files in the SMPlayer's folder.<br>
+* It won't try to create the SMPlayer home directory or the screenshot
+  directory (C:\Documents and Settings\User\.smplayer\...)<br>
+* It won't write anything in the Windows registry (for that reason the
+  file associations are not available in this version)<br>
+* The screenshot option is disabled by default.</p>
+<p>To identify whether you are running the portable edition,go to Help -> About SMPlayer, it should say something like this: "Version: 0.8.0 (Portable Edition)"</p>
+<p>SMTube is a browser for searching for, recording and launching YouTube™ videos within SMPlayer. SMTube is derived from <a href="http://www.umplayer.com/">UMPlayer</a>.</p>
+<p>Visit the web for updates and support:<br>
+<a href="http://smplayer.berlios.de">http://smplayer.berlios.de</a><br>
+<a href="http://smplayer.sourceforge.net">http://smplayer.sourceforge.net</a></p>
+<p>Forum:<br>
+<a href="http://smplayer.sourceforge.net/forum">http://smplayer.sourceforge.net/forum</a></p>
 <ol>
 <li><a href="#usage">Usage</a></li>
+<li><a href="#config">Configuration</a></li>
+<ul><li>General</li></ul>
+<li><a href="#kial">Known Issues & Limitations</a></li>
+<li><a href="#license">License</a></li>
 </ol>
 
 <h4><span id="#usage">Usage</span></h4>
@@ -223,6 +243,88 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 <b>media</b>            'media' is any kind of file that SMPlayer can open. It can be a local file, a DVD (e.g. dvd://1), an Internet stream
                  (e.g. mms://....) or a local playlist in format m3u or pls.
 </pre>
+<p></p>
+<p>There are some behaviors in the SMPlayer GUI that may not be obvious:</p>
+<ul><li>Stop button. Pressing the Stop button once stops the video. If you press Play, the video will resume at the same point. But if you press Stop twice the time position is reset to 0, so Play will start the video from the beginning.</li>
+<li>The pause button. The first time you click on it, the video is paused. The following times it will step to the next frame. This behavior only occurs with the pause button, not with the pause option in the menu.</li>
+
+<li>Double clicking in the video window toggles fullscreen.</li>
+
+<li>The Esc key can be used to exit from fullscreen mode.</li>
+
+<li>The O key switches OSD modes (the same way MPlayer does)</li>
+
+<li>The option Open->URL doesn't check if you really typed a URL. What
+you type is passed to mplayer. So you may use this option to play not
+supported yet media, for instance TV channels, VCD, or anything
+supported by mplayer.</li>
+
+<li>You can use the mouse wheel to go forward or backward.</li>
+
+<li>Probably you'll have noticed that when you select some options the
+video window goes black for a moment and then resumes. This is because
+smplayer has to stop mplayer and start it again (with new options) and
+cannot be avoided.</li>
+
+<li>If you play a DVD you'll see that smplayer won't save the settings
+(audio, subtitles and so on), so if you play it again later you will
+have to select your desired options again. Some time ago, smplayer did
+save the settings for DVDs but I removed it. Reasons: resuming playback
+at the same point is not possible (mplayer fault, it doesn't report the
+actual current time) and the disc had to be read twice, one for
+identifying it and other for starting playback. That could be very slow.</li>
+
+<li>Deinterlace. MPlayer has a lot of deinterlace filters. I have chosen 3
+for smplayer: 
+
+ * Lowpass5 (pp=l5). Works well most of the time, even with divx videos
+ which have been badly deinterlaced. But this filter produces some "ghost"
+ effect in movement scenes.
+
+ * Yadif. It seems it works very well with mpeg files at full
+ resolution. No ghosting, but some times the movement is not smooth. The
+ bad part is that uses a lot of CPU.
+
+ * Linear Blend (pp=lb). Produces a lot of ghosting and blurs the
+ image.</li>
+
+<li>Video filters:
+
+ * Autodetect phase.  Most movies and TV series (in PAL world) are not
+ interlaced but progressive. But maybe in the computer they may seem
+ interlaced (this happens to me sometimes with my dvd recorder). It
+ seems that those videos have a field changed or shifted or something
+ like that. "Autodetect phase" fixes it (-vf phase=A).
+
+ * Denoise. This filter removes noise from the image, making it
+ cleaner. But it could also remove a lot of details...
+
+ * Deblock. If the blocks of a video are very noticeable this filter
+ could help a little bit.
+
+ * Dering. Actually I don't know what this filter does...
+
+ * Add noise. Add a little bit of noise to the image. Can be useful to
+ "cover" the blocks with noise or after a denoise, so the image doesn't
+ look so extremely clean.</li>
+</ul>
+<h4><span id="#license">License</span></h4>
+<p> SMPlayer, GUI front-end for MPlayer.<br>
+    Copyright (C) 2006-2012 Ricardo Villalba <rvm@users.sourceforge.net></p>
+
+<p>This program is free software; you can redistribute it and/or modify<br>
+    it under the terms of the GNU General Public License as published by<br>
+    the Free Software Foundation; either version 2 of the License, or<br>
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,<br>
+    but WITHOUT ANY WARRANTY; without even the implied warranty of<br>
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br>
+    GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License<br>
+    along with this program; if not, write to the Free Software<br>
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</p>
 </body>
 </html>
 
