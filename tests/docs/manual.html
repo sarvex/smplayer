@@ -201,7 +201,6 @@ pre {
 <li><a href="#usage">Usage</a></li>
 <li><a href="#features">Features</a></li>
 <ul><li><a href="#features_favs">Favorites</a></li></ul>
-<ul><li><a href="#features_gui">Mini & MPC GUI</a></li></ul>
 <ul><li><a href="#features_plist">Playlists</a></li></ul>
 <ul><li><a href="#features_preview">Video Preview</a></li></ul>
 <ul><li><a href="#features_dvdmenus">DVD Menus</a></li></ul>
@@ -251,7 +250,7 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 <p></p>
 <p>There are some behaviors in SMPlayer that may not be obvious:</p>
 <ul><li>Stop button. Pressing the Stop button once stops the video. If you press Play, the video will resume at the same point. But if you press Stop twice the time position is reset to 0, so Play will start the video from the beginning.</li>
-<li>The pause button. The first time you click on it, the video is paused. The following times it will step to the next frame. This behavior only occurs with the pause button, not with the pause option in the menu.</li>
+<li>Pause button. The first time you click on it, the video is paused. The following times it will step to the next frame. This behavior only occurs with the pause button, not with the pause option in the menu.</li>
 <li>Double clicking in the video window toggles fullscreen.</li>
 <li>The Esc key can be used to exit from fullscreen mode.</li>
 <li>The O key switches OSD modes (the same way MPlayer does).</li>
@@ -275,10 +274,7 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 <h4><span id="features">Features</span></h4>
 
 <h5><span id="features_favs">Favorties List</span></h5>
-<p></p>
-
-<h5><span id="features_gui">Mini & MPC GUI</span></h5>
-<p></p>
+<p>SMPlayer 0.7.0 adds a new Favorites menu. It can be accessed by the Open-&gt;Favorites option or the Favorites icon in the toolbar. You can add multiple submenus. Currently it cannot bookmark a specific time in a video.</p>
 
 <h5><span id="features_plist">Playlist</span></h5>
 <p></p>
@@ -288,14 +284,11 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 
 <h5><span id="features_dvdmenus">DVD Menus</span></h5>
 <p>SMPlayer 0.6.7 adds the possibility to display DVD menus.</p>
-<p>In order to enable, you need:</p>
-<ul>
-<li>Check the option "Enable DVD menus" in Preferences-&gt;Drives.</li>
-<li>Assign the action "Activate option in DVD menus" (Preferences-&gt;Keyboard and mouse) to the left mouse button (so you can select the options in the menus with the mouse).</li>
+<p>In order to enable, you need to enable the option "Enable DVD menus (experimental)" in Preferences-&gt;Drives.
 </ul>
-<p>A recent MPlayer build with dvdnav support is required.</p>
-<p>Note that cache will be automatically DISABLED (dvd menus won't work with it) so this can affect performance.</p>
-<p>WARNING: support for DVD menus is EXPERIMENTAL and NOT complete yet. Currently mplayer has a lot of issues/limitations when using dvdnav, and it doesn't make things easy for front-ends, so the support for the DVD menus in SMPlayer can't be improved any further for the moment.</p>
+<p>A recent MPlayer build with dvdnav support is required (usually included with SMPlayer).</p>
+<p>Note that cache will be automatically DISABLED (DVD menus won't work with it) so this can affect performance.</p>
+<p>WARNING: support for DVD menus is EXPERIMENTAL and NOT complete yet. Currently MPlayer has a lot of issues/limitations when using dvdnav, and it doesn't make things easy for front-ends, so the support for the DVD menus in SMPlayer can't be improved any further for the moment.</p>
 
 <h5><span id="features_subs">Subtitles</span></h5>
 <p>SMPlayer 0.6.2 adds a new dialog which allows you to find subtitle files very easily. The dialog can be opened with the option "Find subtitles on OpenSubtitles.org" in the Subtitles menu. It will automatically look for subtitles for the video you're currently playing (or the previous video if none is playing).</p>
