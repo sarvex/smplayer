@@ -181,8 +181,7 @@ pre {
 <body>
 <h1>SMPlayer</h1>
 <p>SMPlayer is a fully featured front-end for <a href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>, an award-winning open source media player supporting popular video and audio formats such as H.264, DVD, (S)VCDs, DivX, & MP3. SMPlayer is written under the Qt platform and is available for Microsoft Windows and GNU/Linux opertaing systems. There's an optional package available called smplayer-themes. It contains some icon themes for smplayer and it's highly recommended that you install it too.</p>
-<p>SMPlayer Portable Edition is a special version of SMPlayer (for Windows) which tries to not write anything outside from the directory where it is installed, so it can be used from external devices like pendrives. You can get a package from here:<br>
-<a href="https://sourceforge.net/projects/smplayer/files/SMPlayer">https://sourceforge.net/projects/smplayer/files/SMPlayer</a></p>
+<p>SMPlayer Portable Edition is a special version of SMPlayer (for Windows) which tries to not write anything outside from the directory where it is installed, so it can be used from external devices like pendrives. You can get a package from here: <a href="https://sourceforge.net/projects/smplayer/files/SMPlayer">https://sourceforge.net/projects/smplayer/files/SMPlayer</a></p>
 <p>To install it, just uncompress it wherever you want. To run it just double click on smplayer.exe.</p>
 <p>Differences from the normal SMPlayer:</p>
 <p>* By default it will save the ini files in the SMPlayer's folder.<br>
@@ -202,7 +201,7 @@ pre {
 <li><a href="#features">Features</a></li>
 <ul><li><a href="#features_favs">Favorites</a></li></ul>
 <ul><li><a href="#features_plist">Playlists</a></li></ul>
-<ul><li><a href="#features_preview">Video Preview</a></li></ul>
+<ul><li><a href="#features_tv">Television</a></li></ul>
 <ul><li><a href="#features_dvdmenus">DVD Menus</a></li></ul>
 <ul><li><a href="#features_subtitles">Subtitles</a></li></ul>
 <ul><li><a href="#features_help">Integrated Help</a></li></ul>
@@ -279,8 +278,91 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 <h5><span id="features_plist">Playlist</span></h5>
 <p></p>
 
-<h5><span id="features_preview">Video Preview</span></h5>
-<p></p>
+<h5><span id="features_tv">Television (Linux)</span></h5>
+<p>Since 0.6.8 it's possible to watch the TV in SMPlayer (dvb:// and tv://).
+
+<p>SMPlayer doesn't include any option to scan for channels, so mplayer must be configured to tune to TV channels.</p>
+
+<p>That means that the following:</p>
+
+<pre>mplayer dvb://
+mplayer tv://</pre><p></p>
+
+<p>should work (should display a TV channel).</p>
+
+<p>The following should tune to the specified channel:</p>
+
+<pre>mplayer dvb://Channel_name
+mplayer tv://Channel_name</pre><p></p>
+
+<p><b>DVB</b>: The support for SVB in SMPlayer is intented for DVB-T (terrestrial). It can work with DVB-C and DVB-S (cable and satellite) but it hasn't been tested.</p>
+
+<p>SMPlayer will look for the file ~/.mplayer/channels.conf.ter (or ~/.mplayer/channels.conf if that doesn't exist), and the menus Open->TV and Open->Radio will be populated with the channels there (the menu Open->Radio will show the channels without video pid. Notice that for dvb-s and dvb-c the check for audio and video pids will probably fail and all channels will end up in the TV menu).</p>
+
+<p>If you don't have a ~/.mplayer/channels.conf you can create with scan (in Ubuntu is in the dvb-apps package):</p>
+
+<pre>scan initial_file > ~/.mplayer/channels.conf</pre><p></p>
+
+<p>The initial_file contains info about the frequencies that have to be scanned, you'll find a lot in /usr/share/dvb/dvb-t/ (use the one for your town). You can also use w_scan, which doesn't require any initial file.</p>
+
+
+<p><b>TV</b>: The support for analog TV (tv://) in SMPlayer is very basic  (it can recognize a tv:// stream as being a TV channel, but that's all) and configuration has to be done manually.</p>
+
+<p>First you need some lines in your ~/.mplayer/config with the TV configuration (driver, norms, frequencies...). Example:</p>
+
+<pre>tv=driver=v4l:input=0:width=768:height=576:device=/dev/video0:audiorate=48000:n
+orm=PAL:chanlist=europe-west:channels=46-TV_1,43-TV_2,50-TV_3,53-TV_4</pre><p></p>
+
+<p>For more info take a look at the MPlayer manpage.</p>
+
+<p>After that you have to introduce all channels in SMPlayer (Open->TV->Edit).</p>
+
+<p><u>Channel Editor</u></p>
+
+<p>The channel editor allows you to add, modify and remove TV channels. You'll see a table with all channels. Each channel contains 3 fields: icon, name and stream. The name will appear in the menu, the stream is what MPlayer will open to tune the channel. Examples:</p>
+
+<pre>ICON   NAME          STREAM
+       CNN           dvb://CNN
+       BBC           tv://TV_1
+       Webcam        tv://</pre><p></p>
+
+<p>The list of TV channels is saved to ~/.config/smplayer/tv.m3u8, while the list of radio is saved to ~/.config/smplayer/radio.m3u8.</p>
+
+<p>Note 1: By default SMPlayer will scan the file ~/.mplayer/channels.conf on every startup and will add the new channels it finds there. That means that if you delete DVB channels from the editor they will appear again in the next session (SMPlayer will think they are new). To avoid that, there's an option in Preferences->TV to disable the scanning of the channels.conf file.</p>
+
+<p>Note 2: It's possible to set an icon for each channel. The icon will be displayed in the menus. Currently it's possible to set an icon, change it
+but there's no way to remove it... (unless you edit manually the *.m3u8 files)</p>
+
+<p>Note 3: The TV and radio lists can be "misused" as favorite lists, you can enter any other kind of media (internet streams, local files...) not only tv channels.</p>
+
+<p><u>Options for TV</u></p>
+
+<p>Some options have been added for TV:</p>
+<ul>
+ <li>there's a new section for TV in Preferences, which allows for instance to set the default deinterlacer to be use with TV channels.</li>
+ <li>it's possible to set a cache for TV in Preferences -> Performance -> Cache</li>
+</ul>
+</p>
+
+<p><u>Remembering TV Settings</u></p>
+
+<p>One nice thing: the settings of TV channels are remembered. That means that filters, options (like zoom) and so on will be remembered when you tune that channel again.</p>
+
+<p><u>(Advanced) Additional Audio Tracks in DVB Channels</u></p>
+
+<p>You'll notice that when you tune a dvb channel only the first audio track is available. To fix the problem you need to add manually the additional audio pids to channels.conf. For instance, take a look at this line taken from ~/.mplayer/channels.conf:</p>
+
+<pre>ANTENA.NEOX:858000000:INVERSION_AUTO:BANDWIDTH_8_MHZ:FEC_2_3:FEC_2_3:QAM_64:TRANSMISSION_MODE_8K:GUARD_INTERVAL_1_4:HIERARCHY_NONE:501:503:141</pre><p></p>
+
+<p>Let's see the 3 last fields:</p>
+<pre>501:503:141</pre><p></p>
+
+<p>501 is the video pid, 503 is the audio pid (and 141 I think is the teletext pid). Several audio pids can be added separated by "+". For instance:</p>
+
+<pre>501:503+504:141</pre><p></p>
+
+<p>This way the 2nd audio track (504) will be available when you watch that channel in SMPlayer. Notice that to be able to actually switch audio tracks in DVB channels you need a recent version of MPlayer (r29381).
+</p>
 
 <h5><span id="features_dvdmenus">DVD Menus</span></h5>
 <p>SMPlayer 0.6.7 adds the possibility to display DVD menus.</p>
