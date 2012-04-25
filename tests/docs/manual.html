@@ -171,7 +171,7 @@ li {
 pre {
   background-color: #E0E0E0;
   padding: 6px;
-  width: 950px;
+  width: 1000px;
   font-family: Consolas,monospace;
   line-height: 19px;
 }
@@ -181,31 +181,27 @@ pre {
 <body>
 <h1>SMPlayer</h1>
 <p>SMPlayer is a fully featured front-end for <a href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>, an award-winning open source media player supporting popular video and audio formats such as H.264, DVD, (S)VCDs, DivX, & MP3. SMPlayer is written under the Qt platform and is available for Microsoft Windows and GNU/Linux opertaing systems. There's an optional package available called smplayer-themes. It contains some icon themes for smplayer and it's highly recommended that you install it too.</p>
-<p>SMPlayer Portable Edition is a special version of SMPlayer (for Windows) which tries to not write anything outside from the directory where it is installed, so it can be used from external devices like pendrives. You can get a package from here: <a href="https://sourceforge.net/projects/smplayer/files/SMPlayer">https://sourceforge.net/projects/smplayer/files/SMPlayer</a></p>
-<p>To install it, just uncompress it wherever you want. To run it just double click on smplayer.exe.</p>
-<p>Differences from the normal SMPlayer:</p>
-<p>* By default it will save the ini files in the SMPlayer's folder.<br>
-* It won't try to create the SMPlayer home directory or the screenshot directory (C:\Documents and Settings\User\.smplayer\...)<br>
-* It won't write anything in the Windows registry (for that reason the file associations are not available in this version)<br>
-* The screenshot option is disabled by default.</p>
-<p>To identify whether you are running the portable edition,go to Help -> About SMPlayer, it should say something like this: "Version: 0.8.0 (Portable Edition)"</p>
-<p>SMTube is a browser for searching for, recording and launching YouTube™ videos within SMPlayer. SMTube is derived from <a href="http://www.umplayer.com/">UMPlayer</a>.</p>
-<p>Visit the web for updates and support:<br>
+
+<p>Visit the web for updates:<br>
 <a href="http://smplayer.berlios.de">http://smplayer.berlios.de</a><br>
 <a href="http://smplayer.sourceforge.net">http://smplayer.sourceforge.net</a></p>
-<p>Forum:<br>
-<a href="http://smplayer.sourceforge.net/forum">http://smplayer.sourceforge.net/forum</a></p>
+<p>Support:<br>
+<a href="http://smplayer.sourceforge.net/forum">SMPlayer Forum</a><br>
+<a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573">SMPlayer Bug Tracker</a></p>
+
 <h4><span>Table of Contents</span></h4>
 <ol>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#features">Features</a></li>
+<ul><li><a href="#features_pe">Portable Edition</a></li></ul>
+<ul><li><a href="#features_ytb">YouTube&trade; Browser</a></li></ul>
 <ul><li><a href="#features_favs">Favorites</a></li></ul>
-<ul><li><a href="#features_plist">Playlists</a></li></ul>
 <ul><li><a href="#features_tv">Television</a></li></ul>
 <ul><li><a href="#features_dvdmenus">DVD Menus</a></li></ul>
 <ul><li><a href="#features_subtitles">Subtitles</a></li></ul>
 <ul><li><a href="#features_help">Integrated Help</a></li></ul>
 <li><a href="#kial">Known Issues & Limitations</a></li>
+<li><a href="#help">Additional Help & Support</a></li>
 <li><a href="#license">License</a></li>
 </ol>
 
@@ -272,11 +268,22 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 </ul>
 <h4><span id="features">Features</span></h4>
 
+<h5><span id="features_pe">Portable Edition</span></h5>
+<p>SMPlayer Portable Edition is a special version of SMPlayer (for Windows) which tries to not write anything outside from the directory where it is installed, so it can be used from external devices like pendrives. You can get a package from here: <a href="https://sourceforge.net/projects/smplayer/files/SMPlayer">https://sourceforge.net/projects/smplayer/files/SMPlayer</a></p>
+<p>To install it, just uncompress it wherever you want. To run it just double click on smplayer.exe.</p>
+<p>Differences from the normal SMPlayer:</p>
+<p>* By default it will save the ini files in the SMPlayer's folder.<br>
+* It won't try to create the SMPlayer home directory or the screenshot directory (C:\Documents and Settings\User\.smplayer\...)<br>
+* It won't write anything in the Windows registry (for that reason the file associations are not available in this version)<br>
+* The screenshot option is disabled by default.</p>
+<p>To identify whether you are running the portable edition,go to Help -> About SMPlayer, it should say something like this: "Version: 0.8.0 (Portable Edition)"</p>
+
+<h5><span id="features_ytb">YouTube&trade; Browser</span></h5>
+
+<p>SMTube is a browser for searching for, recording and launching YouTube™ videos within SMPlayer. SMTube is derived from <a href="http://www.umplayer.com/">UMPlayer</a>. SMTube can either be launched directly by running smtube.exe, from the <i>Options</i> menu, or pressing F11 while SMPlayer is open.</p>
+
 <h5><span id="features_favs">Favorties List</span></h5>
 <p>SMPlayer 0.7.0 adds a new Favorites menu. It can be accessed by the Open-&gt;Favorites option or the Favorites icon in the toolbar. You can add multiple submenus. Currently it cannot bookmark a specific time in a video.</p>
-
-<h5><span id="features_plist">Playlist</span></h5>
-<p></p>
 
 <h5><span id="features_tv">Television (Linux)</span></h5>
 <p>Since 0.6.8 it's possible to watch the TV in SMPlayer (dvb:// and tv://).
@@ -390,6 +397,17 @@ but there's no way to remove it... (unless you edit manually the *.m3u8 files)</
 <li>DVD Menus: if the audio track is changed, when you return to the dvd menu the sound may be lost (while printing a lot of error messages "Too many video packets in the buffer").</li>
 <li>DVD Menus: subtitles may disappear after seeking.</li>
 </ul>
+
+<h4><span id="help">Additional Help & Support</span></h4>
+<p>If your problem is still not solved by reading the FAQ or searching the forum, feel free to open a new ticket in the SMPlayer bug tracker or forum (links at the top of this document). To help better resolve your issue please provide the following information:
+<ul>
+  <li>SMPlayer version</li>
+  <li>Operating system & version/distro (e.g. Windows 7, Ubuntu 11.10)</li>
+  <li>SMPlayer and MPlayer logs (<i>Options -&gt; View logs</i>)</li>
+  <li>Any specifics you can provide, such as what type of files (e.g. audio, videos, certain filetypes) causes the crash or misbehavior</li>
+</ul>
+</p>
+
 <h4><span id="license">License</span></h4>
 <p> SMPlayer, GUI front-end for MPlayer.<br>
     Copyright (C) 2006-2012 Ricardo Villalba <rvm@users.sourceforge.net></p>
