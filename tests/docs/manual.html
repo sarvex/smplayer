@@ -187,19 +187,21 @@ pre {
 <a href="http://smplayer.sourceforge.net">http://smplayer.sourceforge.net</a></p>
 <p>Support:<br>
 <a href="http://smplayer.sourceforge.net/forum">SMPlayer Forum</a><br>
-<a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573">SMPlayer Bug Tracker</a></p>
+<a href="http://sourceforge.net/tracker/?group_id=185512">SMPlayer Bug Tracker</a></p>
 
 <h4><span>Table of Contents</span></h4>
 <ol>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#features">Features</a></li>
-<ul><li><a href="#features_pe">Portable Edition</a></li></ul>
-<ul><li><a href="#features_ytb">YouTube&trade; Browser</a></li></ul>
-<ul><li><a href="#features_favs">Favorites</a></li></ul>
-<ul><li><a href="#features_tv">Television</a></li></ul>
-<ul><li><a href="#features_dvdmenus">DVD Menus</a></li></ul>
-<ul><li><a href="#features_subtitles">Subtitles</a></li></ul>
-<ul><li><a href="#features_help">Integrated Help</a></li></ul>
+  <ul>
+  <li><a href="#features_pe">Portable Edition</a></li>
+  <li><a href="#features_ytb">YouTube&trade; Browser</a></li>
+  <li><a href="#features_favs">Favorites</a></li>
+  <li><a href="#features_tv">Television</a></li>
+  <li><a href="#features_dvdmenus">DVD Menus</a></li>
+  <li><a href="#features_subtitles">Subtitles</a></li>
+  <li><a href="#features_help">Integrated Help</a></li>
+  </ul>
 <li><a href="#kial">Known Issues & Limitations</a></li>
 <li><a href="#help">Additional Help & Support</a></li>
 <li><a href="#license">License</a></li>
@@ -252,19 +254,17 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 <li>The option Open->URL doesn't check if you really typed a URL. What you type is passed to MPlayer. So you may use this option to play not supported yet media, for instance TV channels, Blu-ray, or anything supported by MPlayer.</li>
 <li>You can use the mouse wheel to go forward or backward.</li>
 <li>
-<p>Deinterlace. MPlayer has a lot of deinterlace filters. I have chosen 3 for SMPlayer: 
+<p>Deinterlace. MPlayer has a lot of deinterlace filters. I have chosen 3 for SMPlayer:</p>
 <p><b>Lowpass5 (pp=l5).</b> Works well most of the time, even with divx videos which have been badly deinterlaced. But this filter produces some "ghost" effect in movement scenes.</p>
 <p><b>Yadif.</b> It seems it works very well with mpeg files at full resolution. No ghosting, but some times the movement is not smooth. The bad part is that uses a lot of CPU.</p>
 <p><b>Linear Blnd (pp=lb).</b> Produces a lot of ghosting and blurs the image.</p>
-</p>
 </li>
-<li>Video filters:
-<p>
+<li><p>Video filters:</p>
 <p><b>Autodetect phase.</b>  Most movies and TV series (in PAL world) are not interlaced but progressive. But maybe in the computer they may seem interlaced (this happens to me sometimes with my dvd recorder). It seems that those videos have a field changed or shifted or something like that. "Autodetect phase" fixes it (-vf phase=A).</p>
 <p><b>Denoise.</b> This filter removes noise from the image, making it cleaner. But it could also remove a lot of details...</p>
 <p><b>Deblock.</b> If the blocks of a video are very noticeable this filter could help a little bit.</p>
 <p><b>Dering.</b> The dering filter is available for mencoder mpeg-4 and xvid codecs. It reduces ring-type artifacts present in the source movie.</p>
-<p><b>Add noise.</b> Add a little bit of noise to the image. Can be useful to "cover" the blocks with noise or after a denoise, so the image doesn't look so extremely clean.</p></li></p>
+<p><b>Add noise.</b> Add a little bit of noise to the image. Can be useful to "cover" the blocks with noise or after a denoise, so the image doesn't look so extremely clean.</p></li>
 </ul>
 <h4><span id="features">Features</span></h4>
 
@@ -276,10 +276,9 @@ Usage: <b>smplayer [-minigui] [-defaultgui] [-mpcgui] [-config-path directory] [
 * It won't try to create the SMPlayer home directory or the screenshot directory (C:\Documents and Settings\User\.smplayer\...)<br>
 * It won't write anything in the Windows registry (for that reason the file associations are not available in this version)<br>
 * The screenshot option is disabled by default.</p>
-<p>To identify whether you are running the portable edition,go to Help -> About SMPlayer, it should say something like this: "Version: 0.8.0 (Portable Edition)"</p>
+<p>To identify whether you are running the portable edition, go to Help -> About SMPlayer, it should say something like this: "Version: 0.8.0 (Portable Edition)"</p>
 
 <h5><span id="features_ytb">YouTube&trade; Browser</span></h5>
-
 <p>SMTube is a browser for searching for, recording and launching YouTube™ videos within SMPlayer. SMTube is derived from <a href="http://www.umplayer.com/">UMPlayer</a>. SMTube can either be launched directly by running smtube.exe, from the <i>Options</i> menu, or pressing F11 while SMPlayer is open.</p>
 
 <h5><span id="features_favs">Favorties List</span></h5>
@@ -349,7 +348,6 @@ but there's no way to remove it... (unless you edit manually the *.m3u8 files)</
  <li>there's a new section for TV in Preferences, which allows for instance to set the default deinterlacer to be use with TV channels.</li>
  <li>it's possible to set a cache for TV in Preferences -> Performance -> Cache</li>
 </ul>
-</p>
 
 <p><u>Remembering TV Settings</u></p>
 
@@ -374,7 +372,6 @@ but there's no way to remove it... (unless you edit manually the *.m3u8 files)</
 <h5><span id="features_dvdmenus">DVD Menus</span></h5>
 <p>SMPlayer 0.6.7 adds the possibility to display DVD menus.</p>
 <p>In order to enable, you need to enable the option "Enable DVD menus (experimental)" in Preferences-&gt;Drives.
-</ul>
 <p>A recent MPlayer build with dvdnav support is required (usually included with SMPlayer).</p>
 <p>Note that cache will be automatically DISABLED (DVD menus won't work with it) so this can affect performance.</p>
 <p>WARNING: support for DVD menus is EXPERIMENTAL and NOT complete yet. Currently MPlayer has a lot of issues/limitations when using dvdnav, and it doesn't make things easy for front-ends, so the support for the DVD menus in SMPlayer can't be improved any further for the moment.</p>
@@ -399,18 +396,17 @@ but there's no way to remove it... (unless you edit manually the *.m3u8 files)</
 </ul>
 
 <h4><span id="help">Additional Help & Support</span></h4>
-<p>If your problem is still not solved by reading the FAQ or searching the forum, feel free to open a new ticket in the SMPlayer bug tracker or forum (links at the top of this document). To help better resolve your issue please provide the following information:
+<p>If your problem is still not solved by reading the FAQ or searching the forum, feel free to open a new ticket in the SMPlayer bug tracker or forum (links at the top of this document). To help better resolve your issue please provide the following information:</p>
 <ul>
   <li>SMPlayer version</li>
-  <li>Operating system & version/distro (e.g. Windows 7, Ubuntu 11.10)</li>
+  <li>Operating system & version/distro (e.g. Windows 7; Ubuntu 11.10)</li>
   <li>SMPlayer and MPlayer logs (<i>Options -&gt; View logs</i>)</li>
   <li>Any specifics you can provide, such as what type of files (e.g. audio, videos, certain filetypes) causes the crash or misbehavior</li>
 </ul>
-</p>
 
 <h4><span id="license">License</span></h4>
 <p> SMPlayer, GUI front-end for MPlayer.<br>
-    Copyright (C) 2006-2012 Ricardo Villalba <rvm@users.sourceforge.net></p>
+    Copyright (C) 2006-2012 Ricardo Villalba &lt;rvm@users.sourceforge.net&gt;</p>
 
 <p>This program is free software; you can redistribute it and/or modify<br>
     it under the terms of the GNU General Public License as published by<br>
