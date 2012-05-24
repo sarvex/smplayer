@@ -1,7 +1,7 @@
 all: es.po nl.po fr.po ja.po pl.po ro.po uk.po ru.po hu.po zh.po de.po pt.po it.po fi.po lt.po eu.po
 
 FILES=../index.php ../info.php ../header.php ../footer.php ../downloads.php \
-      ../documentation.php ../screenshots.php ../latest.php
+      ../documentation.php ../screenshots.php ../latest.php ../donate.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \

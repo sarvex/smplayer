@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-07 23:14+0200\n"
+"POT-Creation-Date: 2012-05-25 00:15+0200\n"
 "PO-Revision-Date: 2008-10-02 10:55+0200\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -17,6 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: ../donate.php:5
+msgid "SMPlayer - Donate"
+msgstr ""
+
+#: ../donate.php:28
+msgid ""
+"If you like SMPlayer, a really good way to support it is by sending a "
+"donation, even the smallest one is highly appreciated."
+msgstr ""
+
+#: ../donate.php:30
+msgid "Click on the following button to send a donation:"
+msgstr ""
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -256,22 +270,26 @@ msgid "Downloads"
 msgstr "Pobieranie"
 
 #: ../header.php:19
+msgid "Donate"
+msgstr ""
+
+#: ../header.php:20
 msgid "Forum"
 msgstr "Forum"
 
-#: ../header.php:20
+#: ../header.php:21
 msgid "Bug Tracking"
 msgstr "Zgłoś błąd"
 
-#: ../header.php:21
+#: ../header.php:22
 msgid "Feature Requests"
 msgstr "Prośby nowych funkcji"
 
-#: ../header.php:22
+#: ../header.php:23
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:43
+#: ../header.php:49
 msgid "The SMPlayer Project"
 msgstr "SMPlayer"
 
@@ -466,11 +484,35 @@ msgstr "Mini GUI"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "More info"
-#~ msgstr "Więcej informacji"
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Lista odtwarzania wbudowana w okno główne programu"
 
-#~ msgid "You can get updated versions <a href=%1>here</a>"
-#~ msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer uruchomiony w środowisku Gnome"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Wideo wyświetlające napisy srt"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer dostępny jest w ponad 20 językach"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer uruchomiony w nowym KDE 4"
+
+#~ msgid "1970"
+#~ msgstr "1970"
+
+#~ msgid "Donations"
+#~ msgstr "Dotacje"
+
+#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
+#~ msgstr "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayera"
+
+#~ msgid "Compiled on Ubuntu %1."
+#~ msgstr "Kompilowany na Ubuntu %1."
+
+#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
+#~ msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
 
 #~ msgid ""
 #~ "The version of mplayer included in Ubuntu is a little bit old (%1). "
@@ -482,32 +524,8 @@ msgstr ""
 #~ "potrafi obsłużyć kilka nowych funkcji mplayera, a więc nowsza wersja \n"
 #~ "jest wysoce rekomendowana."
 
-#~ msgid "Package for AMD64. Compiled on Ubuntu %1."
-#~ msgstr "Pakiet dla AMD64. Kompilowany na Ubuntu %1."
+#~ msgid "You can get updated versions <a href=%1>here</a>"
+#~ msgstr "<a href=%1>Tutaj</a> możesz pobrać zaktualizowaną wersję."
 
-#~ msgid "Compiled on Ubuntu %1."
-#~ msgstr "Kompilowany na Ubuntu %1."
-
-#~ msgid "Compiled on OpenSuSE 10.2. Requires: libqt4 and mplayer."
-#~ msgstr "Kompilowany na OpenSuSE 10.2. Wymaga: libqt4 i mplayera"
-
-#~ msgid "Donations"
-#~ msgstr "Dotacje"
-
-#~ msgid "1970"
-#~ msgstr "1970"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer uruchomiony w nowym KDE 4"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer dostępny jest w ponad 20 językach"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Wideo wyświetlające napisy srt"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer uruchomiony w środowisku Gnome"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Lista odtwarzania wbudowana w okno główne programu"
+#~ msgid "More info"
+#~ msgstr "Więcej informacji"

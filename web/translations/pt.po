@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-07 23:14+0200\n"
+"POT-Creation-Date: 2012-05-25 00:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,6 +17,20 @@ msgstr ""
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: ../donate.php:5
+msgid "SMPlayer - Donate"
+msgstr ""
+
+#: ../donate.php:28
+msgid ""
+"If you like SMPlayer, a really good way to support it is by sending a "
+"donation, even the smallest one is highly appreciated."
+msgstr ""
+
+#: ../donate.php:30
+msgid "Click on the following button to send a donation:"
+msgstr ""
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -114,7 +128,8 @@ msgid ""
 "USB flash drives. It doesn't require installation, just uncompress the \n"
 "package wherever you want and double click on smplayer.exe to run it."
 msgstr ""
-"Versão portátil do SMPlayer. Pode ser executada em dispositivos externos como\n"
+"Versão portátil do SMPlayer. Pode ser executada em dispositivos externos "
+"como\n"
 "unidades USB. Não requer instalação. Só precisa descomprimir o pacote para\n"
 "um local à sua escolha e clicar duas vezes em smplayer.exe para o executar."
 
@@ -135,8 +150,10 @@ msgid "Linux"
 msgstr "Linux"
 
 #: ../downloads.php:171
-msgid "Read the file Install.txt included in the package to know how compile it."
-msgstr "Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
+msgid ""
+"Read the file Install.txt included in the package to know how compile it."
+msgstr ""
+"Leia o ficheiro Install.txt incluído no pacote para saber como compilar."
 
 #: ../downloads.php:182
 msgid "Allows to play and download videos from YouTube. Source code."
@@ -219,11 +236,13 @@ msgstr "por MuldeR"
 #: ../downloads.php:293
 msgid ""
 "This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also provides\n"
+"the SVN repository) as well as a recent version of MPlayer. It also "
+"provides\n"
 "its own installer, mplayer builds optimized for several processors and\n"
 "binary codecs."
 msgstr ""
-"Este pacote contém uma versão recente do SMPlayer (retirada do repositório SVN)\n"
+"Este pacote contém uma versão recente do SMPlayer (retirada do repositório "
+"SVN)\n"
 "bem como uma versão recente do MPlayer. Também providencia o instalador,\n"
 "versões Mplayer otimizadas para os diversos processadores e\n"
 "os codificadores."
@@ -258,22 +277,26 @@ msgid "Downloads"
 msgstr "Transferências"
 
 #: ../header.php:19
+msgid "Donate"
+msgstr ""
+
+#: ../header.php:20
 msgid "Forum"
 msgstr "Fórum"
 
-#: ../header.php:20
+#: ../header.php:21
 msgid "Bug Tracking"
 msgstr "Erros"
 
-#: ../header.php:21
+#: ../header.php:22
 msgid "Feature Requests"
 msgstr "Pedidos de funções"
 
-#: ../header.php:22
+#: ../header.php:23
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:43
+#: ../header.php:49
 msgid "The SMPlayer Project"
 msgstr "O projeto SMPlayer"
 
@@ -463,4 +486,3 @@ msgstr "O mini GUI"
 #: ../screenshots.php:61
 msgid "Possibility to search for subtitles"
 msgstr "Possibilidade de procurar legendas"
-

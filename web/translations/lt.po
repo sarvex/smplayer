@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-07 23:14+0200\n"
+"POT-Creation-Date: 2012-05-25 00:15+0200\n"
 "PO-Revision-Date: 2012-04-03 14:29+0300\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -18,6 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../donate.php:5
+msgid "SMPlayer - Donate"
+msgstr ""
+
+#: ../donate.php:28
+msgid ""
+"If you like SMPlayer, a really good way to support it is by sending a "
+"donation, even the smallest one is highly appreciated."
+msgstr ""
+
+#: ../donate.php:30
+msgid "Click on the following button to send a donation:"
+msgstr ""
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -260,22 +274,26 @@ msgid "Downloads"
 msgstr "Atsisiuntimai"
 
 #: ../header.php:19
+msgid "Donate"
+msgstr ""
+
+#: ../header.php:20
 msgid "Forum"
 msgstr "Forumas"
 
-#: ../header.php:20
+#: ../header.php:21
 msgid "Bug Tracking"
 msgstr "Pranešimai apie klaidas"
 
-#: ../header.php:21
+#: ../header.php:22
 msgid "Feature Requests"
 msgstr "Naujų galimybių prašymai"
 
-#: ../header.php:22
+#: ../header.php:23
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:43
+#: ../header.php:49
 msgid "The SMPlayer Project"
 msgstr "SMPlayer projektas"
 
@@ -471,21 +489,6 @@ msgstr "Minimali grafinė sąsaja"
 msgid "Possibility to search for subtitles"
 msgstr "Galimybė ieškoti subtitrų"
 
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer veikia su nauja KDE 4"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer yra išverstas į daugiau nei 20 kalbų"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Vaizdo failai rodo srt subtitrus"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer veikia su Gnome"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Grojaraštis gali būti įterpiamas į pagrindinį langą"
-
 #~ msgid ""
 #~ "This package contains smplayer, shared libraries, translation \n"
 #~ "files and icon themes. During the installation a recent version of\n"
@@ -497,3 +500,18 @@ msgstr "Galimybė ieškoti subtitrų"
 #~ "ir piktogramų temos. Įdiegimo metu bus parsiųsta ir įdiegta naujausia \n"
 #~ "mplayer versija. Jei norite galite įdiegti nebūtinus kodekus (būtina\n"
 #~ "tik keliems formatams pvz. naujiem RealVideo variantam)."
+
+#~ msgid "The playlist can be embedded in the main window"
+#~ msgstr "Grojaraštis gali būti įterpiamas į pagrindinį langą"
+
+#~ msgid "SMPlayer running on Gnome"
+#~ msgstr "SMPlayer veikia su Gnome"
+
+#~ msgid "A video displaying a srt subtitle"
+#~ msgstr "Vaizdo failai rodo srt subtitrus"
+
+#~ msgid "SMPlayer is translated into more than 20 languages"
+#~ msgstr "SMPlayer yra išverstas į daugiau nei 20 kalbų"
+
+#~ msgid "SMPlayer running on the new KDE 4"
+#~ msgstr "SMPlayer veikia su nauja KDE 4"
