@@ -16,6 +16,7 @@ function header_print_links($rel_path="") {
 	header_print_link(get_tr("Main"), $rel_path."index.php");
 	header_print_link(get_tr("Screenshots"), $rel_path."screenshots.php");
 	header_print_link(get_tr("Downloads"), $rel_path."downloads.php");
+	header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", true);
 	header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", true);
 	header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", true);
 	header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", true);
@@ -41,7 +42,7 @@ function print_header($rel_path="") {
 	<div id="sm_site-description">
 		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" border="0" alt="" title=""></a>'; ?>
 		<h1><?php tr("The SMPlayer Project"); ?></h1>
-		<p><?php /*tr("Play anything"); echo " &bull; "; tr("Forget about codecs");*/ ?></p>
+		<p><a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a></p>
 	</div>
 
 	<div id="sm_right-side">
