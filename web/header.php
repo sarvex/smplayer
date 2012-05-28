@@ -16,7 +16,6 @@ function header_print_links($rel_path="") {
 	header_print_link(get_tr("Main"), $rel_path."index.php");
 	header_print_link(get_tr("Screenshots"), $rel_path."screenshots.php");
 	header_print_link(get_tr("Downloads"), $rel_path."downloads.php");
-	header_print_link(get_tr("Donate"), $rel_path."donate.php");
 	header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", true);
 	header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", true);
 	header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", true);
@@ -26,18 +25,13 @@ function header_print_links($rel_path="") {
 function print_host_logo() {
 	global $site;
 
-	if ($site == "sourceforge") {
-		?>
-		<a href="http://sourceforge.net/projects/smplayer"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=185512&amp;type=13" width="120" height="30" alt="Get SMPlayer at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-		<?php
-	}
-	else {
+	if ($site == "sourceforge") 
+		echo "<a href=\"http://sourceforge.net\"><img src=\"http://sflogo.sourceforge.net/sflogo.php?group_id=185512&amp;type=2\" width=\"125\" height=\"37\" border=\"0\" alt=\"SourceForge.net Logo\"></a>";
+	else
 		echo "<a href=\"http://developer.berlios.de\"><img src=\"http://developer.berlios.de/bslogo.php?group_id=9394\" width=\"124\" height=\"32\" border=\"0\" alt=\"BerliOS Logo\"></a>";
-	}
 }
 
 function print_header($rel_path="") {
-	global $site;
 ?>
 <div class="sm_headerbar">
 	<div class="inner">
@@ -47,16 +41,7 @@ function print_header($rel_path="") {
 	<div id="sm_site-description">
 		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" border="0" alt="" title=""></a>'; ?>
 		<h1><?php tr("The SMPlayer Project"); ?></h1>
-		<p><?php
-				if ($site == "sourceforge") {
-				?>
-					<a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a>
-				<?php
-				} else {
-					include("donate_button.php"); 
-				}
-				?>
-		</p>
+		<p><?php /*tr("Play anything"); echo " &bull; "; tr("Forget about codecs");*/ ?></p>
 	</div>
 
 	<div id="sm_right-side">

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-25 00:15+0200\n"
+"POT-Creation-Date: 2012-05-28 23:59+0200\n"
 "PO-Revision-Date: 2010-01-24 18:15+0200\n"
 "Last-Translator: Olli <ollinpostit@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,20 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../donate.php:5
-msgid "SMPlayer - Donate"
-msgstr ""
-
-#: ../donate.php:28
-msgid ""
-"If you like SMPlayer, a really good way to support it is by sending a "
-"donation, even the smallest one is highly appreciated."
-msgstr ""
-
-#: ../donate.php:30
-msgid "Click on the following button to send a donation:"
-msgstr ""
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -271,26 +257,22 @@ msgid "Downloads"
 msgstr "Lataukset"
 
 #: ../header.php:19
-msgid "Donate"
-msgstr ""
-
-#: ../header.php:20
 msgid "Forum"
 msgstr "Keskustelualue"
 
-#: ../header.php:21
+#: ../header.php:20
 msgid "Bug Tracking"
 msgstr "Ohjelmavirheiden tarkkailu"
 
-#: ../header.php:22
+#: ../header.php:21
 msgid "Feature Requests"
 msgstr "Ominaisuuspyynnöt"
 
-#: ../header.php:23
+#: ../header.php:22
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:49
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "SMPlayer-projekti"
 
@@ -490,43 +472,3 @@ msgstr "Pelkistetty ikkuna"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid ""
-#~ "This package contains smplayer, shared libraries, translation \n"
-#~ "files and icon themes. During the installation a recent version of\n"
-#~ "mplayer will be downloaded and installed. Optionally you can also\n"
-#~ "install some additional codecs (necessary only for a few formats, \n"
-#~ "like newer RealVideo variants)."
-#~ msgstr ""
-#~ "Tämä paketti sisältää smplayerin, jaetut kirjastot, käännös- \n"
-#~ "tiedostot ja kuvaketeemat. Asennuksen aikana mplayerin viimeisin\n"
-#~ "versio ladataan ja asennetaan. Vapaaehtoisesti voit myös\n"
-#~ "asentaa lisää koodekkeja (tarpeellinen vain muutamille muodoille, \n"
-#~ "kuten uudemmat RealVideo-muunnokset)"
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Toistolista voidaan sisällyttää pääikkunaan"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer käynnissä Gnomella"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Video, joka näyttää srt-tekstitystä"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer on käännetty useammalle kuin 20 eri kielelle"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer käynnissä uudella KDE 4:llä"
-
-#~ msgid "Play anything"
-#~ msgstr "Toista mitä tahansa"
-
-#~ msgid "Forget about codecs"
-#~ msgstr "Unohda koodekit"
-
-#~ msgid ""
-#~ "You can get deb packages for Ubuntu (gutsy, hardy, intrepid and jaunty)\n"
-#~ "from this PPA:"
-#~ msgstr ""
-#~ "Voit hakea deb-paketit Ubuntulle (gutsy, hardy, intrepid ja jaunty)\n"
-#~ "tästä PPA:sta:"

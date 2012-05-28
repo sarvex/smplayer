@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-25 00:15+0200\n"
+"POT-Creation-Date: 2012-05-28 23:59+0200\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -21,20 +21,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
-
-#: ../donate.php:5
-msgid "SMPlayer - Donate"
-msgstr ""
-
-#: ../donate.php:28
-msgid ""
-"If you like SMPlayer, a really good way to support it is by sending a "
-"donation, even the smallest one is highly appreciated."
-msgstr ""
-
-#: ../donate.php:30
-msgid "Click on the following button to send a donation:"
-msgstr ""
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -271,26 +257,22 @@ msgid "Downloads"
 msgstr "Загрузки"
 
 #: ../header.php:19
-msgid "Donate"
-msgstr ""
-
-#: ../header.php:20
 msgid "Forum"
 msgstr "Форум"
 
-#: ../header.php:21
+#: ../header.php:20
 msgid "Bug Tracking"
 msgstr "Отслеживание ошибок"
 
-#: ../header.php:22
+#: ../header.php:21
 msgid "Feature Requests"
 msgstr "Особые пожелания"
 
-#: ../header.php:23
+#: ../header.php:22
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../header.php:49
+#: ../header.php:43
 msgid "The SMPlayer Project"
 msgstr "Проект SMPlayer"
 
@@ -484,30 +466,3 @@ msgstr "Мини GUI"
 msgid "Possibility to search for subtitles"
 msgstr "Возможность поиска субтитров"
 
-#~ msgid ""
-#~ "This package contains smplayer, shared libraries, translation \n"
-#~ "files and icon themes. During the installation a recent version of\n"
-#~ "mplayer will be downloaded and installed. Optionally you can also\n"
-#~ "install some additional codecs (necessary only for a few formats, \n"
-#~ "like newer RealVideo variants)."
-#~ msgstr ""
-#~ "Этот пакет включает smplayer, необходимые библиотеки, файлы переводов \n"
-#~ "и темы иконок. При инсталляции будет загружена и установлена последняя \n"
-#~ "последняя версия mplayer. Опционально вы можете также установить "
-#~ "некоторые \n"
-#~ "дополнительные кодеки (нужны лишь для некоторых форматов вроде RealVideo)."
-
-#~ msgid "The playlist can be embedded in the main window"
-#~ msgstr "Список может быть встроен в главное окно"
-
-#~ msgid "SMPlayer running on Gnome"
-#~ msgstr "SMPlayer, запущенный в Gnome"
-
-#~ msgid "A video displaying a srt subtitle"
-#~ msgstr "Видео с отображением srt-субтитров"
-
-#~ msgid "SMPlayer is translated into more than 20 languages"
-#~ msgstr "SMPlayer переведён более чем на 20 языков"
-
-#~ msgid "SMPlayer running on the new KDE 4"
-#~ msgstr "SMPlayer, запущенный в новом KDE 4"
