@@ -1,6 +1,6 @@
 ﻿; Installer script for win32 SMPlayer
 ; Written by redxii (redxii@users.sourceforge.net)
-; Tested/Developed with Unicode NSIS 2.46
+; Tested/Developed with Unicode NSIS 2.46.5
 
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
@@ -101,6 +101,7 @@
   Var Reinstall_UninstallButton
   Var Reinstall_UninstallButton_State
   Var SMPlayer_Path
+  Var SMPlayer_UnStrPath
   Var SMPlayer_StartMenuFolder
 
 ;--------------------------------
@@ -268,13 +269,13 @@ Section $(Section_SMPlayer) SecSMPlayer
   ${If} $Reinstall_Uninstall == 1
 
     ${If} $Reinstall_UninstallButton_State == 1
-      Exec '"$SMPlayer_Path\uninst.exe" /X'
+      Exec '"$SMPlayer_UnStrPath" /X'
       Quit
     ${ElseIf} $Reinstall_OverwriteButton_State == 1
       ${If} "$INSTDIR" == "$SMPlayer_Path"
-        ExecWait '"$SMPlayer_Path\uninst.exe" /S /R _?=$SMPlayer_Path'
+        ExecWait '"$SMPlayer_UnStrPath" /S /R _?=$SMPlayer_Path'
       ${Else}
-        ExecWait '"$SMPlayer_Path\uninst.exe" /S /R'
+        ExecWait '"$SMPlayer_UnStrPath" /S /R'
       ${EndIf}
     ${EndIf}
 
@@ -312,7 +313,7 @@ SectionEnd
 ;Shortcuts
 SectionGroup $(ShortcutGroupTitle)
 
-  ${MementoUnselectedSection} $(Section_DesktopShortcut) SecDesktopShortcut
+  ${MementoSection} $(Section_DesktopShortcut) SecDesktopShortcut
 
     SetOutPath "$INSTDIR"
     CreateShortCut "$DESKTOP\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
@@ -353,8 +354,6 @@ SectionGroup $(MPlayerGroupTitle)
 
     SetOutPath "$INSTDIR\mplayer"
     File "mencoder\mencoder.exe"
-    File "mencoder\mplayer.html"
-    File "mencoder\vfw2menc.exe"
 
   ${MementoSectionEnd}
 
@@ -414,7 +413,7 @@ Section -Post
 !endif
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayVersion" "${SMPLAYER_VERSION}"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.berlios.de/forum"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.sf.net/forum"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "Publisher" "Ricardo Villalba"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLInfoAbout" "http://smplayer.sf.net"
@@ -474,9 +473,11 @@ ${MementoSectionDone}
   !insertmacro ${_action} ".mpv"
   !insertmacro ${_action} ".mqv"
   !insertmacro ${_action} ".nsv"
+  !insertmacro ${_action} ".oga"
   !insertmacro ${_action} ".ogg"
   !insertmacro ${_action} ".ogm"
   !insertmacro ${_action} ".ogv"
+  !insertmacro ${_action} ".ogx"
   !insertmacro ${_action} ".pls"
   !insertmacro ${_action} ".ra"
   !insertmacro ${_action} ".ram"
@@ -575,7 +576,7 @@ Function .onInit
 
 !ifdef WIN64
   ${IfNot} ${RunningX64}
-    MessageBox MB_OK|MB_ICONSTOP "A 64-bit Windows operating system is required to install this software."
+    MessageBox MB_OK|MB_ICONSTOP $(Win64_Required)
     Abort
   ${EndIf}
 
@@ -584,7 +585,7 @@ Function .onInit
   ReadRegStr $R0 HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString"
 
   IfErrors +3 0
-    MessageBox MB_OK|MB_ICONSTOP "An existing 32-bit installation of SMPlayer exists. You must uninstall 32-bit SMPlayer first."
+    MessageBox MB_OK|MB_ICONSTOP $(Existing_32bitInst)
     Abort
   
   SetRegView 64
@@ -595,7 +596,7 @@ Function .onInit
     ReadRegStr $R0 HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString"
 
     IfErrors +3 0
-      MessageBox MB_OK|MB_ICONSTOP "An existing 64-bit installation of SMPlayer exists. You must uninstall 64-bit SMPlayer first."
+      MessageBox MB_OK|MB_ICONSTOP $(Existing_64bitInst)
       Abort
     
     SetRegView 32
@@ -655,6 +656,7 @@ Function CheckPreviousVersion
 
   ClearErrors
   ReadRegStr $Previous_Version HKLM "${SMPLAYER_REG_KEY}" "Version"
+  ReadRegStr $SMPlayer_UnStrPath HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString"
   ReadRegStr $SMPlayer_Path HKLM "${SMPLAYER_REG_KEY}" "Path"
 
   ${IfNot} ${Errors}
@@ -871,7 +873,7 @@ Function un.onInit
 
 !ifdef WIN64
   ${IfNot} ${RunningX64}
-    MessageBox MB_OK|MB_ICONSTOP "This installation can only be uninstalled on 64-bit Windows."
+    MessageBox MB_OK|MB_ICONSTOP $(Uninstaller_64bitOnly)
     Abort
   ${EndIf}
 
