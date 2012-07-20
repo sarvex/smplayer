@@ -4,28 +4,16 @@ set SMTUBE_SVN_DIR=..\..\smtube
 set DEFS=
 set SMTUBE_PARAMS=
 
-if "%1" == "" (
+if "%~1" == "" (
 
 	set DEFS=
 	set SMTUBE_PARAMS=
 	goto compileSMPlayer
 
-) else if "%1" == "32pe" (
+) else if "%~1" == "pe" (
 
 	set DEFS="DEFINES+=PORTABLE_APP"
-	set SMTUBE_PARAMS=32pe
-	goto compileSMPlayer
-
-) else if "%1" == "64" (
-
-	set DEFS="DEFINES+=SMP_WIN64"
-	set SMTUBE_PARAMS=64
-	goto compileSMPlayer
-
-) else if "%1" == "64pe" (
-
-	set DEFS="DEFINES+=SMP_WIN64 PORTABLE_APP"
-	set SMTUBE_PARAMS=64pe
+	set SMTUBE_PARAMS=pe
 	goto compileSMPlayer
 
 ) else (
@@ -34,10 +22,9 @@ if "%1" == "" (
 	echo.
 	echo compile_windows.cmd [buildtype]
 	echo.
-	echo 32:	SMPlayer 32-bit [Default]
-	echo 32pe:	SMPlayer 32-bit ^(Portable^)
-	echo 64: 	SMPlayer 64-bit
-	echo 64pe:	SMPlayer 64-bit ^(Portable^)
+	echo Compile SMPlayer Non-portable, enter no arguments.
+	echo.
+	echo pe:	SMPlayer ^(Portable^)
 	echo.
 	goto end
 
@@ -47,11 +34,16 @@ if "%1" == "" (
 
 call getrev.cmd
 
+if "%~1" == "pe" (
+	echo Compiling SMPlayer Portable Edition
+	echo.
+
+)
+
 cd zlib
 mingw32-make -fwin32\makefile.gcc
-cd ..
 
-cd src
+cd ..\src
 lrelease smplayer.pro
 qmake %DEFS%
 mingw32-make
@@ -63,7 +55,7 @@ if exist %SMTUBE_SVN_DIR% (
 
 ) else (
 
-	echo SMTube not found... skipping
+	echo SMTube not found in specified directory... skipping
 
 )
 

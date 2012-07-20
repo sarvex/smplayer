@@ -2,24 +2,14 @@
 
 set DEFS=
 
-if "%1" == "" (
+if "%~1" == "" (
 
 	set DEFS=
 	goto compileSMTube
 
-) else if "%1" == "32pe" (
+) else if "%~1" == "pe" (
 
 	set DEFS="DEFINES+=PORTABLE_APP"
-	goto compileSMTube
-
-) else if "%1" == "64" (
-
-	set DEFS="DEFINES+=SMP_WIN64"
-	goto compileSMTube
-
-) else if "%1" == "64pe" (
-
-	set DEFS="DEFINES+=SMP_WIN64 PORTABLE_APP"
 	goto compileSMTube
 
 ) else (
@@ -28,12 +18,11 @@ if "%1" == "" (
 	echo.
 	echo compile_windows.cmd [buildtype]
 	echo.
-	echo 32:	SMTube 32-bit [Default]
-	echo 32pe:	SMTube 32-bit ^(Portable^)
-	echo 64: 	SMTube 64-bit
-	echo 64pe:	SMTube 64-bit ^(Portable^)
+	echo Compile SMTube Non-portable, enter no arguments.
 	echo.
-	goto end:
+	echo pe:	SMTube ^(Portable^)
+	echo.
+	goto end
 
 )
 
@@ -41,6 +30,11 @@ if "%1" == "" (
 
 call getrev.cmd
 
+if "%~1" == "pe" (
+	echo Compiling SMTube Portable Edition
+	echo.
+
+)
 cd src
 lrelease smtube.pro
 qmake %DEFS%
