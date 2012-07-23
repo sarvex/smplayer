@@ -495,6 +495,7 @@ ${MementoSectionDone}
   !insertmacro ${_action} ".webm"
   !insertmacro ${_action} ".wma"
   !insertmacro ${_action} ".wmv"
+  !insertmacro ${_action} ".wtv"
 !macroend
 
 !macro WriteRegStrSupportedTypes EXT
@@ -559,10 +560,10 @@ ${MementoSectionDone}
 Function ${UN}RunCheck
 
   retry_runcheck:
-  FindProcDLL::FindProc "smplayer.exe"
-  IntCmp $R0 1 0 +3
-    MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(SMPlayer_Is_Running) /SD IDCANCEL IDRETRY retry_runcheck
-    Abort
+	FindProcDLL::FindProc "smplayer.exe"
+	IntCmp $R0 1 0 +3
+		MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(SMPlayer_Is_Running) /SD IDCANCEL IDRETRY retry_runcheck
+		Abort
 
 FunctionEnd
 !macroend
@@ -573,6 +574,10 @@ FunctionEnd
 ;Installer functions
 
 Function .onInit
+
+	${Unless} ${AtLeastWinXP}
+		MessageBox MB_OK|MB_ICONSTOP $(OS_Not_Supported)
+	${EndIf}
 
 !ifdef WIN64
   ${IfNot} ${RunningX64}
