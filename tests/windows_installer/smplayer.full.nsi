@@ -350,13 +350,6 @@ SectionGroup $(MPlayerGroupTitle)
 
   SectionEnd
 
-  ${MementoUnselectedSection} MEncoder SecMEncoder
-
-    SetOutPath "$INSTDIR\mplayer"
-    File "mencoder\mencoder.exe"
-
-  ${MementoSectionEnd}
-
   Section /o $(Section_MPlayerCodecs) SecCodecs
 
     SetOutPath "$INSTDIR\mplayer\codecs"
@@ -367,6 +360,20 @@ SectionGroup $(MPlayerGroupTitle)
 	SectionEnd
 
 SectionGroupEnd
+
+;--------------------------------
+; FFmpeg
+
+${MementoUnselectedSection} FFmpeg SecFFmpeg
+
+	SetOutPath "$INSTDIR\FFmpeg"
+	!ifdef WIN64
+	File /r /x ffplay.exe "ffmpeg\64\*.*"
+	!else
+	File /r /x ffplay.exe "ffmpeg\32\*.*"
+	!endif
+
+${MementoSectionEnd}
 
 ;--------------------------------
 ;Icon themes
@@ -432,7 +439,7 @@ ${MementoSectionDone}
   !insertmacro MUI_DESCRIPTION_TEXT ${SecDesktopShortcut} $(Section_DesktopShortcut_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecStartMenuShortcut} $(Section_StartMenu_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecMPlayer} $(Section_MPlayer_Desc)
-  !insertmacro MUI_DESCRIPTION_TEXT ${SecMEncoder} $(Section_MEncoder_Desc)
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecFFmpeg} "FFmpeg is a complete solution to record, convert and stream audio and video."
   !insertmacro MUI_DESCRIPTION_TEXT ${SecCodecs} $(Section_MPlayerCodecs_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecThemes} $(Section_IconThemes_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecTranslations} $(Section_Translations_Desc)
@@ -463,7 +470,9 @@ ${MementoSectionDone}
   !insertmacro ${_action} ".m2v"
   !insertmacro ${_action} ".m3u"
   !insertmacro ${_action} ".m3u8"
+  !insertmacro ${_action} ".m4a"
   !insertmacro ${_action} ".m4v"
+  !insertmacro ${_action} ".mka"
   !insertmacro ${_action} ".mkv"
   !insertmacro ${_action} ".mov"
   !insertmacro ${_action} ".mp3"
