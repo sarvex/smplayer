@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-29 00:10+0200\n"
+"POT-Creation-Date: 2012-09-08 03:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,209 +30,49 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../downloads.php:38
-msgid "Package with installer:"
-msgstr "インストーラー付きパッケージ:"
-
-#: ../downloads.php:43
-msgid ""
-"This package contains smplayer, smtube, shared libraries, translation \n"
-"files and icon themes. During the installation a recent version of\n"
-"mplayer will be downloaded and installed. Optionally you can also\n"
-"install some additional codecs (necessary only for a few formats, \n"
-"like newer RealVideo variants)."
+msgid "Click here to get the full package"
 msgstr ""
 
-#: ../downloads.php:76
+#: ../downloads.php:42
 msgid ""
-"This package contains everything needed to run smplayer: shared \n"
-"libraries, translation files, icon themes and a mplayer \n"
-"build (the version included is %1)."
-msgstr ""
-"このパッケージには、SMPlayer を実行するのに必要な共有ライブラリ、翻訳ファイ"
-"ル、アイコンテーマ、MPlayer ビルド (%1) がすべて含まれています。"
-
-#: ../downloads.php:80
-msgid "It also includes the YouTube browser (smtube)"
+"This package contains smplayer, themes, translations, mplayer %1, \n"
+"and the YouTube browser (smtube)."
 msgstr ""
 
-#: ../downloads.php:91
-msgid "Additional codecs:"
-msgstr "追加コーデック:"
-
-#: ../downloads.php:96
-msgid ""
-"This package adds support for codecs that are not yet implemented\n"
-"natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-"formats. Note that they are not necessary to play most common formats\n"
-"like DVDs, MPEG-1/2/4, etc."
+#: ../downloads.php:52
+msgid "There are available other packages for advanced users, %1."
 msgstr ""
-"このパッケージは、MPlayer に直接実装されていない最新の RealVideo 派生などのマ"
-"イナーなフォーマットのコーデックへの対応を追加します。DVD、MPEG-1/2/4 など、"
-"主要なフォーマットを再生する際は不要です。"
 
-#: ../downloads.php:101
-msgid ""
-"These codecs are to be used by mplayer only and they will be installed \n"
-"in the same folder, so they can't cause any conflict with other codecs you \n"
-"may have installed."
+#: ../downloads.php:52
+msgid "here"
 msgstr ""
-"これらのコーデックは同じフォルダにインストールされます。MPlayer にしか使用さ"
-"れませんので、すでにインストールされている他のコーデックと競合することはあり"
-"ません。"
 
-#: ../downloads.php:105
-msgid ""
-"If you prefer a zip file, you can get it at \n"
-"the <a href=%1>mplayer site</a> (%2)."
-msgstr ""
-"zip ファイルがお好みの方は <a href=%1>MPlayer のサイト</a>からダウンロードし"
-"てください (%2)。"
-
-#: ../downloads.php:120
-msgid ""
-"Package (without installer) which includes smplayer, shared libraries,\n"
-"translations and icon themes. It doesn't include mplayer."
-msgstr ""
-"このパッケージには、SMPlayer、共有ライブラリ、翻訳、アイコンテーマが含まれて"
-"います (インストーラーはありません)。MPlayer は含まれていません。"
-
-#: ../downloads.php:123
-msgid "This package is for advanced users only!"
-msgstr "このパッケージは上級者専用です!"
-
-#: ../downloads.php:144
-msgid ""
-"Portable version of SMPlayer. It can be run from external devices, like \n"
-"USB flash drives. It doesn't require installation, just uncompress the \n"
-"package wherever you want and double click on smplayer.exe to run it."
-msgstr ""
-"SMPlayer のポータブルバージョンです。USB フラッシュドライブなどの外部ドライブ"
-"から実行できます。インストールは必要ありません。パッケージをお好きな場所に解"
-"凍して smplayer.exe をダブルクリックするだけで実行できます。"
-
-#: ../downloads.php:148
-msgid ""
-"The package also includes the icon themes, translations and a \n"
-"MPlayer build."
-msgstr "パッケージにはアイコンテーマ、翻訳、MPlayer ビルドも同梱されています。"
-
-#: ../downloads.php:151
-msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-msgstr "なお、7z ファイルは <a href=%1>7-Zip</a> で解凍できます。"
-
-#: ../downloads.php:161
+#: ../downloads.php:60
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:171
+#: ../downloads.php:70
 msgid ""
 "Read the file Install.txt included in the package to know how compile it."
 msgstr "コンパイル方法はパッケージ内の Install.txt に記載されています。"
 
-#: ../downloads.php:182
+#: ../downloads.php:81
 msgid "Allows to play and download videos from YouTube. Source code."
 msgstr "YouTube 動画の再生・ダウンロードを可能にします。ソースコードです。"
 
-#: ../downloads.php:191
+#: ../downloads.php:90
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:192
-msgid "You can get deb packages for Ubuntu from this PPA:"
-msgstr "この PPA から Ubuntu 用 deb パッケージを取得できます:"
-
-#: ../downloads.php:198
+#: ../downloads.php:91
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:213
-msgid "Suggested package:"
-msgstr "推奨されるパッケージ:"
-
-#: ../downloads.php:214
-msgid ""
-"The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-"has support for some of the new features of mplayer, so a newer version \n"
-"is highly recommended."
+#: ../downloads.php:105
+msgid "Contributed packages for other distros"
 msgstr ""
-"Ubuntu に含まれている MPlayer のバージョンは %1 と非常に古いです。SMPlayer "
-"は mplayer の新しい機能に対応していますので、新しいバージョンのご使用を強くお"
-"すすめします。"
-
-#: ../downloads.php:218
-msgid "You can get updated versions from this PPA:"
-msgstr "最新のバージョンはこちらの PPA から取得できます:"
-
-#: ../downloads.php:222
-msgid "more info"
-msgstr "Ubuntu PPA について"
-
-#: ../downloads.php:230
-msgid "Icon Themes:"
-msgstr "アイコンテーマ:"
-
-#: ../downloads.php:231
-msgid "Optional packages which provide some icon themes."
-msgstr "いくつかのアイコンテーマを供給するオプションパッケージです。"
-
-#: ../downloads.php:275
-msgid "Additional packages"
-msgstr "さらなるパッケージ"
-
-#: ../downloads.php:276
-msgid ""
-"There are several additional packages for advanced users:\n"
-"<a href=%1>See sourceforge download page</a>."
-msgstr ""
-"上級者向けにいくつかのパッケージがあります: <a href=%1>SourceForge のダウン"
-"ロードページをご覧ください</a>。"
-
-#: ../downloads.php:283
-msgid "Contributed packages"
-msgstr "いただいたパッケージ"
-
-#: ../downloads.php:284
-msgid ""
-"There are available packages for other distros, created\n"
-"by other people. <a href=%1>Click here</a> to see them."
-msgstr ""
-"有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧ください。"
-
-#: ../downloads.php:290
-msgid "Related Project"
-msgstr "関連プロジェクト"
-
-#: ../downloads.php:292
-msgid "by MuldeR"
-msgstr "by MuldeR"
-
-#: ../downloads.php:293
-msgid ""
-"This package contains a very recent version of SMPlayer (often taken from\n"
-"the SVN repository) as well as a recent version of MPlayer. It also "
-"provides\n"
-"its own installer, mplayer builds optimized for several processors and\n"
-"binary codecs."
-msgstr ""
-"最近の MPlayer のバージョンと同様、このパッケージにも主に SVN リポジトリーか"
-"ら取得された SMPlayer の直近のバージョンが含まれています。独自のインストー"
-"ラーや、特定のプロセッサー向けに最適化された MPlayer ビルド、バイナリコーデッ"
-"クなどを供給しています。"
-
-#: ../downloads.php:304
-msgid "Unstable releases"
-msgstr "不安定リリース"
-
-#. echo "&lt;Here there could be a list of unstable packages&gt;<p>";
-#: ../downloads.php:306
-msgid ""
-"You can get packages directly taken from the SVN (source code and\n"
-"Windows updates), <a href=%1><b>here</b></a>."
-msgstr ""
-"<a href=%1><b>こちら</b></a>に SVN から直接取得されたパッケージ (ソースコード"
-"と Windows 用の更新) があります。"
 
 #: ../footer.php:44
 msgid "This page is available in the following languages:"
@@ -451,3 +291,148 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:61
 msgid "Possibility to search for subtitles"
 msgstr "字幕の検索機能"
+
+#~ msgid ""
+#~ "You can get packages directly taken from the SVN (source code and\n"
+#~ "Windows updates), <a href=%1><b>here</b></a>."
+#~ msgstr ""
+#~ "<a href=%1><b>こちら</b></a>に SVN から直接取得されたパッケージ (ソース"
+#~ "コードと Windows 用の更新) があります。"
+
+#~ msgid "Unstable releases"
+#~ msgstr "不安定リリース"
+
+#~ msgid ""
+#~ "This package contains a very recent version of SMPlayer (often taken "
+#~ "from\n"
+#~ "the SVN repository) as well as a recent version of MPlayer. It also "
+#~ "provides\n"
+#~ "its own installer, mplayer builds optimized for several processors and\n"
+#~ "binary codecs."
+#~ msgstr ""
+#~ "最近の MPlayer のバージョンと同様、このパッケージにも主に SVN リポジトリー"
+#~ "から取得された SMPlayer の直近のバージョンが含まれています。独自のインス"
+#~ "トーラーや、特定のプロセッサー向けに最適化された MPlayer ビルド、バイナリ"
+#~ "コーデックなどを供給しています。"
+
+#~ msgid "by MuldeR"
+#~ msgstr "by MuldeR"
+
+#~ msgid "Related Project"
+#~ msgstr "関連プロジェクト"
+
+#~ msgid ""
+#~ "There are available packages for other distros, created\n"
+#~ "by other people. <a href=%1>Click here</a> to see them."
+#~ msgstr ""
+#~ "有志によるその他の配布用パッケージは、<a href=%1>こちら</a>をご覧くださ"
+#~ "い。"
+
+#~ msgid "Contributed packages"
+#~ msgstr "いただいたパッケージ"
+
+#~ msgid ""
+#~ "There are several additional packages for advanced users:\n"
+#~ "<a href=%1>See sourceforge download page</a>."
+#~ msgstr ""
+#~ "上級者向けにいくつかのパッケージがあります: <a href=%1>SourceForge のダウ"
+#~ "ンロードページをご覧ください</a>。"
+
+#~ msgid "Additional packages"
+#~ msgstr "さらなるパッケージ"
+
+#~ msgid "Optional packages which provide some icon themes."
+#~ msgstr "いくつかのアイコンテーマを供給するオプションパッケージです。"
+
+#~ msgid "Icon Themes:"
+#~ msgstr "アイコンテーマ:"
+
+#~ msgid "more info"
+#~ msgstr "Ubuntu PPA について"
+
+#~ msgid "You can get updated versions from this PPA:"
+#~ msgstr "最新のバージョンはこちらの PPA から取得できます:"
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Ubuntu に含まれている MPlayer のバージョンは %1 と非常に古いです。"
+#~ "SMPlayer は mplayer の新しい機能に対応していますので、新しいバージョンのご"
+#~ "使用を強くおすすめします。"
+
+#~ msgid "Suggested package:"
+#~ msgstr "推奨されるパッケージ:"
+
+#~ msgid "You can get deb packages for Ubuntu from this PPA:"
+#~ msgstr "この PPA から Ubuntu 用 deb パッケージを取得できます:"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr "なお、7z ファイルは <a href=%1>7-Zip</a> で解凍できます。"
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "パッケージにはアイコンテーマ、翻訳、MPlayer ビルドも同梱されています。"
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "SMPlayer のポータブルバージョンです。USB フラッシュドライブなどの外部ドラ"
+#~ "イブから実行できます。インストールは必要ありません。パッケージをお好きな場"
+#~ "所に解凍して smplayer.exe をダブルクリックするだけで実行できます。"
+
+#~ msgid "This package is for advanced users only!"
+#~ msgstr "このパッケージは上級者専用です!"
+
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, shared libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "このパッケージには、SMPlayer、共有ライブラリ、翻訳、アイコンテーマが含まれ"
+#~ "ています (インストーラーはありません)。MPlayer は含まれていません。"
+
+#~ msgid ""
+#~ "If you prefer a zip file, you can get it at \n"
+#~ "the <a href=%1>mplayer site</a> (%2)."
+#~ msgstr ""
+#~ "zip ファイルがお好みの方は <a href=%1>MPlayer のサイト</a>からダウンロード"
+#~ "してください (%2)。"
+
+#~ msgid ""
+#~ "These codecs are to be used by mplayer only and they will be installed \n"
+#~ "in the same folder, so they can't cause any conflict with other codecs "
+#~ "you \n"
+#~ "may have installed."
+#~ msgstr ""
+#~ "これらのコーデックは同じフォルダにインストールされます。MPlayer にしか使用"
+#~ "されませんので、すでにインストールされている他のコーデックと競合することは"
+#~ "ありません。"
+
+#~ msgid ""
+#~ "This package adds support for codecs that are not yet implemented\n"
+#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+#~ "formats. Note that they are not necessary to play most common formats\n"
+#~ "like DVDs, MPEG-1/2/4, etc."
+#~ msgstr ""
+#~ "このパッケージは、MPlayer に直接実装されていない最新の RealVideo 派生など"
+#~ "のマイナーなフォーマットのコーデックへの対応を追加します。DVD、MPEG-1/2/4 "
+#~ "など、主要なフォーマットを再生する際は不要です。"
+
+#~ msgid "Additional codecs:"
+#~ msgstr "追加コーデック:"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "このパッケージには、SMPlayer を実行するのに必要な共有ライブラリ、翻訳ファ"
+#~ "イル、アイコンテーマ、MPlayer ビルド (%1) がすべて含まれています。"
+
+#~ msgid "Package with installer:"
+#~ msgstr "インストーラー付きパッケージ:"
