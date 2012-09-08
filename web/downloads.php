@@ -50,6 +50,9 @@ and the YouTube browser (smtube).","<i>r34835</i>");
 <td>
 <?php
 tr("There are available other packages for advanced users, %1.", download_all_link(get_tr("here")));
+echo "<br>";
+tr("If you wish you can also try %1.", 
+"<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("the unstable version") ."</b></a>");
 ?>
 </td></tr>
 
@@ -61,27 +64,6 @@ echo "<h2>".get_tr("Linux")."</h2>";
 ?>
 <p>
 <table>
-<tr>
-<td><img src="iconos/package.png" alt="*"></td>
-<td>
-<?php
-echo download_src_link();
-echo "<br>";
-tr("Read the file Install.txt included in the package to know how compile it."); 
-?>
-</td>
-</tr>
-
-<tr>
-<td><img src="iconos/package.png" alt="*"></td>
-<td>
-<?php
-echo download_smtube_link();
-echo "<br>";
-tr("Allows to play and download videos from YouTube. Source code."); 
-?>
-</td>
-</tr>
 
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
@@ -93,8 +75,22 @@ tr("To install smplayer, just run these commands in a terminal:");
 <pre>
 sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
-sudo apt-get install smplayer smtube
+sudo apt-get install smplayer smtube smplayer-themes
 </pre>
+</td>
+</tr>
+
+<tr>
+<td><img src="iconos/package.png" alt="*"></td>
+<td>
+<?php
+echo "<b>"; tr("Sources:"); echo "</b><br>";
+echo download_src_link();
+echo "<br>";
+echo download_smtube_link();
+echo "<br>";
+echo download_themes_src_link();
+?>
 </td>
 </tr>
 

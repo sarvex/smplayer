@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-08 03:09+0200\n"
+"POT-Creation-Date: 2012-09-08 22:22+0200\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -48,29 +48,31 @@ msgstr ""
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:60
+#: ../downloads.php:54
+msgid "If you wish you can also try %1."
+msgstr ""
+
+#: ../downloads.php:55
+msgid "the unstable version"
+msgstr ""
+
+#: ../downloads.php:63
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:70
-msgid ""
-"Read the file Install.txt included in the package to know how compile it."
-msgstr ""
-"Перегляньте файл Install.txt, що міститься в пакеті, для успішної компіляції."
-
-#: ../downloads.php:81
-msgid "Allows to play and download videos from YouTube. Source code."
-msgstr ""
-
-#: ../downloads.php:90
+#: ../downloads.php:72
 msgid "Packages for Ubuntu:"
 msgstr "Пакети для Ubuntu:"
 
-#: ../downloads.php:91
+#: ../downloads.php:73
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:105
+#: ../downloads.php:87
+msgid "Sources:"
+msgstr ""
+
+#: ../downloads.php:101
 msgid "Contributed packages for other distros"
 msgstr ""
 
@@ -302,126 +304,20 @@ msgstr "Компактний інтерфейс"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid ""
-#~ "You can get packages directly taken from the SVN (source code and\n"
-#~ "Windows updates), <a href=%1><b>here</b></a>."
-#~ msgstr ""
-#~ "Ви можете взяти пакети прямо з SVN (вихідні тексти та\n"
-#~ "оновлення для Windows), <a href=%1><b>тут</b></a>."
-
-#~ msgid "Unstable releases"
-#~ msgstr "Нестабільні релізи"
+#~ msgid "Package with installer:"
+#~ msgstr "Пакет з інсталятором:"
 
 #~ msgid ""
-#~ "This package contains a very recent version of SMPlayer (often taken "
-#~ "from\n"
-#~ "the SVN repository) as well as a recent version of MPlayer. It also "
-#~ "provides\n"
-#~ "its own installer, mplayer builds optimized for several processors and\n"
-#~ "binary codecs."
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
 #~ msgstr ""
-#~ "Цей пакет містить дуже свіжу версію SMPlayer (часто взяту з\n"
-#~ "SVN репозиторію) а також нову версію MPlayer. Ця версія має\n"
-#~ "власний інсталлер, mplayer зібраний з оптимізацією під декілька\n"
-#~ "процесорів та з бінарними кодеками."
+#~ "Цей пакет містить все необхідне для роботи smplayer: загальні \n"
+#~ "бібліотеки, файли перекладів, теми іконок та збірку \n"
+#~ "mplayer (містить версію %1)."
 
-#~ msgid "by MuldeR"
-#~ msgstr "від MuldeR"
-
-#~ msgid "Related Project"
-#~ msgstr "Пов'язані проекти"
-
-#~ msgid ""
-#~ "There are available packages for other distros, created\n"
-#~ "by other people. <a href=%1>Click here</a> to see them."
-#~ msgstr ""
-#~ "Тут доступні пакети для інших дистрибутивів, створені\n"
-#~ "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
-
-#~ msgid "Contributed packages"
-#~ msgstr "Сторонні пакети"
-
-#~ msgid ""
-#~ "There are several additional packages for advanced users:\n"
-#~ "<a href=%1>See sourceforge download page</a>."
-#~ msgstr ""
-#~ "Додаткові пакети для продвинутих користувачів:\n"
-#~ "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
-
-#~ msgid "Additional packages"
-#~ msgstr "Додаткові пакети"
-
-#~ msgid "Optional packages which provide some icon themes."
-#~ msgstr "Додаткові пакети з деякими темами іконок."
-
-#~ msgid "Icon Themes:"
-#~ msgstr "Теми іконок:"
-
-#~ msgid "more info"
-#~ msgstr "докладніше"
-
-#~ msgid "You can get updated versions from this PPA:"
-#~ msgstr "Ви можете взяти оновлену версію з PPA:"
-
-#~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
-#~ msgstr ""
-#~ "Версія MPlayer з комплекту Ubuntu дуже застаріла (%1). SMPlayer \n"
-#~ "наразі підтримує деякі нові функції MPlayer, тому рекомендується \n"
-#~ "застосовувати нову версія."
-
-#~ msgid "Suggested package:"
-#~ msgstr "Рекомендації пакету:"
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr ""
-#~ "Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
-
-#~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
-#~ msgstr ""
-#~ "Пакет також містить теми іконок, переклади та збірку \n"
-#~ "MPlayer."
-
-#~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
-#~ msgstr ""
-#~ "Портативна версія SMPlayer. Може працювати з довнішніх пристроїв, \n"
-#~ "таких як USB-флешки. Не потребує інсталляції, просто розпакуйте архів \n"
-#~ "куди Ви хочете та двічі клацність по smplayer.exe для запуску."
-
-#~ msgid "This package is for advanced users only!"
-#~ msgstr "Цей пакет виключно для досвідчених користувачів!"
-
-#~ msgid ""
-#~ "Package (without installer) which includes smplayer, shared libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
-#~ msgstr ""
-#~ "Пакет (без інсталлера), який містить smplayer, загальні бібліотеки,\n"
-#~ "переклади та теми іконок. Не містить mplayer."
-
-#~ msgid ""
-#~ "If you prefer a zip file, you can get it at \n"
-#~ "the <a href=%1>mplayer site</a> (%2)."
-#~ msgstr ""
-#~ "Якщо ви надаєте перевагу zip-архівам, ви \n"
-#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> "
-#~ "(%2)."
-
-#~ msgid ""
-#~ "These codecs are to be used by mplayer only and they will be installed \n"
-#~ "in the same folder, so they can't cause any conflict with other codecs "
-#~ "you \n"
-#~ "may have installed."
-#~ msgstr ""
-#~ "Ці кодеки будуть використовуватись mplayer-ом тільки при встановленні в "
-#~ "ту ж теку, що і сам програвач, таким чином вони не будуть конфліктувати з "
-#~ "іншими кодеками, котрі ви встановлюєте семі. "
+#~ msgid "Additional codecs:"
+#~ msgstr "Додаткові кодеки:"
 
 #~ msgid ""
 #~ "This package adds support for codecs that are not yet implemented\n"
@@ -437,17 +333,129 @@ msgstr ""
 #~ "DVD, \n"
 #~ "MPEG-1/2/4 та інших. "
 
-#~ msgid "Additional codecs:"
-#~ msgstr "Додаткові кодеки:"
+#~ msgid ""
+#~ "These codecs are to be used by mplayer only and they will be installed \n"
+#~ "in the same folder, so they can't cause any conflict with other codecs "
+#~ "you \n"
+#~ "may have installed."
+#~ msgstr ""
+#~ "Ці кодеки будуть використовуватись mplayer-ом тільки при встановленні в "
+#~ "ту ж теку, що і сам програвач, таким чином вони не будуть конфліктувати з "
+#~ "іншими кодеками, котрі ви встановлюєте семі. "
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
+#~ "If you prefer a zip file, you can get it at \n"
+#~ "the <a href=%1>mplayer site</a> (%2)."
 #~ msgstr ""
-#~ "Цей пакет містить все необхідне для роботи smplayer: загальні \n"
-#~ "бібліотеки, файли перекладів, теми іконок та збірку \n"
-#~ "mplayer (містить версію %1)."
+#~ "Якщо ви надаєте перевагу zip-архівам, ви \n"
+#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> "
+#~ "(%2)."
 
-#~ msgid "Package with installer:"
-#~ msgstr "Пакет з інсталятором:"
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, shared libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Пакет (без інсталлера), який містить smplayer, загальні бібліотеки,\n"
+#~ "переклади та теми іконок. Не містить mplayer."
+
+#~ msgid "This package is for advanced users only!"
+#~ msgstr "Цей пакет виключно для досвідчених користувачів!"
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "Портативна версія SMPlayer. Може працювати з довнішніх пристроїв, \n"
+#~ "таких як USB-флешки. Не потребує інсталляції, просто розпакуйте архів \n"
+#~ "куди Ви хочете та двічі клацність по smplayer.exe для запуску."
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "Пакет також містить теми іконок, переклади та збірку \n"
+#~ "MPlayer."
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr ""
+#~ "Примітка: файли 7z можна розпакувати за допомогою <a href=%1>7-Zip</a>."
+
+#~ msgid "Suggested package:"
+#~ msgstr "Рекомендації пакету:"
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Версія MPlayer з комплекту Ubuntu дуже застаріла (%1). SMPlayer \n"
+#~ "наразі підтримує деякі нові функції MPlayer, тому рекомендується \n"
+#~ "застосовувати нову версія."
+
+#~ msgid "You can get updated versions from this PPA:"
+#~ msgstr "Ви можете взяти оновлену версію з PPA:"
+
+#~ msgid "more info"
+#~ msgstr "докладніше"
+
+#~ msgid "Icon Themes:"
+#~ msgstr "Теми іконок:"
+
+#~ msgid "Optional packages which provide some icon themes."
+#~ msgstr "Додаткові пакети з деякими темами іконок."
+
+#~ msgid "Additional packages"
+#~ msgstr "Додаткові пакети"
+
+#~ msgid ""
+#~ "There are several additional packages for advanced users:\n"
+#~ "<a href=%1>See sourceforge download page</a>."
+#~ msgstr ""
+#~ "Додаткові пакети для продвинутих користувачів:\n"
+#~ "<a href=%1>Дивіться сторінку закачок sourceforge</a>."
+
+#~ msgid "Contributed packages"
+#~ msgstr "Сторонні пакети"
+
+#~ msgid ""
+#~ "There are available packages for other distros, created\n"
+#~ "by other people. <a href=%1>Click here</a> to see them."
+#~ msgstr ""
+#~ "Тут доступні пакети для інших дистрибутивів, створені\n"
+#~ "іншими людьми. <a href=%1>Тисніть сюди</a> для перегляду."
+
+#~ msgid "Related Project"
+#~ msgstr "Пов'язані проекти"
+
+#~ msgid "by MuldeR"
+#~ msgstr "від MuldeR"
+
+#~ msgid ""
+#~ "This package contains a very recent version of SMPlayer (often taken "
+#~ "from\n"
+#~ "the SVN repository) as well as a recent version of MPlayer. It also "
+#~ "provides\n"
+#~ "its own installer, mplayer builds optimized for several processors and\n"
+#~ "binary codecs."
+#~ msgstr ""
+#~ "Цей пакет містить дуже свіжу версію SMPlayer (часто взяту з\n"
+#~ "SVN репозиторію) а також нову версію MPlayer. Ця версія має\n"
+#~ "власний інсталлер, mplayer зібраний з оптимізацією під декілька\n"
+#~ "процесорів та з бінарними кодеками."
+
+#~ msgid "Unstable releases"
+#~ msgstr "Нестабільні релізи"
+
+#~ msgid ""
+#~ "You can get packages directly taken from the SVN (source code and\n"
+#~ "Windows updates), <a href=%1><b>here</b></a>."
+#~ msgstr ""
+#~ "Ви можете взяти пакети прямо з SVN (вихідні тексти та\n"
+#~ "оновлення для Windows), <a href=%1><b>тут</b></a>."
+
+#~ msgid ""
+#~ "Read the file Install.txt included in the package to know how compile it."
+#~ msgstr ""
+#~ "Перегляньте файл Install.txt, що міститься в пакеті, для успішної "
+#~ "компіляції."
