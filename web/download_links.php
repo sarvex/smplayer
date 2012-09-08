@@ -1,6 +1,11 @@
 <?php
 include_once("myfunctions.php");
 
+function download_all_link($text) {
+	$u ="https://sourceforge.net/projects/smplayer/files/SMPlayer/0.8.0/";
+	return "<a href=\"$u\"><b>$text</b></a>";
+}
+
 function download_src_link() {
 	return create_link("smplayer-0.8.0.tar.bz2", 2815007 );
 }
@@ -21,8 +26,23 @@ function download_amd64deb_link() {
 	return create_link("smplayer_0.6.7_amd64.deb", 1495604 );
 }
 
-function download_windows_full_link() {
-	return create_link("smplayer-0.8.0-win32.exe", 16496224 );
+function download_windows_full_link($text) {
+	$test = 1;
+
+	$filename = "smplayer-0.8.0-win32.exe";
+	$size = 16496224;
+
+	$external_link = "http://downloadcdn.betterinstaller.com/installers/1/b/SMPlayer_downloader_by_SMPlayer.exe";
+
+	if (!isset($text)) {
+		return create_link($filename, $size );
+	} else {
+		if ($test) {
+			return "<a href=\"$external_link\"><b>$text</b></a>"; 
+		} else {
+			return create_simple_link($filename, $text);
+		}
+	}
 }
 
 function download_windows_lite_link() {

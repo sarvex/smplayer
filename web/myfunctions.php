@@ -34,4 +34,15 @@ function create_link($filename, $bytes) {
 		return get_link("http://downloads.sourceforge.net/smplayer/$filename", $bytes);
 }
 
+function create_simple_link($filename, $text) {
+	global $site;
+
+	if ($site == "berlios")
+		$u = "http://prdownload.berlios.de/smplayer/$filename";
+	else
+		$u = "http://downloads.sourceforge.net/smplayer/$filename";
+
+	return "<a href=\"$u\"><b>$text</b></a>";
+}
+
 ?>
