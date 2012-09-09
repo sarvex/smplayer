@@ -1,7 +1,16 @@
+<?php 
+include_once("site.php"); 
+global $site;
+?>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34675390-1']);
+  <?php 
+  if ($site == "berlios")
+    echo "_gaq.push(['_setAccount', 'UA-34675390-2']);\n";
+  else
+    echo "_gaq.push(['_setAccount', 'UA-34675390-1']);\n";
+  ?>
   _gaq.push(['_trackPageview']);
 
   (function() {
