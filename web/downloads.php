@@ -40,8 +40,8 @@ echo download_windows_full_link(get_tr("Click here to get the full package"));
 ?>
 <br>
 <?php
-tr("This package contains smplayer, themes, translations, mplayer %1, 
-and the YouTube browser (smtube).","<i>r34835</i>");
+tr("This package contains smplayer, themes, translations, mplayer %1 and 
+the YouTube browser (smtube).","<i>r34835</i>");
 ?>
 </td>
 </tr>
