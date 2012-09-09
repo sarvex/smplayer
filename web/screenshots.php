@@ -6,6 +6,7 @@
 <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
 <link href="base.css" rel="stylesheet" title="base style" type="text/css">
 <link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
+<?php include_once("analytics.js"); ?>
 </head>
 <body>
 
