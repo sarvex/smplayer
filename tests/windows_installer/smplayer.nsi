@@ -42,8 +42,17 @@
   !define SMPLAYER_UNINST_EXE "uninst.exe"
   !define SMPLAYER_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\SMPlayer"
 
-  !define WITH_CODECS
-  !define /date DATE "%y.%m.%d.%H"
+  ;Fallback versions
+  ;These can be changed in the compiler, otherwise
+  ;if not defined the values shown here will be used.
+!ifndef DEFAULT_CODECS_VERSION
+  !define DEFAULT_CODECS_VERSION "windows-essential-20071007"
+!endif
+
+  ;Version control
+!ifndef VERSION_FILE_URL
+  !define VERSION_FILE_URL "http://smplayer.sourceforge.net/mplayer-version-info"
+!endif
 
 ;--------------------------------
 ;General
@@ -52,16 +61,16 @@
   Name "SMPlayer ${SMPLAYER_VERSION}"
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION}"
 !ifdef WIN64
-  OutFile "output\smplayer-${DATE}-full-x64.exe"
+  OutFile "output\smplayer-${SMPLAYER_VERSION}-x64.exe"
 !else
-  OutFile "output\smplayer-${DATE}-full-x86.exe"
+  OutFile "output\smplayer-${SMPLAYER_VERSION}-x86.exe"
 !endif
 
   ;Version tab properties
-  VIProductVersion "${DATE}"
+  VIProductVersion "${SMPLAYER_PRODUCT_VERSION}"
   VIAddVersionKey "ProductName" "SMPlayer"
-  VIAddVersionKey "ProductVersion" "${DATE}"
-  VIAddVersionKey "FileVersion" "${DATE}"
+  VIAddVersionKey "ProductVersion" "${SMPLAYER_VERSION}"
+  VIAddVersionKey "FileVersion" "${SMPLAYER_VERSION}"
   VIAddVersionKey "LegalCopyright" ""
 !ifdef WIN64
   VIAddVersionKey "FileDescription" "SMPlayer Installer (64-bit)"
@@ -296,6 +305,9 @@ Section $(Section_SMPlayer) SecSMPlayer
   SetOutPath "$INSTDIR\shortcuts"
   File /r "${SMPLAYER_BUILD_DIR}\shortcuts\*.*"
 
+  SetOutPath "$PLUGINSDIR"
+  File 7za.exe
+
   ;Initialize to 0 if don't exist (based on error flag)
   ReadRegDWORD $R0 HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer
   ${If} ${Errors}
@@ -352,26 +364,55 @@ SectionGroup $(MPlayerGroupTitle)
 
   Section /o $(Section_MPlayerCodecs) SecCodecs
 
-    SetOutPath "$INSTDIR\mplayer\codecs"
-    File /r "codecs\*.*"
+    AddSize 22300
 
-    WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs 0x1
+    Var /GLOBAL Codec_Version
+
+    Call GetVerInfo
+
+    /* Read from version-info
+    If it was unable to download, set version to that defined in the
+    beginning of the script. */
+    ${If} ${FileExists} "$PLUGINSDIR\version-info"
+      ReadINIStr $Codec_Version "$PLUGINSDIR\version-info" smplayer mplayercodecs
+    ${Else}
+      StrCpy $Codec_Version ${DEFAULT_CODECS_VERSION}
+    ${EndIf}
+
+    retry_codecs:
+
+    DetailPrint $(Codecs_DL_Msg)
+    inetc::get /CONNECTTIMEOUT 15000 /RESUME "" /BANNER $(Codecs_DL_Msg) /CAPTION $(Codecs_DL_Msg) \
+    "http://www.mplayerhq.hu/MPlayer/releases/codecs/$Codec_Version.zip" \
+    "$PLUGINSDIR\$Codec_Version.zip" /END
+    Pop $R0
+    StrCmp $R0 OK 0 check_codecs
+
+    DetailPrint $(Info_Files_Extract)
+    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\$Codec_Version.zip" -y -o"$PLUGINSDIR"'
+
+    CreateDirectory "$INSTDIR\mplayer\codecs"
+    CopyFiles /SILENT "$PLUGINSDIR\$Codec_Version\*" "$INSTDIR\mplayer\codecs"
+
+    check_codecs:
+
+    ${If} $R0 != "OK"
+      DetailPrint $(Codecs_DL_Failed)
+    ${EndIf}
+
+    IfFileExists "$INSTDIR\mplayer\codecs\*.dll" codecsInstSuccess codecsInstFailed
+      codecsInstSuccess:
+        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs 0x1
+        Goto done
+      codecsInstFailed:
+        MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION $(Codecs_DL_Retry) /SD IDCANCEL IDRETRY retry_codecs
+        DetailPrint $(Codecs_Inst_Failed)
+        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs 0x0
+        Sleep 5000
+
+    done:
 
 	SectionEnd
-
-;--------------------------------
-;FFmpeg
-
-	${MementoUnselectedSection} FFmpeg SecFFmpeg
-
-		SetOutPath "$INSTDIR\FFmpeg"
-!ifdef WIN64
-		File /r /x ffplay.exe "ffmpeg\64\*.*"
-!else
-		File /r /x ffplay.exe "ffmpeg\32\*.*"
-!endif
-
-	${MementoSectionEnd}
 
 SectionGroupEnd
 
@@ -439,7 +480,6 @@ ${MementoSectionDone}
   !insertmacro MUI_DESCRIPTION_TEXT ${SecDesktopShortcut} $(Section_DesktopShortcut_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecStartMenuShortcut} $(Section_StartMenu_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecMPlayer} $(Section_MPlayer_Desc)
-  !insertmacro MUI_DESCRIPTION_TEXT ${SecFFmpeg} "FFmpeg is a complete solution to record, convert and stream audio and video."
   !insertmacro MUI_DESCRIPTION_TEXT ${SecCodecs} $(Section_MPlayerCodecs_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecThemes} $(Section_IconThemes_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecTranslations} $(Section_Translations_Desc)
@@ -691,6 +731,19 @@ Function CheckPreviousVersion
   ${ElseIf} $Previous_Version_State == 2
     StrCpy $Inst_Type $(Type_Upgrade)
   ${EndIf}
+
+FunctionEnd
+
+Function GetVerInfo
+
+  IfFileExists "$PLUGINSDIR\version-info" end_dl_ver_info 0
+    DetailPrint $(VerInfo_DL_Msg)
+    inetc::get /CONNECTTIMEOUT 15000 /SILENT ${VERSION_FILE_URL} "$PLUGINSDIR\version-info" /END
+    Pop $R0
+    StrCmp $R0 OK +2
+      DetailPrint $(VerInfo_DL_Failed)
+
+  end_dl_ver_info:
 
 FunctionEnd
 
