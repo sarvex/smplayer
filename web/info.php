@@ -48,7 +48,7 @@ Japanese...."); ?></li>
 
 <?php
 echo "<b>";
-tr("Download <a href=%1>here</a> the latest version of the SMPlayer", 
+tr("Download <a href=%1>here</a> the latest version of SMPlayer", 
 "\"downloads.php?tr_lang=".$tr_lang."\""); 
 echo "</b>";
 ?>

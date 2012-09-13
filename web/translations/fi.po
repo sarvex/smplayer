@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-09 12:52+0200\n"
+"POT-Creation-Date: 2012-09-14 01:04+0200\n"
 "PO-Revision-Date: 2010-01-24 18:15+0200\n"
 "Last-Translator: Olli <ollinpostit@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -78,6 +78,36 @@ msgstr ""
 msgid "This page is available in the following languages:"
 msgstr "Tämä sivu on saatavilla seuraavilla kielillä:"
 
+#: ../formats.php:5
+msgid "SMPlayer - Formats and Codecs"
+msgstr ""
+
+#: ../formats.php:28
+msgid ""
+"SMPlayer is a graphical interface for %1, which supports many video and "
+"audio formats and codecs."
+msgstr ""
+
+#: ../formats.php:32
+msgid "Here is a complete list (from the MPlayer documentation):"
+msgstr ""
+
+#: ../formats.php:34
+msgid "Supported Input Formats"
+msgstr ""
+
+#: ../formats.php:62
+msgid "Supported Video and Audio Codecs"
+msgstr ""
+
+#: ../formats.php:64
+msgid "most important video codecs:"
+msgstr ""
+
+#: ../formats.php:89
+msgid "most important audio codecs:"
+msgstr ""
+
 #: ../header.php:16
 msgid "Main"
 msgstr "Etusivu"
@@ -118,19 +148,19 @@ msgstr "SMPlayer-projekti"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Yleisiä tietoja"
 
-#: ../info.php:15
+#: ../info.php:7
 msgid ""
-"SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
-"from basic features like playing videos, DVDs, and VCDs to more advanced \n"
-"features like support for MPlayer filters and more."
+"SMPlayer is a complete media player for Windows and Linux. It uses\n"
+"the award-winning %1 as playback engine which is capable of\n"
+"playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
+"It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
-"SMPlayer pyrkii olemaan täysinäinen käyttöliittymä <a href=%1>MPlayer</"
-"a>ille,\n"
-"perusominaisuuksista kuten videoiden, DVD:n ja VCD:ien toistosta "
-"kehittyneempiin\n"
-"ominaisuuksiin kuten MPlayer -suotimiin ja muihin."
 
-#: ../info.php:21
+#: ../info.php:12
+msgid "see list"
+msgstr ""
+
+#: ../info.php:14
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -145,27 +175,23 @@ msgstr ""
 "jatkuu samasta kohdasta, johon jäit, ja samoilla asetuksilla: ääniraita \n"
 "tekstitykset, äänenvoimakkuus..."
 
-#: ../info.php:30
-msgid "Other additional interesting features:"
-msgstr "Muita kiinnostavia ominaisuuksia:"
-
-#: ../info.php:32
-msgid ""
-"Configurable subtitles. You can choose font and size, and even \n"
-"colors for the subtitles."
+#: ../info.php:22
+msgid "Some other interesting features:"
 msgstr ""
-"Tekstitykset asetuksilla. Voit valita fontin ja koon, jopa tekstitysten \n"
-"värin."
 
-#: ../info.php:34
+#: ../info.php:24
 msgid ""
-"Audio track switching. You can choose the audio track you want\n"
-"to listen. Works with avi and mkv. And of course with DVDs."
+"Complete preferences dialog, where you can change the key shortcuts,\n"
+"colors and fonts of the subtitles, and many more."
 msgstr ""
-"Ääniraidan vaihto. Voit valita ääniraidan, jota haluat\n"
-"kuunnella. Toimii avi:lla ja mkv:llä. Ja totta kai myös DVD:ien kanssa."
 
-#: ../info.php:36
+#: ../info.php:26
+msgid ""
+"Filters. Many video and audio filters are available: deinterlace, \n"
+"postprocessing, denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+
+#: ../info.php:28
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -173,7 +199,11 @@ msgstr ""
 "Haku hiiren rullalla. Voit käyttää hiiren rullaa mennäksesi eteenpäin \n"
 "ja taaksepäin videossa."
 
-#: ../info.php:38
+#: ../info.php:29
+msgid "The mouse buttons can also be customized."
+msgstr ""
+
+#: ../info.php:30
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -182,7 +212,7 @@ msgstr ""
 "värisävyä,\n"
 "kylläisyyttä ja gammaa."
 
-#: ../info.php:40
+#: ../info.php:32
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -190,16 +220,7 @@ msgstr ""
 "Useiden nopeuksien toisto. Voit toistaa 2X, 4x... ja jopa \n"
 "hidasliikkeisellä kuvalla."
 
-#: ../info.php:43
-msgid ""
-"Filters. Several filters are available: deinterlace, postprocessing,\n"
-"denoise... and even a karaoke filter (voice removal)."
-msgstr ""
-"Suotimet. Useita suotimia on saatavilla: limittymisen poisto, "
-"jälkikäsittely, \n"
-"melun poisto... ja jopa karaoke-suodin (äänenpoisto)."
-
-#: ../info.php:45
+#: ../info.php:34
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -207,7 +228,7 @@ msgstr ""
 "Äänen ja tekstitysten ajan vaihto. Sallii sinun tasata äänen ja\n"
 "tekstitykset."
 
-#: ../info.php:47
+#: ../info.php:36
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -215,47 +236,34 @@ msgstr ""
 "Kehittyneet asetukset, kuten kanavointilaitteen valinta tai video ja\n"
 "äänikoodekit."
 
-#: ../info.php:50
-msgid ""
-"Playlist. Allows you to enqueue several files to be played one after \n"
-"each other. Autorepeat and shuffle supported too."
+#: ../info.php:38
+msgid "Possibility to search and download subtitles from %1."
 msgstr ""
-"Soittolista. Sallii sinun laittaa jonoon useita tiedostoja, jotka "
-"toistetaan \n"
-"yksi kerrallaan. Automaattinen toisto ja sekoitus ovat myös tuettuja."
 
-#: ../info.php:52
+#: ../info.php:40
 msgid ""
-"Preferences dialog. You can easily configure every option of SMPlayer\n"
-"by using a nice preferences dialog."
+"It can play Youtube videos. A Youtube browser is included, which\n"
+"allows to easily download Youtube videos too."
 msgstr ""
-"Asetusikkuna. Voit helposti muuttaa SMPlayerin jokaista asetusta\n"
-"käyttämällä kätevää asetusikkunaa."
 
-#: ../info.php:54
-msgid "Possibility to search automatically for subtitles in %1."
-msgstr "Mahdollisuus etsiä tekstitykset automaattisesti %1 -sivustolta."
-
-#: ../info.php:56
+#: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 20 \n"
+"Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"Käännökset: SMPlayer on käännetty useammalle kuin 20 eri \n"
-"kielelle, kuten espanjaksi, saksaksi, ranskaksi, italiaksi, venäjäksi, "
-"kiinaksi\n"
-"ja japaniksi..."
 
-#: ../info.php:59
-msgid "It's multiplatform. Binaries available for Windows and Linux."
+#: ../info.php:45
+msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
-"Sitä voi käyttää useilla eri käyttöjärjestelmillä. Ohjelmakoodit ovat "
-"saatavilla sekä Windowsille että Linuxille."
 
-#: ../info.php:61
-msgid "SMPlayer is under the <b>GPL</b> license."
-msgstr "SMPlayer on <b>GPL</b> -lisenssin alainen."
+#: ../info.php:46
+msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:5
 msgid "SMPlayer - Latest Version"
@@ -310,21 +318,133 @@ msgstr "Pelkistetty ikkuna"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid ""
-#~ "Read the file Install.txt included in the package to know how compile it."
-#~ msgstr ""
-#~ "Lue tiedosto Install.txt paketin sisällä tietääksesi kuinka voit kääntää "
-#~ "sen."
+#~ msgid "Package with installer:"
+#~ msgstr "Paketti, sisältää asennusohjelman:"
 
 #~ msgid ""
-#~ "You can get packages directly taken from the SVN (source code and\n"
-#~ "Windows updates), <a href=%1><b>here</b></a>."
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
 #~ msgstr ""
-#~ "Voit hakea paketit suoraan SVN:stä (lähdekoodi ja\n"
-#~ "Windows-päivitykset), <a href=%1><b>tästä</b></a>."
+#~ "Tämä paketti sisältää kaiken tarpeellisen smplayerin ajamiseen: jaetut \n"
+#~ "kirjastot, käännöstiedostot, kuvaketeemat ja mplayer \n"
+#~ "-ohjelman (versio on %1)."
 
-#~ msgid "Unstable releases"
-#~ msgstr "Epävakaat julkaisut"
+#~ msgid "Additional codecs:"
+#~ msgstr "Lisäkoodekit:"
+
+#~ msgid ""
+#~ "This package adds support for codecs that are not yet implemented\n"
+#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+#~ "formats. Note that they are not necessary to play most common formats\n"
+#~ "like DVDs, MPEG-1/2/4, etc."
+#~ msgstr ""
+#~ "Tämä paketti lisää tuen koodekeille, joita ei ole vielä sisäänrakennettu\n"
+#~ "mplayeriin, kuten uusimmat RealVideo-muunnokset ja paljon ei-tunnettuja\n"
+#~ "muotoja. Huomaa, että nämä eivät ole tarpeen kun toistetaan yleisiä "
+#~ "muotoja\n"
+#~ "kuten DVD:itä, MPEG-1/2/4 jne."
+
+#~ msgid ""
+#~ "These codecs are to be used by mplayer only and they will be installed \n"
+#~ "in the same folder, so they can't cause any conflict with other codecs "
+#~ "you \n"
+#~ "may have installed."
+#~ msgstr ""
+#~ "Näitä koodekkeja voi käyttää vain mplayerin kanssa ja ne asennetaan \n"
+#~ "samaan kansioon, joten eivät aiheuta mitään ristiriitoja muitten \n"
+#~ "mahdollisesti asentamiesi koodekkien kanssa."
+
+#~ msgid ""
+#~ "If you prefer a zip file, you can get it at \n"
+#~ "the <a href=%1>mplayer site</a> (%2)."
+#~ msgstr ""
+#~ "Jos suosit zip-tiedostoa, voit hakea sen \n"
+#~ "<a href=%1>mplayer-sivuilta</a> (%2)."
+
+#~ msgid ""
+#~ "Package (without installer) which includes smplayer, shared libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
+#~ msgstr ""
+#~ "Paketti (ilman asennusohjelmaa), joka sisältää smplayerin, jaetut "
+#~ "kirjastot,\n"
+#~ "käännökset ja kuvaketeemat. Se ei sisällytä mplayeria."
+
+#~ msgid "This package is for advanced users only!"
+#~ msgstr "Tämä paketti on vain kehittyneille käyttäjille!"
+
+#~ msgid ""
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ msgstr ""
+#~ "SMPlayerin siirrettävä versio. Voit käyttää sitä ulkoisilta laitteilta, "
+#~ "kuten \n"
+#~ "USB-muistitikuilta. Se ei vaadi asennusta, sinun pitää vain purkaa \n"
+#~ "paketti mihin ikinä haluatkaan ja kaksoisklikata smplayer.exe tiedostoa "
+#~ "käynnistääksesi."
+
+#~ msgid ""
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
+#~ msgstr ""
+#~ "Paketti sisältää myös kuvaketeemat, käännökset ja \n"
+#~ "MPlayer-version."
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr "Huomautus: 7z -tiedostot voidaan purkaa <a href=%1>7-Zip</a>illä."
+
+#~ msgid "Suggested package:"
+#~ msgstr "Suositeltu paketti:"
+
+#~ msgid ""
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
+#~ msgstr ""
+#~ "Ubuntuun sisällytetty mplayerin versio on hyvin vanha (%1). "
+#~ "SMPlayerilla \n"
+#~ "on tuki joillekin mplayerin uusille ominaisuuksille, joten uudempi "
+#~ "versio \n"
+#~ "on paljon suositeltu."
+
+#~ msgid "You can get updated versions from this PPA:"
+#~ msgstr "Voit hakea päivitetyt versiot tästä PPA:sta:"
+
+#~ msgid "more info"
+#~ msgstr "lisää tietoja"
+
+#~ msgid "Icon Themes:"
+#~ msgstr "Kuvaketeemat:"
+
+#~ msgid "Optional packages which provide some icon themes."
+#~ msgstr "Vapaaehtoisia paketteja, jotka antavat joitakin kuvaketeemoja."
+
+#~ msgid "Additional packages"
+#~ msgstr "Lisäpaketteja"
+
+#~ msgid ""
+#~ "There are several additional packages for advanced users:\n"
+#~ "<a href=%1>See sourceforge download page</a>."
+#~ msgstr ""
+#~ "Kehittyneille käyttäjille on joitakin lisäpaketteja:\n"
+#~ "<a href=%1>Katso SourceForgen lataussivu</a>."
+
+#~ msgid "Contributed packages"
+#~ msgstr "Avustetut paketit"
+
+#~ msgid ""
+#~ "There are available packages for other distros, created\n"
+#~ "by other people. <a href=%1>Click here</a> to see them."
+#~ msgstr ""
+#~ "Paketteja on saatavilla myös muille jakoversioille, jotka\n"
+#~ "muut ihmiset ovat tehneet. <a href=%1>Klikkaa tästä</a> katsoaksesi ne."
+
+#~ msgid "Related Project"
+#~ msgstr "Suositeltu projekti"
+
+#~ msgid "by MuldeR"
+#~ msgstr "MuldeR:ltä"
 
 #~ msgid ""
 #~ "This package contains a very recent version of SMPlayer (often taken "
@@ -341,130 +461,91 @@ msgstr ""
 #~ "ja\n"
 #~ "lähdekoodin koodekit."
 
-#~ msgid "by MuldeR"
-#~ msgstr "MuldeR:ltä"
-
-#~ msgid "Related Project"
-#~ msgstr "Suositeltu projekti"
+#~ msgid "Unstable releases"
+#~ msgstr "Epävakaat julkaisut"
 
 #~ msgid ""
-#~ "There are available packages for other distros, created\n"
-#~ "by other people. <a href=%1>Click here</a> to see them."
+#~ "You can get packages directly taken from the SVN (source code and\n"
+#~ "Windows updates), <a href=%1><b>here</b></a>."
 #~ msgstr ""
-#~ "Paketteja on saatavilla myös muille jakoversioille, jotka\n"
-#~ "muut ihmiset ovat tehneet. <a href=%1>Klikkaa tästä</a> katsoaksesi ne."
-
-#~ msgid "Contributed packages"
-#~ msgstr "Avustetut paketit"
+#~ "Voit hakea paketit suoraan SVN:stä (lähdekoodi ja\n"
+#~ "Windows-päivitykset), <a href=%1><b>tästä</b></a>."
 
 #~ msgid ""
-#~ "There are several additional packages for advanced users:\n"
-#~ "<a href=%1>See sourceforge download page</a>."
+#~ "Read the file Install.txt included in the package to know how compile it."
 #~ msgstr ""
-#~ "Kehittyneille käyttäjille on joitakin lisäpaketteja:\n"
-#~ "<a href=%1>Katso SourceForgen lataussivu</a>."
+#~ "Lue tiedosto Install.txt paketin sisällä tietääksesi kuinka voit kääntää "
+#~ "sen."
 
-#~ msgid "Additional packages"
-#~ msgstr "Lisäpaketteja"
+#~ msgid "SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "SMPlayer on <b>GPL</b> -lisenssin alainen."
 
-#~ msgid "Optional packages which provide some icon themes."
-#~ msgstr "Vapaaehtoisia paketteja, jotka antavat joitakin kuvaketeemoja."
-
-#~ msgid "Icon Themes:"
-#~ msgstr "Kuvaketeemat:"
-
-#~ msgid "more info"
-#~ msgstr "lisää tietoja"
-
-#~ msgid "You can get updated versions from this PPA:"
-#~ msgstr "Voit hakea päivitetyt versiot tästä PPA:sta:"
+#~ msgid "It's multiplatform. Binaries available for Windows and Linux."
+#~ msgstr ""
+#~ "Sitä voi käyttää useilla eri käyttöjärjestelmillä. Ohjelmakoodit ovat "
+#~ "saatavilla sekä Windowsille että Linuxille."
 
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
+#~ "Translations: currently SMPlayer is translated into more than 20 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
 #~ msgstr ""
-#~ "Ubuntuun sisällytetty mplayerin versio on hyvin vanha (%1). "
-#~ "SMPlayerilla \n"
-#~ "on tuki joillekin mplayerin uusille ominaisuuksille, joten uudempi "
-#~ "versio \n"
-#~ "on paljon suositeltu."
+#~ "Käännökset: SMPlayer on käännetty useammalle kuin 20 eri \n"
+#~ "kielelle, kuten espanjaksi, saksaksi, ranskaksi, italiaksi, venäjäksi, "
+#~ "kiinaksi\n"
+#~ "ja japaniksi..."
 
-#~ msgid "Suggested package:"
-#~ msgstr "Suositeltu paketti:"
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr "Huomautus: 7z -tiedostot voidaan purkaa <a href=%1>7-Zip</a>illä."
+#~ msgid "Possibility to search automatically for subtitles in %1."
+#~ msgstr "Mahdollisuus etsiä tekstitykset automaattisesti %1 -sivustolta."
 
 #~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
+#~ "Preferences dialog. You can easily configure every option of SMPlayer\n"
+#~ "by using a nice preferences dialog."
 #~ msgstr ""
-#~ "Paketti sisältää myös kuvaketeemat, käännökset ja \n"
-#~ "MPlayer-version."
+#~ "Asetusikkuna. Voit helposti muuttaa SMPlayerin jokaista asetusta\n"
+#~ "käyttämällä kätevää asetusikkunaa."
 
 #~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ "Playlist. Allows you to enqueue several files to be played one after \n"
+#~ "each other. Autorepeat and shuffle supported too."
 #~ msgstr ""
-#~ "SMPlayerin siirrettävä versio. Voit käyttää sitä ulkoisilta laitteilta, "
-#~ "kuten \n"
-#~ "USB-muistitikuilta. Se ei vaadi asennusta, sinun pitää vain purkaa \n"
-#~ "paketti mihin ikinä haluatkaan ja kaksoisklikata smplayer.exe tiedostoa "
-#~ "käynnistääksesi."
-
-#~ msgid "This package is for advanced users only!"
-#~ msgstr "Tämä paketti on vain kehittyneille käyttäjille!"
+#~ "Soittolista. Sallii sinun laittaa jonoon useita tiedostoja, jotka "
+#~ "toistetaan \n"
+#~ "yksi kerrallaan. Automaattinen toisto ja sekoitus ovat myös tuettuja."
 
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, shared libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
+#~ "Filters. Several filters are available: deinterlace, postprocessing,\n"
+#~ "denoise... and even a karaoke filter (voice removal)."
 #~ msgstr ""
-#~ "Paketti (ilman asennusohjelmaa), joka sisältää smplayerin, jaetut "
-#~ "kirjastot,\n"
-#~ "käännökset ja kuvaketeemat. Se ei sisällytä mplayeria."
+#~ "Suotimet. Useita suotimia on saatavilla: limittymisen poisto, "
+#~ "jälkikäsittely, \n"
+#~ "melun poisto... ja jopa karaoke-suodin (äänenpoisto)."
 
 #~ msgid ""
-#~ "If you prefer a zip file, you can get it at \n"
-#~ "the <a href=%1>mplayer site</a> (%2)."
+#~ "Audio track switching. You can choose the audio track you want\n"
+#~ "to listen. Works with avi and mkv. And of course with DVDs."
 #~ msgstr ""
-#~ "Jos suosit zip-tiedostoa, voit hakea sen \n"
-#~ "<a href=%1>mplayer-sivuilta</a> (%2)."
+#~ "Ääniraidan vaihto. Voit valita ääniraidan, jota haluat\n"
+#~ "kuunnella. Toimii avi:lla ja mkv:llä. Ja totta kai myös DVD:ien kanssa."
 
 #~ msgid ""
-#~ "These codecs are to be used by mplayer only and they will be installed \n"
-#~ "in the same folder, so they can't cause any conflict with other codecs "
-#~ "you \n"
-#~ "may have installed."
+#~ "Configurable subtitles. You can choose font and size, and even \n"
+#~ "colors for the subtitles."
 #~ msgstr ""
-#~ "Näitä koodekkeja voi käyttää vain mplayerin kanssa ja ne asennetaan \n"
-#~ "samaan kansioon, joten eivät aiheuta mitään ristiriitoja muitten \n"
-#~ "mahdollisesti asentamiesi koodekkien kanssa."
+#~ "Tekstitykset asetuksilla. Voit valita fontin ja koon, jopa tekstitysten \n"
+#~ "värin."
+
+#~ msgid "Other additional interesting features:"
+#~ msgstr "Muita kiinnostavia ominaisuuksia:"
 
 #~ msgid ""
-#~ "This package adds support for codecs that are not yet implemented\n"
-#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-#~ "formats. Note that they are not necessary to play most common formats\n"
-#~ "like DVDs, MPEG-1/2/4, etc."
+#~ "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+#~ "from basic features like playing videos, DVDs, and VCDs to more "
+#~ "advanced \n"
+#~ "features like support for MPlayer filters and more."
 #~ msgstr ""
-#~ "Tämä paketti lisää tuen koodekeille, joita ei ole vielä sisäänrakennettu\n"
-#~ "mplayeriin, kuten uusimmat RealVideo-muunnokset ja paljon ei-tunnettuja\n"
-#~ "muotoja. Huomaa, että nämä eivät ole tarpeen kun toistetaan yleisiä "
-#~ "muotoja\n"
-#~ "kuten DVD:itä, MPEG-1/2/4 jne."
-
-#~ msgid "Additional codecs:"
-#~ msgstr "Lisäkoodekit:"
-
-#~ msgid ""
-#~ "This package contains everything needed to run smplayer: shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
-#~ msgstr ""
-#~ "Tämä paketti sisältää kaiken tarpeellisen smplayerin ajamiseen: jaetut \n"
-#~ "kirjastot, käännöstiedostot, kuvaketeemat ja mplayer \n"
-#~ "-ohjelman (versio on %1)."
-
-#~ msgid "Package with installer:"
-#~ msgstr "Paketti, sisältää asennusohjelman:"
+#~ "SMPlayer pyrkii olemaan täysinäinen käyttöliittymä <a href=%1>MPlayer</"
+#~ "a>ille,\n"
+#~ "perusominaisuuksista kuten videoiden, DVD:n ja VCD:ien toistosta "
+#~ "kehittyneempiin\n"
+#~ "ominaisuuksiin kuten MPlayer -suotimiin ja muihin."
