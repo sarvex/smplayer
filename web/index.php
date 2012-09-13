@@ -26,6 +26,9 @@ print_header();
 <div id="sm_content">
 <?php
 include("info.php");
+
+echo "<hr>";
+
 $release_notes_file = "translations/release_notes_". $tr_lang .".html";
 if (file_exists($release_notes_file)) {
 	include($release_notes_file);
