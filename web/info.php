@@ -9,7 +9,7 @@ the award-winning %1 as playback engine which is capable of
 playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). 
 It <b>uses its own codecs</b>, so you don't need to install any codec packs.", 
 "<a href=\"http://www.mplayerhq.hu/\">MPlayer</a>", 
-"<a href=\"formats.php\">" .get_tr("see list") ."</a>");
+"<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
 echo "<p>";
 tr("One of the most interesting features of SMPlayer: <b>it remembers the 
 settings of all files you play</b>. So you start to watch a movie but you 
