@@ -1,5 +1,5 @@
 <center>
-<img src="images/screenshots/video_en.jpg">
+<img src="images/screenshots/smplayer.jpg">
 </center>
 
 <?php 
