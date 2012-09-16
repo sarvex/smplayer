@@ -11,7 +11,7 @@ function download_src_link() {
 }
 
 function download_smtube_link() {
-	return create_link("smtube-1.1.tar.bz2", 296345 );
+	return create_link("smtube-1.2.tar.bz2", 299131 );
 }
 
 function download_rpm_link() {
