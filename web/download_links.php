@@ -59,7 +59,7 @@ function download_windows_portable_link() {
 
 
 function download_themes_src_link() {
-	return create_link("smplayer-themes-20120131.tar.gz", 2014369 );
+	return create_link("smplayer-themes-20120919.tar.bz2", 2096375 );
 }
 
 function download_themes_rpm_link() {
