@@ -7,7 +7,7 @@ function download_all_link($text) {
 }
 
 function download_src_link() {
-	return create_link("smplayer-0.8.0.tar.bz2", 2815007 );
+	return create_link("smplayer-0.8.1.tar.bz2", 2813484 );
 }
 
 function download_smtube_link() {
@@ -27,10 +27,10 @@ function download_amd64deb_link() {
 }
 
 function download_windows_full_link($text) {
-	$test = 1;
+	$test = 0;
 
-	$filename = "smplayer-0.8.0-win32.exe";
-	$size = 16496224;
+	$filename = "smplayer-0.8.1-win32.exe";
+	$size = 16773126 ;
 
 	$external_link = "http://downloadcdn.betterinstaller.com/installers/1/b/SMPlayer_downloader_by_SMPlayer.exe";
 
