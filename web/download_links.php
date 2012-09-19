@@ -2,7 +2,7 @@
 include_once("myfunctions.php");
 
 function download_all_link($text) {
-	$u ="https://sourceforge.net/projects/smplayer/files/SMPlayer/0.8.0/";
+	$u ="https://sourceforge.net/projects/smplayer/files/SMPlayer/0.8.1/";
 	return "<a href=\"$u\"><b>$text</b></a>";
 }
 
