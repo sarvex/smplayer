@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-14 01:00+0200\n"
+"POT-Creation-Date: 2012-09-21 10:56+0200\n"
 "PO-Revision-Date: 2008-02-02 23:52+0100\n"
 "Last-Translator: Kud Gray <kud.gray@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -54,23 +54,30 @@ msgstr ""
 msgid "the unstable version"
 msgstr ""
 
-#: ../downloads.php:64
+#: ../downloads.php:61
+msgid ""
+"<b>Notice:</b> on the first playback, a font cache will be \n"
+"created (necessary for OSD and subtitles). This can take up to 10 \n"
+"or 20 seconds. This is only done once."
+msgstr ""
+
+#: ../downloads.php:71
 msgid "Linux"
 msgstr ""
 
-#: ../downloads.php:73
+#: ../downloads.php:80
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:74
+#: ../downloads.php:81
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:88
+#: ../downloads.php:95
 msgid "Sources:"
 msgstr ""
 
-#: ../downloads.php:102
+#: ../downloads.php:109
 msgid "Contributed packages for other distros"
 msgstr ""
 

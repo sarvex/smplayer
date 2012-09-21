@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-14 01:04+0200\n"
+"POT-Creation-Date: 2012-09-21 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../downloads.php:5
 msgid "SMPlayer - Downloads"
@@ -57,25 +57,32 @@ msgstr "また、お望みであれば%1もお試しいただけます。"
 msgid "the unstable version"
 msgstr "まだ不安定なバージョン"
 
-#: ../downloads.php:64
+#: ../downloads.php:61
+msgid ""
+"<b>Notice:</b> on the first playback, a font cache will be \n"
+"created (necessary for OSD and subtitles). This can take up to 10 \n"
+"or 20 seconds. This is only done once."
+msgstr ""
+
+#: ../downloads.php:71
 msgid "Linux"
 msgstr "Linux"
 
-#: ../downloads.php:73
+#: ../downloads.php:80
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:74
+#: ../downloads.php:81
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:88
+#: ../downloads.php:95
 msgid "Sources:"
 msgstr "ソース:"
 
-#: ../downloads.php:102
+#: ../downloads.php:109
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
@@ -164,7 +171,7 @@ msgid ""
 msgstr ""
 "SMPlayer は Windows と Linux に対応する、網羅的なメディアプレイヤーです。数々"
 "の受賞を誇る %1 を再生エンジンに採用し、avi、mkv、wmv、mp4、mpeg などほとんど"
-"のビデオ/オーディオフォーマット (%2) を再生することができます。<b>独"自のコー"
+"のビデオ/オーディオフォーマット (%2) を再生することができます。<b>独自のコー"
 "デックを使用する</b>ため、他にコーデックパックをインストールする必要がありま"
 "せん。"
 
@@ -193,7 +200,7 @@ msgstr "特徴的な機能:"
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
-msgstr "
+msgstr ""
 "詳細な環境設定ダイアログ: ここでキーショートカットや字幕の色/フォントなどさま"
 "ざまな設定を変更できます。"
 
@@ -270,7 +277,8 @@ msgstr "インターフェイスのスタイルやアイコンセットの変更
 
 #: ../info.php:46
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr "無料でオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
+msgstr ""
+"無料でオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 
 #: ../info.php:51
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"

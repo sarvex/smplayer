@@ -56,6 +56,15 @@ tr("If you wish you can also try %1.",
 "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("the unstable version") ."</b></a>");
 ?>
 </td></tr>
+<tr><td colspan="2">
+<i>
+<?php 
+tr("<b>Notice:</b> on the first playback, a font cache will be 
+created (necessary for OSD and subtitles). This can take up to 10 
+or 20 seconds. This is only done once.");
+?>
+</i>
+</td></tr>
 
 </table>
 
