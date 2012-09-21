@@ -29,8 +29,8 @@ function download_amd64deb_link() {
 function download_windows_full_link($text) {
 	$test = 0;
 
-	$filename = "smplayer-0.8.1.4449-x86.exe";
-	$size = 16594065;
+	$filename = "smplayer-0.8.1-win32.exe";
+	$size = 16762646;
 
 	$external_link = "http://downloadcdn.betterinstaller.com/installers/1/b/SMPlayer_downloader_by_SMPlayer.exe";
 
