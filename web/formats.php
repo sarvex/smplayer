@@ -26,7 +26,7 @@ print_header();
 <div id="sm_content">
 <?php
 tr("SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs.",
-"<a href=\"http://www.mplayerhq.hu/\">MPlayer</a>");
+"MPlayer");
 echo "<p>";
 
 tr("Here is a complete list (from the MPlayer documentation):");

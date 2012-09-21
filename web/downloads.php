@@ -50,7 +50,7 @@ the YouTube browser (smtube).","<i>r35203</i>");
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
-tr("There are available other packages for advanced users, %1.", download_all_link(get_tr("here")));
+tr("There are available other packages (like a portable version), %1.", download_all_link(get_tr("here")));
 echo "<br>";
 tr("If you wish you can also try %1.", 
 "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("the unstable version") ."</b></a>");
