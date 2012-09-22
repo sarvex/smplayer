@@ -327,7 +327,7 @@ SectionGroup $(ShortcutGroupTitle)
       CreateDirectory "$SMPROGRAMS\$SMPlayer_StartMenuFolder"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMTube.lnk" "$INSTDIR\smtube.exe"
-      WriteINIStr    "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sf.net"
+      WriteINIStr    "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sourceforge.net"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
     !insertmacro MUI_STARTMENU_WRITE_END
 
@@ -420,11 +420,11 @@ Section -Post
 !endif
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayVersion" "${SMPLAYER_VERSION}"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.sf.net/forum"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.sourceforge.net/forum"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "Publisher" "Ricardo Villalba"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLInfoAbout" "http://smplayer.sf.net"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLUpdateInfo" "http://smplayer.sf.net"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLInfoAbout" "http://smplayer.sourceforge.net"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLUpdateInfo" "http://smplayer.sourceforge.net"
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoModify" "1"
   WriteRegDWORD HKLM "${SMPLAYER_UNINST_KEY}" "NoRepair" "1"
 
@@ -584,10 +584,11 @@ FunctionEnd
 
 Function .onInit
 
-	${Unless} ${AtLeastWinXP}
-		MessageBox MB_OK|MB_ICONSTOP $(OS_Not_Supported)
-		Abort
-	${EndIf}
+  ${Unless} ${AtLeastWinXP}
+    MessageBox MB_YESNO|MB_ICONSTOP $(OS_Not_Supported) /SD IDNO IDYES installonoldwindows
+    Abort
+	installonoldwindows:
+  ${EndIf}
 
 !ifdef WIN64
   ${IfNot} ${RunningX64}
