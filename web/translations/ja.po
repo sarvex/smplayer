@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../downloads.php:53
 msgid "There are available other packages (like a portable version), %1."
-msgstr ""
+msgstr "ポータブル版など、その他のパッケージは%1をご覧ください。"
 
 #: ../downloads.php:53
 msgid "here"
@@ -63,6 +63,8 @@ msgid ""
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
+"<b>注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されます"
+"。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
 #: ../downloads.php:73
 msgid "Linux"
@@ -336,6 +338,3 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:62
 msgid "Possibility to search for subtitles"
 msgstr "字幕の検索機能"
-
-#~ msgid "There are available other packages for advanced users, %1."
-#~ msgstr "他に上級者向けのパッケージもあります。%1をご覧ください。"
