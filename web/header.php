@@ -3,14 +3,15 @@ include_once("l10n.php");
 include_once("site.php");
 
 function print_header($title) {
+	global $tr_lang;
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
 <title><?php echo $title ?></title>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta charset="utf-8">
 <meta name="Description" content="smplayer, multiplatform front-end for mplayer">
-<meta name="Keywords" content="smplayer, mplayer, multimedia, player">
+<meta name="Keywords" content="smplayer, mplayer, mplayer2, multimedia, player">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <style type="text/css">
@@ -30,9 +31,6 @@ function print_header($title) {
 		padding: 60px;
 		margin-bottom: 30px;
 		background-color: #eeeeee;
-		/*background-image:url('images/abstract-waves-on-a-blue-background.jpg');*/
-		/*background-image:url('images/blue007.jpg');*/
-		/*background-image:url('images/abstract-wallpapers-backgrounds-for-powerpoint.jpg');*/
 		background-image:url('images/background.jpg');
 		background-size: 100%;
 		-webkit-border-radius: 6px;
@@ -170,7 +168,6 @@ function print_menu($current=1) {
 <?php
 }
 ?>
-
 <?php
 				/*
 				header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", ($current==4), true);
