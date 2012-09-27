@@ -1,28 +1,14 @@
-<?php include_once("l10n.php"); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<title><?php tr("SMPlayer - Latest Version"); ?></title>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<meta name="Description" content="smplayer, multiplatform front-end for mplayer">
-<meta name="Keywords" content="smplayer, mplayer, multimedia, player">
-<link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
-</head>
-<body>
-
-<div id="sm_container">
-
-<!- header -->
 <?php
-include("header.php");
-print_header();
+include_once("header.php");
+print_header(get_tr("SMPlayer - Downloads"));
+echo "<body>\n";
+print_menu(1);
 ?>
-<!-- end header -->
 
-<!-- begin content -->
+<div class="container-fluid">
+<h1><?php tr("Latest changes"); ?></h1>
+<p><?php tr("Here you can find a list with the latest changes in SMPlayer:"); ?></p>
 
-<div id="sm_content">
 <?php
 $release_notes_file = "translations/release_notes_". $tr_lang .".html";
 if (file_exists($release_notes_file)) {
@@ -31,19 +17,16 @@ if (file_exists($release_notes_file)) {
 	include("translations/release_notes_en.html");
 }
 echo "<p>";
-echo "<a href=\"downloads.php?tr_lang=$tr_lang\">". 
+echo "<a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">". 
      get_tr("Go to the download page") ."</a>";
 ?>
-</div>
-
-<!-- end content -->
+</div> <!-- container -->
 
 <!-- begin footer -->
 <?php
 include("footer.php");
 ?>
 <!-- end footer -->
-</div>
 
 </body>
 </html>

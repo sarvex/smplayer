@@ -7,32 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-21 11:31+0200\n"
+"POT-Creation-Date: 2012-09-27 03:26+0200\n"
 "PO-Revision-Date: 2012-09-20 11:29+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.3\n"
 
-#: ../downloads.php:5
+#: ../downloads.php:3 ../latest.php:3
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Jeisketak"
 
-#: ../downloads.php:28
-msgid "Stable version"
-msgstr "Bertsio egonkorra"
+#: ../downloads.php:13 ../header.php:152 ../index.php:46
+msgid "Downloads"
+msgstr "Jeisketak"
 
-#: ../downloads.php:29
-msgid "Windows"
-msgstr "Windows"
-
-#: ../downloads.php:39
+#: ../downloads.php:23
 msgid "Click here to get the full package"
 msgstr "Klikatu hemen pakete osoa lortzeko"
 
-#: ../downloads.php:43
+#: ../downloads.php:27
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -40,58 +37,83 @@ msgstr ""
 "Pakete honek smplayer, azalgaiak, itzulpenak, mplayer %1 eta \n"
 "YouTube bilatzailea ditu (smtube)."
 
-#: ../downloads.php:53
-msgid "There are available other packages (like a portable version), %1."
+#: ../downloads.php:37
+msgid "There are available other packages for advanced users, %1."
 msgstr ""
+"Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, %1."
 
-#: ../downloads.php:53
+#: ../downloads.php:37
 msgid "here"
 msgstr "hemen"
 
-#: ../downloads.php:55
+#: ../downloads.php:39
 msgid "If you wish you can also try %1."
 msgstr "Nahi baduzu saiatu zaitezke ere honekin: %1"
 
-#: ../downloads.php:56
+#: ../downloads.php:40
 msgid "the unstable version"
 msgstr "bertsio ezegonkorra"
 
-#: ../downloads.php:62
+#: ../downloads.php:47
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:73
-msgid "Linux"
-msgstr "Linux"
-
-#: ../downloads.php:82
+#: ../downloads.php:61
 msgid "Packages for Ubuntu:"
 msgstr "Ubunturako Paketeak:"
 
-#: ../downloads.php:83
+#: ../downloads.php:62
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "SMplayer ezartzeko, ekin agindu hauei terminalean:"
 
-#: ../downloads.php:97
-msgid "Sources:"
-msgstr "Iturburuak:"
-
-#: ../downloads.php:111
+#: ../downloads.php:76
 msgid "Contributed packages for other distros"
 msgstr "Beste banaketa batzuetarako paketeak"
 
-#: ../footer.php:44
-msgid "This page is available in the following languages:"
-msgstr "Orrialde hau hurrengo hizkuntzatan dago eskuragarri:"
+#: ../downloads.php:78
+msgid "List of packages contributed by other people."
+msgstr ""
 
-#: ../formats.php:5
+#: ../downloads.php:85
+msgid "Sources"
+msgstr ""
+
+#: ../footer.php:16
+msgid "Other links:"
+msgstr ""
+
+#: ../footer.php:21
+msgid "Donate"
+msgstr "Dirulaguntza"
+
+#: ../footer.php:22
+msgid "Forum"
+msgstr "Eztabaidagunea"
+
+#: ../footer.php:23
+msgid "Bug Tracking"
+msgstr "Matxura Aztarnaritza"
+
+#: ../footer.php:26
+msgid "Feature Requests"
+msgstr "Ezaugarri Eskabideak"
+
+#: ../footer.php:27
+msgid "Wiki"
+msgstr "Wikia"
+
+#: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Heuskarriak eta Kodekak"
 
-#: ../formats.php:28
+#: ../formats.php:11
+msgid "Formats and Codecs"
+msgstr ""
+
+#: ../formats.php:14
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
@@ -99,67 +121,59 @@ msgstr ""
 "SMPlayer %1-rentzako interfaze grafika bat da, honek bideo eta audio "
 "heuskarri eta kodek ugari sostengatzen ditu."
 
-#: ../formats.php:32
+#: ../formats.php:18
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr "Hemen zerrenda osoa dago (MPlayer agiritzatik):"
 
-#: ../formats.php:34
+#: ../formats.php:20
 msgid "Supported Input Formats"
 msgstr "Sostengaturiko Sarrera Heuskarriak"
 
-#: ../formats.php:62
+#: ../formats.php:48
 msgid "Supported Video and Audio Codecs"
 msgstr "Sostengaturiko Bideo eta Audio Kodekak"
 
-#: ../formats.php:64
+#: ../formats.php:50
 msgid "most important video codecs:"
 msgstr "bideo kodek garrantzitsuenak:"
 
-#: ../formats.php:89
+#: ../formats.php:75
 msgid "most important audio codecs:"
 msgstr "audio kodek garrantzitsuenak:"
 
-#: ../header.php:16
+#: ../header.php:150
 msgid "Main"
 msgstr "Nagusia"
 
-#: ../header.php:17
+#: ../header.php:151 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Ikusleiho-argazkiak"
 
-#: ../header.php:18
-msgid "Downloads"
-msgstr "Jeisketak"
+#: ../header.php:158
+msgid "Language"
+msgstr ""
 
-#: ../header.php:19
-msgid "Donate"
-msgstr "Dirulaguntza"
-
-#: ../header.php:20
-msgid "Forum"
-msgstr "Eztabaidagunea"
-
-#: ../header.php:21
-msgid "Bug Tracking"
-msgstr "Matxura Aztarnaritza"
-
-#: ../header.php:22
-msgid "Feature Requests"
-msgstr "Ezaugarri Eskabideak"
-
-#: ../header.php:23
-msgid "Wiki"
-msgstr "Wikia"
-
-#: ../header.php:44
-msgid "The SMPlayer Project"
-msgstr "SMPlayer Egitasmoa"
-
-#: ../index.php:5
+#: ../index.php:3
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Argibide Orokorrak"
 
-#: ../info.php:7
+#: ../index.php:18
+msgid "Graphical Interface for MPlayer"
+msgstr ""
+
+#: ../index.php:19
+msgid "Click here to download the latest version"
+msgstr ""
+
+#: ../index.php:29
+msgid "About SMPlayer"
+msgstr ""
+
+#: ../index.php:35 ../latest.php:9
+msgid "Latest changes"
+msgstr ""
+
+#: ../info.php:3
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -172,11 +186,11 @@ msgstr ""
 "<b>Bere kodekak erabiltzen ditu</b>, hortaz ez duzu kodek paketerik ezerri "
 "behar."
 
-#: ../info.php:12
+#: ../info.php:8
 msgid "see list"
 msgstr "ikusi zerrenda"
 
-#: ../info.php:14
+#: ../info.php:10
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -190,11 +204,11 @@ msgstr ""
 "hori berriro irekitzen duzunean utzitako puntu berean berrekingo du, \n"
 "eta ezarpen berdinekin: audioa, bidea, azpidatziak, bolumena..."
 
-#: ../info.php:22
+#: ../info.php:18
 msgid "Some other interesting features:"
 msgstr "Beste ezaugarri interesgarri batzuk:"
 
-#: ../info.php:24
+#: ../info.php:20
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -202,7 +216,7 @@ msgstr ""
 "Hobespen elkarrizketa osoa, non lasterteklak, azpidatzien margoak eta\n"
 "hizkiak eta askoz gehiago aldatu dezakezun."
 
-#: ../info.php:26
+#: ../info.php:22
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -211,7 +225,7 @@ msgstr ""
 "deselkarlotura, prosesatu-ondorena, zaratakentzea... eta baita karaoke "
 "iragazkia (ahotsa kentzea)."
 
-#: ../info.php:28
+#: ../info.php:24
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -219,11 +233,11 @@ msgstr ""
 "Bilaketa sagu-gurpilarekin. Zure sagu-gurpila erabili dezakezu bideoan \n"
 "aurrera edo atzera joateko."
 
-#: ../info.php:29
+#: ../info.php:25
 msgid "The mouse buttons can also be customized."
 msgstr "Saguaren botoiak ere norbere erara jarri daitezke."
 
-#: ../info.php:30
+#: ../info.php:26
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -231,7 +245,7 @@ msgstr ""
 "Bideo ekualizagailua, ahalbidetzen dizu zehaztea bideo irudiaren dizdira,\n"
 "zuribeltztasuna, nabardura, margoasetasuna eta gamma."
 
-#: ../info.php:32
+#: ../info.php:28
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -239,7 +253,7 @@ msgstr ""
 "Irakurketa abiadura anitz. Irakurri dezakezu 2X, 4X... eta baita \n"
 "mugimendu astiroan."
 
-#: ../info.php:34
+#: ../info.php:30
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -247,7 +261,7 @@ msgstr ""
 "Audio eta azpidatzia atzerapen zehazpena. Ahalbidetzen dizu audioa eta\n"
 "azpidatziak aldiberetzea."
 
-#: ../info.php:36
+#: ../info.php:32
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -255,11 +269,11 @@ msgstr ""
 "Aukera aurreratuak, desnahastzailea edo bideo eta audio kodekak \n"
 "hautatzea bezala."
 
-#: ../info.php:38
+#: ../info.php:34
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Azpidatziak %1-en bilatzeko eta jeiseteko aukera."
 
-#: ../info.php:40
+#: ../info.php:36
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
@@ -267,7 +281,7 @@ msgstr ""
 "Youtube bideoak irakurri ditzake. Youtube bilatzaile bat barneratzen da,\n"
 "honek Youtube bideoak erraz jeistea ere ahalbidetzen du."
 
-#: ../info.php:42
+#: ../info.php:38
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -278,72 +292,85 @@ msgstr ""
 "Errusiera,\n"
 "Txinera, Japoniera..."
 
-#: ../info.php:45
+#: ../info.php:41
 msgid "Possibility to change the style and icon set of the interface."
 msgstr "Interfazearen estiloa eta ikur ezarpena aldatzeko aukera."
 
-#: ../info.php:46
+#: ../info.php:42
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 "Askea eta iturburu irekikoa. SMPlayerrek <b>GPL</b> baimenaren baldintzapean "
 "dago."
 
-#: ../info.php:51
-msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-msgstr "Jeitsi <a href=%1>here</a> SMPlayerren azken bertsioa"
+#: ../latest.php:10
+msgid "Here you can find a list with the latest changes in SMPlayer:"
+msgstr ""
 
-#: ../latest.php:5
-msgid "SMPlayer - Latest Version"
-msgstr "SMPlayer - Azken Bertsioa"
-
-#: ../latest.php:35
+#: ../latest.php:21
 msgid "Go to the download page"
 msgstr "Joan Jeisketa orrialdera"
 
-#: ../screenshots.php:5
+#: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Ikusleiho-argazkiak"
 
-#: ../screenshots.php:36
+#: ../screenshots.php:27
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Hemen SMPlayerren ikusleiho-argazki gehiago ikusi ditzakezu:"
 
-#: ../screenshots.php:42
+#: ../screenshots.php:35
 msgid "This is the main window"
 msgstr "Hau leiho nagusia da"
 
-#: ../screenshots.php:45
+#: ../screenshots.php:36
 msgid "The Windows version"
 msgstr "Windows bertsioa"
 
-#: ../screenshots.php:47
+#: ../screenshots.php:37
 msgid "The preferences dialog"
 msgstr "Hobespen elkarrizketa"
 
-#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
-#: ../screenshots.php:53
+#: ../screenshots.php:38
 msgid "The YouTube browser"
 msgstr "YouTube bilatzailea"
 
-#: ../screenshots.php:54
+#: ../screenshots.php:46
 msgid "Video preview"
 msgstr "Bideo aurreikuspena"
 
-#: ../screenshots.php:55
+#: ../screenshots.php:47
 msgid "Matroska embedded subtitles"
 msgstr "Matroskan barneratutako azpidatziak"
 
-#: ../screenshots.php:60
+#: ../screenshots.php:48
 msgid "More than 30 translations available"
 msgstr "30 itzulpen baino gehiago eskuragarri"
 
-#: ../screenshots.php:61
+#: ../screenshots.php:49
 msgid "The mini GUI"
 msgstr "EIG Txikia"
 
-#: ../screenshots.php:62
+#: ../screenshots.php:57
 msgid "Possibility to search for subtitles"
 msgstr "Azpidatziak bilatzeko aukera"
+
+#~ msgid "The SMPlayer Project"
+#~ msgstr "SMPlayer Egitasmoa"
+
+#~ msgid "Stable version"
+#~ msgstr "Bertsio egonkorra"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "Sources:"
+#~ msgstr "Iturburuak:"
+
+#~ msgid "This page is available in the following languages:"
+#~ msgstr "Orrialde hau hurrengo hizkuntzatan dago eskuragarri:"
 
 #~ msgid "Package with installer:"
 #~ msgstr "Ezartzailedun Paketea:"
@@ -601,7 +628,8 @@ msgstr "Azpidatziak bilatzeko aukera"
 #~ "aurreratuagoetara, \n"
 #~ "MPlayer iragazkiak eta abar sostengatzea bezalakoak."
 
-#~ msgid "There are available other packages for advanced users, %1."
-#~ msgstr ""
-#~ "Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, %"
-#~ "1."
+#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#~ msgstr "Jeitsi <a href=%1>here</a> SMPlayerren azken bertsioa"
+
+#~ msgid "SMPlayer - Latest Version"
+#~ msgstr "SMPlayer - Azken Bertsioa"

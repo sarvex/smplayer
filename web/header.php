@@ -1,62 +1,181 @@
 <?php
-include_once("site.php");
+include_once("l10n.php");
 
-function header_print_link($name, $link, $external=false, $last=false) {
+function print_header($title) {
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title><?php echo $title ?></title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta name="Description" content="smplayer, multiplatform front-end for mplayer">
+<meta name="Keywords" content="smplayer, mplayer, multimedia, player">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<!-- <link href="fleetio-www.css" rel="stylesheet"> -->
+<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	table th,
+	table td {
+		padding: 8px;
+		line-height: 20px;
+		text-align: left;
+		vertical-align: top;
+		/* border-top: 1px solid #dddddd; */
+	}
+	.hero-unit {
+		padding: 60px;
+		margin-bottom: 30px;
+		background-color: #eeeeee;
+		/*background-image:url('images/abstract-waves-on-a-blue-background.jpg');*/
+		/*background-image:url('images/blue007.jpg');*/
+		/*background-image:url('images/abstract-wallpapers-backgrounds-for-powerpoint.jpg');*/
+		background-image:url('images/background.jpg');
+		background-size: 100%;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	}
+	.hero-unit h1 {
+		margin-bottom: 0;
+		font-size: 60px;
+		line-height: 1;
+		letter-spacing: -1px;
+		color: white;
+	}
+	.hero-unit p {
+		font-size: 22px;
+		font-weight: 200;
+		line-height: 30px;
+		color: white;
+	}
+	.hero-unit ul {
+		font-size: 18px;
+		color: white;
+	}
+	footer {
+		background: #232323;
+		/*background: #eaeaea;*/
+		border-top: 0;
+	}
+	footer h4 {
+		color: #777;
+		line-height: 0px;
+	}
+	footer p {
+		color: #777;
+	}
+	footer a {
+		color: #fff;
+	}
+</style>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+<!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="bootstrap/css/bootstrap-image-gallery.min.css">
+
+<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
+<?php include_once("analytics.php"); ?>
+</head>
+<?php
+}
+
+function header_print_link($name, $link, $active, $external=false, $last=false) {
 	global $tr_lang;
+	echo "<li";
+	if ($active) echo " class=\"active\"";
+	echo ">";
 	echo "<a href=\"".$link;
 	if (!$external) echo "?tr_lang=$tr_lang";
 	echo "\">";
 	echo $name;
 	echo "</a>";
-	if (!$last) echo " &bull;";
+	echo "</li>";
 	echo "\n";
 }
 
-function header_print_links($rel_path="") {
-	header_print_link(get_tr("Main"), $rel_path."index.php");
-	header_print_link(get_tr("Screenshots"), $rel_path."screenshots.php");
-	header_print_link(get_tr("Downloads"), $rel_path."downloads.php");
-	header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", true);
-	header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", true);
-	header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", true);
-	header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", true);
-	header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", true, true);
+function print_language_link($file, $name, $cod, $query, $last=false) {
+	echo "<li><a href=\"".$file."?tr_lang=".$cod.$query."\">".$name."</a></li>\n";
 }
 
-function print_host_logo() {
-	global $site;
+function print_languages() {
+	global $tr_lang, $site;
 
-	if ($site == "sourceforge") 
-		echo "<a href=\"http://sourceforge.net\"><img src=\"http://sflogo.sourceforge.net/sflogo.php?group_id=185512&amp;type=2\" width=\"125\" height=\"37\" border=\"0\" alt=\"SourceForge.net Logo\"></a>";
-	else
-		echo "<a href=\"http://developer.berlios.de\"><img src=\"http://developer.berlios.de/bslogo.php?group_id=9394\" width=\"124\" height=\"32\" border=\"0\" alt=\"BerliOS Logo\"></a>";
+	$file = basename($_SERVER['SCRIPT_NAME']);
+	$query =  $_SERVER['QUERY_STRING'];
+
+	$query = preg_replace("/&tr_lang=\S\S/", "", $query);
+	$query = preg_replace("/tr_lang=\S\S/", "", $query);
+	$query = preg_replace("/^&/", "", $query);
+	if ($query!="") $query = "&".$query;
+	//echo "query: $query";
+
+	//print_language_link($file, "Nederlands", "nl", $query);
+	print_language_link($file, "English", "en", $query);
+	print_language_link($file, "Italiano", "it", $query);
+	//print_language_link($file, "Français", "fr", $query);
+	print_language_link($file, "Español", "es", $query);
+	print_language_link($file, "Deutsch", "de", $query);
+	print_language_link($file, "日本語", "ja", $query);
+	print_language_link($file, "Polski", "pl", $query);
+	print_language_link($file, "Română", "ro", $query);
+	print_language_link($file, "Українська", "uk", $query);
+	print_language_link($file, "Русский", "ru", $query);
+	print_language_link($file, "中文", "zh", $query);
+	print_language_link($file, "Magyar", "hu", $query);
+	print_language_link($file, "Português", "pt", $query);
+	print_language_link($file, "Suomi", "fi", $query);
+	print_language_link($file, "Lietuvių", "lt",  $query);
+	print_language_link($file, "Euskara", "eu",  $query, true);
 }
 
-function print_header($rel_path="") {
+function print_menu($current=1) {
 ?>
-<div class="sm_headerbar">
-	<div class="inner">
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner"> 
+		<div class="container"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+			</a>
+			<p class="brand">SMPlayer</p>
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+				<?php
+				header_print_link(get_tr("Main"), "index.php", ($current==1));
+				header_print_link(get_tr("Screenshots"), "screenshots.php", ($current==2));
+				header_print_link(get_tr("Downloads"), "downloads.php", ($current==3));
+				?>
+				</ul>
 
-	<span class="sm_corners-top"><span></span></span>
+				<ul class="nav pull-right"> 
+				<li class="dropdown"> 
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php tr("Language"); ?></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> 
+						<?php print_languages(); ?>
+					</ul>
+				</li>
+				</ul>
 
-	<div id="sm_site-description">
-		<?php echo '<a href="'.$rel_path.'index.php" id="sm_logo"><img src="'.$rel_path.'images/smplayer_logo.png" width="90" height="90" border="0" alt="" title=""></a>'; ?>
-		<h1><?php tr("The SMPlayer Project"); ?></h1>
-		<p><a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a></p>
-	</div>
-
-	<div id="sm_right-side">
-	<?php print_host_logo(); ?>
-	</div>
-
-	<div id="sm_linkbar"><hr>
-	<?php header_print_links($rel_path); ?>
-	</div>
-
-	<span class="sm_corners-bottom"><span></span></span>
-
-	</div>
-</div>
+			</div> <!-- nav-collapse -->
+		</div> <!-- container -->
+	</div> <!-- navbar-inner -->
+</div> <!-- navbar -->
 <?php
 }
+?>
+
+<?php
+				/*
+				header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", ($current==4), true);
+				header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", ($current==5), true);
+				header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", ($current==6), true);
+				header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", ($current==7), true);
+				header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($current==8), true, true);
+				*/
 ?>

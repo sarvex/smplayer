@@ -1,6 +1,5 @@
 <?php 
 include_once("site.php"); 
-global $site;
 ?>
 <script type="text/javascript">
 

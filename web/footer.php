@@ -1,50 +1,57 @@
 <?php
 include_once("l10n.php");
-
-function print_language_link($file, $name, $cod, $query, $last=false) {
-	echo "<a href=\"".$file."?tr_lang=".$cod.$query."\">".$name."</a>";
-	if (!$last) echo " | ";
-	echo "\n";
-}
-
-function print_languages() {
-	global $tr_lang, $site;
-
-	$file = basename($_SERVER['SCRIPT_NAME']);
-	$query =  $_SERVER['QUERY_STRING'];
-
-	$query = preg_replace("/&tr_lang=\S\S/", "", $query);
-	$query = preg_replace("/tr_lang=\S\S/", "", $query);
-	$query = preg_replace("/^&/", "", $query);
-	if ($query!="") $query = "&".$query;
-	//echo "query: $query";
-
-	//print_language_link($file, "Nederlands", "nl", $query);
-	print_language_link($file, "English", "en", $query);
-	print_language_link($file, "Italiano", "it", $query);
-	//print_language_link($file, "Français", "fr", $query);
-	print_language_link($file, "Español", "es", $query);
-	print_language_link($file, "Deutsch", "de", $query);
-	print_language_link($file, "日本語", "ja", $query);
-	print_language_link($file, "Polski", "pl", $query);
-	print_language_link($file, "Română", "ro", $query);
-	print_language_link($file, "Українська", "uk", $query);
-	print_language_link($file, "Русский", "ru", $query);
-	print_language_link($file, "中文", "zh", $query);
-	print_language_link($file, "Magyar", "hu", $query);
-	print_language_link($file, "Português", "pt", $query);
-	print_language_link($file, "Suomi", "fi", $query);
-	print_language_link($file, "Lietuvių", "lt",  $query);
-	print_language_link($file, "Euskara", "eu",  $query, true);
-}
+include_once("site.php");
 ?>
 
-<div id="sm_footer">
-<?php
-tr("This page is available in the following languages:");
-echo " ";
-print_languages();
-?>
-<br><br>
-&copy The SMPlayer Project
+<footer>
+
+<div class="row">
+<div class="span3">
 </div>
+
+<div class="span4">
+<table>
+<tr>
+<td colspan="2">
+<h4><?php tr("Other links:"); ?></h4>
+</td>
+<tr>
+<td>
+<ul>
+<li><a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a></li>
+<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
+<li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a></li>
+</td>
+<td>
+<li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
+<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="span2"></div>
+
+<div class="span3">
+<br><br>
+<a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a>
+
+<br><br>
+<?php
+if ($site == "sourceforge") 
+	echo "<a href=\"http://sourceforge.net\"><img src=\"http://sflogo.sourceforge.net/sflogo.php?group_id=185512&amp;type=2\" width=\"125\" height=\"37\" border=\"0\" alt=\"SourceForge.net Logo\"></a>";
+else
+	echo "<a href=\"http://developer.berlios.de\"><img src=\"http://developer.berlios.de/bslogo.php?group_id=9394\" width=\"124\" height=\"32\" border=\"0\" alt=\"BerliOS Logo\"></a>";
+?>
+</div>
+
+</div> <!-- row -->
+
+<div class="row">
+<center><b>&copy The SMPlayer Project</b></center>
+</div> <!-- row -->
+
+</footer>
+
+<?php include_once("scripts.php"); ?>

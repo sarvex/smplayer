@@ -1,51 +1,62 @@
-<?php include_once("l10n.php"); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<title><?php tr("SMPlayer - General Info"); ?></title>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<meta name="Description" content="smplayer, multiplatform front-end for mplayer">
-<meta name="Keywords" content="smplayer, mplayer, multimedia, player">
-<link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
-<?php include_once("analytics.php"); ?>
-</head>
-<body>
-
-<div id="sm_container">
-
-<!- header -->
 <?php
-include("header.php");
-print_header();
+include_once("header.php");
+print_header(get_tr("SMPlayer - General Info"), 1);
+echo "<body>\n";
+print_menu(1);
 ?>
-<!-- end header -->
 
-<!-- begin content -->
+<div class="container-fluid">
 
-<div id="sm_content">
-<?php
-include("info.php");
-
-echo "<hr>";
-
-$release_notes_file = "translations/release_notes_". $tr_lang .".html";
-if (file_exists($release_notes_file)) {
-	include($release_notes_file);
-} else {
-	include("translations/release_notes_en.html");
-}
-?>
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
+	<div class="row">
+		<div class="span2">
+			<img src="images/smplayer_logo_big.png">
+		</div>
+		<div class="span6">
+			<h1>SMPlayer</h1>
+			<p><?php tr("Graphical Interface for MPlayer");?></p>
+			<p><a href="downloads.php" class="btn btn-success btn-large"><?php tr("Click here to download the latest version");?></a></p>
+		</div>
+		<div class="span3">
+		<img src="images/twisted.png">
+		</div>
+	</div>
 </div>
 
-<!-- end content -->
+<div class="row-fluid">
+	<div class="span9">
+		<h3><?php tr("About SMPlayer"); ?></h3>
+		<?php include("info.php"); ?>
+	</div>
+
+	<div class="span3">
+		<div class="well">
+			<h3><?php tr("Latest changes"); ?></h3>
+			<?php
+			$release_notes_file = "translations/release_notes_". $tr_lang .".html";
+			if (file_exists($release_notes_file)) {
+				include($release_notes_file);
+			} else {
+				include("translations/release_notes_en.html");
+			}
+			?>
+			<!--
+			<p>
+			<a href="downloads.php" class="btn btn-primary btn-large"><?php tr("Downloads"); ?></a>
+			</p>
+			-->
+		</div> <!-- well -->
+	</div> <!-- span3 -->
+</div>
+
+</div> <!-- container -->
 
 <!-- begin footer -->
 <?php
 include("footer.php");
 ?>
 <!-- end footer -->
-</div>
 
 </body>
 </html>

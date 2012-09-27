@@ -8,156 +8,168 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-21 11:31+0200\n"
+"POT-Creation-Date: 2012-09-27 03:26+0200\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../downloads.php:5
+#: ../downloads.php:3 ../latest.php:3
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Завантаження"
 
-#: ../downloads.php:28
-msgid "Stable version"
-msgstr "Стабільна версія"
+#: ../downloads.php:13 ../header.php:152 ../index.php:46
+msgid "Downloads"
+msgstr "Завантаження"
 
-#: ../downloads.php:29
-msgid "Windows"
-msgstr "Windows"
-
-#: ../downloads.php:39
+#: ../downloads.php:23
 msgid "Click here to get the full package"
 msgstr ""
 
-#: ../downloads.php:43
+#: ../downloads.php:27
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
 msgstr ""
 
-#: ../downloads.php:53
-msgid "There are available other packages (like a portable version), %1."
+#: ../downloads.php:37
+msgid "There are available other packages for advanced users, %1."
 msgstr ""
 
-#: ../downloads.php:53
+#: ../downloads.php:37
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:55
+#: ../downloads.php:39
 msgid "If you wish you can also try %1."
 msgstr ""
 
-#: ../downloads.php:56
+#: ../downloads.php:40
 msgid "the unstable version"
 msgstr ""
 
-#: ../downloads.php:62
+#: ../downloads.php:47
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:73
-msgid "Linux"
-msgstr "Linux"
-
-#: ../downloads.php:82
+#: ../downloads.php:61
 msgid "Packages for Ubuntu:"
 msgstr "Пакети для Ubuntu:"
 
-#: ../downloads.php:83
+#: ../downloads.php:62
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:97
-msgid "Sources:"
-msgstr ""
-
-#: ../downloads.php:111
+#: ../downloads.php:76
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../footer.php:44
-msgid "This page is available in the following languages:"
-msgstr "Ця сторінка доступна на наступних мовах:"
+#: ../downloads.php:78
+msgid "List of packages contributed by other people."
+msgstr ""
 
-#: ../formats.php:5
+#: ../downloads.php:85
+msgid "Sources"
+msgstr ""
+
+#: ../footer.php:16
+msgid "Other links:"
+msgstr ""
+
+#: ../footer.php:21
+msgid "Donate"
+msgstr ""
+
+#: ../footer.php:22
+msgid "Forum"
+msgstr "Форум"
+
+#: ../footer.php:23
+msgid "Bug Tracking"
+msgstr "Простежування помилок"
+
+#: ../footer.php:26
+msgid "Feature Requests"
+msgstr "Особливі прохання"
+
+#: ../footer.php:27
+msgid "Wiki"
+msgstr "Wiki"
+
+#: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:28
+#: ../formats.php:11
+msgid "Formats and Codecs"
+msgstr ""
+
+#: ../formats.php:14
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
 msgstr ""
 
-#: ../formats.php:32
+#: ../formats.php:18
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr ""
 
-#: ../formats.php:34
+#: ../formats.php:20
 msgid "Supported Input Formats"
 msgstr ""
 
-#: ../formats.php:62
+#: ../formats.php:48
 msgid "Supported Video and Audio Codecs"
 msgstr ""
 
-#: ../formats.php:64
+#: ../formats.php:50
 msgid "most important video codecs:"
 msgstr ""
 
-#: ../formats.php:89
+#: ../formats.php:75
 msgid "most important audio codecs:"
 msgstr ""
 
-#: ../header.php:16
+#: ../header.php:150
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:17
+#: ../header.php:151 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:18
-msgid "Downloads"
-msgstr "Завантаження"
-
-#: ../header.php:19
-msgid "Donate"
+#: ../header.php:158
+msgid "Language"
 msgstr ""
 
-#: ../header.php:20
-msgid "Forum"
-msgstr "Форум"
-
-#: ../header.php:21
-msgid "Bug Tracking"
-msgstr "Простежування помилок"
-
-#: ../header.php:22
-msgid "Feature Requests"
-msgstr "Особливі прохання"
-
-#: ../header.php:23
-msgid "Wiki"
-msgstr "Wiki"
-
-#: ../header.php:44
-msgid "The SMPlayer Project"
-msgstr "Проект SMPlayer"
-
-#: ../index.php:5
+#: ../index.php:3
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Головна інформація"
 
-#: ../info.php:7
+#: ../index.php:18
+msgid "Graphical Interface for MPlayer"
+msgstr ""
+
+#: ../index.php:19
+msgid "Click here to download the latest version"
+msgstr ""
+
+#: ../index.php:29
+msgid "About SMPlayer"
+msgstr ""
+
+#: ../index.php:35 ../latest.php:9
+msgid "Latest changes"
+msgstr ""
+
+#: ../info.php:3
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -165,11 +177,11 @@ msgid ""
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
 
-#: ../info.php:12
+#: ../info.php:8
 msgid "see list"
 msgstr ""
 
-#: ../info.php:14
+#: ../info.php:10
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -183,23 +195,23 @@ msgstr ""
 "відтворення продовжиться з того ж місця, з тими ж налаштуваннями: звукова \n"
 "доріжка, субтитри, гучність..."
 
-#: ../info.php:22
+#: ../info.php:18
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:20
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:26
+#: ../info.php:22
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:28
+#: ../info.php:24
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -207,11 +219,11 @@ msgstr ""
 "Пошук мишкою. Ви можете користуватись колесом мишки для перемотки \n"
 "відео вперед чи назад."
 
-#: ../info.php:29
+#: ../info.php:25
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:30
+#: ../info.php:26
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -219,7 +231,7 @@ msgstr ""
 "Еквалайзер відео, дозволяе Вам регулювати яскравість, контрастність,\n"
 "відтінок, колір, насиченість та гаму зображення."
 
-#: ../info.php:32
+#: ../info.php:28
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -227,7 +239,7 @@ msgstr ""
 "Багатошвидкісне відтворення. Можна прискористи в 2, 4 \n"
 "рази... або навіть уповільнити."
 
-#: ../info.php:34
+#: ../info.php:30
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -235,7 +247,7 @@ msgstr ""
 "Регулювання затримки звуку та субтитрів. Дозволить Вам синхронизувати\n"
 "звук та субтитри."
 
-#: ../info.php:36
+#: ../info.php:32
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -243,87 +255,97 @@ msgstr ""
 "Розширені опції, так як вибір демультиплексора чи звукових \n"
 "та відео кодеків."
 
-#: ../info.php:38
+#: ../info.php:34
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:40
+#: ../info.php:36
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
 msgstr ""
 
-#: ../info.php:42
+#: ../info.php:38
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:45
+#: ../info.php:41
 msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
 
-#: ../info.php:46
+#: ../info.php:42
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../info.php:51
-msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#: ../latest.php:10
+msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr ""
 
-#: ../latest.php:5
-msgid "SMPlayer - Latest Version"
-msgstr ""
-
-#: ../latest.php:35
+#: ../latest.php:21
 msgid "Go to the download page"
 msgstr ""
 
-#: ../screenshots.php:5
+#: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Скріншоти"
 
-#: ../screenshots.php:36
+#: ../screenshots.php:27
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Тут Ви можете переглянути скріншоти SMPlayer:"
 
-#: ../screenshots.php:42
+#: ../screenshots.php:35
 msgid "This is the main window"
 msgstr "Головне вікно"
 
-#: ../screenshots.php:45
+#: ../screenshots.php:36
 msgid "The Windows version"
 msgstr ""
 
-#: ../screenshots.php:47
+#: ../screenshots.php:37
 msgid "The preferences dialog"
 msgstr "Діалог налаштувань"
 
-#. show_thumb("vista4.png", get_tr("SMPlayer running on Windows Vista") );
-#: ../screenshots.php:53
+#: ../screenshots.php:38
 msgid "The YouTube browser"
 msgstr ""
 
-#: ../screenshots.php:54
+#: ../screenshots.php:46
 msgid "Video preview"
 msgstr ""
 
-#: ../screenshots.php:55
+#: ../screenshots.php:47
 msgid "Matroska embedded subtitles"
 msgstr "Вложені субтитри Matroska"
 
-#: ../screenshots.php:60
+#: ../screenshots.php:48
 msgid "More than 30 translations available"
 msgstr ""
 
-#: ../screenshots.php:61
+#: ../screenshots.php:49
 msgid "The mini GUI"
 msgstr "Компактний інтерфейс"
 
-#: ../screenshots.php:62
+#: ../screenshots.php:57
 msgid "Possibility to search for subtitles"
 msgstr ""
+
+#~ msgid "The SMPlayer Project"
+#~ msgstr "Проект SMPlayer"
+
+#~ msgid "Stable version"
+#~ msgstr "Стабільна версія"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "This page is available in the following languages:"
+#~ msgstr "Ця сторінка доступна на наступних мовах:"
 
 #~ msgid "Package with installer:"
 #~ msgstr "Пакет з інсталятором:"
@@ -369,8 +391,8 @@ msgstr ""
 #~ "the <a href=%1>mplayer site</a> (%2)."
 #~ msgstr ""
 #~ "Якщо ви надаєте перевагу zip-архівам, ви \n"
-#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%"
-#~ "2)."
+#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> "
+#~ "(%2)."
 
 #~ msgid ""
 #~ "Package (without installer) which includes smplayer, shared libraries,\n"

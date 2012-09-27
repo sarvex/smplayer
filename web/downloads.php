@@ -1,37 +1,21 @@
-<?php include_once("l10n.php"); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<title><?php tr("SMPlayer - Downloads"); ?></title>
-<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
-<link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
-<?php include_once("analytics.php"); ?>
-</head>
-<body>
-
-<div id="sm_container">
-
-<!-- header -->
 <?php
-include("header.php");
-print_header();
+include_once("header.php");
+print_header(get_tr("SMPlayer - Downloads"));
+echo "<body>\n";
+print_menu(3);
 ?>
-<!-- end header -->
 
-<!-- begin content -->
+<div class="container-fluid">
 
-<div id="sm_content">
 <?php
 include_once("download_links.php");
 
-echo "<h1>".get_tr("Stable version")."</h1>";
-echo "<h2>".get_tr("Windows")."</h2>";
+echo "<h1>".get_tr("Downloads")."</h1>";
 ?>
-<!-- WINDOWS -->
-<p>
-<table>
 
+<!-- WINDOWS -->
+<h2>Windows</h2>
+<table>
 <tr>
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
@@ -50,31 +34,26 @@ the YouTube browser (smtube).","<i>r35203</i>");
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
-tr("There are available other packages (like a portable version), %1.", download_all_link(get_tr("here")));
+tr("There are available other packages for advanced users, %1.", download_all_link(get_tr("here")));
 echo "<br>";
 tr("If you wish you can also try %1.", 
 "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("the unstable version") ."</b></a>");
 ?>
 </td></tr>
-<tr><td colspan="2">
-<i>
-<?php 
+</table>
+<div class="alert alert-block">
+<strong>
+<?php
 tr("<b>Notice:</b> on the first playback, a font cache will be 
 created (necessary for OSD and subtitles). This can take up to 10 
 or 20 seconds. This is only done once.");
 ?>
-</i>
-</td></tr>
-
-</table>
+</strong>
+</div>
 
 <!-- LINUX -->
-<?php
-echo "<h2>".get_tr("Linux")."</h2>";
-?>
-<p>
+<h2>Linux</h2>
 <table>
-
 <tr>
 <td><img src="iconos/ubuntu.png" alt="*"></td>
 <td>
@@ -90,11 +69,26 @@ sudo apt-get install smplayer smtube smplayer-themes
 </td>
 </tr>
 
+<tr><td><img src="iconos/package.png" alt="*"></td>
+<td>
+<?php
+echo "<a href=\"https://sourceforge.net/apps/mediawiki/smplayer/index.php?title=Contributed_Packages\">" .
+     "<b>". get_tr("Contributed packages for other distros") . "</b></a>";
+echo "<br>";
+tr("List of packages contributed by other people.");
+?>
+</td>
+</tr>
+</table>
+
+<!-- SOURCES -->
+<h2><?php tr("Sources"); ?></h2>
+<table>
 <tr>
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
-echo "<b>"; tr("Sources:"); echo "</b><br>";
+//echo "<b>"; tr("Sources:"); echo "</b><br>";
 echo download_src_link();
 echo "<br>";
 echo download_smtube_link();
@@ -103,27 +97,15 @@ echo download_themes_src_link();
 ?>
 </td>
 </tr>
-
-<tr><td><img src="iconos/package.png" alt="*"></td>
-<td>
-<?php
-echo "<a href=\"https://sourceforge.net/apps/mediawiki/smplayer/index.php?title=Contributed_Packages\">" .
-     "<b>". get_tr("Contributed packages for other distros") . "</b></a>";
-?>
-</td>
-</tr>
 </table>
 
-</div>
-
-<!-- end content -->
+</div> <!-- container>
 
 <!-- begin footer -->
 <?php
 include("footer.php");
 ?>
 <!-- end footer -->
-</div>
 
 </body>
 </html>

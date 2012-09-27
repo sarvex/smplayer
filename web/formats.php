@@ -1,34 +1,20 @@
-<?php include_once("l10n.php"); ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<title><?php tr("SMPlayer - Formats and Codecs"); ?></title>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
-<meta name="Description" content="smplayer, multiplatform front-end for mplayer">
-<meta name="Keywords" content="smplayer, mplayer, multimedia, player">
-<link href="base.css" rel="stylesheet" title="base style" type="text/css">
-<link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
-<?php include_once("analytics.php"); ?>
-</head>
-<body>
-
-<div id="sm_container">
-
-<!- header -->
 <?php
-include("header.php");
-print_header();
+include_once("header.php");
+print_header(get_tr("SMPlayer - Formats and Codecs"));
+echo "<body>\n";
+print_menu();
 ?>
-<!-- end header -->
 
-<!-- begin content -->
+<div class="container">
 
-<div id="sm_content">
 <?php
+echo "<h1>" . get_tr("Formats and Codecs") ."</h1>";
+
+echo "<p>";
 tr("SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs.",
 "MPlayer");
-echo "<p>";
 
+echo "<p>";
 tr("Here is a complete list (from the MPlayer documentation):");
 echo "<br><br>";
 echo "<b>". get_tr("Supported Input Formats") ."</b>";
@@ -103,16 +89,13 @@ echo "<b>". get_tr("most important audio codecs:") ."</b>";
 <li>alaw/ulaw, (ms)gsm, pcm, *adpcm and other simple old audio formats</li>
 </ul>
 
-</div>
-
-<!-- end content -->
+</div> <!-- container -->
 
 <!-- begin footer -->
 <?php
 include("footer.php");
 ?>
 <!-- end footer -->
-</div>
 
 </body>
 </html>
