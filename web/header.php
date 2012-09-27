@@ -13,7 +13,6 @@ function print_header($title) {
 <meta name="Keywords" content="smplayer, mplayer, multimedia, player">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<!-- <link href="fleetio-www.css" rel="stylesheet"> -->
 <style type="text/css">
 	body {
 		padding-top: 60px;
