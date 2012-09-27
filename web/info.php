@@ -1,11 +1,26 @@
-<?php 
+<div id="formats" class="modal hide fade in" style="display: none;">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3><?php tr("Formats and Codecs"); ?>
+	</div>
+	<div class="modal-body">
+		<?php include("formats_text.php"); ?>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
+	</div>
+</div>
+<?php /* <p><a data-toggle="modal" href="#formats" class="btn btn-primary btn-large">Launch demo modal</a></p> */ ?>
+
+<?php
 echo "<p>";
 tr("SMPlayer is a complete media player for Windows and Linux. It uses
 the award-winning %1 as playback engine which is capable of
 playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). 
 It <b>uses its own codecs</b>, so you don't need to install any codec packs.", 
 "MPlayer",
-"<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+//"<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+"<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
 echo "<p>";
 tr("One of the most interesting features of SMPlayer: <b>it remembers the 
 settings of all files you play</b>. So you start to watch a movie but you 
