@@ -9,7 +9,7 @@ include_once("site.php");
 <div class="span3">
 </div>
 
-<div class="span4">
+<div class="span5">
 <table>
 <tr>
 <td colspan="2">
@@ -31,7 +31,7 @@ include_once("site.php");
 </table>
 </div>
 
-<div class="span2"></div>
+<div class="span1"></div>
 
 <div class="span3">
 <br><br>
