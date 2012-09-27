@@ -157,8 +157,8 @@ function print_menu($current=1) {
 
 				<ul class="nav pull-right"> 
 				<li class="dropdown"> 
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php tr("Language"); ?></a>
-					<ul class="dropdown-menu" role="menu" aria-labelledby="drop1"> 
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php tr("Language");?><b class="caret"></b></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 						<?php print_languages(); ?>
 					</ul>
 				</li>
