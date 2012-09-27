@@ -1,5 +1,6 @@
 <?php
 include_once("l10n.php");
+include_once("site.php");
 
 function print_header($title) {
 ?>

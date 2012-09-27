@@ -4,7 +4,8 @@ include_once("site.php");
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  <?php 
+  <?php
+  global $site;
   if ($site == "berlios")
     echo "_gaq.push(['_setAccount', 'UA-34675390-2']);\n";
   else
