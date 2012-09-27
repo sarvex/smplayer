@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 03:26+0200\n"
+"POT-Creation-Date: 2012-09-28 00:39+0200\n"
 "PO-Revision-Date: 2008-11-25 18:28+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Descărcare"
 
-#: ../downloads.php:13 ../header.php:152 ../index.php:46
+#: ../downloads.php:13 ../header.php:154 ../index.php:46
 msgid "Downloads"
 msgstr "Descărcare"
 
@@ -105,45 +105,45 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:11
+#: ../formats.php:11 ../info.php:4
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:14
+#: ../formats_text.php:3
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
 msgstr ""
 
-#: ../formats.php:18
+#: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr ""
 
-#: ../formats.php:20
+#: ../formats_text.php:9
 msgid "Supported Input Formats"
 msgstr ""
 
-#: ../formats.php:48
+#: ../formats_text.php:37
 msgid "Supported Video and Audio Codecs"
 msgstr ""
 
-#: ../formats.php:50
+#: ../formats_text.php:39
 msgid "most important video codecs:"
 msgstr ""
 
-#: ../formats.php:75
+#: ../formats_text.php:64
 msgid "most important audio codecs:"
 msgstr ""
 
-#: ../header.php:150
+#: ../header.php:152
 msgid "Main"
 msgstr "Pagina Principală"
 
-#: ../header.php:151 ../screenshots.php:14
+#: ../header.php:153 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Capturi Ecran"
 
-#: ../header.php:158
+#: ../header.php:160
 msgid "Language"
 msgstr ""
 
@@ -167,7 +167,11 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
-#: ../info.php:3
+#: ../info.php:10
+msgid "Close"
+msgstr ""
+
+#: ../info.php:17
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -175,11 +179,12 @@ msgid ""
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
 
-#: ../info.php:8
+#. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+#: ../info.php:23
 msgid "see list"
 msgstr ""
 
-#: ../info.php:10
+#: ../info.php:25
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -197,23 +202,23 @@ msgstr ""
 "piste \n"
 "audio, subtitrări, volum..."
 
-#: ../info.php:18
+#: ../info.php:33
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:20
+#: ../info.php:35
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:22
+#: ../info.php:37
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -221,11 +226,11 @@ msgstr ""
 "Căutare cu rotița mausului. Puteți utiliza rotița mausului pentru derulare\n"
 "înainte și înapoi a filmului."
 
-#: ../info.php:25
+#: ../info.php:40
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:26
+#: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -233,7 +238,7 @@ msgstr ""
 "Egalizorul video vă permite ajustarea luminozității, contrastului, culorii,\n"
 "saturației și corecției gama a imaginii."
 
-#: ../info.php:28
+#: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -241,7 +246,7 @@ msgstr ""
 "Redare la diferite viteze. Puteți reda filmele cu viteze 2X, 4X... și chiar "
 "relanti.\n"
 
-#: ../info.php:30
+#: ../info.php:45
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -250,7 +255,7 @@ msgstr ""
 "sincronizarea\n"
 "coloanei sonore și a subtitrării."
 
-#: ../info.php:32
+#: ../info.php:47
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -258,28 +263,28 @@ msgstr ""
 "Opțiuni avansate, precum selectarea unui demux sau a codecurilor audio și "
 "video.\n"
 
-#: ../info.php:34
+#: ../info.php:49
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:36
+#: ../info.php:51
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
 msgstr ""
 
-#: ../info.php:38
+#: ../info.php:53
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:41
+#: ../info.php:56
 msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
 
-#: ../info.php:42
+#: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
@@ -335,137 +340,95 @@ msgstr "Mini GUI"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "The SMPlayer Project"
-#~ msgstr "Proiectul SMPlayer"
+#~ msgid ""
+#~ "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+#~ "from basic features like playing videos, DVDs, and VCDs to more "
+#~ "advanced \n"
+#~ "features like support for MPlayer filters and more."
+#~ msgstr ""
+#~ "SMPlayer intenționează să fie un front-end complet pentru <a href="
+#~ "%1>MPlayer</a>,\n"
+#~ "având funcții de bază precum redarea fişierelor video, a DVD-urilor și a "
+#~ "VCD-urilor \n"
+#~ "dar și funcții avansate precum suport pentru filtrele specifice MPlayer "
+#~ "și mult mai multe."
 
-#~ msgid "Stable version"
-#~ msgstr "Versiunea stabilă"
-
-#~ msgid "Windows"
-#~ msgstr "Windows"
-
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgid "Package with installer:"
-#~ msgstr "Pachete cu program de instalare:"
+#~ msgid "Other additional interesting features:"
+#~ msgstr "Alte caracteristici suplimentare interesante:"
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
+#~ "Configurable subtitles. You can choose font and size, and even \n"
+#~ "colors for the subtitles."
 #~ msgstr ""
-#~ "Acest pachet conține tot ce este necesar pentru a rula smplayer: "
-#~ "biblioteci \n"
-#~ "comune, fișierele cu traduceri, temele pentru pictograme și un executabil "
-#~ "mplayer \n"
-#~ "(versiunea inclusă este %1)."
-
-#~ msgid "Additional codecs:"
-#~ msgstr "Codecuri suplimentare:"
+#~ "Configurarea subtitrărilor. Pentru subtitrări puteți alege caracterele, \n"
+#~ "mărimea și chiar culoarea lor."
 
 #~ msgid ""
-#~ "This package adds support for codecs that are not yet implemented\n"
-#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-#~ "formats. Note that they are not necessary to play most common formats\n"
-#~ "like DVDs, MPEG-1/2/4, etc."
+#~ "Audio track switching. You can choose the audio track you want\n"
+#~ "to listen. Works with avi and mkv. And of course with DVDs."
 #~ msgstr ""
-#~ "Acest pachet adaugă suport pentru codecuri ce nu au fost încă "
-#~ "implementate\n"
-#~ " în mplayer, precum versiunile noi RealVideo și multe alte formate "
-#~ "neobișnuite.\n"
-#~ " Aceste codecuri nu sunt necesare pentru redarea formatelor\n"
-#~ " obișnuite precum DVD, MPEG-1/2/4, etc. "
+#~ "Comutarea coloanelor sonore. Puteți alege ce coloană sonoră doriți\n"
+#~ "să ascultați. Funcționează cu fișiere avi și mkv. Și bineînțeles cu DVD."
 
 #~ msgid ""
-#~ "These codecs are to be used by mplayer only and they will be installed \n"
-#~ "in the same folder, so they can't cause any conflict with other codecs "
-#~ "you \n"
-#~ "may have installed."
+#~ "Filters. Several filters are available: deinterlace, postprocessing,\n"
+#~ "denoise... and even a karaoke filter (voice removal)."
 #~ msgstr ""
-#~ "Aceste codecuri vor fi folosite numai de către mplayer și vor fi "
-#~ "instalate \n"
-#~ " în același director, astfel nu vor intra în conflict cu diverse alte "
-#~ "codecuri \n"
-#~ " pe care le mai aveți instalate în sistem."
+#~ "Filtre. Sunt disponibile și o serie de filtre precum: deîntrețesere, "
+#~ "postprocesare,\n"
+#~ "înlăturare zgomote... și chiar un filtru karaoke (înlăturare voce)."
 
 #~ msgid ""
-#~ "If you prefer a zip file, you can get it at \n"
-#~ "the <a href=%1>mplayer site</a> (%2)."
+#~ "Playlist. Allows you to enqueue several files to be played one after \n"
+#~ "each other. Autorepeat and shuffle supported too."
 #~ msgstr ""
-#~ "Dacă preferați un fișier zip îl puteți găsi la \n"
-#~ "<a href=%1>mplayer site</a> (%2)."
+#~ "Listă fișiere. Aceasta vă permite să redați mai multe fișiere unul după\n"
+#~ "altul. De asemenea puteți repeta redarea automat sau puteți reda\n"
+#~ "aleator fișiere din listă."
 
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, shared libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
+#~ "Preferences dialog. You can easily configure every option of SMPlayer\n"
+#~ "by using a nice preferences dialog."
 #~ msgstr ""
-#~ "Acest pachet (fără program de instalare) include smplayer, bibliotecile "
-#~ "comune, \n"
-#~ "fișierele cu traduceri și temele pentru pictograme. Pachetul nu include "
-#~ "și mplayer."
+#~ "Reglaje preferate. Aici puteți configura cu ușurință toate opțiunile "
+#~ "SMPlayer\n"
+#~ "utilizând o casetă de dialog intuitivă."
 
-#~ msgid "This package is for advanced users only!"
-#~ msgstr "Acest pachet este doar pentru utilizatorii avansați!"
+#~ msgid "Possibility to search automatically for subtitles in %1."
+#~ msgstr "Posibilitatea de a căuta automat subtitrări în %1."
 
 #~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ "Translations: currently SMPlayer is translated into more than 20 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
 #~ msgstr ""
-#~ "Aceasta este versiunea portabilă pentru SMPlayer. Poate fi rulat de pe "
-#~ "dispozitive externe precum \n"
-#~ "dispozitive de memorie flash USB. Nu are nevoie de instalare, doar "
-#~ "dezarhivați \n"
-#~ "pachetul oriunde doriți și efectuați clic dublu pe fișierul smplayer.exe "
-#~ "pentru a-l rula."
+#~ "Traduceri: la această oră SMPlayer este tradus în mai mult de 20\n"
+#~ "de limbi, incluzând Spaniolă, Germană, Franceză, Italiană, Rusă, "
+#~ "Chineză,\n"
+#~ "Japoneză, Română..."
+
+#~ msgid "It's multiplatform. Binaries available for Windows and Linux."
+#~ msgstr ""
+#~ "Este multiplatformă. Sunt disponibile executabile pentru Windows și Linux."
+
+#~ msgid "SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "SMPlayer se supune termenilor licenței <b>GPL</b>."
 
 #~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
+#~ "Read the file Install.txt included in the package to know how compile it."
 #~ msgstr ""
-#~ "Acest pachet conține teme pentru pictograme, fișierele cu traduceri și \n"
-#~ "un executabil MPLayer."
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr ""
-#~ "Notă: fișierele de tip 7z pot fi dezarhivate cu <a href=%1>7-Zip</a>."
-
-#~ msgid "Suggested package:"
-#~ msgstr "Pachete sugerate:"
-
-#~ msgid "Icon Themes:"
-#~ msgstr "Teme Pictograme:"
-
-#~ msgid "Optional packages which provide some icon themes."
-#~ msgstr ""
-#~ "Pachete opționale care oferă mai multe teme pentru interfața programului."
-
-#~ msgid "Additional packages"
-#~ msgstr "Pachete suplimentare"
+#~ "Pentru a afla cum se compilează citiți fișierul Install.txt inclus în "
+#~ "pachet."
 
 #~ msgid ""
-#~ "There are several additional packages for advanced users:\n"
-#~ "<a href=%1>See sourceforge download page</a>."
+#~ "You can get packages directly taken from the SVN (source code and\n"
+#~ "Windows updates), <a href=%1><b>here</b></a>."
 #~ msgstr ""
-#~ "Există mai multe pachete suplimentare pentru utilizatorii avansați:\n"
-#~ "<a href=%1>Consultați pagina de descărcări a sitului sourceforge</a>"
+#~ "Puteți descărca pachete obținute direct din SVN (cod sursă și\n"
+#~ "actualizări pentru Windows), <a href=%1><b>de aici</b></a>."
 
-#~ msgid "Contributed packages"
-#~ msgstr "Pachete pentru diverse distribuții"
-
-#~ msgid ""
-#~ "There are available packages for other distros, created\n"
-#~ "by other people. <a href=%1>Click here</a> to see them."
-#~ msgstr ""
-#~ "Sunt disponibile pachete pentru alte distribuții, create \n"
-#~ "de alte persoane. Le puteți vedea <a href=%1><b>aici</b></a>."
-
-#~ msgid "Related Project"
-#~ msgstr "Proiecte înrudite"
-
-#~ msgid "by MuldeR"
-#~ msgstr "realizate de către MuldeR"
+#~ msgid "Unstable releases"
+#~ msgstr "Versiuni Instabile"
 
 #~ msgid ""
 #~ "This package contains a very recent version of SMPlayer (often taken "
@@ -483,92 +446,134 @@ msgstr ""
 #~ "pentru diferite procesoare și \n"
 #~ "mai conține mai multe codecuri."
 
-#~ msgid "Unstable releases"
-#~ msgstr "Versiuni Instabile"
+#~ msgid "by MuldeR"
+#~ msgstr "realizate de către MuldeR"
+
+#~ msgid "Related Project"
+#~ msgstr "Proiecte înrudite"
 
 #~ msgid ""
-#~ "You can get packages directly taken from the SVN (source code and\n"
-#~ "Windows updates), <a href=%1><b>here</b></a>."
+#~ "There are available packages for other distros, created\n"
+#~ "by other people. <a href=%1>Click here</a> to see them."
 #~ msgstr ""
-#~ "Puteți descărca pachete obținute direct din SVN (cod sursă și\n"
-#~ "actualizări pentru Windows), <a href=%1><b>de aici</b></a>."
+#~ "Sunt disponibile pachete pentru alte distribuții, create \n"
+#~ "de alte persoane. Le puteți vedea <a href=%1><b>aici</b></a>."
+
+#~ msgid "Contributed packages"
+#~ msgstr "Pachete pentru diverse distribuții"
 
 #~ msgid ""
-#~ "Read the file Install.txt included in the package to know how compile it."
+#~ "There are several additional packages for advanced users:\n"
+#~ "<a href=%1>See sourceforge download page</a>."
 #~ msgstr ""
-#~ "Pentru a afla cum se compilează citiți fișierul Install.txt inclus în "
-#~ "pachet."
+#~ "Există mai multe pachete suplimentare pentru utilizatorii avansați:\n"
+#~ "<a href=%1>Consultați pagina de descărcări a sitului sourceforge</a>"
 
-#~ msgid "SMPlayer is under the <b>GPL</b> license."
-#~ msgstr "SMPlayer se supune termenilor licenței <b>GPL</b>."
+#~ msgid "Additional packages"
+#~ msgstr "Pachete suplimentare"
 
-#~ msgid "It's multiplatform. Binaries available for Windows and Linux."
+#~ msgid "Optional packages which provide some icon themes."
 #~ msgstr ""
-#~ "Este multiplatformă. Sunt disponibile executabile pentru Windows și Linux."
+#~ "Pachete opționale care oferă mai multe teme pentru interfața programului."
+
+#~ msgid "Icon Themes:"
+#~ msgstr "Teme Pictograme:"
+
+#~ msgid "Suggested package:"
+#~ msgstr "Pachete sugerate:"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr ""
+#~ "Notă: fișierele de tip 7z pot fi dezarhivate cu <a href=%1>7-Zip</a>."
 
 #~ msgid ""
-#~ "Translations: currently SMPlayer is translated into more than 20 \n"
-#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-#~ "Japanese...."
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
 #~ msgstr ""
-#~ "Traduceri: la această oră SMPlayer este tradus în mai mult de 20\n"
-#~ "de limbi, incluzând Spaniolă, Germană, Franceză, Italiană, Rusă, "
-#~ "Chineză,\n"
-#~ "Japoneză, Română..."
-
-#~ msgid "Possibility to search automatically for subtitles in %1."
-#~ msgstr "Posibilitatea de a căuta automat subtitrări în %1."
+#~ "Acest pachet conține teme pentru pictograme, fișierele cu traduceri și \n"
+#~ "un executabil MPLayer."
 
 #~ msgid ""
-#~ "Preferences dialog. You can easily configure every option of SMPlayer\n"
-#~ "by using a nice preferences dialog."
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
 #~ msgstr ""
-#~ "Reglaje preferate. Aici puteți configura cu ușurință toate opțiunile "
-#~ "SMPlayer\n"
-#~ "utilizând o casetă de dialog intuitivă."
+#~ "Aceasta este versiunea portabilă pentru SMPlayer. Poate fi rulat de pe "
+#~ "dispozitive externe precum \n"
+#~ "dispozitive de memorie flash USB. Nu are nevoie de instalare, doar "
+#~ "dezarhivați \n"
+#~ "pachetul oriunde doriți și efectuați clic dublu pe fișierul smplayer.exe "
+#~ "pentru a-l rula."
+
+#~ msgid "This package is for advanced users only!"
+#~ msgstr "Acest pachet este doar pentru utilizatorii avansați!"
 
 #~ msgid ""
-#~ "Playlist. Allows you to enqueue several files to be played one after \n"
-#~ "each other. Autorepeat and shuffle supported too."
+#~ "Package (without installer) which includes smplayer, shared libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
 #~ msgstr ""
-#~ "Listă fișiere. Aceasta vă permite să redați mai multe fișiere unul după\n"
-#~ "altul. De asemenea puteți repeta redarea automat sau puteți reda\n"
-#~ "aleator fișiere din listă."
+#~ "Acest pachet (fără program de instalare) include smplayer, bibliotecile "
+#~ "comune, \n"
+#~ "fișierele cu traduceri și temele pentru pictograme. Pachetul nu include "
+#~ "și mplayer."
 
 #~ msgid ""
-#~ "Filters. Several filters are available: deinterlace, postprocessing,\n"
-#~ "denoise... and even a karaoke filter (voice removal)."
+#~ "If you prefer a zip file, you can get it at \n"
+#~ "the <a href=%1>mplayer site</a> (%2)."
 #~ msgstr ""
-#~ "Filtre. Sunt disponibile și o serie de filtre precum: deîntrețesere, "
-#~ "postprocesare,\n"
-#~ "înlăturare zgomote... și chiar un filtru karaoke (înlăturare voce)."
+#~ "Dacă preferați un fișier zip îl puteți găsi la \n"
+#~ "<a href=%1>mplayer site</a> (%2)."
 
 #~ msgid ""
-#~ "Audio track switching. You can choose the audio track you want\n"
-#~ "to listen. Works with avi and mkv. And of course with DVDs."
+#~ "These codecs are to be used by mplayer only and they will be installed \n"
+#~ "in the same folder, so they can't cause any conflict with other codecs "
+#~ "you \n"
+#~ "may have installed."
 #~ msgstr ""
-#~ "Comutarea coloanelor sonore. Puteți alege ce coloană sonoră doriți\n"
-#~ "să ascultați. Funcționează cu fișiere avi și mkv. Și bineînțeles cu DVD."
+#~ "Aceste codecuri vor fi folosite numai de către mplayer și vor fi "
+#~ "instalate \n"
+#~ " în același director, astfel nu vor intra în conflict cu diverse alte "
+#~ "codecuri \n"
+#~ " pe care le mai aveți instalate în sistem."
 
 #~ msgid ""
-#~ "Configurable subtitles. You can choose font and size, and even \n"
-#~ "colors for the subtitles."
+#~ "This package adds support for codecs that are not yet implemented\n"
+#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+#~ "formats. Note that they are not necessary to play most common formats\n"
+#~ "like DVDs, MPEG-1/2/4, etc."
 #~ msgstr ""
-#~ "Configurarea subtitrărilor. Pentru subtitrări puteți alege caracterele, \n"
-#~ "mărimea și chiar culoarea lor."
+#~ "Acest pachet adaugă suport pentru codecuri ce nu au fost încă "
+#~ "implementate\n"
+#~ " în mplayer, precum versiunile noi RealVideo și multe alte formate "
+#~ "neobișnuite.\n"
+#~ " Aceste codecuri nu sunt necesare pentru redarea formatelor\n"
+#~ " obișnuite precum DVD, MPEG-1/2/4, etc. "
 
-#~ msgid "Other additional interesting features:"
-#~ msgstr "Alte caracteristici suplimentare interesante:"
+#~ msgid "Additional codecs:"
+#~ msgstr "Codecuri suplimentare:"
 
 #~ msgid ""
-#~ "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
-#~ "from basic features like playing videos, DVDs, and VCDs to more "
-#~ "advanced \n"
-#~ "features like support for MPlayer filters and more."
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
 #~ msgstr ""
-#~ "SMPlayer intenționează să fie un front-end complet pentru <a href="
-#~ "%1>MPlayer</a>,\n"
-#~ "având funcții de bază precum redarea fişierelor video, a DVD-urilor și a "
-#~ "VCD-urilor \n"
-#~ "dar și funcții avansate precum suport pentru filtrele specifice MPlayer "
-#~ "și mult mai multe."
+#~ "Acest pachet conține tot ce este necesar pentru a rula smplayer: "
+#~ "biblioteci \n"
+#~ "comune, fișierele cu traduceri, temele pentru pictograme și un executabil "
+#~ "mplayer \n"
+#~ "(versiunea inclusă este %1)."
+
+#~ msgid "Package with installer:"
+#~ msgstr "Pachete cu program de instalare:"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Stable version"
+#~ msgstr "Versiunea stabilă"
+
+#~ msgid "The SMPlayer Project"
+#~ msgstr "Proiectul SMPlayer"

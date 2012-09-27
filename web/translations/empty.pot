@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 03:26+0200\n"
+"POT-Creation-Date: 2012-09-28 00:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,15 +37,24 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
-#: ../index.php:46 ../header.php:152 ../downloads.php:13
+#: ../index.php:46 ../header.php:154 ../downloads.php:13
 msgid "Downloads"
 msgstr ""
 
-#: ../info.php:8
+#: ../info.php:4 ../formats.php:11
+msgid "Formats and Codecs"
+msgstr ""
+
+#: ../info.php:10
+msgid "Close"
+msgstr ""
+
+#. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+#: ../info.php:23
 msgid "see list"
 msgstr ""
 
-#: ../info.php:3
+#: ../info.php:17
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -53,7 +62,7 @@ msgid ""
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
 
-#: ../info.php:10
+#: ../info.php:25
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -62,90 +71,90 @@ msgid ""
 "track, subtitles, volume..."
 msgstr ""
 
-#: ../info.php:18
+#: ../info.php:33
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:20
+#: ../info.php:35
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:22
+#: ../info.php:37
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
 msgstr ""
 
-#: ../info.php:25
+#: ../info.php:40
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:26
+#: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
 msgstr ""
 
-#: ../info.php:28
+#: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr ""
 
-#: ../info.php:30
+#: ../info.php:45
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr ""
 
-#: ../info.php:32
+#: ../info.php:47
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
 msgstr ""
 
-#: ../info.php:34
+#: ../info.php:49
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:36
+#: ../info.php:51
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
 msgstr ""
 
-#: ../info.php:38
+#: ../info.php:53
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:41
+#: ../info.php:56
 msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
 
-#: ../info.php:42
+#: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../header.php:150
+#: ../header.php:152
 msgid "Main"
 msgstr ""
 
-#: ../header.php:151 ../screenshots.php:14
+#: ../header.php:153 ../screenshots.php:14
 msgid "Screenshots"
 msgstr ""
 
-#: ../header.php:158
+#: ../header.php:160
 msgid "Language"
 msgstr ""
 
@@ -286,32 +295,28 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:11
-msgid "Formats and Codecs"
-msgstr ""
-
-#: ../formats.php:14
+#: ../formats_text.php:3
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
 msgstr ""
 
-#: ../formats.php:18
+#: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr ""
 
-#: ../formats.php:20
+#: ../formats_text.php:9
 msgid "Supported Input Formats"
 msgstr ""
 
-#: ../formats.php:48
+#: ../formats_text.php:37
 msgid "Supported Video and Audio Codecs"
 msgstr ""
 
-#: ../formats.php:50
+#: ../formats_text.php:39
 msgid "most important video codecs:"
 msgstr ""
 
-#: ../formats.php:75
+#: ../formats_text.php:64
 msgid "most important audio codecs:"
 msgstr ""

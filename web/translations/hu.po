@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 03:26+0200\n"
+"POT-Creation-Date: 2012-09-28 00:39+0200\n"
 "PO-Revision-Date: 2009-03-13 10:57+0100\n"
 "Last-Translator: CyberDragon <cyberdragon777@gmail.com>\n"
 "Language-Team: hungarian <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Letöltések"
 
-#: ../downloads.php:13 ../header.php:152 ../index.php:46
+#: ../downloads.php:13 ../header.php:154 ../index.php:46
 msgid "Downloads"
 msgstr "Letöltések"
 
@@ -106,45 +106,45 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:11
+#: ../formats.php:11 ../info.php:4
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:14
+#: ../formats_text.php:3
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
 msgstr ""
 
-#: ../formats.php:18
+#: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr ""
 
-#: ../formats.php:20
+#: ../formats_text.php:9
 msgid "Supported Input Formats"
 msgstr ""
 
-#: ../formats.php:48
+#: ../formats_text.php:37
 msgid "Supported Video and Audio Codecs"
 msgstr ""
 
-#: ../formats.php:50
+#: ../formats_text.php:39
 msgid "most important video codecs:"
 msgstr ""
 
-#: ../formats.php:75
+#: ../formats_text.php:64
 msgid "most important audio codecs:"
 msgstr ""
 
-#: ../header.php:150
+#: ../header.php:152
 msgid "Main"
 msgstr "Kezdőlap"
 
-#: ../header.php:151 ../screenshots.php:14
+#: ../header.php:153 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Képek"
 
-#: ../header.php:158
+#: ../header.php:160
 msgid "Language"
 msgstr ""
 
@@ -168,7 +168,11 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
-#: ../info.php:3
+#: ../info.php:10
+msgid "Close"
+msgstr ""
+
+#: ../info.php:17
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -176,11 +180,12 @@ msgid ""
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
 
-#: ../info.php:8
+#. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+#: ../info.php:23
 msgid "see list"
 msgstr ""
 
-#: ../info.php:10
+#: ../info.php:25
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -194,23 +199,23 @@ msgstr ""
 "és ugyanazokkal a beállításokkal (hangsáv, felirat, hangerő...) fog \n"
 "folytatódni, mint ahol abbahagyta."
 
-#: ../info.php:18
+#: ../info.php:33
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:20
+#: ../info.php:35
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:22
+#: ../info.php:37
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -218,11 +223,11 @@ msgstr ""
 "Tekerés egérgörgővel. Használhatja az egérgörgőt hogy előre vagy \n"
 "hátha léptesse a videót."
 
-#: ../info.php:25
+#: ../info.php:40
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:26
+#: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -230,7 +235,7 @@ msgstr ""
 "Videó kiegyenlítő, lehetővé teszi a fényerő, kontraszt, színárnyalat, \n"
 "telítettség és gamma szabályzását a videó képen."
 
-#: ../info.php:28
+#: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -238,7 +243,7 @@ msgstr ""
 "Változtatható sebességű lejátszás. Lejátszhat 2X, 4X... sebességgel \n"
 "és akár lassítva is."
 
-#: ../info.php:30
+#: ../info.php:45
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -246,7 +251,7 @@ msgstr ""
 "Hang és felirat késleltetés állítás. Lehetővé teszi a hang és a \n"
 "felirat szinkronba hozását."
 
-#: ../info.php:32
+#: ../info.php:47
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -254,28 +259,28 @@ msgstr ""
 "Haladó beállítások, mint a demuxer vagy videó és hang \n"
 "kodekek kiválasztása."
 
-#: ../info.php:34
+#: ../info.php:49
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:36
+#: ../info.php:51
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
 msgstr ""
 
-#: ../info.php:38
+#: ../info.php:53
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:41
+#: ../info.php:56
 msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
 
-#: ../info.php:42
+#: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
@@ -331,143 +336,86 @@ msgstr "A Mini felület"
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#~ msgid "The SMPlayer Project"
-#~ msgstr "Az SMPlayer projekt"
+#~ msgid ""
+#~ "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
+#~ "from basic features like playing videos, DVDs, and VCDs to more "
+#~ "advanced \n"
+#~ "features like support for MPlayer filters and more."
+#~ msgstr ""
+#~ "Az SMPlayer egy komplett felület az <a href=%1>MPlayer</a> számára, \n"
+#~ "alapvető funkcióktól kezdve, mint videók, DVD-k, VCD-k lejátszása, \n"
+#~ "egészen a fejlettebb szolgáltatásokig, mint az MPlayer szűrők támogatása."
 
-#~ msgid "Stable version"
-#~ msgstr "Stabil verzió"
-
-#~ msgid "Windows"
-#~ msgstr "Windows"
-
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgid "Package with installer:"
-#~ msgstr "Csomag telepítővel:"
+#~ msgid "Other additional interesting features:"
+#~ msgstr "További érdekes funkciók:"
 
 #~ msgid ""
-#~ "This package contains everything needed to run smplayer: shared \n"
-#~ "libraries, translation files, icon themes and a mplayer \n"
-#~ "build (the version included is %1)."
+#~ "Configurable subtitles. You can choose font and size, and even \n"
+#~ "colors for the subtitles."
 #~ msgstr ""
-#~ "Ez a csomag tartalmaz mindent, ami az SMPlayer futtatásához szükséges: \n"
-#~ "megosztott könyvtárak, fordítások, ikon témák és egy MPlayer build \n"
-#~ "(a mellékelt verzió %1)."
-
-#~ msgid "Additional codecs:"
-#~ msgstr "További kodekek:"
+#~ "Konfigurálható feliratok. Kiválaszthatja a betűtípust és méretet, \n"
+#~ "még a feliratok színeit is."
 
 #~ msgid ""
-#~ "This package adds support for codecs that are not yet implemented\n"
-#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
-#~ "formats. Note that they are not necessary to play most common formats\n"
-#~ "like DVDs, MPEG-1/2/4, etc."
+#~ "Audio track switching. You can choose the audio track you want\n"
+#~ "to listen. Works with avi and mkv. And of course with DVDs."
 #~ msgstr ""
-#~ "Ez a csomag támogatást nyújt az MPlayer által natívan még nem "
-#~ "támogatott \n"
-#~ "kodekekhez, mint az újabb RealVideo fajták és sok kevésbé gyakori \n"
-#~ "formátumhoz. Nem szükségesek a legtöbb gyakori formátum lejátszásához, \n"
-#~ "mint a DVD-k, MPEG-1/2/4, stb."
+#~ "Hangsáv váltás. Kiválaszthatja a hallgatni kívánt hangsávot. \n"
+#~ "Működik avi és mkv fájlok, valamint természetesen DVD-k esetén."
 
 #~ msgid ""
-#~ "These codecs are to be used by mplayer only and they will be installed \n"
-#~ "in the same folder, so they can't cause any conflict with other codecs "
-#~ "you \n"
-#~ "may have installed."
+#~ "Filters. Several filters are available: deinterlace, postprocessing,\n"
+#~ "denoise... and even a karaoke filter (voice removal)."
 #~ msgstr ""
-#~ "Ezeket a kodekeket csak az MPlayer tudja használni és annak a "
-#~ "könyvtárába \n"
-#~ "lesznek telepítve, ezért nem képesek konfliktust okozni más esetlegesen \n"
-#~ "feltelepített kodekekkel."
+#~ "Szűrők. Többféle elérhető szűrő: deinterlace, utófeldolgozás, \n"
+#~ "zajcsökkentő... és még egy karaoke szűrő (beszédhang eltávolítás) is."
 
 #~ msgid ""
-#~ "If you prefer a zip file, you can get it at \n"
-#~ "the <a href=%1>mplayer site</a> (%2)."
+#~ "Playlist. Allows you to enqueue several files to be played one after \n"
+#~ "each other. Autorepeat and shuffle supported too."
 #~ msgstr ""
-#~ "Ha inkább zip fájlt szeretne, letöltheti az \n"
-#~ "<a href=%1>MPlayer oldalról</a> (%2)."
+#~ "Lejátszási lista. Lehetővé teszi több fájl sorba állítását egymás \n"
+#~ "utáni lejátszáshoz. Ismétlés és véletlen sorrendű lejátszás is támogatott."
 
 #~ msgid ""
-#~ "Package (without installer) which includes smplayer, shared libraries,\n"
-#~ "translations and icon themes. It doesn't include mplayer."
+#~ "Preferences dialog. You can easily configure every option of SMPlayer\n"
+#~ "by using a nice preferences dialog."
 #~ msgstr ""
-#~ "Csomag (telepítő nélkül), amely tartalmazza az SMPlayert, megosztott \n"
-#~ "könyvtárakat, fordításokat és ikon témákat. Nem tartalmazza az MPlayert."
+#~ "Beállítások ablak. Könnyen konfigurálhatja az SMPlayer minden opcióját \n"
+#~ "egy igényes párbeszédablak használatával."
 
-#~ msgid "This package is for advanced users only!"
-#~ msgstr "Ez a csomag csak haladó felhasználóknak ajánlott!"
+#~ msgid "Possibility to search automatically for subtitles in %1."
+#~ msgstr "Lehetőség automatikus felirat keresésre az %1 -on"
 
 #~ msgid ""
-#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
-#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
-#~ "package wherever you want and double click on smplayer.exe to run it."
+#~ "Translations: currently SMPlayer is translated into more than 20 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
 #~ msgstr ""
-#~ "Az SMPlayer hordozható verziója. Futtatható külső eszközökrõl, pl. USB \n"
-#~ "flash meghajtók. Nem igényel telepítést, csak tömörítse ki a csomagot \n"
-#~ "és kattintson duplán az smplayer.exe-re a futtatáshoz."
+#~ "Fordítások: jelenleg az SMPlayer több mint 20 nyelven elérhető, \n"
+#~ "például spanyol, német, francia, olasz, orosz, kínai, japán..."
+
+#~ msgid "It's multiplatform. Binaries available for Windows and Linux."
+#~ msgstr ""
+#~ "Többplatformos. A futtatható állományok elérhetők Windowsra és Linuxra."
+
+#~ msgid "SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "Az SMPlayer a <b>GPL</b> licensz alatt áll."
 
 #~ msgid ""
-#~ "The package also includes the icon themes, translations and a \n"
-#~ "MPlayer build."
+#~ "Read the file Install.txt included in the package to know how compile it."
 #~ msgstr ""
-#~ "Ez a csomag ikon témákat, fordításokat és egy MPlayer buildet \n"
-#~ "is tartalmaz."
-
-#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
-#~ msgstr ""
-#~ "Megjegyzés: a 7z fájlok <a href=%1>7-Zip</a> segítségével \n"
-#~ "tömöríthetők ki."
-
-#~ msgid "Suggested package:"
-#~ msgstr "Ajánlott csomag:"
+#~ "Olvassa el a csomagban lévő Install.txt fájlt a fordítási információkért."
 
 #~ msgid ""
-#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
-#~ "has support for some of the new features of mplayer, so a newer version \n"
-#~ "is highly recommended."
+#~ "You can get packages directly taken from the SVN (source code and\n"
+#~ "Windows updates), <a href=%1><b>here</b></a>."
 #~ msgstr ""
-#~ "Az Ubuntuban található MPlayer verzió nagyon régi (%1). Az SMPlayer \n"
-#~ "támogatja az MPlayer néhány új funkcióját, ezért egy újabb verzió \n"
-#~ "erősen ajánlott."
+#~ "Letölthet közvetlenül az SVN-ről készített csomagokat (forráskód \n"
+#~ "és Windows frissítések), <a href=%1><b>innen</b></a>."
 
-#~ msgid "You can get updated versions from this PPA:"
-#~ msgstr "Friss verziókat errõl a PPA-ról szerezhet:"
-
-#~ msgid "more info"
-#~ msgstr "több infó"
-
-#~ msgid "Icon Themes:"
-#~ msgstr "Ikon témák:"
-
-#~ msgid "Optional packages which provide some icon themes."
-#~ msgstr "Opcionális csomagok néhány ikon témával."
-
-#~ msgid "Additional packages"
-#~ msgstr "További csomagok"
-
-#~ msgid ""
-#~ "There are several additional packages for advanced users:\n"
-#~ "<a href=%1>See sourceforge download page</a>."
-#~ msgstr ""
-#~ "További csomagok érhetők el haladó felhasználók számára: \n"
-#~ "<a href=%1>Lásd SourceForge letöltési oldal</a>."
-
-#~ msgid "Contributed packages"
-#~ msgstr "Hozzájárulók csomagjai"
-
-#~ msgid ""
-#~ "There are available packages for other distros, created\n"
-#~ "by other people. <a href=%1>Click here</a> to see them."
-#~ msgstr ""
-#~ "Elérhetőek más emberek által készített csomagok egyéb \n"
-#~ "disztribúciókra. <a href=%1>Kattintson ide</a> a megtekintésükhöz."
-
-#~ msgid "Related Project"
-#~ msgstr "Kapcsolódó projekt"
-
-#~ msgid "by MuldeR"
-#~ msgstr "MuldeR által"
+#~ msgid "Unstable releases"
+#~ msgstr "Nem stabil kiadások"
 
 #~ msgid ""
 #~ "This package contains a very recent version of SMPlayer (often taken "
@@ -482,83 +430,140 @@ msgstr ""
 #~ "Továbbá saját telepítőt, különböző processzorokra optimalizált MPlayer \n"
 #~ "buildeket és kodekeket tartalmaz."
 
-#~ msgid "Unstable releases"
-#~ msgstr "Nem stabil kiadások"
+#~ msgid "by MuldeR"
+#~ msgstr "MuldeR által"
+
+#~ msgid "Related Project"
+#~ msgstr "Kapcsolódó projekt"
 
 #~ msgid ""
-#~ "You can get packages directly taken from the SVN (source code and\n"
-#~ "Windows updates), <a href=%1><b>here</b></a>."
+#~ "There are available packages for other distros, created\n"
+#~ "by other people. <a href=%1>Click here</a> to see them."
 #~ msgstr ""
-#~ "Letölthet közvetlenül az SVN-ről készített csomagokat (forráskód \n"
-#~ "és Windows frissítések), <a href=%1><b>innen</b></a>."
+#~ "Elérhetőek más emberek által készített csomagok egyéb \n"
+#~ "disztribúciókra. <a href=%1>Kattintson ide</a> a megtekintésükhöz."
+
+#~ msgid "Contributed packages"
+#~ msgstr "Hozzájárulók csomagjai"
 
 #~ msgid ""
-#~ "Read the file Install.txt included in the package to know how compile it."
+#~ "There are several additional packages for advanced users:\n"
+#~ "<a href=%1>See sourceforge download page</a>."
 #~ msgstr ""
-#~ "Olvassa el a csomagban lévő Install.txt fájlt a fordítási információkért."
+#~ "További csomagok érhetők el haladó felhasználók számára: \n"
+#~ "<a href=%1>Lásd SourceForge letöltési oldal</a>."
 
-#~ msgid "SMPlayer is under the <b>GPL</b> license."
-#~ msgstr "Az SMPlayer a <b>GPL</b> licensz alatt áll."
+#~ msgid "Additional packages"
+#~ msgstr "További csomagok"
 
-#~ msgid "It's multiplatform. Binaries available for Windows and Linux."
-#~ msgstr ""
-#~ "Többplatformos. A futtatható állományok elérhetők Windowsra és Linuxra."
+#~ msgid "Optional packages which provide some icon themes."
+#~ msgstr "Opcionális csomagok néhány ikon témával."
+
+#~ msgid "Icon Themes:"
+#~ msgstr "Ikon témák:"
+
+#~ msgid "more info"
+#~ msgstr "több infó"
+
+#~ msgid "You can get updated versions from this PPA:"
+#~ msgstr "Friss verziókat errõl a PPA-ról szerezhet:"
 
 #~ msgid ""
-#~ "Translations: currently SMPlayer is translated into more than 20 \n"
-#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-#~ "Japanese...."
+#~ "The version of mplayer included in Ubuntu is very old (%1). SMPlayer \n"
+#~ "has support for some of the new features of mplayer, so a newer version \n"
+#~ "is highly recommended."
 #~ msgstr ""
-#~ "Fordítások: jelenleg az SMPlayer több mint 20 nyelven elérhető, \n"
-#~ "például spanyol, német, francia, olasz, orosz, kínai, japán..."
+#~ "Az Ubuntuban található MPlayer verzió nagyon régi (%1). Az SMPlayer \n"
+#~ "támogatja az MPlayer néhány új funkcióját, ezért egy újabb verzió \n"
+#~ "erősen ajánlott."
 
-#~ msgid "Possibility to search automatically for subtitles in %1."
-#~ msgstr "Lehetőség automatikus felirat keresésre az %1 -on"
+#~ msgid "Suggested package:"
+#~ msgstr "Ajánlott csomag:"
+
+#~ msgid "Note: 7z files can be uncompressed with <a href=%1>7-Zip</a>."
+#~ msgstr ""
+#~ "Megjegyzés: a 7z fájlok <a href=%1>7-Zip</a> segítségével \n"
+#~ "tömöríthetők ki."
 
 #~ msgid ""
-#~ "Preferences dialog. You can easily configure every option of SMPlayer\n"
-#~ "by using a nice preferences dialog."
+#~ "The package also includes the icon themes, translations and a \n"
+#~ "MPlayer build."
 #~ msgstr ""
-#~ "Beállítások ablak. Könnyen konfigurálhatja az SMPlayer minden opcióját \n"
-#~ "egy igényes párbeszédablak használatával."
+#~ "Ez a csomag ikon témákat, fordításokat és egy MPlayer buildet \n"
+#~ "is tartalmaz."
 
 #~ msgid ""
-#~ "Playlist. Allows you to enqueue several files to be played one after \n"
-#~ "each other. Autorepeat and shuffle supported too."
+#~ "Portable version of SMPlayer. It can be run from external devices, like \n"
+#~ "USB flash drives. It doesn't require installation, just uncompress the \n"
+#~ "package wherever you want and double click on smplayer.exe to run it."
 #~ msgstr ""
-#~ "Lejátszási lista. Lehetővé teszi több fájl sorba állítását egymás \n"
-#~ "utáni lejátszáshoz. Ismétlés és véletlen sorrendű lejátszás is támogatott."
+#~ "Az SMPlayer hordozható verziója. Futtatható külső eszközökrõl, pl. USB \n"
+#~ "flash meghajtók. Nem igényel telepítést, csak tömörítse ki a csomagot \n"
+#~ "és kattintson duplán az smplayer.exe-re a futtatáshoz."
+
+#~ msgid "This package is for advanced users only!"
+#~ msgstr "Ez a csomag csak haladó felhasználóknak ajánlott!"
 
 #~ msgid ""
-#~ "Filters. Several filters are available: deinterlace, postprocessing,\n"
-#~ "denoise... and even a karaoke filter (voice removal)."
+#~ "Package (without installer) which includes smplayer, shared libraries,\n"
+#~ "translations and icon themes. It doesn't include mplayer."
 #~ msgstr ""
-#~ "Szűrők. Többféle elérhető szűrő: deinterlace, utófeldolgozás, \n"
-#~ "zajcsökkentő... és még egy karaoke szűrő (beszédhang eltávolítás) is."
+#~ "Csomag (telepítő nélkül), amely tartalmazza az SMPlayert, megosztott \n"
+#~ "könyvtárakat, fordításokat és ikon témákat. Nem tartalmazza az MPlayert."
 
 #~ msgid ""
-#~ "Audio track switching. You can choose the audio track you want\n"
-#~ "to listen. Works with avi and mkv. And of course with DVDs."
+#~ "If you prefer a zip file, you can get it at \n"
+#~ "the <a href=%1>mplayer site</a> (%2)."
 #~ msgstr ""
-#~ "Hangsáv váltás. Kiválaszthatja a hallgatni kívánt hangsávot. \n"
-#~ "Működik avi és mkv fájlok, valamint természetesen DVD-k esetén."
+#~ "Ha inkább zip fájlt szeretne, letöltheti az \n"
+#~ "<a href=%1>MPlayer oldalról</a> (%2)."
 
 #~ msgid ""
-#~ "Configurable subtitles. You can choose font and size, and even \n"
-#~ "colors for the subtitles."
+#~ "These codecs are to be used by mplayer only and they will be installed \n"
+#~ "in the same folder, so they can't cause any conflict with other codecs "
+#~ "you \n"
+#~ "may have installed."
 #~ msgstr ""
-#~ "Konfigurálható feliratok. Kiválaszthatja a betűtípust és méretet, \n"
-#~ "még a feliratok színeit is."
-
-#~ msgid "Other additional interesting features:"
-#~ msgstr "További érdekes funkciók:"
+#~ "Ezeket a kodekeket csak az MPlayer tudja használni és annak a "
+#~ "könyvtárába \n"
+#~ "lesznek telepítve, ezért nem képesek konfliktust okozni más esetlegesen \n"
+#~ "feltelepített kodekekkel."
 
 #~ msgid ""
-#~ "SMPlayer intends to be a complete front-end for <a href=%1>MPlayer</a>,\n"
-#~ "from basic features like playing videos, DVDs, and VCDs to more "
-#~ "advanced \n"
-#~ "features like support for MPlayer filters and more."
+#~ "This package adds support for codecs that are not yet implemented\n"
+#~ "natively in mplayer, like newer RealVideo variants and a lot of uncommon\n"
+#~ "formats. Note that they are not necessary to play most common formats\n"
+#~ "like DVDs, MPEG-1/2/4, etc."
 #~ msgstr ""
-#~ "Az SMPlayer egy komplett felület az <a href=%1>MPlayer</a> számára, \n"
-#~ "alapvető funkcióktól kezdve, mint videók, DVD-k, VCD-k lejátszása, \n"
-#~ "egészen a fejlettebb szolgáltatásokig, mint az MPlayer szűrők támogatása."
+#~ "Ez a csomag támogatást nyújt az MPlayer által natívan még nem "
+#~ "támogatott \n"
+#~ "kodekekhez, mint az újabb RealVideo fajták és sok kevésbé gyakori \n"
+#~ "formátumhoz. Nem szükségesek a legtöbb gyakori formátum lejátszásához, \n"
+#~ "mint a DVD-k, MPEG-1/2/4, stb."
+
+#~ msgid "Additional codecs:"
+#~ msgstr "További kodekek:"
+
+#~ msgid ""
+#~ "This package contains everything needed to run smplayer: shared \n"
+#~ "libraries, translation files, icon themes and a mplayer \n"
+#~ "build (the version included is %1)."
+#~ msgstr ""
+#~ "Ez a csomag tartalmaz mindent, ami az SMPlayer futtatásához szükséges: \n"
+#~ "megosztott könyvtárak, fordítások, ikon témák és egy MPlayer build \n"
+#~ "(a mellékelt verzió %1)."
+
+#~ msgid "Package with installer:"
+#~ msgstr "Csomag telepítővel:"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Stable version"
+#~ msgstr "Stabil verzió"
+
+#~ msgid "The SMPlayer Project"
+#~ msgstr "Az SMPlayer projekt"

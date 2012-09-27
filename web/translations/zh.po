@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-27 03:26+0200\n"
+"POT-Creation-Date: 2012-09-28 00:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - 下载"
 
-#: ../downloads.php:13 ../header.php:152 ../index.php:46
+#: ../downloads.php:13 ../header.php:154 ../index.php:46
 msgid "Downloads"
 msgstr "下载"
 
@@ -111,45 +111,45 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - 格式和编解码器"
 
-#: ../formats.php:11
+#: ../formats.php:11 ../info.php:4
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:14
+#: ../formats_text.php:3
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
 msgstr "SMPlayer 是一个用于 %1 的图形界面, 其支持多种视频音频格式和编解码器."
 
-#: ../formats.php:18
+#: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
 msgstr "这里是一个完整的列表 (来自 MPlayer 文档):"
 
-#: ../formats.php:20
+#: ../formats_text.php:9
 msgid "Supported Input Formats"
 msgstr "支持的输入格式"
 
-#: ../formats.php:48
+#: ../formats_text.php:37
 msgid "Supported Video and Audio Codecs"
 msgstr "支持的视频和音频编解码器"
 
-#: ../formats.php:50
+#: ../formats_text.php:39
 msgid "most important video codecs:"
 msgstr "最重要的视频编解码器:"
 
-#: ../formats.php:75
+#: ../formats_text.php:64
 msgid "most important audio codecs:"
 msgstr "最重要的音频编解码器:"
 
-#: ../header.php:150
+#: ../header.php:152
 msgid "Main"
 msgstr "主页"
 
-#: ../header.php:151 ../screenshots.php:14
+#: ../header.php:153 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "屏幕截图"
 
-#: ../header.php:158
+#: ../header.php:160
 msgid "Language"
 msgstr ""
 
@@ -173,7 +173,11 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
-#: ../info.php:3
+#: ../info.php:10
+msgid "Close"
+msgstr ""
+
+#: ../info.php:17
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -185,11 +189,12 @@ msgstr ""
 "其能够播放大多数视频和音频格式 (avi, mkv, wmv, mp4, mpeg... %2).\n"
 "它<b>使用它自己的编解码器</b>, 因此您不需要安装任何编解码器包."
 
-#: ../info.php:8
+#. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
+#: ../info.php:23
 msgid "see list"
 msgstr "见列表"
 
-#: ../info.php:10
+#: ../info.php:25
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -203,11 +208,11 @@ msgstr ""
 "它会恢复您离开时的播放位置, 并使用相同的设置:\n"
 "音轨, 字幕, 音量..."
 
-#: ../info.php:18
+#: ../info.php:33
 msgid "Some other interesting features:"
 msgstr "一些其他有趣的功能:"
 
-#: ../info.php:20
+#: ../info.php:35
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -215,7 +220,7 @@ msgstr ""
 "完备的首选项对话框, 您可以在其中更改快捷键,\n"
 "字幕颜色和字体, 和更多选项."
 
-#: ../info.php:22
+#: ../info.php:37
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -223,7 +228,7 @@ msgstr ""
 "过滤器. 有很多视频和音频过滤器可用: 反交错, 后处理, 降噪...\n"
 "甚至卡拉 OK 过滤器 (去除人声)."
 
-#: ../info.php:24
+#: ../info.php:39
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -231,11 +236,11 @@ msgstr ""
 "通过鼠标滚轮定位.\n"
 "您可以使用鼠标滚轮在视频上前进或后退."
 
-#: ../info.php:25
+#: ../info.php:40
 msgid "The mouse buttons can also be customized."
 msgstr "鼠标按键也可以被自定义."
 
-#: ../info.php:26
+#: ../info.php:41
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -243,7 +248,7 @@ msgstr ""
 "视频均衡器, 允许您调整视频图像的亮度, 对比度,\n"
 "色调, 饱和度和伽玛."
 
-#: ../info.php:28
+#: ../info.php:43
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -251,7 +256,7 @@ msgstr ""
 "多速播放. 您可以以 2X, 4X 播放...\n"
 "甚至是慢动作."
 
-#: ../info.php:30
+#: ../info.php:45
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -259,7 +264,7 @@ msgstr ""
 "音频和字幕延迟调整.\n"
 "允许您同步音频和字幕."
 
-#: ../info.php:32
+#: ../info.php:47
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -267,11 +272,11 @@ msgstr ""
 "高级选项, 例如选择分离器或视频 &\n"
 "音频编解码器."
 
-#: ../info.php:34
+#: ../info.php:49
 msgid "Possibility to search and download subtitles from %1."
 msgstr "可以从 %1 搜索和下载字幕."
 
-#: ../info.php:36
+#: ../info.php:51
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
@@ -279,7 +284,7 @@ msgstr ""
 "它可以播放 Youtube 视频. 一个 Youtube 浏览器包含在内,\n"
 "它也可以轻松地下载 Youtube 视频."
 
-#: ../info.php:38
+#: ../info.php:53
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -289,11 +294,11 @@ msgstr ""
 "包括西班牙语, 德语, 法语, 意大利语, 俄语, 汉语,\n"
 "日语...."
 
-#: ../info.php:41
+#: ../info.php:56
 msgid "Possibility to change the style and icon set of the interface."
 msgstr "可以更改界面的样式和图标集."
 
-#: ../info.php:42
+#: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
 
@@ -349,29 +354,29 @@ msgstr "迷你图形用户界面"
 msgid "Possibility to search for subtitles"
 msgstr "搜索可能的字幕"
 
-#~ msgid "The SMPlayer Project"
-#~ msgstr "SMPlayer 项目"
-
-#~ msgid "This page is available in the following languages:"
-#~ msgstr "本页面提供下列语言:"
-
-#~ msgid "Stable version"
-#~ msgstr "稳定版本"
-
-#~ msgid "Windows"
-#~ msgstr "Windows"
-
-#~ msgid "There are available other packages (like a portable version), %1."
-#~ msgstr "有可用的其他软件包 (例如便携版), %1."
-
-#~ msgid "Linux"
-#~ msgstr "Linux"
-
-#~ msgid "Sources:"
-#~ msgstr "源代码:"
+#~ msgid "SMPlayer - Latest Version"
+#~ msgstr "SMPlayer - 最新版本"
 
 #~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 #~ msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
 
-#~ msgid "SMPlayer - Latest Version"
-#~ msgstr "SMPlayer - 最新版本"
+#~ msgid "Sources:"
+#~ msgstr "源代码:"
+
+#~ msgid "Linux"
+#~ msgstr "Linux"
+
+#~ msgid "There are available other packages (like a portable version), %1."
+#~ msgstr "有可用的其他软件包 (例如便携版), %1."
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "Stable version"
+#~ msgstr "稳定版本"
+
+#~ msgid "This page is available in the following languages:"
+#~ msgstr "本页面提供下列语言:"
+
+#~ msgid "The SMPlayer Project"
+#~ msgstr "SMPlayer 项目"
