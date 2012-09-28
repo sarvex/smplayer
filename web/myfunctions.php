@@ -1,5 +1,4 @@
 <?php
-
 include_once("site.php");
 
 function get_link($url, $bytes, $disabled = false) {
@@ -44,5 +43,4 @@ function create_simple_link($filename, $text) {
 
 	return "<a href=\"$u\"><b>$text</b></a>";
 }
-
 ?>
