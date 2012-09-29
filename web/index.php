@@ -15,8 +15,10 @@ print_menu(1);
 		</div>
 		<div class="span6">
 			<h1>SMPlayer</h1>
-			<p><?php tr("Graphical Interface for MPlayer");?></p>
-			<p><a href="downloads.php" class="btn btn-success btn-large"><?php tr("Click here to download the latest version");?></a></p>
+			<?php
+			echo "<p>". get_tr("Graphical Interface for MPlayer") ."</p>\n";
+			echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">". get_tr("Click here to download the latest version") ."</a></p>\n";
+			?>
 		</div>
 		<div class="span3">
 		<img src="images/twisted.png">
