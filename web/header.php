@@ -12,6 +12,8 @@ function print_header($title) {
 <meta charset="utf-8">
 <meta name="Description" content="smplayer, multiplatform front-end for mplayer">
 <meta name="Keywords" content="smplayer, mplayer, mplayer2, multimedia, player">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <style type="text/css">
@@ -137,7 +139,7 @@ function print_menu($current=1) {
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner"> 
 		<div class="container"> 
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span> 

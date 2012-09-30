@@ -8,6 +8,7 @@ print_menu(1);
 <div class="container-fluid">
 
 <!-- Main hero unit for a primary marketing message or call to action -->
+<span class="hidden-phone">
 <div class="hero-unit">
 	<div class="row">
 		<div class="span2">
@@ -25,6 +26,7 @@ print_menu(1);
 		</div>
 	</div>
 </div>
+</span>
 
 <div class="row-fluid">
 	<div class="span9">
