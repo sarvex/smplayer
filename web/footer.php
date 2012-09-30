@@ -20,6 +20,12 @@
 <td>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
 <li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+<?php
+if ($site=="sourceforge")
+	echo "<li><a href=\"http://smplayer.berlios.de\">". get_tr("Mirror") ."</a></li>\n";
+else
+	echo "<li><a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a></li>\n";
+?>
 </ul>
 </td>
 </tr>
