@@ -18,11 +18,14 @@ msgstr ""
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../downloads.php:3 ../latest.php:3
+#: ../downloads.php:3
+#: ../latest.php:3
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Transferências"
 
-#: ../downloads.php:13 ../header.php:154 ../index.php:46
+#: ../downloads.php:13
+#: ../header.php:154
+#: ../index.php:46
 msgid "Downloads"
 msgstr "Transferências"
 
@@ -40,7 +43,7 @@ msgstr ""
 
 #: ../downloads.php:37
 msgid "There are available other packages for advanced users, %1."
-msgstr ""
+msgstr "Também existem outros pacotes para utilizadores experientes %1."
 
 #: ../downloads.php:37
 msgid "here"
@@ -52,7 +55,7 @@ msgstr "Se quiser, também pode experimentar %1."
 
 #: ../downloads.php:40
 msgid "the unstable version"
-msgstr "a versão de testes."
+msgstr "a versão de testes"
 
 #: ../downloads.php:47
 msgid ""
@@ -78,15 +81,15 @@ msgstr "Pacotes para outras distribuições"
 
 #: ../downloads.php:78
 msgid "List of packages contributed by other people."
-msgstr ""
+msgstr "Lista de pacotes compilados por terceiros."
 
 #: ../downloads.php:85
 msgid "Sources"
-msgstr ""
+msgstr "Código fonte"
 
 #: ../footer.php:16
 msgid "Other links:"
-msgstr ""
+msgstr "Outras ligações:"
 
 #: ../footer.php:21
 msgid "Donate"
@@ -112,17 +115,14 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos e codificadores"
 
-#: ../formats.php:11 ../info.php:4
+#: ../formats.php:11
+#: ../info.php:4
 msgid "Formats and Codecs"
-msgstr ""
+msgstr "Formatos e codificadores"
 
 #: ../formats_text.php:3
-msgid ""
-"SMPlayer is a graphical interface for %1, which supports many video and "
-"audio formats and codecs."
-msgstr ""
-"O SMPlayer é uma interface gráfica para o %1, com suporte a diversos "
-"formatos de vídeos e codificadores."
+msgid "SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs."
+msgstr "O SMPlayer é uma interface gráfica para o %1, com suporte a diversos formatos de vídeos e codificadores."
 
 #: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
@@ -148,13 +148,14 @@ msgstr "os codificadores de áudio mais importantes:"
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:153 ../screenshots.php:14
+#: ../header.php:153
+#: ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Imagens"
 
 #: ../header.php:160
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: ../index.php:3
 msgid "SMPlayer - General Info"
@@ -162,23 +163,24 @@ msgstr "SMPlayer - Informações gerais"
 
 #: ../index.php:18
 msgid "Graphical Interface for MPlayer"
-msgstr ""
+msgstr "Uma interface gráfica para o MPlayer"
 
 #: ../index.php:19
 msgid "Click here to download the latest version"
-msgstr ""
+msgstr "Clique aqui para transferir a versão mais recente"
 
 #: ../index.php:29
 msgid "About SMPlayer"
-msgstr ""
+msgstr "Sobre o SMPlayer"
 
-#: ../index.php:35 ../latest.php:9
+#: ../index.php:35
+#: ../latest.php:9
 msgid "Latest changes"
-msgstr ""
+msgstr "Últimas alterações"
 
 #: ../info.php:10
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: ../info.php:17
 msgid ""
@@ -189,8 +191,7 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
-"%2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
@@ -221,8 +222,7 @@ msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
-"Caixa de diálogo de preferências, na qual pode alterar os atalhos de "
-"teclado,\n"
+"Caixa de diálogo de preferências, na qual pode alterar os atalhos de teclado,\n"
 "as cores e o tipo de letra das legendas e muito mais."
 
 #: ../info.php:37
@@ -304,12 +304,11 @@ msgstr "Pode alterar os estilo e os ícones da interface gráfica."
 
 #: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr ""
-"O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
+msgstr "O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
 
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
-msgstr ""
+msgstr "Aqui pode encontrar as lista das últimas alterações no SMPlayer:"
 
 #: ../latest.php:21
 msgid "Go to the download page"
