@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-28 00:39+0200\n"
+"POT-Creation-Date: 2012-10-01 03:13+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -18,14 +18,11 @@ msgstr ""
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../downloads.php:3
-#: ../latest.php:3
+#: ../downloads.php:3 ../latest.php:3
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Transferências"
 
-#: ../downloads.php:13
-#: ../header.php:154
-#: ../index.php:46
+#: ../downloads.php:13 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Transferências"
 
@@ -42,8 +39,8 @@ msgstr ""
 "o explorador YouTube (smtube)."
 
 #: ../downloads.php:37
-msgid "There are available other packages for advanced users, %1."
-msgstr "Também existem outros pacotes para utilizadores experientes %1."
+msgid "There are available other packages (like a portable version), %1."
+msgstr "Existem também outros pacotes e uma versão portátil %1."
 
 #: ../downloads.php:37
 msgid "here"
@@ -87,42 +84,56 @@ msgstr "Lista de pacotes compilados por terceiros."
 msgid "Sources"
 msgstr "Código fonte"
 
-#: ../footer.php:16
+#.
+#. header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", ($current==4), true);
+#. header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", ($current==5), true);
+#. header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", ($current==6), true);
+#. header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", ($current==7), true);
+#. header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($current==8), true, true);
+#.
+#: ../footer.php:9
 msgid "Other links:"
 msgstr "Outras ligações:"
 
-#: ../footer.php:21
+#: ../footer.php:10
 msgid "Donate"
 msgstr "Donativos"
 
-#: ../footer.php:22
+#: ../footer.php:11
 msgid "Forum"
 msgstr "Fórum"
 
-#: ../footer.php:23
+#: ../footer.php:12
 msgid "Bug Tracking"
 msgstr "Erros"
 
-#: ../footer.php:26
+#: ../footer.php:13
 msgid "Feature Requests"
 msgstr "Pedidos de funções"
 
-#: ../footer.php:27
+#: ../footer.php:14
 msgid "Wiki"
 msgstr "Wiki"
+
+#: ../footer.php:18 ../footer.php:20
+msgid "Mirror"
+msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos e codificadores"
 
-#: ../formats.php:11
-#: ../info.php:4
+#: ../formats.php:11 ../info.php:4
 msgid "Formats and Codecs"
 msgstr "Formatos e codificadores"
 
 #: ../formats_text.php:3
-msgid "SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs."
-msgstr "O SMPlayer é uma interface gráfica para o %1, com suporte a diversos formatos de vídeos e codificadores."
+msgid ""
+"SMPlayer is a graphical interface for %1, which supports many video and "
+"audio formats and codecs."
+msgstr ""
+"O SMPlayer é uma interface gráfica para o %1, com suporte a diversos "
+"formatos de vídeos e codificadores."
 
 #: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
@@ -144,16 +155,15 @@ msgstr "os codificadores de vídeo mais importantes:"
 msgid "most important audio codecs:"
 msgstr "os codificadores de áudio mais importantes:"
 
-#: ../header.php:152
+#: ../header.php:151
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:153
-#: ../screenshots.php:14
+#: ../header.php:152 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Imagens"
 
-#: ../header.php:160
+#: ../header.php:159
 msgid "Language"
 msgstr "Idioma"
 
@@ -161,20 +171,19 @@ msgstr "Idioma"
 msgid "SMPlayer - General Info"
 msgstr "SMPlayer - Informações gerais"
 
-#: ../index.php:18
+#: ../index.php:20
 msgid "Graphical Interface for MPlayer"
 msgstr "Uma interface gráfica para o MPlayer"
 
-#: ../index.php:19
+#: ../index.php:21
 msgid "Click here to download the latest version"
 msgstr "Clique aqui para transferir a versão mais recente"
 
-#: ../index.php:29
+#: ../index.php:33
 msgid "About SMPlayer"
 msgstr "Sobre o SMPlayer"
 
-#: ../index.php:35
-#: ../latest.php:9
+#: ../index.php:39 ../latest.php:9
 msgid "Latest changes"
 msgstr "Últimas alterações"
 
@@ -191,7 +200,8 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
+"%2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
@@ -222,7 +232,8 @@ msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
-"Caixa de diálogo de preferências, na qual pode alterar os atalhos de teclado,\n"
+"Caixa de diálogo de preferências, na qual pode alterar os atalhos de "
+"teclado,\n"
 "as cores e o tipo de letra das legendas e muito mais."
 
 #: ../info.php:37
@@ -304,7 +315,8 @@ msgstr "Pode alterar os estilo e os ícones da interface gráfica."
 
 #: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr "O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
+msgstr ""
+"O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
 
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -619,9 +631,6 @@ msgstr "Possibilidade de procurar legendas"
 #~ msgid "Linux"
 #~ msgstr "Linux"
 
-#~ msgid "There are available other packages (like a portable version), %1."
-#~ msgstr "Existem também outros pacotes e uma versão portátil %1."
-
 #~ msgid "Windows"
 #~ msgstr "Windows"
 
@@ -630,3 +639,6 @@ msgstr "Possibilidade de procurar legendas"
 
 #~ msgid "The SMPlayer Project"
 #~ msgstr "O projeto SMPlayer"
+
+#~ msgid "There are available other packages for advanced users, %1."
+#~ msgstr "Também existem outros pacotes para utilizadores experientes %1."

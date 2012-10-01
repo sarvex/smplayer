@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-28 00:39+0200\n"
+"POT-Creation-Date: 2012-10-01 03:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr ""
 
-#: ../downloads.php:13 ../header.php:154 ../index.php:46
+#: ../downloads.php:13 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr ""
 
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 
 #: ../downloads.php:37
-msgid "There are available other packages for advanced users, %1."
+msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
 #: ../downloads.php:37
@@ -78,28 +78,39 @@ msgstr ""
 msgid "Sources"
 msgstr ""
 
-#: ../footer.php:16
+#.
+#. header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", ($current==4), true);
+#. header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", ($current==5), true);
+#. header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", ($current==6), true);
+#. header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", ($current==7), true);
+#. header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($current==8), true, true);
+#.
+#: ../footer.php:9
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:21
+#: ../footer.php:10
 msgid "Donate"
 msgstr ""
 
-#: ../footer.php:22
+#: ../footer.php:11
 msgid "Forum"
 msgstr ""
 
-#: ../footer.php:23
+#: ../footer.php:12
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../footer.php:26
+#: ../footer.php:13
 msgid "Feature Requests"
 msgstr ""
 
-#: ../footer.php:27
+#: ../footer.php:14
 msgid "Wiki"
+msgstr ""
+
+#: ../footer.php:18 ../footer.php:20
+msgid "Mirror"
 msgstr ""
 
 #: ../formats.php:3
@@ -136,15 +147,15 @@ msgstr ""
 msgid "most important audio codecs:"
 msgstr ""
 
-#: ../header.php:152
+#: ../header.php:151
 msgid "Main"
 msgstr ""
 
-#: ../header.php:153 ../screenshots.php:14
+#: ../header.php:152 ../screenshots.php:14
 msgid "Screenshots"
 msgstr ""
 
-#: ../header.php:160
+#: ../header.php:159
 msgid "Language"
 msgstr ""
 
@@ -152,19 +163,19 @@ msgstr ""
 msgid "SMPlayer - General Info"
 msgstr ""
 
-#: ../index.php:18
+#: ../index.php:20
 msgid "Graphical Interface for MPlayer"
 msgstr ""
 
-#: ../index.php:19
+#: ../index.php:21
 msgid "Click here to download the latest version"
 msgstr ""
 
-#: ../index.php:29
+#: ../index.php:33
 msgid "About SMPlayer"
 msgstr ""
 
-#: ../index.php:35 ../latest.php:9
+#: ../index.php:39 ../latest.php:9
 msgid "Latest changes"
 msgstr ""
 
