@@ -1,7 +1,7 @@
 <div id="formats" class="modal hide fade in" style="display: none;">
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">×</a>
-		<h3><?php tr("Formats and Codecs"); ?>
+		<h3><?php tr("Formats and Codecs"); ?></h3>
 	</div>
 	<div class="modal-body">
 		<?php include("formats_text.php"); ?>
