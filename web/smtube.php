@@ -17,7 +17,7 @@ The code was taken from <a target="_blank" href="http://www.umplayer.com/">UMPla
 This browser allows to search for Youtube videos but it can also download them.
 
 <p>
-<center><img src="images/screenshots/thumbs/th_youtube1.png"></center>
+<center><img src="images/screenshots/thumbs/th_smtube.png"></center>
 
 <p>
 Several improvements have been done:

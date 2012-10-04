@@ -35,7 +35,7 @@ echo "<ul class=\"thumbnails\">\n";
 show_thumb("mainwindow.png", get_tr("This is the main window") );
 show_thumb("mainwindow_vista.png", get_tr("The Windows version") );
 show_thumb("preferences2.png", get_tr("The preferences dialog") );
-show_thumb("youtube1.png", get_tr("The YouTube browser") );
+show_thumb("smtube.png", get_tr("The YouTube browser") );
 echo "</ul>";
 echo "</div>";
 echo "</div>";
