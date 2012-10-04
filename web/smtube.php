@@ -11,26 +11,28 @@ print_menu(1);
 <div class="row-fluid">
 <div class="span9">
 <p>
-SMPlayer now includes a Youtube browser which I called <i>SMTube</i>.
-The code was taken from <a target="_blank" href="http://www.umplayer.com/">UMPlayer</a> 
-(developed by Ori Rejwan).
-This browser allows to search for Youtube videos but it can also download them.
-
+<?php
+tr("SMPlayer now includes a Youtube browser which I called <i>SMTube</i>. 
+The code was taken from %1 (developed by %2). 
+This browser allows to search Youtube videos but it's also capable of downloading them.",
+"<a target=\"_blank\" href=\"http://www.umplayer.com/\">UMPlayer</a>",
+"Ori Rejwan");
+?>
 <p>
 <center><img src="images/screenshots/thumbs/th_smtube.png"></center>
 
 <p>
-Several improvements have been done:
+<?php tr("Several improvements have been done:"); ?>
 <ul>
-<li>It's now a stand-alone application and you can select the video player to use 
-(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer).</li>
-<li>It's possible to translate the application to other languages.</li>
-<li>A configuration dialog has been added.</li>
-<li>A few fixes.</li>
+<li><?php tr("It's now a stand-alone application and you can select the video player to use 
+(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."); ?></li>
+<li><?php tr("It's possible to translate the application to other languages."); ?></li>
+<li><?php tr("A configuration dialog has been added."); ?></li>
+<li><?php tr("A few fixes."); ?></li>
 </ul>
 
 <p>
-SMTube is already included in the Windows packages but on Linux it's on an independent package.
+<?php tr("SMTube is already included in the Windows packages but on Linux it's an independent package."); ?>
 
 </div> <!-- span -->
 
@@ -39,20 +41,14 @@ SMTube is already included in the Windows packages but on Linux it's on an indep
 
 <h3><?php tr("Latest changes"); ?></h3>
 <p>
-<b>Version 1.2.</b>
-<ul>
-<li>Update for Youtube changes.</li>
-<li>Usability improvements.</li>
-</ul>
-
-<p>
-<b>Version 1.1.</b>
-<ul>
-<li>(Linux) Possibility to select the player to use: smplayer, mplayer, vlc, dragon player and totem.</li>
-<li>Fix a possible crash that may happen on Ubuntu if using the ambiance or radiance themes.</li>
-<li>New translations: Basque and Portuguese.</li>
-<li>(Windows) Possibility to build a portable version.</li>
-</ul>
+<?php
+$release_notes_file = "translations/smtube_release_notes_". $tr_lang .".html";
+if (file_exists($release_notes_file)) {
+	include($release_notes_file);
+} else {
+	include("translations/smtube_release_notes_en.html");
+}
+?>
 
 </div> <!-- well -->
 </div> <!-- span -->

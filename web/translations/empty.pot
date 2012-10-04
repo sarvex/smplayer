@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-01 03:13+0200\n"
+"POT-Creation-Date: 2012-10-04 23:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "About SMPlayer"
 msgstr ""
 
-#: ../index.php:39 ../latest.php:9
+#: ../index.php:39 ../latest.php:9 ../smtube.php:42
 msgid "Latest changes"
 msgstr ""
 
@@ -173,27 +173,27 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
-#: ../footer.php:11
+#: ../footer.php:12
 msgid "Forum"
 msgstr ""
 
-#: ../footer.php:12
+#: ../footer.php:13
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../footer.php:13
+#: ../footer.php:14
 msgid "Feature Requests"
 msgstr ""
 
-#: ../footer.php:14
+#: ../footer.php:15
 msgid "Wiki"
 msgstr ""
 
-#: ../footer.php:18 ../footer.php:20
+#: ../footer.php:19 ../footer.php:21
 msgid "Mirror"
 msgstr ""
 
-#: ../downloads.php:3 ../latest.php:3
+#: ../downloads.php:3
 msgid "SMPlayer - Downloads"
 msgstr ""
 
@@ -294,6 +294,10 @@ msgstr ""
 msgid "Possibility to search for subtitles"
 msgstr ""
 
+#: ../latest.php:3
+msgid "SMPlayer - Latest Changes"
+msgstr ""
+
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr ""
@@ -330,4 +334,41 @@ msgstr ""
 
 #: ../formats_text.php:64
 msgid "most important audio codecs:"
+msgstr ""
+
+#: ../smtube.php:15
+msgid ""
+"SMPlayer now includes a Youtube browser which I called <i>SMTube</i>. \n"
+"The code was taken from %1 (developed by %2). \n"
+"This browser allows to search Youtube videos but it's also capable of "
+"downloading them."
+msgstr ""
+
+#: ../smtube.php:25
+msgid "Several improvements have been done:"
+msgstr ""
+
+#: ../smtube.php:27
+msgid ""
+"It's now a stand-alone application and you can select the video player to "
+"use \n"
+"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
+msgstr ""
+
+#: ../smtube.php:29
+msgid "It's possible to translate the application to other languages."
+msgstr ""
+
+#: ../smtube.php:30
+msgid "A configuration dialog has been added."
+msgstr ""
+
+#: ../smtube.php:31
+msgid "A few fixes."
+msgstr ""
+
+#: ../smtube.php:35
+msgid ""
+"SMTube is already included in the Windows packages but on Linux it's an "
+"independent package."
 msgstr ""

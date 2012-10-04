@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-01 03:13+0200\n"
+"POT-Creation-Date: 2012-10-04 23:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../downloads.php:3 ../latest.php:3
+#: ../downloads.php:3
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - ダウンロード"
 
@@ -99,23 +99,23 @@ msgstr "関連リンク:"
 msgid "Donate"
 msgstr "寄付"
 
-#: ../footer.php:11
+#: ../footer.php:12
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../footer.php:12
+#: ../footer.php:13
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../footer.php:13
+#: ../footer.php:14
 msgid "Feature Requests"
 msgstr "機能要望"
 
-#: ../footer.php:14
+#: ../footer.php:15
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:18 ../footer.php:20
+#: ../footer.php:19 ../footer.php:21
 msgid "Mirror"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgstr "最新版をダウンロードする"
 msgid "About SMPlayer"
 msgstr "SMPlayer とは"
 
-#: ../index.php:39 ../latest.php:9
+#: ../index.php:39 ../latest.php:9 ../smtube.php:42
 msgid "Latest changes"
 msgstr "最新の変更点"
 
@@ -310,6 +310,10 @@ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 "無料でオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 
+#: ../latest.php:3
+msgid "SMPlayer - Latest Changes"
+msgstr ""
+
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "こちらでは SMPlayer の最新の変更点をご覧いただけます:"
@@ -361,6 +365,43 @@ msgstr "ミニ GUI"
 #: ../screenshots.php:57
 msgid "Possibility to search for subtitles"
 msgstr "字幕の検索機能"
+
+#: ../smtube.php:15
+msgid ""
+"SMPlayer now includes a Youtube browser which I called <i>SMTube</i>. \n"
+"The code was taken from %1 (developed by %2). \n"
+"This browser allows to search Youtube videos but it's also capable of "
+"downloading them."
+msgstr ""
+
+#: ../smtube.php:25
+msgid "Several improvements have been done:"
+msgstr ""
+
+#: ../smtube.php:27
+msgid ""
+"It's now a stand-alone application and you can select the video player to "
+"use \n"
+"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
+msgstr ""
+
+#: ../smtube.php:29
+msgid "It's possible to translate the application to other languages."
+msgstr ""
+
+#: ../smtube.php:30
+msgid "A configuration dialog has been added."
+msgstr ""
+
+#: ../smtube.php:31
+msgid "A few fixes."
+msgstr ""
+
+#: ../smtube.php:35
+msgid ""
+"SMTube is already included in the Windows packages but on Linux it's an "
+"independent package."
+msgstr ""
 
 #~ msgid "There are available other packages for advanced users, %1."
 #~ msgstr "他に上級者向けのパッケージもあります。%1をご覧ください。"

@@ -2,7 +2,7 @@ all: es.po nl.po fr.po ja.po pl.po ro.po uk.po ru.po hu.po zh.po de.po pt.po it.
 
 FILES=../index.php ../info.php ../header.php ../footer.php ../downloads.php \
       ../documentation.php ../screenshots.php ../latest.php ../formats.php \
-      ../formats_text.php
+      ../formats_text.php ../smtube.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \
