@@ -22,7 +22,9 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Transferências"
 
-#: ../downloads.php:13 ../header.php:153 ../index.php:50
+#: ../downloads.php:13
+#: ../header.php:153
+#: ../index.php:50
 msgid "Downloads"
 msgstr "Transferências"
 
@@ -115,25 +117,23 @@ msgstr "Pedidos de funções"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:19 ../footer.php:21
+#: ../footer.php:19
+#: ../footer.php:21
 msgid "Mirror"
-msgstr ""
+msgstr "Mirror"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos e codificadores"
 
-#: ../formats.php:11 ../info.php:4
+#: ../formats.php:11
+#: ../info.php:4
 msgid "Formats and Codecs"
 msgstr "Formatos e codificadores"
 
 #: ../formats_text.php:3
-msgid ""
-"SMPlayer is a graphical interface for %1, which supports many video and "
-"audio formats and codecs."
-msgstr ""
-"O SMPlayer é uma interface gráfica para o %1, com suporte a diversos "
-"formatos de vídeos e codificadores."
+msgid "SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs."
+msgstr "O SMPlayer é uma interface gráfica para o %1, com suporte a diversos formatos de vídeos e codificadores."
 
 #: ../formats_text.php:7
 msgid "Here is a complete list (from the MPlayer documentation):"
@@ -159,7 +159,8 @@ msgstr "os codificadores de áudio mais importantes:"
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:152 ../screenshots.php:14
+#: ../header.php:152
+#: ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Imagens"
 
@@ -183,11 +184,14 @@ msgstr "Clique aqui para transferir a versão mais recente"
 msgid "About SMPlayer"
 msgstr "Sobre o SMPlayer"
 
-#: ../index.php:39 ../latest.php:9 ../smtube.php:55
+#: ../index.php:39
+#: ../latest.php:9
+#: ../smtube.php:55
 msgid "Latest changes"
 msgstr "Últimas alterações"
 
-#: ../info.php:10 ../smtube.php:17
+#: ../info.php:10
+#: ../smtube.php:17
 msgid "Close"
 msgstr "Fechar"
 
@@ -200,8 +204,7 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
-"%2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
@@ -232,8 +235,7 @@ msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
-"Caixa de diálogo de preferências, na qual pode alterar os atalhos de "
-"teclado,\n"
+"Caixa de diálogo de preferências, na qual pode alterar os atalhos de teclado,\n"
 "as cores e o tipo de letra das legendas e muito mais."
 
 #: ../info.php:37
@@ -315,12 +317,11 @@ msgstr "Pode alterar os estilo e os ícones da interface gráfica."
 
 #: ../info.php:57
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr ""
-"O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
+msgstr "O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
-msgstr ""
+msgstr "SMPlayer - Últimas alterações"
 
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -376,44 +377,45 @@ msgstr "Possibilidade de procurar legendas"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
-msgstr ""
+msgstr "Imagem do SMTube"
 
 #: ../smtube.php:28
 msgid ""
 "SMPlayer now includes a Youtube browser which I called <i>SMTube</i>. \n"
 "The code was taken from %1 (developed by %2). \n"
-"This browser allows to search Youtube videos but it's also capable of "
-"downloading them."
+"This browser allows to search Youtube videos but it's also capable of downloading them."
 msgstr ""
+"O SMPlayer passou a incluir um explorador Youtube a que atribuimos o nome <i>SMTube</i>. \n"
+"O código fonte foi aproveitado de %1 (desenvolvido por %2). \n"
+"Esta apilcação permite procurar e transferir, por opção, os vídeos do Youtube."
 
 #: ../smtube.php:38
 msgid "Several improvements have been done:"
-msgstr ""
+msgstr "Foram efetuadas diversas melhorias:"
 
 #: ../smtube.php:40
 msgid ""
-"It's now a stand-alone application and you can select the video player to "
-"use \n"
+"It's now a stand-alone application and you can select the video player to use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
+"O SMTube é agora um programa independente e os vídeos podem ser vistos em\n"
+"diversos reprodutores: smplayer mplayer, dragon player, totem ou gnome-mplayer."
 
 #: ../smtube.php:42
 msgid "It's possible to translate the application to other languages."
-msgstr ""
+msgstr "Já é possível traduzir a aplicação."
 
 #: ../smtube.php:43
 msgid "A configuration dialog has been added."
-msgstr ""
+msgstr "Adicionado um diálogo de configurações."
 
 #: ../smtube.php:44
 msgid "A few fixes."
-msgstr ""
+msgstr "Algumas correções"
 
 #: ../smtube.php:48
-msgid ""
-"SMTube is already included in the Windows packages but on Linux it's an "
-"independent package."
-msgstr ""
+msgid "SMTube is already included in the Windows packages but on Linux it's an independent package."
+msgstr "O SMTube já está incluido nos pacotes Windows mas nos sistemas Linux é um pacote independente."
 
 #~ msgid "SMPlayer - Latest Version"
 #~ msgstr "SMPlayer - Última versão"
