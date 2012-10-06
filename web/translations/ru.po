@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-06 02:28+0200\n"
+"POT-Creation-Date: 2012-10-06 03:24+0200\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -26,70 +26,121 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Загрузки"
 
-#: ../downloads.php:13 ../header.php:153 ../index.php:50
-msgid "Downloads"
-msgstr "Загрузки"
+#: ../downloads.php:11
+msgid "Information about the Windows installer"
+msgstr ""
+
+#: ../downloads.php:16
+msgid ""
+"For an easy installation on Windows we provide a package with installer."
+msgstr ""
 
 #: ../downloads.php:23
-msgid "Click here to get the full package"
+msgid "This package allows to select the components to be installed:"
+msgstr ""
+
+#: ../downloads.php:25
+msgid "Languages"
+msgstr ""
+
+#: ../downloads.php:26
+msgid "Translations for more than 30 languages are provided."
 msgstr ""
 
 #: ../downloads.php:27
+msgid "If you uncheck this option, only English will be available."
+msgstr ""
+
+#: ../downloads.php:28
+msgid "Icon themes"
+msgstr ""
+
+#: ../downloads.php:29
+msgid ""
+"Some icon themes are provided, which allow to change the look of the "
+"application."
+msgstr ""
+
+#: ../downloads.php:30
+msgid "Binary codecs"
+msgstr ""
+
+#: ../downloads.php:31
+msgid ""
+"If you check this option, some extra codecs will be downloaded and installed "
+"in the smplayer folder."
+msgstr ""
+
+#: ../downloads.php:32
+msgid "These codecs are only necessary for some uncommon formats."
+msgstr ""
+
+#. echo "<img src=\"images/screenshots/windows_installer.png\">";
+#: ../downloads.php:39 ../info.php:10 ../smtube.php:17
+msgid "Close"
+msgstr ""
+
+#: ../downloads.php:49 ../header.php:153 ../index.php:50
+msgid "Downloads"
+msgstr "Загрузки"
+
+#: ../downloads.php:59
+msgid "Click here to get the full package"
+msgstr ""
+
+#: ../downloads.php:61
+msgid "More info"
+msgstr ""
+
+#: ../downloads.php:65
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
 msgstr ""
 
-#: ../downloads.php:37
+#: ../downloads.php:75
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
-#: ../downloads.php:37
+#: ../downloads.php:75
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:39
+#: ../downloads.php:77
 msgid "If you wish you can also try %1."
 msgstr ""
 
-#: ../downloads.php:40
+#: ../downloads.php:78
 msgid "the unstable version"
 msgstr ""
 
-#: ../downloads.php:47
+#: ../downloads.php:85
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:61
+#: ../downloads.php:99
 msgid "Packages for Ubuntu:"
 msgstr "Пакеты для Ubuntu:"
 
-#: ../downloads.php:62
+#: ../downloads.php:100
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Для установки smplayer, выполните следующий команды в терминале:"
 
-#: ../downloads.php:76
+#: ../downloads.php:114
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../downloads.php:78
+#: ../downloads.php:116
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:85
+#: ../downloads.php:123
 msgid "Sources"
 msgstr ""
 
-#.
-#. header_print_link(get_tr("Donate"), "http://sourceforge.net/donate/index.php?group_id=185512", ($current==4), true);
-#. header_print_link(get_tr("Forum"), "http://smplayer.sourceforge.net/forum/", ($current==5), true);
-#. header_print_link(get_tr("Bug Tracking"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573", ($current==6), true);
-#. header_print_link(get_tr("Feature Requests"), "http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576", ($current==7), true);
-#. header_print_link(get_tr("Wiki"), "http://smplayer.wiki.sourceforge.net/", ($current==8), true, true);
-#.
 #: ../footer.php:9
 msgid "Other links:"
 msgstr ""
@@ -180,12 +231,8 @@ msgstr ""
 msgid "About SMPlayer"
 msgstr ""
 
-#: ../index.php:39 ../latest.php:9 ../smtube.php:55
+#: ../index.php:39 ../latest.php:9 ../smtube.php:57
 msgid "Latest changes"
-msgstr ""
-
-#: ../info.php:10 ../smtube.php:17
-msgid "Close"
 msgstr ""
 
 #: ../info.php:17
@@ -196,12 +243,11 @@ msgid ""
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
 
-#. "<a href=\"formats.php?tr_lang=". $tr_lang ."\">" .get_tr("see list") ."</a>");
-#: ../info.php:23
+#: ../info.php:22
 msgid "see list"
 msgstr ""
 
-#: ../info.php:25
+#: ../info.php:24
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -216,23 +262,23 @@ msgstr ""
 "воспроизведение продолжится с того места и с теми же настройками: звуковая \n"
 "дорожка, субтитры, громкость..."
 
-#: ../info.php:33
+#: ../info.php:32
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:35
+#: ../info.php:34
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:37
+#: ../info.php:36
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:39
+#: ../info.php:38
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -240,11 +286,11 @@ msgstr ""
 "Перемотка мышью. Вы можете пользоваться колесом мыши для перемотки \n"
 "видео вперед или назад."
 
-#: ../info.php:40
+#: ../info.php:39
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:41
+#: ../info.php:40
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -252,7 +298,7 @@ msgstr ""
 "Видеоэквалайзер позволит Вам настроить яркость, контрастность, \n"
 "оттенок, цвет, насыщенность и гамму изображения."
 
-#: ../info.php:43
+#: ../info.php:42
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -260,7 +306,7 @@ msgstr ""
 "Воспроизведение на разных скоростях. Можно ускорить воспроизведение в 2, 4 \n"
 "раза или же наоборот, замедлить."
 
-#: ../info.php:45
+#: ../info.php:44
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -268,7 +314,7 @@ msgstr ""
 "Регулирование задержки звука и субтитров позволит Вам синхронизировать \n"
 "звук и субтитры."
 
-#: ../info.php:47
+#: ../info.php:46
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -276,28 +322,28 @@ msgstr ""
 "Расширенные настройки, такие как выбор демультиплексора или звуковых \n"
 "и видео кодеков."
 
-#: ../info.php:49
+#: ../info.php:48
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:51
+#: ../info.php:50
 msgid ""
 "It can play Youtube videos. A Youtube browser is included, which\n"
 "allows to easily download Youtube videos too."
 msgstr ""
 
-#: ../info.php:53
+#: ../info.php:52
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:56
+#: ../info.php:55
 msgid "Possibility to change the style and icon set of the interface."
 msgstr ""
 
-#: ../info.php:57
+#: ../info.php:56
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
@@ -369,30 +415,30 @@ msgid ""
 "downloading them."
 msgstr ""
 
-#: ../smtube.php:38
+#: ../smtube.php:40
 msgid "Several improvements have been done:"
 msgstr ""
 
-#: ../smtube.php:40
+#: ../smtube.php:42
 msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
 
-#: ../smtube.php:42
+#: ../smtube.php:44
 msgid "It's possible to translate the application to other languages."
 msgstr ""
 
-#: ../smtube.php:43
+#: ../smtube.php:45
 msgid "A configuration dialog has been added."
 msgstr ""
 
-#: ../smtube.php:44
+#: ../smtube.php:46
 msgid "A few fixes."
 msgstr ""
 
-#: ../smtube.php:48
+#: ../smtube.php:50
 msgid ""
 "SMTube is already included in the Windows packages but on Linux it's an "
 "independent package."

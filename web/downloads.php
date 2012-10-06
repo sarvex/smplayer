@@ -26,7 +26,7 @@ print_menu(3);
 			get_tr("Translations for more than 30 languages are provided.") ." ".
 			get_tr("If you uncheck this option, only English will be available.") ."</li>\n";
 		echo "<li><b>". get_tr("Icon themes") ."</b><br>". 
-			get_tr("Some icon themes are provides, which allows to change the look of the application.") ."</li>\n";
+			get_tr("Some icon themes are provided, which allow to change the look of the application.") ."</li>\n";
 		echo "<li><b>". get_tr("Binary codecs"). "</b><br>". 
 			get_tr("If you check this option, some extra codecs will be downloaded and installed in the smplayer folder.") ." ".
 			get_tr("These codecs are only necessary for some uncommon formats.") ."</li>\n";
