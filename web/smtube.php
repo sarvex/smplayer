@@ -25,7 +25,7 @@ print_menu(1);
 <div class="span9">
 <p>
 <?php
-tr("SMPlayer now includes a Youtube browser which I called <i>SMTube</i>. 
+tr("SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. 
 The code was taken from %1 (developed by %2). 
 This browser allows to search Youtube videos but it's also capable of downloading them.",
 "<a target=\"_blank\" href=\"http://www.umplayer.com/\">UMPlayer</a>",
