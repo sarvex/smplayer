@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-06 03:24+0200\n"
+"POT-Creation-Date: 2012-10-06 11:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -31,64 +31,82 @@ msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 
-#: ../downloads.php:23
-msgid "This package allows to select the components to be installed:"
+#: ../downloads.php:18
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
 msgstr ""
 
-#: ../downloads.php:25
-msgid "Languages"
+#: ../downloads.php:20
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+
+#: ../downloads.php:22
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+
+#: ../downloads.php:24
+msgid "The installer allows to select the components to install:"
 msgstr ""
 
 #: ../downloads.php:26
-msgid "Translations for more than 30 languages are provided."
+msgid "Languages"
 msgstr ""
 
 #: ../downloads.php:27
-msgid "If you uncheck this option, only English will be available."
+msgid "Translations for more than 30 languages are provided."
 msgstr ""
 
 #: ../downloads.php:28
-msgid "Icon themes"
+msgid "If you uncheck this option, only English will be available."
 msgstr ""
 
 #: ../downloads.php:29
+msgid "Icon themes"
+msgstr ""
+
+#: ../downloads.php:30
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
 
-#: ../downloads.php:30
+#: ../downloads.php:31
 msgid "Binary codecs"
 msgstr ""
 
-#: ../downloads.php:31
+#: ../downloads.php:32
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
 
-#: ../downloads.php:32
+#: ../downloads.php:33
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr ""
 
 #. echo "<img src=\"images/screenshots/windows_installer.png\">";
-#: ../downloads.php:39 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:40 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "Fechar"
 
-#: ../downloads.php:49 ../header.php:153 ../index.php:50
+#: ../downloads.php:50 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Transferências"
 
-#: ../downloads.php:59
+#: ../downloads.php:60
 msgid "Click here to get the full package"
 msgstr "Clique aqui para obter o pacote integral"
 
-#: ../downloads.php:61
+#: ../downloads.php:62
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -96,23 +114,23 @@ msgstr ""
 "Este pacote contém o SMPlayer, os temas, as traduções, o MPlayer %1 e\n"
 "o explorador YouTube (smtube)."
 
-#: ../downloads.php:75
+#: ../downloads.php:76
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Existem também outros pacotes e uma versão portátil %1."
 
-#: ../downloads.php:75
+#: ../downloads.php:76
 msgid "here"
 msgstr "aqui"
 
-#: ../downloads.php:77
+#: ../downloads.php:78
 msgid "If you wish you can also try %1."
 msgstr "Se quiser, também pode experimentar %1."
 
-#: ../downloads.php:78
+#: ../downloads.php:79
 msgid "the unstable version"
 msgstr "a versão de testes"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -122,23 +140,23 @@ msgstr ""
 "de letras (necessária para o OSD e as legendas). Esta operação\n"
 "poderá levar algum tempo e só será efetuada uma vez."
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "Packages for Ubuntu:"
 msgstr "Pacotes para Ubuntu:"
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Para instalar o SMPlayer, execute estes comandos no terminal:"
 
-#: ../downloads.php:114
+#: ../downloads.php:115
 msgid "Contributed packages for other distros"
 msgstr "Pacotes para outras distribuições"
 
-#: ../downloads.php:116
+#: ../downloads.php:117
 msgid "List of packages contributed by other people."
 msgstr "Lista de pacotes compilados por terceiros."
 
-#: ../downloads.php:123
+#: ../downloads.php:124
 msgid "Sources"
 msgstr "Código fonte"
 
@@ -247,8 +265,8 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
-"%2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %"
+"2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #: ../info.php:22

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-06 03:24+0200\n"
+"POT-Creation-Date: 2012-10-06 11:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -32,39 +32,63 @@ msgstr ""
 "Para una instalación más sencilla en Windows proporcionamos un paquete con "
 "instalador."
 
-#: ../downloads.php:23
+#: ../downloads.php:18
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr ""
+"El instalador puede contener una pantalla promocional con una oferta para "
+"instalar una aplicación de terceros."
+
+#: ../downloads.php:20
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+"Si no estás interesado en la oferta, simplemente desmarca la(s) opcion(es) y "
+"la instalación continuará normalmente."
+
+#: ../downloads.php:22
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+"Esta pantalla nos permite mejorar smplayer y poder seguir distribuyéndolo "
+"gratuitamente. Esperamos que nos comprendas."
+
+#: ../downloads.php:24
 msgid "The installer allows to select the components to install:"
 msgstr "El instalador permite seleccionar los componentes que se instalarán:"
 
-#: ../downloads.php:25
+#: ../downloads.php:26
 msgid "Languages"
 msgstr "Idiomas"
 
-#: ../downloads.php:26
+#: ../downloads.php:27
 msgid "Translations for more than 30 languages are provided."
 msgstr "Se incluyen traducciones para más de 30 idiomas."
 
-#: ../downloads.php:27
+#: ../downloads.php:28
 msgid "If you uncheck this option, only English will be available."
 msgstr "Si desmarcas esta opción, sólo estará disponible el inglés."
 
-#: ../downloads.php:28
+#: ../downloads.php:29
 msgid "Icon themes"
 msgstr "Temas de iconos"
 
-#: ../downloads.php:29
+#: ../downloads.php:30
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
-"Están disponibles algunos temas de iconos, que permiten "
-"cambiar el aspecto de la aplicación."
+"Están disponibles algunos temas de iconos, que permiten cambiar el aspecto "
+"de la aplicación."
 
-#: ../downloads.php:30
+#: ../downloads.php:31
 msgid "Binary codecs"
 msgstr "Códecs binarios"
 
-#: ../downloads.php:31
+#: ../downloads.php:32
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -72,28 +96,29 @@ msgstr ""
 "Si marcas esta opción, se descargarán unos cuantos códecs extra y se "
 "instalarán en la carpeta del smplayer."
 
-#: ../downloads.php:32
+#: ../downloads.php:33
 msgid "These codecs are only necessary for some uncommon formats."
-msgstr "Estos códecs sólo son necesarios para algunos formatos poco frecuentes."
+msgstr ""
+"Estos códecs sólo son necesarios para algunos formatos poco frecuentes."
 
 #. echo "<img src=\"images/screenshots/windows_installer.png\">";
-#: ../downloads.php:39 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:40 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "Cerrar"
 
-#: ../downloads.php:49 ../header.php:153 ../index.php:50
+#: ../downloads.php:50 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Descargas"
 
-#: ../downloads.php:59
+#: ../downloads.php:60
 msgid "Click here to get the full package"
 msgstr "Haz click aquí para descargar el paquete completo"
 
-#: ../downloads.php:61
+#: ../downloads.php:62
 msgid "More info"
 msgstr "Más información"
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -101,23 +126,23 @@ msgstr ""
 "Este paquete contiene smplayer, temas, traducciones, mplayer %1 y el "
 "buscador de Youtube (smtube)."
 
-#: ../downloads.php:75
+#: ../downloads.php:76
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Hay disponibles otros paquetes (como una versión portable), %1."
 
-#: ../downloads.php:75
+#: ../downloads.php:76
 msgid "here"
 msgstr "aquí"
 
-#: ../downloads.php:77
+#: ../downloads.php:78
 msgid "If you wish you can also try %1."
 msgstr "Si lo deseas también puedes probar %1."
 
-#: ../downloads.php:78
+#: ../downloads.php:79
 msgid "the unstable version"
 msgstr "la versión inestable"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -127,24 +152,24 @@ msgstr ""
 "de letra (necesario para el OSD y los subtítulos). Esto puede tardar de 10 a "
 "20 segundos y sólo se realiza una vez."
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "Packages for Ubuntu:"
 msgstr "Paquetes para Ubuntu:"
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "Para instalar smplayer, simplemente ejecuta estas órdenes en un terminal:"
 
-#: ../downloads.php:114
+#: ../downloads.php:115
 msgid "Contributed packages for other distros"
 msgstr "Paquetes para otras distros"
 
-#: ../downloads.php:116
+#: ../downloads.php:117
 msgid "List of packages contributed by other people."
 msgstr "Lista de paquetes aportados por otras personas."
 
-#: ../downloads.php:123
+#: ../downloads.php:124
 msgid "Sources"
 msgstr "Fuentes"
 
@@ -613,8 +638,8 @@ msgstr ""
 #~ "There are several additional packages for advanced users:\n"
 #~ "<a href=%1>See sourceforge download page</a>."
 #~ msgstr ""
-#~ "Hay unos cuantos paquetes adicionales para usuarios avanzados: <a href="
-#~ "%1>Ver la página de descargas de sourceforge</a>."
+#~ "Hay unos cuantos paquetes adicionales para usuarios avanzados: <a href=%"
+#~ "1>Ver la página de descargas de sourceforge</a>."
 
 #~ msgid "Contributed packages"
 #~ msgstr "Otros paquetes"

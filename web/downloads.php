@@ -18,10 +18,9 @@ print_menu(3);
 		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
 		echo " ";
 		tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
-		echo "<br>";
+		echo " ";
 		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
 		echo "</div>\n";
-		//echo "&nbsp;";
 		tr("The installer allows to select the components to install:");
 		echo "<ul>\n";
 		echo "<li><b>". get_tr("Languages") ."</b><br>". 
