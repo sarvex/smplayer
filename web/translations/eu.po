@@ -8,13 +8,12 @@ msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-06 11:17+0200\n"
-"PO-Revision-Date: 2012-09-29 19:32+0100\n"
+"PO-Revision-Date: 2012-10-06 15:01+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: Poedit 1.5.3\n"
 
 #: ../downloads.php:3
@@ -23,70 +22,82 @@ msgstr "SMPlayer - Jeisketak"
 
 #: ../downloads.php:11
 msgid "Information about the Windows installer"
-msgstr ""
+msgstr "Windows ezartzileari buruzko argibideak"
 
 #: ../downloads.php:16
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
+"Windowsen ezarpen erraz bat egiteko ezartzailea duen paketea hornitzen dugu."
 
 #: ../downloads.php:18
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
 msgstr ""
+"Ezartzaileak hirugarrenen aplikazioak eskaintzen dituen sustapen ikusleiho "
+"bat izan dezake."
 
 #: ../downloads.php:20
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
 msgstr ""
+"Ez bazaude eskaintzan interesaturik, ez hautatu aukera(k) eta smplayeren "
+"ohiko ezarpena burutuko da."
 
 #: ../downloads.php:22
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
 msgstr ""
+"Ikuslehio honek smplayer gehiago hobetzen eta dohainik banatzea ahabidetzen "
+"digu. Ulertuko duzulakoan gaude."
 
 #: ../downloads.php:24
 msgid "The installer allows to select the components to install:"
-msgstr ""
+msgstr "Ezartzaileak ezarri beharreko osagaiak hautatzea ahalbidetzen du:"
 
 #: ../downloads.php:26
 msgid "Languages"
-msgstr ""
+msgstr "Hizkuntzak"
 
 #: ../downloads.php:27
 msgid "Translations for more than 30 languages are provided."
-msgstr ""
+msgstr "30 hizkuntza itzulpen baino gehiagorekin."
 
 #: ../downloads.php:28
 msgid "If you uncheck this option, only English will be available."
 msgstr ""
+"Aukera hau ez baduzu hautatzen, Ingelera bakarrik egongo da eskuragarri."
 
 #: ../downloads.php:29
 msgid "Icon themes"
-msgstr ""
+msgstr "Ikur azalgaiak"
 
 #: ../downloads.php:30
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
+"Ikur azalgai batzuk hornitzen dira, honek aplikazioaren irudia aldatzea "
+"ahalbidetzen du."
 
 #: ../downloads.php:31
 msgid "Binary codecs"
-msgstr ""
+msgstr "Binario kodekak"
 
 #: ../downloads.php:32
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
+"Aukera hau hautatzen baduzu, kodek gehigarri batuzk jeitsi eta ezarriko dira "
+"smplayer agiritegian."
 
 #: ../downloads.php:33
 msgid "These codecs are only necessary for some uncommon formats."
-msgstr ""
+msgstr "Kodekak heuskarri ezohiko batzuetarako bakarrik dira beharrezkoak."
 
 #. echo "<img src=\"images/screenshots/windows_installer.png\">";
 #: ../downloads.php:40 ../info.php:10 ../smtube.php:17
@@ -103,7 +114,7 @@ msgstr "Klikatu hemen pakete osoa lortzeko"
 
 #: ../downloads.php:62
 msgid "More info"
-msgstr ""
+msgstr "Argibide gehiago"
 
 #: ../downloads.php:66
 msgid ""
@@ -116,6 +127,7 @@ msgstr ""
 #: ../downloads.php:76
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
+"Beste pakete batzuk ere eskuragarri daude (bertsio eramangarri bezala), %1."
 
 #: ../downloads.php:76
 msgid "here"
@@ -185,7 +197,7 @@ msgstr "Wikia"
 
 #: ../footer.php:19 ../footer.php:21
 msgid "Mirror"
-msgstr ""
+msgstr "Ispilua"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -386,7 +398,7 @@ msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
-msgstr ""
+msgstr "SMPlayer - Azken Aldaketak"
 
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -442,7 +454,7 @@ msgstr "Azpidatziak bilatzeko aukera"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
-msgstr ""
+msgstr "SMTube Ikusleiho-argazkia"
 
 #: ../smtube.php:28
 msgid ""
@@ -451,10 +463,15 @@ msgid ""
 "This browser allows to search Youtube videos but it's also capable of "
 "downloading them."
 msgstr ""
+"SMPlayer-ek orain <i>SMTube</i> deituriko Youtube bilatzaile bat barneratzen "
+"du. \n"
+"Kodea %1-tik hartua da (%2-ek garatuta). \n"
+"Bilatzaile honek Youtube bideoak bilatzea ahalbidetzen du baina horiek "
+"jeisteko gauza ere bada."
 
 #: ../smtube.php:40
 msgid "Several improvements have been done:"
-msgstr ""
+msgstr "Hobekuntza ugari egin dira:"
 
 #: ../smtube.php:42
 msgid ""
@@ -462,29 +479,34 @@ msgid ""
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
+"Orain aplikazio aske bat da eta erabiltzea nahi duzun bideo irakurgailua "
+"hautatu dezakezu \n"
+"(smplayer, mplayer, vlc, dragon player, totem edo gnome-mplayer)."
 
 #: ../smtube.php:44
 msgid "It's possible to translate the application to other languages."
-msgstr ""
+msgstr "Aplikazioa beste hizkuntza batzuetara itzuli daiteke."
 
 #: ../smtube.php:45
 msgid "A configuration dialog has been added."
-msgstr ""
+msgstr "Itxurapen elkarrizketa bat gehitu da."
 
 #: ../smtube.php:46
 msgid "A few fixes."
-msgstr ""
+msgstr "Zuzenketa gutxi batzuk."
 
 #: ../smtube.php:50
 msgid ""
 "SMTube is already included in the Windows packages but on Linux it's an "
 "independent package."
 msgstr ""
+"SMTube Windows paketeen barne dago jadanik baina Linux-en pakete bereizi "
+"batean dago."
 
 #~ msgid "There are available other packages for advanced users, %1."
 #~ msgstr ""
-#~ "Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, %"
-#~ "1."
+#~ "Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, "
+#~ "%1."
 
 #~ msgid "SMPlayer - Latest Version"
 #~ msgstr "SMPlayer - Azken Bertsioa"
