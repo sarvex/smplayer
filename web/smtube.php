@@ -32,7 +32,9 @@ This browser allows to search Youtube videos but it's also capable of downloadin
 "Ori Rejwan");
 ?>
 <p>
-<center><a data-toggle="modal" href="#screenshot"><img src="images/screenshots/thumbs/th_smtube.png"></a></center>
+<center>
+<a data-toggle="modal" href="#screenshot"><img class="img-polaroid" src="images/screenshots/thumbs/th_smtube.png"></a>
+</center>
 
 <p>
 <?php tr("Several improvements have been done:"); ?>
