@@ -58,13 +58,11 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 <td>
 <?php
 echo download_windows_full_link(get_tr("Click here to get the full package"));
-echo "&nbsp;";
-echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get_tr("More info") ."</a>\n";
-?>
-<br>
-<?php
+echo "<br>";
 tr("This package contains smplayer, themes, translations, mplayer %1 and 
 the YouTube browser (smtube).","<i>r35203</i>");
+echo "<br>";
+echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get_tr("More info") ."</a>\n";
 ?>
 </td>
 </tr>
