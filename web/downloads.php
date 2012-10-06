@@ -5,6 +5,42 @@ echo "<body>\n";
 print_menu(3);
 ?>
 
+<div id="installer" class="modal hide fade in" style="display: none;">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3><?php tr("Information about the Windows installer"); ?></h3>
+	</div>
+	<div class="modal-body">
+		<p>
+		<?php
+		tr("For an easy installation on Windows we provide a package with installer.");
+		/*
+		echo "<div class=\"alert alert-error\">\n";
+		echo "Test";
+		echo "</div>\n";
+		*/
+		echo "&nbsp;";
+		tr("This package allows to select the components to be installed:");
+		echo "<ul>\n";
+		echo "<li><b>". get_tr("Languages") ."</b><br>". 
+			get_tr("Translations for more than 30 languages are provided.") ." ".
+			get_tr("If you uncheck this option, only English will be available.") ."</li>\n";
+		echo "<li><b>". get_tr("Icon themes") ."</b><br>". 
+			get_tr("Some icon themes are provides, which allows to change the look of the application.") ."</li>\n";
+		echo "<li><b>". get_tr("Binary codecs"). "</b><br>". 
+			get_tr("If you check this option, some extra codecs will be downloaded and installed in the smplayer folder.") ." ".
+			get_tr("These codecs are only necessary for some uncommon formats.") ."</li>\n";
+		echo "</ul>\n";
+		/* echo "<img src=\"images/screenshots/windows_installer.png\">"; */
+		?>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
+	</div>
+</div>
+
+
 <div class="container-fluid">
 
 <?php
@@ -19,8 +55,10 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 <tr>
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
-<?php 
+<?php
 echo download_windows_full_link(get_tr("Click here to get the full package"));
+echo "&nbsp;";
+echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get_tr("More info") ."</a>\n";
 ?>
 <br>
 <?php
