@@ -21,6 +21,7 @@ print_menu(3);
 		echo " ";
 		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
 		echo "</div>\n";
+		echo "<h4>". get_tr("Optional components") ."</h4>\n";
 		tr("The installer allows to select the components to install:");
 		echo "<ul>\n";
 		echo "<li><b>". get_tr("Languages") ."</b><br>". 
@@ -32,6 +33,9 @@ print_menu(3);
 			get_tr("If you check this option, some extra codecs will be downloaded and installed in the smplayer folder.") ." ".
 			get_tr("These codecs are only necessary for some uncommon formats.") ."</li>\n";
 		echo "</ul>\n";
+		echo "<h4>". get_tr("Uninstallation") ."</h4>\n";
+		echo "<p>\n";
+		tr("You can uninstall smplayer easily from the control panel or using the <i>uninstall</i> option in the smplayer menu.");
 		/* echo "<img src=\"images/screenshots/windows_installer.png\">"; */
 		?>
 		</p>
