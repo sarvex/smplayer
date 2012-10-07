@@ -23,70 +23,82 @@ msgstr "SMPlayer - ダウンロード"
 
 #: ../downloads.php:11
 msgid "Information about the Windows installer"
-msgstr ""
+msgstr "Windows 用インストーラーについて"
 
 #: ../downloads.php:16
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
+"Windows 上での手軽なインストールを実現するためにインストーラーパッケージをご"
+"用意していますしています。"
 
 #: ../downloads.php:18
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
 msgstr ""
+"このインストーラーには第三者製アプリケーションのインストールを促すプロモーシ"
+"ョン画面を表示されることがあります。"
 
 #: ../downloads.php:20
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
 msgstr ""
+"それらのアプリケーションに関心がない場合は、オプションのチェックを解除してか"
+"ら SMPlayer のインストールを続行してください。"
 
 #: ../downloads.php:22
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
 msgstr ""
+"この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご協力"
+"をお願いします。"
 
 #: ../downloads.php:24
 msgid "The installer allows to select the components to install:"
 msgstr ""
+"インストーラーでは、インストールするコンポーネントを選択することができます:"
 
 #: ../downloads.php:26
 msgid "Languages"
-msgstr ""
+msgstr "言語"
 
 #: ../downloads.php:27
 msgid "Translations for more than 30 languages are provided."
-msgstr ""
+msgstr "30 を超える言語の翻訳が用意されています。"
 
 #: ../downloads.php:28
 msgid "If you uncheck this option, only English will be available."
-msgstr ""
+msgstr "このオプションのチェックを解除すると、英語でしか利用できなくなります。"
 
 #: ../downloads.php:29
 msgid "Icon themes"
-msgstr ""
+msgstr "アイコンテーマ"
 
 #: ../downloads.php:30
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
+"数種類のアイコンテーマです。アプリケーションの外観の変更を可能にします。"
 
 #: ../downloads.php:31
 msgid "Binary codecs"
-msgstr ""
+msgstr "バイナリコーデック"
 
 #: ../downloads.php:32
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
+"このオプションをチェックすると、追加コーデックが SMPlayer のフォルダーにダウ"
+"ンロード/インストールされます。"
 
 #: ../downloads.php:33
 msgid "These codecs are only necessary for some uncommon formats."
-msgstr ""
+msgstr "これらのコーデックはごく一部のフォーマット以外では必要となりません。"
 
 #. echo "<img src=\"images/screenshots/windows_installer.png\">";
 #: ../downloads.php:40 ../info.php:10 ../smtube.php:17
@@ -103,7 +115,7 @@ msgstr "フルパッケージを取得するにはこちらをクリックして
 
 #: ../downloads.php:62
 msgid "More info"
-msgstr ""
+msgstr "詳細情報"
 
 #: ../downloads.php:66
 msgid ""
@@ -115,7 +127,7 @@ msgstr ""
 
 #: ../downloads.php:76
 msgid "There are available other packages (like a portable version), %1."
-msgstr ""
+msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
 #: ../downloads.php:76
 msgid "here"
@@ -186,7 +198,7 @@ msgstr "Wiki"
 
 #: ../footer.php:19 ../footer.php:21
 msgid "Mirror"
-msgstr ""
+msgstr "ミラー"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -376,7 +388,7 @@ msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
-msgstr ""
+msgstr "SMPlayer - 最新の変更点"
 
 #: ../latest.php:10
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -432,7 +444,7 @@ msgstr "字幕の検索機能"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
-msgstr ""
+msgstr "SMTube のスクリーンショット"
 
 #: ../smtube.php:28
 msgid ""
@@ -441,10 +453,13 @@ msgid ""
 "This browser allows to search Youtube videos but it's also capable of "
 "downloading them."
 msgstr ""
+"SMPlayer には <i>SMTube</i> と呼ばれる YouTube ブラウザーが同梱されています。"
+"これは %2 氏が開発した %1 のコードを利用しています。このブラウザーを使うと、"
+"YouTube 動画を検索のみならずダウンロードすることができます。"
 
 #: ../smtube.php:40
 msgid "Several improvements have been done:"
-msgstr ""
+msgstr "改善された点:"
 
 #: ../smtube.php:42
 msgid ""
@@ -452,24 +467,26 @@ msgid ""
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
+"完全に独立したアプリケーションとなり、使用するビデオプレイヤーを smplayer、"
+"mplayer、vlc、dragon player、totem、gnome-mplayer のいずれかから選択できるよ"
+"うになりました。"
 
 #: ../smtube.php:44
 msgid "It's possible to translate the application to other languages."
-msgstr ""
+msgstr "他言語への翻訳が可能になりました。"
 
 #: ../smtube.php:45
 msgid "A configuration dialog has been added."
-msgstr ""
+msgstr "構成ダイアログが追加されました。"
 
 #: ../smtube.php:46
 msgid "A few fixes."
-msgstr ""
+msgstr "細部の修正。"
 
 #: ../smtube.php:50
 msgid ""
 "SMTube is already included in the Windows packages but on Linux it's an "
 "independent package."
 msgstr ""
-
-#~ msgid "There are available other packages for advanced users, %1."
-#~ msgstr "他に上級者向けのパッケージもあります。%1をご覧ください。"
+"SMTube は Windows パッケージには最初から同梱されていますが、Linux では独立し"
+"たパッケージとなっています。"
