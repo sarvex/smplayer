@@ -35,8 +35,10 @@ print_menu(3);
 		echo "</ul>\n";
 		echo "<h4>". get_tr("Uninstallation") ."</h4>\n";
 		echo "<p>\n";
-		tr("You can uninstall smplayer easily from the control panel or using the <i>uninstall</i> option in the smplayer menu.");
-		/* echo "<img src=\"images/screenshots/windows_installer.png\">"; */
+		/* Before translating the string "uninstall smplayer" be sure */
+		/* it really shows translated under the Start menu, */
+		/* otherwise leave it in English */
+		tr("You can uninstall smplayer easily from the control panel or using the <i>uninstall smplayer</i> option in the smplayer menu within the Windows <i>Start</i> menu.");
 		?>
 		</p>
 	</div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-07 22:44+0200\n"
+"POT-Creation-Date: 2012-10-10 13:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,28 +108,29 @@ msgstr "これらのコーデックはごく一部のフォーマット以外で
 msgid "Uninstallation"
 msgstr "アンインストール"
 
-#: ../downloads.php:38
+#. Before translating the string "uninstall smplayer" be sure
+#. it really shows translated under the Start menu,
+#. otherwise leave it in English
+#: ../downloads.php:41
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
-"<i>uninstall</i> option in the smplayer menu."
+"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
+"<i>Start</i> menu."
 msgstr ""
-"アンインストールはコントロールパネルから、もしくは SMPlayer メニューの [アン"
-"インストール] オプションから行うことができます。"
 
-#. echo "<img src=\"images/screenshots/windows_installer.png\">";
-#: ../downloads.php:44 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:46 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "閉じる"
 
-#: ../downloads.php:54 ../header.php:153 ../index.php:50
+#: ../downloads.php:56 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../downloads.php:64
+#: ../downloads.php:66
 msgid "Click here to get the full package"
 msgstr "フルパッケージを取得するにはこちらをクリックしてください"
 
-#: ../downloads.php:66
+#: ../downloads.php:68
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -137,27 +138,27 @@ msgstr ""
 "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラウ"
 "ザー (SMTube) が含まれています。"
 
-#: ../downloads.php:69
+#: ../downloads.php:71
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:78
+#: ../downloads.php:80
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:78
+#: ../downloads.php:80
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:80
+#: ../downloads.php:82
 msgid "If you wish you can also try %1."
 msgstr "また、お望みであれば%1もお試しいただけます。"
 
-#: ../downloads.php:81
+#: ../downloads.php:83
 msgid "the unstable version"
 msgstr "まだ不安定なバージョン"
 
-#: ../downloads.php:88
+#: ../downloads.php:90
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -166,25 +167,25 @@ msgstr ""
 "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されま"
 "す。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#: ../downloads.php:102
+#: ../downloads.php:104
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:103
+#: ../downloads.php:105
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:117
+#: ../downloads.php:119
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:119
+#: ../downloads.php:121
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:126
+#: ../downloads.php:128
 msgid "Sources"
 msgstr "ソース"
 
@@ -506,3 +507,10 @@ msgid ""
 msgstr ""
 "SMTube は Windows パッケージには最初から同梱されていますが、Linux では独立し"
 "たパッケージとなっています。"
+
+#~ msgid ""
+#~ "You can uninstall smplayer easily from the control panel or using the "
+#~ "<i>uninstall</i> option in the smplayer menu."
+#~ msgstr ""
+#~ "アンインストールはコントロールパネルから、もしくは SMPlayer メニューの [ア"
+#~ "ンインストール] オプションから行うことができます。"

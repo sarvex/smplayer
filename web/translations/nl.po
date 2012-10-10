@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-07 22:44+0200\n"
+"POT-Creation-Date: 2012-10-10 13:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,75 +96,78 @@ msgstr ""
 msgid "Uninstallation"
 msgstr ""
 
-#: ../downloads.php:38
+#. Before translating the string "uninstall smplayer" be sure
+#. it really shows translated under the Start menu,
+#. otherwise leave it in English
+#: ../downloads.php:41
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
-"<i>uninstall</i> option in the smplayer menu."
+"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
+"<i>Start</i> menu."
 msgstr ""
 
-#. echo "<img src=\"images/screenshots/windows_installer.png\">";
-#: ../downloads.php:44 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:46 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr ""
 
-#: ../downloads.php:54 ../header.php:153 ../index.php:50
+#: ../downloads.php:56 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr ""
 
-#: ../downloads.php:64
+#: ../downloads.php:66
 msgid "Click here to get the full package"
 msgstr ""
 
-#: ../downloads.php:66
+#: ../downloads.php:68
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
 msgstr ""
 
-#: ../downloads.php:69
+#: ../downloads.php:71
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:78
+#: ../downloads.php:80
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
-#: ../downloads.php:78
+#: ../downloads.php:80
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:80
+#: ../downloads.php:82
 msgid "If you wish you can also try %1."
 msgstr ""
 
-#: ../downloads.php:81
+#: ../downloads.php:83
 msgid "the unstable version"
 msgstr ""
 
-#: ../downloads.php:88
+#: ../downloads.php:90
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:102
+#: ../downloads.php:104
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:103
+#: ../downloads.php:105
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:117
+#: ../downloads.php:119
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../downloads.php:119
+#: ../downloads.php:121
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:126
+#: ../downloads.php:128
 msgid "Sources"
 msgstr ""
 
