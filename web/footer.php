@@ -7,7 +7,7 @@
 <div class="span9">
 <p>
 <b><?php tr("Other links:");?></b>
-&bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+<?php /* &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp; */ ?>
 &bull; <?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?> &nbsp;
 &bull; <a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a> &nbsp;
 &bull; <a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a> &nbsp;

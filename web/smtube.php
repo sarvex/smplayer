@@ -2,7 +2,7 @@
 include_once("header.php");
 print_header("SMPlayer - SMTube");
 echo "<body>\n";
-print_menu(1);
+print_menu(0);
 ?>
 
 <div id="screenshot" class="modal hide fade in" style="display: none;">
