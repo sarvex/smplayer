@@ -65,7 +65,7 @@ About::About(QWidget * parent, Qt::WindowFlags f)
         "Based on " + link("http://smplayer.sourceforge.net/", "SMPlayer") +
         " &copy; 2006 - 2009 Ricardo Villalba."
         "<br><br>"
-        "This version has been release by the SMPlayer team. "
+        "This version has been released by the SMPlayer team. "
         "More info " + link("http://smplayer.sourceforge.net/umplayer.php", "here") + ".");
 
         QString license_file = Paths::doc("gpl.txt", pref->language);
