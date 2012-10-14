@@ -32,6 +32,7 @@ int MplayerVersion::mplayerVersion(QString string) {
 	static QRegExp rx_mplayer_git("^MPlayer GIT(.*)");
 #ifndef Q_OS_WIN
 	static QRegExp rx_mplayer_version_ubuntu("^MPlayer (\\d):(\\d)\\.(\\d)~(.*)");
+	static QRegExp rx_mplayer_revision_ubuntu("^MPlayer svn r(\\d+) (.*)");
 #endif
 
 	int mplayer_svn = 0;
@@ -50,6 +51,13 @@ int MplayerVersion::mplayerVersion(QString string) {
 		QString rest = rx_mplayer_version_ubuntu.cap(4);
 		//qDebug("%d - %d - %d", rx_mplayer_version_ubuntu.cap(1).toInt(), v1 , v2);
 		string = QString("MPlayer %1.%2%3").arg(v1).arg(v2).arg(rest);
+		qDebug("MplayerVersion::mplayerVersion: line converted to '%s'", string.toUtf8().data());
+	}
+	else
+	if (rx_mplayer_revision_ubuntu.indexIn(string) > -1) {
+		int svn = rx_mplayer_revision_ubuntu.cap(1).toInt();
+		QString rest = rx_mplayer_revision_ubuntu.cap(2);
+		string = QString("MPlayer SVN-r%1-%2").arg(svn).arg(rest);
 		qDebug("MplayerVersion::mplayerVersion: line converted to '%s'", string.toUtf8().data());
 	}
 #endif

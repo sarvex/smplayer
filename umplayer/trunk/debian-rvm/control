@@ -8,9 +8,9 @@ Standards-Version: 3.7.2
 Package: umplayer
 Architecture: any
 Pre-Depends: dpkg (>= 1.14.12ubuntu3)
-Depends: ${shlibs:Depends}, mplayer | mplayer2 | mplayer-nogui | mplayer-mt
+Depends: ${shlibs:Depends}, mplayer | mplayer-nogui | mplayer-mt
 Recommends: alsa-utils, x11-utils
-Description: complete front-end for MPlayer
+Description: Complete front-end for MPlayer
  Qt Mplayer front-end, with basic features like playing
  videos, DVDs, and VCDs to more advanced features like support
  for MPlayer filters and more. One of the most interesting features
