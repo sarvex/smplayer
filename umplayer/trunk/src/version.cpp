@@ -21,7 +21,7 @@
 
 #define USE_SVN_VERSIONS 0
 
-#define VERSION "0.97"
+#define VERSION "0.97.1"
 
 #if USE_SVN_VERSIONS
 #include "svn_revision.h"

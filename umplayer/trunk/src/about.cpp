@@ -56,16 +56,17 @@ About::About(QWidget * parent, Qt::WindowFlags f)
 #if PORTABLE_APP
                 " (" + tr("Portable Edition") + ")" +
 #endif
-        "<br>" + QString("<b>" +tr("Compiled") + "</b>: %1").arg(QT_VERSION_STR) +
-        "<br><br>" + tr("UMPlayer is an open source multimedia player that fills all your needs,"
+        "<br><br>UMPlayer is an open source multimedia player that fills all your needs,"
         "it can handle any media format and can playback DVDs, (S)VCDs, Audio CDs, TV / Radio"
-        "cards andWeb streams.To find out more about UMPlayer please visit our ") + link("http://www.umplayer.com/", tr("website")) +
-        +".<br><br>"+ "UMPlayer is copyrighted &copy; 2010 by Ori Rejwan. "
-        "<br><br>" +tr("UMPlayer is based on ") +link("http://smplayer.sourceforge.net/", "SMPlayer")
-        + tr("&copy; 2006 - 2009 Ricardo Villalba and ") + link("http://www.mplayerhq.hu/", "MPlayer") +
-        tr("&copy; 2000 - 2010 The MPlayer Project."));
-
-
+        "cards and Web streams. "
+        "To find out more about UMPlayer please visit our " + link("http://www.umplayer.com/", tr("website")) + "."
+        "<br><br>"
+        "UMPlayer is copyrighted &copy; 2010 by Ori Rejwan.<br>"
+        "Based on " + link("http://smplayer.sourceforge.net/", "SMPlayer") +
+        " &copy; 2006 - 2009 Ricardo Villalba."
+        "<br><br>"
+        "This version has been release by the SMPlayer team. "
+        "More info " + link("http://smplayer.sourceforge.net/umplayer.php", "here") + ".");
 
         QString license_file = Paths::doc("gpl.txt", pref->language);
 	if (QFile::exists(license_file)) {
