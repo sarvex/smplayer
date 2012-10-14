@@ -82,19 +82,12 @@ sudo apt-get install umplayer
 <h3><?php tr("Latest changes"); ?></h3>
 <p>
 <?php
-/*
 $release_notes_file = "translations/umplayer_release_notes_". $tr_lang .".html";
 if (file_exists($release_notes_file)) {
 	include($release_notes_file);
 } else {
 	include("translations/umplayer_release_notes_en.html");
 }
-*/
-tr("<b>Version 0.97.1</b>");
-echo "<br>";
-echo "<ul><li>";
-tr("Fix Youtube");
-echo "</li</ul>";
 ?>
 
 </div> <!-- well -->

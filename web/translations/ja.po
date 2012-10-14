@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 13:29+0200\n"
+"POT-Creation-Date: 2012-10-15 00:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,11 +118,11 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:46 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:46 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
 msgid "Close"
 msgstr "閉じる"
 
-#: ../downloads.php:56 ../header.php:153 ../index.php:50
+#: ../downloads.php:56 ../header.php:153 ../index.php:50 ../umplayer.php:44
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -167,7 +167,7 @@ msgstr ""
 "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されま"
 "す。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#: ../downloads.php:104
+#: ../downloads.php:104 ../umplayer.php:54
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
@@ -185,7 +185,7 @@ msgstr "有志によるその他のディストリビューション向けパッ
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:128
+#: ../downloads.php:128 ../umplayer.php:67
 msgid "Sources"
 msgstr "ソース"
 
@@ -193,27 +193,29 @@ msgstr "ソース"
 msgid "Other links:"
 msgstr "関連リンク:"
 
-#: ../footer.php:10
-msgid "Donate"
-msgstr "寄付"
+#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
+#: ../umplayer.php:82
+msgid "Latest changes"
+msgstr "最新の変更点"
 
-#: ../footer.php:12
+#: ../footer.php:13
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../footer.php:13
+#: ../footer.php:14
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../footer.php:14
+#: ../footer.php:15
 msgid "Feature Requests"
 msgstr "機能要望"
 
-#: ../footer.php:15
+#: ../footer.php:16
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:19 ../footer.php:21
+#: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr "ミラー"
 
@@ -280,10 +282,6 @@ msgstr "最新版をダウンロードする"
 #: ../index.php:33
 msgid "About SMPlayer"
 msgstr "SMPlayer とは"
-
-#: ../index.php:39 ../latest.php:9 ../smtube.php:57
-msgid "Latest changes"
-msgstr "最新の変更点"
 
 #: ../info.php:17
 msgid ""
@@ -507,6 +505,33 @@ msgid ""
 msgstr ""
 "SMTube は Windows パッケージには最初から同梱されていますが、Linux では独立し"
 "たパッケージとなっています。"
+
+#: ../umplayer.php:11
+msgid "UMPlayer Screenshot"
+msgstr ""
+
+#: ../umplayer.php:28
+msgid ""
+"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
+"the SMPlayer team has released a new version which fixes Youtube playback."
+msgstr ""
+
+#: ../umplayer.php:35
+msgid ""
+"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+"features of SMPlayer are not available on UMPlayer."
+msgstr ""
+
+#: ../umplayer.php:55
+msgid "To install umplayer, just run these commands in a terminal:"
+msgstr ""
+
+#: ../umplayer.php:72
+msgid "UMPlayer sources"
+msgstr ""
+
+#~ msgid "Donate"
+#~ msgstr "寄付"
 
 #~ msgid ""
 #~ "You can uninstall smplayer easily from the control panel or using the "

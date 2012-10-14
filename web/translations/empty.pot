@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 13:29+0200\n"
+"POT-Creation-Date: 2012-10-15 00:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,13 @@ msgstr ""
 msgid "About SMPlayer"
 msgstr ""
 
-#: ../index.php:39 ../latest.php:9 ../smtube.php:57
+#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../index.php:39 ../footer.php:11 ../latest.php:9 ../smtube.php:57
+#: ../umplayer.php:82
 msgid "Latest changes"
 msgstr ""
 
-#: ../index.php:50 ../header.php:153 ../downloads.php:56
+#: ../index.php:50 ../header.php:153 ../downloads.php:56 ../umplayer.php:44
 msgid "Downloads"
 msgstr ""
 
@@ -45,7 +47,7 @@ msgstr ""
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../info.php:10 ../downloads.php:46 ../smtube.php:17
+#: ../info.php:10 ../downloads.php:46 ../smtube.php:17 ../umplayer.php:17
 msgid "Close"
 msgstr ""
 
@@ -161,27 +163,23 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:10
-msgid "Donate"
-msgstr ""
-
-#: ../footer.php:12
+#: ../footer.php:13
 msgid "Forum"
 msgstr ""
 
-#: ../footer.php:13
+#: ../footer.php:14
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../footer.php:14
+#: ../footer.php:15
 msgid "Feature Requests"
 msgstr ""
 
-#: ../footer.php:15
+#: ../footer.php:16
 msgid "Wiki"
 msgstr ""
 
-#: ../footer.php:19 ../footer.php:21
+#: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr ""
 
@@ -311,7 +309,7 @@ msgid ""
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:104
+#: ../downloads.php:104 ../umplayer.php:54
 msgid "Packages for Ubuntu:"
 msgstr ""
 
@@ -327,7 +325,7 @@ msgstr ""
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:128
+#: ../downloads.php:128 ../umplayer.php:67
 msgid "Sources"
 msgstr ""
 
@@ -456,4 +454,28 @@ msgstr ""
 msgid ""
 "SMTube is already included in the Windows packages but on Linux it's an "
 "independent package."
+msgstr ""
+
+#: ../umplayer.php:11
+msgid "UMPlayer Screenshot"
+msgstr ""
+
+#: ../umplayer.php:28
+msgid ""
+"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
+"the SMPlayer team has released a new version which fixes Youtube playback."
+msgstr ""
+
+#: ../umplayer.php:35
+msgid ""
+"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+"features of SMPlayer are not available on UMPlayer."
+msgstr ""
+
+#: ../umplayer.php:55
+msgid "To install umplayer, just run these commands in a terminal:"
+msgstr ""
+
+#: ../umplayer.php:72
+msgid "UMPlayer sources"
 msgstr ""

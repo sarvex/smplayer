@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 13:29+0200\n"
+"POT-Creation-Date: 2012-10-15 00:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,11 +108,11 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:46 ../info.php:10 ../smtube.php:17
+#: ../downloads.php:46 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
 msgid "Close"
 msgstr "关闭"
 
-#: ../downloads.php:56 ../header.php:153 ../index.php:50
+#: ../downloads.php:56 ../header.php:153 ../index.php:50 ../umplayer.php:44
 msgid "Downloads"
 msgstr "下载"
 
@@ -158,7 +158,7 @@ msgstr ""
 "(对于 OSD 和字幕是必要的). 这可能需要长达\n"
 "10 或 20 秒. 这只执行一次."
 
-#: ../downloads.php:104
+#: ../downloads.php:104 ../umplayer.php:54
 msgid "Packages for Ubuntu:"
 msgstr "用于 Ubuntu 的软件包:"
 
@@ -174,7 +174,7 @@ msgstr "用于其他发行版的贡献软件包"
 msgid "List of packages contributed by other people."
 msgstr "由其他人所贡献软件包的列表."
 
-#: ../downloads.php:128
+#: ../downloads.php:128 ../umplayer.php:67
 msgid "Sources"
 msgstr "源代码"
 
@@ -182,27 +182,29 @@ msgstr "源代码"
 msgid "Other links:"
 msgstr "其他链接:"
 
-#: ../footer.php:10
-msgid "Donate"
-msgstr "捐赠"
+#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
+#: ../umplayer.php:82
+msgid "Latest changes"
+msgstr "最新更改"
 
-#: ../footer.php:12
+#: ../footer.php:13
 msgid "Forum"
 msgstr "论坛"
 
-#: ../footer.php:13
+#: ../footer.php:14
 msgid "Bug Tracking"
 msgstr "Bug 跟踪"
 
-#: ../footer.php:14
+#: ../footer.php:15
 msgid "Feature Requests"
 msgstr "功能需求"
 
-#: ../footer.php:15
+#: ../footer.php:16
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:19 ../footer.php:21
+#: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr "镜像"
 
@@ -267,10 +269,6 @@ msgstr "单击这里下载最新版本"
 #: ../index.php:33
 msgid "About SMPlayer"
 msgstr "关于 SMPlayer"
-
-#: ../index.php:39 ../latest.php:9 ../smtube.php:57
-msgid "Latest changes"
-msgstr "最新更改"
 
 #: ../info.php:17
 msgid ""
@@ -497,6 +495,33 @@ msgid ""
 "SMTube is already included in the Windows packages but on Linux it's an "
 "independent package."
 msgstr "SMTube 已经包含在 Windows 软件包中, 但在 Linux 上它是一个独立的软件包."
+
+#: ../umplayer.php:11
+msgid "UMPlayer Screenshot"
+msgstr ""
+
+#: ../umplayer.php:28
+msgid ""
+"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
+"the SMPlayer team has released a new version which fixes Youtube playback."
+msgstr ""
+
+#: ../umplayer.php:35
+msgid ""
+"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+"features of SMPlayer are not available on UMPlayer."
+msgstr ""
+
+#: ../umplayer.php:55
+msgid "To install umplayer, just run these commands in a terminal:"
+msgstr ""
+
+#: ../umplayer.php:72
+msgid "UMPlayer sources"
+msgstr ""
+
+#~ msgid "Donate"
+#~ msgstr "捐赠"
 
 #~ msgid ""
 #~ "You can uninstall smplayer easily from the control panel or using the "
