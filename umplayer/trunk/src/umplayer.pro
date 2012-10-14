@@ -2,6 +2,7 @@ TEMPLATE = app
 LANGUAGE = C++
 CONFIG += qt \
     warn_on
+CONFIG += release
 QT += network \
     xml
 RESOURCES = icons.qrc
@@ -365,8 +366,8 @@ contains( DEFINES, DOWNLOAD_SUBS ) {
         zip.c
     LIBS += -lz
     win32 { 
-        INCLUDEPATH += c:\\development\\zlib-1.2.3
-        LIBS += -Lc:\\development\\zlib-1.2.3
+        INCLUDEPATH += ..\\zlib
+        LIBS += -L..\\zlib
     }
 }
 unix { 
