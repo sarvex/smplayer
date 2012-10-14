@@ -14,6 +14,7 @@
 &bull; <a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a> &nbsp;
 &bull; <a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a> &nbsp;
 &bull; <a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a> &nbsp;
+&bull; <?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?> &nbsp;
 &bull;
 <?php
 if ($site=="sourceforge")
