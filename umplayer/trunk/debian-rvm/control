@@ -8,12 +8,14 @@ Standards-Version: 3.7.2
 Package: umplayer
 Architecture: any
 Pre-Depends: dpkg (>= 1.14.12ubuntu3)
-Depends: ${shlibs:Depends}, mplayer | mplayer-nogui | mplayer-mt
-Recommends: smplayer-themes, alsa-utils, x11-utils
-Description: A great front-end for MPlayer
- SMPlayer intends to be a complete front-end for MPlayer, from basic features
- like playing videos, DVDs, and VCDs to more advanced features like support
- for MPlayer filters and more. One of the main features is the ability to
- remember the state of a played file, so when you play it later it will resume
- at the same point and with the same settings. smplayer is developed with
- the Qt toolkit, so it's multi-platform.
+Depends: ${shlibs:Depends}, mplayer | mplayer2 | mplayer-nogui | mplayer-mt
+Recommends: alsa-utils, x11-utils
+Description: complete front-end for MPlayer
+ Qt Mplayer front-end, with basic features like playing
+ videos, DVDs, and VCDs to more advanced features like support
+ for MPlayer filters and more. One of the most interesting features
+ of UMPlayer: it remembers the settings of all files you play.
+ So you start to watch a movie but you have to leave... don't
+ worry, when you open that movie again it will resume at the same
+ point you left it, and with the same settings: audio track,
+ subtitles, volume...
