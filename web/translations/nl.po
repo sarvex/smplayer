@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-15 00:02+0200\n"
+"POT-Creation-Date: 2012-10-16 00:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,7 +151,7 @@ msgid ""
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:104 ../umplayer.php:54
+#: ../downloads.php:104 ../umplayer.php:70
 msgid "Packages for Ubuntu:"
 msgstr ""
 
@@ -167,7 +167,7 @@ msgstr ""
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:128 ../umplayer.php:67
+#: ../downloads.php:128 ../umplayer.php:83
 msgid "Sources"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 
 #. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
-#: ../umplayer.php:82
+#: ../umplayer.php:98
 msgid "Latest changes"
 msgstr ""
 
@@ -473,9 +473,17 @@ msgid ""
 msgstr ""
 
 #: ../umplayer.php:55
+msgid "Click here to get UMPlayer 0.98.1"
+msgstr ""
+
+#: ../umplayer.php:57
+msgid "This package contains umplayer, themes, translations and mplayer."
+msgstr ""
+
+#: ../umplayer.php:71
 msgid "To install umplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../umplayer.php:72
+#: ../umplayer.php:88
 msgid "UMPlayer sources"
 msgstr ""

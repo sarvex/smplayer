@@ -44,6 +44,22 @@ features of SMPlayer are not available on UMPlayer.");
 echo "<h1>". get_tr("Downloads") ."</h1>";
 ?>
 
+<!-- WINDOWS -->
+<h2>Windows</h2>
+<table>
+<tr>
+<td><img src="iconos/kpackage.png" alt="*"></td>
+<td>
+<?php
+echo "<a href=\"http://sourceforge.net/projects/smplayer/files/UMPlayer/0.98.1/umplayer-0.98.1-x86.exe/download\">";
+echo "<b>". get_tr("Click here to get UMPlayer 0.98.1") ."</b></a>";
+echo "<br>";
+tr("This package contains umplayer, themes, translations and mplayer.");
+?>
+</td>
+</tr>
+</table>
+
 <!-- LINUX -->
 <h2>Linux</h2>
 <table>
