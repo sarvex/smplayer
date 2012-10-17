@@ -164,7 +164,6 @@
 
   ;Install pages
   #Welcome
-  !define MUI_PAGE_CUSTOMFUNCTION_PRE PageWelcomePre
   !insertmacro MUI_PAGE_WELCOME
 
   #License
@@ -362,9 +361,6 @@ SectionGroup $(MPlayerGroupTitle)
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_Codecs 0x1
 
 	SectionEnd
-
-;--------------------------------
-;FFmpeg
 
 	${MementoUnselectedSection} FFmpeg SecFFmpeg
 
@@ -803,14 +799,6 @@ Function PageReinstallUpdate
 
     ${NSD_SetText} $Reinstall_Message $(Reinstall_Msg3_3)
 
-  ${EndIf}
-
-FunctionEnd
-
-Function PageWelcomePre
-
-  ${If} $Reinstall_Uninstall == 1
-    Abort
   ${EndIf}
 
 FunctionEnd
