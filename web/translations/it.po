@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: 2009-07-06 03:37+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Language: it_IT\n"
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -176,7 +176,10 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr ""
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -200,6 +203,10 @@ msgstr "Wiki"
 
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
+msgstr ""
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
 msgstr ""
 
 #: ../formats.php:3

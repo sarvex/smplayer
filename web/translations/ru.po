@@ -8,18 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
 
 #: ../downloads.php:3
@@ -180,7 +180,10 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr ""
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -204,6 +207,10 @@ msgstr "Wiki"
 
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
+msgstr ""
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
 msgstr ""
 
 #: ../formats.php:3
@@ -744,8 +751,8 @@ msgstr ""
 #~ "advanced \n"
 #~ "features like support for MPlayer filters and more."
 #~ msgstr ""
-#~ "SMPlayer представляет собой полноценную графическую оболочку для <a href="
-#~ "%1>MPlayer</a>,\n"
+#~ "SMPlayer представляет собой полноценную графическую оболочку для <a href=%"
+#~ "1>MPlayer</a>,\n"
 #~ "обеспечивающую как базовые функции MPlayer (воспроизведение видео, DVD и "
 #~ "VCD), \n"
 #~ "так и более продвинутые, такие как поддержка фильтров для MPlayer и "

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -182,7 +182,10 @@ msgstr "源代码"
 msgid "Other links:"
 msgstr "其他链接:"
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr "捐赠"
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -207,6 +210,10 @@ msgstr "Wiki"
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr "镜像"
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
+msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -534,6 +541,3 @@ msgstr ""
 #~ msgstr ""
 #~ "您可以很容易地从控制面板卸载 SMPlayer 或使用 SMPlayer 菜单中的 "
 #~ "<i>Uninstall (卸载)</i> 选项."
-
-#~ msgid "Donate"
-#~ msgstr "捐赠"

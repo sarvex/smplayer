@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: 2009-02-18 22:05+0100\n"
 "Last-Translator: arti <artii@gmx.net>\n"
 "Language-Team: German <LL@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -175,7 +175,10 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr ""
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -199,6 +202,10 @@ msgstr "Wiki"
 
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
+msgstr ""
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
 msgstr ""
 
 #: ../formats.php:3

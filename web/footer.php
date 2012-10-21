@@ -7,7 +7,7 @@
 <div class="span8">
 <p>
 <b><?php tr("Other links:");?></b>
-<?php /* &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp; */ ?>
+&bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
 &bull; <?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?> &nbsp;
 &bull; <?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?> &nbsp;
 &bull; <a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a> &nbsp;
@@ -27,8 +27,7 @@ else
 </div>
 
 <div class="span1">
-<a href="https://twitter.com/smplayer_dev" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @smplayer_dev</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<?php echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\"><img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n"; ?>
 </div>
 
 <div class="span1">

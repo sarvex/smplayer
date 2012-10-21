@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -197,7 +197,10 @@ msgstr "Código fonte"
 msgid "Other links:"
 msgstr "Outras ligações:"
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr "Donativos"
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -222,6 +225,10 @@ msgstr "Wiki"
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr "Mirror"
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
+msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -296,8 +303,8 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
-"%2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %"
+"2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #: ../info.php:22
@@ -831,6 +838,3 @@ msgstr ""
 
 #~ msgid "There are available other packages for advanced users, %1."
 #~ msgstr "Também existem outros pacotes para utilizadores experientes %1."
-
-#~ msgid "Donate"
-#~ msgstr "Donativos"

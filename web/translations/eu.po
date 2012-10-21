@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: 2012-10-17 22:16+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
-"Language: Basque (Euskara)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: Basque (Euskara)\n"
 "X-Generator: Poedit 1.5.4\n"
 
 #: ../downloads.php:3
@@ -195,7 +195,10 @@ msgstr "Iturburuak"
 msgid "Other links:"
 msgstr "Beste loturak batzuk:"
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr "Dirulaguntza"
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -220,6 +223,10 @@ msgstr "Wikia"
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
 msgstr "Ispilua"
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
+msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -848,8 +855,5 @@ msgstr "UMPlayer iturburuak"
 
 #~ msgid "There are available other packages for advanced users, %1."
 #~ msgstr ""
-#~ "Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, "
-#~ "%1."
-
-#~ msgid "Donate"
-#~ msgstr "Dirulaguntza"
+#~ "Beste pakete hauek ere badaude eskuragarri erabiltzaile aurreratuentzat, %"
+#~ "1."

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 00:00+0200\n"
+"POT-Creation-Date: 2012-10-21 12:04+0200\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../downloads.php:3
@@ -176,7 +176,10 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#. &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
+#: ../footer.php:10
+msgid "Donate"
+msgstr ""
+
 #: ../footer.php:11 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
@@ -200,6 +203,10 @@ msgstr "Wiki"
 
 #: ../footer.php:21 ../footer.php:23
 msgid "Mirror"
+msgstr ""
+
+#: ../footer.php:30
+msgid "Follow us on Twitter"
 msgstr ""
 
 #: ../formats.php:3
@@ -563,8 +570,8 @@ msgstr ""
 #~ "the <a href=%1>mplayer site</a> (%2)."
 #~ msgstr ""
 #~ "Якщо ви надаєте перевагу zip-архівам, ви \n"
-#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> "
-#~ "(%2)."
+#~ "можете завантажити його на сторінці mplayer <a href=%1>mplayer site</a> (%"
+#~ "2)."
 
 #~ msgid ""
 #~ "Package (without installer) which includes smplayer, shared libraries,\n"
