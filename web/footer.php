@@ -4,7 +4,7 @@
 <div class="span1">
 </div>
 
-<div class="span9">
+<div class="span8">
 <p>
 <b><?php tr("Other links:");?></b>
 <?php /* &bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp; */ ?>
@@ -24,6 +24,11 @@ else
 ?>
 &nbsp;
 </p>
+</div>
+
+<div class="span1">
+<a href="https://twitter.com/smplayer_dev" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @smplayer_dev</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 
 <div class="span1">
