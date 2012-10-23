@@ -14,6 +14,7 @@ print_menu(3);
 		<p>
 		<?php
 		tr("For an easy installation on Windows we provide a package with installer.");
+		/*
 		echo "<div class=\"alert alert-error\">\n";
 		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
 		echo " ";
@@ -21,6 +22,7 @@ print_menu(3);
 		echo " ";
 		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
 		echo "</div>\n";
+		*/
 		echo "<h4>". get_tr("Optional components") ."</h4>\n";
 		tr("The installer allows to select the components to install:");
 		echo "<ul>\n";
