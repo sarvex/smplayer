@@ -27,21 +27,19 @@ function download_amd64deb_link() {
 }
 
 function download_windows_full_link($text) {
-	$test = 0;
-
-	$filename = "smplayer-0.8.1-win32.exe";
-	$size = 16762646;
-
-	$external_link = "";
+	global $site;
+	if ($site=="berlios") {
+		$filename = "smplayer-0.8.1-im-x86.exe";
+		$size = 16785737;
+	} else {
+		$filename = "smplayer-0.8.1-win32.exe";
+		$size = 16762646;
+	}
 
 	if (!isset($text)) {
 		return create_link($filename, $size );
 	} else {
-		if ($test) {
-			return "<a href=\"$external_link\"><b>$text</b></a>"; 
-		} else {
-			return create_simple_link($filename, $text);
-		}
+		return create_simple_link($filename, $text);
 	}
 }
 
