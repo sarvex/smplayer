@@ -7,37 +7,67 @@
 <div class="span8">
 <p>
 <b><?php tr("Other links:");?></b>
-&bull; <a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a> &nbsp;
-&bull; <?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?> &nbsp;
-&bull; <?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?> &nbsp;
-&bull; <a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a> &nbsp;
-&bull; <a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a> &nbsp;
-&bull; <a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a> &nbsp;
-&bull; <a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a> &nbsp;
-&bull; <?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?> &nbsp;
-&bull;
+<table class"table">
+<tr>
+<td>
+<ul>
+<li><a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a></li>
+<li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
+<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a></li>
+<li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
 <?php
 if ($site=="sourceforge")
 	echo "<a href=\"http://smplayer.berlios.de\">". get_tr("Mirror") ."</a>\n";
 else
 	echo "<a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a>\n";
 ?>
-&nbsp;
+</li>
+<li>
+<?php
+echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n";
+?>
+</li>
+</td>
+</tr>
+</table>
 </p>
 </div>
 
-<div class="span1">
-<?php echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\"><img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n"; ?>
-</div>
-
-<div class="span1">
+<div class="span3">
+<p>
+<table class"table">
+<tr>
+<td>
 <a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a>
-</div>
-
-<div class="span1">
+</td>
+<td>
 <?php
 include("site_logo.php");
 ?>
+</td>
+</tr>
+</table>
 </div>
 
 </div> <!-- row -->
