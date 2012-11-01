@@ -11,26 +11,20 @@
 <tr>
 <td>
 <ul>
-<li><a href="http://sourceforge.net/donate/index.php?group_id=185512"><?php tr("Donate"); ?></a></li>
 <li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
+<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
 </ul>
 </td>
 <td>
 <ul>
 <li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
-<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
+<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
 </ul>
 </td>
 <td>
 <ul>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a></li>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
-<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
 </ul>
 </td>
 <td>
@@ -43,6 +37,12 @@ else
 	echo "<a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a>\n";
 ?>
 </li>
+<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><?php echo "<a href=\"contact.php?tr_lang=$tr_lang\">". get_tr("Contact us") ."</a>"; ?></li>
 <li>
 <?php
 echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n";
