@@ -56,3 +56,6 @@ lt.po: empty.pot
 
 eu.po: empty.pot
 	msgmerge -F -U -N --backup=numbered eu.po empty.pot
+
+clean:
+	-rm *~
