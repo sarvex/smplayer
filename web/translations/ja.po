@@ -102,6 +102,9 @@ msgid ""
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
 "<i>Start</i> menu."
 msgstr ""
+"アンインストールはコントロールパネルから、もしくは Windows の [スタート] メニ"
+"ュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことがで"
+"きます。"
 
 #: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
 msgid "Close"
@@ -209,7 +212,7 @@ msgstr "ミラー"
 
 #: ../footer.php:48
 msgid "Follow us on Twitter"
-msgstr ""
+msgstr "Twitter でフォローする"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -451,15 +454,15 @@ msgstr "字幕の検索機能"
 
 #: ../screenshots.php:58
 msgid "The skin Vista"
-msgstr ""
+msgstr "スキン Vista"
 
 #: ../screenshots.php:59
 msgid "The skin Mac"
-msgstr ""
+msgstr "スキン Mac"
 
 #: ../screenshots.php:60
 msgid "The skin Modern"
-msgstr ""
+msgstr "スキン Modern"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
@@ -512,60 +515,39 @@ msgstr ""
 
 #: ../umplayer.php:11
 msgid "UMPlayer Screenshot"
-msgstr ""
+msgstr "UMPlayer のスクリーンショット"
 
 #: ../umplayer.php:28
 msgid ""
 "%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
 "the SMPlayer team has released a new version which fixes Youtube playback."
 msgstr ""
+"%1 は %2 氏によって作成された SMPlayer のフォークです。このプロジェクトは現在"
+"停止しているようですが、SMPlayer のチームでは YouTube の再生に関する修正を施"
+"した新しいバージョンを提供しています。"
 
 #: ../umplayer.php:35
 msgid ""
 "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
 "features of SMPlayer are not available on UMPlayer."
 msgstr ""
+"UMPlayer は SMPlayer の古いバージョンに基づいていますので、SMPlayer の新しい"
+"機能は UMPlayer ではご利用になることができません。"
 
 #: ../umplayer.php:55
 msgid "Click here to get UMPlayer 0.98.1"
-msgstr ""
+msgstr "UMPlayer 0.98.1 をダウンロードする"
 
 #: ../umplayer.php:57
 msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr ""
+msgstr "このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれています。"
 
 #: ../umplayer.php:71
 msgid "To install umplayer, just run these commands in a terminal:"
 msgstr ""
+"umplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
+"い:"
 
 #: ../umplayer.php:88
 msgid "UMPlayer sources"
-msgstr ""
-
-#~ msgid ""
-#~ "You can uninstall smplayer easily from the control panel or using the "
-#~ "<i>uninstall</i> option in the smplayer menu."
-#~ msgstr ""
-#~ "アンインストールはコントロールパネルから、もしくは SMPlayer メニューの [ア"
-#~ "ンインストール] オプションから行うことができます。"
-
-#~ msgid ""
-#~ "This screen allows us to further improve smplayer and keep distributing "
-#~ "it for free. We ask for your understanding."
-#~ msgstr ""
-#~ "この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご"
-#~ "協力をお願いします。"
-
-#~ msgid ""
-#~ "If you aren't interested in the offer, just uncheck the option(s) and the "
-#~ "installation of smplayer will proceed as usual."
-#~ msgstr ""
-#~ "それらのアプリケーションに関心がない場合は、オプションのチェックを解除して"
-#~ "から SMPlayer のインストールを続行してください。"
-
-#~ msgid ""
-#~ "The installer may contain a promotional screen with an offer to install a "
-#~ "3rd party application."
-#~ msgstr ""
-#~ "このインストーラーには第三者製アプリケーションのインストールを促すプロモー"
-#~ "ション画面を表示されることがあります。"
+msgstr "UMPlayer のソース"
