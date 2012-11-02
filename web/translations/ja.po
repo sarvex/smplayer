@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-01 23:45+0100\n"
+"POT-Creation-Date: 2012-11-02 14:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -32,15 +32,24 @@ msgstr ""
 "Windows 上での手軽なインストールを実現するためにインストーラーパッケージをご"
 "用意しています。"
 
-#.
-#. echo "<div class=\"alert alert-error\">\n";
-#. tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
-#. echo " ";
-#. tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
-#. echo " ";
-#. tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
-#. echo "</div>\n";
-#.
+#: ../downloads.php:19
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr ""
+
+#: ../downloads.php:21
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+
+#: ../downloads.php:23
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+
 #: ../downloads.php:26
 msgid "Optional components"
 msgstr "選択可能なコンポーネント"
@@ -102,9 +111,9 @@ msgid ""
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
 "<i>Start</i> menu."
 msgstr ""
-"アンインストールはコントロールパネルから、もしくは Windows の [スタート] メニ"
-"ュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことがで"
-"きます。"
+"アンインストールはコントロールパネルから、もしくは Windows の [スタート] メ"
+"ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
+"できます。"
 
 #: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
 msgid "Close"
@@ -181,16 +190,12 @@ msgstr "ソース"
 msgid "Other links:"
 msgstr "関連リンク:"
 
-#: ../footer.php:14
-msgid "Donate"
-msgstr "寄付"
-
-#: ../footer.php:15 ../index.php:39 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:98
 msgid "Latest changes"
 msgstr "最新の変更点"
 
-#: ../footer.php:21
+#: ../footer.php:15
 msgid "Forum"
 msgstr "フォーラム"
 
@@ -202,13 +207,17 @@ msgstr "バグトラック"
 msgid "Feature Requests"
 msgstr "機能要望"
 
-#: ../footer.php:32
+#: ../footer.php:35 ../footer.php:37
+msgid "Mirror"
+msgstr "ミラー"
+
+#: ../footer.php:40
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:41 ../footer.php:43
-msgid "Mirror"
-msgstr "ミラー"
+#: ../footer.php:45
+msgid "Contact us"
+msgstr ""
 
 #: ../footer.php:48
 msgid "Follow us on Twitter"
@@ -540,7 +549,8 @@ msgstr "UMPlayer 0.98.1 をダウンロードする"
 
 #: ../umplayer.php:57
 msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr "このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれています。"
+msgstr ""
+"このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれています。"
 
 #: ../umplayer.php:71
 msgid "To install umplayer, just run these commands in a terminal:"
@@ -551,3 +561,6 @@ msgstr ""
 #: ../umplayer.php:88
 msgid "UMPlayer sources"
 msgstr "UMPlayer のソース"
+
+#~ msgid "Donate"
+#~ msgstr "寄付"
