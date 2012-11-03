@@ -10,17 +10,25 @@ print_menu(0);
 <p>
 You can send your suggestions, patches, translations or whatever regarding 
 smplayer, to 
-<b>Ricardo Villalba</b> &lt;smplayer.dev@gmail.com&gt;
+<b>Ricardo Villalba</b> &lt;smplayer.dev at gmail dot com&gt;
+<br>
+You can write in English or Spanish.
 
-<h2>Support</h2>
+<h2><?php tr("Support"); ?></h2>
 <p>
 You can get help in our <a href="http://smplayer.sourceforge.net/forum/">forum</a>.
-<p>
-Report bugs in our <a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573">bug tracker</a>.
-<p>
+<br>
+If you find bugs in smplayer you can report them in our 
+<a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573">bug tracker</a>.
+<br>
 You can request new features in our <a href="http://sourceforge.net/tracker/?group_id=185512&atid=913576">request tracker</a>.
+<br>
+<b>Irc channel</b>:
+Join #smplayer at irc.oftc.net (or click 
+<a href="irc://irc.oftc.net/smplayer">this link</a> if your client supports it).
 
-<h2>Credits</h2>
+
+<h2><?php tr("Credits"); ?></h2>
 <p>
 <b>Ricardo Villalba</b> (main developer, webmaster, ubuntu packages, spanish translation)
 <br>
@@ -28,41 +36,31 @@ You can request new features in our <a href="http://sourceforge.net/tracker/?gro
 <br>
 <b>Charles Barcza</b> (smplayer logo). Conversion to svg by <b>akovia</b>.
 
-<h3>Translators</h3>
+<h3><?php tr("Translators"); ?></h3>
 <p>
 Many people worked on translations for smplayer. You can see the
 full list in the <i>about</i> dialog.
 <br>
 Here is a list of the most active translators:
 <ul>
-<li>nardog (japanese)</li>
-<li>smarquespt (portuguese)</li>
-<li>Xabier Aramendi (basque)</li>
-<li>gymka (lithuanian)</li>
-<li>bendihua (simplified chinese)</li>
+<li>Nardog (Japanese)</li>
+<li>Smarquespt (Portuguese)</li>
+<li>Xabier Aramendi (Basque)</li>
+<li>Gymka (Lithuanian)</li>
+<li>Bendihua (Simplified chinese)</li>
 </ul>
 
 
 <h2>Twitter</h2>
 <p>
-<a target="_blank" href="https://twitter.com/smplayer_dev">Follow us on Twitter</a>
-<br>
+<a target="_blank" href="https://twitter.com/smplayer_dev">
+<?php tr("Follow us on Twitter");?></a>
 
-<h2>Mirrors</h2>
+<h2><?php tr("Mirrors"); ?></h2>
 <p>
 <a href="http://smplayer.sourceforge.net">smplayer.sourceforge.net</a>
 <br>
 <a href="http://smplayer.berlios.de">smplayer.berlios.de</a>
-
-<h2>License</h2>
-<p>
-<pre>
-This program is free software; you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the
-Free Software Foundation; either version 2 of the License, or (at your
-option) any later version.
-</pre>
-
 
 </div> <!-- container -->
 
