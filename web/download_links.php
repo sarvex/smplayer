@@ -28,13 +28,8 @@ function download_amd64deb_link() {
 
 function download_windows_full_link($text) {
 	global $site;
-	if ($site=="berlios") {
-		$filename = "smplayer-0.8.1-im-x86.exe";
-		$size = 16785737;
-	} else {
-		$filename = "smplayer-0.8.1-win32.exe";
-		$size = 16762646;
-	}
+	$filename = "smplayer-0.8.1-win32.exe";
+	$size = 16768232;
 
 	if (!isset($text)) {
 		return create_link($filename, $size );
