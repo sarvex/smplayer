@@ -8,15 +8,136 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-02 14:23+0100\n"
+"POT-Creation-Date: 2012-11-05 23:55+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: ../contact.php:3
+msgid "SMPlayer - Contact us"
+msgstr ""
+
+#: ../contact.php:9 ../footer.php:45
+msgid "Contact us"
+msgstr ""
+
+#: ../contact.php:12
+msgid ""
+"You can send your suggestions, patches, translations or whatever regarding \n"
+"smplayer, to %1"
+msgstr ""
+
+#: ../contact.php:15
+msgid "You can write in English or Spanish."
+msgstr ""
+
+#: ../contact.php:18
+msgid "Support"
+msgstr ""
+
+#: ../contact.php:21
+msgid "You can get help in our %1."
+msgstr ""
+
+#: ../contact.php:21
+msgid "forum"
+msgstr ""
+
+#: ../contact.php:23
+msgid "If you find bugs in smplayer you can report them in our %1."
+msgstr ""
+
+#: ../contact.php:24
+msgid "bug tracker"
+msgstr ""
+
+#: ../contact.php:26
+msgid "You can request new features in our %1."
+msgstr ""
+
+#: ../contact.php:27
+msgid "request tracker"
+msgstr ""
+
+#: ../contact.php:29
+msgid "Irc channel"
+msgstr ""
+
+#: ../contact.php:30
+msgid ""
+"Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
+msgstr ""
+
+#: ../contact.php:31
+msgid "this link"
+msgstr ""
+
+#: ../contact.php:34
+msgid "Credits"
+msgstr ""
+
+#: ../contact.php:37
+msgid "main developer, webmaster, ubuntu packages, spanish translation"
+msgstr ""
+
+#: ../contact.php:39
+msgid "windows packages, mplayer builds for windows"
+msgstr ""
+
+#: ../contact.php:41
+msgid "Conversion to svg by %1."
+msgstr ""
+
+#: ../contact.php:41
+msgid "smplayer logo"
+msgstr ""
+
+#: ../contact.php:44
+msgid "Translators"
+msgstr ""
+
+#: ../contact.php:47
+msgid ""
+"Many people worked on translations for smplayer. You can see the\n"
+"full list in the <i>about</i> dialog."
+msgstr ""
+
+#: ../contact.php:50
+msgid "Here is a list of the most active translators:"
+msgstr ""
+
+#: ../contact.php:53
+msgid "Japanese"
+msgstr ""
+
+#: ../contact.php:54
+msgid "Portuguese"
+msgstr ""
+
+#: ../contact.php:55
+msgid "Basque"
+msgstr ""
+
+#: ../contact.php:56
+msgid "Lithuanian"
+msgstr ""
+
+#: ../contact.php:57
+msgid "Simplified chinese"
+msgstr ""
+
+#: ../contact.php:64 ../footer.php:48
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../contact.php:66
+msgid "Mirrors"
+msgstr ""
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -31,24 +152,15 @@ msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 
-#: ../downloads.php:19
-msgid ""
-"The installer may contain a promotional screen with an offer to install a "
-"3rd party application."
-msgstr ""
-
-#: ../downloads.php:21
-msgid ""
-"If you aren't interested in the offer, just uncheck the option(s) and the "
-"installation of smplayer will proceed as usual."
-msgstr ""
-
-#: ../downloads.php:23
-msgid ""
-"This screen allows us to further improve smplayer and keep distributing it "
-"for free. We ask for your understanding."
-msgstr ""
-
+#.
+#. echo "<div class=\"alert alert-error\">\n";
+#. tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
+#. echo " ";
+#. tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
+#. echo " ";
+#. tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
+#. echo "</div>\n";
+#.
 #: ../downloads.php:26
 msgid "Optional components"
 msgstr ""
@@ -200,14 +312,6 @@ msgstr ""
 #: ../footer.php:40
 msgid "Wiki"
 msgstr "Wiki"
-
-#: ../footer.php:45
-msgid "Contact us"
-msgstr ""
-
-#: ../footer.php:48
-msgid "Follow us on Twitter"
-msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -522,4 +626,3 @@ msgstr ""
 #: ../umplayer.php:88
 msgid "UMPlayer sources"
 msgstr ""
-

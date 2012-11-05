@@ -8,14 +8,135 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-02 14:23+0100\n"
+"POT-Creation-Date: 2012-11-05 23:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
+
+#: ../contact.php:3
+msgid "SMPlayer - Contact us"
+msgstr ""
+
+#: ../contact.php:9 ../footer.php:45
+msgid "Contact us"
+msgstr ""
+
+#: ../contact.php:12
+msgid ""
+"You can send your suggestions, patches, translations or whatever regarding \n"
+"smplayer, to %1"
+msgstr ""
+
+#: ../contact.php:15
+msgid "You can write in English or Spanish."
+msgstr ""
+
+#: ../contact.php:18
+msgid "Support"
+msgstr ""
+
+#: ../contact.php:21
+msgid "You can get help in our %1."
+msgstr ""
+
+#: ../contact.php:21
+msgid "forum"
+msgstr ""
+
+#: ../contact.php:23
+msgid "If you find bugs in smplayer you can report them in our %1."
+msgstr ""
+
+#: ../contact.php:24
+msgid "bug tracker"
+msgstr ""
+
+#: ../contact.php:26
+msgid "You can request new features in our %1."
+msgstr ""
+
+#: ../contact.php:27
+msgid "request tracker"
+msgstr ""
+
+#: ../contact.php:29
+msgid "Irc channel"
+msgstr ""
+
+#: ../contact.php:30
+msgid ""
+"Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
+msgstr ""
+
+#: ../contact.php:31
+msgid "this link"
+msgstr ""
+
+#: ../contact.php:34
+msgid "Credits"
+msgstr ""
+
+#: ../contact.php:37
+msgid "main developer, webmaster, ubuntu packages, spanish translation"
+msgstr ""
+
+#: ../contact.php:39
+msgid "windows packages, mplayer builds for windows"
+msgstr ""
+
+#: ../contact.php:41
+msgid "Conversion to svg by %1."
+msgstr ""
+
+#: ../contact.php:41
+msgid "smplayer logo"
+msgstr ""
+
+#: ../contact.php:44
+msgid "Translators"
+msgstr ""
+
+#: ../contact.php:47
+msgid ""
+"Many people worked on translations for smplayer. You can see the\n"
+"full list in the <i>about</i> dialog."
+msgstr ""
+
+#: ../contact.php:50
+msgid "Here is a list of the most active translators:"
+msgstr ""
+
+#: ../contact.php:53
+msgid "Japanese"
+msgstr ""
+
+#: ../contact.php:54
+msgid "Portuguese"
+msgstr ""
+
+#: ../contact.php:55
+msgid "Basque"
+msgstr ""
+
+#: ../contact.php:56
+msgid "Lithuanian"
+msgstr ""
+
+#: ../contact.php:57
+msgid "Simplified chinese"
+msgstr ""
+
+#: ../contact.php:64 ../footer.php:48
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: ../contact.php:66
+msgid "Mirrors"
+msgstr ""
 
 #: ../downloads.php:3
 msgid "SMPlayer - Downloads"
@@ -30,25 +151,15 @@ msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr "为便于在 Windows 上安装, 我们提供了一个带有安装程序的软件包."
 
-#: ../downloads.php:19
-msgid ""
-"The installer may contain a promotional screen with an offer to install a "
-"3rd party application."
-msgstr "安装程序可能包含一个提议安装第三方应用程序的促销屏幕."
-
-#: ../downloads.php:21
-msgid ""
-"If you aren't interested in the offer, just uncheck the option(s) and the "
-"installation of smplayer will proceed as usual."
-msgstr "如果您对提议不感兴趣, 只需取消选中该选项, SMPlayer 的安装将照常进行."
-
-#: ../downloads.php:23
-msgid ""
-"This screen allows us to further improve smplayer and keep distributing it "
-"for free. We ask for your understanding."
-msgstr ""
-"这个屏幕可让我们进一步改进 SMPlayer 并保持免费分发它. 我们恳请您的谅解."
-
+#.
+#. echo "<div class=\"alert alert-error\">\n";
+#. tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
+#. echo " ";
+#. tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
+#. echo " ";
+#. tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
+#. echo "</div>\n";
+#.
 #: ../downloads.php:26
 msgid "Optional components"
 msgstr "可选组件"
@@ -206,14 +317,6 @@ msgstr "镜像"
 #: ../footer.php:40
 msgid "Wiki"
 msgstr "Wiki"
-
-#: ../footer.php:45
-msgid "Contact us"
-msgstr ""
-
-#: ../footer.php:48
-msgid "Follow us on Twitter"
-msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -547,6 +650,9 @@ msgstr ""
 msgid "UMPlayer sources"
 msgstr ""
 
+#~ msgid "Donate"
+#~ msgstr "捐赠"
+
 #~ msgid ""
 #~ "You can uninstall smplayer easily from the control panel or using the "
 #~ "<i>uninstall</i> option in the smplayer menu."
@@ -554,5 +660,19 @@ msgstr ""
 #~ "您可以很容易地从控制面板卸载 SMPlayer 或使用 SMPlayer 菜单中的 "
 #~ "<i>Uninstall (卸载)</i> 选项."
 
-#~ msgid "Donate"
-#~ msgstr "捐赠"
+#~ msgid ""
+#~ "This screen allows us to further improve smplayer and keep distributing "
+#~ "it for free. We ask for your understanding."
+#~ msgstr ""
+#~ "这个屏幕可让我们进一步改进 SMPlayer 并保持免费分发它. 我们恳请您的谅解."
+
+#~ msgid ""
+#~ "If you aren't interested in the offer, just uncheck the option(s) and the "
+#~ "installation of smplayer will proceed as usual."
+#~ msgstr ""
+#~ "如果您对提议不感兴趣, 只需取消选中该选项, SMPlayer 的安装将照常进行."
+
+#~ msgid ""
+#~ "The installer may contain a promotional screen with an offer to install a "
+#~ "3rd party application."
+#~ msgstr "安装程序可能包含一个提议安装第三方应用程序的促销屏幕."
