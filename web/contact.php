@@ -8,46 +8,53 @@ print_menu(0);
 <div class="container-fluid">
 <h1><?php tr("Contact us"); ?></h1>
 <p>
-You can send your suggestions, patches, translations or whatever regarding 
-smplayer, to 
-<b>Ricardo Villalba</b> &lt;smplayer.dev at gmail dot com&gt;
-<br>
-You can write in English or Spanish.
+<?php
+tr("You can send your suggestions, patches, translations or whatever regarding 
+smplayer, to %1", "<b>Ricardo Villalba</b> &lt;smplayer.dev at gmail dot com&gt;");
+echo "<br>";
+tr("You can write in English or Spanish.");
+?>
 
 <h2><?php tr("Support"); ?></h2>
 <p>
-You can get help in our <a href="http://smplayer.sourceforge.net/forum/">forum</a>.
-<br>
-If you find bugs in smplayer you can report them in our 
-<a href="http://sourceforge.net/tracker/?group_id=185512&atid=913573">bug tracker</a>.
-<br>
-You can request new features in our <a href="http://sourceforge.net/tracker/?group_id=185512&atid=913576">request tracker</a>.
-<br>
-<b>Irc channel</b>:
-Join #smplayer at irc.oftc.net (or click 
-<a href="irc://irc.oftc.net/smplayer">this link</a> if your client supports it).
-
+<?php
+tr("You can get help in our %1.", "<a href=\"http://smplayer.sourceforge.net/forum/\">". get_tr("forum") ."</a>");
+echo "<br>";
+tr("If you find bugs in smplayer you can report them in our %1.", 
+"<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573\">". get_tr("bug tracker") ."</a>");
+echo "<br>";
+tr("You can request new features in our %1.",
+"<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913576\">". get_tr("request tracker") ."</a>");
+echo "<br>";
+echo "<b>". get_tr("Irc channel") ."</b>: ";
+tr("Join #smplayer at irc.oftc.net (or click %1 if your client supports it).",
+"<a href=\"irc://irc.oftc.net/smplayer\">". get_tr("this link") ."</a>");
+?>
 
 <h2><?php tr("Credits"); ?></h2>
 <p>
-<b>Ricardo Villalba</b> (main developer, webmaster, ubuntu packages, spanish translation)
-<br>
-<b>redxii</b> (windows packages, mplayer builds for windows)
-<br>
-<b>Charles Barcza</b> (smplayer logo). Conversion to svg by <b>akovia</b>.
+<?php
+echo "<b>Ricardo Villalba</b> (". get_tr("main developer, webmaster, ubuntu packages, spanish translation") .")";
+echo "<br>";
+echo "<b>redxii</b> (". get_tr("windows packages, mplayer builds for windows") .")";
+echo "<br>";
+echo "<b>Charles Barcza</b> (". get_tr("smplayer logo") ."). ". get_tr("Conversion to svg by %1.", "<b>akovia</b>");
+?>
 
 <h3><?php tr("Translators"); ?></h3>
 <p>
-Many people worked on translations for smplayer. You can see the
-full list in the <i>about</i> dialog.
-<br>
-Here is a list of the most active translators:
+<?php
+tr("Many people worked on translations for smplayer. You can see the
+full list in the <i>about</i> dialog.");
+echo "<br>";
+tr("Here is a list of the most active translators:");
+?>
 <ul>
-<li>Nardog (Japanese)</li>
-<li>Smarquespt (Portuguese)</li>
-<li>Xabier Aramendi (Basque)</li>
-<li>Gymka (Lithuanian)</li>
-<li>Bendihua (Simplified chinese)</li>
+<li>Nardog (<?php tr("Japanese");?>)</li>
+<li>Smarquespt (<?php tr("Portuguese");?>)</li>
+<li>Xabier Aramendi (<?php tr("Basque");?>)</li>
+<li>Gymka (<?php tr("Lithuanian");?>)</li>
+<li>Bendihua (<?php tr("Simplified chinese");?>)</li>
 </ul>
 
 
