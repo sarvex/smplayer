@@ -51,7 +51,7 @@ tr("Here is a list of the most active translators:");
 ?>
 <ul>
 <li>Nardog (<?php tr("Japanese");?>)</li>
-<li>Smarquespt (<?php tr("Portuguese");?>)</li>
+<li>Sérgio Marques (<?php tr("Portuguese");?>)</li>
 <li>Xabier Aramendi (<?php tr("Basque");?>)</li>
 <li>Gymka (<?php tr("Lithuanian");?>)</li>
 <li>Bendihua (<?php tr("Simplified chinese");?>)</li>
