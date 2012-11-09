@@ -81,7 +81,7 @@ echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get
 <?php
 echo "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/beta/smplayer-0.8.1.4704-win32.exe/download\"><b>smplayer-0.8.1.4704-win32.exe</b></a>";
 echo "<br>";
-tr("Test a beta of the upcoming version 0.8.2. Features: new skins and a new mplayer build with a lot of fixes.");
+tr("Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a new mplayer build with a lot of fixes.");
 echo "<br>";
 tr("In case you find any problem, please report it in %1.", "<a href=\"http://smplayer.sourceforge.net/forum/\">". get_tr("our forum") ."</a>");
 ?>
