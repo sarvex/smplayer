@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 23:55+0100\n"
+"POT-Creation-Date: 2012-11-09 13:37+0100\n"
 "PO-Revision-Date: 2008-11-25 18:28+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
@@ -150,15 +150,24 @@ msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 
-#.
-#. echo "<div class=\"alert alert-error\">\n";
-#. tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
-#. echo " ";
-#. tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
-#. echo " ";
-#. tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
-#. echo "</div>\n";
-#.
+#: ../downloads.php:19
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr ""
+
+#: ../downloads.php:21
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+
+#: ../downloads.php:23
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+
 #: ../downloads.php:26
 msgid "Optional components"
 msgstr ""
@@ -239,46 +248,60 @@ msgstr ""
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:82
+#: ../downloads.php:84
+msgid ""
+"Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+"mplayer build with a lot of fixes."
+msgstr ""
+
+#: ../downloads.php:86
+msgid "In case you find any problem, please report it in %1."
+msgstr ""
+
+#: ../downloads.php:86
+msgid "our forum"
+msgstr ""
+
+#: ../downloads.php:96
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
-#: ../downloads.php:82
+#: ../downloads.php:96
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:84
+#: ../downloads.php:98
 msgid "If you wish you can also try %1."
 msgstr ""
 
-#: ../downloads.php:85
+#: ../downloads.php:99
 msgid "the unstable version"
 msgstr ""
 
-#: ../downloads.php:92
+#: ../downloads.php:108
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:106 ../umplayer.php:70
+#: ../downloads.php:123 ../umplayer.php:70
 msgid "Packages for Ubuntu:"
 msgstr ""
 
-#: ../downloads.php:107
+#: ../downloads.php:124
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:121
+#: ../downloads.php:138
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../downloads.php:123
+#: ../downloads.php:140
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:130 ../umplayer.php:83
+#: ../downloads.php:147 ../umplayer.php:83
 msgid "Sources"
 msgstr ""
 

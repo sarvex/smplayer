@@ -14,7 +14,7 @@ print_menu(3);
 		<p>
 		<?php
 		tr("For an easy installation on Windows we provide a package with installer.");
-		/*
+		if (0) {
 		echo "<div class=\"alert alert-error\">\n";
 		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
 		echo " ";
@@ -22,7 +22,7 @@ print_menu(3);
 		echo " ";
 		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
 		echo "</div>\n";
-		*/
+		}
 		echo "<h4>". get_tr("Optional components") ."</h4>\n";
 		tr("The installer allows to select the components to install:");
 		echo "<ul>\n";
@@ -76,6 +76,20 @@ echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get
 </tr>
 
 <tr>
+<td><img src="iconos/kpackage.png" alt="*"></td>
+<td>
+<?php
+echo "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/beta/smplayer-0.8.1.4704-win32.exe/download\"><b>smplayer-0.8.1.4704-win32.exe</b></a>";
+echo "<br>";
+tr("Test a beta of the upcoming version 0.8.2. Features: new skins and a new mplayer build with a lot of fixes.");
+echo "<br>";
+tr("In case you find any problem, please report it in %1.", "<a href=\"http://smplayer.sourceforge.net/forum/\">". get_tr("our forum") ."</a>");
+?>
+</td>
+</tr>
+
+
+<tr>
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
 <?php
@@ -86,15 +100,18 @@ tr("If you wish you can also try %1.",
 ?>
 </td></tr>
 </table>
-<div class="alert alert-block">
-<strong>
+
 <?php
+if (0) {
+echo "<div class=\"alert alert-block\">";
+echo "<strong>";
 tr("<b>Notice:</b> on the first playback, a font cache will be 
 created (necessary for OSD and subtitles). This can take up to 10 
 or 20 seconds. This is only done once.");
+echo "</strong>";
+echo "</div>";
+}
 ?>
-</strong>
-</div>
 
 <!-- LINUX -->
 <h2>Linux</h2>

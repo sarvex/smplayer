@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-05 23:55+0100\n"
+"POT-Creation-Date: 2012-11-09 13:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
@@ -153,15 +153,30 @@ msgstr ""
 "Windows 上での手軽なインストールを実現するためにインストーラーパッケージをご"
 "用意しています。"
 
-#.
-#. echo "<div class=\"alert alert-error\">\n";
-#. tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
-#. echo " ";
-#. tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
-#. echo " ";
-#. tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
-#. echo "</div>\n";
-#.
+#: ../downloads.php:19
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr ""
+"このインストーラーには第三者製アプリケーションのインストールを促すプロモー"
+"ション画面を表示されることがあります。"
+
+#: ../downloads.php:21
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+"それらのアプリケーションに関心がない場合は、オプションのチェックを解除してか"
+"ら SMPlayer のインストールを続行してください。"
+
+#: ../downloads.php:23
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+"この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご協力"
+"をお願いします。"
+
 #: ../downloads.php:26
 msgid "Optional components"
 msgstr "選択可能なコンポーネント"
@@ -251,23 +266,37 @@ msgstr ""
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:82
+#: ../downloads.php:84
+msgid ""
+"Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+"mplayer build with a lot of fixes."
+msgstr ""
+
+#: ../downloads.php:86
+msgid "In case you find any problem, please report it in %1."
+msgstr ""
+
+#: ../downloads.php:86
+msgid "our forum"
+msgstr ""
+
+#: ../downloads.php:96
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:82
+#: ../downloads.php:96
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:84
+#: ../downloads.php:98
 msgid "If you wish you can also try %1."
 msgstr "また、お望みであれば%1もお試しいただけます。"
 
-#: ../downloads.php:85
+#: ../downloads.php:99
 msgid "the unstable version"
 msgstr "まだ不安定なバージョン"
 
-#: ../downloads.php:92
+#: ../downloads.php:108
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -276,25 +305,25 @@ msgstr ""
 "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されま"
 "す。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#: ../downloads.php:106 ../umplayer.php:70
+#: ../downloads.php:123 ../umplayer.php:70
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:107
+#: ../downloads.php:124
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:121
+#: ../downloads.php:138
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:123
+#: ../downloads.php:140
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:130 ../umplayer.php:83
+#: ../downloads.php:147 ../umplayer.php:83
 msgid "Sources"
 msgstr "ソース"
 
@@ -665,24 +694,3 @@ msgstr ""
 #: ../umplayer.php:88
 msgid "UMPlayer sources"
 msgstr "UMPlayer のソース"
-
-#~ msgid ""
-#~ "This screen allows us to further improve smplayer and keep distributing "
-#~ "it for free. We ask for your understanding."
-#~ msgstr ""
-#~ "この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご"
-#~ "協力をお願いします。"
-
-#~ msgid ""
-#~ "If you aren't interested in the offer, just uncheck the option(s) and the "
-#~ "installation of smplayer will proceed as usual."
-#~ msgstr ""
-#~ "それらのアプリケーションに関心がない場合は、オプションのチェックを解除して"
-#~ "から SMPlayer のインストールを続行してください。"
-
-#~ msgid ""
-#~ "The installer may contain a promotional screen with an offer to install a "
-#~ "3rd party application."
-#~ msgstr ""
-#~ "このインストーラーには第三者製アプリケーションのインストールを促すプロモー"
-#~ "ション画面を表示されることがあります。"
