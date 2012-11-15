@@ -79,7 +79,7 @@ echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php
-echo "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/beta/smplayer-0.8.1.4704-win32.exe/download\"><b>smplayer-0.8.1.4704-win32.exe</b></a>";
+echo "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/beta/smplayer-0.8.1.4724-x86.exe/download\"><b>smplayer-0.8.1.4724-x86.exe</b></a>";
 echo "<br>";
 tr("Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a new mplayer build with a lot of fixes.");
 echo "<br>";
