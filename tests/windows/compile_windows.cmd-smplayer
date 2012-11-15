@@ -1,62 +1,66 @@
 @echo off
 
-set SMTUBE_SVN_DIR=..\..\smtube
-set DEFS=
-set SMTUBE_PARAMS=
+set script_name=%0
+set build_smtube=true
+set smtube_svn_dir=..\..\smtube
+set smtube_params=
+set qmake_defs=
 
-if "%~1" == "" (
+:arg_loop
+if [%1]==[pe] (
 
-	set DEFS=
-	set SMTUBE_PARAMS=
-	goto compileSMPlayer
+	set qmake_defs="DEFINES+=PORTABLE_APP"
+	set smtube_params=pe
 
-) else if "%~1" == "pe" (
+) else if [%1]==[nosmtube] (
 
-	set DEFS="DEFINES+=PORTABLE_APP"
-	set SMTUBE_PARAMS=pe
-	goto compileSMPlayer
+	set build_smtube=false
 
-) else (
+) else if [%1]==[-h] (
 
 	echo How to use:
 	echo.
-	echo compile_windows.cmd [buildtype]
+	echo Add ^`pe^' to compile portable.
+	echo Add ^`nosmtube^' to disable compiling smtube.
 	echo.
-	echo Compile SMPlayer Non-portable, enter no arguments.
+	echo To compile SMPlayer/SMTube non-portable, enter no arguments.
 	echo.
-	echo pe:	SMPlayer ^(Portable^)
-	echo.
+	echo ex: %script_name% pe nosmtube
+
 	goto end
 
-)
+) else (
 
-:compileSMPlayer
+	goto done
+
+) 
+
+shift
+goto arg_loop
+
+:done
 
 call getrev.cmd
-
-if "%~1" == "pe" (
-	echo Compiling SMPlayer Portable Edition
-	echo.
-
-)
 
 cd zlib
 mingw32-make -fwin32\makefile.gcc
 
 cd ..\src
 lrelease smplayer.pro
-qmake %DEFS%
+qmake %qmake_defs%
 mingw32-make
 
-if exist %SMTUBE_SVN_DIR% (
+if [%build_smtube%]==[true] (
+	if exist %smtube_svn_dir%\compile_windows.cmd (
 
-	cd %SMTUBE_SVN_DIR%
-	compile_windows.cmd %SMTUBE_PARAMS%
+		cd %smtube_svn_dir%
+		compile_windows.cmd %smtube_params%
 
-) else (
+	) else (
 
-	echo SMTube not found in specified directory... skipping
+		echo SMTube not found in specified directory... skipping
 
+	)
 )
 
 :end
