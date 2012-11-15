@@ -4,7 +4,7 @@
 <div class="span1">
 </div>
 
-<div class="span8">
+<div class="span9">
 <p>
 <b><?php tr("Other links:");?></b>
 <table class"table">
@@ -54,13 +54,10 @@ echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img
 </p>
 </div>
 
-<div class="span3">
+<div class="span2">
 <p>
 <table class"table">
 <tr>
-<td>
-<a href="http://sourceforge.net/donate/index.php?group_id=185512"><img src="http://images.sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" alt="Support This Project" /></a>
-</td>
 <td>
 <?php
 include("site_logo.php");
@@ -70,10 +67,6 @@ include("site_logo.php");
 </table>
 </div>
 
-</div> <!-- row -->
-
-<div class="row">
-<center><b>&copy The SMPlayer Project</b></center>
 </div> <!-- row -->
 
 </footer>
