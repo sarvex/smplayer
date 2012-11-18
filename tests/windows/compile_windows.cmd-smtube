@@ -4,7 +4,11 @@ set script_name=%0
 set qmake_defs=
 
 :arg_loop2
-if [%1]==[pe] (
+if [%1]==[] (
+
+	goto compile
+
+) else if [%1]==[pe] (
 
 	set qmake_defs="DEFINES+=PORTABLE_APP"
 
@@ -20,14 +24,16 @@ if [%1]==[pe] (
 
 ) else (
 
-	goto done
+	echo configure: error: unrecognized option: `%1'
+	echo Try `%script_name% -h' for more information
+	goto end
 
 )
 
 shift
 goto arg_loop2
 
-:done
+:compile
 
 call getrev.cmd
 

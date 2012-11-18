@@ -9,7 +9,7 @@ set def_smtube=enabled
 set smtube_dir=..\..\smtube
 set prefix_dir=%CD%\setup
 
-set DEFS=
+set QMAKE_DEFS=
 set SMTUBE_PARAMS=
 
 :ARG_LOOP
@@ -23,23 +23,28 @@ if [%1]==[] (
 	echo.
 	echo Configuration:
 	echo   -h,  --help             display this help and exit
-	echo   --disable-smtube        compile SMTube [enable]
-	echo   --enable-portable       compile in portable mode [disable]
+	echo.
+	echo Optional features:
+	echo   --enable-portable         enable portable mode [disable]
+	echo   --disable-smtube          enable SMTube [enable]
+	REM echo   --disable-single-inst     disable support for running a single instance [enable]
+	REM echo   --disable-findsubs        disable opensubtitles.org subtitle search [enable]
+	REM echo   --disable-preview         disable video preview [enable]
+	REM echo   --disable-log-smplayer    disable smplayer logging [enable]
+	REM echo   --disable-log-mplayer     disable mplayer logging [enable]
+	REM echo   --disable-gui-runtime     disable runtime GUI switching [enable]
+	REM echo   --disable-skins           disable skins [enable]
 	echo.
 	echo Installation directories:
-  echo   --prefix=PREFIX         install architecture-independent files in PREFIX [%prefix_dir%]
+	echo   --prefix=PREFIX         install architecture-independent files in PREFIX [%prefix_dir%]
 	echo.
-	echo Optional Packages:
-	echo   --with-smtube=DIR       Prefix where SMTube sources are ^(optional^) [%smtube_dir%]
-	echo.
-	echo Note: Both SMPlayer and SMTube sources must be on the same partition as your compiler. You
-	echo can use either relative paths or full paths.
+	echo Note: Both SMPlayer and SMTube sources must be on the same partition as your compiler.
 	echo.
 	goto exit
 
 ) else IF [%1]==[--enable-portable] (
 
-	set DEFS="DEFINES+=PORTABLE_APP"
+	set QMAKE_DEFS="DEFINES+=PORTABLE_APP"
 	set SMTUBE_PARAMS=pe
 	set def_portable=enabled
 
@@ -51,33 +56,28 @@ if [%1]==[] (
 
 	set prefix_dir=%2
 	shift
-	
-) else IF [%1]==[--with-smtube] (
 
-	set smtube_dir=%2
-	shift
-
-) ELSE (
+) else (
 
 echo configure: error: unrecognized option: `%1'
 echo Try `%script_name% --help' for more information
-GOTO EXIT
+goto exit
+
 ) 
+
 shift
-GOTO ARG_LOOP
+
+goto arg_loop
+
 :done
 
 echo SMPlayer will be built with the following options:
 echo.
-echo     Portable:     %def_portable%
-echo     SMTube:       %def_smtube%
+echo	Portable:     %def_portable%
+echo	SMTube:       %def_smtube%
 echo.
-echo     SMTube source directory: %smtube_dir%
-echo     Install prefix: %prefix_dir%
+echo	Install prefix: %prefix_dir%
 echo.
-
-set /p debug="Debug; really continue with compile? [y/n] "
-if [%debug%]==[n] goto exit
 
 call getrev.cmd
 
@@ -92,7 +92,7 @@ mingw32-make -fwin32\makefile.gcc
 
 cd ..\src
 lrelease smplayer.pro
-qmake %DEFS%
+qmake %QMAKE_DEFS%
 mingw32-make
 
 if not [%def_smtube%]==[disabled] (
@@ -107,4 +107,5 @@ if not [%def_smtube%]==[disabled] (
 
 	)
 )
+
 :exit

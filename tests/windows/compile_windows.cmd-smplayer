@@ -7,7 +7,11 @@ set smtube_params=
 set qmake_defs=
 
 :arg_loop
-if [%1]==[pe] (
+if [%1]==[] (
+
+	goto compile
+
+) else if [%1]==[pe] (
 
 	set qmake_defs="DEFINES+=PORTABLE_APP"
 	set smtube_params=pe
@@ -26,19 +30,20 @@ if [%1]==[pe] (
 	echo To compile SMPlayer/SMTube non-portable, enter no arguments.
 	echo.
 	echo ex: %script_name% pe nosmtube
-
 	goto end
 
 ) else (
 
-	goto done
+	echo configure: error: unrecognized option: `%1'
+	echo Try `%script_name% -h' for more information
+	goto end
 
 ) 
 
 shift
 goto arg_loop
 
-:done
+:compile
 
 call getrev.cmd
 
