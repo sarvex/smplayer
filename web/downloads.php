@@ -51,6 +51,7 @@ print_menu(3);
 
 
 <div class="container-fluid">
+<div class="span9">
 
 <?php
 include_once("download_links.php");
@@ -160,6 +161,14 @@ echo download_themes_src_link();
 </td>
 </tr>
 </table>
+</div> <!-- span9 -->
+
+<div class="span2">
+		<br><br><br><br><br>
+		<center>
+		<?php include("awards.php"); ?>
+		</center>
+</div>
 
 </div> <!-- container>
 
