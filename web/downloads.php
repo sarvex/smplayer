@@ -95,8 +95,8 @@ tr("In case you find any problem, please report it in %1.", "<a href=\"http://sm
 <?php
 tr("There are available other packages (like a portable version), %1.", download_all_link(get_tr("here")));
 echo "<br>";
-tr("If you wish you can also try %1.", 
-"<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("the unstable version") ."</b></a>");
+tr("If you wish you can also try the %1.", 
+"<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/\"><b>". get_tr("development version") ."</b></a>");
 ?>
 </td></tr>
 </table>
