@@ -8,25 +8,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-19 13:12+0100\n"
+"POT-Creation-Date: 2012-11-21 00:41+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Наши контакты"
 
-#: ../contact.php:9 ../footer.php:45
+#: ../contact.php:9 ../footer.php:39
 msgid "Contact us"
 msgstr "Наши контакты"
 
@@ -141,7 +141,7 @@ msgstr "Литовский"
 msgid "Simplified chinese"
 msgstr "Упрощённый китайский"
 
-#: ../contact.php:64 ../footer.php:48
+#: ../contact.php:64 ../footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Следите за нами в Twitter"
 
@@ -251,19 +251,19 @@ msgstr ""
 "Вы можете легко деинсталлировать smplayer из панели управления или используя "
 "соответствующую опцию в меню smplayer стартового меню Windows."
 
-#: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
+#: ../downloads.php:48 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "Закрыть"
 
-#: ../downloads.php:58 ../header.php:153 ../index.php:50 ../umplayer.php:44
+#: ../downloads.php:59 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Загрузки"
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "Click here to get the full package"
 msgstr "Кликните здесь для загрузки полного пакета"
 
-#: ../downloads.php:70
+#: ../downloads.php:71
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -271,11 +271,11 @@ msgstr ""
 "Этот пакет включает smplayer, темы, переводы, mplayer %1 и браузер YouTube "
 "(smtube)."
 
-#: ../downloads.php:73
+#: ../downloads.php:74
 msgid "More info"
 msgstr "Дополнительная информация"
 
-#: ../downloads.php:84
+#: ../downloads.php:85
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -283,31 +283,31 @@ msgstr ""
 "Протестируйте бету будущей версии 0.8.2. Возможности: новый интерфейс со "
 "скинами и новая сборка mplayer с большим количеством исправлений."
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "In case you find any problem, please report it in %1."
 msgstr "Если вы найдёте любые проблемы, пожалуйста, сообщите о них на %1."
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "our forum"
 msgstr "наш форум"
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Другие пакеты (например, портативная версия), доступны %1."
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "here"
 msgstr "здесь"
 
-#: ../downloads.php:98
+#: ../downloads.php:99
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -317,23 +317,23 @@ msgstr ""
 "(необходимо для OSD и субтитров). Это может занять до 10 или 20 секунд. Это "
 "делается лишь один раз."
 
-#: ../downloads.php:123 ../umplayer.php:70
+#: ../downloads.php:124
 msgid "Packages for Ubuntu:"
 msgstr "Пакеты для Ubuntu:"
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Для установки smplayer, выполните следующий команды в терминале:"
 
-#: ../downloads.php:138
+#: ../downloads.php:139
 msgid "Contributed packages for other distros"
 msgstr "Готовые пакеты для других дистрибутивов"
 
-#: ../downloads.php:140
+#: ../downloads.php:141
 msgid "List of packages contributed by other people."
 msgstr "Список пакетов, собранных другими людьми."
 
-#: ../downloads.php:147 ../umplayer.php:83
+#: ../downloads.php:148
 msgid "Sources"
 msgstr "Исходные коды"
 
@@ -342,7 +342,6 @@ msgid "Other links:"
 msgstr "Другие ссылки:"
 
 #: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
-#: ../umplayer.php:98
 msgid "Latest changes"
 msgstr "Последние изменения"
 
@@ -350,21 +349,17 @@ msgstr "Последние изменения"
 msgid "Forum"
 msgstr "Форум"
 
-#: ../footer.php:26
+#: ../footer.php:20
 msgid "Bug Tracking"
 msgstr "Отслеживание ошибок"
 
-#: ../footer.php:27
+#: ../footer.php:21
 msgid "Feature Requests"
 msgstr "Особые пожелания"
 
-#: ../footer.php:35 ../footer.php:37
+#: ../footer.php:29 ../footer.php:31
 msgid "Mirror"
 msgstr "Зеркало"
-
-#: ../footer.php:40
-msgid "Wiki"
-msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -676,45 +671,43 @@ msgid ""
 msgstr ""
 "SMTube уже включён в пакеты для Windows, но под Linux это отдельный пакет."
 
-#: ../umplayer.php:11
-msgid "UMPlayer Screenshot"
-msgstr "Скриншоn UMPlayer"
-
-#: ../umplayer.php:28
-msgid ""
-"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
-"the SMPlayer team has released a new version which fixes Youtube playback."
-msgstr ""
-"%1 - форк SMPlayer, созданный %2. Поскольку проект, похоже, мёртв, команда "
-"SMPlayer выпустила новую версию с исправленным воспроизведением Youtube."
-
-#: ../umplayer.php:35
-msgid ""
-"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-"features of SMPlayer are not available on UMPlayer."
-msgstr ""
-"Обратите внимание, что UMPlayer основан на старой версии SMPlayer, так что "
-"новые возможности SMPlayer в UMPlayer недоступны."
-
-#: ../umplayer.php:55
-msgid "Click here to get UMPlayer 0.98.1"
-msgstr "Кликните здесь для загрузки UMPlayer 0.98.1"
-
-#: ../umplayer.php:57
-msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr "Этот пакет содержит umplayer, темы, переводы и mplayer."
-
-#: ../umplayer.php:71
-msgid "To install umplayer, just run these commands in a terminal:"
-msgstr ""
-"Для установки umplayer, просто выполните следующие команды в терминале:"
-
-#: ../umplayer.php:88
-msgid "UMPlayer sources"
-msgstr "Исходные коды UMPlayer"
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Если пожелаете, вы можете также попробовать %1."
 
 #~ msgid "the unstable version"
 #~ msgstr "нестабильную версию"
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Если пожелаете, вы можете также попробовать %1."
+#~ msgid "UMPlayer sources"
+#~ msgstr "Исходные коды UMPlayer"
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "Для установки umplayer, просто выполните следующие команды в терминале:"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Этот пакет содержит umplayer, темы, переводы и mplayer."
+
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Кликните здесь для загрузки UMPlayer 0.98.1"
+
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "Обратите внимание, что UMPlayer основан на старой версии SMPlayer, так "
+#~ "что новые возможности SMPlayer в UMPlayer недоступны."
+
+#~ msgid ""
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ msgstr ""
+#~ "%1 - форк SMPlayer, созданный %2. Поскольку проект, похоже, мёртв, "
+#~ "команда SMPlayer выпустила новую версию с исправленным воспроизведением "
+#~ "Youtube."
+
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "Скриншоn UMPlayer"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"

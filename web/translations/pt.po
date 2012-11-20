@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-19 13:12+0100\n"
+"POT-Creation-Date: 2012-11-21 00:41+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Contactos"
 
-#: ../contact.php:9 ../footer.php:45
+#: ../contact.php:9 ../footer.php:39
 msgid "Contact us"
 msgstr "Contactos"
 
@@ -138,7 +138,7 @@ msgstr "Lituano"
 msgid "Simplified chinese"
 msgstr "Mandarim simplificado"
 
-#: ../contact.php:64 ../footer.php:48
+#: ../contact.php:64 ../footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Siga-nos no Twitter"
 
@@ -251,19 +251,19 @@ msgstr ""
 "<i>Desinstalar smplayer</i> do menu do smplayer acedida através do menu "
 "<i>Iniciar</i>."
 
-#: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
+#: ../downloads.php:48 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "Fechar"
 
-#: ../downloads.php:58 ../header.php:153 ../index.php:50 ../umplayer.php:44
+#: ../downloads.php:59 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Transferências"
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "Click here to get the full package"
 msgstr "Clique aqui para obter o pacote integral"
 
-#: ../downloads.php:70
+#: ../downloads.php:71
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -271,11 +271,11 @@ msgstr ""
 "Este pacote contém o SMPlayer, os temas, as traduções, o MPlayer %1 e\n"
 "o explorador YouTube (smtube)."
 
-#: ../downloads.php:73
+#: ../downloads.php:74
 msgid "More info"
 msgstr "Mais informações"
 
-#: ../downloads.php:84
+#: ../downloads.php:85
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -283,31 +283,31 @@ msgstr ""
 "Teste a versão beta do SMPlayer 0.8.2. As novas funcionalidades são a "
 "interface com temas e uma nova versão do mplayer."
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "In case you find any problem, please report it in %1."
 msgstr "Se encontrar algum problema, reporte-o no %1."
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "our forum"
 msgstr "fórum"
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Existem também outros pacotes e uma versão portátil %1."
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "here"
 msgstr "aqui"
 
-#: ../downloads.php:98
+#: ../downloads.php:99
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -317,23 +317,23 @@ msgstr ""
 "de letras (necessária para o OSD e as legendas). Esta operação\n"
 "poderá levar algum tempo e só será efetuada uma vez."
 
-#: ../downloads.php:123 ../umplayer.php:70
+#: ../downloads.php:124
 msgid "Packages for Ubuntu:"
 msgstr "Pacotes para Ubuntu:"
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Para instalar o SMPlayer, execute estes comandos no terminal:"
 
-#: ../downloads.php:138
+#: ../downloads.php:139
 msgid "Contributed packages for other distros"
 msgstr "Pacotes para outras distribuições"
 
-#: ../downloads.php:140
+#: ../downloads.php:141
 msgid "List of packages contributed by other people."
 msgstr "Lista de pacotes compilados por terceiros."
 
-#: ../downloads.php:147 ../umplayer.php:83
+#: ../downloads.php:148
 msgid "Sources"
 msgstr "Código fonte"
 
@@ -342,7 +342,6 @@ msgid "Other links:"
 msgstr "Outras ligações:"
 
 #: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
-#: ../umplayer.php:98
 msgid "Latest changes"
 msgstr "Últimas alterações"
 
@@ -350,21 +349,17 @@ msgstr "Últimas alterações"
 msgid "Forum"
 msgstr "Fórum"
 
-#: ../footer.php:26
+#: ../footer.php:20
 msgid "Bug Tracking"
 msgstr "Erros"
 
-#: ../footer.php:27
+#: ../footer.php:21
 msgid "Feature Requests"
 msgstr "Pedidos de funções"
 
-#: ../footer.php:35 ../footer.php:37
+#: ../footer.php:29 ../footer.php:31
 msgid "Mirror"
 msgstr "Mirror"
-
-#: ../footer.php:40
-msgid "Wiki"
-msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -439,8 +434,8 @@ msgid ""
 msgstr ""
 "O SMPlayer está disponível para Windows e para Linux. Utiliza o\n"
 "%1 como mecanismo de reprodução e é capaz de reproduzir a maioria\n"
-"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... %"
-"2).\n"
+"dos formatos vídeo e áudio mais utilizados (avi, mkv, wmv, mp4, mpeg... "
+"%2).\n"
 "Na reprodução são utilizados <b>os codificadores nativos</b>."
 
 #: ../info.php:22
@@ -675,46 +670,44 @@ msgstr ""
 "O SMTube já está incluido nos pacotes Windows mas nos sistemas Linux é um "
 "pacote independente."
 
-#: ../umplayer.php:11
-msgid "UMPlayer Screenshot"
-msgstr "Imagem do UMPlayer"
-
-#: ../umplayer.php:28
-msgid ""
-"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
-"the SMPlayer team has released a new version which fixes Youtube playback."
-msgstr ""
-"O %1 é um programa derivado do SMPlayer criado por %2 mas parece que já não "
-"está a ser desenvolvido.\n"
-"No entanto, a equipa do SMPlayer disponibilizou uma nova versão com "
-"correções ao nível do Youtube."
-
-#: ../umplayer.php:35
-msgid ""
-"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-"features of SMPlayer are not available on UMPlayer."
-msgstr ""
-"Deve ter em conta que o UMPlayer foi baseado numa versão antiga do SMPlayer\n"
-"e as funcionalidades mais recentes do SMPlayer não existem no UMPlayer."
-
-#: ../umplayer.php:55
-msgid "Click here to get UMPlayer 0.98.1"
-msgstr "Clique aqui para transferir o UMPlayer 0.98.1"
-
-#: ../umplayer.php:57
-msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr "Este pacote contém o umplayer, os temas, as traduções e o mplayer."
-
-#: ../umplayer.php:71
-msgid "To install umplayer, just run these commands in a terminal:"
-msgstr "Para instalar o umplayer, execute estes comandos no terminal:"
-
-#: ../umplayer.php:88
-msgid "UMPlayer sources"
-msgstr "Código fonte do UMPlayer"
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Se quiser, também pode experimentar %1."
 
 #~ msgid "the unstable version"
 #~ msgstr "a versão de testes"
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Se quiser, também pode experimentar %1."
+#~ msgid "UMPlayer sources"
+#~ msgstr "Código fonte do UMPlayer"
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr "Para instalar o umplayer, execute estes comandos no terminal:"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Este pacote contém o umplayer, os temas, as traduções e o mplayer."
+
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Clique aqui para transferir o UMPlayer 0.98.1"
+
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "Deve ter em conta que o UMPlayer foi baseado numa versão antiga do "
+#~ "SMPlayer\n"
+#~ "e as funcionalidades mais recentes do SMPlayer não existem no UMPlayer."
+
+#~ msgid ""
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ msgstr ""
+#~ "O %1 é um programa derivado do SMPlayer criado por %2 mas parece que já "
+#~ "não está a ser desenvolvido.\n"
+#~ "No entanto, a equipa do SMPlayer disponibilizou uma nova versão com "
+#~ "correções ao nível do Youtube."
+
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "Imagem do UMPlayer"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"

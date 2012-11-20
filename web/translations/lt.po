@@ -10,23 +10,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-19 13:12+0100\n"
+"POT-Creation-Date: 2012-11-21 00:41+0100\n"
 "PO-Revision-Date: 2012-11-06 08:25+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
-"100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
 "X-Generator: Gtranslator 2.91.5\n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Susisiekite su mumis"
 
-#: ../contact.php:9 ../footer.php:45
+#: ../contact.php:9 ../footer.php:39
 msgid "Contact us"
 msgstr "Susisiekite su mumis"
 
@@ -141,7 +141,7 @@ msgstr "Lietuvių"
 msgid "Simplified chinese"
 msgstr "Supaprastinta kinų"
 
-#: ../contact.php:64 ../footer.php:48
+#: ../contact.php:64 ../footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Sekite mus Twitter"
 
@@ -250,19 +250,19 @@ msgstr ""
 "Galite pašalinti smplayer per valdymo skydą arba naudodami <i>pašalinti "
 "smplayer</i> parinkty windows pradžios meniu."
 
-#: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
+#: ../downloads.php:48 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "Užverti"
 
-#: ../downloads.php:58 ../header.php:153 ../index.php:50 ../umplayer.php:44
+#: ../downloads.php:59 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "Atsisiuntimai"
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "Click here to get the full package"
 msgstr "Norėdami gauti pilną paketą paspauskite čia"
 
-#: ../downloads.php:70
+#: ../downloads.php:71
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -270,41 +270,41 @@ msgstr ""
 "Šiame pakete yra smplayer, temos, vertimai, mplayer %1 ir \n"
 "YouTube naršyklė (smtube)."
 
-#: ../downloads.php:73
+#: ../downloads.php:74
 msgid "More info"
 msgstr "Daugiau informacijos"
 
-#: ../downloads.php:84
+#: ../downloads.php:85
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
 msgstr ""
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "In case you find any problem, please report it in %1."
 msgstr ""
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "our forum"
 msgstr ""
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "There are available other packages (like a portable version), %1."
 msgstr "%1 yra ir kitų paketų (tokių kaip nešiojama versija)."
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "here"
 msgstr "čia"
 
-#: ../downloads.php:98
+#: ../downloads.php:99
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -314,23 +314,23 @@ msgstr ""
 "podėlis (būtina OSD ir subtitrams). Tai gali užtrukti iki 10\n"
 "ar 20 sekundžių. Tai daroma tik kartą."
 
-#: ../downloads.php:123 ../umplayer.php:70
+#: ../downloads.php:124
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu paketai:"
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Norėdami įdiegti smplayer, terminale įvykdykite šias komandas:"
 
-#: ../downloads.php:138
+#: ../downloads.php:139
 msgid "Contributed packages for other distros"
 msgstr "Paketai kitiems distributyvams"
 
-#: ../downloads.php:140
+#: ../downloads.php:141
 msgid "List of packages contributed by other people."
 msgstr "Paketų sąrašas kuriuos sukūrė kiti žmonės."
 
-#: ../downloads.php:147 ../umplayer.php:83
+#: ../downloads.php:148
 msgid "Sources"
 msgstr "Pradiniai kodai"
 
@@ -339,7 +339,6 @@ msgid "Other links:"
 msgstr "Kitos nuorodos:"
 
 #: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
-#: ../umplayer.php:98
 msgid "Latest changes"
 msgstr "Paskutiniai pakeitimai"
 
@@ -347,21 +346,17 @@ msgstr "Paskutiniai pakeitimai"
 msgid "Forum"
 msgstr "Forumas"
 
-#: ../footer.php:26
+#: ../footer.php:20
 msgid "Bug Tracking"
 msgstr "Pranešimai apie klaidas"
 
-#: ../footer.php:27
+#: ../footer.php:21
 msgid "Feature Requests"
 msgstr "Naujų galimybių prašymai"
 
-#: ../footer.php:35 ../footer.php:37
+#: ../footer.php:29 ../footer.php:31
 msgid "Mirror"
 msgstr "Veidrodis"
-
-#: ../footer.php:40
-msgid "Wiki"
-msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -671,49 +666,19 @@ msgid ""
 msgstr ""
 "Windows pakete SMTube jau yra, tik Linux sistemai tai atskiras paketas."
 
-#: ../umplayer.php:11
-msgid "UMPlayer Screenshot"
-msgstr "UMPlayer ekranvaizdis"
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Jei norite galite pabandyti %1."
 
-#: ../umplayer.php:28
-msgid ""
-"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
-"the SMPlayer team has released a new version which fixes Youtube playback."
-msgstr ""
-"%1 yra SMPlayer atšaka kurią sukūrė %2. Kadangi šis projektas miręs,\n"
-"SMPlayer komanda išleido naują versiją kuri pataiso Youtube atkūrimą."
-
-#: ../umplayer.php:35
-msgid ""
-"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-"features of SMPlayer are not available on UMPlayer."
-msgstr ""
-"Turėkite omeny jog UMPlayer paremtas sena SMPlayer versija, taigi\n"
-"naujų SMPlayer galimybių UMPlayer neturi."
-
-#: ../umplayer.php:55
-msgid "Click here to get UMPlayer 0.98.1"
-msgstr "Norėdami gauti UMPlayer 0.98.1 paspauskite čia"
-
-#: ../umplayer.php:57
-msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr "Šiame pakete yra umplayer, temos, vertimai ir mplayer."
-
-#: ../umplayer.php:71
-msgid "To install umplayer, just run these commands in a terminal:"
-msgstr "Norėdami įdiegti umplayer, terminale paleiskite šias komandas:"
-
-#: ../umplayer.php:88
-msgid "UMPlayer sources"
-msgstr "UMPlayer pradiniai kodai"
+#~ msgid "the unstable version"
+#~ msgstr "nestabilią versiją"
 
 #~ msgid ""
 #~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
 #~ "\">forum</a>.\n"
 #~ "<br>\n"
 #~ "If you find bugs in smplayer you can report them in our \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573"
-#~ "\">bug tracker</a>.\n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">bug tracker</a>.\n"
 #~ "<br>\n"
 #~ "You can request new features in our <a href=\"http://sourceforge.net/"
 #~ "tracker/?group_id=185512&atid=913576\">request tracker</a>.\n"
@@ -721,35 +686,23 @@ msgstr "UMPlayer pradiniai kodai"
 #~ "<b>Irc channel</b>:\n"
 #~ "Join #smplayer at irc.oftc.net (or click \n"
 #~ "<a href=\"irc://irc.oftc.net/smplayer\">this link</a> if your client "
-#~ "supports it).\""
+#~ "supports it)."
 #~ msgstr ""
 #~ "Pagalbos galite gauti mūsų <a href=\"http://smplayer.sourceforge.net/forum"
 #~ "\">forume</a>.\n"
 #~ "<br>\n"
 #~ "Jei radote smplayer klaidų apie jas galite pranešti mūsų \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573"
-#~ "\">klaidų sekimo tarnyboje</a>.\n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">klaidų sekimo tarnyboje</a>.\n"
 #~ "<br>\n"
 #~ "Naujų galimybių galite prašyti <a href=\"http://sourceforge.net/tracker/?"
 #~ "group_id=185512&atid=913576\">prašymų srityje</a>.\n"
 #~ "<br>\n"
 #~ "<b>Irc kanalas</b>:\n"
-#~ "Prisijunkite #smplayer serveryje irc.oftc.net (arba paspauskite \n"
+#~ "Prisijunkite prie kanalo #smplayer serveryje irc.oftc.net (arba "
+#~ "paspauskite \n"
 #~ "<a href=\"irc://irc.oftc.net/smplayer\">šią nuorodą</a> jei jūsų klientas "
-#~ "ją palaiko).\""
-
-#~ msgid ""
-#~ "<li>Nardog (Japanese)</li>\n"
-#~ "<li>Smarquespt (Portuguese)</li>\n"
-#~ "<li>Xabier Aramendi (Basque)</li>\n"
-#~ "<li>Gymka (Lithuanian)</li>\n"
-#~ "<li>Bendihua (Simplified chinese)</li>"
-#~ msgstr ""
-#~ "<li>Nardog (Japonų)</li>\n"
-#~ "<li>Smarquespt (Portugalų)</li>\n"
-#~ "<li>Xabier Aramendi (Baskų)</li>\n"
-#~ "<li>Gymka (Lietuvių)</li>\n"
-#~ "<li>Bendihua (Supaprastinta kinų)</li>"
+#~ "ją palaiko)."
 
 #~ msgid ""
 #~ "<b>Ricardo Villalba</b> (main developer, webmaster, ubuntu packages, "
@@ -768,12 +721,25 @@ msgstr "UMPlayer pradiniai kodai"
 #~ "<b>akovia</b>."
 
 #~ msgid ""
+#~ "<li>Nardog (Japanese)</li>\n"
+#~ "<li>Smarquespt (Portuguese)</li>\n"
+#~ "<li>Xabier Aramendi (Basque)</li>\n"
+#~ "<li>Gymka (Lithuanian)</li>\n"
+#~ "<li>Bendihua (Simplified chinese)</li>"
+#~ msgstr ""
+#~ "<li>Nardog (Japonų)</li>\n"
+#~ "<li>Smarquespt (Portugalų)</li>\n"
+#~ "<li>Xabier Aramendi (Baskų)</li>\n"
+#~ "<li>Gymka (Lietuvių)</li>\n"
+#~ "<li>Bendihua (Supaprastinta kinų)</li>"
+
+#~ msgid ""
 #~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
 #~ "\">forum</a>.\n"
 #~ "<br>\n"
 #~ "If you find bugs in smplayer you can report them in our \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573"
-#~ "\">bug tracker</a>.\n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">bug tracker</a>.\n"
 #~ "<br>\n"
 #~ "You can request new features in our <a href=\"http://sourceforge.net/"
 #~ "tracker/?group_id=185512&atid=913576\">request tracker</a>.\n"
@@ -781,26 +747,52 @@ msgstr "UMPlayer pradiniai kodai"
 #~ "<b>Irc channel</b>:\n"
 #~ "Join #smplayer at irc.oftc.net (or click \n"
 #~ "<a href=\"irc://irc.oftc.net/smplayer\">this link</a> if your client "
-#~ "supports it)."
+#~ "supports it).\""
 #~ msgstr ""
 #~ "Pagalbos galite gauti mūsų <a href=\"http://smplayer.sourceforge.net/forum"
 #~ "\">forume</a>.\n"
 #~ "<br>\n"
 #~ "Jei radote smplayer klaidų apie jas galite pranešti mūsų \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?group_id=185512&atid=913573"
-#~ "\">klaidų sekimo tarnyboje</a>.\n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">klaidų sekimo tarnyboje</a>.\n"
 #~ "<br>\n"
 #~ "Naujų galimybių galite prašyti <a href=\"http://sourceforge.net/tracker/?"
 #~ "group_id=185512&atid=913576\">prašymų srityje</a>.\n"
 #~ "<br>\n"
 #~ "<b>Irc kanalas</b>:\n"
-#~ "Prisijunkite prie kanalo #smplayer serveryje irc.oftc.net (arba "
-#~ "paspauskite \n"
+#~ "Prisijunkite #smplayer serveryje irc.oftc.net (arba paspauskite \n"
 #~ "<a href=\"irc://irc.oftc.net/smplayer\">šią nuorodą</a> jei jūsų klientas "
-#~ "ją palaiko)."
+#~ "ją palaiko).\""
 
-#~ msgid "the unstable version"
-#~ msgstr "nestabilią versiją"
+#~ msgid "UMPlayer sources"
+#~ msgstr "UMPlayer pradiniai kodai"
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Jei norite galite pabandyti %1."
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr "Norėdami įdiegti umplayer, terminale paleiskite šias komandas:"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Šiame pakete yra umplayer, temos, vertimai ir mplayer."
+
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Norėdami gauti UMPlayer 0.98.1 paspauskite čia"
+
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "Turėkite omeny jog UMPlayer paremtas sena SMPlayer versija, taigi\n"
+#~ "naujų SMPlayer galimybių UMPlayer neturi."
+
+#~ msgid ""
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ msgstr ""
+#~ "%1 yra SMPlayer atšaka kurią sukūrė %2. Kadangi šis projektas miręs,\n"
+#~ "SMPlayer komanda išleido naują versiją kuri pataiso Youtube atkūrimą."
+
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "UMPlayer ekranvaizdis"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"

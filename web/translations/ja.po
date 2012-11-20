@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-19 13:12+0100\n"
+"POT-Creation-Date: 2012-11-21 00:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - お問い合わせ"
 
-#: ../contact.php:9 ../footer.php:45
+#: ../contact.php:9 ../footer.php:39
 msgid "Contact us"
 msgstr "お問い合わせ"
 
@@ -136,7 +136,7 @@ msgstr "リトアニア語"
 msgid "Simplified chinese"
 msgstr "簡体字中国語"
 
-#: ../contact.php:64 ../footer.php:48
+#: ../contact.php:64 ../footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Twitter でフォローする"
 
@@ -248,19 +248,19 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:48 ../info.php:10 ../smtube.php:17 ../umplayer.php:17
+#: ../downloads.php:48 ../info.php:10 ../smtube.php:17
 msgid "Close"
 msgstr "閉じる"
 
-#: ../downloads.php:58 ../header.php:153 ../index.php:50 ../umplayer.php:44
+#: ../downloads.php:59 ../header.php:153 ../index.php:50
 msgid "Downloads"
 msgstr "ダウンロード"
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "Click here to get the full package"
 msgstr "フルパッケージを取得するにはこちらをクリックしてください"
 
-#: ../downloads.php:70
+#: ../downloads.php:71
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -268,11 +268,11 @@ msgstr ""
 "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラウ"
 "ザー (SMTube) が含まれています。"
 
-#: ../downloads.php:73
+#: ../downloads.php:74
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:84
+#: ../downloads.php:85
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -281,33 +281,33 @@ msgstr ""
 "スキン機能が新たに追加されているほか、大幅な改善が施された MPlayer ビルドが同"
 "梱されています。"
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "In case you find any problem, please report it in %1."
 msgstr ""
 "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一報"
 "をお願いします。"
 
-#: ../downloads.php:86
+#: ../downloads.php:87
 msgid "our forum"
 msgstr "フォーラム"
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:96
+#: ../downloads.php:97
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:98
+#: ../downloads.php:99
 msgid "If you wish you can also try the %1."
 msgstr "またお望みでしたら%1もお試しいただけます。"
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "development version"
 msgstr "開発版"
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -316,25 +316,25 @@ msgstr ""
 "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されま"
 "す。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#: ../downloads.php:123 ../umplayer.php:70
+#: ../downloads.php:124
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:138
+#: ../downloads.php:139
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:140
+#: ../downloads.php:141
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:147 ../umplayer.php:83
+#: ../downloads.php:148
 msgid "Sources"
 msgstr "ソース"
 
@@ -343,7 +343,6 @@ msgid "Other links:"
 msgstr "関連リンク:"
 
 #: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
-#: ../umplayer.php:98
 msgid "Latest changes"
 msgstr "最新の変更点"
 
@@ -351,21 +350,17 @@ msgstr "最新の変更点"
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../footer.php:26
+#: ../footer.php:20
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../footer.php:27
+#: ../footer.php:21
 msgid "Feature Requests"
 msgstr "機能要望"
 
-#: ../footer.php:35 ../footer.php:37
+#: ../footer.php:29 ../footer.php:31
 msgid "Mirror"
 msgstr "ミラー"
-
-#: ../footer.php:40
-msgid "Wiki"
-msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -666,42 +661,40 @@ msgstr ""
 "SMTube は Windows パッケージには最初から同梱されていますが、Linux では独立し"
 "たパッケージとなっています。"
 
-#: ../umplayer.php:11
-msgid "UMPlayer Screenshot"
-msgstr "UMPlayer のスクリーンショット"
+#~ msgid "UMPlayer sources"
+#~ msgstr "UMPlayer のソース"
 
-#: ../umplayer.php:28
-msgid ""
-"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
-"the SMPlayer team has released a new version which fixes Youtube playback."
-msgstr ""
-"%1 は %2 氏によって作成された SMPlayer のフォークです。このプロジェクトは現在"
-"停止しているようですが、SMPlayer のチームでは YouTube の再生に関する修正を施"
-"した新しいバージョンを提供しています。"
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "umplayer をインストールするには、ターミナルでこれらのコマンドを実行してく"
+#~ "ださい:"
 
-#: ../umplayer.php:35
-msgid ""
-"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-"features of SMPlayer are not available on UMPlayer."
-msgstr ""
-"UMPlayer は SMPlayer の古いバージョンに基づいていますので、SMPlayer の新しい"
-"機能は UMPlayer ではご利用になることができません。"
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr ""
+#~ "このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれていま"
+#~ "す。"
 
-#: ../umplayer.php:55
-msgid "Click here to get UMPlayer 0.98.1"
-msgstr "UMPlayer 0.98.1 をダウンロードする"
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "UMPlayer 0.98.1 をダウンロードする"
 
-#: ../umplayer.php:57
-msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr ""
-"このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれています。"
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "UMPlayer は SMPlayer の古いバージョンに基づいていますので、SMPlayer の新し"
+#~ "い機能は UMPlayer ではご利用になることができません。"
 
-#: ../umplayer.php:71
-msgid "To install umplayer, just run these commands in a terminal:"
-msgstr ""
-"umplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
-"い:"
+#~ msgid ""
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ msgstr ""
+#~ "%1 は %2 氏によって作成された SMPlayer のフォークです。このプロジェクトは"
+#~ "現在停止しているようですが、SMPlayer のチームでは YouTube の再生に関する修"
+#~ "正を施した新しいバージョンを提供しています。"
 
-#: ../umplayer.php:88
-msgid "UMPlayer sources"
-msgstr "UMPlayer のソース"
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "UMPlayer のスクリーンショット"
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
