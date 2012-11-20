@@ -55,17 +55,20 @@ lrelease smplayer.pro
 qmake %qmake_defs%
 mingw32-make
 
-if [%build_smtube%]==[true] (
-	if exist %smtube_svn_dir%\compile_windows.cmd (
+if [%errorlevel%]==[0] (
+	if [%build_smtube%]==[true] (
+		if exist %smtube_svn_dir%\compile_windows.cmd (
 
-		cd %smtube_svn_dir%
-		compile_windows.cmd %smtube_params%
+			cd %smtube_svn_dir%
+			compile_windows.cmd %smtube_params%
 
-	) else (
+		) else (
 
-		echo SMTube not found in specified directory... skipping
-
+			echo SMTube not found in specified directory... skipping
+		)
 	)
+) else (
+echo Compilation error, script aborted
 )
 
 :end
