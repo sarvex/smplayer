@@ -2,16 +2,16 @@
 include_once("myfunctions.php");
 
 function download_all_link($text) {
-	$u ="https://sourceforge.net/projects/smplayer/files/SMPlayer/0.8.1/";
+	$u ="https://sourceforge.net/projects/smplayer/files/SMPlayer/0.8.2/";
 	return "<a href=\"$u\"><b>$text</b></a>";
 }
 
 function download_src_link() {
-	return create_link("smplayer-0.8.1.tar.bz2", 2813484 );
+	return create_link("smplayer-0.8.2.tar.bz2", 3197356 );
 }
 
 function download_smtube_link() {
-	return create_link("smtube-1.2.1.tar.bz2", 304813 );
+	return create_link("smtube-1.3.tar.bz2", 306539 );
 }
 
 function download_rpm_link() {
@@ -28,8 +28,8 @@ function download_amd64deb_link() {
 
 function download_windows_full_link($text) {
 	global $site;
-	$filename = "smplayer-0.8.1-win32.exe";
-	$size = 16768232;
+	$filename = "smplayer-0.8.2-win32.exe";
+	$size = 16867464;
 
 	if (!isset($text)) {
 		return create_link($filename, $size );
@@ -53,6 +53,10 @@ function download_windows_portable_link() {
 
 function download_themes_src_link() {
 	return create_link("smplayer-themes-20120919.tar.bz2", 2096375 );
+}
+
+function download_skins_src_link() {
+	return create_link("smplayer-skins-20121029.tar.bz2", 373066 );
 }
 
 function download_themes_rpm_link() {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 00:41+0100\n"
+"POT-Creation-Date: 2012-11-21 03:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -244,8 +244,8 @@ msgid "Downloads"
 msgstr "下载"
 
 #: ../downloads.php:69
-msgid "Click here to get the full package"
-msgstr "点击这里获取完整的软件包"
+msgid "Click here to download SMPlayer %1"
+msgstr ""
 
 #: ../downloads.php:71
 msgid ""
@@ -259,7 +259,7 @@ msgstr ""
 msgid "More info"
 msgstr "更多信息"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -267,31 +267,31 @@ msgstr ""
 "测试即将发布的版本 0.8.2 的 beta 版. 特点: 新的 Skinnable UI 和编译有大量修补"
 "程序的新 MPlayer."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "In case you find any problem, please report it in %1."
 msgstr "如果您发现任何问题, 请在%1中报告它."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "our forum"
 msgstr "我们的论坛"
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "There are available other packages (like a portable version), %1."
 msgstr "还有可用的其他软件包 (例如便携版), %1."
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "here"
 msgstr "在这里"
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "If you wish you can also try the %1."
 msgstr "如果您愿意, 您也可以尝试%1."
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "development version"
 msgstr "开发版本"
 
-#: ../downloads.php:109
+#: ../downloads.php:110
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -301,23 +301,23 @@ msgstr ""
 "这可能需要长达 10 或 20 秒.\n"
 "这只执行一次."
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "Packages for Ubuntu:"
 msgstr "适用于 Ubuntu 的软件包:"
 
-#: ../downloads.php:125
+#: ../downloads.php:126
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "要安装 SMPlayer, 只需在终端运行这些命令:"
 
-#: ../downloads.php:139
+#: ../downloads.php:140
 msgid "Contributed packages for other distros"
 msgstr "适用于其他发行版的贡献软件包"
 
-#: ../downloads.php:141
+#: ../downloads.php:142
 msgid "List of packages contributed by other people."
 msgstr "由其他人所贡献软件包的列表."
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Sources"
 msgstr "源代码"
 
@@ -645,24 +645,11 @@ msgid ""
 "independent package."
 msgstr "SMTube 已经包含在 Windows 软件包中, 但在 Linux 上它是一个独立的软件包."
 
-#~ msgid "UMPlayer sources"
-#~ msgstr "UMPlayer 源代码"
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr "要安装 UMPlayer, 只需在终端运行这些命令:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "该软件包包含 UMPlayer、主题、翻译和 MPlayer."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "点击这里获取 UMPlayer 0.98.1"
-
-#~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
-#~ msgstr ""
-#~ "请注意, UMPlayer 是基于旧版的 SMPlayer,\n"
-#~ "因此 SMPlayer 的新功能在 UMPlayer 上将不可用."
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "UMPlayer 屏幕截图"
 
 #~ msgid ""
 #~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
@@ -672,8 +659,24 @@ msgstr "SMTube 已经包含在 Windows 软件包中, 但在 Linux 上它是一�
 #~ "%1 是一个由 %2 创建的 SMPlayer 分支. 由于该项目似乎已经死了,\n"
 #~ "SMPlayer 团队发布了一个修复 YouTube 播放的新版本."
 
-#~ msgid "UMPlayer Screenshot"
-#~ msgstr "UMPlayer 屏幕截图"
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "请注意, UMPlayer 是基于旧版的 SMPlayer,\n"
+#~ "因此 SMPlayer 的新功能在 UMPlayer 上将不可用."
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "点击这里获取 UMPlayer 0.98.1"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "该软件包包含 UMPlayer、主题、翻译和 MPlayer."
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr "要安装 UMPlayer, 只需在终端运行这些命令:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "UMPlayer 源代码"
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "点击这里获取完整的软件包"

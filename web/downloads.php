@@ -14,7 +14,7 @@ print_menu(3);
 		<p>
 		<?php
 		tr("For an easy installation on Windows we provide a package with installer.");
-		if (0) {
+		if (1) {
 		echo "<div class=\"alert alert-error\">\n";
 		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
 		echo " ";
@@ -66,29 +66,30 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php
-echo download_windows_full_link(get_tr("Click here to get the full package"));
+echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.2"));
 echo "<br>";
 tr("This package contains smplayer, themes, translations, mplayer %1 and 
-the YouTube browser (smtube).","<i>r35203</i>");
+the YouTube browser (smtube).","<i>r35425</i>");
 echo "<br>";
 echo "<a data-toggle=\"modal\" href=\"#installer\" class=\"btn btn-mini\">". get_tr("More info") ."</a>\n";
 ?>
 </td>
 </tr>
 
-<tr>
-<td><img src="iconos/kpackage.png" alt="*"></td>
-<td>
 <?php
+if (0) {
+echo "<tr>";
+echo "<td><img src=\"iconos/kpackage.png\" alt=\"*\"></td>";
+echo "<td>";
 echo "<a href=\"http://sourceforge.net/projects/smplayer/files/Unstable/beta/smplayer-0.8.1.4724-x86.exe/download\"><b>smplayer-0.8.1.4724-x86.exe</b></a>";
 echo "<br>";
 tr("Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a new mplayer build with a lot of fixes.");
 echo "<br>";
 tr("In case you find any problem, please report it in %1.", "<a href=\"http://smplayer.sourceforge.net/forum/\">". get_tr("our forum") ."</a>");
+echo "</td>";
+echo "</tr>";
+}
 ?>
-</td>
-</tr>
-
 
 <tr>
 <td><img src="iconos/package.png" alt="*"></td>
@@ -157,6 +158,8 @@ echo "<br>";
 echo download_smtube_link();
 echo "<br>";
 echo download_themes_src_link();
+echo "<br>";
+echo download_skins_src_link();
 ?>
 </td>
 </tr>

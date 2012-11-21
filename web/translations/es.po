@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 00:41+0100\n"
+"POT-Creation-Date: 2012-11-21 03:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,8 +260,8 @@ msgid "Downloads"
 msgstr "Descargas"
 
 #: ../downloads.php:69
-msgid "Click here to get the full package"
-msgstr "Pulsa aquí para descargar el paquete completo"
+msgid "Click here to download SMPlayer %1"
+msgstr "Pulsa aquí para descargar SMPlayer %1"
 
 #: ../downloads.php:71
 msgid ""
@@ -275,7 +275,7 @@ msgstr ""
 msgid "More info"
 msgstr "Más información"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -283,31 +283,31 @@ msgstr ""
 "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos skins "
 "y una nueva versión del mplayer con muchas correcciones de fallos."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "In case you find any problem, please report it in %1."
 msgstr "En caso de encontrar algún problema, por favor repórtalo en %1."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "our forum"
 msgstr "nuestro foro"
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Hay disponibles otros paquetes (como una versión portable), %1."
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "here"
 msgstr "aquí"
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "If you wish you can also try the %1."
 msgstr "Si lo deseas también puedes probar la %1."
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "development version"
 msgstr "versión en desarrollo"
 
-#: ../downloads.php:109
+#: ../downloads.php:110
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -317,24 +317,24 @@ msgstr ""
 "de letra (necesario para el OSD y los subtítulos). Esto puede tardar de 10 a "
 "20 segundos y sólo se realiza una vez."
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "Packages for Ubuntu:"
 msgstr "Paquetes para Ubuntu:"
 
-#: ../downloads.php:125
+#: ../downloads.php:126
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "Para instalar smplayer, simplemente ejecuta estas órdenes en un terminal:"
 
-#: ../downloads.php:139
+#: ../downloads.php:140
 msgid "Contributed packages for other distros"
 msgstr "Paquetes para otras distros"
 
-#: ../downloads.php:141
+#: ../downloads.php:142
 msgid "List of packages contributed by other people."
 msgstr "Lista de paquetes aportados por otras personas."
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Sources"
 msgstr "Fuentes"
 
@@ -667,38 +667,11 @@ msgstr ""
 "SMTube ya está incluido en los paquetes para Windows, sin embargo en Linux "
 "es un paquete independiente."
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Si lo deseas también puedes probar %1."
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
-#~ msgid "the unstable version"
-#~ msgstr "la versión inestable"
-
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
-#~ "mplayer build with a lot of fixes."
-#~ msgstr ""
-#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
-#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
-
-#~ msgid "UMPlayer sources"
-#~ msgstr "Fuentes del UMPlayer"
-
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr ""
-#~ "Para instalar umplayer, simplemente ejecuta estas órdenes en un terminal:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "Este paquete contiene umplayer, temas, traducciones y mplayer."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "Pulsa aquí para descargar UMPlayer 0.98.1"
-
-#~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
-#~ msgstr ""
-#~ "Ten en cuenta que UMPlayer está basado en una versión antigua de "
-#~ "SMPlayer, por tanto no incluye las mejoras más recientes del SMPlayer."
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "Captura de pantalla del UMPlayer"
 
 #~ msgid ""
 #~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
@@ -709,8 +682,38 @@ msgstr ""
 #~ "no se desarrolla más, el equipo del SMPlayer ha creado una nueva versión "
 #~ "que arregla la reproducción de los vídeos de Youtube."
 
-#~ msgid "UMPlayer Screenshot"
-#~ msgstr "Captura de pantalla del UMPlayer"
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "Ten en cuenta que UMPlayer está basado en una versión antigua de "
+#~ "SMPlayer, por tanto no incluye las mejoras más recientes del SMPlayer."
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Pulsa aquí para descargar UMPlayer 0.98.1"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Este paquete contiene umplayer, temas, traducciones y mplayer."
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "Para instalar umplayer, simplemente ejecuta estas órdenes en un terminal:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "Fuentes del UMPlayer"
+
+#~ msgid ""
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+#~ "mplayer build with a lot of fixes."
+#~ msgstr ""
+#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
+#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
+
+#~ msgid "the unstable version"
+#~ msgstr "la versión inestable"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Si lo deseas también puedes probar %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Pulsa aquí para descargar el paquete completo"

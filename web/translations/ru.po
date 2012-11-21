@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 00:41+0100\n"
+"POT-Creation-Date: 2012-11-21 03:44+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -260,8 +260,8 @@ msgid "Downloads"
 msgstr "Загрузки"
 
 #: ../downloads.php:69
-msgid "Click here to get the full package"
-msgstr "Кликните здесь для загрузки полного пакета"
+msgid "Click here to download SMPlayer %1"
+msgstr ""
 
 #: ../downloads.php:71
 msgid ""
@@ -275,7 +275,7 @@ msgstr ""
 msgid "More info"
 msgstr "Дополнительная информация"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -283,31 +283,31 @@ msgstr ""
 "Протестируйте бету будущей версии 0.8.2. Возможности: новый интерфейс со "
 "скинами и новая сборка mplayer с большим количеством исправлений."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "In case you find any problem, please report it in %1."
 msgstr "Если вы найдёте любые проблемы, пожалуйста, сообщите о них на %1."
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "our forum"
 msgstr "наш форум"
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Другие пакеты (например, портативная версия), доступны %1."
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "here"
 msgstr "здесь"
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:109
+#: ../downloads.php:110
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -317,23 +317,23 @@ msgstr ""
 "(необходимо для OSD и субтитров). Это может занять до 10 или 20 секунд. Это "
 "делается лишь один раз."
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "Packages for Ubuntu:"
 msgstr "Пакеты для Ubuntu:"
 
-#: ../downloads.php:125
+#: ../downloads.php:126
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Для установки smplayer, выполните следующий команды в терминале:"
 
-#: ../downloads.php:139
+#: ../downloads.php:140
 msgid "Contributed packages for other distros"
 msgstr "Готовые пакеты для других дистрибутивов"
 
-#: ../downloads.php:141
+#: ../downloads.php:142
 msgid "List of packages contributed by other people."
 msgstr "Список пакетов, собранных другими людьми."
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Sources"
 msgstr "Исходные коды"
 
@@ -671,31 +671,11 @@ msgid ""
 msgstr ""
 "SMTube уже включён в пакеты для Windows, но под Linux это отдельный пакет."
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Если пожелаете, вы можете также попробовать %1."
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
-#~ msgid "the unstable version"
-#~ msgstr "нестабильную версию"
-
-#~ msgid "UMPlayer sources"
-#~ msgstr "Исходные коды UMPlayer"
-
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr ""
-#~ "Для установки umplayer, просто выполните следующие команды в терминале:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "Этот пакет содержит umplayer, темы, переводы и mplayer."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "Кликните здесь для загрузки UMPlayer 0.98.1"
-
-#~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
-#~ msgstr ""
-#~ "Обратите внимание, что UMPlayer основан на старой версии SMPlayer, так "
-#~ "что новые возможности SMPlayer в UMPlayer недоступны."
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "Скриншоn UMPlayer"
 
 #~ msgid ""
 #~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
@@ -706,8 +686,31 @@ msgstr ""
 #~ "команда SMPlayer выпустила новую версию с исправленным воспроизведением "
 #~ "Youtube."
 
-#~ msgid "UMPlayer Screenshot"
-#~ msgstr "Скриншоn UMPlayer"
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "Обратите внимание, что UMPlayer основан на старой версии SMPlayer, так "
+#~ "что новые возможности SMPlayer в UMPlayer недоступны."
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Кликните здесь для загрузки UMPlayer 0.98.1"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Этот пакет содержит umplayer, темы, переводы и mplayer."
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "Для установки umplayer, просто выполните следующие команды в терминале:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "Исходные коды UMPlayer"
+
+#~ msgid "the unstable version"
+#~ msgstr "нестабильную версию"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Если пожелаете, вы можете также попробовать %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Кликните здесь для загрузки полного пакета"

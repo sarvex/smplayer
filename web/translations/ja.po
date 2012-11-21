@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 00:41+0100\n"
+"POT-Creation-Date: 2012-11-21 03:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,8 +257,8 @@ msgid "Downloads"
 msgstr "ダウンロード"
 
 #: ../downloads.php:69
-msgid "Click here to get the full package"
-msgstr "フルパッケージを取得するにはこちらをクリックしてください"
+msgid "Click here to download SMPlayer %1"
+msgstr ""
 
 #: ../downloads.php:71
 msgid ""
@@ -272,7 +272,7 @@ msgstr ""
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:85
+#: ../downloads.php:86
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -281,33 +281,33 @@ msgstr ""
 "スキン機能が新たに追加されているほか、大幅な改善が施された MPlayer ビルドが同"
 "梱されています。"
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "In case you find any problem, please report it in %1."
 msgstr ""
 "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一報"
 "をお願いします。"
 
-#: ../downloads.php:87
+#: ../downloads.php:88
 msgid "our forum"
 msgstr "フォーラム"
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:97
+#: ../downloads.php:98
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:99
+#: ../downloads.php:100
 msgid "If you wish you can also try the %1."
 msgstr "またお望みでしたら%1もお試しいただけます。"
 
-#: ../downloads.php:100
+#: ../downloads.php:101
 msgid "development version"
 msgstr "開発版"
 
-#: ../downloads.php:109
+#: ../downloads.php:110
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -316,25 +316,25 @@ msgstr ""
 "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成されま"
 "す。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#: ../downloads.php:124
+#: ../downloads.php:125
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:125
+#: ../downloads.php:126
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:139
+#: ../downloads.php:140
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:141
+#: ../downloads.php:142
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:148
+#: ../downloads.php:149
 msgid "Sources"
 msgstr "ソース"
 
@@ -661,28 +661,11 @@ msgstr ""
 "SMTube は Windows パッケージには最初から同梱されていますが、Linux では独立し"
 "たパッケージとなっています。"
 
-#~ msgid "UMPlayer sources"
-#~ msgstr "UMPlayer のソース"
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr ""
-#~ "umplayer をインストールするには、ターミナルでこれらのコマンドを実行してく"
-#~ "ださい:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr ""
-#~ "このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれていま"
-#~ "す。"
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "UMPlayer 0.98.1 をダウンロードする"
-
-#~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
-#~ msgstr ""
-#~ "UMPlayer は SMPlayer の古いバージョンに基づいていますので、SMPlayer の新し"
-#~ "い機能は UMPlayer ではご利用になることができません。"
+#~ msgid "UMPlayer Screenshot"
+#~ msgstr "UMPlayer のスクリーンショット"
 
 #~ msgid ""
 #~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
@@ -693,8 +676,28 @@ msgstr ""
 #~ "現在停止しているようですが、SMPlayer のチームでは YouTube の再生に関する修"
 #~ "正を施した新しいバージョンを提供しています。"
 
-#~ msgid "UMPlayer Screenshot"
-#~ msgstr "UMPlayer のスクリーンショット"
+#~ msgid ""
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
+#~ msgstr ""
+#~ "UMPlayer は SMPlayer の古いバージョンに基づいていますので、SMPlayer の新し"
+#~ "い機能は UMPlayer ではご利用になることができません。"
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "UMPlayer 0.98.1 をダウンロードする"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr ""
+#~ "このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれていま"
+#~ "す。"
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "umplayer をインストールするには、ターミナルでこれらのコマンドを実行してく"
+#~ "ださい:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "UMPlayer のソース"
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "フルパッケージを取得するにはこちらをクリックしてください"
