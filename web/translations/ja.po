@@ -365,7 +365,7 @@ msgstr "ミラー"
 
 #: ../footer.php:40
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -417,15 +417,15 @@ msgstr "言語"
 
 #: ../index.php:3
 msgid "SMPlayer - Opensource Media Player"
-msgstr ""
+msgstr "SMPlayer - オープンソースのメディアプレイヤー"
 
 #: ../index.php:20
 msgid "Free Opensource Media Player"
-msgstr ""
+msgstr "フリーでオープンソースのメディアプレイヤー"
 
 #: ../index.php:21
 msgid "GUI Front-end for MPlayer"
-msgstr ""
+msgstr "MPlayer の GUI フロントエンド"
 
 #: ../index.php:22
 msgid "Click here to download the latest version"
@@ -467,17 +467,19 @@ msgstr ""
 
 #: ../info.php:18
 msgid "Some other interesting features:"
-msgstr "特徴的な機能:"
+msgstr "その他の特徴:"
 
 #: ../info.php:22
 msgid "It can play and download Youtube videos."
-msgstr ""
+msgstr "YouTube 動画の再生/ダウンロード:"
 
 #: ../info.php:24
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
+"YouTube ブラウザーが同梱されており、動画のダウンロードも簡単に行うことができ"
+"ます。"
 
 #: ../info.php:25
 msgid ""
@@ -489,7 +491,7 @@ msgstr ""
 
 #: ../info.php:27
 msgid "Support for skins and icon themes."
-msgstr ""
+msgstr "スキンとアイコンテーマに対応。"
 
 #: ../info.php:28
 msgid "Possibility to search and download subtitles from %1."
@@ -547,6 +549,8 @@ msgid ""
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
+"多様な言語対応: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中"
+"国語、日本語など 30 を超える言語に翻訳されています。"
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
@@ -555,7 +559,7 @@ msgstr ""
 
 #: ../info.php:51
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-msgstr ""
+msgstr "SMPlayer 最新版のダウンロードは<a href=%1>こちら</a>"
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -679,53 +683,37 @@ msgid ""
 "%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
 "the SMPlayer team has released a new version which fixes Youtube playback."
 msgstr ""
+"%1 は %2 氏によって作成された SMPlayer のフォークです。このプロジェクトは現在"
+"停止しているようですが、SMPlayer のチームでは YouTube の再生に関する修正を施"
+"した新しいバージョンを提供しています。"
 
 #: ../umplayer.php:22
 msgid ""
 "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
 "features of SMPlayer are not available on UMPlayer."
 msgstr ""
+"UMPlayer は SMPlayer の古いバージョンに基づいており、そのため一部の新しい "
+"SMPlayer の機能は UMPlayer ではご利用になることができません。"
 
 #: ../umplayer.php:42
 msgid "Click here to get UMPlayer 0.98.1"
-msgstr ""
+msgstr "UMPlayer 0.98.1 をダウンロードする"
 
 #: ../umplayer.php:44
 msgid "This package contains umplayer, themes, translations and mplayer."
 msgstr ""
+"このパッケージには、UMPlayer、テーマ、翻訳および MPlayer が含まれています。"
 
 #: ../umplayer.php:58
 msgid "To install umplayer, just run these commands in a terminal:"
 msgstr ""
+"umplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
+"い:"
 
 #: ../umplayer.php:75
 msgid "UMPlayer sources"
-msgstr ""
+msgstr "UMPlayer のソース"
 
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
-msgstr ""
-
-#~ msgid ""
-#~ "Translations: currently SMPlayer is translated into more than 30 \n"
-#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-#~ "Japanese...."
-#~ msgstr ""
-#~ "翻訳: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中国語、"
-#~ "日本語など 30 を超える言語に訳されています。"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - 一般情報"
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "MPlayer のグラフィカルインターフェイス"
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "YouTube 動画の再生: YouTube ブラウザーが同梱されており、動画のダウンロード"
-#~ "も簡単に行えます。"
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "インターフェイスのスタイルやアイコンセットの変更"
+msgstr "UMPlayer のスクリーンショット"
