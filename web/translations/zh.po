@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 03:44+0100\n"
+"POT-Creation-Date: 2012-11-24 10:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,133 +17,378 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../index.php:3
-msgid "SMPlayer - General Info"
-msgstr "SMPlayer - 常规信息"
+#: ../contact.php:3
+msgid "SMPlayer - Contact us"
+msgstr "SMPlayer - 联系我们"
 
-#: ../index.php:20
-msgid "Graphical Interface for MPlayer"
-msgstr "适用于 MPlayer 的图形界面"
+#: ../contact.php:9 ../footer.php:45
+msgid "Contact us"
+msgstr "联系我们"
 
-#: ../index.php:21
-msgid "Click here to download the latest version"
-msgstr "点击这里下载最新版本"
+#: ../contact.php:12
+msgid ""
+"You can send your suggestions, patches, translations or whatever regarding \n"
+"smplayer, to %1"
+msgstr ""
+"您可以将您的建议、补丁、翻译或任何有关 SMPlayer\n"
+"的信息发送至 %1"
 
-#: ../index.php:33
-msgid "About SMPlayer"
-msgstr "关于 SMPlayer"
+#: ../contact.php:15
+msgid "You can write in English or Spanish."
+msgstr "您可以用英语或西班牙语写."
 
-#: ../index.php:39 ../footer.php:14 ../latest.php:9 ../smtube.php:57
-msgid "Latest changes"
-msgstr "最近更改"
+#: ../contact.php:18
+msgid "Support"
+msgstr "支持"
 
-#: ../index.php:50 ../header.php:153 ../downloads.php:59
+#: ../contact.php:21
+msgid "You can get help in our %1."
+msgstr "您可以在我们的%1中获取帮助."
+
+#: ../contact.php:21
+msgid "forum"
+msgstr "论坛"
+
+#: ../contact.php:23
+msgid "If you find bugs in smplayer you can report them in our %1."
+msgstr "如果您在 SMPlayer 中发现 Bug, 您可以在我们的%1中报告它们."
+
+#: ../contact.php:24
+msgid "bug tracker"
+msgstr "Bug 跟踪"
+
+#: ../contact.php:26
+msgid "You can request new features in our %1."
+msgstr "您可以在我们的%1中请求新功能."
+
+#: ../contact.php:27
+msgid "request tracker"
+msgstr "需求跟踪"
+
+#: ../contact.php:29
+msgid "Irc channel"
+msgstr "IRC 频道"
+
+#: ../contact.php:30
+msgid ""
+"Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
+msgstr "在 irc.oftc.net 加入 #smplayer (或点击%1 ,如果您的客户端支持它)."
+
+#: ../contact.php:31
+msgid "this link"
+msgstr "该链接"
+
+#: ../contact.php:34
+msgid "Credits"
+msgstr "贡献"
+
+#: ../contact.php:37
+msgid "main developer, webmaster, ubuntu packages, spanish translation"
+msgstr "主要开发者、网站管理员、Ubuntu 软件包、西班牙语翻译"
+
+#: ../contact.php:39
+msgid "windows packages, mplayer builds for windows"
+msgstr "Windows 软件包、适用于 Windows 的 MPlayer 编译"
+
+#: ../contact.php:41
+msgid "Conversion to svg by %1."
+msgstr "由 %1 转换为 SVG."
+
+#: ../contact.php:41
+msgid "smplayer logo"
+msgstr "SMPlayer 标志"
+
+#: ../contact.php:44
+msgid "Translators"
+msgstr "翻译"
+
+#: ../contact.php:47
+msgid ""
+"Many people worked on translations for smplayer. You can see the\n"
+"full list in the <i>about</i> dialog."
+msgstr ""
+"有很多人对 SMPlayer 进行了翻译工作.\n"
+"您可以在 <i>关于</i> 对话框中看到完整列表."
+
+#: ../contact.php:50
+msgid "Here is a list of the most active translators:"
+msgstr "这里是一个最活跃译者的列表:"
+
+#: ../contact.php:53
+msgid "Japanese"
+msgstr "日语"
+
+#: ../contact.php:54
+msgid "Portuguese"
+msgstr "葡萄牙语"
+
+#: ../contact.php:55
+msgid "Basque"
+msgstr "巴斯克语"
+
+#: ../contact.php:56
+msgid "Lithuanian"
+msgstr "立陶宛语"
+
+#: ../contact.php:57
+msgid "Simplified chinese"
+msgstr "简体中文"
+
+#: ../contact.php:64 ../footer.php:48
+msgid "Follow us on Twitter"
+msgstr "在 Twitter 上跟随我们"
+
+#: ../contact.php:66
+msgid "Mirrors"
+msgstr "镜像"
+
+#: ../downloads.php:3
+msgid "SMPlayer - Downloads"
+msgstr "SMPlayer - 下载"
+
+#: ../downloads.php:14 ../header.php:153 ../index.php:51 ../umplayer.php:31
 msgid "Downloads"
 msgstr "下载"
 
-#: ../info.php:4 ../formats.php:11
-msgid "Formats and Codecs"
-msgstr "格式和编解码器"
+#: ../downloads.php:24
+msgid "Click here to download SMPlayer %1"
+msgstr "点击这里下载 SMPlayer %1"
 
-#: ../info.php:10 ../downloads.php:48 ../smtube.php:17
+#: ../downloads.php:26
+msgid ""
+"This package contains smplayer, themes, translations, mplayer %1 and \n"
+"the YouTube browser (smtube)."
+msgstr ""
+"该软件包包含 SMPlayer、主题、翻译、MPlayer %1 和\n"
+"YouTube 浏览器 (SMTube)."
+
+#: ../downloads.php:29
+msgid "More info"
+msgstr "更多信息"
+
+#: ../downloads.php:41
+msgid ""
+"Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
+"new mplayer build with a lot of fixes."
+msgstr ""
+"测试即将发布的版本 0.8.2 的 beta 版. 特点: 新的 Skinnable UI 和编译有大量修补"
+"程序的新 MPlayer."
+
+#: ../downloads.php:43
+msgid "In case you find any problem, please report it in %1."
+msgstr "如果您发现任何问题, 请在%1中报告它."
+
+#: ../downloads.php:43
+msgid "our forum"
+msgstr "我们的论坛"
+
+#: ../downloads.php:53
+msgid "There are available other packages (like a portable version), %1."
+msgstr "还有可用的其他软件包 (例如便携版), %1."
+
+#: ../downloads.php:53
+msgid "here"
+msgstr "在这里"
+
+#: ../downloads.php:55
+msgid "If you wish you can also try the %1."
+msgstr "如果您愿意, 您也可以尝试%1."
+
+#: ../downloads.php:56
+msgid "development version"
+msgstr "开发版本"
+
+#: ../downloads.php:65
+msgid ""
+"<b>Notice:</b> on the first playback, a font cache will be \n"
+"created (necessary for OSD and subtitles). This can take up to 10 \n"
+"or 20 seconds. This is only done once."
+msgstr ""
+"<b>注意:</b> 第一次播放时, 将创建字体缓存(使用 OSD 和字幕的必要条件).\n"
+"这可能需要长达 10 或 20 秒.\n"
+"这只执行一次."
+
+#: ../downloads.php:80 ../umplayer.php:57
+msgid "Packages for Ubuntu:"
+msgstr "适用于 Ubuntu 的软件包:"
+
+#: ../downloads.php:81
+msgid "To install smplayer, just run these commands in a terminal:"
+msgstr "要安装 SMPlayer, 只需在终端运行这些命令:"
+
+#: ../downloads.php:95
+msgid "Contributed packages for other distros"
+msgstr "适用于其他发行版的贡献软件包"
+
+#: ../downloads.php:97
+msgid "List of packages contributed by other people."
+msgstr "由其他人所贡献软件包的列表."
+
+#: ../downloads.php:104 ../umplayer.php:70
+msgid "Sources"
+msgstr "源代码"
+
+#: ../downloads.php:143
+msgid "Information about the Windows installer"
+msgstr "有关 Windows 安装程序的信息"
+
+#: ../downloads.php:148
+msgid ""
+"For an easy installation on Windows we provide a package with installer."
+msgstr "为便于在 Windows 上安装, 我们提供了一个带有安装程序的软件包."
+
+#: ../downloads.php:151
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr "安装程序可能包含一个提议安装第三方应用程序的促销屏幕."
+
+#: ../downloads.php:153
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr "如果您对提议不感兴趣, 只需取消勾选该选项, SMPlayer 的安装将照常进行."
+
+#: ../downloads.php:155
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+"这个屏幕可让我们进一步改进 SMPlayer 并保持免费分发它. 我们恳请您的谅解."
+
+#: ../downloads.php:158
+msgid "Optional components"
+msgstr "可选组件"
+
+#: ../downloads.php:159
+msgid "The installer allows to select the components to install:"
+msgstr "安装程序允许选择要安装的组件:"
+
+#: ../downloads.php:161
+msgid "Languages"
+msgstr "语言"
+
+#: ../downloads.php:162
+msgid "Translations for more than 30 languages are provided."
+msgstr "提供超过 30 种语言的翻译."
+
+#: ../downloads.php:163
+msgid "If you uncheck this option, only English will be available."
+msgstr "如果您取消勾选该选项, 将只有英语可用."
+
+#: ../downloads.php:164
+msgid "Icon themes"
+msgstr "图标主题"
+
+#: ../downloads.php:165
+msgid ""
+"Some icon themes are provided, which allow to change the look of the "
+"application."
+msgstr "提供一些图标主题, 其允许更改应用程序的外观."
+
+#: ../downloads.php:166
+msgid "Binary codecs"
+msgstr "二进制编解码器"
+
+#: ../downloads.php:167
+msgid ""
+"If you check this option, some extra codecs will be downloaded and installed "
+"in the smplayer folder."
+msgstr ""
+"如果您勾选该选项, 一些附加的编解码器将被下载并安装在 SMPlayer 的文件夹中."
+
+#: ../downloads.php:168
+msgid "These codecs are only necessary for some uncommon formats."
+msgstr "这些编解码器只有一些不常见的格式才需要."
+
+#: ../downloads.php:170
+msgid "Uninstallation"
+msgstr "卸载"
+
+#. Before translating the string "uninstall smplayer" be sure
+#. it really shows translated under the Start menu,
+#. otherwise leave it in English
+#: ../downloads.php:175
+msgid ""
+"You can uninstall smplayer easily from the control panel or using the "
+"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
+"<i>Start</i> menu."
+msgstr ""
+"您可以从控制面板或使用 Windows <i>开始</i> 菜单中 SMPlayer 菜单的 "
+"<i>Uninstall SMPlayer</i> 选项轻松地卸载 SMPlayer."
+
+#: ../downloads.php:180 ../info.php:69 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "关闭"
 
-#: ../info.php:22
-msgid "see list"
-msgstr "见列表"
+#: ../footer.php:9
+msgid "Other links:"
+msgstr "其他链接:"
 
-#: ../info.php:17
+#: ../footer.php:14 ../index.php:40 ../latest.php:9 ../smtube.php:57
+#: ../umplayer.php:85
+msgid "Latest changes"
+msgstr "最近更改"
+
+#: ../footer.php:15
+msgid "Forum"
+msgstr "论坛"
+
+#: ../footer.php:26
+msgid "Bug Tracking"
+msgstr "Bug 跟踪"
+
+#: ../footer.php:27
+msgid "Feature Requests"
+msgstr "功能需求"
+
+#: ../footer.php:35 ../footer.php:37
+msgid "Mirror"
+msgstr "镜像"
+
+#: ../footer.php:40
+msgid "Wiki"
+msgstr ""
+
+#: ../formats.php:3
+msgid "SMPlayer - Formats and Codecs"
+msgstr "SMPlayer - 格式和编解码器"
+
+#.
+#. echo "<b>";
+#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
+#. "\"downloads.php?tr_lang=".$tr_lang."\"");
+#. echo "</b>";
+#.
+#: ../formats.php:11 ../info.php:63
+msgid "Formats and Codecs"
+msgstr "格式和编解码器"
+
+#: ../formats_text.php:3
 msgid ""
-"SMPlayer is a complete media player for Windows and Linux. It uses\n"
-"the award-winning %1 as playback engine which is capable of\n"
-"playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
-"It <b>uses its own codecs</b>, so you don't need to install any codec packs."
-msgstr "SMPlayer 是一个完备的媒体播放器, 可用于 Windows 和 Linux.\n它使用屡获殊荣的 %1 作为播放引擎,\n其能够播放大多数视频和音频格式 (avi、mkv、wmv、mp4、mpeg... %2).\n它<b>使用它自己的编解码器</b>, 因此您不需要安装任何编解码器包."
+"SMPlayer is a graphical interface for %1, which supports many video and "
+"audio formats and codecs."
+msgstr "SMPlayer 是一个用于 %1 的图形界面, 其支持多种视频音频格式和编解码器."
 
-#: ../info.php:24
-msgid ""
-"One of the most interesting features of SMPlayer: <b>it remembers the \n"
-"settings of all files you play</b>. So you start to watch a movie but you \n"
-"have to leave... don't worry, when you open that movie again it will \n"
-"resume at the same point you left it, and with the same settings: audio \n"
-"track, subtitles, volume..."
-msgstr "SMPlayer 最有趣的一个功能: <b>它会记住您播放所有文件的设置</b>.\n因此, 您开始观看一部电影, 但是您不得不离开...\n不用担心, 当您再次打开那部电影,\n它将恢复到您离开时的播放位置, 并使用相同的设置:\n音轨、字幕、音量..."
+#: ../formats_text.php:7
+msgid "Here is a complete list (from the MPlayer documentation):"
+msgstr "这里是一个完整的列表 (来源于 MPlayer 文档):"
 
-#: ../info.php:32
-msgid "Some other interesting features:"
-msgstr "一些其他有趣的功能:"
+#: ../formats_text.php:9
+msgid "Supported Input Formats"
+msgstr "支持的输入格式"
 
-#: ../info.php:34
-msgid ""
-"Complete preferences dialog, where you can change the key shortcuts,\n"
-"colors and fonts of the subtitles, and many more."
-msgstr "完备的首选项对话框,\n在这里您可以更改快捷键、字幕的颜色和字体, 以及更多选项."
+#: ../formats_text.php:37
+msgid "Supported Video and Audio Codecs"
+msgstr "支持的视频和音频编解码器"
 
-#: ../info.php:36
-msgid ""
-"Filters. Many video and audio filters are available: deinterlace, \n"
-"postprocessing, denoise... and even a karaoke filter (voice removal)."
-msgstr "过滤器. 有很多视频和音频过滤器可用: 去交错、后处理、降噪...\n甚至是卡拉 OK 过滤器 (去除人声)."
+#: ../formats_text.php:39
+msgid "most important video codecs:"
+msgstr "最重要的视频编解码器:"
 
-#: ../info.php:38
-msgid ""
-"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
-"or backward in the video."
-msgstr "通过鼠标滚轮定位.\n您可以使用鼠标滚轮在视频上前进或后退."
-
-#: ../info.php:39
-msgid "The mouse buttons can also be customized."
-msgstr "也可以将其自定义到鼠标按钮."
-
-#: ../info.php:40
-msgid ""
-"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
-"saturation and gamma of the video image."
-msgstr "视频均衡器,\n允许您调整视频图像的亮度、对比度、色调、饱和度和伽玛."
-
-#: ../info.php:42
-msgid ""
-"Multiple speed playback. You can play at 2X, 4X... and even in \n"
-"slow motion."
-msgstr "多种速度播放. 您可以以2倍、4倍速播放...\n甚至是慢动作."
-
-#: ../info.php:44
-msgid ""
-"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
-"subtitles."
-msgstr "音频和字幕延迟调整.\n允许您同步音频和字幕."
-
-#: ../info.php:46
-msgid ""
-"Advanced options, such as selecting a demuxer or video & \n"
-"audio codecs."
-msgstr "高级选项,\n例如选择解复用器或视频 & 音频编解码器."
-
-#: ../info.php:48
-msgid "Possibility to search and download subtitles from %1."
-msgstr "可以从 %1 搜索和下载字幕."
-
-#: ../info.php:50
-msgid ""
-"It can play Youtube videos. A Youtube browser is included, which\n"
-"allows to easily download Youtube videos too."
-msgstr "它可以播放 YouTube 视频. 一个 YouTube 浏览器已包含在内,\n同时也可以轻松地下载 YouTube 视频."
-
-#: ../info.php:52
-msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
-"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-"Japanese...."
-msgstr "翻译: 目前 SMPlayer 已被翻译成超过 30 种语言,\n包括西班牙语、德语、法语、意大利语、俄语、汉语、日语\n...."
-
-#: ../info.php:55
-msgid "Possibility to change the style and icon set of the interface."
-msgstr "可以更改界面的样式和图标集."
-
-#: ../info.php:56
-msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
+#: ../formats_text.php:64
+msgid "most important audio codecs:"
+msgstr "最重要的音频编解码器:"
 
 #: ../header.php:151
 msgid "Main"
@@ -157,193 +402,163 @@ msgstr "屏幕截图"
 msgid "Language"
 msgstr "语言"
 
-#: ../footer.php:9
-msgid "Other links:"
-msgstr "其他链接:"
+#: ../index.php:3
+msgid "SMPlayer - Opensource Media Player"
+msgstr ""
 
-#: ../footer.php:15
-msgid "Forum"
-msgstr "论坛"
+#: ../index.php:20
+msgid "Free Opensource Media Player"
+msgstr ""
 
-#: ../footer.php:20
-msgid "Bug Tracking"
-msgstr "Bug 跟踪"
+#: ../index.php:21
+msgid "GUI Front-end for MPlayer"
+msgstr ""
 
-#: ../footer.php:21
-msgid "Feature Requests"
-msgstr "功能需求"
+#: ../index.php:22
+msgid "Click here to download the latest version"
+msgstr "点击这里下载最新版本"
 
-#: ../footer.php:29 ../footer.php:31
-msgid "Mirror"
-msgstr "镜像"
+#: ../index.php:34
+msgid "About SMPlayer"
+msgstr "关于 SMPlayer"
 
-#: ../footer.php:39 ../contact.php:9
-msgid "Contact us"
-msgstr "联系我们"
-
-#: ../footer.php:42 ../contact.php:64
-msgid "Follow us on Twitter"
-msgstr "在 Twitter 上跟随我们"
-
-#: ../downloads.php:3
-msgid "SMPlayer - Downloads"
-msgstr "SMPlayer - 下载"
-
-#: ../downloads.php:11
-msgid "Information about the Windows installer"
-msgstr "有关 Windows 安装程序的信息"
-
-#: ../downloads.php:16
+#: ../info.php:3
 msgid ""
-"For an easy installation on Windows we provide a package with installer."
-msgstr "为便于在 Windows 上安装, 我们提供了一个带有安装程序的软件包."
+"SMPlayer is a complete media player for Windows and Linux. It uses\n"
+"the award-winning %1 as playback engine which is capable of\n"
+"playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
+"It <b>uses its own codecs</b>, so you don't need to install any codec packs."
+msgstr ""
+"SMPlayer 是一个完备的媒体播放器, 可用于 Windows 和 Linux.\n"
+"它使用屡获殊荣的 %1 作为播放引擎,\n"
+"其能够播放大多数视频和音频格式 (avi、mkv、wmv、mp4、mpeg... %2).\n"
+"它<b>使用它自己的编解码器</b>, 因此您不需要安装任何编解码器包."
 
-#: ../downloads.php:19
+#: ../info.php:8
+msgid "see list"
+msgstr "见列表"
+
+#: ../info.php:10
 msgid ""
-"The installer may contain a promotional screen with an offer to install a "
-"3rd party application."
-msgstr "安装程序可能包含一个提议安装第三方应用程序的促销屏幕."
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+"SMPlayer 最有趣的一个功能: <b>它会记住您播放所有文件的设置</b>.\n"
+"因此, 您开始观看一部电影, 但是您不得不离开...\n"
+"不用担心, 当您再次打开那部电影,\n"
+"它将恢复到您离开时的播放位置, 并使用相同的设置:\n"
+"音轨、字幕、音量..."
 
-#: ../downloads.php:21
+#: ../info.php:18
+msgid "Some other interesting features:"
+msgstr "一些其他有趣的功能:"
+
+#: ../info.php:22
+msgid "It can play and download Youtube videos."
+msgstr ""
+
+#: ../info.php:24
 msgid ""
-"If you aren't interested in the offer, just uncheck the option(s) and the "
-"installation of smplayer will proceed as usual."
-msgstr "如果您对提议不感兴趣, 只需取消勾选该选项, SMPlayer 的安装将照常进行."
+"A Youtube browser is included, which allows to easily download Youtube "
+"videos too."
+msgstr ""
 
-#: ../downloads.php:23
+#: ../info.php:25
 msgid ""
-"This screen allows us to further improve smplayer and keep distributing it "
-"for free. We ask for your understanding."
-msgstr "这个屏幕可让我们进一步改进 SMPlayer 并保持免费分发它. 我们恳请您的谅解."
+"Complete preferences dialog, where you can change the key shortcuts,\n"
+"colors and fonts of the subtitles, and many more."
+msgstr ""
+"完备的首选项对话框,\n"
+"在这里您可以更改快捷键、字幕的颜色和字体, 以及更多选项."
 
-#: ../downloads.php:26
-msgid "Optional components"
-msgstr "可选组件"
+#: ../info.php:27
+msgid "Possibility to change the skin and style."
+msgstr ""
 
-#: ../downloads.php:27
-msgid "The installer allows to select the components to install:"
-msgstr "安装程序允许选择要安装的组件:"
-
-#: ../downloads.php:29
-msgid "Languages"
-msgstr "语言"
-
-#: ../downloads.php:30
-msgid "Translations for more than 30 languages are provided."
-msgstr "提供超过 30 种语言的翻译."
-
-#: ../downloads.php:31
-msgid "If you uncheck this option, only English will be available."
-msgstr "如果您取消勾选该选项, 将只有英语可用."
-
-#: ../downloads.php:32
-msgid "Icon themes"
-msgstr "图标主题"
-
-#: ../downloads.php:33
+#: ../info.php:28
 msgid ""
-"Some icon themes are provided, which allow to change the look of the "
-"application."
-msgstr "提供一些图标主题, 其允许更改应用程序的外观."
+"Filters. Many video and audio filters are available: deinterlace, \n"
+"postprocessing, denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+"过滤器. 有很多视频和音频过滤器可用: 去交错、后处理、降噪...\n"
+"甚至是卡拉 OK 过滤器 (去除人声)."
 
-#: ../downloads.php:34
-msgid "Binary codecs"
-msgstr "二进制编解码器"
-
-#: ../downloads.php:35
+#: ../info.php:30
 msgid ""
-"If you check this option, some extra codecs will be downloaded and installed "
-"in the smplayer folder."
-msgstr "如果您勾选该选项, 一些附加的编解码器将被下载并安装在 SMPlayer 的文件夹中."
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+"通过鼠标滚轮定位.\n"
+"您可以使用鼠标滚轮在视频上前进或后退."
 
-#: ../downloads.php:36
-msgid "These codecs are only necessary for some uncommon formats."
-msgstr "这些编解码器只有一些不常见的格式才需要."
+#: ../info.php:31
+msgid "The mouse buttons can also be customized."
+msgstr "也可以将其自定义到鼠标按钮."
 
-#: ../downloads.php:38
-msgid "Uninstallation"
-msgstr "卸载"
-
-#. Before translating the string "uninstall smplayer" be sure
-#. it really shows translated under the Start menu,
-#. otherwise leave it in English
-#: ../downloads.php:43
+#: ../info.php:32
 msgid ""
-"You can uninstall smplayer easily from the control panel or using the "
-"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
-"<i>Start</i> menu."
-msgstr "您可以从控制面板或使用 Windows <i>开始</i> 菜单中 SMPlayer 菜单的 <i>Uninstall SMPlayer</i> 选项轻松地卸载 SMPlayer."
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+"视频均衡器,\n"
+"允许您调整视频图像的亮度、对比度、色调、饱和度和伽玛."
 
-#: ../downloads.php:69
-msgid "Click here to download SMPlayer %1"
-msgstr "点击这里下载 SMPlayer %1"
-
-#: ../downloads.php:71
+#: ../info.php:34
 msgid ""
-"This package contains smplayer, themes, translations, mplayer %1 and \n"
-"the YouTube browser (smtube)."
-msgstr "该软件包包含 SMPlayer、主题、翻译、MPlayer %1 和\nYouTube 浏览器 (SMTube)."
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr ""
+"多种速度播放. 您可以以2倍、4倍速播放...\n"
+"甚至是慢动作."
 
-#: ../downloads.php:74
-msgid "More info"
-msgstr "更多信息"
-
-#: ../downloads.php:86
+#: ../info.php:36
 msgid ""
-"Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
-"new mplayer build with a lot of fixes."
-msgstr "测试即将发布的版本 0.8.2 的 beta 版. 特点: 新的 Skinnable UI 和编译有大量修补程序的新 MPlayer."
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr ""
+"音频和字幕延迟调整.\n"
+"允许您同步音频和字幕."
 
-#: ../downloads.php:88
-msgid "our forum"
-msgstr "我们的论坛"
-
-#: ../downloads.php:88
-msgid "In case you find any problem, please report it in %1."
-msgstr "如果您发现任何问题, 请在%1中报告它."
-
-#: ../downloads.php:98
-msgid "here"
-msgstr "在这里"
-
-#: ../downloads.php:98
-msgid "There are available other packages (like a portable version), %1."
-msgstr "还有可用的其他软件包 (例如便携版), %1."
-
-#: ../downloads.php:101
-msgid "development version"
-msgstr "开发版本"
-
-#: ../downloads.php:100
-msgid "If you wish you can also try the %1."
-msgstr "如果您愿意, 您也可以尝试%1."
-
-#: ../downloads.php:110
+#: ../info.php:38
 msgid ""
-"<b>Notice:</b> on the first playback, a font cache will be \n"
-"created (necessary for OSD and subtitles). This can take up to 10 \n"
-"or 20 seconds. This is only done once."
-msgstr "<b>注意:</b> 第一次播放时, 将创建字体缓存(使用 OSD 和字幕的必要条件).\n这可能需要长达 10 或 20 秒.\n这只执行一次."
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr ""
+"高级选项,\n"
+"例如选择解复用器或视频 & 音频编解码器."
 
-#: ../downloads.php:125
-msgid "Packages for Ubuntu:"
-msgstr "适用于 Ubuntu 的软件包:"
+#: ../info.php:40
+msgid "Possibility to search and download subtitles from %1."
+msgstr "可以从 %1 搜索和下载字幕."
 
-#: ../downloads.php:126
-msgid "To install smplayer, just run these commands in a terminal:"
-msgstr "要安装 SMPlayer, 只需在终端运行这些命令:"
+#: ../info.php:42
+msgid ""
+"Translations: currently SMPlayer is translated into more than 30 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+"翻译: 目前 SMPlayer 已被翻译成超过 30 种语言,\n"
+"包括西班牙语、德语、法语、意大利语、俄语、汉语、日语\n"
+"...."
 
-#: ../downloads.php:140
-msgid "Contributed packages for other distros"
-msgstr "适用于其他发行版的贡献软件包"
+#: ../info.php:45
+msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
 
-#: ../downloads.php:142
-msgid "List of packages contributed by other people."
-msgstr "由其他人所贡献软件包的列表."
+#: ../latest.php:3
+msgid "SMPlayer - Latest Changes"
+msgstr "SMPlayer - 最近更改"
 
-#: ../downloads.php:149
-msgid "Sources"
-msgstr "源代码"
+#: ../latest.php:10
+msgid "Here you can find a list with the latest changes in SMPlayer:"
+msgstr "在这里您可以找到一个含有 SMPlayer 最近更改的列表:"
+
+#: ../latest.php:21
+msgid "Go to the download page"
+msgstr "转到下载页面"
 
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
@@ -401,48 +616,6 @@ msgstr "Mac 皮肤"
 msgid "The skin Modern"
 msgstr "现代皮肤"
 
-#: ../latest.php:3
-msgid "SMPlayer - Latest Changes"
-msgstr "SMPlayer - 最近更改"
-
-#: ../latest.php:10
-msgid "Here you can find a list with the latest changes in SMPlayer:"
-msgstr "在这里您可以找到一个含有 SMPlayer 最近更改的列表:"
-
-#: ../latest.php:21
-msgid "Go to the download page"
-msgstr "转到下载页面"
-
-#: ../formats.php:3
-msgid "SMPlayer - Formats and Codecs"
-msgstr "SMPlayer - 格式和编解码器"
-
-#: ../formats_text.php:3
-msgid ""
-"SMPlayer is a graphical interface for %1, which supports many video and "
-"audio formats and codecs."
-msgstr "SMPlayer 是一个用于 %1 的图形界面, 其支持多种视频音频格式和编解码器."
-
-#: ../formats_text.php:7
-msgid "Here is a complete list (from the MPlayer documentation):"
-msgstr "这里是一个完整的列表 (来源于 MPlayer 文档):"
-
-#: ../formats_text.php:9
-msgid "Supported Input Formats"
-msgstr "支持的输入格式"
-
-#: ../formats_text.php:37
-msgid "Supported Video and Audio Codecs"
-msgstr "支持的视频和音频编解码器"
-
-#: ../formats_text.php:39
-msgid "most important video codecs:"
-msgstr "最重要的视频编解码器:"
-
-#: ../formats_text.php:64
-msgid "most important audio codecs:"
-msgstr "最重要的音频编解码器:"
-
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
 msgstr "SMTube 屏幕截图"
@@ -453,7 +626,10 @@ msgid ""
 "The code was taken from %1 (developed by %2). \n"
 "This browser allows to search Youtube videos but it's also capable of "
 "downloading them."
-msgstr "SMPlayer 现在包含一个我们称之为 <i>SMTube</i> 的 YouTube 浏览器.\n该代码源自 %1 (由 %2 开发).\n这个浏览器允许搜索 YouTube 视频, 不过其也能够下载它们."
+msgstr ""
+"SMPlayer 现在包含一个我们称之为 <i>SMTube</i> 的 YouTube 浏览器.\n"
+"该代码源自 %1 (由 %2 开发).\n"
+"这个浏览器允许搜索 YouTube 视频, 不过其也能够下载它们."
 
 #: ../smtube.php:40
 msgid "Several improvements have been done:"
@@ -464,7 +640,9 @@ msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
-msgstr "它现在是一个独立的应用程序, 您可以选择要使用的视频播放器\n(SMPlayer、MPlayer、VLC、Dragon Player、Totem 或 Gnome-MPlayer)."
+msgstr ""
+"它现在是一个独立的应用程序, 您可以选择要使用的视频播放器\n"
+"(SMPlayer、MPlayer、VLC、Dragon Player、Totem 或 Gnome-MPlayer)."
 
 #: ../smtube.php:44
 msgid "It's possible to translate the application to other languages."
@@ -484,115 +662,50 @@ msgid ""
 "independent package."
 msgstr "SMTube 已经包含在 Windows 软件包中, 但在 Linux 上它是一个独立的软件包."
 
-#: ../contact.php:3
-msgid "SMPlayer - Contact us"
-msgstr "SMPlayer - 联系我们"
-
-#: ../contact.php:12
+#: ../umplayer.php:15
 msgid ""
-"You can send your suggestions, patches, translations or whatever regarding \n"
-"smplayer, to %1"
-msgstr "您可以将您的建议、补丁、翻译或任何有关 SMPlayer\n的信息发送至 %1"
+"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
+"the SMPlayer team has released a new version which fixes Youtube playback."
+msgstr ""
 
-#: ../contact.php:15
-msgid "You can write in English or Spanish."
-msgstr "您可以用英语或西班牙语写."
-
-#: ../contact.php:18
-msgid "Support"
-msgstr "支持"
-
-#: ../contact.php:21
-msgid "forum"
-msgstr "论坛"
-
-#: ../contact.php:21
-msgid "You can get help in our %1."
-msgstr "您可以在我们的%1中获取帮助."
-
-#: ../contact.php:24
-msgid "bug tracker"
-msgstr "Bug 跟踪"
-
-#: ../contact.php:23
-msgid "If you find bugs in smplayer you can report them in our %1."
-msgstr "如果您在 SMPlayer 中发现 Bug, 您可以在我们的%1中报告它们."
-
-#: ../contact.php:27
-msgid "request tracker"
-msgstr "需求跟踪"
-
-#: ../contact.php:26
-msgid "You can request new features in our %1."
-msgstr "您可以在我们的%1中请求新功能."
-
-#: ../contact.php:29
-msgid "Irc channel"
-msgstr "IRC 频道"
-
-#: ../contact.php:31
-msgid "this link"
-msgstr "该链接"
-
-#: ../contact.php:30
+#: ../umplayer.php:22
 msgid ""
-"Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
-msgstr "在 irc.oftc.net 加入 #smplayer (或点击%1 ,如果您的客户端支持它)."
+"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+"features of SMPlayer are not available on UMPlayer."
+msgstr ""
 
-#: ../contact.php:34
-msgid "Credits"
-msgstr "贡献"
+#: ../umplayer.php:42
+msgid "Click here to get UMPlayer 0.98.1"
+msgstr ""
 
-#: ../contact.php:37
-msgid "main developer, webmaster, ubuntu packages, spanish translation"
-msgstr "主要开发者、网站管理员、Ubuntu 软件包、西班牙语翻译"
+#: ../umplayer.php:44
+msgid "This package contains umplayer, themes, translations and mplayer."
+msgstr ""
 
-#: ../contact.php:39
-msgid "windows packages, mplayer builds for windows"
-msgstr "Windows 软件包、适用于 Windows 的 MPlayer 编译"
+#: ../umplayer.php:58
+msgid "To install umplayer, just run these commands in a terminal:"
+msgstr ""
 
-#: ../contact.php:41
-msgid "smplayer logo"
-msgstr "SMPlayer 标志"
+#: ../umplayer.php:75
+msgid "UMPlayer sources"
+msgstr ""
 
-#: ../contact.php:41
-msgid "Conversion to svg by %1."
-msgstr "由 %1 转换为 SVG."
+#: ../umplayer.php:111
+msgid "UMPlayer Screenshot"
+msgstr ""
 
-#: ../contact.php:44
-msgid "Translators"
-msgstr "翻译"
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - 常规信息"
 
-#: ../contact.php:47
-msgid ""
-"Many people worked on translations for smplayer. You can see the\n"
-"full list in the <i>about</i> dialog."
-msgstr "有很多人对 SMPlayer 进行了翻译工作.\n您可以在 <i>关于</i> 对话框中看到完整列表."
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "适用于 MPlayer 的图形界面"
 
-#: ../contact.php:50
-msgid "Here is a list of the most active translators:"
-msgstr "这里是一个最活跃译者的列表:"
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "它可以播放 YouTube 视频. 一个 YouTube 浏览器已包含在内,\n"
+#~ "同时也可以轻松地下载 YouTube 视频."
 
-#: ../contact.php:53
-msgid "Japanese"
-msgstr "日语"
-
-#: ../contact.php:54
-msgid "Portuguese"
-msgstr "葡萄牙语"
-
-#: ../contact.php:55
-msgid "Basque"
-msgstr "巴斯克语"
-
-#: ../contact.php:56
-msgid "Lithuanian"
-msgstr "立陶宛语"
-
-#: ../contact.php:57
-msgid "Simplified chinese"
-msgstr "简体中文"
-
-#: ../contact.php:66
-msgid "Mirrors"
-msgstr "镜像"
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "可以更改界面的样式和图标集."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 03:44+0100\n"
+"POT-Creation-Date: 2012-11-24 10:44+0100\n"
 "PO-Revision-Date: 2012-11-06 08:25+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Susisiekite su mumis"
 
-#: ../contact.php:9 ../footer.php:39
+#: ../contact.php:9 ../footer.php:45
 msgid "Contact us"
 msgstr "Susisiekite su mumis"
 
@@ -141,7 +141,7 @@ msgstr "Lietuvių"
 msgid "Simplified chinese"
 msgstr "Supaprastinta kinų"
 
-#: ../contact.php:64 ../footer.php:42
+#: ../contact.php:64 ../footer.php:48
 msgid "Follow us on Twitter"
 msgstr "Sekite mus Twitter"
 
@@ -153,116 +153,15 @@ msgstr "Veidrodžiai"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Atsisiuntimai"
 
-#: ../downloads.php:11
-msgid "Information about the Windows installer"
-msgstr "Informacija apie Windows diegyklę"
-
-#: ../downloads.php:16
-msgid ""
-"For an easy installation on Windows we provide a package with installer."
-msgstr ""
-"Paprastesniam diegimui Windows sistemoje, mes suteikiame paketą su diegykle."
-
-#: ../downloads.php:19
-msgid ""
-"The installer may contain a promotional screen with an offer to install a "
-"3rd party application."
-msgstr ""
-"Diegyklė gali turėti reklamos ekraną su siūlymu diegti trečiosios šalies "
-"programą."
-
-#: ../downloads.php:21
-msgid ""
-"If you aren't interested in the offer, just uncheck the option(s) and the "
-"installation of smplayer will proceed as usual."
-msgstr ""
-"Jei jūsų nedomina pasiūlymas, tiesiog atžymėkite tą parinkty(-is) ir tęskite "
-"diegimą kaip įprasta."
-
-#: ../downloads.php:23
-msgid ""
-"This screen allows us to further improve smplayer and keep distributing it "
-"for free. We ask for your understanding."
-msgstr ""
-"Šis ekranas leidžia mums toliau kurti ir neapmokestinti smplayer. Supraskite "
-"ir mus."
-
-#: ../downloads.php:26
-msgid "Optional components"
-msgstr "Nebūtini komponentai"
-
-#: ../downloads.php:27
-msgid "The installer allows to select the components to install:"
-msgstr "Diegyklė leidžia pasirinkti kuriuos komponentus norėsite įdiegti:"
-
-#: ../downloads.php:29
-msgid "Languages"
-msgstr "Kalbos"
-
-#: ../downloads.php:30
-msgid "Translations for more than 30 languages are provided."
-msgstr "Pateikiami vertimai į daugiau nei 30 kalbų."
-
-#: ../downloads.php:31
-msgid "If you uncheck this option, only English will be available."
-msgstr "Jei atžymėsite šią parinkty, bus prieinama tik Anglų."
-
-#: ../downloads.php:32
-msgid "Icon themes"
-msgstr "Piktogramų temos"
-
-#: ../downloads.php:33
-msgid ""
-"Some icon themes are provided, which allow to change the look of the "
-"application."
-msgstr ""
-"Suteikiamos kelios piktogramų temos, kurios leis pakeisti programos išvaizdą."
-
-#: ../downloads.php:34
-msgid "Binary codecs"
-msgstr "Sukompiliuoti kodekai"
-
-#: ../downloads.php:35
-msgid ""
-"If you check this option, some extra codecs will be downloaded and installed "
-"in the smplayer folder."
-msgstr ""
-"Jei pažymėsite šią parinkty, į smplayer aplanką bus parsisųsti ir įdiegti "
-"keli papildomi kodekai."
-
-#: ../downloads.php:36
-msgid "These codecs are only necessary for some uncommon formats."
-msgstr "Šie kodekai reikalingi tik keliem retiem formatams."
-
-#: ../downloads.php:38
-msgid "Uninstallation"
-msgstr "Šalinimas"
-
-#. Before translating the string "uninstall smplayer" be sure
-#. it really shows translated under the Start menu,
-#. otherwise leave it in English
-#: ../downloads.php:43
-msgid ""
-"You can uninstall smplayer easily from the control panel or using the "
-"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
-"<i>Start</i> menu."
-msgstr ""
-"Galite pašalinti smplayer per valdymo skydą arba naudodami <i>pašalinti "
-"smplayer</i> parinkty windows pradžios meniu."
-
-#: ../downloads.php:48 ../info.php:10 ../smtube.php:17
-msgid "Close"
-msgstr "Užverti"
-
-#: ../downloads.php:59 ../header.php:153 ../index.php:50
+#: ../downloads.php:14 ../header.php:153 ../index.php:51 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Atsisiuntimai"
 
-#: ../downloads.php:69
+#: ../downloads.php:24
 msgid "Click here to download SMPlayer %1"
 msgstr ""
 
-#: ../downloads.php:71
+#: ../downloads.php:26
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -270,41 +169,41 @@ msgstr ""
 "Šiame pakete yra smplayer, temos, vertimai, mplayer %1 ir \n"
 "YouTube naršyklė (smtube)."
 
-#: ../downloads.php:74
+#: ../downloads.php:29
 msgid "More info"
 msgstr "Daugiau informacijos"
 
-#: ../downloads.php:86
+#: ../downloads.php:41
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
 msgstr ""
 
-#: ../downloads.php:88
+#: ../downloads.php:43
 msgid "In case you find any problem, please report it in %1."
 msgstr ""
 
-#: ../downloads.php:88
+#: ../downloads.php:43
 msgid "our forum"
 msgstr ""
 
-#: ../downloads.php:98
+#: ../downloads.php:53
 msgid "There are available other packages (like a portable version), %1."
 msgstr "%1 yra ir kitų paketų (tokių kaip nešiojama versija)."
 
-#: ../downloads.php:98
+#: ../downloads.php:53
 msgid "here"
 msgstr "čia"
 
-#: ../downloads.php:100
+#: ../downloads.php:55
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:101
+#: ../downloads.php:56
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:110
+#: ../downloads.php:65
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -314,31 +213,133 @@ msgstr ""
 "podėlis (būtina OSD ir subtitrams). Tai gali užtrukti iki 10\n"
 "ar 20 sekundžių. Tai daroma tik kartą."
 
-#: ../downloads.php:125
+#: ../downloads.php:80 ../umplayer.php:57
 msgid "Packages for Ubuntu:"
 msgstr "Ubuntu paketai:"
 
-#: ../downloads.php:126
+#: ../downloads.php:81
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Norėdami įdiegti smplayer, terminale įvykdykite šias komandas:"
 
-#: ../downloads.php:140
+#: ../downloads.php:95
 msgid "Contributed packages for other distros"
 msgstr "Paketai kitiems distributyvams"
 
-#: ../downloads.php:142
+#: ../downloads.php:97
 msgid "List of packages contributed by other people."
 msgstr "Paketų sąrašas kuriuos sukūrė kiti žmonės."
 
-#: ../downloads.php:149
+#: ../downloads.php:104 ../umplayer.php:70
 msgid "Sources"
 msgstr "Pradiniai kodai"
+
+#: ../downloads.php:143
+msgid "Information about the Windows installer"
+msgstr "Informacija apie Windows diegyklę"
+
+#: ../downloads.php:148
+msgid ""
+"For an easy installation on Windows we provide a package with installer."
+msgstr ""
+"Paprastesniam diegimui Windows sistemoje, mes suteikiame paketą su diegykle."
+
+#: ../downloads.php:151
+msgid ""
+"The installer may contain a promotional screen with an offer to install a "
+"3rd party application."
+msgstr ""
+"Diegyklė gali turėti reklamos ekraną su siūlymu diegti trečiosios šalies "
+"programą."
+
+#: ../downloads.php:153
+msgid ""
+"If you aren't interested in the offer, just uncheck the option(s) and the "
+"installation of smplayer will proceed as usual."
+msgstr ""
+"Jei jūsų nedomina pasiūlymas, tiesiog atžymėkite tą parinkty(-is) ir tęskite "
+"diegimą kaip įprasta."
+
+#: ../downloads.php:155
+msgid ""
+"This screen allows us to further improve smplayer and keep distributing it "
+"for free. We ask for your understanding."
+msgstr ""
+"Šis ekranas leidžia mums toliau kurti ir neapmokestinti smplayer. Supraskite "
+"ir mus."
+
+#: ../downloads.php:158
+msgid "Optional components"
+msgstr "Nebūtini komponentai"
+
+#: ../downloads.php:159
+msgid "The installer allows to select the components to install:"
+msgstr "Diegyklė leidžia pasirinkti kuriuos komponentus norėsite įdiegti:"
+
+#: ../downloads.php:161
+msgid "Languages"
+msgstr "Kalbos"
+
+#: ../downloads.php:162
+msgid "Translations for more than 30 languages are provided."
+msgstr "Pateikiami vertimai į daugiau nei 30 kalbų."
+
+#: ../downloads.php:163
+msgid "If you uncheck this option, only English will be available."
+msgstr "Jei atžymėsite šią parinkty, bus prieinama tik Anglų."
+
+#: ../downloads.php:164
+msgid "Icon themes"
+msgstr "Piktogramų temos"
+
+#: ../downloads.php:165
+msgid ""
+"Some icon themes are provided, which allow to change the look of the "
+"application."
+msgstr ""
+"Suteikiamos kelios piktogramų temos, kurios leis pakeisti programos išvaizdą."
+
+#: ../downloads.php:166
+msgid "Binary codecs"
+msgstr "Sukompiliuoti kodekai"
+
+#: ../downloads.php:167
+msgid ""
+"If you check this option, some extra codecs will be downloaded and installed "
+"in the smplayer folder."
+msgstr ""
+"Jei pažymėsite šią parinkty, į smplayer aplanką bus parsisųsti ir įdiegti "
+"keli papildomi kodekai."
+
+#: ../downloads.php:168
+msgid "These codecs are only necessary for some uncommon formats."
+msgstr "Šie kodekai reikalingi tik keliem retiem formatams."
+
+#: ../downloads.php:170
+msgid "Uninstallation"
+msgstr "Šalinimas"
+
+#. Before translating the string "uninstall smplayer" be sure
+#. it really shows translated under the Start menu,
+#. otherwise leave it in English
+#: ../downloads.php:175
+msgid ""
+"You can uninstall smplayer easily from the control panel or using the "
+"<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
+"<i>Start</i> menu."
+msgstr ""
+"Galite pašalinti smplayer per valdymo skydą arba naudodami <i>pašalinti "
+"smplayer</i> parinkty windows pradžios meniu."
+
+#: ../downloads.php:180 ../info.php:69 ../smtube.php:17 ../umplayer.php:117
+msgid "Close"
+msgstr "Užverti"
 
 #: ../footer.php:9
 msgid "Other links:"
 msgstr "Kitos nuorodos:"
 
-#: ../footer.php:14 ../index.php:39 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:40 ../latest.php:9 ../smtube.php:57
+#: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "Paskutiniai pakeitimai"
 
@@ -346,23 +347,33 @@ msgstr "Paskutiniai pakeitimai"
 msgid "Forum"
 msgstr "Forumas"
 
-#: ../footer.php:20
+#: ../footer.php:26
 msgid "Bug Tracking"
 msgstr "Pranešimai apie klaidas"
 
-#: ../footer.php:21
+#: ../footer.php:27
 msgid "Feature Requests"
 msgstr "Naujų galimybių prašymai"
 
-#: ../footer.php:29 ../footer.php:31
+#: ../footer.php:35 ../footer.php:37
 msgid "Mirror"
 msgstr "Veidrodis"
+
+#: ../footer.php:40
+msgid "Wiki"
+msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatai ir kodekai"
 
-#: ../formats.php:11 ../info.php:4
+#.
+#. echo "<b>";
+#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
+#. "\"downloads.php?tr_lang=".$tr_lang."\"");
+#. echo "</b>";
+#.
+#: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "Formatai ir kodekai"
 
@@ -407,22 +418,26 @@ msgid "Language"
 msgstr "Kalba"
 
 #: ../index.php:3
-msgid "SMPlayer - General Info"
-msgstr "SMPlayer - Bendra informacija"
+msgid "SMPlayer - Opensource Media Player"
+msgstr ""
 
 #: ../index.php:20
-msgid "Graphical Interface for MPlayer"
-msgstr "Grafinė MPlayer sąsaja"
+msgid "Free Opensource Media Player"
+msgstr ""
 
 #: ../index.php:21
+msgid "GUI Front-end for MPlayer"
+msgstr ""
+
+#: ../index.php:22
 msgid "Click here to download the latest version"
 msgstr "Norėdami parsisiųsti naujausią versiją paspauskite čia"
 
-#: ../index.php:33
+#: ../index.php:34
 msgid "About SMPlayer"
 msgstr "Apie SMPlayer"
 
-#: ../info.php:17
+#: ../info.php:3
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -436,11 +451,11 @@ msgstr ""
 "Jis naudoja <b>savo kodekus</b>, taigi jums neteks diegti jokių kodekų "
 "paketų."
 
-#: ../info.php:22
+#: ../info.php:8
 msgid "see list"
 msgstr "peržiūrėkite sąrašą"
 
-#: ../info.php:24
+#: ../info.php:10
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -455,11 +470,21 @@ msgstr ""
 "tos vietos kur palikote, taipogi su tais pačiais nustatymais: garso\n"
 "takeliu, subtitrais, garsu..."
 
-#: ../info.php:32
+#: ../info.php:18
 msgid "Some other interesting features:"
 msgstr "Dar kelios įdomios galimybės:"
 
-#: ../info.php:34
+#: ../info.php:22
+msgid "It can play and download Youtube videos."
+msgstr ""
+
+#: ../info.php:24
+msgid ""
+"A Youtube browser is included, which allows to easily download Youtube "
+"videos too."
+msgstr ""
+
+#: ../info.php:25
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -467,7 +492,11 @@ msgstr ""
 "Pilnas nustatymų dialogas, kuriame galite keisti greituosius klavišus,\n"
 "subtitrų spalvas, šriftus ir daug daugiau."
 
-#: ../info.php:36
+#: ../info.php:27
+msgid "Possibility to change the skin and style."
+msgstr ""
+
+#: ../info.php:28
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -476,7 +505,7 @@ msgstr ""
 "papildomo apdorojimo, triukšmų šalinimo... ir netgi karaoke filtrą(balso "
 "pašalinimo)."
 
-#: ../info.php:38
+#: ../info.php:30
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -484,11 +513,11 @@ msgstr ""
 "Prasukimas naudojantis pelės ratuku. Su pelės ratuku filmą galite\n"
 "prasukti pirmyn ar atgal."
 
-#: ../info.php:39
+#: ../info.php:31
 msgid "The mouse buttons can also be customized."
 msgstr "Tai pogi galima derinti ir pelės mygtukus."
 
-#: ../info.php:40
+#: ../info.php:32
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -496,7 +525,7 @@ msgstr ""
 "Video ekvalaizeris, leidžia reguliuoti video failų ryškumą, kontrastą,\n"
 "atspalvius, grynumą ir gamą."
 
-#: ../info.php:42
+#: ../info.php:34
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -504,7 +533,7 @@ msgstr ""
 "Keli atkūrimo greičiai. Galite atkurti 2X, 4X... greičiais ir netgi\n"
 "sulėtintame režime."
 
-#: ../info.php:44
+#: ../info.php:36
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -512,7 +541,7 @@ msgstr ""
 "Garso ir subtitrų delsos nustatymas. Leidžia susinchronizuoti\n"
 "garsą ir subtitrus."
 
-#: ../info.php:46
+#: ../info.php:38
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -520,19 +549,11 @@ msgstr ""
 "Papildomos parinktys, tokios kaip demukserio ar video ir garso\n"
 "kodekų pasirinkimas."
 
-#: ../info.php:48
+#: ../info.php:40
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Galimybė ieškoti ir parsiųsti subtitrus iš %1."
 
-#: ../info.php:50
-msgid ""
-"It can play Youtube videos. A Youtube browser is included, which\n"
-"allows to easily download Youtube videos too."
-msgstr ""
-"Jis gali atkurti Yotuube vaizdo įrašus. Įterpta Youtube naršyklė, kuri\n"
-"leidžia lengvai parsiųsti Youtube vaizdo įrašus."
-
-#: ../info.php:52
+#: ../info.php:42
 msgid ""
 "Translations: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -542,11 +563,7 @@ msgstr ""
 "įskaitant Lietuvių, Rusų, Ispanų, Vokiečių, Prancūzų, Italų, Kinų, \n"
 "Japonų..."
 
-#: ../info.php:55
-msgid "Possibility to change the style and icon set of the interface."
-msgstr "Galimybė keisti sąsajos stilių ir piktogramų rinkinius."
-
-#: ../info.php:56
+#: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "Nemokama ir atviro kodo. SMPlayer galioja <b>GPL</b> licencija."
 
@@ -666,38 +683,57 @@ msgid ""
 msgstr ""
 "Windows pakete SMTube jau yra, tik Linux sistemai tai atskiras paketas."
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#: ../umplayer.php:15
+msgid ""
+"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
+"the SMPlayer team has released a new version which fixes Youtube playback."
+msgstr ""
+"%1 yra SMPlayer atšaka kurią sukūrė %2. Kadangi šis projektas miręs,\n"
+"SMPlayer komanda išleido naują versiją kuri pataiso Youtube atkūrimą."
 
-#~ msgid "UMPlayer Screenshot"
-#~ msgstr "UMPlayer ekranvaizdis"
+#: ../umplayer.php:22
+msgid ""
+"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+"features of SMPlayer are not available on UMPlayer."
+msgstr ""
+"Turėkite omeny jog UMPlayer paremtas sena SMPlayer versija, taigi\n"
+"naujų SMPlayer galimybių UMPlayer neturi."
+
+#: ../umplayer.php:42
+msgid "Click here to get UMPlayer 0.98.1"
+msgstr "Norėdami gauti UMPlayer 0.98.1 paspauskite čia"
+
+#: ../umplayer.php:44
+msgid "This package contains umplayer, themes, translations and mplayer."
+msgstr "Šiame pakete yra umplayer, temos, vertimai ir mplayer."
+
+#: ../umplayer.php:58
+msgid "To install umplayer, just run these commands in a terminal:"
+msgstr "Norėdami įdiegti umplayer, terminale paleiskite šias komandas:"
+
+#: ../umplayer.php:75
+msgid "UMPlayer sources"
+msgstr "UMPlayer pradiniai kodai"
+
+#: ../umplayer.php:111
+msgid "UMPlayer Screenshot"
+msgstr "UMPlayer ekranvaizdis"
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Bendra informacija"
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Grafinė MPlayer sąsaja"
 
 #~ msgid ""
-#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
-#~ "now, \n"
-#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
 #~ msgstr ""
-#~ "%1 yra SMPlayer atšaka kurią sukūrė %2. Kadangi šis projektas miręs,\n"
-#~ "SMPlayer komanda išleido naują versiją kuri pataiso Youtube atkūrimą."
+#~ "Jis gali atkurti Yotuube vaizdo įrašus. Įterpta Youtube naršyklė, kuri\n"
+#~ "leidžia lengvai parsiųsti Youtube vaizdo įrašus."
 
-#~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
-#~ msgstr ""
-#~ "Turėkite omeny jog UMPlayer paremtas sena SMPlayer versija, taigi\n"
-#~ "naujų SMPlayer galimybių UMPlayer neturi."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "Norėdami gauti UMPlayer 0.98.1 paspauskite čia"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "Šiame pakete yra umplayer, temos, vertimai ir mplayer."
-
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr "Norėdami įdiegti umplayer, terminale paleiskite šias komandas:"
-
-#~ msgid "UMPlayer sources"
-#~ msgstr "UMPlayer pradiniai kodai"
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Galimybė keisti sąsajos stilių ir piktogramų rinkinius."
 
 #~ msgid ""
 #~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
