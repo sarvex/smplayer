@@ -17,8 +17,14 @@ track, subtitles, volume...");
 <p>
 <?php tr("Some other interesting features:"); ?>
 <ul>
+<li><?php
+echo "<b>";
+tr("It can play and download Youtube videos.");
+echo "</b> ";
+tr("A Youtube browser is included, which allows to easily download Youtube videos too."); ?></li>
 <li><?php tr("Complete preferences dialog, where you can change the key shortcuts,
 colors and fonts of the subtitles, and many more."); ?></li>
+<li><?php tr("Possibility to change the skin and style."); ?></li>
 <li><?php tr("Filters. Many video and audio filters are available: deinterlace, 
 postprocessing, denoise... and even a karaoke filter (voice removal)."); ?></li>
 <li><?php tr("Seeking by mouse wheel. You can use your mouse wheel to go forward 
@@ -33,12 +39,9 @@ subtitles."); ?></li>
 audio codecs."); ?></li>
 <li><?php tr("Possibility to search and download subtitles from %1.", 
 "<a href=\"http://www.opensubtitles.org\">opensubtitles.org</a>"); ?></li>
-<li><?php tr("It can play Youtube videos. A Youtube browser is included, which
-allows to easily download Youtube videos too."); ?></li>
 <li><?php tr("Translations: currently SMPlayer is translated into more than 30 
 languages, including Spanish, German, French, Italian, Russian, Chinese,
 Japanese...."); ?></li>
-<li><?php tr("Possibility to change the style and icon set of the interface."); ?></li>
 <li><?php tr("Free and opensource. SMPlayer is under the <b>GPL</b> license."); ?></li>
 </ul>
 
