@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: 2010-01-24 18:15+0200\n"
 "Last-Translator: Olli <ollinpostit@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,12 +338,6 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr ""
@@ -454,16 +448,20 @@ msgid ""
 msgstr ""
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr ""
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -471,11 +469,11 @@ msgstr ""
 "Haku hiiren rullalla. Voit käyttää hiiren rullaa mennäksesi eteenpäin \n"
 "ja taaksepäin videossa."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -484,7 +482,7 @@ msgstr ""
 "värisävyä,\n"
 "kylläisyyttä ja gammaa."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -492,7 +490,7 @@ msgstr ""
 "Useiden nopeuksien toisto. Voit toistaa 2X, 4x... ja jopa \n"
 "hidasliikkeisellä kuvalla."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -500,7 +498,7 @@ msgstr ""
 "Äänen ja tekstitysten ajan vaihto. Sallii sinun tasata äänen ja\n"
 "tekstitykset."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -508,19 +506,19 @@ msgstr ""
 "Kehittyneet asetukset, kuten kanavointilaitteen valinta tai video ja\n"
 "äänikoodekit."
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr ""
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr ""
 
 #: ../latest.php:3

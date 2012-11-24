@@ -24,7 +24,9 @@ echo "</b> ";
 tr("A Youtube browser is included, which allows to easily download Youtube videos too."); ?></li>
 <li><?php tr("Complete preferences dialog, where you can change the key shortcuts,
 colors and fonts of the subtitles, and many more."); ?></li>
-<li><?php tr("Possibility to change the skin and style."); ?></li>
+<li><?php tr("Support for skins and icon themes."); ?></li>
+<li><?php tr("Possibility to search and download subtitles from %1.", 
+"<a href=\"http://www.opensubtitles.org\">opensubtitles.org</a>"); ?></li>
 <li><?php tr("Filters. Many video and audio filters are available: deinterlace, 
 postprocessing, denoise... and even a karaoke filter (voice removal)."); ?></li>
 <li><?php tr("Seeking by mouse wheel. You can use your mouse wheel to go forward 
@@ -37,21 +39,19 @@ slow motion."); ?></li>
 subtitles."); ?></li> 
 <li><?php tr("Advanced options, such as selecting a demuxer or video & 
 audio codecs."); ?></li>
-<li><?php tr("Possibility to search and download subtitles from %1.", 
-"<a href=\"http://www.opensubtitles.org\">opensubtitles.org</a>"); ?></li>
-<li><?php tr("Translations: currently SMPlayer is translated into more than 30 
+<li><?php tr("On your own language: currently SMPlayer is translated into more than 30 
 languages, including Spanish, German, French, Italian, Russian, Chinese,
 Japanese...."); ?></li>
 <li><?php tr("Free and opensource. SMPlayer is under the <b>GPL</b> license."); ?></li>
 </ul>
 
 <?php
-/*
+if (0) {
 echo "<b>";
 tr("Download <a href=%1>here</a> the latest version of SMPlayer", 
 "\"downloads.php?tr_lang=".$tr_lang."\""); 
 echo "</b>";
-*/
+}
 ?>
 <center>
 <embed src="http://video.findmysoft.com/jwplayer/player.swf?file=http://video.findmysoft.com/2012/11/14/smplayer.mp4&image=http://video.findmysoft.com/2012/11/14/smplayer.jpg&skin=http://video.findmysoft.com/jwplayer/skin/slim.zip" width="512" height="301" allowfullscreen="true" /><br><span style="font-size:12px"><a href="http://smplayer.findmysoft.com/">SMPlayer</a> Quick Look Video by FindMySoft.com</span>

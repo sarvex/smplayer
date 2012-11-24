@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: 2012-11-06 08:25+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -367,12 +367,6 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatai ir kodekai"
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "Formatai ir kodekai"
@@ -493,10 +487,14 @@ msgstr ""
 "subtitrų spalvas, šriftus ir daug daugiau."
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr "Galimybė ieškoti ir parsiųsti subtitrus iš %1."
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -505,7 +503,7 @@ msgstr ""
 "papildomo apdorojimo, triukšmų šalinimo... ir netgi karaoke filtrą(balso "
 "pašalinimo)."
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -513,11 +511,11 @@ msgstr ""
 "Prasukimas naudojantis pelės ratuku. Su pelės ratuku filmą galite\n"
 "prasukti pirmyn ar atgal."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr "Tai pogi galima derinti ir pelės mygtukus."
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -525,7 +523,7 @@ msgstr ""
 "Video ekvalaizeris, leidžia reguliuoti video failų ryškumą, kontrastą,\n"
 "atspalvius, grynumą ir gamą."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -533,7 +531,7 @@ msgstr ""
 "Keli atkūrimo greičiai. Galite atkurti 2X, 4X... greičiais ir netgi\n"
 "sulėtintame režime."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -541,7 +539,7 @@ msgstr ""
 "Garso ir subtitrų delsos nustatymas. Leidžia susinchronizuoti\n"
 "garsą ir subtitrus."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -549,23 +547,20 @@ msgstr ""
 "Papildomos parinktys, tokios kaip demukserio ar video ir garso\n"
 "kodekų pasirinkimas."
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr "Galimybė ieškoti ir parsiųsti subtitrus iš %1."
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"Vertimai: šiuo metu SMPlayer išversta daugiau nei į 30 kalbų\n"
-"įskaitant Lietuvių, Rusų, Ispanų, Vokiečių, Prancūzų, Italų, Kinų, \n"
-"Japonų..."
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "Nemokama ir atviro kodo. SMPlayer galioja <b>GPL</b> licencija."
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -718,6 +713,15 @@ msgstr "UMPlayer pradiniai kodai"
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer ekranvaizdis"
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "Vertimai: šiuo metu SMPlayer išversta daugiau nei į 30 kalbų\n"
+#~ "įskaitant Lietuvių, Rusų, Ispanų, Vokiečių, Prancūzų, Italų, Kinų, \n"
+#~ "Japonų..."
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - Bendra informacija"

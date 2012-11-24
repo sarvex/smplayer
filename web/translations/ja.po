@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -371,12 +371,6 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - フォーマットとコーデック"
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "フォーマットとコーデック"
@@ -494,10 +488,14 @@ msgstr ""
 "ざまな設定を変更できます。"
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr "%1 から字幕を検索/ダウンロード"
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -505,7 +503,7 @@ msgstr ""
 "フィルター: インターレース解除や後処理、ノイズ除去からカラオケフィルター (歌"
 "声除去) まで、数多くのビデオ/オーディオフィルターが用意されています。"
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -513,11 +511,11 @@ msgstr ""
 "マウスホイールによるシーク: お使いのマウスをホイールすることで、ビデオを進め"
 "たり戻したりできます。"
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr "マウスボタンもカスタマイズできます。"
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -525,41 +523,39 @@ msgstr ""
 "ビデオイコライザー: 映像の明るさ、コントラスト、色合い、鮮やかさ、ガンマ値の"
 "調整を可能にします。"
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr "変速再生: 2 倍速、4 倍速... あるいはスローモーションで再生できます。"
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr "オーディオと字幕の遅延調整: オーディオと字幕の同期を可能にします。"
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
 msgstr "高度なオプション: デミュクサーやコーデックの選択などがあります。"
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr "%1 から字幕を検索/ダウンロード"
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"翻訳: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中国語、日本"
-"語など 30 を超える言語に訳されています。"
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 "無料でオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -709,6 +705,14 @@ msgstr ""
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr ""
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "翻訳: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中国語、"
+#~ "日本語など 30 を超える言語に訳されています。"
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - 一般情報"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -371,12 +371,6 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos y Códecs"
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "Formatos y Códecs"
@@ -427,11 +421,11 @@ msgstr "SMPlayer - Reproductor Multimedia Opensource"
 
 #: ../index.php:20
 msgid "Free Opensource Media Player"
-msgstr ""
+msgstr "Reproductor Multimedia Libre y Gratuito"
 
 #: ../index.php:21
 msgid "GUI Front-end for MPlayer"
-msgstr ""
+msgstr "Interfaz Gráfico para MPlayer"
 
 #: ../index.php:22
 msgid "Click here to download the latest version"
@@ -486,8 +480,8 @@ msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
-"Se incluye un buscador de vídeos, que además permite descargar "
-"fácilmente vídeos de Youtube."
+"Se incluye un buscador de vídeos, que además permite descargar fácilmente "
+"vídeos de Youtube."
 
 #: ../info.php:25
 msgid ""
@@ -499,10 +493,14 @@ msgstr ""
 "colores y tipos de letra de los subtítulos, y mucho más."
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
-msgstr "Posibilidad de cambiar el skin y el estilo."
+msgid "Support for skins and icon themes."
+msgstr "Incluye soporte para skins y temas de iconos."
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr "Posibilidad de buscar y descargar subtítulos de %1."
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -511,7 +509,7 @@ msgstr ""
 "postprocesado, eliminación de ruido... e incluso un filtro de karaoke "
 "(elimina la voz)."
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -519,11 +517,11 @@ msgstr ""
 "Desplazamiento del vídeo mediante la rueda del ratón. Puedes usar la rueda "
 "del ratón para avanzar o retroceder por el vídeo."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr "Los botones del ratón también se pueden configurar."
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -531,7 +529,7 @@ msgstr ""
 "Ecualizador de vídeo, te permite ajustar el brillo, contraste, tono, "
 "saturación y gamma de la imagen del vídeo."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -539,35 +537,36 @@ msgstr ""
 "Múltiple velocidad de reproducción. Puedes reproducir a 2X, 4X... o incluso "
 "a cámara lenta."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr "Ajuste de sincronización de audio y subtítulos."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
 msgstr ""
 "Opciones avanzadas, como seleccionar un demuxer o códecs de vídeo y audio."
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr "Posibilidad de buscar y descargar subtítulos de %1."
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, "
-"incluyendo español, alemán, francés, italiano, ruso, chino, japonés..."
+"En tu propio idioma: actualmente SMPlayer está traducido a más de 30 "
+"idiomas, incluyendo español, alemán, francés, italiano, ruso, chino, "
+"japonés..."
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "Gratuito y opensource. SMPlayer se encuentra bajo licencia <b>GPL</b>."
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -723,6 +722,17 @@ msgstr "Fuentes del UMPlayer"
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr "Captura de pantalla del UMPlayer"
+
+#~ msgid "Possibility to change the skin and style."
+#~ msgstr "Posibilidad de cambiar el skin y el estilo."
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, "
+#~ "incluyendo español, alemán, francés, italiano, ruso, chino, japonés..."
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - Información general"

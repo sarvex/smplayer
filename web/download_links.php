@@ -28,8 +28,8 @@ function download_amd64deb_link() {
 
 function download_windows_full_link($text) {
 	global $site;
-	$filename = "smplayer-0.8.2-win32.exe";
-	$size = 16867464;
+	$filename = "smplayer-0.8.2-ps-win32.exe";
+	$size = 16870832;
 
 	if (!isset($text)) {
 		return create_link($filename, $size );

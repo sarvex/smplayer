@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: 2009-02-18 22:05+0100\n"
 "Last-Translator: arti <artii@gmx.net>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -339,12 +339,6 @@ msgstr "Wiki"
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr ""
@@ -455,16 +449,20 @@ msgid ""
 msgstr ""
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr ""
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -472,11 +470,11 @@ msgstr ""
 "Suchlauf mit dem Mausrad. Benutze dein Mausrad, um im Video vor- oder "
 "zurückzuspulen."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -484,7 +482,7 @@ msgstr ""
 "Das Video Mischpult ermöglicht es dir, Helligkeit, Kontrast,\n"
 "Farbton, Sättigung und Gammawert des Videobildes anzupassen."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -492,7 +490,7 @@ msgstr ""
 "Vielfache Geschwindigkeitswiedergabe. Spiele dein Video mit \n"
 "2-facher, 4-facher, x-facher Geschwindigkeit, oder sogar in Zeitlupe ab."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -500,7 +498,7 @@ msgstr ""
 "Anpassung der Zeitverzögerung von Ton und Untertitel. Erlaubt es \n"
 "dir, Ton und Untertitel aufeinander abzustimmen."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -508,19 +506,19 @@ msgstr ""
 "Erweiterte Einstellmöglichkeiten, wie die Auswahl eines Demuxers\n"
 "oder Video- und Audiocodecs. \n"
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr ""
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr ""
 
 #: ../latest.php:3

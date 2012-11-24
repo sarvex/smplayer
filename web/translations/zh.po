@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -354,12 +354,6 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - 格式和编解码器"
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "格式和编解码器"
@@ -475,10 +469,14 @@ msgstr ""
 "在这里您可以更改快捷键、字幕的颜色和字体, 以及更多选项."
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr "可以从 %1 搜索和下载字幕."
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -486,7 +484,7 @@ msgstr ""
 "过滤器. 有很多视频和音频过滤器可用: 去交错、后处理、降噪...\n"
 "甚至是卡拉 OK 过滤器 (去除人声)."
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -494,11 +492,11 @@ msgstr ""
 "通过鼠标滚轮定位.\n"
 "您可以使用鼠标滚轮在视频上前进或后退."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr "也可以将其自定义到鼠标按钮."
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -506,7 +504,7 @@ msgstr ""
 "视频均衡器,\n"
 "允许您调整视频图像的亮度、对比度、色调、饱和度和伽玛."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -514,7 +512,7 @@ msgstr ""
 "多种速度播放. 您可以以2倍、4倍速播放...\n"
 "甚至是慢动作."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -522,7 +520,7 @@ msgstr ""
 "音频和字幕延迟调整.\n"
 "允许您同步音频和字幕."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -530,23 +528,20 @@ msgstr ""
 "高级选项,\n"
 "例如选择解复用器或视频 & 音频编解码器."
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr "可以从 %1 搜索和下载字幕."
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"翻译: 目前 SMPlayer 已被翻译成超过 30 种语言,\n"
-"包括西班牙语、德语、法语、意大利语、俄语、汉语、日语\n"
-"...."
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -693,6 +688,15 @@ msgstr ""
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr ""
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "翻译: 目前 SMPlayer 已被翻译成超过 30 种语言,\n"
+#~ "包括西班牙语、德语、法语、意大利语、俄语、汉语、日语\n"
+#~ "...."
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - 常规信息"

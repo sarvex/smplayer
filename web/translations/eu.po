@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 10:44+0100\n"
+"POT-Creation-Date: 2012-11-24 14:32+0100\n"
 "PO-Revision-Date: 2012-11-22 02:06+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
@@ -368,12 +368,6 @@ msgstr "Wikia"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Heuskarriak eta Kodekak"
 
-#.
-#. echo "<b>";
-#. tr("Download <a href=%1>here</a> the latest version of SMPlayer",
-#. "\"downloads.php?tr_lang=".$tr_lang."\"");
-#. echo "</b>";
-#.
 #: ../formats.php:11 ../info.php:63
 msgid "Formats and Codecs"
 msgstr "Heuskarriak eta Kodekak"
@@ -492,10 +486,14 @@ msgstr ""
 "hizkiak eta askoz gehiago aldatu ditzakezu."
 
 #: ../info.php:27
-msgid "Possibility to change the skin and style."
+msgid "Support for skins and icon themes."
 msgstr ""
 
 #: ../info.php:28
+msgid "Possibility to search and download subtitles from %1."
+msgstr "Azpidatziak %1-en bilatzeko eta jeisteko aukera."
+
+#: ../info.php:30
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -504,7 +502,7 @@ msgstr ""
 "deselkarlotura, prosesatu-ondorena, zaratakentzea... eta baita karaoke "
 "iragazkia (ahotsa kentzea)."
 
-#: ../info.php:30
+#: ../info.php:32
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -512,11 +510,11 @@ msgstr ""
 "Bilaketa sagu-gurpilarekin. Zure sagu-gurpila erabili dezakezu bideoan \n"
 "aurrera edo atzera joateko."
 
-#: ../info.php:31
+#: ../info.php:33
 msgid "The mouse buttons can also be customized."
 msgstr "Saguaren botoiak ere norbere erara jarri daitezke."
 
-#: ../info.php:32
+#: ../info.php:34
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -524,7 +522,7 @@ msgstr ""
 "Bideo ekualizagailua, ahalbidetzen dizu zehaztea bideo irudiaren dizdira,\n"
 "zuribeltztasuna, nabardura, margoasetasuna eta gamma."
 
-#: ../info.php:34
+#: ../info.php:36
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -532,7 +530,7 @@ msgstr ""
 "Irakurketa abiadura anitz. Irakurri dezakezu 2X, 4X... eta baita \n"
 "mugimendu astiroan."
 
-#: ../info.php:36
+#: ../info.php:38
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -540,7 +538,7 @@ msgstr ""
 "Audio eta azpidatzi atzerapen zehazpena. Audioa eta\n"
 "azpidatziak aldiberetzea ahalbidetzen dizu ."
 
-#: ../info.php:38
+#: ../info.php:40
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -548,26 +546,22 @@ msgstr ""
 "Aukera aurreratuak, desnahastzailea edo bideo eta audio kodekak \n"
 "hautatzea bezala."
 
-#: ../info.php:40
-msgid "Possibility to search and download subtitles from %1."
-msgstr "Azpidatziak %1-en bilatzeko eta jeisteko aukera."
-
 #: ../info.php:42
 msgid ""
-"Translations: currently SMPlayer is translated into more than 30 \n"
+"On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
-"Itzulpenak: gaur egun SMPlayer 30 hizkuntza baino gehiagotara\n"
-"itzulita dago, barne Espainiera, Alemaniera, Frantziera,  Italiera, "
-"Errusiera,\n"
-"Txinera, Japoniera..."
 
 #: ../info.php:45
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 "Askea eta iturburu irekikoa. SMPlayer <b>GPL</b> baimenaren baldintzapean "
 "dago."
+
+#: ../info.php:51
+msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+msgstr ""
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -725,6 +719,16 @@ msgstr "UMPlayer iturburuak"
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer Ikusleiho-argazkia"
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "Itzulpenak: gaur egun SMPlayer 30 hizkuntza baino gehiagotara\n"
+#~ "itzulita dago, barne Espainiera, Alemaniera, Frantziera,  Italiera, "
+#~ "Errusiera,\n"
+#~ "Txinera, Japoniera..."
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - Argibide Orokorrak"
