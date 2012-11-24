@@ -5,51 +5,6 @@ echo "<body>\n";
 print_menu(3);
 ?>
 
-<div id="installer" class="modal hide fade in" style="display: none;">
-	<div class="modal-header">
-		<a class="close" data-dismiss="modal">×</a>
-		<h3><?php tr("Information about the Windows installer"); ?></h3>
-	</div>
-	<div class="modal-body">
-		<p>
-		<?php
-		tr("For an easy installation on Windows we provide a package with installer.");
-		if (1) {
-		echo "<div class=\"alert alert-error\">\n";
-		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
-		echo " ";
-		tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
-		echo " ";
-		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
-		echo "</div>\n";
-		}
-		echo "<h4>". get_tr("Optional components") ."</h4>\n";
-		tr("The installer allows to select the components to install:");
-		echo "<ul>\n";
-		echo "<li><b>". get_tr("Languages") ."</b><br>". 
-			get_tr("Translations for more than 30 languages are provided.") ." ".
-			get_tr("If you uncheck this option, only English will be available.") ."</li>\n";
-		echo "<li><b>". get_tr("Icon themes") ."</b><br>". 
-			get_tr("Some icon themes are provided, which allow to change the look of the application.") ."</li>\n";
-		echo "<li><b>". get_tr("Binary codecs"). "</b><br>". 
-			get_tr("If you check this option, some extra codecs will be downloaded and installed in the smplayer folder.") ." ".
-			get_tr("These codecs are only necessary for some uncommon formats.") ."</li>\n";
-		echo "</ul>\n";
-		echo "<h4>". get_tr("Uninstallation") ."</h4>\n";
-		echo "<p>\n";
-		/* Before translating the string "uninstall smplayer" be sure */
-		/* it really shows translated under the Start menu, */
-		/* otherwise leave it in English */
-		tr("You can uninstall smplayer easily from the control panel or using the <i>uninstall smplayer</i> option in the smplayer menu within the Windows <i>Start</i> menu.");
-		?>
-		</p>
-	</div>
-	<div class="modal-footer">
-		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
-	</div>
-</div>
-
-
 <div class="container-fluid">
 <div class="span9">
 
@@ -180,6 +135,51 @@ echo download_skins_src_link();
 include("footer.php");
 ?>
 <!-- end footer -->
+
+<!-- popup -->
+<div id="installer" class="modal hide fade in" style="display: none;">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3><?php tr("Information about the Windows installer"); ?></h3>
+	</div>
+	<div class="modal-body">
+		<p>
+		<?php
+		tr("For an easy installation on Windows we provide a package with installer.");
+		if (1) {
+		echo "<div class=\"alert alert-error\">\n";
+		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
+		echo " ";
+		tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
+		echo " ";
+		tr("This screen allows us to further improve smplayer and keep distributing it for free. We ask for your understanding.");
+		echo "</div>\n";
+		}
+		echo "<h4>". get_tr("Optional components") ."</h4>\n";
+		tr("The installer allows to select the components to install:");
+		echo "<ul>\n";
+		echo "<li><b>". get_tr("Languages") ."</b><br>". 
+			get_tr("Translations for more than 30 languages are provided.") ." ".
+			get_tr("If you uncheck this option, only English will be available.") ."</li>\n";
+		echo "<li><b>". get_tr("Icon themes") ."</b><br>". 
+			get_tr("Some icon themes are provided, which allow to change the look of the application.") ."</li>\n";
+		echo "<li><b>". get_tr("Binary codecs"). "</b><br>". 
+			get_tr("If you check this option, some extra codecs will be downloaded and installed in the smplayer folder.") ." ".
+			get_tr("These codecs are only necessary for some uncommon formats.") ."</li>\n";
+		echo "</ul>\n";
+		echo "<h4>". get_tr("Uninstallation") ."</h4>\n";
+		echo "<p>\n";
+		/* Before translating the string "uninstall smplayer" be sure */
+		/* it really shows translated under the Start menu, */
+		/* otherwise leave it in English */
+		tr("You can uninstall smplayer easily from the control panel or using the <i>uninstall smplayer</i> option in the smplayer menu within the Windows <i>Start</i> menu.");
+		?>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
+	</div>
+</div>
 
 </body>
 </html>

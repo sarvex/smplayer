@@ -1,17 +1,3 @@
-<div id="formats" class="modal hide fade in" style="display: none;">
-	<div class="modal-header">
-		<a class="close" data-dismiss="modal">×</a>
-		<h3><?php tr("Formats and Codecs"); ?></h3>
-	</div>
-	<div class="modal-body">
-		<?php include("formats_text.php"); ?>
-	</div>
-	<div class="modal-footer">
-		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
-	</div>
-</div>
-<?php /* <p><a data-toggle="modal" href="#formats" class="btn btn-primary btn-large">Launch demo modal</a></p> */ ?>
-
 <?php
 echo "<p>";
 tr("SMPlayer is a complete media player for Windows and Linux. It uses
@@ -67,3 +53,17 @@ echo "</b>";
 <center>
 <embed src="http://video.findmysoft.com/jwplayer/player.swf?file=http://video.findmysoft.com/2012/11/14/smplayer.mp4&image=http://video.findmysoft.com/2012/11/14/smplayer.jpg&skin=http://video.findmysoft.com/jwplayer/skin/slim.zip" width="512" height="301" allowfullscreen="true" /><br><span style="font-size:12px"><a href="http://smplayer.findmysoft.com/">SMPlayer</a> Quick Look Video by FindMySoft.com</span>
 </center>
+
+<div id="formats" class="modal hide fade in" style="display: none;">
+	<div class="modal-header">
+		<a class="close" data-dismiss="modal">×</a>
+		<h3><?php tr("Formats and Codecs"); ?></h3>
+	</div>
+	<div class="modal-body">
+		<?php include("formats_text.php"); ?>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal"><?php tr("Close"); ?></a>
+	</div>
+</div>
+<?php /* <p><a data-toggle="modal" href="#formats" class="btn btn-primary btn-large">Launch demo modal</a></p> */ ?>
