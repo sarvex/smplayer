@@ -17,6 +17,12 @@
 </td>
 <td>
 <ul>
+<li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
+<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
+</ul>
+</td>
+<td>
+<ul>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a></li>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
 </ul>
@@ -31,7 +37,7 @@ else
 	echo "<a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a>\n";
 ?>
 </li>
-<li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
+<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
 </ul>
 </td>
 <td>
