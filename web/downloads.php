@@ -83,7 +83,7 @@ tr("To install smplayer, just run these commands in a terminal:");
 <pre>
 sudo add-apt-repository ppa:rvm/smplayer
 sudo apt-get update
-sudo apt-get install smplayer smtube smplayer-themes
+sudo apt-get install smplayer smtube smplayer-themes smplayer-skins
 </pre>
 </td>
 </tr>
