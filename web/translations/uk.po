@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 01:17+0100\n"
+"POT-Creation-Date: 2012-11-26 02:31+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Завантаження"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:51 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Завантаження"
 
@@ -303,7 +303,7 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:180 ../info.php:69 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr ""
 
@@ -516,7 +516,7 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:14 ../index.php:40 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr ""
@@ -545,7 +545,7 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr ""
 
-#: ../formats.php:11 ../info.php:63
+#: ../formats.php:11 ../info.php:62
 msgid "Formats and Codecs"
 msgstr ""
 
@@ -595,15 +595,31 @@ msgstr ""
 msgid "Free Opensource Media Player"
 msgstr ""
 
-#: ../index.php:21
-msgid "GUI Front-end for MPlayer"
+#: ../index.php:23
+msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
 msgstr ""
 
-#: ../index.php:22
+#: ../index.php:24
+msgid "Codecs included"
+msgstr ""
+
+#: ../index.php:25
+msgid "Can play and download Youtube&trade; videos"
+msgstr ""
+
+#: ../index.php:26
+msgid "Automatically search and download subtitles"
+msgstr ""
+
+#: ../index.php:27
+msgid "Skins"
+msgstr ""
+
+#: ../index.php:31
 msgid "Click here to download the latest version"
 msgstr ""
 
-#: ../index.php:34
+#: ../index.php:44
 msgid "About SMPlayer"
 msgstr ""
 
@@ -637,37 +653,37 @@ msgstr ""
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../info.php:22
+#: ../info.php:21
 msgid "It can play and download Youtube videos."
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:23
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
 
-#: ../info.php:25
+#: ../info.php:24
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../info.php:27
+#: ../info.php:26
 msgid "Support for skins and icon themes."
 msgstr ""
 
-#: ../info.php:28
+#: ../info.php:27
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../info.php:30
+#: ../info.php:29
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../info.php:32
+#: ../info.php:31
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -675,11 +691,11 @@ msgstr ""
 "Пошук мишкою. Ви можете користуватись колесом мишки для перемотки \n"
 "відео вперед чи назад."
 
-#: ../info.php:33
+#: ../info.php:32
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../info.php:34
+#: ../info.php:33
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -687,7 +703,7 @@ msgstr ""
 "Еквалайзер відео, дозволяе Вам регулювати яскравість, контрастність,\n"
 "відтінок, колір, насиченість та гаму зображення."
 
-#: ../info.php:36
+#: ../info.php:35
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -695,7 +711,7 @@ msgstr ""
 "Багатошвидкісне відтворення. Можна прискористи в 2, 4 \n"
 "рази... або навіть уповільнити."
 
-#: ../info.php:38
+#: ../info.php:37
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -703,7 +719,7 @@ msgstr ""
 "Регулювання затримки звуку та субтитрів. Дозволить Вам синхронизувати\n"
 "звук та субтитри."
 
-#: ../info.php:40
+#: ../info.php:39
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -711,18 +727,18 @@ msgstr ""
 "Розширені опції, так як вибір демультиплексора чи звукових \n"
 "та відео кодеків."
 
-#: ../info.php:42
+#: ../info.php:41
 msgid ""
 "On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:45
+#: ../info.php:44
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../info.php:51
+#: ../info.php:50
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr ""
 

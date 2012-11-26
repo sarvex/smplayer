@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 01:17+0100\n"
+"POT-Creation-Date: 2012-11-26 02:31+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -153,7 +153,7 @@ msgstr "Зеркала"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Загрузки"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:51 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Загрузки"
 
@@ -333,7 +333,7 @@ msgstr ""
 "Вы можете легко деинсталлировать smplayer из панели управления или используя "
 "соответствующую опцию в меню smplayer стартового меню Windows."
 
-#: ../downloads.php:180 ../info.php:69 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "Закрыть"
 
@@ -546,7 +546,7 @@ msgstr ""
 msgid "Other links:"
 msgstr "Другие ссылки:"
 
-#: ../footer.php:14 ../index.php:40 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "Последние изменения"
@@ -575,7 +575,7 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - форматы и кодеки"
 
-#: ../formats.php:11 ../info.php:63
+#: ../formats.php:11 ../info.php:62
 msgid "Formats and Codecs"
 msgstr "Форматы и кодеки"
 
@@ -627,15 +627,31 @@ msgstr ""
 msgid "Free Opensource Media Player"
 msgstr ""
 
-#: ../index.php:21
-msgid "GUI Front-end for MPlayer"
+#: ../index.php:23
+msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
 msgstr ""
 
-#: ../index.php:22
+#: ../index.php:24
+msgid "Codecs included"
+msgstr ""
+
+#: ../index.php:25
+msgid "Can play and download Youtube&trade; videos"
+msgstr ""
+
+#: ../index.php:26
+msgid "Automatically search and download subtitles"
+msgstr ""
+
+#: ../index.php:27
+msgid "Skins"
+msgstr ""
+
+#: ../index.php:31
 msgid "Click here to download the latest version"
 msgstr "Кликните здесь для загрузки последней версии"
 
-#: ../index.php:34
+#: ../index.php:44
 msgid "About SMPlayer"
 msgstr "Об SMPlayer"
 
@@ -676,17 +692,17 @@ msgstr ""
 msgid "Some other interesting features:"
 msgstr "Некоторые интересные возможности:"
 
-#: ../info.php:22
+#: ../info.php:21
 msgid "It can play and download Youtube videos."
 msgstr ""
 
-#: ../info.php:24
+#: ../info.php:23
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
 
-#: ../info.php:25
+#: ../info.php:24
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -694,15 +710,15 @@ msgstr ""
 "Полноценный диалог настроек, в котором можно настроить горячие клавиши, "
 "цвета и шрифты субтитров и многое другое."
 
-#: ../info.php:27
+#: ../info.php:26
 msgid "Support for skins and icon themes."
 msgstr ""
 
-#: ../info.php:28
+#: ../info.php:27
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Возможность поиска и скачивания субтитров с %1."
 
-#: ../info.php:30
+#: ../info.php:29
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -710,7 +726,7 @@ msgstr ""
 "Фильтры. Доступно большое количество фильтров видео и аудио: деинтерлейс, "
 "постобработка, уменьшение шумов... и даже караоке фильтр (удаление голоса)."
 
-#: ../info.php:32
+#: ../info.php:31
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -718,11 +734,11 @@ msgstr ""
 "Перемотка мышью. Вы можете пользоваться колесом мыши для перемотки \n"
 "видео вперед или назад."
 
-#: ../info.php:33
+#: ../info.php:32
 msgid "The mouse buttons can also be customized."
 msgstr "Кнопки мыши тоже могут быть перенастроены."
 
-#: ../info.php:34
+#: ../info.php:33
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -730,7 +746,7 @@ msgstr ""
 "Видеоэквалайзер позволит Вам настроить яркость, контрастность, \n"
 "оттенок, цвет, насыщенность и гамму изображения."
 
-#: ../info.php:36
+#: ../info.php:35
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -739,7 +755,7 @@ msgstr ""
 "4 \n"
 "раза или же, наоборот, замедлить."
 
-#: ../info.php:38
+#: ../info.php:37
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -748,7 +764,7 @@ msgstr ""
 "синхронизировать \n"
 "звук и субтитры."
 
-#: ../info.php:40
+#: ../info.php:39
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -756,19 +772,19 @@ msgstr ""
 "Расширенные настройки, такие как выбор демультиплексора или звуковых \n"
 "и видео кодеков."
 
-#: ../info.php:42
+#: ../info.php:41
 msgid ""
 "On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../info.php:45
+#: ../info.php:44
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 "Свобода и открытость. SMPlayer распространяется под лицензией <b>GPL</b>."
 
-#: ../info.php:51
+#: ../info.php:50
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr ""
 

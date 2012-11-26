@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-26 01:17+0100\n"
+"POT-Creation-Date: 2012-11-26 02:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,7 @@ msgstr "镜像"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - 下载"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:51 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
 msgid "Downloads"
 msgstr "下载"
 
@@ -317,7 +317,7 @@ msgstr ""
 "您可以从控制面板或使用 Windows <i>开始</i> 菜单中 SMPlayer 菜单的 "
 "<i>Uninstall SMPlayer</i> 选项轻松地卸载 SMPlayer."
 
-#: ../downloads.php:180 ../info.php:69 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "关闭"
 
@@ -530,7 +530,7 @@ msgstr ""
 msgid "Other links:"
 msgstr "其他链接:"
 
-#: ../footer.php:14 ../index.php:40 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "最近更改"
@@ -559,7 +559,7 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - 格式和编解码器"
 
-#: ../formats.php:11 ../info.php:63
+#: ../formats.php:11 ../info.php:62
 msgid "Formats and Codecs"
 msgstr "格式和编解码器"
 
@@ -609,15 +609,31 @@ msgstr "SMPlayer - 开源媒体播放器"
 msgid "Free Opensource Media Player"
 msgstr "自由和开源的媒体播放器"
 
-#: ../index.php:21
-msgid "GUI Front-end for MPlayer"
-msgstr "适用于 MPlayer 的 GUI 前端"
+#: ../index.php:23
+msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
+msgstr ""
 
-#: ../index.php:22
+#: ../index.php:24
+msgid "Codecs included"
+msgstr ""
+
+#: ../index.php:25
+msgid "Can play and download Youtube&trade; videos"
+msgstr ""
+
+#: ../index.php:26
+msgid "Automatically search and download subtitles"
+msgstr ""
+
+#: ../index.php:27
+msgid "Skins"
+msgstr ""
+
+#: ../index.php:31
 msgid "Click here to download the latest version"
 msgstr "点击这里下载最新版本"
 
-#: ../index.php:34
+#: ../index.php:44
 msgid "About SMPlayer"
 msgstr "关于 SMPlayer"
 
@@ -655,17 +671,17 @@ msgstr ""
 msgid "Some other interesting features:"
 msgstr "一些其他有趣的功能:"
 
-#: ../info.php:22
+#: ../info.php:21
 msgid "It can play and download Youtube videos."
 msgstr "它可以播放和下载 Youtube 视频."
 
-#: ../info.php:24
+#: ../info.php:23
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr "一个 YouTube 浏览器已包含在内, 它也可以轻松地下载 YouTube 视频."
 
-#: ../info.php:25
+#: ../info.php:24
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -673,15 +689,15 @@ msgstr ""
 "完备的首选项对话框,\n"
 "在这里您可以更改快捷键、字幕的颜色和字体, 以及更多选项."
 
-#: ../info.php:27
+#: ../info.php:26
 msgid "Support for skins and icon themes."
 msgstr "支持皮肤和图标主题."
 
-#: ../info.php:28
+#: ../info.php:27
 msgid "Possibility to search and download subtitles from %1."
 msgstr "可以从 %1 搜索和下载字幕."
 
-#: ../info.php:30
+#: ../info.php:29
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -689,7 +705,7 @@ msgstr ""
 "过滤器. 有很多视频和音频过滤器可用: 去交错、后处理、降噪...\n"
 "甚至是卡拉 OK 过滤器 (去除人声)."
 
-#: ../info.php:32
+#: ../info.php:31
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -697,11 +713,11 @@ msgstr ""
 "通过鼠标滚轮定位.\n"
 "您可以使用鼠标滚轮在视频上前进或后退."
 
-#: ../info.php:33
+#: ../info.php:32
 msgid "The mouse buttons can also be customized."
 msgstr "也可以将其自定义到鼠标按钮."
 
-#: ../info.php:34
+#: ../info.php:33
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -709,7 +725,7 @@ msgstr ""
 "视频均衡器,\n"
 "允许您调整视频图像的亮度、对比度、色调、饱和度和伽玛."
 
-#: ../info.php:36
+#: ../info.php:35
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -717,7 +733,7 @@ msgstr ""
 "多种速度播放. 您可以以2倍、4倍速播放...\n"
 "甚至是慢动作."
 
-#: ../info.php:38
+#: ../info.php:37
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -725,7 +741,7 @@ msgstr ""
 "音频和字幕延迟调整.\n"
 "允许您同步音频和字幕."
 
-#: ../info.php:40
+#: ../info.php:39
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -733,7 +749,7 @@ msgstr ""
 "高级选项,\n"
 "例如选择解复用器或视频 & 音频编解码器."
 
-#: ../info.php:42
+#: ../info.php:41
 msgid ""
 "On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -743,11 +759,11 @@ msgstr ""
 "包括西班牙语、德语、法语、意大利语、俄语、汉语、日语\n"
 "...."
 
-#: ../info.php:45
+#: ../info.php:44
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
 
-#: ../info.php:51
+#: ../info.php:50
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
 
@@ -900,6 +916,9 @@ msgstr "UMPlayer 源代码"
 #: ../umplayer.php:111
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer 屏幕截图"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "适用于 MPlayer 的 GUI 前端"
 
 #~ msgid "Wiki"
 #~ msgstr "Wiki"
