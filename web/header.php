@@ -30,8 +30,8 @@ function print_header($title) {
 		/* border-top: 1px solid #dddddd; */
 	}
 	.hero-unit {
-		padding: 60px;
-		margin-bottom: 30px;
+		padding: 20px;
+		margin-bottom: 10px;
 		background-color: #eeeeee;
 		background-image:url('images/background.jpg');
 		background-size: 100%;
@@ -41,19 +41,19 @@ function print_header($title) {
 	}
 	.hero-unit h1 {
 		margin-bottom: 0;
-		font-size: 60px;
+		font-size: 50px;
 		line-height: 1;
 		letter-spacing: -1px;
 		color: white;
 	}
 	.hero-unit p {
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: 200;
 		line-height: 30px;
 		color: white;
 	}
 	.hero-unit ul {
-		font-size: 18px;
+		font-size: 12px;
 		color: white;
 	}
 	footer {

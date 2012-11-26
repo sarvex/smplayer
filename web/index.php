@@ -18,7 +18,7 @@ print_menu(1);
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>". get_tr("Free Opensource Media Player") ."<br>\n";
-			echo "<p><font size=\"-1\">\n";
+			echo "<p>\n";
 			echo "<ul>\n";
 			echo "<li>". get_tr("Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264...") ."</li>\n";
 			echo "<li>". get_tr("Codecs included") ."</li>\n";
@@ -26,7 +26,7 @@ print_menu(1);
 			echo "<li>". get_tr("Automatically search and download subtitles"). "</li>\n";
 			echo "<li>". get_tr("Skins"). "</li>\n";
 			echo "</ul>";
-			echo "</font></p>";
+			echo "</p>";
 			echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
                   get_tr("Click here to download the latest version") .
                   "</a></p>\n";
