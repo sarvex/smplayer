@@ -361,13 +361,16 @@ msgstr ""
 
 #: ../faq.php:24
 msgid "DVD menus, where are they?"
-msgstr ""
+msgstr "¿Dónde están los menús de los DVD?"
 
 #: ../faq.php:27
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
+"En la sección Unidades de disco de las preferencias, marca la opción "
+"\"Activar menús DVD (experimental)\" y no te olvides de seleccionar "
+"tu unidad de DVD."
 
 #: ../faq.php:31
 msgid "How can I download a Youtube video?"
@@ -404,7 +407,7 @@ msgstr ""
 
 #: ../faq.php:55
 msgid "What's the difference between SMPlayer and MPlayer?"
-msgstr ""
+msgstr "¿Cuál es la diferencia entre SMPlayer y MPlayer?"
 
 #: ../faq.php:58
 msgid ""
@@ -417,6 +420,14 @@ msgid ""
 "on. The Windows packages already include a MPlayer build along with\n"
 "SMPlayer."
 msgstr ""
+"Son dos aplicaciones independientes que trabajan de forma conjunta. "
+"SMPlayer aunque lo parezca no es un reproductor multimedia... lo es MPlayer. "
+"MPlayer es un programa de línea de comandos, no tiene menús ni botones. "
+"Se controla mediante el teclado. Como esto no es muy amigable se han "
+"desarrollado varios interfaces gráficos, y SMPlayer es uno de ellos. "
+"Por tanto MPlayer es el motor de reproducción y SMPlayer añade los botones, "
+"menus, diálogos, etc. Los paquetes para Windows ya incluyen una versión "
+"de MPlayer junto con SMPlayer."
 
 #: ../faq.php:68
 msgid "What does the \"ps\" mean in some of the installers name?"
