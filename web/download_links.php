@@ -7,11 +7,11 @@ function download_all_link($text) {
 }
 
 function download_src_link() {
-	return create_link("smplayer-0.8.2.tar.bz2", 3197356 );
+	return create_link("smplayer-0.8.2.1.tar.bz2", 3153872 );
 }
 
 function download_smtube_link() {
-	return create_link("smtube-1.3.tar.bz2", 306539 );
+	return create_link("smtube-1.3.1.tar.bz2", 307597 );
 }
 
 function download_rpm_link() {
