@@ -18,9 +18,8 @@ track, subtitles, volume...");
 <?php tr("Some other interesting features:"); ?>
 <ul>
 <li><?php
-echo "<b>";
 tr("It can play and download Youtube videos.");
-echo "</b> ";
+echo " ";
 tr("A Youtube browser is included, which allows to easily download Youtube videos too."); ?></li>
 <li><?php tr("Complete preferences dialog, where you can change the key shortcuts,
 colors and fonts of the subtitles, and many more."); ?></li>
