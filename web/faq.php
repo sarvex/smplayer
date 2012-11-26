@@ -72,7 +72,7 @@ tr("It means that the installer includes a \"promotional screen\" from a
 sponsor. This screen offers the user the possibility to install a third
 party application. It may be for example a demo version of an
 interesting application. It's up to you to decide whether give it a try
-or not. If you install it but then you don't like, you can uninstall it
+or not. If you install it but then you don't like it, you can uninstall it
 easily later.");
 echo "<br>";
 tr("If you decide to install it, the sponsor will send a few cents to
