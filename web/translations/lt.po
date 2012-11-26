@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-26 02:31+0100\n"
-"PO-Revision-Date: 2012-11-06 08:25+0200\n"
+"PO-Revision-Date: 2012-11-26 08:26+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
 "Language: \n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
-msgstr "SMPlayer - Susisiekite su mumis"
+msgstr "SMPlayer - Susisiekite su mumis1"
 
 #: ../contact.php:9 ../footer.php:50
 msgid "Contact us"
@@ -159,7 +159,7 @@ msgstr "Atsisiuntimai"
 
 #: ../downloads.php:24
 msgid "Click here to download SMPlayer %1"
-msgstr ""
+msgstr "Norėdami parsisiųsti SMPlayer %1 paspauskite čia"
 
 #: ../downloads.php:26
 msgid ""
@@ -178,14 +178,17 @@ msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
 msgstr ""
+"Išbandykite naują ateinančią versiją 0.8.2. Galimybės: nauja naudotojo "
+"sąsaja su galimybe naudoti išvaizdos failus ir nauja mplayer laida su "
+"daugybe pataisų."
 
 #: ../downloads.php:43
 msgid "In case you find any problem, please report it in %1."
-msgstr ""
+msgstr "Jei susidursite su problemomis praneškite jas %1."
 
 #: ../downloads.php:43
 msgid "our forum"
-msgstr ""
+msgstr "mūsų forume"
 
 #: ../downloads.php:53
 msgid "There are available other packages (like a portable version), %1."
@@ -193,15 +196,15 @@ msgstr "%1 yra ir kitų paketų (tokių kaip nešiojama versija)."
 
 #: ../downloads.php:53
 msgid "here"
-msgstr "čia"
+msgstr "Čia"
 
 #: ../downloads.php:55
 msgid "If you wish you can also try the %1."
-msgstr ""
+msgstr "Jei norite galite pabandyti %1."
 
 #: ../downloads.php:56
 msgid "development version"
-msgstr ""
+msgstr "kūrimo versiją"
 
 #: ../downloads.php:65
 msgid ""
@@ -336,11 +339,11 @@ msgstr "Užverti"
 
 #: ../faq.php:3
 msgid "SMPlayer - FAQ"
-msgstr ""
+msgstr "SMPlayer - DUK"
 
 #: ../faq.php:11
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Dažniausiai Užduodami Klausimai"
 
 #: ../faq.php:14
 msgid "How can I download subtitles from opensubtitles.org?"
@@ -566,7 +569,7 @@ msgstr "Veidrodis"
 
 #: ../footer.php:45
 msgid "FAQ"
-msgstr ""
+msgstr "DUK"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -618,31 +621,31 @@ msgstr "Kalba"
 
 #: ../index.php:3
 msgid "SMPlayer - Opensource Media Player"
-msgstr ""
+msgstr "SMPlayer - Atviro kodo Media grotuvas"
 
 #: ../index.php:20
 msgid "Free Opensource Media Player"
-msgstr ""
+msgstr "Nemokamas Atviro kodo Media grotuvas"
 
 #: ../index.php:23
 msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
-msgstr ""
+msgstr "Palaiko daugumą formatų ir kodekų: AVI, MKV, MP4, MPEG, H.264..."
 
 #: ../index.php:24
 msgid "Codecs included"
-msgstr ""
+msgstr "Kodekai jau yra"
 
 #: ../index.php:25
 msgid "Can play and download Youtube&trade; videos"
-msgstr ""
+msgstr "Gali atkurti ir parsiųsti Youtube&trade; vaizdo įrašus"
 
 #: ../index.php:26
 msgid "Automatically search and download subtitles"
-msgstr ""
+msgstr "Automatiškai ieškokite ir parsisiųskite subtitrus"
 
 #: ../index.php:27
 msgid "Skins"
-msgstr ""
+msgstr "Išvaizdos failai"
 
 #: ../index.php:31
 msgid "Click here to download the latest version"
@@ -691,13 +694,15 @@ msgstr "Dar kelios įdomios galimybės:"
 
 #: ../info.php:21
 msgid "It can play and download Youtube videos."
-msgstr ""
+msgstr "Ji gali atkurti ir parsiųsti vaizdo įrašus iš Youtube."
 
 #: ../info.php:23
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
+"Yra ir Youtube naršyklė, ji jums leis lengvai parsisiųsti Youtube vaizdo "
+"įrašus."
 
 #: ../info.php:24
 msgid ""
@@ -709,7 +714,7 @@ msgstr ""
 
 #: ../info.php:26
 msgid "Support for skins and icon themes."
-msgstr ""
+msgstr "Išvaizdos failų ir piktogramų temų palaikymas."
 
 #: ../info.php:27
 msgid "Possibility to search and download subtitles from %1."
@@ -774,6 +779,9 @@ msgid ""
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
+"Jūsų kalba: šiuo metu SMPlayer išversta daugiau nei į 30 kalbų, \n"
+"tokių kaip Lietuvių, Rusų, Vokiečių, Prancūzų, Ispanų, Kinų, Italų,\n"
+"Japonų..."
 
 #: ../info.php:44
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
@@ -781,7 +789,7 @@ msgstr "Nemokama ir atviro kodo. SMPlayer galioja <b>GPL</b> licencija."
 
 #: ../info.php:50
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-msgstr ""
+msgstr "Parsisiųskite naujausią SMPlayer versiją iš <a href=%1>čia</a>"
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
