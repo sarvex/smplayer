@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 14:32+0100\n"
+"POT-Creation-Date: 2012-11-26 01:17+0100\n"
 "PO-Revision-Date: 2012-11-06 08:25+0200\n"
 "Last-Translator: Algimantas Margevičius <margevicius.algimantas@gmail.com>\n"
 "Language-Team: Lietuvių <>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Susisiekite su mumis"
 
-#: ../contact.php:9 ../footer.php:45
+#: ../contact.php:9 ../footer.php:50
 msgid "Contact us"
 msgstr "Susisiekite su mumis"
 
@@ -141,7 +141,7 @@ msgstr "Lietuvių"
 msgid "Simplified chinese"
 msgstr "Supaprastinta kinų"
 
-#: ../contact.php:64 ../footer.php:48
+#: ../contact.php:64 ../footer.php:53
 msgid "Follow us on Twitter"
 msgstr "Sekite mus Twitter"
 
@@ -334,6 +334,211 @@ msgstr ""
 msgid "Close"
 msgstr "Užverti"
 
+#: ../faq.php:3
+msgid "SMPlayer - FAQ"
+msgstr ""
+
+#: ../faq.php:11
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../faq.php:14
+msgid "How can I download subtitles from opensubtitles.org?"
+msgstr ""
+
+#: ../faq.php:17
+msgid ""
+"It's very easy. Just open a video, and then select the option \"Find\n"
+"subtitles on opensubtitles.org\" within the Subtitles menu. A new window\n"
+"will show a list of suitable subtitles for the video you're playing.\n"
+"Select one and click on the Download button. The subtitle file will be\n"
+"downloaded and displayed in the video."
+msgstr ""
+
+#: ../faq.php:24
+msgid "DVD menus, where are they?"
+msgstr ""
+
+#: ../faq.php:27
+msgid ""
+"Go to the Drive section in preferences and check the option\n"
+"\"Enable DVD menus (Experimental)\" and set your DVD drive."
+msgstr ""
+
+#: ../faq.php:31
+msgid "How can I download a Youtube video?"
+msgstr ""
+
+#: ../faq.php:34
+msgid ""
+"Right click on a video in the Youtube browser, and select the option\n"
+"\"Record video\"."
+msgstr ""
+
+#: ../faq.php:38
+msgid "How can I change the skin?"
+msgstr ""
+
+#: ../faq.php:41
+msgid ""
+"Go to the SMPlayer preferences, select the Interface section, then\n"
+"select the \"Skinnable GUI\". Now you can choose among several skins."
+msgstr ""
+
+#: ../faq.php:45
+msgid "Where is the configuration stored? Can I reset the settings?"
+msgstr ""
+
+#: ../faq.php:48
+msgid ""
+"The easiest way to find the configuration files of SMPlayer is by\n"
+"selecting the option \"Open configuration folder\" in the Help menu. If\n"
+"you want to delete the current configuration and start with the default\n"
+"settings, just delete the file smplayer.ini (important: be sure SMPlayer\n"
+"is not running when you delete the file)."
+msgstr ""
+
+#: ../faq.php:55
+msgid "What's the difference between SMPlayer and MPlayer?"
+msgstr ""
+
+#: ../faq.php:58
+msgid ""
+"They are two different applications that work together. SMPlayer\n"
+"actually is not a media player... MPlayer is. MPlayer is a command-line\n"
+"application, it doesn't have menus or buttons. It is controlled by the\n"
+"keyboard. As this is not very user friendly, several graphical\n"
+"interfaces have been developed, and SMPlayer is one of them. So MPlayer\n"
+"is the playback engine, SMPlayer adds the buttons, menus, dialogs, and so\n"
+"on. The Windows packages already include a MPlayer build along with\n"
+"SMPlayer."
+msgstr ""
+
+#: ../faq.php:68
+msgid "What does the \"ps\" mean in some of the installers name?"
+msgstr ""
+
+#: ../faq.php:71
+msgid ""
+"It means that the installer includes a \"promotional screen\" from a\n"
+"sponsor. This screen offers the user the possibility to install a third\n"
+"party application. It may be for example a demo version of an\n"
+"interesting application. It's up to you to decide whether give it a try\n"
+"or not. If you install it but then you don't like, you can uninstall it\n"
+"easily later."
+msgstr ""
+
+#: ../faq.php:78
+msgid ""
+"If you decide to install it, the sponsor will send a few cents to\n"
+"SMPlayer. This way we don't need to ask the users for donations. You can\n"
+"find more info at %1."
+msgstr ""
+
+#: ../faq.php:83
+msgid ""
+"If you just don't want to see this screen, just download the no \"ps\" "
+"installer."
+msgstr ""
+
+#: ../faq.php:89
+msgid "How can I take advantage of all my CPU cores?"
+msgstr ""
+
+#: ../faq.php:92
+msgid ""
+"Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt\n"
+"in Linux. MPlayer2 automatically uses all cores, but MPlayer requires\n"
+"manual adjustment. You can adjust the number of threads used for\n"
+"decoding in Preferences -> Performance. Set it to equal or less than the\n"
+"number of cores (and threads in the case of hyperthreaded Intel CPUs)\n"
+"your processor has. Setting it to greater than your CPU is capable of\n"
+"will have no effect."
+msgstr ""
+
+#: ../faq.php:101
+msgid ""
+"I want the subtitles to be displayed on the black border instead of the "
+"image, how can I do it?"
+msgstr ""
+
+#: ../faq.php:104
+msgid "Select the option \"Add black borders\" in the video filters menu."
+msgstr ""
+
+#: ../faq.php:107
+msgid "Is UMPlayer related to SMPlayer?"
+msgstr ""
+
+#: ../faq.php:110
+msgid ""
+"Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
+"new features, like new skins, and Youtube&trade; and SHOUTcast&trade; "
+"support. \n"
+"Most of those features are now included in SMPlayer as well."
+msgstr ""
+
+#: ../faq.php:114
+msgid ""
+"The UMPlayer project seems dead (no updates since a lot of months) and\n"
+"version 0.98 can't play Youtube videos anymore, so if you are a user of\n"
+"UMPlayer it's recommended to switch to SMPlayer. \n"
+"Moreover SMPlayer includes new features not present in UMPlayer."
+msgstr ""
+
+#: ../faq.php:119
+msgid ""
+"Anyway, if you still prefer to use UMPlayer we released a new version\n"
+"with the Youtube problem fixed: %1."
+msgstr ""
+
+#: ../faq.php:124
+msgid "What's \"smtube\"?"
+msgstr ""
+
+#: ../faq.php:127
+msgid ""
+"It's the Youtube browser that was first included in UMPlayer, and we\n"
+"adapted it for SMPlayer. We made it an independent application, and on\n"
+"Linux it can run on its own, the user can select the player to use\n"
+"(SMPlayer isn't even required)."
+msgstr ""
+
+#: ../faq.php:133
+msgid ""
+"I'm using Windows Vista or later and every time I play a video Aero is "
+"disabled, why?"
+msgstr ""
+
+#: ../faq.php:136
+msgid ""
+"This happens when using directx as video driver (Preferences -> General\n"
+"-> Video). You can change it to gl, gl2 or direct3d."
+msgstr ""
+
+#: ../faq.php:140
+msgid ""
+"(Windows) I'm unable to open files with special or non-English characters, "
+"why?"
+msgstr ""
+
+#: ../faq.php:143
+msgid ""
+"If you are unable to open files with special or non-English characters,\n"
+"enable Pass short filenames (8+3) to MPlayer under Options ->\n"
+"Preferences -> Advanced to work around this problem."
+msgstr ""
+
+#: ../faq.php:148
+msgid "Some menu options make the video to go blank for a moment. Why?"
+msgstr ""
+
+#: ../faq.php:151
+msgid ""
+"Some options require to stop the MPlayer process and launch it again\n"
+"with new parameters. That's why playback interrupts for a moment."
+msgstr ""
+
 #: ../footer.php:9
 msgid "Other links:"
 msgstr "Kitos nuorodos:"
@@ -359,9 +564,9 @@ msgstr "Naujų galimybių prašymai"
 msgid "Mirror"
 msgstr "Veidrodis"
 
-#: ../footer.php:40
-msgid "Wiki"
-msgstr "Wiki"
+#: ../footer.php:45
+msgid "FAQ"
+msgstr ""
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -714,90 +919,14 @@ msgstr "UMPlayer pradiniai kodai"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer ekranvaizdis"
 
-#~ msgid ""
-#~ "Translations: currently SMPlayer is translated into more than 30 \n"
-#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-#~ "Japanese...."
-#~ msgstr ""
-#~ "Vertimai: šiuo metu SMPlayer išversta daugiau nei į 30 kalbų\n"
-#~ "įskaitant Lietuvių, Rusų, Ispanų, Vokiečių, Prancūzų, Italų, Kinų, \n"
-#~ "Japonų..."
+#~ msgid "Click here to get the full package"
+#~ msgstr "Norėdami gauti pilną paketą paspauskite čia"
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Bendra informacija"
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Jei norite galite pabandyti %1."
 
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Grafinė MPlayer sąsaja"
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Jis gali atkurti Yotuube vaizdo įrašus. Įterpta Youtube naršyklė, kuri\n"
-#~ "leidžia lengvai parsiųsti Youtube vaizdo įrašus."
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Galimybė keisti sąsajos stilių ir piktogramų rinkinius."
-
-#~ msgid ""
-#~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
-#~ "\">forum</a>.\n"
-#~ "<br>\n"
-#~ "If you find bugs in smplayer you can report them in our \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?"
-#~ "group_id=185512&atid=913573\">bug tracker</a>.\n"
-#~ "<br>\n"
-#~ "You can request new features in our <a href=\"http://sourceforge.net/"
-#~ "tracker/?group_id=185512&atid=913576\">request tracker</a>.\n"
-#~ "<br>\n"
-#~ "<b>Irc channel</b>:\n"
-#~ "Join #smplayer at irc.oftc.net (or click \n"
-#~ "<a href=\"irc://irc.oftc.net/smplayer\">this link</a> if your client "
-#~ "supports it).\""
-#~ msgstr ""
-#~ "Pagalbos galite gauti mūsų <a href=\"http://smplayer.sourceforge.net/forum"
-#~ "\">forume</a>.\n"
-#~ "<br>\n"
-#~ "Jei radote smplayer klaidų apie jas galite pranešti mūsų \n"
-#~ "<a href=\"http://sourceforge.net/tracker/?"
-#~ "group_id=185512&atid=913573\">klaidų sekimo tarnyboje</a>.\n"
-#~ "<br>\n"
-#~ "Naujų galimybių galite prašyti <a href=\"http://sourceforge.net/tracker/?"
-#~ "group_id=185512&atid=913576\">prašymų srityje</a>.\n"
-#~ "<br>\n"
-#~ "<b>Irc kanalas</b>:\n"
-#~ "Prisijunkite #smplayer serveryje irc.oftc.net (arba paspauskite \n"
-#~ "<a href=\"irc://irc.oftc.net/smplayer\">šią nuorodą</a> jei jūsų klientas "
-#~ "ją palaiko).\""
-
-#~ msgid ""
-#~ "<li>Nardog (Japanese)</li>\n"
-#~ "<li>Smarquespt (Portuguese)</li>\n"
-#~ "<li>Xabier Aramendi (Basque)</li>\n"
-#~ "<li>Gymka (Lithuanian)</li>\n"
-#~ "<li>Bendihua (Simplified chinese)</li>"
-#~ msgstr ""
-#~ "<li>Nardog (Japonų)</li>\n"
-#~ "<li>Smarquespt (Portugalų)</li>\n"
-#~ "<li>Xabier Aramendi (Baskų)</li>\n"
-#~ "<li>Gymka (Lietuvių)</li>\n"
-#~ "<li>Bendihua (Supaprastinta kinų)</li>"
-
-#~ msgid ""
-#~ "<b>Ricardo Villalba</b> (main developer, webmaster, ubuntu packages, "
-#~ "spanish translation)\n"
-#~ "<br>\n"
-#~ "<b>redxii</b> (windows packages, mplayer builds for windows)\n"
-#~ "<br>\n"
-#~ "<b>Charles Barcza</b> (smplayer logo). Conversion to svg by <b>akovia</b>."
-#~ msgstr ""
-#~ "<b>Ricardo Villalba</b> (pagrindinis kūrėjas, webmaster, ubuntu "
-#~ "pakuotojas, ispanų vertimas)\n"
-#~ "<br>\n"
-#~ "<b>redxii</b> (windows paketai, mplayer kompiliavimas windows sistemai)\n"
-#~ "<br>\n"
-#~ "<b>Charles Barcza</b> (smplayer logotipas). Konvertavimą į svg kūrė "
-#~ "<b>akovia</b>."
+#~ msgid "the unstable version"
+#~ msgstr "nestabilią versiją"
 
 #~ msgid ""
 #~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
@@ -831,11 +960,90 @@ msgstr "UMPlayer ekranvaizdis"
 #~ "<a href=\"irc://irc.oftc.net/smplayer\">šią nuorodą</a> jei jūsų klientas "
 #~ "ją palaiko)."
 
-#~ msgid "the unstable version"
-#~ msgstr "nestabilią versiją"
+#~ msgid ""
+#~ "<b>Ricardo Villalba</b> (main developer, webmaster, ubuntu packages, "
+#~ "spanish translation)\n"
+#~ "<br>\n"
+#~ "<b>redxii</b> (windows packages, mplayer builds for windows)\n"
+#~ "<br>\n"
+#~ "<b>Charles Barcza</b> (smplayer logo). Conversion to svg by <b>akovia</b>."
+#~ msgstr ""
+#~ "<b>Ricardo Villalba</b> (pagrindinis kūrėjas, webmaster, ubuntu "
+#~ "pakuotojas, ispanų vertimas)\n"
+#~ "<br>\n"
+#~ "<b>redxii</b> (windows paketai, mplayer kompiliavimas windows sistemai)\n"
+#~ "<br>\n"
+#~ "<b>Charles Barcza</b> (smplayer logotipas). Konvertavimą į svg kūrė "
+#~ "<b>akovia</b>."
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Jei norite galite pabandyti %1."
+#~ msgid ""
+#~ "<li>Nardog (Japanese)</li>\n"
+#~ "<li>Smarquespt (Portuguese)</li>\n"
+#~ "<li>Xabier Aramendi (Basque)</li>\n"
+#~ "<li>Gymka (Lithuanian)</li>\n"
+#~ "<li>Bendihua (Simplified chinese)</li>"
+#~ msgstr ""
+#~ "<li>Nardog (Japonų)</li>\n"
+#~ "<li>Smarquespt (Portugalų)</li>\n"
+#~ "<li>Xabier Aramendi (Baskų)</li>\n"
+#~ "<li>Gymka (Lietuvių)</li>\n"
+#~ "<li>Bendihua (Supaprastinta kinų)</li>"
 
-#~ msgid "Click here to get the full package"
-#~ msgstr "Norėdami gauti pilną paketą paspauskite čia"
+#~ msgid ""
+#~ "You can get help in our <a href=\"http://smplayer.sourceforge.net/forum"
+#~ "\">forum</a>.\n"
+#~ "<br>\n"
+#~ "If you find bugs in smplayer you can report them in our \n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">bug tracker</a>.\n"
+#~ "<br>\n"
+#~ "You can request new features in our <a href=\"http://sourceforge.net/"
+#~ "tracker/?group_id=185512&atid=913576\">request tracker</a>.\n"
+#~ "<br>\n"
+#~ "<b>Irc channel</b>:\n"
+#~ "Join #smplayer at irc.oftc.net (or click \n"
+#~ "<a href=\"irc://irc.oftc.net/smplayer\">this link</a> if your client "
+#~ "supports it).\""
+#~ msgstr ""
+#~ "Pagalbos galite gauti mūsų <a href=\"http://smplayer.sourceforge.net/forum"
+#~ "\">forume</a>.\n"
+#~ "<br>\n"
+#~ "Jei radote smplayer klaidų apie jas galite pranešti mūsų \n"
+#~ "<a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913573\">klaidų sekimo tarnyboje</a>.\n"
+#~ "<br>\n"
+#~ "Naujų galimybių galite prašyti <a href=\"http://sourceforge.net/tracker/?"
+#~ "group_id=185512&atid=913576\">prašymų srityje</a>.\n"
+#~ "<br>\n"
+#~ "<b>Irc kanalas</b>:\n"
+#~ "Prisijunkite #smplayer serveryje irc.oftc.net (arba paspauskite \n"
+#~ "<a href=\"irc://irc.oftc.net/smplayer\">šią nuorodą</a> jei jūsų klientas "
+#~ "ją palaiko).\""
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Galimybė keisti sąsajos stilių ir piktogramų rinkinius."
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Jis gali atkurti Yotuube vaizdo įrašus. Įterpta Youtube naršyklė, kuri\n"
+#~ "leidžia lengvai parsiųsti Youtube vaizdo įrašus."
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Grafinė MPlayer sąsaja"
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Bendra informacija"
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "Vertimai: šiuo metu SMPlayer išversta daugiau nei į 30 kalbų\n"
+#~ "įskaitant Lietuvių, Rusų, Ispanų, Vokiečių, Prancūzų, Italų, Kinų, \n"
+#~ "Japonų..."
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
