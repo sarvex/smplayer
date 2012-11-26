@@ -37,7 +37,12 @@ else
 	echo "<a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a>\n";
 ?>
 </li>
-<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+<?php
+if (0) {
+echo '<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>';
+}
+?>
+<li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li>
 </ul>
 </td>
 <td>

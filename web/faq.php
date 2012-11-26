@@ -2,7 +2,7 @@
 include_once("header.php");
 print_header(get_tr("SMPlayer - FAQ"), 1);
 echo "<body>\n";
-print_menu(1);
+print_menu(0);
 ?>
 
 <div class="container-fluid">
