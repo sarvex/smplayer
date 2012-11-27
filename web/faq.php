@@ -11,7 +11,8 @@ print_menu(0);
 <h1><?php tr("Frequently Asked Questions"); ?></h1>
 
 <div class="span5">
-<h3><?php tr("How can I download subtitles from opensubtitles.org?"); ?></h3>
+<h4><?php tr("How can I download subtitles from opensubtitles.org?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("It's very easy. Just open a video, and then select the option \"Find
@@ -20,29 +21,37 @@ will show a list of suitable subtitles for the video you're playing.
 Select one and click on the Download button. The subtitle file will be
 downloaded and displayed in the video.");
 ?>
+</blockquote>
 
-<h3><?php tr("DVD menus, where are they?"); ?></h3>
+<h4><?php tr("DVD menus, where are they?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Go to the Drive section in preferences and check the option
 \"Enable DVD menus (Experimental)\" and set your DVD drive.");
 ?>
+</blockquote>
 
-<h3><?php tr("How can I download a Youtube video?"); ?></h3>
+<h4><?php tr("How can I download a Youtube video?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Right click on a video in the Youtube browser, and select the option
 \"Record video\".");
 ?>
+</blockquote>
 
-<h3><?php tr("How can I change the skin?"); ?></h3>
+<h4><?php tr("How can I change the skin?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Go to the SMPlayer preferences, select the Interface section, then
 select the \"Skinnable GUI\". Now you can choose among several skins.");
 ?>
+</blockquote>
 
-<h3><?php tr("Where is the configuration stored? Can I reset the settings?"); ?></h3>
+<h4><?php tr("Where is the configuration stored? Can I reset the settings?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("The easiest way to find the configuration files of SMPlayer is by
@@ -51,8 +60,10 @@ you want to delete the current configuration and start with the default
 settings, just delete the file smplayer.ini (important: be sure SMPlayer
 is not running when you delete the file).");
 ?>
+</blockquote>
 
-<h3><?php tr("What's the difference between SMPlayer and MPlayer?"); ?></h3>
+<h4><?php tr("What's the difference between SMPlayer and MPlayer?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("They are two different applications that work together. SMPlayer
@@ -64,8 +75,10 @@ is the playback engine, SMPlayer adds the buttons, menus, dialogs, and so
 on. The Windows packages already include a MPlayer build along with
 SMPlayer.");
 ?>
+</blockquote>
 
-<h3><?php tr("What does the \"ps\" mean in some of the installers name?"); ?></h3>
+<h4><?php tr("What does the \"ps\" mean in some of the installers name?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("It means that the installer includes a \"promotional screen\" from a
@@ -82,11 +95,12 @@ find more info at %1.",
 echo "<br>";
 tr("If you just don't want to see this screen, just download the no \"ps\" installer.");
 ?>
-
+</blockquote>
 </div>
 
 <div class="span5">
-<h3><?php tr("How can I take advantage of all my CPU cores?"); ?></h3>
+<h4><?php tr("How can I take advantage of all my CPU cores?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt
@@ -97,14 +111,18 @@ number of cores (and threads in the case of hyperthreaded Intel CPUs)
 your processor has. Setting it to greater than your CPU is capable of
 will have no effect.");
 ?>
+</blockquote>
 
-<h3><?php tr("I want the subtitles to be displayed on the black border instead of the image, how can I do it?"); ?></h3>
+<h4><?php tr("I want the subtitles to be displayed on the black border instead of the image, how can I do it?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Select the option \"Add black borders\" in the video filters menu.");
 ?>
+</blockquote>
 
-<h3><?php tr("Is UMPlayer related to SMPlayer?"); ?></h3>
+<h4><?php tr("Is UMPlayer related to SMPlayer?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several
@@ -120,8 +138,10 @@ tr("Anyway, if you still prefer to use UMPlayer we released a new version
 with the Youtube problem fixed: %1.",
 "<a href=\"http://smplayer.sourceforge.net/umplayer.php?tr_lang=". $tr_lang ."\">http://smplayer.sf.net/umplayer.php</a>");
 ?>
+</blockquote>
 
-<h3><?php tr("What's \"smtube\"?"); ?></h3>
+<h4><?php tr("What's \"smtube\"?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("It's the Youtube browser that was first included in UMPlayer, and we
@@ -129,28 +149,35 @@ adapted it for SMPlayer. We made it an independent application, and on
 Linux it can run on its own, the user can select the player to use
 (SMPlayer isn't even required).");
 ?>
+</blockquote>
 
-<h3><?php tr("I'm using Windows Vista or later and every time I play a video Aero is disabled, why?"); ?></h3>
+<h4><?php tr("I'm using Windows Vista or later and every time I play a video Aero is disabled, why?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("This happens when using directx as video driver (Preferences -> General
 -> Video). You can change it to gl, gl2 or direct3d.");
 ?>
+</blockquote>
 
-<h3><?php tr("(Windows) I'm unable to open files with special or non-English characters, why?"); ?></h3>
+<h4><?php tr("(Windows) I'm unable to open files with special or non-English characters, why?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("If you are unable to open files with special or non-English characters,
 enable Pass short filenames (8+3) to MPlayer under Options ->
 Preferences -> Advanced to work around this problem.");
 ?>
+</blockquote>
 
-<h3><?php tr("Some menu options make the video to go blank for a moment. Why?"); ?></h3>
+<h4><?php tr("Some menu options make the video to go blank for a moment. Why?"); ?></h4>
+<blockquote>
 <p>
 <?php
 tr("Some options require to stop the MPlayer process and launch it again
 with new parameters. That's why playback interrupts for a moment.");
 ?>
+</blockquote>
 
 </div>
 
