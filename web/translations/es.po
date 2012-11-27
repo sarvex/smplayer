@@ -361,7 +361,7 @@ msgstr ""
 
 #: ../faq.php:24
 msgid "DVD menus, where are they?"
-msgstr "¿Dónde están los menús de los DVD?"
+msgstr "¿Qué hay que hacer para activar los menús de los DVD?"
 
 #: ../faq.php:27
 msgid ""
@@ -374,23 +374,28 @@ msgstr ""
 
 #: ../faq.php:31
 msgid "How can I download a Youtube video?"
-msgstr ""
+msgstr "¿Cómo se puede descargar un vídeo de Youtube?"
 
 #: ../faq.php:34
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
 msgstr ""
+"Pulsa con el botón derecho del ratón sobre un vídeo en el buscador de "
+"vídeos de Youtube y selecciona la opción \"Grabar vídeo\"."
 
 #: ../faq.php:38
 msgid "How can I change the skin?"
-msgstr ""
+msgstr "¿Cómo se puede cambiar la piel (tema)?"
 
 #: ../faq.php:41
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
 msgstr ""
+"En el diálogo de preferencias de SMPlayer, ve a la sección Interfaz, "
+"y selecciona el \"GUI con soporte de pieles\". Ahora podrás elegir "
+"entre distintas pieles."
 
 #: ../faq.php:45
 msgid "Where is the configuration stored? Can I reset the settings?"
@@ -483,7 +488,7 @@ msgstr ""
 
 #: ../faq.php:107
 msgid "Is UMPlayer related to SMPlayer?"
-msgstr ""
+msgstr "¿Tiene UMPlayer algún tipo de relación con SMPlayer?"
 
 #: ../faq.php:110
 msgid ""
@@ -492,6 +497,10 @@ msgid ""
 "support. \n"
 "Most of those features are now included in SMPlayer as well."
 msgstr ""
+"Sí. UMPlayer es un fork creado a partir de SMPlayer 0.6.9. Le añadieron "
+"algunas cosas nuevas, como skins y soporte para "
+"Youtube&trade; y SHOUTcast&trade;. "
+"La mayoría de esas cosas ya se incluyen en SMPlayer también."
 
 #: ../faq.php:114
 msgid ""
@@ -500,12 +509,19 @@ msgid ""
 "UMPlayer it's recommended to switch to SMPlayer. \n"
 "Moreover SMPlayer includes new features not present in UMPlayer."
 msgstr ""
+"Ahora el proyecto UMPlayer parece que está muerto (no hay actualizaciones "
+"desde hace mucho tiempo) y la versión 0.98 ya no puede reproducir vídeos "
+"de Youtube, así que si eres un usuario de UMPlayer es recomendable que te "
+"cambies a SMPlayer. Además SMPlayer incluye nuevas opciones que no están "
+"disponibles en UMPlayer."
 
 #: ../faq.php:119
 msgid ""
 "Anyway, if you still prefer to use UMPlayer we released a new version\n"
 "with the Youtube problem fixed: %1."
 msgstr ""
+"De todas formas si aún prefieres seguir usando el UMPlayer hemos creado "
+"una nueva versión que soluciona el problema de Youtube: %1."
 
 #: ../faq.php:124
 msgid "What's \"smtube\"?"
@@ -524,12 +540,16 @@ msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
 msgstr ""
+"Uso Windows Vista o posterior y cada vez que reproduzco un vídeo se "
+"desactiva Aero, ¿por qué?"
 
 #: ../faq.php:136
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
 msgstr ""
+"Esto sucede si se usa directx como driver de vídeo (Preferencias -> General "
+"-> Vídeo). Puedes cambiarlo a gl, gl2 o direct3d."
 
 #: ../faq.php:140
 msgid ""
@@ -546,13 +566,16 @@ msgstr ""
 
 #: ../faq.php:148
 msgid "Some menu options make the video to go blank for a moment. Why?"
-msgstr ""
+msgstr "Algunas opciones de los menús producen un pequeño corte en el vídeo, ¿por qué?"
 
 #: ../faq.php:151
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
 msgstr ""
+"Algunas opciones requieren detener el proceso del MPlayer y volver a "
+"lanzarlo con nuevos parámetros. Por eso la reproducción se interrumpe "
+"por un momento."
 
 #: ../footer.php:9
 msgid "Other links:"
