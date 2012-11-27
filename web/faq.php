@@ -47,6 +47,8 @@ tr("Right click on a video in the Youtube browser, and select the option
 <?php
 tr("Go to the SMPlayer preferences, select the Interface section, then
 select the \"Skinnable GUI\". Now you can choose among several skins.");
+echo " ";
+tr("In linux you need to install the package smplayer-skins.");
 ?>
 </blockquote>
 
