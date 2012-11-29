@@ -23,6 +23,16 @@ downloaded and displayed in the video.");
 ?>
 </blockquote>
 
+<h4><?php tr("The video equalizer doesn't work, why?"); ?></h4>
+<blockquote>
+<p>
+<?php
+tr("With some cards or video drivers the hardware video 
+equalizer may not work. Go to Preferences -> General -> Video 
+and enable the software equalizer.");
+?>
+</blockquote>
+
 <h4><?php tr("DVD menus, where are they?"); ?></h4>
 <blockquote>
 <p>
@@ -101,6 +111,14 @@ tr("If you just don't want to see this screen, just download the no \"ps\" insta
 </div>
 
 <div class="span5">
+<h4><?php tr("The current time of the movie appears in the up left corner of the image, how can I hide it?"); ?></h4>
+<blockquote>
+<p>
+<?php
+tr("Options -> OSD -> Subtitles only.");
+?>
+</blockquote>
+
 <h4><?php tr("How can I take advantage of all my CPU cores?"); ?></h4>
 <blockquote>
 <p>
