@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SMPlayer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 11:48+0100\n"
+"POT-Creation-Date: 2012-11-29 23:33+0100\n"
 "PO-Revision-Date: 2012-11-26 01:24+0100\n"
 "Last-Translator: Ricardo Villalba <smplayer.dev@gmail.com>\n"
 "Language-Team: Ricardo Villalba <smplayer.dev@gmail.com>\n"
+"Language: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: Spanish\n"
 
 #: ../contact.php:3
 msgid "SMPlayer - Contact us"
@@ -359,17 +359,31 @@ msgid ""
 "downloaded and displayed in the video."
 msgstr ""
 "Es muy fácil. Simplemente abre un vídeo y después selecciona la opción "
-"\"Buscar subtítulos en opensubtitles.org\" del menú Subtítulos. "
-"Aparecerá una nueva ventana donde se mostrará una lista de subtítulos "
-"adecuados para el vídeo que estás reproduciendo. Selecciona uno de ellos "
-"y pulsa el botón Descargar. El subtítulo se descargará y se mostrará en "
-"el vídeo."
+"\"Buscar subtítulos en opensubtitles.org\" del menú Subtítulos. Aparecerá "
+"una nueva ventana donde se mostrará una lista de subtítulos adecuados para "
+"el vídeo que estás reproduciendo. Selecciona uno de ellos y pulsa el botón "
+"Descargar. El subtítulo se descargará y se mostrará en el vídeo."
 
 #: ../faq.php:26
+msgid "The video equalizer doesn't work, why?"
+msgstr "El ecualizador de vídeo no funciona, ¿por qué?"
+
+#: ../faq.php:30
+msgid ""
+"With some cards or video drivers the hardware video \n"
+"equalizer may not work. Go to Preferences -> General -> Video \n"
+"and enable the software equalizer."
+msgstr ""
+"Con algunas tarjetas o drivers de vídeo, el equalizador de "
+"vídeo por hardware puede que no funcione. Pero puedes "
+"activar el ecualizador por software en Preferencias -> General "
+"--> Vídeo."
+
+#: ../faq.php:36
 msgid "DVD menus, where are they?"
 msgstr "¿Qué hay que hacer para que aparezcan los menús de los DVD?"
 
-#: ../faq.php:30
+#: ../faq.php:40
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
@@ -378,11 +392,11 @@ msgstr ""
 "\"Activar menús DVD (experimental)\" y no te olvides de seleccionar tu "
 "unidad de DVD."
 
-#: ../faq.php:35
+#: ../faq.php:45
 msgid "How can I download a Youtube video?"
 msgstr "¿Cómo se puede descargar un vídeo de Youtube?"
 
-#: ../faq.php:39
+#: ../faq.php:49
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
@@ -390,11 +404,11 @@ msgstr ""
 "Pulsa con el botón derecho del ratón sobre un vídeo en el buscador de vídeos "
 "de Youtube y selecciona la opción \"Grabar vídeo\"."
 
-#: ../faq.php:44
+#: ../faq.php:54
 msgid "How can I change the skin?"
 msgstr "¿Cómo se puede cambiar la piel (tema)?"
 
-#: ../faq.php:48
+#: ../faq.php:58
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
@@ -403,16 +417,16 @@ msgstr ""
 "selecciona el \"GUI con soporte de pieles\". Ahora podrás elegir entre "
 "distintas pieles."
 
-#: ../faq.php:51
+#: ../faq.php:61
 msgid "In linux you need to install the package smplayer-skins."
 msgstr "En linux necesitas instalar el paquete smplayer-skins."
 
-#: ../faq.php:55
+#: ../faq.php:65
 msgid "Where is the configuration stored? Can I reset the settings?"
 msgstr ""
 "¿Dónde se guarda la configuración? ¿Se puede reestablecer la configuración"
 
-#: ../faq.php:59
+#: ../faq.php:69
 msgid ""
 "The easiest way to find the configuration files of SMPlayer is by\n"
 "selecting the option \"Open configuration folder\" in the Help menu. If\n"
@@ -423,15 +437,15 @@ msgstr ""
 "La manera más sencilla de encontrar los ficheros de configuración de "
 "SMPlayer es por medio de la opción \"Abrir directorio de configuración\" "
 "ubicada en el menú Ayuda. Si quieres borrar la configuración actual y "
-"empezar de nuevo con las opciones por defecto, simplemente borra el "
-"fichero smplayer.ini (importante: asegúrate de que el SMPlayer no se está "
-"ejecutando cuando borres el fichero)."
+"empezar de nuevo con las opciones por defecto, simplemente borra el fichero "
+"smplayer.ini (importante: asegúrate de que el SMPlayer no se está ejecutando "
+"cuando borres el fichero)."
 
-#: ../faq.php:67
+#: ../faq.php:77
 msgid "What's the difference between SMPlayer and MPlayer?"
 msgstr "¿Cuál es la diferencia entre SMPlayer y MPlayer?"
 
-#: ../faq.php:71
+#: ../faq.php:81
 msgid ""
 "They are two different applications that work together. SMPlayer\n"
 "actually is not a media player... MPlayer is. MPlayer is a command-line\n"
@@ -451,13 +465,13 @@ msgstr ""
 "Los paquetes para Windows ya incluyen una versión de MPlayer junto con "
 "SMPlayer."
 
-#: ../faq.php:82
+#: ../faq.php:92
 msgid "What does the \"ps\" mean in some of the installers name?"
 msgstr ""
-"¿Qué significa el \"ps\" que se puede encontrar en el nombre de "
-"algunos instaladores?"
+"¿Qué significa el \"ps\" que se puede encontrar en el nombre de algunos "
+"instaladores?"
 
-#: ../faq.php:86
+#: ../faq.php:96
 msgid ""
 "It means that the installer includes a \"promotional screen\" from a\n"
 "sponsor. This screen offers the user the possibility to install a third\n"
@@ -466,16 +480,15 @@ msgid ""
 "or not. If you install it but then you don't like it, you can uninstall it\n"
 "easily later."
 msgstr ""
-"Es una abreviatura de \"promotional screen\", es decir "
-"<i>pantalla promocional</i>. Esto significa que el instalador incluye "
-"una pantalla proporcionada por un patrocinador. Esta pantalla le da al "
-"usuario la posibilidad de instalar una aplicación de terceros. "
-"Por ejemplo podría ser una versión demo de un programa interesante. "
-"Eres tú el que debe decidir si lo quieres instalar o no. No se instalará "
-"nada sin tu consentimiento. Si decides aceptar instalar ese programa pero "
-"luego no te gusta, puedes desinstalarlo fácilmente más tarde."
+"Es una abreviatura de \"promotional screen\", es decir <i>pantalla "
+"promocional</i>. Esto significa que el instalador incluye una pantalla "
+"proporcionada por un patrocinador. Esta pantalla le da al usuario la "
+"posibilidad de instalar una aplicación de terceros. Por ejemplo podría ser "
+"una versión demo de un programa interesante. "
+"Si decides aceptar instalar ese programa pero luego no te gusta, siempre "
+"puedes desinstalarlo fácilmente más tarde."
 
-#: ../faq.php:93
+#: ../faq.php:103
 msgid ""
 "If you decide to install it, the sponsor will send a few cents to\n"
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
@@ -485,7 +498,7 @@ msgstr ""
 "usuario acepte instalar el programa ofertado. De este modo evitamos tener "
 "que pedir donativos a los usuarios. Puedes encontrar más información en %1."
 
-#: ../faq.php:98
+#: ../faq.php:108
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
@@ -493,11 +506,23 @@ msgstr ""
 "Si no quieres que te aparezca esta pantalla, simplemente descarga el "
 "instalador sin el \"ps\"."
 
-#: ../faq.php:104
+#: ../faq.php:114
+msgid ""
+"The current time of the movie appears in the up left corner of the image, "
+"how can I hide it?"
+msgstr ""
+"Aparece un contador en la esquina superior izquierda de la imagen, "
+"¿cómo puedo quitarlo?"
+
+#: ../faq.php:118
+msgid "Options -> OSD -> Subtitles only."
+msgstr "Opciones -> OSD -> Sólo subtítulos."
+
+#: ../faq.php:122
 msgid "How can I take advantage of all my CPU cores?"
 msgstr "¿Cómo puedo aprovechar todos los núcleos de mi CPU?"
 
-#: ../faq.php:108
+#: ../faq.php:126
 msgid ""
 "Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt\n"
 "in Linux. MPlayer2 automatically uses all cores, but MPlayer requires\n"
@@ -509,29 +534,28 @@ msgid ""
 msgstr ""
 "La decodificación multi-hilo requiere una versión reciente de MPlayer o "
 "FFmpeg-mt en Linux. MPlayer2 usa automáticamente todos los núcleos pero "
-"MPlayer necesita un ajuste manual. Puedes ajustar el número de hilos que "
-"se usarán para la decodificación en Preferencias -> Rendimiento. "
-"Ponlo en un número igual o inferior al número de núcleos que tiene tu "
-"procesador."
+"MPlayer necesita un ajuste manual. Puedes ajustar el número de hilos que se "
+"usarán para la decodificación en Preferencias -> Rendimiento. Ponlo en un "
+"número igual o inferior al número de núcleos que tiene tu procesador."
 
-#: ../faq.php:118
+#: ../faq.php:136
 msgid ""
 "I want the subtitles to be displayed on the black border instead of the "
 "image, how can I do it?"
 msgstr ""
-"Quiero que los subtítulos aparezcan en el borde negro en lugar de sobre "
-"la imagen, ¿cómo se puede hacer?
+"Quiero que los subtítulos aparezcan en el borde negro en lugar de sobre la "
+"imagen, ¿cómo se puede hacer?"
 
-#: ../faq.php:122
+#: ../faq.php:140
 msgid "Select the option \"Add black borders\" in the video filters menu."
 msgstr ""
 "Selecciona la opción \"Añadir bordes negros\" en el menú de filtros de vídeo."
 
-#: ../faq.php:126
+#: ../faq.php:144
 msgid "Is UMPlayer related to SMPlayer?"
 msgstr "¿Tiene UMPlayer algún tipo de relación con SMPlayer?"
 
-#: ../faq.php:130
+#: ../faq.php:148
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
 "new features, like new skins, and Youtube&trade; and SHOUTcast&trade; "
@@ -543,7 +567,7 @@ msgstr ""
 "SHOUTcast&trade;. La mayoría de esas cosas ya se incluyen en SMPlayer "
 "también."
 
-#: ../faq.php:134
+#: ../faq.php:152
 msgid ""
 "The UMPlayer project seems dead (no updates since a lot of months) and\n"
 "version 0.98 can't play Youtube videos anymore, so if you are a user of\n"
@@ -556,7 +580,7 @@ msgstr ""
 "cambies a SMPlayer. Además SMPlayer incluye nuevas opciones que no están "
 "disponibles en UMPlayer."
 
-#: ../faq.php:139
+#: ../faq.php:157
 msgid ""
 "Anyway, if you still prefer to use UMPlayer we released a new version\n"
 "with the Youtube problem fixed: %1."
@@ -564,11 +588,11 @@ msgstr ""
 "De todas formas si aún prefieres seguir usando el UMPlayer hemos creado una "
 "nueva versión que soluciona el problema de Youtube: %1."
 
-#: ../faq.php:145
+#: ../faq.php:163
 msgid "What's \"smtube\"?"
 msgstr "¿Qué es eso de \"smtube\"?"
 
-#: ../faq.php:149
+#: ../faq.php:167
 msgid ""
 "It's the Youtube browser that was first included in UMPlayer, and we\n"
 "adapted it for SMPlayer. We made it an independent application, and on\n"
@@ -577,11 +601,11 @@ msgid ""
 msgstr ""
 "Es el buscador de vídeos de Youtube que se incluía en UMPlayer, y que "
 "nosotros hemos adaptado para SMPlayer. Lo hemos hecho un programa "
-"independiente, que en linux incluso puede funcionar por sí mismo. El "
-"usuario puede seleccionar el reproductor que se usará para ver los "
-"vídeos (ni siquiera es necesario tener instalado el SMPlayer)."
+"independiente, que en linux incluso puede funcionar por sí mismo. El usuario "
+"puede seleccionar el reproductor que se usará para ver los vídeos (ni "
+"siquiera es necesario tener instalado el SMPlayer)."
 
-#: ../faq.php:156
+#: ../faq.php:174
 msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
@@ -589,7 +613,7 @@ msgstr ""
 "Uso Windows Vista o posterior y cada vez que reproduzco un vídeo se "
 "desactiva Aero, ¿por qué?"
 
-#: ../faq.php:160
+#: ../faq.php:178
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
@@ -597,31 +621,31 @@ msgstr ""
 "Esto sucede si se usa directx como driver de vídeo (Preferencias -> General -"
 "> Vídeo). Puedes cambiarlo a gl, gl2 o direct3d."
 
-#: ../faq.php:165
+#: ../faq.php:183
 msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
 msgstr ""
-"(Windows) No puedo abrir ficheros que contienen caracteres especiales "
-"o en otro alfabeto, ¿por qué?"
+"(Windows) No puedo abrir ficheros que contienen caracteres especiales o en "
+"otro alfabeto, ¿por qué?"
 
-#: ../faq.php:169
+#: ../faq.php:187
 msgid ""
 "If you are unable to open files with special or non-English characters,\n"
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
 "Preferences -> Advanced to work around this problem."
 msgstr ""
 "Es una limitación/bug de MPlayer. Una manera de evitar el problema es "
-"activando la opción \"Pasar nombre cortos (8+3) a MPlayer\" en Preferencias, "
+"activando la opción \"Pasar nombres cortos (8+3) a MPlayer\" en Preferencias, "
 "sección Avanzado."
 
-#: ../faq.php:175
+#: ../faq.php:193
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr ""
-"Al activar algunas opciones de los menús se produce un pequeño corte "
-"en el vídeo, ¿por qué?"
+"Al activar algunas opciones de los menús se produce un pequeño corte en el "
+"vídeo, ¿por qué?"
 
-#: ../faq.php:179
+#: ../faq.php:197
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
@@ -1031,40 +1055,11 @@ msgstr "Fuentes del UMPlayer"
 msgid "UMPlayer Screenshot"
 msgstr "Captura de pantalla del UMPlayer"
 
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
 
-#~ msgid "Click here to get the full package"
-#~ msgstr "Pulsa aquí para descargar el paquete completo"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Si lo deseas también puedes probar %1."
-
-#~ msgid "the unstable version"
-#~ msgstr "la versión inestable"
-
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
-#~ "mplayer build with a lot of fixes."
-#~ msgstr ""
-#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
-#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
-#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Información general"
+#~ msgid "Possibility to change the skin and style."
+#~ msgstr "Posibilidad de cambiar el skin y el estilo."
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
@@ -1074,8 +1069,37 @@ msgstr "Captura de pantalla del UMPlayer"
 #~ "Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, "
 #~ "incluyendo español, alemán, francés, italiano, ruso, chino, japonés..."
 
-#~ msgid "Possibility to change the skin and style."
-#~ msgstr "Posibilidad de cambiar el skin y el estilo."
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Información general"
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
+#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
+
+#~ msgid ""
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+#~ "mplayer build with a lot of fixes."
+#~ msgstr ""
+#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
+#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
+
+#~ msgid "the unstable version"
+#~ msgstr "la versión inestable"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Si lo deseas también puedes probar %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Pulsa aquí para descargar el paquete completo"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"
