@@ -495,7 +495,7 @@ msgstr ""
 
 #: ../faq.php:104
 msgid "How can I take advantage of all my CPU cores?"
-msgstr ""
+msgstr "¿Cómo puedo aprovechar todos los núcleos de mi CPU?"
 
 #: ../faq.php:108
 msgid ""
@@ -507,6 +507,12 @@ msgid ""
 "your processor has. Setting it to greater than your CPU is capable of\n"
 "will have no effect."
 msgstr ""
+"La decodificación multi-hilo requiere una versión reciente de MPlayer o "
+"FFmpeg-mt en Linux. MPlayer2 usa automáticamente todos los núcleos pero "
+"MPlayer necesita un ajuste manual. Puedes ajustar el número de hilos que "
+"se usarán para la decodificación en Preferencias -> Rendimiento. "
+"Ponlo en un número igual o inferior al número de núcleos que tiene tu "
+"procesador."
 
 #: ../faq.php:118
 msgid ""
@@ -596,6 +602,8 @@ msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
 msgstr ""
+"(Windows) No puedo abrir ficheros que contienen caracteres especiales "
+"o en otro alfabeto, ¿por qué?"
 
 #: ../faq.php:169
 msgid ""
@@ -603,6 +611,9 @@ msgid ""
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
 "Preferences -> Advanced to work around this problem."
 msgstr ""
+"Es una limitación/bug de MPlayer. Una manera de evitar el problema es "
+"activando la opción \"Pasar nombre cortos (8+3) a MPlayer\" en Preferencias, "
+"sección Avanzado."
 
 #: ../faq.php:175
 msgid "Some menu options make the video to go blank for a moment. Why?"
