@@ -348,7 +348,7 @@ msgstr "Preguntas Frecuentes"
 
 #: ../faq.php:14
 msgid "How can I download subtitles from opensubtitles.org?"
-msgstr ""
+msgstr "¿Cómo se pueden descargar los subtítulos de opensubtitles.org?"
 
 #: ../faq.php:18
 msgid ""
@@ -358,10 +358,16 @@ msgid ""
 "Select one and click on the Download button. The subtitle file will be\n"
 "downloaded and displayed in the video."
 msgstr ""
+"Es muy fácil. Simplemente abre un vídeo y después selecciona la opción "
+"\"Buscar subtítulos en opensubtitles.org\" del menú Subtítulos. "
+"Aparecerá una nueva ventana donde se mostrará una lista de subtítulos "
+"adecuados para el vídeo que estás reproduciendo. Selecciona uno de ellos "
+"y pulsa el botón Descargar. El subtítulo se descargará y se mostrará en "
+"el vídeo."
 
 #: ../faq.php:26
 msgid "DVD menus, where are they?"
-msgstr "¿Qué hay que hacer para activar los menús de los DVD?"
+msgstr "¿Qué hay que hacer para que aparezcan los menús de los DVD?"
 
 #: ../faq.php:30
 msgid ""
@@ -404,6 +410,7 @@ msgstr "En linux necesitas instalar el paquete smplayer-skins."
 #: ../faq.php:55
 msgid "Where is the configuration stored? Can I reset the settings?"
 msgstr ""
+"¿Dónde se guarda la configuración? ¿Se puede reestablecer la configuración"
 
 #: ../faq.php:59
 msgid ""
@@ -413,6 +420,12 @@ msgid ""
 "settings, just delete the file smplayer.ini (important: be sure SMPlayer\n"
 "is not running when you delete the file)."
 msgstr ""
+"La manera más sencilla de encontrar los ficheros de configuración de "
+"SMPlayer es por medio de la opción \"Abrir directorio de configuración\" "
+"ubicada en el menú Ayuda. Si quieres borrar la configuración actual y "
+"empezar de nuevo con las opciones por defecto, simplemente borra el "
+"fichero smplayer.ini (importante: asegúrate de que el SMPlayer no se está "
+"ejecutando cuando borres el fichero)."
 
 #: ../faq.php:67
 msgid "What's the difference between SMPlayer and MPlayer?"
@@ -441,6 +454,8 @@ msgstr ""
 #: ../faq.php:82
 msgid "What does the \"ps\" mean in some of the installers name?"
 msgstr ""
+"¿Qué significa el \"ps\" que se puede encontrar en el nombre de "
+"algunos instaladores?"
 
 #: ../faq.php:86
 msgid ""
@@ -451,6 +466,14 @@ msgid ""
 "or not. If you install it but then you don't like it, you can uninstall it\n"
 "easily later."
 msgstr ""
+"Es una abreviatura de \"promotional screen\", es decir "
+"<i>pantalla promocional</i>. Esto significa que el instalador incluye "
+"una pantalla proporcionada por un patrocinador. Esta pantalla le da al "
+"usuario la posibilidad de instalar una aplicación de terceros. "
+"Por ejemplo podría ser una versión demo de un programa interesante. "
+"Eres tú el que debe decidir si lo quieres instalar o no. No se instalará "
+"nada sin tu consentimiento. Si decides aceptar instalar ese programa pero "
+"luego no te gusta, puedes desinstalarlo fácilmente más tarde."
 
 #: ../faq.php:93
 msgid ""
@@ -458,12 +481,17 @@ msgid ""
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
 "find more info at %1."
 msgstr ""
+"El patrocinador enviará a SMPlayer unos pocos céntimos cada vez que un "
+"usuario acepte instalar el programa ofertado. De este modo evitamos tener "
+"que pedir donativos a los usuarios. Puedes encontrar más información en %1."
 
 #: ../faq.php:98
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
 msgstr ""
+"Si no quieres que te aparezca esta pantalla, simplemente descarga el "
+"instalador sin el \"ps\"."
 
 #: ../faq.php:104
 msgid "How can I take advantage of all my CPU cores?"
@@ -579,8 +607,8 @@ msgstr ""
 #: ../faq.php:175
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr ""
-"Algunas opciones de los menús producen un pequeño corte en el vídeo, ¿por "
-"qué?"
+"Al activar algunas opciones de los menús se produce un pequeño corte "
+"en el vídeo, ¿por qué?"
 
 #: ../faq.php:179
 msgid ""
