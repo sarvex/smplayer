@@ -8,17 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 11:48+0100\n"
+"POT-Creation-Date: 2012-11-29 23:33+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
 
 #: ../contact.php:3
@@ -30,7 +31,6 @@ msgid "Contact us"
 msgstr "Наши контакты"
 
 #: ../contact.php:12
-#, qt-format
 msgid ""
 "You can send your suggestions, patches, translations or whatever regarding \n"
 "smplayer, to %1"
@@ -47,7 +47,6 @@ msgid "Support"
 msgstr "Поддержка"
 
 #: ../contact.php:21
-#, qt-format
 msgid "You can get help in our %1."
 msgstr "Вы можете получить помощь, посетив наш %1."
 
@@ -56,7 +55,6 @@ msgid "forum"
 msgstr "форум"
 
 #: ../contact.php:23
-#, qt-format
 msgid "If you find bugs in smplayer you can report them in our %1."
 msgstr "Если вы нашли ошибки в smplayer, можете сообщить о них на наш %1."
 
@@ -65,7 +63,6 @@ msgid "bug tracker"
 msgstr "багтрекер"
 
 #: ../contact.php:26
-#, qt-format
 msgid "You can request new features in our %1."
 msgstr "Вы можете запросить новые возможности, посетив наш %1."
 
@@ -78,7 +75,6 @@ msgid "Irc channel"
 msgstr "Канал IRC"
 
 #: ../contact.php:30
-#, qt-format
 msgid ""
 "Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
 msgstr ""
@@ -102,7 +98,6 @@ msgid "windows packages, mplayer builds for windows"
 msgstr "пакеты для windows, сборки mplayer для windows"
 
 #: ../contact.php:41
-#, qt-format
 msgid "Conversion to svg by %1."
 msgstr "Конвертирование в svg %1."
 
@@ -163,12 +158,10 @@ msgid "Downloads"
 msgstr "Загрузки"
 
 #: ../downloads.php:24
-#, qt-format
 msgid "Click here to download SMPlayer %1"
 msgstr "Щёлкните здесь для загрузки SMPlayer %1"
 
 #: ../downloads.php:26
-#, qt-format
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -189,7 +182,6 @@ msgstr ""
 "скинами и новая сборка mplayer с большим количеством исправлений."
 
 #: ../downloads.php:43
-#, qt-format
 msgid "In case you find any problem, please report it in %1."
 msgstr "Если вы найдёте любые проблемы, пожалуйста, сообщите о них на %1."
 
@@ -198,7 +190,6 @@ msgid "our forum"
 msgstr "наш форум"
 
 #: ../downloads.php:53
-#, qt-format
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Другие пакеты (например, портативная версия), доступны %1."
 
@@ -207,7 +198,6 @@ msgid "here"
 msgstr "здесь"
 
 #: ../downloads.php:55
-#, qt-format
 msgid "If you wish you can also try the %1."
 msgstr "При желании можете также попробовать %1."
 
@@ -373,22 +363,33 @@ msgstr ""
 "щёлкните по кнопке Загрузить.  Субтитры будут загружены и отображены в видео."
 
 #: ../faq.php:26
+msgid "The video equalizer doesn't work, why?"
+msgstr ""
+
+#: ../faq.php:30
+msgid ""
+"With some cards or video drivers the hardware video \n"
+"equalizer may not work. Go to Preferences -> General -> Video \n"
+"and enable the software equalizer."
+msgstr ""
+
+#: ../faq.php:36
 msgid "DVD menus, where are they?"
 msgstr "DVD меню, где это?"
 
-#: ../faq.php:30
+#: ../faq.php:40
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
-"Зайдите в секцию \"Устройства\" настроек и отметьте опцию \"Включить "
-"DVD-меню\", также указав ваш привод DVD."
+"Зайдите в секцию \"Устройства\" настроек и отметьте опцию \"Включить DVD-меню"
+"\", также указав ваш привод DVD."
 
-#: ../faq.php:35
+#: ../faq.php:45
 msgid "How can I download a Youtube video?"
 msgstr "Как я могу загрузить видео с Youtube?"
 
-#: ../faq.php:39
+#: ../faq.php:49
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
@@ -396,11 +397,11 @@ msgstr ""
 "Сделайте правый клик на видео в браузере Youtube выберите опцию \"Записать "
 "видео\"."
 
-#: ../faq.php:44
+#: ../faq.php:54
 msgid "How can I change the skin?"
 msgstr "Как я могу сменить скин?"
 
-#: ../faq.php:48
+#: ../faq.php:58
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
@@ -408,15 +409,15 @@ msgstr ""
 "В настройках SMPlayer выберите секцию \"Внешний вид\", затем выберите "
 "\"Интерфейс со скинами\". Теперь вы можете выбирать среди нескольких скинов."
 
-#: ../faq.php:51
+#: ../faq.php:61
 msgid "In linux you need to install the package smplayer-skins."
 msgstr "В linux вы должны установить пакет smplayer-skins."
 
-#: ../faq.php:55
+#: ../faq.php:65
 msgid "Where is the configuration stored? Can I reset the settings?"
 msgstr "Где находятся настройки? Как я могу их сбросить?"
 
-#: ../faq.php:59
+#: ../faq.php:69
 msgid ""
 "The easiest way to find the configuration files of SMPlayer is by\n"
 "selecting the option \"Open configuration folder\" in the Help menu. If\n"
@@ -429,11 +430,11 @@ msgstr ""
 "настройки и начать с настроек по умолчанию, просто удалите файл smplayer.ini "
 "(важно: убедитесь, что SMPlayer не запущен, когда вы удаляете файл)."
 
-#: ../faq.php:67
+#: ../faq.php:77
 msgid "What's the difference between SMPlayer and MPlayer?"
 msgstr "В чём разница между SMPlayer и MPlayer?"
 
-#: ../faq.php:71
+#: ../faq.php:81
 msgid ""
 "They are two different applications that work together. SMPlayer\n"
 "actually is not a media player... MPlayer is. MPlayer is a command-line\n"
@@ -452,11 +453,11 @@ msgstr ""
 "воспроизведения, а SMPlayer добавляет к нему кнопки, меню, диалоги и т. п. "
 "Сборки для Windows уже включают MPlayer, настроенный на работу с SMPlayer."
 
-#: ../faq.php:82
+#: ../faq.php:92
 msgid "What does the \"ps\" mean in some of the installers name?"
 msgstr "Что означает \"ps\" в именах некоторых инсталляторов?"
 
-#: ../faq.php:86
+#: ../faq.php:96
 msgid ""
 "It means that the installer includes a \"promotional screen\" from a\n"
 "sponsor. This screen offers the user the possibility to install a third\n"
@@ -471,8 +472,7 @@ msgstr ""
 "Вам решать, делать это или нет. Если Вы установите его, но оно Вам не "
 "понравится, Вы можете легко удалить его позднее."
 
-#: ../faq.php:93
-#, qt-format
+#: ../faq.php:103
 msgid ""
 "If you decide to install it, the sponsor will send a few cents to\n"
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
@@ -482,17 +482,27 @@ msgstr ""
 "спонсора. Таким образом, мы не нуждаемся в том, чтобы просить пользователя о "
 "пожертвованиях. Вы можете найти больше информации на %1."
 
-#: ../faq.php:98
+#: ../faq.php:108
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
 msgstr "Если вы не хотите видеть этот экран, скачайте инсталлятор без \"ps\"."
 
-#: ../faq.php:104
+#: ../faq.php:114
+msgid ""
+"The current time of the movie appears in the up left corner of the image, "
+"how can I hide it?"
+msgstr ""
+
+#: ../faq.php:118
+msgid "Options -> OSD -> Subtitles only."
+msgstr ""
+
+#: ../faq.php:122
 msgid "How can I take advantage of all my CPU cores?"
 msgstr "Как мне задействовать потенциал всех ядер моего CPU?"
 
-#: ../faq.php:108
+#: ../faq.php:126
 msgid ""
 "Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt\n"
 "in Linux. MPlayer2 automatically uses all cores, but MPlayer requires\n"
@@ -510,7 +520,7 @@ msgstr ""
 "CPU от Intel). Установка в большее значение, чем способен обеспечить CPU, не "
 "даст никакого эффекта."
 
-#: ../faq.php:118
+#: ../faq.php:136
 msgid ""
 "I want the subtitles to be displayed on the black border instead of the "
 "image, how can I do it?"
@@ -518,15 +528,15 @@ msgstr ""
 "Я хочу, чтобы субтитры отображались на чёрной полосе, а не на картинке, как "
 "мне это сделать?"
 
-#: ../faq.php:122
+#: ../faq.php:140
 msgid "Select the option \"Add black borders\" in the video filters menu."
 msgstr "Выберите опцию \"Добавить чёрные полосы\" в меню видеофильтров."
 
-#: ../faq.php:126
+#: ../faq.php:144
 msgid "Is UMPlayer related to SMPlayer?"
 msgstr "Связан ли UMPlayer с SMPlayer?"
 
-#: ../faq.php:130
+#: ../faq.php:148
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
 "new features, like new skins, and Youtube&trade; and SHOUTcast&trade; "
@@ -537,7 +547,7 @@ msgstr ""
 "некоторые новые возможности, вроде новых скинов и поддержки Youtube&trade; и "
 "SHOUTcast&trade;. Большинство этих возможностей теперь включены и в SMPlayer."
 
-#: ../faq.php:134
+#: ../faq.php:152
 msgid ""
 "The UMPlayer project seems dead (no updates since a lot of months) and\n"
 "version 0.98 can't play Youtube videos anymore, so if you are a user of\n"
@@ -549,8 +559,7 @@ msgstr ""
 "UMPlayer рекомендовано переключиться на SMPlayer. К тому же, SMPlayer "
 "включает новые возможности, недоступные в UMPlayer."
 
-#: ../faq.php:139
-#, qt-format
+#: ../faq.php:157
 msgid ""
 "Anyway, if you still prefer to use UMPlayer we released a new version\n"
 "with the Youtube problem fixed: %1."
@@ -558,11 +567,11 @@ msgstr ""
 "В любом случае, если Вы всё равно предпочитаете UMPlayer, мы выпустили новую "
 "версию с исправленной поддержкой Youtube: %1."
 
-#: ../faq.php:145
+#: ../faq.php:163
 msgid "What's \"smtube\"?"
 msgstr "Что такое \"smtube\"?"
 
-#: ../faq.php:149
+#: ../faq.php:167
 msgid ""
 "It's the Youtube browser that was first included in UMPlayer, and we\n"
 "adapted it for SMPlayer. We made it an independent application, and on\n"
@@ -574,7 +583,7 @@ msgstr ""
 "Linux он может работать сам по себе, при этом пользователь может выбрать "
 "используемый плеер (SMPlayer даже не нужен)."
 
-#: ../faq.php:156
+#: ../faq.php:174
 msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
@@ -582,7 +591,7 @@ msgstr ""
 "Я использую Windows Vista или новее, и каждый раз, когда я воспроизвожу "
 "видео, Aero выключается, почему?"
 
-#: ../faq.php:160
+#: ../faq.php:178
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
@@ -591,7 +600,7 @@ msgstr ""
 "видео (Настройки -> Основные -> Видео). Можете поменять его на gl, gl2 или "
 "direct3d."
 
-#: ../faq.php:165
+#: ../faq.php:183
 msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
@@ -599,22 +608,22 @@ msgstr ""
 "(Windows) Я не могу открыть файл со специальными или нелатинскими символами "
 "в имени, почему?"
 
-#: ../faq.php:169
+#: ../faq.php:187
 msgid ""
 "If you are unable to open files with special or non-English characters,\n"
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
 "Preferences -> Advanced to work around this problem."
 msgstr ""
 "Если вы не можете открыть файлы со специальными или нелатинскими символами в "
-"имени, включите опцию Передавать короткие имена (8+3) MPlayer-у в Настройки "
-"-> Дополнительно, чтобы обойти эту проблему."
+"имени, включите опцию Передавать короткие имена (8+3) MPlayer-у в Настройки -"
+"> Дополнительно, чтобы обойти эту проблему."
 
-#: ../faq.php:175
+#: ../faq.php:193
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr ""
 "Некоторые опции меню заставляют видео мерцать на какой-то момент. Почему?"
 
-#: ../faq.php:179
+#: ../faq.php:197
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
@@ -661,7 +670,6 @@ msgid "Formats and Codecs"
 msgstr "Форматы и кодеки"
 
 #: ../formats_text.php:3
-#, qt-format
 msgid ""
 "SMPlayer is a graphical interface for %1, which supports many video and "
 "audio formats and codecs."
@@ -739,7 +747,6 @@ msgid "About SMPlayer"
 msgstr "Об SMPlayer"
 
 #: ../info.php:3
-#, qt-format
 msgid ""
 "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -800,7 +807,6 @@ msgid "Support for skins and icon themes."
 msgstr "Поддержка скинов и тем иконок."
 
 #: ../info.php:27
-#, qt-format
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Возможность поиска и скачивания субтитров с %1."
 
@@ -837,8 +843,8 @@ msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr ""
-"Воспроизведение на разных скоростях. Можно ускорить воспроизведение в 2, в 4 "
-"\n"
+"Воспроизведение на разных скоростях. Можно ускорить воспроизведение в 2, в "
+"4 \n"
 "раза или же, наоборот, замедлить."
 
 #: ../info.php:37
@@ -874,7 +880,6 @@ msgstr ""
 "Свобода и открытость. SMPlayer распространяется под лицензией <b>GPL</b>."
 
 #: ../info.php:50
-#, qt-format
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr "Скачать <a href=%1>здесь</a> последнюю версию SMPlayer"
 
@@ -951,7 +956,6 @@ msgid "SMTube Screenshot"
 msgstr "Скриншот SMTube"
 
 #: ../smtube.php:28
-#, qt-format
 msgid ""
 "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
 "The code was taken from %1 (developed by %2). \n"
@@ -996,7 +1000,6 @@ msgstr ""
 "SMTube уже включён в пакеты для Windows, но под Linux это отдельный пакет."
 
 #: ../umplayer.php:15
-#, qt-format
 msgid ""
 "%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
 "the SMPlayer team has released a new version which fixes Youtube playback."
@@ -1036,7 +1039,6 @@ msgstr "Скриншоn UMPlayer"
 #~ msgid "Click here to get the full package"
 #~ msgstr "Кликните здесь для загрузки полного пакета"
 
-#, qt-format
 #~ msgid "If you wish you can also try %1."
 #~ msgstr "Если пожелаете, вы можете также попробовать %1."
 
