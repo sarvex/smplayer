@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-30 23:45+0100\n"
-"PO-Revision-Date: 2012-11-22 02:06+0100\n"
+"POT-Creation-Date: 2012-12-01 00:18+0100\n"
+"PO-Revision-Date: 2012-11-30 22:18+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
 "Language: Basque (Euskara)\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Harremana"
 
-#: ../contact.php:9 ../footer.php:50
+#: ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr "Harremana"
 
@@ -137,7 +137,7 @@ msgstr "Lituaniera"
 msgid "Simplified chinese"
 msgstr "Txinera arrundua"
 
-#: ../contact.php:64 ../footer.php:53
+#: ../contact.php:64 ../footer.php:44
 msgid "Follow us on Twitter"
 msgstr "Jarraitu gaitzazu Twitterren"
 
@@ -337,15 +337,15 @@ msgstr "Itxi"
 
 #: ../faq.php:3
 msgid "SMPlayer - FAQ"
-msgstr ""
+msgstr "SMPlayer - SEG"
 
 #: ../faq.php:11
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Sarri Egindako Galderak"
 
 #: ../faq.php:14
 msgid "How can I download subtitles from opensubtitles.org?"
-msgstr ""
+msgstr "Nola jeitsi ditzaket azpidatziak opensubtitles.org-tik?"
 
 #: ../faq.php:18
 msgid ""
@@ -355,10 +355,15 @@ msgid ""
 "Select one and click on the Download button. The subtitle file will be\n"
 "downloaded and displayed in the video."
 msgstr ""
+"Oso erraza da. Ireki bideo bat eta hautatu \"Bilatu\n"
+"azpidatziak hemen: opensubtitles.org\" aukera azpidatziak menuan.\n"
+"Leiho berri bat erakutsiko da irakurtzen ari zaren bideoarekin bat datozen\n"
+"azpidatzien zerrendarekin. Hautatu bat eta klikatu Jeitsi botoia.\n"
+"Azpidatzi agiria jeitsi eta bideoan erakutsiko da."
 
 #: ../faq.php:26
 msgid "The video equalizer doesn't work, why?"
-msgstr ""
+msgstr "Bideo ekualizagailua ez dabil, zergaitik?"
 
 #: ../faq.php:30
 msgid ""
@@ -366,44 +371,53 @@ msgid ""
 "equalizer may not work. Go to Preferences -> General -> Video \n"
 "and enable the software equalizer."
 msgstr ""
+"Txartel eta bideo gidagailu batzuekin bideo ekualizagailu hardwareak \n"
+"ezin du lan egin. Joan Hobespenak -> Orokorra -> Bideoa \n"
+"eta gaitu software ekualizagailua."
 
 #: ../faq.php:36
 msgid "DVD menus, where are they?"
-msgstr ""
+msgstr "DVD menuak, non daude?"
 
 #: ../faq.php:40
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
+"Joan Gidagailu atalera hobespenetan  eta hautatu\n"
+"\"Gaitu DVD menuak (Esperimentala)\" aukera eta ezarri zure DVD gidagailua."
 
 #: ../faq.php:45
 msgid "How can I download a Youtube video?"
-msgstr ""
+msgstr "Nola jeitsi dezaket Youtube bideo bat?"
 
 #: ../faq.php:49
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
 msgstr ""
+"Eskuin klikatu bideo bat Youtube bilatzailean eta hautatu\n"
+"\"Grabatu bideo\" aukera."
 
 #: ../faq.php:54
 msgid "How can I change the skin?"
-msgstr ""
+msgstr "Nola aldatu dezaket azala?"
 
 #: ../faq.php:58
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
 msgstr ""
+"Joan SMPlayer hobespenetara, hautatu Interfazea atala, orduan\n"
+"hautatu \"EIG azalgarria\". Orain azal askoren artean hautatu dezakezu."
 
 #: ../faq.php:61
 msgid "In linux you need to install the package smplayer-skins."
-msgstr ""
+msgstr "Linux-en smplayer-azalak paketea ezarri behar duzu."
 
 #: ../faq.php:65
 msgid "Where is the configuration stored? Can I reset the settings?"
-msgstr ""
+msgstr "Non daude itxurapen agiriak? Ezarpenak berrezarri ditzaket?"
 
 #: ../faq.php:69
 msgid ""
@@ -413,10 +427,15 @@ msgid ""
 "settings, just delete the file smplayer.ini (important: be sure SMPlayer\n"
 "is not running when you delete the file)."
 msgstr ""
+"SMPlayerren itxurapen agiriak aurkitzeko bide errazena\n"
+"Laguntza menuan \"Ireki itxurapen agiritegia\" aukera hautatzea da.\n"
+"Oraingo itxurapena ezabatzea eta berezko ezarpenekin hastea nahi\n"
+"baduzu, ezabatu smplayer.ini agiria (garrantzitsua: zihurtatu SMPlayer\n"
+"ez dagoela ekinean agiria ezabatzen duzunean)."
 
 #: ../faq.php:77
 msgid "What's the difference between SMPlayer and MPlayer?"
-msgstr ""
+msgstr "Zer ezberdintasun dago SMPlayer eta MPlayer artean?"
 
 #: ../faq.php:81
 msgid ""
@@ -429,10 +448,18 @@ msgid ""
 "on. The Windows packages already include a MPlayer build along with\n"
 "SMPlayer."
 msgstr ""
+"Bi aplikazio ezberdinek egiten dute lan elkarrekin. SMPlayer\n"
+"ez da multimedia irakurgailua... MPlayer da. MPlayer komando-lerro\n"
+"aplikazio bat da, ez du menurik edo botoirik. Teklatuarekin agintzen da.\n"
+"Hortaz ez da erabiltzaile askoren gogokoa, grafika interfaze ugari garatu "
+"dira,\n"
+"eta SMPlayer hauetako bat da. Hortaz MPlayer da irakurketa gailua,\n"
+"SMPlayerrek botoiak, menuak, elkarrizketak eta horrelakoak gehitzen ditu.\n"
+"Windows paketeak jadanik badakar MPlayer eraiketa bat SMPlayerrekin batera."
 
 #: ../faq.php:92
 msgid "What does the \"ps\" mean in some of the installers name?"
-msgstr ""
+msgstr "Zer esanahi du ezartzaile batzuetan agertzen den \"ps\"-ak?"
 
 #: ../faq.php:96
 msgid ""
@@ -443,6 +470,11 @@ msgid ""
 "or not. If you install it but then you don't like it, you can uninstall it\n"
 "easily later."
 msgstr ""
+"Honek esanahi du ezartzaileak babesle baten \"sustapen ikusleiho\" bat\n"
+"duela barne. Ikuslehio honek erabiltzaileari hirugarrenen aplikazioak\n"
+"ezartzeko aukera ematen dio. Hau adibidez aplikazio baten demo bertsio\n"
+"bat izan daiteke. Zure esku dago erabakitzea probatzea edo ez.\n"
+"Ezartzen baduzu baina ez baduzu nahi, gero erraz kendu dezakezu."
 
 #: ../faq.php:103
 msgid ""
@@ -450,26 +482,31 @@ msgid ""
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
 "find more info at %1."
 msgstr ""
+"Ezartzea erabakitzen baduzu, babesleak ehuneko gutxi batzuk bidaliko ditu\n"
+"SMPlayerrera. Honela ez diegu erabiltzaileei galdetu behar dirulaguntza bat\n"
+"emateko. Argibide gehiago aurikitu ditzakezu hemen: %1."
 
 #: ../faq.php:108
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
-msgstr ""
+msgstr "Ikusleiho hau ikusterik ez baduzu nahi, jeitsi ez \"ps\" ezartzailea."
 
 #: ../faq.php:114
 msgid ""
 "The current time of the movie appears in the up left corner of the image, "
 "how can I hide it?"
 msgstr ""
+"Filmaren uneko denbora irudiaren goiko ezker bazterrean agertzen da, nola "
+"ezkutatu dezaket?"
 
 #: ../faq.php:118
 msgid "Options -> OSD -> Subtitles only."
-msgstr ""
+msgstr "Aukerak -> IGE -> Azpidatziak bakarrik."
 
 #: ../faq.php:122
 msgid "How can I take advantage of all my CPU cores?"
-msgstr ""
+msgstr "Nola aurreratu dezaket nire CPU nukleo guztiak erabiltzeko?"
 
 #: ../faq.php:126
 msgid ""
@@ -481,20 +518,33 @@ msgid ""
 "your processor has. Setting it to greater than your CPU is capable of\n"
 "will have no effect."
 msgstr ""
+"Hari-anitzeko dekodeaketak MPlayerren edo FFmpeg-mt eraiketa berri bat\n"
+"behar du Linuxen. MPlayer2-k berezgaitasunez erabiltzen ditu nukleo "
+"guztiak,\n"
+"baina MPlayerrek eskuzko zehazpena behar du. Dekodeaketarako hari "
+"zenbatekoa\n"
+"hemen zehaztu dezakezu: Hobespenak -> Performantzia. Ezarri hau zure "
+"ordenagailuak\n"
+"dituen nukleo (eta hariak hyperthreaded Intel CPU-en kasuan) zenbatekoaren "
+"berdin edo\n"
+"gutxiagon. Ezarri zure CPU-ak duen gaitasunaren bezain handia edo ez du "
+"eraginik izango. "
 
 #: ../faq.php:136
 msgid ""
 "I want the subtitles to be displayed on the black border instead of the "
 "image, how can I do it?"
 msgstr ""
+"Azpidatziak hertz beltzean erakustea nahi ditut irudian ordez, nola egin "
+"dezaket?"
 
 #: ../faq.php:140
 msgid "Select the option \"Add black borders\" in the video filters menu."
-msgstr ""
+msgstr "Hautatu \"Gehitu hertz beltzak\" aukera bideo iragazkiak menuan."
 
 #: ../faq.php:144
 msgid "Is UMPlayer related to SMPlayer?"
-msgstr ""
+msgstr "UMPlayerrek zerikusia du SMPlayerrekin?"
 
 #: ../faq.php:148
 msgid ""
@@ -503,6 +553,11 @@ msgid ""
 "support. \n"
 "Most of those features are now included in SMPlayer as well."
 msgstr ""
+"Bai. UMPlayer SMPlayer 0.6.9-tik sorturiko adar bat da. Honek ezaugarri "
+"berri ugari \n"
+"gehitzen ditu, azal berriak eta Youtube&trade; eta SHOUTcast&trade; "
+"sostengua bezala. \n"
+"Ezaugarri hauetako asko orain SMPlayerren barne ere badaude."
 
 #: ../faq.php:152
 msgid ""
@@ -511,16 +566,24 @@ msgid ""
 "UMPlayer it's recommended to switch to SMPlayer. \n"
 "Moreover SMPlayer includes new features not present in UMPlayer."
 msgstr ""
+"UMPlayer egitasmoak hilda dirudi (ez da eguneratu duela hilabete askotik "
+"hona)\n"
+"eta 0.98 bertsioak ezin ditu Youtube bideoak gehiago irakurri, hortaz "
+"UMPlayer\n"
+"erabiltzailea bazara gomendagarria da SMPlayerrera aldatzea.\n"
+"Gainera SMPlayerrek UMPlayerrek ez dituen ezaugarri berriak ditu."
 
 #: ../faq.php:157
 msgid ""
 "Anyway, if you still prefer to use UMPlayer we released a new version\n"
 "with the Youtube problem fixed: %1."
 msgstr ""
+"Edonala, oraindik UMPlayer erabiltzea nahiago baduzu bertsio berri bat\n"
+"argitaratu dugu Youtube arazoa konpondurik: %1."
 
 #: ../faq.php:163
 msgid "What's \"smtube\"?"
-msgstr ""
+msgstr "Zer da \"smtube\"?"
 
 #: ../faq.php:167
 msgid ""
@@ -529,24 +592,34 @@ msgid ""
 "Linux it can run on its own, the user can select the player to use\n"
 "(SMPlayer isn't even required)."
 msgstr ""
+"Hau lehenik UMPlayerren barne zegoen Youtube bilatzailea da, eta guk\n"
+"SMPlayerrerako egokitu dugu. Aplikazio askea egin dugu eta Linuxen\n"
+"bakarka jardun dezake, erabiltzaileak nahi duen irakurgailua hautatu dezake\n"
+"(SMPlayer ez da beharrezkoa ere)."
 
 #: ../faq.php:174
 msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
 msgstr ""
+"Windows Vista edo berriagoa erabiltzen dut eta bideo bat irakurtzen dudan "
+"bakoitzean Aero ezgaitu egiten da, zergaitik?"
 
 #: ../faq.php:178
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
 msgstr ""
+"Hau gertatzen da directx bideo gidagailu bezala erabiltzerakoan (Hobespenak\n"
+"-> Orokorra -> Bideoa). Aldatu dezakezu hona: gl, gl2 edo direct3d."
 
 #: ../faq.php:183
 msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
 msgstr ""
+"(Windows) Ezin ditut ireki agiriak hizki-kode bereziekin edo ez-"
+"Ingelerazkoekin, zergaitik?"
 
 #: ../faq.php:187
 msgid ""
@@ -554,16 +627,22 @@ msgid ""
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
 "Preferences -> Advanced to work around this problem."
 msgstr ""
+"Ezin baduzu hizki-kode bereziekin edo ez-Ingelerazkoekin agiririk ireki,\n"
+"gaitu Bidali agirizen laburrak (8+3) MPlayerri. Aukerak -> Hobespenak ->\n"
+"Aurreratua arazo honen inguruan lan egiteko."
 
 #: ../faq.php:193
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr ""
+"Menuko aukera pilo batek bideoa une batez zuri jartzen dute. Zergaitik?"
 
 #: ../faq.php:197
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
 msgstr ""
+"Aukera batzuek MPlayer prozesua gelditu eta parametro berriekin\n"
+"berrabiaraztea behar dute. Horregaitik eteten da une batez."
 
 #: ../footer.php:9
 msgid "Other links:"
@@ -578,11 +657,19 @@ msgstr "Azken aldaketak"
 msgid "Forum"
 msgstr "Eztabaidagunea"
 
-#: ../footer.php:26
+#: ../footer.php:16
+msgid "FAQ"
+msgstr "SEG"
+
+#: ../footer.php:17 ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../footer.php:23
 msgid "Bug Tracking"
 msgstr "Matxura Aztarnaritza"
 
-#: ../footer.php:27
+#: ../footer.php:24
 msgid "Feature Requests"
 msgstr "Ezaugarri Eskabideak"
 
@@ -590,9 +677,9 @@ msgstr "Ezaugarri Eskabideak"
 msgid "Mirror"
 msgstr "Ispilua"
 
-#: ../footer.php:45
-msgid "FAQ"
-msgstr ""
+#: ../footer.php:41
+msgid "Wiki"
+msgstr "Wikia"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -644,31 +731,32 @@ msgstr "Hizkuntza"
 
 #: ../index.php:3
 msgid "SMPlayer - Opensource Media Player"
-msgstr ""
+msgstr "SMPlayer - Iturburu Irekiko Multimedia Irakurgailua"
 
 #: ../index.php:20
 msgid "Free Opensource Media Player"
-msgstr ""
+msgstr "Iturburu Irekiko Multimedia Irakurgailu Askea"
 
 #: ../index.php:23
 msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
 msgstr ""
+"Sostengua heuskarri eta kodek gehiagorentzat: AVI, MKV, MP4, MPEG, H.264..."
 
 #: ../index.php:24
 msgid "Codecs included"
-msgstr ""
+msgstr "Kodekak barne"
 
 #: ../index.php:25
 msgid "Can play and download Youtube&trade; videos"
-msgstr ""
+msgstr "Youtube&trade; bideoak jeitsi eta irakurri ditzake"
 
 #: ../index.php:26
 msgid "Automatically search and download subtitles"
-msgstr ""
+msgstr "Berezgaitasunez bilatu eta jeitsi azpidatziak"
 
 #: ../index.php:27
 msgid "Skins"
-msgstr ""
+msgstr "Azalak"
 
 #: ../index.php:31
 msgid "Click here to download the latest version"
@@ -719,13 +807,15 @@ msgstr "Beste ezaugarri interesgarri batzuk:"
 
 #: ../info.php:21
 msgid "It can play and download Youtube videos."
-msgstr ""
+msgstr "Youtube bideoak jeitsi eta irakurri ditzake."
 
 #: ../info.php:23
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
+"Youtube bilatzailea bat barnea dago, honek Youtube bideoak erraz jeistea ere "
+"ahalbidetzen du."
 
 #: ../info.php:24
 msgid ""
@@ -737,7 +827,7 @@ msgstr ""
 
 #: ../info.php:26
 msgid "Support for skins and icon themes."
-msgstr ""
+msgstr "Azal eta ikur azalgaientzako sostengua."
 
 #: ../info.php:27
 msgid "Possibility to search and download subtitles from %1."
@@ -802,6 +892,9 @@ msgid ""
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
+"Zeure hizkuntzan: gaur egun SMPlayer 30 hitzkuntza baino gehiagora\n"
+"itzulita dago, adibidez, Espainiera, Alemaniera, Frantziera, Italiera,\n"
+"Errusiera, Txinera, Japoniera..."
 
 #: ../info.php:44
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
@@ -811,7 +904,7 @@ msgstr ""
 
 #: ../info.php:50
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-msgstr ""
+msgstr "Jeitsi <a href=%1>here</a> SMPlayerren azken bertsioa"
 
 #: ../latest.php:3
 msgid "SMPlayer - Latest Changes"
@@ -831,10 +924,6 @@ msgstr ""
 
 #: ../reviews.php:3
 msgid "SMPlayer - Reviews"
-msgstr ""
-
-#: ../reviews.php:9
-msgid "Reviews"
 msgstr ""
 
 #: ../reviews.php:19
@@ -991,9 +1080,6 @@ msgstr "UMPlayer Ikusleiho-argazkia"
 #: ../user_reviews.php:3
 msgid "Users Reviews"
 msgstr ""
-
-#~ msgid "Wiki"
-#~ msgstr "Wikia"
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
