@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-29 23:33+0100\n"
+"POT-Creation-Date: 2012-11-30 23:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,7 @@ msgstr "ミラー"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - ダウンロード"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:69 ../umplayer.php:31
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -334,7 +334,7 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "閉じる"
 
@@ -631,7 +631,7 @@ msgstr ""
 msgid "Other links:"
 msgstr "関連リンク:"
 
-#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:58 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "最新の変更点"
@@ -660,7 +660,7 @@ msgstr "FAQ"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - フォーマットとコーデック"
 
-#: ../formats.php:11 ../info.php:62
+#: ../formats.php:11 ../info.php:67
 msgid "Formats and Codecs"
 msgstr "フォーマットとコーデック"
 
@@ -740,6 +740,10 @@ msgstr "最新版をダウンロードする"
 #: ../index.php:44
 msgid "About SMPlayer"
 msgstr "SMPlayer とは"
+
+#: ../index.php:50
+msgid "Click here to read more reviews"
+msgstr ""
 
 #: ../info.php:3
 msgid ""
@@ -878,6 +882,24 @@ msgstr "こちらでは SMPlayer の最新の変更点がご覧になれます:"
 #: ../latest.php:21
 msgid "Go to the download page"
 msgstr "ダウンロードページへ"
+
+#: ../media_reviews.php:3
+msgid "Media Reviews"
+msgstr ""
+
+#: ../reviews.php:3
+msgid "SMPlayer - Reviews"
+msgstr ""
+
+#: ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../reviews.php:19
+msgid ""
+"If you like SMPlayer please feel free to rate or review SMPlayer in some of "
+"these sites:"
+msgstr ""
 
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
@@ -1024,6 +1046,16 @@ msgstr "UMPlayer のソース"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer のスクリーンショット"
 
+#: ../user_reviews.php:3
+msgid "Users Reviews"
+msgstr ""
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "MPlayer の GUI フロントエンド"
+
 #~ msgid ""
 #~ "It means that the installer includes a \"promotional screen\" from a\n"
 #~ "sponsor. This screen offers the user the possibility to install a third\n"
@@ -1037,9 +1069,3 @@ msgstr "UMPlayer のスクリーンショット"
 #~ "ケーションのインストールをユーザーに促します。もちろん、インストールの選択"
 #~ "はユーザーに委ねられていますし、インストールした後でもそのアプリケーション"
 #~ "が気に入らなければ速やかにアンインストールすることができます。"
-
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "MPlayer の GUI フロントエンド"
-
-#~ msgid "Wiki"
-#~ msgstr "Wiki"

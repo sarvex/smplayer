@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-29 23:33+0100\n"
+"POT-Creation-Date: 2012-11-30 23:45+0100\n"
 "PO-Revision-Date: 2012-11-22 02:06+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
@@ -149,7 +149,7 @@ msgstr "Ispiluak"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Jeisketak"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:69 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Jeisketak"
 
@@ -331,7 +331,7 @@ msgstr ""
 "SMplayer erraz kendu dezakezu zure aginte paneletik edo <i>kendu smplayer</"
 "i> aukera erabiliz smplayer menuan Windows <i>Hasiera</i> menu gabe."
 
-#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "Itxi"
 
@@ -569,7 +569,7 @@ msgstr ""
 msgid "Other links:"
 msgstr "Beste loturak batzuk:"
 
-#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:58 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "Azken aldaketak"
@@ -598,7 +598,7 @@ msgstr ""
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Heuskarriak eta Kodekak"
 
-#: ../formats.php:11 ../info.php:62
+#: ../formats.php:11 ../info.php:67
 msgid "Formats and Codecs"
 msgstr "Heuskarriak eta Kodekak"
 
@@ -677,6 +677,10 @@ msgstr "Klikatu hemen azken bertsioa jeisteko"
 #: ../index.php:44
 msgid "About SMPlayer"
 msgstr "SMPlayerri buruz"
+
+#: ../index.php:50
+msgid "Click here to read more reviews"
+msgstr ""
 
 #: ../info.php:3
 msgid ""
@@ -820,6 +824,24 @@ msgstr "Hemen SMPlayerreko azken aldaketen zerrenda aurkitu dezakezu:"
 #: ../latest.php:21
 msgid "Go to the download page"
 msgstr "Joan Jeisketa orrialdera"
+
+#: ../media_reviews.php:3
+msgid "Media Reviews"
+msgstr ""
+
+#: ../reviews.php:3
+msgid "SMPlayer - Reviews"
+msgstr ""
+
+#: ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../reviews.php:19
+msgid ""
+"If you like SMPlayer please feel free to rate or review SMPlayer in some of "
+"these sites:"
+msgstr ""
 
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
@@ -966,30 +988,12 @@ msgstr "UMPlayer iturburuak"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer Ikusleiho-argazkia"
 
-#~ msgid "Click here to get the full package"
-#~ msgstr "Klikatu hemen pakete osoa lortzeko"
+#: ../user_reviews.php:3
+msgid "Users Reviews"
+msgstr ""
 
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Nahi baduzu saiatu zaitezke ere honekin: %1"
-
-#~ msgid "the unstable version"
-#~ msgstr "bertsio ezegonkorra"
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Interfazearen estiloa eta ikur ezarpena aldatzeko aukera."
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Youtube bideoak irakurri ditzake. Youtube bilatzaile bat barneratzen da,\n"
-#~ "honek Youtube bideoak erraz jeistea ere ahalbidetzen du."
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "MPlayer-rentzako Interfaze Grafika"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Argibide Orokorrak"
+#~ msgid "Wiki"
+#~ msgstr "Wikia"
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
@@ -1001,5 +1005,27 @@ msgstr "UMPlayer Ikusleiho-argazkia"
 #~ "Errusiera,\n"
 #~ "Txinera, Japoniera..."
 
-#~ msgid "Wiki"
-#~ msgstr "Wikia"
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Argibide Orokorrak"
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "MPlayer-rentzako Interfaze Grafika"
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Youtube bideoak irakurri ditzake. Youtube bilatzaile bat barneratzen da,\n"
+#~ "honek Youtube bideoak erraz jeistea ere ahalbidetzen du."
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Interfazearen estiloa eta ikur ezarpena aldatzeko aukera."
+
+#~ msgid "the unstable version"
+#~ msgstr "bertsio ezegonkorra"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Nahi baduzu saiatu zaitezke ere honekin: %1"
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Klikatu hemen pakete osoa lortzeko"

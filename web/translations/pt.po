@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-29 23:33+0100\n"
+"POT-Creation-Date: 2012-11-30 23:45+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -150,7 +150,7 @@ msgstr "Mirrors"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Transferências"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:61 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:153 ../index.php:69 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Transferências"
 
@@ -333,7 +333,7 @@ msgstr ""
 "<i>Desinstalar smplayer</i> do menu do smplayer acedida através do menu "
 "<i>Iniciar</i>."
 
-#: ../downloads.php:180 ../info.php:68 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:180 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "Fechar"
 
@@ -607,7 +607,7 @@ msgstr ""
 msgid "Other links:"
 msgstr "Outras ligações:"
 
-#: ../footer.php:14 ../index.php:50 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:58 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:85
 msgid "Latest changes"
 msgstr "Últimas alterações"
@@ -636,7 +636,7 @@ msgstr "FAQ"
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos e codificadores"
 
-#: ../formats.php:11 ../info.php:62
+#: ../formats.php:11 ../info.php:67
 msgid "Formats and Codecs"
 msgstr "Formatos e codificadores"
 
@@ -715,6 +715,10 @@ msgstr "Clique aqui para transferir a versão mais recente"
 #: ../index.php:44
 msgid "About SMPlayer"
 msgstr "Sobre o SMPlayer"
+
+#: ../index.php:50
+msgid "Click here to read more reviews"
+msgstr ""
 
 #: ../info.php:3
 msgid ""
@@ -863,6 +867,24 @@ msgstr "Aqui pode encontrar as lista das últimas alterações no SMPlayer:"
 msgid "Go to the download page"
 msgstr "Ir para a página de transferências"
 
+#: ../media_reviews.php:3
+msgid "Media Reviews"
+msgstr ""
+
+#: ../reviews.php:3
+msgid "SMPlayer - Reviews"
+msgstr ""
+
+#: ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../reviews.php:19
+msgid ""
+"If you like SMPlayer please feel free to rate or review SMPlayer in some of "
+"these sites:"
+msgstr ""
+
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Imagens"
@@ -1008,6 +1030,49 @@ msgstr "Código fonte do UMPlayer"
 msgid "UMPlayer Screenshot"
 msgstr "Imagem do UMPlayer"
 
+#: ../user_reviews.php:3
+msgid "Users Reviews"
+msgstr ""
+
+#~ msgid "Wiki"
+#~ msgstr "Wiki"
+
+#~ msgid ""
+#~ "Translations: currently SMPlayer is translated into more than 30 \n"
+#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+#~ "Japanese...."
+#~ msgstr ""
+#~ "O SMPlayer está traduzido em mais de 30 idiomas, como por exemplo:\n"
+#~ "Português, Espanhol, Alemão, Francês..."
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Informações gerais"
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Uma interface gráfica para o MPlayer"
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "A aplicação possui um explorador para ver vídeos no YouTube,\n"
+#~ "possibilitando também a sua transferência."
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Pode alterar os estilo e os ícones da interface gráfica."
+
+#~ msgid "the unstable version"
+#~ msgstr "a versão de testes"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Se quiser, também pode experimentar %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Clique aqui para obter o pacote integral"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "Interface gráfica para o MPlayer"
+
 #~ msgid ""
 #~ "It means that the installer includes a \"promotional screen\" from a\n"
 #~ "sponsor. This screen offers the user the possibility to install a third\n"
@@ -1026,42 +1091,3 @@ msgstr "Imagem do UMPlayer"
 #~ "ou não. Se optar por instalar a aplicação e, mais tarde, verificar que "
 #~ "não lhe\n"
 #~ "interessa pode desinstalar a aplicação."
-
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "Interface gráfica para o MPlayer"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Clique aqui para obter o pacote integral"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Se quiser, também pode experimentar %1."
-
-#~ msgid "the unstable version"
-#~ msgstr "a versão de testes"
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Pode alterar os estilo e os ícones da interface gráfica."
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "A aplicação possui um explorador para ver vídeos no YouTube,\n"
-#~ "possibilitando também a sua transferência."
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Uma interface gráfica para o MPlayer"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Informações gerais"
-
-#~ msgid ""
-#~ "Translations: currently SMPlayer is translated into more than 30 \n"
-#~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-#~ "Japanese...."
-#~ msgstr ""
-#~ "O SMPlayer está traduzido em mais de 30 idiomas, como por exemplo:\n"
-#~ "Português, Espanhol, Alemão, Francês..."
-
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
