@@ -14,22 +14,19 @@
 <li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
 <li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
 <li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li>
+<li><?php echo "<a href=\"reviews.php?tr_lang=$tr_lang\">". get_tr("Reviews") ."</a>"; ?></li>
 </ul>
 </td>
-<td>
-<ul>
-<li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
-<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
-<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
-</ul>
-</td>
+
 <td>
 <ul>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913573"><?php tr("Bug Tracking"); ?></a></li>
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
-<li><?php echo "<a href=\"reviews.php?tr_lang=$tr_lang\">". get_tr("Reviews") ."</a>"; ?></li>
+<li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
+<li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li>
 </ul>
 </td>
+
 <td>
 <ul>
 <li>
@@ -41,6 +38,7 @@ else
 ?>
 </li>
 <li><?php echo "<a href=\"contact.php?tr_lang=$tr_lang\">". get_tr("Contact us") ."</a>"; ?></li>
+<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
 <li>
 <?php
 echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n";
