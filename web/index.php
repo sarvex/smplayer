@@ -43,6 +43,8 @@ print_menu(1);
 	<div class="span9">
 		<h3><?php tr("About SMPlayer"); ?></h3>
 		<?php include("info.php"); ?>
+
+		<?php if (1) { include("reviews.php"); } ?>
 	</div>
 
 	<div class="span3">
