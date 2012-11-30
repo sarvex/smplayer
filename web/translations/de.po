@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-30 23:45+0100\n"
+"POT-Creation-Date: 2012-12-01 00:18+0100\n"
 "PO-Revision-Date: 2009-02-18 22:05+0100\n"
 "Last-Translator: arti <artii@gmx.net>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr ""
 
-#: ../contact.php:9 ../footer.php:50
+#: ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr ""
 
@@ -130,7 +130,7 @@ msgstr ""
 msgid "Simplified chinese"
 msgstr ""
 
-#: ../contact.php:64 ../footer.php:53
+#: ../contact.php:64 ../footer.php:44
 msgid "Follow us on Twitter"
 msgstr ""
 
@@ -549,11 +549,19 @@ msgstr ""
 msgid "Forum"
 msgstr "Forum"
 
-#: ../footer.php:26
+#: ../footer.php:16
+msgid "FAQ"
+msgstr ""
+
+#: ../footer.php:17 ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../footer.php:23
 msgid "Bug Tracking"
 msgstr "Fehlersuche"
 
-#: ../footer.php:27
+#: ../footer.php:24
 msgid "Feature Requests"
 msgstr "Merkmalsanfragen"
 
@@ -561,9 +569,9 @@ msgstr "Merkmalsanfragen"
 msgid "Mirror"
 msgstr ""
 
-#: ../footer.php:45
-msgid "FAQ"
-msgstr ""
+#: ../footer.php:41
+msgid "Wiki"
+msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -791,10 +799,6 @@ msgstr ""
 msgid "SMPlayer - Reviews"
 msgstr ""
 
-#: ../reviews.php:9
-msgid "Reviews"
-msgstr ""
-
 #: ../reviews.php:19
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
@@ -933,9 +937,6 @@ msgstr ""
 #: ../user_reviews.php:3
 msgid "Users Reviews"
 msgstr ""
-
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
 
 #~ msgid "SMPlayer - General Info"
 #~ msgstr "SMPlayer - Allgemeine Infos"

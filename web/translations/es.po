@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SMPlayer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-30 23:45+0100\n"
+"POT-Creation-Date: 2012-12-01 00:18+0100\n"
 "PO-Revision-Date: 2012-11-26 01:24+0100\n"
 "Last-Translator: Ricardo Villalba <smplayer.dev@gmail.com>\n"
 "Language-Team: Ricardo Villalba <smplayer.dev@gmail.com>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Contáctanos"
 
-#: ../contact.php:9 ../footer.php:50
+#: ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr "Contáctanos"
 
@@ -138,7 +138,7 @@ msgstr "Lituano"
 msgid "Simplified chinese"
 msgstr "Chino simplificado"
 
-#: ../contact.php:64 ../footer.php:53
+#: ../contact.php:64 ../footer.php:44
 msgid "Follow us on Twitter"
 msgstr "Síguenos en Twitter"
 
@@ -666,11 +666,19 @@ msgstr "Últimos cambios"
 msgid "Forum"
 msgstr "Foro"
 
-#: ../footer.php:26
+#: ../footer.php:16
+msgid "FAQ"
+msgstr "Preguntas frecuentes"
+
+#: ../footer.php:17 ../reviews.php:9
+msgid "Reviews"
+msgstr "Opiniones"
+
+#: ../footer.php:23
 msgid "Bug Tracking"
 msgstr "Bugs"
 
-#: ../footer.php:27
+#: ../footer.php:24
 msgid "Feature Requests"
 msgstr "Peticiones"
 
@@ -678,9 +686,9 @@ msgstr "Peticiones"
 msgid "Mirror"
 msgstr "Mirror"
 
-#: ../footer.php:45
-msgid "FAQ"
-msgstr "Preguntas frecuentes"
+#: ../footer.php:41
+msgid "Wiki"
+msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -923,10 +931,6 @@ msgstr "Opiniones de los medios"
 msgid "SMPlayer - Reviews"
 msgstr "SMPlayer - Opiniones"
 
-#: ../reviews.php:9
-msgid "Reviews"
-msgstr "Opiniones"
-
 #: ../reviews.php:19
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
@@ -1082,40 +1086,8 @@ msgstr "Captura de pantalla del UMPlayer"
 msgid "Users Reviews"
 msgstr "Opiniones de los usuarios"
 
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Pulsa aquí para descargar el paquete completo"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Si lo deseas también puedes probar %1."
-
-#~ msgid "the unstable version"
-#~ msgstr "la versión inestable"
-
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
-#~ "mplayer build with a lot of fixes."
-#~ msgstr ""
-#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
-#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
-#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Información general"
+#~ msgid "Possibility to change the skin and style."
+#~ msgstr "Posibilidad de cambiar el skin y el estilo."
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
@@ -1125,8 +1097,37 @@ msgstr "Opiniones de los usuarios"
 #~ "Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, "
 #~ "incluyendo español, alemán, francés, italiano, ruso, chino, japonés..."
 
-#~ msgid "Possibility to change the skin and style."
-#~ msgstr "Posibilidad de cambiar el skin y el estilo."
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Información general"
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
+#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
+
+#~ msgid ""
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+#~ "mplayer build with a lot of fixes."
+#~ msgstr ""
+#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
+#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
+
+#~ msgid "the unstable version"
+#~ msgstr "la versión inestable"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Si lo deseas también puedes probar %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Pulsa aquí para descargar el paquete completo"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"

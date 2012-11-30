@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-30 23:45+0100\n"
+"POT-Creation-Date: 2012-12-01 00:18+0100\n"
 "PO-Revision-Date: 2008-01-30 00:49+0200\n"
 "Last-Translator: WiseLord <wiselord1983@gmail.com>\n"
 "Language-Team: Русский <ru@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "SMPlayer - Contact us"
 msgstr "SMPlayer - Наши контакты"
 
-#: ../contact.php:9 ../footer.php:50
+#: ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr "Наши контакты"
 
@@ -141,7 +141,7 @@ msgstr "Литовский"
 msgid "Simplified chinese"
 msgstr "Упрощённый китайский"
 
-#: ../contact.php:64 ../footer.php:53
+#: ../contact.php:64 ../footer.php:44
 msgid "Follow us on Twitter"
 msgstr "Следите за нами в Twitter"
 
@@ -650,11 +650,19 @@ msgstr "Последние изменения"
 msgid "Forum"
 msgstr "Форум"
 
-#: ../footer.php:26
+#: ../footer.php:16
+msgid "FAQ"
+msgstr "ЧАВО"
+
+#: ../footer.php:17 ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../footer.php:23
 msgid "Bug Tracking"
 msgstr "Отслеживание ошибок"
 
-#: ../footer.php:27
+#: ../footer.php:24
 msgid "Feature Requests"
 msgstr "Особые пожелания"
 
@@ -662,9 +670,9 @@ msgstr "Особые пожелания"
 msgid "Mirror"
 msgstr "Зеркало"
 
-#: ../footer.php:45
-msgid "FAQ"
-msgstr "ЧАВО"
+#: ../footer.php:41
+msgid "Wiki"
+msgstr "Wiki"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
@@ -912,10 +920,6 @@ msgstr ""
 msgid "SMPlayer - Reviews"
 msgstr ""
 
-#: ../reviews.php:9
-msgid "Reviews"
-msgstr ""
-
 #: ../reviews.php:19
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
@@ -1067,8 +1071,30 @@ msgstr "Скриншоn UMPlayer"
 msgid "Users Reviews"
 msgstr ""
 
-#~ msgid "Wiki"
-#~ msgstr "Wiki"
+#~ msgid "Click here to get the full package"
+#~ msgstr "Кликните здесь для загрузки полного пакета"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Если пожелаете, вы можете также попробовать %1."
+
+#~ msgid "the unstable version"
+#~ msgstr "нестабильную версию"
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Возможность изменения стиля и набора иконок интерфейса."
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Воспроизведение видео с Youtube. В состав пакета включён браузер Youtube, "
+#~ "позволяющий также легко загружать видео с Youtube."
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Графический интерфейс для MPlayer"
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Главная страница"
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
@@ -1078,28 +1104,3 @@ msgstr ""
 #~ "Переводы: в настоящее время SMPlayer переведён более чем на 30 языков, "
 #~ "включая испанский, немецкий, французский, итальянский, русский, "
 #~ "китайский, японский..."
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Главная страница"
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Графический интерфейс для MPlayer"
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Воспроизведение видео с Youtube. В состав пакета включён браузер Youtube, "
-#~ "позволяющий также легко загружать видео с Youtube."
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Возможность изменения стиля и набора иконок интерфейса."
-
-#~ msgid "the unstable version"
-#~ msgstr "нестабильную версию"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Если пожелаете, вы можете также попробовать %1."
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Кликните здесь для загрузки полного пакета"
