@@ -67,6 +67,14 @@ print_menu(1);
 	</div> <!-- span3 -->
 </div>
 
+<?php
+if (1) {
+	echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+         get_tr("Click here to download the latest version") .
+         "</a></p>\n";
+}
+?>
+
 </div> <!-- container -->
 
 <!-- begin footer -->
