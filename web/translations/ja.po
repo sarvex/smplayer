@@ -365,7 +365,7 @@ msgstr ""
 
 #: ../faq.php:26
 msgid "The video equalizer doesn't work, why?"
-msgstr ""
+msgstr "ビデオイコライザーが使えない"
 
 #: ../faq.php:30
 msgid ""
@@ -373,6 +373,9 @@ msgid ""
 "equalizer may not work. Go to Preferences -> General -> Video \n"
 "and enable the software equalizer."
 msgstr ""
+"ビデオカードやドライバーによっては、ハードウェアのビデオイコライザーは機能し"
+"ないことがあります。[環境設定 -> 全般 -> ビデオ] でソフトウェアのイコライザー"
+"を有効にしてください。"
 
 #: ../faq.php:36
 msgid "DVD menus, where are they?"
@@ -414,6 +417,7 @@ msgstr ""
 #: ../faq.php:61
 msgid "In linux you need to install the package smplayer-skins."
 msgstr ""
+"Linux では、パッケージ smplayer-skins をインストールする必要があります。"
 
 #: ../faq.php:65
 msgid "Where is the configuration stored? Can I reset the settings?"
@@ -497,11 +501,11 @@ msgstr ""
 msgid ""
 "The current time of the movie appears in the up left corner of the image, "
 "how can I hide it?"
-msgstr ""
+msgstr "左上に表示される動画の時間を消したい"
 
 #: ../faq.php:118
 msgid "Options -> OSD -> Subtitles only."
-msgstr ""
+msgstr "[オプション -> OSD -> 字幕のみ]。"
 
 #: ../faq.php:122
 msgid "How can I take advantage of all my CPU cores?"
@@ -646,7 +650,7 @@ msgstr "FAQ"
 
 #: ../footer.php:17 ../reviews.php:9
 msgid "Reviews"
-msgstr ""
+msgstr "レビュー"
 
 #: ../footer.php:23
 msgid "Bug Tracking"
@@ -751,7 +755,7 @@ msgstr "SMPlayer とは"
 
 #: ../index.php:50
 msgid "Click here to read more reviews"
-msgstr ""
+msgstr "もっとレビューを読む"
 
 #: ../info.php:3
 msgid ""
@@ -893,17 +897,19 @@ msgstr "ダウンロードページへ"
 
 #: ../media_reviews.php:3
 msgid "Media Reviews"
-msgstr ""
+msgstr "媒体レビュー"
 
 #: ../reviews.php:3
 msgid "SMPlayer - Reviews"
-msgstr ""
+msgstr "SMPlayer - レビュー"
 
 #: ../reviews.php:19
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
 "these sites:"
 msgstr ""
+"SMPlayer が気に入られた場合は、ぜひ以下のようなサイトに SMPlayer の評価やレ"
+"ビューを投稿してください:"
 
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
@@ -1052,21 +1058,4 @@ msgstr "UMPlayer のスクリーンショット"
 
 #: ../user_reviews.php:3
 msgid "Users Reviews"
-msgstr ""
-
-#~ msgid ""
-#~ "It means that the installer includes a \"promotional screen\" from a\n"
-#~ "sponsor. This screen offers the user the possibility to install a third\n"
-#~ "party application. It may be for example a demo version of an\n"
-#~ "interesting application. It's up to you to decide whether give it a try\n"
-#~ "or not. If you install it but then you don't like, you can uninstall it\n"
-#~ "easily later."
-#~ msgstr ""
-#~ "スポンサーからの \"promotional screen\" (プロモーション画面) を意味しま"
-#~ "す。このプロモーション画面は、あるソフトウェアの試用版など、第三者製アプリ"
-#~ "ケーションのインストールをユーザーに促します。もちろん、インストールの選択"
-#~ "はユーザーに委ねられていますし、インストールした後でもそのアプリケーション"
-#~ "が気に入らなければ速やかにアンインストールすることができます。"
-
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "MPlayer の GUI フロントエンド"
+msgstr "ユーザーレビュー"
