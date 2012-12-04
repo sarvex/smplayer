@@ -2,7 +2,7 @@
 include_once("header.php");
 print_header(get_tr("SMPlayer - Reviews"));
 echo "<body>\n";
-print_menu(0);
+print_menu(4);
 ?>
 
 <div class="container-fluid">
