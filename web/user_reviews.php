@@ -75,15 +75,26 @@
 
 <div class="row-fluid">
 	<?php
+	print_quote("Move over VLC, there's a new kid in town. I was a big supporter of VLC since it had ".
+				"so many more features than Windows Media Player. However there have been several ".
+				"bugs in it recently that made me (and many others) look for something else. ".
+				"SMPlayer not only fit the bill, it surpassed VLC in every way. It can sync ".
+				"audio - a vital feature of VLC. It loads and plays faster. It can instantly ".
+				"play in full screen, which many media players including VLC have problems with in Win 7. ".
+				"I do recommend choosing to custom install and checking off the additional codecs ".
+				"- can never have enough of those. And I personally turned off several logs and ".
+				"playlists to save drive space - but you may want the custom ini files that can save ".
+				"playback settings per video - another powerful feature if needed! It works better than ".
+				"any other video player I've tried, I prefer the interface and find it's controls ".
+				"and menus very easy to use, it is faster, and so far it plays everything with ".
+				"ease. What more could you want?", "",
+				"Klatuu", "snapfiles", 8);
+
 	print_quote("I love it. It's faster than VLC and MPC (HD videos are not choppy).", "",
 				"Andreyyshore", "sf", 4);
 
 	print_quote("SMPlayer is such a great player, if I could award it ten stars, I would.", "",
 				"Artoo-Detoo", "softpedia", 4);
-
-	print_quote("The best video player I have ever seen! [...] ".
-				"I especially want to stress out the good quality of searching subtitles right from a player.", "", 
-				"G-TEX", "usc", 4);
 
 	?>
 </div>
