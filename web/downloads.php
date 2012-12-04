@@ -128,10 +128,11 @@ echo download_skins_src_link();
 </div> <!-- span9 -->
 
 <div class="span2">
-		<br><br><br><br><br>
+		<br><br><br>
 		<center>
 		<?php include("awards.php"); ?>
 		</center>
+		<br>
 </div>
 
 </div> <!-- container>

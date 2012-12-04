@@ -9,3 +9,5 @@
 <a href="http://www.filecluster.com/Antivirus-Report/SMPlayer.html" target="_blank"><img src="http://www.filecluster.com/images/scan_report.gif" width="200" height="100" border="0" alt="SMPlayer antivirus report at FileCluster.com"></a>
 <br><br>
 <a target="_blank" href="http://www.geardownload.com/multimedia/smplayer.html"><img src="images/sites/geardownloads.gif"></a>
+<br><br>
+<a target="_blank" href="http://smplayer.en.lo4d.com"><img src="images/sites/lo4d.png"></a>
