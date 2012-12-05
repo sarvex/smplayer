@@ -23,6 +23,13 @@ function show_thumb($filename, $desc) {
 	echo "</li>\n";
 }
 
+function show_video($link, $desc) {
+	echo "<li class=\"span4\">\n";
+	echo $link;
+	echo "<div class=\"caption\">$desc</div>\n";
+	echo "</li>\n";
+}
+
 echo "<p>";
 tr("Here you can see some screenshots from SMPlayer:");
 echo "\n";
@@ -64,6 +71,22 @@ echo "</div>";
 
 echo "</div> <!-- gallery -->\n";
 ?>
+
+<?php echo "<h1>". get_tr("Videos") ."</h1>"; ?>
+<div class="row">
+<div class="span12">
+<ul class="thumbnails">
+<?php 
+show_video('<iframe width="384" height="288" src="http://www.youtube.com/embed/xAcvBXrhjpk" frameborder="0" allowfullscreen></iframe>',
+		   get_tr("Skin support"));
+show_video('<iframe width="384" height="288" src="http://www.youtube.com/embed/9CZNk8XRPCM" frameborder="0" allowfullscreen></iframe>',
+		   get_tr("Youtube browser"));
+show_video('<iframe width="384" height="288" src="http://www.youtube.com/embed/F5OcZBVPwOA" frameborder="0" allowfullscreen></iframe>',
+		   get_tr("Toolbar editor"));
+?>
+</ul>
+</div>
+</div>
 
 </div> <!-- container ->
 
