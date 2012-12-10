@@ -24,6 +24,9 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 $random = rand(0,9);
 if ($random < 7) {
 	echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.2"));
+	echo " [<a href=\"http://download.cnet.com/SMPlayer/3000-2139_4-10645077.html?part=dl-&subj=dl&tag=button\">";
+	tr("cnet mirror");
+	echo "</a>]";
 } else {
 	echo "<a href=\"http://download.cnet.com/SMPlayer/3000-2139_4-10645077.html?part=dl-&subj=dl&tag=button\"><b>";
 	tr("Click here to download SMPlayer %1", "0.8.2");
