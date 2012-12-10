@@ -72,7 +72,7 @@ sudo apt-get install umplayer
 <tr>
 <td><img src="iconos/package.png" alt="*"></td>
 <td>
-<a href="http://smplayer.svn.sourceforge.net/viewvc/smplayer/umplayer/trunk/?view=tar"><b><?php tr("UMPlayer sources"); ?></b></a>
+<a href="http://sourceforge.net/projects/smplayer/files/UMPlayer/0.98.1/umplayer_0.98.1.orig.tar.gz/download"><b><?php tr("UMPlayer sources"); ?></b></a>
 </td>
 </tr>
 </table>
