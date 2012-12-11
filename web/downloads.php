@@ -27,6 +27,10 @@ if ($random < 7) {
 	echo " [<a href=\"http://download.cnet.com/SMPlayer/3000-2139_4-10645077.html?part=dl-&subj=dl&tag=button\">";
 	tr("cnet mirror");
 	echo "</a>]";
+
+	echo " [<a href=\"http://www.softpedia.com/dyn-postdownload.php?p=68718&t=4&i=1\">";
+	tr("softpedia mirror");
+	echo "</a>]";
 } else {
 	echo "<a href=\"http://download.cnet.com/SMPlayer/3000-2139_4-10645077.html?part=dl-&subj=dl&tag=button\"><b>";
 	tr("Click here to download SMPlayer %1", "0.8.2");
