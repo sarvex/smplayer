@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-01 00:18+0100\n"
+"POT-Creation-Date: 2012-12-11 01:06+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -143,167 +143,171 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Завантаження"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:69 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:154 ../index.php:69 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Завантаження"
 
-#: ../downloads.php:24
+#: ../downloads.php:26 ../downloads.php:32
 msgid "Click here to download SMPlayer %1"
 msgstr ""
 
-#: ../downloads.php:26
+#: ../downloads.php:28
+msgid "cnet mirror"
+msgstr ""
+
+#: ../downloads.php:36
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
 msgstr ""
 
-#: ../downloads.php:29
+#: ../downloads.php:39
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:41
+#: ../downloads.php:51
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
 msgstr ""
 
-#: ../downloads.php:43
+#: ../downloads.php:53
 msgid "In case you find any problem, please report it in %1."
 msgstr ""
 
-#: ../downloads.php:43
+#: ../downloads.php:53
 msgid "our forum"
 msgstr ""
 
-#: ../downloads.php:53
+#: ../downloads.php:63
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
-#: ../downloads.php:53
+#: ../downloads.php:63
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:55
+#: ../downloads.php:65
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:56
+#: ../downloads.php:66
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:65
+#: ../downloads.php:75
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
 "or 20 seconds. This is only done once."
 msgstr ""
 
-#: ../downloads.php:80 ../umplayer.php:57
+#: ../downloads.php:90 ../umplayer.php:57
 msgid "Packages for Ubuntu:"
 msgstr "Пакети для Ubuntu:"
 
-#: ../downloads.php:81
+#: ../downloads.php:91
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:95
+#: ../downloads.php:105
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../downloads.php:97
+#: ../downloads.php:107
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:104 ../umplayer.php:70
+#: ../downloads.php:114 ../umplayer.php:70
 msgid "Sources"
 msgstr ""
 
-#: ../downloads.php:143
+#: ../downloads.php:154
 msgid "Information about the Windows installer"
 msgstr ""
 
-#: ../downloads.php:148
+#: ../downloads.php:159
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 
-#: ../downloads.php:151
+#: ../downloads.php:162
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
 msgstr ""
 
-#: ../downloads.php:153
+#: ../downloads.php:164
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
 msgstr ""
 
-#: ../downloads.php:155
+#: ../downloads.php:166
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
 msgstr ""
 
-#: ../downloads.php:158
+#: ../downloads.php:169
 msgid "Optional components"
 msgstr ""
 
-#: ../downloads.php:159
+#: ../downloads.php:170
 msgid "The installer allows to select the components to install:"
 msgstr ""
 
-#: ../downloads.php:161
+#: ../downloads.php:172
 msgid "Languages"
 msgstr ""
 
-#: ../downloads.php:162
+#: ../downloads.php:173
 msgid "Translations for more than 30 languages are provided."
 msgstr ""
 
-#: ../downloads.php:163
+#: ../downloads.php:174
 msgid "If you uncheck this option, only English will be available."
 msgstr ""
 
-#: ../downloads.php:164
+#: ../downloads.php:175
 msgid "Icon themes"
 msgstr ""
 
-#: ../downloads.php:165
+#: ../downloads.php:176
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
 
-#: ../downloads.php:166
+#: ../downloads.php:177
 msgid "Binary codecs"
 msgstr ""
 
-#: ../downloads.php:167
+#: ../downloads.php:178
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
 
-#: ../downloads.php:168
+#: ../downloads.php:179
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr ""
 
-#: ../downloads.php:170
+#: ../downloads.php:181
 msgid "Uninstallation"
 msgstr ""
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:175
+#: ../downloads.php:186
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:180 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:191 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr ""
 
@@ -554,8 +558,8 @@ msgstr "Форум"
 msgid "FAQ"
 msgstr ""
 
-#: ../footer.php:17 ../reviews.php:9
-msgid "Reviews"
+#: ../footer.php:17 ../presskit.php:9
+msgid "Press Kit"
 msgstr ""
 
 #: ../footer.php:23
@@ -612,11 +616,15 @@ msgstr ""
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:152 ../screenshots.php:14
+#: ../header.php:152 ../presskit.php:23 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:159
+#: ../header.php:153 ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../header.php:160
 msgid "Language"
 msgstr ""
 
@@ -795,6 +803,22 @@ msgstr ""
 msgid "Media Reviews"
 msgstr ""
 
+#: ../presskit.php:3
+msgid "SMPlayer - Press Kit"
+msgstr ""
+
+#: ../presskit.php:10
+msgid "Some images you can use in an article, blog, review..."
+msgstr ""
+
+#: ../presskit.php:12
+msgid "Logos"
+msgstr ""
+
+#: ../presskit.php:25
+msgid "Some screenshots, in English and Spanish"
+msgstr ""
+
 #: ../reviews.php:3
 msgid "SMPlayer - Reviews"
 msgstr ""
@@ -809,56 +833,72 @@ msgstr ""
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Скріншоти"
 
-#: ../screenshots.php:27
+#: ../screenshots.php:34
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Тут Ви можете переглянути скріншоти SMPlayer:"
 
-#: ../screenshots.php:35
+#: ../screenshots.php:42
 msgid "This is the main window"
 msgstr "Головне вікно"
 
-#: ../screenshots.php:36
+#: ../screenshots.php:43
 msgid "The Windows version"
 msgstr ""
 
-#: ../screenshots.php:37
+#: ../screenshots.php:44
 msgid "The preferences dialog"
 msgstr "Діалог налаштувань"
 
-#: ../screenshots.php:38
+#: ../screenshots.php:45
 msgid "The YouTube browser"
 msgstr ""
 
-#: ../screenshots.php:46
+#: ../screenshots.php:53
 msgid "Video preview"
 msgstr ""
 
-#: ../screenshots.php:47
+#: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Вложені субтитри Matroska"
 
-#: ../screenshots.php:48
+#: ../screenshots.php:55
 msgid "More than 30 translations available"
 msgstr ""
 
-#: ../screenshots.php:49
+#: ../screenshots.php:56
 msgid "The mini GUI"
 msgstr "Компактний інтерфейс"
 
-#: ../screenshots.php:57
+#: ../screenshots.php:64
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#: ../screenshots.php:58
+#: ../screenshots.php:65
 msgid "The skin Vista"
 msgstr ""
 
-#: ../screenshots.php:59
+#: ../screenshots.php:66
 msgid "The skin Mac"
 msgstr ""
 
-#: ../screenshots.php:60
+#: ../screenshots.php:67
 msgid "The skin Modern"
+msgstr ""
+
+#: ../screenshots.php:75
+msgid "Videos"
+msgstr ""
+
+#: ../screenshots.php:81
+msgid "Skin support"
+msgstr ""
+
+#: ../screenshots.php:83
+msgid "Youtube browser"
+msgstr ""
+
+#: ../screenshots.php:85
+msgid "Toolbar editor"
 msgstr ""
 
 #: ../smtube.php:11

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-01 00:18+0100\n"
+"POT-Creation-Date: 2012-12-11 01:06+0100\n"
 "PO-Revision-Date: 2012-11-30 22:18+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
@@ -149,15 +149,19 @@ msgstr "Ispiluak"
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Jeisketak"
 
-#: ../downloads.php:14 ../header.php:153 ../index.php:69 ../umplayer.php:31
+#: ../downloads.php:14 ../header.php:154 ../index.php:69 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Jeisketak"
 
-#: ../downloads.php:24
+#: ../downloads.php:26 ../downloads.php:32
 msgid "Click here to download SMPlayer %1"
 msgstr "Klikatu hemen SMPlayer %1 jeisteko"
 
-#: ../downloads.php:26
+#: ../downloads.php:28
+msgid "cnet mirror"
+msgstr ""
+
+#: ../downloads.php:36
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -165,11 +169,11 @@ msgstr ""
 "Pakete honek smplayer, azalgaiak, itzulpenak, mplayer %1 eta \n"
 "YouTube bilatzailea ditu (smtube)."
 
-#: ../downloads.php:29
+#: ../downloads.php:39
 msgid "More info"
 msgstr "Argibide gehiago"
 
-#: ../downloads.php:41
+#: ../downloads.php:51
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -177,32 +181,32 @@ msgstr ""
 "Aztertu datorren 0.8.2 bertsioaren beta. Ezaugarriak: EI azalgarri berria "
 "eta mplayer eraiketa berri bat zuzenketa pilo batekin."
 
-#: ../downloads.php:43
+#: ../downloads.php:53
 msgid "In case you find any problem, please report it in %1."
 msgstr "Arazoren bat aurkitzen baduzu, mesedez jakinarazi ezazu hemen: %1."
 
-#: ../downloads.php:43
+#: ../downloads.php:53
 msgid "our forum"
 msgstr "gure eztabaidagunea"
 
-#: ../downloads.php:53
+#: ../downloads.php:63
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 "Beste pakete batzuk ere eskuragarri daude (bertsio eramangarri bezala), %1."
 
-#: ../downloads.php:53
+#: ../downloads.php:63
 msgid "here"
 msgstr "hemen"
 
-#: ../downloads.php:55
+#: ../downloads.php:65
 msgid "If you wish you can also try the %1."
 msgstr "Nahi baduzu honekin saiatu zaitezke: %1"
 
-#: ../downloads.php:56
+#: ../downloads.php:66
 msgid "development version"
 msgstr "garapen bertsioa"
 
-#: ../downloads.php:65
+#: ../downloads.php:75
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -212,37 +216,37 @@ msgstr ""
 "(beharrezkoa IGE eta azpidatzietarako). Honek 10 edo 20 \n"
 "segundu hartu ditzake. Hau behin bakarrik egiten da."
 
-#: ../downloads.php:80 ../umplayer.php:57
+#: ../downloads.php:90 ../umplayer.php:57
 msgid "Packages for Ubuntu:"
 msgstr "Ubunturako Paketeak:"
 
-#: ../downloads.php:81
+#: ../downloads.php:91
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "SMplayer ezartzeko, ekin agindu hauei terminalean:"
 
-#: ../downloads.php:95
+#: ../downloads.php:105
 msgid "Contributed packages for other distros"
 msgstr "Beste banaketa batzuetarako paketeak"
 
-#: ../downloads.php:97
+#: ../downloads.php:107
 msgid "List of packages contributed by other people."
 msgstr "Beste jende batek eginiko ekarpenen paketeen zerrendak."
 
-#: ../downloads.php:104 ../umplayer.php:70
+#: ../downloads.php:114 ../umplayer.php:70
 msgid "Sources"
 msgstr "Iturburuak"
 
-#: ../downloads.php:143
+#: ../downloads.php:154
 msgid "Information about the Windows installer"
 msgstr "Windows ezartzileari buruzko argibideak"
 
-#: ../downloads.php:148
+#: ../downloads.php:159
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Windowsen ezarpen erraz bat egiteko ezartzailea duen paketea hornitzen dugu."
 
-#: ../downloads.php:151
+#: ../downloads.php:162
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -250,7 +254,7 @@ msgstr ""
 "Ezartzaileak hirugarrenen aplikazioak eskaintzen dituen sustapen ikusleiho "
 "bat izan dezake."
 
-#: ../downloads.php:153
+#: ../downloads.php:164
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -258,7 +262,7 @@ msgstr ""
 "Ez bazaude eskaintzan interesaturik, ez hautatu aukera(k) eta smplayer-en "
 "ohiko ezarpena burutuko da."
 
-#: ../downloads.php:155
+#: ../downloads.php:166
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -266,32 +270,32 @@ msgstr ""
 "Ikuslehio honek smplayer gehiago hobetzen eta dohainik banatzea ahabidetzen "
 "digu. Ulertuko duzulakoan gaude."
 
-#: ../downloads.php:158
+#: ../downloads.php:169
 msgid "Optional components"
 msgstr "Aukerazko osagaiak"
 
-#: ../downloads.php:159
+#: ../downloads.php:170
 msgid "The installer allows to select the components to install:"
 msgstr "Ezartzaileak ezarri beharreko osagaiak hautatzea ahalbidetzen du:"
 
-#: ../downloads.php:161
+#: ../downloads.php:172
 msgid "Languages"
 msgstr "Hizkuntzak"
 
-#: ../downloads.php:162
+#: ../downloads.php:173
 msgid "Translations for more than 30 languages are provided."
 msgstr "30 hizkuntza itzulpen baino gehiagorekin."
 
-#: ../downloads.php:163
+#: ../downloads.php:174
 msgid "If you uncheck this option, only English will be available."
 msgstr ""
 "Aukera hau ez baduzu hautatzen, Ingelera bakarrik egongo da eskuragarri."
 
-#: ../downloads.php:164
+#: ../downloads.php:175
 msgid "Icon themes"
 msgstr "Ikur azalgaiak"
 
-#: ../downloads.php:165
+#: ../downloads.php:176
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
@@ -299,11 +303,11 @@ msgstr ""
 "Ikur azalgai batzuk hornitzen dira, honek aplikazioaren irudia aldatzea "
 "ahalbidetzen du."
 
-#: ../downloads.php:166
+#: ../downloads.php:177
 msgid "Binary codecs"
 msgstr "Binario kodekak"
 
-#: ../downloads.php:167
+#: ../downloads.php:178
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -311,18 +315,18 @@ msgstr ""
 "Aukera hau hautatzen baduzu, kodek gehigarri batuzk jeitsi eta ezarriko dira "
 "smplayer agiritegian."
 
-#: ../downloads.php:168
+#: ../downloads.php:179
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "Kodekak heuskarri ezohiko batzuetarako bakarrik dira beharrezkoak."
 
-#: ../downloads.php:170
+#: ../downloads.php:181
 msgid "Uninstallation"
 msgstr "Kentzea"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:175
+#: ../downloads.php:186
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -331,7 +335,7 @@ msgstr ""
 "SMplayer erraz kendu dezakezu zure aginte paneletik edo <i>kendu smplayer</"
 "i> aukera erabiliz smplayer menuan Windows <i>Hasiera</i> menu gabe."
 
-#: ../downloads.php:180 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
+#: ../downloads.php:191 ../info.php:73 ../smtube.php:17 ../umplayer.php:117
 msgid "Close"
 msgstr "Itxi"
 
@@ -661,8 +665,8 @@ msgstr "Eztabaidagunea"
 msgid "FAQ"
 msgstr "SEG"
 
-#: ../footer.php:17 ../reviews.php:9
-msgid "Reviews"
+#: ../footer.php:17 ../presskit.php:9
+msgid "Press Kit"
 msgstr ""
 
 #: ../footer.php:23
@@ -721,11 +725,15 @@ msgstr "audio kodek garrantzitsuenak:"
 msgid "Main"
 msgstr "Nagusia"
 
-#: ../header.php:152 ../screenshots.php:14
+#: ../header.php:152 ../presskit.php:23 ../screenshots.php:14
 msgid "Screenshots"
 msgstr "Ikusleiho-argazkiak"
 
-#: ../header.php:159
+#: ../header.php:153 ../reviews.php:9
+msgid "Reviews"
+msgstr ""
+
+#: ../header.php:160
 msgid "Language"
 msgstr "Hizkuntza"
 
@@ -922,6 +930,22 @@ msgstr "Joan Jeisketa orrialdera"
 msgid "Media Reviews"
 msgstr ""
 
+#: ../presskit.php:3
+msgid "SMPlayer - Press Kit"
+msgstr ""
+
+#: ../presskit.php:10
+msgid "Some images you can use in an article, blog, review..."
+msgstr ""
+
+#: ../presskit.php:12
+msgid "Logos"
+msgstr ""
+
+#: ../presskit.php:25
+msgid "Some screenshots, in English and Spanish"
+msgstr ""
+
 #: ../reviews.php:3
 msgid "SMPlayer - Reviews"
 msgstr ""
@@ -936,57 +960,73 @@ msgstr ""
 msgid "SMPlayer - Screenshots"
 msgstr "SMPlayer - Ikusleiho-argazkiak"
 
-#: ../screenshots.php:27
+#: ../screenshots.php:34
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Hemen SMPlayerren ikusleiho-argazki gehiago ikusi ditzakezu:"
 
-#: ../screenshots.php:35
+#: ../screenshots.php:42
 msgid "This is the main window"
 msgstr "Hau leiho nagusia da"
 
-#: ../screenshots.php:36
+#: ../screenshots.php:43
 msgid "The Windows version"
 msgstr "Windows bertsioa"
 
-#: ../screenshots.php:37
+#: ../screenshots.php:44
 msgid "The preferences dialog"
 msgstr "Hobespen elkarrizketa"
 
-#: ../screenshots.php:38
+#: ../screenshots.php:45
 msgid "The YouTube browser"
 msgstr "YouTube bilatzailea"
 
-#: ../screenshots.php:46
+#: ../screenshots.php:53
 msgid "Video preview"
 msgstr "Bideo aurreikuspena"
 
-#: ../screenshots.php:47
+#: ../screenshots.php:54
 msgid "Matroska embedded subtitles"
 msgstr "Matroskan barneratutako azpidatziak"
 
-#: ../screenshots.php:48
+#: ../screenshots.php:55
 msgid "More than 30 translations available"
 msgstr "30 itzulpen baino gehiago eskuragarri"
 
-#: ../screenshots.php:49
+#: ../screenshots.php:56
 msgid "The mini GUI"
 msgstr "EIG Txikia"
 
-#: ../screenshots.php:57
+#: ../screenshots.php:64
 msgid "Possibility to search for subtitles"
 msgstr "Azpidatziak bilatzeko aukera"
 
-#: ../screenshots.php:58
+#: ../screenshots.php:65
 msgid "The skin Vista"
 msgstr "Vista azala"
 
-#: ../screenshots.php:59
+#: ../screenshots.php:66
 msgid "The skin Mac"
 msgstr "Mac azala"
 
-#: ../screenshots.php:60
+#: ../screenshots.php:67
 msgid "The skin Modern"
 msgstr "Modern azala"
+
+#: ../screenshots.php:75
+msgid "Videos"
+msgstr ""
+
+#: ../screenshots.php:81
+msgid "Skin support"
+msgstr ""
+
+#: ../screenshots.php:83
+msgid "Youtube browser"
+msgstr ""
+
+#: ../screenshots.php:85
+msgid "Toolbar editor"
+msgstr ""
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
@@ -1081,6 +1121,31 @@ msgstr "UMPlayer Ikusleiho-argazkia"
 msgid "Users Reviews"
 msgstr ""
 
+#~ msgid "Click here to get the full package"
+#~ msgstr "Klikatu hemen pakete osoa lortzeko"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Nahi baduzu saiatu zaitezke ere honekin: %1"
+
+#~ msgid "the unstable version"
+#~ msgstr "bertsio ezegonkorra"
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Interfazearen estiloa eta ikur ezarpena aldatzeko aukera."
+
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
+#~ msgstr ""
+#~ "Youtube bideoak irakurri ditzake. Youtube bilatzaile bat barneratzen da,\n"
+#~ "honek Youtube bideoak erraz jeistea ere ahalbidetzen du."
+
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "MPlayer-rentzako Interfaze Grafika"
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Argibide Orokorrak"
+
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
 #~ "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -1090,28 +1155,3 @@ msgstr ""
 #~ "itzulita dago, barne Espainiera, Alemaniera, Frantziera,  Italiera, "
 #~ "Errusiera,\n"
 #~ "Txinera, Japoniera..."
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Argibide Orokorrak"
-
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "MPlayer-rentzako Interfaze Grafika"
-
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Youtube bideoak irakurri ditzake. Youtube bilatzaile bat barneratzen da,\n"
-#~ "honek Youtube bideoak erraz jeistea ere ahalbidetzen du."
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Interfazearen estiloa eta ikur ezarpena aldatzeko aukera."
-
-#~ msgid "the unstable version"
-#~ msgstr "bertsio ezegonkorra"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Nahi baduzu saiatu zaitezke ere honekin: %1"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Klikatu hemen pakete osoa lortzeko"
