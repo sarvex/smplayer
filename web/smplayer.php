@@ -20,14 +20,14 @@ print_menu(0);
 			<?php
 			echo "<p>". get_tr("Free Opensource Media Player") ."<br>\n";
 			echo "<p>\n";
-			echo "<img src=\"images/check.png\"> Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...<br>";
-			echo "<img src=\"images/check.png\"> Built-in codecs<br>";
-			echo "<img src=\"images/check.png\"> Plays and download Youtube&trade; videos<br>";
-			echo "<img src=\"images/check.png\"> Automatically search and download subtitles<br>";
-			echo "<img src=\"images/check.png\"> Resumes playback<br>";
-			echo "<img src=\"images/check.png\"> Skin support<br>";
-			echo "<img src=\"images/check.png\"> Many audio and video filters included<br>";
-			echo "<img src=\"images/check.png\"> Simple and intuitive interface<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Built-in codecs") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Resumes playback") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Skin support") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Many audio and video filters included") ."<br>";
+			echo "<img src=\"images/check.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
 			echo "</p>";
 			echo "<p>". download_windows_full_link(get_tr("Click here to download SMPlayer for Windows"), true) ."</p>\n";
 			?>
@@ -42,7 +42,7 @@ print_menu(0);
 <div class="row-fluid">
 <div class="span8">
 
-<h1>Main Features</h1>
+<h1><?php tr("Main Features"); ?></h1>
 <p>
 <?php
 tr("SMPlayer is a complete media player. It uses
@@ -89,14 +89,15 @@ Japanese...."); ?></li>
 </div> <!-- span -->
 
 <div class="span4">
-<h3>Supported formats:</h3>
+<div class="well">
+<h3><?php tr("Supported formats:"); ?></h3>
 <p>
 (S)VCD, DVD, MPEG-1/2, AVI, ASF/WMV/WMA, QT/MOV/MP4, RealAudio/RealVideo,
 Ogg/OGM, Matroska, NUT, NSV, VIVO, FLI, NuppelVideo, yuv4mpeg, FILM (.cpk),
 RoQ, PVA, streaming via HTTP/FTP, RTP/RTSP, MMS/MMST, MPST, SDP.
 <hr>
 
-<h3>Video codecs:</h3>
+<h3><?php tr("Video codecs:"); ?></h3>
 <p>
 MPEG-1 (VCD), MPEG-2 (SVCD/DVD/DVB), MPEG-4 ASP, DivX, OpenDivX, DivX 5, Xvid,
 H.264, Windows Media Video 7/8 (WMV1/2), Windows Media Video 9 (WMV3),
@@ -107,13 +108,14 @@ Intel Indeo 4.1 and 5.0, VIVO 1.0, 2.0, I263, H.263,
 MJPEG, AVID, VCR2, ASV2, FLI/FLC, HuffYUV.
 <hr>
 
-<h3>Audio codecs:</h3>
+<h3><?php tr("Audio codecs:"); ?></h3>
 <p>
 MPEG layer 1, 2, and 3 (MP3), 
 AC3/A52, E-AC3, DTS, AAC, WMA, WMA 9, 
 RealAudio, QuickTime, Ogg Vorbis, VIVO, 
 alaw/ulaw, (ms)gsm, pcm, *adpcm.
-</div> <!-- span ->
+</div> <!-- well -->
+</div> <!-- span -->
 
 </div> <!-- row -->
 
@@ -132,12 +134,15 @@ function show_thumb($filename, $desc) {
 ?>
 
 <div class="row-fluid">
+<div class="span12">
 <p>
 <?php
-echo "<center>". download_windows_full_link(get_tr("Download SMPlayer for Windows"), true) ."</center>\n";
+echo "<center>";
+echo download_windows_full_link("<img src=\"images/arrow-down.png\"> ". get_tr("Download SMPlayer for Windows"), true);
+echo "</center>\n";
 ?>
 
-<h1>Screenshots</h1>
+<h3><?php tr("Screenshots"); ?></h3>
 <p>
 <?php
 echo "<div id=\"gallery\" data-toggle=\"modal-gallery\" data-target=\"#modal-gallery\">\n";
@@ -159,6 +164,7 @@ echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-la
 get_tr("Click here to read more reviews") . "</a></p>\n";
 ?>
 
+</div>
 </div>
 
 </div> <!-- container -->

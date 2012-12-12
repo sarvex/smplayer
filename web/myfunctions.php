@@ -52,6 +52,6 @@ function create_button_link($filename, $text) {
 	else
 		$u = "http://downloads.sourceforge.net/smplayer/$filename";
 
-	return "<a href=\"$u\" class=\"btn btn-success btn-large\"><b>$text</b></a>";
+	return "<a href=\"$u\" class=\"btn btn-large btn-primary\"><b>$text</b></a>";
 }
 ?>
