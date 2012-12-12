@@ -26,7 +26,7 @@ function download_amd64deb_link() {
 	return create_link("smplayer_0.6.7_amd64.deb", 1495604 );
 }
 
-function download_windows_full_link($text) {
+function download_windows_full_link($text, $button=false) {
 	global $site;
 	$filename = "smplayer-0.8.2.4791-ps-win32.exe";
 	$size = 16874632;
@@ -34,7 +34,10 @@ function download_windows_full_link($text) {
 	if (!isset($text)) {
 		return create_link($filename, $size );
 	} else {
-		return create_simple_link($filename, $text);
+		if ($button) 
+			return create_button_link($filename, $text);
+		else
+			return create_simple_link($filename, $text);
 	}
 }
 

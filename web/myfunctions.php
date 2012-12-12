@@ -43,4 +43,15 @@ function create_simple_link($filename, $text) {
 
 	return "<a href=\"$u\"><b>$text</b></a>";
 }
+
+function create_button_link($filename, $text) {
+	global $site;
+
+	if ($site == "berlios")
+		$u = "http://prdownload.berlios.de/smplayer/$filename";
+	else
+		$u = "http://downloads.sourceforge.net/smplayer/$filename";
+
+	return "<a href=\"$u\" class=\"btn btn-success btn-large\"><b>$text</b></a>";
+}
 ?>
