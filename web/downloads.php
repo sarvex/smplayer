@@ -6,6 +6,7 @@ print_menu(3);
 ?>
 
 <div class="container-fluid">
+<div class="row-fluid">
 <div class="span9">
 
 <?php
@@ -135,7 +136,7 @@ echo download_skins_src_link();
 </table>
 </div> <!-- span9 -->
 
-<div class="span2">
+<div class="span3">
 		<br><br><br>
 		<center>
 		<?php include("awards.php"); ?>
@@ -143,7 +144,8 @@ echo download_skins_src_link();
 		<br>
 </div>
 
-</div> <!-- container>
+</div> <!-- row  -->
+</div> <!-- container -->
 
 <!-- begin footer -->
 <?php
