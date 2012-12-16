@@ -20,6 +20,10 @@ print_menu(0);
 <img src="press/smplayer_icon32.png">
 <img src="press/smplayer_icon16.png">
 
+<h2>E-Cover</h2>
+<p>
+<img src="press/box.jpg">
+
 <h2><?php tr("Screenshots"); ?></h2>
 <p>
 <?php tr("Some screenshots, in English and Spanish"); echo ":"; ?>
