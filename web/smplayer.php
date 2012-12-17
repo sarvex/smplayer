@@ -86,6 +86,12 @@ Japanese...."); ?></li>
 <li><?php tr("Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."); ?></li>
 </ul>
 
+<?php
+//echo "<center>";
+echo download_windows_full_link("<img src=\"images/arrow-down.png\"> ". get_tr("Download SMPlayer for Windows"), true);
+//echo "</center>\n";
+?>
+
 </div> <!-- span -->
 
 <div class="span4">
@@ -135,12 +141,6 @@ function show_thumb($filename, $desc) {
 
 <div class="row-fluid">
 <div class="span12">
-<p>
-<?php
-echo "<center>";
-echo download_windows_full_link("<img src=\"images/arrow-down.png\"> ". get_tr("Download SMPlayer for Windows"), true);
-echo "</center>\n";
-?>
 
 <h3><?php tr("Screenshots"); ?></h3>
 <p>
