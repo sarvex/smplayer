@@ -11,14 +11,9 @@ print_menu(0);
 
 <h2><?php tr("Logos"); ?></h2>
 <p>
-<img src="press/smplayer_icon512.png">
 <img src="press/smplayer_icon256.png">
 <br>
-<img src="press/smplayer_icon192.png">
-<img src="press/smplayer_icon128.png">
-<img src="press/smplayer_icon64.png">
-<img src="press/smplayer_icon32.png">
-<img src="press/smplayer_icon16.png">
+<a class="btn btn-success btn-large" href="press/smplayer.svg"><img src="images/arrow-down.png"> <b>smplayer.svg</b></a>
 
 <h2>E-Cover</h2>
 <p>
@@ -28,7 +23,7 @@ print_menu(0);
 <p>
 <?php tr("Some screenshots, in English and Spanish"); echo ":"; ?>
 <p>
-<a href="press/SMPlayer_screenshots.zip"><b>SMPlayer_screenshots.zip</b></a>
+<a class="btn btn-success btn-large" href="press/SMPlayer_screenshots.zip"><img src="images/arrow-down.png"> <b>SMPlayer_screenshots.zip</b></a>
 
 </div> <!-- container -->
 
