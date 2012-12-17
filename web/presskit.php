@@ -22,7 +22,7 @@ print_menu(0);
 
 <h2>E-Cover</h2>
 <p>
-<img src="press/box.jpg">
+<img src="press/box.png">
 
 <h2><?php tr("Screenshots"); ?></h2>
 <p>
