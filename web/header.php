@@ -56,6 +56,12 @@ function print_header($title) {
 		font-size: 12px;
 		color: white;
 	}
+	.hero-unit p.second {
+		font-size: 15px;
+		font-weight: 200;
+		line-height: 20px;
+		color: white;
+	}
 	footer {
 		background: #232323;
 		/*background: #eaeaea;*/

@@ -42,6 +42,7 @@ audio codecs."); ?></li>
 languages, including Spanish, German, French, Italian, Russian, Chinese,
 Japanese...."); ?></li>
 <li><?php tr("Free and opensource. SMPlayer is under the <b>GPL</b> license."); ?></li>
+<li><?php tr("Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."); ?></li>
 </ul>
 
 <?php

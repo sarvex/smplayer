@@ -11,29 +11,29 @@ print_menu(0);
 <!-- Main hero unit for a primary marketing message or call to action -->
 <span class="hidden-phone">
 <div class="hero-unit">
-	<div class="row">
+	<div class="row-fluid">
 		<div class="span2">
 			<img src="images/smplayer_logo_big.png">
 		</div>
-		<div class="span6">
+		<div class="span5">
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>". get_tr("Free Opensource Media Player") ."<br>\n";
-			echo "<p>\n";
-			echo "<img src=\"images/check.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Built-in codecs") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Resumes playback") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Skin support") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Many audio and video filters included") ."<br>";
-			echo "<img src=\"images/check.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
+			echo "<p class=\"second\">\n";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Skin support") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Many audio and video filters included") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
 			echo "</p>";
 			echo "<p>". download_windows_full_link(get_tr("Click here to download SMPlayer for Windows"), true) ."</p>\n";
 			?>
 		</div>
-		<div class="span3">
-		<img src="images/twisted.png">
+		<div class="span5">
+		<img src="images/twisted2.png">
 		</div>
 	</div>
 </div>
