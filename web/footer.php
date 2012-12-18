@@ -38,7 +38,8 @@ else
 ?>
 </li>
 <li><?php echo "<a href=\"contact.php?tr_lang=$tr_lang\">". get_tr("Contact us") ."</a>"; ?></li>
-<li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li>
+<!-- <li><a href="http://smplayer.wiki.sourceforge.net/"><?php tr("Wiki"); ?></a></li> -->
+<li><a target="_blank" href="http://code.google.com/p/mplayer-for-windows/"><?php tr("MPlayer builds for Windows"); ?></a></li>
 <li>
 <?php
 echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n";
