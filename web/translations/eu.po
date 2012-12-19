@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-12 02:40+0100\n"
-"PO-Revision-Date: 2012-11-30 22:18+0100\n"
+"PO-Revision-Date: 2012-12-18 11:50+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
 "Language: Basque (Euskara)\n"
@@ -159,11 +159,11 @@ msgstr "Klikatu hemen SMPlayer %1 jeisteko"
 
 #: ../downloads.php:29
 msgid "cnet mirror"
-msgstr ""
+msgstr "cnet ispilua"
 
 #: ../downloads.php:33
 msgid "softpedia mirror"
-msgstr ""
+msgstr "softpedia ispilua"
 
 #: ../downloads.php:41
 msgid ""
@@ -671,7 +671,7 @@ msgstr "SEG"
 
 #: ../footer.php:17 ../presskit.php:9
 msgid "Press Kit"
-msgstr ""
+msgstr "Prentsa Kita"
 
 #: ../footer.php:23
 msgid "Bug Tracking"
@@ -736,7 +736,7 @@ msgstr "Ikusleiho-argazkiak"
 
 #: ../header.php:153 ../reviews.php:9
 msgid "Reviews"
-msgstr ""
+msgstr "Berrikuspenak"
 
 #: ../header.php:160
 msgid "Language"
@@ -781,7 +781,7 @@ msgstr "SMPlayerri buruz"
 
 #: ../index.php:50 ../smplayer.php:164
 msgid "Click here to read more reviews"
-msgstr ""
+msgstr "Klikatu hemen berrikuspen gehiago irakurtzeko"
 
 #: ../info.php:3
 msgid ""
@@ -933,33 +933,37 @@ msgstr "Joan Jeisketa orrialdera"
 
 #: ../media_reviews.php:3
 msgid "Media Reviews"
-msgstr ""
+msgstr "Hedabide Berrikuspenak"
 
 #: ../presskit.php:3
 msgid "SMPlayer - Press Kit"
-msgstr ""
+msgstr "SMPlayer - Prentsa Kita"
 
 #: ../presskit.php:10
 msgid "Some images you can use in an article, blog, review..."
 msgstr ""
+"Zenbait irudi erabili ditzakezunak idazlan batean, blogean, "
+"berrikuspenetan..."
 
 #: ../presskit.php:12
 msgid "Logos"
-msgstr ""
+msgstr "Logoak"
 
 #: ../presskit.php:25
 msgid "Some screenshots, in English and Spanish"
-msgstr ""
+msgstr "Ikusleiho-argazkiak, Ingeleraz eta Espainieraz"
 
 #: ../reviews.php:3
 msgid "SMPlayer - Reviews"
-msgstr ""
+msgstr "SMPlayer - Berrikuspenak"
 
 #: ../reviews.php:19
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
 "these sites:"
 msgstr ""
+"SMPlayer gogoko baduzu sentitu aske SMPlayer mailatzeko edo berrikusteko "
+"gune hauetako batean:"
 
 #: ../screenshots.php:3
 msgid "SMPlayer - Screenshots"
@@ -1019,51 +1023,51 @@ msgstr "Modern azala"
 
 #: ../screenshots.php:75
 msgid "Videos"
-msgstr ""
+msgstr "Bideoak"
 
 #: ../screenshots.php:81 ../smplayer.php:28
 msgid "Skin support"
-msgstr ""
+msgstr "Azal sostengua"
 
 #: ../screenshots.php:83
 msgid "Youtube browser"
-msgstr ""
+msgstr "Youtube bilatzailea"
 
 #: ../screenshots.php:85
 msgid "Toolbar editor"
-msgstr ""
+msgstr "Tresnabarra editatzailea"
 
 #: ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
-msgstr ""
+msgstr "Heuskarri guztiak irakurtzen ditu: avi, mp4, divx, h.264, mpeg, mov..."
 
 #: ../smplayer.php:24
 msgid "Built-in codecs"
-msgstr ""
+msgstr "Barne-eraikitako kodekak"
 
 #: ../smplayer.php:25
 msgid "Plays and download Youtube&trade; videos"
-msgstr ""
+msgstr "Youtube&trade; bideoak irakurri eta jeisten ditu"
 
 #: ../smplayer.php:27
 msgid "Resumes playback"
-msgstr ""
+msgstr "Irakurketa berrekiten du"
 
 #: ../smplayer.php:29
 msgid "Many audio and video filters included"
-msgstr ""
+msgstr "Audio eta bideo iragazki anitz barne"
 
 #: ../smplayer.php:30
 msgid "Simple and intuitive interface"
-msgstr ""
+msgstr "Interfaze arrunta eta begizkoa"
 
 #: ../smplayer.php:32
 msgid "Click here to download SMPlayer for Windows"
-msgstr ""
+msgstr "Klikatu hemen Windows-rako SMPlayer jeisteko"
 
 #: ../smplayer.php:45
 msgid "Main Features"
-msgstr ""
+msgstr "Ezaugarri Nagusiak"
 
 #: ../smplayer.php:48
 msgid ""
@@ -1072,52 +1076,59 @@ msgid ""
 "playing most video and audio formats.\n"
 "It <b>uses its own codecs</b>, so you don't need to install any codec packs."
 msgstr ""
+"SMPlayer multimedia irakurgailu oso bat da.\n"
+"%1 sari-irabazlea erabiltzen du irakurketa gailu bezala,\n"
+"bideo eta audio heuskarri gehienak irakurtzeko gauza dena.\n"
+"<b>Bere kodekak</b> erabiltzen ditu, hortaz ez duzu kodek paketerik ezarri "
+"beharrik."
 
 #: ../smplayer.php:61
 msgid "Other interesting features:"
-msgstr ""
+msgstr "Beste ezaugarri interesgarri batzuk:"
 
 #: ../smplayer.php:64
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos."
 msgstr ""
+"Youtube bilatzaile bat barne dago, Youtube bideoak erraz jeistea "
+"ahalbidetzen duena."
 
 #: ../smplayer.php:86
 msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-msgstr ""
+msgstr "Bateragarria Windows NT/2000/XP/2003/Vista/Server 2008/7/8-rekin."
 
 #: ../smplayer.php:93
 msgid "Supported formats:"
-msgstr ""
+msgstr "Sostengaturiko kodekak:"
 
 #: ../smplayer.php:100
 msgid "Video codecs:"
-msgstr ""
+msgstr "Bideo kodekak:"
 
 #: ../smplayer.php:111
 msgid "Audio codecs:"
-msgstr ""
+msgstr "Audio kodekak:"
 
 #: ../smplayer.php:141
 msgid "Download SMPlayer for Windows"
-msgstr ""
+msgstr "Jeitsi Windows-rako SMPlayer"
 
 #: ../smplayer.php:151
 msgid "Main Window"
-msgstr ""
+msgstr "Leiho Nagusia"
 
 #: ../smplayer.php:152
 msgid "The Preferences Dialog"
-msgstr ""
+msgstr "Hobespen Elkarrizketa"
 
 #: ../smplayer.php:153
 msgid "The YouTube Browser"
-msgstr ""
+msgstr "YouTube Bilatzailea"
 
 #: ../smplayer.php:154
 msgid "Find Subtitles"
-msgstr ""
+msgstr "Bilatu Azpidatziak"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
@@ -1210,7 +1221,7 @@ msgstr "UMPlayer Ikusleiho-argazkia"
 
 #: ../user_reviews.php:3
 msgid "Users Reviews"
-msgstr ""
+msgstr "Erabiltzaile Berrikuspenak"
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
