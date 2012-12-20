@@ -138,6 +138,13 @@ echo download_skins_src_link();
 
 <div class="span3">
 		<br><br><br>
+		<div class="well">
+		<b>Notice:</b><br>
+		As of 2012.12.19 smplayer 0.8.2 can't play
+		youtube videos due to changes in the youtube site. A new release
+		will be coming soon. Meanwhile you can use the unstable version
+		(the problem is already fixed there). 
+		</div>
 		<center>
 		<?php include("awards.php"); ?>
 		</center>
