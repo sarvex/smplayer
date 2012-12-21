@@ -82,10 +82,14 @@ sudo apt-get install umplayer
 <div class="span3">
 <div class="well">
 
-<h3><?php tr("Latest changes"); ?></h3>
 <p>
-As of 2012.12.19 umplayer can't play youtube videos anymore.
-Please use smplayer instead.
+<?php
+echo "<b>". get_tr("Notice:") ."</b><br>\n";
+tr("As of 2012.12.19 umplayer can't play youtube videos anymore.
+Please use smplayer instead.");
+?>
+
+<h3><?php tr("Latest changes"); ?></h3>
 <p>
 <?php
 $release_notes_file = "translations/umplayer_release_notes_". $tr_lang .".html";
