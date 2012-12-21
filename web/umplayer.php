@@ -84,6 +84,9 @@ sudo apt-get install umplayer
 
 <h3><?php tr("Latest changes"); ?></h3>
 <p>
+As of 2012.12.19 umplayer can't play youtube videos anymore.
+Please use smplayer instead.
+<p>
 <?php
 $release_notes_file = "translations/umplayer_release_notes_". $tr_lang .".html";
 if (file_exists($release_notes_file)) {
