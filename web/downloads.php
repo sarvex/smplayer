@@ -22,7 +22,7 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php
-/*
+if (0) {
 $random = rand(0,9);
 if ($random < 7) {
 	echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.2"));
@@ -38,8 +38,10 @@ if ($random < 7) {
 	tr("Click here to download SMPlayer %1", "0.8.2");
 	echo "</b></a>\n";
 }
-*/
-echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.3"));
+}
+else {
+	echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.3"));
+}
 echo "<br>";
 tr("This package contains smplayer, themes, translations, mplayer %1 and 
 the YouTube browser (smtube).","<i>r35425</i>");
@@ -141,13 +143,17 @@ echo download_skins_src_link();
 
 <div class="span3">
 		<br><br><br>
-		<div class="well">
-		<b>Notice:</b><br>
-		As of 2012.12.19 smplayer 0.8.2 can't play
-		youtube videos due to changes in the youtube site. A new release
-		will be coming soon. Meanwhile you can use the unstable version
-		(the problem is already fixed there). 
-		</div>
+		<?php
+		if (0) {
+			echo '<div class="well">';
+			echo "<b>Notice:</b><br>";
+			echo "As of 2012.12.19 smplayer 0.8.2 can't play
+				youtube videos due to changes in the youtube site. A new release
+			will be coming soon. Meanwhile you can use the unstable version
+			(the problem is already fixed there).";
+			echo "</div>";
+		}
+		?>
 		<center>
 		<?php include("awards.php"); ?>
 		</center>

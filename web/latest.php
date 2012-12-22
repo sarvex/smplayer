@@ -18,7 +18,7 @@ if (file_exists($release_notes_file)) {
 }
 echo "<p>";
 echo "<a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">". 
-     get_tr("Go to the download page") ."</a>";
+     get_tr("Click here to download the latest version") ."</a>";
 ?>
 </div> <!-- container -->
 
