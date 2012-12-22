@@ -22,6 +22,7 @@ echo "<h1>".get_tr("Downloads")."</h1>";
 <td><img src="iconos/kpackage.png" alt="*"></td>
 <td>
 <?php
+/*
 $random = rand(0,9);
 if ($random < 7) {
 	echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.2"));
@@ -37,6 +38,8 @@ if ($random < 7) {
 	tr("Click here to download SMPlayer %1", "0.8.2");
 	echo "</b></a>\n";
 }
+*/
+echo download_windows_full_link(get_tr("Click here to download SMPlayer %1", "0.8.3"));
 echo "<br>";
 tr("This package contains smplayer, themes, translations, mplayer %1 and 
 the YouTube browser (smtube).","<i>r35425</i>");
