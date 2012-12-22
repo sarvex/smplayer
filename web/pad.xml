@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XML_DIZ_INFO>
   <MASTER_PAD_VERSION_INFO>
-    <MASTER_PAD_VERSION>3.11</MASTER_PAD_VERSION>
-    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>AppVisor 1.0.43</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://publisher.appvisor.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD(TM) 2004 Association of Software Professionals (ASP)http://www.asp-shareware.org/pad is a data set standard and specification that is commercialsoftware publishers to disseminate certified information about their software application. The PAD format is copyright of the ASP and cannot be used without the formal licensing and permission of both the Association of Software Professionals and its agent AppVisor.com.</MASTER_PAD_INFO>
+    <CERTIFIED>No</CERTIFIED>
+    <CERTIFICATE_ID></CERTIFICATE_ID>
+    <CERTIFICATE_LICENSE></CERTIFICATE_LICENSE>
   </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN></Company_UIN>
+    <Company_Description></Company_Description>
+    <Product_UIN></Product_UIN>
+    <Search_String></Search_String>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Search_String_Unique></Search_String_Unique>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Publish_on_CD></Publish_on_CD>
+    <Backlink></Backlink>
+  </RoboSoft>
   <Company_Info>
+    <BrandID>bid-c00059fe323e</BrandID>
     <Company_Name>Ricardo Villalba</Company_Name>
-    <Address_1></Address_1>
+    <Address_1>Spain</Address_1>
     <Address_2></Address_2>
     <City_Town>Spain</City_Town>
     <State_Province></State_Province>
@@ -17,6 +37,7 @@
       <Contact_First_Name>Ricardo</Contact_First_Name>
       <Contact_Last_Name>Villalba</Contact_Last_Name>
       <Contact_Email>smplayer.dev@gmail.com</Contact_Email>
+      <Contact_Phone></Contact_Phone>
       <Author_First_Name>Ricardo</Author_First_Name>
       <Author_Last_Name>Villalba</Author_Last_Name>
       <Author_Email>smplayer.dev@gmail.com</Author_Email>
@@ -30,6 +51,12 @@
       <General_Phone></General_Phone>
       <Fax_Phone></Fax_Phone>
     </Support_Info>
+    <GooglePlusPage></GooglePlusPage>
+    <LinkedinPage></LinkedinPage>
+    <TwitterCompanyPage></TwitterCompanyPage>
+    <FacebookCompanyPage></FacebookCompanyPage>
+    <CompanyStorePage></CompanyStorePage>
+    <PublisherID>pub-900036e6023e</PublisherID>
   </Company_Info>
   <NewsFeed>
     <NewsFeed_FORM>Y</NewsFeed_FORM>
@@ -69,9 +96,9 @@
   <ASBMPlannerID2ndRound>4</ASBMPlannerID2ndRound>
   <Program_Info>
     <Program_Name>SMPlayer</Program_Name>
-    <Program_Version>0.8.2.4861</Program_Version>
+    <Program_Version>0.8.3</Program_Version>
     <Program_Release_Month>12</Program_Release_Month>
-    <Program_Release_Day>04</Program_Release_Day>
+    <Program_Release_Day>21</Program_Release_Day>
     <Program_Release_Year>2012</Program_Release_Year>
     <Program_Cost_Dollars>0</Program_Cost_Dollars>
     <Program_Type>Freeware</Program_Type>
@@ -79,12 +106,12 @@
     <Program_Install_Support>Install and Uninstall</Program_Install_Support>
     <Program_OS_Support>WinXP,WinVista,WinVista x64,Win7 x32,Win7 x64,Linux</Program_OS_Support>
     <Program_Language>English,Arabic,Basque,Bulgarian,Catalan,ChineseSimplified,ChineseTraditional,Croatian,Czech,Danish,Dutch,Estonian,Finnish,French,Galician,Georgian,German,Greek,Hungarian,Italian,Japanese,Korean,Kurdish,Lithuanian,Macedonian,Polish,Portuguese,Russian,Serbian,Slovak,Slovenian,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-    <Program_Change_Info>Fix a problem when downloading videos from Youtube.</Program_Change_Info>
+    <Program_Change_Info>Fix youtube playback.</Program_Change_Info>
     <Program_System_Requirements>None</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <File_Info>
-      <File_Size_Bytes>16875744</File_Size_Bytes>
-      <File_Size_K>16480</File_Size_K>
+      <File_Size_Bytes>16878472</File_Size_Bytes>
+      <File_Size_K>16482</File_Size_K>
       <File_Size_MB>16.09</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
@@ -102,6 +129,7 @@
     </Expire_Info>
     <Program_Categories>Video Players,Multimedia,Video,Audio</Program_Categories>
     <Limitations>No limitations</Limitations>
+    <AppID>app-d00059fe323e</AppID>
     <Program_Cost_Other_Code></Program_Cost_Other_Code>
     <Program_Cost_Other></Program_Cost_Other>
     <Awards></Awards>
@@ -109,18 +137,22 @@
     <Includes_JAVA_VM></Includes_JAVA_VM>
     <Includes_VB_Runtime></Includes_VB_Runtime>
     <Includes_DirectX></Includes_DirectX>
+    <VideoLink1URL></VideoLink1URL>
+    <VideoLink2URL></VideoLink2URL>
+    <FacebookFanPage></FacebookFanPage>
+    <GooglePlusFanPage></GooglePlusFanPage>
   </Program_Info>
   <Web_Info>
     <Application_URLs>
       <Application_Info_URL>http://smplayer.sourceforge.net</Application_Info_URL>
       <Application_Screenshot_URL>http://smplayer.sourceforge.net/images/screenshots/mainwindow_vista.png</Application_Screenshot_URL>
       <Application_Icon_URL>http://smplayer.sourceforge.net/images/smplayer_icon32.gif</Application_Icon_URL>
-      <Application_XML_File_URL>http://smplayer.sourceforge.net/pad.xml</Application_XML_File_URL>
+      <Application_XML_File_URL>http://repository.appvisor.com/info/app-d00059fe323e</Application_XML_File_URL>
       <Application_Order_URL></Application_Order_URL>
     </Application_URLs>
     <Download_URLs>
-      <Primary_Download_URL>http://sourceforge.net/projects/smplayer/files/Unstable/published/smplayer-0.8.2.4861-ps-win32.exe</Primary_Download_URL>
-      <Secondary_Download_URL></Secondary_Download_URL>
+      <Primary_Download_URL>http://downloads.sourceforge.net/smplayer/smplayer-0.8.3-ps-win32.exe</Primary_Download_URL>
+      <Secondary_Download_URL>http://prdownload.berlios.de/smplayer/smplayer-0.8.3-ps-win32.exe</Secondary_Download_URL>
       <Additional_Download_URL_1></Additional_Download_URL_1>
       <Additional_Download_URL_2></Additional_Download_URL_2>
     </Download_URLs>
@@ -409,8 +441,7 @@ YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
 PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
 
-		     END OF TERMS AND CONDITIONS
-</EULA>
+		     END OF TERMS AND CONDITIONS</EULA>
   </Permissions>
   <Program_Descriptions>
     <English>
