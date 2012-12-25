@@ -1,5 +1,6 @@
 <?php
 include_once("header.php");
+include_once("download_links.php");
 print_header(get_tr("SMPlayer - Latest Changes"));
 echo "<body>\n";
 print_menu(0);
@@ -16,9 +17,7 @@ if (file_exists($release_notes_file)) {
 } else {
 	include("translations/release_notes_en.html");
 }
-echo "<p>";
-echo "<a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">". 
-     get_tr("Click here to download the latest version") ."</a>";
+echo "<p>" .  auto_download_button(get_tr("Click here to download the latest version")) ."</p>\n";
 ?>
 </div> <!-- container -->
 
