@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-25 02:45+0100\n"
+"POT-Creation-Date: 2012-12-25 21:54+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -143,7 +143,7 @@ msgstr ""
 msgid "SMPlayer - Downloads"
 msgstr "SMPlayer - Завантаження"
 
-#: ../downloads.php:15 ../header.php:160 ../index.php:70 ../umplayer.php:31
+#: ../downloads.php:15 ../header.php:160 ../index.php:71 ../umplayer.php:31
 msgid "Downloads"
 msgstr "Завантаження"
 
@@ -549,7 +549,7 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:14 ../index.php:59 ../latest.php:9 ../smtube.php:57
+#: ../footer.php:14 ../index.php:60 ../latest.php:9 ../smtube.php:57
 #: ../umplayer.php:92
 msgid "Latest changes"
 msgstr ""
@@ -622,8 +622,8 @@ msgstr ""
 
 #: ../header.php:11
 msgid ""
-"SMPlayer - The free media player with built-in codecs that can play and "
-"download Youtube&trade; videos | Graphical frontend for MPlayer"
+"SMPlayer - Free Media Player with built-in codecs and Youtube&trade; support "
+"| Graphical frontend for MPlayer"
 msgstr ""
 
 #: ../header.php:157
@@ -683,15 +683,19 @@ msgstr ""
 msgid "Simple and intuitive interface"
 msgstr ""
 
-#: ../index.php:32 ../smplayer.php:32
+#: ../index.php:30
+msgid "Multi-platform. Available for Windows and Linux"
+msgstr ""
+
+#: ../index.php:33 ../smplayer.php:32
 msgid "Click here to download SMPlayer for free"
 msgstr ""
 
-#: ../index.php:45 ../smplayer.php:45
-msgid "Main Features"
+#: ../index.php:46
+msgid "About SMPlayer"
 msgstr ""
 
-#: ../index.php:51 ../smplayer.php:165
+#: ../index.php:52 ../smplayer.php:165
 msgid "Click here to read more reviews"
 msgstr ""
 
@@ -939,6 +943,10 @@ msgstr ""
 
 #: ../screenshots.php:85
 msgid "Toolbar editor"
+msgstr ""
+
+#: ../smplayer.php:45
+msgid "Main Features"
 msgstr ""
 
 #: ../smplayer.php:53

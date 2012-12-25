@@ -27,6 +27,7 @@ print_menu(1);
 			echo "<img src=\"images/check2.png\"> ". get_tr("Skin support") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Many audio and video filters included") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Multi-platform. Available for Windows and Linux") ."<br>";
 			echo "</p>";
 			echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
                   get_tr("Click here to download SMPlayer for free") .
@@ -42,7 +43,7 @@ print_menu(1);
 
 <div class="row-fluid">
 	<div class="span9">
-		<h3><?php tr("Main Features"); ?></h3>
+		<h3><?php tr("About SMPlayer"); ?></h3>
 		<?php 
 		include("info.php");
 		if (1) {
