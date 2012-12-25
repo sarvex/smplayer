@@ -52,6 +52,23 @@ function create_button_link($filename, $text) {
 	else
 		$u = "http://downloads.sourceforge.net/smplayer/$filename";
 
-	return "<a href=\"$u\" class=\"btn btn-large btn-primary\"><b>$text</b></a>";
+	return "<a href=\"$u\" class=\"btn btn-large btn-success\"><b>$text</b></a>";
 }
+
+function is_win() {
+	return (user_os() == "Windows");
+}
+
+function user_os() {
+	$os = "Unknown";
+
+	$agent = $_SERVER['HTTP_USER_AGENT'];
+	if (preg_match('/Linux/',$agent)) $os = "Linux";
+	elseif (preg_match('/Win/',$agent)) $os = "Windows";
+	elseif (preg_match('/Mac/',$agent)) $os = "Mac";
+
+	//echo "OS: $os<br>\n";
+	return $os;
+}
+
 ?>

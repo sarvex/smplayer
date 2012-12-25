@@ -41,6 +41,20 @@ function download_windows_full_link($text, $button=false) {
 	}
 }
 
+function auto_download_button($text = "") {
+	global $tr_lang;
+	if ($text=="") $text = get_tr("Click here to download SMPlayer for free");
+
+	if (is_win()) {
+		$u = download_windows_full_link($text, true);
+	} else {
+		$u ="<a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+			 get_tr($text) .
+			 "</a>";
+	}
+	return $u;
+}
+
 function download_windows_lite_link() {
 	return create_link("smplayer-0.8.0-webdl.exe", 9771579 );
 }

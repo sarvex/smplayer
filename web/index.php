@@ -1,5 +1,6 @@
 <?php
 include_once("header.php");
+include_once("download_links.php");
 print_header(get_tr("SMPlayer - Opensource Media Player"), 1);
 echo "<body>\n";
 print_menu(1);
@@ -29,9 +30,7 @@ print_menu(1);
 			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Multi-platform. Available for Windows and Linux") ."<br>";
 			echo "</p>";
-			echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-                  get_tr("Click here to download SMPlayer for free") .
-                  "</a></p>\n";
+			echo "<p>" . auto_download_button() ."</p>\n";
 			?>
 		</div>
 		<div class="span4">
