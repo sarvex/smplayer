@@ -18,10 +18,10 @@ print_menu(0);
 		<div class="span5">
 			<h1>SMPlayer</h1>
 			<?php
-			echo "<p>". get_tr("Free Opensource Media Player") ."<br>\n";
+			echo "<p>". get_tr("Free Media Player with Youtube&trade; support") ."<br>\n";
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
@@ -29,7 +29,7 @@ print_menu(0);
 			echo "<img src=\"images/check2.png\"> ". get_tr("Many audio and video filters included") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
 			echo "</p>";
-			echo "<p>". download_windows_full_link(get_tr("Click here to download SMPlayer for Windows"), true) ."</p>\n";
+			echo "<p>". download_windows_full_link(get_tr("Click here to download SMPlayer for free"), true) ."</p>\n";
 			?>
 		</div>
 		<div class="span5">
@@ -42,14 +42,17 @@ print_menu(0);
 <div class="row-fluid">
 <div class="span8">
 
-<h1><?php tr("Main Features"); ?></h1>
+<h2><?php tr("Main Features"); ?></h2>
 <p>
 <?php
-tr("SMPlayer is a complete media player. It uses
+tr("SMPlayer is a free open source media player, with built-in codecs, that
+can play virtually all video and audio formats. It doesn't need any external codecs.");
+echo " ";
+tr("SMPlayer can also play, search and download Youtube&trade; videos.");
+echo " ";
+tr("It uses
 the award-winning %1 as playback engine which is capable of
-playing most video and audio formats.
-It <b>uses its own codecs</b>, so you don't need to install any codec packs.", 
-"MPlayer");
+playing almost all known video and audio formats.", "MPlayer");
 echo "<p>";
 tr("One of the most interesting features of SMPlayer: <b>it remembers the 
 settings of all files you play</b>. So you start to watch a movie but you 
@@ -87,9 +90,7 @@ Japanese...."); ?></li>
 </ul>
 
 <?php
-//echo "<center>";
-echo download_windows_full_link("<img src=\"images/arrow-down.png\"> ". get_tr("Download SMPlayer for Windows"), true);
-//echo "</center>\n";
+echo download_windows_full_link("<img src=\"images/arrow-down.png\"> ". get_tr("Download SMPlayer for free"), true);
 ?>
 
 </div> <!-- span -->

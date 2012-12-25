@@ -1,11 +1,15 @@
 <?php
 echo "<p>";
-tr("SMPlayer is a complete media player for Windows and Linux. It uses
-the award-winning %1 as playback engine which is capable of
-playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). 
-It <b>uses its own codecs</b>, so you don't need to install any codec packs.", 
-"MPlayer",
+tr("SMPlayer is a free open source media player, with built-in codecs, that
+can play virtually all video and audio formats. It doesn't need any external codecs.");
+echo " ";
+tr("SMPlayer can also play, search and download Youtube&trade; videos.");
+echo " ";
+tr("It uses the award-winning %1 as playback engine which is capable of
+playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
+echo " ";
+if (0) tr("Install SMPlayer and forget about codecs!");
 echo "<p>";
 tr("One of the most interesting features of SMPlayer: <b>it remembers the 
 settings of all files you play</b>. So you start to watch a movie but you 

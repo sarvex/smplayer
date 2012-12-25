@@ -17,10 +17,10 @@ print_menu(1);
 		<div class="span6">
 			<h1>SMPlayer</h1>
 			<?php
-			echo "<p>". get_tr("Free Opensource Media Player") ."<br>\n";
+			echo "<p>". get_tr("Free Media Player with Youtube&trade; support") ."<br>\n";
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
@@ -29,7 +29,7 @@ print_menu(1);
 			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
 			echo "</p>";
 			echo "<p><a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-                  get_tr("Click here to download the latest version") .
+                  get_tr("Click here to download SMPlayer for free") .
                   "</a></p>\n";
 			?>
 		</div>
@@ -42,7 +42,7 @@ print_menu(1);
 
 <div class="row-fluid">
 	<div class="span9">
-		<h3><?php tr("About SMPlayer"); ?></h3>
+		<h3><?php tr("Main Features"); ?></h3>
 		<?php 
 		include("info.php");
 		if (1) {

@@ -1,10 +1,10 @@
 <?php
 echo "<p>";
-tr("SMPlayer is a graphical interface for %1, which supports many video and audio formats and codecs.",
+tr("SMPlayer is a graphical interface for %1, which supports almost all known video and audio formats and codecs.",
 "MPlayer");
 
 echo "<p>";
-tr("Here is a complete list (from the MPlayer documentation):");
+tr("Here is a complete list:");
 echo "<br><br>";
 echo "<b>". get_tr("Supported Input Formats") ."</b>";
 ?>

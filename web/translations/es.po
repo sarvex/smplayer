@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SMPlayer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-21 03:00+0100\n"
+"POT-Creation-Date: 2012-12-25 02:45+0100\n"
 "PO-Revision-Date: 2012-11-26 01:24+0100\n"
 "Last-Translator: Ricardo Villalba <smplayer.dev@gmail.com>\n"
 "Language-Team: Ricardo Villalba <smplayer.dev@gmail.com>\n"
@@ -154,19 +154,19 @@ msgstr "SMPlayer - Descargas"
 msgid "Downloads"
 msgstr "Descargas"
 
-#: ../downloads.php:27 ../downloads.php:37
+#: ../downloads.php:28 ../downloads.php:38 ../downloads.php:43
 msgid "Click here to download SMPlayer %1"
 msgstr "Pulsa aquí para descargar SMPlayer %1"
 
-#: ../downloads.php:29
+#: ../downloads.php:30
 msgid "cnet mirror"
 msgstr "mirror cnet"
 
-#: ../downloads.php:33
+#: ../downloads.php:34
 msgid "softpedia mirror"
 msgstr "mirror softpedia"
 
-#: ../downloads.php:41
+#: ../downloads.php:46
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -174,11 +174,11 @@ msgstr ""
 "Este paquete contiene smplayer, temas, traducciones, mplayer %1 y el "
 "buscador de Youtube (smtube)."
 
-#: ../downloads.php:44
+#: ../downloads.php:49
 msgid "More info"
 msgstr "Más información"
 
-#: ../downloads.php:56
+#: ../downloads.php:61
 msgid ""
 "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and a "
 "new mplayer build with a lot of fixes."
@@ -186,31 +186,31 @@ msgstr ""
 "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos skins "
 "y una nueva versión del mplayer con muchas correcciones de fallos."
 
-#: ../downloads.php:58
+#: ../downloads.php:63
 msgid "In case you find any problem, please report it in %1."
 msgstr "En caso de encontrar algún problema, por favor repórtalo en %1."
 
-#: ../downloads.php:58
+#: ../downloads.php:63
 msgid "our forum"
 msgstr "nuestro foro"
 
-#: ../downloads.php:68
+#: ../downloads.php:73
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Hay disponibles otros paquetes (como una versión portable), %1."
 
-#: ../downloads.php:68
+#: ../downloads.php:73
 msgid "here"
 msgstr "aquí"
 
-#: ../downloads.php:70
+#: ../downloads.php:75
 msgid "If you wish you can also try the %1."
 msgstr "Si lo deseas también puedes probar la %1."
 
-#: ../downloads.php:71
+#: ../downloads.php:76
 msgid "development version"
 msgstr "versión en desarrollo"
 
-#: ../downloads.php:80
+#: ../downloads.php:85
 msgid ""
 "<b>Notice:</b> on the first playback, a font cache will be \n"
 "created (necessary for OSD and subtitles). This can take up to 10 \n"
@@ -220,39 +220,39 @@ msgstr ""
 "de letra (necesario para el OSD y los subtítulos). Esto puede tardar de 10 a "
 "20 segundos y sólo se realiza una vez."
 
-#: ../downloads.php:95 ../umplayer.php:57
+#: ../downloads.php:100 ../umplayer.php:57
 msgid "Packages for Ubuntu:"
 msgstr "Paquetes para Ubuntu:"
 
-#: ../downloads.php:96
+#: ../downloads.php:101
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "Para instalar smplayer, simplemente ejecuta estas órdenes en un terminal:"
 
-#: ../downloads.php:110
+#: ../downloads.php:115
 msgid "Contributed packages for other distros"
 msgstr "Paquetes para otras distros"
 
-#: ../downloads.php:112
+#: ../downloads.php:117
 msgid "List of packages contributed by other people."
 msgstr "Lista de paquetes aportados por otras personas."
 
-#: ../downloads.php:119 ../umplayer.php:70
+#: ../downloads.php:124 ../umplayer.php:70
 msgid "Sources"
 msgstr "Fuentes"
 
-#: ../downloads.php:167
+#: ../downloads.php:176
 msgid "Information about the Windows installer"
 msgstr "Información sobre el instalador para Windows"
 
-#: ../downloads.php:172
+#: ../downloads.php:181
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Para una instalación más sencilla en Windows proporcionamos un paquete con "
 "instalador."
 
-#: ../downloads.php:175
+#: ../downloads.php:184
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -260,7 +260,7 @@ msgstr ""
 "El instalador puede contener una pantalla promocional con una oferta para "
 "instalar una aplicación de terceros."
 
-#: ../downloads.php:177
+#: ../downloads.php:186
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -268,7 +268,7 @@ msgstr ""
 "Si no estás interesado en la oferta, simplemente desmarca la(s) opcion(es) y "
 "la instalación continuará normalmente."
 
-#: ../downloads.php:179
+#: ../downloads.php:188
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -276,31 +276,31 @@ msgstr ""
 "Esta pantalla nos permite mejorar smplayer y poder seguir distribuyéndolo "
 "gratuitamente. Esperamos que lo comprendas."
 
-#: ../downloads.php:182
+#: ../downloads.php:191
 msgid "Optional components"
 msgstr "Componentes opcionales"
 
-#: ../downloads.php:183
+#: ../downloads.php:192
 msgid "The installer allows to select the components to install:"
 msgstr "El instalador permite seleccionar los componentes que se instalarán:"
 
-#: ../downloads.php:185
+#: ../downloads.php:194
 msgid "Languages"
 msgstr "Idiomas"
 
-#: ../downloads.php:186
+#: ../downloads.php:195
 msgid "Translations for more than 30 languages are provided."
 msgstr "Se incluyen traducciones para más de 30 idiomas."
 
-#: ../downloads.php:187
+#: ../downloads.php:196
 msgid "If you uncheck this option, only English will be available."
 msgstr "Si desmarcas esta opción, sólo estará disponible el inglés."
 
-#: ../downloads.php:188
+#: ../downloads.php:197
 msgid "Icon themes"
 msgstr "Temas de iconos"
 
-#: ../downloads.php:189
+#: ../downloads.php:198
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
@@ -308,11 +308,11 @@ msgstr ""
 "Están disponibles algunos temas de iconos, que permiten cambiar el aspecto "
 "de la aplicación."
 
-#: ../downloads.php:190
+#: ../downloads.php:199
 msgid "Binary codecs"
 msgstr "Códecs binarios"
 
-#: ../downloads.php:191
+#: ../downloads.php:200
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -320,19 +320,19 @@ msgstr ""
 "Si marcas esta opción, se descargarán unos cuantos códecs extra y se "
 "instalarán en la carpeta del smplayer."
 
-#: ../downloads.php:192
+#: ../downloads.php:201
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr ""
 "Estos códecs sólo son necesarios para algunos formatos poco frecuentes."
 
-#: ../downloads.php:194
+#: ../downloads.php:203
 msgid "Uninstallation"
 msgstr "Desinstalación"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:199
+#: ../downloads.php:208
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -342,7 +342,7 @@ msgstr ""
 "la opción <i>uninstall smplayer</i> del menú del smplayer en el menú "
 "<i>Inicio</i> de Windows"
 
-#: ../downloads.php:204 ../info.php:74 ../smtube.php:17 ../umplayer.php:124
+#: ../downloads.php:213 ../info.php:78 ../smtube.php:17 ../umplayer.php:124
 msgid "Close"
 msgstr "Cerrar"
 
@@ -700,27 +700,27 @@ msgstr "Wiki"
 
 #: ../footer.php:42
 msgid "MPlayer builds for Windows"
-msgstr ""
+msgstr "Versiones de MPlayer para Windows"
 
 #: ../formats.php:3
 msgid "SMPlayer - Formats and Codecs"
 msgstr "SMPlayer - Formatos y Códecs"
 
-#: ../formats.php:11 ../info.php:68
+#: ../formats.php:11 ../info.php:72
 msgid "Formats and Codecs"
 msgstr "Formatos y Códecs"
 
 #: ../formats_text.php:3
 msgid ""
-"SMPlayer is a graphical interface for %1, which supports many video and "
-"audio formats and codecs."
+"SMPlayer is a graphical interface for %1, which supports almost all known "
+"video and audio formats and codecs."
 msgstr ""
-"SMPlayer es un interfaz gráfico para %1, que soporta muchos formatos de "
-"vídeo y audio, y códecs."
+"SMPlayer es un interfaz gráfico para %1, que soporta casi todos los formatos "
+"de vídeo y audio, y códecs."
 
 #: ../formats_text.php:7
-msgid "Here is a complete list (from the MPlayer documentation):"
-msgstr "Aquí tienes una lista completa (según la documentación de MPlayer):"
+msgid "Here is a complete list:"
+msgstr "Aquí tienes una lista completa:"
 
 #: ../formats_text.php:9
 msgid "Supported Input Formats"
@@ -738,12 +738,21 @@ msgstr "códecs de vídeo más importantes:"
 msgid "most important audio codecs:"
 msgstr "códecs de audio más importantes:"
 
+#: ../header.php:11
+msgid ""
+"SMPlayer - The free media player with built-in codecs that can play and "
+"download Youtube&trade; videos | Graphical frontend for MPlayer"
+msgstr ""
+"SMPlayer - The reproductor multimedia gratuito con códecs incoporados que "
+"puede reproducir y descargar vídeos de Youtube&trade; | Interfaz Gráfico "
+"para MPlayer"
+
 #: ../header.php:157
 msgid "Main"
 msgstr "Principal"
 
 #: ../header.php:158 ../presskit.php:22 ../screenshots.php:14
-#: ../smplayer.php:145
+#: ../smplayer.php:146
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
@@ -760,16 +769,16 @@ msgid "SMPlayer - Opensource Media Player"
 msgstr "SMPlayer - Reproductor Multimedia Opensource"
 
 #: ../index.php:20 ../smplayer.php:21
-msgid "Free Opensource Media Player"
-msgstr "Reproductor Multimedia Libre y Gratuito"
+msgid "Free Media Player with Youtube&trade; support"
+msgstr "Reproductor Multimedia Gratuito con soporte para Youtube&trade;"
 
 #: ../index.php:22 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
 msgstr "Reproduce cualquier formato: avi, mp4, mkv, divx, h.264, mpeg, mov..."
 
 #: ../index.php:23 ../smplayer.php:24
-msgid "Built-in codecs"
-msgstr "Codecs incorporados"
+msgid "Built-in codecs. No codec packs needed"
+msgstr "Códecs incorporados. No hacen falta paquetes de códecs"
 
 #: ../index.php:24 ../smplayer.php:25
 msgid "Plays and download Youtube&trade; videos"
@@ -795,37 +804,51 @@ msgstr "Incluye muchos filtros de audio y vídeo"
 msgid "Simple and intuitive interface"
 msgstr "Interfaz sencillo e intuitivo"
 
-#: ../index.php:32
-msgid "Click here to download the latest version"
-msgstr "Pulsa aquí para descargar la última versión"
+#: ../index.php:32 ../smplayer.php:32
+msgid "Click here to download SMPlayer for free"
+msgstr "Pulsa aquí para descargar SMPlayer gratuitamente"
 
-#: ../index.php:45
-msgid "About SMPlayer"
-msgstr "Acerca de SMPlayer"
+#: ../index.php:45 ../smplayer.php:45
+msgid "Main Features"
+msgstr "Características Principales"
 
-#: ../index.php:51 ../smplayer.php:164
+#: ../index.php:51 ../smplayer.php:165
 msgid "Click here to read more reviews"
 msgstr "Pulsa aquí para leer más opiniones"
 
-#: ../info.php:3
+#: ../info.php:3 ../smplayer.php:48
 msgid ""
-"SMPlayer is a complete media player for Windows and Linux. It uses\n"
-"the award-winning %1 as playback engine which is capable of\n"
-"playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
-"It <b>uses its own codecs</b>, so you don't need to install any codec packs."
+"SMPlayer is a free open source media player, with built-in codecs, that\n"
+"can play virtually all video and audio formats. It doesn't need any external "
+"codecs."
 msgstr ""
-"SMPlayer es un completo reproductor multimedia para Windows y Linux. Usa\n"
-"el galardonado %1 como motor de reproducción, que es capaz de\n"
-"reproducir la mayoría de formatos de video y audio (avi, mkv, wmv, mp4, "
-"mpeg... %2). \n"
-"<b>Usa sus propios códecs</b>, por tanto no necesitas instalar paquetes de "
-"códecs adicionales."
+"SMPlayer es un reproductor multimedia gratuito y open source, con códecs "
+"incorporados, que puede reproducir prácticamente cualquier formato de vídeo "
+"y audio. No necesita ningún códec externo."
+
+#: ../info.php:6 ../smplayer.php:51
+msgid "SMPlayer can also play, search and download Youtube&trade; videos."
+msgstr ""
+"SMPlayer puede además reproducir, buscar y descargar vídeos de "
+"Youtube&trade;."
 
 #: ../info.php:8
+msgid ""
+"It uses the award-winning %1 as playback engine which is capable of\n"
+"playing almost all known video and audio formats (%2)."
+msgstr ""
+"Usa el galardonado %1 como motor de reproducción, que es capaz de reproducir "
+"casi todos los formatos conocidos de video y audio (%2)."
+
+#: ../info.php:10
 msgid "see list"
 msgstr "ver lista"
 
-#: ../info.php:10 ../smplayer.php:54
+#: ../info.php:12
+msgid "Install SMPlayer and forget about codecs!"
+msgstr "¡Instala SMPlayer y olvídate de códecs!"
+
+#: ../info.php:14 ../smplayer.php:57
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -839,15 +862,15 @@ msgstr ""
 "continuará desde el mismo lugar donde la dejaste, y con las mismas opciones: "
 "pista de audio, subtítulos, volumen..."
 
-#: ../info.php:18
+#: ../info.php:22
 msgid "Some other interesting features:"
 msgstr "Otras opciones interesantes:"
 
-#: ../info.php:21
+#: ../info.php:25
 msgid "It can play and download Youtube videos."
 msgstr "Puede reproducir y descargar vídeos de Youtube."
 
-#: ../info.php:23
+#: ../info.php:27
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
@@ -855,7 +878,7 @@ msgstr ""
 "Se incluye un buscador de vídeos, que además permite descargar fácilmente "
 "vídeos de Youtube."
 
-#: ../info.php:24 ../smplayer.php:65
+#: ../info.php:28 ../smplayer.php:68
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
@@ -864,15 +887,15 @@ msgstr ""
 "teclado,\n"
 "colores y tipos de letra de los subtítulos, y mucho más."
 
-#: ../info.php:26 ../smplayer.php:67
+#: ../info.php:30 ../smplayer.php:70
 msgid "Support for skins and icon themes."
 msgstr "Incluye soporte para skins y temas de iconos."
 
-#: ../info.php:27 ../smplayer.php:68
+#: ../info.php:31 ../smplayer.php:71
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Posibilidad de buscar y descargar subtítulos de %1."
 
-#: ../info.php:29 ../smplayer.php:70
+#: ../info.php:33 ../smplayer.php:73
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
@@ -881,7 +904,7 @@ msgstr ""
 "postprocesado, eliminación de ruido... e incluso un filtro de karaoke "
 "(elimina la voz)."
 
-#: ../info.php:31 ../smplayer.php:72
+#: ../info.php:35 ../smplayer.php:75
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -889,11 +912,11 @@ msgstr ""
 "Desplazamiento del vídeo mediante la rueda del ratón. Puedes usar la rueda "
 "del ratón para avanzar o retroceder por el vídeo."
 
-#: ../info.php:32 ../smplayer.php:73
+#: ../info.php:36 ../smplayer.php:76
 msgid "The mouse buttons can also be customized."
 msgstr "Los botones del ratón también se pueden configurar."
 
-#: ../info.php:33 ../smplayer.php:74
+#: ../info.php:37 ../smplayer.php:77
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -901,7 +924,7 @@ msgstr ""
 "Ecualizador de vídeo, te permite ajustar el brillo, contraste, tono, "
 "saturación y gamma de la imagen del vídeo."
 
-#: ../info.php:35 ../smplayer.php:76
+#: ../info.php:39 ../smplayer.php:79
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -909,20 +932,20 @@ msgstr ""
 "Múltiple velocidad de reproducción. Puedes reproducir a 2X, 4X... o incluso "
 "a cámara lenta."
 
-#: ../info.php:37 ../smplayer.php:78
+#: ../info.php:41 ../smplayer.php:81
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
 msgstr "Ajuste de sincronización de audio y subtítulos."
 
-#: ../info.php:39 ../smplayer.php:80
+#: ../info.php:43 ../smplayer.php:83
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
 msgstr ""
 "Opciones avanzadas, como seleccionar un demuxer o códecs de vídeo y audio."
 
-#: ../info.php:41 ../smplayer.php:82
+#: ../info.php:45 ../smplayer.php:85
 msgid ""
 "On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
@@ -932,15 +955,15 @@ msgstr ""
 "idiomas, incluyendo español, alemán, francés, italiano, ruso, chino, "
 "japonés..."
 
-#: ../info.php:44 ../smplayer.php:85
+#: ../info.php:48 ../smplayer.php:88
 msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
 msgstr "Gratuito y opensource. SMPlayer se encuentra bajo licencia <b>GPL</b>."
 
-#: ../info.php:45 ../smplayer.php:86
+#: ../info.php:49 ../smplayer.php:89
 msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
 msgstr "Compatible con Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
 
-#: ../info.php:51
+#: ../info.php:55
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr "Descarga <a href=%1>aquí</a> la versión más reciente de SMPlayer"
 
@@ -953,8 +976,8 @@ msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "Aquí puedes encontrar una lista con los últimos cambios en SMPlayer:"
 
 #: ../latest.php:21
-msgid "Go to the download page"
-msgstr "Ir a la página de descargas"
+msgid "Click here to download the latest version"
+msgstr "Pulsa aquí para descargar la última versión"
 
 #: ../media_reviews.php:3
 msgid "Media Reviews"
@@ -1056,32 +1079,20 @@ msgstr "Navegador de Youtube"
 msgid "Toolbar editor"
 msgstr "Editor de barra de herramientas"
 
-#: ../smplayer.php:32
-msgid "Click here to download SMPlayer for Windows"
-msgstr "Pulsa aquí para descargar SMPlayer para Windows"
-
-#: ../smplayer.php:45
-msgid "Main Features"
-msgstr "Características Principales"
-
-#: ../smplayer.php:48
+#: ../smplayer.php:53
 msgid ""
-"SMPlayer is a complete media player. It uses\n"
+"It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
-"playing most video and audio formats.\n"
-"It <b>uses its own codecs</b>, so you don't need to install any codec packs."
+"playing almost all known video and audio formats."
 msgstr ""
-"SMPlayer es un completo reproductor multimedia. Usa\n"
-"el galardonado %1 como motor de reproducción, que es capaz de\n"
-"reproducir la mayoría de formatos de video y audio.\n"
-"<b>Usa sus propios códecs</b>, por tanto no necesitas instalar paquetes de "
-"códecs adicionales."
+"Usa el galardonado %1 como motor de reproducción, que es capaz de reproducir "
+"casi todos los formatos conocidos de video y audio."
 
-#: ../smplayer.php:61
+#: ../smplayer.php:64
 msgid "Other interesting features:"
 msgstr "Otras opciones interesantes:"
 
-#: ../smplayer.php:64
+#: ../smplayer.php:67
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos."
@@ -1089,37 +1100,35 @@ msgstr ""
 "Se incluye un buscador de vídeos, que además permite descargar fácilmente "
 "vídeos de Youtube."
 
-#. echo "<center>";
-#: ../smplayer.php:91
-msgid "Download SMPlayer for Windows"
-msgstr "Descarga SMPlayer para Windows"
+#: ../smplayer.php:93
+msgid "Download SMPlayer for free"
+msgstr "Descarga SMPlayer gratuitamente"
 
-#. echo "</center>\n";
-#: ../smplayer.php:99
+#: ../smplayer.php:100
 msgid "Supported formats:"
 msgstr "Formatos soportados:"
 
-#: ../smplayer.php:106
+#: ../smplayer.php:107
 msgid "Video codecs:"
 msgstr "Códecs de vídeo:"
 
-#: ../smplayer.php:117
+#: ../smplayer.php:118
 msgid "Audio codecs:"
 msgstr "Códecs de audio:"
 
-#: ../smplayer.php:151
+#: ../smplayer.php:152
 msgid "Main Window"
 msgstr "Ventana Principal"
 
-#: ../smplayer.php:152
+#: ../smplayer.php:153
 msgid "The Preferences Dialog"
 msgstr "El Diálogo de Preferencias"
 
-#: ../smplayer.php:153
+#: ../smplayer.php:154
 msgid "The YouTube Browser"
 msgstr "El Buscador de YouTube"
 
-#: ../smplayer.php:154
+#: ../smplayer.php:155
 msgid "Find Subtitles"
 msgstr "Buscar Subtítulos"
 
@@ -1215,8 +1224,8 @@ msgid ""
 "As of 2012.12.19 umplayer can't play youtube videos anymore.\n"
 "Please use smplayer instead."
 msgstr ""
-"Desde el 19/12/2012, umplayer ya no es capaz de reproducir "
-"vídeos de youtube. Por favor usa smplayer en su lugar."
+"Desde el 19/12/2012, umplayer ya no es capaz de reproducir vídeos de "
+"youtube. Por favor usa smplayer en su lugar."
 
 #: ../umplayer.php:118
 msgid "UMPlayer Screenshot"
@@ -1226,40 +1235,21 @@ msgstr "Captura de pantalla del UMPlayer"
 msgid "Users Reviews"
 msgstr "Opiniones de los usuarios"
 
-#~ msgid "GUI Front-end for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Pulsa aquí para descargar el paquete completo"
-
-#~ msgid "If you wish you can also try %1."
-#~ msgstr "Si lo deseas también puedes probar %1."
-
-#~ msgid "the unstable version"
-#~ msgstr "la versión inestable"
-
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
-#~ "mplayer build with a lot of fixes."
+#~ msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
 #~ msgstr ""
-#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
-#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
+#~ "Soporta la mayoría de formatos y códecs: AVI, MKV, MP4, MPEG, H.264..."
 
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
+#~ msgid "Codecs included"
+#~ msgstr "Códecs incluidos"
 
-#~ msgid ""
-#~ "It can play Youtube videos. A Youtube browser is included, which\n"
-#~ "allows to easily download Youtube videos too."
-#~ msgstr ""
-#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
-#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
+#~ msgid "Can play and download Youtube&trade; videos"
+#~ msgstr "Puede reproducir y descargar vídeos de Youtube&trade;"
 
-#~ msgid "Graphical Interface for MPlayer"
-#~ msgstr "Interfaz Gráfico para MPlayer"
+#~ msgid "Skins"
+#~ msgstr "Pieles"
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Información general"
+#~ msgid "Possibility to change the skin and style."
+#~ msgstr "Posibilidad de cambiar el skin y el estilo."
 
 #~ msgid ""
 #~ "Translations: currently SMPlayer is translated into more than 30 \n"
@@ -1269,18 +1259,92 @@ msgstr "Opiniones de los usuarios"
 #~ "Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, "
 #~ "incluyendo español, alemán, francés, italiano, ruso, chino, japonés..."
 
-#~ msgid "Possibility to change the skin and style."
-#~ msgstr "Posibilidad de cambiar el skin y el estilo."
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Información general"
 
-#~ msgid "Skins"
-#~ msgstr "Pieles"
+#~ msgid "Graphical Interface for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"
 
-#~ msgid "Can play and download Youtube&trade; videos"
-#~ msgstr "Puede reproducir y descargar vídeos de Youtube&trade;"
-
-#~ msgid "Codecs included"
-#~ msgstr "Códecs incluidos"
-
-#~ msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
+#~ msgid ""
+#~ "It can play Youtube videos. A Youtube browser is included, which\n"
+#~ "allows to easily download Youtube videos too."
 #~ msgstr ""
-#~ "Soporta la mayoría de formatos y códecs: AVI, MKV, MP4, MPEG, H.264..."
+#~ "Puede reproducir vídeos de Youtube. Se incluye también un buscador de "
+#~ "vídeos, que además permite descargar fácilmente vídeos de Youtube."
+
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Posibilidad de cambiar el estilo y juego de iconos del interfaz."
+
+#~ msgid ""
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skins and a new "
+#~ "mplayer build with a lot of fixes."
+#~ msgstr ""
+#~ "Puedes probar una beta de la próxima versión 0.8.2. Novedades: nuevos "
+#~ "skins y una nueva versión del mplayer con muchas correcciones de fallos."
+
+#~ msgid "the unstable version"
+#~ msgstr "la versión inestable"
+
+#~ msgid "If you wish you can also try %1."
+#~ msgstr "Si lo deseas también puedes probar %1."
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Pulsa aquí para descargar el paquete completo"
+
+#~ msgid "GUI Front-end for MPlayer"
+#~ msgstr "Interfaz Gráfico para MPlayer"
+
+#~ msgid ""
+#~ "SMPlayer is a complete media player. It uses\n"
+#~ "the award-winning %1 as playback engine which is capable of\n"
+#~ "playing most video and audio formats.\n"
+#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
+#~ "packs."
+#~ msgstr ""
+#~ "SMPlayer es un completo reproductor multimedia. Usa\n"
+#~ "el galardonado %1 como motor de reproducción, que es capaz de\n"
+#~ "reproducir la mayoría de formatos de video y audio.\n"
+#~ "<b>Usa sus propios códecs</b>, por tanto no necesitas instalar paquetes "
+#~ "de códecs adicionales."
+
+#~ msgid "Go to the download page"
+#~ msgstr "Ir a la página de descargas"
+
+#~ msgid ""
+#~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
+#~ "the award-winning %1 as playback engine which is capable of\n"
+#~ "playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
+#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
+#~ "packs."
+#~ msgstr ""
+#~ "SMPlayer es un completo reproductor multimedia para Windows y Linux. Usa\n"
+#~ "el galardonado %1 como motor de reproducción, que es capaz de\n"
+#~ "reproducir la mayoría de formatos de video y audio (avi, mkv, wmv, mp4, "
+#~ "mpeg... %2). \n"
+#~ "<b>Usa sus propios códecs</b>, por tanto no necesitas instalar paquetes "
+#~ "de códecs adicionales."
+
+#~ msgid "About SMPlayer"
+#~ msgstr "Acerca de SMPlayer"
+
+#~ msgid "Built-in codecs"
+#~ msgstr "Codecs incorporados"
+
+#~ msgid "Free Opensource Media Player"
+#~ msgstr "Reproductor Multimedia Libre y Gratuito"
+
+#~ msgid "Here is a complete list (from the MPlayer documentation):"
+#~ msgstr "Aquí tienes una lista completa (según la documentación de MPlayer):"
+
+#~ msgid ""
+#~ "SMPlayer is a graphical interface for %1, which supports many video and "
+#~ "audio formats and codecs."
+#~ msgstr ""
+#~ "SMPlayer es un interfaz gráfico para %1, que soporta muchos formatos de "
+#~ "vídeo y audio, y códecs."
+
+#~ msgid "Download SMPlayer for Windows"
+#~ msgstr "Descarga SMPlayer para Windows"
+
+#~ msgid "Click here to download SMPlayer for Windows"
+#~ msgstr "Pulsa aquí para descargar SMPlayer para Windows"

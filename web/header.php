@@ -8,7 +8,7 @@ function print_header($title) {
 <!DOCTYPE html>
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
-<title><?php echo $title ?></title>
+<title><?php tr("SMPlayer - The free media player with built-in codecs that can play and download Youtube&trade; videos | Graphical frontend for MPlayer"); ?></title>
 <meta charset="utf-8">
 <meta name="Description" content="SMPlayer, a free opensource media player. GUI Front-end for MPlayer">
 <meta name="Keywords" content="video player,media player,multimedia player,best free player,bestfreeplayer,smplayer,mplayer,mplayer2,umplayer,multimedia,player,youtube,player download,audio player,video,DVD,Windows,Linux,free,open source,free software,mkv,mp4,matroska,xvid,divx,mpeg,mpeg2,mpeg4,h264,x264">
