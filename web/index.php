@@ -21,7 +21,7 @@ print_menu(1);
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and download Youtube&trade; videos") ."<br>";
+			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and downloads Youtube&trade; videos") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Skin support") ."<br>";
