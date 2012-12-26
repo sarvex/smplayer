@@ -1,6 +1,6 @@
 <?php
 echo "<p>";
-tr("SMPlayer is a graphical interface for %1, which supports almost all known video and audio formats and codecs.",
+tr("SMPlayer is a graphical user interface (GUI) for %1, which supports almost all known video and audio formats and codecs.",
 "MPlayer");
 
 echo "<p>";

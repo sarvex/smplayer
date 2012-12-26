@@ -8,7 +8,14 @@ function print_header() {
 <!DOCTYPE html>
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
-<title><?php tr("SMPlayer - Free Media Player with built-in codecs and Youtube&trade; support | Graphical frontend for MPlayer"); ?></title>
+<title>
+<?php 
+	echo "SMPlayer - ";
+	tr("Free Media Player with built-in codecs and Youtube&trade; support");
+	echo " | ";
+	tr("Graphical User Interface for MPlayer");
+?>
+</title>
 <?php echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; ?>
 <meta charset="utf-8">
 <meta name="Description" content="Free media player with built-in codecs that can play and download Youtube&trade; videos">
