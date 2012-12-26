@@ -19,8 +19,9 @@ print_menu(1);
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>";
-			if (0) tr("Free Media Player with Youtube&trade; support");
-			else tr("Graphical User Interface for MPlayer");
+			tr("Free Media Player with Youtube&trade; support");
+			echo "<br>";
+			tr("Graphical User Interface (GUI) for MPlayer");
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
