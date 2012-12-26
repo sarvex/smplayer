@@ -1,4 +1,5 @@
 <?php
+include_once("site.php");
 include_once("header.php");
 include_once("download_links.php");
 print_header();
@@ -8,74 +9,12 @@ print_menu(1);
 
 <div class="container-fluid">
 
-<!-- Main hero unit for a primary marketing message or call to action -->
-<span class="hidden-phone">
-<div class="hero-unit">
-	<div class="row-fluid">
-		<div class="span2">
-			<img src="images/smplayer_logo_big.png" alt="Free Media Player for Windows with built-in codecs and Youtube download">
-		</div>
-		<div class="span6">
-			<h1>SMPlayer</h1>
-			<?php
-			echo "<p>";
-			tr("Free Media Player with Youtube&trade; support");
-			echo "<br>";
-			tr("Graphical User Interface (GUI) for MPlayer");
-			echo "<p class=\"second\">\n";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and downloads Youtube&trade; videos") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Skin support") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Many audio and video filters included") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Multi-platform. Available for Windows and Linux") ."<br>";
-			echo "</p>";
-			echo "<p>" . auto_download_button() ."</p>\n";
-			?>
-		</div>
-		<div class="span4">
-		<?php echo '<a href="screenshots.php?tr_lang='. $tr_lang .'"><img src="images/twisted2.png"></a>'; ?>
-		</div>
-	</div>
-</div>
-</span>
-
-<div class="row-fluid">
-	<div class="span9">
-		<h3><?php tr("About SMPlayer"); ?></h3>
-		<?php 
-		include("info.php");
-		if (1) {
-			include("media_reviews.php");
-			echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-				get_tr("Click here to read more reviews") .
-				"</a></p>\n";
-		}
-		?>
-	</div>
-
-	<div class="span3">
-		<div class="well">
-			<h3><?php tr("Latest changes"); ?></h3>
-			<?php
-			$release_notes_file = "translations/release_notes_". $tr_lang .".html";
-			if (file_exists($release_notes_file)) {
-				include($release_notes_file);
-			} else {
-				include("translations/release_notes_en.html");
-			}
-			?>
-			<!--
-			<p>
-			<a href="downloads.php" class="btn btn-primary btn-large"><?php tr("Downloads"); ?></a>
-			</p>
-			-->
-		</div> <!-- well -->
-	</div> <!-- span3 -->
-</div>
+<?php
+if ($site != "berlios")
+	include("info.php");
+else
+	include("info2.php");
+?>
 
 </div> <!-- container -->
 

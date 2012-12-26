@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-26 13:56+0100\n"
+"POT-Creation-Date: 2012-12-26 23:17+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,8 @@ msgstr "Twitter でフォローする"
 msgid "Mirrors"
 msgstr "ミラー"
 
-#: ../downloads.php:15 ../header.php:168 ../index.php:73 ../umplayer.php:42
+#: ../downloads.php:15 ../header.php:169 ../info.php:91 ../info2.php:70
+#: ../umplayer.php:42
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -334,7 +335,8 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:213 ../info.php:84 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:213 ../info.php:107 ../info2.php:86 ../smtube.php:17
+#: ../umplayer.php:127
 msgid "Close"
 msgstr "閉じる"
 
@@ -627,12 +629,120 @@ msgstr ""
 "MPlayer を再起動させなければならないものがあります。再生が中断されることがあ"
 "るのはこのためです。"
 
+#: ../features.php:2 ../smplayer.php:57
+msgid ""
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+"SMPlayer の最大の特徴: <b>再生したファイルの設定をすべて記憶します</b>。です"
+"から、ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いり"
+"ません。再びムービーを開いたときには、以前と同じ位置と設定環境 (オーディオト"
+"ラック、字幕、音量など) で再開されます。"
+
+#: ../features.php:10
+msgid "Some other interesting features:"
+msgstr "その他の特徴:"
+
+#: ../features.php:13
+msgid "It can play and download Youtube videos."
+msgstr "YouTube 動画の再生/ダウンロード:"
+
+#: ../features.php:15
+msgid ""
+"A Youtube browser is included, which allows to easily download Youtube "
+"videos too."
+msgstr ""
+"YouTube ブラウザーが同梱されており、動画の再生やダウンロードが簡単に行えま"
+"す。"
+
+#: ../features.php:16 ../smplayer.php:68
+msgid ""
+"Complete preferences dialog, where you can change the key shortcuts,\n"
+"colors and fonts of the subtitles, and many more."
+msgstr ""
+"詳細な環境設定ダイアログ: ここでキーショートカットや字幕の色/フォントなどさま"
+"ざまな設定の変更が可能です。"
+
+#: ../features.php:18 ../smplayer.php:70
+msgid "Support for skins and icon themes."
+msgstr "スキンとアイコンテーマに対応。"
+
+#: ../features.php:19 ../smplayer.php:71
+msgid "Possibility to search and download subtitles from %1."
+msgstr "%1 から字幕を検索/ダウンロードする機能。"
+
+#: ../features.php:21 ../smplayer.php:73
+msgid ""
+"Filters. Many video and audio filters are available: deinterlace, \n"
+"postprocessing, denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+"フィルター: インターレース解除や後処理、ノイズ除去からカラオケフィルター (歌"
+"声除去) まで、数多くのビデオ/オーディオフィルターが用意されています。"
+
+#: ../features.php:23 ../smplayer.php:75
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+"マウスホイールによるシーク: お使いのマウスをホイールすることで、ビデオを進め"
+"たり戻したりできます。"
+
+#: ../features.php:24 ../smplayer.php:76
+msgid "The mouse buttons can also be customized."
+msgstr "マウスボタンもカスタマイズできます。"
+
+#: ../features.php:25 ../smplayer.php:77
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+"ビデオイコライザー: 映像の明るさ、コントラスト、色合い、鮮やかさ、ガンマ値の"
+"調整を可能にします。"
+
+#: ../features.php:27 ../smplayer.php:79
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr "変速再生: 2 倍速、4 倍速... あるいはスローモーションで再生できます。"
+
+#: ../features.php:29 ../smplayer.php:81
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr "オーディオと字幕の遅延調整: オーディオと字幕の同期を可能にします。"
+
+#: ../features.php:31 ../smplayer.php:83
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr "高度なオプション: デミュクサーやコーデックの選択などがあります。"
+
+#: ../features.php:33 ../smplayer.php:85
+msgid ""
+"On your own language: currently SMPlayer is translated into more than 30 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+"多様な言語対応: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中"
+"国語、日本語など 30 を超える言語に翻訳されています。"
+
+#: ../features.php:36
+msgid "Free and open source. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+
+#: ../features.php:37 ../smplayer.php:89
+msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
+
 #: ../footer.php:9
 msgid "Other links:"
 msgstr "関連リンク:"
 
-#: ../footer.php:14 ../index.php:62 ../latest.php:10 ../smtube.php:57
-#: ../umplayer.php:95
+#: ../footer.php:14 ../info.php:80 ../info2.php:59 ../latest.php:10
+#: ../smtube.php:57 ../umplayer.php:95
 msgid "Latest changes"
 msgstr "最新の変更点"
 
@@ -668,7 +778,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr "Windows 用 MPlayer ビルド"
 
-#: ../formats.php:11 ../info.php:78
+#: ../formats.php:11 ../info.php:101 ../info2.php:80
 msgid "Formats and Codecs"
 msgstr "フォーマットとコーデック"
 
@@ -706,219 +816,118 @@ msgstr ""
 msgid "Graphical User Interface for MPlayer"
 msgstr ""
 
-#: ../header.php:165
+#: ../header.php:166
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:166 ../presskit.php:22 ../screenshots.php:14
+#: ../header.php:167 ../presskit.php:22 ../screenshots.php:14
 #: ../smplayer.php:146
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:167 ../reviews.php:9
+#: ../header.php:168 ../reviews.php:9
 msgid "Reviews"
 msgstr "レビュー"
 
-#: ../header.php:174
+#: ../header.php:175
 msgid "Language"
 msgstr "言語"
 
-#: ../index.php:22 ../smplayer.php:21
+#: ../info.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
 msgstr ""
 
-#: ../index.php:24
-msgid "Graphical User Interface (GUI) for MPlayer"
-msgstr ""
-
-#: ../index.php:26 ../smplayer.php:23
+#: ../info.php:14 ../info2.php:14 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
 msgstr ""
 "AVI、MP4、WMV、DivX、H.264、MPEG、MOV など... あらゆるフォーマットを再生可能"
 
-#: ../index.php:27 ../smplayer.php:24
+#: ../info.php:15 ../info2.php:15 ../smplayer.php:24
 msgid "Built-in codecs. No codec packs needed"
 msgstr ""
 
-#: ../index.php:28 ../smplayer.php:25
+#: ../info.php:16 ../info2.php:16 ../smplayer.php:25
 msgid "Plays and downloads Youtube&trade; videos"
 msgstr ""
 
-#: ../index.php:29 ../smplayer.php:26
+#: ../info.php:17 ../info2.php:17 ../smplayer.php:26
 msgid "Automatically search and download subtitles"
 msgstr "自動的に字幕を検索/ダウンロードする機能"
 
-#: ../index.php:30 ../smplayer.php:27
+#: ../info.php:18 ../info2.php:18 ../smplayer.php:27
 msgid "Resumes playback"
 msgstr "再生位置を記憶"
 
-#: ../index.php:31 ../screenshots.php:81 ../smplayer.php:28
+#: ../info.php:19 ../info2.php:19 ../screenshots.php:81 ../smplayer.php:28
 msgid "Skin support"
 msgstr "スキンに対応"
 
-#: ../index.php:32 ../smplayer.php:29
+#: ../info.php:20 ../info2.php:20 ../smplayer.php:29
 msgid "Many audio and video filters included"
 msgstr "豊富なオーディオ/ビデオフィルター"
 
-#: ../index.php:33 ../smplayer.php:30
+#: ../info.php:21 ../info2.php:21 ../smplayer.php:30
 msgid "Simple and intuitive interface"
 msgstr "シンプルで直感的に使えるインターフェイス"
 
-#: ../index.php:34
+#: ../info.php:22 ../info2.php:22
 msgid "Multi-platform. Available for Windows and Linux"
 msgstr ""
 
-#: ../index.php:48
+#: ../info.php:36 ../info2.php:36
 msgid "About SMPlayer"
 msgstr "SMPlayer とは"
 
-#: ../index.php:54 ../smplayer.php:165
-msgid "Click here to read more reviews"
-msgstr "もっとレビューを読む"
-
-#: ../info.php:3 ../smplayer.php:48
+#: ../info.php:41 ../smplayer.php:48
 msgid ""
 "SMPlayer is a free open source media player, with built-in codecs, that\n"
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
 
-#: ../info.php:6 ../smplayer.php:51
+#: ../info.php:44 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
 msgstr ""
 
-#: ../info.php:9
+#: ../info.php:46
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
 msgstr ""
 
-#: ../info.php:11 ../info.php:15
+#: ../info.php:48 ../info2.php:41
 msgid "see list"
 msgstr "一覧"
 
-#: ../info.php:13
-msgid ""
-"SMPlayer is a graphical user interface (GUI) for the award-winning %1 \n"
-"which is capable of playing almost all known video and audio formats (%2)."
-msgstr ""
-
-#: ../info.php:18
+#: ../info.php:50
 msgid "Install SMPlayer and forget about codecs!"
 msgstr ""
 
-#: ../info.php:20 ../smplayer.php:57
-msgid ""
-"One of the most interesting features of SMPlayer: <b>it remembers the \n"
-"settings of all files you play</b>. So you start to watch a movie but you \n"
-"have to leave... don't worry, when you open that movie again it will \n"
-"resume at the same point you left it, and with the same settings: audio \n"
-"track, subtitles, volume..."
-msgstr ""
-"SMPlayer の最大の特徴: <b>再生したファイルの設定をすべて記憶します</b>。です"
-"から、ムービーを観始めたけど用事ができた... なんてことがあっても、ご心配いり"
-"ません。再びムービーを開いたときには、以前と同じ位置と設定環境 (オーディオト"
-"ラック、字幕、音量など) で再開されます。"
-
-#: ../info.php:28
-msgid "Some other interesting features:"
-msgstr "その他の特徴:"
-
-#: ../info.php:31
-msgid "It can play and download Youtube videos."
-msgstr "YouTube 動画の再生/ダウンロード:"
-
-#: ../info.php:33
-msgid ""
-"A Youtube browser is included, which allows to easily download Youtube "
-"videos too."
-msgstr ""
-"YouTube ブラウザーが同梱されており、動画の再生やダウンロードが簡単に行えま"
-"す。"
-
-#: ../info.php:34 ../smplayer.php:68
-msgid ""
-"Complete preferences dialog, where you can change the key shortcuts,\n"
-"colors and fonts of the subtitles, and many more."
-msgstr ""
-"詳細な環境設定ダイアログ: ここでキーショートカットや字幕の色/フォントなどさま"
-"ざまな設定の変更が可能です。"
-
-#: ../info.php:36 ../smplayer.php:70
-msgid "Support for skins and icon themes."
-msgstr "スキンとアイコンテーマに対応。"
-
-#: ../info.php:37 ../smplayer.php:71
-msgid "Possibility to search and download subtitles from %1."
-msgstr "%1 から字幕を検索/ダウンロードする機能。"
-
-#: ../info.php:39 ../smplayer.php:73
-msgid ""
-"Filters. Many video and audio filters are available: deinterlace, \n"
-"postprocessing, denoise... and even a karaoke filter (voice removal)."
-msgstr ""
-"フィルター: インターレース解除や後処理、ノイズ除去からカラオケフィルター (歌"
-"声除去) まで、数多くのビデオ/オーディオフィルターが用意されています。"
-
-#: ../info.php:41 ../smplayer.php:75
-msgid ""
-"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
-"or backward in the video."
-msgstr ""
-"マウスホイールによるシーク: お使いのマウスをホイールすることで、ビデオを進め"
-"たり戻したりできます。"
-
-#: ../info.php:42 ../smplayer.php:76
-msgid "The mouse buttons can also be customized."
-msgstr "マウスボタンもカスタマイズできます。"
-
-#: ../info.php:43 ../smplayer.php:77
-msgid ""
-"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
-"saturation and gamma of the video image."
-msgstr ""
-"ビデオイコライザー: 映像の明るさ、コントラスト、色合い、鮮やかさ、ガンマ値の"
-"調整を可能にします。"
-
-#: ../info.php:45 ../smplayer.php:79
-msgid ""
-"Multiple speed playback. You can play at 2X, 4X... and even in \n"
-"slow motion."
-msgstr "変速再生: 2 倍速、4 倍速... あるいはスローモーションで再生できます。"
-
-#: ../info.php:47 ../smplayer.php:81
-msgid ""
-"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
-"subtitles."
-msgstr "オーディオと字幕の遅延調整: オーディオと字幕の同期を可能にします。"
-
-#: ../info.php:49 ../smplayer.php:83
-msgid ""
-"Advanced options, such as selecting a demuxer or video & \n"
-"audio codecs."
-msgstr "高度なオプション: デミュクサーやコーデックの選択などがあります。"
-
-#: ../info.php:51 ../smplayer.php:85
-msgid ""
-"On your own language: currently SMPlayer is translated into more than 30 \n"
-"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-"Japanese...."
-msgstr ""
-"多様な言語対応: SMPlayer は現在スペイン語、ドイツ語、イタリア語、ロシア語、中"
-"国語、日本語など 30 を超える言語に翻訳されています。"
-
-#: ../info.php:54 ../smplayer.php:88
-msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr ""
-"フリーかつオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
-
-#: ../info.php:55 ../smplayer.php:89
-msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
-
-#: ../info.php:61
+#: ../info.php:56
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr "SMPlayer 最新版のダウンロードは<a href=%1>こちら</a>"
+
+#: ../info.php:72 ../smplayer.php:165
+msgid "Click here to read more reviews"
+msgstr "もっとレビューを読む"
+
+#: ../info2.php:12
+msgid "Graphical User Interface (GUI) for MPlayer"
+msgstr ""
+
+#: ../info2.php:39
+msgid ""
+"SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
+"which is capable of playing almost all known video and audio formats (%2)."
+msgstr ""
+
+#: ../info2.php:43
+msgid ""
+"Apart from providing access for the most common and useful options in "
+"MPlayer, \n"
+"SMPlayer adds other features, like the possibility to search and download \n"
+"Youtube&trade; videos."
+msgstr ""
 
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1043,6 +1052,11 @@ msgid ""
 msgstr ""
 "YouTube ブラウザーが同梱されており、動画の再生やダウンロードが簡単に行えま"
 "す。"
+
+#: ../smplayer.php:88
+msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+"フリーかつオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 
 #: ../smplayer.php:93
 msgid "Download SMPlayer for free"

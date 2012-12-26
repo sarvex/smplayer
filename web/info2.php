@@ -3,13 +3,13 @@
 <div class="hero-unit">
 	<div class="row-fluid">
 		<div class="span2">
-			<img src="images/smplayer_logo_big.png" alt="Free Media Player for Windows with built-in codecs and Youtube download">
+			<img src="images/smplayer_logo_big.png" alt="Graphical User Interface (GUI) for MPlayer">
 		</div>
 		<div class="span6">
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>";
-			tr("Free Media Player with Youtube&trade; support");
+			tr("Graphical User Interface (GUI) for MPlayer");
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
@@ -34,45 +34,24 @@
 <div class="row-fluid">
 	<div class="span9">
 		<h3><?php tr("About SMPlayer"); ?></h3>
-		<?php 
-
-
+<?php 
 echo "<p>";
-tr("SMPlayer is a free open source media player, with built-in codecs, that
-can play virtually all video and audio formats. It doesn't need any external codecs.");
-echo " ";
-tr("SMPlayer can also play, search and download Youtube&trade; videos.");
-echo " ";
-tr("It uses the award-winning %1 as playback engine which is capable of
-playing almost all known video and audio formats (%2).", "MPlayer",
+tr("SMPlayer is a graphical user interface (GUI) for the award-winning %1, 
+which is capable of playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
 echo " ";
-if (1) tr("Install SMPlayer and forget about codecs!");
+tr("Apart from providing access for the most common and useful options in MPlayer, 
+SMPlayer adds other features, like the possibility to search and download 
+Youtube&trade; videos.");
 echo "<p>";
 include("features.php");
 
-if (0) {
-echo "<b>";
-tr("Download <a href=%1>here</a> the latest version of SMPlayer", 
-"\"downloads.php?tr_lang=".$tr_lang."\""); 
-echo "</b>";
-}
-?>
-
-<?php
 if (1) {
 echo "<center>";
 echo '<embed src="http://video.findmysoft.com/jwplayer/player.swf?file=http://video.findmysoft.com/2012/11/14/smplayer.mp4&image=http://video.findmysoft.com/2012/11/14/smplayer.jpg&skin=http://video.findmysoft.com/jwplayer/skin/slim.zip" width="512" height="301" allowfullscreen="true" /><br><span style="font-size:12px"><a href="http://smplayer.findmysoft.com/">SMPlayer</a> Quick Look Video by FindMySoft.com</span>';
 echo "</center>";
 }
-
-		if (1) {
-			include("media_reviews.php");
-			echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-				get_tr("Click here to read more reviews") .
-				"</a></p>\n";
-		}
-		?>
+?>
 	</div>
 
 	<div class="span3">

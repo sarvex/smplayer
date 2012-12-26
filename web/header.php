@@ -3,17 +3,18 @@ include_once("l10n.php");
 include_once("site.php");
 
 function print_header() {
-	global $tr_lang;
+	global $tr_lang, $site;
 ?>
 <!DOCTYPE html>
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
 <title>
 <?php 
-	echo "SMPlayer - ";
-	tr("Free Media Player with built-in codecs and Youtube&trade; support");
-	echo " | ";
-	tr("Graphical User Interface for MPlayer");
+	if ($site != "berlios") {
+		tr("Free Media Player with built-in codecs and Youtube&trade; support");
+	} else {
+		tr("Graphical User Interface for MPlayer");
+	}
 ?>
 </title>
 <?php echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; ?>

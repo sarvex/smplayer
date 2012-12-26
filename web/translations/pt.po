@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-26 13:56+0100\n"
+"POT-Creation-Date: 2012-12-26 23:17+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -141,7 +141,8 @@ msgstr "Siga-nos no Twitter"
 msgid "Mirrors"
 msgstr "Mirrors"
 
-#: ../downloads.php:15 ../header.php:168 ../index.php:73 ../umplayer.php:42
+#: ../downloads.php:15 ../header.php:169 ../info.php:91 ../info2.php:70
+#: ../umplayer.php:42
 msgid "Downloads"
 msgstr "Transferências"
 
@@ -332,7 +333,8 @@ msgstr ""
 "<i>Desinstalar smplayer</i> do menu do smplayer acedida através do menu "
 "<i>Iniciar</i>."
 
-#: ../downloads.php:213 ../info.php:84 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:213 ../info.php:107 ../info2.php:86 ../smtube.php:17
+#: ../umplayer.php:127
 msgid "Close"
 msgstr "Fechar"
 
@@ -650,12 +652,129 @@ msgstr ""
 "Existem algumas opções que precisam de reiniciar o MPlayer\n"
 "com novos parâmetros. Esta é a razão para tal situação ocorrer."
 
+#: ../features.php:2 ../smplayer.php:57
+msgid ""
+"One of the most interesting features of SMPlayer: <b>it remembers the \n"
+"settings of all files you play</b>. So you start to watch a movie but you \n"
+"have to leave... don't worry, when you open that movie again it will \n"
+"resume at the same point you left it, and with the same settings: audio \n"
+"track, subtitles, volume..."
+msgstr ""
+"Uma das características mais interessantes do SMPlayer:<b> ele lembra-se\n"
+"das definições dos ficheiros que reproduz</b>. Se começar a ver um filme e\n"
+"tiver que parar... não se preocupe, pois quando o abrir novamente\n"
+"ele continuará do ponto onde o deixou e com as mesmas definições: áudio,\n"
+"faixa, legendas, volume..."
+
+#: ../features.php:10
+msgid "Some other interesting features:"
+msgstr "Algumas das funconalidades:"
+
+#: ../features.php:13
+msgid "It can play and download Youtube videos."
+msgstr "Reprodução de vídeos YouTube."
+
+#: ../features.php:15
+msgid ""
+"A Youtube browser is included, which allows to easily download Youtube "
+"videos too."
+msgstr ""
+"A aplicação possui um explorador para o YouTube, que permite a a "
+"visualização e transferência de vídeos."
+
+#: ../features.php:16 ../smplayer.php:68
+msgid ""
+"Complete preferences dialog, where you can change the key shortcuts,\n"
+"colors and fonts of the subtitles, and many more."
+msgstr ""
+"Caixa de diálogo de preferências, na qual pode alterar os atalhos de "
+"teclado,\n"
+"as cores e o tipo de letra das legendas e muito mais."
+
+#: ../features.php:18 ../smplayer.php:70
+msgid "Support for skins and icon themes."
+msgstr "Suporte a temas e diversos conjuntos de ícones."
+
+#: ../features.php:19 ../smplayer.php:71
+msgid "Possibility to search and download subtitles from %1."
+msgstr "A possibilidade de procurar e transferir legendas no %1."
+
+#: ../features.php:21 ../smplayer.php:73
+msgid ""
+"Filters. Many video and audio filters are available: deinterlace, \n"
+"postprocessing, denoise... and even a karaoke filter (voice removal)."
+msgstr ""
+"Estão disponíveis diversos filtros: desentrelaçamento, pós-processamento,\n"
+"redução de ruído e até um filtro para karaoke (remoção de voz)."
+
+#: ../features.php:23 ../smplayer.php:75
+msgid ""
+"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
+"or backward in the video."
+msgstr ""
+"Procura através do rato. Pode usar a roda do rato para avançar ou\n"
+"recuar o vídeo."
+
+#: ../features.php:24 ../smplayer.php:76
+msgid "The mouse buttons can also be customized."
+msgstr "Também pode modificar as ações dos botões do rato."
+
+#: ../features.php:25 ../smplayer.php:77
+msgid ""
+"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
+"saturation and gamma of the video image."
+msgstr ""
+"O equalizador de vídeo permite-lhe ajustar o brilho, contraste, cor,\n"
+"saturação e gama da imagem vídeo."
+
+#: ../features.php:27 ../smplayer.php:79
+msgid ""
+"Multiple speed playback. You can play at 2X, 4X... and even in \n"
+"slow motion."
+msgstr ""
+"Múltiplas velocidades de reprodução. Pode reproduzir a 2X, 4X e\n"
+"até em câmara lenta."
+
+#: ../features.php:29 ../smplayer.php:81
+msgid ""
+"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
+"subtitles."
+msgstr ""
+"Ajuste do atraso de áudio e legendas. Permite-lhe sincronizar áudio e\n"
+"legendas."
+
+#: ../features.php:31 ../smplayer.php:83
+msgid ""
+"Advanced options, such as selecting a demuxer or video & \n"
+"audio codecs."
+msgstr ""
+"Opções avançadas, tais como selecionar um demuxer ou\n"
+"os codificadores vídeo e áudio."
+
+#: ../features.php:33 ../smplayer.php:85
+msgid ""
+"On your own language: currently SMPlayer is translated into more than 30 \n"
+"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
+"Japanese...."
+msgstr ""
+"Traduções: o SMPlayer está traduzido em mais de 30 idiomas \n"
+"como por exemplo Espanhol, Alemão, Francês Italiano, Português,\n"
+"Japonês..."
+
+#: ../features.php:36
+msgid "Free and open source. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+
+#: ../features.php:37 ../smplayer.php:89
+msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+msgstr "Compatível com Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+
 #: ../footer.php:9
 msgid "Other links:"
 msgstr "Outras ligações:"
 
-#: ../footer.php:14 ../index.php:62 ../latest.php:10 ../smtube.php:57
-#: ../umplayer.php:95
+#: ../footer.php:14 ../info.php:80 ../info2.php:59 ../latest.php:10
+#: ../smtube.php:57 ../umplayer.php:95
 msgid "Latest changes"
 msgstr "Últimas alterações"
 
@@ -691,7 +810,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr ""
 
-#: ../formats.php:11 ../info.php:78
+#: ../formats.php:11 ../info.php:101 ../info2.php:80
 msgid "Formats and Codecs"
 msgstr "Formatos e codificadores"
 
@@ -729,229 +848,119 @@ msgstr ""
 msgid "Graphical User Interface for MPlayer"
 msgstr ""
 
-#: ../header.php:165
+#: ../header.php:166
 msgid "Main"
 msgstr "Principal"
 
-#: ../header.php:166 ../presskit.php:22 ../screenshots.php:14
+#: ../header.php:167 ../presskit.php:22 ../screenshots.php:14
 #: ../smplayer.php:146
 msgid "Screenshots"
 msgstr "Imagens"
 
-#: ../header.php:167 ../reviews.php:9
+#: ../header.php:168 ../reviews.php:9
 msgid "Reviews"
 msgstr "Críticas"
 
-#: ../header.php:174
+#: ../header.php:175
 msgid "Language"
 msgstr "Idioma"
 
-#: ../index.php:22 ../smplayer.php:21
+#: ../info.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
 msgstr ""
 
-#: ../index.php:24
-msgid "Graphical User Interface (GUI) for MPlayer"
-msgstr ""
-
-#: ../index.php:26 ../smplayer.php:23
+#: ../info.php:14 ../info2.php:14 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
 msgstr ""
 "Reproduz os formatos mais utilizados: avi, mp4, mkv, divx, h.264, mpeg, "
 "mov..."
 
-#: ../index.php:27 ../smplayer.php:24
+#: ../info.php:15 ../info2.php:15 ../smplayer.php:24
 msgid "Built-in codecs. No codec packs needed"
 msgstr ""
 
-#: ../index.php:28 ../smplayer.php:25
+#: ../info.php:16 ../info2.php:16 ../smplayer.php:25
 msgid "Plays and downloads Youtube&trade; videos"
 msgstr ""
 
-#: ../index.php:29 ../smplayer.php:26
+#: ../info.php:17 ../info2.php:17 ../smplayer.php:26
 msgid "Automatically search and download subtitles"
 msgstr "Procura e transferência automática de legendas"
 
-#: ../index.php:30 ../smplayer.php:27
+#: ../info.php:18 ../info2.php:18 ../smplayer.php:27
 msgid "Resumes playback"
 msgstr "Retoma da reprodução"
 
-#: ../index.php:31 ../screenshots.php:81 ../smplayer.php:28
+#: ../info.php:19 ../info2.php:19 ../screenshots.php:81 ../smplayer.php:28
 msgid "Skin support"
 msgstr "Suporte a temas"
 
-#: ../index.php:32 ../smplayer.php:29
+#: ../info.php:20 ../info2.php:20 ../smplayer.php:29
 msgid "Many audio and video filters included"
 msgstr "Diversos filtros de vídeo e áudio"
 
-#: ../index.php:33 ../smplayer.php:30
+#: ../info.php:21 ../info2.php:21 ../smplayer.php:30
 msgid "Simple and intuitive interface"
 msgstr "Interface simples e intuitiva"
 
-#: ../index.php:34
+#: ../info.php:22 ../info2.php:22
 msgid "Multi-platform. Available for Windows and Linux"
 msgstr ""
 
-#: ../index.php:48
+#: ../info.php:36 ../info2.php:36
 msgid "About SMPlayer"
 msgstr "Sobre o SMPlayer"
 
-#: ../index.php:54 ../smplayer.php:165
-msgid "Click here to read more reviews"
-msgstr "Clique aqui para ver mais críticas"
-
-#: ../info.php:3 ../smplayer.php:48
+#: ../info.php:41 ../smplayer.php:48
 msgid ""
 "SMPlayer is a free open source media player, with built-in codecs, that\n"
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
 
-#: ../info.php:6 ../smplayer.php:51
+#: ../info.php:44 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
 msgstr ""
 
-#: ../info.php:9
+#: ../info.php:46
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
 msgstr ""
 
-#: ../info.php:11 ../info.php:15
+#: ../info.php:48 ../info2.php:41
 msgid "see list"
 msgstr "consulte a lista"
 
-#: ../info.php:13
-msgid ""
-"SMPlayer is a graphical user interface (GUI) for the award-winning %1 \n"
-"which is capable of playing almost all known video and audio formats (%2)."
-msgstr ""
-
-#: ../info.php:18
+#: ../info.php:50
 msgid "Install SMPlayer and forget about codecs!"
 msgstr ""
 
-#: ../info.php:20 ../smplayer.php:57
-msgid ""
-"One of the most interesting features of SMPlayer: <b>it remembers the \n"
-"settings of all files you play</b>. So you start to watch a movie but you \n"
-"have to leave... don't worry, when you open that movie again it will \n"
-"resume at the same point you left it, and with the same settings: audio \n"
-"track, subtitles, volume..."
-msgstr ""
-"Uma das características mais interessantes do SMPlayer:<b> ele lembra-se\n"
-"das definições dos ficheiros que reproduz</b>. Se começar a ver um filme e\n"
-"tiver que parar... não se preocupe, pois quando o abrir novamente\n"
-"ele continuará do ponto onde o deixou e com as mesmas definições: áudio,\n"
-"faixa, legendas, volume..."
-
-#: ../info.php:28
-msgid "Some other interesting features:"
-msgstr "Algumas das funconalidades:"
-
-#: ../info.php:31
-msgid "It can play and download Youtube videos."
-msgstr "Reprodução de vídeos YouTube."
-
-#: ../info.php:33
-msgid ""
-"A Youtube browser is included, which allows to easily download Youtube "
-"videos too."
-msgstr ""
-"A aplicação possui um explorador para o YouTube, que permite a a "
-"visualização e transferência de vídeos."
-
-#: ../info.php:34 ../smplayer.php:68
-msgid ""
-"Complete preferences dialog, where you can change the key shortcuts,\n"
-"colors and fonts of the subtitles, and many more."
-msgstr ""
-"Caixa de diálogo de preferências, na qual pode alterar os atalhos de "
-"teclado,\n"
-"as cores e o tipo de letra das legendas e muito mais."
-
-#: ../info.php:36 ../smplayer.php:70
-msgid "Support for skins and icon themes."
-msgstr "Suporte a temas e diversos conjuntos de ícones."
-
-#: ../info.php:37 ../smplayer.php:71
-msgid "Possibility to search and download subtitles from %1."
-msgstr "A possibilidade de procurar e transferir legendas no %1."
-
-#: ../info.php:39 ../smplayer.php:73
-msgid ""
-"Filters. Many video and audio filters are available: deinterlace, \n"
-"postprocessing, denoise... and even a karaoke filter (voice removal)."
-msgstr ""
-"Estão disponíveis diversos filtros: desentrelaçamento, pós-processamento,\n"
-"redução de ruído e até um filtro para karaoke (remoção de voz)."
-
-#: ../info.php:41 ../smplayer.php:75
-msgid ""
-"Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
-"or backward in the video."
-msgstr ""
-"Procura através do rato. Pode usar a roda do rato para avançar ou\n"
-"recuar o vídeo."
-
-#: ../info.php:42 ../smplayer.php:76
-msgid "The mouse buttons can also be customized."
-msgstr "Também pode modificar as ações dos botões do rato."
-
-#: ../info.php:43 ../smplayer.php:77
-msgid ""
-"Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
-"saturation and gamma of the video image."
-msgstr ""
-"O equalizador de vídeo permite-lhe ajustar o brilho, contraste, cor,\n"
-"saturação e gama da imagem vídeo."
-
-#: ../info.php:45 ../smplayer.php:79
-msgid ""
-"Multiple speed playback. You can play at 2X, 4X... and even in \n"
-"slow motion."
-msgstr ""
-"Múltiplas velocidades de reprodução. Pode reproduzir a 2X, 4X e\n"
-"até em câmara lenta."
-
-#: ../info.php:47 ../smplayer.php:81
-msgid ""
-"Audio and subtitles delay adjustment. Allows you to sync audio and\n"
-"subtitles."
-msgstr ""
-"Ajuste do atraso de áudio e legendas. Permite-lhe sincronizar áudio e\n"
-"legendas."
-
-#: ../info.php:49 ../smplayer.php:83
-msgid ""
-"Advanced options, such as selecting a demuxer or video & \n"
-"audio codecs."
-msgstr ""
-"Opções avançadas, tais como selecionar um demuxer ou\n"
-"os codificadores vídeo e áudio."
-
-#: ../info.php:51 ../smplayer.php:85
-msgid ""
-"On your own language: currently SMPlayer is translated into more than 30 \n"
-"languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
-"Japanese...."
-msgstr ""
-"Traduções: o SMPlayer está traduzido em mais de 30 idiomas \n"
-"como por exemplo Espanhol, Alemão, Francês Italiano, Português,\n"
-"Japonês..."
-
-#: ../info.php:54 ../smplayer.php:88
-msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr ""
-"O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
-
-#: ../info.php:55 ../smplayer.php:89
-msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-msgstr "Compatível com Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-
-#: ../info.php:61
+#: ../info.php:56
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 msgstr "Transfira <a href=%1>aqui</a> a versão mais recente do SMPlayer"
+
+#: ../info.php:72 ../smplayer.php:165
+msgid "Click here to read more reviews"
+msgstr "Clique aqui para ver mais críticas"
+
+#: ../info2.php:12
+msgid "Graphical User Interface (GUI) for MPlayer"
+msgstr ""
+
+#: ../info2.php:39
+msgid ""
+"SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
+"which is capable of playing almost all known video and audio formats (%2)."
+msgstr ""
+
+#: ../info2.php:43
+msgid ""
+"Apart from providing access for the most common and useful options in "
+"MPlayer, \n"
+"SMPlayer adds other features, like the possibility to search and download \n"
+"Youtube&trade; videos."
+msgstr ""
 
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1075,6 +1084,11 @@ msgid ""
 msgstr ""
 "A aplicação inclui um explorador para o YouTube, que permite a visualização "
 "e transferência de vídeos."
+
+#: ../smplayer.php:88
+msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+msgstr ""
+"O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
 
 #: ../smplayer.php:93
 msgid "Download SMPlayer for free"
