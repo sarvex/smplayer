@@ -5,12 +5,11 @@ can play virtually all video and audio formats. It doesn't need any external cod
 echo " ";
 tr("SMPlayer can also play, search and download Youtube&trade; videos.");
 echo " ";
-if (0) {
+if (1) {
 tr("It uses the award-winning %1 as playback engine which is capable of
 playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
 } else {
-echo "<p>";
 tr("SMPlayer is a graphical user interface (GUI) for the award-winning %1 
 which is capable of playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
