@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header(get_tr("SMPlayer - Press Kit"));
+print_header();
 echo "<body>\n";
 print_menu(0);
 ?>

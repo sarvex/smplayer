@@ -1,7 +1,7 @@
 <?php
 include_once("header.php");
 include_once("download_links.php");
-print_header(get_tr("SMPlayer - Opensource Media Player"), 1);
+print_header();
 echo "<body>\n";
 print_menu(1);
 ?>
@@ -13,7 +13,7 @@ print_menu(1);
 <div class="hero-unit">
 	<div class="row-fluid">
 		<div class="span2">
-			<img src="images/smplayer_logo_big.png">
+			<img src="images/smplayer_logo_big.png" alt="Free Media Player for Windows with built-in codecs and Youtube download">
 		</div>
 		<div class="span6">
 			<h1>SMPlayer</h1>

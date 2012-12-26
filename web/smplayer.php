@@ -1,7 +1,7 @@
 <?php
 include_once("header.php");
 include_once("download_links.php");
-print_header(get_tr("SMPlayer - Opensource Media Player"));
+print_header();
 echo "<body>\n";
 print_menu(0);
 ?>
