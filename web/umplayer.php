@@ -27,6 +27,17 @@ features of SMPlayer are not available on UMPlayer.");
 <a data-toggle="modal" href="#screenshot"><img class="img-polaroid" src="images/screenshots/thumbs/th_umplayer.png"></a>
 </center>
 
+<p>
+<div class="alert alert-block">
+<strong>
+<?php
+echo "<b>". get_tr("Notice:") ."</b><br>\n";
+tr("As of 2012.12.19 umplayer can't play youtube videos anymore.
+Please use smplayer instead.");
+?>
+</strong>
+</div>
+
 <?php
 echo "<h1>". get_tr("Downloads") ."</h1>";
 ?>
@@ -81,14 +92,6 @@ sudo apt-get install umplayer
 
 <div class="span3">
 <div class="well">
-
-<p>
-<?php
-echo "<b>". get_tr("Notice:") ."</b><br>\n";
-tr("As of 2012.12.19 umplayer can't play youtube videos anymore.
-Please use smplayer instead.");
-?>
-
 <h3><?php tr("Latest changes"); ?></h3>
 <p>
 <?php
