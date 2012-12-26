@@ -55,22 +55,13 @@ echo "</center>";
 	</div>
 
 	<div class="span3">
-		<div class="well">
-			<h3><?php tr("Latest changes"); ?></h3>
-			<?php
-			$release_notes_file = "translations/release_notes_". $tr_lang .".html";
-			if (file_exists($release_notes_file)) {
-				include($release_notes_file);
-			} else {
-				include("translations/release_notes_en.html");
-			}
-			?>
-			<!--
-			<p>
-			<a href="downloads.php" class="btn btn-primary btn-large"><?php tr("Downloads"); ?></a>
-			</p>
-			-->
-		</div> <!-- well -->
+		<?php 
+		include_once("media_reviews.php");
+		print_media_reviews(true);
+		echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+			get_tr("Click here to read more reviews") .
+			"</a></p>\n";
+		?>
 	</div> <!-- span3 -->
 </div>
 
