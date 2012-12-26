@@ -51,47 +51,25 @@ if (1) tr("Install SMPlayer and forget about codecs!");
 echo "<p>";
 include("features.php");
 
-if (0) {
-echo "<b>";
-tr("Download <a href=%1>here</a> the latest version of SMPlayer", 
-"\"downloads.php?tr_lang=".$tr_lang."\""); 
-echo "</b>";
-}
-?>
-
-<?php
 if (1) {
 echo "<center>";
 echo '<embed src="http://video.findmysoft.com/jwplayer/player.swf?file=http://video.findmysoft.com/2012/11/14/smplayer.mp4&image=http://video.findmysoft.com/2012/11/14/smplayer.jpg&skin=http://video.findmysoft.com/jwplayer/skin/slim.zip" width="512" height="301" allowfullscreen="true" /><br><span style="font-size:12px"><a href="http://smplayer.findmysoft.com/">SMPlayer</a> Quick Look Video by FindMySoft.com</span>';
 echo "</center>";
-}
 
-		if (1) {
-			include("media_reviews.php");
-			echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-				get_tr("Click here to read more reviews") .
-				"</a></p>\n";
-		}
-		?>
+if (0) echo "<p>" . auto_download_button() ."</p>\n";
+}
+?>
+
 	</div>
 
 	<div class="span3">
-		<div class="well">
-			<h3><?php tr("Latest changes"); ?></h3>
-			<?php
-			$release_notes_file = "translations/release_notes_". $tr_lang .".html";
-			if (file_exists($release_notes_file)) {
-				include($release_notes_file);
-			} else {
-				include("translations/release_notes_en.html");
-			}
-			?>
-			<!--
-			<p>
-			<a href="downloads.php" class="btn btn-primary btn-large"><?php tr("Downloads"); ?></a>
-			</p>
-			-->
-		</div> <!-- well -->
+		<?php 
+		include_once("media_reviews.php");
+		print_media_reviews(true);
+		echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+			get_tr("Click here to read more reviews") .
+			"</a></p>\n";
+		?>
 	</div> <!-- span3 -->
 </div>
 

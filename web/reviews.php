@@ -10,6 +10,9 @@ print_menu(4);
 
 <?php
 include("media_reviews.php");
+
+echo "<h3>". get_tr("Media Reviews") . "</h3>\n";
+print_media_reviews(false);
 include("user_reviews.php");
 ?>
 

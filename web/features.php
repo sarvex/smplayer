@@ -6,8 +6,7 @@ resume at the same point you left it, and with the same settings: audio
 track, subtitles, volume..."); 
 ?>
 
-<p>
-<?php tr("Some other interesting features:"); ?>
+<h4><?php tr("Some other interesting features:"); ?></h4>
 <ul>
 <li><?php
 tr("It can play and download Youtube videos.");
