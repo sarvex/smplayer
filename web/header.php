@@ -8,18 +8,19 @@ function print_header() {
 <!DOCTYPE html>
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
-<title>
 <?php 
-	if ($site != "berlios") {
-		tr("Free Media Player with built-in codecs and Youtube&trade; support");
-	} else {
-		tr("Graphical User Interface for MPlayer");
-	}
+if ($site != "berlios") {
+	echo "<title>". get_tr("Free Media Player with built-in codecs and Youtube&trade; support") ."</title>\n";
+	echo '<meta name="Description" content="Free media player with built-in codecs that can play and download Youtube&trade; videos">';
+	echo "\n";
+} else {
+	echo "<title>". get_tr("Graphical User Interface for MPlayer") ."</title>\n";
+	echo '<meta name="Description" content="Get the best graphical user interface for MPlayer">';
+	echo "\n";
+}
+echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; 
 ?>
-</title>
-<?php echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; ?>
 <meta charset="utf-8">
-<meta name="Description" content="Free media player with built-in codecs that can play and download Youtube&trade; videos">
 <meta name="Keywords" content="video player,media player,multimedia player,best free player,bestfreeplayer,smplayer,mplayer,mplayer2,umplayer,multimedia,player,youtube,player download,audio player,video,DVD,Windows,Linux,free,open source,free software,mkv,mp4,matroska,xvid,divx,mpeg,mpeg2,mpeg4,h264,x264">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
