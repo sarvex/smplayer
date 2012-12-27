@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: uk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-26 23:17+0100\n"
+"POT-Creation-Date: 2012-12-27 21:55+0100\n"
 "PO-Revision-Date: 2010-01-15 09:16+0200\n"
 "Last-Translator: Gennadi <drool@altlinux.org>\n"
 "Language-Team: Ukrainian\n"
@@ -135,8 +135,7 @@ msgstr ""
 msgid "Mirrors"
 msgstr ""
 
-#: ../downloads.php:15 ../header.php:169 ../info.php:91 ../info2.php:70
-#: ../umplayer.php:42
+#: ../downloads.php:15 ../header.php:170 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Завантаження"
 
@@ -304,7 +303,7 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:213 ../info.php:107 ../info2.php:86 ../smtube.php:17
+#: ../downloads.php:213 ../info.php:85 ../info2.php:77 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
 msgstr ""
@@ -535,7 +534,7 @@ msgid ""
 "with new parameters. That's why playback interrupts for a moment."
 msgstr ""
 
-#: ../features.php:2 ../smplayer.php:57
+#: ../features.php:2
 msgid ""
 "One of the most interesting features of SMPlayer: <b>it remembers the \n"
 "settings of all files you play</b>. So you start to watch a movie but you \n"
@@ -549,41 +548,41 @@ msgstr ""
 "відтворення продовжиться з того ж місця, з тими ж налаштуваннями: звукова \n"
 "доріжка, субтитри, гучність..."
 
-#: ../features.php:10
+#: ../features.php:9
 msgid "Some other interesting features:"
 msgstr ""
 
-#: ../features.php:13
+#: ../features.php:12
 msgid "It can play and download Youtube videos."
 msgstr ""
 
-#: ../features.php:15
+#: ../features.php:14
 msgid ""
 "A Youtube browser is included, which allows to easily download Youtube "
 "videos too."
 msgstr ""
 
-#: ../features.php:16 ../smplayer.php:68
+#: ../features.php:15
 msgid ""
 "Complete preferences dialog, where you can change the key shortcuts,\n"
 "colors and fonts of the subtitles, and many more."
 msgstr ""
 
-#: ../features.php:18 ../smplayer.php:70
+#: ../features.php:17
 msgid "Support for skins and icon themes."
 msgstr ""
 
-#: ../features.php:19 ../smplayer.php:71
+#: ../features.php:18
 msgid "Possibility to search and download subtitles from %1."
 msgstr ""
 
-#: ../features.php:21 ../smplayer.php:73
+#: ../features.php:20
 msgid ""
 "Filters. Many video and audio filters are available: deinterlace, \n"
 "postprocessing, denoise... and even a karaoke filter (voice removal)."
 msgstr ""
 
-#: ../features.php:23 ../smplayer.php:75
+#: ../features.php:22
 msgid ""
 "Seeking by mouse wheel. You can use your mouse wheel to go forward \n"
 "or backward in the video."
@@ -591,11 +590,11 @@ msgstr ""
 "Пошук мишкою. Ви можете користуватись колесом мишки для перемотки \n"
 "відео вперед чи назад."
 
-#: ../features.php:24 ../smplayer.php:76
+#: ../features.php:23
 msgid "The mouse buttons can also be customized."
 msgstr ""
 
-#: ../features.php:25 ../smplayer.php:77
+#: ../features.php:24
 msgid ""
 "Video equalizer, allows you to adjust the brightness, contrast, hue,\n"
 "saturation and gamma of the video image."
@@ -603,7 +602,7 @@ msgstr ""
 "Еквалайзер відео, дозволяе Вам регулювати яскравість, контрастність,\n"
 "відтінок, колір, насиченість та гаму зображення."
 
-#: ../features.php:27 ../smplayer.php:79
+#: ../features.php:26
 msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
@@ -611,7 +610,7 @@ msgstr ""
 "Багатошвидкісне відтворення. Можна прискористи в 2, 4 \n"
 "рази... або навіть уповільнити."
 
-#: ../features.php:29 ../smplayer.php:81
+#: ../features.php:28
 msgid ""
 "Audio and subtitles delay adjustment. Allows you to sync audio and\n"
 "subtitles."
@@ -619,7 +618,7 @@ msgstr ""
 "Регулювання затримки звуку та субтитрів. Дозволить Вам синхронизувати\n"
 "звук та субтитри."
 
-#: ../features.php:31 ../smplayer.php:83
+#: ../features.php:30
 msgid ""
 "Advanced options, such as selecting a demuxer or video & \n"
 "audio codecs."
@@ -627,18 +626,18 @@ msgstr ""
 "Розширені опції, так як вибір демультиплексора чи звукових \n"
 "та відео кодеків."
 
-#: ../features.php:33 ../smplayer.php:85
+#: ../features.php:32
 msgid ""
 "On your own language: currently SMPlayer is translated into more than 30 \n"
 "languages, including Spanish, German, French, Italian, Russian, Chinese,\n"
 "Japanese...."
 msgstr ""
 
-#: ../features.php:36
+#: ../features.php:35
 msgid "Free and open source. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
 
-#: ../features.php:37 ../smplayer.php:89
+#: ../features.php:36
 msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
 msgstr ""
 
@@ -646,8 +645,7 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:14 ../info.php:80 ../info2.php:59 ../latest.php:10
-#: ../smtube.php:57 ../umplayer.php:95
+#: ../footer.php:14 ../latest.php:10 ../smtube.php:57 ../umplayer.php:95
 msgid "Latest changes"
 msgstr ""
 
@@ -683,7 +681,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr ""
 
-#: ../formats.php:11 ../info.php:101 ../info2.php:80
+#: ../formats.php:11 ../info.php:79 ../info2.php:71
 msgid "Formats and Codecs"
 msgstr ""
 
@@ -713,28 +711,28 @@ msgstr ""
 msgid "most important audio codecs:"
 msgstr ""
 
-#: ../header.php:14
+#: ../header.php:13
 msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../header.php:16
+#: ../header.php:17
 msgid "Graphical User Interface for MPlayer"
 msgstr ""
 
-#: ../header.php:166
+#: ../header.php:167
 msgid "Main"
 msgstr "Головна"
 
-#: ../header.php:167 ../presskit.php:22 ../screenshots.php:14
-#: ../smplayer.php:146
+#: ../header.php:168 ../presskit.php:22 ../screenshots.php:14
+#: ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Скріншоти"
 
-#: ../header.php:168 ../reviews.php:9
+#: ../header.php:169 ../reviews.php:9
 msgid "Reviews"
 msgstr ""
 
-#: ../header.php:175
+#: ../header.php:176
 msgid "Language"
 msgstr ""
 
@@ -807,11 +805,7 @@ msgstr ""
 msgid "Install SMPlayer and forget about codecs!"
 msgstr ""
 
-#: ../info.php:56
-msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-msgstr ""
-
-#: ../info.php:72 ../smplayer.php:165
+#: ../info.php:70 ../info2.php:62 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr ""
 
@@ -841,10 +835,6 @@ msgstr ""
 msgid "Click here to download the latest version"
 msgstr ""
 
-#: ../media_reviews.php:3
-msgid "Media Reviews"
-msgstr ""
-
 #: ../presskit.php:10
 msgid "Some images you can use in an article, blog, review..."
 msgstr ""
@@ -857,7 +847,11 @@ msgstr ""
 msgid "Some screenshots, in English and Spanish"
 msgstr ""
 
-#: ../reviews.php:19
+#: ../reviews.php:14
+msgid "Media Reviews"
+msgstr ""
+
+#: ../reviews.php:22
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
 "these sites:"
@@ -942,49 +936,35 @@ msgid ""
 "playing almost all known video and audio formats."
 msgstr ""
 
-#: ../smplayer.php:64
-msgid "Other interesting features:"
-msgstr ""
-
-#: ../smplayer.php:67
-msgid ""
-"A Youtube browser is included, which allows to easily download Youtube "
-"videos."
-msgstr ""
-
-#: ../smplayer.php:88
-msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-msgstr ""
-
-#: ../smplayer.php:93
+#: ../smplayer.php:59
 msgid "Download SMPlayer for free"
 msgstr ""
 
-#: ../smplayer.php:100
+#: ../smplayer.php:66
 msgid "Supported formats:"
 msgstr ""
 
-#: ../smplayer.php:107
+#: ../smplayer.php:73
 msgid "Video codecs:"
 msgstr ""
 
-#: ../smplayer.php:118
+#: ../smplayer.php:84
 msgid "Audio codecs:"
 msgstr ""
 
-#: ../smplayer.php:152
+#: ../smplayer.php:118
 msgid "Main Window"
 msgstr ""
 
-#: ../smplayer.php:153
+#: ../smplayer.php:119
 msgid "The Preferences Dialog"
 msgstr ""
 
-#: ../smplayer.php:154
+#: ../smplayer.php:120
 msgid "The YouTube Browser"
 msgstr ""
 
-#: ../smplayer.php:155
+#: ../smplayer.php:121
 msgid "Find Subtitles"
 msgstr ""
 
