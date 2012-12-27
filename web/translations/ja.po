@@ -732,6 +732,7 @@ msgstr ""
 #: ../features.php:36
 msgid "Free and open source. SMPlayer is under the <b>GPL</b> license."
 msgstr ""
+"フリーかつオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にあります。"
 
 #: ../features.php:37 ../smplayer.php:89
 msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
@@ -787,10 +788,12 @@ msgid ""
 "SMPlayer is a graphical user interface (GUI) for %1, which supports almost "
 "all known video and audio formats and codecs."
 msgstr ""
+"SMPlayer は、ほぼすべてビデオ/オーディオのフォーマットとコーデックに対応する "
+"%1 のグラフィカルユーザーインターフェイス (GUI) です。"
 
 #: ../formats_text.php:7
 msgid "Here is a complete list:"
-msgstr ""
+msgstr "以下が完全なリストです:"
 
 #: ../formats_text.php:9
 msgid "Supported Input Formats"
@@ -810,11 +813,11 @@ msgstr "主要なオーディオコーデック:"
 
 #: ../header.php:14
 msgid "Free Media Player with built-in codecs and Youtube&trade; support"
-msgstr ""
+msgstr "コーデック内臓、YouTube&trade; 対応のフリーなメディアプレイヤー"
 
 #: ../header.php:16
 msgid "Graphical User Interface for MPlayer"
-msgstr ""
+msgstr "MPlayer のグラフィカルユーザーインターフェイス"
 
 #: ../header.php:166
 msgid "Main"
@@ -835,7 +838,7 @@ msgstr "言語"
 
 #: ../info.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
-msgstr ""
+msgstr "YouTube&trade; 対応のフリーなメディアプレイヤー"
 
 #: ../info.php:14 ../info2.php:14 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
@@ -844,11 +847,11 @@ msgstr ""
 
 #: ../info.php:15 ../info2.php:15 ../smplayer.php:24
 msgid "Built-in codecs. No codec packs needed"
-msgstr ""
+msgstr "コーデック内臓"
 
 #: ../info.php:16 ../info2.php:16 ../smplayer.php:25
 msgid "Plays and downloads Youtube&trade; videos"
-msgstr ""
+msgstr "YouTube&trade; 動画の再生/ダウンロード"
 
 #: ../info.php:17 ../info2.php:17 ../smplayer.php:26
 msgid "Automatically search and download subtitles"
@@ -872,7 +875,7 @@ msgstr "シンプルで直感的に使えるインターフェイス"
 
 #: ../info.php:22 ../info2.php:22
 msgid "Multi-platform. Available for Windows and Linux"
-msgstr ""
+msgstr "マルチプラットフォーム: Windows 用と Linux 用があります。"
 
 #: ../info.php:36 ../info2.php:36
 msgid "About SMPlayer"
@@ -884,16 +887,20 @@ msgid ""
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
+"SMPlayer は、ほぼすべてのビデオ/オーディオフォーマットを再生できるコーデック"
+"を内臓した、オープンソースのフリーなメディアプレイヤーです。
 
 #: ../info.php:44 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
-msgstr ""
+msgstr "YouTube&trade; 動画の再生、検索、ダウンロードにも対応しています。"
 
 #: ../info.php:46
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
 msgstr ""
+"数々の受賞を誇る %1 を再生エンジンに採用し、ほぼすべてのビデオ/オーディオフォ"
+"ーマット (%2) を再生することができます。"
 
 #: ../info.php:48 ../info2.php:41
 msgid "see list"
@@ -901,7 +908,7 @@ msgstr "一覧"
 
 #: ../info.php:50
 msgid "Install SMPlayer and forget about codecs!"
-msgstr ""
+msgstr "SMPlayer をインストールして、コーデックのことなど忘れよう!"
 
 #: ../info.php:56
 msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
@@ -913,13 +920,15 @@ msgstr "もっとレビューを読む"
 
 #: ../info2.php:12
 msgid "Graphical User Interface (GUI) for MPlayer"
-msgstr ""
+msgstr "MPlayer のグラフィカルユーザーインターフェイス (GUI)"
 
 #: ../info2.php:39
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
 "which is capable of playing almost all known video and audio formats (%2)."
 msgstr ""
+"SMPlayer は、数々の受賞を誇り、ほぼすべてのビデオ/オーディオフォーマット (%"
+"2) の再生が可能な %1 のグラフィカルユーザーインターフェイス (GUI) です。"
 
 #: ../info2.php:43
 msgid ""
@@ -928,6 +937,8 @@ msgid ""
 "SMPlayer adds other features, like the possibility to search and download \n"
 "Youtube&trade; videos."
 msgstr ""
+"SMPlayer は MPlayer のあらゆるオプションのみならず、YouTube&trade; 動画の検"
+"索/ダウンロードなど他の機能も豊富に備えています。"
 
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1028,7 +1039,7 @@ msgstr "ツールバーの編集"
 
 #: ../smplayer.php:32
 msgid "Click here to download SMPlayer for free"
-msgstr ""
+msgstr "SMPlayer をダウンロードする (無料)"
 
 #: ../smplayer.php:45
 msgid "Main Features"
@@ -1040,6 +1051,8 @@ msgid ""
 "the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats."
 msgstr ""
+"数々の受賞を誇る %1 を再生エンジンに採用し、ほぼすべてのビデオ/オーディオフォ"
+"ーマットを再生することができます。"
 
 #: ../smplayer.php:64
 msgid "Other interesting features:"
@@ -1060,7 +1073,7 @@ msgstr ""
 
 #: ../smplayer.php:93
 msgid "Download SMPlayer for free"
-msgstr ""
+msgstr "SMPlayer をダウンロードする (無料)"
 
 #: ../smplayer.php:100
 msgid "Supported formats:"
