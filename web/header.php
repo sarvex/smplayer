@@ -10,13 +10,13 @@ function print_header($title) {
 <head>
 <?php
 if ($site != "berlios") {
-	$main_title = get_tr("Free Media Player with built-in codecs and Youtube&trade; support");
-	$description = "Free media player with built-in codecs that plays all formats ".
-                   "(avi, mp4, mkv, mov, mpeg...) and can play and download Youtube&trade; videos";
+	$main_title = get_tr("Free Media Player with built-in codecs and Youtube&trade; support for Windows and Linux");
+	$description = "Free media player with built-in codecs for Windows and Linux that plays all formats ".
+                   "(avi, mp4, mkv, mov, mpeg...) and can play and download Youtube videos";
 } else {
-	$main_title = get_tr("Graphical User Interface for MPlayer");
-	$description = "Graphical user interface (GUI) for MPlayer with many ".
-                   "additional features like the possibility to search and download Youtube&trade; videos.";
+	$main_title = get_tr("Graphical User Interface (GUI) for MPlayer");
+	$description = "Graphical user interface (GUI) for MPlayer, for Windows and Linux, with many ".
+                   "additional features like the possibility to search and download Youtube videos.";
 }
 if ($title != "") $main_title = $main_title ." - ". $title;
 echo "<title>$main_title</title>\n";
