@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header();
+print_header("UMPlayer");
 echo "<body>\n";
 print_menu(0);
 ?>

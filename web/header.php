@@ -2,22 +2,25 @@
 include_once("l10n.php");
 include_once("site.php");
 
-function print_header() {
+function print_header($title) {
 	global $tr_lang, $site;
 ?>
 <!DOCTYPE html>
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
-<?php 
+<?php
 if ($site != "berlios") {
-	echo "<title>". get_tr("Free Media Player with built-in codecs and Youtube&trade; support") ."</title>\n";
-	echo '<meta name="Description" content="Free media player with built-in codecs that can play and download Youtube&trade; videos">';
-	echo "\n";
+	$main_title = get_tr("Free Media Player with built-in codecs and Youtube&trade; support");
+	$description = "Free media player with built-in codecs that plays all formats ".
+                   "(avi, mp4, mkv, mov, mpeg...) and can play and download Youtube&trade; videos";
 } else {
-	echo "<title>". get_tr("Graphical User Interface for MPlayer") ."</title>\n";
-	echo '<meta name="Description" content="Get the best graphical user interface for MPlayer">';
-	echo "\n";
+	$main_title = get_tr("Graphical User Interface for MPlayer");
+	$description = "Graphical user interface (GUI) for MPlayer with many ".
+                   "additional features like the possibility to search and download Youtube&trade; videos.";
 }
+if ($title != "") $main_title = $main_title ." - ". $title;
+echo "<title>$main_title</title>\n";
+echo "<meta name=\"Description\" content=\"$description\">\n";
 echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; 
 ?>
 <meta charset="utf-8">

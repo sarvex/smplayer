@@ -2,7 +2,7 @@
 include_once("site.php");
 include_once("header.php");
 include_once("download_links.php");
-print_header();
+print_header("");
 echo "<body>\n";
 print_menu(1);
 ?>
