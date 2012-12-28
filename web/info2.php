@@ -25,7 +25,7 @@
 			?>
 		</div>
 		<div class="span4">
-		<?php echo '<a href="screenshots.php?tr_lang='. $tr_lang .'"><img src="images/twisted2.png"></a>'; ?>
+		<?php echo '<a href="screenshots.php?tr_lang='. $tr_lang .'"><img src="images/twisted2.png" alt="'. get_tr("See some screenshots"). '"></a>'; ?>
 		</div>
 	</div>
 </div>
