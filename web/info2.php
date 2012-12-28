@@ -9,7 +9,7 @@
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>";
-			tr("Graphical User Interface (GUI) for MPlayer");
+			tr("Graphical Frontend for MPlayer with extra features");
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
@@ -42,7 +42,9 @@ which is capable of playing almost all known video and audio formats (%2).", "MP
 echo " ";
 tr("Apart from providing access for the most common and useful options in MPlayer, 
 SMPlayer adds other features, like the possibility to search and download 
-Youtube&trade; videos.");
+Youtube&trade; videos, search for subtitles and a skinnable interface.");
+echo " ";
+tr("SMPlayer is multi-platform and runs on Windows and Linux.");
 echo "<p>";
 include("features.php");
 

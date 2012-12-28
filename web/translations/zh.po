@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-27 21:55+0100\n"
+"POT-Creation-Date: 2012-12-28 23:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../contact.php:9 ../footer.php:40
+#: ../contact.php:3 ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr "联系我们"
 
@@ -138,7 +138,7 @@ msgstr "在 Twitter 上跟随我们"
 msgid "Mirrors"
 msgstr "镜像"
 
-#: ../downloads.php:15 ../header.php:170 ../umplayer.php:42
+#: ../downloads.php:3 ../downloads.php:15 ../header.php:174 ../umplayer.php:42
 msgid "Downloads"
 msgstr "下载"
 
@@ -317,10 +317,14 @@ msgstr ""
 "您可以从控制面板或使用 Windows <i>开始</i> 菜单中 SMPlayer 菜单的 "
 "<i>Uninstall SMPlayer</i> 选项轻松地卸载 SMPlayer."
 
-#: ../downloads.php:213 ../info.php:85 ../info2.php:77 ../smtube.php:17
+#: ../downloads.php:213 ../info.php:86 ../info2.php:79 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
 msgstr "关闭"
+
+#: ../faq.php:3 ../footer.php:16
+msgid "FAQ"
+msgstr "FAQ"
 
 #: ../faq.php:11
 msgid "Frequently Asked Questions"
@@ -732,7 +736,8 @@ msgstr "兼容 Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
 msgid "Other links:"
 msgstr "其他链接:"
 
-#: ../footer.php:14 ../latest.php:10 ../smtube.php:57 ../umplayer.php:95
+#: ../footer.php:14 ../latest.php:4 ../latest.php:10 ../smtube.php:57
+#: ../umplayer.php:95
 msgid "Latest changes"
 msgstr "最近更改"
 
@@ -740,11 +745,7 @@ msgstr "最近更改"
 msgid "Forum"
 msgstr "论坛"
 
-#: ../footer.php:16
-msgid "FAQ"
-msgstr "FAQ"
-
-#: ../footer.php:17 ../presskit.php:9
+#: ../footer.php:17 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "新闻资料"
 
@@ -768,7 +769,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr "适用于 Windows 的 MPlayer 编译"
 
-#: ../formats.php:11 ../info.php:79 ../info2.php:71
+#: ../formats.php:3 ../formats.php:11 ../info.php:80 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr "格式和编解码器"
 
@@ -805,23 +806,23 @@ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 msgstr "带有内置编解码器和 YouTube&trade; 支持的免费媒体播放器"
 
 #: ../header.php:17
-msgid "Graphical User Interface for MPlayer"
-msgstr "适用于 MPlayer 的图形用户界面"
+msgid "Graphical User Interface (GUI) for MPlayer"
+msgstr "适用于 MPlayer 的图形用户界面 (GUI)"
 
-#: ../header.php:167
+#: ../header.php:171
 msgid "Main"
 msgstr "主页"
 
-#: ../header.php:168 ../presskit.php:22 ../screenshots.php:14
-#: ../smplayer.php:112
+#: ../header.php:172 ../presskit.php:22 ../screenshots.php:3
+#: ../screenshots.php:14 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "屏幕截图"
 
-#: ../header.php:169 ../reviews.php:9
+#: ../header.php:173 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr "评论"
 
-#: ../header.php:176
+#: ../header.php:180
 msgid "Language"
 msgstr "语言"
 
@@ -865,6 +866,10 @@ msgstr "简单直观的界面"
 msgid "Multi-platform. Available for Windows and Linux"
 msgstr "多平台. 可用于 Windows 和 Linux"
 
+#: ../info.php:28 ../info2.php:28
+msgid "See some screenshots"
+msgstr ""
+
 #: ../info.php:36 ../info2.php:36
 msgid "About SMPlayer"
 msgstr "关于 SMPlayer"
@@ -898,13 +903,17 @@ msgstr "见列表"
 msgid "Install SMPlayer and forget about codecs!"
 msgstr "安装 SMPlayer, 然后忘掉编解码器!"
 
-#: ../info.php:70 ../info2.php:62 ../smplayer.php:132
+#: ../info.php:51 ../info2.php:47
+msgid "SMPlayer is multi-platform and runs on Windows and Linux."
+msgstr ""
+
+#: ../info.php:71 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr "点击这里阅读更多评论"
 
 #: ../info2.php:12
-msgid "Graphical User Interface (GUI) for MPlayer"
-msgstr "适用于 MPlayer 的图形用户界面 (GUI)"
+msgid "Graphical Frontend for MPlayer with extra features"
+msgstr ""
 
 #: ../info2.php:39
 msgid ""
@@ -919,11 +928,8 @@ msgid ""
 "Apart from providing access for the most common and useful options in "
 "MPlayer, \n"
 "SMPlayer adds other features, like the possibility to search and download \n"
-"Youtube&trade; videos."
+"Youtube&trade; videos, search for subtitles and a skinnable interface."
 msgstr ""
-"除了提供访问 MPlayer 中最常见和最有用的选项,\n"
-"SMPlayer 还增加了其他的功能, 像搜索和下载\n"
-"YouTube&trade; 视频的可能性."
 
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1167,16 +1173,30 @@ msgstr "UMPlayer 屏幕截图"
 msgid "Users Reviews"
 msgstr "用户评论"
 
-#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-#~ msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
-
-#~ msgid "Other interesting features:"
-#~ msgstr "其他有趣的功能:"
+#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
 
 #~ msgid ""
 #~ "A Youtube browser is included, which allows to easily download Youtube "
 #~ "videos."
 #~ msgstr "一个 YouTube 浏览器已包含在内, 这将允许轻松地下载 YouTube 视频."
 
-#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-#~ msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
+#~ msgid "Other interesting features:"
+#~ msgstr "其他有趣的功能:"
+
+#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#~ msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
+
+#~ msgid ""
+#~ "Apart from providing access for the most common and useful options in "
+#~ "MPlayer, \n"
+#~ "SMPlayer adds other features, like the possibility to search and "
+#~ "download \n"
+#~ "Youtube&trade; videos."
+#~ msgstr ""
+#~ "除了提供访问 MPlayer 中最常见和最有用的选项,\n"
+#~ "SMPlayer 还增加了其他的功能, 像搜索和下载\n"
+#~ "YouTube&trade; 视频的可能性."
+
+#~ msgid "Graphical User Interface for MPlayer"
+#~ msgstr "适用于 MPlayer 的图形用户界面"

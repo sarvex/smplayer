@@ -47,7 +47,8 @@ tr("It uses the award-winning %1 as playback engine which is capable of
 playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
 echo " ";
-if (1) tr("Install SMPlayer and forget about codecs!");
+if (0) tr("Install SMPlayer and forget about codecs!");
+tr("SMPlayer is multi-platform and runs on Windows and Linux.");
 echo "<p>";
 include("features.php");
 

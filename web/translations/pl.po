@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-27 21:55+0100\n"
+"POT-Creation-Date: 2012-12-28 23:53+0100\n"
 "PO-Revision-Date: 2008-10-02 10:55+0200\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../contact.php:9 ../footer.php:40
+#: ../contact.php:3 ../contact.php:9 ../footer.php:40
 msgid "Contact us"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Mirrors"
 msgstr ""
 
-#: ../downloads.php:15 ../header.php:170 ../umplayer.php:42
+#: ../downloads.php:3 ../downloads.php:15 ../header.php:174 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Pobieranie"
 
@@ -303,9 +303,13 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:213 ../info.php:85 ../info2.php:77 ../smtube.php:17
+#: ../downloads.php:213 ../info.php:86 ../info2.php:79 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
+msgstr ""
+
+#: ../faq.php:3 ../footer.php:16
+msgid "FAQ"
 msgstr ""
 
 #: ../faq.php:11
@@ -648,7 +652,8 @@ msgstr ""
 msgid "Other links:"
 msgstr ""
 
-#: ../footer.php:14 ../latest.php:10 ../smtube.php:57 ../umplayer.php:95
+#: ../footer.php:14 ../latest.php:4 ../latest.php:10 ../smtube.php:57
+#: ../umplayer.php:95
 msgid "Latest changes"
 msgstr ""
 
@@ -656,11 +661,7 @@ msgstr ""
 msgid "Forum"
 msgstr "Forum"
 
-#: ../footer.php:16
-msgid "FAQ"
-msgstr ""
-
-#: ../footer.php:17 ../presskit.php:9
+#: ../footer.php:17 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr ""
 
@@ -684,7 +685,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr ""
 
-#: ../formats.php:11 ../info.php:79 ../info2.php:71
+#: ../formats.php:3 ../formats.php:11 ../info.php:80 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr ""
 
@@ -719,23 +720,23 @@ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
 #: ../header.php:17
-msgid "Graphical User Interface for MPlayer"
+msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr ""
 
-#: ../header.php:167
+#: ../header.php:171
 msgid "Main"
 msgstr "Główna"
 
-#: ../header.php:168 ../presskit.php:22 ../screenshots.php:14
-#: ../smplayer.php:112
+#: ../header.php:172 ../presskit.php:22 ../screenshots.php:3
+#: ../screenshots.php:14 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Zrzuty ekranu"
 
-#: ../header.php:169 ../reviews.php:9
+#: ../header.php:173 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr ""
 
-#: ../header.php:176
+#: ../header.php:180
 msgid "Language"
 msgstr ""
 
@@ -779,6 +780,10 @@ msgstr ""
 msgid "Multi-platform. Available for Windows and Linux"
 msgstr ""
 
+#: ../info.php:28 ../info2.php:28
+msgid "See some screenshots"
+msgstr ""
+
 #: ../info.php:36 ../info2.php:36
 msgid "About SMPlayer"
 msgstr ""
@@ -808,12 +813,16 @@ msgstr ""
 msgid "Install SMPlayer and forget about codecs!"
 msgstr ""
 
-#: ../info.php:70 ../info2.php:62 ../smplayer.php:132
+#: ../info.php:51 ../info2.php:47
+msgid "SMPlayer is multi-platform and runs on Windows and Linux."
+msgstr ""
+
+#: ../info.php:71 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr ""
 
 #: ../info2.php:12
-msgid "Graphical User Interface (GUI) for MPlayer"
+msgid "Graphical Frontend for MPlayer with extra features"
 msgstr ""
 
 #: ../info2.php:39
@@ -827,7 +836,7 @@ msgid ""
 "Apart from providing access for the most common and useful options in "
 "MPlayer, \n"
 "SMPlayer adds other features, like the possibility to search and download \n"
-"Youtube&trade; videos."
+"Youtube&trade; videos, search for subtitles and a skinnable interface."
 msgstr ""
 
 #: ../latest.php:11
@@ -1058,11 +1067,11 @@ msgstr ""
 msgid "Users Reviews"
 msgstr ""
 
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer - Pobieranie"
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Główne informacje"
 
 #~ msgid "SMPlayer - Screenshots"
 #~ msgstr "SMPlayer - Zrzuty ekranu"
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Główne informacje"
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer - Pobieranie"
