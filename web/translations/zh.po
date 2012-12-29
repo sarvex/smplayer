@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-28 23:53+0100\n"
+"POT-Creation-Date: 2012-12-29 01:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../contact.php:3 ../contact.php:9 ../footer.php:40
+#: ../contact.php:3 ../contact.php:9 ../footer.php:41
 msgid "Contact us"
 msgstr "联系我们"
 
@@ -130,7 +130,7 @@ msgstr "立陶宛语"
 msgid "Simplified chinese"
 msgstr "简体中文"
 
-#: ../contact.php:64 ../footer.php:45
+#: ../contact.php:64 ../footer.php:46
 msgid "Follow us on Twitter"
 msgstr "在 Twitter 上跟随我们"
 
@@ -757,15 +757,19 @@ msgstr "Bug 跟踪"
 msgid "Feature Requests"
 msgstr "功能需求"
 
-#: ../footer.php:35 ../footer.php:37
+#: ../footer.php:27
+msgid "Blog"
+msgstr ""
+
+#: ../footer.php:36 ../footer.php:38
 msgid "Mirror"
 msgstr "镜像"
 
-#: ../footer.php:41
+#: ../footer.php:42
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "MPlayer builds for Windows"
 msgstr "适用于 Windows 的 MPlayer 编译"
 
@@ -1173,19 +1177,8 @@ msgstr "UMPlayer 屏幕截图"
 msgid "Users Reviews"
 msgstr "用户评论"
 
-#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-#~ msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
-
-#~ msgid ""
-#~ "A Youtube browser is included, which allows to easily download Youtube "
-#~ "videos."
-#~ msgstr "一个 YouTube 浏览器已包含在内, 这将允许轻松地下载 YouTube 视频."
-
-#~ msgid "Other interesting features:"
-#~ msgstr "其他有趣的功能:"
-
-#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-#~ msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
+#~ msgid "Graphical User Interface for MPlayer"
+#~ msgstr "适用于 MPlayer 的图形用户界面"
 
 #~ msgid ""
 #~ "Apart from providing access for the most common and useful options in "
@@ -1198,5 +1191,16 @@ msgstr "用户评论"
 #~ "SMPlayer 还增加了其他的功能, 像搜索和下载\n"
 #~ "YouTube&trade; 视频的可能性."
 
-#~ msgid "Graphical User Interface for MPlayer"
-#~ msgstr "适用于 MPlayer 的图形用户界面"
+#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#~ msgstr "<a href=%1>在这里</a>下载最新版本的 SMPlayer"
+
+#~ msgid "Other interesting features:"
+#~ msgstr "其他有趣的功能:"
+
+#~ msgid ""
+#~ "A Youtube browser is included, which allows to easily download Youtube "
+#~ "videos."
+#~ msgstr "一个 YouTube 浏览器已包含在内, 这将允许轻松地下载 YouTube 视频."
+
+#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "自由和开源. SMPlayer 遵循 <b>GPL</b> 许可证."
