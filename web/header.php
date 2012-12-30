@@ -9,7 +9,7 @@ function print_header($title) {
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
 <?php
-if ($site != "berlios") {
+if (0) {
 	$main_title = get_tr("Free Media Player with built-in codecs and Youtube&trade; support");
 	$description = "Free media player with built-in codecs that plays all formats ".
                    "and can play and download Youtube videos";

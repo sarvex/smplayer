@@ -9,7 +9,7 @@
 			<h1>SMPlayer</h1>
 			<?php
 			echo "<p>";
-			tr("Graphical Frontend for MPlayer with extra features");
+			if (0) tr("Graphical Frontend for MPlayer with extra features"); else tr("Free Media Player with Youtube&trade; support");
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";

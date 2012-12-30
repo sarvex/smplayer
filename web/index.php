@@ -10,7 +10,7 @@ print_menu(1);
 <div class="container-fluid">
 
 <?php
-if ($site != "berlios")
+if (0)
 	include("info.php");
 else
 	include("info2.php");
