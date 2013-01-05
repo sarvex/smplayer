@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-29 01:57+0100\n"
+"POT-Creation-Date: 2013-01-05 01:47+0100\n"
 "PO-Revision-Date: 2008-10-02 10:55+0200\n"
 "Last-Translator: Jarek <ajep9691@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Mirrors"
 msgstr ""
 
-#: ../downloads.php:3 ../downloads.php:15 ../header.php:174 ../umplayer.php:42
+#: ../downloads.php:3 ../downloads.php:15 ../header.php:173 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Pobieranie"
 
@@ -303,7 +303,7 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:213 ../info.php:86 ../info2.php:79 ../smtube.php:17
+#: ../downloads.php:213 ../info.php:90 ../info2.php:79 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
 msgstr ""
@@ -689,7 +689,7 @@ msgstr "Wiki"
 msgid "MPlayer builds for Windows"
 msgstr ""
 
-#: ../formats.php:3 ../formats.php:11 ../info.php:80 ../info2.php:73
+#: ../formats.php:3 ../formats.php:11 ../info.php:84 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr ""
 
@@ -720,108 +720,111 @@ msgid "most important audio codecs:"
 msgstr ""
 
 #: ../header.php:13
-msgid "Free Media Player with built-in codecs and Youtube&trade; support"
+msgid ""
+"Media Player for Windows and Linux with built-in codecs and Youtube&trade; "
+"support"
 msgstr ""
 
-#: ../header.php:17
+#: ../header.php:16
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr ""
 
-#: ../header.php:171
+#: ../header.php:170
 msgid "Main"
 msgstr "Główna"
 
-#: ../header.php:172 ../presskit.php:22 ../screenshots.php:3
+#: ../header.php:171 ../presskit.php:22 ../screenshots.php:3
 #: ../screenshots.php:14 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Zrzuty ekranu"
 
-#: ../header.php:173 ../reviews.php:3 ../reviews.php:9
+#: ../header.php:172 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr ""
 
-#: ../header.php:180
-msgid "Language"
-msgstr ""
-
-#: ../info.php:12 ../smplayer.php:21
+#: ../info.php:12 ../info2.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
 msgstr ""
 
-#: ../info.php:14 ../info2.php:14 ../smplayer.php:23
+#: ../info.php:15
+msgid "Graphical Frontend for MPlayer"
+msgstr ""
+
+#: ../info.php:18 ../info2.php:14 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
 msgstr ""
 
-#: ../info.php:15 ../info2.php:15 ../smplayer.php:24
+#: ../info.php:19 ../info2.php:15 ../smplayer.php:24
 msgid "Built-in codecs. No codec packs needed"
 msgstr ""
 
-#: ../info.php:16 ../info2.php:16 ../smplayer.php:25
+#: ../info.php:20 ../info2.php:16 ../smplayer.php:25
 msgid "Plays and downloads Youtube&trade; videos"
 msgstr ""
 
-#: ../info.php:17 ../info2.php:17 ../smplayer.php:26
+#: ../info.php:21 ../info2.php:17 ../smplayer.php:26
 msgid "Automatically search and download subtitles"
 msgstr ""
 
-#: ../info.php:18 ../info2.php:18 ../smplayer.php:27
+#: ../info.php:22 ../info2.php:18 ../smplayer.php:27
 msgid "Resumes playback"
 msgstr ""
 
-#: ../info.php:19 ../info2.php:19 ../screenshots.php:81 ../smplayer.php:28
+#: ../info.php:23 ../info2.php:19 ../screenshots.php:81 ../smplayer.php:28
 msgid "Skin support"
 msgstr ""
 
-#: ../info.php:20 ../info2.php:20 ../smplayer.php:29
+#: ../info.php:24 ../info2.php:20 ../smplayer.php:29
 msgid "Many audio and video filters included"
 msgstr ""
 
-#: ../info.php:21 ../info2.php:21 ../smplayer.php:30
+#: ../info.php:25 ../info2.php:21 ../smplayer.php:30
 msgid "Simple and intuitive interface"
 msgstr ""
 
-#: ../info.php:22 ../info2.php:22
+#: ../info.php:26 ../info2.php:22
 msgid "Multi-platform. Available for Windows and Linux"
 msgstr ""
 
-#: ../info.php:28 ../info2.php:28
+#: ../info.php:32 ../info2.php:28
 msgid "See some screenshots"
 msgstr ""
 
-#: ../info.php:36 ../info2.php:36
+#: ../info.php:40 ../info2.php:36
 msgid "About SMPlayer"
 msgstr ""
 
-#: ../info.php:41 ../smplayer.php:48
+#: ../info.php:45
 msgid ""
-"SMPlayer is a free open source media player, with built-in codecs, that\n"
+"SMPlayer is a free open source media player for Windows and Linux with built-"
+"in codecs that\n"
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
 
-#: ../info.php:44 ../smplayer.php:51
+#: ../info.php:48 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
 msgstr ""
 
-#: ../info.php:46
+#: ../info.php:50
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
 msgstr ""
 
-#: ../info.php:48 ../info2.php:41
+#: ../info.php:52 ../info2.php:41
 msgid "see list"
 msgstr ""
 
-#: ../info.php:50
+#: ../info.php:54
 msgid "Install SMPlayer and forget about codecs!"
 msgstr ""
 
-#: ../info.php:51 ../info2.php:47
+#: ../info.php:55 ../info2.php:47
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr ""
 
-#: ../info.php:71 ../info2.php:64 ../smplayer.php:132
+#: ../info.php:75 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr ""
 
@@ -943,6 +946,13 @@ msgstr ""
 
 #: ../smplayer.php:45
 msgid "Main Features"
+msgstr ""
+
+#: ../smplayer.php:48
+msgid ""
+"SMPlayer is a free open source media player, with built-in codecs, that\n"
+"can play virtually all video and audio formats. It doesn't need any external "
+"codecs."
 msgstr ""
 
 #: ../smplayer.php:53
@@ -1071,11 +1081,11 @@ msgstr ""
 msgid "Users Reviews"
 msgstr ""
 
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer - Pobieranie"
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Główne informacje"
 
 #~ msgid "SMPlayer - Screenshots"
 #~ msgstr "SMPlayer - Zrzuty ekranu"
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Główne informacje"
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer - Pobieranie"
