@@ -10,7 +10,7 @@ print_menu(1);
 <div class="container-fluid">
 
 <?php
-if (0)
+if (1)
 	include("info.php");
 else
 	include("info2.php");

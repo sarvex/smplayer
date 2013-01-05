@@ -10,6 +10,10 @@
 			<?php
 			echo "<p>";
 			tr("Free Media Player with Youtube&trade; support");
+			if (0) {
+			echo "<br>";
+			tr("Graphical Frontend for MPlayer");
+			}
 			echo "<p class=\"second\">\n";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
 			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
@@ -38,7 +42,7 @@
 
 
 echo "<p>";
-tr("SMPlayer is a free open source media player, with built-in codecs, that
+tr("SMPlayer is a free open source media player for Windows and Linux with built-in codecs that
 can play virtually all video and audio formats. It doesn't need any external codecs.");
 echo " ";
 tr("SMPlayer can also play, search and download Youtube&trade; videos.");
@@ -48,7 +52,7 @@ playing almost all known video and audio formats (%2).", "MPlayer",
 "<a data-toggle=\"modal\" href=\"#formats\">" .get_tr("see list") ."</a>");
 echo " ";
 if (0) tr("Install SMPlayer and forget about codecs!");
-tr("SMPlayer is multi-platform and runs on Windows and Linux.");
+if (0) tr("SMPlayer is multi-platform and runs on Windows and Linux.");
 echo "<p>";
 include("features.php");
 

@@ -9,10 +9,9 @@ function print_header($title) {
 <?php echo "<html lang=\"$tr_lang\"\n";?>
 <head>
 <?php
-if (0) {
-	$main_title = get_tr("Free Media Player with built-in codecs and Youtube&trade; support");
-	$description = "Free media player with built-in codecs that plays all formats ".
-                   "and can play and download Youtube videos";
+if (1) {
+	$main_title = get_tr("Media Player for Windows and Linux with built-in codecs and Youtube&trade; support");
+	$description = "Free media player for Windows and Linux with built-in codecs that can play and download Youtube videos";
 } else {
 	$main_title = get_tr("Graphical User Interface (GUI) for MPlayer");
 	$description = "Graphical user interface (GUI) for MPlayer, for Windows and Linux, with many ".
