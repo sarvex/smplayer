@@ -24,7 +24,7 @@
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
 <li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
 <!-- <li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li> -->
-<li><a href="http://smplayerblog.wordpress.com"><?php tr("Blog"); ?></a></li>
+<li><a href="http://smplayer.sourceforge.net/blog/"><?php tr("Blog"); ?></a></li>
 </ul>
 </td>
 
