@@ -8,7 +8,6 @@ print_menu(2);
 <div class="container-fluid">
 
 <?php 
-include_once("scripts.php");
 include("gallery.php");
 
 echo "<h1>". get_tr("Screenshots") ."</h1>";
@@ -93,6 +92,7 @@ show_video('<iframe width="384" height="288" src="http://www.youtube.com/embed/F
 <!-- begin footer -->
 <?php
 include("footer.php");
+include_once("scripts_gal.php"); 
 ?>
 <!-- end footer -->
 

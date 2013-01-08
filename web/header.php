@@ -26,75 +26,13 @@ echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />
 <meta charset="utf-8">
 <meta name="Keywords" content="video player,media player,multimedia player,best free player,bestfreeplayer,smplayer,mplayer,mplayer2,umplayer,multimedia,player,youtube,player download,audio player,video,DVD,Windows,Linux,free,open source,free software,mkv,mp4,matroska,xvid,divx,mpeg,mpeg2,mpeg4,h264,x264">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<style type="text/css">
-	body {
-		padding-top: 60px;
-		padding-bottom: 40px;
-	}
-	table th,
-	table td {
-		padding: 8px;
-		line-height: 20px;
-		text-align: left;
-		vertical-align: top;
-		/* border-top: 1px solid #dddddd; */
-	}
-	.hero-unit {
-		padding: 20px;
-		margin-bottom: 10px;
-		background-color: #eeeeee;
-		background-image:url('images/background.jpg');
-		background-size: 100%;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		border-radius: 6px;
-	}
-	.hero-unit h1 {
-		margin-bottom: 0;
-		font-size: 50px;
-		line-height: 1;
-		letter-spacing: -1px;
-		color: white;
-	}
-	.hero-unit p {
-		font-size: 18px;
-		font-weight: 200;
-		line-height: 30px;
-		color: white;
-	}
-	.hero-unit ul {
-		font-size: 12px;
-		color: white;
-	}
-	.hero-unit p.second {
-		font-size: 15px;
-		font-weight: 200;
-		line-height: 20px;
-		color: white;
-	}
-	footer {
-		background: #232323;
-		/*background: #eaeaea;*/
-		border-top: 0;
-	}
-	footer h4 {
-		color: #777;
-		line-height: 0px;
-	}
-	footer p {
-		color: #777;
-	}
-	footer a {
-		color: #fff;
-	}
-</style>
 
-<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+<link href="mystyle.css" rel="stylesheet">
 <!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<link rel="stylesheet" href="bootstrap/css/bootstrap-image-gallery.min.css">
 
 <link rel="icon" type="image/png" href="images/icons/smplayer_icon16.png">
 <?php include_once("analytics.php"); ?>
