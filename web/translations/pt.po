@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-05 01:47+0100\n"
+"POT-Creation-Date: 2013-01-08 03:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
@@ -341,15 +341,20 @@ msgstr "Fechar"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../faq.php:11
+#. Q. = Initial for "Question"
+#: ../faq.php:15
+msgid "Q."
+msgstr ""
+
+#: ../faq.php:44
 msgid "Frequently Asked Questions"
 msgstr "Perguntas frequentes"
 
-#: ../faq.php:14
+#: ../faq.php:49
 msgid "How can I download subtitles from opensubtitles.org?"
 msgstr "Como é que posso receber as legendas do opensubtitles.org?"
 
-#: ../faq.php:18
+#: ../faq.php:50
 msgid ""
 "It's very easy. Just open a video, and then select the option \"Find\n"
 "subtitles on opensubtitles.org\" within the Subtitles menu. A new window\n"
@@ -364,11 +369,11 @@ msgstr ""
 "transferido\n"
 "e aparecerá na janela do vídeo."
 
-#: ../faq.php:26
+#: ../faq.php:56
 msgid "The video equalizer doesn't work, why?"
 msgstr "O equalizador de vídeo não funciona. Porquê?"
 
-#: ../faq.php:30
+#: ../faq.php:57
 msgid ""
 "With some cards or video drivers the hardware video \n"
 "equalizer may not work. Go to Preferences -> General -> Video \n"
@@ -378,11 +383,11 @@ msgstr ""
 "o equalizador pode não funcionar. Para o ativar, aceda a\n"
 "Preferências -> Geral -> Vídeo."
 
-#: ../faq.php:36
+#: ../faq.php:61
 msgid "DVD menus, where are they?"
 msgstr "Menus DVD, o que são?"
 
-#: ../faq.php:40
+#: ../faq.php:62
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
@@ -390,11 +395,11 @@ msgstr ""
 "Aceda a Preferências -> Unidades e assinale a opção\n"
 "\"Ativar menus DVD (Experimental)\" e defina a unidade DVD."
 
-#: ../faq.php:45
+#: ../faq.php:65
 msgid "How can I download a Youtube video?"
 msgstr "Como posso transferir um vídeo YouTube?"
 
-#: ../faq.php:49
+#: ../faq.php:66
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
@@ -402,11 +407,11 @@ msgstr ""
 "Clique com o botão direito do rato no explorador Youtube e escolha\n"
 "a opção \"Gravar vídeo\"."
 
-#: ../faq.php:54
+#: ../faq.php:69
 msgid "How can I change the skin?"
 msgstr "Como posso alterar o tema?"
 
-#: ../faq.php:58
+#: ../faq.php:70
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
@@ -414,16 +419,16 @@ msgstr ""
 "Aceda a Preferências -> Interface, selecione a opção\n"
 "\"Interface com tema\"  e escolha a que mais gostar."
 
-#: ../faq.php:61
+#: ../faq.php:72
 msgid "In linux you need to install the package smplayer-skins."
 msgstr "Em sistemas linux tem que instalar o pacote smplayer-skins."
 
-#: ../faq.php:65
+#: ../faq.php:74
 msgid "Where is the configuration stored? Can I reset the settings?"
 msgstr ""
 "Em que local são gravadas as configurações? Posso reiniciar as configurações?"
 
-#: ../faq.php:69
+#: ../faq.php:75
 msgid ""
 "The easiest way to find the configuration files of SMPlayer is by\n"
 "selecting the option \"Open configuration folder\" in the Help menu. If\n"
@@ -437,11 +442,11 @@ msgstr ""
 "as definições originais, elimine o ficheiro smplayer.ini (certifique-se\n"
 "que o smplayer não está a ser executado ao eliminar o ficheiro)."
 
-#: ../faq.php:77
+#: ../faq.php:81
 msgid "What's the difference between SMPlayer and MPlayer?"
 msgstr "Existe alguma diferença entre o smplayer e o mplayer?"
 
-#: ../faq.php:81
+#: ../faq.php:82
 msgid ""
 "They are two different applications that work together. SMPlayer\n"
 "actually is not a media player... MPlayer is. MPlayer is a command-line\n"
@@ -462,11 +467,11 @@ msgstr ""
 "instalação\n"
 "para Windows já possui uma compilação do mplayer pronta a utilizar."
 
-#: ../faq.php:92
+#: ../faq.php:91
 msgid "What does the \"ps\" mean in some of the installers name?"
 msgstr "O que significa a sigla \"ps\" no nome do instalador?"
 
-#: ../faq.php:96
+#: ../faq.php:92
 msgid ""
 "It means that the installer includes a \"promotional screen\" from a\n"
 "sponsor. This screen offers the user the possibility to install a third\n"
@@ -484,7 +489,7 @@ msgstr ""
 "tarde,\n"
 "verificar que não lhe interessa pode sempre desinstalar a aplicação."
 
-#: ../faq.php:103
+#: ../faq.php:98
 msgid ""
 "If you decide to install it, the sponsor will send a few cents to\n"
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
@@ -494,14 +499,14 @@ msgstr ""
 "donativo ao smplayer. Desta forma, não precisamos de solicitar donativos\n"
 "aos utilizadores. Pode encontrar mais informações em %1."
 
-#: ../faq.php:108
+#: ../faq.php:102
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
 msgstr ""
 "Se não quiser ver este ecrã, transfira o instalador sem a sigla \"ps\"."
 
-#: ../faq.php:114
+#: ../faq.php:104
 msgid ""
 "The current time of the movie appears in the up left corner of the image, "
 "how can I hide it?"
@@ -509,15 +514,15 @@ msgstr ""
 "Como é que posso ocultar a duração do vídeo que aparece na canto superior "
 "esquerdo da imagem?"
 
-#: ../faq.php:118
+#: ../faq.php:105
 msgid "Options -> OSD -> Subtitles only."
 msgstr "Aceda a Opções -> OSD -> Só legendas."
 
-#: ../faq.php:122
+#: ../faq.php:112
 msgid "How can I take advantage of all my CPU cores?"
 msgstr "Como é que posso obter vantagens de todos os CPUs?"
 
-#: ../faq.php:126
+#: ../faq.php:113
 msgid ""
 "Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt\n"
 "in Linux. MPlayer2 automatically uses all cores, but MPlayer requires\n"
@@ -536,7 +541,7 @@ msgstr ""
 "CPUs (e processos no caso dos processadores Intel) que o processador tem.\n"
 "Se definir um valor superior não produz qualquer efeito."
 
-#: ../faq.php:136
+#: ../faq.php:121
 msgid ""
 "I want the subtitles to be displayed on the black border instead of the "
 "image, how can I do it?"
@@ -544,17 +549,17 @@ msgstr ""
 "Eu quero que as legendas do vídeo sejam exibidas com contornos. Isto é "
 "possível?"
 
-#: ../faq.php:140
+#: ../faq.php:122
 msgid "Select the option \"Add black borders\" in the video filters menu."
 msgstr ""
 "No menu Vídeo, aceda aos filtros de vídeo e escolha a opção \"Adicionar "
 "contornos negros\"."
 
-#: ../faq.php:144
+#: ../faq.php:124
 msgid "Is UMPlayer related to SMPlayer?"
 msgstr "O umplayer está relacionado com o smplayer?"
 
-#: ../faq.php:148
+#: ../faq.php:125
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
 "new features, like new skins, and Youtube&trade; and SHOUTcast&trade; "
@@ -567,7 +572,7 @@ msgstr ""
 "No entanto, a maioria dessas funcionalidades já existem nas versões mais "
 "recentes do SMPlayer."
 
-#: ../faq.php:152
+#: ../faq.php:128
 msgid ""
 "The UMPlayer project seems dead (no updates since a lot of months) and\n"
 "version 0.98 can't play Youtube videos anymore, so if you are a user of\n"
@@ -582,20 +587,11 @@ msgstr ""
 "funcionalidades\n"
 "introduzidas pelo umplayer e acrescentou outras que não existem no umplayer."
 
-#: ../faq.php:157
-msgid ""
-"Anyway, if you still prefer to use UMPlayer we released a new version\n"
-"with the Youtube problem fixed: %1."
-msgstr ""
-"No entanto, se quiser continuar a utiliar o umplayer, a equipa do smplayer\n"
-"disponibilizou uma versão que corrige os problemas de reprodução no YouTube: "
-"%1."
-
-#: ../faq.php:163
+#: ../faq.php:133
 msgid "What's \"smtube\"?"
 msgstr "O que é o smtube?"
 
-#: ../faq.php:167
+#: ../faq.php:134
 msgid ""
 "It's the Youtube browser that was first included in UMPlayer, and we\n"
 "adapted it for SMPlayer. We made it an independent application, and on\n"
@@ -607,7 +603,7 @@ msgstr ""
 "independente e em sistemas Linux pode ser utilizado com outros\n"
 "reprodutores que não o smplayer."
 
-#: ../faq.php:174
+#: ../faq.php:139
 msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
@@ -615,7 +611,7 @@ msgstr ""
 "Porque é que no Windows Vista ou qualquer versão mais recente, sempre que "
 "vejo vídeo o serviço Aero está inativo?"
 
-#: ../faq.php:178
+#: ../faq.php:140
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
@@ -625,7 +621,7 @@ msgstr ""
 "Nas Preferências -> Geral -> Vídeo, pode alterar o controlador para gl, gl2 "
 "ou direct3d."
 
-#: ../faq.php:183
+#: ../faq.php:143
 msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
@@ -633,7 +629,7 @@ msgstr ""
 "(Windows) Porque é que não consigo abrir os ficheiros com caracteres "
 "especiais/diferentes de inglês?"
 
-#: ../faq.php:187
+#: ../faq.php:144
 msgid ""
 "If you are unable to open files with special or non-English characters,\n"
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
@@ -642,12 +638,12 @@ msgstr ""
 "Se tal acontecer, aceda a Opções -> Preferências -> Avançado\n"
 "e ative a opção Enviar nomes curtos (8+3) para o mplayer."
 
-#: ../faq.php:193
+#: ../faq.php:148
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr ""
 "Porque é que em algumas opções de menu,o ecrã de reprodução fica vazio?"
 
-#: ../faq.php:197
+#: ../faq.php:149
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
@@ -1246,22 +1242,15 @@ msgstr "Imagem do umplayer"
 msgid "Users Reviews"
 msgstr "Críticas de utilizadores"
 
-#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+#~ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 #~ msgstr ""
-#~ "O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
+#~ "Reprodutor multimédia com codificadores nativos e suporte Youtube&trade;"
 
-#~ msgid ""
-#~ "A Youtube browser is included, which allows to easily download Youtube "
-#~ "videos."
-#~ msgstr ""
-#~ "A aplicação inclui um explorador para o YouTube, que permite a "
-#~ "visualização e transferência de vídeos."
+#~ msgid "Language"
+#~ msgstr "Idioma"
 
-#~ msgid "Other interesting features:"
-#~ msgstr "Outras funcionalidades:"
-
-#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-#~ msgstr "Transfira <a href=%1>aqui</a> a versão mais recente do smplayer"
+#~ msgid "Graphical User Interface for MPlayer"
+#~ msgstr "Interface gráfica para o mplayer"
 
 #~ msgid ""
 #~ "Apart from providing access for the most common and useful options in "
@@ -1275,12 +1264,28 @@ msgstr "Críticas de utilizadores"
 #~ "também disponibiliza a possibilidade de procurar e transferir legendas\n"
 #~ "e os vídeos Youtube&trade;."
 
-#~ msgid "Graphical User Interface for MPlayer"
-#~ msgstr "Interface gráfica para o mplayer"
+#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#~ msgstr "Transfira <a href=%1>aqui</a> a versão mais recente do smplayer"
 
-#~ msgid "Language"
-#~ msgstr "Idioma"
+#~ msgid "Other interesting features:"
+#~ msgstr "Outras funcionalidades:"
 
-#~ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
+#~ msgid ""
+#~ "A Youtube browser is included, which allows to easily download Youtube "
+#~ "videos."
 #~ msgstr ""
-#~ "Reprodutor multimédia com codificadores nativos e suporte Youtube&trade;"
+#~ "A aplicação inclui um explorador para o YouTube, que permite a "
+#~ "visualização e transferência de vídeos."
+
+#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+#~ msgstr ""
+#~ "O SMPlayer é um programa livre e está licenciado nos termos da <b>GPL</b>."
+
+#~ msgid ""
+#~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
+#~ "with the Youtube problem fixed: %1."
+#~ msgstr ""
+#~ "No entanto, se quiser continuar a utiliar o umplayer, a equipa do "
+#~ "smplayer\n"
+#~ "disponibilizou uma versão que corrige os problemas de reprodução no "
+#~ "YouTube: %1."

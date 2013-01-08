@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-05 01:47+0100\n"
+"POT-Creation-Date: 2013-01-08 03:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,15 +326,20 @@ msgstr "关闭"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../faq.php:11
+#. Q. = Initial for "Question"
+#: ../faq.php:15
+msgid "Q."
+msgstr ""
+
+#: ../faq.php:44
 msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
-#: ../faq.php:14
+#: ../faq.php:49
 msgid "How can I download subtitles from opensubtitles.org?"
 msgstr "我怎样才能从 OpenSubtitles.org 下载字幕?"
 
-#: ../faq.php:18
+#: ../faq.php:50
 msgid ""
 "It's very easy. Just open a video, and then select the option \"Find\n"
 "subtitles on opensubtitles.org\" within the Subtitles menu. A new window\n"
@@ -348,11 +353,11 @@ msgstr ""
 "选择其中一个, 单击下载按钮.\n"
 "字幕文件将被下载并显示在视频上."
 
-#: ../faq.php:26
+#: ../faq.php:56
 msgid "The video equalizer doesn't work, why?"
 msgstr "视频均衡器无法正常工作, 为什么?"
 
-#: ../faq.php:30
+#: ../faq.php:57
 msgid ""
 "With some cards or video drivers the hardware video \n"
 "equalizer may not work. Go to Preferences -> General -> Video \n"
@@ -362,11 +367,11 @@ msgstr ""
 "请转到 首选项 -> 常规 -> 视频,\n"
 "然后启用软件均衡器."
 
-#: ../faq.php:36
+#: ../faq.php:61
 msgid "DVD menus, where are they?"
 msgstr "DVD 菜单, 它们在哪里?"
 
-#: ../faq.php:40
+#: ../faq.php:62
 msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
@@ -374,11 +379,11 @@ msgstr ""
 "转到首选项中的驱动器部分, 勾选\n"
 "\"启用 DVD 菜单(试验)\" 并设置您的 DVD 驱动器."
 
-#: ../faq.php:45
+#: ../faq.php:65
 msgid "How can I download a Youtube video?"
 msgstr "我怎样才能下载 YouTube 视频?"
 
-#: ../faq.php:49
+#: ../faq.php:66
 msgid ""
 "Right click on a video in the Youtube browser, and select the option\n"
 "\"Record video\"."
@@ -386,11 +391,11 @@ msgstr ""
 "在 YouTube 浏览器中右键单击一个视频,\n"
 "然后选择 \"录制视频\" 选项."
 
-#: ../faq.php:54
+#: ../faq.php:69
 msgid "How can I change the skin?"
 msgstr "我怎样才能更改皮肤呢?"
 
-#: ../faq.php:58
+#: ../faq.php:70
 msgid ""
 "Go to the SMPlayer preferences, select the Interface section, then\n"
 "select the \"Skinnable GUI\". Now you can choose among several skins."
@@ -398,15 +403,15 @@ msgstr ""
 "转到 SMPlayer 首选项, 选择界面部分, 然后选择\n"
 "\"Skinnable GUI\". 现在您可以选择其中的几个皮肤."
 
-#: ../faq.php:61
+#: ../faq.php:72
 msgid "In linux you need to install the package smplayer-skins."
 msgstr "在 Linux 中, 您需要安装 smplayer-skins 软件包."
 
-#: ../faq.php:65
+#: ../faq.php:74
 msgid "Where is the configuration stored? Can I reset the settings?"
 msgstr "配置存储在哪里? 我可以重置设置吗?"
 
-#: ../faq.php:69
+#: ../faq.php:75
 msgid ""
 "The easiest way to find the configuration files of SMPlayer is by\n"
 "selecting the option \"Open configuration folder\" in the Help menu. If\n"
@@ -420,11 +425,11 @@ msgstr ""
 "只需删除 smplayer.ini 文件 (重要: 当您删除文件时请确定\n"
 "SMPlayer 没有运行)."
 
-#: ../faq.php:77
+#: ../faq.php:81
 msgid "What's the difference between SMPlayer and MPlayer?"
 msgstr "SMPlayer 和 MPlayer 之间有什么区别?"
 
-#: ../faq.php:81
+#: ../faq.php:82
 msgid ""
 "They are two different applications that work together. SMPlayer\n"
 "actually is not a media player... MPlayer is. MPlayer is a command-line\n"
@@ -444,11 +449,11 @@ msgstr ""
 "添加了按钮、菜单、对话框等等. Windows 软件包已经随着\n"
 "SMPlayer 包含一个 MPlayer 编译."
 
-#: ../faq.php:92
+#: ../faq.php:91
 msgid "What does the \"ps\" mean in some of the installers name?"
 msgstr "有些安装程序名称中的 \"ps\" 是指什么?"
 
-#: ../faq.php:96
+#: ../faq.php:92
 msgid ""
 "It means that the installer includes a \"promotional screen\" from a\n"
 "sponsor. This screen offers the user the possibility to install a third\n"
@@ -464,7 +469,7 @@ msgstr ""
 "如果您安装了它, 但您不喜欢,\n"
 "您可以随后很轻松地卸载它."
 
-#: ../faq.php:103
+#: ../faq.php:98
 msgid ""
 "If you decide to install it, the sponsor will send a few cents to\n"
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
@@ -474,27 +479,27 @@ msgstr ""
 "通过这种方式, 我们就不需要要求用户捐款了.\n"
 "您可以在 %1 中找到更多信息."
 
-#: ../faq.php:108
+#: ../faq.php:102
 msgid ""
 "If you just don't want to see this screen, just download the no \"ps\" "
 "installer."
 msgstr "如果您只是不想看到这个屏幕, 只需下载没有 \"ps\" 的安装程序."
 
-#: ../faq.php:114
+#: ../faq.php:104
 msgid ""
 "The current time of the movie appears in the up left corner of the image, "
 "how can I hide it?"
 msgstr "电影的当前时间出现在图像左上角上, 我怎样才能隐藏它?"
 
-#: ../faq.php:118
+#: ../faq.php:105
 msgid "Options -> OSD -> Subtitles only."
 msgstr "选项 -> OSD -> 仅字幕."
 
-#: ../faq.php:122
+#: ../faq.php:112
 msgid "How can I take advantage of all my CPU cores?"
 msgstr "我怎样才能充分利用我所有的 CPU 核心?"
 
-#: ../faq.php:126
+#: ../faq.php:113
 msgid ""
 "Multithreaded decoding requires a recent build of MPlayer or FFmpeg-mt\n"
 "in Linux. MPlayer2 automatically uses all cores, but MPlayer requires\n"
@@ -512,21 +517,21 @@ msgstr ""
 "(或超线程 Intel CPU 情况下的线程数).\n"
 "将其设置为大于您的 CPU 实际数量将没有任何效果."
 
-#: ../faq.php:136
+#: ../faq.php:121
 msgid ""
 "I want the subtitles to be displayed on the black border instead of the "
 "image, how can I do it?"
 msgstr "我想要字幕显示在黑色边框上, 而不是图像上, 我该怎么做呢?"
 
-#: ../faq.php:140
+#: ../faq.php:122
 msgid "Select the option \"Add black borders\" in the video filters menu."
 msgstr "在视频过滤器菜单中选择 \"添加黑边\" 选项."
 
-#: ../faq.php:144
+#: ../faq.php:124
 msgid "Is UMPlayer related to SMPlayer?"
 msgstr "UMPlayer 和 SMPlayer 有关吗?"
 
-#: ../faq.php:148
+#: ../faq.php:125
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
 "new features, like new skins, and Youtube&trade; and SHOUTcast&trade; "
@@ -538,7 +543,7 @@ msgstr ""
 "持.\n"
 "其大多数功能现在都已包含在 SMPlayer 中."
 
-#: ../faq.php:152
+#: ../faq.php:128
 msgid ""
 "The UMPlayer project seems dead (no updates since a lot of months) and\n"
 "version 0.98 can't play Youtube videos anymore, so if you are a user of\n"
@@ -550,19 +555,11 @@ msgstr ""
 "因此如果您是 UMPlayer 的用户, 建议您转换到 SMPlayer.\n"
 "此外 SMPlayer 还包含了在 UMPlayer 中不存在的新功能."
 
-#: ../faq.php:157
-msgid ""
-"Anyway, if you still prefer to use UMPlayer we released a new version\n"
-"with the Youtube problem fixed: %1."
-msgstr ""
-"无论如何, 如果您还是喜欢使用 UMPlayer,\n"
-"我们发布了一个修复 YouTube 问题的新版本: %1."
-
-#: ../faq.php:163
+#: ../faq.php:133
 msgid "What's \"smtube\"?"
 msgstr "什么是 \"SMTube\"?"
 
-#: ../faq.php:167
+#: ../faq.php:134
 msgid ""
 "It's the Youtube browser that was first included in UMPlayer, and we\n"
 "adapted it for SMPlayer. We made it an independent application, and on\n"
@@ -574,7 +571,7 @@ msgstr ""
 "在 Linux 上它可以自己运行, 用户可以选择要使用的播放器\n"
 "(甚至不需要 SMPlayer)."
 
-#: ../faq.php:174
+#: ../faq.php:139
 msgid ""
 "I'm using Windows Vista or later and every time I play a video Aero is "
 "disabled, why?"
@@ -582,7 +579,7 @@ msgstr ""
 "我正在使用 Windows Vista 或更新版本, 我每次播放视频时 Aero 都会被禁用, 为什"
 "么?"
 
-#: ../faq.php:178
+#: ../faq.php:140
 msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
@@ -590,13 +587,13 @@ msgstr ""
 "使用 directx 作为视频驱动 (首选项 -> 常规 -> 视频)\n"
 "的时候会发生这种情况. 您可以将其更改为 gl、gl2 或 direct3d."
 
-#: ../faq.php:183
+#: ../faq.php:143
 msgid ""
 "(Windows) I'm unable to open files with special or non-English characters, "
 "why?"
 msgstr "(Windows) 我为什么无法打开带有特殊或非英文字符的文件?"
 
-#: ../faq.php:187
+#: ../faq.php:144
 msgid ""
 "If you are unable to open files with special or non-English characters,\n"
 "enable Pass short filenames (8+3) to MPlayer under Options ->\n"
@@ -606,11 +603,11 @@ msgstr ""
 "请在 选项 -> 首选项 -> 高级 下启用\n"
 "传送短文件名(8+3)到 MPlayer, 以变通解决该问题."
 
-#: ../faq.php:193
+#: ../faq.php:148
 msgid "Some menu options make the video to go blank for a moment. Why?"
 msgstr "某些菜单选项会让视频瞬间变成空白. 为什么?"
 
-#: ../faq.php:197
+#: ../faq.php:149
 msgid ""
 "Some options require to stop the MPlayer process and launch it again\n"
 "with new parameters. That's why playback interrupts for a moment."
@@ -1190,8 +1187,15 @@ msgstr "UMPlayer 屏幕截图"
 msgid "Users Reviews"
 msgstr "用户评论"
 
+#~ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
+#~ msgstr "带有内置编解码器和 YouTube&trade; 支持的免费媒体播放器"
+
 #~ msgid "Language"
 #~ msgstr "语言"
 
-#~ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
-#~ msgstr "带有内置编解码器和 YouTube&trade; 支持的免费媒体播放器"
+#~ msgid ""
+#~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
+#~ "with the Youtube problem fixed: %1."
+#~ msgstr ""
+#~ "无论如何, 如果您还是喜欢使用 UMPlayer,\n"
+#~ "我们发布了一个修复 YouTube 问题的新版本: %1."
