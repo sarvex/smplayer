@@ -29,7 +29,7 @@ function print_quote($text, $link, $author, $source, $span=4) {
 	if ($link != "") echo "<a href=\"$link\">$source</a>"; else echo "$source";
 	echo "</cite></small>\n";
 	echo "</blockquote>\n";
-	echo "</div>\n";
-	echo "</div>\n";
+	echo "</div> <!-- well -->\n";
+	echo "</div> <!-- span -->\n";
 }
 ?>

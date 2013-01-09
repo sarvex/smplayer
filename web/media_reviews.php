@@ -23,12 +23,14 @@ function print_media_reviews($one_column=false) {
 				"Whitson Gordon",
 				"lifehacker.com", $span);
 
+	if (0) {
 	if ($one_column) echo "</div>\n<div class=\"row-fluid\">\n";
 
 	print_quote("SMPlayer – Probably the best media player in the world!",
 				"http://reinep.wordpress.com/2010/12/07/probably-the-best-media-player-in-the-world/",
 				"Ray",
 				"reinep.wordpress.com", $span);
+	}
 
 	echo "</div>\n";
 }

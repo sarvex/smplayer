@@ -39,9 +39,9 @@ function print_faq($question, $answer) {
 ?>
 
 <div class="container-fluid">
-<div class="row-fluid">
-
 <h1><?php tr("Frequently Asked Questions"); ?></h1>
+
+<div class="row-fluid">
 
 <div class="span6">
 <div class="accordion" id="accordion2">

@@ -3,17 +3,15 @@ include_once("header.php");
 print_header(get_tr("Downloads"));
 echo "<body>\n";
 print_menu(3);
+
+include_once("download_links.php");
 ?>
 
 <div class="container-fluid">
+<?php echo "<h1>".get_tr("Downloads")."</h1>"; ?>
+
 <div class="row-fluid">
 <div class="span9">
-
-<?php
-include_once("download_links.php");
-
-echo "<h1>".get_tr("Downloads")."</h1>";
-?>
 
 <!-- WINDOWS -->
 <h2>Windows</h2>

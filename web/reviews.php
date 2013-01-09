@@ -8,14 +8,23 @@ print_menu(4);
 <div class="container-fluid">
 <h1><?php tr("Reviews"); ?></h1>
 
+<div class="row-fluid">
+
+<div class="span9">
+<?php include("user_reviews.php"); ?>
+</div>
+
+<div class="span3">
 <?php
 include("media_reviews.php");
 
 echo "<h3>". get_tr("Media Reviews") . "</h3>\n";
-print_media_reviews(false);
-include("user_reviews.php");
+print_media_reviews(true);
 ?>
+</div>
+</div> <!-- row -->
 
+<div class="row-fluid">
 <p>
 <b>
 <?php
@@ -28,6 +37,7 @@ tr("If you like SMPlayer please feel free to rate or review SMPlayer in some of 
 &bull; <a href="http://sourceforge.net/projects/smplayer/">Sourceforge</a>
 </b>
 
+</div> <!-- row -->
 </div> <!-- container -->
 
 <!-- begin footer -->

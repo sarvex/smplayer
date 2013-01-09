@@ -140,6 +140,7 @@ get_tr("Click here to read more reviews") . "</a></p>\n";
 <!-- begin footer -->
 <?php
 include("footer.php");
+include_once("scripts_gal.php");
 ?>
 <!-- end footer -->
 
