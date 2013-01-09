@@ -140,7 +140,6 @@ echo download_skins_src_link();
 </div> <!-- span9 -->
 
 <div class="span3">
-		<br><br><br>
 		<?php
 		if (0) {
 			echo '<div class="well">';
