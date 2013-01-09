@@ -106,7 +106,7 @@ get_tr("Options -> OSD -> Subtitles only."));
 
 echo '</div> <!-- accordion -->';
 echo '</div> <!-- span -->';
-echo '<div class="span5">';
+echo '<div class="span6">';
 echo '<div class="accordion" id="accordion2">';
 
 print_faq(get_tr("How can I take advantage of all my CPU cores?"),
