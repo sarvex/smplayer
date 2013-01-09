@@ -65,6 +65,8 @@ tr("Here is a list of the most active translators:");
 
 <h2><?php tr("Mirrors"); ?></h2>
 <p>
+<a href="http://smplayer.info">smplayer.info</a>
+<br>
 <a href="http://smplayer.sourceforge.net">smplayer.sourceforge.net</a>
 <br>
 <a href="http://smplayer.berlios.de">smplayer.berlios.de</a>

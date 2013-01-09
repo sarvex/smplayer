@@ -12,7 +12,7 @@
 <td>
 <ul>
 <li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
-<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
+<li><a href="http://smplayer.info/forum/"><?php tr("Forum"); ?></a></li>
 <li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li>
 <li><?php echo "<a href=\"presskit.php?tr_lang=$tr_lang\">". get_tr("Press Kit") ."</a>"; ?></li>
 </ul>
@@ -24,7 +24,7 @@
 <li><a href="http://sourceforge.net/tracker/?group_id=185512&amp;atid=913576"><?php tr("Feature Requests"); ?></a></li>
 <li><?php echo "<a href=\"smtube.php?tr_lang=$tr_lang\">SMTube</a>"; ?></li>
 <!-- <li><?php echo "<a href=\"umplayer.php?tr_lang=$tr_lang\">UMPlayer</a>"; ?></li> -->
-<li><a href="http://smplayer.sourceforge.net/blog/"><?php tr("Blog"); ?></a></li>
+<li><a href="http://smplayer.info/blog/"><?php tr("Blog"); ?></a></li>
 </ul>
 </td>
 
@@ -35,7 +35,7 @@
 if ($site=="sourceforge")
 	echo "<a href=\"http://smplayer.berlios.de\">". get_tr("Mirror") ."</a>\n";
 else
-	echo "<a href=\"http://smplayer.sourceforge.net\">". get_tr("Mirror") ."</a>\n";
+	echo "<a href=\"http://smplayer.info\">". get_tr("Mirror") ."</a>\n";
 ?>
 </li>
 <li><?php echo "<a href=\"contact.php?tr_lang=$tr_lang\">". get_tr("Contact us") ."</a>"; ?></li>
