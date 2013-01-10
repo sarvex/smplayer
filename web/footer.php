@@ -12,7 +12,7 @@
 <td>
 <ul>
 <li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
-<li><a href="http://smplayer.info/forum/"><?php tr("Forum"); ?></a></li>
+<li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
 <li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li>
 <li><?php echo "<a href=\"presskit.php?tr_lang=$tr_lang\">". get_tr("Press Kit") ."</a>"; ?></li>
 </ul>
