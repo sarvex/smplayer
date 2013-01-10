@@ -346,7 +346,7 @@ msgstr "FAQ"
 #. Q. = Initial for "Question"
 #: ../faq.php:15
 msgid "Q."
-msgstr ""
+msgstr "Q."
 
 #: ../faq.php:44
 msgid "Frequently Asked Questions"
@@ -765,7 +765,7 @@ msgstr "機能要望"
 
 #: ../footer.php:27
 msgid "Blog"
-msgstr ""
+msgstr "ブログ"
 
 #: ../footer.php:36 ../footer.php:38
 msgid "Mirror"
@@ -816,6 +816,7 @@ msgid ""
 "Media Player for Windows and Linux with built-in codecs and Youtube&trade; "
 "support"
 msgstr ""
+"YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイヤー"
 
 #: ../header.php:16
 msgid "Graphical User Interface (GUI) for MPlayer"
@@ -840,7 +841,7 @@ msgstr "YouTube&trade; 対応のフリーなメディアプレイヤー"
 
 #: ../info.php:15
 msgid "Graphical Frontend for MPlayer"
-msgstr ""
+msgstr "MPlayer の GUI フロントエンド"
 
 #: ../info.php:18 ../info2.php:14 ../smplayer.php:23
 msgid "Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov..."
@@ -881,7 +882,7 @@ msgstr "マルチプラットフォーム: Windows 用と Linux 用がありま�
 
 #: ../info.php:32 ../info2.php:28
 msgid "See some screenshots"
-msgstr ""
+msgstr "スクリーンショットを見る"
 
 #: ../info.php:40 ../info2.php:36
 msgid "About SMPlayer"
@@ -894,6 +895,9 @@ msgid ""
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
+"SMPlayer は、ほぼすべてのビデオ/オーディオフォーマットを再生できるコーデック"
+"を内臓した、Windows および Linux 向けのオープンソースのフリーなメディアプレイ"
+"ヤーです。外部のコーデックを一切必要としません。"
 
 #: ../info.php:48 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
@@ -918,6 +922,8 @@ msgstr "SMPlayer をインストールして、コーデックのことなど忘
 #: ../info.php:55 ../info2.php:47
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr ""
+"SMPlayer は Windows と Linux で動作するマルチプラットフォームのアプリケーショ"
+"ンです。"
 
 #: ../info.php:75 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
@@ -925,7 +931,7 @@ msgstr "もっとレビューを読む"
 
 #: ../info2.php:12
 msgid "Graphical Frontend for MPlayer with extra features"
-msgstr ""
+msgstr "独自の機能をも備えた MPlayer フロントエンド"
 
 #: ../info2.php:39
 msgid ""
@@ -942,6 +948,9 @@ msgid ""
 "SMPlayer adds other features, like the possibility to search and download \n"
 "Youtube&trade; videos, search for subtitles and a skinnable interface."
 msgstr ""
+"SMPlayer は MPlayer のあらゆるオプションのみならず、YouTube&trade; 動画の検"
+"索/ダウンロードや、字幕の検索、スキン対応インターフェイスといった他の機能も"
+"豊富に備えています。"
 
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1202,141 +1211,3 @@ msgstr "UMPlayer のスクリーンショット"
 #: ../user_reviews.php:3
 msgid "Users Reviews"
 msgstr "ユーザーレビュー"
-
-#~ msgid "Free Media Player with built-in codecs and Youtube&trade; support"
-#~ msgstr "コーデック内臓、YouTube&trade; 対応のフリーなメディアプレイヤー"
-
-#~ msgid "Language"
-#~ msgstr "言語"
-
-#~ msgid "Graphical User Interface for MPlayer"
-#~ msgstr "MPlayer のグラフィカルユーザーインターフェイス"
-
-#~ msgid ""
-#~ "Apart from providing access for the most common and useful options in "
-#~ "MPlayer, \n"
-#~ "SMPlayer adds other features, like the possibility to search and "
-#~ "download \n"
-#~ "Youtube&trade; videos."
-#~ msgstr ""
-#~ "SMPlayer は MPlayer のあらゆるオプションのみならず、YouTube&trade; 動画の"
-#~ "検索/ダウンロードなど他の機能も豊富に備えています。"
-
-#~ msgid "Plays and download Youtube&trade; videos"
-#~ msgstr "YouTube&trade; 動画の再生/ダウンロード"
-
-#~ msgid ""
-#~ "SMPlayer is a graphical interface for %1, which supports many video and "
-#~ "audio formats and codecs."
-#~ msgstr ""
-#~ "SMPlayer は %1 のグラフィカルインターフェイスです。MPlayer は非常に多くの"
-#~ "ビデオ/オーディオのフォーマットおよびコーデックに対応しています。"
-
-#~ msgid "Here is a complete list (from the MPlayer documentation):"
-#~ msgstr "以下が完全なリストです (MPlayer の資料より):"
-
-#~ msgid "Free Opensource Media Player"
-#~ msgstr "フリーでオープンソースなメディアプレイヤー"
-
-#~ msgid "Built-in codecs"
-#~ msgstr "コーデック内臓"
-
-#~ msgid ""
-#~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
-#~ "the award-winning %1 as playback engine which is capable of\n"
-#~ "playing most video and audio formats (avi, mkv, wmv, mp4, mpeg... %2). \n"
-#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
-#~ "packs."
-#~ msgstr ""
-#~ "SMPlayer は Windows と Linux に対応する、網羅的なメディアプレイヤーです。"
-#~ "数々の受賞を誇る %1 を再生エンジンに採用し、AVI、MKV、WMV、MP4、MPEG など"
-#~ "ほとんどのビデオ/オーディオフォーマット (%2) を再生することができます。<b>"
-#~ "独自のコーデックを使用する</b>ため、別途コーデックパックをインストールする"
-#~ "必要がありません。"
-
-#~ msgid "Go to the download page"
-#~ msgstr "ダウンロードページへ"
-
-#~ msgid ""
-#~ "SMPlayer is a complete media player. It uses\n"
-#~ "the award-winning %1 as playback engine which is capable of\n"
-#~ "playing most video and audio formats.\n"
-#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
-#~ "packs."
-#~ msgstr ""
-#~ "SMPlayer は網羅的なメディアプレイヤーです。数々の受賞を誇る %1 を再生エン"
-#~ "ジンに採用し、AVI、MKV、WMV、MP4、MPEG などほとんどのビデオ/オーディオ"
-#~ "フォーマット (%2) を再生することができます。<b>独自のコーデックを使用する"
-#~ "</b>ため、別途コーデックパックをインストールする必要がありません。"
-
-#~ msgid "Skins"
-#~ msgstr "スキンに対応"
-
-#~ msgid "Can play and download Youtube&trade; videos"
-#~ msgstr "YouTube&trade; 動画の再生/ダウンロードに対応"
-
-#~ msgid "Codecs included"
-#~ msgstr "コーデック内蔵"
-
-#~ msgid "Supports most formats and codecs: AVI, MKV, MP4, MPEG, H.264..."
-#~ msgstr ""
-#~ "AVI、MKV、MP4、MPEG、H.264 など、ほぼすべてのフォーマットとコーデックに対"
-#~ "応"
-
-#~ msgid "Download SMPlayer for Windows"
-#~ msgstr "Windows 用 SMPlayer をダウンロードする"
-
-#~ msgid "Click here to download SMPlayer for Windows"
-#~ msgstr "Windows 用 SMPlayer をダウンロードする"
-
-#~ msgid "SMPlayer - Screenshots"
-#~ msgstr "SMPlayer - スクリーンショット"
-
-#~ msgid "SMPlayer - Reviews"
-#~ msgstr "SMPlayer - レビュー"
-
-#~ msgid "SMPlayer - Press Kit"
-#~ msgstr "SMPlayer - プレスキット"
-
-#~ msgid "SMPlayer - Latest Changes"
-#~ msgstr "SMPlayer - 最新の変更点"
-
-#~ msgid "SMPlayer - Opensource Media Player"
-#~ msgstr "SMPlayer - オープンソースのメディアプレイヤー"
-
-#~ msgid "SMPlayer - Formats and Codecs"
-#~ msgstr "SMPlayer - フォーマットとコーデック"
-
-#~ msgid "SMPlayer - FAQ"
-#~ msgstr "SMPlayer - FAQ"
-
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer - ダウンロード"
-
-#~ msgid "SMPlayer - Contact us"
-#~ msgstr "SMPlayer - お問い合わせ"
-
-#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-#~ msgstr ""
-#~ "フリーかつオープンソース: SMPlayer は <b>GPL</b> ライセンスの下にありま"
-#~ "す。"
-
-#~ msgid ""
-#~ "A Youtube browser is included, which allows to easily download Youtube "
-#~ "videos."
-#~ msgstr ""
-#~ "YouTube ブラウザーが同梱されており、動画の再生やダウンロードが簡単に行えま"
-#~ "す。"
-
-#~ msgid "Other interesting features:"
-#~ msgstr "その他の特徴"
-
-#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-#~ msgstr "SMPlayer 最新版のダウンロードは<a href=%1>こちら</a>"
-
-#~ msgid ""
-#~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
-#~ "with the Youtube problem fixed: %1."
-#~ msgstr ""
-#~ "それでも UMPlayer の使用にこだわる方向けに、YouTube 動画の再生に対応した"
-#~ "バージョンを用意しています: %1"
