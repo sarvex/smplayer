@@ -57,6 +57,13 @@ tr("Here is a list of the most active translators:");
 <li>Bendihua (<?php tr("Simplified chinese");?>)</li>
 </ul>
 
+<h3><?php tr("Skins"); ?></h3>
+<p>
+<?php
+tr("The skins have been ported from umplayer. The authors are:");
+echo " ";
+echo "David Yen (black, vista), err0rsm1th (gonzo, mac), Echo (modern).";
+?>
 
 <h2>Twitter</h2>
 <p>
