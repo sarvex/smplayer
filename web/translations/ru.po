@@ -18,8 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Source-Language: C\n"
 
 #: ../contact.php:3 ../contact.php:9 ../footer.php:41
@@ -27,6 +26,7 @@ msgid "Contact us"
 msgstr "Наши контакты"
 
 #: ../contact.php:12
+#, qt-format
 msgid ""
 "You can send your suggestions, patches, translations or whatever regarding \n"
 "smplayer, to %1"
@@ -43,6 +43,7 @@ msgid "Support"
 msgstr "Поддержка"
 
 #: ../contact.php:21
+#, qt-format
 msgid "You can get help in our %1."
 msgstr "Вы можете получить помощь, посетив наш %1."
 
@@ -51,6 +52,7 @@ msgid "forum"
 msgstr "форум"
 
 #: ../contact.php:23
+#, qt-format
 msgid "If you find bugs in smplayer you can report them in our %1."
 msgstr "Если вы нашли ошибки в smplayer, можете сообщить о них на наш %1."
 
@@ -59,6 +61,7 @@ msgid "bug tracker"
 msgstr "багтрекер"
 
 #: ../contact.php:26
+#, qt-format
 msgid "You can request new features in our %1."
 msgstr "Вы можете запросить новые возможности, посетив наш %1."
 
@@ -71,6 +74,7 @@ msgid "Irc channel"
 msgstr "Канал IRC"
 
 #: ../contact.php:30
+#, qt-format
 msgid ""
 "Join #smplayer at irc.oftc.net (or click %1 if your client supports it)."
 msgstr ""
@@ -94,6 +98,7 @@ msgid "windows packages, mplayer builds for windows"
 msgstr "пакеты для windows, сборки mplayer для windows"
 
 #: ../contact.php:41
+#, qt-format
 msgid "Conversion to svg by %1."
 msgstr "Конвертирование в svg %1."
 
@@ -143,7 +148,7 @@ msgstr "Скины"
 
 #: ../contact.php:63
 msgid "The skins have been ported from umplayer. The authors are:"
-msgstr ""
+msgstr "Скины были портированы с umplayer. Авторы:"
 
 #: ../contact.php:71 ../footer.php:46
 msgid "Follow us on Twitter"
@@ -158,6 +163,7 @@ msgid "Downloads"
 msgstr "Загрузки"
 
 #: ../downloads.php:26 ../downloads.php:36 ../downloads.php:41
+#, qt-format
 msgid "Click here to download SMPlayer %1"
 msgstr "Щёлкните здесь для загрузки SMPlayer %1"
 
@@ -170,6 +176,7 @@ msgid "softpedia mirror"
 msgstr "зеркало softpedia"
 
 #: ../downloads.php:44
+#, qt-format
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and \n"
 "the YouTube browser (smtube)."
@@ -190,6 +197,7 @@ msgstr ""
 "скинами и новая сборка mplayer с большим количеством исправлений."
 
 #: ../downloads.php:61
+#, qt-format
 msgid "In case you find any problem, please report it in %1."
 msgstr "Если вы найдёте любые проблемы, пожалуйста, сообщите о них на %1."
 
@@ -198,6 +206,7 @@ msgid "our forum"
 msgstr "наш форум"
 
 #: ../downloads.php:71
+#, qt-format
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Другие пакеты (например, портативная версия), доступны %1."
 
@@ -206,6 +215,7 @@ msgid "here"
 msgstr "здесь"
 
 #: ../downloads.php:73
+#, qt-format
 msgid "If you wish you can also try the %1."
 msgstr "При желании можете также попробовать %1."
 
@@ -400,8 +410,8 @@ msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
-"Зайдите в секцию \"Устройства\" настроек и отметьте опцию \"Включить DVD-меню"
-"\", также указав ваш привод DVD."
+"Зайдите в секцию \"Устройства\" настроек и отметьте опцию \"Включить "
+"DVD-меню\", также указав ваш привод DVD."
 
 #: ../faq.php:65
 msgid "How can I download a Youtube video?"
@@ -491,6 +501,7 @@ msgstr ""
 "понравится, Вы можете легко удалить его позднее."
 
 #: ../faq.php:98
+#, qt-format
 msgid ""
 "If you decide to install it, the sponsor will send a few cents to\n"
 "SMPlayer. This way we don't need to ask the users for donations. You can\n"
@@ -627,8 +638,8 @@ msgid ""
 "Preferences -> Advanced to work around this problem."
 msgstr ""
 "Если вы не можете открыть файлы со специальными или нелатинскими символами в "
-"имени, включите опцию Передавать короткие имена (8+3) MPlayer-у в Настройки -"
-"> Дополнительно, чтобы обойти эту проблему."
+"имени, включите опцию Передавать короткие имена (8+3) MPlayer-у в Настройки "
+"-> Дополнительно, чтобы обойти эту проблему."
 
 #: ../faq.php:148
 msgid "Some menu options make the video to go blank for a moment. Why?"
@@ -688,6 +699,7 @@ msgid "Support for skins and icon themes."
 msgstr "Поддержка скинов и тем иконок."
 
 #: ../features.php:18
+#, qt-format
 msgid "Possibility to search and download subtitles from %1."
 msgstr "Возможность поиска и скачивания субтитров с %1."
 
@@ -724,8 +736,8 @@ msgid ""
 "Multiple speed playback. You can play at 2X, 4X... and even in \n"
 "slow motion."
 msgstr ""
-"Воспроизведение на разных скоростях. Можно ускорить воспроизведение в 2, в "
-"4 \n"
+"Воспроизведение на разных скоростях. Можно ускорить воспроизведение в 2, в 4 "
+"\n"
 "раза или же, наоборот, замедлить."
 
 #: ../features.php:28
@@ -762,7 +774,7 @@ msgstr ""
 
 #: ../features.php:36
 msgid "Compatible with Windows XP/2003/Vista/Server 2008/7/8."
-msgstr ""
+msgstr "Совместим с Windows XP/2003/Vista/Server 2008/7/8."
 
 #: ../footer.php:9
 msgid "Other links:"
@@ -810,6 +822,7 @@ msgid "Formats and Codecs"
 msgstr "Форматы и кодеки"
 
 #: ../formats_text.php:3
+#, qt-format
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for %1, which supports almost "
 "all known video and audio formats and codecs."
@@ -917,8 +930,8 @@ msgstr "Об SMPlayer"
 
 #: ../info.php:45
 msgid ""
-"SMPlayer is a free open source media player for Windows and Linux with built-"
-"in codecs that\n"
+"SMPlayer is a free open source media player for Windows and Linux with "
+"built-in codecs that\n"
 "can play virtually all video and audio formats. It doesn't need any external "
 "codecs."
 msgstr ""
@@ -932,6 +945,7 @@ msgstr ""
 "SMPlayer также может воспроизводить, искать и скачивать видео Youtube&trade;"
 
 #: ../info.php:50
+#, qt-format
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
@@ -960,6 +974,7 @@ msgid "Graphical Frontend for MPlayer with extra features"
 msgstr "Графическая оболочка для MPlayer с дополнительными возможностями."
 
 #: ../info2.php:39
+#, qt-format
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
 "which is capable of playing almost all known video and audio formats (%2)."
@@ -1096,6 +1111,7 @@ msgstr ""
 "кодеков."
 
 #: ../smplayer.php:53
+#, qt-format
 msgid ""
 "It uses\n"
 "the award-winning %1 as playback engine which is capable of\n"
@@ -1141,6 +1157,7 @@ msgid "SMTube Screenshot"
 msgstr "Скриншот SMTube"
 
 #: ../smtube.php:28
+#, qt-format
 msgid ""
 "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
 "The code was taken from %1 (developed by %2). \n"
@@ -1185,6 +1202,7 @@ msgstr ""
 "SMTube уже включён в пакеты для Windows, но под Linux это отдельный пакет."
 
 #: ../umplayer.php:15
+#, qt-format
 msgid ""
 "%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
 "the SMPlayer team has released a new version which fixes Youtube playback."
@@ -1244,6 +1262,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "Language"
 #~ msgstr "Язык"
 
+#, qt-format
 #~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
 #~ msgstr "Скачать <a href=%1>здесь</a> последнюю версию SMPlayer"
 
@@ -1293,6 +1312,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "Download SMPlayer for Windows"
 #~ msgstr "Скачать SMPlayer для Windows"
 
+#, qt-format
 #~ msgid ""
 #~ "SMPlayer is a graphical interface for %1, which supports many video and "
 #~ "audio formats and codecs."
@@ -1309,6 +1329,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "Built-in codecs"
 #~ msgstr "Встроенные кодеки"
 
+#, qt-format
 #~ msgid ""
 #~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
 #~ "the award-winning %1 as playback engine which is capable of\n"
@@ -1325,6 +1346,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "Go to the download page"
 #~ msgstr "Перейти на страницу загрузок"
 
+#, qt-format
 #~ msgid ""
 #~ "SMPlayer is a complete media player. It uses\n"
 #~ "the award-winning %1 as playback engine which is capable of\n"
@@ -1365,6 +1387,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "the unstable version"
 #~ msgstr "нестабильную версию"
 
+#, qt-format
 #~ msgid "If you wish you can also try %1."
 #~ msgstr "Если пожелаете, вы можете также попробовать %1."
 
@@ -1384,6 +1407,7 @@ msgstr "Обзоры пользователей"
 #~ msgid "Plays and download Youtube&trade; videos"
 #~ msgstr "Воспроизведение и загрузка видео сYoutube&trade;"
 
+#, qt-format
 #~ msgid ""
 #~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
 #~ "with the Youtube problem fixed: %1."
