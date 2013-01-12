@@ -78,6 +78,7 @@ function print_languages() {
 	print_language_link($file, "Lietuvių", "lt",  $query);
 	print_language_link($file, "Euskara", "eu",  $query);
 	print_language_link($file, "Русский", "ru", $query);
+	print_language_link($file, "Galego", "gl",  $query);
 
 	//print_language_link($file, "Nederlands", "nl", $query);
 	//print_language_link($file, "Italiano", "it", $query);
