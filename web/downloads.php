@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header(get_tr("Downloads"));
+print_header(get_tr("Downloads"), get_tr("Download SMPlayer"));
 echo "<body>\n";
 print_menu(3);
 

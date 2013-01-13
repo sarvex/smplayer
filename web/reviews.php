@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header(get_tr("Reviews"));
+print_header(get_tr("Reviews"), get_tr("Reviews about SMPlayer"));
 echo "<body>\n";
 print_menu(4);
 ?>

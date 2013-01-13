@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-11 22:34+0100\n"
+"POT-Creation-Date: 2013-01-14 00:22+0100\n"
 "PO-Revision-Date: 2008-02-02 23:52+0100\n"
 "Last-Translator: Kud Gray <kud.gray@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../contact.php:3
+msgid "Contact and copyright info for SMPlayer"
+msgstr ""
 
 #: ../contact.php:3 ../contact.php:9 ../footer.php:41
 msgid "Contact us"
@@ -141,7 +145,11 @@ msgstr ""
 msgid "Mirrors"
 msgstr ""
 
-#: ../downloads.php:3 ../downloads.php:11 ../header.php:110 ../umplayer.php:42
+#: ../downloads.php:3
+msgid "Download SMPlayer"
+msgstr ""
+
+#: ../downloads.php:3 ../downloads.php:11 ../header.php:115 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Téléchargement"
 
@@ -316,6 +324,10 @@ msgstr ""
 
 #: ../faq.php:3 ../footer.php:16
 msgid "FAQ"
+msgstr ""
+
+#: ../faq.php:3
+msgid "Frequently asked questions about SMPlayer"
 msgstr ""
 
 #. Q. = Initial for "Question"
@@ -712,20 +724,32 @@ msgid ""
 "support"
 msgstr ""
 
-#: ../header.php:16
+#: ../header.php:14
+msgid ""
+"Free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:15
+msgid ""
+"a free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:17
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr ""
 
-#: ../header.php:107
+#: ../header.php:112
 msgid "Main"
 msgstr "Accueil"
 
-#: ../header.php:108 ../presskit.php:22 ../screenshots.php:3
+#: ../header.php:113 ../presskit.php:22 ../screenshots.php:3
 #: ../screenshots.php:13 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Captures d'écran"
 
-#: ../header.php:109 ../reviews.php:3 ../reviews.php:9
+#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr ""
 
@@ -833,12 +857,20 @@ msgid ""
 "Youtube&trade; videos, search for subtitles and a skinnable interface."
 msgstr ""
 
+#: ../latest.php:4
+msgid "Latest changes of SMPlayer"
+msgstr ""
+
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr ""
 
 #: ../latest.php:20
 msgid "Click here to download the latest version"
+msgstr ""
+
+#: ../presskit.php:3
+msgid "Press kit for SMPlayer"
 msgstr ""
 
 #: ../presskit.php:10
@@ -853,6 +885,10 @@ msgstr ""
 msgid "Some screenshots, in English and Spanish"
 msgstr ""
 
+#: ../reviews.php:3
+msgid "Reviews about SMPlayer"
+msgstr ""
+
 #: ../reviews.php:21
 msgid "Media Reviews"
 msgstr ""
@@ -861,6 +897,10 @@ msgstr ""
 msgid ""
 "If you like SMPlayer please feel free to rate or review SMPlayer in some of "
 "these sites:"
+msgstr ""
+
+#: ../screenshots.php:3
+msgid "Screenshots of SMPlayer"
 msgstr ""
 
 #: ../screenshots.php:33
@@ -979,6 +1019,10 @@ msgstr ""
 
 #: ../smplayer.php:121
 msgid "Find Subtitles"
+msgstr ""
+
+#: ../smtube.php:3
+msgid "SMTube, a Youtube browser for SMPlayer"
 msgstr ""
 
 #: ../smtube.php:11

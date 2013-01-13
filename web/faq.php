@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header(get_tr("FAQ"));
+print_header(get_tr("FAQ"), get_tr("Frequently asked questions about SMPlayer"));
 echo "<body>\n";
 print_menu(0);
 

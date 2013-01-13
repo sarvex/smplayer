@@ -2,7 +2,7 @@
 include_once("l10n.php");
 include_once("site.php");
 
-function print_header($title) {
+function print_header($title, $desc="") {
 	global $tr_lang, $site;
 ?>
 <!DOCTYPE html>
@@ -11,14 +11,18 @@ function print_header($title) {
 <?php
 if (1) {
 	$main_title = get_tr("Media Player for Windows and Linux with built-in codecs and Youtube&trade; support");
-	$description = "Free media player for Windows and Linux with built-in codecs that can play and download Youtube videos";
+	$description = get_tr("Free media player for Windows and Linux with built-in codecs that can play and download Youtube&trade; videos");
+	$desc2 = get_tr("a free media player for Windows and Linux with built-in codecs that can play and download Youtube&trade; videos");
 } else {
 	$main_title = get_tr("Graphical User Interface (GUI) for MPlayer");
 	$description = "Graphical user interface (GUI) for MPlayer, for Windows and Linux, with many ".
                    "additional features like the possibility to search and download Youtube videos.";
+	$desc2 = "a graphical user interface (GUI) for MPlayer, for Windows and Linux, with many ".
+             "additional features like the possibility to search and download Youtube videos.";
 }
 $main_title = "SMPlayer - ". $main_title;
 if ($title != "") $main_title = $main_title ." - ". $title;
+if ($desc != "") $description = $desc .", ". $desc2;
 echo "<title>$main_title</title>\n";
 echo "<meta name=\"Description\" content=\"$description\">\n";
 echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />\n"; 

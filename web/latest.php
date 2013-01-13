@@ -1,7 +1,7 @@
 <?php
 include_once("header.php");
 include_once("download_links.php");
-print_header(get_tr("Latest changes"));
+print_header(get_tr("Latest changes"), get_tr("Latest changes of SMPlayer"));
 echo "<body>\n";
 print_menu(0);
 ?>

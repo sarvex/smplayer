@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header(get_tr("Screenshots"));
+print_header(get_tr("Screenshots"), get_tr("Screenshots of SMPlayer"));
 echo "<body>\n";
 print_menu(2);
 ?>

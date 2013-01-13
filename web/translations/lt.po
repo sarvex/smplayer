@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-11 22:34+0100\n"
+"POT-Creation-Date: 2013-01-14 00:22+0100\n"
 "PO-Revision-Date: 2012-12-22 08:57+0000\n"
 "Last-Translator: Algimantas Margevičius <gymka@archlinux.lt>\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/smplayer_web/"
@@ -20,6 +20,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../contact.php:3
+msgid "Contact and copyright info for SMPlayer"
+msgstr ""
 
 #: ../contact.php:3 ../contact.php:9 ../footer.php:41
 msgid "Contact us"
@@ -152,7 +156,11 @@ msgstr "Sekite mus Twitter"
 msgid "Mirrors"
 msgstr "Veidrodžiai"
 
-#: ../downloads.php:3 ../downloads.php:11 ../header.php:110 ../umplayer.php:42
+#: ../downloads.php:3
+msgid "Download SMPlayer"
+msgstr ""
+
+#: ../downloads.php:3 ../downloads.php:11 ../header.php:115 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Atsisiuntimai"
 
@@ -348,6 +356,10 @@ msgstr "Užverti"
 #: ../faq.php:3 ../footer.php:16
 msgid "FAQ"
 msgstr "DUK"
+
+#: ../faq.php:3
+msgid "Frequently asked questions about SMPlayer"
+msgstr ""
 
 #. Q. = Initial for "Question"
 #: ../faq.php:15
@@ -831,20 +843,32 @@ msgid ""
 "support"
 msgstr ""
 
-#: ../header.php:16
+#: ../header.php:14
+msgid ""
+"Free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:15
+msgid ""
+"a free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:17
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr ""
 
-#: ../header.php:107
+#: ../header.php:112
 msgid "Main"
 msgstr "Pagrindinis"
 
-#: ../header.php:108 ../presskit.php:22 ../screenshots.php:3
+#: ../header.php:113 ../presskit.php:22 ../screenshots.php:3
 #: ../screenshots.php:13 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Ekranvaizdžiai"
 
-#: ../header.php:109 ../reviews.php:3 ../reviews.php:9
+#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr "Apžvalgos"
 
@@ -952,6 +976,10 @@ msgid ""
 "Youtube&trade; videos, search for subtitles and a skinnable interface."
 msgstr ""
 
+#: ../latest.php:4
+msgid "Latest changes of SMPlayer"
+msgstr ""
+
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "Čia galite rasti paskutinių SMPlayer pakeitimų sąrašą:"
@@ -959,6 +987,10 @@ msgstr "Čia galite rasti paskutinių SMPlayer pakeitimų sąrašą:"
 #: ../latest.php:20
 msgid "Click here to download the latest version"
 msgstr "Norėdami parsisiųsti naujausią versiją paspauskite čia"
+
+#: ../presskit.php:3
+msgid "Press kit for SMPlayer"
+msgstr ""
 
 #: ../presskit.php:10
 msgid "Some images you can use in an article, blog, review..."
@@ -974,6 +1006,10 @@ msgstr "Logotipai"
 msgid "Some screenshots, in English and Spanish"
 msgstr "Keli ekranvaizdžiai, angliškai ir ispaniškai "
 
+#: ../reviews.php:3
+msgid "Reviews about SMPlayer"
+msgstr ""
+
 #: ../reviews.php:21
 msgid "Media Reviews"
 msgstr "Žiniasklaidos apžvalgos"
@@ -985,6 +1021,10 @@ msgid ""
 msgstr ""
 "Jei jums patinka SMPlayer, nesikuklinkite įvertinti ar palikti apžvalgą apie "
 "SMPlayer, tai galite padaryti šiuose tinklapiuose:"
+
+#: ../screenshots.php:3
+msgid "Screenshots of SMPlayer"
+msgstr ""
 
 #: ../screenshots.php:33
 msgid "Here you can see some screenshots from SMPlayer:"
@@ -1104,6 +1144,10 @@ msgstr "YouTube naršyklė"
 msgid "Find Subtitles"
 msgstr "Ieškoti subtitrų"
 
+#: ../smtube.php:3
+msgid "SMTube, a Youtube browser for SMPlayer"
+msgstr ""
+
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
 msgstr "SMTube ekranvaizdis"
@@ -1204,63 +1248,42 @@ msgstr "UMPlayer ekranvaizdis"
 msgid "Users Reviews"
 msgstr "Naudotojų apžvalgos"
 
-#~ msgid "Language"
-#~ msgstr "Kalba"
-
-#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
-#~ msgstr "Parsisiųskite naujausią SMPlayer versiją iš <a href=%1>čia</a>"
-
-#~ msgid "Other interesting features:"
-#~ msgstr "Kitos įdomios galimybės:"
+#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+#~ msgstr "Suderinama su Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
 
 #~ msgid ""
-#~ "A Youtube browser is included, which allows to easily download Youtube "
-#~ "videos."
+#~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
+#~ "with the Youtube problem fixed: %1."
 #~ msgstr ""
-#~ "Įtraukta Youtube naršyklė, kuri suteikia galimybę lengvai parsiųsti "
-#~ "Youtube vaizdo įrašus."
+#~ "Nepaisant to, jei vistiek norite naudoti UMPlayer mes išleidome naują "
+#~ "versiją, kurioje ištaisyta bėda su Youtube %1."
 
-#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
-#~ msgstr "Nemokama ir atviro kodo. SMPlayer galioja <b>GPL</b> licencija."
+#~ msgid "Plays and download Youtube&trade; videos"
+#~ msgstr "Atkuria ir parsiunčia Youtube&trade; vaizdo įrašus"
 
-#~ msgid "SMPlayer - Contact us"
-#~ msgstr "SMPlayer - Susisiekite su mumis1"
+#~ msgid ""
+#~ "SMPlayer is a complete media player. It uses\n"
+#~ "the award-winning %1 as playback engine which is capable of\n"
+#~ "playing most video and audio formats.\n"
+#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
+#~ "packs."
+#~ msgstr ""
+#~ "SMPlayer yra pilnas media grotuvas. Kaip atkūrimo variklį jis naudoja "
+#~ "pasižymėjusį %1, kuris sugeba atkurti daugumą video ir audio formatų. Jis "
+#~ "<b>naudoja savo kodekus</b>, taigi jums nereikia įdiegti papildomų kodekų."
 
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer - Atsisiuntimai"
+#~ msgid "Here is a complete list (from the MPlayer documentation):"
+#~ msgstr "Čia yra pilnas  sąrašas (iš MPlayer dokumentacijos):"
 
-#~ msgid "SMPlayer - FAQ"
-#~ msgstr "SMPlayer - DUK"
+#~ msgid ""
+#~ "SMPlayer is a graphical interface for %1, which supports many video and "
+#~ "audio formats and codecs."
+#~ msgstr ""
+#~ "SMPlayer yra %1 grafinė sąsaja, kuri palaiko daug video ir garso formatų "
+#~ "bei kodekų."
 
-#~ msgid "SMPlayer - Formats and Codecs"
-#~ msgstr "SMPlayer - Formatai ir kodekai"
-
-#~ msgid "SMPlayer - Opensource Media Player"
-#~ msgstr "SMPlayer - Atviro kodo Media grotuvas"
-
-#~ msgid "SMPlayer - Latest Changes"
-#~ msgstr "SMPlayer - Paskutiniai pakeitimai"
-
-#~ msgid "SMPlayer - Press Kit"
-#~ msgstr "SMPlayer - spaudai"
-
-#~ msgid "SMPlayer - Reviews"
-#~ msgstr "SMPlayer - apžvalgos"
-
-#~ msgid "SMPlayer - Screenshots"
-#~ msgstr "SMPlayer - Ekranvaizdžiai"
-
-#~ msgid "Click here to download SMPlayer for Windows"
-#~ msgstr "Norėdami parsiųsti SMPlayer windows sistemai spauskite čia"
-
-#~ msgid "Download SMPlayer for Windows"
-#~ msgstr "Parsisiųsti SMPlayer skirtą Windows"
-
-#~ msgid "Free Opensource Media Player"
-#~ msgstr "Nemokamas Atviro kodo Media grotuvas"
-
-#~ msgid "Built-in codecs"
-#~ msgstr "Įmontuoti kodekai"
+#~ msgid "Go to the download page"
+#~ msgstr "Eiti į atsisiuntimų puslapį"
 
 #~ msgid ""
 #~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
@@ -1277,39 +1300,60 @@ msgstr "Naudotojų apžvalgos"
 #~ "Jis naudoja <b>savo kodekus</b>, taigi jums neteks diegti jokių kodekų "
 #~ "paketų."
 
-#~ msgid "Go to the download page"
-#~ msgstr "Eiti į atsisiuntimų puslapį"
+#~ msgid "Built-in codecs"
+#~ msgstr "Įmontuoti kodekai"
+
+#~ msgid "Free Opensource Media Player"
+#~ msgstr "Nemokamas Atviro kodo Media grotuvas"
+
+#~ msgid "Download SMPlayer for Windows"
+#~ msgstr "Parsisiųsti SMPlayer skirtą Windows"
+
+#~ msgid "Click here to download SMPlayer for Windows"
+#~ msgstr "Norėdami parsiųsti SMPlayer windows sistemai spauskite čia"
+
+#~ msgid "SMPlayer - Screenshots"
+#~ msgstr "SMPlayer - Ekranvaizdžiai"
+
+#~ msgid "SMPlayer - Reviews"
+#~ msgstr "SMPlayer - apžvalgos"
+
+#~ msgid "SMPlayer - Press Kit"
+#~ msgstr "SMPlayer - spaudai"
+
+#~ msgid "SMPlayer - Latest Changes"
+#~ msgstr "SMPlayer - Paskutiniai pakeitimai"
+
+#~ msgid "SMPlayer - Opensource Media Player"
+#~ msgstr "SMPlayer - Atviro kodo Media grotuvas"
+
+#~ msgid "SMPlayer - Formats and Codecs"
+#~ msgstr "SMPlayer - Formatai ir kodekai"
+
+#~ msgid "SMPlayer - FAQ"
+#~ msgstr "SMPlayer - DUK"
+
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer - Atsisiuntimai"
+
+#~ msgid "SMPlayer - Contact us"
+#~ msgstr "SMPlayer - Susisiekite su mumis1"
+
+#~ msgid "Free and opensource. SMPlayer is under the <b>GPL</b> license."
+#~ msgstr "Nemokama ir atviro kodo. SMPlayer galioja <b>GPL</b> licencija."
 
 #~ msgid ""
-#~ "SMPlayer is a graphical interface for %1, which supports many video and "
-#~ "audio formats and codecs."
+#~ "A Youtube browser is included, which allows to easily download Youtube "
+#~ "videos."
 #~ msgstr ""
-#~ "SMPlayer yra %1 grafinė sąsaja, kuri palaiko daug video ir garso formatų "
-#~ "bei kodekų."
+#~ "Įtraukta Youtube naršyklė, kuri suteikia galimybę lengvai parsiųsti "
+#~ "Youtube vaizdo įrašus."
 
-#~ msgid "Here is a complete list (from the MPlayer documentation):"
-#~ msgstr "Čia yra pilnas  sąrašas (iš MPlayer dokumentacijos):"
+#~ msgid "Other interesting features:"
+#~ msgstr "Kitos įdomios galimybės:"
 
-#~ msgid ""
-#~ "SMPlayer is a complete media player. It uses\n"
-#~ "the award-winning %1 as playback engine which is capable of\n"
-#~ "playing most video and audio formats.\n"
-#~ "It <b>uses its own codecs</b>, so you don't need to install any codec "
-#~ "packs."
-#~ msgstr ""
-#~ "SMPlayer yra pilnas media grotuvas. Kaip atkūrimo variklį jis naudoja "
-#~ "pasižymėjusį %1, kuris sugeba atkurti daugumą video ir audio formatų. Jis "
-#~ "<b>naudoja savo kodekus</b>, taigi jums nereikia įdiegti papildomų kodekų."
+#~ msgid "Download <a href=%1>here</a> the latest version of SMPlayer"
+#~ msgstr "Parsisiųskite naujausią SMPlayer versiją iš <a href=%1>čia</a>"
 
-#~ msgid "Plays and download Youtube&trade; videos"
-#~ msgstr "Atkuria ir parsiunčia Youtube&trade; vaizdo įrašus"
-
-#~ msgid ""
-#~ "Anyway, if you still prefer to use UMPlayer we released a new version\n"
-#~ "with the Youtube problem fixed: %1."
-#~ msgstr ""
-#~ "Nepaisant to, jei vistiek norite naudoti UMPlayer mes išleidome naują "
-#~ "versiją, kurioje ištaisyta bėda su Youtube %1."
-
-#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-#~ msgstr "Suderinama su Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+#~ msgid "Language"
+#~ msgstr "Kalba"

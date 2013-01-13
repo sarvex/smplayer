@@ -1,6 +1,6 @@
 <?php
 include_once("header.php");
-print_header("SMTube");
+print_header("SMTube", get_tr("SMTube, a Youtube browser for SMPlayer"));
 echo "<body>\n";
 print_menu(0);
 ?>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-11 22:34+0100\n"
+"POT-Creation-Date: 2013-01-14 00:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../contact.php:3
+msgid "Contact and copyright info for SMPlayer"
+msgstr ""
 
 #: ../contact.php:3 ../contact.php:9 ../footer.php:41
 msgid "Contact us"
@@ -148,7 +152,11 @@ msgstr "Twitter でフォローする"
 msgid "Mirrors"
 msgstr "ミラー"
 
-#: ../downloads.php:3 ../downloads.php:11 ../header.php:110 ../umplayer.php:42
+#: ../downloads.php:3
+msgid "Download SMPlayer"
+msgstr ""
+
+#: ../downloads.php:3 ../downloads.php:11 ../header.php:115 ../umplayer.php:42
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -350,6 +358,10 @@ msgstr "閉じる"
 #: ../faq.php:3 ../footer.php:16
 msgid "FAQ"
 msgstr "FAQ"
+
+#: ../faq.php:3
+msgid "Frequently asked questions about SMPlayer"
+msgstr ""
 
 #. Q. = Initial for "Question"
 #: ../faq.php:15
@@ -826,20 +838,32 @@ msgid ""
 msgstr ""
 "YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイヤー"
 
-#: ../header.php:16
+#: ../header.php:14
+msgid ""
+"Free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:15
+msgid ""
+"a free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube&trade; videos"
+msgstr ""
+
+#: ../header.php:17
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "MPlayer のグラフィカルユーザーインターフェイス (GUI)"
 
-#: ../header.php:107
+#: ../header.php:112
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:108 ../presskit.php:22 ../screenshots.php:3
+#: ../header.php:113 ../presskit.php:22 ../screenshots.php:3
 #: ../screenshots.php:13 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: ../header.php:109 ../reviews.php:3 ../reviews.php:9
+#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
 msgid "Reviews"
 msgstr "レビュー"
 
@@ -960,6 +984,10 @@ msgstr ""
 "索/ダウンロードや、字幕の検索、スキン対応インターフェイスといった他の機能も豊"
 "富に備えています。"
 
+#: ../latest.php:4
+msgid "Latest changes of SMPlayer"
+msgstr ""
+
 #: ../latest.php:11
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "こちらでは SMPlayer の最新の変更点がご覧になれます:"
@@ -967,6 +995,10 @@ msgstr "こちらでは SMPlayer の最新の変更点がご覧になれます:"
 #: ../latest.php:20
 msgid "Click here to download the latest version"
 msgstr "最新版をダウンロードする"
+
+#: ../presskit.php:3
+msgid "Press kit for SMPlayer"
+msgstr ""
 
 #: ../presskit.php:10
 msgid "Some images you can use in an article, blog, review..."
@@ -981,6 +1013,10 @@ msgstr "ロゴ"
 msgid "Some screenshots, in English and Spanish"
 msgstr "スクリーンショット詰め合わせ (英語、スペイン語)"
 
+#: ../reviews.php:3
+msgid "Reviews about SMPlayer"
+msgstr ""
+
 #: ../reviews.php:21
 msgid "Media Reviews"
 msgstr "媒体レビュー"
@@ -992,6 +1028,10 @@ msgid ""
 msgstr ""
 "SMPlayer が気に入られた場合は、ぜひ以下のようなサイトに SMPlayer の評価やレ"
 "ビューを投稿してください:"
+
+#: ../screenshots.php:3
+msgid "Screenshots of SMPlayer"
+msgstr ""
 
 #: ../screenshots.php:33
 msgid "Here you can see some screenshots from SMPlayer:"
@@ -1114,6 +1154,10 @@ msgstr "YouTube ブラウザー"
 #: ../smplayer.php:121
 msgid "Find Subtitles"
 msgstr "字幕の検索"
+
+#: ../smtube.php:3
+msgid "SMTube, a Youtube browser for SMPlayer"
+msgstr ""
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
