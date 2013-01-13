@@ -72,11 +72,11 @@ echo "David Yen (black, vista), err0rsm1th (gonzo, mac), Echo (modern).";
 
 <h2><?php tr("Mirrors"); ?></h2>
 <p>
-<a href="http://smplayer.info">smplayer.info</a>
+<a href="http://smplayer.info">http://smplayer.info</a>
 <br>
-<a href="http://smplayer.sourceforge.net">smplayer.sourceforge.net</a>
+<a href="http://smplayer.sourceforge.net">http://smplayer.sourceforge.net</a>
 <br>
-<a href="http://smplayer.berlios.de">smplayer.berlios.de</a>
+<a href="http://smplayer.berlios.de">http://smplayer.berlios.de</a>
 
 </div> <!-- container -->
 
