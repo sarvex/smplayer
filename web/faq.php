@@ -39,7 +39,7 @@ function print_faq($question, $answer) {
 ?>
 
 <div class="container-fluid">
-<h1><?php tr("Frequently Asked Questions"); ?></h1>
+<h1><i class="icon-question-sign"></i> <?php tr("Frequently Asked Questions"); ?></h1>
 
 <div class="row-fluid">
 

@@ -6,7 +6,7 @@ print_menu(4);
 ?>
 
 <div class="container-fluid">
-<h1><?php tr("Reviews"); ?></h1>
+<h1><i class="icon-comments"></i> <?php tr("Reviews"); ?></h1>
 
 <div class="row-fluid">
 

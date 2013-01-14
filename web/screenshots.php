@@ -9,9 +9,11 @@ print_menu(2);
 
 <?php 
 include("gallery.php");
+?>
 
-echo "<h1>". get_tr("Screenshots") ."</h1>";
+<h1><i class="icon-camera"></i> <?php tr("Screenshots"); ?></h1>
 
+<?php
 function show_thumb($filename, $desc) {
 	echo "<li class=\"span3\">\n";
 	echo "<a title=\"$desc\" rel=\"gallery\" href=\"images/screenshots/$filename\" class=\"thumbnail\">\n";
@@ -71,7 +73,8 @@ echo "</div>";
 echo "</div> <!-- gallery -->\n";
 ?>
 
-<?php echo "<h1>". get_tr("Videos") ."</h1>"; ?>
+<h1><i class="icon-film"></i> <?php tr("Videos"); ?></h1>
+
 <div class="row">
 <div class="span12">
 <ul class="thumbnails">

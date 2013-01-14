@@ -8,7 +8,7 @@ include_once("download_links.php");
 ?>
 
 <div class="container-fluid">
-<?php echo "<h1>".get_tr("Downloads")."</h1>"; ?>
+<?php echo "<h1><i class=\"icon-download-alt\"></i> ".get_tr("Downloads")."</h1>"; ?>
 
 <div class="row-fluid">
 <div class="span9">

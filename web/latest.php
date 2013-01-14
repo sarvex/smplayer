@@ -7,7 +7,7 @@ print_menu(0);
 ?>
 
 <div class="container-fluid">
-<h1><?php tr("Latest changes"); ?></h1>
+<h1><i class="icon-exclamation-sign"></i> <?php tr("Latest changes"); ?></h1>
 <p><?php tr("Here you can find a list with the latest changes in SMPlayer:"); ?></p>
 
 <?php

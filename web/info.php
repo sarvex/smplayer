@@ -15,15 +15,15 @@
 			tr("Graphical Frontend for MPlayer");
 			}
 			echo "<p class=\"second\">\n";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Plays and downloads Youtube&trade; videos") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Automatically search and download subtitles") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Resumes playback") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Skin support") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Many audio and video filters included") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Simple and intuitive interface") ."<br>";
-			echo "<img src=\"images/check2.png\"> ". get_tr("Multi-platform. Available for Windows and Linux") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Plays every format: avi, mp4, mkv, divx, h.264, mpeg, mov...") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Built-in codecs. No codec packs needed") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Plays and downloads Youtube&trade; videos") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Automatically search and download subtitles") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Resumes playback") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Skin support") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Many audio and video filters included") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Simple and intuitive interface") ."<br>";
+			echo "<i class=\"icon-ok\"></i> ". get_tr("Multi-platform. Available for Windows and Linux") ."<br>";
 			echo "</p>";
 			echo "<p>" . auto_download_button() ."</p>\n";
 			?>
@@ -37,7 +37,7 @@
 
 <div class="row-fluid">
 	<div class="span9">
-		<h3><?php tr("About SMPlayer"); ?></h3>
+		<h2><i class="icon-info-sign"></i> <?php tr("About SMPlayer"); ?></h2>
 		<?php 
 
 

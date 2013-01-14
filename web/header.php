@@ -46,7 +46,7 @@ echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />
 <?php
 }
 
-function header_print_link($name, $link, $active, $external=false, $last=false) {
+function header_print_link($name, $link, $active, $icon="", $external=false) {
 	global $tr_lang;
 	echo "<li";
 	if ($active) echo " class=\"active\"";
@@ -54,6 +54,7 @@ function header_print_link($name, $link, $active, $external=false, $last=false) 
 	echo "<a href=\"".$link;
 	if (!$external) echo "?tr_lang=$tr_lang";
 	echo "\">";
+	if ($icon!="") echo "<i class=\"$icon\"></i> ";
 	echo $name;
 	echo "</a>";
 	echo "</li>";
@@ -111,11 +112,11 @@ function print_menu($current=1) {
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 				<?php
-				header_print_link(get_tr("Main"), "index.php", ($current==1));
-				header_print_link(get_tr("Screenshots"), "screenshots.php", ($current==2));
+				header_print_link(get_tr("Main"), "index.php", ($current==1), "icon-home");
+				header_print_link(get_tr("Screenshots"), "screenshots.php", ($current==2), "icon-camera");
 				/* header_print_link(get_tr("Reviews"), "reviews.php", ($current==4)); */
-				header_print_link(get_tr("FAQ"), "faq.php", ($current==5));
-				header_print_link(get_tr("Downloads"), "downloads.php", ($current==3));
+				header_print_link(get_tr("FAQ"), "faq.php", ($current==5), "icon-question-sign");
+				header_print_link(get_tr("Downloads"), "downloads.php", ($current==3), "icon-download-alt");
 				?>
 				</ul>
 

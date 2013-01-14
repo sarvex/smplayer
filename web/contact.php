@@ -6,7 +6,7 @@ print_menu(0);
 ?>
 
 <div class="container-fluid">
-<h1><?php tr("Contact us"); ?></h1>
+<h1><i class="icon-envelope"></i> <?php tr("Contact us"); ?></h1>
 <p>
 <?php
 tr("You can send your suggestions, patches, translations or whatever regarding 
