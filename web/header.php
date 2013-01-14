@@ -34,6 +34,7 @@ echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <link href="mystyle.css" rel="stylesheet">
 <!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
