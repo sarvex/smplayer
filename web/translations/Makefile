@@ -4,7 +4,7 @@ FILES=../index.php ../info.php ../header.php ../footer.php ../downloads.php \
       ../screenshots.php ../latest.php ../formats.php \
       ../formats_text.php ../smtube.php ../contact.php ../umplayer.php ../faq.php \
       ../reviews.php ../user_reviews.php ../media_reviews.php ../presskit.php \
-      ../smplayer.php ../info2.php ../features.php
+      ../smplayer.php ../info2.php ../features.php ../gallery.php
 
 empty.pot: $(FILES)
 	xgettext --add-comments \

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 00:22+0100\n"
+"POT-Creation-Date: 2013-01-15 00:35+0100\n"
 "PO-Revision-Date: 2013-01-12 18:01+0100\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Contact and copyright info for SMPlayer"
 msgstr ""
 
-#: ../contact.php:3 ../contact.php:9 ../footer.php:41
+#: ../contact.php:3 ../contact.php:9 ../footer.php:42
 msgid "Contact us"
 msgstr "Contactar"
 
@@ -149,7 +149,7 @@ msgstr ""
 "As aparencias, desenvolvidas no proxecto UMPlayer, integráronse en SMPlayer. "
 "Estes foron os seus autores:"
 
-#: ../contact.php:71 ../footer.php:46
+#: ../contact.php:71 ../footer.php:47
 msgid "Follow us on Twitter"
 msgstr "Seguir en Twitter"
 
@@ -161,7 +161,7 @@ msgstr "Réplicas"
 msgid "Download SMPlayer"
 msgstr ""
 
-#: ../downloads.php:3 ../downloads.php:11 ../header.php:115 ../umplayer.php:42
+#: ../downloads.php:3 ../downloads.php:11 ../header.php:119 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Descargas"
 
@@ -355,12 +355,13 @@ msgstr ""
 "opción <i>Desinstalar SMPlayer</i> da entrada de SMPlayer no menú de inicio "
 "de Windows."
 
-#: ../downloads.php:210 ../info.php:90 ../info2.php:79 ../smtube.php:17
+#: ../downloads.php:210 ../info.php:102 ../info2.php:79 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
 msgstr "Pechar"
 
-#: ../faq.php:3 ../footer.php:16
+#. header_print_link(get_tr("Reviews"), "reviews.php", ($current==4));
+#: ../faq.php:3 ../footer.php:16 ../header.php:118
 msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
@@ -798,35 +799,39 @@ msgstr "Últimos cambios"
 msgid "Forum"
 msgstr "Foro"
 
-#: ../footer.php:17 ../presskit.php:3 ../presskit.php:9
+#: ../footer.php:17 ../reviews.php:3 ../reviews.php:9
+msgid "Reviews"
+msgstr "Opinións"
+
+#: ../footer.php:18 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "Material de prensa"
 
-#: ../footer.php:23
+#: ../footer.php:24
 msgid "Bug Tracking"
 msgstr "Seguimento de incidencias"
 
-#: ../footer.php:24
+#: ../footer.php:25
 msgid "Feature Requests"
 msgstr "Solicitude de funcionalidades"
 
-#: ../footer.php:27
+#: ../footer.php:28
 msgid "Blog"
 msgstr "Blogue"
 
-#: ../footer.php:36 ../footer.php:38
+#: ../footer.php:37 ../footer.php:39
 msgid "Mirror"
 msgstr "Réplica"
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "MPlayer builds for Windows"
 msgstr "Compilacións de MPlayer para Windows"
 
-#: ../formats.php:3 ../formats.php:11 ../info.php:84 ../info2.php:73
+#: ../formats.php:3 ../formats.php:11 ../info.php:96 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr "Formatos e códecs"
 
@@ -858,6 +863,22 @@ msgstr "Códecs de vídeo máis importantes:"
 msgid "most important audio codecs:"
 msgstr "Códecs de son máis importantes:"
 
+#: ../gallery.php:11
+msgid "Download"
+msgstr ""
+
+#: ../gallery.php:15
+msgid "Slideshow"
+msgstr ""
+
+#: ../gallery.php:19
+msgid "Previous"
+msgstr ""
+
+#: ../gallery.php:22
+msgid "Next"
+msgstr ""
+
 #: ../header.php:13
 msgid ""
 "Media Player for Windows and Linux with built-in codecs and Youtube&trade; "
@@ -882,18 +903,14 @@ msgstr ""
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "Interface gráfica para MPlayer."
 
-#: ../header.php:112
+#: ../header.php:115
 msgid "Main"
 msgstr "Inicio"
 
-#: ../header.php:113 ../presskit.php:22 ../screenshots.php:3
-#: ../screenshots.php:13 ../smplayer.php:112
+#: ../header.php:116 ../presskit.php:22 ../screenshots.php:3
+#: ../screenshots.php:14 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "Capturas"
-
-#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
-msgid "Reviews"
-msgstr "Opinións"
 
 #: ../info.php:12 ../info2.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
@@ -923,7 +940,7 @@ msgstr "Busca e descarga automática de subtítulos."
 msgid "Resumes playback"
 msgstr "Continúa a reprodución onde a deixou."
 
-#: ../info.php:23 ../info2.php:19 ../screenshots.php:80 ../smplayer.php:28
+#: ../info.php:23 ../info2.php:19 ../screenshots.php:83 ../smplayer.php:28
 msgid "Skin support"
 msgstr "Personalizar a aparencia."
 
@@ -984,7 +1001,7 @@ msgstr "Instale SMPlayer e esqueza os códecs!"
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr "SMPlayer funciona en Windows e Linux."
 
-#: ../info.php:75 ../info2.php:64 ../smplayer.php:132
+#: ../info.php:76 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr "Ler máis opinións"
 
@@ -1060,67 +1077,67 @@ msgstr ""
 msgid "Screenshots of SMPlayer"
 msgstr ""
 
-#: ../screenshots.php:33
+#: ../screenshots.php:35
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "Aquí poderá ver algunhas capturas de SMPlayer:"
 
-#: ../screenshots.php:41
+#: ../screenshots.php:43
 msgid "This is the main window"
 msgstr "Xanela principal."
 
-#: ../screenshots.php:42
+#: ../screenshots.php:44
 msgid "The Windows version"
 msgstr "Versión para Windows."
 
-#: ../screenshots.php:43
+#: ../screenshots.php:45
 msgid "The preferences dialog"
 msgstr "Diálogo de configuración."
 
-#: ../screenshots.php:44
+#: ../screenshots.php:46
 msgid "The YouTube browser"
 msgstr "Navegador de YouTube."
 
-#: ../screenshots.php:52
+#: ../screenshots.php:54
 msgid "Video preview"
 msgstr "Vista previa dun vídeo."
 
-#: ../screenshots.php:53
+#: ../screenshots.php:55
 msgid "Matroska embedded subtitles"
 msgstr "Subtítulos incorporados nun vídeo Matroska."
 
-#: ../screenshots.php:54
+#: ../screenshots.php:56
 msgid "More than 30 translations available"
 msgstr "Máis de 30 traducións dispoñíbeis."
 
-#: ../screenshots.php:55
+#: ../screenshots.php:57
 msgid "The mini GUI"
 msgstr "Interface minimalista."
 
-#: ../screenshots.php:63
+#: ../screenshots.php:65
 msgid "Possibility to search for subtitles"
 msgstr "Busca de subtítulos."
 
-#: ../screenshots.php:64
+#: ../screenshots.php:66
 msgid "The skin Vista"
 msgstr "Aparencia “Vista”."
 
-#: ../screenshots.php:65
+#: ../screenshots.php:67
 msgid "The skin Mac"
 msgstr "Aparencia “Mac”."
 
-#: ../screenshots.php:66
+#: ../screenshots.php:68
 msgid "The skin Modern"
 msgstr "Aparencia “Moderna”."
 
-#: ../screenshots.php:74
+#: ../screenshots.php:76
 msgid "Videos"
 msgstr "Vídeos"
 
-#: ../screenshots.php:82
+#: ../screenshots.php:85
 msgid "Youtube browser"
 msgstr "Navegador de YouTube."
 
-#: ../screenshots.php:84
+#: ../screenshots.php:87
 msgid "Toolbar editor"
 msgstr "Editor da barra de ferramentas."
 
@@ -1289,36 +1306,8 @@ msgstr "Captura de UMPlayer."
 msgid "Users Reviews"
 msgstr "Opinións dos usuarios"
 
-#~ msgid "SMPlayer - Contact us"
-#~ msgstr "SMPlayer — Contactar"
-
-#~ msgid "Here is a complete list (from the MPlayer documentation):"
-#~ msgstr ""
-#~ "A seguinte é unha lista completa, sacada da documentación de MPlayer:"
-
-#~ msgid "Go to the download page"
-#~ msgstr "Ir á páxina de descargas"
-
-#~ msgid "SMPlayer - Latest Changes"
-#~ msgstr "SMPlayer — Últimos cambios"
-
-#~ msgid "SMPlayer - Screenshots"
-#~ msgstr "SMPlayer — Capturas de pantalla"
-
-#~ msgid "the unstable version"
-#~ msgstr "a versión inestábel"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Prema aquí para descargar o paquete completo"
-
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer — Descargas"
-
-#~ msgid "Language"
-#~ msgstr "Idioma"
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Posibilidade de cambiar o estilo e as iconas da interface."
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer — Información xeral"
 
 #~ msgid ""
 #~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
@@ -1334,5 +1323,33 @@ msgstr "Opinións dos usuarios"
 #~ "Ademais o motor <b>utiliza os seus propios códecs</b>, así que non ten "
 #~ "que instalar ningún paquete adicional."
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer — Información xeral"
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Posibilidade de cambiar o estilo e as iconas da interface."
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer — Descargas"
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Prema aquí para descargar o paquete completo"
+
+#~ msgid "the unstable version"
+#~ msgstr "a versión inestábel"
+
+#~ msgid "SMPlayer - Screenshots"
+#~ msgstr "SMPlayer — Capturas de pantalla"
+
+#~ msgid "SMPlayer - Latest Changes"
+#~ msgstr "SMPlayer — Últimos cambios"
+
+#~ msgid "Go to the download page"
+#~ msgstr "Ir á páxina de descargas"
+
+#~ msgid "Here is a complete list (from the MPlayer documentation):"
+#~ msgstr ""
+#~ "A seguinte é unha lista completa, sacada da documentación de MPlayer:"
+
+#~ msgid "SMPlayer - Contact us"
+#~ msgstr "SMPlayer — Contactar"

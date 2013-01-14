@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 00:22+0100\n"
+"POT-Creation-Date: 2013-01-15 00:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Contact and copyright info for SMPlayer"
 msgstr ""
 
-#: ../contact.php:3 ../contact.php:9 ../footer.php:41
+#: ../contact.php:3 ../contact.php:9 ../footer.php:42
 msgid "Contact us"
 msgstr "お問い合わせ"
 
@@ -144,7 +144,7 @@ msgstr ""
 msgid "The skins have been ported from umplayer. The authors are:"
 msgstr ""
 
-#: ../contact.php:71 ../footer.php:46
+#: ../contact.php:71 ../footer.php:47
 msgid "Follow us on Twitter"
 msgstr "Twitter でフォローする"
 
@@ -156,7 +156,7 @@ msgstr "ミラー"
 msgid "Download SMPlayer"
 msgstr ""
 
-#: ../downloads.php:3 ../downloads.php:11 ../header.php:115 ../umplayer.php:42
+#: ../downloads.php:3 ../downloads.php:11 ../header.php:119 ../umplayer.php:42
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -350,12 +350,13 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:210 ../info.php:90 ../info2.php:79 ../smtube.php:17
+#: ../downloads.php:210 ../info.php:102 ../info2.php:79 ../smtube.php:17
 #: ../umplayer.php:127
 msgid "Close"
 msgstr "閉じる"
 
-#: ../faq.php:3 ../footer.php:16
+#. header_print_link(get_tr("Reviews"), "reviews.php", ($current==4));
+#: ../faq.php:3 ../footer.php:16 ../header.php:118
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -771,35 +772,39 @@ msgstr "最新の変更点"
 msgid "Forum"
 msgstr "フォーラム"
 
-#: ../footer.php:17 ../presskit.php:3 ../presskit.php:9
+#: ../footer.php:17 ../reviews.php:3 ../reviews.php:9
+msgid "Reviews"
+msgstr "レビュー"
+
+#: ../footer.php:18 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "プレスキット"
 
-#: ../footer.php:23
+#: ../footer.php:24
 msgid "Bug Tracking"
 msgstr "バグトラック"
 
-#: ../footer.php:24
+#: ../footer.php:25
 msgid "Feature Requests"
 msgstr "機能要望"
 
-#: ../footer.php:27
+#: ../footer.php:28
 msgid "Blog"
 msgstr "ブログ"
 
-#: ../footer.php:36 ../footer.php:38
+#: ../footer.php:37 ../footer.php:39
 msgid "Mirror"
 msgstr "ミラー"
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "MPlayer builds for Windows"
 msgstr "Windows 用 MPlayer ビルド"
 
-#: ../formats.php:3 ../formats.php:11 ../info.php:84 ../info2.php:73
+#: ../formats.php:3 ../formats.php:11 ../info.php:96 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr "フォーマットとコーデック"
 
@@ -831,6 +836,22 @@ msgstr "主要なビデオコーデック:"
 msgid "most important audio codecs:"
 msgstr "主要なオーディオコーデック:"
 
+#: ../gallery.php:11
+msgid "Download"
+msgstr ""
+
+#: ../gallery.php:15
+msgid "Slideshow"
+msgstr ""
+
+#: ../gallery.php:19
+msgid "Previous"
+msgstr ""
+
+#: ../gallery.php:22
+msgid "Next"
+msgstr ""
+
 #: ../header.php:13
 msgid ""
 "Media Player for Windows and Linux with built-in codecs and Youtube&trade; "
@@ -854,18 +875,14 @@ msgstr ""
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "MPlayer のグラフィカルユーザーインターフェイス (GUI)"
 
-#: ../header.php:112
+#: ../header.php:115
 msgid "Main"
 msgstr "メイン"
 
-#: ../header.php:113 ../presskit.php:22 ../screenshots.php:3
-#: ../screenshots.php:13 ../smplayer.php:112
+#: ../header.php:116 ../presskit.php:22 ../screenshots.php:3
+#: ../screenshots.php:14 ../smplayer.php:112
 msgid "Screenshots"
 msgstr "スクリーンショット"
-
-#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
-msgid "Reviews"
-msgstr "レビュー"
 
 #: ../info.php:12 ../info2.php:12 ../smplayer.php:21
 msgid "Free Media Player with Youtube&trade; support"
@@ -896,7 +913,7 @@ msgstr "自動的に字幕を検索/ダウンロードする機能"
 msgid "Resumes playback"
 msgstr "再生位置を記憶"
 
-#: ../info.php:23 ../info2.php:19 ../screenshots.php:80 ../smplayer.php:28
+#: ../info.php:23 ../info2.php:19 ../screenshots.php:83 ../smplayer.php:28
 msgid "Skin support"
 msgstr "スキンに対応"
 
@@ -957,7 +974,7 @@ msgstr ""
 "SMPlayer は Windows と Linux で動作するマルチプラットフォームのアプリケーショ"
 "ンです。"
 
-#: ../info.php:75 ../info2.php:64 ../smplayer.php:132
+#: ../info.php:76 ../info2.php:64 ../smplayer.php:132
 msgid "Click here to read more reviews"
 msgstr "もっとレビューを読む"
 
@@ -1033,67 +1050,67 @@ msgstr ""
 msgid "Screenshots of SMPlayer"
 msgstr ""
 
-#: ../screenshots.php:33
+#: ../screenshots.php:35
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr "こちらでは SMPlayer のスクリーンショットがいくつかご覧になれます:"
 
-#: ../screenshots.php:41
+#: ../screenshots.php:43
 msgid "This is the main window"
 msgstr "メインウィンドウ"
 
-#: ../screenshots.php:42
+#: ../screenshots.php:44
 msgid "The Windows version"
 msgstr "Windows 版"
 
-#: ../screenshots.php:43
+#: ../screenshots.php:45
 msgid "The preferences dialog"
 msgstr "環境設定ダイアログ"
 
-#: ../screenshots.php:44
+#: ../screenshots.php:46
 msgid "The YouTube browser"
 msgstr "YouTube ブラウザー"
 
-#: ../screenshots.php:52
+#: ../screenshots.php:54
 msgid "Video preview"
 msgstr "ビデオプレビュー"
 
-#: ../screenshots.php:53
+#: ../screenshots.php:55
 msgid "Matroska embedded subtitles"
 msgstr "Matroska の埋め込み字幕"
 
-#: ../screenshots.php:54
+#: ../screenshots.php:56
 msgid "More than 30 translations available"
 msgstr "30 以上の翻訳が利用可能"
 
-#: ../screenshots.php:55
+#: ../screenshots.php:57
 msgid "The mini GUI"
 msgstr "ミニ GUI"
 
-#: ../screenshots.php:63
+#: ../screenshots.php:65
 msgid "Possibility to search for subtitles"
 msgstr "字幕の検索機能"
 
-#: ../screenshots.php:64
+#: ../screenshots.php:66
 msgid "The skin Vista"
 msgstr "スキン Vista"
 
-#: ../screenshots.php:65
+#: ../screenshots.php:67
 msgid "The skin Mac"
 msgstr "スキン Mac"
 
-#: ../screenshots.php:66
+#: ../screenshots.php:68
 msgid "The skin Modern"
 msgstr "スキン Modern"
 
-#: ../screenshots.php:74
+#: ../screenshots.php:76
 msgid "Videos"
 msgstr "ビデオ"
 
-#: ../screenshots.php:82
+#: ../screenshots.php:85
 msgid "Youtube browser"
 msgstr "YouTube ブラウザー"
 
-#: ../screenshots.php:84
+#: ../screenshots.php:87
 msgid "Toolbar editor"
 msgstr "ツールバーの編集"
 

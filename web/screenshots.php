@@ -37,45 +37,45 @@ echo "\n";
 
 echo "<div id=\"gallery\" data-toggle=\"modal-gallery\" data-target=\"#modal-gallery\">\n";
 
-echo "<div class=\"row\">\n";
+echo "<div class=\"row-fluid\">\n";
 echo "<div class=\"span12\">\n";
 echo "<ul class=\"thumbnails\">\n";
 show_thumb("mainwindow.png", get_tr("This is the main window") );
 show_thumb("mainwindow_vista.png", get_tr("The Windows version") );
 show_thumb("preferences2.png", get_tr("The preferences dialog") );
 show_thumb("smtube.png", get_tr("The YouTube browser") );
-echo "</ul>";
-echo "</div>";
-echo "</div>";
+echo "</ul>\n";
+echo "</div>\n";
+echo "</div>\n";
 
-echo "<div class=\"row\">";
+echo "<div class=\"row-fluid\">";
 echo "<div class=\"span12\">\n";
 echo "<ul class=\"thumbnails\">";
 show_thumb("video_preview.png", get_tr("Video preview") );
 show_thumb("subtitles2.jpg", get_tr("Matroska embedded subtitles") );
 show_thumb("languages2.png", get_tr("More than 30 translations available") );
 show_thumb("mini_gui2.png", get_tr("The mini GUI") );
-echo "</ul>";
-echo "</div>";
-echo "</div>";
+echo "</ul>\n";
+echo "</div>\n";
+echo "</div>\n";
 
-echo "<div class=\"row\">";
+echo "<div class=\"row-fluid\">";
 echo "<div class=\"span12\">\n";
 echo "<ul class=\"thumbnails\">";
 show_thumb("find_subtitles.png", get_tr("Possibility to search for subtitles") );
 show_thumb("smplayer_skin_vista.png", get_tr("The skin Vista") );
 show_thumb("smplayer_skin_mac.png", get_tr("The skin Mac") );
 show_thumb("smplayer_skin_modern.png", get_tr("The skin Modern") );
-echo "</ul>";
-echo "</div>";
-echo "</div>";
+echo "</ul>\n";
+echo "</div>\n";
+echo "</div>\n";
 
 echo "</div> <!-- gallery -->\n";
 ?>
 
 <h1><i class="icon-film"></i> <?php tr("Videos"); ?></h1>
 
-<div class="row">
+<div class="row-fluid">
 <div class="span12">
 <ul class="thumbnails">
 <?php 

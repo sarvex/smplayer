@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 00:22+0100\n"
+"POT-Creation-Date: 2013-01-15 00:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Resumes playback"
 msgstr ""
 
-#: ../info.php:23 ../screenshots.php:80 ../smplayer.php:28 ../info2.php:19
+#: ../info.php:23 ../screenshots.php:83 ../smplayer.php:28 ../info2.php:19
 msgid "Skin support"
 msgstr ""
 
@@ -99,15 +99,15 @@ msgstr ""
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr ""
 
-#: ../info.php:75 ../smplayer.php:132 ../info2.php:64
+#: ../info.php:76 ../smplayer.php:132 ../info2.php:64
 msgid "Click here to read more reviews"
 msgstr ""
 
-#: ../info.php:84 ../formats.php:3 ../formats.php:11 ../info2.php:73
+#: ../info.php:96 ../formats.php:3 ../formats.php:11 ../info2.php:73
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../info.php:90 ../downloads.php:210 ../smtube.php:17 ../umplayer.php:127
+#: ../info.php:102 ../downloads.php:210 ../smtube.php:17 ../umplayer.php:127
 #: ../info2.php:79
 msgid "Close"
 msgstr ""
@@ -134,20 +134,21 @@ msgstr ""
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr ""
 
-#: ../header.php:112
+#: ../header.php:115
 msgid "Main"
 msgstr ""
 
-#: ../header.php:113 ../screenshots.php:3 ../screenshots.php:13
+#: ../header.php:116 ../screenshots.php:3 ../screenshots.php:14
 #: ../presskit.php:22 ../smplayer.php:112
 msgid "Screenshots"
 msgstr ""
 
-#: ../header.php:114 ../reviews.php:3 ../reviews.php:9
-msgid "Reviews"
+#. header_print_link(get_tr("Reviews"), "reviews.php", ($current==4));
+#: ../header.php:118 ../footer.php:16 ../faq.php:3
+msgid "FAQ"
 msgstr ""
 
-#: ../header.php:115 ../downloads.php:3 ../downloads.php:11 ../umplayer.php:42
+#: ../header.php:119 ../downloads.php:3 ../downloads.php:11 ../umplayer.php:42
 msgid "Downloads"
 msgstr ""
 
@@ -164,43 +165,43 @@ msgstr ""
 msgid "Forum"
 msgstr ""
 
-#: ../footer.php:16 ../faq.php:3
-msgid "FAQ"
+#: ../footer.php:17 ../reviews.php:3 ../reviews.php:9
+msgid "Reviews"
 msgstr ""
 
-#: ../footer.php:17 ../presskit.php:3 ../presskit.php:9
+#: ../footer.php:18 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr ""
 
-#: ../footer.php:23
+#: ../footer.php:24
 msgid "Bug Tracking"
 msgstr ""
 
-#: ../footer.php:24
+#: ../footer.php:25
 msgid "Feature Requests"
 msgstr ""
 
-#: ../footer.php:27
+#: ../footer.php:28
 msgid "Blog"
 msgstr ""
 
-#: ../footer.php:36 ../footer.php:38
+#: ../footer.php:37 ../footer.php:39
 msgid "Mirror"
 msgstr ""
 
-#: ../footer.php:41 ../contact.php:3 ../contact.php:9
+#: ../footer.php:42 ../contact.php:3 ../contact.php:9
 msgid "Contact us"
 msgstr ""
 
-#: ../footer.php:42
+#: ../footer.php:43
 msgid "Wiki"
 msgstr ""
 
-#: ../footer.php:43
+#: ../footer.php:44
 msgid "MPlayer builds for Windows"
 msgstr ""
 
-#: ../footer.php:46 ../contact.php:71
+#: ../footer.php:47 ../contact.php:71
 msgid "Follow us on Twitter"
 msgstr ""
 
@@ -376,67 +377,67 @@ msgstr ""
 msgid "Screenshots of SMPlayer"
 msgstr ""
 
-#: ../screenshots.php:33
+#: ../screenshots.php:35
 msgid "Here you can see some screenshots from SMPlayer:"
 msgstr ""
 
-#: ../screenshots.php:41
+#: ../screenshots.php:43
 msgid "This is the main window"
 msgstr ""
 
-#: ../screenshots.php:42
+#: ../screenshots.php:44
 msgid "The Windows version"
 msgstr ""
 
-#: ../screenshots.php:43
+#: ../screenshots.php:45
 msgid "The preferences dialog"
 msgstr ""
 
-#: ../screenshots.php:44
+#: ../screenshots.php:46
 msgid "The YouTube browser"
 msgstr ""
 
-#: ../screenshots.php:52
+#: ../screenshots.php:54
 msgid "Video preview"
 msgstr ""
 
-#: ../screenshots.php:53
+#: ../screenshots.php:55
 msgid "Matroska embedded subtitles"
 msgstr ""
 
-#: ../screenshots.php:54
+#: ../screenshots.php:56
 msgid "More than 30 translations available"
 msgstr ""
 
-#: ../screenshots.php:55
+#: ../screenshots.php:57
 msgid "The mini GUI"
 msgstr ""
 
-#: ../screenshots.php:63
+#: ../screenshots.php:65
 msgid "Possibility to search for subtitles"
 msgstr ""
 
-#: ../screenshots.php:64
+#: ../screenshots.php:66
 msgid "The skin Vista"
 msgstr ""
 
-#: ../screenshots.php:65
+#: ../screenshots.php:67
 msgid "The skin Mac"
 msgstr ""
 
-#: ../screenshots.php:66
+#: ../screenshots.php:68
 msgid "The skin Modern"
 msgstr ""
 
-#: ../screenshots.php:74
+#: ../screenshots.php:76
 msgid "Videos"
 msgstr ""
 
-#: ../screenshots.php:82
+#: ../screenshots.php:85
 msgid "Youtube browser"
 msgstr ""
 
-#: ../screenshots.php:84
+#: ../screenshots.php:87
 msgid "Toolbar editor"
 msgstr ""
 
@@ -1111,4 +1112,20 @@ msgstr ""
 
 #: ../features.php:36
 msgid "Compatible with Windows XP/2003/Vista/Server 2008/7/8."
+msgstr ""
+
+#: ../gallery.php:11
+msgid "Download"
+msgstr ""
+
+#: ../gallery.php:15
+msgid "Slideshow"
+msgstr ""
+
+#: ../gallery.php:19
+msgid "Previous"
+msgstr ""
+
+#: ../gallery.php:22
+msgid "Next"
 msgstr ""
