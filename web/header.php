@@ -112,7 +112,8 @@ function print_menu($current=1) {
 				<?php
 				header_print_link(get_tr("Main"), "index.php", ($current==1));
 				header_print_link(get_tr("Screenshots"), "screenshots.php", ($current==2));
-				header_print_link(get_tr("Reviews"), "reviews.php", ($current==4));
+				/* header_print_link(get_tr("Reviews"), "reviews.php", ($current==4)); */
+				header_print_link(get_tr("FAQ"), "faq.php", ($current==5));
 				header_print_link(get_tr("Downloads"), "downloads.php", ($current==3));
 				?>
 				</ul>

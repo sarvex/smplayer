@@ -37,6 +37,7 @@ function auto_download_button($text = "") {
 		$u = download_windows_full_link($text, true);
 	} else {
 		$u ="<a href=\"downloads.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+            "<i class=\"icon-download-alt icon-large\"></i> ".
 			 get_tr($text) .
 			 "</a>";
 	}

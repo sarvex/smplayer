@@ -13,7 +13,8 @@
 <ul>
 <li><?php echo "<a href=\"latest.php?tr_lang=$tr_lang\">". get_tr("Latest changes") ."</a>"; ?></li>
 <li><a href="http://smplayer.sourceforge.net/forum/"><?php tr("Forum"); ?></a></li>
-<li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li>
+<!-- <li><?php echo "<a href=\"faq.php?tr_lang=$tr_lang\">". get_tr("FAQ") ."</a>"; ?></li> -->
+<li><?php echo "<a href=\"reviews.php?tr_lang=$tr_lang\">". get_tr("Reviews") ."</a>"; ?></li>
 <li><?php echo "<a href=\"presskit.php?tr_lang=$tr_lang\">". get_tr("Press Kit") ."</a>"; ?></li>
 </ul>
 </td>
@@ -43,7 +44,7 @@ else
 <li><a target="_blank" href="http://code.google.com/p/mplayer-for-windows/"><?php tr("MPlayer builds for Windows"); ?></a></li>
 <li>
 <?php
-echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\">Twitter<img src=\"images/twitter.png\" title=\"" .get_tr("Follow us on Twitter") ."\"></a>\n";
+echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\" title=\"" .get_tr("Follow us on Twitter") ."\"><i class=\"icon-twitter\"></i> Twitter</a>\n";
 ?>
 </li>
 </td>

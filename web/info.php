@@ -69,11 +69,23 @@ if (0) echo "<p>" . auto_download_button() ."</p>\n";
 
 	<div class="span3">
 		<?php 
-		include_once("media_reviews.php");
-		print_media_reviews(true);
-		echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
-			get_tr("Click here to read more reviews") .
-			"</a></p>\n";
+		if (0) {
+			include_once("media_reviews.php");
+			print_media_reviews(true);
+			echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
+				get_tr("Click here to read more reviews") .
+				"</a></p>\n";
+		}
+		else {
+			echo "<div class=\"well\">\n";
+			$release_notes_file = "translations/release_notes_". $tr_lang .".html";
+			if (file_exists($release_notes_file)) {
+				include($release_notes_file);
+			} else {
+				include("translations/release_notes_en.html");
+			}
+			echo "</div>\n";
+		}
 		?>
 	</div> <!-- span3 -->
 </div>

@@ -2,7 +2,7 @@
 include_once("header.php");
 print_header(get_tr("FAQ"), get_tr("Frequently asked questions about SMPlayer"));
 echo "<body>\n";
-print_menu(0);
+print_menu(5);
 
 $faq_id = 0;
 $faq_style = 0;
