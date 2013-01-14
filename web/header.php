@@ -32,6 +32,7 @@ echo "<link rel=\"canonical\" href=\"". basename( $_SERVER['PHP_SELF'] ) ."\" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="bootstrap/css/cerulean-navbar.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap-image-gallery.min.css" rel="stylesheet">
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
