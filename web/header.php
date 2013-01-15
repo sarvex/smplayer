@@ -122,7 +122,7 @@ function print_menu($current=1) {
 
 				<ul class="nav pull-right"> 
 				<li class="dropdown"> 
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select your language<b class="caret"></b></a>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-globe"></i> Select your language<b class="caret"></b></a>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 						<?php print_languages(); ?>
 					</ul>
