@@ -150,6 +150,7 @@ get_tr("Some options require to stop the MPlayer process and launch it again
 with new parameters. That's why playback interrupts for a moment."));
 ?>
 </div> <!-- accordion -->
+</div> <!-- span -->
 </div> <!-- row -->
 
 </div> <!-- container -->
