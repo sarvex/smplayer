@@ -7,7 +7,7 @@
     <div class="modal-body"><div class="modal-image"></div></div>
     <div class="modal-footer">
         <a class="btn modal-download" target="_blank">
-            <i class="icon-download"></i>
+            <i class="icon-download-alt"></i>
             <span><?php tr("Download"); ?></span>
         </a>
         <a class="btn btn-success modal-play modal-slideshow" data-slideshow="3000">
