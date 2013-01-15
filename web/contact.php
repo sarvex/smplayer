@@ -7,11 +7,14 @@ print_menu(0);
 
 <div class="container-fluid">
 <h1><i class="icon-envelope"></i> <?php tr("Contact us"); ?></h1>
+
+<div class="row-fluid">
+<div class="span9">
 <p>
 <?php
 tr("You can send your suggestions, patches, translations or whatever regarding 
-smplayer, to %1", "<b>Ricardo Villalba</b> &lt;smplayer.dev at gmail dot com&gt;");
-echo "<br>";
+smplayer, to %1", "<a href=\"mailto:smplayer.dev@gmail.com\"><b>Ricardo Villalba</b></a>");
+echo ". ";
 tr("You can write in English or Spanish.");
 ?>
 
@@ -64,12 +67,18 @@ tr("The skins have been ported from umplayer. The authors are:");
 echo " ";
 echo "David Yen (black, vista), err0rsm1th (gonzo, mac), Echo (modern).";
 ?>
+</div> <!-- span -->
 
+<div class="span3">
+<div class="well">
 <h2>Twitter</h2>
 <p>
+<i class="icon-twitter"></i> 
 <a target="_blank" href="https://twitter.com/smplayer_dev">
 <?php tr("Follow us on Twitter");?></a>
+</div> <!-- well -->
 
+<div class="well">
 <h2><?php tr("Mirrors"); ?></h2>
 <p>
 <a href="http://smplayer.info">http://smplayer.info</a>
@@ -77,6 +86,10 @@ echo "David Yen (black, vista), err0rsm1th (gonzo, mac), Echo (modern).";
 <a href="http://smplayer.sourceforge.net">http://smplayer.sourceforge.net</a>
 <br>
 <a href="http://smplayer.berlios.de">http://smplayer.berlios.de</a>
+</div> <!-- well -->
+</div> <!-- span -->
+
+</div> <!-- row -->
 
 </div> <!-- container -->
 
