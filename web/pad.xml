@@ -11,7 +11,7 @@
   </MASTER_PAD_VERSION_INFO>
   <RoboSoft>
     <Company_UIN></Company_UIN>
-    <Company_Description></Company_Description>
+    <Company_Description>Developers of multi-platform open source applications.</Company_Description>
     <Product_UIN></Product_UIN>
     <Search_String></Search_String>
     <Press_Release_Search_String></Press_Release_Search_String>
@@ -20,19 +20,19 @@
     <Web_Directories_Search_String></Web_Directories_Search_String>
     <Search_String_Unique></Search_String_Unique>
     <Comments_For_Reviewer></Comments_For_Reviewer>
-    <Publish_on_CD></Publish_on_CD>
+    <Publish_on_CD>FALSE</Publish_on_CD>
     <Backlink></Backlink>
   </RoboSoft>
   <Company_Info>
     <BrandID>bid-c00059fe323e</BrandID>
-    <Company_Name>Ricardo Villalba</Company_Name>
+    <Company_Name>rvmsoftware.com</Company_Name>
     <Address_1>Spain</Address_1>
     <Address_2></Address_2>
     <City_Town>Spain</City_Town>
     <State_Province></State_Province>
     <Zip_Postal_Code></Zip_Postal_Code>
     <Country>Spain</Country>
-    <Company_WebSite_URL>http://smplayer.sourceforge.net</Company_WebSite_URL>
+    <Company_WebSite_URL>http://www.rvmsoftware.com/</Company_WebSite_URL>
     <Contact_Info>
       <Contact_First_Name>Ricardo</Contact_First_Name>
       <Contact_Last_Name>Villalba</Contact_Last_Name>
@@ -58,6 +58,11 @@
     <CompanyStorePage></CompanyStorePage>
     <PublisherID>pub-900036e6023e</PublisherID>
   </Company_Info>
+  <ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>N</ASP_Member>
+    <ASP_Member_Number></ASP_Member_Number>
+  </ASP>
   <NewsFeed>
     <NewsFeed_FORM>Y</NewsFeed_FORM>
     <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
@@ -82,11 +87,11 @@
     <Site_URL>http://Submit-Everywhere.com/extensions/Site.htm</Site_URL>
     <Site_DESCRIPTION>This PAD extension allows you to add your site info into your PAD file. This info can be used by site submission software or by web directories themselves.</Site_DESCRIPTION>
     <Site_Site_Title>SMPlayer</Site_Site_Title>
-    <Site_Site_URL>http://smplayer.sourceforge.net</Site_Site_URL>
+    <Site_Site_URL>http://smplayer.info</Site_Site_URL>
     <Site_Keywords>multimedia,audio,video,player,free,opensource,mplayer,multimedia player,best free player,video player,youtube downloader</Site_Keywords>
-    <Site_Description_100>Complete media player for Windows and Linux with its own codecs.</Site_Description_100>
-    <Site_Description_250>SMPlayer is a complete media player for Windows and Linux. It uses the award-winning MPlayer as playback engine which is capable of playing most video and audio formats. It uses its own codecs, so you don't need to install any codec packs.</Site_Description_250>
-    <Site_Description_450>SMPlayer is a complete media player for Windows and Linux. It uses the award-winning MPlayer as playback engine which is capable of playing most video and audio formats (avi, mkv, wmv, mp4, mpeg...). It uses its own codecs, so you don't need to install any codec packs.</Site_Description_450>
+    <Site_Description_100>Free Media Player with Youtube support and bult-in codecs.</Site_Description_100>
+    <Site_Description_250>SMPlayer is a free open source media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. SMPlayer can also play, search and download Youtube videos.</Site_Description_250>
+    <Site_Description_450>SMPlayer is a free open source media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. SMPlayer can also play, search and download Youtube videos. It uses the award-winning MPlayer as playback engine which is capable of playing almost all known video and audio formats.</Site_Description_450>
     <Site_Contact_First_Name>Ricardo</Site_Contact_First_Name>
     <Site_Contact_Last_Name>Villalba</Site_Contact_Last_Name>
     <Site_Contact_Email>smplayer.dev@gmail.com</Site_Contact_Email>
@@ -110,9 +115,9 @@
     <Program_System_Requirements>None</Program_System_Requirements>
     <Program_Category_Class>Audio &amp; Multimedia::Video Tools</Program_Category_Class>
     <File_Info>
-      <File_Size_Bytes>16878472</File_Size_Bytes>
+      <File_Size_Bytes>16877568</File_Size_Bytes>
       <File_Size_K>16482</File_Size_K>
-      <File_Size_MB>16.09</File_Size_MB>
+      <File_Size_MB>16.10</File_Size_MB>
       <Filename_Versioned></Filename_Versioned>
       <Filename_Previous></Filename_Previous>
       <Filename_Generic></Filename_Generic>
@@ -144,9 +149,9 @@
   </Program_Info>
   <Web_Info>
     <Application_URLs>
-      <Application_Info_URL>http://smplayer.sourceforge.net</Application_Info_URL>
-      <Application_Screenshot_URL>http://smplayer.sourceforge.net/images/screenshots/mainwindow_vista.png</Application_Screenshot_URL>
-      <Application_Icon_URL>http://smplayer.sourceforge.net/images/smplayer_icon32.gif</Application_Icon_URL>
+      <Application_Info_URL>http://smplayer.info</Application_Info_URL>
+      <Application_Screenshot_URL>http://smplayer.info/images/screenshots/mainwindow_vista.png</Application_Screenshot_URL>
+      <Application_Icon_URL>http://smplayer.info/images/smplayer_icon32.gif</Application_Icon_URL>
       <Application_XML_File_URL>http://repository.appvisor.com/info/app-d00059fe323e</Application_XML_File_URL>
       <Application_Order_URL></Application_Order_URL>
     </Application_URLs>
@@ -446,64 +451,397 @@ POSSIBILITY OF SUCH DAMAGES.
   <Program_Descriptions>
     <English>
       <Keywords>multimedia,audio,video,player,free,opensource,mplayer,multimedia player,youtube</Keywords>
-      <Char_Desc_45>Complete media player for Windows and Linux.</Char_Desc_45>
-      <Char_Desc_80>Complete media player for Windows and Linux with its own codecs.</Char_Desc_80>
-      <Char_Desc_250>SMPlayer is a complete media player for Windows and Linux. It uses the award-winning MPlayer as playback engine which is capable of playing most video and audio formats. It uses its own codecs, so you don't need to install any codec packs.</Char_Desc_250>
-      <Char_Desc_450>SMPlayer is a complete media player for Windows and Linux. It uses the award-winning MPlayer as playback engine which is capable of playing most video and audio formats (avi, mkv, wmv, mp4, mpeg...). It uses its own codecs, so you don't need to install any codec packs.</Char_Desc_450>
-      <Char_Desc_2000>SMPlayer is a complete media player for Windows and Linux. It uses the award-winning MPlayer as playback engine which is capable of playing most video and audio formats (avi, mkv, wmv, mp4, mpeg...). It uses its own codecs, so you don't need to install any codec packs.
+      <Char_Desc_45>Free Media Player with Youtube support</Char_Desc_45>
+      <Char_Desc_80>Free Media Player with Youtube support and built-in codecs.</Char_Desc_80>
+      <Char_Desc_250>SMPlayer is a free open source media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. SMPlayer can also play, search and download Youtube videos.</Char_Desc_250>
+      <Char_Desc_450>SMPlayer is a free open source media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. SMPlayer can also play, search and download Youtube videos. It uses the award-winning MPlayer as playback engine which is capable of playing almost all known video and audio formats.</Char_Desc_450>
+      <Char_Desc_2000>SMPlayer is a free open source media player for Windows and Linux with built-in codecs that can play virtually all video and audio formats. It doesn't need any external codecs. SMPlayer can also play, search and download Youtube videos. It uses the award-winning MPlayer as playback engine which is capable of playing almost all known video and audio formats.
 
 One of the most interesting features of SMPlayer: it remembers the settings of all files you play. So you start to watch a movie but you have to leave... don't worry, when you open that movie again it will resume at the same point you left it, and with the same settings: audio track, subtitles, volume...
 
 Some other interesting features:
 
+* It can play and download Youtube videos. A Youtube browser is included, which allows to easily download Youtube videos too.
+    
 * Complete preferences dialog, where you can change the key shortcuts, colors and fonts of the subtitles, and many more.
+   
+* Support for skins and icon themes.
+  
+*  Possibility to search and download subtitles from opensubtitles.org.
+  
+*  Filters. Many video and audio filters are available: deinterlace, postprocessing, denoise... and even a karaoke filter (voice removal).
+  
+*  Seeking by mouse wheel. You can use your mouse wheel to go forward or backward in the video. The mouse buttons can also be customized.
+  
+*  Video equalizer, allows you to adjust the brightness, contrast, hue, saturation and gamma of the video image.
+  
+*  Multiple speed playback. You can play at 2X, 4X... and even in slow motion.
+  
+*  Audio and subtitles delay adjustment. Allows you to sync audio and subtitles.
+  
+*  Advanced options, such as selecting a demuxer or video &amp; audio codecs.
 
-* Filters. Many video and audio filters are available: deinterlace, postprocessing, denoise... and even a karaoke filter (voice removal).
+* On your own language: currently SMPlayer is translated into more than 30 languages, including Spanish, German, French, Italian, Russian, Chinese, Japanese....
 
-* Seeking by mouse wheel. You can use your mouse wheel to go forward or backward in the video. The mouse buttons can also be customized.
+* Free and open source. SMPlayer is under the GPL license.
 
-* Video equalizer, allows you to adjust the brightness, contrast, hue, saturation and gamma of the video image.
-
-* Multiple speed playback. You can play at 2X, 4X... and even in slow motion.
-
-* Audio and subtitles delay adjustment. Allows you to sync audio and subtitles.
-
-* Advanced options, such as selecting a demuxer or video &amp; audio codecs.
-
-* Possibility to search and download subtitles from opensubtitles.org.
-
-* It can play Youtube videos. A Youtube browser is included, which allows to easily download Youtube videos too.
-
-* Translations: currently SMPlayer is translated into more than 30 languages, including Spanish, German, French, Italian, Russian, Chinese, Japanese....
-
-* Possibility to change the style and icon set of the interface.
-
-* Free and opensource. SMPlayer is under the GPL license.</Char_Desc_2000>
+* Compatible with Windows XP/2003/Vista/Server 2008/7/8.</Char_Desc_2000>
     </English>
     <Spanish>
       <Keywords>multimedia,audio,video,player,reproductor,gratis,gratuito,libre,opensource,mplayer,youtube</Keywords>
-      <Char_Desc_2000>SMPlayer es un completo reproductor multimedia para Windows y Linux. Usa el galardonado MPlayer como motor de reproducción, que es capaz de reproducir la mayoría de formatos de video y audio (avi, mkv, wmv, mp4, mpeg...). Usa sus propios códecs, por tanto no necesitas instalar paquetes de códecs adicionales.
+      <Char_Desc_2000>SMPlayer es un reproductor multimedia gratuito y open source para Windows y Linux con códecs incorporados, que puede reproducir prácticamente cualquier formato de vídeo y audio. No necesita ningún códec externo. SMPlayer puede además reproducir, buscar y descargar vídeos de Youtube. Usa el galardonado MPlayer como motor de reproducción, que es capaz de reproducir casi todos los formatos conocidos de vídeo y audio (ver lista).
 
-Una de las cosas más interesantes de SMPlayer: recuerda las opciones de todos los ficheros que reproduzcas. Empiezas a ver una películas pero tienes que irte... no te preocupes, cuando vuelvas a abrir la película continuará desde el mismo lugar donde la dejaste, y con las mismas opciones: pista de audio, subtítulos, volumen...
+Una de las cosas más interesantes de SMPlayer: recuerda las opciones de todos los ficheros que reproduzcas. Empiezas a ver una película pero tienes que irte... no te preocupes, cuando vuelvas a abrir la película continuará desde el mismo lugar donde la dejaste, y con las mismas opciones: pista de audio, subtítulos, volumen...
 
 Otras opciones interesantes:
 
+* Puede reproducir y descargar vídeos de Youtube. Se incluye un buscador de vídeos, que además permite descargar fácilmente vídeos de Youtube.
+
 * Completo diálogo de preferencias, donde se puede cambiar los atajos de teclado, colores y tipos de letra de los subtítulos, y mucho más.
-* Filtros. Se incluyen muchos filtros de vídeo y audio: desentrelazado, postprocesado, eliminación de ruido... e incluso un filtro de karaoke (elimina la voz).
-* Desplazamiento del vídeo mediante la rueda del ratón. Puedes usar la rueda del ratón para avanzar o retroceder por el vídeo. Los botones del ratón también se pueden configurar.
-* Ecualizador de vídeo, te permite ajustar el brillo, contraste, tono, saturación y gamma de la imagen del vídeo.
-* Múltiple velocidad de reproducción. Puedes reproducir a 2X, 4X... o incluso a cámara lenta.
-* Ajuste de sincronización de audio y subtítulos.
-* Opciones avanzadas, como seleccionar un demuxer o códecs de vídeo y audio.
+
+* Incluye soporte para skins y temas de iconos.
+
 * Posibilidad de buscar y descargar subtítulos de opensubtitles.org.
-* Puede reproducir vídeos de Youtube. Se incluye también un buscador de vídeos, que además permite descargar fácilmente vídeos de Youtube.
-* Traducciones: actualmente SMPlayer está traducido a más de 30 idiomas, incluyendo español, alemán, francés, italiano, ruso, chino, japonés...
-* Posibilidad de cambiar el estilo y juego de iconos del interfaz.
-* Gratuito y opensource. SMPlayer se encuentra bajo licencia GPL.</Char_Desc_2000>
-      <Char_Desc_450>SMPlayer es un completo reproductor multimedia para Windows y Linux. Usa el galardonado MPlayer como motor de reproducción, que es capaz de reproducir la mayoría de formatos de video y audio (avi, mkv, wmv, mp4, mpeg...). Usa sus propios códecs, por tanto no necesitas instalar paquetes de códecs adicionales.</Char_Desc_450>
-      <Char_Desc_250>SMPlayer es un completo reproductor multimedia para Windows y Linux. Usa el galardonado MPlayer como motor de reproducción, que es capaz de reproducir la mayoría de formatos de video y audio. Usa sus propios códecs.</Char_Desc_250>
-      <Char_Desc_80>Completo reproductor multimedia para Windows y Linux. Usa sus propios códecs.</Char_Desc_80>
-      <Char_Desc_45>Completo reproductor multimedia gratuito.</Char_Desc_45>
+
+* Filtros. Se incluyen muchos filtros de vídeo y audio: desentrelazado, postprocesado, eliminación de ruido... e incluso un filtro de karaoke (elimina la voz).
+
+* Desplazamiento del vídeo mediante la rueda del ratón. Puedes usar la rueda del ratón para avanzar o retroceder por el vídeo. Los botones del ratón también se pueden configurar.
+
+* Ecualizador de vídeo, te permite ajustar el brillo, contraste, tono, saturación y gamma de la imagen del vídeo.
+
+* Múltiple velocidad de reproducción. 
+
+* Ajuste de sincronización de audio y subtítulos.
+
+* Opciones avanzadas, como seleccionar un demuxer o códecs de vídeo y audio.
+
+* En tu propio idioma: actualmente SMPlayer está traducido a más de 30 idiomas.
+
+* Gratuito y open source. SMPlayer se encuentra bajo licencia GPL.</Char_Desc_2000>
+      <Char_Desc_450>SMPlayer es un reproductor multimedia gratuito y open source para Windows y Linux con códecs incorporados, que puede reproducir prácticamente cualquier formato de vídeo y audio. No necesita ningún códec externo. SMPlayer puede además reproducir, buscar y descargar vídeos de Youtube. Usa el galardonado MPlayer como motor de reproducción, que es capaz de reproducir casi todos los formatos conocidos de vídeo y audio.</Char_Desc_450>
+      <Char_Desc_250>SMPlayer es un reproductor multimedia gratuito y open source para Windows y Linux con códecs incorporados. No necesita ningún códec externo. SMPlayer puede además reproducir y descargar vídeos de Youtube.</Char_Desc_250>
+      <Char_Desc_80>Reproductor Multimedia Gratuito con soporte para Youtube y codecs incorporados.</Char_Desc_80>
+      <Char_Desc_45>Reproductor Multimedia con codecs.</Char_Desc_45>
     </Spanish>
+    <Arabic>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Arabic>
+    <Bulgarian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Bulgarian>
+    <Chinese>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Chinese>
+    <ChineseSimplified>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </ChineseSimplified>
+    <ChineseTraditional>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </ChineseTraditional>
+    <Croatian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Croatian>
+    <Czech>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Czech>
+    <Danish>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Danish>
+    <Dutch>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Dutch>
+    <Estonian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Estonian>
+    <Finnish>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Finnish>
+    <French>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </French>
+    <Georgian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Georgian>
+    <German>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </German>
+    <Greek>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Greek>
+    <Hebrew>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Hebrew>
+    <Hindi>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Hindi>
+    <Hungarian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Hungarian>
+    <Icelandic>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Icelandic>
+    <Indonesian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Indonesian>
+    <Italian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Italian>
+    <Japanese>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Japanese>
+    <Korean>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Korean>
+    <Latvian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Latvian>
+    <Lithuanian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Lithuanian>
+    <Norwegian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Norwegian>
+    <Persian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Persian>
+    <Polish>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Polish>
+    <Portuguese>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Portuguese>
+    <Romanian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Romanian>
+    <Russian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Russian>
+    <Sanskrit>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Sanskrit>
+    <Serbian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Serbian>
+    <Serbo-Croatian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Serbo-Croatian>
+    <Slovak>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Slovak>
+    <Slovenian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Slovenian>
+    <Swedish>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Swedish>
+    <Thai>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Thai>
+    <Turkish>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Turkish>
+    <Ukrainian>
+      <Keywords></Keywords>
+      <Char_Desc_45></Char_Desc_45>
+      <Char_Desc_80></Char_Desc_80>
+      <Char_Desc_250></Char_Desc_250>
+      <Char_Desc_450></Char_Desc_450>
+      <Char_Desc_2000></Char_Desc_2000>
+    </Ukrainian>
   </Program_Descriptions>
 </XML_DIZ_INFO>
