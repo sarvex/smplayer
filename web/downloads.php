@@ -23,7 +23,7 @@ include_once("download_links.php");
 
 <div class="span10">
 <div class="media">
-	<a class="pull-left" href="#">
+	<a class="pull-left" >
 		<img class="media-object" src="images/installer-icon.png">
 	</a>
 	<div class="media-body">
@@ -40,8 +40,8 @@ include_once("download_links.php");
 		?>
 	</div>
 	<br>
-	<a class="pull-left" href="#">
-		<img class="media-object" src="iconos/kpackage.png">
+	<a class="pull-left" >
+		<img class="media-object" src="images/package-icon.png">
 	</a>
 	<div class="media-body">
 		<h4 class="media-heading"><?php tr("Alternative packages"); ?></h4>
@@ -68,11 +68,11 @@ include_once("download_links.php");
 <div class="span10">
 
 <div class="media">
-	<a class="pull-left" href="#">
+	<a class="pull-left" >
 		<img class="media-object" src="images/ubuntu-icon.png">
 	</a>
 	<div class="media-body">
-		<h4 class="media-heading"><?php tr("Packages for Ubuntu:"); ?></h4>
+		<h4 class="media-heading"><?php tr("Packages for Ubuntu"); ?></h4>
 		<?php tr("To install smplayer, just run these commands in a terminal:"); ?>
 <pre>
 sudo add-apt-repository ppa:rvm/smplayer
@@ -81,8 +81,8 @@ sudo apt-get install smplayer smtube smplayer-themes smplayer-skins
 </pre>
 	</div>
 	<br>
-	<a class="pull-left" href="#">
-		<img class="media-object" src="iconos/package.png">
+	<a class="pull-left" >
+		<img class="media-object" src="images/package-icon.png">
 	</a>
 	<div class="media-body">
 		<h4 class="media-heading">
@@ -107,8 +107,8 @@ sudo apt-get install smplayer smtube smplayer-themes smplayer-skins
 <div class="span10">
 
 <div class="media">
-	<a class="pull-left" href="#">
-		<img class="media-object" src="iconos/package.png">
+	<a class="pull-left" >
+		<img class="media-object" src="images/package-icon.png">
 	</a>
 	<div class="media-body">
 		<h4 class="media-heading"><?php tr("Sources"); ?></h4>
@@ -121,6 +121,20 @@ sudo apt-get install smplayer smtube smplayer-themes smplayer-skins
 		echo "<br>";
 		echo download_skins_src_link();
 		?>
+	</div>
+	<br>
+	<a class="pull-left" >
+		<img class="media-object" src="images/download-icon.png">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading"><?php tr("Development"); ?></h4>
+		<?php tr("You can get the latest source from svn with this command:"); ?>
+<pre>
+svn co https://smplayer.svn.sourceforge.net/svnroot/smplayer/smplayer/trunk/ smplayer-svn
+</pre>
+		<i class="icon-folder-open"></i> 
+		<a href="http://smplayer.svn.sourceforge.net/viewvc/smplayer/">
+		<b><?php tr("Browse the svn repository"); ?></b></a>
 	</div>
 </div>
 </div> <!-- span10 -->
