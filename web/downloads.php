@@ -17,9 +17,11 @@ include_once("download_links.php");
 <div class="well">
 <div class="row-fluid">
 
+<span class="hidden-phone">
 <div class="span2">
 <img src="images/win-icon.png">
 </div> <!-- span2 -->
+</span>
 
 <div class="span10">
 <div class="media">
@@ -61,9 +63,11 @@ include_once("download_links.php");
 <div class="well">
 <div class="row-fluid">
 
+<span class="hidden-phone">
 <div class="span2">
 <img src="images/tux-icon.png">
 </div> <!-- span2 -->
+</span>
 
 <div class="span10">
 
@@ -100,9 +104,11 @@ sudo apt-get install smplayer smtube smplayer-themes smplayer-skins
 <div class="well">
 <div class="row-fluid">
 
+<span class="hidden-phone">
 <div class="span2">
 <img src="images/source-icon.png">
 </div> <!-- span2 -->
+</span>
 
 <div class="span10">
 
