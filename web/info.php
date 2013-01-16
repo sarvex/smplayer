@@ -69,12 +69,19 @@ if (0) echo "<p>" . auto_download_button() ."</p>\n";
 
 	<div class="span3">
 		<?php 
-		if (0) {
+		if ($print_user_reviews) {
 			include_once("media_reviews.php");
 			print_media_reviews(true);
+
+			echo "<div class=\"well\">\n";
+			include("reviews_box.php");
+			echo "</div>\n";
+
+			if (1) {
 			echo "<p><a href=\"reviews.php?tr_lang=$tr_lang\" class=\"btn btn-success btn-large\">".
 				get_tr("Click here to read more reviews") .
 				"</a></p>\n";
+			}
 		}
 		else {
 			echo "<div class=\"well\">\n";

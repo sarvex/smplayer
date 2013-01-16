@@ -5,6 +5,8 @@ include_once("download_links.php");
 print_header("");
 echo "<body>\n";
 print_menu(1);
+
+$print_user_reviews = false;
 ?>
 
 <div class="container-fluid">
@@ -21,6 +23,8 @@ else
 <!-- begin footer -->
 <?php
 include("footer.php");
+
+if ($print_user_reviews) enable_carousel(10000);
 ?>
 <!-- end footer -->
 
