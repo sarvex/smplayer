@@ -10,11 +10,9 @@ print_menu(0);
 
 <div class="span4">
 <div class="well">
-
 <?php
 include("reviews_box.php");
 ?>
-
 </div> <!-- well -->
 </div> <!-- span -->
 

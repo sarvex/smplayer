@@ -69,7 +69,7 @@ if (0) echo "<p>" . auto_download_button() ."</p>\n";
 
 	<div class="span3">
 		<?php 
-		if ($print_user_reviews) {
+		if (0) {
 			include_once("media_reviews.php");
 			print_media_reviews(true);
 
@@ -92,6 +92,12 @@ if (0) echo "<p>" . auto_download_button() ."</p>\n";
 				include("translations/release_notes_en.html");
 			}
 			echo "</div>\n";
+
+			if ($print_user_reviews) {
+				echo "<div class=\"well\">\n";
+				include("reviews_box.php");
+				echo "</div>\n";
+			}
 		}
 		?>
 	</div> <!-- span3 -->

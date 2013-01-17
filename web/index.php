@@ -6,7 +6,7 @@ print_header("");
 echo "<body>\n";
 print_menu(1);
 
-$print_user_reviews = false;
+$print_user_reviews = true;
 ?>
 
 <div class="container-fluid">
@@ -24,7 +24,7 @@ else
 <?php
 include("footer.php");
 
-if ($print_user_reviews) enable_carousel(10000);
+if ($print_user_reviews) enable_carousel(15000);
 ?>
 <!-- end footer -->
 

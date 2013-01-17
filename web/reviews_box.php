@@ -2,6 +2,7 @@
 function add_quote($text, $link, $author, $source, $active=false) {
 	if ($active) echo "<div class=\"active item\">\n"; else echo "<div class=\"item\">\n";
 	echo "<blockquote>\n";
+	//echo '<i class="icon-quote-left icon-2x pull-left icon-muted"></i>';
 	//echo "<p>\n";
 	if ($link != "") {
 		echo "<a target=\"_blank\" href=\"$link\">";
@@ -24,6 +25,8 @@ function add_quote($text, $link, $author, $source, $active=false) {
 	else
 	if ($source == "snapfiles") { $source = "Snapfiles"; $link = "http://www.snapfiles.com/get/smplayer.html"; }
 
+	//echo "<br>";
+	//echo "&mdash; ";
 	echo "<small>$author - <cite>";
 	if ($link != "") echo "<a href=\"$link\">$source</a>"; else echo "$source";
 	echo "</cite></small>\n";
@@ -40,7 +43,7 @@ function enable_carousel($interval=4000){
 	<!-- Carousel items -->
 	<div class="carousel-inner">
 	<?php
-	/*
+
 	add_quote("SMPlayer - a Fantastic Multimedia Player for Windows and Linux",
 				"http://voices.yahoo.com/smplayer-fanastic-multimedia-player-windows-1972216.html",
 				"Eric Fleming", "voices.yahoo.com", true);
@@ -53,7 +56,6 @@ function enable_carousel($interval=4000){
 	add_quote("SMPlayer – Probably the best media player in the world!",
 				"http://reinep.wordpress.com/2010/12/07/probably-the-best-media-player-in-the-world/",
 				"Ray", "reinep.wordpress.com");
-	*/
 
 	add_quote("SMPlayer is the universal media player solution for Windows and Linux. ".
 				"While many applications strive to meet the needs of a universal audience; ".
@@ -64,7 +66,7 @@ function enable_carousel($interval=4000){
 				"in Win or Lin. The user-friendly front-end only complements what's under ".
 				"the hood: the ultimate performance and reliability of mplayer makes ".
 				"SMPlayer a truly versatile choice for all multi-media enjoyment.", "",
-				"MojoRyssen", "sf", true);
+				"MojoRyssen", "sf");
 
 	add_quote("Best Player ever used. Hi, Recently i have started using SMPlayer ".
 				"and looking out the features and they way it load quickly for playing ".
@@ -133,11 +135,15 @@ function enable_carousel($interval=4000){
 
 	?>
 	</div>
+<!-- Carousel nav -->
 <?php
 /*
-<!-- Carousel nav -->
 <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 */
 ?>
+<div class="pull-right">
+<a href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+<a href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+</div>
 </div> <!-- carousel -->
