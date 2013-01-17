@@ -57,14 +57,15 @@ echo "<p>";
 include("features.php");
 
 if (1) {
+echo '<span class="hidden-phone">';
 echo "<center>";
 echo '<embed src="http://video.findmysoft.com/jwplayer/player.swf?file=http://video.findmysoft.com/2012/11/14/smplayer.mp4&image=http://video.findmysoft.com/2012/11/14/smplayer.jpg&skin=http://video.findmysoft.com/jwplayer/skin/slim.zip" width="512" height="301" allowfullscreen="true" /><br><span style="font-size:12px"><a href="http://smplayer.findmysoft.com/">SMPlayer</a> Quick Look Video by FindMySoft.com</span>';
 echo "</center>";
+echo '</span>';
 
 if (0) echo "<p>" . auto_download_button() ."</p>\n";
 }
 ?>
-
 	</div>
 
 	<div class="span3">

@@ -61,6 +61,7 @@ echo "<a target=\"_blank\" href=\"https://twitter.com/smplayer_dev\" title=\"" .
 </div> <!-- span9 -->
 </div> <!-- row -->
 
+<span class="hidden-phone">
 <div class="span2">
 <div class="row-fluid">
 <br>
@@ -69,6 +70,7 @@ include("site_logo.php");
 ?>
 </div> <!-- row -->
 </div> <!-- span2 -->
+</span>
 
 </div> <!-- row -->
 
