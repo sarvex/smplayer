@@ -161,10 +161,11 @@ svn co https://smplayer.svn.sourceforge.net/svnroot/smplayer/smplayer/trunk/ smp
 			echo "</div>";
 		}
 		?>
+		<span class="hidden-phone">
 		<center>
 		<?php include("awards.php"); ?>
 		</center>
-		<br>
+		</span>
 </div>
 
 </div> <!-- row  -->
@@ -187,7 +188,7 @@ include("footer.php");
 		<?php
 		tr("For an easy installation on Windows we provide a package with installer.");
 		if (1) {
-		echo "<div class=\"alert alert-error\">\n";
+		echo "<div class=\"alert alert-info\">\n";
 		tr("The installer may contain a promotional screen with an offer to install a 3rd party application.");
 		echo " ";
 		tr("If you aren't interested in the offer, just uncheck the option(s) and the installation of smplayer will proceed as usual.");
