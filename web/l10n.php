@@ -1,1 +1,0 @@
-test_translations/l10n.php
