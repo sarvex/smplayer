@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 02:07+0100\n"
+"POT-Creation-Date: 2013-01-22 18:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,86 +249,90 @@ msgstr "ダウンロード"
 msgid "Click here to download SMPlayer %1"
 msgstr "SMPlayer %1 をダウンロードする"
 
-#: ../downloads.php:44
-msgid "Mirrors:"
+#: ../downloads.php:39
+msgid "from %1"
 msgstr ""
 
-#: ../downloads.php:52
+#: ../downloads.php:45
+msgid "Other mirrors:"
+msgstr ""
+
+#: ../downloads.php:53
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and the "
 "Youtube&trade; browser."
 msgstr ""
 
-#: ../downloads.php:55
+#: ../downloads.php:56
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:63
+#: ../downloads.php:64
 msgid "Alternative packages"
 msgstr ""
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:67
+#: ../downloads.php:68
 msgid "If you wish you can also try the %1."
 msgstr "また、お望みでしたら%1もお試しいただけます。"
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "development version"
 msgstr "開発版"
 
-#: ../downloads.php:93
+#: ../downloads.php:94
 msgid "Packages for Ubuntu"
 msgstr ""
 
-#: ../downloads.php:94
+#: ../downloads.php:95
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:110
+#: ../downloads.php:111
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:134 ../umplayer.php:81
+#: ../downloads.php:135 ../umplayer.php:81
 msgid "Sources"
 msgstr "ソース"
 
-#: ../downloads.php:150
+#: ../downloads.php:151
 msgid "Development"
 msgstr ""
 
-#: ../downloads.php:151
+#: ../downloads.php:152
 msgid "You can get the latest source from svn with this command:"
 msgstr ""
 
-#: ../downloads.php:157
+#: ../downloads.php:158
 msgid "Browse the svn repository"
 msgstr ""
 
-#: ../downloads.php:199
+#: ../downloads.php:200
 msgid "Information about the Windows installer"
 msgstr "Windows 用インストーラーについて"
 
-#: ../downloads.php:204
+#: ../downloads.php:205
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Windows 上での手軽なインストールを実現するために、インストーラーパッケージを"
 "ご用意しています。"
 
-#: ../downloads.php:207
+#: ../downloads.php:208
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -336,7 +340,7 @@ msgstr ""
 "このインストーラーには第三者製アプリケーションのインストールを促すプロモー"
 "ション画面が表示されることがあります。"
 
-#: ../downloads.php:209
+#: ../downloads.php:210
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -344,7 +348,7 @@ msgstr ""
 "それらのアプリケーションに関心がない場合は、オプションのチェックを解除してか"
 "ら SMPlayer のインストールを続けてください。"
 
-#: ../downloads.php:211
+#: ../downloads.php:212
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -352,43 +356,43 @@ msgstr ""
 "この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご協力"
 "をお願いします。"
 
-#: ../downloads.php:214
+#: ../downloads.php:215
 msgid "Optional components"
 msgstr "選択可能なコンポーネント"
 
-#: ../downloads.php:215
+#: ../downloads.php:216
 msgid "The installer allows to select the components to install:"
 msgstr ""
 "インストーラーでは、インストールするコンポーネントを選択することができます:"
 
-#: ../downloads.php:217
+#: ../downloads.php:218
 msgid "Languages"
 msgstr "言語"
 
-#: ../downloads.php:218
+#: ../downloads.php:219
 msgid "Translations for more than 30 languages are provided."
 msgstr "30 を超える言語の翻訳が用意されています。"
 
-#: ../downloads.php:219
+#: ../downloads.php:220
 msgid "If you uncheck this option, only English will be available."
 msgstr "このオプションのチェックを解除すると、英語でしか利用できなくなります。"
 
-#: ../downloads.php:220
+#: ../downloads.php:221
 msgid "Icon themes"
 msgstr "アイコンテーマ"
 
-#: ../downloads.php:221
+#: ../downloads.php:222
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
 "数種類のアイコンテーマです。アプリケーションの外観の変更を可能にします。"
 
-#: ../downloads.php:222
+#: ../downloads.php:223
 msgid "Binary codecs"
 msgstr "バイナリコーデック"
 
-#: ../downloads.php:223
+#: ../downloads.php:224
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -396,18 +400,18 @@ msgstr ""
 "このオプションをチェックすると、追加コーデックが SMPlayer のフォルダーにダウ"
 "ンロード/インストールされます。"
 
-#: ../downloads.php:224
+#: ../downloads.php:225
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "これらのコーデックはごく一部のフォーマット以外では必要となりません。"
 
-#: ../downloads.php:226
+#: ../downloads.php:227
 msgid "Uninstallation"
 msgstr "アンインストール"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:231
+#: ../downloads.php:232
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -417,7 +421,7 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:236 ../index.php:121 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:237 ../index.php:121 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr "閉じる"
 
@@ -1290,34 +1294,15 @@ msgstr "UMPlayer のソース"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer のスクリーンショット"
 
-#~ msgid "cnet mirror"
-#~ msgstr "CNet ミラー"
-
-#~ msgid "softpedia mirror"
-#~ msgstr "Softpedia ミラー"
-
 #~ msgid ""
-#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
-#~ "the YouTube browser (smtube)."
+#~ "Media Player for Windows and Linux with built-in codecs and "
+#~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラ"
-#~ "ウザー (SMTube) が含まれています。"
+#~ "YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイ"
+#~ "ヤー"
 
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and "
-#~ "a new mplayer build with a lot of fixes."
-#~ msgstr ""
-#~ "次期バージョン 0.8.2 のベータ版をお試しいただけます。こちらのバージョンで"
-#~ "は、スキン機能が新たに追加されているほか、大幅な改善が施された MPlayer ビ"
-#~ "ルドが同梱されています。"
-
-#~ msgid "In case you find any problem, please report it in %1."
-#~ msgstr ""
-#~ "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一"
-#~ "報をお願いします。"
-
-#~ msgid "our forum"
-#~ msgstr "フォーラム"
+#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+#~ msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
 
 #~ msgid ""
 #~ "<b>Notice:</b> on the first playback, a font cache will be \n"
@@ -1327,12 +1312,31 @@ msgstr "UMPlayer のスクリーンショット"
 #~ "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成さ"
 #~ "れます。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
 
-#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-#~ msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
+#~ msgid "our forum"
+#~ msgstr "フォーラム"
+
+#~ msgid "In case you find any problem, please report it in %1."
+#~ msgstr ""
+#~ "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一"
+#~ "報をお願いします。"
 
 #~ msgid ""
-#~ "Media Player for Windows and Linux with built-in codecs and "
-#~ "Youtube&trade; support"
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and "
+#~ "a new mplayer build with a lot of fixes."
 #~ msgstr ""
-#~ "YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイ"
-#~ "ヤー"
+#~ "次期バージョン 0.8.2 のベータ版をお試しいただけます。こちらのバージョンで"
+#~ "は、スキン機能が新たに追加されているほか、大幅な改善が施された MPlayer ビ"
+#~ "ルドが同梱されています。"
+
+#~ msgid ""
+#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
+#~ "the YouTube browser (smtube)."
+#~ msgstr ""
+#~ "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラ"
+#~ "ウザー (SMTube) が含まれています。"
+
+#~ msgid "softpedia mirror"
+#~ msgstr "Softpedia ミラー"
+
+#~ msgid "cnet mirror"
+#~ msgstr "CNet ミラー"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 02:07+0100\n"
+"POT-Creation-Date: 2013-01-22 18:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Formats and Codecs"
 msgstr ""
 
-#: ../index.php:121 ../downloads.php:236 ../smtube.php:17 ../umplayer.php:127
+#: ../index.php:121 ../downloads.php:237 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr ""
 
@@ -327,151 +327,155 @@ msgstr ""
 msgid "Click here to download SMPlayer %1"
 msgstr ""
 
-#: ../downloads.php:44
-msgid "Mirrors:"
+#: ../downloads.php:39
+msgid "from %1"
 msgstr ""
 
-#: ../downloads.php:52
+#: ../downloads.php:45
+msgid "Other mirrors:"
+msgstr ""
+
+#: ../downloads.php:53
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and the "
 "Youtube&trade; browser."
 msgstr ""
 
-#: ../downloads.php:55
+#: ../downloads.php:56
 msgid "More info"
 msgstr ""
 
-#: ../downloads.php:63
+#: ../downloads.php:64
 msgid "Alternative packages"
 msgstr ""
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid "here"
 msgstr ""
 
-#: ../downloads.php:65
+#: ../downloads.php:66
 msgid "There are available other packages (like a portable version), %1."
 msgstr ""
 
-#: ../downloads.php:68
+#: ../downloads.php:69
 msgid "development version"
 msgstr ""
 
-#: ../downloads.php:67
+#: ../downloads.php:68
 msgid "If you wish you can also try the %1."
 msgstr ""
 
-#: ../downloads.php:93
+#: ../downloads.php:94
 msgid "Packages for Ubuntu"
 msgstr ""
 
-#: ../downloads.php:94
+#: ../downloads.php:95
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:108
+#: ../downloads.php:109
 msgid "Contributed packages for other distros"
 msgstr ""
 
-#: ../downloads.php:110
+#: ../downloads.php:111
 msgid "List of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:134 ../umplayer.php:81
+#: ../downloads.php:135 ../umplayer.php:81
 msgid "Sources"
 msgstr ""
 
-#: ../downloads.php:150
+#: ../downloads.php:151
 msgid "Development"
 msgstr ""
 
-#: ../downloads.php:151
+#: ../downloads.php:152
 msgid "You can get the latest source from svn with this command:"
 msgstr ""
 
-#: ../downloads.php:157
+#: ../downloads.php:158
 msgid "Browse the svn repository"
 msgstr ""
 
-#: ../downloads.php:199
+#: ../downloads.php:200
 msgid "Information about the Windows installer"
 msgstr ""
 
-#: ../downloads.php:204
+#: ../downloads.php:205
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 
-#: ../downloads.php:207
+#: ../downloads.php:208
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
 msgstr ""
 
-#: ../downloads.php:209
+#: ../downloads.php:210
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
 msgstr ""
 
-#: ../downloads.php:211
+#: ../downloads.php:212
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
 msgstr ""
 
-#: ../downloads.php:214
+#: ../downloads.php:215
 msgid "Optional components"
 msgstr ""
 
-#: ../downloads.php:215
+#: ../downloads.php:216
 msgid "The installer allows to select the components to install:"
 msgstr ""
 
-#: ../downloads.php:217
+#: ../downloads.php:218
 msgid "Languages"
 msgstr ""
 
-#: ../downloads.php:218
+#: ../downloads.php:219
 msgid "Translations for more than 30 languages are provided."
 msgstr ""
 
-#: ../downloads.php:219
+#: ../downloads.php:220
 msgid "If you uncheck this option, only English will be available."
 msgstr ""
 
-#: ../downloads.php:220
+#: ../downloads.php:221
 msgid "Icon themes"
 msgstr ""
 
-#: ../downloads.php:221
+#: ../downloads.php:222
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
 
-#: ../downloads.php:222
+#: ../downloads.php:223
 msgid "Binary codecs"
 msgstr ""
 
-#: ../downloads.php:223
+#: ../downloads.php:224
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
 
-#: ../downloads.php:224
+#: ../downloads.php:225
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr ""
 
-#: ../downloads.php:226
+#: ../downloads.php:227
 msgid "Uninstallation"
 msgstr ""
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:231
+#: ../downloads.php:232
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
