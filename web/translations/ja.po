@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 18:12+0100\n"
+"POT-Creation-Date: 2013-01-23 01:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../config.php:6
+#: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../config.php:7
+#: ../config.php:8
 msgid "Free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../config.php:8
+#: ../config.php:9
 msgid "a free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../config.php:10
+#: ../config.php:11 ../config.php:17
 msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../config.php:11
+#: ../config.php:13
+msgid ""
+"Media Player for Windows and Linux with codecs and Youtube&trade; support"
+msgstr ""
+
+#: ../config.php:14
+msgid ""
+"Free media player for Windows and Linux with codecs and Youtube&trade; "
+"support"
+msgstr ""
+
+#: ../config.php:15
+msgid ""
+"a free media player for Windows and Linux with codecs and Youtube&trade; "
+"support"
+msgstr ""
+
+#: ../config.php:20
 msgid ""
 "SMPlayer is a free open source media player for Windows and Linux with built-"
 "in codecs that\n"
@@ -44,15 +61,15 @@ msgstr ""
 "を内臓した、Windows および Linux 向けのオープンソースのフリーなメディアプレイ"
 "ヤーです。外部のコーデックを一切必要としません。"
 
-#: ../config.php:14 ../smplayer.php:51
+#: ../config.php:23 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
 msgstr "YouTube&trade; 動画の再生、検索、ダウンロードにも対応しています。"
 
-#: ../config.php:16
+#: ../config.php:25
 msgid "SMPlayer can also play Youtube&trade; videos."
 msgstr ""
 
-#: ../config.php:18
+#: ../config.php:27
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
@@ -60,29 +77,29 @@ msgstr ""
 "数々の受賞を誇る %1 を再生エンジンに採用し、ほぼすべてのビデオ/オーディオ"
 "フォーマット (%2) を再生することができます。"
 
-#: ../config.php:21 ../config.php:34
+#: ../config.php:30 ../config.php:43
 msgid "see list"
 msgstr "一覧"
 
-#: ../config.php:22
+#: ../config.php:31
 msgid "Install SMPlayer and forget about codecs!"
 msgstr "SMPlayer をインストールして、コーデックのことなど忘れよう!"
 
-#: ../config.php:23 ../config.php:38
+#: ../config.php:32 ../config.php:47
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr ""
 "SMPlayer は Windows と Linux で動作するマルチプラットフォームのアプリケーショ"
 "ンです。"
 
-#: ../config.php:25
+#: ../config.php:34
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "MPlayer のグラフィカルユーザーインターフェイス (GUI)"
 
-#: ../config.php:30
+#: ../config.php:39
 msgid "Graphical Frontend for MPlayer with extra features"
 msgstr "独自の機能をも備えた MPlayer フロントエンド"
 
-#: ../config.php:31
+#: ../config.php:40
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
 "which is capable of playing almost all known video and audio formats (%2)."
@@ -90,7 +107,7 @@ msgstr ""
 "SMPlayer は、数々の受賞を誇り、ほぼすべてのビデオ/オーディオフォーマット "
 "(%2) の再生が可能な %1 のグラフィカルユーザーインターフェイス (GUI) です。"
 
-#: ../config.php:35
+#: ../config.php:44
 msgid ""
 "Apart from providing access for the most common and useful options in "
 "MPlayer, \n"
@@ -1294,31 +1311,18 @@ msgstr "UMPlayer のソース"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer のスクリーンショット"
 
-#~ msgid ""
-#~ "Media Player for Windows and Linux with built-in codecs and "
-#~ "Youtube&trade; support"
-#~ msgstr ""
-#~ "YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイ"
-#~ "ヤー"
+#~ msgid "cnet mirror"
+#~ msgstr "CNet ミラー"
 
-#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
-#~ msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
+#~ msgid "softpedia mirror"
+#~ msgstr "Softpedia ミラー"
 
 #~ msgid ""
-#~ "<b>Notice:</b> on the first playback, a font cache will be \n"
-#~ "created (necessary for OSD and subtitles). This can take up to 10 \n"
-#~ "or 20 seconds. This is only done once."
+#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
+#~ "the YouTube browser (smtube)."
 #~ msgstr ""
-#~ "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成さ"
-#~ "れます。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
-
-#~ msgid "our forum"
-#~ msgstr "フォーラム"
-
-#~ msgid "In case you find any problem, please report it in %1."
-#~ msgstr ""
-#~ "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一"
-#~ "報をお願いします。"
+#~ "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラ"
+#~ "ウザー (SMTube) が含まれています。"
 
 #~ msgid ""
 #~ "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and "
@@ -1328,15 +1332,28 @@ msgstr "UMPlayer のスクリーンショット"
 #~ "は、スキン機能が新たに追加されているほか、大幅な改善が施された MPlayer ビ"
 #~ "ルドが同梱されています。"
 
-#~ msgid ""
-#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
-#~ "the YouTube browser (smtube)."
+#~ msgid "In case you find any problem, please report it in %1."
 #~ msgstr ""
-#~ "このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube ブラ"
-#~ "ウザー (SMTube) が含まれています。"
+#~ "このバージョンのご使用にあたって何か問題がありましたら、こちらの%1までご一"
+#~ "報をお願いします。"
 
-#~ msgid "softpedia mirror"
-#~ msgstr "Softpedia ミラー"
+#~ msgid "our forum"
+#~ msgstr "フォーラム"
 
-#~ msgid "cnet mirror"
-#~ msgstr "CNet ミラー"
+#~ msgid ""
+#~ "<b>Notice:</b> on the first playback, a font cache will be \n"
+#~ "created (necessary for OSD and subtitles). This can take up to 10 \n"
+#~ "or 20 seconds. This is only done once."
+#~ msgstr ""
+#~ "<b>ご注意:</b> 初回再生時、OSD と字幕に使われるフォントキャッシュが生成さ"
+#~ "れます。10 から 20 秒程度かかることがありますが、これは 1 回のみです。"
+
+#~ msgid "Compatible with Windows NT/2000/XP/2003/Vista/Server 2008/7/8."
+#~ msgstr "Windows NT/2000/XP/2003/Vista/Server 2008/7/8 で動作します。"
+
+#~ msgid ""
+#~ "Media Player for Windows and Linux with built-in codecs and "
+#~ "Youtube&trade; support"
+#~ msgstr ""
+#~ "YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイ"
+#~ "ヤー"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 18:12+0100\n"
+"POT-Creation-Date: 2013-01-23 01:39+0100\n"
 "PO-Revision-Date: 2013-01-18 11:15+0000\n"
 "Last-Translator: rvm <rvm3000@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/smplayer_web/"
@@ -19,30 +19,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../config.php:6
+#: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 "Reproductor multimèdia amb còdecs incorporats i suport per Youtube&trade;"
 
-#: ../config.php:7
+#: ../config.php:8
 msgid "Free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 "Reproductor multimèdia gratuït amb còdecs incorporats i suport per "
 "Youtube&trade;"
 
-#: ../config.php:8
+#: ../config.php:9
 msgid "a free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 "un reproductor multimèdia gratuït amb còdecs incorporats i suport per "
 "Youtube&trade;"
 
-#: ../config.php:10
+#: ../config.php:11 ../config.php:17
 msgid "Free Media Player with built-in codecs and Youtube&trade; support"
 msgstr ""
 "Reproductor Multimèdia Gratuït amb còdecs incorporats i suport per "
 "Youtube&trade;"
 
-#: ../config.php:11
+#: ../config.php:13
+msgid ""
+"Media Player for Windows and Linux with codecs and Youtube&trade; support"
+msgstr ""
+"Reproductor Multimèdia per a Windows i Linux amb còdecs i "
+"suport per Youtube&trade;"
+
+#: ../config.php:14
+msgid ""
+"Free media player for Windows and Linux with codecs and Youtube&trade; "
+"support"
+msgstr ""
+"Reproductor multimèdia gratuït per a Windows i Linux amb còdecs i "
+"suport per Youtube&trade;"
+
+#: ../config.php:15
+msgid ""
+"a free media player for Windows and Linux with codecs and Youtube&trade; "
+"support"
+msgstr ""
+"un reproductor multimèdia gratuït per a Windows i Linux amb còdecs i "
+"suport per Youtube&trade;"
+
+#: ../config.php:20
 msgid ""
 "SMPlayer is a free open source media player for Windows and Linux with built-"
 "in codecs that\n"
@@ -53,16 +76,16 @@ msgstr ""
 "Linux amb còdecs incorporats, que pot reproduir pràcticament qualsevol "
 "format de vídeo i àudio. No necessita cap còdec extern."
 
-#: ../config.php:14 ../smplayer.php:51
+#: ../config.php:23 ../smplayer.php:51
 msgid "SMPlayer can also play, search and download Youtube&trade; videos."
 msgstr ""
 "SMPlayer pot a més reproduir, buscar i descarregar vídeos de Youtube&trade;."
 
-#: ../config.php:16
+#: ../config.php:25
 msgid "SMPlayer can also play Youtube&trade; videos."
 msgstr "SMPlayer també pot reproduir vídeos de Youtube&trade;."
 
-#: ../config.php:18
+#: ../config.php:27
 msgid ""
 "It uses the award-winning %1 as playback engine which is capable of\n"
 "playing almost all known video and audio formats (%2)."
@@ -70,27 +93,27 @@ msgstr ""
 "Fa servir el guardonat %1 com a motor de reproducció, que és capaç de "
 "reproduir gairebé tots els formats coneguts de vídeo i àudio (%2)."
 
-#: ../config.php:21 ../config.php:34
+#: ../config.php:30 ../config.php:43
 msgid "see list"
 msgstr "veure llista"
 
-#: ../config.php:22
+#: ../config.php:31
 msgid "Install SMPlayer and forget about codecs!"
 msgstr "¡Instal·la SMPlayer i oblida't de còdecs!"
 
-#: ../config.php:23 ../config.php:38
+#: ../config.php:32 ../config.php:47
 msgid "SMPlayer is multi-platform and runs on Windows and Linux."
 msgstr "SMPlayer és multiplataforma i funciona en Windows i Linux."
 
-#: ../config.php:25
+#: ../config.php:34
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "Interfície Gràfic (GUI) per MPlayer"
 
-#: ../config.php:30
+#: ../config.php:39
 msgid "Graphical Frontend for MPlayer with extra features"
 msgstr "Interfície Gràfic per MPlayer amb funcions addicionals"
 
-#: ../config.php:31
+#: ../config.php:40
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
 "which is capable of playing almost all known video and audio formats (%2)."
@@ -98,7 +121,7 @@ msgstr ""
 "SMPlayer és una interfície gràfica (GUI) per al guardonat %1, que és capaç "
 "de reproduir gairebé tots els formats coneguts de vídeo i àudio (%2)."
 
-#: ../config.php:35
+#: ../config.php:44
 msgid ""
 "Apart from providing access for the most common and useful options in "
 "MPlayer, \n"
@@ -1237,10 +1260,10 @@ msgid "UMPlayer Screenshot"
 msgstr ""
 
 #~ msgid ""
-#~ "Media Player for Windows and Linux with built-in codecs and "
+#~ "a free media player for Windows and Linux with built-in codecs and "
 #~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "Reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
+#~ "un reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
 #~ "suport per Youtube&trade;"
 
 #~ msgid ""
@@ -1251,8 +1274,8 @@ msgstr ""
 #~ "suport per Youtube&trade;"
 
 #~ msgid ""
-#~ "a free media player for Windows and Linux with built-in codecs and "
+#~ "Media Player for Windows and Linux with built-in codecs and "
 #~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "un reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
+#~ "Reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
 #~ "suport per Youtube&trade;"
