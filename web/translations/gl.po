@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-24 00:57+0100\n"
+"POT-Creation-Date: 2013-01-25 14:48+0100\n"
 "PO-Revision-Date: 2013-01-12 18:01+0100\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
-"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Contact and copyright info for SMPlayer"
 msgstr ""
 
-#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:50
+#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:62
 msgid "Contact us"
 msgstr "Contactar"
 
@@ -251,7 +251,7 @@ msgstr ""
 "As aparencias, desenvolvidas no proxecto UMPlayer, integráronse en SMPlayer. "
 "Estes foron os seus autores:"
 
-#: ../contact.php:78 ../inc/footer.php:56
+#: ../contact.php:78 ../inc/footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Seguir en Twitter"
 
@@ -443,7 +443,7 @@ msgstr ""
 msgid "Close"
 msgstr "Pechar"
 
-#: ../faq.php:3 ../inc/footer.php:17 ../inc/header.php:111
+#: ../faq.php:3 ../inc/footer.php:16 ../inc/header.php:111
 msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
@@ -472,11 +472,10 @@ msgid ""
 "Select one and click on the Download button. The subtitle file will be\n"
 "downloaded and displayed in the video."
 msgstr ""
-"Abra un vídeo, e abra o menú «Subtítulos → Buscar subtítulos en "
-"OpenSubtitles.org». Aparecerá unha xanela cunha lista dos subtítulos que "
-"pode empregar co vídeo que está a reproducir. Escolla un, e prema o botón de "
-"«Descargar». Entón, descargaranse os subtítulos seleccionados, e amosaranse "
-"no vídeo."
+"Abra un vídeo, e abra o menú «Subtítulos → Buscar subtítulos en OpenSubtitles."
+"org». Aparecerá unha xanela cunha lista dos subtítulos que pode empregar co "
+"vídeo que está a reproducir. Escolla un, e prema o botón de «Descargar». "
+"Entón, descargaranse os subtítulos seleccionados, e amosaranse no vídeo."
 
 #: ../faq.php:56
 msgid "The video equalizer doesn't work, why?"
@@ -490,8 +489,7 @@ msgid ""
 msgstr ""
 "O ecualizador de hardware podería non funcionar con algunhas tarxetas e "
 "controladores de vídeo. Se é o seu caso, vaia a «Opcións → Preferencias → "
-"Xeral → Vídeo», e marque a opción «Usar a ecualización de vídeo por "
-"software»."
+"Xeral → Vídeo», e marque a opción «Usar a ecualización de vídeo por software»."
 
 #: ../faq.php:61
 msgid "DVD menus, where are they?"
@@ -502,9 +500,8 @@ msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
-"Vaia a «Opcións → Preferencias → Dispositivos», e marque a opción «Activar "
-"os menús DVD (experimental)». Tamén debe indicar a ruta ao seu dispositivo "
-"DVD."
+"Vaia a «Opcións → Preferencias → Dispositivos», e marque a opción «Activar os "
+"menús DVD (experimental)». Tamén debe indicar a ruta ao seu dispositivo DVD."
 
 #: ../faq.php:65
 msgid "How can I download a Youtube video?"
@@ -526,8 +523,8 @@ msgid ""
 "select the \"Skinnable GUI\". Now you can choose among several skins."
 msgstr ""
 "Vaia a «Opcións → Preferencias → Interface», e na lista despregábel do campo "
-"«Interface», seleccione «Interface compatíbel con temas visuais». Entón "
-"poderá seleccionar entre as varias aparencias que hai dispoñíbeis."
+"«Interface», seleccione «Interface compatíbel con temas visuais». Entón poderá "
+"seleccionar entre as varias aparencias que hai dispoñíbeis."
 
 #: ../faq.php:72
 msgid "In linux you need to install the package smplayer-skins."
@@ -602,8 +599,8 @@ msgid ""
 "find more info at %1."
 msgstr ""
 "Se decide instalalo, o patrocinador enviará algúns céntimos a SMPlayer. Así "
-"non temos que pedirlles doazóns aos usuarios. Atopará máis información en "
-"«%1»."
+"non temos que pedirlles doazóns aos usuarios. Atopará máis información en «%"
+"1»."
 
 #: ../faq.php:102
 msgid ""
@@ -716,8 +713,8 @@ msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
 msgstr ""
-"Ocorre por usar DirectX como controlador de vídeo. Pode cambialo a «gl», "
-"«gl2» ou «direct3d» desde «Opcións → Preferencias → Xeral → Vídeo»."
+"Ocorre por usar DirectX como controlador de vídeo. Pode cambialo a «gl», «gl2» "
+"ou «direct3d» desde «Opcións → Preferencias → Xeral → Vídeo»."
 
 #: ../faq.php:146
 msgid ""
@@ -734,8 +731,8 @@ msgid ""
 "Preferences -> Advanced to work around this problem."
 msgstr ""
 "Se non pode abrir ficheiros con caracteres non latinos, marque a opción "
-"«Pasar rutas curtas (8+3) a MPlayer» desde «Opcións → Preferencias → "
-"Avanzado» para evitar o problema."
+"«Pasar rutas curtas (8+3) a MPlayer» desde «Opcións → Preferencias → Avanzado» "
+"para evitar o problema."
 
 #: ../faq.php:151
 msgid "Some menu options make the video to go blank for a moment. Why?"
@@ -887,40 +884,44 @@ msgstr "Outras ligazóns:"
 msgid "Latest changes"
 msgstr "Últimos cambios"
 
-#: ../inc/footer.php:16
-msgid "Forum"
-msgstr "Foro"
-
-#: ../inc/footer.php:19 ../inc/header.php:110 ../reviews.php:3
+#: ../inc/footer.php:18 ../inc/header.php:110 ../reviews.php:3
 #: ../reviews.php:11
 msgid "Reviews"
 msgstr "Opinións"
 
-#: ../inc/footer.php:21 ../presskit.php:3 ../presskit.php:9
+#: ../inc/footer.php:20 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "Material de prensa"
 
-#: ../inc/footer.php:28
-msgid "Bug Tracking"
-msgstr "Seguimento de incidencias"
-
-#: ../inc/footer.php:30
-msgid "Feature Requests"
-msgstr "Solicitude de funcionalidades"
-
-#: ../inc/footer.php:35
+#: ../inc/footer.php:24
 msgid "Blog"
 msgstr "Blogue"
 
-#: ../inc/footer.php:44 ../inc/footer.php:46
-msgid "Mirror"
-msgstr "Réplica"
+#: ../inc/footer.php:31
+msgid "Forum"
+msgstr "Foro"
 
-#: ../inc/footer.php:51
+#: ../inc/footer.php:33
+msgid "Bug Tracking"
+msgstr "Seguimento de incidencias"
+
+#: ../inc/footer.php:35
+msgid "Feature Requests"
+msgstr "Solicitude de funcionalidades"
+
+#: ../inc/footer.php:37
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../inc/footer.php:53
+#: ../inc/footer.php:53 ../inc/footer.php:55
+msgid "Mirror"
+msgstr "Réplica"
+
+#: ../inc/footer.php:59 ../privacy.php:4 ../privacy.php:10
+msgid "Privacy Policy"
+msgstr ""
+
+#: ../inc/footer.php:64
 msgid "MPlayer builds for Windows"
 msgstr "Compilacións de MPlayer para Windows"
 
@@ -1045,13 +1046,21 @@ msgstr "Ler máis opinións"
 msgid "Latest changes of SMPlayer"
 msgstr ""
 
-#: ../latest.php:11
+#: ../latest.php:16
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "Aquí lístanse os últimos cambios en SMPlayer:"
 
-#: ../latest.php:20
+#: ../latest.php:25
 msgid "Click here to download the latest version"
 msgstr "Prema aquí para descargar a última versión"
+
+#: ../latest.php:37
+msgid "Learn interesting things about SMPlayer in %1."
+msgstr ""
+
+#: ../latest.php:38
+msgid "our blog"
+msgstr ""
 
 #: ../presskit.php:3
 msgid "Press kit for SMPlayer"
@@ -1068,6 +1077,10 @@ msgstr "Logos"
 #: ../presskit.php:24
 msgid "Some screenshots, in English and Spanish"
 msgstr "Algunhas capturas, en castelán e inglés."
+
+#: ../privacy.php:4
+msgid "The privacy policy of the SMPlayer site"
+msgstr ""
 
 #: ../reviews.php:3
 msgid "Reviews about SMPlayer"

@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SMPlayer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-24 00:57+0100\n"
+"POT-Creation-Date: 2013-01-25 14:48+0100\n"
 "PO-Revision-Date: 2012-11-26 01:24+0100\n"
 "Last-Translator: Ricardo Villalba <smplayer.dev@gmail.com>\n"
 "Language-Team: Ricardo Villalba <smplayer.dev@gmail.com>\n"
-"Language: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: Spanish\n"
 
 #: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Contact and copyright info for SMPlayer"
 msgstr "Información de contacto y copyright de SMPlayer"
 
-#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:50
+#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:62
 msgid "Contact us"
 msgstr "Contáctanos"
 
@@ -260,7 +260,7 @@ msgstr "Pieles"
 msgid "The skins have been ported from umplayer. The authors are:"
 msgstr "Las pieles provienen de umplayer. Sus autores son:"
 
-#: ../contact.php:78 ../inc/footer.php:56
+#: ../contact.php:78 ../inc/footer.php:42
 msgid "Follow us on Twitter"
 msgstr "Síguenos en Twitter"
 
@@ -455,7 +455,7 @@ msgstr ""
 msgid "Close"
 msgstr "Cerrar"
 
-#: ../faq.php:3 ../inc/footer.php:17 ../inc/header.php:111
+#: ../faq.php:3 ../inc/footer.php:16 ../inc/header.php:111
 msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
@@ -908,40 +908,44 @@ msgstr "Otros enlaces:"
 msgid "Latest changes"
 msgstr "Últimos cambios"
 
-#: ../inc/footer.php:16
-msgid "Forum"
-msgstr "Foro"
-
-#: ../inc/footer.php:19 ../inc/header.php:110 ../reviews.php:3
+#: ../inc/footer.php:18 ../inc/header.php:110 ../reviews.php:3
 #: ../reviews.php:11
 msgid "Reviews"
 msgstr "Opiniones"
 
-#: ../inc/footer.php:21 ../presskit.php:3 ../presskit.php:9
+#: ../inc/footer.php:20 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "Kit de Prensa"
 
-#: ../inc/footer.php:28
-msgid "Bug Tracking"
-msgstr "Bugs"
-
-#: ../inc/footer.php:30
-msgid "Feature Requests"
-msgstr "Peticiones"
-
-#: ../inc/footer.php:35
+#: ../inc/footer.php:24
 msgid "Blog"
 msgstr "Blog"
 
-#: ../inc/footer.php:44 ../inc/footer.php:46
-msgid "Mirror"
-msgstr "Mirror"
+#: ../inc/footer.php:31
+msgid "Forum"
+msgstr "Foro"
 
-#: ../inc/footer.php:51
+#: ../inc/footer.php:33
+msgid "Bug Tracking"
+msgstr "Bugs"
+
+#: ../inc/footer.php:35
+msgid "Feature Requests"
+msgstr "Peticiones"
+
+#: ../inc/footer.php:37
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../inc/footer.php:53
+#: ../inc/footer.php:53 ../inc/footer.php:55
+msgid "Mirror"
+msgstr "Mirror"
+
+#: ../inc/footer.php:59 ../privacy.php:4 ../privacy.php:10
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+#: ../inc/footer.php:64
 msgid "MPlayer builds for Windows"
 msgstr "MPlayer para Windows"
 
@@ -1066,13 +1070,21 @@ msgstr "Pulsa aquí para leer más opiniones"
 msgid "Latest changes of SMPlayer"
 msgstr "Últimos cambios en SMPlayer"
 
-#: ../latest.php:11
+#: ../latest.php:16
 msgid "Here you can find a list with the latest changes in SMPlayer:"
 msgstr "Aquí puedes encontrar una lista con los últimos cambios en SMPlayer:"
 
-#: ../latest.php:20
+#: ../latest.php:25
 msgid "Click here to download the latest version"
 msgstr "Pulsa aquí para descargar la última versión"
+
+#: ../latest.php:37
+msgid "Learn interesting things about SMPlayer in %1."
+msgstr "Entérate de cosas interesantes sobre SMPlayer en %1."
+
+#: ../latest.php:38
+msgid "our blog"
+msgstr "nuestro blog"
 
 #: ../presskit.php:3
 msgid "Press kit for SMPlayer"
@@ -1089,6 +1101,10 @@ msgstr "Logos"
 #: ../presskit.php:24
 msgid "Some screenshots, in English and Spanish"
 msgstr "Algunas capturas de pantalla, en inglés y español"
+
+#: ../privacy.php:4
+msgid "The privacy policy of the SMPlayer site"
+msgstr "La política de privacidad de la web de SMPlayer"
 
 #: ../reviews.php:3
 msgid "Reviews about SMPlayer"
