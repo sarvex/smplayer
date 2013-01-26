@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 14:48+0100\n"
+"POT-Creation-Date: 2013-01-26 23:34+0100\n"
 "PO-Revision-Date: 2013-01-18 11:15+0000\n"
 "Last-Translator: rvm <rvm3000@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/smplayer_web/"
 "language/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../config.php:7
@@ -298,71 +298,79 @@ msgstr ""
 msgid "More info"
 msgstr "Més informació"
 
-#: ../downloads.php:61
+#: ../downloads.php:65
+msgid "Experimental package with mplayer2 (%1)."
+msgstr ""
+
+#: ../downloads.php:67
+msgid "mplayer2 binaries from %1, created by %2."
+msgstr ""
+
+#: ../downloads.php:76
 msgid "Alternative packages"
 msgstr "Paquets alternatius"
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "There are available other packages (like a portable version), %1."
 msgstr "Hi ha disponibles altres paquets (com una versió portable), %1."
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "here"
 msgstr "aquí"
 
-#: ../downloads.php:65
+#: ../downloads.php:80
 msgid "If you wish you can also try the %1."
 msgstr "Si vols també pots provar la %1."
 
-#: ../downloads.php:66
+#: ../downloads.php:81
 msgid "development version"
 msgstr "versió en desenvolupament"
 
-#: ../downloads.php:91
+#: ../downloads.php:106
 msgid "Packages for Ubuntu"
 msgstr "Paquets per Ubuntu"
 
-#: ../downloads.php:92
+#: ../downloads.php:107
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "Per instal·lar SMPlayer, simplement executa aquestes ordres en un terminal:"
 
-#: ../downloads.php:106
+#: ../downloads.php:121
 msgid "Contributed packages for other distros"
 msgstr "Paquets per altres distro"
 
-#: ../downloads.php:108
+#: ../downloads.php:123
 msgid "List of packages contributed by other people."
 msgstr "Llista de paquets aportats per altres persones."
 
-#: ../downloads.php:132 ../umplayer.php:81
+#: ../downloads.php:147 ../umplayer.php:81
 msgid "Sources"
 msgstr ""
 
-#: ../downloads.php:148
+#: ../downloads.php:163
 msgid "Development"
 msgstr "Desenvolupament"
 
-#: ../downloads.php:149
+#: ../downloads.php:164
 msgid "You can get the latest source from svn with this command:"
 msgstr "Pots descarregar la versió més recent del svn amb aquesta ordre:"
 
-#: ../downloads.php:155
+#: ../downloads.php:170
 msgid "Browse the svn repository"
 msgstr "Veure el repositori svn"
 
-#: ../downloads.php:197
+#: ../downloads.php:212
 msgid "Information about the Windows installer"
 msgstr "Informació sobre l'instal·lador per a Windows"
 
-#: ../downloads.php:202
+#: ../downloads.php:217
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Per a una instal·lació més senzilla en Windows proporcionem un paquet amb "
 "instal·lador."
 
-#: ../downloads.php:205
+#: ../downloads.php:220
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -370,7 +378,7 @@ msgstr ""
 "L'instal·lador pot contenir una pantalla promocional amb una oferta per "
 "instal·lar una aplicació de tercers."
 
-#: ../downloads.php:207
+#: ../downloads.php:222
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -378,7 +386,7 @@ msgstr ""
 "Si no estàs interessat en l'oferta, simplement desmarca la opció i la "
 "instal·lació continuarà normalment."
 
-#: ../downloads.php:209
+#: ../downloads.php:224
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -386,31 +394,31 @@ msgstr ""
 "Aquesta pantalla ens permet millorar smplayer i poder seguir distribuint "
 "gratuïtament. Esperem que el comprenguis."
 
-#: ../downloads.php:212
+#: ../downloads.php:227
 msgid "Optional components"
 msgstr "Components opcionals"
 
-#: ../downloads.php:213
+#: ../downloads.php:228
 msgid "The installer allows to select the components to install:"
 msgstr "L'instal·lador permet seleccionar els components que s'instal·laran:"
 
-#: ../downloads.php:215
+#: ../downloads.php:230
 msgid "Languages"
 msgstr "Idiomes"
 
-#: ../downloads.php:216
+#: ../downloads.php:231
 msgid "Translations for more than 30 languages are provided."
 msgstr "S'inclouen traduccions per més de 30 idiomes."
 
-#: ../downloads.php:217
+#: ../downloads.php:232
 msgid "If you uncheck this option, only English will be available."
 msgstr "Si desmarcas aquesta opció, només estarà disponible l'anglès."
 
-#: ../downloads.php:218
+#: ../downloads.php:233
 msgid "Icon themes"
 msgstr "Temes d'icones"
 
-#: ../downloads.php:219
+#: ../downloads.php:234
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
@@ -418,11 +426,11 @@ msgstr ""
 "Estan disponibles alguns temes d'icones, que permeten canviar l'aspecte de "
 "l'aplicació."
 
-#: ../downloads.php:220
+#: ../downloads.php:235
 msgid "Binary codecs"
 msgstr "Códecs binaris"
 
-#: ../downloads.php:221
+#: ../downloads.php:236
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -430,18 +438,18 @@ msgstr ""
 "Si marques aquesta opció, es descarregaran uns quants còdecs extra i "
 "s'instal·laran a la carpeta del SMPlayer."
 
-#: ../downloads.php:222
+#: ../downloads.php:237
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "Aquests còdecs només són necessaris per alguns formats poc freqüents."
 
-#: ../downloads.php:224
+#: ../downloads.php:239
 msgid "Uninstallation"
 msgstr "Desinstal·lació"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:229
+#: ../downloads.php:244
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -451,7 +459,7 @@ msgstr ""
 "mitjançant l'opció <i>uninstall smplayer</i> del menú del SMPlayer al menú "
 "<i>Inici</i> de Windows."
 
-#: ../downloads.php:234 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:249 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr "Tancar"
 
@@ -1272,10 +1280,10 @@ msgid "UMPlayer Screenshot"
 msgstr ""
 
 #~ msgid ""
-#~ "Media Player for Windows and Linux with built-in codecs and "
+#~ "a free media player for Windows and Linux with built-in codecs and "
 #~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "Reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
+#~ "un reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
 #~ "suport per Youtube&trade;"
 
 #~ msgid ""
@@ -1286,8 +1294,8 @@ msgstr ""
 #~ "suport per Youtube&trade;"
 
 #~ msgid ""
-#~ "a free media player for Windows and Linux with built-in codecs and "
+#~ "Media Player for Windows and Linux with built-in codecs and "
 #~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "un reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
+#~ "Reproductor multimèdia per a Windows i Linux amb còdecs incorporats i "
 #~ "suport per Youtube&trade;"

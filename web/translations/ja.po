@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 14:48+0100\n"
+"POT-Creation-Date: 2013-01-26 23:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
@@ -109,8 +109,8 @@ msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
 "which is capable of playing almost all known video and audio formats (%2)."
 msgstr ""
-"SMPlayer は、数々の受賞を誇り、ほぼすべてのビデオ/オーディオフォーマット (%"
-"2) の再生が可能な %1 のグラフィカルユーザーインターフェイス (GUI) です。"
+"SMPlayer は、数々の受賞を誇り、ほぼすべてのビデオ/オーディオフォーマット "
+"(%2) の再生が可能な %1 のグラフィカルユーザーインターフェイス (GUI) です。"
 
 #: ../config.php:44
 msgid ""
@@ -287,72 +287,80 @@ msgstr ""
 msgid "More info"
 msgstr "詳細情報"
 
-#: ../downloads.php:61
+#: ../downloads.php:65
+msgid "Experimental package with mplayer2 (%1)."
+msgstr ""
+
+#: ../downloads.php:67
+msgid "mplayer2 binaries from %1, created by %2."
+msgstr ""
+
+#: ../downloads.php:76
 msgid "Alternative packages"
 msgstr "その他のパッケージ"
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "There are available other packages (like a portable version), %1."
 msgstr "ポータブル版など、これ以外のパッケージは%1にあります。"
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "here"
 msgstr "こちら"
 
-#: ../downloads.php:65
+#: ../downloads.php:80
 msgid "If you wish you can also try the %1."
 msgstr "また、お望みでしたら%1もお試しいただけます。"
 
-#: ../downloads.php:66
+#: ../downloads.php:81
 msgid "development version"
 msgstr "開発版"
 
-#: ../downloads.php:91
+#: ../downloads.php:106
 msgid "Packages for Ubuntu"
 msgstr "Ubuntu 用パッケージ"
 
-#: ../downloads.php:92
+#: ../downloads.php:107
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 "smplayer をインストールするには、ターミナルでこれらのコマンドを実行してくださ"
 "い:"
 
-#: ../downloads.php:106
+#: ../downloads.php:121
 msgid "Contributed packages for other distros"
 msgstr "有志によるその他のディストリビューション向けパッケージ"
 
-#: ../downloads.php:108
+#: ../downloads.php:123
 msgid "List of packages contributed by other people."
 msgstr "有志によって提供されたパッケージの一覧です。"
 
-#: ../downloads.php:132 ../umplayer.php:81
+#: ../downloads.php:147 ../umplayer.php:81
 msgid "Sources"
 msgstr "ソース"
 
-#: ../downloads.php:148
+#: ../downloads.php:163
 msgid "Development"
 msgstr "開発版"
 
-#: ../downloads.php:149
+#: ../downloads.php:164
 msgid "You can get the latest source from svn with this command:"
 msgstr "以下のコマンドを実行して SVN から最新のソースを取得できます:"
 
-#: ../downloads.php:155
+#: ../downloads.php:170
 msgid "Browse the svn repository"
 msgstr "SVN リポジトリを閲覧する"
 
-#: ../downloads.php:197
+#: ../downloads.php:212
 msgid "Information about the Windows installer"
 msgstr "Windows 用インストーラーについて"
 
-#: ../downloads.php:202
+#: ../downloads.php:217
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Windows 上での手軽なインストールを実現するために、インストーラーパッケージを"
 "ご用意しています。"
 
-#: ../downloads.php:205
+#: ../downloads.php:220
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -360,7 +368,7 @@ msgstr ""
 "このインストーラーには第三者製アプリケーションのインストールを促すプロモー"
 "ション画面が表示されることがあります。"
 
-#: ../downloads.php:207
+#: ../downloads.php:222
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -368,7 +376,7 @@ msgstr ""
 "それらのアプリケーションに関心がない場合は、オプションのチェックを解除してか"
 "ら SMPlayer のインストールを続けてください。"
 
-#: ../downloads.php:209
+#: ../downloads.php:224
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -376,43 +384,43 @@ msgstr ""
 "この画面により、SMPlayer の機能向上と無償提供が可能になります。ご理解とご協力"
 "をお願いします。"
 
-#: ../downloads.php:212
+#: ../downloads.php:227
 msgid "Optional components"
 msgstr "選択可能なコンポーネント"
 
-#: ../downloads.php:213
+#: ../downloads.php:228
 msgid "The installer allows to select the components to install:"
 msgstr ""
 "インストーラーでは、インストールするコンポーネントを選択することができます:"
 
-#: ../downloads.php:215
+#: ../downloads.php:230
 msgid "Languages"
 msgstr "言語"
 
-#: ../downloads.php:216
+#: ../downloads.php:231
 msgid "Translations for more than 30 languages are provided."
 msgstr "30 を超える言語の翻訳が用意されています。"
 
-#: ../downloads.php:217
+#: ../downloads.php:232
 msgid "If you uncheck this option, only English will be available."
 msgstr "このオプションのチェックを解除すると、英語でしか利用できなくなります。"
 
-#: ../downloads.php:218
+#: ../downloads.php:233
 msgid "Icon themes"
 msgstr "アイコンテーマ"
 
-#: ../downloads.php:219
+#: ../downloads.php:234
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr ""
 "数種類のアイコンテーマです。アプリケーションの外観の変更を可能にします。"
 
-#: ../downloads.php:220
+#: ../downloads.php:235
 msgid "Binary codecs"
 msgstr "バイナリコーデック"
 
-#: ../downloads.php:221
+#: ../downloads.php:236
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -420,18 +428,18 @@ msgstr ""
 "このオプションをチェックすると、追加コーデックが SMPlayer のフォルダーにダウ"
 "ンロード/インストールされます。"
 
-#: ../downloads.php:222
+#: ../downloads.php:237
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "これらのコーデックはごく一部のフォーマット以外では必要となりません。"
 
-#: ../downloads.php:224
+#: ../downloads.php:239
 msgid "Uninstallation"
 msgstr "アンインストール"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:229
+#: ../downloads.php:244
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -441,7 +449,7 @@ msgstr ""
 "ニュー内の SMPlayer メニューの [Uninstall SMPlayer] オプションから行うことが"
 "できます。"
 
-#: ../downloads.php:234 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:249 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr "閉じる"
 

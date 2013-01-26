@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 14:48+0100\n"
+"POT-Creation-Date: 2013-01-26 23:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 
 #: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
@@ -276,74 +276,82 @@ msgstr ""
 msgid "More info"
 msgstr "更多信息"
 
-#: ../downloads.php:61
+#: ../downloads.php:65
+msgid "Experimental package with mplayer2 (%1)."
+msgstr ""
+
+#: ../downloads.php:67
+msgid "mplayer2 binaries from %1, created by %2."
+msgstr ""
+
+#: ../downloads.php:76
 msgid "Alternative packages"
 msgstr "备选软件包"
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "There are available other packages (like a portable version), %1."
 msgstr "还有可用的其他软件包 (例如便携版), %1."
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "here"
 msgstr "在这里"
 
-#: ../downloads.php:65
+#: ../downloads.php:80
 msgid "If you wish you can also try the %1."
 msgstr "如果您愿意, 您也可以尝试%1."
 
-#: ../downloads.php:66
+#: ../downloads.php:81
 msgid "development version"
 msgstr "开发版本"
 
-#: ../downloads.php:91
+#: ../downloads.php:106
 msgid "Packages for Ubuntu"
 msgstr "适用于 Ubuntu 的软件包"
 
-#: ../downloads.php:92
+#: ../downloads.php:107
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "要安装 SMPlayer, 只需在终端运行这些命令:"
 
-#: ../downloads.php:106
+#: ../downloads.php:121
 msgid "Contributed packages for other distros"
 msgstr "适用于其他发行版的贡献软件包"
 
-#: ../downloads.php:108
+#: ../downloads.php:123
 msgid "List of packages contributed by other people."
 msgstr "其他人所贡献软件包的列表."
 
-#: ../downloads.php:132 ../umplayer.php:81
+#: ../downloads.php:147 ../umplayer.php:81
 msgid "Sources"
 msgstr "源代码"
 
-#: ../downloads.php:148
+#: ../downloads.php:163
 msgid "Development"
 msgstr "开发"
 
-#: ../downloads.php:149
+#: ../downloads.php:164
 msgid "You can get the latest source from svn with this command:"
 msgstr "您可以用此命令从 SVN 获取最新的源代码:"
 
-#: ../downloads.php:155
+#: ../downloads.php:170
 msgid "Browse the svn repository"
 msgstr "浏览 SVN 存储库"
 
-#: ../downloads.php:197
+#: ../downloads.php:212
 msgid "Information about the Windows installer"
 msgstr "关于 Windows 安装程序的信息"
 
-#: ../downloads.php:202
+#: ../downloads.php:217
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr "为便于在 Windows 上安装, 我们提供了一个带有安装程序的软件包."
 
-#: ../downloads.php:205
+#: ../downloads.php:220
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
 msgstr "安装程序可能包含一个提供安装第三方应用程序的推广屏幕."
 
-#: ../downloads.php:207
+#: ../downloads.php:222
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -351,66 +359,66 @@ msgstr ""
 "如果您对提供的应用程序不感兴趣, 只需取消勾选这些选项, SMPlayer 的安装将照常进"
 "行."
 
-#: ../downloads.php:209
+#: ../downloads.php:224
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
 msgstr ""
 "这个屏幕可让我们进一步改进 SMPlayer 并保持免费分发它. 我们恳请您的谅解."
 
-#: ../downloads.php:212
+#: ../downloads.php:227
 msgid "Optional components"
 msgstr "可选组件"
 
-#: ../downloads.php:213
+#: ../downloads.php:228
 msgid "The installer allows to select the components to install:"
 msgstr "安装程序允许选择要安装的组件:"
 
-#: ../downloads.php:215
+#: ../downloads.php:230
 msgid "Languages"
 msgstr "语言"
 
-#: ../downloads.php:216
+#: ../downloads.php:231
 msgid "Translations for more than 30 languages are provided."
 msgstr "提供超过 30 种语言的翻译."
 
-#: ../downloads.php:217
+#: ../downloads.php:232
 msgid "If you uncheck this option, only English will be available."
 msgstr "如果您取消勾选此选项, 将只有英语可用."
 
-#: ../downloads.php:218
+#: ../downloads.php:233
 msgid "Icon themes"
 msgstr "图标主题"
 
-#: ../downloads.php:219
+#: ../downloads.php:234
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
 msgstr "提供一些图标主题, 其允许更改应用程序的外观."
 
-#: ../downloads.php:220
+#: ../downloads.php:235
 msgid "Binary codecs"
 msgstr "二进制编解码器"
 
-#: ../downloads.php:221
+#: ../downloads.php:236
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
 msgstr ""
 "如果您勾选此选项, 一些附加的编解码器将被下载并安装在 SMPlayer 的文件夹中."
 
-#: ../downloads.php:222
+#: ../downloads.php:237
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "这些编解码器只有一些不常见的格式才需要."
 
-#: ../downloads.php:224
+#: ../downloads.php:239
 msgid "Uninstallation"
 msgstr "卸载"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:229
+#: ../downloads.php:244
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -419,7 +427,7 @@ msgstr ""
 "您可以从控制面板或使用 Windows <i>开始</i> 菜单中 SMPlayer 菜单内的 "
 "<i>Uninstall SMPlayer</i> 选项轻松地卸载 SMPlayer."
 
-#: ../downloads.php:234 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:249 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr "关闭"
 

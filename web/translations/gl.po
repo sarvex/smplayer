@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-25 14:48+0100\n"
+"POT-Creation-Date: 2013-01-26 23:34+0100\n"
 "PO-Revision-Date: 2013-01-12 18:01+0100\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
@@ -286,70 +286,78 @@ msgstr ""
 msgid "More info"
 msgstr "Máis información"
 
-#: ../downloads.php:61
+#: ../downloads.php:65
+msgid "Experimental package with mplayer2 (%1)."
+msgstr ""
+
+#: ../downloads.php:67
+msgid "mplayer2 binaries from %1, created by %2."
+msgstr ""
+
+#: ../downloads.php:76
 msgid "Alternative packages"
 msgstr ""
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "There are available other packages (like a portable version), %1."
 msgstr "%1 atopará outros paquetes dispoñíbeis, incluída a versión portátil."
 
-#: ../downloads.php:63
+#: ../downloads.php:78
 msgid "here"
 msgstr "Aquí"
 
-#: ../downloads.php:65
+#: ../downloads.php:80
 msgid "If you wish you can also try the %1."
 msgstr "Se quere, tamén pode probar a %1."
 
-#: ../downloads.php:66
+#: ../downloads.php:81
 msgid "development version"
 msgstr "versión de desenvolvemento"
 
-#: ../downloads.php:91
+#: ../downloads.php:106
 msgid "Packages for Ubuntu"
 msgstr ""
 
-#: ../downloads.php:92
+#: ../downloads.php:107
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr "Para instalar SMPlayer, execute as seguintes ordes nun terminal:"
 
-#: ../downloads.php:106
+#: ../downloads.php:121
 msgid "Contributed packages for other distros"
 msgstr "Paquetes para outras distribucións"
 
-#: ../downloads.php:108
+#: ../downloads.php:123
 msgid "List of packages contributed by other people."
 msgstr "Lista de paquetes creados por xente allea ao proxecto."
 
-#: ../downloads.php:132 ../umplayer.php:81
+#: ../downloads.php:147 ../umplayer.php:81
 msgid "Sources"
 msgstr "Fontes"
 
-#: ../downloads.php:148
+#: ../downloads.php:163
 msgid "Development"
 msgstr ""
 
-#: ../downloads.php:149
+#: ../downloads.php:164
 msgid "You can get the latest source from svn with this command:"
 msgstr ""
 
-#: ../downloads.php:155
+#: ../downloads.php:170
 msgid "Browse the svn repository"
 msgstr ""
 
-#: ../downloads.php:197
+#: ../downloads.php:212
 msgid "Information about the Windows installer"
 msgstr "Información sobre o instalador de Windows."
 
-#: ../downloads.php:202
+#: ../downloads.php:217
 msgid ""
 "For an easy installation on Windows we provide a package with installer."
 msgstr ""
 "Para facilitar a instalación en Windows, fornecemos un paquete con "
 "instalador."
 
-#: ../downloads.php:205
+#: ../downloads.php:220
 msgid ""
 "The installer may contain a promotional screen with an offer to install a "
 "3rd party application."
@@ -357,7 +365,7 @@ msgstr ""
 "Pode que o instalador inclúa unha páxina de promoción que lle ofreza "
 "instalar un aplicativo de terceiros."
 
-#: ../downloads.php:207
+#: ../downloads.php:222
 msgid ""
 "If you aren't interested in the offer, just uncheck the option(s) and the "
 "installation of smplayer will proceed as usual."
@@ -365,7 +373,7 @@ msgstr ""
 "Se non lle interesa, simplemente desmarque a opción oi opcións, e a "
 "instalación de SMPlayer continuará con normalidade."
 
-#: ../downloads.php:209
+#: ../downloads.php:224
 msgid ""
 "This screen allows us to further improve smplayer and keep distributing it "
 "for free. We ask for your understanding."
@@ -373,32 +381,32 @@ msgstr ""
 "Entenda que necesitamos incluír esa páxina para continuar mellorando "
 "SMPlayer e seguir distribuíndoo de balde."
 
-#: ../downloads.php:212
+#: ../downloads.php:227
 msgid "Optional components"
 msgstr "Compoñentes opcionais"
 
-#: ../downloads.php:213
+#: ../downloads.php:228
 msgid "The installer allows to select the components to install:"
 msgstr "O instalador permitiralle escoller os compoñentes que quere instalar:"
 
-#: ../downloads.php:215
+#: ../downloads.php:230
 msgid "Languages"
 msgstr "Idiomas"
 
-#: ../downloads.php:216
+#: ../downloads.php:231
 msgid "Translations for more than 30 languages are provided."
 msgstr "Hai dispoñíbeis traducións a máis de 30 idiomas, incluído o galego."
 
-#: ../downloads.php:217
+#: ../downloads.php:232
 msgid "If you uncheck this option, only English will be available."
 msgstr ""
 "Se desmarca esta opción, o aplicativo estará dispoñíbel unicamente en inglés."
 
-#: ../downloads.php:218
+#: ../downloads.php:233
 msgid "Icon themes"
 msgstr "Temas de iconas"
 
-#: ../downloads.php:219
+#: ../downloads.php:234
 msgid ""
 "Some icon themes are provided, which allow to change the look of the "
 "application."
@@ -406,11 +414,11 @@ msgstr ""
 "Fornécense algúns temas de iconas, que permiten cambiar o aspecto do "
 "aplicativo."
 
-#: ../downloads.php:220
+#: ../downloads.php:235
 msgid "Binary codecs"
 msgstr "Códecs binarios"
 
-#: ../downloads.php:221
+#: ../downloads.php:236
 msgid ""
 "If you check this option, some extra codecs will be downloaded and installed "
 "in the smplayer folder."
@@ -418,18 +426,18 @@ msgstr ""
 "Se marca esta opción, descargaranse e instalaranse algúns códecs adicionais "
 "no cartafol de SMPlayer."
 
-#: ../downloads.php:222
+#: ../downloads.php:237
 msgid "These codecs are only necessary for some uncommon formats."
 msgstr "Estes códecs só son necesarios para algúns formatos pouco comúns."
 
-#: ../downloads.php:224
+#: ../downloads.php:239
 msgid "Uninstallation"
 msgstr "Desinstalación"
 
 #. Before translating the string "uninstall smplayer" be sure
 #. it really shows translated under the Start menu,
 #. otherwise leave it in English
-#: ../downloads.php:229
+#: ../downloads.php:244
 msgid ""
 "You can uninstall smplayer easily from the control panel or using the "
 "<i>uninstall smplayer</i> option in the smplayer menu within the Windows "
@@ -439,7 +447,7 @@ msgstr ""
 "opción <i>Desinstalar SMPlayer</i> da entrada de SMPlayer no menú de inicio "
 "de Windows."
 
-#: ../downloads.php:234 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
+#: ../downloads.php:249 ../index.php:119 ../smtube.php:17 ../umplayer.php:127
 msgid "Close"
 msgstr "Pechar"
 
@@ -472,10 +480,11 @@ msgid ""
 "Select one and click on the Download button. The subtitle file will be\n"
 "downloaded and displayed in the video."
 msgstr ""
-"Abra un vídeo, e abra o menú «Subtítulos → Buscar subtítulos en OpenSubtitles."
-"org». Aparecerá unha xanela cunha lista dos subtítulos que pode empregar co "
-"vídeo que está a reproducir. Escolla un, e prema o botón de «Descargar». "
-"Entón, descargaranse os subtítulos seleccionados, e amosaranse no vídeo."
+"Abra un vídeo, e abra o menú «Subtítulos → Buscar subtítulos en "
+"OpenSubtitles.org». Aparecerá unha xanela cunha lista dos subtítulos que "
+"pode empregar co vídeo que está a reproducir. Escolla un, e prema o botón de "
+"«Descargar». Entón, descargaranse os subtítulos seleccionados, e amosaranse "
+"no vídeo."
 
 #: ../faq.php:56
 msgid "The video equalizer doesn't work, why?"
@@ -489,7 +498,8 @@ msgid ""
 msgstr ""
 "O ecualizador de hardware podería non funcionar con algunhas tarxetas e "
 "controladores de vídeo. Se é o seu caso, vaia a «Opcións → Preferencias → "
-"Xeral → Vídeo», e marque a opción «Usar a ecualización de vídeo por software»."
+"Xeral → Vídeo», e marque a opción «Usar a ecualización de vídeo por "
+"software»."
 
 #: ../faq.php:61
 msgid "DVD menus, where are they?"
@@ -500,8 +510,9 @@ msgid ""
 "Go to the Drive section in preferences and check the option\n"
 "\"Enable DVD menus (Experimental)\" and set your DVD drive."
 msgstr ""
-"Vaia a «Opcións → Preferencias → Dispositivos», e marque a opción «Activar os "
-"menús DVD (experimental)». Tamén debe indicar a ruta ao seu dispositivo DVD."
+"Vaia a «Opcións → Preferencias → Dispositivos», e marque a opción «Activar "
+"os menús DVD (experimental)». Tamén debe indicar a ruta ao seu dispositivo "
+"DVD."
 
 #: ../faq.php:65
 msgid "How can I download a Youtube video?"
@@ -523,8 +534,8 @@ msgid ""
 "select the \"Skinnable GUI\". Now you can choose among several skins."
 msgstr ""
 "Vaia a «Opcións → Preferencias → Interface», e na lista despregábel do campo "
-"«Interface», seleccione «Interface compatíbel con temas visuais». Entón poderá "
-"seleccionar entre as varias aparencias que hai dispoñíbeis."
+"«Interface», seleccione «Interface compatíbel con temas visuais». Entón "
+"poderá seleccionar entre as varias aparencias que hai dispoñíbeis."
 
 #: ../faq.php:72
 msgid "In linux you need to install the package smplayer-skins."
@@ -599,8 +610,8 @@ msgid ""
 "find more info at %1."
 msgstr ""
 "Se decide instalalo, o patrocinador enviará algúns céntimos a SMPlayer. Así "
-"non temos que pedirlles doazóns aos usuarios. Atopará máis información en «%"
-"1»."
+"non temos que pedirlles doazóns aos usuarios. Atopará máis información en "
+"«%1»."
 
 #: ../faq.php:102
 msgid ""
@@ -713,8 +724,8 @@ msgid ""
 "This happens when using directx as video driver (Preferences -> General\n"
 "-> Video). You can change it to gl, gl2 or direct3d."
 msgstr ""
-"Ocorre por usar DirectX como controlador de vídeo. Pode cambialo a «gl», «gl2» "
-"ou «direct3d» desde «Opcións → Preferencias → Xeral → Vídeo»."
+"Ocorre por usar DirectX como controlador de vídeo. Pode cambialo a «gl», "
+"«gl2» ou «direct3d» desde «Opcións → Preferencias → Xeral → Vídeo»."
 
 #: ../faq.php:146
 msgid ""
@@ -731,8 +742,8 @@ msgid ""
 "Preferences -> Advanced to work around this problem."
 msgstr ""
 "Se non pode abrir ficheiros con caracteres non latinos, marque a opción "
-"«Pasar rutas curtas (8+3) a MPlayer» desde «Opcións → Preferencias → Avanzado» "
-"para evitar o problema."
+"«Pasar rutas curtas (8+3) a MPlayer» desde «Opcións → Preferencias → "
+"Avanzado» para evitar o problema."
 
 #: ../faq.php:151
 msgid "Some menu options make the video to go blank for a moment. Why?"
@@ -1343,43 +1354,46 @@ msgstr "Fontes de UMPlayer"
 msgid "UMPlayer Screenshot"
 msgstr "Captura de UMPlayer."
 
+#~ msgid "cnet mirror"
+#~ msgstr "réplica de CNet"
+
+#~ msgid "softpedia mirror"
+#~ msgstr "réplica de Softpedia"
+
 #~ msgid ""
-#~ "Media Player for Windows and Linux with built-in codecs and "
-#~ "Youtube&trade; support"
+#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
+#~ "the YouTube browser (smtube)."
 #~ msgstr ""
-#~ "Reprodutor de son e vídeo para Windows e Linux con códecs incorporados e "
-#~ "compatíbel con YouTube&trade;."
+#~ "O paquete contén SMPlayer, temas, traducións, MPlayer %1, e o navegador "
+#~ "de YouTube (SMTube)."
 
-#~ msgid "SMPlayer - Contact us"
-#~ msgstr "SMPlayer — Contactar"
-
-#~ msgid "Here is a complete list (from the MPlayer documentation):"
+#~ msgid ""
+#~ "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and "
+#~ "a new mplayer build with a lot of fixes."
 #~ msgstr ""
-#~ "A seguinte é unha lista completa, sacada da documentación de MPlayer:"
+#~ "Instale unha versión de proba da futura versión 0.8.2. Funcionalidades: "
+#~ "nova interface que poder personalizar, e nova compilación de MPlayer con "
+#~ "moitos erros solucionados. "
 
-#~ msgid "Go to the download page"
-#~ msgstr "Ir á páxina de descargas"
+#~ msgid "In case you find any problem, please report it in %1."
+#~ msgstr "Se atopa algún problema, informe del no %1."
 
-#~ msgid "SMPlayer - Latest Changes"
-#~ msgstr "SMPlayer — Últimos cambios"
+#~ msgid "our forum"
+#~ msgstr "foro"
 
-#~ msgid "SMPlayer - Screenshots"
-#~ msgstr "SMPlayer — Capturas de pantalla"
+#~ msgid ""
+#~ "<b>Notice:</b> on the first playback, a font cache will be \n"
+#~ "created (necessary for OSD and subtitles). This can take up to 10 \n"
+#~ "or 20 seconds. This is only done once."
+#~ msgstr ""
+#~ "<b>Aviso:</b> cando use SMPlayer por primeira vez para reproducir un "
+#~ "ficheiro, xerarase unha caché de tipos de letra, necesaria para os textos "
+#~ "que se amosan sobre os vídeos, incluíndo os subtítulos. O proceso podería "
+#~ "levar un anaco, chegando ata 10 e 20 segundos nalgúns computadores. "
+#~ "Porén, non será necesario volver efectuar a operación."
 
-#~ msgid "the unstable version"
-#~ msgstr "a versión inestábel"
-
-#~ msgid "Click here to get the full package"
-#~ msgstr "Prema aquí para descargar o paquete completo"
-
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer — Descargas"
-
-#~ msgid "Language"
-#~ msgstr "Idioma"
-
-#~ msgid "Possibility to change the style and icon set of the interface."
-#~ msgstr "Posibilidade de cambiar o estilo e as iconas da interface."
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer — Información xeral"
 
 #~ msgid ""
 #~ "SMPlayer is a complete media player for Windows and Linux. It uses\n"
@@ -1395,43 +1409,40 @@ msgstr "Captura de UMPlayer."
 #~ "Ademais o motor <b>utiliza os seus propios códecs</b>, así que non ten "
 #~ "que instalar ningún paquete adicional."
 
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer — Información xeral"
+#~ msgid "Possibility to change the style and icon set of the interface."
+#~ msgstr "Posibilidade de cambiar o estilo e as iconas da interface."
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer — Descargas"
+
+#~ msgid "Click here to get the full package"
+#~ msgstr "Prema aquí para descargar o paquete completo"
+
+#~ msgid "the unstable version"
+#~ msgstr "a versión inestábel"
+
+#~ msgid "SMPlayer - Screenshots"
+#~ msgstr "SMPlayer — Capturas de pantalla"
+
+#~ msgid "SMPlayer - Latest Changes"
+#~ msgstr "SMPlayer — Últimos cambios"
+
+#~ msgid "Go to the download page"
+#~ msgstr "Ir á páxina de descargas"
+
+#~ msgid "Here is a complete list (from the MPlayer documentation):"
+#~ msgstr ""
+#~ "A seguinte é unha lista completa, sacada da documentación de MPlayer:"
+
+#~ msgid "SMPlayer - Contact us"
+#~ msgstr "SMPlayer — Contactar"
 
 #~ msgid ""
-#~ "<b>Notice:</b> on the first playback, a font cache will be \n"
-#~ "created (necessary for OSD and subtitles). This can take up to 10 \n"
-#~ "or 20 seconds. This is only done once."
+#~ "Media Player for Windows and Linux with built-in codecs and "
+#~ "Youtube&trade; support"
 #~ msgstr ""
-#~ "<b>Aviso:</b> cando use SMPlayer por primeira vez para reproducir un "
-#~ "ficheiro, xerarase unha caché de tipos de letra, necesaria para os textos "
-#~ "que se amosan sobre os vídeos, incluíndo os subtítulos. O proceso podería "
-#~ "levar un anaco, chegando ata 10 e 20 segundos nalgúns computadores. "
-#~ "Porén, non será necesario volver efectuar a operación."
-
-#~ msgid "our forum"
-#~ msgstr "foro"
-
-#~ msgid "In case you find any problem, please report it in %1."
-#~ msgstr "Se atopa algún problema, informe del no %1."
-
-#~ msgid ""
-#~ "Test a beta of the upcoming version 0.8.2. Features: new skinnable UI and "
-#~ "a new mplayer build with a lot of fixes."
-#~ msgstr ""
-#~ "Instale unha versión de proba da futura versión 0.8.2. Funcionalidades: "
-#~ "nova interface que poder personalizar, e nova compilación de MPlayer con "
-#~ "moitos erros solucionados. "
-
-#~ msgid ""
-#~ "This package contains smplayer, themes, translations, mplayer %1 and \n"
-#~ "the YouTube browser (smtube)."
-#~ msgstr ""
-#~ "O paquete contén SMPlayer, temas, traducións, MPlayer %1, e o navegador "
-#~ "de YouTube (SMTube)."
-
-#~ msgid "softpedia mirror"
-#~ msgstr "réplica de Softpedia"
-
-#~ msgid "cnet mirror"
-#~ msgstr "réplica de CNet"
+#~ "Reprodutor de son e vídeo para Windows e Linux con códecs incorporados e "
+#~ "compatíbel con YouTube&trade;."
