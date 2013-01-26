@@ -19,36 +19,41 @@ msgstr ""
 
 #: ../config.php:7
 msgid "Media Player with built-in codecs and Youtube&trade; support"
-msgstr ""
+msgstr "YouTube&trade; に対応したコーデック内臓のメディアプレイヤー"
 
 #: ../config.php:8
 msgid "Free media player with built-in codecs and Youtube&trade; support"
-msgstr ""
+msgstr "YouTube&trade; に対応したコーデック内臓の無料メディアプレイヤー"
 
 #: ../config.php:9
 msgid "a free media player with built-in codecs and Youtube&trade; support"
-msgstr ""
+msgstr "YouTube&trade; に対応したコーデック内臓の無料メディアプレイヤー"
 
 #: ../config.php:11 ../config.php:17
 msgid "Free Media Player with built-in codecs and Youtube&trade; support"
-msgstr ""
+msgstr "YouTube&trade; に対応したコーデック内臓の無料メディアプレイヤー"
 
 #: ../config.php:13
 msgid ""
 "Media Player for Windows and Linux with codecs and Youtube&trade; support"
 msgstr ""
+"YouTube&trade; に対応したコーデック内臓の Windows/Linux 用メディアプレイヤー"
 
 #: ../config.php:14
 msgid ""
 "Free media player for Windows and Linux with codecs and Youtube&trade; "
 "support"
 msgstr ""
+"YouTube&trade; に対応したコーデック内臓の無料 Windows/Linux 用メディアプレイ"
+"ヤー"
 
 #: ../config.php:15
 msgid ""
 "a free media player for Windows and Linux with codecs and Youtube&trade; "
 "support"
 msgstr ""
+"YouTube&trade; に対応したコーデック内臓の無料 Windows/Linux 用メディアプレイ"
+"ヤー"
 
 #: ../config.php:20
 msgid ""
@@ -67,7 +72,7 @@ msgstr "YouTube&trade; 動画の再生、検索、ダウンロードにも対応
 
 #: ../config.php:25
 msgid "SMPlayer can also play Youtube&trade; videos."
-msgstr ""
+msgstr "SMPlayer は YouTube&trade; 動画の再生にも対応しています。"
 
 #: ../config.php:27
 msgid ""
@@ -120,7 +125,7 @@ msgstr ""
 
 #: ../contact.php:3
 msgid "Contact and copyright info for SMPlayer"
-msgstr ""
+msgstr "SMPlayer の連絡先と著作権情報"
 
 #: ../contact.php:3 ../contact.php:9 ../inc/footer.php:62
 msgid "Contact us"
@@ -239,11 +244,11 @@ msgstr "簡体字中国語"
 
 #: ../contact.php:63
 msgid "Skins"
-msgstr ""
+msgstr "スキン"
 
 #: ../contact.php:66
 msgid "The skins have been ported from umplayer. The authors are:"
-msgstr ""
+msgstr "スキンは UMPlayer から移入されました。作者:"
 
 #: ../contact.php:78 ../inc/footer.php:42
 msgid "Follow us on Twitter"
@@ -255,7 +260,7 @@ msgstr "ミラー"
 
 #: ../downloads.php:3
 msgid "Download SMPlayer"
-msgstr ""
+msgstr "SMPlayer のダウンロード"
 
 #: ../downloads.php:3 ../downloads.php:11 ../inc/header.php:112
 #: ../umplayer.php:42
@@ -268,13 +273,15 @@ msgstr "SMPlayer %1 をダウンロードする"
 
 #: ../downloads.php:40
 msgid "Other mirrors:"
-msgstr ""
+msgstr "ミラー:"
 
 #: ../downloads.php:50
 msgid ""
 "This package contains smplayer, themes, translations, mplayer %1 and the "
 "Youtube&trade; browser."
 msgstr ""
+"このパッケージには、SMPlayer、テーマ、翻訳、MPlayer %1 および YouTube&trade; "
+"ブラウザーが含まれています。"
 
 #: ../downloads.php:53
 msgid "More info"
@@ -282,7 +289,7 @@ msgstr "詳細情報"
 
 #: ../downloads.php:61
 msgid "Alternative packages"
-msgstr ""
+msgstr "その他のパッケージ"
 
 #: ../downloads.php:63
 msgid "There are available other packages (like a portable version), %1."
@@ -302,7 +309,7 @@ msgstr "開発版"
 
 #: ../downloads.php:91
 msgid "Packages for Ubuntu"
-msgstr ""
+msgstr "Ubuntu 用パッケージ"
 
 #: ../downloads.php:92
 msgid "To install smplayer, just run these commands in a terminal:"
@@ -324,15 +331,15 @@ msgstr "ソース"
 
 #: ../downloads.php:148
 msgid "Development"
-msgstr ""
+msgstr "開発版"
 
 #: ../downloads.php:149
 msgid "You can get the latest source from svn with this command:"
-msgstr ""
+msgstr "以下のコマンドを実行して SVN から最新のソースを取得できます:"
 
 #: ../downloads.php:155
 msgid "Browse the svn repository"
-msgstr ""
+msgstr "SVN リポジトリを閲覧する"
 
 #: ../downloads.php:197
 msgid "Information about the Windows installer"
@@ -444,7 +451,7 @@ msgstr "FAQ"
 
 #: ../faq.php:3
 msgid "Frequently asked questions about SMPlayer"
-msgstr ""
+msgstr "SMPlayer についてよく寄せられる質問"
 
 #. Q. = Initial for "Question"
 #: ../faq.php:15
@@ -770,6 +777,8 @@ msgid ""
 "Support for Youtube&trade;. A browser is included which allows to search, "
 "play and record videos."
 msgstr ""
+"YouTube&trade; に対応: 動画の検索、再生、保存が可能なブラウザーが同梱されてい"
+"ます。"
 
 #: ../inc/features.php:22
 msgid ""
@@ -849,7 +858,7 @@ msgstr ""
 
 #: ../inc/features.php:43
 msgid "Compatible with Windows XP/2003/Vista/Server 2008/7/8."
-msgstr ""
+msgstr "Windows XP/2003/Vista/Server 2008/7/8 で動作します。"
 
 #: ../inc/footer.php:9
 msgid "Other links:"
@@ -895,7 +904,7 @@ msgstr "ミラー"
 
 #: ../inc/footer.php:59 ../privacy.php:4 ../privacy.php:10
 msgid "Privacy Policy"
-msgstr ""
+msgstr "プライバシーポリシー"
 
 #: ../inc/footer.php:64
 msgid "MPlayer builds for Windows"
@@ -931,19 +940,19 @@ msgstr "主要なオーディオコーデック:"
 
 #: ../inc/gallery.php:11
 msgid "Download"
-msgstr ""
+msgstr "ダウンロード"
 
 #: ../inc/gallery.php:15
 msgid "Slideshow"
-msgstr ""
+msgstr "スライドショー"
 
 #: ../inc/gallery.php:19
 msgid "Previous"
-msgstr ""
+msgstr "前の画像"
 
 #: ../inc/gallery.php:22
 msgid "Next"
-msgstr ""
+msgstr "次の画像"
 
 #: ../inc/header.php:108
 msgid "Main"
@@ -956,15 +965,15 @@ msgstr "スクリーンショット"
 
 #: ../inc/reviews_box.php:27
 msgid "Read all reviews"
-msgstr ""
+msgstr "その他のレビュー"
 
 #: ../inc/reviews_box.php:31
 msgid "previous"
-msgstr ""
+msgstr "前のレビュー"
 
 #: ../inc/reviews_box.php:32
 msgid "next"
-msgstr ""
+msgstr "次のレビュー"
 
 #: ../index.php:28
 msgid "Graphical Frontend for MPlayer"
@@ -981,7 +990,7 @@ msgstr "コーデック内臓"
 
 #: ../index.php:32
 msgid "Plays and records Youtube&trade; videos"
-msgstr ""
+msgstr "YouTube&trade; 動画の再生/保存"
 
 #: ../index.php:33 ../smplayer.php:26
 msgid "Automatically search and download subtitles"
@@ -1021,7 +1030,7 @@ msgstr "もっとレビューを読む"
 
 #: ../latest.php:4
 msgid "Latest changes of SMPlayer"
-msgstr ""
+msgstr "SMPlayer の最新の変更点"
 
 #: ../latest.php:16
 msgid "Here you can find a list with the latest changes in SMPlayer:"
@@ -1033,15 +1042,15 @@ msgstr "最新版をダウンロードする"
 
 #: ../latest.php:37
 msgid "Learn interesting things about SMPlayer in %1."
-msgstr ""
+msgstr "%1で SMPlayer に関する情報を公開しています。"
 
 #: ../latest.php:38
 msgid "our blog"
-msgstr ""
+msgstr "私たちのブログ"
 
 #: ../presskit.php:3
 msgid "Press kit for SMPlayer"
-msgstr ""
+msgstr "SMPlayer のプレスキット"
 
 #: ../presskit.php:10
 msgid "Some images you can use in an article, blog, review..."
@@ -1058,11 +1067,11 @@ msgstr "スクリーンショット詰め合わせ (英語、スペイン語)"
 
 #: ../privacy.php:4
 msgid "The privacy policy of the SMPlayer site"
-msgstr ""
+msgstr "SMPlayer のサイトの個人情報に関する方針"
 
 #: ../reviews.php:3
 msgid "Reviews about SMPlayer"
-msgstr ""
+msgstr "SMPlayer のレビュー"
 
 #: ../reviews.php:14
 msgid "Media Reviews"
@@ -1082,7 +1091,7 @@ msgstr ""
 
 #: ../screenshots.php:3
 msgid "Screenshots of SMPlayer"
-msgstr ""
+msgstr "SMPlayer のスクリーンショット"
 
 #: ../screenshots.php:36
 msgid "Here you can see some screenshots from SMPlayer:"
@@ -1216,7 +1225,7 @@ msgstr "字幕の検索"
 
 #: ../smtube.php:3
 msgid "SMTube, a Youtube browser for SMPlayer"
-msgstr ""
+msgstr "SMTube (SMPlayer 用 YouTube ブラウザー)"
 
 #: ../smtube.php:11
 msgid "SMTube Screenshot"
@@ -1231,7 +1240,7 @@ msgid ""
 msgstr ""
 "SMPlayer には <i>SMTube</i> と呼ばれる YouTube ブラウザーが同梱されています。"
 "これは %2 氏が開発した %1 のコードを利用しています。このブラウザーを使うと、"
-"YouTube 動画を検索のみならずダウンロードすることができます。"
+"YouTube 動画の検索のみならずダウンロードまでが可能になります。"
 
 #: ../smtube.php:40
 msgid "Several improvements have been done:"
