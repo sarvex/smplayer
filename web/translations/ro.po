@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-01 01:55+0100\n"
+"POT-Creation-Date: 2013-02-02 01:07+0100\n"
 "PO-Revision-Date: 2008-11-25 18:28+0200\n"
 "Last-Translator: DoruHush <DoruHushHush@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,101 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../config.php:10
-msgid "Media Player with built-in codecs and Youtube&trade; support"
-msgstr ""
-
-#: ../config.php:11
-msgid "Free media player with built-in codecs and Youtube&trade; support"
-msgstr ""
-
-#: ../config.php:12
-msgid "a free media player with built-in codecs and Youtube&trade; support"
-msgstr ""
-
-#: ../config.php:14 ../config.php:20
-msgid "Free Media Player with built-in codecs and Youtube&trade; support"
-msgstr ""
-
-#: ../config.php:16
-msgid ""
-"Media Player for Windows and Linux with codecs and Youtube&trade; support"
-msgstr ""
-
-#: ../config.php:17
-msgid ""
-"Free media player for Windows and Linux with codecs and Youtube&trade; "
-"support"
-msgstr ""
-
-#: ../config.php:18
-msgid ""
-"a free media player for Windows and Linux with codecs and Youtube&trade; "
-"support"
-msgstr ""
-
-#: ../config.php:23
-msgid ""
-"SMPlayer is a free open source media player for Windows and Linux with built-"
-"in codecs that\n"
-"can play virtually all video and audio formats. It doesn't need any external "
-"codecs."
-msgstr ""
-
-#: ../config.php:26
-msgid "SMPlayer can also play, search and download Youtube&trade; videos."
-msgstr ""
-
-#: ../config.php:28
-msgid "SMPlayer can also play Youtube&trade; videos."
-msgstr ""
-
-#: ../config.php:30
-msgid ""
-"It uses the award-winning %1 as playback engine which is capable of\n"
-"playing almost all known video and audio formats (%2)."
-msgstr ""
-
-#: ../config.php:33 ../config.php:46
-msgid "see list"
-msgstr ""
-
-#: ../config.php:34
-msgid "Install SMPlayer and forget about codecs!"
-msgstr ""
-
-#: ../config.php:35 ../config.php:50
-msgid "SMPlayer is multi-platform and runs on Windows and Linux."
-msgstr ""
-
-#: ../config.php:37
-msgid "Graphical User Interface (GUI) for MPlayer"
-msgstr ""
-
-#: ../config.php:42
-msgid "Graphical Frontend for MPlayer with extra features"
-msgstr ""
-
-#: ../config.php:43
-msgid ""
-"SMPlayer is a graphical user interface (GUI) for the award-winning %1, \n"
-"which is capable of playing almost all known video and audio formats (%2)."
-msgstr ""
-
-#: ../config.php:47
-msgid ""
-"Apart from providing access for the most common and useful options in "
-"MPlayer, \n"
-"SMPlayer adds other features, like the possibility to search and download \n"
-"Youtube&trade; videos, search for subtitles and a skinnable interface."
+#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:75 ../sitemap.php:30
+msgid "Contact us"
 msgstr ""
 
 #: ../contact.php:3
-msgid "Contact and copyright info for SMPlayer"
-msgstr ""
-
-#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:75 ../sitemap.php:30
-msgid "Contact us"
+msgid "Get info about how to contact with the SMPlayer developers"
 msgstr ""
 
 #: ../contact.php:15
@@ -235,10 +146,10 @@ msgid "Mirrors"
 msgstr ""
 
 #: ../downloads.php:3
-msgid "Download SMPlayer"
+msgid "Download SMPlayer, a free media player with codecs"
 msgstr ""
 
-#: ../downloads.php:3 ../downloads.php:11 ../inc/header.php:132
+#: ../downloads.php:3 ../downloads.php:11 ../inc/header.php:133
 #: ../sitemap.php:18 ../sitemap.php:21 ../umplayer.php:42
 msgid "Downloads"
 msgstr "Descărcare"
@@ -303,12 +214,12 @@ msgstr ""
 msgid "To install smplayer, just run these commands in a terminal:"
 msgstr ""
 
-#: ../downloads.php:126
-msgid "Contributed packages for other distros"
+#: ../downloads.php:125
+msgid "Contributed packages for other Linux distributions"
 msgstr ""
 
 #: ../downloads.php:128
-msgid "List of packages contributed by other people."
+msgid "Click here to see a list of packages contributed by other people."
 msgstr ""
 
 #: ../downloads.php:152 ../umplayer.php:81
@@ -416,12 +327,13 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: ../faq.php:3 ../inc/header.php:131 ../sitemap.php:24
-msgid "FAQ"
+#: ../faq.php:3
+msgid "Frequently asked questions (FAQ)"
 msgstr ""
 
 #: ../faq.php:3
-msgid "Frequently asked questions about SMPlayer"
+msgid ""
+"Frequently asked questions about SMPlayer, a free media player with codecs"
 msgstr ""
 
 #. Q. = Initial for "Question"
@@ -777,7 +689,7 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
-#: ../inc/footer.php:20 ../inc/header.php:130 ../reviews.php:3
+#: ../inc/footer.php:20 ../inc/header.php:131 ../reviews.php:3
 #: ../reviews.php:11 ../sitemap.php:26
 msgid "Reviews"
 msgstr ""
@@ -864,14 +776,29 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: ../inc/header.php:128
+#: ../inc/header.php:24
+msgid ""
+"Media Player for Windows and Linux with codecs and Youtube&trade; support"
+msgstr ""
+
+#: ../inc/header.php:25
+msgid ""
+"Free media player for Windows and Linux with codecs and Youtube&trade; "
+"support"
+msgstr ""
+
+#: ../inc/header.php:129
 msgid "Main"
 msgstr "Pagina Principală"
 
-#: ../inc/header.php:129 ../presskit.php:22 ../screenshots.php:3
+#: ../inc/header.php:130 ../presskit.php:22 ../screenshots.php:3
 #: ../screenshots.php:14 ../sitemap.php:23
 msgid "Screenshots"
 msgstr "Capturi Ecran"
+
+#: ../inc/header.php:132 ../sitemap.php:24
+msgid "FAQ"
+msgstr ""
 
 #: ../inc/reviews_box.php:28
 msgid "Read all reviews"
@@ -885,11 +812,11 @@ msgstr ""
 msgid "next"
 msgstr ""
 
-#: ../index.php:32
+#: ../index.php:33
 msgid "A free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../index.php:35 ../index.php:143
+#: ../index.php:35 ../index.php:142
 msgid "Download SMPlayer for free"
 msgstr ""
 
@@ -984,6 +911,14 @@ msgstr ""
 msgid "Advanced features"
 msgstr ""
 
+#: ../index.php:106
+msgid ""
+"SMPlayer includes many advanced features \n"
+"like video and audio filters, change of the\n"
+"playback speed, adjustment of audio and subtitles delay,\n"
+"video equalizer... and many more."
+msgstr ""
+
 #: ../index.php:112
 msgid "In your own language"
 msgstr ""
@@ -1021,7 +956,7 @@ msgid ""
 msgstr ""
 
 #: ../latest.php:4
-msgid "Latest changes of SMPlayer"
+msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
 msgstr ""
 
 #: ../latest.php:16
@@ -1041,7 +976,7 @@ msgid "our blog"
 msgstr ""
 
 #: ../presskit.php:3
-msgid "Press kit for SMPlayer"
+msgid "Some images of SMPlayer that you can use in an article, blog, review..."
 msgstr ""
 
 #: ../presskit.php:10
@@ -1061,7 +996,8 @@ msgid "The privacy policy of the SMPlayer site"
 msgstr ""
 
 #: ../reviews.php:3
-msgid "Reviews about SMPlayer"
+msgid ""
+"Reviews from media and users about SMPlayer, a free media player with codecs"
 msgstr ""
 
 #: ../reviews.php:14
@@ -1079,7 +1015,7 @@ msgid ""
 msgstr ""
 
 #: ../screenshots.php:3
-msgid "Screenshots of SMPlayer"
+msgid "See some screenshots of SMPlayer, a free media player with codecs"
 msgstr ""
 
 #: ../screenshots.php:36
@@ -1151,7 +1087,7 @@ msgid "Toolbar editor"
 msgstr ""
 
 #: ../sitemap.php:4
-msgid "Site map of the SMPlayer website"
+msgid "The site map of the SMPlayer website"
 msgstr ""
 
 #: ../sitemap.php:17 ../sitemap.php:20
@@ -1159,7 +1095,11 @@ msgid "Main page"
 msgstr ""
 
 #: ../smtube.php:3
-msgid "SMTube, a Youtube browser for SMPlayer"
+msgid "Learn about SMTube, a Youtube&trade; browser for SMPlayer"
+msgstr ""
+
+#: ../smtube.php:3
+msgid "SMTube, the Youtube&trade; browser"
 msgstr ""
 
 #: ../smtube.php:11
@@ -1249,17 +1189,17 @@ msgstr ""
 msgid "UMPlayer Screenshot"
 msgstr ""
 
-#~ msgid "SMPlayer - Downloads"
-#~ msgstr "SMPlayer - Descărcare"
-
-#~ msgid "SMPlayer - Screenshots"
-#~ msgstr "SMPlayer - Capturi de ecran"
-
-#~ msgid "SMPlayer - General Info"
-#~ msgstr "SMPlayer - Informații Generale"
-
 #~ msgid ""
 #~ "Advanced options, such as selecting a demuxer or video & audio codecs."
 #~ msgstr ""
 #~ "Opțiuni avansate, precum selectarea unui demux sau a codecurilor audio și "
 #~ "video."
+
+#~ msgid "SMPlayer - General Info"
+#~ msgstr "SMPlayer - Informații Generale"
+
+#~ msgid "SMPlayer - Screenshots"
+#~ msgstr "SMPlayer - Capturi de ecran"
+
+#~ msgid "SMPlayer - Downloads"
+#~ msgstr "SMPlayer - Descărcare"
