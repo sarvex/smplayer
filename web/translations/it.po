@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-24 03:17+0100\n"
+"POT-Creation-Date: 2013-02-27 03:49+0100\n"
 "PO-Revision-Date: 2009-07-06 03:37+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -59,7 +59,6 @@ msgid "Main page"
 msgstr ""
 
 #: ../404.php:42 ../downloads.php:10 ../downloads.php:19 ../inc/header.php:150
-#: ../umplayer.php:42
 msgid "Downloads"
 msgstr "Scarica"
 
@@ -68,7 +67,7 @@ msgstr "Scarica"
 msgid "Screenshots"
 msgstr "Immagini demo"
 
-#: ../404.php:44 ../inc/footer.php:61 ../sitemap.php:4 ../sitemap.php:10
+#: ../404.php:44 ../inc/footer.php:64 ../sitemap.php:4 ../sitemap.php:10
 msgid "Site map"
 msgstr ""
 
@@ -80,7 +79,7 @@ msgstr ""
 msgid "Main window of SMPlayer"
 msgstr ""
 
-#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:75 ../sitemap.php:27
+#: ../contact.php:3 ../contact.php:9 ../inc/footer.php:78 ../sitemap.php:28
 msgid "Contact us"
 msgstr ""
 
@@ -201,7 +200,7 @@ msgstr ""
 msgid "The skins have been ported from umplayer. The authors are:"
 msgstr ""
 
-#: ../contact.php:78 ../inc/footer.php:52
+#: ../contact.php:78 ../inc/footer.php:55
 msgid "Follow us on Twitter"
 msgstr ""
 
@@ -232,7 +231,7 @@ msgid ""
 "it has been incorporated to SMPlayer too."
 msgstr ""
 
-#: ../download-youtube-videos.php:34
+#: ../download-youtube-videos.php:33
 msgid ""
 "To activate the Youtube&trade; browser, just select <i>Youtube browser</i> "
 "in \n"
@@ -240,110 +239,110 @@ msgid ""
 "i>."
 msgstr ""
 
-#: ../download-youtube-videos.php:42
+#: ../download-youtube-videos.php:41
 msgid "The Youtube&trade; Browser"
 msgstr ""
 
-#: ../download-youtube-videos.php:43
+#: ../download-youtube-videos.php:42
 msgid ""
 "This tool allows you to browse among the most popular, most viewed and most "
 "rated videos."
 msgstr ""
 
-#: ../download-youtube-videos.php:44
+#: ../download-youtube-videos.php:43
 msgid ""
 "You can search for a video typing a term in the search field at the bottom "
 "of the window."
 msgstr ""
 
-#: ../download-youtube-videos.php:45
+#: ../download-youtube-videos.php:44
 msgid "To play a video, just double click on it."
 msgstr ""
 
-#: ../download-youtube-videos.php:49
+#: ../download-youtube-videos.php:48
 msgid "Download Youtube&trade; videos"
 msgstr ""
 
-#: ../download-youtube-videos.php:50
+#: ../download-youtube-videos.php:49
 msgid ""
 "To download a Youtube&trade; video, right click on a video and select "
 "<i>Record video</i>."
 msgstr ""
 
-#: ../download-youtube-videos.php:51
+#: ../download-youtube-videos.php:50
 msgid "You can download several videos at a time."
 msgstr ""
 
-#: ../download-youtube-videos.php:52
+#: ../download-youtube-videos.php:51
 msgid ""
 "Click on the blue arrow to play a video or click on the <i>Open folder</i> "
 "button \n"
 "to open the folder where the videos have been saved."
 msgstr ""
 
-#: ../download-youtube-videos.php:56
+#: ../download-youtube-videos.php:55
 msgid "Choose the quality"
 msgstr ""
 
-#: ../download-youtube-videos.php:57
+#: ../download-youtube-videos.php:56
 msgid ""
 "The quality and format (mp4/flv) can be selected in the settings window."
 msgstr ""
 
-#: ../download-youtube-videos.php:58
+#: ../download-youtube-videos.php:57
 msgid "It's possible to download HD videos."
 msgstr ""
 
-#: ../download-youtube-videos.php:59
+#: ../download-youtube-videos.php:58
 msgid "The available qualities are:"
 msgstr ""
 
-#: ../download-youtube-videos.php:72
+#: ../download-youtube-videos.php:71
 msgid "How to get the Youtube&trade; browser"
 msgstr ""
 
-#: ../download-youtube-videos.php:74
+#: ../download-youtube-videos.php:73
 msgid ""
 "The Youtube&trade; browser is included along with SMPlayer in the Windows "
 "packages. Just install SMPlayer."
 msgstr ""
 
-#: ../download-youtube-videos.php:76
+#: ../download-youtube-videos.php:75
 msgid ""
 "On Linux, the Youtube&trade; browser is available in a separated package "
 "(smtube)."
 msgstr ""
 
-#: ../download-youtube-videos.php:79 ../sitemap.php:17
+#: ../download-youtube-videos.php:78 ../mplayer.php:112 ../sitemap.php:17
 msgid "Download SMPlayer"
 msgstr ""
 
-#: ../download-youtube-videos.php:87
+#: ../download-youtube-videos.php:86
 msgid "Changes"
 msgstr ""
 
-#: ../download-youtube-videos.php:89
+#: ../download-youtube-videos.php:88
 msgid ""
 "The SMPlayer team has made several improvements to the original code from "
 "umplayer:"
 msgstr ""
 
-#: ../download-youtube-videos.php:92 ../smtube-old.php:42
+#: ../download-youtube-videos.php:91 ../smtube-old.php:42
 msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
 
-#: ../download-youtube-videos.php:94 ../smtube-old.php:44
+#: ../download-youtube-videos.php:93 ../smtube-old.php:44
 msgid "It's possible to translate the application to other languages."
 msgstr ""
 
-#: ../download-youtube-videos.php:95 ../smtube-old.php:45
+#: ../download-youtube-videos.php:94 ../smtube-old.php:45
 msgid "A configuration dialog has been added."
 msgstr ""
 
-#: ../download-youtube-videos.php:96 ../smtube-old.php:46
+#: ../download-youtube-videos.php:95 ../smtube-old.php:46
 msgid "A few fixes."
 msgstr ""
 
@@ -440,7 +439,7 @@ msgstr ""
 msgid "Click here to see a list of packages contributed by other people."
 msgstr ""
 
-#: ../downloads.php:203 ../umplayer.php:81
+#: ../downloads.php:203
 msgid "Sources"
 msgstr ""
 
@@ -541,7 +540,7 @@ msgid ""
 "<i>Start</i> menu."
 msgstr ""
 
-#: ../downloads.php:306 ../smtube-old.php:17 ../umplayer.php:127
+#: ../downloads.php:306 ../smtube-old.php:17 ../umplayer.php:116
 msgid "Close"
 msgstr ""
 
@@ -900,7 +899,7 @@ msgid "Other links:"
 msgstr ""
 
 #: ../inc/footer.php:17 ../latest.php:4 ../latest.php:10 ../sitemap.php:20
-#: ../smtube-old.php:57 ../umplayer.php:95
+#: ../smtube-old.php:57 ../umplayer.php:82
 msgid "Latest changes"
 msgstr ""
 
@@ -912,11 +911,11 @@ msgstr ""
 msgid "Press Kit"
 msgstr ""
 
-#: ../inc/footer.php:29 ../sitemap.php:28
+#: ../inc/footer.php:29 ../sitemap.php:29
 msgid "Blog"
 msgstr ""
 
-#: ../inc/footer.php:37 ../sitemap.php:29
+#: ../inc/footer.php:37 ../sitemap.php:30
 msgid "Forum"
 msgstr "Forum"
 
@@ -932,11 +931,11 @@ msgstr "Richieste ai programmatori"
 msgid "Wiki"
 msgstr "Wiki"
 
-#: ../inc/footer.php:66 ../inc/footer.php:68
+#: ../inc/footer.php:69 ../inc/footer.php:71
 msgid "Mirror"
 msgstr ""
 
-#: ../inc/footer.php:72 ../privacy.php:4 ../privacy.php:10
+#: ../inc/footer.php:75 ../privacy.php:4 ../privacy.php:10
 msgid "Privacy Policy"
 msgstr ""
 
@@ -1021,7 +1020,7 @@ msgstr ""
 msgid "A free media player with built-in codecs and Youtube&trade; support"
 msgstr ""
 
-#: ../index.php:45 ../index.php:169
+#: ../index.php:45 ../index.php:169 ../umplayer.php:51
 msgid "Download SMPlayer for free"
 msgstr ""
 
@@ -1031,7 +1030,7 @@ msgid ""
 "to play all formats without the hassle to find and install codec packs."
 msgstr ""
 
-#: ../index.php:82
+#: ../index.php:82 ../mplayer.php:81
 msgid ""
 "One of the most interesting features of SMPlayer: it <b>remembers the\n"
 "settings of all files you play</b>. So you start to watch a movie but you\n"
@@ -1040,14 +1039,14 @@ msgid ""
 "track, subtitles, volume..."
 msgstr ""
 
-#: ../index.php:88
+#: ../index.php:88 ../mplayer.php:61
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning\n"
 "%1, which is capable of playing almost all known video and audio\n"
 "formats."
 msgstr ""
 
-#: ../index.php:90 ../supported-formats-and-codecs.php:15
+#: ../index.php:90 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
 msgid "Visit the MPlayer site"
 msgstr ""
 
@@ -1072,7 +1071,7 @@ msgid ""
 "codecs."
 msgstr ""
 
-#: ../index.php:107
+#: ../index.php:107 ../mplayer.php:65
 msgid "See a list of all supported formats"
 msgstr ""
 
@@ -1176,6 +1175,92 @@ msgstr ""
 
 #: ../latest.php:50
 msgid "Download the latest version of SMPlayer"
+msgstr ""
+
+#: ../mplayer.php:4
+msgid "Graphical User Interface (GUI) for MPlayer"
+msgstr ""
+
+#: ../mplayer.php:5
+msgid ""
+"Multi-platform graphical user interface (GUI) for MPlayer with many "
+"additional features like the possibility play Youtube&trade; videos."
+msgstr ""
+
+#: ../mplayer.php:12
+msgid "A Graphical Interface for MPlayer"
+msgstr ""
+
+#: ../mplayer.php:67
+msgid ""
+"MPlayer is a powerful media player but it's a command-line \n"
+"application and many people find it hard to use."
+msgstr ""
+
+#: ../mplayer.php:70
+msgid ""
+"SMPlayer makes easy to access the most common and useful functions of "
+"MPlayer, \n"
+"like selecting the audio or subtitle track, enabling video filters, \n"
+"adjusting the audio delay, playback speed and many more, using a nice and "
+"intuitive interface."
+msgstr ""
+
+#: ../mplayer.php:74
+msgid ""
+"A complete preferences dialog is also available with options to fine-tune "
+"performance, \n"
+"change the color and font of subtitles, set key shortcuts..."
+msgstr ""
+
+#: ../mplayer.php:77
+msgid ""
+"But SMPlayer also adds other interesting features like the\n"
+"possibility to <b>play and download Youtube&trade; videos</b>, \n"
+"search and download subtitles, create video preview images..."
+msgstr ""
+
+#: ../mplayer.php:87
+msgid "SMPlayer is multi-platform and runs on Windows and Linux."
+msgstr ""
+
+#: ../mplayer.php:89
+msgid "Support for MPlayer2"
+msgstr ""
+
+#: ../mplayer.php:91
+msgid "SMPlayer also supports %1."
+msgstr ""
+
+#: ../mplayer.php:92
+msgid "Visit the MPlayer2 site"
+msgstr ""
+
+#: ../mplayer.php:94
+msgid ""
+"MPlayer2 is a fork of MPlayer which includes new features like \n"
+"support for Matroska's ordered chapters or precise seeks, and also provides "
+"some bug fixes."
+msgstr ""
+
+#: ../mplayer.php:96
+msgid "See a detailed list of differences"
+msgstr ""
+
+#: ../mplayer.php:98
+msgid "MPlayer binaries for Windows"
+msgstr ""
+
+#: ../mplayer.php:100
+msgid ""
+"The SMPlayer packages for Windows already include a recent version of "
+"MPlayer."
+msgstr ""
+
+#: ../mplayer.php:102
+msgid ""
+"But if you're looking for even newer builds of MPlayer or MPlayer2, \n"
+"please take a look at these projects maintained by %1:"
 msgstr ""
 
 #: ../presskit.php:3
@@ -1305,11 +1390,15 @@ msgstr ""
 msgid "SMPlayer: a graphical interface for MPlayer"
 msgstr ""
 
-#: ../sitemap.php:25
-msgid "Press kit"
+#: ../sitemap.php:25 ../umplayer.php:12
+msgid "Youtube fix for UMPlayer"
 msgstr ""
 
 #: ../sitemap.php:26
+msgid "Press kit"
+msgstr ""
+
+#: ../sitemap.php:27
 msgid "Privacy policy"
 msgstr ""
 
@@ -1366,48 +1455,90 @@ msgstr ""
 msgid "Here you can see a list of the supported formats and codecs."
 msgstr ""
 
-#: ../umplayer.php:15
+#: ../umplayer.php:17
 msgid ""
-"%1 is a fork of SMPlayer created by %2. Since this project seems dead now, \n"
-"the SMPlayer team has released a new version which fixes Youtube playback."
+"%1, is an application based on SMPlayer 0.6.9 created by %2, with \n"
+"some extra features like Youtube playback."
 msgstr ""
 
-#: ../umplayer.php:22
+#: ../umplayer.php:30
 msgid ""
-"Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-"features of SMPlayer are not available on UMPlayer."
+"But now the UMPlayer project seems dead (no changes since December 2011), \n"
+"Youtube doesn't work anymore and some people asked the SMPlayer team to "
+"fix \n"
+"UMPlayer. So we made this release."
 msgstr ""
 
 #: ../umplayer.php:34
+msgid ""
+"SMPlayer now includes most of the new features in UMPlayer, \n"
+"like support for Youtube and skins, plus some other features that have \n"
+"been added lately and that are not available in UMPlayer, \n"
+"so if you're an user of UMPlayer it's highly recommended to migrate to "
+"SMPlayer."
+msgstr ""
+
+#: ../umplayer.php:39
+msgid "These are some of the features you would be missing:"
+msgstr ""
+
+#: ../umplayer.php:41
+msgid "A favorites' menu (bookmarks)"
+msgstr ""
+
+#: ../umplayer.php:42
+msgid "Better support for Youtube"
+msgstr ""
+
+#: ../umplayer.php:43
+msgid ""
+"Toolbar editor - you can select the buttons you want in the toolbars and "
+"controls"
+msgstr ""
+
+#: ../umplayer.php:44
+msgid "New video filters"
+msgstr ""
+
+#: ../umplayer.php:45
+msgid "Important bug fixes"
+msgstr ""
+
+#: ../umplayer.php:46
+msgid "More and better translations"
+msgstr ""
+
+#: ../umplayer.php:58
 msgid "Notice:"
 msgstr ""
 
-#: ../umplayer.php:35
+#: ../umplayer.php:59
 msgid ""
 "As of 2012.12.19 umplayer can't play youtube videos anymore.\n"
 "Please use smplayer instead."
 msgstr ""
 
-#: ../umplayer.php:53
-msgid "Click here to get UMPlayer 0.98.1"
-msgstr ""
-
-#: ../umplayer.php:55
-msgid "This package contains umplayer, themes, translations and mplayer."
-msgstr ""
-
 #: ../umplayer.php:68
-msgid "Packages for Ubuntu:"
-msgstr "Pacchetti per Ubuntu:"
-
-#: ../umplayer.php:69
-msgid "To install umplayer, just run these commands in a terminal:"
+msgid ""
+"If you still want to use UMPlayer, here you can download this \n"
+"special version by the SMPlayer team with a fix for Youtube:"
 msgstr ""
 
-#: ../umplayer.php:86
-msgid "UMPlayer sources"
+#: ../umplayer.php:75
+msgid "Sources:"
 msgstr ""
 
-#: ../umplayer.php:121
+#: ../umplayer.php:84 ../umplayer.php:89
+msgid "Version %1"
+msgstr ""
+
+#: ../umplayer.php:86 ../umplayer.php:91
+msgid "Fix Youtube"
+msgstr ""
+
+#: ../umplayer.php:108
 msgid "UMPlayer Screenshot"
 msgstr ""
+
+#~ msgid "Packages for Ubuntu:"
+#~ msgstr "Pacchetti per Ubuntu:"
