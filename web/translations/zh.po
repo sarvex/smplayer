@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-04 03:03+0100\n"
+"POT-Creation-Date: 2013-03-10 02:51+0100\n"
 "PO-Revision-Date: 2013-02-19 05:06+0000\n"
 "Last-Translator: Bendihua <opensource@bendihua.org>\n"
 "Language-Team:  <>\n"
@@ -29,11 +29,11 @@ msgstr "404 页面未找到"
 msgid "This page doesn't exist anymore."
 msgstr "此页面已不存在."
 
-#: ../404.php:21 ../index.php:61
+#: ../404.php:21 ../index.php:63
 msgid "A quick look at SMPlayer"
 msgstr "快速浏览一下 SMPlayer"
 
-#: ../404.php:25 ../index.php:65
+#: ../404.php:25 ../index.php:67
 msgid ""
 "SMPlayer is a free multimedia player for Windows and Linux with\n"
 "<b>built-in codecs</b> that can play virtually all video and audio formats. "
@@ -44,7 +44,7 @@ msgstr ""
 "其带有的<b>内置编解码器</b>可以播放几乎所有的视频和音频格式.\n"
 "它无需任何外部编解码器."
 
-#: ../404.php:29 ../index.php:69
+#: ../404.php:29 ../index.php:71
 msgid ""
 "SMPlayer is a free media player for Windows and Linux with\n"
 "<b>built-in codecs</b> that can play virtually all video and audio formats. "
@@ -67,7 +67,7 @@ msgstr "主页"
 msgid "Downloads"
 msgstr "下载"
 
-#: ../404.php:43 ../inc/header.php:157 ../presskit.php:22 ../screenshots.php:3
+#: ../404.php:43 ../inc/header.php:157 ../presskit.php:26 ../screenshots.php:3
 #: ../screenshots.php:14 ../sitemap.php:18
 msgid "Screenshots"
 msgstr "屏幕截图"
@@ -201,7 +201,7 @@ msgstr "立陶宛语"
 msgid "Simplified chinese"
 msgstr "简体中文"
 
-#: ../contact.php:63 ../index.php:110
+#: ../contact.php:63 ../index.php:112
 msgid "Skins"
 msgstr "皮肤"
 
@@ -217,15 +217,20 @@ msgstr "在 Twitter 上跟随我们"
 msgid "Mirrors"
 msgstr "镜像"
 
-#: ../download-youtube-videos.php:4 ../download-youtube-videos.php:21
-#: ../inc/footer.php:23 ../index.php:105 ../sitemap.php:23
-msgid "Play and download Youtube videos"
-msgstr "播放和下载 YouTube 视频"
+#: ../download-youtube-videos.php:4
+msgid "Play and download Youtube videos with SMTube"
+msgstr ""
 
 #: ../download-youtube-videos.php:5
 msgid ""
-"A Youtube browser which allows to search, play and download Youtube videos"
-msgstr "YouTube 浏览器允许搜索、播放和下载 YouTube&trade; 视频"
+"SMTube is a Youtube browser which allows to search, play and download "
+"Youtube videos"
+msgstr ""
+
+#: ../download-youtube-videos.php:21 ../inc/footer.php:23 ../index.php:107
+#: ../sitemap.php:23
+msgid "Play and download Youtube videos"
+msgstr "播放和下载 YouTube 视频"
 
 #: ../download-youtube-videos.php:26
 msgid ""
@@ -785,12 +790,9 @@ msgstr "UMPlayer 和 SMPlayer 有关吗?"
 #: ../faq.php:128
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
-"new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+"new features, like new skins, and Youtube and SHOUTcast support. \n"
 "Most of those features are now included in SMPlayer as well."
 msgstr ""
-"是的. UMPlayer 是创建自 SMPlayer 0.6.9 的一个分支.\n"
-"他们增加了一些新功能, 例如新的皮肤、YouTube 和 SHOUTcast&trade; 支持.\n"
-"其大多数功能现在都已包含在 SMPlayer 中."
 
 #: ../faq.php:131
 msgid ""
@@ -942,23 +944,23 @@ msgstr ""
 
 #: ../guide.php:110
 msgid ""
-"Click on the screwdriver button in the toolbar or select\n"
+"Click on the screwdriver button (%1) in the toolbar or select\n"
 "the option <b>Preferences</b> under the <b>Options</b> menu."
 msgstr ""
 
-#: ../guide.php:113
+#: ../guide.php:114
 msgid "That will open the preferences dialog."
 msgstr ""
 
-#: ../guide.php:115
+#: ../guide.php:116
 msgid "Now click on the <b>Interface</b> section on the left."
 msgstr ""
 
-#: ../guide.php:117
+#: ../guide.php:118
 msgid "Now select <b>Skinnable GUI</b> in the <b>GUI</b> option."
 msgstr ""
 
-#: ../guide.php:119
+#: ../guide.php:120
 msgid "Finally select the skin you want to use under the <b>Skin</b> option."
 msgstr ""
 
@@ -1168,9 +1170,17 @@ msgid ""
 msgstr ""
 "适用于 Windows 和 Linux 的免费多媒体播放器, 带有编解码器和 YouTube 支持"
 
+#: ../inc/header.php:36 ../index.php:42
+msgid "Frontend for MPlayer"
+msgstr ""
+
 #: ../inc/header.php:36
 msgid "Media Player for Windows and Linux with codecs and Youtube support"
 msgstr "适用于 Windows 和 Linux 的媒体播放器, 带有编解码器和 YouTube 支持"
+
+#: ../inc/header.php:37
+msgid "A frontend for MPlayer"
+msgstr ""
 
 #: ../inc/header.php:37
 msgid "Free media player for Windows and Linux with codecs and Youtube support"
@@ -1200,7 +1210,7 @@ msgstr "上一条"
 msgid "next"
 msgstr "下一条"
 
-#: ../inc/social_buttons.php:2
+#: ../inc/social_buttons.php:2 ../index.php:40
 msgid "Free Media Player with codecs and Youtube support"
 msgstr ""
 
@@ -1208,15 +1218,11 @@ msgstr ""
 msgid "A free multimedia player with built-in codecs and Youtube support"
 msgstr "一个免费的多媒体播放器, 带有内置编解码器和 YouTube 支持"
 
-#: ../index.php:40
-msgid "A free media player with built-in codecs and Youtube support"
-msgstr "带有内置编解码器和 YouTube 支持的免费媒体播放器"
-
-#: ../index.php:45 ../index.php:164 ../umplayer.php:53
+#: ../index.php:47 ../index.php:166 ../umplayer.php:53
 msgid "Download SMPlayer for free"
 msgstr "免费下载 SMPlayer"
 
-#: ../index.php:74
+#: ../index.php:76
 msgid ""
 "Just install SMPlayer and you'll be able\n"
 "to play all formats without the hassle to find and install codec packs."
@@ -1224,7 +1230,7 @@ msgstr ""
 "只需安装 SMPlayer,\n"
 "您就能够播放所有的格式, 从而免去查找和安装编解码器包的麻烦."
 
-#: ../index.php:77 ../mplayer.php:81
+#: ../index.php:79 ../mplayer.php:81
 msgid ""
 "One of the most interesting features of SMPlayer: it <b>remembers the\n"
 "settings of all files you play</b>. So you start to watch a movie but you\n"
@@ -1238,7 +1244,7 @@ msgstr ""
 "它将恢复到您离开时的播放位置, 并使用相同的设置:\n"
 "音轨、字幕、音量..."
 
-#: ../index.php:83 ../mplayer.php:61
+#: ../index.php:85 ../mplayer.php:61
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning\n"
 "%1, which is capable of playing almost all known video and audio\n"
@@ -1248,11 +1254,11 @@ msgstr ""
 "%1 的图形用户界面 (GUI),\n"
 "其能够播放几乎所有已知的视频和音频格式."
 
-#: ../index.php:85 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
+#: ../index.php:87 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
 msgid "Visit the MPlayer site"
 msgstr "访问 MPlayer 网站"
 
-#: ../index.php:87
+#: ../index.php:89
 msgid ""
 "But apart from providing access for the most common and\n"
 "useful options of MPlayer, SMPlayer adds other interesting features like "
@@ -1263,11 +1269,11 @@ msgstr ""
 "SMPlayer 还增加了一些其他有趣的功能, 如播放\n"
 "YouTube 视频或下载字幕的可能性."
 
-#: ../index.php:96
+#: ../index.php:98
 msgid "Play all media formats"
 msgstr "播放所有媒体格式"
 
-#: ../index.php:97
+#: ../index.php:99
 msgid ""
 "SMPlayer supports the most known formats and codecs:\n"
 "avi, mp4, mkv, mpeg, mov, divx, h.264... you can\n"
@@ -1281,21 +1287,21 @@ msgstr ""
 "这要归功于其内置的编解码器.\n"
 "您无需查找和安装第三方的编解码器."
 
-#: ../index.php:102 ../mplayer.php:65
+#: ../index.php:104 ../mplayer.php:65
 msgid "See a list of all supported formats"
 msgstr "查看所有受支持格式的列表"
 
-#: ../index.php:106
+#: ../index.php:108
 msgid ""
 "SMPlayer includes a handy tool which allows to search, play and download "
 "Youtube videos."
 msgstr "SMPlayer 包含一个可搜索、播放和下载 YouTube 视频的简便工具."
 
-#: ../index.php:107 ../index.php:156
+#: ../index.php:109 ../index.php:158
 msgid "Learn more"
 msgstr "了解更多"
 
-#: ../index.php:111
+#: ../index.php:113
 msgid ""
 "SMPlayer comes with several skins and icon themes,\n"
 "so you can easily change the look of the player."
@@ -1303,11 +1309,11 @@ msgstr ""
 "SMPlayer 自带了几个皮肤和图标主题,\n"
 "以便您可以轻松地更改播放器的外观."
 
-#: ../index.php:121
+#: ../index.php:123
 msgid "Subtitles download"
 msgstr "字幕下载"
 
-#: ../index.php:122
+#: ../index.php:124
 msgid ""
 "SMPlayer can search and download subtitles\n"
 "from %1."
@@ -1315,11 +1321,11 @@ msgstr ""
 "SMPlayer 可以从 %1\n"
 "搜索和下载字幕."
 
-#: ../index.php:126
+#: ../index.php:128
 msgid "Advanced features"
 msgstr "高级功能"
 
-#: ../index.php:127
+#: ../index.php:129
 msgid ""
 "SMPlayer includes many advanced features \n"
 "like video and audio filters, change of the\n"
@@ -1331,11 +1337,11 @@ msgstr ""
 "音频和字幕延迟的调整, 视频均衡器...\n"
 "等等."
 
-#: ../index.php:133
+#: ../index.php:135
 msgid "In your own language"
 msgstr "用您自己的语言"
 
-#: ../index.php:134
+#: ../index.php:136
 msgid ""
 "SMPlayer is available in more than 30 languages,\n"
 "including Spanish, German, French, Italian, Russian, Chinese, Japanese..."
@@ -1343,27 +1349,27 @@ msgstr ""
 "SMPlayer 有超过 30 种语言可用,\n"
 "其中包括西班牙语、德语、法语、意大利语、俄语、汉语、日语..."
 
-#: ../index.php:144
+#: ../index.php:146
 msgid "Multi-platform"
 msgstr "多平台"
 
-#: ../index.php:145
+#: ../index.php:147
 msgid "SMPlayer is available for Windows and Linux."
 msgstr "SMPlayer 可用于 Windows 和 Linux."
 
-#: ../index.php:146
+#: ../index.php:148
 msgid "SMPlayer is compatible with Windows XP/2003/Vista/Server 2008/7/8."
 msgstr "SMPlayer 兼容 Windows XP/2003/Vista/Server 2008/7/8."
 
-#: ../index.php:149
+#: ../index.php:151
 msgid "Free and open source"
 msgstr "自由和开源"
 
-#: ../index.php:150
+#: ../index.php:152
 msgid "SMPlayer is free and open source. SMPlayer is under the GPL license."
 msgstr "SMPlayer 是自由和开源的. SMPlayer 遵循 GPL 许可证."
 
-#: ../index.php:154
+#: ../index.php:156
 msgid ""
 "SMPlayer uses the award-winning MPlayer as playback engine,\n"
 "which is one of the best players in the world."
@@ -1560,7 +1566,7 @@ msgstr "有些图像您可以用在文章、博客、评论..."
 msgid "Logos"
 msgstr "标志"
 
-#: ../presskit.php:24
+#: ../presskit.php:28
 msgid "Some screenshots, in English and Spanish"
 msgstr "一些英文和西班牙文的截图"
 
@@ -1808,6 +1814,15 @@ msgstr ""
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer 屏幕截图"
 
+#~ msgid ""
+#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
+#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+#~ "Most of those features are now included in SMPlayer as well."
+#~ msgstr ""
+#~ "是的. UMPlayer 是创建自 SMPlayer 0.6.9 的一个分支.\n"
+#~ "他们增加了一些新功能, 例如新的皮肤、YouTube 和 SHOUTcast&trade; 支持.\n"
+#~ "其大多数功能现在都已包含在 SMPlayer 中."
+
 #~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
 #~ msgstr "了解 SMTube, 适用于 SMPlayer 的 YouTube 浏览器"
 
@@ -1887,3 +1902,10 @@ msgstr "UMPlayer 屏幕截图"
 #~ msgstr ""
 #~ "%1 是一个由 %2 创建的 SMPlayer 分支. 由于这个项目似乎已经死了,\n"
 #~ "SMPlayer 团队发布了一个修复 YouTube 播放的新版本."
+
+#~ msgid ""
+#~ "A Youtube browser which allows to search, play and download Youtube videos"
+#~ msgstr "YouTube 浏览器允许搜索、播放和下载 YouTube&trade; 视频"
+
+#~ msgid "A free media player with built-in codecs and Youtube support"
+#~ msgstr "带有内置编解码器和 YouTube 支持的免费媒体播放器"

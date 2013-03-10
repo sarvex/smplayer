@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SM Player Webgunea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-04 03:03+0100\n"
-"PO-Revision-Date: 2013-03-01 19:53+0100\n"
+"POT-Creation-Date: 2013-03-10 02:51+0100\n"
+"PO-Revision-Date: 2013-03-09 14:27+0100\n"
 "Last-Translator: Xabier Aramendi (Azpidatziak) <azpidatziak@gmail.com>\n"
 "Language-Team: (EUS_Xabier Aramendi) <azpidatziak@gmail.com>\n"
 "Language: Basque (Euskara)\n"
@@ -29,11 +29,11 @@ msgstr "404 orrialdea ez da aurkitu"
 msgid "This page doesn't exist anymore."
 msgstr "Orrialde hau ez dago gehiago."
 
-#: ../404.php:21 ../index.php:61
+#: ../404.php:21 ../index.php:63
 msgid "A quick look at SMPlayer"
 msgstr "Begirada azkar bat SMPlayerri"
 
-#: ../404.php:25 ../index.php:65
+#: ../404.php:25 ../index.php:67
 msgid ""
 "SMPlayer is a free multimedia player for Windows and Linux with\n"
 "<b>built-in codecs</b> that can play virtually all video and audio formats. "
@@ -44,7 +44,7 @@ msgstr ""
 "multimedia irakurgailu askea da, ia bideo eta audio heuskarri\n"
 "guztiak irakurri ditzake. Ez du kanpoko kodekik behar."
 
-#: ../404.php:29 ../index.php:69
+#: ../404.php:29 ../index.php:71
 msgid ""
 "SMPlayer is a free media player for Windows and Linux with\n"
 "<b>built-in codecs</b> that can play virtually all video and audio formats. "
@@ -67,7 +67,7 @@ msgstr "Orrialde nagusia"
 msgid "Downloads"
 msgstr "Jeisketak"
 
-#: ../404.php:43 ../inc/header.php:157 ../presskit.php:22 ../screenshots.php:3
+#: ../404.php:43 ../inc/header.php:157 ../presskit.php:26 ../screenshots.php:3
 #: ../screenshots.php:14 ../sitemap.php:18
 msgid "Screenshots"
 msgstr "Ikusleiho-argazkiak"
@@ -205,7 +205,7 @@ msgstr "Lituaniera"
 msgid "Simplified chinese"
 msgstr "Txinera arrundua"
 
-#: ../contact.php:63 ../index.php:110
+#: ../contact.php:63 ../index.php:112
 msgid "Skins"
 msgstr "Azalak"
 
@@ -221,17 +221,20 @@ msgstr "Jarraitu gaitzazu Twitterren"
 msgid "Mirrors"
 msgstr "Ispiluak"
 
-#: ../download-youtube-videos.php:4 ../download-youtube-videos.php:21
-#: ../inc/footer.php:23 ../index.php:105 ../sitemap.php:23
-msgid "Play and download Youtube videos"
-msgstr "Irakurri eta jeitsi Youtube bideoak"
+#: ../download-youtube-videos.php:4
+msgid "Play and download Youtube videos with SMTube"
+msgstr ""
 
 #: ../download-youtube-videos.php:5
 msgid ""
-"A Youtube browser which allows to search, play and download Youtube videos"
+"SMTube is a Youtube browser which allows to search, play and download "
+"Youtube videos"
 msgstr ""
-"Youtube nabigatzaile bat, Youtube&trade; bideoak bilatu, irakurri eta "
-"jeistea ahalbidetzen duena."
+
+#: ../download-youtube-videos.php:21 ../inc/footer.php:23 ../index.php:107
+#: ../sitemap.php:23
+msgid "Play and download Youtube videos"
+msgstr "Irakurri eta jeitsi Youtube bideoak"
 
 #: ../download-youtube-videos.php:26
 msgid ""
@@ -828,14 +831,9 @@ msgstr "UMPlayerrek zerikusia du SMPlayerrekin?"
 #: ../faq.php:128
 msgid ""
 "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
-"new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+"new features, like new skins, and Youtube and SHOUTcast support. \n"
 "Most of those features are now included in SMPlayer as well."
 msgstr ""
-"Bai. UMPlayer SMPlayer 0.6.9-tik sorturiko adar bat da. Honek ezaugarri "
-"berri ugari \n"
-"gehitzen ditu, azal berriak eta Youtube eta SHOUTcast&trade; sostengua "
-"bezala. \n"
-"Ezaugarri hauetako asko orain SMPlayerren barne ere badaude."
 
 #: ../faq.php:131
 msgid ""
@@ -916,63 +914,71 @@ msgstr ""
 
 #: ../guide.php:4 ../guide.php:10
 msgid "First steps with SMPlayer"
-msgstr ""
+msgstr "Lehen urratsak SMPlayerrekin"
 
 #: ../guide.php:4
 msgid "Quick guide to learn the basics about SMPlayer"
-msgstr ""
+msgstr "Gida azkarra SMPlayerri buruzko ohinarrazkoak jakiteko"
 
 #: ../guide.php:16
 msgid "Thank you for installing SMPlayer %1."
-msgstr ""
+msgstr "Mila esker SMPlayer %1 ezartzeagaitik."
 
 #: ../guide.php:18
 msgid "Thank you for installing SMPlayer."
-msgstr ""
+msgstr "Mila esker SMPlayer ezartzeagaitik."
 
 #: ../guide.php:21
 msgid "The SMPlayer team hopes you enjoy our player."
-msgstr ""
+msgstr "SMPlayer taldeak gure irakurgailuaz gozatuko duzula itxaroten du."
 
 #: ../guide.php:23
 msgid "You'll find here a quick guide to start using SMPlayer."
-msgstr ""
+msgstr "Hemen SMPlayer erabiltzen hasteko gida azkar bat aurkituko duzu."
 
 #: ../guide.php:56
 msgid "Play a movie file"
-msgstr ""
+msgstr "Irakurri filma agiri bat"
 
 #: ../guide.php:58
 msgid ""
 "To open a file, just click on the first button in the toolbar \n"
 "or select the option <b>File...</b> in the <b>Open</b> menu."
 msgstr ""
+"Agiri bat irekitzeko, klikatu tresnabarrako lehen botoia \n"
+"edo hautatu <b>Agiria...</b> aukera <b>Ireki</b> menuan."
 
 #: ../guide.php:61
 msgid ""
 "You can select any file from the formats supported by SMPlayer, like avi, "
 "mp4, mkv, ts, mpg..."
 msgstr ""
+"SMPlayerrek sostengatzen duen edozein heuskarriko agiria hautatu dezakezu, "
+"adibidez avi, mp4, mkv, ts, mpg..."
 
 #: ../guide.php:63
 msgid ""
 "The movie will begin to play. You can use the control at the botton of the "
 "player to pause it, rewind, seek..."
 msgstr ""
+"Filma irakurtzen hasiko da. Irakurgailuaren behereneko agintea erabili "
+"dezakezu pausatzeko, atzerabiltzeko,bilatzeko..."
 
 #: ../guide.php:81
 msgid "Play or download a Youtube video"
-msgstr ""
+msgstr "Irakurri edo jeitsi Youtube bideo bat"
 
 #: ../guide.php:83
 msgid ""
 "To play or download a Youtube video, just select <b>Youtube browser</b> in "
 "the <b>Options</b> menu."
 msgstr ""
+"Youtube bideoa bat irakurri edo jeisteko, hautatu <b>Youtube nabigatzailea</"
+"b> <b>Aukerak</b> menuan."
 
 #: ../guide.php:85
 msgid "That will open the %1 window."
-msgstr ""
+msgstr "Horrek %1 leihoa irekiko du."
 
 #: ../guide.php:86 ../screenshots.php:87
 msgid "Youtube browser"
@@ -980,37 +986,37 @@ msgstr "Youtube nabigatzailea"
 
 #: ../guide.php:104
 msgid "Change the skin"
-msgstr ""
+msgstr "Aldatu azala"
 
 #: ../guide.php:106
 msgid "By default SMPlayer uses a basic interface."
-msgstr ""
+msgstr "SMPlayerrek berez ohinarrizko interfaze bat erabiltzen du."
 
 #: ../guide.php:108
 msgid "You can change the skin very easily."
-msgstr ""
+msgstr "Azala oso erraz aldatu dezakezu."
 
 #: ../guide.php:110
 msgid ""
-"Click on the screwdriver button in the toolbar or select\n"
+"Click on the screwdriver button (%1) in the toolbar or select\n"
 "the option <b>Preferences</b> under the <b>Options</b> menu."
 msgstr ""
 
-#: ../guide.php:113
+#: ../guide.php:114
 msgid "That will open the preferences dialog."
-msgstr ""
+msgstr "Horrek hobespen elkarrizketa irekiko du."
 
-#: ../guide.php:115
+#: ../guide.php:116
 msgid "Now click on the <b>Interface</b> section on the left."
-msgstr ""
+msgstr "Orain klikatu <b>Interfazea</b> atala ezkerraldean."
 
-#: ../guide.php:117
+#: ../guide.php:118
 msgid "Now select <b>Skinnable GUI</b> in the <b>GUI</b> option."
-msgstr ""
+msgstr "Orain hautatu <b>EIG Azalgarria</b> <b>EIG</b> aukeran."
 
-#: ../guide.php:119
+#: ../guide.php:120
 msgid "Finally select the skin you want to use under the <b>Skin</b> option."
-msgstr ""
+msgstr "Azkenik hautatu erabiltzea nahi duzun azala <b>Azala</b> aukeran."
 
 #: ../inc/features.php:2
 msgid ""
@@ -1176,7 +1182,7 @@ msgstr "Wikia"
 
 #: ../inc/footer.php:52
 msgid "MPlayer GUI"
-msgstr ""
+msgstr "MPlayer EIG"
 
 #: ../inc/footer.php:69 ../inc/footer.php:71
 msgid "Mirror"
@@ -1225,11 +1231,19 @@ msgstr ""
 "Multimedia irakurgailu askea Windows eta Linux-rako kodekak barne-eraikita "
 "eta Youtube sostenguarekin"
 
+#: ../inc/header.php:36 ../index.php:42
+msgid "Frontend for MPlayer"
+msgstr ""
+
 #: ../inc/header.php:36
 msgid "Media Player for Windows and Linux with codecs and Youtube support"
 msgstr ""
 "Multimedia Irakugailua Windows eta Linux-rako kodek-ekin eta Youtube "
 "sostenguarekin"
+
+#: ../inc/header.php:37
+msgid "A frontend for MPlayer"
+msgstr ""
 
 #: ../inc/header.php:37
 msgid "Free media player for Windows and Linux with codecs and Youtube support"
@@ -1261,9 +1275,9 @@ msgstr "aurrekoa"
 msgid "next"
 msgstr "hurrengoa"
 
-#: ../inc/social_buttons.php:2
+#: ../inc/social_buttons.php:2 ../index.php:40
 msgid "Free Media Player with codecs and Youtube support"
-msgstr ""
+msgstr "Multimedia Irakurgailu Askea kodek-ekin eta Youtube sostenguarekin"
 
 #: ../index.php:38
 msgid "A free multimedia player with built-in codecs and Youtube support"
@@ -1271,17 +1285,11 @@ msgstr ""
 "Multimedia irakurgailu askea kodekak barne-eraikita eta Youtube "
 "sostenguarekin"
 
-#: ../index.php:40
-msgid "A free media player with built-in codecs and Youtube support"
-msgstr ""
-"Multimedia irakurgailu askea kodekak barne-eraikita eta Youtube "
-"sostenguarekin"
-
-#: ../index.php:45 ../index.php:164 ../umplayer.php:53
+#: ../index.php:47 ../index.php:166 ../umplayer.php:53
 msgid "Download SMPlayer for free"
 msgstr "Jeitsi SMPlayer dohainik"
 
-#: ../index.php:74
+#: ../index.php:76
 msgid ""
 "Just install SMPlayer and you'll be able\n"
 "to play all formats without the hassle to find and install codec packs."
@@ -1289,7 +1297,7 @@ msgstr ""
 "Besterik gabe ezarri SMPlayer eta heuskarri guztiak irakurtzeko\n"
 "gai izango zara kodek paketeak bilatu eta ezarri beharraren eragozpenik gabe."
 
-#: ../index.php:77 ../mplayer.php:81
+#: ../index.php:79 ../mplayer.php:81
 msgid ""
 "One of the most interesting features of SMPlayer: it <b>remembers the\n"
 "settings of all files you play</b>. So you start to watch a movie but you\n"
@@ -1303,7 +1311,7 @@ msgstr ""
 "duzunean utzitako puntu berean berrekingo du, eta ezarpen berdinekin:\n"
 "audioa, bidea, azpidatziak, bolumena..."
 
-#: ../index.php:83 ../mplayer.php:61
+#: ../index.php:85 ../mplayer.php:61
 msgid ""
 "SMPlayer is a graphical user interface (GUI) for the award-winning\n"
 "%1, which is capable of playing almost all known video and audio\n"
@@ -1313,11 +1321,11 @@ msgstr ""
 "da,\n"
 "zeina audio eta bideo heuskarri ezagun gehienak irakurtzeko gai da."
 
-#: ../index.php:85 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
+#: ../index.php:87 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
 msgid "Visit the MPlayer site"
 msgstr "Ikusi MPlayer webgunea"
 
-#: ../index.php:87
+#: ../index.php:89
 msgid ""
 "But apart from providing access for the most common and\n"
 "useful options of MPlayer, SMPlayer adds other interesting features like "
@@ -1329,11 +1337,11 @@ msgstr ""
 "SMPlayerrek beste ezaugarri interesgarri batzuk gehitzen ditu,\n"
 "Youtube bideoak irakurtzeko aukera edo azpidatziak jeistea bezalakoak."
 
-#: ../index.php:96
+#: ../index.php:98
 msgid "Play all media formats"
 msgstr "Multimedia heuskarri guztiak irakutzen ditu"
 
-#: ../index.php:97
+#: ../index.php:99
 msgid ""
 "SMPlayer supports the most known formats and codecs:\n"
 "avi, mp4, mkv, mpeg, mov, divx, h.264... you can\n"
@@ -1346,11 +1354,11 @@ msgstr ""
 "irakurri ditzakezu, barne-eraikitako kodekei esker.\n"
 "Ez duzu hirugarrenen kodekik bilatu eta ezarri beharrik."
 
-#: ../index.php:102 ../mplayer.php:65
+#: ../index.php:104 ../mplayer.php:65
 msgid "See a list of all supported formats"
 msgstr "Ikusi sostengaturiko heuskarri guztien zerrenda bat"
 
-#: ../index.php:106
+#: ../index.php:108
 msgid ""
 "SMPlayer includes a handy tool which allows to search, play and download "
 "Youtube videos."
@@ -1358,11 +1366,11 @@ msgstr ""
 "SMPlayerrek tresna erraz bat baneratzen du Youtube bideoak bilatu, irakurri "
 "eta jeistea ahalbidetzen duena."
 
-#: ../index.php:107 ../index.php:156
+#: ../index.php:109 ../index.php:158
 msgid "Learn more"
 msgstr "Jakin gehiago"
 
-#: ../index.php:111
+#: ../index.php:113
 msgid ""
 "SMPlayer comes with several skins and icon themes,\n"
 "so you can easily change the look of the player."
@@ -1370,11 +1378,11 @@ msgstr ""
 "SMPlayer azal eta ikur azalgai ugari dakartza,\n"
 "hortaz erraz aldatu dezakezu irakurgailuaren irudia."
 
-#: ../index.php:121
+#: ../index.php:123
 msgid "Subtitles download"
 msgstr "Azpidatzi jeisketa"
 
-#: ../index.php:122
+#: ../index.php:124
 msgid ""
 "SMPlayer can search and download subtitles\n"
 "from %1."
@@ -1382,11 +1390,11 @@ msgstr ""
 "SMPlayerrek azpidatziak bilatu eta jeitsi ditzake\n"
 "%1-tik."
 
-#: ../index.php:126
+#: ../index.php:128
 msgid "Advanced features"
 msgstr "Ezaugarri aurreratuak"
 
-#: ../index.php:127
+#: ../index.php:129
 msgid ""
 "SMPlayer includes many advanced features \n"
 "like video and audio filters, change of the\n"
@@ -1398,11 +1406,11 @@ msgstr ""
 "audio eta azpidatzi atzerapen zehaztea, bideo ekualizagailua...\n"
 "eta beste asko bezalakoak."
 
-#: ../index.php:133
+#: ../index.php:135
 msgid "In your own language"
 msgstr "Zeure hizkuntzan"
 
-#: ../index.php:134
+#: ../index.php:136
 msgid ""
 "SMPlayer is available in more than 30 languages,\n"
 "including Spanish, German, French, Italian, Russian, Chinese, Japanese..."
@@ -1411,27 +1419,27 @@ msgstr ""
 "barne Espainiera, Alemaniera, Frantziera, Italiera, Errusiera, Txinera, "
 "Japoniera..."
 
-#: ../index.php:144
+#: ../index.php:146
 msgid "Multi-platform"
 msgstr "Plataforma-anitzekoa"
 
-#: ../index.php:145
+#: ../index.php:147
 msgid "SMPlayer is available for Windows and Linux."
 msgstr "SMPlayer eskuragarri dago Windows and Linux-rako."
 
-#: ../index.php:146
+#: ../index.php:148
 msgid "SMPlayer is compatible with Windows XP/2003/Vista/Server 2008/7/8."
 msgstr "SMPlayer bateragarria da Windows XP/2003/Vista/Server 2008/7/8-rekin."
 
-#: ../index.php:149
+#: ../index.php:151
 msgid "Free and open source"
 msgstr "Askea eta iturburu irekikoa"
 
-#: ../index.php:150
+#: ../index.php:152
 msgid "SMPlayer is free and open source. SMPlayer is under the GPL license."
 msgstr "SMPlayer askea eta iturburu irekikoa da. SMPlayer GPL Baimenpean dago."
 
-#: ../index.php:154
+#: ../index.php:156
 msgid ""
 "SMPlayer uses the award-winning MPlayer as playback engine,\n"
 "which is one of the best players in the world."
@@ -1441,62 +1449,70 @@ msgstr ""
 
 #: ../install_069.php:4
 msgid "Thanks for installing SMPlayer"
-msgstr ""
+msgstr "Mila esker SMPlayer ezartzeagaitik"
 
 #: ../install_069.php:5
 msgid "Welcome to SMPlayer, a free media player with codecs"
-msgstr ""
+msgstr "Ongi etorria SMPlayer-era, multimedia irakurgailua askea kodek-ekin"
 
 #: ../install_069.php:11
 msgid "Thanks for installing SMPlayer 0.6.9"
-msgstr ""
+msgstr "Mila esker SMPlayer 0.6.9 ezartzeagaitik"
 
 #: ../install_069.php:38
 msgid ""
 "However the latest version of SMPlayer is %1 and \n"
 "some new interesting features have been added:"
 msgstr ""
+"Horrela ere SMPlayerren azken bertsioa %1 da eta \n"
+"zenbait ezaugarri interesgarri gehitu dira:"
 
 #: ../install_069.php:43
 msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
-msgstr ""
+msgstr "Youtube sostengua. Orain ahal duzu bilatu, irakurri eta <b>%1</b>."
 
 #: ../install_069.php:43
 msgid "download videos from Youtube"
-msgstr ""
+msgstr "jeitsi bideoak Youtube-tik"
 
 #: ../install_069.php:44
 msgid ""
 "New skins. A new skinnable interface allows to select among several skins."
 msgstr ""
+"Azal berriak. Interfaze azalgarri berri batek azal ugariren artean hautatzea "
+"ahalbidetzen dizu."
 
 #: ../install_069.php:45
 msgid ""
 "Toolbar editor. Now you can choose the buttons you want in the toolbars and "
 "controls."
 msgstr ""
+"Tresnabarra editatzailea. Orain tresnabarretan eta aginteetan nahi dituzun "
+"botoiak hautatu ditzakezu."
 
 #: ../install_069.php:46
 msgid ""
 "New favorites' menu, where you can add your favorite videos, music, streams, "
 "Youtube videos..."
 msgstr ""
+"Gogokoenak menu berri bat, hemen zure bideo, musika, jario, Youtube bideo "
+"etab. gogokoenak gehitu ditzakezu."
 
 #: ../install_069.php:47
 msgid "More video filters."
-msgstr ""
+msgstr "Bideo iragazki gehiago."
 
 #: ../install_069.php:48
 msgid "A lot of bug fixes and improvements."
-msgstr ""
+msgstr "Akats zuzenketa pilo bat eta hobekuntzak."
 
 #: ../install_069.php:51
 msgid "Would you like to upgrade?"
-msgstr ""
+msgstr "Eguneratzea nahi duzu?"
 
 #: ../install_069.php:55
 msgid "Download SMPlayer %1"
-msgstr ""
+msgstr "Jeitsi SMPlayer %1"
 
 #: ../install_069.php:69 ../latest.php:41
 msgid "Learn interesting things about SMPlayer in %1."
@@ -1508,7 +1524,7 @@ msgstr "gure bloga"
 
 #: ../install_069.php:79 ../latest.php:51
 msgid "If you like SMPlayer, recommend it to your friends:"
-msgstr ""
+msgstr "SMPlayer gogoko baduzu, gomendatu diezaiezu zure lagunei:"
 
 #: ../latest.php:4
 msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
@@ -1657,7 +1673,7 @@ msgstr ""
 msgid "Logos"
 msgstr "Logoak"
 
-#: ../presskit.php:24
+#: ../presskit.php:28
 msgid "Some screenshots, in English and Spanish"
 msgstr "Ikusleiho-argazkiak, Ingeleraz eta Espainieraz"
 
@@ -1817,6 +1833,7 @@ msgid ""
 "The SMPlayer team releases a special version of UMPlayer with a fix for "
 "Youtube"
 msgstr ""
+"SMPlayer taldeak UMPlayer bertsio berezi bat argitaratu du Youtube zuzenduta"
 
 #: ../umplayer.php:17
 msgid ""
@@ -1841,7 +1858,7 @@ msgstr ""
 
 #: ../umplayer.php:34
 msgid "But please note that:"
-msgstr ""
+msgstr "Baina mesedez ohartu:"
 
 #: ../umplayer.php:36
 msgid ""
@@ -1863,6 +1880,8 @@ msgid ""
 "These are some of the new features in SMPlayer that you would be missing in "
 "UMPlayer:"
 msgstr ""
+"Hauek dira UMPlayerren izango ez dituzun SMPlayerren ezaugarri berrietako "
+"batzuk:"
 
 #: ../umplayer.php:43
 msgid "A favorites' menu (bookmarks)"
@@ -1929,53 +1948,82 @@ msgstr "Youtube zuzenketa"
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer Ikusleiho-argazkia"
 
-#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
-#~ msgstr "Jakin SMTube-ri buruz, Youtube nabigatzaile bat SMPlayerrentzat"
-
-#~ msgid "SMTube, the Youtube browser"
-#~ msgstr "SMTube, the Youtube nabigatzailea"
-
-#~ msgid "SMTube Screenshot"
-#~ msgstr "SMTube Ikusleiho-argazkia"
+#~ msgid "These are some of the features you would be missing:"
+#~ msgstr "Hauek dira izango ez dituzun ezaugarrietako batzuk:"
 
 #~ msgid ""
-#~ "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
-#~ "The code was taken from %1 (developed by %2). \n"
-#~ "This browser allows to search Youtube videos but it's also capable of "
-#~ "downloading them."
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
 #~ msgstr ""
-#~ "SMPlayer-ek orain <i>SMTube</i> deituriko Youtube nabigatzaile bat "
-#~ "barneratzen du. \n"
-#~ "Kodea %1-tik hartua da (%2-ek garatuta). \n"
-#~ "Bilatzaile honek Youtube bideoak bilatzea ahalbidetzen du baina horiek "
-#~ "jeisteko gauza ere bada."
-
-#~ msgid "Several improvements have been done:"
-#~ msgstr "Hobekuntza ugari egin dira:"
+#~ "%1 SMPlayer-en adar bat da, %2-ek sortua. Egitasmo hau hilda dagoela "
+#~ "dirudienetik, \n"
+#~ "SMPlayer taldeak bertsio berri bat argitaratu du Youtube irakurketa "
+#~ "zuzenduz."
 
 #~ msgid ""
-#~ "SMTube is already included in the Windows packages but on Linux it's an "
-#~ "independent package."
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
 #~ msgstr ""
-#~ "SMTube Windows paketeen barne dago jadanik baina Linux-en pakete bereizi "
-#~ "batean dago."
+#~ "Ohartu UMPlayer ohinarriturik dagoela SMPlayer-en bertsio zahar batean, "
+#~ "hortaz, SMPlayer-en\n"
+#~ "ezaugarri berriak ez daude eskuragarri UMPlayer-en."
 
-#~ msgid "The mplayer2 binaries have been provided by %1, from %2."
-#~ msgstr "MPlayer2 binarioak %1-ek hornituta, %2-tik."
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Klikatu hemen UMPlayer 0.98.1 lortzeko"
 
-#~ msgid "MPlayer builds for Windows"
-#~ msgstr "Windowserako MPlayer eraiketak"
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Pakete honek umplayer, azalgaiak, itzulpenak eta mplayer ditu."
+
+#~ msgid "Packages for Ubuntu:"
+#~ msgstr "Ubunturako Paketeak:"
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr "UMplayer ezartzeko, ekin komando hauek terminalean:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "UMPlayer iturburuak"
+
+#~ msgid "Support for Youtube"
+#~ msgstr "Sostengua Youtube-rako"
+
+#~ msgid "SMPlayer can play and record Youtube videos."
+#~ msgstr "SMPlayerrek Youtube bideoak irakurri eta grabatu ditzake."
+
+#~ msgid "A handy tool to search for videos is also included."
+#~ msgstr "Bideoak bilatzeko tresna eroso bat barneratzen da."
 
 #~ msgid ""
-#~ "If you decide to install it, the sponsor will send a few cents to\n"
-#~ "SMPlayer. This way we don't need to ask the users for donations. You can\n"
-#~ "find more info at %1."
+#~ "SMPlayer can search and download subtitles\n"
+#~ "from opensubtitles.org."
 #~ msgstr ""
-#~ "Ezartzea erabakitzen baduzu, babesleak ehuneko gutxi batzuk bidaliko "
-#~ "ditu\n"
-#~ "SMPlayerrera. Honela ez diegu erabiltzaileei galdetu behar dirulaguntza "
-#~ "bat\n"
-#~ "emateko. Argibide gehiago aurikitu ditzakezu hemen: %1."
+#~ "SMPlayerrek azpidatziak bilatu eta jeitsi ditzake\n"
+#~ "opensubtitles.org.-tik"
+
+#~ msgid "Click here to download the latest version"
+#~ msgstr "Klikatu hemen azken bertsioa jeisteko"
+
+#~ msgid "The YouTube browser"
+#~ msgstr "YouTube bilatzailea"
+
+#~ msgid ""
+#~ "SMPlayer is a graphical user interface (GUI) for %1, which supports "
+#~ "almost all known video and audio formats and codecs."
+#~ msgstr ""
+#~ "SMPlayer %1-entzako erabiltzaile interfaze grafika (EIG) bat da, bideo "
+#~ "eta audio heuskarri eta kodek ezagun ia denak sostengatzen ditu."
+
+#~ msgid "Here is a complete list:"
+#~ msgstr "Hemen dago zerrenda osoa:"
+
+#~ msgid ""
+#~ "Free Media Player for Windows and Linux with codecs and Youtube support"
+#~ msgstr ""
+#~ "Multimedia irakurgailu askea Windows eta Linux-rako kodekak barne-"
+#~ "eraikita eta Youtube sostenguarekin"
+
+#~ msgid "Play all formats"
+#~ msgstr "Heuskarri guztiak irakurtzen ditu"
 
 #~ msgid ""
 #~ "It means that the installer includes a \"promotional screen\" from a\n"
@@ -1992,79 +2040,79 @@ msgstr "UMPlayer Ikusleiho-argazkia"
 #~ "bat izan daiteke. Zure esku dago erabakitzea probatzea edo ez.\n"
 #~ "Ezartzen baduzu baina ez baduzu nahi, gero erraz kendu dezakezu."
 
-#~ msgid "Play all formats"
-#~ msgstr "Heuskarri guztiak irakurtzen ditu"
+#~ msgid ""
+#~ "If you decide to install it, the sponsor will send a few cents to\n"
+#~ "SMPlayer. This way we don't need to ask the users for donations. You can\n"
+#~ "find more info at %1."
+#~ msgstr ""
+#~ "Ezartzea erabakitzen baduzu, babesleak ehuneko gutxi batzuk bidaliko "
+#~ "ditu\n"
+#~ "SMPlayerrera. Honela ez diegu erabiltzaileei galdetu behar dirulaguntza "
+#~ "bat\n"
+#~ "emateko. Argibide gehiago aurikitu ditzakezu hemen: %1."
+
+#~ msgid "MPlayer builds for Windows"
+#~ msgstr "Windowserako MPlayer eraiketak"
+
+#~ msgid "The mplayer2 binaries have been provided by %1, from %2."
+#~ msgstr "MPlayer2 binarioak %1-ek hornituta, %2-tik."
 
 #~ msgid ""
-#~ "Free Media Player for Windows and Linux with codecs and Youtube support"
+#~ "SMTube is already included in the Windows packages but on Linux it's an "
+#~ "independent package."
 #~ msgstr ""
-#~ "Multimedia irakurgailu askea Windows eta Linux-rako kodekak barne-"
-#~ "eraikita eta Youtube sostenguarekin"
+#~ "SMTube Windows paketeen barne dago jadanik baina Linux-en pakete bereizi "
+#~ "batean dago."
 
-#~ msgid "Here is a complete list:"
-#~ msgstr "Hemen dago zerrenda osoa:"
+#~ msgid "Several improvements have been done:"
+#~ msgstr "Hobekuntza ugari egin dira:"
 
 #~ msgid ""
-#~ "SMPlayer is a graphical user interface (GUI) for %1, which supports "
-#~ "almost all known video and audio formats and codecs."
+#~ "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
+#~ "The code was taken from %1 (developed by %2). \n"
+#~ "This browser allows to search Youtube videos but it's also capable of "
+#~ "downloading them."
 #~ msgstr ""
-#~ "SMPlayer %1-entzako erabiltzaile interfaze grafika (EIG) bat da, bideo "
-#~ "eta audio heuskarri eta kodek ezagun ia denak sostengatzen ditu."
+#~ "SMPlayer-ek orain <i>SMTube</i> deituriko Youtube nabigatzaile bat "
+#~ "barneratzen du. \n"
+#~ "Kodea %1-tik hartua da (%2-ek garatuta). \n"
+#~ "Bilatzaile honek Youtube bideoak bilatzea ahalbidetzen du baina horiek "
+#~ "jeisteko gauza ere bada."
 
-#~ msgid "The YouTube browser"
-#~ msgstr "YouTube bilatzailea"
+#~ msgid "SMTube Screenshot"
+#~ msgstr "SMTube Ikusleiho-argazkia"
 
-#~ msgid "Click here to download the latest version"
-#~ msgstr "Klikatu hemen azken bertsioa jeisteko"
+#~ msgid "SMTube, the Youtube browser"
+#~ msgstr "SMTube, the Youtube nabigatzailea"
+
+#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
+#~ msgstr "Jakin SMTube-ri buruz, Youtube nabigatzaile bat SMPlayerrentzat"
 
 #~ msgid ""
-#~ "SMPlayer can search and download subtitles\n"
-#~ "from opensubtitles.org."
+#~ "Click on the screwdriver button in the toolbar or select\n"
+#~ "the option <b>Preferences</b> under the <b>Options</b> menu."
 #~ msgstr ""
-#~ "SMPlayerrek azpidatziak bilatu eta jeitsi ditzake\n"
-#~ "opensubtitles.org.-tik"
-
-#~ msgid "A handy tool to search for videos is also included."
-#~ msgstr "Bideoak bilatzeko tresna eroso bat barneratzen da."
-
-#~ msgid "SMPlayer can play and record Youtube videos."
-#~ msgstr "SMPlayerrek Youtube bideoak irakurri eta grabatu ditzake."
-
-#~ msgid "Support for Youtube"
-#~ msgstr "Sostengua Youtube-rako"
-
-#~ msgid "UMPlayer sources"
-#~ msgstr "UMPlayer iturburuak"
-
-#~ msgid "To install umplayer, just run these commands in a terminal:"
-#~ msgstr "UMplayer ezartzeko, ekin komando hauek terminalean:"
-
-#~ msgid "Packages for Ubuntu:"
-#~ msgstr "Ubunturako Paketeak:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "Pakete honek umplayer, azalgaiak, itzulpenak eta mplayer ditu."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "Klikatu hemen UMPlayer 0.98.1 lortzeko"
+#~ "Klikatu bihurkin botoia tresnabarran edo hautatu\n"
+#~ "<b>Hobespenak</b> aukera <b>Aukerak</b> menuan."
 
 #~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
+#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
+#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+#~ "Most of those features are now included in SMPlayer as well."
 #~ msgstr ""
-#~ "Ohartu UMPlayer ohinarriturik dagoela SMPlayer-en bertsio zahar batean, "
-#~ "hortaz, SMPlayer-en\n"
-#~ "ezaugarri berriak ez daude eskuragarri UMPlayer-en."
+#~ "Bai. UMPlayer SMPlayer 0.6.9-tik sorturiko adar bat da. Honek ezaugarri "
+#~ "berri ugari \n"
+#~ "gehitzen ditu, azal berriak eta Youtube eta SHOUTcast&trade; sostengua "
+#~ "bezala. \n"
+#~ "Ezaugarri hauetako asko orain SMPlayerren barne ere badaude."
 
 #~ msgid ""
-#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
-#~ "now, \n"
-#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ "A Youtube browser which allows to search, play and download Youtube videos"
 #~ msgstr ""
-#~ "%1 SMPlayer-en adar bat da, %2-ek sortua. Egitasmo hau hilda dagoela "
-#~ "dirudienetik, \n"
-#~ "SMPlayer taldeak bertsio berri bat argitaratu du Youtube irakurketa "
-#~ "zuzenduz."
+#~ "Youtube nabigatzaile bat, Youtube&trade; bideoak bilatu, irakurri eta "
+#~ "jeistea ahalbidetzen duena."
 
-#~ msgid "These are some of the features you would be missing:"
-#~ msgstr "Hauek dira izango ez dituzun ezaugarrietako batzuk:"
+#~ msgid "A free media player with built-in codecs and Youtube support"
+#~ msgstr ""
+#~ "Multimedia irakurgailu askea kodekak barne-eraikita eta Youtube "
+#~ "sostenguarekin"
