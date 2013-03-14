@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-10 02:51+0100\n"
+"POT-Creation-Date: 2013-03-14 17:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Free Media Player with codecs and Youtube support"
 msgstr ""
 
-#: ../index.php:42 ../inc/header.php:36
+#: ../index.php:42 ../inc/header.php:37
 msgid "Frontend for MPlayer"
 msgstr ""
 
@@ -104,8 +104,7 @@ msgstr ""
 msgid "See a list of all supported formats"
 msgstr ""
 
-#: ../index.php:107 ../inc/footer.php:23 ../sitemap.php:23
-#: ../download-youtube-videos.php:21
+#: ../index.php:107 ../inc/footer.php:23 ../sitemap.php:23 ../smtube.php:21
 msgid "Play and download Youtube videos"
 msgstr ""
 
@@ -294,36 +293,46 @@ msgid ""
 "Free multimedia player for Windows and Linux with codecs and Youtube support"
 msgstr ""
 
-#: ../inc/header.php:36
+#: ../inc/header.php:37
 msgid "Media Player for Windows and Linux with codecs and Youtube support"
 msgstr ""
 
-#: ../inc/header.php:37
+#: ../inc/header.php:38
 msgid "Free media player for Windows and Linux with codecs and Youtube support"
 msgstr ""
 
-#: ../inc/header.php:37
+#: ../inc/header.php:38
 msgid "A frontend for MPlayer"
 msgstr ""
 
-#: ../inc/header.php:156
+#: ../inc/header.php:40
+msgid "Free Media Player for Windows and Linux"
+msgstr ""
+
+#: ../inc/header.php:41
+msgid ""
+"Free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube videos"
+msgstr ""
+
+#: ../inc/header.php:161
 msgid "Main"
 msgstr ""
 
-#: ../inc/header.php:157 ../screenshots.php:3 ../screenshots.php:14
+#: ../inc/header.php:162 ../screenshots.php:3 ../screenshots.php:14
 #: ../sitemap.php:18 ../presskit.php:26 ../404.php:43
 msgid "Screenshots"
 msgstr ""
 
-#: ../inc/header.php:158 ../reviews.php:3 ../reviews.php:11
+#: ../inc/header.php:163 ../reviews.php:3 ../reviews.php:11
 msgid "Reviews"
 msgstr ""
 
-#: ../inc/header.php:159 ../sitemap.php:19
+#: ../inc/header.php:164 ../sitemap.php:19
 msgid "FAQ"
 msgstr ""
 
-#: ../inc/header.php:160 ../downloads.php:10 ../downloads.php:19 ../404.php:42
+#: ../inc/header.php:165 ../downloads.php:10 ../downloads.php:19 ../404.php:42
 msgid "Downloads"
 msgstr ""
 
@@ -674,15 +683,15 @@ msgstr ""
 msgid "Youtube browser changes"
 msgstr ""
 
-#: ../latest.php:44 ../install_069.php:72
+#: ../latest.php:44 ../install_069.php:76
 msgid "our blog"
 msgstr ""
 
-#: ../latest.php:41 ../install_069.php:69
+#: ../latest.php:41 ../install_069.php:73
 msgid "Learn interesting things about SMPlayer in %1."
 msgstr ""
 
-#: ../latest.php:51 ../install_069.php:79
+#: ../latest.php:51 ../install_069.php:83
 msgid "If you like SMPlayer, recommend it to your friends:"
 msgstr ""
 
@@ -721,7 +730,7 @@ msgstr ""
 msgid "Information about SMPlayer"
 msgstr ""
 
-#: ../sitemap.php:17 ../download-youtube-videos.php:78 ../mplayer.php:112
+#: ../sitemap.php:17 ../smtube.php:88 ../mplayer.php:112
 msgid "Download SMPlayer"
 msgstr ""
 
@@ -1115,134 +1124,153 @@ msgid ""
 "with new parameters. That's why playback interrupts for a moment."
 msgstr ""
 
-#: ../download-youtube-videos.php:4
+#: ../smtube.php:4
 msgid "Play and download Youtube videos with SMTube"
 msgstr ""
 
-#: ../download-youtube-videos.php:5
+#: ../smtube.php:5
 msgid ""
 "SMTube is a Youtube browser which allows to search, play and download "
 "Youtube videos"
 msgstr ""
 
-#: ../download-youtube-videos.php:26
-msgid ""
-"Now SMPlayer includes a Youtube browser which allows \n"
-"to search, play and <b>download Youtube videos</b>."
+#: ../smtube.php:26
+msgid "SMTube allows to search, play and download Youtube videos."
 msgstr ""
 
-#: ../download-youtube-videos.php:29
+#: ../smtube.php:28
 msgid ""
-"The code was originally created by %1 for %2 and \n"
-"it has been incorporated to SMPlayer too."
+"Videos are played back with a media player (by default %1) \n"
+"instead of a flash player, this allows better performance, \n"
+"particularly with HD content."
 msgstr ""
 
-#: ../download-youtube-videos.php:33
+#: ../smtube.php:33
+msgid "SMTube also allows to download the videos, with the quality you choose."
+msgstr ""
+
+#: ../smtube.php:35
+msgid "Several videos can be downloaded at a time."
+msgstr ""
+
+#: ../smtube.php:38
 msgid ""
-"To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
+"SMTube is included in SMPlayer's menus, to run it \n"
+"just select <i>Youtube browser</i> in \n"
 "the <i>Options</i> menu in the SMPlayer main window, or just press <i>F11</"
 "i>."
 msgstr ""
 
-#: ../download-youtube-videos.php:41
+#: ../smtube.php:43
+msgid "SMTube is based on some code from %1."
+msgstr ""
+
+#: ../smtube.php:51
 msgid "The Youtube Browser"
 msgstr ""
 
-#: ../download-youtube-videos.php:42 ../guide.php:88
+#: ../smtube.php:52 ../guide.php:88
 msgid ""
 "This tool allows you to browse among the most popular, most viewed and most "
 "rated videos."
 msgstr ""
 
-#: ../download-youtube-videos.php:43 ../guide.php:90
+#: ../smtube.php:53 ../guide.php:90
 msgid ""
 "You can search for a video typing a term in the search field at the bottom "
 "of the window."
 msgstr ""
 
-#: ../download-youtube-videos.php:44 ../guide.php:92
+#: ../smtube.php:54 ../guide.php:92
 msgid "To play a video, just double click on it."
 msgstr ""
 
-#: ../download-youtube-videos.php:48
+#: ../smtube.php:58
 msgid "Download Youtube videos"
 msgstr ""
 
-#: ../download-youtube-videos.php:49 ../guide.php:94
+#: ../smtube.php:59 ../guide.php:94
 msgid ""
 "To download a Youtube video, right click on a video and select <i>Record "
 "video</i>."
 msgstr ""
 
-#: ../download-youtube-videos.php:50 ../guide.php:96
+#: ../smtube.php:60 ../guide.php:96
 msgid "You can download several videos at a time."
 msgstr ""
 
-#: ../download-youtube-videos.php:51
+#: ../smtube.php:61
 msgid ""
 "Click on the blue arrow to play a video or click on the <i>Open folder</i> "
 "button \n"
 "to open the folder where the videos have been saved."
 msgstr ""
 
-#: ../download-youtube-videos.php:55
+#: ../smtube.php:65
 msgid "Choose the quality"
 msgstr ""
 
-#: ../download-youtube-videos.php:56
+#: ../smtube.php:66
 msgid ""
 "The quality and format (mp4/flv) can be selected in the settings window."
 msgstr ""
 
-#: ../download-youtube-videos.php:57
+#: ../smtube.php:67
 msgid "It's possible to download HD videos."
 msgstr ""
 
-#: ../download-youtube-videos.php:58
+#: ../smtube.php:68
 msgid "The available qualities are:"
 msgstr ""
 
-#: ../download-youtube-videos.php:71
-msgid "How to get the Youtube browser"
+#: ../smtube.php:81
+msgid "How to get SMTube"
 msgstr ""
 
-#: ../download-youtube-videos.php:73
+#: ../smtube.php:85
 msgid ""
-"The Youtube browser is included along with SMPlayer in the Windows packages. "
-"Just install SMPlayer."
+"SMTube is included along with SMPlayer in the Windows packages. Just install "
+"SMPlayer."
 msgstr ""
 
-#: ../download-youtube-videos.php:75
-msgid ""
-"On Linux, the Youtube browser is available in a separated package (smtube)."
+#: ../smtube.php:92
+msgid "On Linux, SMTube is available in a separated package."
 msgstr ""
 
-#: ../download-youtube-videos.php:86
+#: ../smtube.php:94
+msgid "To install it, run these commands in a terminal (ubuntu):"
+msgstr ""
+
+#: ../smtube.php:102 ../umplayer.php:77
+msgid "Sources:"
+msgstr ""
+
+#: ../smtube.php:110
 msgid "Changes"
 msgstr ""
 
-#: ../download-youtube-videos.php:88
+#: ../smtube.php:112
 msgid ""
 "The SMPlayer team has made several improvements to the original code from "
 "umplayer:"
 msgstr ""
 
-#: ../download-youtube-videos.php:91
+#: ../smtube.php:115
 msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
 "(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
 msgstr ""
 
-#: ../download-youtube-videos.php:93
+#: ../smtube.php:117
 msgid "It's possible to translate the application to other languages."
 msgstr ""
 
-#: ../download-youtube-videos.php:94
+#: ../smtube.php:118
 msgid "A configuration dialog has been added."
 msgstr ""
 
-#: ../download-youtube-videos.php:95
+#: ../smtube.php:119
 msgid "A few fixes."
 msgstr ""
 
@@ -1472,10 +1500,6 @@ msgid ""
 "special version by the SMPlayer team with a fix for Youtube:"
 msgstr ""
 
-#: ../umplayer.php:77
-msgid "Sources:"
-msgstr ""
-
 #: ../umplayer.php:86 ../umplayer.php:91
 msgid "Version %1"
 msgstr ""
@@ -1502,48 +1526,58 @@ msgstr ""
 
 #: ../install_069.php:38
 msgid ""
-"However the latest version of SMPlayer is %1 and \n"
+"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
+"b>."
+msgstr ""
+
+#: ../install_069.php:40
+msgid "It's highly recommended to upgrade."
+msgstr ""
+
+#: ../install_069.php:42
+msgid ""
+"The latest version of SMPlayer is %1 and \n"
 "some new interesting features have been added:"
 msgstr ""
 
-#: ../install_069.php:43
+#: ../install_069.php:47
 msgid "download videos from Youtube"
 msgstr ""
 
-#: ../install_069.php:43
+#: ../install_069.php:47
 msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
 msgstr ""
 
-#: ../install_069.php:44
+#: ../install_069.php:48
 msgid ""
 "New skins. A new skinnable interface allows to select among several skins."
 msgstr ""
 
-#: ../install_069.php:45
+#: ../install_069.php:49
 msgid ""
 "Toolbar editor. Now you can choose the buttons you want in the toolbars and "
 "controls."
 msgstr ""
 
-#: ../install_069.php:46
+#: ../install_069.php:50
 msgid ""
 "New favorites' menu, where you can add your favorite videos, music, streams, "
 "Youtube videos..."
 msgstr ""
 
-#: ../install_069.php:47
+#: ../install_069.php:51
 msgid "More video filters."
 msgstr ""
 
-#: ../install_069.php:48
+#: ../install_069.php:52
 msgid "A lot of bug fixes and improvements."
 msgstr ""
 
-#: ../install_069.php:51
+#: ../install_069.php:55
 msgid "Would you like to upgrade?"
 msgstr ""
 
-#: ../install_069.php:55
+#: ../install_069.php:59
 msgid "Download SMPlayer %1"
 msgstr ""
 

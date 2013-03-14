@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-10 02:51+0100\n"
-"PO-Revision-Date: 2013-03-08 00:00+0000\n"
+"POT-Creation-Date: 2013-03-14 17:43+0100\n"
+"PO-Revision-Date: 2013-03-13 08:37+0000\n"
 "Last-Translator: zubr139 <zubr139@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/smplayer_web/"
 "language/uk/)\n"
@@ -69,11 +69,11 @@ msgstr "Можливо , ви знайдете те, що шукали на од
 msgid "Main page"
 msgstr "Головна сторінка"
 
-#: ../404.php:42 ../downloads.php:10 ../downloads.php:19 ../inc/header.php:160
+#: ../404.php:42 ../downloads.php:10 ../downloads.php:19 ../inc/header.php:165
 msgid "Downloads"
 msgstr "Завантаження"
 
-#: ../404.php:43 ../inc/header.php:157 ../presskit.php:26 ../screenshots.php:3
+#: ../404.php:43 ../inc/header.php:162 ../presskit.php:26 ../screenshots.php:3
 #: ../screenshots.php:14 ../sitemap.php:18
 msgid "Screenshots"
 msgstr "Скріншоти"
@@ -226,156 +226,6 @@ msgstr "Слідуйте за нами на Twitter"
 msgid "Mirrors"
 msgstr "Дзеркала"
 
-#: ../download-youtube-videos.php:4
-msgid "Play and download Youtube videos with SMTube"
-msgstr ""
-
-#: ../download-youtube-videos.php:5
-msgid ""
-"SMTube is a Youtube browser which allows to search, play and download "
-"Youtube videos"
-msgstr ""
-
-#: ../download-youtube-videos.php:21 ../inc/footer.php:23 ../index.php:107
-#: ../sitemap.php:23
-msgid "Play and download Youtube videos"
-msgstr "Відтворення і завантаження відео з Youtube"
-
-#: ../download-youtube-videos.php:26
-msgid ""
-"Now SMPlayer includes a Youtube browser which allows \n"
-"to search, play and <b>download Youtube videos</b>."
-msgstr ""
-"Тепер SMPlayer містить переглядач Youtube, який дозволяє здійснювати пошук, "
-"відтворювати та <b>завантажуквати відео з Youtube</b>."
-
-#: ../download-youtube-videos.php:29
-msgid ""
-"The code was originally created by %1 for %2 and \n"
-"it has been incorporated to SMPlayer too."
-msgstr "Код був спочатку створено % 1 на %2, і він був доданий в SMPlayer."
-
-#: ../download-youtube-videos.php:33
-msgid ""
-"To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
-"the <i>Options</i> menu in the SMPlayer main window, or just press <i>F11</"
-"i>."
-msgstr ""
-
-#: ../download-youtube-videos.php:41
-msgid "The Youtube Browser"
-msgstr "Переглядач Youtube"
-
-#: ../download-youtube-videos.php:42 ../guide.php:88
-msgid ""
-"This tool allows you to browse among the most popular, most viewed and most "
-"rated videos."
-msgstr ""
-
-#: ../download-youtube-videos.php:43 ../guide.php:90
-msgid ""
-"You can search for a video typing a term in the search field at the bottom "
-"of the window."
-msgstr ""
-"Ви можете знайти відео ввівши запит у полі пошуку в нижній частині вікна."
-
-#: ../download-youtube-videos.php:44 ../guide.php:92
-msgid "To play a video, just double click on it."
-msgstr "Для відтворення відео, просто двічі клацніть по ньому."
-
-#: ../download-youtube-videos.php:48
-msgid "Download Youtube videos"
-msgstr "Завантажити відео з Youtube"
-
-#: ../download-youtube-videos.php:49 ../guide.php:94
-msgid ""
-"To download a Youtube video, right click on a video and select <i>Record "
-"video</i>."
-msgstr ""
-"Для завантаження відео з Youtube, натисніть правою кнопкою миші на відео і "
-"виберіть <i>Записати відео</i>."
-
-#: ../download-youtube-videos.php:50 ../guide.php:96
-msgid "You can download several videos at a time."
-msgstr "Ви можете завантажити кілька відео одночасно."
-
-#: ../download-youtube-videos.php:51
-msgid ""
-"Click on the blue arrow to play a video or click on the <i>Open folder</i> "
-"button \n"
-"to open the folder where the videos have been saved."
-msgstr ""
-
-#: ../download-youtube-videos.php:55
-msgid "Choose the quality"
-msgstr "Виберіть якість"
-
-#: ../download-youtube-videos.php:56
-msgid ""
-"The quality and format (mp4/flv) can be selected in the settings window."
-msgstr "Якість і формат (mp4/flv) можна обрати у вікні налаштувань."
-
-#: ../download-youtube-videos.php:57
-msgid "It's possible to download HD videos."
-msgstr ""
-
-#: ../download-youtube-videos.php:58
-msgid "The available qualities are:"
-msgstr ""
-
-#: ../download-youtube-videos.php:71
-msgid "How to get the Youtube browser"
-msgstr "Як отримати переглядач Youtube"
-
-#: ../download-youtube-videos.php:73
-msgid ""
-"The Youtube browser is included along with SMPlayer in the Windows packages. "
-"Just install SMPlayer."
-msgstr ""
-"Переглядач Youtube входить у пакет SMPlayer для Windows. Просто встановіть "
-"SMPlayer."
-
-#: ../download-youtube-videos.php:75
-msgid ""
-"On Linux, the Youtube browser is available in a separated package (smtube)."
-msgstr "У Лінуксі, YouTube переглядач  доступний в окремому пакеті (smtube)."
-
-#: ../download-youtube-videos.php:78 ../mplayer.php:112 ../sitemap.php:17
-msgid "Download SMPlayer"
-msgstr "Завантажити SMPlayer"
-
-#: ../download-youtube-videos.php:86
-msgid "Changes"
-msgstr "Зміни"
-
-#: ../download-youtube-videos.php:88
-msgid ""
-"The SMPlayer team has made several improvements to the original code from "
-"umplayer:"
-msgstr ""
-"Команда SMPlayer зробили деякі вдосконалення у вихідному коді umplayer:"
-
-#: ../download-youtube-videos.php:91
-msgid ""
-"It's now a stand-alone application and you can select the video player to "
-"use \n"
-"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
-msgstr ""
-"Тепер це окремий додаток, і ви можете вибрати програвач\n"
-"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
-
-#: ../download-youtube-videos.php:93
-msgid "It's possible to translate the application to other languages."
-msgstr "Можливість перекладу додатків на інші мови."
-
-#: ../download-youtube-videos.php:94
-msgid "A configuration dialog has been added."
-msgstr "Додано діалог налаштувань."
-
-#: ../download-youtube-videos.php:95
-msgid "A few fixes."
-msgstr "Декілька виправлень."
-
 #: ../downloads.php:4 ../downloads.php:8 ../inc/gallery.php:11
 msgid "Download"
 msgstr "Завантаження"
@@ -489,7 +339,7 @@ msgstr "Ви можете отримати останній вихідний к�
 
 #: ../downloads.php:226
 msgid "Browse the svn repository"
-msgstr "Огляд svn репозиторія"
+msgstr "Оглянути svn репозиторій"
 
 #: ../downloads.php:269
 msgid "Information about the Windows installer"
@@ -719,9 +569,9 @@ msgstr ""
 "Це два різних додатка, що працюють разом. SMPlayer\n"
 "по суті не медіа плеєр, на відміну від MPlayer. MPlayer - консольний\n"
 "додаток, що не має меню або кнопок. Він керується з клавіатури.\n"
-"Оскільки це не надто зручно для користувача, було розроблено безліч\n"
-"графічних інтерфейсів, SMPlayer - один з них. Таким чином, MPlayer\n"
-"движок для відтворення, а SMPlayer додає до нього кнопки, меню,\n"
+"Оскільки це не дуже зручно для користувача, було розроблено безліч\n"
+"графічних інтерфейсів, SMPlayer - один з них. Таким чином, MPlayer це\n"
+"двигунець для відтворення, а SMPlayer додає до нього кнопки, меню,\n"
 "діалоги і т. д. Складання для Windows, вже включають MPlayer, налаштований "
 "на роботу з SMPlayer."
 
@@ -893,7 +743,7 @@ msgid ""
 "with new parameters. That's why playback interrupts for a moment."
 msgstr ""
 "Деякі параметри вимагають зупинки процесу MPlayer і перезапуску з новими "
-"параметрами. Ось чому відтворення переривання на мить."
+"параметрами. Ось чому відтворення переривається."
 
 #: ../guide.php:4 ../guide.php:10
 msgid "First steps with SMPlayer"
@@ -960,6 +810,35 @@ msgstr "Це відкриє %1 вікно."
 #: ../guide.php:86 ../screenshots.php:87
 msgid "Youtube browser"
 msgstr "YouTube переглядач "
+
+#: ../guide.php:88 ../smtube.php:52
+msgid ""
+"This tool allows you to browse among the most popular, most viewed and most "
+"rated videos."
+msgstr ""
+
+#: ../guide.php:90 ../smtube.php:53
+msgid ""
+"You can search for a video typing a term in the search field at the bottom "
+"of the window."
+msgstr ""
+"Ви можете знайти відео ввівши запит у полі пошуку в нижній частині вікна."
+
+#: ../guide.php:92 ../smtube.php:54
+msgid "To play a video, just double click on it."
+msgstr "Для відтворення відео, просто двічі клацніть по ньому."
+
+#: ../guide.php:94 ../smtube.php:59
+msgid ""
+"To download a Youtube video, right click on a video and select <i>Record "
+"video</i>."
+msgstr ""
+"Для завантаження відео з Youtube, натисніть правою кнопкою миші на відео і "
+"виберіть <i>Записати відео</i>."
+
+#: ../guide.php:96 ../smtube.php:60
+msgid "You can download several videos at a time."
+msgstr "Ви можете завантажити кілька відео одночасно."
 
 #: ../guide.php:104
 msgid "Change the skin"
@@ -1134,6 +1013,10 @@ msgstr "Останні зміни"
 msgid "Media Reviews"
 msgstr "Огляди у ЗМІ"
 
+#: ../inc/footer.php:23 ../index.php:107 ../sitemap.php:23 ../smtube.php:21
+msgid "Play and download Youtube videos"
+msgstr "Відтворення і завантаження відео з Youtube"
+
 #: ../inc/footer.php:26 ../presskit.php:3 ../presskit.php:9
 msgid "Press Kit"
 msgstr "Для преси"
@@ -1209,32 +1092,44 @@ msgstr ""
 "Вільний мультимедійний програвач для Windows і Linux з кодеками та "
 "підтримкою Youtube"
 
-#: ../inc/header.php:36 ../index.php:42
+#: ../inc/header.php:37 ../index.php:42
 msgid "Frontend for MPlayer"
-msgstr ""
+msgstr "Інтерфейс для MPlayer"
 
-#: ../inc/header.php:36
+#: ../inc/header.php:37
 msgid "Media Player for Windows and Linux with codecs and Youtube support"
 msgstr "Медіа програвач для Windows і Linux з кодеками та підтримкою Youtube"
 
-#: ../inc/header.php:37
+#: ../inc/header.php:38
 msgid "A frontend for MPlayer"
-msgstr ""
+msgstr "Інтерфейс для MPlayer"
 
-#: ../inc/header.php:37
+#: ../inc/header.php:38
 msgid "Free media player for Windows and Linux with codecs and Youtube support"
 msgstr ""
 "Вільний медіа програвач для Windows і Linux з кодеками і підтримкою Youtube"
 
-#: ../inc/header.php:156
+#: ../inc/header.php:40
+msgid "Free Media Player for Windows and Linux"
+msgstr "Вільний Медіа Програвач для Windows і Linux"
+
+#: ../inc/header.php:41
+msgid ""
+"Free media player for Windows and Linux with built-in codecs that can play "
+"and download Youtube videos"
+msgstr ""
+"Безкоштовний медіа-програвач для Windows і Linux з вбудованими кодеками, "
+"який може відтворювати та завантажити відео з Youtube"
+
+#: ../inc/header.php:161
 msgid "Main"
 msgstr "Головна"
 
-#: ../inc/header.php:158 ../reviews.php:3 ../reviews.php:11
+#: ../inc/header.php:163 ../reviews.php:3 ../reviews.php:11
 msgid "Reviews"
 msgstr "Відгуки"
 
-#: ../inc/header.php:159 ../sitemap.php:19
+#: ../inc/header.php:164 ../sitemap.php:19
 msgid "FAQ"
 msgstr "ЧаПи"
 
@@ -1252,7 +1147,7 @@ msgstr "далі"
 
 #: ../inc/social_buttons.php:2 ../index.php:40
 msgid "Free Media Player with codecs and Youtube support"
-msgstr "Безкоштовний медіа-програвач з кодеками й підтримкою Youtube"
+msgstr "Безкоштовний медіа-програвач з кодеками та підтримкою Youtube"
 
 #: ../index.php:38
 msgid "A free multimedia player with built-in codecs and Youtube support"
@@ -1293,7 +1188,7 @@ msgid ""
 "%1, which is capable of playing almost all known video and audio\n"
 "formats."
 msgstr ""
-"SMPlayer являє собою графічний інтерфейс користувача (GUI) нагороджено %1, "
+"SMPlayer являє собою графічний інтерфейс користувача (GUI) нагородженого %1, "
 "який здатний відтворювати практично всі відомі відео і аудіо формати."
 
 #: ../index.php:87 ../mplayer.php:63 ../supported-formats-and-codecs.php:15
@@ -1432,31 +1327,41 @@ msgstr "Дякуємо за встановлення SMPlayer 0.6.9"
 
 #: ../install_069.php:38
 msgid ""
-"However the latest version of SMPlayer is %1 and \n"
+"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
+"b>."
+msgstr ""
+
+#: ../install_069.php:40
+msgid "It's highly recommended to upgrade."
+msgstr "Рекомендується оновити"
+
+#: ../install_069.php:42
+msgid ""
+"The latest version of SMPlayer is %1 and \n"
 "some new interesting features have been added:"
 msgstr ""
 
-#: ../install_069.php:43
+#: ../install_069.php:47
 msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
 msgstr "Підтримка Youtube. Тепер можна шукати, відтворювати і <b>%1</b>."
 
-#: ../install_069.php:43
+#: ../install_069.php:47
 msgid "download videos from Youtube"
 msgstr "завантажити відео з Youtube"
 
-#: ../install_069.php:44
+#: ../install_069.php:48
 msgid ""
 "New skins. A new skinnable interface allows to select among several skins."
 msgstr ""
 "Нові шкури. Нові теми інтерфейсу дають змогу вибрати серед кількох шкурок."
 
-#: ../install_069.php:45
+#: ../install_069.php:49
 msgid ""
 "Toolbar editor. Now you can choose the buttons you want in the toolbars and "
 "controls."
 msgstr ""
 
-#: ../install_069.php:46
+#: ../install_069.php:50
 msgid ""
 "New favorites' menu, where you can add your favorite videos, music, streams, "
 "Youtube videos..."
@@ -1464,33 +1369,33 @@ msgstr ""
 "Нове меню обране, де ви можете додати ваші улюблені відео, музика, потоки "
 "відео Youtube..."
 
-#: ../install_069.php:47
+#: ../install_069.php:51
 msgid "More video filters."
 msgstr "Додаткові фільтри відео."
 
-#: ../install_069.php:48
+#: ../install_069.php:52
 msgid "A lot of bug fixes and improvements."
 msgstr "Багато виправлень та покращення."
 
-#: ../install_069.php:51
+#: ../install_069.php:55
 msgid "Would you like to upgrade?"
 msgstr "Бажаєте оновити?"
 
-#: ../install_069.php:55
+#: ../install_069.php:59
 msgid "Download SMPlayer %1"
 msgstr "Завантажити SMPlayer %1"
 
-#: ../install_069.php:69 ../latest.php:41
+#: ../install_069.php:73 ../latest.php:41
 msgid "Learn interesting things about SMPlayer in %1."
-msgstr "Дізнатися цікаві речі про SMPlayer на %1."
+msgstr "Дізнатися цікаві речі про SMPlayer відвідавши %1."
 
-#: ../install_069.php:72 ../latest.php:44
+#: ../install_069.php:76 ../latest.php:44
 msgid "our blog"
 msgstr "наш блоґ"
 
-#: ../install_069.php:79 ../latest.php:51
+#: ../install_069.php:83 ../latest.php:51
 msgid "If you like SMPlayer, recommend it to your friends:"
-msgstr ""
+msgstr "Якщо вам подобається SMPlayer, порекомендуйте його своїм друзям:"
 
 #: ../latest.php:4
 msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
@@ -1593,6 +1498,8 @@ msgid ""
 "support for Matroska's ordered chapters or precise seeks, and also provides "
 "some bug fixes."
 msgstr ""
+"MPlayer2 це відгалуження MPlayer яке включає в себе нові функції, такі як "
+"підтримка Matroska, та надає деякі виправлення помилок."
 
 #: ../mplayer.php:96
 msgid "See a detailed list of differences"
@@ -1615,6 +1522,10 @@ msgid ""
 msgstr ""
 "Проте якщо ви шукаєте ще більш нових версіях MPlayer або MPlayer2, будь "
 "ласка, подивіться на ці проекти підтримки %1:"
+
+#: ../mplayer.php:112 ../sitemap.php:17 ../smtube.php:88
+msgid "Download SMPlayer"
+msgstr "Завантажити SMPlayer"
 
 #: ../presskit.php:3
 msgid "Some images of SMPlayer that you can use in an article, blog, review..."
@@ -1758,6 +1669,136 @@ msgstr "Для преси"
 msgid "Privacy policy"
 msgstr "Політика конфіденційності"
 
+#: ../smtube.php:4
+msgid "Play and download Youtube videos with SMTube"
+msgstr "Відтворити і завантажити відео з YouTube до SMTube"
+
+#: ../smtube.php:5
+msgid ""
+"SMTube is a Youtube browser which allows to search, play and download "
+"Youtube videos"
+msgstr ""
+"SMTube являє собою переглядач Youtube, який дозволяє шукати, відтворювати та "
+"завантажувати відео з YouTube"
+
+#: ../smtube.php:26
+msgid "SMTube allows to search, play and download Youtube videos."
+msgstr "SMTube дозволяє шукати, відтворювати та завантажувати відео з Youtube"
+
+#: ../smtube.php:28
+msgid ""
+"Videos are played back with a media player (by default %1) \n"
+"instead of a flash player, this allows better performance, \n"
+"particularly with HD content."
+msgstr ""
+
+#: ../smtube.php:33
+msgid "SMTube also allows to download the videos, with the quality you choose."
+msgstr "SMTube також дозволяє завантажувати відео з обраною вами якістю."
+
+#: ../smtube.php:35
+msgid "Several videos can be downloaded at a time."
+msgstr ""
+
+#: ../smtube.php:38
+msgid ""
+"SMTube is included in SMPlayer's menus, to run it \n"
+"just select <i>Youtube browser</i> in \n"
+"the <i>Options</i> menu in the SMPlayer main window, or just press <i>F11</"
+"i>."
+msgstr ""
+
+#: ../smtube.php:43
+msgid "SMTube is based on some code from %1."
+msgstr "SMTube засновано на окремих кодах %1."
+
+#: ../smtube.php:51
+msgid "The Youtube Browser"
+msgstr "Переглядач Youtube"
+
+#: ../smtube.php:58
+msgid "Download Youtube videos"
+msgstr "Завантажити відео з Youtube"
+
+#: ../smtube.php:61
+msgid ""
+"Click on the blue arrow to play a video or click on the <i>Open folder</i> "
+"button \n"
+"to open the folder where the videos have been saved."
+msgstr ""
+
+#: ../smtube.php:65
+msgid "Choose the quality"
+msgstr "Виберіть якість"
+
+#: ../smtube.php:66
+msgid ""
+"The quality and format (mp4/flv) can be selected in the settings window."
+msgstr "Якість і формат (mp4/flv) можна обрати у вікні налаштувань."
+
+#: ../smtube.php:67
+msgid "It's possible to download HD videos."
+msgstr ""
+
+#: ../smtube.php:68
+msgid "The available qualities are:"
+msgstr ""
+
+#: ../smtube.php:81
+msgid "How to get SMTube"
+msgstr "Як одержати SMTube"
+
+#: ../smtube.php:85
+msgid ""
+"SMTube is included along with SMPlayer in the Windows packages. Just install "
+"SMPlayer."
+msgstr ""
+"SMTube входить в пакет SMPlayer для Windows. Просто встановіть SMPlayer."
+
+#: ../smtube.php:92
+msgid "On Linux, SMTube is available in a separated package."
+msgstr "У Linux, SMTube доступний в окремому пакеті."
+
+#: ../smtube.php:94
+msgid "To install it, run these commands in a terminal (ubuntu):"
+msgstr ""
+
+#: ../smtube.php:102 ../umplayer.php:77
+msgid "Sources:"
+msgstr "Джерела:"
+
+#: ../smtube.php:110
+msgid "Changes"
+msgstr "Зміни"
+
+#: ../smtube.php:112
+msgid ""
+"The SMPlayer team has made several improvements to the original code from "
+"umplayer:"
+msgstr ""
+"Команда SMPlayer зробили деякі вдосконалення у вихідному коді umplayer:"
+
+#: ../smtube.php:115
+msgid ""
+"It's now a stand-alone application and you can select the video player to "
+"use \n"
+"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
+msgstr ""
+"Тепер це окремий додаток, і ви можете вибрати програвач\n"
+"(smplayer, mplayer, vlc, dragon player, totem or gnome-mplayer)."
+
+#: ../smtube.php:117
+msgid "It's possible to translate the application to other languages."
+msgstr "Можливість перекладу додатків на інші мови."
+
+#: ../smtube.php:118
+msgid "A configuration dialog has been added."
+msgstr "Додано діалог налаштувань."
+
+#: ../smtube.php:119
+msgid "A few fixes."
+msgstr "Декілька виправлень."
+
 #: ../supported-formats-and-codecs.php:3
 msgid "A detailed list of supported formats and codecs by SMPlayer"
 msgstr "Детальний список форматів і кодеків, що підтримуються SMPlayer"
@@ -1825,14 +1866,14 @@ msgid ""
 msgstr ""
 "SMPlayer тепер включає в себе більшість нових функцій із UMPlayer, такі як "
 "підтримка Youtube, шкурки, а також деякі інші функції, які були додані в "
-"останній час та не доступні в UMPlayer, так, що якщо ви користувач UMPlayer "
+"останній час та не доступні в UMPlayer, так що, якщо ви користувач UMPlayer "
 "наполегливо рекомендується перейти на SMPlayer."
 
 #: ../umplayer.php:41
 msgid ""
 "These are some of the new features in SMPlayer that you would be missing in "
 "UMPlayer:"
-msgstr ""
+msgstr "Ось деякі з нових можливостей SMPlayer, що ви пропустили б в UMPlayer:"
 
 #: ../umplayer.php:43
 msgid "A favorites' menu (bookmarks)"
@@ -1880,10 +1921,6 @@ msgstr ""
 "Якщо ви все ж хочете використовувати UMPlayer, тут ви можете завантажити цю "
 "спеціальну версію SMPlayer з командою із виправленнм для Youtube:"
 
-#: ../umplayer.php:77
-msgid "Sources:"
-msgstr "Джерела:"
-
 #: ../umplayer.php:86 ../umplayer.php:91
 msgid "Version %1"
 msgstr "Версія %1"
@@ -1895,12 +1932,3 @@ msgstr "Виправлення для Youtube."
 #: ../umplayer.php:110
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer Скріншот"
-
-#~ msgid ""
-#~ "A Youtube browser which allows to search, play and download Youtube videos"
-#~ msgstr ""
-#~ "Переглядач Youtube, який дозволяє шукати, відтворювати та завантажувати "
-#~ "відео з Youtube"
-
-#~ msgid "A free media player with built-in codecs and Youtube support"
-#~ msgstr "Вільний медіа програвач з кодеками та підтримкою Youtube"
