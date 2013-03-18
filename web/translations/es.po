@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SMPlayer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-13 02:23+0100\n"
+"POT-Creation-Date: 2013-03-19 00:27+0100\n"
 "PO-Revision-Date: 2012-11-26 01:24+0100\n"
 "Last-Translator: Ricardo Villalba <smplayer.dev@gmail.com>\n"
 "Language-Team: Ricardo Villalba <smplayer.dev@gmail.com>\n"
@@ -83,6 +83,45 @@ msgstr "Pulsa para ver unas cuantas capturas de pantalla de SMPlayer"
 #: ../404.php:54
 msgid "Main window of SMPlayer"
 msgstr "La ventana principal de SMPlayer"
+
+#: ../changes.php:4 ../changes.php:10 ../inc/footer.php:17 ../sitemap.php:20
+#: ../umplayer.php:84
+msgid "Latest changes"
+msgstr "Últimos cambios"
+
+#: ../changes.php:4
+msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
+msgstr ""
+"Entérate de los últimos cambios en SMPlayer, un reproductor multimedia "
+"gratuito con códecs"
+
+#: ../changes.php:11
+msgid "Here you can find a list with the latest changes in SMPlayer:"
+msgstr "Aquí puedes encontrar una lista con los últimos cambios en SMPlayer:"
+
+#: ../changes.php:17
+msgid "SMPlayer changes"
+msgstr "Cambios en SMPlayer"
+
+#: ../changes.php:25
+msgid "Youtube browser changes"
+msgstr "Cambios en el buscador de vídeos de Youtube"
+
+#: ../changes.php:41 ../upgrade.php:73
+msgid "Learn interesting things about SMPlayer in %1."
+msgstr "Entérate de cosas interesantes sobre SMPlayer en %1."
+
+#: ../changes.php:44 ../upgrade.php:76
+msgid "our blog"
+msgstr "nuestro blog"
+
+#: ../changes.php:51 ../upgrade.php:83
+msgid "If you like SMPlayer, recommend it to your friends:"
+msgstr "Si te gusta SMPlayer, recomiéndalo a tus amigos:"
+
+#: ../changes.php:58
+msgid "Download the latest version of SMPlayer"
+msgstr "Descarga la última versión de SMPlayer"
 
 #: ../contact.php:3 ../contact.php:9 ../inc/footer.php:78 ../sitemap.php:28
 msgid "Contact us"
@@ -814,11 +853,53 @@ msgstr ""
 "El vídeo empezará a verse. Puedes usar el control que hay en la parte "
 "inferior del reproductor para pausarlo, rebobinar, avanzar..."
 
-#: ../guide.php:81
+#: ../guide.php:79
+msgid ""
+"To switch to fullscreen mode, click on the fullscreen button (%1) in the "
+"control bar or press <b>F</b>."
+msgstr ""
+"Para ir al modo de pantalla completa, haz clic en el botón de pantalla "
+"completa (%1) en la barra de control o pulsa <b>F</b>."
+
+#: ../guide.php:82
+msgid ""
+"In fullscreen mode, when you move the mouse to the bottom of the screen a "
+"floating control will appear."
+msgstr ""
+"En el modo de pantalla completa, aparecerá un control flotante si mueves el "
+"ratón a la parte de abajo de la pantalla."
+
+#: ../guide.php:84
+msgid ""
+"To return to window mode, click on the fullscreen button in the floating "
+"control or press <b>F</b> or <b>ESC</b>."
+msgstr ""
+"Para salir del modo de pantalla completa, haz clic de nuevo en el botón de "
+"pantalla completa que hay en el control flotante o pulsa <b>F</b> o <b>ESC</"
+"b>."
+
+#: ../guide.php:86
+msgid ""
+"You can also right click at any moment on the video to get a context menu."
+msgstr ""
+"También puedes pulsar en cualquier momento con el botón derecho del ratón "
+"para que aparezca un menú contextual."
+
+#: ../guide.php:88
+msgid ""
+"It's very easy to change the audio track, select subtitles, enable a video "
+"filter, change the playback speed... \n"
+"just explore the menus of the player."
+msgstr ""
+"Es muy fácil cambiar la pista de audio, seleccionar subtítulos, activar un "
+"filtro de vídeo, cambiar la velocidad de reproducción... simplemente explora "
+"los menús del reproductor."
+
+#: ../guide.php:96
 msgid "Play or download a Youtube video"
 msgstr "Reproducir o descargar un vídeo de Youtube"
 
-#: ../guide.php:83
+#: ../guide.php:98
 msgid ""
 "To play or download a Youtube video, just select <b>Youtube browser</b> in "
 "the <b>Options</b> menu."
@@ -826,15 +907,15 @@ msgstr ""
 "Para ver o descargar un vídeo de Youtube, simplemente selecciona <b>Buscar "
 "vídeos en Youtube</b> en el menú <b>Opciones</b>."
 
-#: ../guide.php:85
+#: ../guide.php:100
 msgid "That will open the %1 window."
 msgstr "Se abrirá la ventana del %1."
 
-#: ../guide.php:86 ../screenshots.php:87
+#: ../guide.php:101 ../screenshots.php:87
 msgid "Youtube browser"
 msgstr "Navegador de Youtube"
 
-#: ../guide.php:88 ../smtube.php:52
+#: ../guide.php:103 ../smtube.php:52
 msgid ""
 "This tool allows you to browse among the most popular, most viewed and most "
 "rated videos."
@@ -842,7 +923,7 @@ msgstr ""
 "Esta herramienta te permite ver los vídeos más populares, más vistos y mejor "
 "valorados."
 
-#: ../guide.php:90 ../smtube.php:53
+#: ../guide.php:105 ../smtube.php:53
 msgid ""
 "You can search for a video typing a term in the search field at the bottom "
 "of the window."
@@ -850,11 +931,11 @@ msgstr ""
 "Puedes buscar un vídeo tecleando lo que quieres buscar en el campo de "
 "búsqueda en la parte inferior de la ventana."
 
-#: ../guide.php:92 ../smtube.php:54
+#: ../guide.php:107 ../smtube.php:54
 msgid "To play a video, just double click on it."
 msgstr "Para ver un vídeo, simplemente haz doble clic en él."
 
-#: ../guide.php:94 ../smtube.php:59
+#: ../guide.php:109 ../smtube.php:59
 msgid ""
 "To download a Youtube video, right click on a video and select <i>Record "
 "video</i>."
@@ -862,23 +943,23 @@ msgstr ""
 "Para descargar un vídeo de Youtube, pulsa con el botón derecho sobre un "
 "vídeo y selecciona <i>Grabar vídeo</i>."
 
-#: ../guide.php:96 ../smtube.php:60
+#: ../guide.php:111 ../smtube.php:60
 msgid "You can download several videos at a time."
 msgstr "Es posible descargar varios vídeos al mismo tiempo."
 
-#: ../guide.php:104
+#: ../guide.php:119
 msgid "Change the skin"
 msgstr "Cambiar la piel (skin)"
 
-#: ../guide.php:106
+#: ../guide.php:121
 msgid "By default SMPlayer uses a basic interface."
 msgstr "El SMPlayer usa por defecto un interfaz básico."
 
-#: ../guide.php:108
+#: ../guide.php:123
 msgid "You can change the skin very easily."
 msgstr "Puedes cambiar la piel fácilmente."
 
-#: ../guide.php:110
+#: ../guide.php:125
 msgid ""
 "Click on the screwdriver button (%1) in the toolbar or select\n"
 "the option <b>Preferences</b> under the <b>Options</b> menu."
@@ -886,19 +967,19 @@ msgstr ""
 "Haz clic en el botón con un destornillador (%1) en la barra de herramientas "
 "o selecciona la opción <b>Preferencias</b> del menú <b>Opciones</b>."
 
-#: ../guide.php:114
+#: ../guide.php:129
 msgid "That will open the preferences dialog."
 msgstr "Aparecerá el diálogo de preferencias."
 
-#: ../guide.php:116
+#: ../guide.php:131
 msgid "Now click on the <b>Interface</b> section on the left."
 msgstr "Ahora haz clic en la sección <b>Interfaz</b> en la parte izquierda."
 
-#: ../guide.php:118
+#: ../guide.php:133
 msgid "Now select <b>Skinnable GUI</b> in the <b>GUI</b> option."
 msgstr "Selecciona <b>GUI con soporte de pieles</b> en la opción <b>GUI</b>."
 
-#: ../guide.php:120
+#: ../guide.php:135
 msgid "Finally select the skin you want to use under the <b>Skin</b> option."
 msgstr "Y por último escoge la piel que quieras usar en la opción <b>Skin</b>."
 
@@ -1029,11 +1110,6 @@ msgstr "Compatible con Windows XP/2003/Vista/Server 2008/7/8."
 #: ../inc/footer.php:12
 msgid "Other links:"
 msgstr "Otros enlaces:"
-
-#: ../inc/footer.php:17 ../latest.php:4 ../latest.php:10 ../sitemap.php:20
-#: ../umplayer.php:84
-msgid "Latest changes"
-msgstr "Últimos cambios"
 
 #: ../inc/footer.php:20 ../reviews.php:14
 msgid "Media Reviews"
@@ -1339,117 +1415,6 @@ msgstr ""
 "SMPlayer usa el galardonado MPlayer como motor de reproducción, que es uno "
 "de los mejores reproductores del mundo."
 
-#: ../install_069.php:4
-msgid "Thanks for installing SMPlayer"
-msgstr "Gracias por instalar SMPlayer"
-
-#: ../install_069.php:5
-msgid "Welcome to SMPlayer, a free media player with codecs"
-msgstr "Bienvenido a SMPlayer, un reproductor gratuito con códecs"
-
-#: ../install_069.php:11
-msgid "Thanks for installing SMPlayer 0.6.9"
-msgstr "Gracias por instalar SMPlayer 0.6.9"
-
-#: ../install_069.php:38
-msgid ""
-"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
-"b>."
-msgstr ""
-"Sin embargo <b><u>SMPlayer 0.6.9 tiene ya más de 3 años y es una versión "
-"obsoleta</u></b>."
-
-#: ../install_069.php:40
-msgid "It's highly recommended to upgrade."
-msgstr "Es muy recomendable actualizar."
-
-#: ../install_069.php:42
-msgid ""
-"The latest version of SMPlayer is %1 and \n"
-"some new interesting features have been added:"
-msgstr ""
-"La versión más reciente de SMPlayer es la %1 y se han añadido nuevas "
-"funciones muy interesantes:"
-
-#: ../install_069.php:47
-msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
-msgstr "Soporte para Youtube. Ahora es posible buscar, reproducir y <b>%1</b>."
-
-#: ../install_069.php:47
-msgid "download videos from Youtube"
-msgstr "descargar vídeos de Youtube"
-
-#: ../install_069.php:48
-msgid ""
-"New skins. A new skinnable interface allows to select among several skins."
-msgstr ""
-"Nuevas pieles (skins). Se ha añadido un interfaz que soporta pieles y "
-"permite cambiar el aspecto del reproductor."
-
-#: ../install_069.php:49
-msgid ""
-"Toolbar editor. Now you can choose the buttons you want in the toolbars and "
-"controls."
-msgstr ""
-"Editor de barras de tareas. Ahora puedes escoger los botones que quieres que "
-"aparezcan en las barras de tareas y controles."
-
-#: ../install_069.php:50
-msgid ""
-"New favorites' menu, where you can add your favorite videos, music, streams, "
-"Youtube videos..."
-msgstr "Nuevo menú de favoritos, donde puedes añadir tus vídeos favoritos."
-
-#: ../install_069.php:51
-msgid "More video filters."
-msgstr "Más filtros de vídeo."
-
-#: ../install_069.php:52
-msgid "A lot of bug fixes and improvements."
-msgstr "Un montón de correcciones y mejoras."
-
-#: ../install_069.php:55
-msgid "Would you like to upgrade?"
-msgstr "¿Quieres actualizar?"
-
-#: ../install_069.php:59
-msgid "Download SMPlayer %1"
-msgstr "Descarga SMPlayer %1"
-
-#: ../install_069.php:73 ../latest.php:41
-msgid "Learn interesting things about SMPlayer in %1."
-msgstr "Entérate de cosas interesantes sobre SMPlayer en %1."
-
-#: ../install_069.php:76 ../latest.php:44
-msgid "our blog"
-msgstr "nuestro blog"
-
-#: ../install_069.php:83 ../latest.php:51
-msgid "If you like SMPlayer, recommend it to your friends:"
-msgstr "Si te gusta SMPlayer, recomiéndalo a tus amigos:"
-
-#: ../latest.php:4
-msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
-msgstr ""
-"Entérate de los últimos cambios en SMPlayer, un reproductor multimedia "
-"gratuito con códecs"
-
-#: ../latest.php:11
-msgid "Here you can find a list with the latest changes in SMPlayer:"
-msgstr "Aquí puedes encontrar una lista con los últimos cambios en SMPlayer:"
-
-#: ../latest.php:17
-msgid "SMPlayer changes"
-msgstr "Cambios en SMPlayer"
-
-#: ../latest.php:25
-msgid "Youtube browser changes"
-msgstr "Cambios en el buscador de vídeos de Youtube"
-
-#: ../latest.php:58
-msgid "Download the latest version of SMPlayer"
-msgstr "Descarga la última versión de SMPlayer"
-
 #: ../mplayer.php:4
 msgid "Graphical User Interface (GUI) for MPlayer"
 msgstr "Interfaz Gráfico (GUI) para MPlayer"
@@ -1745,8 +1710,8 @@ msgid ""
 "the <i>Options</i> menu in the SMPlayer main window, or just press <i>F11</"
 "i>."
 msgstr ""
-"SMTube se include en los menús del SMPlayer, para ejecutarlo selecciona <i>Buscar "
-"vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
+"SMTube se incluye en los menús del SMPlayer, para ejecutarlo selecciona "
+"<i>Buscar vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
 "simplemente pulsa <i>F11</i>."
 
 #: ../smtube.php:43
@@ -1813,11 +1778,11 @@ msgstr "Para instalarlo, ejecuta estas órdenes en un terminal (ubuntu):"
 msgid "Sources:"
 msgstr "Fuentes:"
 
-#: ../smtube.php:110
+#: ../smtube.php:107
 msgid "Changes"
 msgstr "Cambios"
 
-#: ../smtube.php:112
+#: ../smtube.php:109
 msgid ""
 "The SMPlayer team has made several improvements to the original code from "
 "umplayer:"
@@ -1825,7 +1790,7 @@ msgstr ""
 "El equipo del SMPlayer ha realizado unas cuantas mejoras al código original "
 "de umplayer:"
 
-#: ../smtube.php:115
+#: ../smtube.php:112
 msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
@@ -1834,15 +1799,15 @@ msgstr ""
 "Ahora es una aplicación independiente y es posible seleccionar el "
 "reproductor (smplayer, mplayer, vlc, dragon player, totem o gnome-mplayer)."
 
-#: ../smtube.php:117
+#: ../smtube.php:114
 msgid "It's possible to translate the application to other languages."
 msgstr "La aplicación se puede traducir a otros idiomas."
 
-#: ../smtube.php:118
+#: ../smtube.php:115
 msgid "A configuration dialog has been added."
 msgstr "Se ha añadido un diálogo de configuración."
 
-#: ../smtube.php:119
+#: ../smtube.php:116
 msgid "A few fixes."
 msgstr "Se han corregido unos cuantos fallos."
 
@@ -1985,130 +1950,171 @@ msgstr "Se ha arreglado la reproducción de vídeos Youtube"
 msgid "UMPlayer Screenshot"
 msgstr "Captura de pantalla del UMPlayer"
 
-#~ msgid ""
-#~ "Now SMPlayer includes a Youtube browser which allows \n"
-#~ "to search, play and <b>download Youtube videos</b>."
-#~ msgstr ""
-#~ "Ahora SMPlayer incluye un buscador de vídeos de Youtube que permite "
-#~ "buscar, reproducir y <b>descargar vídeos de Youtube</b>."
+#: ../upgrade.php:4
+msgid "Thanks for installing SMPlayer"
+msgstr "Gracias por instalar SMPlayer"
+
+#: ../upgrade.php:5
+msgid "Welcome to SMPlayer, a free media player with codecs"
+msgstr "Bienvenido a SMPlayer, un reproductor gratuito con códecs"
+
+#: ../upgrade.php:11
+msgid "Thanks for installing SMPlayer 0.6.9"
+msgstr "Gracias por instalar SMPlayer 0.6.9"
+
+#: ../upgrade.php:38
+msgid ""
+"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
+"b>."
+msgstr ""
+"Sin embargo <b><u>SMPlayer 0.6.9 tiene ya más de 3 años y es una versión "
+"obsoleta</u></b>."
+
+#: ../upgrade.php:40
+msgid "It's highly recommended to upgrade."
+msgstr "Es muy recomendable actualizar."
+
+#: ../upgrade.php:42
+msgid ""
+"The latest version of SMPlayer is %1 and \n"
+"some new interesting features have been added:"
+msgstr ""
+"La versión más reciente de SMPlayer es la %1 y se han añadido nuevas "
+"funciones muy interesantes:"
+
+#: ../upgrade.php:47
+msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
+msgstr "Soporte para Youtube. Ahora es posible buscar, reproducir y <b>%1</b>."
+
+#: ../upgrade.php:47
+msgid "download videos from Youtube"
+msgstr "descargar vídeos de Youtube"
+
+#: ../upgrade.php:48
+msgid ""
+"New skins. A new skinnable interface allows to select among several skins."
+msgstr ""
+"Nuevas pieles (skins). Se ha añadido un interfaz que soporta pieles y "
+"permite cambiar el aspecto del reproductor."
+
+#: ../upgrade.php:49
+msgid ""
+"Toolbar editor. Now you can choose the buttons you want in the toolbars and "
+"controls."
+msgstr ""
+"Editor de barras de tareas. Ahora puedes escoger los botones que quieres que "
+"aparezcan en las barras de tareas y controles."
+
+#: ../upgrade.php:50
+msgid ""
+"New favorites' menu, where you can add your favorite videos, music, streams, "
+"Youtube videos..."
+msgstr "Nuevo menú de favoritos, donde puedes añadir tus vídeos favoritos."
+
+#: ../upgrade.php:51
+msgid "More video filters."
+msgstr "Más filtros de vídeo."
+
+#: ../upgrade.php:52
+msgid "A lot of bug fixes and improvements."
+msgstr "Un montón de correcciones y mejoras."
+
+#: ../upgrade.php:55
+msgid "Would you like to upgrade?"
+msgstr "¿Quieres actualizar?"
+
+#: ../upgrade.php:59
+msgid "Download SMPlayer %1"
+msgstr "Descarga SMPlayer %1"
 
 #~ msgid ""
-#~ "The code was originally created by %1 for %2 and \n"
-#~ "it has been incorporated to SMPlayer too."
-#~ msgstr ""
-#~ "El código fue creado originalmente por %1 para %2 y ha sido incorporado "
-#~ "también a SMPlayer."
-
-#~ msgid ""
-#~ "To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
+#~ "SMTube is included in SMPlayer, to run it \n"
+#~ "just select <i>Youtube browser</i> in \n"
 #~ "the <i>Options</i> menu in the SMPlayer main window, or just press "
 #~ "<i>F11</i>."
 #~ msgstr ""
-#~ "Para activar el buscador de vídeos de Youtube, simplemente selecciona "
-#~ "<i>Buscar vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
+#~ "SMTube se include en SMPlayer, para ejecutarlo selecciona <i>Buscar "
+#~ "vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
 #~ "simplemente pulsa <i>F11</i>."
 
-#~ msgid "How to get the Youtube browser"
-#~ msgstr "Cómo conseguir el buscador de vídeos de Youtube"
+#~ msgid "A free media player with built-in codecs and Youtube support"
+#~ msgstr ""
+#~ "Un reproductor multimedia gratuito con códecs incorporados y soporte para "
+#~ "Youtube"
 
 #~ msgid ""
-#~ "The Youtube browser is included along with SMPlayer in the Windows "
-#~ "packages. Just install SMPlayer."
+#~ "A Youtube browser which allows to search, play and download Youtube videos"
 #~ msgstr ""
-#~ "El buscador de vídeos de Youtube se incluye junto con SMPlayer en los "
-#~ "paquetes para Windows. Simplemente instala SMPlayer."
+#~ "Un buscador de vídeos de Youtube que permite buscar, reproducir y "
+#~ "descargar vídeos de Youtube"
 
 #~ msgid ""
-#~ "On Linux, the Youtube browser is available in a separated package "
-#~ "(smtube)."
+#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
+#~ "now, \n"
+#~ "the SMPlayer team has released a new version which fixes Youtube playback."
 #~ msgstr ""
-#~ "En Linux, el buscador de vídeos de Youtube está en un paquete aparte "
-#~ "(smtube)."
+#~ "%1 es un fork del SMPlayer creado por %2. Como este proyecto parece que "
+#~ "no se desarrolla más, el equipo del SMPlayer ha creado una nueva versión "
+#~ "que arregla la reproducción de los vídeos de Youtube."
 
 #~ msgid ""
-#~ "However the latest version of SMPlayer is %1 and \n"
-#~ "some new interesting features have been added:"
+#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
+#~ "features of SMPlayer are not available on UMPlayer."
 #~ msgstr ""
-#~ "Sin embargo la versión más reciente de SMPlayer es la %1 y se han añadido "
-#~ "nuevas funciones muy interesantes:"
+#~ "Ten en cuenta que UMPlayer está basado en una versión antigua de "
+#~ "SMPlayer, por tanto no incluye las mejoras más recientes del SMPlayer."
+
+#~ msgid "Click here to get UMPlayer 0.98.1"
+#~ msgstr "Pulsa aquí para descargar UMPlayer 0.98.1"
+
+#~ msgid "This package contains umplayer, themes, translations and mplayer."
+#~ msgstr "Este paquete contiene umplayer, temas, traducciones y mplayer."
+
+#~ msgid "Packages for Ubuntu:"
+#~ msgstr "Paquetes para Ubuntu:"
+
+#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ msgstr ""
+#~ "Para instalar umplayer, simplemente ejecuta estas órdenes en un terminal:"
+
+#~ msgid "UMPlayer sources"
+#~ msgstr "Fuentes del UMPlayer"
+
+#~ msgid "Support for Youtube"
+#~ msgstr "Soporte para Youtube"
+
+#~ msgid "SMPlayer can play and record Youtube videos."
+#~ msgstr "SMPlayer puede reproducir y grabar vídeos de Youtube."
+
+#~ msgid "A handy tool to search for videos is also included."
+#~ msgstr "Se incluye también una herramienta para buscar vídeos."
 
 #~ msgid ""
-#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
-#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
-#~ "Most of those features are now included in SMPlayer as well."
-#~ msgstr ""
-#~ "Sí. UMPlayer es un fork creado a partir de SMPlayer 0.6.9. Le añadieron "
-#~ "algunas cosas nuevas, como skins y soporte para Youtube y SHOUTcast. La "
-#~ "mayoría de esas cosas ya se incluyen en SMPlayer también."
+#~ "SMPlayer can search and download subtitles\n"
+#~ "from opensubtitles.org."
+#~ msgstr "SMPlayer puede buscar y descargar subtítulos de opensubtitles.org."
+
+#~ msgid "Click here to download the latest version"
+#~ msgstr "Pulsa aquí para descargar la última versión"
+
+#~ msgid "The YouTube browser"
+#~ msgstr "El buscador de vídeos de YouTube"
 
 #~ msgid ""
-#~ "Click on the screwdriver button in the toolbar or select\n"
-#~ "the option <b>Preferences</b> under the <b>Options</b> menu."
+#~ "SMPlayer is a graphical user interface (GUI) for %1, which supports "
+#~ "almost all known video and audio formats and codecs."
 #~ msgstr ""
-#~ "Haz clic en el botón que tiene una imagen de un destornillador en la "
-#~ "barra de herramientas o selecciona la opción <b>Preferencias</b> del menú "
-#~ "<b>Opciones</b>."
+#~ "SMPlayer es un interfaz gráfico (GUI) para %1, que es capaz de reproducir "
+#~ "casi todos los formatos conocidos de vídeo y audio."
 
-#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
-#~ msgstr ""
-#~ "Aquí puedes obtener información sobre SMTube, el buscador de vídeos de "
-#~ "Youtube de SMPlayer"
-
-#~ msgid "SMTube, the Youtube browser"
-#~ msgstr "SMTube, el buscador de vídeos de Youtube"
-
-#~ msgid "SMTube Screenshot"
-#~ msgstr "Captura de pantalla de SMTube"
+#~ msgid "Here is a complete list:"
+#~ msgstr "Aquí tienes una lista completa:"
 
 #~ msgid ""
-#~ "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
-#~ "The code was taken from %1 (developed by %2). \n"
-#~ "This browser allows to search Youtube videos but it's also capable of "
-#~ "downloading them."
+#~ "Free Media Player for Windows and Linux with codecs and Youtube support"
 #~ msgstr ""
-#~ "SMPlayer incluye ahora un buscador de vídeos de Youtube al que hemos "
-#~ "llamado <i>SMTube</i>. \n"
-#~ "El código se ha tomado de %1 (desarrollado por %2). \n"
-#~ "Este buscador además permite también descargar los vídeos."
-
-#~ msgid "Several improvements have been done:"
-#~ msgstr "Se han hecho las siguientes mejoras:"
-
-#~ msgid ""
-#~ "SMTube is already included in the Windows packages but on Linux it's an "
-#~ "independent package."
-#~ msgstr ""
-#~ "SMTube ya está incluido en los paquetes para Windows, sin embargo en "
-#~ "Linux es un paquete independiente."
-
-#~ msgid ""
-#~ "Support for Youtube. Now it's possible to search, play and <b>download "
-#~ "videos from Youtube</b>."
-#~ msgstr ""
-#~ "Soporte para Youtube. Ahora es posible buscar, reproducir y <b>descargar "
-#~ "vídeos de Youtube</b>."
-
-#~ msgid "These are some of the features you would be missing:"
-#~ msgstr "Algunas de las novedades que te perderás:"
-
-#~ msgid "Play all formats"
-#~ msgstr "Reproduce todos los formatos"
-
-#~ msgid "The mplayer2 binaries have been provided by %1, from %2."
-#~ msgstr "Los binarios del mplayer2 han sido creados por %1, de %2."
-
-#~ msgid "MPlayer builds for Windows"
-#~ msgstr "MPlayer para Windows"
-
-#~ msgid ""
-#~ "If you decide to install it, the sponsor will send a few cents to\n"
-#~ "SMPlayer. This way we don't need to ask the users for donations. You can\n"
-#~ "find more info at %1."
-#~ msgstr ""
-#~ "El patrocinador enviará a SMPlayer unos pocos céntimos cada vez que un "
-#~ "usuario acepte instalar el programa ofertado. De este modo evitamos tener "
-#~ "que pedir donativos a los usuarios. Puedes encontrar más información en "
-#~ "%1."
+#~ "Reproductor multimedia gratuito para Windows y Linux con códecs y soporte "
+#~ "para Youtube"
 
 #~ msgid ""
 #~ "It means that the installer includes a \"promotional screen\" from a\n"
@@ -2128,90 +2134,126 @@ msgstr "Captura de pantalla del UMPlayer"
 #~ "desinstalarlo fácilmente más tarde."
 
 #~ msgid ""
-#~ "Free Media Player for Windows and Linux with codecs and Youtube support"
+#~ "If you decide to install it, the sponsor will send a few cents to\n"
+#~ "SMPlayer. This way we don't need to ask the users for donations. You can\n"
+#~ "find more info at %1."
 #~ msgstr ""
-#~ "Reproductor multimedia gratuito para Windows y Linux con códecs y soporte "
-#~ "para Youtube"
+#~ "El patrocinador enviará a SMPlayer unos pocos céntimos cada vez que un "
+#~ "usuario acepte instalar el programa ofertado. De este modo evitamos tener "
+#~ "que pedir donativos a los usuarios. Puedes encontrar más información en "
+#~ "%1."
 
-#~ msgid "Here is a complete list:"
-#~ msgstr "Aquí tienes una lista completa:"
+#~ msgid "MPlayer builds for Windows"
+#~ msgstr "MPlayer para Windows"
+
+#~ msgid "The mplayer2 binaries have been provided by %1, from %2."
+#~ msgstr "Los binarios del mplayer2 han sido creados por %1, de %2."
+
+#~ msgid "Play all formats"
+#~ msgstr "Reproduce todos los formatos"
+
+#~ msgid "These are some of the features you would be missing:"
+#~ msgstr "Algunas de las novedades que te perderás:"
 
 #~ msgid ""
-#~ "SMPlayer is a graphical user interface (GUI) for %1, which supports "
-#~ "almost all known video and audio formats and codecs."
+#~ "Support for Youtube. Now it's possible to search, play and <b>download "
+#~ "videos from Youtube</b>."
 #~ msgstr ""
-#~ "SMPlayer es un interfaz gráfico (GUI) para %1, que es capaz de reproducir "
-#~ "casi todos los formatos conocidos de vídeo y audio."
-
-#~ msgid "The YouTube browser"
-#~ msgstr "El buscador de vídeos de YouTube"
-
-#~ msgid "Click here to download the latest version"
-#~ msgstr "Pulsa aquí para descargar la última versión"
+#~ "Soporte para Youtube. Ahora es posible buscar, reproducir y <b>descargar "
+#~ "vídeos de Youtube</b>."
 
 #~ msgid ""
-#~ "SMPlayer can search and download subtitles\n"
-#~ "from opensubtitles.org."
-#~ msgstr "SMPlayer puede buscar y descargar subtítulos de opensubtitles.org."
-
-#~ msgid "A handy tool to search for videos is also included."
-#~ msgstr "Se incluye también una herramienta para buscar vídeos."
-
-#~ msgid "SMPlayer can play and record Youtube videos."
-#~ msgstr "SMPlayer puede reproducir y grabar vídeos de Youtube."
-
-#~ msgid "Support for Youtube"
-#~ msgstr "Soporte para Youtube"
-
-#~ msgid "UMPlayer sources"
-#~ msgstr "Fuentes del UMPlayer"
-
-#~ msgid "To install umplayer, just run these commands in a terminal:"
+#~ "SMTube is already included in the Windows packages but on Linux it's an "
+#~ "independent package."
 #~ msgstr ""
-#~ "Para instalar umplayer, simplemente ejecuta estas órdenes en un terminal:"
+#~ "SMTube ya está incluido en los paquetes para Windows, sin embargo en "
+#~ "Linux es un paquete independiente."
 
-#~ msgid "Packages for Ubuntu:"
-#~ msgstr "Paquetes para Ubuntu:"
-
-#~ msgid "This package contains umplayer, themes, translations and mplayer."
-#~ msgstr "Este paquete contiene umplayer, temas, traducciones y mplayer."
-
-#~ msgid "Click here to get UMPlayer 0.98.1"
-#~ msgstr "Pulsa aquí para descargar UMPlayer 0.98.1"
+#~ msgid "Several improvements have been done:"
+#~ msgstr "Se han hecho las siguientes mejoras:"
 
 #~ msgid ""
-#~ "Notice that UMPlayer is based on an old version of SMPlayer, so the new\n"
-#~ "features of SMPlayer are not available on UMPlayer."
+#~ "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
+#~ "The code was taken from %1 (developed by %2). \n"
+#~ "This browser allows to search Youtube videos but it's also capable of "
+#~ "downloading them."
 #~ msgstr ""
-#~ "Ten en cuenta que UMPlayer está basado en una versión antigua de "
-#~ "SMPlayer, por tanto no incluye las mejoras más recientes del SMPlayer."
+#~ "SMPlayer incluye ahora un buscador de vídeos de Youtube al que hemos "
+#~ "llamado <i>SMTube</i>. \n"
+#~ "El código se ha tomado de %1 (desarrollado por %2). \n"
+#~ "Este buscador además permite también descargar los vídeos."
+
+#~ msgid "SMTube Screenshot"
+#~ msgstr "Captura de pantalla de SMTube"
+
+#~ msgid "SMTube, the Youtube browser"
+#~ msgstr "SMTube, el buscador de vídeos de Youtube"
+
+#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
+#~ msgstr ""
+#~ "Aquí puedes obtener información sobre SMTube, el buscador de vídeos de "
+#~ "Youtube de SMPlayer"
 
 #~ msgid ""
-#~ "%1 is a fork of SMPlayer created by %2. Since this project seems dead "
-#~ "now, \n"
-#~ "the SMPlayer team has released a new version which fixes Youtube playback."
+#~ "Click on the screwdriver button in the toolbar or select\n"
+#~ "the option <b>Preferences</b> under the <b>Options</b> menu."
 #~ msgstr ""
-#~ "%1 es un fork del SMPlayer creado por %2. Como este proyecto parece que "
-#~ "no se desarrolla más, el equipo del SMPlayer ha creado una nueva versión "
-#~ "que arregla la reproducción de los vídeos de Youtube."
+#~ "Haz clic en el botón que tiene una imagen de un destornillador en la "
+#~ "barra de herramientas o selecciona la opción <b>Preferencias</b> del menú "
+#~ "<b>Opciones</b>."
 
 #~ msgid ""
-#~ "A Youtube browser which allows to search, play and download Youtube videos"
+#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
+#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+#~ "Most of those features are now included in SMPlayer as well."
 #~ msgstr ""
-#~ "Un buscador de vídeos de Youtube que permite buscar, reproducir y "
-#~ "descargar vídeos de Youtube"
-
-#~ msgid "A free media player with built-in codecs and Youtube support"
-#~ msgstr ""
-#~ "Un reproductor multimedia gratuito con códecs incorporados y soporte para "
-#~ "Youtube"
+#~ "Sí. UMPlayer es un fork creado a partir de SMPlayer 0.6.9. Le añadieron "
+#~ "algunas cosas nuevas, como skins y soporte para Youtube y SHOUTcast. La "
+#~ "mayoría de esas cosas ya se incluyen en SMPlayer también."
 
 #~ msgid ""
-#~ "SMTube is included in SMPlayer, to run it \n"
-#~ "just select <i>Youtube browser</i> in \n"
+#~ "However the latest version of SMPlayer is %1 and \n"
+#~ "some new interesting features have been added:"
+#~ msgstr ""
+#~ "Sin embargo la versión más reciente de SMPlayer es la %1 y se han añadido "
+#~ "nuevas funciones muy interesantes:"
+
+#~ msgid ""
+#~ "On Linux, the Youtube browser is available in a separated package "
+#~ "(smtube)."
+#~ msgstr ""
+#~ "En Linux, el buscador de vídeos de Youtube está en un paquete aparte "
+#~ "(smtube)."
+
+#~ msgid ""
+#~ "The Youtube browser is included along with SMPlayer in the Windows "
+#~ "packages. Just install SMPlayer."
+#~ msgstr ""
+#~ "El buscador de vídeos de Youtube se incluye junto con SMPlayer en los "
+#~ "paquetes para Windows. Simplemente instala SMPlayer."
+
+#~ msgid "How to get the Youtube browser"
+#~ msgstr "Cómo conseguir el buscador de vídeos de Youtube"
+
+#~ msgid ""
+#~ "To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
 #~ "the <i>Options</i> menu in the SMPlayer main window, or just press "
 #~ "<i>F11</i>."
 #~ msgstr ""
-#~ "SMTube se include en SMPlayer, para ejecutarlo selecciona <i>Buscar "
-#~ "vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
+#~ "Para activar el buscador de vídeos de Youtube, simplemente selecciona "
+#~ "<i>Buscar vídeos en Youtube</i> en el menú <i>Opciones</i> de SMPlayer, o "
 #~ "simplemente pulsa <i>F11</i>."
+
+#~ msgid ""
+#~ "The code was originally created by %1 for %2 and \n"
+#~ "it has been incorporated to SMPlayer too."
+#~ msgstr ""
+#~ "El código fue creado originalmente por %1 para %2 y ha sido incorporado "
+#~ "también a SMPlayer."
+
+#~ msgid ""
+#~ "Now SMPlayer includes a Youtube browser which allows \n"
+#~ "to search, play and <b>download Youtube videos</b>."
+#~ msgstr ""
+#~ "Ahora SMPlayer incluye un buscador de vídeos de Youtube que permite "
+#~ "buscar, reproducir y <b>descargar vídeos de Youtube</b>."

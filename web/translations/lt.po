@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: smplayer_web\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-13 02:23+0100\n"
+"POT-Creation-Date: 2013-03-19 00:27+0100\n"
 "PO-Revision-Date: 2013-03-03 01:42+0000\n"
 "Last-Translator: rvm <rvm3000@gmail.com>\n"
 "Language-Team: Lithuanian (http://www.transifex.com/projects/p/smplayer_web/"
@@ -89,6 +89,43 @@ msgstr "Pažiūrėkite SMPlayer ekranvaizdžius"
 #: ../404.php:54
 msgid "Main window of SMPlayer"
 msgstr "Pagrindinis SMPlayer langas"
+
+#: ../changes.php:4 ../changes.php:10 ../inc/footer.php:17 ../sitemap.php:20
+#: ../umplayer.php:84
+msgid "Latest changes"
+msgstr "Paskutiniai pakeitimai"
+
+#: ../changes.php:4
+msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
+msgstr "Sužinokite apie naujausiu SMPlayer pakeitimus"
+
+#: ../changes.php:11
+msgid "Here you can find a list with the latest changes in SMPlayer:"
+msgstr "Čia galite rasti paskutinių SMPlayer pakeitimų sąrašą:"
+
+#: ../changes.php:17
+msgid "SMPlayer changes"
+msgstr "SMPlayer pakeitimai"
+
+#: ../changes.php:25
+msgid "Youtube browser changes"
+msgstr "Youtube naršyklės pakeitimai"
+
+#: ../changes.php:41 ../upgrade.php:73
+msgid "Learn interesting things about SMPlayer in %1."
+msgstr "Sužinokite įdomių dalykų apie SMPlayer %1."
+
+#: ../changes.php:44 ../upgrade.php:76
+msgid "our blog"
+msgstr "mūsų tinklaraštyje"
+
+#: ../changes.php:51 ../upgrade.php:83
+msgid "If you like SMPlayer, recommend it to your friends:"
+msgstr ""
+
+#: ../changes.php:58
+msgid "Download the latest version of SMPlayer"
+msgstr "Atsisiųsti naujausią SMPlayer versiją"
 
 #: ../contact.php:3 ../contact.php:9 ../inc/footer.php:78 ../sitemap.php:28
 msgid "Contact us"
@@ -777,25 +814,55 @@ msgid ""
 "player to pause it, rewind, seek..."
 msgstr ""
 
-#: ../guide.php:81
+#: ../guide.php:79
+msgid ""
+"To switch to fullscreen mode, click on the fullscreen button (%1) in the "
+"control bar or press <b>F</b>."
+msgstr ""
+
+#: ../guide.php:82
+msgid ""
+"In fullscreen mode, when you move the mouse to the bottom of the screen a "
+"floating control will appear."
+msgstr ""
+
+#: ../guide.php:84
+msgid ""
+"To return to window mode, click on the fullscreen button in the floating "
+"control or press <b>F</b> or <b>ESC</b>."
+msgstr ""
+
+#: ../guide.php:86
+msgid ""
+"You can also right click at any moment on the video to get a context menu."
+msgstr ""
+
+#: ../guide.php:88
+msgid ""
+"It's very easy to change the audio track, select subtitles, enable a video "
+"filter, change the playback speed... \n"
+"just explore the menus of the player."
+msgstr ""
+
+#: ../guide.php:96
 msgid "Play or download a Youtube video"
 msgstr ""
 
-#: ../guide.php:83
+#: ../guide.php:98
 msgid ""
 "To play or download a Youtube video, just select <b>Youtube browser</b> in "
 "the <b>Options</b> menu."
 msgstr ""
 
-#: ../guide.php:85
+#: ../guide.php:100
 msgid "That will open the %1 window."
 msgstr ""
 
-#: ../guide.php:86 ../screenshots.php:87
+#: ../guide.php:101 ../screenshots.php:87
 msgid "Youtube browser"
 msgstr "Youtube naršyklė"
 
-#: ../guide.php:88 ../smtube.php:52
+#: ../guide.php:103 ../smtube.php:52
 msgid ""
 "This tool allows you to browse among the most popular, most viewed and most "
 "rated videos."
@@ -803,17 +870,17 @@ msgstr ""
 "Šis įrankis jums leidžia naršyti tarp populiariausių, daugiausiai žiūrimų ir "
 "geriausiai įvertintų video."
 
-#: ../guide.php:90 ../smtube.php:53
+#: ../guide.php:105 ../smtube.php:53
 msgid ""
 "You can search for a video typing a term in the search field at the bottom "
 "of the window."
 msgstr "Video galite ieškoti lango apačioje įrašę paieškos žodį."
 
-#: ../guide.php:92 ../smtube.php:54
+#: ../guide.php:107 ../smtube.php:54
 msgid "To play a video, just double click on it."
 msgstr "Norėdami atkurti video, tiesiog dukart spustelėkite ant jo."
 
-#: ../guide.php:94 ../smtube.php:59
+#: ../guide.php:109 ../smtube.php:59
 msgid ""
 "To download a Youtube video, right click on a video and select <i>Record "
 "video</i>."
@@ -821,41 +888,41 @@ msgstr ""
 "Norėdami parsisiųsti Youtube video, paspauskite dešinį pelės mygtuką ir "
 "pasirinkite <i>Įrašyti video</i>."
 
-#: ../guide.php:96 ../smtube.php:60
+#: ../guide.php:111 ../smtube.php:60
 msgid "You can download several videos at a time."
 msgstr "Vienu metu galite atsisiųsti kelis video."
 
-#: ../guide.php:104
+#: ../guide.php:119
 msgid "Change the skin"
 msgstr ""
 
-#: ../guide.php:106
+#: ../guide.php:121
 msgid "By default SMPlayer uses a basic interface."
 msgstr ""
 
-#: ../guide.php:108
+#: ../guide.php:123
 msgid "You can change the skin very easily."
 msgstr ""
 
-#: ../guide.php:110
+#: ../guide.php:125
 msgid ""
 "Click on the screwdriver button (%1) in the toolbar or select\n"
 "the option <b>Preferences</b> under the <b>Options</b> menu."
 msgstr ""
 
-#: ../guide.php:114
+#: ../guide.php:129
 msgid "That will open the preferences dialog."
 msgstr ""
 
-#: ../guide.php:116
+#: ../guide.php:131
 msgid "Now click on the <b>Interface</b> section on the left."
 msgstr ""
 
-#: ../guide.php:118
+#: ../guide.php:133
 msgid "Now select <b>Skinnable GUI</b> in the <b>GUI</b> option."
 msgstr ""
 
-#: ../guide.php:120
+#: ../guide.php:135
 msgid "Finally select the skin you want to use under the <b>Skin</b> option."
 msgstr ""
 
@@ -988,11 +1055,6 @@ msgstr "Suderinama su Windows XP/2003/Vista/Server 2008/7/8."
 #: ../inc/footer.php:12
 msgid "Other links:"
 msgstr "Kitos nuorodos:"
-
-#: ../inc/footer.php:17 ../latest.php:4 ../latest.php:10 ../sitemap.php:20
-#: ../umplayer.php:84
-msgid "Latest changes"
-msgstr "Paskutiniai pakeitimai"
 
 #: ../inc/footer.php:20 ../reviews.php:14
 msgid "Media Reviews"
@@ -1300,107 +1362,6 @@ msgid ""
 msgstr ""
 "SMPlayer kaip atkūrimo variklį naudoja pripažintą „MPlayer“ programą. \n"
 "Jis yra vienas iš geriausių grotuvų."
-
-#: ../install_069.php:4
-msgid "Thanks for installing SMPlayer"
-msgstr ""
-
-#: ../install_069.php:5
-msgid "Welcome to SMPlayer, a free media player with codecs"
-msgstr ""
-
-#: ../install_069.php:11
-msgid "Thanks for installing SMPlayer 0.6.9"
-msgstr ""
-
-#: ../install_069.php:38
-msgid ""
-"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
-"b>."
-msgstr ""
-
-#: ../install_069.php:40
-msgid "It's highly recommended to upgrade."
-msgstr ""
-
-#: ../install_069.php:42
-msgid ""
-"The latest version of SMPlayer is %1 and \n"
-"some new interesting features have been added:"
-msgstr ""
-
-#: ../install_069.php:47
-msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
-msgstr ""
-
-#: ../install_069.php:47
-msgid "download videos from Youtube"
-msgstr ""
-
-#: ../install_069.php:48
-msgid ""
-"New skins. A new skinnable interface allows to select among several skins."
-msgstr ""
-
-#: ../install_069.php:49
-msgid ""
-"Toolbar editor. Now you can choose the buttons you want in the toolbars and "
-"controls."
-msgstr ""
-
-#: ../install_069.php:50
-msgid ""
-"New favorites' menu, where you can add your favorite videos, music, streams, "
-"Youtube videos..."
-msgstr ""
-
-#: ../install_069.php:51
-msgid "More video filters."
-msgstr ""
-
-#: ../install_069.php:52
-msgid "A lot of bug fixes and improvements."
-msgstr ""
-
-#: ../install_069.php:55
-msgid "Would you like to upgrade?"
-msgstr ""
-
-#: ../install_069.php:59
-msgid "Download SMPlayer %1"
-msgstr ""
-
-#: ../install_069.php:73 ../latest.php:41
-msgid "Learn interesting things about SMPlayer in %1."
-msgstr "Sužinokite įdomių dalykų apie SMPlayer %1."
-
-#: ../install_069.php:76 ../latest.php:44
-msgid "our blog"
-msgstr "mūsų tinklaraštyje"
-
-#: ../install_069.php:83 ../latest.php:51
-msgid "If you like SMPlayer, recommend it to your friends:"
-msgstr ""
-
-#: ../latest.php:4
-msgid "Learn the latest changes of SMPlayer, a free media player with codecs"
-msgstr "Sužinokite apie naujausiu SMPlayer pakeitimus"
-
-#: ../latest.php:11
-msgid "Here you can find a list with the latest changes in SMPlayer:"
-msgstr "Čia galite rasti paskutinių SMPlayer pakeitimų sąrašą:"
-
-#: ../latest.php:17
-msgid "SMPlayer changes"
-msgstr "SMPlayer pakeitimai"
-
-#: ../latest.php:25
-msgid "Youtube browser changes"
-msgstr "Youtube naršyklės pakeitimai"
-
-#: ../latest.php:58
-msgid "Download the latest version of SMPlayer"
-msgstr "Atsisiųsti naujausią SMPlayer versiją"
 
 #: ../mplayer.php:4
 msgid "Graphical User Interface (GUI) for MPlayer"
@@ -1731,17 +1692,17 @@ msgstr ""
 msgid "Sources:"
 msgstr ""
 
-#: ../smtube.php:110
+#: ../smtube.php:107
 msgid "Changes"
 msgstr "Pakeitimai"
 
-#: ../smtube.php:112
+#: ../smtube.php:109
 msgid ""
 "The SMPlayer team has made several improvements to the original code from "
 "umplayer:"
 msgstr "SMPlayer komanda padarė kelis originalaus umplayer pakeitimus:"
 
-#: ../smtube.php:115
+#: ../smtube.php:112
 msgid ""
 "It's now a stand-alone application and you can select the video player to "
 "use \n"
@@ -1750,15 +1711,15 @@ msgstr ""
 "Dabar tai savarankiška programa, jūs galite pasirinkti kurį grotuvą naudoti\n"
 "(smplayer, mplayer, vlc, dragon player, totem ar gnome-mplayer)."
 
-#: ../smtube.php:117
+#: ../smtube.php:114
 msgid "It's possible to translate the application to other languages."
 msgstr "Programą įmanoma išversti ir į kitas kalbas."
 
-#: ../smtube.php:118
+#: ../smtube.php:115
 msgid "A configuration dialog has been added."
 msgstr "Pridėtas konfigūracijos dialogas."
 
-#: ../smtube.php:119
+#: ../smtube.php:116
 msgid "A few fixes."
 msgstr "Keli pataisymai."
 
@@ -1882,62 +1843,93 @@ msgstr ""
 msgid "UMPlayer Screenshot"
 msgstr "UMPlayer ekranvaizdis"
 
-#~ msgid ""
-#~ "Now SMPlayer includes a Youtube browser which allows \n"
-#~ "to search, play and <b>download Youtube videos</b>."
+#: ../upgrade.php:4
+msgid "Thanks for installing SMPlayer"
+msgstr ""
+
+#: ../upgrade.php:5
+msgid "Welcome to SMPlayer, a free media player with codecs"
+msgstr ""
+
+#: ../upgrade.php:11
+msgid "Thanks for installing SMPlayer 0.6.9"
+msgstr ""
+
+#: ../upgrade.php:38
+msgid ""
+"However <b><u>SMPlayer 0.6.9 is more than 3 years old and it's obsolete</u></"
+"b>."
+msgstr ""
+
+#: ../upgrade.php:40
+msgid "It's highly recommended to upgrade."
+msgstr ""
+
+#: ../upgrade.php:42
+msgid ""
+"The latest version of SMPlayer is %1 and \n"
+"some new interesting features have been added:"
+msgstr ""
+
+#: ../upgrade.php:47
+msgid "Support for Youtube. Now it's possible to search, play and <b>%1</b>."
+msgstr ""
+
+#: ../upgrade.php:47
+msgid "download videos from Youtube"
+msgstr ""
+
+#: ../upgrade.php:48
+msgid ""
+"New skins. A new skinnable interface allows to select among several skins."
+msgstr ""
+
+#: ../upgrade.php:49
+msgid ""
+"Toolbar editor. Now you can choose the buttons you want in the toolbars and "
+"controls."
+msgstr ""
+
+#: ../upgrade.php:50
+msgid ""
+"New favorites' menu, where you can add your favorite videos, music, streams, "
+"Youtube videos..."
+msgstr ""
+
+#: ../upgrade.php:51
+msgid "More video filters."
+msgstr ""
+
+#: ../upgrade.php:52
+msgid "A lot of bug fixes and improvements."
+msgstr ""
+
+#: ../upgrade.php:55
+msgid "Would you like to upgrade?"
+msgstr ""
+
+#: ../upgrade.php:59
+msgid "Download SMPlayer %1"
+msgstr ""
+
+#~ msgid "A free media player with built-in codecs and Youtube support"
 #~ msgstr ""
-#~ "Nuo šiol SMPlayer turi Youtube naršyklę kuri suteikia galimybę \n"
-#~ "ieškoti, atkurti ir <b>atsisiųsti Youtube vaizdo įrašus.</b>"
+#~ "Nemokamas media grotuvas su Youtube palaikymu ir įmontuotais kodekais"
 
 #~ msgid ""
-#~ "The code was originally created by %1 for %2 and \n"
-#~ "it has been incorporated to SMPlayer too."
+#~ "A Youtube browser which allows to search, play and download Youtube videos"
 #~ msgstr ""
-#~ "Originalų kodą parašė %1 %2 ir\n"
-#~ "jis buvo įdiegtas į SMPlayer."
+#~ "Youtube naršyklė suteikia galimybę ieškoti, atkurti ir įrašyti Youtube "
+#~ "vaizdo įrašus."
 
 #~ msgid ""
-#~ "To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
-#~ "the <i>Options</i> menu in the SMPlayer main window, or just press "
-#~ "<i>F11</i>."
+#~ "SMTube is already included in the Windows packages but on Linux it's an "
+#~ "independent package."
 #~ msgstr ""
-#~ "Norėdami aktyvuoti Youtube naršyklę, pagrindiniame SMPlayer lange "
-#~ "parinktyse pasirinkite <i>Youtube naršyklė</i> arba tiesiog paspauskite "
-#~ "<i>F11</i>."
+#~ "Windows pakete SMTube jau yra, tik Linux sistemai tai atskiras paketas."
 
-#~ msgid "How to get the Youtube browser"
-#~ msgstr "Kaip gauti Youtube naršyklę"
-
-#~ msgid ""
-#~ "The Youtube browser is included along with SMPlayer in the Windows "
-#~ "packages. Just install SMPlayer."
-#~ msgstr ""
-#~ "Windows SMPlayer paketuose Youtube naršyklė jau įdėta. Tiesiog įdiekite "
-#~ "SMPlayer."
-
-#~ msgid ""
-#~ "On Linux, the Youtube browser is available in a separated package "
-#~ "(smtube)."
-#~ msgstr ""
-#~ "Ant Linux Youtube naršyklė prieinama kaip atskiras paketas (smtube)."
-
-#~ msgid ""
-#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
-#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
-#~ "Most of those features are now included in SMPlayer as well."
-#~ msgstr ""
-#~ "Taip. UMPlayer yra SMPlayer 0.6.9 atšaka. Jie pridėjo kelias naujas "
-#~ "galimybes, tokias kaip išvaizdos keitimas, Youtube ir SHOUTcast  "
-#~ "palaikymas. Dauguma šių galimybių jau įtrauktos į SMPlayer."
-
-#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
-#~ msgstr "Sužinokite apie SMTube, Youtube naršyklę skirtą SMPlayer"
-
-#~ msgid "SMTube, the Youtube browser"
-#~ msgstr "SMTube, Youtube naršyklė"
-
-#~ msgid "SMTube Screenshot"
-#~ msgstr "SMTube ekranvaizdis"
+#~ msgid "Several improvements have been done:"
+#~ msgstr "Padaryti keli patobulinimai:"
 
 #~ msgid ""
 #~ "SMPlayer now includes a Youtube browser which we called <i>SMTube</i>. \n"
@@ -1950,21 +1942,59 @@ msgstr "UMPlayer ekranvaizdis"
 #~ "Ši naršyklė leidžia jums žiūrėti video, taipogi suteikia galimybę ir "
 #~ "parsisiųsti juos."
 
-#~ msgid "Several improvements have been done:"
-#~ msgstr "Padaryti keli patobulinimai:"
+#~ msgid "SMTube Screenshot"
+#~ msgstr "SMTube ekranvaizdis"
+
+#~ msgid "SMTube, the Youtube browser"
+#~ msgstr "SMTube, Youtube naršyklė"
+
+#~ msgid "Learn about SMTube, a Youtube browser for SMPlayer"
+#~ msgstr "Sužinokite apie SMTube, Youtube naršyklę skirtą SMPlayer"
 
 #~ msgid ""
-#~ "SMTube is already included in the Windows packages but on Linux it's an "
-#~ "independent package."
+#~ "Yes. UMPlayer was a fork created from SMPlayer 0.6.9. They added several\n"
+#~ "new features, like new skins, and Youtube and SHOUTcast&trade; support. \n"
+#~ "Most of those features are now included in SMPlayer as well."
 #~ msgstr ""
-#~ "Windows pakete SMTube jau yra, tik Linux sistemai tai atskiras paketas."
+#~ "Taip. UMPlayer yra SMPlayer 0.6.9 atšaka. Jie pridėjo kelias naujas "
+#~ "galimybes, tokias kaip išvaizdos keitimas, Youtube ir SHOUTcast  "
+#~ "palaikymas. Dauguma šių galimybių jau įtrauktos į SMPlayer."
 
 #~ msgid ""
-#~ "A Youtube browser which allows to search, play and download Youtube videos"
+#~ "On Linux, the Youtube browser is available in a separated package "
+#~ "(smtube)."
 #~ msgstr ""
-#~ "Youtube naršyklė suteikia galimybę ieškoti, atkurti ir įrašyti Youtube "
-#~ "vaizdo įrašus."
+#~ "Ant Linux Youtube naršyklė prieinama kaip atskiras paketas (smtube)."
 
-#~ msgid "A free media player with built-in codecs and Youtube support"
+#~ msgid ""
+#~ "The Youtube browser is included along with SMPlayer in the Windows "
+#~ "packages. Just install SMPlayer."
 #~ msgstr ""
-#~ "Nemokamas media grotuvas su Youtube palaikymu ir įmontuotais kodekais"
+#~ "Windows SMPlayer paketuose Youtube naršyklė jau įdėta. Tiesiog įdiekite "
+#~ "SMPlayer."
+
+#~ msgid "How to get the Youtube browser"
+#~ msgstr "Kaip gauti Youtube naršyklę"
+
+#~ msgid ""
+#~ "To activate the Youtube browser, just select <i>Youtube browser</i> in \n"
+#~ "the <i>Options</i> menu in the SMPlayer main window, or just press "
+#~ "<i>F11</i>."
+#~ msgstr ""
+#~ "Norėdami aktyvuoti Youtube naršyklę, pagrindiniame SMPlayer lange "
+#~ "parinktyse pasirinkite <i>Youtube naršyklė</i> arba tiesiog paspauskite "
+#~ "<i>F11</i>."
+
+#~ msgid ""
+#~ "The code was originally created by %1 for %2 and \n"
+#~ "it has been incorporated to SMPlayer too."
+#~ msgstr ""
+#~ "Originalų kodą parašė %1 %2 ir\n"
+#~ "jis buvo įdiegtas į SMPlayer."
+
+#~ msgid ""
+#~ "Now SMPlayer includes a Youtube browser which allows \n"
+#~ "to search, play and <b>download Youtube videos</b>."
+#~ msgstr ""
+#~ "Nuo šiol SMPlayer turi Youtube naršyklę kuri suteikia galimybę \n"
+#~ "ieškoti, atkurti ir <b>atsisiųsti Youtube vaizdo įrašus.</b>"
