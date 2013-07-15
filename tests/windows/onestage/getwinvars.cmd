@@ -8,7 +8,7 @@ set smtube_svn_dir=
 set themes_svn_dir=
 set skins_svn_dir=
 set mingw_dir=
-set is64bit=
+set X86_64=
 
 set qtdir=
 set qtver=
@@ -60,8 +60,6 @@ if [%trunk_dir%]==[trunk] (
 )
 
 for /f %%i in ("%svn_topdir%\smtube%svn_trunkdir%") do set smtube_svn_dir=%%~fi
-:: Need this for main compile script
-set SMTUBE_DIR=%smtube_svn_dir%
 for /f %%i in ("%svn_topdir%\smplayer-themes%svn_trunkdir%") do set themes_svn_dir=%%~fi
 for /f %%i in ("%svn_topdir%\smplayer-skins%svn_trunkdir%") do set skins_svn_dir=%%~fi
 

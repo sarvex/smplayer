@@ -1,15 +1,5 @@
 @echo off
 
-set SMPLAYER_DIR=
-set SMTUBE_DIR=
-set SMPLAYER_THEMES_DIR=
-set SMPLAYER_SKINS_DIR=
-set MPLAYER_DIR=
-set QT_DIR=
-set QT_VER=
-set MINGW_DIR=
-set X86_64=
-
 :: Read from generated file during compile if exist
 
 if exist win32inst_vars.cmd (
@@ -47,7 +37,7 @@ if [%X86_64%]==[yes] (
 set MPLAYER_DIR=..\mplayer
 
 if exist %OUTPUT_DIR% (
-  rd /s /q %OUTPUT_DIR%
+  rd /s %OUTPUT_DIR%
 )
 
 :begin
@@ -133,4 +123,13 @@ echo.
 
 :end
 
-pause
+set SMPLAYER_DIR=
+set SMTUBE_DIR=
+set SMPLAYER_THEMES_DIR=
+set SMPLAYER_SKINS_DIR=
+set MPLAYER_DIR=
+set QT_DIR=
+set QT_VER=
+set MINGW_DIR=
+set X86_64=
+set BUILD_PREFIX=

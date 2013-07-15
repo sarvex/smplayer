@@ -1,6 +1,10 @@
 @echo off
 
-set startdir=%CD%
+::                                       ::
+::        Command-line Parsing           ::
+::                                       ::
+
+set start_dir=%~dp0
 
 set build_smtube=true
 set build_pe=
@@ -9,12 +13,12 @@ set runinstcmd=
 set smtube_params=
 set qmake_defs=
 set use_svn_revision=
-set cpp_version=
 
-for /f %%i in ("setup") do set build_prefix=%%~fi
+:: Default prefix
+for /f %%i in ("setup") do set BUILD_PREFIX=%%~fi
 
 :cmdline_parsing
-if "%1" == ""               goto compile
+if "%1" == ""               goto build_env_info
 if "%1" == "-h"             goto usage
 if "%1" == "-prefix"        goto prefixTag
 if "%1" == "-portable"      goto cfgPE
@@ -27,7 +31,7 @@ goto usage
 
 :usage
 echo Usage: compile_windows2.cmd [-prefix (dir)]
-echo                             [-nosmtube] [-portable] [-noinst]
+echo                             [-portable] [-nosmtube] [-noinst]
 echo.
 echo Options:
 echo   -h                     display this help and exit
@@ -36,9 +40,9 @@ echo   -prefix (dir)          prefix directory for installation
 echo                          (default prefix: %build_prefix%)
 echo.
 echo Miscellaneous options:
-echo   -nosmtube              Do not compile SMTube
 echo   -portable              Compile portable executables
 echo.
+echo   -nosmtube              Do not compile SMTube
 echo   -noinst                Do not automatically install
 echo.
 goto end
@@ -75,32 +79,75 @@ shift
 
 goto cmdline_parsing 
 
-:compile
+
+::                                       ::
+::        Build Environment Info         ::
+::                                       ::
+
+:build_env_info
+set config_file=setup\scripts\win32inst_vars.cmd
+
+:: GCC Target
+for /f "usebackq tokens=2" %%i in (`"gcc -v 2>&1 | find "Target""`) do set gcc_target=%%i
+if [%gcc_target%]==[x86_64-w64-mingw32] (
+  set X86_64=yes
+) else if [%gcc_target%]==[i686-w64-mingw32] (
+  set X86_64=no
+) else if [%gcc_target%]==[mingw32] (
+  set X86_64=no
+)
+
+:: MinGW dir
+for /f "usebackq tokens=1 delims=.." %%i in (`"gcc -print-search-dirs 2>&1 | find "install""`) do set MINGW_DIR=%%i
+for /f "tokens=2 delims= " %%i in ("%MINGW_DIR%") do set MINGW_DIR=%%i
+if %MINGW_DIR:~-1%==\ set MINGW_DIR=%MINGW_DIR:~0,-1%
+
+:: Qt/SVN locations from qmake
+for /f "tokens=*" %%i in ('qmake -query QT_INSTALL_PREFIX') do set QT_DIR=%%i
+for /f "tokens=*" %%i in ('qmake -query QT_VERSION') do set QT_VER=%%i
+
+set SMPLAYER_DIR=%start_dir%
+:: Does string have a trailing slash? if so remove it 
+if %SMPLAYER_DIR:~-1%==\ set SMPLAYER_DIR=%SMPLAYER_DIR:~0,-1%
+
+:: Using the \trunk (whole repo checked out as a whole or checked out separately)? 
+for %%a in ("%cd%") do set trunk_dir=%%~nxa
+
+if [%trunk_dir%]==[trunk] (
+  set svn_topdir=..\..
+  set svn_trunkdir=\trunk
+) else (
+  set svn_topdir=..
+  set svn_trunkdir=
+)
+
+for /f %%i in ("%svn_topdir%\smtube%svn_trunkdir%") do set SMTUBE_DIR=%%~fi
+for /f %%i in ("%svn_topdir%\smplayer-themes%svn_trunkdir%") do set SMPLAYER_THEMES_DIR=%%~fi
+for /f %%i in ("%svn_topdir%\smplayer-skins%svn_trunkdir%") do set SMPLAYER_SKINS_DIR=%%~fi
+
+:: Create var batch file
+echo set SMPLAYER_DIR=%SMPLAYER_DIR%>%config_file%
+echo set SMTUBE_DIR=%SMTUBE_DIR%>>%config_file%
+echo set SMPLAYER_THEMES_DIR=%SMPLAYER_THEMES_DIR%>>%config_file%
+echo set SMPLAYER_SKINS_DIR=%SMPLAYER_SKINS_DIR%>>%config_file%
+echo set QT_DIR=%QT_DIR%>>%config_file%
+echo set QT_VER=%QT_VER%>>%config_file%
+echo set MINGW_DIR=%MINGW_DIR%>>%config_file%
+echo set X86_64=%X86_64%>>%config_file%
+echo set BUILD_PREFIX=%BUILD_PREFIX%>>%config_file%
+
+::                                       ::
+::          Main Compile Script          ::
+::                                       ::
+
 
 call getrev.cmd
-call getwinvars.cmd
 
 :: Get value of #define USE_SVN_VERSIONS
 for /f "tokens=3" %%j in ('type src\version.cpp ^| find "USE_SVN_VERSIONS"') do set use_svn_revision=%%j
 
-:: Get version from version.cpp
-for /f "tokens=3" %%i in ('type src\version.cpp ^| find "#define VERSION"') do set CPP_VERSION=%%i
-
-:: Remove quotes
-SET CPP_VERSION=###%CPP_VERSION%###
-SET CPP_VERSION=%CPP_VERSION:"###=%
-SET CPP_VERSION=%CPP_VERSION:###"=%
-SET CPP_VERSION=%CPP_VERSION:###=%
-
 if [%use_svn_revision%]==[1] (
-
-  echo set SMPLAYER_VERSION=%CPP_VERSION%.%REVISION%>>setup\scripts\win32inst_vars.cmd
   set qmake_defs=%qmake_defs% HAVE_SVN_REVISION_H
-
-) else (
-
-  echo set SMPLAYER_VERSION=%CPP_VERSION%>>setup\scripts\win32inst_vars.cmd
-
 )
 
 cd zlib
@@ -112,30 +159,32 @@ qmake "DEFINES += %qmake_defs%"
 mingw32-make
 
 if [%build_smtube%]==[true] (
-      cd %SMTUBE_DIR%
-      call compile_windows.cmd %smtube_params%
+  cd %SMTUBE_DIR%
+  call compile_windows.cmd %smtube_params%
 )
 
 if not [%runinstcmd%]==[no] (
-  cd %startdir%\setup\scripts
+  cd %SMPLAYER_DIR%\setup\scripts
   call install_smplayer2.cmd
 )
 
 if [%build_pe%]==[true] (
+  mkdir %BUILD_PREFIX%\portable
+
   if [%X86_64%]==[yes] (
-    copy %SMTUBE_DIR%\src\release\smtube.exe %BUILD_PREFIX%\portable\smtube-portable64.exe
-    copy %SMPLAYER_DIR%\src\release\smplayer.exe %BUILD_PREFIX%\portable\smplayer-portable64.exe
+    copy /y %SMTUBE_DIR%\src\release\smtube.exe %BUILD_PREFIX%\portable\smtube-portable64.exe
+    copy /y %SMPLAYER_DIR%\src\release\smplayer.exe %BUILD_PREFIX%\portable\smplayer-portable64.exe
   ) else ( 
-    copy %SMTUBE_DIR%\src\release\smtube.exe %BUILD_PREFIX%\portable\smtube-portable.exe
-    copy %SMPLAYER_DIR%\src\release\smplayer.exe %BUILD_PREFIX%\portable\smplayer-portable.exe
-  ) 
+    copy /y %SMTUBE_DIR%\src\release\smtube.exe %BUILD_PREFIX%\portable\smtube-portable.exe
+    copy /y %SMPLAYER_DIR%\src\release\smplayer.exe %BUILD_PREFIX%\portable\smplayer-portable.exe
+  )
 )
 :: Return to starting directory
-cd %startdir%
+cd %start_dir%
 
 :end
 
-:: Reset EVERYTHING
+:: Reset
 set startdir=
 set build_smtube=
 set build_pe=
@@ -143,4 +192,6 @@ set runinstcmd=
 set smtube_params=
 set qmake_defs=
 set use_svn_revision=
-set cpp_version=
+
+set svn_topdir=
+set svn_trunkdir=
