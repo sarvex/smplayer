@@ -60,9 +60,12 @@ if [%trunk_dir%]==[trunk] (
 )
 
 for /f %%i in ("%svn_topdir%\smtube%svn_trunkdir%") do set smtube_svn_dir=%%~fi
+:: Need this for main compile script
+set SMTUBE_DIR=%smtube_svn_dir%
 for /f %%i in ("%svn_topdir%\smplayer-themes%svn_trunkdir%") do set themes_svn_dir=%%~fi
 for /f %%i in ("%svn_topdir%\smplayer-skins%svn_trunkdir%") do set skins_svn_dir=%%~fi
 
+:: Create var batch file
 echo set SMPLAYER_DIR=%smplayer_svn_dir%>%config_file%
 echo set SMTUBE_DIR=%smtube_svn_dir%>>%config_file%
 echo set SMPLAYER_THEMES_DIR=%themes_svn_dir%>>%config_file%
@@ -71,5 +74,21 @@ echo set QT_DIR=%qtdir%>>%config_file%
 echo set QT_VER=%qtver%>>%config_file%
 echo set MINGW_DIR=%MINGW_DIR%>>%config_file%
 echo set X86_64=%is64bit%>>%config_file%
+echo set BUILD_PREFIX=%build_prefix%>>%config_file%
 
 :end
+
+:: Reset EVERYTHING
+set gcc_target=
+set smplayer_svn_dir=
+set smtube_svn_dir=
+set themes_svn_dir=
+set skins_svn_dir=
+set mingw_dir=
+set is64bit=
+
+set qtdir=
+set qtver=
+set trunk_dir=
+set svn_trunkdir=
+set svn_topdir=

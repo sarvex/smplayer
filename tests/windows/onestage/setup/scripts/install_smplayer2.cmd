@@ -1,9 +1,4 @@
 @echo off
-echo This batch file can help you to create a directory with all required files
-echo Just change the variables at the beginning
-echo.
-echo Warning: it will only work with sources from the SVN and the command svn has to be in the path
-echo.
 
 set SMPLAYER_DIR=
 set SMTUBE_DIR=
@@ -23,6 +18,12 @@ if exist win32inst_vars.cmd (
 
 ) else (
 
+echo This batch file can help you to create a directory with all required files
+echo Just change the variables at the beginning
+echo.
+echo Warning: it will only work with sources from the SVN and the command svn has to be in the path
+echo.
+
 set /P QTVER="Qt Version (Default: 4.8.4): "
 if "%QTVER%"=="" set QTVER=4.8.4
 
@@ -37,13 +38,17 @@ set QT_DIR=C:\Qt\%QTVER%
 )
 
 if [%X86_64%]==[yes] (
-  set OUTPUT_DIR=..\smplayer-build64
+  set OUTPUT_DIR=%BUILD_PREFIX%\smplayer-build64
 ) else (
-  set OUTPUT_DIR=..\smplayer-build
+  set OUTPUT_DIR=%BUILD_PREFIX%\smplayer-build
 )
 
 :: MPlayer files
 set MPLAYER_DIR=..\mplayer
+
+if exist %OUTPUT_DIR% (
+  rd /s /q %OUTPUT_DIR%
+)
 
 :begin
 echo.
