@@ -150,7 +150,13 @@ if [%use_svn_revision%]==[1] (
   set qmake_defs=%qmake_defs% HAVE_SVN_REVISION_H
 )
 
-cd zlib
+cd dxlist
+for %%F in (directx\d3dtypes.h directx\ddraw.h  directx\dsound.h) do if not exist %%F goto skip_dxlist
+qmake
+mingw32-make
+:skip_dxlist
+
+cd ..\zlib
 mingw32-make -fwin32\makefile.gcc
 
 cd ..\src

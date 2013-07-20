@@ -47,6 +47,7 @@ echo.
 
 mkdir %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\src\release\smplayer.exe %OUTPUT_DIR%
+copy %SMPLAYER_DIR%\dxlist\release\dxlist.exe %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\zlib\zlib1.dll %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\*.txt %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\setup\sample.avi %OUTPUT_DIR%
@@ -57,12 +58,10 @@ copy %QT_DIR%\bin\QtXml4.dll %OUTPUT_DIR%
 
 if [%X86_64%]==[yes] (
 
-  copy %SMPLAYER_DIR%\dxlist\release\dxlist64.exe %OUTPUT_DIR%\dxlist.exe
   rem copy %MINGW_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
 ) else (
 
-  copy %SMPLAYER_DIR%\dxlist\release\dxlist.exe %OUTPUT_DIR%
   copy %QT_DIR%\bin\mingwm10.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\libgcc_s_dw2-1.dll %OUTPUT_DIR%
 
