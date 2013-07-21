@@ -33,18 +33,21 @@ goto usage
 echo Usage: compile_windows2.cmd [-prefix (dir)]
 echo                             [-portable] [-nosmtube] [-noinst]
 echo.
-echo Options:
+echo Configuration:
 echo   -h                     display this help and exit
 echo.
 echo   -prefix (dir)          prefix directory for installation 
 echo                          (default prefix: %build_prefix%)
 echo.
-echo Miscellaneous options:
+echo Optional Features:
 echo   -portable              Compile portable executables
-echo.
 echo   -nosmtube              Do not compile SMTube
-echo   -noinst                Do not automatically install
 echo.
+echo Miscellaneous Options:
+echo   -noinst                Do not run installation script
+echo.
+rem echo   -update                Update before compiling
+rem echo.
 goto end
 
 :prefixTag
@@ -97,12 +100,12 @@ if [%gcc_target%]==[x86_64-w64-mingw32] (
   set X86_64=no
 )
 
-:: MinGW dir
+:: MinGW locations from GCC
 for /f "usebackq tokens=1 delims=.." %%i in (`"gcc -print-search-dirs 2>&1 | find "install""`) do set MINGW_DIR=%%i
 for /f "tokens=2 delims= " %%i in ("%MINGW_DIR%") do set MINGW_DIR=%%i
 if %MINGW_DIR:~-1%==\ set MINGW_DIR=%MINGW_DIR:~0,-1%
 
-:: Qt/SVN locations from qmake
+:: Qt locations from QMAKE
 for /f "tokens=*" %%i in ('qmake -query QT_INSTALL_PREFIX') do set QT_DIR=%%i
 for /f "tokens=*" %%i in ('qmake -query QT_VERSION') do set QT_VER=%%i
 
@@ -140,7 +143,6 @@ echo set BUILD_PREFIX=%BUILD_PREFIX%>>%config_file%
 ::          Main Compile Script          ::
 ::                                       ::
 
-
 call getrev.cmd
 
 :: Get value of #define USE_SVN_VERSIONS
@@ -151,7 +153,7 @@ if [%use_svn_revision%]==[1] (
 )
 
 cd dxlist
-for %%F in (directx\d3dtypes.h directx\ddraw.h  directx\dsound.h) do if not exist %%F goto skip_dxlist
+for %%F in (directx\d3dtypes.h directx\ddraw.h directx\dsound.h) do if not exist %%F goto skip_dxlist
 qmake
 mingw32-make
 :skip_dxlist
