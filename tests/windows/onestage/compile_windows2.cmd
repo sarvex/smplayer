@@ -9,6 +9,7 @@ set start_dir=%~dp0
 set build_smtube=true
 set build_pe=
 set runinstcmd=
+set runsvnup=yes
 
 set smtube_params=
 set qmake_defs=
@@ -24,6 +25,7 @@ if "%1" == "-prefix"        goto prefixTag
 if "%1" == "-portable"      goto cfgPE
 if "%1" == "-nosmtube"      goto cfgSmtube
 if "%1" == "-noinst"        goto cfgInst
+if "%1" == "-noupdate"      goto cfgUpdate
 
 echo Unknown option: "%1"
 echo.
@@ -41,13 +43,12 @@ echo                          (default prefix: %build_prefix%)
 echo.
 echo Optional Features:
 echo   -portable              Compile portable executables
-echo   -nosmtube              Do not compile SMTube
 echo.
 echo Miscellaneous Options:
 echo   -noinst                Do not run installation script
+echo   -nosmtube              Do not compile SMTube
+echo   -noupdate              Do not update before compiling
 echo.
-rem echo   -update                Update before compiling
-rem echo.
 goto end
 
 :prefixTag
@@ -80,8 +81,13 @@ goto cmdline_parsing
 set runinstcmd=no
 shift
 
-goto cmdline_parsing 
+goto cmdline_parsing
 
+:cfgUpdate
+set runsvnup=no
+shift
+
+goto cmdline_parsing
 
 ::                                       ::
 ::        Build Environment Info         ::
@@ -143,6 +149,14 @@ echo set BUILD_PREFIX=%BUILD_PREFIX%>>%config_file%
 ::          Main Compile Script          ::
 ::                                       ::
 
+if [%runsvnup%]==[yes] (
+  svn up %SMPLAYER_DIR%
+  svn up %SMTUBE_DIR%
+  svn up %SMPLAYER_THEMES_DIR%
+  svn up %SMPLAYER_SKINS_DIR%
+echo.
+)
+
 call getrev.cmd
 
 :: Get value of #define USE_SVN_VERSIONS
@@ -154,8 +168,10 @@ if [%use_svn_revision%]==[1] (
 
 cd dxlist
 for %%F in (directx\d3dtypes.h directx\ddraw.h directx\dsound.h) do if not exist %%F goto skip_dxlist
+if [%build_pe%]==[true] ( goto skip_dxlist )
 qmake
 mingw32-make
+
 :skip_dxlist
 
 cd ..\zlib
@@ -197,6 +213,7 @@ set startdir=
 set build_smtube=
 set build_pe=
 set runinstcmd=
+set runsvnup=
 set smtube_params=
 set qmake_defs=
 set use_svn_revision=
