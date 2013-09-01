@@ -14,16 +14,16 @@ echo.
 echo Warning: it will only work with sources from the SVN and the command svn has to be in the path
 echo.
 
-set /P QTVER="Qt Version (Default: 4.8.4): "
-if "%QTVER%"=="" set QTVER=4.8.4
+set /P QT_VER="Qt Version (Default: 4.8.4): "
+if "%QT_VER%"=="" set QT_VER=4.8.4
 
 set SMPLAYER_DIR=svn\smplayer
 set SMTUBE_DIR=svn\smtube
 set SMPLAYER_THEMES_DIR=svn\smplayer-themes
 set SMPLAYER_SKINS_DIR=svn\smplayer-skins
 set MPLAYER_DIR=mplayer
-rem set QT_DIR=C:\QtSDK\Desktop\Qt\%QTVER%\mingw
-set QT_DIR=C:\Qt\%QTVER%
+rem set QT_DIR=C:\QtSDK\Desktop\Qt\%QT_VER%\mingw
+set QT_DIR=C:\Qt\%QT_VER%
 
 )
 
@@ -51,11 +51,31 @@ copy %SMPLAYER_DIR%\dxlist\release\dxlist.exe %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\zlib\zlib1.dll %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\*.txt %OUTPUT_DIR%
 copy %SMPLAYER_DIR%\setup\sample.avi %OUTPUT_DIR%
-copy %QT_DIR%\bin\QtCore4.dll %OUTPUT_DIR%
-copy %QT_DIR%\bin\QtGui4.dll %OUTPUT_DIR%
-copy %QT_DIR%\bin\QtNetwork4.dll %OUTPUT_DIR%
-copy %QT_DIR%\bin\QtXml4.dll %OUTPUT_DIR%
-copy %QT_DIR%\bin\QtScript4.dll %OUTPUT_DIR%
+
+if %QT_VER% lss 5.0.0 (
+
+  copy %QT_DIR%\bin\QtCore4.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\QtGui4.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\QtNetwork4.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\QtXml4.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\QtScript4.dll %OUTPUT_DIR%
+
+) else if %QT_VER% geq 5.0.0 (
+
+  copy %QT_DIR%\bin\icudt51.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\icuin51.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\icuuc51.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\libgcc_s_dw2-1.dll %OUTPUT_DIR%
+  copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
+  copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Core.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Gui.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Network.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Widgets.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Xml.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\Qt5Script.dll %OUTPUT_DIR%
+
+)
 
 if [%X86_64%]==[yes] (
 
@@ -69,7 +89,15 @@ if [%X86_64%]==[yes] (
 )
 
 mkdir %OUTPUT_DIR%\imageformats
-copy %QT_DIR%\plugins\imageformats\qjpeg4.dll %OUTPUT_DIR%\imageformats\
+if %QT_VER% lss 5.0.0 (
+
+  copy %QT_DIR%\plugins\imageformats\qjpeg4.dll %OUTPUT_DIR%\imageformats\
+
+) else if %QT_VER% geq 5.0.0 (
+
+  copy %QT_DIR%\plugins\imageformats\qjpeg.dll %OUTPUT_DIR%\imageformats\
+
+)
 
 echo.
 echo --        Translations         --
