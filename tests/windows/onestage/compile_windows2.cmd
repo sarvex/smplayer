@@ -116,6 +116,7 @@ if %MINGW_DIR:~-1%==\ set MINGW_DIR=%MINGW_DIR:~0,-1%
 :: Qt locations from QMAKE
 for /f "tokens=*" %%i in ('qmake -query QT_INSTALL_PREFIX') do set QT_DIR=%%i
 for /f "tokens=*" %%i in ('qmake -query QT_VERSION') do set QT_VER=%%i
+set QT_DIR=%QT_DIR:/=\%
 
 set SMPLAYER_DIR=%start_dir%
 :: Does string have a trailing slash? if so remove it 
