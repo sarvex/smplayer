@@ -66,9 +66,6 @@ if %QT_VER% lss 5.0.0 (
   copy %QT_DIR%\bin\icudt51.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\icuin51.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\icuuc51.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
-  copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
-  copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Core.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Gui.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Network.dll %OUTPUT_DIR%
@@ -77,20 +74,7 @@ if %QT_VER% lss 5.0.0 (
   copy %QT_DIR%\bin\Qt5Script.dll %OUTPUT_DIR%
 
 )
-
-:: Toolchain specific files
-if [%X86_64%]==[yes] (
-
-  rem copy %MINGW_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
-
-) else (
-
-  copy %QT_DIR%\bin\mingwm10.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\libgcc_s_dw2-1.dll %OUTPUT_DIR%
-
-)
-
-:: Plugins
+:: Qt Plugins
 mkdir %OUTPUT_DIR%\imageformats
 if %QT_VER% lss 5.0.0 (
 
@@ -103,6 +87,12 @@ if %QT_VER% lss 5.0.0 (
   copy %QT_DIR%\plugins\platforms\qwindows.dll %OUTPUT_DIR%\platforms\
 
 )
+
+:: Toolchain specific files
+copy %QT_DIR%\bin\mingwm10.dll %OUTPUT_DIR%
+copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
+copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
+copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
 echo.
 echo --        Translations         --
