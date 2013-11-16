@@ -15,6 +15,8 @@ set smtube_params=
 set qmake_defs=
 set use_svn_revision=
 
+set config_file=setup\scripts\win32inst_vars.cmd
+
 :: Default prefix
 for /f %%i in ("setup") do set BUILD_PREFIX=%%~fi
 
@@ -94,7 +96,6 @@ goto cmdline_parsing
 ::                                       ::
 
 :build_env_info
-set config_file=setup\scripts\win32inst_vars.cmd
 
 :: GCC Target
 for /f "usebackq tokens=2" %%i in (`"gcc -v 2>&1 | find "Target""`) do set gcc_target=%%i
@@ -153,11 +154,8 @@ echo set BUILD_PREFIX=%BUILD_PREFIX%>>%config_file%
 ::                                       ::
 
 if [%runsvnup%]==[yes] (
-  svn up %SMPLAYER_DIR%
-  svn up %SMTUBE_DIR%
-  svn up %SMPLAYER_THEMES_DIR%
-  svn up %SMPLAYER_SKINS_DIR%
-echo.
+  svn up "%SMPLAYER_DIR%" "%SMTUBE_DIR%" "%SMPLAYER_THEMES_DIR%" "%SMPLAYER_SKINS_DIR%"
+  echo.
 )
 
 call getrev.cmd
