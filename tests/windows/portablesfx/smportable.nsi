@@ -5,7 +5,7 @@
 !define VER_MAJOR 1
 !define VER_MINOR 2
 !define VER_BUILD 3
-
+!define WIN64
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
 !endif
@@ -39,8 +39,10 @@
 
 !ifdef WIN64
   !define SMPLAYER_BUILD_DIR "smplayer-build64"
+  !define SMPLAYER_OUT_DIR "smplayer-portable-${SMPLAYER_VERSION}-x64"
 !else
   !define SMPLAYER_BUILD_DIR "smplayer-build"
+  !define SMPLAYER_OUT_DIR "smplayer-portable-${SMPLAYER_VERSION}"
 !endif
 
 ;--------------------------------
@@ -50,9 +52,9 @@
   Name "SMPlayer Portable ${SMPLAYER_VERSION}"
   BrandingText "SMPlayer for Windows v${SMPLAYER_VERSION} (Portable Edition)"
 !ifdef WIN64
-  OutFile "smplayer-portable-${SMPLAYER_VERSION}-x64.exe"
+  OutFile "output\smplayer-portable-${SMPLAYER_VERSION}-x64.exe"
 !else
-  OutFile "smplayer-portable-${SMPLAYER_VERSION}-win32.exe"
+  OutFile "output\smplayer-portable-${SMPLAYER_VERSION}.exe"
 !endif
 
   ;Version tab properties
@@ -68,7 +70,7 @@
 !endif
 
   ;Default installation folder
-  InstallDir "$EXEDIR\smplayer-portable-${SMPLAYER_VERSION}"
+  InstallDir "$EXEDIR\${SMPLAYER_OUT_DIR}"
 
   ;Get installation folder from registry if available
   InstallDirRegKey HKLM "${SMPLAYER_REG_KEY}" "Path"
@@ -82,7 +84,6 @@
 ;--------------------------------
 ;Variables
 
-  Var CleanInst
   Var FreeSpace
   Var InstallDirectory
   Var NextButton
@@ -91,27 +92,23 @@
   Var BrowseBtn
   Var hCtl__1_GroupBox1
   Var RootDir
-  Var RootDirLen
+  Var RootDirFreeSpace
+  Var RootDirSlash
   Var SpaceReq
   Var SecSize
+  Var SecSizeUnit
 
+  ;StrLen
+  Var Len_InstallDirBox_State
+  Var Len_RootDir
 ;--------------------------------
 ;Interface Settings
 
   ;Installer/Uninstaller icons
   !define MUI_ICON "smplayer-orange-installer.ico"
 
-  ;Misc
-  !define MUI_WELCOMEFINISHPAGE_BITMAP "smplayer-orange-wizard.bmp"
-  !define MUI_ABORTWARNING
-
-  ;Welcome page
-  !define MUI_WELCOMEPAGE_TITLE $(WelcomePage_Title)
-  !define MUI_WELCOMEPAGE_TEXT $(WelcomePage_Text)
-
   ;License page
   !define MUI_LICENSEPAGE_RADIOBUTTONS
-
 
 ;--------------------------------
 ;Include Modern UI and functions
@@ -129,18 +126,9 @@
 ;Pages
 
   ;Install pages
-  #Welcome
-  #!insertmacro MUI_PAGE_WELCOME
-
-  #License
   !insertmacro MUI_PAGE_LICENSE "license.txt"
-  #!insertmacro MUI_PAGE_DIRECTORY
-  #Upgrade/Reinstall
   Page custom InstallDirectory InstallDirectoryLeave
-  #Install Directory
-
   !insertmacro MUI_PAGE_INSTFILES
-
 
 ;--------------------------------
 ;Languages
@@ -222,7 +210,44 @@
 Section MainFiles SecMain
 
   SetOutPath "$INSTDIR"
-  File /r "test.txt"
+  File /x smplayer.exe /x smtube.exe "${SMPLAYER_BUILD_DIR}\*"
+!ifdef WIN64
+  File /oname=smplayer.exe "portable\smplayer-portable64.exe"
+  File /oname=smtube.exe "portable\smtube-portable64.exe"
+!else
+  File /oname=smplayer.exe "portable\smplayer-portable.exe"
+  File /oname=smtube.exe "portable\smtube-portable.exe"
+!endif
+
+  ;SMPlayer docs
+  SetOutPath "$INSTDIR\docs"
+  File /r "${SMPLAYER_BUILD_DIR}\docs\*.*"
+
+  ;Qt imageformats
+  SetOutPath "$INSTDIR\imageformats"
+  File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
+
+  ;Qt platforms (Qt 5+)
+  SetOutPath "$INSTDIR\platforms"
+  File /nonfatal /r "${SMPLAYER_BUILD_DIR}\platforms\*.*"
+
+  ;SMPlayer key shortcuts
+  SetOutPath "$INSTDIR\shortcuts"
+  File /r "${SMPLAYER_BUILD_DIR}\shortcuts\*.*"
+
+  SetOutPath "$INSTDIR\mplayer"
+  File /r /x mplayer.exe /x mencoder.exe /x mplayer64.exe /x mencoder64.exe /x *.exe.debug "${SMPLAYER_BUILD_DIR}\mplayer\*.*"
+!ifdef WIN64
+  File /oname=mplayer.exe "${SMPLAYER_BUILD_DIR}\mplayer\mplayer64.exe"
+!else
+  File "${SMPLAYER_BUILD_DIR}\mplayer\mplayer.exe"
+!endif
+
+  SetOutPath "$INSTDIR\themes"
+  File /r "${SMPLAYER_BUILD_DIR}\themes\*.*"
+
+  SetOutPath "$INSTDIR\translations"
+  File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
 
 SectionEnd
 
@@ -245,6 +270,7 @@ Function InstallDirectory
   nsDialogs::Create /NOUNLOAD 1018
   Pop $InstallDirectory
 
+  Var /GLOBAL UpOptLabel
   nsDialogs::SetRTL $(^RTL)
 
   GetDlgItem $NextButton $HWNDPARENT 1 ; next=1, cancel=2, back=315
@@ -261,8 +287,8 @@ Function InstallDirectory
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
-  ${NSD_CreateCheckBox} 0 75u 100% 8u "Reset my SMPlayer configuration"
-  Pop $CleanInst
+  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Upgrade"
+  Pop $UpOptLabel
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
   Pop $SpaceReq
@@ -271,7 +297,7 @@ Function InstallDirectory
   Pop $FreeSpace
 
   ${NSD_OnClick} $Browsebtn SelectDirectory
-  ${NSD_OnChange} $InstallDirBox VerifyDir
+  ${NSD_OnChange} $InstallDirBox UpdateFreeSpace
 
   Call UpdateFreeSpace
   Call UpdateReqSpace
@@ -285,60 +311,41 @@ Function SelectDirectory
   nsDialogs::SelectFolderDialog $(^DirBrowseText) "$EXEDIR"
   Pop $InstallDirBox_State
   ${Unless} $InstallDirBox_State == "error"
-    StrLen $4 $InstallDirBox_State
-    ${If} $4 < 4
-      ${NSD_SetText} $InstallDirBox "$InstallDirBox_Statesmplayer-portable-${SMPLAYER_VERSION}"
+    StrLen $Len_InstallDirBox_State $InstallDirBox_State
+    ${If} $Len_InstallDirBox_State < 4
+      ${NSD_SetText} $InstallDirBox "$InstallDirBox_State${SMPLAYER_OUT_DIR}"
     ${Else}
-      ${NSD_SetText} $InstallDirBox "$InstallDirBox_State\smplayer-portable-${SMPLAYER_VERSION}"
+      ${NSD_SetText} $InstallDirBox "$InstallDirBox_State\${SMPLAYER_OUT_DIR}"
     ${EndIf}
   ${EndIf}
-
-  Call UpdateFreeSpace
-
-FunctionEnd
-
-
-Function VerifyDir
-
-  ${NSD_GetText} $InstallDirBox $0
-  ${GetRoot} "$0" $RootDir
-  StrLen $RootDirLen $0
-
-  ${If} $RootDir == ""
-    EnableWindow $NextButton 0
-  ${Else}
-    ${If} $RootDirLen < 4
-      EnableWindow $NextButton 0
-    ${Else}
-      EnableWindow $NextButton 1
-    ${EndIf}
-  ${EndIf}
-
-  Call UpdateFreeSpace
 
 FunctionEnd
 
 Function UpdateFreeSpace
 
-  ${NSD_GetText} $InstallDirBox $0
-  ${GetRoot} "$0" $RootDir
-  StrLen $RootDirLen $0
+  ${NSD_GetText} $InstallDirBox $R0
+  ${GetRoot} "$R0" $RootDir
+  StrCpy $RootDirSlash "$R0" 3
+  StrCpy $RootDirSlash "$RootDirSlash" 3 -1
+  StrLen $Len_RootDir $R0
 
-  ${DriveSpace} $RootDir "/D=F /S=M" $6
+  ${DriveSpace} $RootDir "/D=F /S=M" $RootDirFreeSpace
 
-  ${IfNot} $6 == ""
-  ${AndIfNot} $6 == 0
-  ${AndIf} $RootDirLen >= 4
+  ${IfNot} $RootDirFreeSpace == ""
+  ${AndIfNot} $RootDirFreeSpace == 0
+  ${AndIf} $Len_RootDir >= 4
+  ${AndIf} $RootDirSlash == "\"
     EnableWindow $NextButton 1
   ${Else}
     EnableWindow $NextButton 0
-    SendMessage $FreeSpace ${WM_SETTEXT} 0 ""
   ${EndIf}
 
   ${IfNot} $RootDir == ""
-  ${AndIfNot} $6 == ""
-  ${AndIfNot} $6 == 0
-    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:Space available: $6 MB"
+  ${AndIfNot} $RootDirFreeSpace == ""
+  ${AndIfNot} $RootDirFreeSpace == 0
+    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:Space available: $RootDirFreeSpace MB"
+  ${Else}
+    SendMessage $FreeSpace ${WM_SETTEXT} 0 ""
   ${EndIf}
 
 FunctionEnd
@@ -348,28 +355,28 @@ Function UpdateReqSpace
   SectionGetSize ${SecMain} $SecSize
   IntOp $SecSize $SecSize * 1024
 
-  StrCpy $9 " bytes"
+  StrCpy $SecSizeUnit " bytes"
 
-  ${If} $SecSize > 1024
+  ${If} $SecSize > 1023
   ${OrIf} $SecSize < 0
     System::Int64Op $SecSize / 1024
     Pop $SecSize
-    StrCpy $9 " KB"
+    StrCpy $SecSizeUnit " KB"
     ${If} $SecSize > 1024
     ${OrIf} $SecSize < 0
       System::Int64Op $SecSize / 1024
       Pop $SecSize
-      StrCpy $9 " MB"
+      StrCpy $SecSizeUnit " MB"
       ${If} $SecSize > 1024
       ${OrIf} $SecSize < 0
         System::Int64Op $SecSize / 1024
         Pop $SecSize
-        StrCpy $9 " GB"
+        StrCpy $SecSizeUnit " GB"
       ${EndIf}
     ${EndIf}
   ${EndIf}
 
-   SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:Space required: $SecSize$9"
+   SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:Space required: $SecSize$SecSizeUnit"
 
 FunctionEnd
 
