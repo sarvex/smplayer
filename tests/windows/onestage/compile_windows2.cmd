@@ -158,14 +158,7 @@ if [%runsvnup%]==[yes] (
   echo.
 )
 
-call getrev.cmd
-
-:: Get value of #define USE_SVN_VERSIONS
-for /f "tokens=3" %%j in ('type src\version.cpp ^| find "USE_SVN_VERSIONS"') do set use_svn_revision=%%j
-
-if [%use_svn_revision%]==[1] (
-  set qmake_defs=%qmake_defs% HAVE_SVN_REVISION_H
-)
+call getrev2.cmd
 
 cd dxlist
 for %%F in (directx\d3dtypes.h directx\ddraw.h directx\dsound.h) do if not exist %%F goto skip_dxlist
