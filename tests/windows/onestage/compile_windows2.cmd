@@ -108,11 +108,8 @@ if [%gcc_target%]==[x86_64-w64-mingw32] (
 )
 
 :: MinGW locations from GCC
-for /f "usebackq tokens=1 delims=/" %%i in (`"gcc -print-search-dirs 2>&1 | find "install""`) do set MINGW_DIR=%%i
-for /f "tokens=2 delims= " %%i in ("%MINGW_DIR%") do set MINGW_DIR=%%i
-if %MINGW_DIR:~-1%==. set MINGW_DIR=%MINGW_DIR:~0,-1%
-if %MINGW_DIR:~-1%==. set MINGW_DIR=%MINGW_DIR:~0,-1%
-if %MINGW_DIR:~-1%==\ set MINGW_DIR=%MINGW_DIR:~0,-1%
+for /f "usebackq tokens=*" %%d in (`where gcc.exe`) do set MINGW_DIR=%%d
+set MINGW_DIR=%MINGW_DIR:~0,-8%
 
 :: Qt locations from QMAKE
 for /f "tokens=*" %%i in ('qmake -query QT_INSTALL_PREFIX') do set QT_DIR=%%i
