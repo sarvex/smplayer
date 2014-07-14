@@ -18,7 +18,7 @@
 ;Compressor
 
   SetCompressor /SOLID lzma
-  SetCompressorDictSize 32
+  SetCompressorDictSize 128
 
 ;--------------------------------
 ;Additional plugin folders

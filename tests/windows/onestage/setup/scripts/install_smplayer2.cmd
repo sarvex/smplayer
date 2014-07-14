@@ -14,8 +14,8 @@ echo.
 echo Warning: it will only work with sources from the SVN and the command svn has to be in the path
 echo.
 
-set /P QT_VER="Qt Version (Default: 4.8.4): "
-if "%QT_VER%"=="" set QT_VER=4.8.4
+set /P QT_VER="Qt Version (Default: 4.8.6): "
+if "%QT_VER%"=="" set QT_VER=4.8.6
 
 set SMPLAYER_DIR=svn\smplayer
 set SMTUBE_DIR=svn\smtube
@@ -63,9 +63,9 @@ if %QT_VER% lss 5.0.0 (
 
 ) else if %QT_VER% geq 5.0.0 (
 
-  copy %QT_DIR%\bin\icudt51.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\icuin51.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\icuuc51.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\icudt*.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\icuin*.dll %OUTPUT_DIR%
+  copy %QT_DIR%\bin\icuuc*.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Core.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Gui.dll %OUTPUT_DIR%
   copy %QT_DIR%\bin\Qt5Network.dll %OUTPUT_DIR%
