@@ -122,12 +122,18 @@ svn export --force %SMPLAYER_DIR%\docs %OUTPUT_DIR%\docs
 echo.
 echo --         Icon Themes         --
 echo.
-svn export --force %SMPLAYER_THEMES_DIR%\themes %OUTPUT_DIR%\themes
+for /f "tokens=*" %%a in ('dir /ad /b ^"%SMPLAYER_THEMES_DIR%\themes^"') do (
+xcopy "%SMPLAYER_THEMES_DIR%\themes\%%a\*.rcc" "%OUTPUT_DIR%\themes\%%a\"
+xcopy "%SMPLAYER_THEMES_DIR%\themes\%%a\README.txt" "%OUTPUT_DIR%\themes\%%a\"
+)
 
 echo.
 echo --            Skins            --
 echo.
-svn export --force %SMPLAYER_SKINS_DIR%\themes %OUTPUT_DIR%\themes
+for /f "tokens=*" %%b in ('dir /ad /b ^"%SMPLAYER_SKINS_DIR%\themes^"') do (
+xcopy "%SMPLAYER_SKINS_DIR%\themes\%%b\*.rcc" "%OUTPUT_DIR%\themes\%%b\"
+xcopy "%SMPLAYER_SKINS_DIR%\themes\%%b\main.css" "%OUTPUT_DIR%\themes\%%b\"
+)
 
 echo.
 echo --           SMTube            --
