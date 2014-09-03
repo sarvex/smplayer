@@ -98,7 +98,6 @@ copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
 copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
 
-copy
 echo.
 echo --        Translations         --
 echo.
