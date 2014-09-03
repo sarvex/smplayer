@@ -29,16 +29,18 @@ set QT_DIR=C:\Qt\%QT_VER%
 
 if [%X86_64%]==[yes] (
   set OUTPUT_DIR=%BUILD_PREFIX%\smplayer-build64
+  set OPENSSL_DIR=openssl64
 ) else (
   set OUTPUT_DIR=%BUILD_PREFIX%\smplayer-build
+  set OPENSSL_DIR=openssl
 )
 
 :: MPlayer files
 set MPLAYER_DIR=..\mplayer
 
-if exist %OUTPUT_DIR% (
-  rd /s %OUTPUT_DIR%
-)
+::if exist %OUTPUT_DIR% (
+::  rd /s %OUTPUT_DIR%
+::)
 
 :begin
 echo.
@@ -94,6 +96,9 @@ copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
 copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
 copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
+copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
+
+copy
 echo.
 echo --        Translations         --
 echo.
