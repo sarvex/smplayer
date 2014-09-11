@@ -7,6 +7,7 @@
 set start_dir=%~dp0
 
 set build_smtube=true
+set build_themes=true
 set build_pe=
 set runinstcmd=
 set runsvnup=yes
@@ -28,6 +29,7 @@ if "%1" == "-portable"      goto cfgPE
 if "%1" == "-nosmtube"      goto cfgSmtube
 if "%1" == "-noinst"        goto cfgInst
 if "%1" == "-noupdate"      goto cfgUpdate
+if "%1" == "-nothemes"      goto cfgThemes
 
 echo Unknown option: "%1"
 echo.
@@ -49,6 +51,7 @@ echo.
 echo Miscellaneous Options:
 echo   -noinst                Do not run installation script
 echo   -nosmtube              Do not compile SMTube
+echo   -nothemes              Do not compile Themes
 echo   -noupdate              Do not update before compiling
 echo.
 goto end
@@ -65,6 +68,7 @@ goto cmdline_parsing
 
 set qmake_defs=%qmake_defs% PORTABLE_APP
 set build_pe=true
+set build_themes=no
 set smtube_params=pe
 set runinstcmd=no
 shift
@@ -87,6 +91,12 @@ goto cmdline_parsing
 
 :cfgUpdate
 set runsvnup=no
+shift
+
+goto cmdline_parsing
+
+:cfgThemes
+set build_themes=no
 shift
 
 goto cmdline_parsing
@@ -173,11 +183,26 @@ lrelease smplayer.pro
 qmake "DEFINES += %qmake_defs%"
 mingw32-make
 
+:: SMTube
 if [%build_smtube%]==[true] (
   cd %SMTUBE_DIR%
   call compile_windows.cmd %smtube_params%
 )
 
+:: Themes
+if [%build_themes%]==[true] (
+
+  cd %SMPLAYER_THEMES_DIR%
+  call clean_windows.cmd
+  cd themes && mingw32-make
+
+  cd %SMPLAYER_SKINS_DIR%
+  call clean_windows.cmd
+  cd themes && mingw32-make
+  
+)
+
+:: Installation
 if not [%runinstcmd%]==[no] (
   cd %SMPLAYER_DIR%\setup\scripts
   call install_smplayer2.cmd
