@@ -21,6 +21,15 @@ set config_file=setup\scripts\win32inst_vars.cmd
 :: Default prefix
 for /f %%i in ("setup") do set BUILD_PREFIX=%%~fi
 
+:: Default source dirs
+set SMTUBE_DIR=..\smtube
+set SMPLAYER_SKINS_DIR=..\smplayer-skins
+set SMPLAYER_THEMES_DIR=..\smplayer-themes
+
+rem set SMTUBE_DIR=..\..\smtube\trunk
+rem set SMPLAYER_SKINS_DIR=..\..\smplayer-skins\trunk
+rem set SMPLAYER_THEMES_DIR=..\..\smplayer-themes\trunk
+
 :cmdline_parsing
 if "%1" == ""               goto build_env_info
 if "%1" == "-h"             goto usage
@@ -130,20 +139,10 @@ set SMPLAYER_DIR=%start_dir%
 :: Does string have a trailing slash? if so remove it 
 if %SMPLAYER_DIR:~-1%==\ set SMPLAYER_DIR=%SMPLAYER_DIR:~0,-1%
 
-:: Using the \trunk (whole repo checked out as a whole or checked out separately)? 
-for %%a in ("%cd%") do set trunk_dir=%%~nxa
-
-if [%trunk_dir%]==[trunk] (
-  set svn_topdir=..\..
-  set svn_trunkdir=\trunk
-) else (
-  set svn_topdir=..
-  set svn_trunkdir=
-)
-
-for /f %%i in ("%svn_topdir%\smtube%svn_trunkdir%") do set SMTUBE_DIR=%%~fi
-for /f %%i in ("%svn_topdir%\smplayer-themes%svn_trunkdir%") do set SMPLAYER_THEMES_DIR=%%~fi
-for /f %%i in ("%svn_topdir%\smplayer-skins%svn_trunkdir%") do set SMPLAYER_SKINS_DIR=%%~fi
+:: Relative paths into full paths
+for /f %%i in ("%SMTUBE_DIR%") do set SMTUBE_DIR=%%~fi
+for /f %%i in ("%SMPLAYER_THEMES_DIR%") do set SMPLAYER_THEMES_DIR=%%~fi
+for /f %%i in ("%SMPLAYER_SKINS_DIR%") do set SMPLAYER_SKINS_DIR=%%~fi
 
 :: Create var batch file
 echo set SMPLAYER_DIR=%SMPLAYER_DIR%>%config_file%
@@ -199,7 +198,7 @@ if [%build_themes%]==[true] (
   cd %SMPLAYER_SKINS_DIR%
   call clean_windows.cmd
   cd themes && mingw32-make
-  
+
 )
 
 :: Installation
