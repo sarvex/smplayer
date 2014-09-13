@@ -8,6 +8,7 @@ set start_dir=%~dp0
 
 set build_smtube=true
 set build_themes=true
+set build_skins=true
 set build_pe=
 set runinstcmd=
 set runsvnup=yes
@@ -36,9 +37,11 @@ if "%1" == "-h"             goto usage
 if "%1" == "-prefix"        goto prefixTag
 if "%1" == "-portable"      goto cfgPE
 if "%1" == "-nosmtube"      goto cfgSmtube
+if "%1" == "-nothemes"      goto cfgThemes
+if "%1" == "-noskins"       goto cfgSkins
 if "%1" == "-noinst"        goto cfgInst
 if "%1" == "-noupdate"      goto cfgUpdate
-if "%1" == "-nothemes"      goto cfgThemes
+
 
 echo Unknown option: "%1"
 echo.
@@ -61,6 +64,7 @@ echo Miscellaneous Options:
 echo   -noinst                Do not run installation script
 echo   -nosmtube              Do not compile SMTube
 echo   -nothemes              Do not compile Themes
+echo   -noskins               Do not compile Skins
 echo   -noupdate              Do not update before compiling
 echo.
 goto end
@@ -78,6 +82,7 @@ goto cmdline_parsing
 set qmake_defs=%qmake_defs% PORTABLE_APP
 set build_pe=true
 set build_themes=no
+set build_skins=no
 set smtube_params=pe
 set runinstcmd=no
 shift
@@ -106,6 +111,10 @@ goto cmdline_parsing
 
 :cfgThemes
 set build_themes=no
+shift
+
+:cfgSkins
+set build_skins=no
 shift
 
 goto cmdline_parsing
@@ -195,6 +204,11 @@ if [%build_themes%]==[true] (
   call clean_windows.cmd
   cd themes && mingw32-make
 
+)
+
+:: Skins
+if [%build_skins%]==[true] (
+
   cd %SMPLAYER_SKINS_DIR%
   call clean_windows.cmd
   cd themes && mingw32-make
@@ -226,12 +240,11 @@ cd %start_dir%
 :: Reset
 set startdir=
 set build_smtube=
+set build_themes=
+set build_skins=
 set build_pe=
 set runinstcmd=
 set runsvnup=
 set smtube_params=
 set qmake_defs=
 set use_svn_revision=
-
-set svn_topdir=
-set svn_trunkdir=
