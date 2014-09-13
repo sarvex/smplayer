@@ -113,6 +113,8 @@ goto cmdline_parsing
 set build_themes=no
 shift
 
+goto cmdline_parsing
+
 :cfgSkins
 set build_skins=no
 shift
