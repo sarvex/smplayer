@@ -1,4 +1,4 @@
-;Installer script for win32/win64 SMPlayer
+;Portable script for win32/win64 SMPlayer
 ;Written by redxii (redxii@users.sourceforge.net)
 ;Tested/Developed with Unicode NSIS 2.46.5
 
@@ -9,10 +9,6 @@
 !define WIN64
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
-!endif
-
-!ifdef WIN64
-  !define DISABLE_CODECS
 !endif
 
 ;--------------------------------
@@ -73,9 +69,6 @@
   ;Default installation folder
   InstallDir "$EXEDIR\${SMPLAYER_OUT_DIR}"
 
-  ;Get installation folder from registry if available
-  InstallDirRegKey HKLM "${SMPLAYER_REG_KEY}" "Path"
-
   ;Vista+ XML manifest, does not affect older OSes
   RequestExecutionLevel user
 
@@ -104,6 +97,7 @@
   ;StrLen
   Var Len_InstallDirBox_State
   Var Len_RootDir
+
 ;--------------------------------
 ;Interface Settings
 
@@ -137,7 +131,7 @@
 ;Languages
 
   !insertmacro MUI_LANGUAGE "English"
-/*  !insertmacro MUI_LANGUAGE "Basque"
+  !insertmacro MUI_LANGUAGE "Basque"
   !insertmacro MUI_LANGUAGE "Catalan"
   !insertmacro MUI_LANGUAGE "Croatian"
   !insertmacro MUI_LANGUAGE "Czech"
@@ -164,9 +158,9 @@
   !insertmacro MUI_LANGUAGE "TradChinese"
 
 ;Custom translations for setup
-*/
+
   !insertmacro LANGFILE_INCLUDE "translations\english.nsh"
-/*  !insertmacro LANGFILE_INCLUDE "translations\basque.nsh"
+  !insertmacro LANGFILE_INCLUDE "translations\basque.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\catalan.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\croatian.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\czech.nsh"
@@ -190,7 +184,7 @@
   !insertmacro LANGFILE_INCLUDE "translations\slovenian.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\spanish.nsh"
   !insertmacro LANGFILE_INCLUDE "translations\thai.nsh"
-  !insertmacro LANGFILE_INCLUDE "translations\tradchinese.nsh"*/
+  !insertmacro LANGFILE_INCLUDE "translations\tradchinese.nsh"
 
 ;--------------------------------
 ;Reserve Files
@@ -227,6 +221,7 @@ Section MainFiles SecMain
     Delete $INSTDIR\styles.ass
     Delete $INSTDIR\yt.js
     Delete $INSTDIR\ytcode.script
+    Delete $INSTDIR\fonts.conf
 
     ; dirs
     RMDir /r $INSTDIR\file_settings
@@ -248,7 +243,6 @@ Section MainFiles SecMain
   Delete $INSTDIR\dvdmenus.txt
   Delete $INSTDIR\dxlist.exe
   Delete $INSTDIR\Finding_subtitles.txt
-  Delete $INSTDIR\fonts.conf
   Delete $INSTDIR\Install.txt
   Delete $INSTDIR\libeay32.dll
   Delete $INSTDIR\libgcc_s_seh-1.dll
@@ -271,7 +265,7 @@ Section MainFiles SecMain
   Delete $INSTDIR\ssleay32.dll
   Delete $INSTDIR\Watching_TV.txt
   Delete $INSTDIR\zlib1.dll
-  Sleep 20000
+  Sleep 100
 
   SetOutPath "$INSTDIR"
   File /x smplayer.exe /x smtube.exe "${SMPLAYER_BUILD_DIR}\*"
@@ -345,12 +339,11 @@ SectionEnd
 ;--------------------------------
 ;Installer functions
 
+/*Function .onInit
 
+  
 
-Function .onInit
-
-
-FunctionEnd
+FunctionEnd*/
 
 
 Function InstallDirectory
@@ -374,7 +367,7 @@ Function InstallDirectory
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
-  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Installation"
+  ${NSD_CreateCheckBox} 0 75u 100% 8u $(Reinstall_Msg5)
   Pop $PerformCleanInstall
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
