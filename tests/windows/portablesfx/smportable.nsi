@@ -2,11 +2,6 @@
 ;Written by redxii (redxii@users.sourceforge.net)
 ;Tested/Developed with Unicode NSIS 2.46.5
 
-!define VER_MAJOR 14
-!define VER_MINOR 9
-!define VER_BUILD 0
-!define VER_REVISION 6436
-!define WIN64
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
 !endif
@@ -308,7 +303,7 @@ Section MainFiles SecMain
   File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
 
   FileOpen $9 "$INSTDIR\mplayer\fonts\local.conf" w ;Opens a Empty File an fills it
-  FileWrite $9 "<cachedir>../fontconfig</cachedir>$\r$\n"
+  FileWrite $9 "<cachedir>./fontconfig</cachedir>$\r$\n"
   FileClose $9 ;Closes the filled file
 
   ${If} "$PerformCleanInstall_State" == 1
