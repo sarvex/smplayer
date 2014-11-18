@@ -2,9 +2,10 @@
 ;Written by redxii (redxii@users.sourceforge.net)
 ;Tested/Developed with Unicode NSIS 2.46.5
 
-!define VER_MAJOR 1
-!define VER_MINOR 2
-!define VER_BUILD 3
+!define VER_MAJOR 14
+!define VER_MINOR 9
+!define VER_BUILD 0
+!define VER_REVISION 6436
 !define WIN64
 !ifndef VER_MAJOR | VER_MINOR | VER_BUILD
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
@@ -86,6 +87,8 @@
 
   Var FreeSpace
   Var InstallDirectory
+  Var PerformCleanInstall
+  Var PerformCleanInstall_State
   Var NextButton
   Var InstallDirBox
   Var InstallDirBox_State
@@ -209,6 +212,67 @@
 ;Main SMPlayer files
 Section MainFiles SecMain
 
+  ${If} "$PerformCleanInstall_State" == 1
+    ; m3u8
+    Delete $INSTDIR\favorites.m3u8
+    Delete $INSTDIR\radio.m3u8
+    Delete $INSTDIR\tv.m3u8
+
+    ; ini
+    Delete $INSTDIR\smplayer.ini
+    Delete $INSTDIR\smtube.ini
+    Delete $INSTDIR\player_info.ini
+
+    ; misc
+    Delete $INSTDIR\styles.ass
+    Delete $INSTDIR\yt.js
+    Delete $INSTDIR\ytcode.script
+
+    ; dirs
+    RMDir /r $INSTDIR\file_settings
+    RMDir /r $INSTDIR\fontconfig
+    RMDir /r $INSTDIR\screenshots
+  ${EndIf}
+
+  RMDir /r $INSTDIR\docs
+  RMDir /r $INSTDIR\imageformats
+  RMDir /r $INSTDIR\mplayer
+  RMDir /r $INSTDIR\shortcuts
+  RMDir /r $INSTDIR\themes
+  RMDir /r $INSTDIR\translations
+
+  Delete $INSTDIR\Copying.txt
+  Delete $INSTDIR\Copying_BSD.txt
+  Delete $INSTDIR\Copying_libmaia.txt
+  Delete $INSTDIR\Copying_openssl.txt
+  Delete $INSTDIR\dvdmenus.txt
+  Delete $INSTDIR\dxlist.exe
+  Delete $INSTDIR\Finding_subtitles.txt
+  Delete $INSTDIR\fonts.conf
+  Delete $INSTDIR\Install.txt
+  Delete $INSTDIR\libeay32.dll
+  Delete $INSTDIR\libgcc_s_seh-1.dll
+  Delete $INSTDIR\libstdc++-6.dll
+  Delete $INSTDIR\libwinpthread-1.dll
+  Delete $INSTDIR\Not_so_obvious_things.txt
+  Delete $INSTDIR\Notes_about_mpv.txt
+  Delete $INSTDIR\Portable_Edition.txt
+  Delete $INSTDIR\QtCore4.dll
+  Delete $INSTDIR\QtGui4.dll
+  Delete $INSTDIR\QtNetwork4.dll
+  Delete $INSTDIR\QtScript4.dll
+  Delete $INSTDIR\QtXml4.dll
+  Delete $INSTDIR\Readme.txt
+  Delete $INSTDIR\Release_notes.txt
+  Delete $INSTDIR\sample.avi
+  Delete $INSTDIR\smplayer.exe
+  Delete $INSTDIR\smplayer_orig.ini
+  Delete $INSTDIR\smtube.exe
+  Delete $INSTDIR\ssleay32.dll
+  Delete $INSTDIR\Watching_TV.txt
+  Delete $INSTDIR\zlib1.dll
+  Sleep 20000
+
   SetOutPath "$INSTDIR"
   File /x smplayer.exe /x smtube.exe "${SMPLAYER_BUILD_DIR}\*"
 !ifdef WIN64
@@ -236,7 +300,7 @@ Section MainFiles SecMain
   File /r "${SMPLAYER_BUILD_DIR}\shortcuts\*.*"
 
   SetOutPath "$INSTDIR\mplayer"
-  File /r /x mplayer.exe /x mencoder.exe /x mplayer64.exe /x mencoder64.exe /x *.exe.debug "${SMPLAYER_BUILD_DIR}\mplayer\*.*"
+  File /r /x mplayer.exe /x mencoder.exe /x mplayer64.exe /x mencoder64.exe /x *.exe.debug /x buildinfo /x buildinfo64 "${SMPLAYER_BUILD_DIR}\mplayer\*.*"
 !ifdef WIN64
   File /oname=mplayer.exe "${SMPLAYER_BUILD_DIR}\mplayer\mplayer64.exe"
 !else
@@ -248,6 +312,30 @@ Section MainFiles SecMain
 
   SetOutPath "$INSTDIR\translations"
   File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
+
+  FileOpen $9 "$INSTDIR\mplayer\fonts\local.conf" w ;Opens a Empty File an fills it
+  FileWrite $9 "<cachedir>../fontconfig</cachedir>$\r$\n"
+  FileClose $9 ;Closes the filled file
+
+  ${If} "$PerformCleanInstall_State" == 1
+  ${OrIfNot} ${FileExists} "$INSTDIR\smplayer.ini"
+    FileOpen $8 "$INSTDIR\smplayer.ini" w ;Opens a Empty File an fills it
+    FileWrite $8 "[%General]$\r$\n"
+    FileWrite $8 "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
+    FileWrite $8 "[advanced]$\r$\n"
+    FileWrite $8 "mplayer_additional_options=-nofontconfig$\r$\n"
+    FileClose $8 ;Closes the filled file
+  ${EndIf}
+
+  FileOpen $7 "$INSTDIR\smplayer_orig.ini" w ;Opens a Empty File an fills it
+  FileWrite $7 "[%General]$\r$\n"
+  FileWrite $7 "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
+  FileWrite $7 "[advanced]$\r$\n"
+  FileWrite $7 "mplayer_additional_options=-nofontconfig$\r$\n"
+  FileClose $7 ;Closes the filled file
+
+  ; Delete empty Qt5 directory when using Qt4
+  RMDir $INSTDIR\platforms
 
 SectionEnd
 
@@ -270,7 +358,6 @@ Function InstallDirectory
   nsDialogs::Create /NOUNLOAD 1018
   Pop $InstallDirectory
 
-  Var /GLOBAL UpOptLabel
   nsDialogs::SetRTL $(^RTL)
 
   GetDlgItem $NextButton $HWNDPARENT 1 ; next=1, cancel=2, back=315
@@ -287,8 +374,8 @@ Function InstallDirectory
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
-  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Upgrade"
-  Pop $UpOptLabel
+  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Installation"
+  Pop $PerformCleanInstall
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
   Pop $SpaceReq
@@ -383,5 +470,6 @@ FunctionEnd
 Function InstallDirectoryLeave
 
   ${NSD_GetText} $InstallDirBox $INSTDIR
+  ${NSD_GetState} $PerformCleanInstall $PerformCleanInstall_State
 
 FunctionEnd
