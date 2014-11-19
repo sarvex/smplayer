@@ -93,6 +93,11 @@
   Var Len_InstallDirBox_State
   Var Len_RootDir
 
+  ;File
+  Var File_Local_Conf
+  Var File_Smplayer_Ini
+  Var File_Smplayer_Orig_Ini
+
 ;--------------------------------
 ;Interface Settings
 
@@ -231,35 +236,54 @@ Section MainFiles SecMain
   RMDir /r $INSTDIR\themes
   RMDir /r $INSTDIR\translations
 
-  Delete $INSTDIR\Copying.txt
-  Delete $INSTDIR\Copying_BSD.txt
-  Delete $INSTDIR\Copying_libmaia.txt
-  Delete $INSTDIR\Copying_openssl.txt
-  Delete $INSTDIR\dvdmenus.txt
+  ; exes
+  Delete $INSTDIR\smplayer.exe
+  Delete $INSTDIR\smtube.exe
   Delete $INSTDIR\dxlist.exe
-  Delete $INSTDIR\Finding_subtitles.txt
-  Delete $INSTDIR\Install.txt
-  Delete $INSTDIR\libeay32.dll
-  Delete $INSTDIR\libgcc_s_seh-1.dll
-  Delete $INSTDIR\libstdc++-6.dll
-  Delete $INSTDIR\libwinpthread-1.dll
-  Delete $INSTDIR\Not_so_obvious_things.txt
-  Delete $INSTDIR\Notes_about_mpv.txt
-  Delete $INSTDIR\Portable_Edition.txt
+
+  ; dlls
   Delete $INSTDIR\QtCore4.dll
   Delete $INSTDIR\QtGui4.dll
   Delete $INSTDIR\QtNetwork4.dll
   Delete $INSTDIR\QtScript4.dll
   Delete $INSTDIR\QtXml4.dll
+  Delete $INSTDIR\Qt5Core.dll
+  Delete $INSTDIR\Qt5Gui.dll
+  Delete $INSTDIR\Qt5Network.dll
+  Delete $INSTDIR\Qt5Widgets.dll
+  Delete $INSTDIR\Qt5Xml.dll
+  Delete $INSTDIR\Qt5Script.dll
+
+  Delete $INSTDIR\icudt*.dll
+  Delete $INSTDIR\icuin*.dll
+  Delete $INSTDIR\icuuc*.dll
+  Delete $INSTDIR\libeay32.dll
+  Delete $INSTDIR\ssleay32.dll
+
+  Delete $INSTDIR\libgcc_s_seh-1.dll
+  Delete $INSTDIR\libgcc_s_dw2-1.dll
+  Delete $INSTDIR\libstdc++-6.dll
+  Delete $INSTDIR\libwinpthread-1.dll
+  Delete $INSTDIR\mingwm10.dll 
+  Delete $INSTDIR\zlib1.dll
+
+  ; misc
+  Delete $INSTDIR\Copying.txt
+  Delete $INSTDIR\Copying_BSD.txt
+  Delete $INSTDIR\Copying_libmaia.txt
+  Delete $INSTDIR\Copying_openssl.txt
+  Delete $INSTDIR\dvdmenus.txt
+  Delete $INSTDIR\Finding_subtitles.txt
+  Delete $INSTDIR\Install.txt
+  Delete $INSTDIR\Not_so_obvious_things.txt
+  Delete $INSTDIR\Notes_about_mpv.txt
+  Delete $INSTDIR\Portable_Edition.txt
   Delete $INSTDIR\Readme.txt
   Delete $INSTDIR\Release_notes.txt
   Delete $INSTDIR\sample.avi
-  Delete $INSTDIR\smplayer.exe
   Delete $INSTDIR\smplayer_orig.ini
-  Delete $INSTDIR\smtube.exe
-  Delete $INSTDIR\ssleay32.dll
   Delete $INSTDIR\Watching_TV.txt
-  Delete $INSTDIR\zlib1.dll
+
   Sleep 100
 
   SetOutPath "$INSTDIR"
@@ -302,26 +326,28 @@ Section MainFiles SecMain
   SetOutPath "$INSTDIR\translations"
   File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
 
-  FileOpen $9 "$INSTDIR\mplayer\fonts\local.conf" w ;Opens a Empty File an fills it
-  FileWrite $9 "<cachedir>./fontconfig</cachedir>$\r$\n"
-  FileClose $9 ;Closes the filled file
+  ;Fontconfig cache folder must be current dir "." otherwise for some reason the
+  ;cache is created one level up from the installed directory.
+  FileOpen $File_Local_Conf "$INSTDIR\mplayer\fonts\local.conf" w
+  FileWrite $File_Local_Conf "<cachedir>./fontconfig</cachedir>$\r$\n"
+  FileClose $File_Local_Conf
 
   ${If} "$PerformCleanInstall_State" == 1
   ${OrIfNot} ${FileExists} "$INSTDIR\smplayer.ini"
-    FileOpen $8 "$INSTDIR\smplayer.ini" w ;Opens a Empty File an fills it
-    FileWrite $8 "[%General]$\r$\n"
-    FileWrite $8 "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-    FileWrite $8 "[advanced]$\r$\n"
-    FileWrite $8 "mplayer_additional_options=-nofontconfig$\r$\n"
-    FileClose $8 ;Closes the filled file
+    FileOpen $File_Smplayer_Ini "$INSTDIR\smplayer.ini" w
+    FileWrite $File_Smplayer_Ini "[%General]$\r$\n"
+    FileWrite $File_Smplayer_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
+    FileWrite $File_Smplayer_Ini "[advanced]$\r$\n"
+    FileWrite $File_Smplayer_Ini "mplayer_additional_options=-nofontconfig$\r$\n"
+    FileClose $File_Smplayer_Ini
   ${EndIf}
 
-  FileOpen $7 "$INSTDIR\smplayer_orig.ini" w ;Opens a Empty File an fills it
-  FileWrite $7 "[%General]$\r$\n"
-  FileWrite $7 "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-  FileWrite $7 "[advanced]$\r$\n"
-  FileWrite $7 "mplayer_additional_options=-nofontconfig$\r$\n"
-  FileClose $7 ;Closes the filled file
+  FileOpen $File_Smplayer_Orig_Ini "$INSTDIR\smplayer_orig.ini" w
+  FileWrite $File_Smplayer_Orig_Ini "[%General]$\r$\n"
+  FileWrite $File_Smplayer_Orig_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
+  FileWrite $File_Smplayer_Orig_Ini "[advanced]$\r$\n"
+  FileWrite $File_Smplayer_Orig_Ini "mplayer_additional_options=-nofontconfig$\r$\n"
+  FileClose $File_Smplayer_Orig_Ini
 
   ; Delete empty Qt5 directory when using Qt4
   RMDir $INSTDIR\platforms
