@@ -73,15 +73,10 @@
 ;--------------------------------
 ;Variables
 
-  Var FreeSpace
   Var InstallDirectory
-  Var PerformCleanInstall
-  Var PerformCleanInstall_State
+  Var FreeSpace
   Var NextButton
-  Var InstallDirBox
-  Var InstallDirBox_State
   Var BrowseBtn
-  Var hCtl__1_GroupBox1
   Var RootDir
   Var RootDirFreeSpace
   Var RootDirSlash
@@ -89,8 +84,14 @@
   Var SecSize
   Var SecSizeUnit
 
+  Var InstallDirGroupBox
+  Var RemoveUserSettings
+  Var RemoveUserSettings_State
+  Var InstallDirSelection
+  Var InstallDirSelection_State
+
   ;StrLen
-  Var Len_InstallDirBox_State
+  Var Len_InstallDir
   Var Len_RootDir
 
   ;File
@@ -206,29 +207,6 @@
 ;Main SMPlayer files
 Section MainFiles SecMain
 
-  ${If} "$PerformCleanInstall_State" == 1
-    ; m3u8
-    Delete $INSTDIR\favorites.m3u8
-    Delete $INSTDIR\radio.m3u8
-    Delete $INSTDIR\tv.m3u8
-
-    ; ini
-    Delete $INSTDIR\smplayer.ini
-    Delete $INSTDIR\smtube.ini
-    Delete $INSTDIR\player_info.ini
-
-    ; misc
-    Delete $INSTDIR\styles.ass
-    Delete $INSTDIR\yt.js
-    Delete $INSTDIR\ytcode.script
-    Delete $INSTDIR\fonts.conf
-
-    ; dirs
-    RMDir /r $INSTDIR\file_settings
-    RMDir /r $INSTDIR\fontconfig
-    RMDir /r $INSTDIR\screenshots
-  ${EndIf}
-
   RMDir /r $INSTDIR\docs
   RMDir /r $INSTDIR\imageformats
   RMDir /r $INSTDIR\mplayer
@@ -262,6 +240,7 @@ Section MainFiles SecMain
 
   Delete $INSTDIR\libgcc_s_seh-1.dll
   Delete $INSTDIR\libgcc_s_dw2-1.dll
+  Delete $INSTDIR\libgcc_s_sjlj-1.dll
   Delete $INSTDIR\libstdc++-6.dll
   Delete $INSTDIR\libwinpthread-1.dll
   Delete $INSTDIR\mingwm10.dll 
@@ -284,7 +263,30 @@ Section MainFiles SecMain
   Delete $INSTDIR\smplayer_orig.ini
   Delete $INSTDIR\Watching_TV.txt
 
-  Sleep 100
+  ${If} "$RemoveUserSettings_State" == 1
+    ; m3u8
+    Delete $INSTDIR\favorites.m3u8
+    Delete $INSTDIR\radio.m3u8
+    Delete $INSTDIR\tv.m3u8
+
+    ; ini
+    Delete $INSTDIR\smplayer.ini
+    Delete $INSTDIR\smtube.ini
+    Delete $INSTDIR\player_info.ini
+
+    ; misc
+    Delete $INSTDIR\styles.ass
+    Delete $INSTDIR\yt.js
+    Delete $INSTDIR\ytcode.script
+    Delete $INSTDIR\fonts.conf
+
+    ; dirs
+    RMDir /r $INSTDIR\file_settings
+    RMDir /r $INSTDIR\fontconfig
+    RMDir /r $INSTDIR\screenshots
+  ${EndIf}
+
+  Sleep 1000
 
   SetOutPath "$INSTDIR"
   File /x smplayer.exe /x smtube.exe "${SMPLAYER_BUILD_DIR}\*"
@@ -332,7 +334,7 @@ Section MainFiles SecMain
   FileWrite $File_Local_Conf "<cachedir>./fontconfig</cachedir>$\r$\n"
   FileClose $File_Local_Conf
 
-  ${If} "$PerformCleanInstall_State" == 1
+  ${If} "$RemoveUserSettings_State" == 1
   ${OrIfNot} ${FileExists} "$INSTDIR\smplayer.ini"
     FileOpen $File_Smplayer_Ini "$INSTDIR\smplayer.ini" w
     FileWrite $File_Smplayer_Ini "[%General]$\r$\n"
@@ -366,7 +368,6 @@ SectionEnd
 
 FunctionEnd*/
 
-
 Function InstallDirectory
 
   nsDialogs::Create /NOUNLOAD 1018
@@ -378,18 +379,18 @@ Function InstallDirectory
   !insertmacro MUI_HEADER_TEXT "Choose Install Directory" "Choose the folder in which to extract $(^NameDA)."
 
   ${NSD_CreateLabel} 0 0 100% 16u "Setup will extract $(^NameDA) in the following folder. To extract to a different folder, click Browse and select another folder. $_CLICK"
-  ${NSD_CreateGroupBox} 0u 30u 100% 35u "Destination Folder"
-  Pop $hCtl__1_GroupBox1
+  ${NSD_CreateGroupBox} 0u 30u 100% 35u $(^DirSubText)
+  Pop $InstallDirGroupBox
   
   ${NSD_CreateText} 10u 45u 210u 12u "$INSTDIR"
-  Pop $InstallDirBox
+  Pop $InstallDirSelection
   
   ; === Browse (type: Button) ===
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
   ${NSD_CreateCheckBox} 0 75u 100% 8u $(Reinstall_Msg5)
-  Pop $PerformCleanInstall
+  Pop $RemoveUserSettings
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
   Pop $SpaceReq
@@ -398,7 +399,7 @@ Function InstallDirectory
   Pop $FreeSpace
 
   ${NSD_OnClick} $Browsebtn SelectDirectory
-  ${NSD_OnChange} $InstallDirBox UpdateFreeSpace
+  ${NSD_OnChange} $InstallDirSelection UpdateFreeSpace
 
   Call UpdateFreeSpace
   Call UpdateReqSpace
@@ -410,13 +411,13 @@ FunctionEnd
 Function SelectDirectory
 
   nsDialogs::SelectFolderDialog $(^DirBrowseText) "$EXEDIR"
-  Pop $InstallDirBox_State
-  ${Unless} $InstallDirBox_State == "error"
-    StrLen $Len_InstallDirBox_State $InstallDirBox_State
-    ${If} $Len_InstallDirBox_State < 4
-      ${NSD_SetText} $InstallDirBox "$InstallDirBox_State${SMPLAYER_OUT_DIR}"
+  Pop $InstallDirSelection_State
+  ${Unless} $InstallDirSelection_State == "error"
+    StrLen $Len_InstallDir $InstallDirSelection_State
+    ${If} $Len_InstallDir < 4
+      ${NSD_SetText} $InstallDirSelection "$InstallDirSelection_State${SMPLAYER_OUT_DIR}"
     ${Else}
-      ${NSD_SetText} $InstallDirBox "$InstallDirBox_State\${SMPLAYER_OUT_DIR}"
+      ${NSD_SetText} $InstallDirSelection "$InstallDirSelection_State\${SMPLAYER_OUT_DIR}"
     ${EndIf}
   ${EndIf}
 
@@ -424,7 +425,7 @@ FunctionEnd
 
 Function UpdateFreeSpace
 
-  ${NSD_GetText} $InstallDirBox $R0
+  ${NSD_GetText} $InstallDirSelection $R0
   ${GetRoot} "$R0" $RootDir
   StrCpy $RootDirSlash "$R0" 3
   StrCpy $RootDirSlash "$RootDirSlash" 3 -1
@@ -477,13 +478,13 @@ Function UpdateReqSpace
     ${EndIf}
   ${EndIf}
 
-   SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:Space required: $SecSize$SecSizeUnit"
+  SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:Space required: $SecSize$SecSizeUnit"
 
 FunctionEnd
 
 Function InstallDirectoryLeave
 
-  ${NSD_GetText} $InstallDirBox $INSTDIR
-  ${NSD_GetState} $PerformCleanInstall $PerformCleanInstall_State
+  ${NSD_GetText} $InstallDirSelection $INSTDIR
+  ${NSD_GetState} $RemoveUserSettings $RemoveUserSettings_State
 
 FunctionEnd
