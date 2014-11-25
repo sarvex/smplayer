@@ -210,6 +210,7 @@ Section MainFiles SecMain
   RMDir /r $INSTDIR\docs
   RMDir /r $INSTDIR\imageformats
   RMDir /r $INSTDIR\mplayer
+  RMDir /r $INSTDIR\open-fonts
   RMDir /r $INSTDIR\shortcuts
   RMDir /r $INSTDIR\themes
   RMDir /r $INSTDIR\translations
