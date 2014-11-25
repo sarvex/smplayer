@@ -99,9 +99,14 @@ copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
 
 echo.
+echo --           Fonts             --
+echo.
+mkdir %OUTPUT_DIR%\open-fonts
+copy open-fonts\*.* %OUTPUT_DIR%\open-fonts\
+
+echo.
 echo --        Translations         --
 echo.
-
 mkdir %OUTPUT_DIR%\translations
 copy %SMPLAYER_DIR%\src\translations\*.qm %OUTPUT_DIR%\translations
 

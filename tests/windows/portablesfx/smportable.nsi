@@ -306,6 +306,10 @@ Section MainFiles SecMain
   SetOutPath "$INSTDIR\imageformats"
   File /r "${SMPLAYER_BUILD_DIR}\imageformats\*.*"
 
+  ;Open fonts
+  SetOutPath "$INSTDIR\open-fonts"
+  File /r "${SMPLAYER_BUILD_DIR}\open-fonts\*.*"
+
   ;Qt platforms (Qt 5+)
   SetOutPath "$INSTDIR\platforms"
   File /nonfatal /r "${SMPLAYER_BUILD_DIR}\platforms\*.*"
