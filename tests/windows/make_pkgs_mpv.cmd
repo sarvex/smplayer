@@ -1,3 +1,6 @@
+@setlocal enableextensions
+@cd /d "%~dp0"
+
 @echo off
 echo This batch file can help you to create a packages for SMPlayer and MPV.
 echo.
@@ -100,6 +103,21 @@ if "%USER_CHOICE%" == "4"  goto portable64
 goto end
 
 :portable
+
+set SymbolicTestDir1=SymbolicTestDir1-%RANDOM%
+set SymbolicTestDir2=SymbolicTestDir2-%RANDOM%
+mkdir %TEMP%\%SymbolicTestDir1% >nul
+mklink /D %TEMP%\%SymbolicTestDir2% %TEMP%\%SymbolicTestDir1% >nul
+
+if not exist %TEMP%\%SymbolicTestDir2% (
+  echo This script requires elevated privileges to create symbolic links. Run the script elevated ^(Run as administrator^) or enable SeCreateSymbolicLinkPrivilege on your account
+  echo in the Local Security Policy Editor.
+
+  rmdir %TEMP%\%SymbolicTestDir1%
+)
+rmdir %TEMP%\%SymbolicTestDir1%
+rmdir %TEMP%\%SymbolicTestDir2%
+
 :: Check for portable exes
 echo --- SMPlayer Portable Package [32-bit] ---
 echo.
@@ -140,7 +158,7 @@ copy /y %PORTABLE_EXE_DIR%\smplayer-portable.exe %SMPLAYER_PORTABLE_DIR%\smplaye
 copy /y %PORTABLE_EXE_DIR%\smtube-portable.exe %SMPLAYER_PORTABLE_DIR%\smtube.exe
 
 ::
-echo Linking MPV...
+echo Creating symbolic link to MPV...
 rem xcopy %MPV_DIR% %SMPLAYER_PORTABLE_DIR%\mplayer\ /E
 rem Requires SeCreateSymbolicLinkPrivilege
 rem mklink included by default Vista+, additional download on XP
@@ -186,6 +204,11 @@ if not exist %MPV_DIR% (
   goto end
 )
 
+for %%F in (%MPV_DIR%\mpv64.exe %MPV_DIR%\mpv64.com) do if not exist %%F (
+  echo 64-bit MPV executables not found!
+  goto end
+)
+
 ren %SMPLAYER_DIR64% smplayer-mpv-portable-%ALL_PKG_VER%-x64
 set SMPLAYER_PORTABLE_DIR=%TOP_LEVEL_DIR%\smplayer-mpv-portable-%ALL_PKG_VER%-x64
 
@@ -208,7 +231,7 @@ copy /y %PORTABLE_EXE_DIR%\smplayer-portable64.exe %SMPLAYER_PORTABLE_DIR%\smpla
 copy /y %PORTABLE_EXE_DIR%\smtube-portable64.exe %SMPLAYER_PORTABLE_DIR%\smtube.exe
 
 ::
-echo Linking MPV...
+echo Creating symbolic link to MPV...
 rem xcopy %MPV_DIR% %SMPLAYER_PORTABLE_DIR%\mplayer\ /E
 rem Requires SeCreateSymbolicLinkPrivilege
 rem mklink included by default Vista+, additional download on XP
@@ -235,7 +258,7 @@ ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv.com mpv64.com
 ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv.exe.bak32 mpv.exe
 ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv.com.bak32 mpv.com
 rem DO NOT use 'rmdir /q /s' to delete directory symbolic links
-rmdir /q /s %SMPLAYER_PORTABLE_DIR%\mplayer
+rmdir %SMPLAYER_PORTABLE_DIR%\mplayer
 ren %SMPLAYER_PORTABLE_DIR%\smplayer.bak smplayer.exe
 ren %SMPLAYER_PORTABLE_DIR%\smtube.bak smtube.exe
 ren %SMPLAYER_PORTABLE_DIR%\mplayer.bak mplayer
