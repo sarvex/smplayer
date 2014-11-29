@@ -152,6 +152,11 @@ ren %SMPLAYER_PORTABLE_DIR%\smtube.exe smtube.bak
 ren %SMPLAYER_PORTABLE_DIR%\mplayer mplayer.bak
 
 ::
+echo Creating screenshots dir...
+
+mkdir %SMPLAYER_PORTABLE_DIR%\screenshots
+
+::
 echo Copying portable .exe...
 
 copy /y %PORTABLE_EXE_DIR%\smplayer-portable.exe %SMPLAYER_PORTABLE_DIR%\smplayer.exe
@@ -166,13 +171,14 @@ mklink /D %SMPLAYER_PORTABLE_DIR%\mplayer %MPV_DIR%
 
 ::
 echo Finalizing package...
-7za a -t7z %OUTPUT_DIR%\smplayer-mpv-portable-%ALL_PKG_VER%.7z %SMPLAYER_PORTABLE_DIR% -xr!*.bak* -xr!open-fonts -xr!mpv64.exe -xr!mpv64.com -mx9 >nul
+7za a -t7z %OUTPUT_DIR%\smplayer-mpv-portable-%ALL_PKG_VER%.7z %SMPLAYER_PORTABLE_DIR% -xr!*.bak* -xr!open-fonts -xr!docs -xr!imageformats -xr!shortcuts -xr!Finding_subtitles.txt -xr!Not_so_obvious_things.txt -xr!Watching_TV.txt -xr!sample.avi -xr!Notes_about_mpv.txt -xr!dvdmenus.txt -xr!mpv64.exe -xr!mpv64.com -mx9 >nul
 
 echo.
 echo Restoring source folder(s) back to its original state...
 echo.
 rem DO NOT use 'rmdir /q /s' to delete directory symbolic links
 rmdir %SMPLAYER_PORTABLE_DIR%\mplayer
+rmdir %SMPLAYER_PORTABLE_DIR%\screenshots
 REM rmdir %SMPLAYER_PORTABLE_DIR%\screenshots
 REM del %SMPLAYER_PORTABLE_DIR%\smplayer.ini
 REM del %SMPLAYER_PORTABLE_DIR%\smplayer_orig.ini
@@ -183,7 +189,7 @@ ren %SMPLAYER_PORTABLE_DIR%\smtube.bak smtube.exe
 ren %SMPLAYER_PORTABLE_DIR%\mplayer.bak mplayer
 ren %SMPLAYER_PORTABLE_DIR% smplayer-build
 
-if not "%USER_CHOICE%" == "11"  goto end
+goto end
 
 :portable64
 echo --- SMPlayer Portable Package [64-bit] ---
@@ -225,6 +231,11 @@ ren %SMPLAYER_PORTABLE_DIR%\smtube.exe smtube.bak
 ren %SMPLAYER_PORTABLE_DIR%\mplayer mplayer.bak
 
 ::
+echo Creating screenshots dir...
+
+mkdir %SMPLAYER_PORTABLE_DIR%\screenshots
+
+::
 echo Copying portable .exe...
 
 copy /y %PORTABLE_EXE_DIR%\smplayer-portable64.exe %SMPLAYER_PORTABLE_DIR%\smplayer.exe
@@ -243,7 +254,7 @@ ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv64.com mpv.com
 
 ::
 echo Finalizing package...
-7za a -t7z %OUTPUT_DIR%\smplayer-mpv-portable-%ALL_PKG_VER%-x64.7z %SMPLAYER_PORTABLE_DIR% -xr!*.bak* -xr!open-fonts -mx9 >nul
+7za a -t7z %OUTPUT_DIR%\smplayer-mpv-portable-%ALL_PKG_VER%-x64.7z %SMPLAYER_PORTABLE_DIR% -xr!*.bak* -xr!open-fonts -xr!docs -xr!imageformats -xr!shortcuts -xr!Finding_subtitles.txt -xr!Not_so_obvious_things.txt -xr!Watching_TV.txt -xr!sample.avi -xr!Notes_about_mpv.txt -xr!dvdmenus.txt -mx9 >nul
 
 echo.
 echo Restoring source folder(s) back to its original state...
@@ -259,6 +270,7 @@ ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv.exe.bak32 mpv.exe
 ren %SMPLAYER_PORTABLE_DIR%\mplayer\mpv.com.bak32 mpv.com
 rem DO NOT use 'rmdir /q /s' to delete directory symbolic links
 rmdir %SMPLAYER_PORTABLE_DIR%\mplayer
+rmdir %SMPLAYER_PORTABLE_DIR%\screenshots
 ren %SMPLAYER_PORTABLE_DIR%\smplayer.bak smplayer.exe
 ren %SMPLAYER_PORTABLE_DIR%\smtube.bak smtube.exe
 ren %SMPLAYER_PORTABLE_DIR%\mplayer.bak mplayer
