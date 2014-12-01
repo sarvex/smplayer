@@ -96,7 +96,7 @@ copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
 copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
 copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
-copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
+rem copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
 
 echo.
 echo --           Fonts             --

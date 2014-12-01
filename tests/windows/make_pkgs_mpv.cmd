@@ -112,11 +112,8 @@ mklink /D %TEMP%\%SymbolicTestDir2% %TEMP%\%SymbolicTestDir1% >nul
 if not exist %TEMP%\%SymbolicTestDir2% (
   echo This script requires elevated privileges to create symbolic links. Run the script elevated ^(Run as administrator^) or enable SeCreateSymbolicLinkPrivilege on your account
   echo in the Local Security Policy Editor.
-
-  rmdir %TEMP%\%SymbolicTestDir1%
+  goto end
 )
-rmdir %TEMP%\%SymbolicTestDir1%
-rmdir %TEMP%\%SymbolicTestDir2%
 
 :: Check for portable exes
 echo --- SMPlayer Portable Package [32-bit] ---
@@ -279,5 +276,8 @@ ren %SMPLAYER_PORTABLE_DIR% smplayer-build64
 goto end
 
 :end
+
+rmdir %TEMP%\%SymbolicTestDir1% 2>nul
+rmdir %TEMP%\%SymbolicTestDir2% 2>nul
 
 pause
