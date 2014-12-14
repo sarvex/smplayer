@@ -26,13 +26,7 @@
   !define SMTUBE_VERSION "${VER_MAJOR}.${VER_MINOR}.${VER_BUILD}"
   !define SMTUBE_PRODUCT_VERSION "${VER_MAJOR}.${VER_MINOR}.${VER_BUILD}.0"
 !endif
-/*
-!ifdef WIN64
-  !define SMTUBE_BUILD_DIR "smtube-build64"
-!else
-  !define SMTUBE_BUILD_DIR "smtube-build"
-!endif
-*/
+
   !define SMPLAYER_REG_KEY "Software\SMPlayer"
   
   !define SMPLAYER_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\SMPlayer"
@@ -65,7 +59,7 @@
   InstallDirRegKey HKLM "${SMPLAYER_REG_KEY}" "Path"
 
   ;Vista+ XML manifest, does not affect older OSes
-  RequestExecutionLevel USER
+  RequestExecutionLevel admin
 
   ShowInstDetails show
   ShowUnInstDetails show
@@ -73,7 +67,7 @@
 ;--------------------------------
 ;Variables
 
-  Var Is_Portable
+  Var InstType_Is_Portable
   Var SMPlayer_StartMenuFolder
 
 ;--------------------------------
@@ -251,7 +245,7 @@ Section "SMTube (required)" SecSMTube
   SectionIn RO
 
   SetOutPath "$INSTDIR"
-  ${If} $Is_Portable == 1
+  ${If} $InstType_Is_Portable == 1
 !ifdef WIN64
     File /oname=smtube.exe "portable\smtube-portable64.exe"
 !else
@@ -288,9 +282,9 @@ FunctionEnd
 Function .onVerifyInstDir
 
   ${If} ${FileExists} "$INSTDIR\smplayer_orig.ini"
-    StrCpy $Is_Portable 1
+    StrCpy $InstType_Is_Portable 1
   ${Else}
-    StrCpy $Is_Portable 0
+    StrCpy $InstType_Is_Portable 0
   ${EndIf}
 
   IfFileExists "$INSTDIR\smplayer.exe" +2
@@ -300,7 +294,7 @@ FunctionEnd
 
 Function PageStartMenuPre
 
-  ${If} $Is_Portable == 1
+  ${If} $InstType_Is_Portable == 1
     Abort
   ${EndIf}
 
