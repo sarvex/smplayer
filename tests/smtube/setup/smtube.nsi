@@ -34,9 +34,7 @@
 !endif
 */
   !define SMPLAYER_REG_KEY "Software\SMPlayer"
-
   
-  !define SMPLAYER_UNINST_EXE "uninst.exe"
   !define SMPLAYER_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\SMPlayer"
 
 ;--------------------------------
@@ -269,10 +267,23 @@ Section "SMTube (required)" SecSMTube
   SetOutPath "$INSTDIR\docs\smtube"
   File "..\*.txt"
 
+  SetShellVarContext all
+  SetOutPath "$INSTDIR"
+  !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
+    CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMTube.lnk" "$INSTDIR\smtube.exe"
+  !insertmacro MUI_STARTMENU_WRITE_END
+
 SectionEnd
 
 ;--------------------------------
 ;Installer functions
+
+Function .onInit
+
+  ;Gets start menu folder name
+  !insertmacro MUI_STARTMENU_GETFOLDER "SMP_SMenu" $SMPlayer_StartMenuFolder
+
+FunctionEnd
 
 Function .onVerifyInstDir
 
