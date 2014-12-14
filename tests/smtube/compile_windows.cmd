@@ -112,21 +112,21 @@ mingw32-make
 :: Installation
 if not ERRORLEVEL 1 (
   if [%runnsiscmd%]==[yes] (
-    mkdir %SMTUBE_DIR%\setup\output
-    call %SMTUBE_DIR%\setup\scripts\make_pkgs.cmd -1
+    mkdir "%SMTUBE_DIR%\setup\output"
+    call "%SMTUBE_DIR%\setup\scripts\make_pkgs.cmd" -1
   )
 )
 
 if [%build_pe%]==[yes] (
-  mkdir %SMTUBE_DIR%\setup\portable
+  mkdir "%SMTUBE_DIR%\setup\portable"
 
   if [%X86_64%]==[yes] (
-    copy /y release\smtube.exe %SMTUBE_DIR%\setup\portable\smtube-portable64.exe
+    copy /y release\smtube.exe "%SMTUBE_DIR%\setup\portable\smtube-portable64.exe"
   ) else ( 
-    copy /y release\smtube.exe %SMTUBE_DIR%\setup\portable\smtube-portable.exe
+    copy /y release\smtube.exe "%SMTUBE_DIR%\setup\portable\smtube-portable.exe"
   )
 )
 :: Return to starting directory
-cd %start_dir%
+cd /d "%start_dir%"
 
 :end
