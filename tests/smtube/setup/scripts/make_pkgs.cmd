@@ -41,15 +41,6 @@ if not defined MAKENSIS_EXE_PATH (
   echo.
 )
 
-:: Works only in Vista+
-where /q where.exe 2>NUL && (
-  where /q 7za.exe 2>NUL || (
-  echo Warning: 7za.exe not found in path or current directory!
-  echo.
-  )
-)
-
-
 :cmdline_parsing
 if "%1" == ""  goto end
 if "%1" == "-1" (
@@ -111,7 +102,7 @@ goto end
 
 :nsispkg
 
-echo --- SMPlayer NSIS Package [32-bit] ---
+echo --- SMTube NSIS Package [32-bit] ---
 echo.
 
 %MAKENSIS_EXE_PATH% /V3 /DVER_MAJOR=%VER_MAJOR% /DVER_MINOR=%VER_MINOR% /DVER_BUILD=%VER_BUILD%%VER_REV_CMD% %TOP_LEVEL_DIR%\smtube.nsi
@@ -119,7 +110,7 @@ echo.
 goto end
 
 :nsispkg64
-echo --- SMPlayer NSIS Package [64-bit] ---
+echo --- SMTube NSIS Package [64-bit] ---
 echo.
 
 %MAKENSIS_EXE_PATH% /V3 /DVER_MAJOR=%VER_MAJOR% /DVER_MINOR=%VER_MINOR% /DVER_BUILD=%VER_BUILD%%VER_REV_CMD% /DWIN64 %TOP_LEVEL_DIR%\smtube.nsi

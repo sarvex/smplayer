@@ -8,7 +8,7 @@
 ::                                       ::
 
 set start_dir=%~dp0
-
+set all_script=build_all.cmd
 set build_pe=
 set runsvnup=yes
 set runnsiscmd=
@@ -17,6 +17,7 @@ set qmake_defs=
 :cmdline_parsing
 if "%1" == ""               goto build_env_info
 if "%1" == "-h"             goto usage
+if "%1" == "-all"           goto cfgAll
 if "%1" == "-portable"      goto cfgPE
 if "%1" == "-makeinst"      goto cfgInst
 if "%1" == "-noupdate"      goto cfgUpdate
@@ -27,7 +28,7 @@ echo.
 goto usage
 
 :usage
-echo Usage: compile_windows2.cmd [-portable] [-makeinst] [-noupdate]
+echo Usage: compile_windows2.cmd [-portable] [-makeinst] [-noupdate] [-all]
 echo.
 echo Configuration:
 echo   -h                     display this help and exit
@@ -36,10 +37,21 @@ echo Optional Features:
 echo   -portable              Compile portable executables
 echo.
 echo Miscellaneous Options:
+echo   -all                   Build normal and portable exes
 echo   -makeinst              Make NSIS Installer afer compiling
 echo   -noupdate              Do not update before compiling
 echo.
 goto end
+
+:cfgAll
+
+echo call clean_windows.cmd>%all_script%
+echo call compile_windows.cmd -portable ^&^& call clean_windows.cmd>>%all_script%
+echo call compile_windows.cmd -makeinst -noupdate>>%all_script%
+echo call :deleteSelf^&exit /b>>%all_script%
+echo :deleteSelf>>%all_script%
+echo start /b "" cmd ^/c del "%all_script%" ^&exit /b>>%all_script%
+%all_script%
 
 :cfgPE
 

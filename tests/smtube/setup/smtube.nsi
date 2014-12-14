@@ -239,7 +239,7 @@
 ;Installer Sections
 
 ;--------------------------------
-;Main SMPlayer files
+;Main SMTube files
 Section "SMTube (required)" SecSMTube
 
   SectionIn RO
