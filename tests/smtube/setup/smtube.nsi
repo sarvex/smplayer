@@ -26,13 +26,13 @@
   !define SMTUBE_VERSION "${VER_MAJOR}.${VER_MINOR}.${VER_BUILD}"
   !define SMTUBE_PRODUCT_VERSION "${VER_MAJOR}.${VER_MINOR}.${VER_BUILD}.0"
 !endif
-
+/*
 !ifdef WIN64
   !define SMTUBE_BUILD_DIR "smtube-build64"
 !else
   !define SMTUBE_BUILD_DIR "smtube-build"
 !endif
-
+*/
   !define SMPLAYER_REG_KEY "Software\SMPlayer"
 
   
@@ -260,14 +260,14 @@ Section "SMTube (required)" SecSMTube
     File /oname=smtube.exe "portable\smtube-portable.exe"
 !endif
   ${Else}
-    File "${SMTUBE_BUILD_DIR}\smtube.exe"
+    File "..\src\release\smtube.exe"
   ${EndIf}
 
   SetOutPath "$INSTDIR\translations"
-  File "${SMTUBE_BUILD_DIR}\translations\smtube*.qm"
+  File "..\src\translations\*.qm"
 
   SetOutPath "$INSTDIR\docs\smtube"
-  File "${SMTUBE_BUILD_DIR}\docs\smtube\*"
+  File "..\*.txt"
 
 SectionEnd
 
