@@ -444,11 +444,21 @@ SectionGroup "Playback Components"
 
     IfFileExists "$INSTDIR\mplayer\mpv*.exe" 0 mpvInstFailed
         WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPV 0x1
-        Goto done
+        Goto dl_youtube-dl
       mpvInstFailed:
-        DetailPrint "Failed to install MPV"
-        WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPV 0x0
-        Sleep 5000
+        Abort "Failed to install MPV"
+        ;WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPV 0x0
+        ;Sleep 5000
+        ;Goto done
+
+    dl_youtube-dl:
+    NSISdl::download /TIMEOUT=15000 \
+    "http://yt-dl.org/latest/youtube-dl.exe" \
+    "$INSTDIR\mplayer\youtube-dl.exe" /END
+    Pop $R0
+    StrCmp $R0 "success" +3 0
+      DetailPrint "YoutTube-DL download failed"
+      MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION "Try again?" /SD IDCANCEL IDRETRY dl_youtube-dl
 
     done:
 
