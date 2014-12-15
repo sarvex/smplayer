@@ -42,7 +42,11 @@
   !define SMPLAYER_UNINST_EXE "uninst.exe"
   !define SMPLAYER_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\SMPlayer"
 
-  !define CODEC_VERSION "windows-essential-20071007"
+!ifdef WIN64
+  !define MPV_FILENAME "mpv-x86_64-latest.7z"
+!else
+  !define MPV_FILENAME "mpv-i686-latest.7z"
+!endif
 
 ;--------------------------------
 ;General
@@ -167,6 +171,8 @@
 
 ;--------------------------------
 ;Pages
+
+  !define MUI_CUSTOMFUNCTION_GUIINIT newGuiInit
 
   ;Install pages
   #Welcome
@@ -296,9 +302,7 @@ Section $(Section_SMPlayer) SecSMPlayer
       Quit
     ${ElseIf} $Reinstall_OverwriteButton_State == 1
 
-!ifndef DISABLE_CODECS
-      Call Backup_Codecs
-!endif
+      Call Backup_MPV
 
       ${If} "$INSTDIR" == "$SMPlayer_Path"
         ExecWait '"$SMPlayer_UnStrPath" /S /R _?=$SMPlayer_Path'
@@ -378,10 +382,10 @@ SectionGroup $(ShortcutGroupTitle)
 SectionGroupEnd
 
 ;--------------------------------
-;MPlayer & MPlayer Codecs
-SectionGroup $(MPlayerGroupTitle)
+;MPlayer & MPV
+SectionGroup "Playback Components"
 
-  Section $(Section_MPlayer) SecMPlayer
+  Section "MPlayer" SecMPlayer
 
     SetOutPath "$INSTDIR\mplayer"
     File /r /x mplayer.exe /x mencoder.exe /x mplayer64.exe /x mencoder64.exe /x *.exe.debug /x buildinfo /x buildinfo64 "${SMPLAYER_BUILD_DIR}\mplayer\*.*"
@@ -397,29 +401,29 @@ SectionGroup $(MPlayerGroupTitle)
 
   Section /o "MPV" SecMPV
 
-    AddSize 22931
+    AddSize 30000
 
     ${If} $Restore_MPV == 1
       DetailPrint "Restoring MPV"
       CopyFiles /SILENT "$PLUGINSDIR\mpvbak\*" "$INSTDIR\mplayer"
       Goto check_mpv
-    ${ElseIf} ${FileExists} "$EXEDIR\mpv-i686-latest.7z"
-      CopyFiles /SILENT "$EXEDIR\mpv-i686-latest.7z" "$PLUGINSDIR\mpv.7z"
+    ${ElseIf} ${FileExists} "$EXEDIR\${MPV_FILENAME}"
+      CopyFiles /SILENT "$EXEDIR\${MPV_FILENAME}" "$PLUGINSDIR\mpv.7z"
       Goto extract_mpv
     ${EndIf}
 
     retry_mpv_dl:
 
-    DetailPrint $(Codecs_DL_Msg)
+    DetailPrint "Downloading MPV..."
 !ifdef USE_INETC
-    inetc::get /CONNECTTIMEOUT 15000 /RESUME "" /BANNER $(Codecs_DL_Msg) /CAPTION $(Codecs_DL_Msg) \
-    "http://mpv.srsfckn.biz/mpv-i686-latest.7z" \
+    inetc::get /CONNECTTIMEOUT 15000 /RESUME "" /BANNER "Downloading MPV..." /CAPTION "Downloading MPV..." \
+    "http://mpv.srsfckn.biz/${MPV_FILENAME}" \
     "$PLUGINSDIR\mpv.7z" /END
     Pop $R0
     StrCmp $R0 OK +4 0
 !else
     NSISdl::download /TIMEOUT=15000 \
-    "http://mpv.srsfckn.biz/mpv-i686-latest.7z" \
+    "http://mpv.srsfckn.biz/${MPV_FILENAME}" \
     "$PLUGINSDIR\mpv.7z" /END
     Pop $R0
     StrCmp $R0 "success" +4 0
@@ -431,10 +435,10 @@ SectionGroup $(MPlayerGroupTitle)
     extract_mpv:
 
     DetailPrint "Extracting MPV..."
-    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\mpv.7z" -y -o"$PLUGINSDIR\mpv"'
-
     CreateDirectory "$INSTDIR\mplayer"
-    CopyFiles /SILENT "$PLUGINSDIR\mpv\*" "$INSTDIR\mplayer"
+    nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\mpv.7z" -y -o"$INSTDIR\mplayer"'
+
+    ;CopyFiles /SILENT "$PLUGINSDIR\mpv\*" "$INSTDIR\mplayer"
 
     check_mpv:
 
@@ -504,7 +508,7 @@ Section -Post
 !endif
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayIcon" "$INSTDIR\smplayer.exe"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "DisplayVersion" "${SMPLAYER_VERSION}"
-  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://forum.smplayer.info"
+  WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "HelpLink" "http://smplayer.sourceforge.net/forum"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "Publisher" "Ricardo Villalba"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "UninstallString" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
   WriteRegStr HKLM "${SMPLAYER_UNINST_KEY}" "URLInfoAbout" "http://smplayer.sourceforge.net"
@@ -529,7 +533,7 @@ ${MementoSectionDone}
   !insertmacro MUI_DESCRIPTION_TEXT ${SecDesktopShortcut} $(Section_DesktopShortcut_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecStartMenuShortcut} $(Section_StartMenu_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecMPlayer} $(Section_MPlayer_Desc)
-  ;!insertmacro MUI_DESCRIPTION_TEXT ${SecCodecs} $(Section_MPlayerCodecs_Desc)
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecMPV} "A feature-rich fork of MPlayer && MPlayer2"
   !insertmacro MUI_DESCRIPTION_TEXT ${SecThemes} $(Section_IconThemes_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecTranslations} $(Section_Translations_Desc)
   !insertmacro MUI_DESCRIPTION_TEXT ${SecResetSettings} $(Section_ResetSettings_Desc)
@@ -689,9 +693,13 @@ FunctionEnd
 ;--------------------------------
 ;Installer functions
 
-Function .onInit
+Function newGUIInit
 
   StrCpy $1 ${SecMPlayer}
+
+FunctionEnd
+
+Function .onInit
 
   ${Unless} ${AtLeastWinXP}
     MessageBox MB_YESNO|MB_ICONSTOP $(OS_Not_Supported) /SD IDNO IDYES installonoldwindows
@@ -829,7 +837,7 @@ Function CheckPreviousVersion
 
 FunctionEnd
 
-Function Backup_Codecs
+Function Backup_MPV
 
   ${IfNot} ${SectionIsSelected} ${SecMPV}
     Return
