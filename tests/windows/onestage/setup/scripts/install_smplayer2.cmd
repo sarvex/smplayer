@@ -96,7 +96,7 @@ copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
 copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
 copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
 
-rem copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
+copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
 
 echo.
 echo --           Fonts             --
@@ -143,14 +143,6 @@ for /f "tokens=*" %%b in ('dir /ad /b ^"%SMPLAYER_SKINS_DIR%\themes^"') do (
 xcopy "%SMPLAYER_SKINS_DIR%\themes\%%b\*.rcc" "%OUTPUT_DIR%\themes\%%b\"
 xcopy "%SMPLAYER_SKINS_DIR%\themes\%%b\main.css" "%OUTPUT_DIR%\themes\%%b\"
 )
-
-echo.
-echo --           SMTube            --
-echo.
-copy %SMTUBE_DIR%\src\release\smtube.exe %OUTPUT_DIR%
-copy %SMTUBE_DIR%\src\translations\*.qm %OUTPUT_DIR%\translations
-mkdir %OUTPUT_DIR%\docs\smtube
-copy %SMTUBE_DIR%\*.txt %OUTPUT_DIR%\docs\smtube
 
 echo.
 echo --           MPlayer           --
