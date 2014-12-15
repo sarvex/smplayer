@@ -392,7 +392,7 @@ SectionGroup "Playback Components"
 !ifdef WIN64
     File /oname=mplayer.exe "${SMPLAYER_BUILD_DIR}\mplayer\mplayer64.exe"
 !else
-      File "${SMPLAYER_BUILD_DIR}\mplayer\mplayer.exe"
+    File "${SMPLAYER_BUILD_DIR}\mplayer\mplayer.exe"
 !endif
 
     WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPlayer 0x1
@@ -438,18 +438,13 @@ SectionGroup "Playback Components"
     CreateDirectory "$INSTDIR\mplayer"
     nsExec::Exec '"$PLUGINSDIR\7za.exe" x "$PLUGINSDIR\mpv.7z" -y -o"$INSTDIR\mplayer"'
 
-    ;CopyFiles /SILENT "$PLUGINSDIR\mpv\*" "$INSTDIR\mplayer"
-
     check_mpv:
 
     IfFileExists "$INSTDIR\mplayer\mpv*.exe" 0 mpvInstFailed
         WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPV 0x1
         Goto dl_youtube-dl
       mpvInstFailed:
-        Abort "Failed to install MPV"
-        ;WriteRegDWORD HKLM "${SMPLAYER_REG_KEY}" Installed_MPV 0x0
-        ;Sleep 5000
-        ;Goto done
+        Abort "Failed to install MPV."
 
     dl_youtube-dl:
     NSISdl::download /TIMEOUT=15000 \
@@ -457,10 +452,8 @@ SectionGroup "Playback Components"
     "$INSTDIR\mplayer\youtube-dl.exe" /END
     Pop $R0
     StrCmp $R0 "success" +3 0
-      DetailPrint "YoutTube-DL download failed"
+      DetailPrint "YouTube-DL download failed."
       MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION "Try again?" /SD IDCANCEL IDRETRY dl_youtube-dl
-
-    done:
 
   SectionEnd
 
