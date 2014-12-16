@@ -38,6 +38,7 @@ if [%X86_64%]==[yes] (
 :: MPlayer files
 set MPLAYER_DIR=..\mplayer
 
+:: Dangerous
 ::if exist %OUTPUT_DIR% (
 ::  rd /s %OUTPUT_DIR%
 ::)
@@ -48,85 +49,85 @@ echo --      SMPlayer, QT libs      --
 echo.
 
 mkdir %OUTPUT_DIR%
-copy %SMPLAYER_DIR%\src\release\smplayer.exe %OUTPUT_DIR%
-copy %SMPLAYER_DIR%\dxlist\release\dxlist.exe %OUTPUT_DIR%
-copy %SMPLAYER_DIR%\zlib\zlib1.dll %OUTPUT_DIR%
-copy %SMPLAYER_DIR%\*.txt %OUTPUT_DIR%
-copy %SMPLAYER_DIR%\setup\sample.avi %OUTPUT_DIR%
+copy "%SMPLAYER_DIR%\src\release\smplayer.exe" "%OUTPUT_DIR%"
+copy "%SMPLAYER_DIR%\dxlist\release\dxlist.exe" "%OUTPUT_DIR%"
+copy "%SMPLAYER_DIR%\zlib\zlib1.dll" "%OUTPUT_DIR%"
+copy "%SMPLAYER_DIR%\*.txt" "%OUTPUT_DIR%"
+copy "%SMPLAYER_DIR%\setup\sample.avi" "%OUTPUT_DIR%"
 
 :: Core files
 if %QT_VER% lss 5.0.0 (
 
-  copy %QT_DIR%\bin\QtCore4.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\QtGui4.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\QtNetwork4.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\QtXml4.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\QtScript4.dll %OUTPUT_DIR%
+  copy "%QT_DIR%\bin\QtCore4.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\QtGui4.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\QtNetwork4.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\QtXml4.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\QtScript4.dll" "%OUTPUT_DIR%"
 
 ) else if %QT_VER% geq 5.0.0 (
 
-  copy %QT_DIR%\bin\icudt*.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\icuin*.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\icuuc*.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Core.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Gui.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Network.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Widgets.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Xml.dll %OUTPUT_DIR%
-  copy %QT_DIR%\bin\Qt5Script.dll %OUTPUT_DIR%
+  copy "%QT_DIR%\bin\icudt*.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\icuin*.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\icuuc*.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Core.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Gui.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Network.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Widgets.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Xml.dll" "%OUTPUT_DIR%"
+  copy "%QT_DIR%\bin\Qt5Script.dll" "%OUTPUT_DIR%"
 
 )
 :: Qt Plugins
-mkdir %OUTPUT_DIR%\imageformats
+mkdir "%OUTPUT_DIR%\imageformats"
 if %QT_VER% lss 5.0.0 (
 
-  copy %QT_DIR%\plugins\imageformats\qjpeg4.dll %OUTPUT_DIR%\imageformats\
+  copy "%QT_DIR%\plugins\imageformats\qjpeg4.dll" "%OUTPUT_DIR%\imageformats\"
 
 ) else if %QT_VER% geq 5.0.0 (
 
-  mkdir %OUTPUT_DIR%\platforms  
-  copy %QT_DIR%\plugins\imageformats\qjpeg.dll %OUTPUT_DIR%\imageformats\
-  copy %QT_DIR%\plugins\platforms\qwindows.dll %OUTPUT_DIR%\platforms\
+  mkdir "%OUTPUT_DIR%\platforms"
+  copy "%QT_DIR%\plugins\imageformats\qjpeg.dll" "%OUTPUT_DIR%\imageformats\"
+  copy "%QT_DIR%\plugins\platforms\qwindows.dll" "%OUTPUT_DIR%\platforms\"
 
 )
 
 :: Toolchain specific files
-copy %QT_DIR%\bin\mingwm10.dll %OUTPUT_DIR%
-copy %QT_DIR%\bin\libgcc_s_*.dll %OUTPUT_DIR%
-copy "%QT_DIR%\bin\libstdc++-6.dll" %OUTPUT_DIR%
-copy %QT_DIR%\bin\libwinpthread-1.dll %OUTPUT_DIR%
+copy "%QT_DIR%\bin\mingwm10.dll" "%OUTPUT_DIR%"
+copy "%QT_DIR%\bin\libgcc_s_*.dll" "%OUTPUT_DIR%"
+copy "%QT_DIR%\bin\libstdc++-6.dll" "%OUTPUT_DIR%"
+copy "%QT_DIR%\bin\libwinpthread-1.dll" "%OUTPUT_DIR%"
 
-copy %OPENSSL_DIR%\*.dll %OUTPUT_DIR%
+copy "%OPENSSL_DIR%\*.dll" "%OUTPUT_DIR%"
 
 echo.
 echo --           Fonts             --
 echo.
-mkdir %OUTPUT_DIR%\open-fonts
-copy open-fonts\*.* %OUTPUT_DIR%\open-fonts\
+mkdir "%OUTPUT_DIR%\open-fonts"
+copy "open-fonts\*.*" "%OUTPUT_DIR%\open-fonts\"
 
 echo.
 echo --        Translations         --
 echo.
-mkdir %OUTPUT_DIR%\translations
-copy %SMPLAYER_DIR%\src\translations\*.qm %OUTPUT_DIR%\translations
+mkdir "%OUTPUT_DIR%\translations"
+copy "%SMPLAYER_DIR%\src\translations\*.qm" "%OUTPUT_DIR%\translations"
 
 echo.
 echo --       Qt Translations       --
 echo.
-copy %QT_DIR%\translations\qt_*.qm %OUTPUT_DIR%\translations
-copy %SMPLAYER_DIR%\qt-translations\qt_*.qm %OUTPUT_DIR%\translations
-del %OUTPUT_DIR%\translations\qt_help_*.qm
+copy "%QT_DIR%\translations\qt_*.qm" %OUTPUT_DIR%\translations
+copy "%SMPLAYER_DIR%\qt-translations\qt_*.qm" "%OUTPUT_DIR%\translations"
+del "%OUTPUT_DIR%\translations\qt_help_*.qm"
 
 echo.
 echo --         Shortcuts           --
 echo.
-mkdir %OUTPUT_DIR%\shortcuts
-copy %SMPLAYER_DIR%\src\shortcuts\*.keys %OUTPUT_DIR%\shortcuts
+mkdir "%OUTPUT_DIR%\shortcuts"
+copy "%SMPLAYER_DIR%\src\shortcuts\*.keys" "%OUTPUT_DIR%\shortcuts"
 
 echo.
 echo --        Documentation        --
 echo.
-svn export --force %SMPLAYER_DIR%\docs %OUTPUT_DIR%\docs
+svn export --force "%SMPLAYER_DIR%\docs" "%OUTPUT_DIR%\docs"
 
 echo.
 echo --         Icon Themes         --
@@ -147,7 +148,7 @@ xcopy "%SMPLAYER_SKINS_DIR%\themes\%%b\main.css" "%OUTPUT_DIR%\themes\%%b\"
 echo.
 echo --           MPlayer           --
 echo.
-mklink /D %OUTPUT_DIR%\mplayer %MPLAYER_DIR%
+mklink /D "%OUTPUT_DIR%\mplayer" "%MPLAYER_DIR%"
 
 echo.
 

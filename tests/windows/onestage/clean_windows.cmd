@@ -19,16 +19,3 @@ rd dxlist\release
 rd dxlist\debug
 rd src\release
 rd src\debug
-
-if exist ..\smtube\clean_windows.cmd (
-
-  cd ..\smtube
-  clean_windows.cmd
-  :: Return to original directory
-  cd %olddir%
-
-) else (
-
-  echo SMTube not found in specified directory... skipping
-
-)
