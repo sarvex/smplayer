@@ -456,13 +456,15 @@ SectionGroup "Playback Components"
         Abort "Failed to install MPV."
 
     dl_youtube-dl:
-    NSISdl::download /TIMEOUT=15000 \
-    "http://yt-dl.org/latest/youtube-dl.exe" \
-    "$INSTDIR\mplayer\youtube-dl.exe" /END
-    Pop $R0
-    StrCmp $R0 "success" +3 0
-      DetailPrint "YouTube-DL download failed."
-      MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION "Try again?" /SD IDCANCEL IDRETRY dl_youtube-dl
+    ${IfNot} ${FileExists} "$INSTDIR\mplayer\youtube-dl.exe"
+      NSISdl::download /TIMEOUT=15000 \
+      "http://yt-dl.org/latest/youtube-dl.exe" \
+      "$INSTDIR\mplayer\youtube-dl.exe" /END
+      Pop $R0
+      StrCmp $R0 "success" +3 0
+        DetailPrint "YouTube-DL download failed."
+        MessageBox MB_RETRYCANCEL|MB_ICONEXCLAMATION "Try again?" /SD IDCANCEL IDRETRY dl_youtube-dl
+    ${EndIf}
 
   SectionEnd
 
