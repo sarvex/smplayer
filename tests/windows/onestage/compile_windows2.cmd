@@ -165,8 +165,8 @@ if [%runsvnup%]==[yes] (
 call getrev2.cmd
 
 cd dxlist
-for %%F in (directx\d3dtypes.h directx\ddraw.h directx\dsound.h) do if not exist %%F goto skip_dxlist
 if [%build_pe%]==[yes] ( goto skip_dxlist )
+for %%F in (directx\d3dtypes.h directx\ddraw.h directx\dsound.h) do if not exist %%F goto skip_dxlist
 qmake
 mingw32-make
 
@@ -210,7 +210,7 @@ if [%build_pe%]==[yes] (
   if [%X86_64%]==[yes] (
     copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable64.exe"
   ) else ( 
-    copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe"    "%BUILD_PREFIX%\portable\smplayer-portable.exe"
+    copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable.exe"
   )
 )
 :: Return to starting directory
