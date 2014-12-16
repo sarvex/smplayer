@@ -106,6 +106,7 @@
   Var Reinstall_UninstallButton
   Var Reinstall_UninstallButton_State
   Var Restore_MPV
+  Var Restore_SMTube
   Var SMPlayer_Path
   Var SMPlayer_UnStrPath
   Var SMPlayer_StartMenuFolder
@@ -303,6 +304,7 @@ Section $(Section_SMPlayer) SecSMPlayer
     ${ElseIf} $Reinstall_OverwriteButton_State == 1
 
       Call Backup_MPV
+      Call Backup_SMTube
 
       ${If} "$INSTDIR" == "$SMPlayer_Path"
         ExecWait '"$SMPlayer_UnStrPath" /S /R _?=$SMPlayer_Path'
@@ -339,6 +341,11 @@ Section $(Section_SMPlayer) SecSMPlayer
   SetOutPath "$INSTDIR\shortcuts"
   File /r "${SMPLAYER_BUILD_DIR}\shortcuts\*.*"
 
+  ${If} $Restore_SMTube == 1
+    DetailPrint "Restoring SMTube"
+    CopyFiles /SILENT "$PLUGINSDIR\smtubebak\*" "$INSTDIR"
+  ${EndIf}
+
   SetOutPath "$PLUGINSDIR"
   File 7za.exe
 
@@ -372,7 +379,9 @@ SectionGroup $(ShortcutGroupTitle)
     !insertmacro MUI_STARTMENU_WRITE_BEGIN SMP_SMenu
       CreateDirectory "$SMPROGRAMS\$SMPlayer_StartMenuFolder"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer.lnk" "$INSTDIR\smplayer.exe"
-      ;CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMTube.lnk" "$INSTDIR\smtube.exe"
+      ${If} $Restore_SMTube == 1
+        CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMTube.lnk" "$INSTDIR\smtube.exe"
+      ${EndIf}
       WriteINIStr    "$SMPROGRAMS\$SMPlayer_StartMenuFolder\SMPlayer on the Web.url" "InternetShortcut" "URL" "http://smplayer.sourceforge.net"
       CreateShortCut "$SMPROGRAMS\$SMPlayer_StartMenuFolder\Uninstall SMPlayer.lnk" "$INSTDIR\${SMPLAYER_UNINST_EXE}"
     !insertmacro MUI_STARTMENU_WRITE_END
@@ -854,6 +863,22 @@ Function Backup_MPV
     Return
   NoBackup:
     StrCpy $Restore_MPV 0
+
+FunctionEnd
+
+Function Backup_SMTube
+
+  IfFileExists "$SMPlayer_Path\smtube.exe" 0 NoBackup
+    DetailPrint "Backing up SMTube..."
+    CreateDirectory "$PLUGINSDIR\smtubebak\translations"
+    CreateDirectory "$PLUGINSDIR\smtubebak\docs\smtube"
+    CopyFiles /SILENT "$SMPlayer_Path\smtube.exe" "$PLUGINSDIR\smtubebak"
+    CopyFiles /SILENT "$SMPlayer_Path\docs\smtube\*" "$PLUGINSDIR\smtubebak\docs\smtube"
+    CopyFiles /SILENT "$SMPlayer_Path\translations\smtube*.qm" "$PLUGINSDIR\smtubebak\translations"
+    StrCpy $Restore_SMTube 1
+    Return
+  NoBackup:
+    StrCpy $Restore_SMTube 0
 
 FunctionEnd
 
