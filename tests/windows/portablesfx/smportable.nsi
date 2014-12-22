@@ -6,6 +6,13 @@
   !error "Version information not defined (or incomplete). You must define: VER_MAJOR, VER_MINOR, VER_BUILD."
 !endif
 
+;Generate uninstall list
+!ifdef WIN64
+!system 'UnFiles.cmd smplayer-build64'
+!else
+!system 'UnFiles.cmd smplayer-build'
+!endif
+
 ;--------------------------------
 ;Compressor
 
@@ -128,6 +135,11 @@
   Page custom InstallDirectory InstallDirectoryLeave
   !insertmacro MUI_PAGE_INSTFILES
 
+  ;Uninstall pages
+  !define MUI_PAGE_CUSTOMFUNCTION_LEAVE un.PageUnConfirmLeave
+  !insertmacro MUI_UNPAGE_CONFIRM
+  !insertmacro MUI_UNPAGE_INSTFILES
+
 ;--------------------------------
 ;Languages
 
@@ -207,96 +219,22 @@
 ;Main SMPlayer files
 Section MainFiles SecMain
 
-  RMDir /r $INSTDIR\docs
-  RMDir /r $INSTDIR\imageformats
-  RMDir /r $INSTDIR\mplayer
-  RMDir /r $INSTDIR\open-fonts
-  RMDir /r $INSTDIR\shortcuts
-  RMDir /r $INSTDIR\themes
-  RMDir /r $INSTDIR\translations
-
-  ; exes
-  Delete $INSTDIR\smplayer.exe
-  Delete $INSTDIR\smtube.exe
-  Delete $INSTDIR\dxlist.exe
-
-  ; dlls
-  Delete $INSTDIR\QtCore4.dll
-  Delete $INSTDIR\QtGui4.dll
-  Delete $INSTDIR\QtNetwork4.dll
-  Delete $INSTDIR\QtScript4.dll
-  Delete $INSTDIR\QtXml4.dll
-  Delete $INSTDIR\Qt5Core.dll
-  Delete $INSTDIR\Qt5Gui.dll
-  Delete $INSTDIR\Qt5Network.dll
-  Delete $INSTDIR\Qt5Widgets.dll
-  Delete $INSTDIR\Qt5Xml.dll
-  Delete $INSTDIR\Qt5Script.dll
-
-  Delete $INSTDIR\icudt*.dll
-  Delete $INSTDIR\icuin*.dll
-  Delete $INSTDIR\icuuc*.dll
-  Delete $INSTDIR\libeay32.dll
-  Delete $INSTDIR\ssleay32.dll
-
-  Delete $INSTDIR\libgcc_s_seh-1.dll
-  Delete $INSTDIR\libgcc_s_dw2-1.dll
-  Delete $INSTDIR\libgcc_s_sjlj-1.dll
-  Delete $INSTDIR\libstdc++-6.dll
-  Delete $INSTDIR\libwinpthread-1.dll
-  Delete $INSTDIR\mingwm10.dll 
-  Delete $INSTDIR\zlib1.dll
-
-  ; misc
-  Delete $INSTDIR\Copying.txt
-  Delete $INSTDIR\Copying_BSD.txt
-  Delete $INSTDIR\Copying_libmaia.txt
-  Delete $INSTDIR\Copying_openssl.txt
-  Delete $INSTDIR\dvdmenus.txt
-  Delete $INSTDIR\Finding_subtitles.txt
-  Delete $INSTDIR\Install.txt
-  Delete $INSTDIR\Not_so_obvious_things.txt
-  Delete $INSTDIR\Notes_about_mpv.txt
-  Delete $INSTDIR\Portable_Edition.txt
-  Delete $INSTDIR\Readme.txt
-  Delete $INSTDIR\Release_notes.txt
-  Delete $INSTDIR\sample.avi
-  Delete $INSTDIR\smplayer_orig.ini
-  Delete $INSTDIR\Watching_TV.txt
-
   ${If} "$RemoveUserSettings_State" == 1
-    ; m3u8
-    Delete $INSTDIR\favorites.m3u8
-    Delete $INSTDIR\radio.m3u8
-    Delete $INSTDIR\tv.m3u8
-
-    ; ini
-    Delete $INSTDIR\smplayer.ini
-    Delete $INSTDIR\smtube.ini
-    Delete $INSTDIR\player_info.ini
-
-    ; misc
-    Delete $INSTDIR\styles.ass
-    Delete $INSTDIR\yt.js
-    Delete $INSTDIR\ytcode.script
-    Delete $INSTDIR\fonts.conf
-
-    ; dirs
-    RMDir /r $INSTDIR\file_settings
-    RMDir /r $INSTDIR\fontconfig
-    RMDir /r $INSTDIR\screenshots
+    ExecWait '"$INSTDIR\uninst.exe" /S _?=$INSTDIR'
+  ${Else}
+    ExecWait '"$INSTDIR\uninst.exe" /S /R _?=$INSTDIR'
   ${EndIf}
 
-  Sleep 1000
+  Sleep 500
 
   SetOutPath "$INSTDIR"
   File /x smplayer.exe /x smtube.exe "${SMPLAYER_BUILD_DIR}\*"
 !ifdef WIN64
   File /oname=smplayer.exe "portable\smplayer-portable64.exe"
-  File /oname=smtube.exe "portable\smtube-portable64.exe"
+  ;File /oname=smtube.exe "portable\smtube-portable64.exe"
 !else
   File /oname=smplayer.exe "portable\smplayer-portable.exe"
-  File /oname=smtube.exe "portable\smtube-portable.exe"
+  ;File /oname=smtube.exe "portable\smtube-portable.exe"
 !endif
 
   ;SMPlayer docs
@@ -333,28 +271,31 @@ Section MainFiles SecMain
   SetOutPath "$INSTDIR\translations"
   File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
 
-  ;Fontconfig cache folder must be current dir "." otherwise for some reason the
-  ;cache is created one level up from the installed directory.
+  ;Fontconfig cache folder must be current dir "./" otherwise for some reason the
+  ;cache is created one level up from the installed directory unlike the 7z version.
   FileOpen $File_Local_Conf "$INSTDIR\mplayer\fonts\local.conf" w
   FileWrite $File_Local_Conf "<cachedir>./fontconfig</cachedir>$\r$\n"
   FileClose $File_Local_Conf
 
-  ${If} "$RemoveUserSettings_State" == 1
-  ${OrIfNot} ${FileExists} "$INSTDIR\smplayer.ini"
+  ${IfNot} ${FileExists} "$INSTDIR\smplayer.ini"
     FileOpen $File_Smplayer_Ini "$INSTDIR\smplayer.ini" w
     FileWrite $File_Smplayer_Ini "[%General]$\r$\n"
     FileWrite $File_Smplayer_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-    FileWrite $File_Smplayer_Ini "[advanced]$\r$\n"
-    FileWrite $File_Smplayer_Ini "mplayer_additional_options=-nofontconfig$\r$\n"
+    FileWrite $File_Smplayer_Ini "[smplayer]$\r$\n"
+    FileWrite $File_Smplayer_Ini "check_if_upgraded=false$\r$\n"
     FileClose $File_Smplayer_Ini
   ${EndIf}
 
   FileOpen $File_Smplayer_Orig_Ini "$INSTDIR\smplayer_orig.ini" w
   FileWrite $File_Smplayer_Orig_Ini "[%General]$\r$\n"
   FileWrite $File_Smplayer_Orig_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-  FileWrite $File_Smplayer_Orig_Ini "[advanced]$\r$\n"
-  FileWrite $File_Smplayer_Orig_Ini "mplayer_additional_options=-nofontconfig$\r$\n"
+  FileWrite $File_Smplayer_Orig_Ini "[smplayer]$\r$\n"
+  FileWrite $File_Smplayer_Orig_Ini "check_if_upgraded=false$\r$\n"
   FileClose $File_Smplayer_Orig_Ini
+
+  CreateDirectory "$INSTDIR\screenshots"
+
+  WriteUninstaller "$INSTDIR\uninst.exe"
 
   ; Delete empty Qt5 directory when using Qt4
   RMDir $INSTDIR\platforms
@@ -491,5 +432,63 @@ Function InstallDirectoryLeave
 
   ${NSD_GetText} $InstallDirSelection $INSTDIR
   ${NSD_GetState} $RemoveUserSettings $RemoveUserSettings_State
+
+FunctionEnd
+
+Section Uninstall
+
+  ;Make sure SMPlayer is installed from where the uninstaller is being executed.
+  IfFileExists "$INSTDIR\smplayer.exe" +2
+    Abort $(Uninstaller_InvalidDirectory)
+
+  ;Generated by UnFiles.cmd from source
+  !include UnFiles.nsh
+
+  Delete "$INSTDIR\mplayer\fonts\local.conf"
+  RMDir  "$INSTDIR\mplayer\fonts"
+  RMDir  "$INSTDIR\mplayer"
+
+  Delete "$INSTDIR\smplayer_orig.ini"
+
+  ${un.GetParameters} $R0
+  ${un.GetOptionsS} $R0 "/R" $R1
+
+  IfErrors 0 preserve_settings
+    ; m3u8
+    Delete $INSTDIR\favorites.m3u8
+    Delete $INSTDIR\radio.m3u8
+    Delete $INSTDIR\tv.m3u8
+
+    ; ini
+    Delete $INSTDIR\smplayer.ini
+    Delete $INSTDIR\smtube.ini
+    Delete $INSTDIR\player_info.ini
+
+    ; misc
+    Delete $INSTDIR\styles.ass
+    Delete $INSTDIR\yt.js
+    Delete $INSTDIR\ytcode.script
+    Delete $INSTDIR\fonts.conf
+
+    ; dirs
+    RMDir /r $INSTDIR\file_settings
+    RMDir /r $INSTDIR\fontconfig
+    RMDir /r $INSTDIR\screenshots
+  preserve_settings:
+
+  Delete "$INSTDIR\uninst.exe"
+
+  RMDir "$INSTDIR"
+
+SectionEnd
+
+Function un.PageUnConfirmLeave
+
+  ${un.GetParameters} $R0
+  ${un.GetOptionsS} $R0 "/R" $R1
+
+  IfErrors 0 +3
+    MessageBox MB_YESNO|MB_ICONEXCLAMATION "You are about to completely remove $(^NameDA). Save any data before proceeding.$\r$\n$\r$\nContinue anyway?" /SD IDNO IDYES +2
+    Abort
 
 FunctionEnd
