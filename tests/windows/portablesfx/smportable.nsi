@@ -44,6 +44,8 @@
   !define SMPLAYER_OUT_DIR "smplayer-portable-${SMPLAYER_VERSION}"
 !endif
 
+  !define SMPLAYER_UNINST_EXE "smp-uninst.exe"
+
 ;--------------------------------
 ;General
 
@@ -220,9 +222,9 @@
 Section MainFiles SecMain
 
   ${If} "$RemoveUserSettings_State" == 1
-    ExecWait '"$INSTDIR\uninst.exe" /S _?=$INSTDIR'
+    ExecWait '"$INSTDIR\${SMPLAYER_UNINST_EXE}" /S _?=$INSTDIR'
   ${Else}
-    ExecWait '"$INSTDIR\uninst.exe" /S /R _?=$INSTDIR'
+    ExecWait '"$INSTDIR\${SMPLAYER_UNINST_EXE}" /S /R _?=$INSTDIR'
   ${EndIf}
 
   Sleep 500
@@ -295,7 +297,7 @@ Section MainFiles SecMain
 
   CreateDirectory "$INSTDIR\screenshots"
 
-  WriteUninstaller "$INSTDIR\uninst.exe"
+  WriteUninstaller "$INSTDIR\${SMPLAYER_UNINST_EXE}"
 
   ; Delete empty Qt5 directory when using Qt4
   RMDir $INSTDIR\platforms
@@ -476,7 +478,7 @@ Section Uninstall
     RMDir /r $INSTDIR\screenshots
   preserve_settings:
 
-  Delete "$INSTDIR\uninst.exe"
+  Delete "$INSTDIR\${SMPLAYER_UNINST_EXE}"
 
   RMDir "$INSTDIR"
 
