@@ -335,7 +335,7 @@ Function InstallDirectory
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
-  ${NSD_CreateCheckBox} 0 75u 100% 8u $(Reinstall_Msg5)
+  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Installation"
   Pop $RemoveUserSettings
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
