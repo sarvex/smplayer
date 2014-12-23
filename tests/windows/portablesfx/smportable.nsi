@@ -105,8 +105,6 @@
 
   ;File
   Var File_Local_Conf
-  Var File_Smplayer_Ini
-  Var File_Smplayer_Orig_Ini
 
 ;--------------------------------
 ;Interface Settings
@@ -116,6 +114,9 @@
 
   ;License page
   !define MUI_LICENSEPAGE_RADIOBUTTONS
+
+  ;Components page
+  !define MUI_COMPONENTSPAGE_SMALLDESC
 
 ;--------------------------------
 ;Include Modern UI and functions
@@ -134,6 +135,7 @@
 
   ;Install pages
   !insertmacro MUI_PAGE_LICENSE "license.txt"
+  !insertmacro MUI_PAGE_COMPONENTS
   Page custom InstallDirectory InstallDirectoryLeave
   !insertmacro MUI_PAGE_INSTFILES
 
@@ -219,7 +221,9 @@
 
 ;--------------------------------
 ;Main SMPlayer files
-Section MainFiles SecMain
+Section "SMPlayer Portable [Required]" SecSMPlayerPortable
+
+  SectionIn RO
 
   ${If} "$RemoveUserSettings_State" == 1
     ExecWait '"$INSTDIR\${SMPLAYER_UNINST_EXE}" /S _?=$INSTDIR'
@@ -270,8 +274,16 @@ Section MainFiles SecMain
   SetOutPath "$INSTDIR\themes"
   File /r "${SMPLAYER_BUILD_DIR}\themes\*.*"
 
+SectionEnd
+
+Section "Additional Languages" SecTranslations
+
   SetOutPath "$INSTDIR\translations"
   File /r "${SMPLAYER_BUILD_DIR}\translations\*.*"
+
+SectionEnd
+
+Section -Post
 
   ;Fontconfig cache folder must be current dir "./" otherwise for some reason the
   ;cache is created one level up from the installed directory unlike the 7z version.
@@ -280,20 +292,12 @@ Section MainFiles SecMain
   FileClose $File_Local_Conf
 
   ${IfNot} ${FileExists} "$INSTDIR\smplayer.ini"
-    FileOpen $File_Smplayer_Ini "$INSTDIR\smplayer.ini" w
-    FileWrite $File_Smplayer_Ini "[%General]$\r$\n"
-    FileWrite $File_Smplayer_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-    FileWrite $File_Smplayer_Ini "[smplayer]$\r$\n"
-    FileWrite $File_Smplayer_Ini "check_if_upgraded=false$\r$\n"
-    FileClose $File_Smplayer_Ini
+    WriteINIStr "$INSTDIR\smplayer.ini" "%General" "screenshot_directory" ".\\screenshots$\r$\n"
+    WriteINIStr "$INSTDIR\smplayer.ini" "smplayer" "check_if_upgraded" "false"
   ${EndIf}
 
-  FileOpen $File_Smplayer_Orig_Ini "$INSTDIR\smplayer_orig.ini" w
-  FileWrite $File_Smplayer_Orig_Ini "[%General]$\r$\n"
-  FileWrite $File_Smplayer_Orig_Ini "screenshot_directory=.\\screenshots$\r$\n$\r$\n"
-  FileWrite $File_Smplayer_Orig_Ini "[smplayer]$\r$\n"
-  FileWrite $File_Smplayer_Orig_Ini "check_if_upgraded=false$\r$\n"
-  FileClose $File_Smplayer_Orig_Ini
+  WriteINIStr "$INSTDIR\smplayer_orig.ini" "%General" "screenshot_directory" ".\\screenshots$\r$\n"
+  WriteINIStr "$INSTDIR\smplayer_orig.ini" "smplayer" "check_if_upgraded" "false"
 
   CreateDirectory "$INSTDIR\screenshots"
 
@@ -303,6 +307,13 @@ Section MainFiles SecMain
   RMDir $INSTDIR\platforms
 
 SectionEnd
+
+;--------------------------------
+;Section descriptions
+!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecSMPlayerPortable} $(Section_SMPlayer_Desc)
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecTranslations} $(Section_Translations_Desc)
+!insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ;--------------------------------
 ;Shared functions
@@ -337,7 +348,7 @@ Function InstallDirectory
   ${NSD_CreateButton} 228u 43u 60u 15u $(^BrowseBtn)
   Pop $BrowseBtn
 
-  ${NSD_CreateCheckBox} 0 75u 100% 8u "Perform Clean Installation"
+  ${NSD_CreateCheckBox} 0 75u 100% 8u "Delete all user settings and files"
   Pop $RemoveUserSettings
 
   ${NSD_CreateLabel} 0 115u 100% 8u ""
@@ -393,7 +404,7 @@ Function UpdateFreeSpace
   ${IfNot} $RootDir == ""
   ${AndIfNot} $RootDirFreeSpace == ""
   ${AndIfNot} $RootDirFreeSpace == 0
-    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:Space available: $RootDirFreeSpace MB"
+    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:Space available: $RootDirFreeSpaceMB"
   ${Else}
     SendMessage $FreeSpace ${WM_SETTEXT} 0 ""
   ${EndIf}
@@ -402,7 +413,15 @@ FunctionEnd
 
 Function UpdateReqSpace
 
-  SectionGetSize ${SecMain} $SecSize
+  StrCpy $1 0
+  ${Do}
+    ${If} ${SectionIsSelected} $1
+      SectionGetSize $1 $0
+      IntOp $SecSize $SecSize + $0
+    ${EndIf}
+    IntOp $1 $1 + 1
+  ${LoopUntil} ${Errors}
+
   IntOp $SecSize $SecSize * 1024
 
   StrCpy $SecSizeUnit " bytes"
@@ -411,17 +430,17 @@ Function UpdateReqSpace
   ${OrIf} $SecSize < 0
     System::Int64Op $SecSize / 1024
     Pop $SecSize
-    StrCpy $SecSizeUnit " KB"
+    StrCpy $SecSizeUnit "KB"
     ${If} $SecSize > 1024
     ${OrIf} $SecSize < 0
       System::Int64Op $SecSize / 1024
       Pop $SecSize
-      StrCpy $SecSizeUnit " MB"
+      StrCpy $SecSizeUnit "MB"
       ${If} $SecSize > 1024
       ${OrIf} $SecSize < 0
         System::Int64Op $SecSize / 1024
         Pop $SecSize
-        StrCpy $SecSizeUnit " GB"
+        StrCpy $SecSizeUnit "GB"
       ${EndIf}
     ${EndIf}
   ${EndIf}
