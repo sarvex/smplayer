@@ -49,6 +49,9 @@
   !define SHACF_FILESYSTEM 1
   !define SHACF_FILESYS_DIRS 32
 
+  ;Needed to use built-in translations w/o the actual page
+  !define MUI_DIRECTORYPAGE
+
 ;--------------------------------
 ;General
 
@@ -324,11 +327,11 @@ SectionEnd
 ;--------------------------------
 ;Installer functions
 
-/*Function .onInit
+Function .onInit
 
-  
+  !insertmacro MUI_LANGDLL_DISPLAY
 
-FunctionEnd*/
+FunctionEnd
 
 Function InstallDirectory
 
@@ -338,9 +341,9 @@ Function InstallDirectory
   nsDialogs::SetRTL $(^RTL)
 
   GetDlgItem $NextButton $HWNDPARENT 1 ; next=1, cancel=2, back=315
-  !insertmacro MUI_HEADER_TEXT "Choose Install Directory" "Choose the folder in which to extract $(^NameDA)."
+  !insertmacro MUI_HEADER_TEXT $(MUI_TEXT_DIRECTORY_TITLE) $(MUI_TEXT_DIRECTORY_SUBTITLE)
 
-  ${NSD_CreateLabel} 0 0 100% 16u "Setup will extract $(^NameDA) in the following folder. To extract to a different folder, click Browse and select another folder. $_CLICK"
+  ${NSD_CreateLabel} 0 0 100% 16u $(^DirText)
   ${NSD_CreateGroupBox} 0u 30u 100% 35u $(^DirSubText)
   Pop $InstallDirGroupBox
   
@@ -363,10 +366,10 @@ Function InstallDirectory
   ${NSD_OnClick} $Browsebtn SelectDirectory
   ${NSD_OnChange} $InstallDirSelection UpdateFreeSpace
 
-  System::Call shlwapi::SHAutoComplete(i$InstallDirSelection,i${SHACF_FILESYS_DIRS})
-
   Call UpdateFreeSpace
   Call UpdateReqSpace
+
+  System::Call shlwapi::SHAutoComplete(i$InstallDirSelection,i${SHACF_FILESYS_DIRS})
 
   nsDialogs::Show
 
@@ -409,7 +412,7 @@ Function UpdateFreeSpace
   ${IfNot} $RootDir == ""
   ${AndIfNot} $RootDirFreeSpace == ""
   ${AndIfNot} $RootDirFreeSpace == 0
-    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:Space available: $RootDirFreeSpaceMB"
+    SendMessage $FreeSpace ${WM_SETTEXT} 0 "STR:$(^SpaceRequired)$RootDirFreeSpaceMB"
   ${Else}
     SendMessage $FreeSpace ${WM_SETTEXT} 0 ""
   ${EndIf}
@@ -450,7 +453,7 @@ Function UpdateReqSpace
     ${EndIf}
   ${EndIf}
 
-  SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:Space required: $SecSize$SecSizeUnit"
+  SendMessage $SpaceReq ${WM_SETTEXT} 0 "STR:$(^SpaceRequired)$SecSize$SecSizeUnit"
 
 FunctionEnd
 
@@ -507,6 +510,9 @@ Section Uninstall
   RMDir "$INSTDIR"
 
 SectionEnd
+
+;--------------------------------
+;Uninstaller functions
 
 Function un.PageUnConfirmLeave
 

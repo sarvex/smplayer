@@ -26,6 +26,13 @@
   echo !string:~1!
 )
 
+@FOR /F "tokens=*" %%d IN ('DIR %DIR%\*.* /A:D /B /S') DO @(
+  set string=%%d
+  set string=!string:%CD%\%DIR%=!
+  echo RMDir "$INSTDIR\!string:~1!" >> %HEADER%
+  echo !string:~1!
+)
+
 @EndLocal
 @goto :EOF
 
