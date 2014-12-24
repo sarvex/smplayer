@@ -8,6 +8,8 @@
 @IF NOT DEFINED HEADER SET HEADER=UnFiles.nsh
 @IF NOT EXIST "%DIR%" ECHO Cannot find the folder %DIR%. & SET "DIR=" & goto :EOF
 
+@IF EXIST UnFiles.nsh ( DEL UnFiles.nsh )
+
 @SetLocal EnableDelayedExpansion
 
 @FOR /F "tokens=*" %%f IN ('DIR %DIR%\*.* /A:-D /B /S') DO @(

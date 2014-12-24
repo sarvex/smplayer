@@ -8,9 +8,9 @@
 
 ;Generate uninstall list
 !ifdef WIN64
-!system 'UnFiles.cmd smplayer-build64'
+!system 'UnFiles.cmd smplayer-build64 >nul'
 !else
-!system 'UnFiles.cmd smplayer-build'
+!system 'UnFiles.cmd smplayer-build >nul'
 !endif
 
 ;--------------------------------
