@@ -46,6 +46,9 @@
 
   !define SMPLAYER_UNINST_EXE "smp-uninst.exe"
 
+  !define SHACF_FILESYSTEM 1
+  !define SHACF_FILESYS_DIRS 32
+
 ;--------------------------------
 ;General
 
@@ -341,7 +344,7 @@ Function InstallDirectory
   ${NSD_CreateGroupBox} 0u 30u 100% 35u $(^DirSubText)
   Pop $InstallDirGroupBox
   
-  ${NSD_CreateText} 10u 45u 210u 12u "$INSTDIR"
+  ${NSD_CreateDirRequest} 10u 45u 210u 12u "$INSTDIR"
   Pop $InstallDirSelection
   
   ; === Browse (type: Button) ===
@@ -359,6 +362,8 @@ Function InstallDirectory
 
   ${NSD_OnClick} $Browsebtn SelectDirectory
   ${NSD_OnChange} $InstallDirSelection UpdateFreeSpace
+
+  System::Call shlwapi::SHAutoComplete(i$InstallDirSelection,i${SHACF_FILESYS_DIRS})
 
   Call UpdateFreeSpace
   Call UpdateReqSpace
