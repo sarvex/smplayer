@@ -9,6 +9,8 @@
 
 set start_dir=%~dp0
 
+set make_pkg=
+set make_pkg_param=
 set build_themes=yes
 set build_skins=yes
 set build_pe=
@@ -34,12 +36,12 @@ rem set SMPLAYER_THEMES_DIR=..\..\smplayer-themes\trunk
 if "%1" == ""               goto build_env_info
 if "%1" == "-h"             goto usage
 if "%1" == "-prefix"        goto prefixTag
-if "%1" == "-portable"      goto cfgPE
 if "%1" == "-nothemes"      goto cfgThemes
 if "%1" == "-noskins"       goto cfgSkins
 if "%1" == "-noinst"        goto cfgInst
 if "%1" == "-noupdate"      goto cfgUpdate
-
+if "%1" == "-makepkg"       goto cfgMakepkg
+if "%1" == "-portable"      goto cfgPE
 
 echo Unknown option: "%1"
 echo.
@@ -110,11 +112,29 @@ shift
 
 goto cmdline_parsing
 
+:cfgMakepkg
+set make_pkg=yes
+
+shift
+
+goto cmdline_parsing
+
 ::                                       ::
 ::        Build Environment Info         ::
 ::                                       ::
 
 :build_env_info
+
+:: Command-line Debugging
+REM echo make_pkg: %make_pkg%
+REM echo build_themes: %build_themes%
+REM echo build_skins: %build_skins%
+REM echo build_pe: %build_pe%
+REM echo runinstcmd: %runinstcmd%
+REM echo runsvnup: %runsvnup%
+REM echo qmake_defs: %qmake_defs%
+REM echo use_svn_revision: %use_svn_revision%
+REM goto end
 
 :: GCC Target
 for /f "usebackq tokens=2" %%i in (`"gcc -v 2>&1 | find "Target""`) do set gcc_target=%%i
@@ -125,6 +145,24 @@ if [%gcc_target%]==[x86_64-w64-mingw32] (
 ) else if [%gcc_target%]==[mingw32] (
   set X86_64=no
 )
+
+if [%make_pkg%]==[yes] (
+  if not [%build_pe%]==[yes] (
+    if [%X86_64%]==[yes] (
+      set make_pkg_param=2
+    ) else (
+      set make_pkg_param=1
+    )
+  ) else (
+    if [%X86_64%]==[yes] (
+      set make_pkg_param=4
+    ) else (
+      set make_pkg_param=3
+    )
+  )
+)
+
+REM echo make_pkg_param: %make_pkg_param%
 
 :: MinGW locations from GCC
 for /f "usebackq tokens=*" %%d in (`where gcc.exe`) do set MINGW_DIR=%%d
@@ -213,6 +251,12 @@ if [%build_pe%]==[yes] (
     copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable.exe"
   )
 )
+
+if [%make_pkg%]==[yes] (
+  cd "%SMPLAYER_DIR%\setup\scripts"
+  call make_pkgs %make_pkg_param%
+)
+
 :: Return to starting directory
 cd /d "%start_dir%"
 
@@ -220,6 +264,8 @@ cd /d "%start_dir%"
 
 :: Reset
 set startdir=
+set make_pkg=
+set make_pkg_param=
 set build_themes=
 set build_skins=
 set build_pe=
