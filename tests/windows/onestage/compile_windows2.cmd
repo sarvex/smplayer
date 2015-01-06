@@ -222,8 +222,10 @@ if [%build_pe%]==[yes] (
 
   if [%X86_64%]==[yes] (
     copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable64.exe"
+    copy /y "%SMPLAYER_DIR%\src\debug\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable64d.exe"
   ) else ( 
     copy /y "%SMPLAYER_DIR%\src\release\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portable.exe"
+    copy /y "%SMPLAYER_DIR%\src\debug\smplayer.exe" "%BUILD_PREFIX%\portable\smplayer-portabled.exe"
   )
 )
 
