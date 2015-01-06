@@ -9,8 +9,6 @@
 
 set start_dir=%~dp0
 
-set make_pkg=
-set make_pkg_param=
 set build_themes=yes
 set build_skins=yes
 set build_pe=
@@ -40,7 +38,6 @@ if "%1" == "-nothemes"      goto cfgThemes
 if "%1" == "-noskins"       goto cfgSkins
 if "%1" == "-noinst"        goto cfgInst
 if "%1" == "-noupdate"      goto cfgUpdate
-if "%1" == "-makepkg"       goto cfgMakepkg
 if "%1" == "-portable"      goto cfgPE
 
 echo Unknown option: "%1"
@@ -112,13 +109,6 @@ shift
 
 goto cmdline_parsing
 
-:cfgMakepkg
-set make_pkg=yes
-
-shift
-
-goto cmdline_parsing
-
 ::                                       ::
 ::        Build Environment Info         ::
 ::                                       ::
@@ -126,7 +116,6 @@ goto cmdline_parsing
 :build_env_info
 
 :: Command-line Debugging
-REM echo make_pkg: %make_pkg%
 REM echo build_themes: %build_themes%
 REM echo build_skins: %build_skins%
 REM echo build_pe: %build_pe%
@@ -146,24 +135,6 @@ if [%gcc_target%]==[x86_64-w64-mingw32] (
   set X86_64=no
 )
 
-if [%make_pkg%]==[yes] (
-  if not [%build_pe%]==[yes] (
-    if [%X86_64%]==[yes] (
-      set make_pkg_param=2
-    ) else (
-      set make_pkg_param=1
-    )
-  ) else (
-    if [%X86_64%]==[yes] (
-      set make_pkg_param=4
-    ) else (
-      set make_pkg_param=3
-    )
-  )
-)
-
-REM echo make_pkg_param: %make_pkg_param%
-
 :: MinGW locations from GCC
 for /f "usebackq tokens=*" %%d in (`where gcc.exe`) do set MINGW_DIR=%%d
 set MINGW_DIR=%MINGW_DIR:~0,-8%
@@ -181,6 +152,9 @@ if %SMPLAYER_DIR:~-1%==\ set SMPLAYER_DIR=%SMPLAYER_DIR:~0,-1%
 for /f %%i in ("%SMPLAYER_THEMES_DIR%") do set SMPLAYER_THEMES_DIR=%%~fi
 for /f %%i in ("%SMPLAYER_SKINS_DIR%") do set SMPLAYER_SKINS_DIR=%%~fi
 
+:: Try to parse if debug or release is uncommented in smplayer.pro
+findstr /b /c:"\#CONFIG \+\= release" src\smplayer.pro 2>&1 >nul && (set debug=yes) || (set debug=)
+
 :: Create var batch file
 echo set SMPLAYER_DIR=%SMPLAYER_DIR%>%config_file%
 echo set SMPLAYER_THEMES_DIR=%SMPLAYER_THEMES_DIR%>>%config_file%
@@ -190,6 +164,7 @@ echo set QT_VER=%QT_VER%>>%config_file%
 echo set MINGW_DIR=%MINGW_DIR%>>%config_file%
 echo set X86_64=%X86_64%>>%config_file%
 echo set BUILD_PREFIX=%BUILD_PREFIX%>>%config_file%
+echo set DEBUG=%DEBUG%>>%config_file%
 
 ::                                       ::
 ::          Main Compile Script          ::
@@ -252,11 +227,6 @@ if [%build_pe%]==[yes] (
   )
 )
 
-if [%make_pkg%]==[yes] (
-  cd "%SMPLAYER_DIR%\setup\scripts"
-  call make_pkgs %make_pkg_param%
-)
-
 :: Return to starting directory
 cd /d "%start_dir%"
 
@@ -264,8 +234,6 @@ cd /d "%start_dir%"
 
 :: Reset
 set startdir=
-set make_pkg=
-set make_pkg_param=
 set build_themes=
 set build_skins=
 set build_pe=
